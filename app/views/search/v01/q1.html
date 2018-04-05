@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/docs/tutorials-and-examples">Back</a>
+
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend>
+            <h1 class="heading-large">
+              Search for a teacher training course
+            </h1>
+            <p class="body-text">
+
+            </p>
+          </legend>
+
+          <div class="multiple-choice" data-target="providerName">
+            <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+            <label for="example-contact-by-email">Search for a specific training provider</label>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="providerName">
+            <label class="form-label" for="providerName">Training provider name</label>
+            <input class="form-control" name="providerName" type="text" id="providerNameInput">
+          </div>
+
+          <div class="multiple-choice" data-target="location">
+            <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+            <label for="example-contact-by-phone">Search for providers by location</label>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="location">
+            <label class="form-label" for="location">Location (postcode, town, street)</label>
+            <div class="form-group">
+            <input class="form-control" name="location" type="text" id="location">
+            <br><br>
+            <label class="form-label" for="location">Distance from location</label>
+            <select class="form-control" id="location-radius" name="select-box">
+              <option>5 miles</option>
+              <option>10 miles</option>
+              <option>20 miles</option>
+              <option>50 miles</option>
+              <option>100 miles</option>
+            </select>
+          </div>
+          </div>
+
+        </fieldset>
+
+        <div class="form-group">
+          <a href="q2.html" class="button">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

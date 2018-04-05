@@ -1,0 +1,503 @@
+
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="sticky-header font-xsmall">
+    <div class="compare-text">
+      Your comparison list contains <span class="bold-text">3 providers</span>.
+    </div>
+    <div class="compare-button">
+      <a href="compare.html" class="button">View comparison list</a>
+    </div>
+  </div>
+  <div class="column-three-thirds ">
+    <h1 class="heading-large">
+      6 Teacher training courses found
+    </h1>
+    <p class="font-xsmall">
+      Showing all teacher training courses around <span class="bold-text">London</span> offering training in <span class="bold-text">English</span>.
+      <!-- <br>
+      <a class="font-xsmall" href="#">Change search criteria</a> -->
+    </p>
+  </div>
+  <div>
+    <div class="grid-row">
+
+      <div class="column-one-third font-xsmall">
+        Filter by :
+
+        <!-- Start of a filter category -->
+        <div class="filter-category">
+          <h4 class="heading-small filter-heading">Location</h4>
+          <div class="filters">
+            <form action="">
+              <input class="form-control filter-input results-data"  type="text" name="ni-number" value="London"> <br>
+              <select class="form-control filter-input"  name="select-box">
+                <option>5 miles</option>
+                <option>10 miles</option>
+                <option>20 miles</option>
+                <option>50 miles</option>
+                <option>100 miles</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <!-- End of a filter category -->
+        <!-- Start of a filter category -->
+        <div class="filter-category ">
+          <h4 class="heading-small filter-heading">Subjects</h4>
+          <div class="filters fixed-height-200">
+            <form action="">
+              <input type="checkbox" name="subject" value="English"> Art & Design<br>
+              <input type="checkbox" name="subject" value="Physics"> Biology<br>
+              <input type="checkbox" name="subject" value="English"> Business Studies<br>
+              <input type="checkbox" name="subject" value="Chemistry"> Chemistry<br>
+              <input type="checkbox" name="subject" value="Biology"> Classics<br>
+              <input type="checkbox" name="subject" value="Geography"> Computing<br>
+              <input type="checkbox" name="subject" value="PE"> Design & Technology<br>
+              <input type="checkbox" name="subject" value="English"> Drama<br>
+              <input type="checkbox" name="subject" value="Physics"> Economics<br>
+              <input type="checkbox" name="subject" value="English"> English<br>
+              <input type="checkbox" name="subject" value="Chemistry"> Geography<br>
+              <input type="checkbox" name="subject" value="Biology"> History<br>
+              <input type="checkbox" name="subject" value="Geography"> Mathematics<br>
+              <input type="checkbox" name="subject" value="PE"> Modern Foreign Languages<br>
+              <input type="checkbox" name="subject" value="English"> Music<br>
+              <input type="checkbox" name="subject" value="Physics"> Physical Education<br>
+              <input type="checkbox" name="subject" value="English"> Physics<br>
+              <input type="checkbox" name="subject" value="Chemistry"> Religious Education<br>
+              <input type="checkbox" name="subject" value="Biology"> General<br>
+              <input type="checkbox" name="subject" value="Geography"> Other<br>
+            </form>
+          </div>
+        </div>
+        <!-- End of a filter category -->
+        <!-- Start of a filter category -->
+        <div class="filter-category">
+          <h4 class="heading-small filter-heading">Outcome</h4>
+          <div class="filters">
+            <form action="">
+              <input type="checkbox" name="route" value="uni"> QTS only<br>
+              <input type="checkbox" name="route" value="scitt"> QTS + PGCE<br>
+              <div class="filter-link">
+                <a href="outcome.html" >Know the difference</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of a filter category -->
+          <!-- Start of a filter category -->
+          <div class="filter-category">
+            <h4 class="heading-small filter-heading">Financing</h4>
+            <div class="filters">
+              <form action="">
+                <input type="checkbox" name="route" value="uni"> Salaried<br>
+                <input type="checkbox" name="route" value="scitt"> Fee paid<br>
+                <div class="filter-link">
+                  <a href="outcome.html" >Learn about financing</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End of a filter category -->
+          <!-- Start of a filter category -->
+          <div class="filter-category">
+            <h4 class="heading-small filter-heading">Study type</h4>
+            <div class="filters">
+              <form action="">
+                <input type="checkbox" name="route" value="uni"> Part time<br>
+                <input type="checkbox" name="route" value="scitt"> Full time<br>
+              </form>
+            </div>
+          </div>
+          <!-- End of a filter category -->
+          <a href="#" class="button">Apply filters</a><br><br>
+          <a href="#" >Clear filters</a>
+        </div>
+
+        <div class="column-two-thirds">
+          <!-- A Result -->
+          <div class="grid-row results">
+            <h4 class="heading-small">
+              <a href="UCL.html">University College London</a>
+            </h4>
+            <div class="grid-row results-data">
+              <div class="column-full">
+                Provider type: University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Subjects: English, Physics
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Duration: 12 months
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Study type: Full time
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Outcome: <a href="outcome.html">PGCE and QTS</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Number of partner schools: 28
+                  </div>
+                </div>
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Starts: September 2017, January 2018 and Arpil 2018
+                  </div>
+                </div>
+
+
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Address: Gower Street, London WC1E 6BT
+                  </div>
+                </div>
+                <div class="grid-row results-data results-link">
+                  <div class="column-full">
+                    <a href="compare-add2.html">Remove from comparison list</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!-- End of a Result -->
+          <!-- A Result -->
+          <div class="grid-row results">
+            <h4 class="heading-small">
+              <a href="LMU.html">London Metropolitan University</a>
+            </h4>
+            <div class="grid-row results-data">
+              <div class="column-full">
+                Provider type: University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Subjects: English, History, Mathematics, Physics
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Duration: 12 months
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Study type: Full time
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Outcome: <a href="outcome.html">PGCE and QTS</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Number of partner schools: 17
+                  </div>
+                </div>
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Starts: September 2017
+                  </div>
+                </div>
+
+
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Address: 166-220 Holloway Road, London N7 8DB
+                  </div>
+                </div>
+                <div class="grid-row results-data results-link">
+                  <div class="column-full">
+                    <a href="compare-add2.html">Remove from comparison list</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!-- End of a Result -->
+          <!-- A Result -->
+          <div class="grid-row results">
+            <h4 class="heading-small">
+              <a href="LMU.html">Teaching London SCITT</a>
+            </h4>
+            <div class="grid-row results-data">
+              <div class="column-full">
+                Provider type: School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Subjects: Primary, English, Maths, Computing/ICT, Economics, Geogrpahy, Modern foreign languages, Design and technology, Religious education (RE), Science
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Duration: 12 months
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Study type: Full time
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Outcome: <a href="outcome.html">PGCE and QTS</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Number of partner schools: 8
+                  </div>
+                </div>
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Starts: September 2017
+                  </div>
+                </div>
+
+
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Address: New Cross, London SE14 6NW
+                  </div>
+                </div>
+                <div class="grid-row results-data results-link">
+                  <div class="column-full">
+                    <a href="compare-add2.html">Add to comparison list</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!-- End of a Result -->
+          <!-- A Result -->
+          <div class="grid-row results">
+            <h4 class="heading-small">
+              <a href="LMU.html">Goldsmiths University of London</a>
+            </h4>
+            <div class="grid-row results-data">
+              <div class="column-full">
+                Provider type: University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Subjects: English, History, Mathematics, Physics
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Duration: 24 months
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Study type: Part time
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Outcome: <a href="outcome.html">PGCE and QTS</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Number of partner schools: 8
+                  </div>
+                </div>
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Starts: September 2017
+                  </div>
+                </div>
+
+
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Address: New Cross, London SE14 6NW
+                  </div>
+                </div>
+                <div class="grid-row results-data results-link">
+                  <div class="column-full">
+                    <a href="compare-add2.html">Remove from comparison list</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!-- End of a Result -->
+          <!-- A Result -->
+          <div class="grid-row results">
+            <h4 class="heading-small">
+              <a href="LMU.html">King's College London</a>
+            </h4>
+            <div class="grid-row results-data">
+              <div class="column-full">
+                Provider type: University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Subjects: English, History, Mathematics, Physics
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Duration: 24 months
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Study type: Part time
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Outcome: <a href="outcome.html">PGCE and QTS</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Number of partner schools: 8
+                  </div>
+                </div>
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Starts: September 2017
+                  </div>
+                </div>
+
+
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Address: Strand, London WC2R 2LS
+                  </div>
+                </div>
+                <div class="grid-row results-data results-link">
+                  <div class="column-full">
+                    <a href="compare-add2.html">Add to comparison list</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!-- End of a Result -->
+          <!-- A Result -->
+          <div class="grid-row results">
+            <h4 class="heading-small">
+              <a href="LMU.html">Lampton LWA SCITT</a>
+            </h4>
+            <div class="grid-row results-data">
+              <div class="column-full">
+                Provider type: School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Subjects: English, History, Mathematics, Physics
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Duration: 12 months
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Study type: Full time
+                </div>
+              </div>
+              <div class="grid-row results-data">
+                <div class="column-full">
+                  Outcome: <a href="outcome.html">PGCE and QTS</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Number of partner schools: 18
+                  </div>
+                </div>
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Starts: September 2017
+                  </div>
+                </div>
+
+
+
+                <div class="grid-row results-data">
+                  <div class="column-full">
+                    Address: Lampton Avenue, Hounslow TW3 4EP
+                  </div>
+                </div>
+                <div class="grid-row results-data results-link">
+                  <div class="column-full">
+                    <a href="compare-add2.html">Add to comparison list</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!-- End of a Result -->
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+  {% endblock %}

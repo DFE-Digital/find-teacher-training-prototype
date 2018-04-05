@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      {{macros.backLink("index2.html")}}
+      {{macros.h1("Search for a teacher training course")}}
+      {{ macros.formStart()}}
+        <div class="form-group">
+          {{ macros.radio("radioProviderName","Search for a specific training provider","radioSearchType","insetProviderName") }}
+          {{ macros.insetStart("insetProviderName") }}
+            {{ macros.textbox("providerNameInput","Training provider name")}}
+          {{ macros.insetEnd()}}
+
+          {{ macros.radio("radioProviderLocation","Search for providers by location","radioSearchType","insetProviderLocation") }}
+            {{ macros.insetStart("insetProviderLocation") }}
+              {{ macros.textbox("locationInput","Location (postcode, town, street)")}}
+              {{ macros.selectBox("location-radius","Distance from location","location-radius",["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
+          {{ macros.insetEnd()}}
+        </div>
+        {{ macros.submitLink("Continue","q2.html")}}
+      {{macros.formEnd()}}
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

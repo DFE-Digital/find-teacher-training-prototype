@@ -1,0 +1,62 @@
+{% extends "layout-withNav.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+<script>
+function addExpereience(){
+  var qual = "";
+  var addAnother = "";
+  radios=document.getElementsByTagName("input");
+  console.log(radios.length);
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].type === 'radio' && radios[i].checked) {
+        // get value, set checked flag or do whatever you need to
+        addAnother = radios[i].value;
+    }
+  }
+  if(addAnother=="No"){
+    window.location.href = 'index-work-completed.html';
+  }
+  qual = "<div class=\"qualification\">"
+  qual += "Job title: "+document.getElementById("jobTitleInput").value + "</br>";
+  qual += "Employer: "+document.getElementById("employerInput").value + "</br>";
+  qual += "Start: "+document.getElementById("startInput"+"-month").value +document.getElementById("startInput"+"-year").value+ "</br>";
+  qual += "End: "+document.getElementById("endInput"+"-month").value +document.getElementById("endInput"+"-year").value+ "</br>";
+  qual += "Job description: "+document.getElementById("jdInput").value + "</br>";
+  qual += "<a href=\"#\">Edit this qualification</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"#\">Delete this qualification</a>"
+  qual += "</div>";
+  document.getElementById("addedExperiences").innerHTML += qual;
+
+}
+</script>
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      {{macros.backLink("index.html")}}
+      {{macros.h1("Work experience")}}
+      {{ macros.formStart()}}
+        <div class="form-group">
+          {{ macros.textbox("jobTitleInput","Job title")}}
+          {{ macros.textbox("employerInput","Employer")}}
+          {{ macros.monthInput("startInput","Start")}}
+          {{ macros.monthInput("endInput","End")}}
+          {{ macros.textArea("jdInput","Job description")}}
+          {{ macros.radioInline("","Do you want to add another work experience?",["Yes","No"])}}
+          <input type="button" class="button" onclick="addExpereience()" value="Save">
+        </div>
+        <div id="addedExperiences" class="topSeparator">
+          <h3 class="heading-medium">
+            Work experience added
+          </h3>
+        </div>
+        <br>
+      {{macros.formEnd()}}
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

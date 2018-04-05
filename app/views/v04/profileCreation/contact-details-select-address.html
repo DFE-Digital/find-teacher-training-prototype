@@ -1,0 +1,28 @@
+{% extends "layout-withNav.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      {{macros.backLink("index2.html")}}
+      {{macros.h1("Contact details")}}
+      {{ macros.formStart()}}
+        <div class="form-group">
+            {{ macros.textbox("phoneInput","What is your phone number ?")}}
+            {{ macros.address("What is your address?","Enter your postcode","contact-details-select-address.html")}}
+            {{ macros.selectBox("addressInput","Select your address","address_Input",["1, Great Smith St, Westminster, London SW1P 3BT","2, Great Smith St, Westminster, London SW1P 3BT","3, Great Smith St, Westminster, London SW1P 3BT","4, Great Smith St, Westminster, London SW1P 3BT","5, Great Smith St, Westminster, London SW1P 3BT","6, Great Smith St, Westminster, London SW1P 3BT","7, Great Smith St, Westminster, London SW1P 3BT","8, Great Smith St, Westminster, London SW1P 3BT"])}}
+            <a href="#">Enter address manually</a>
+        </div>
+        {{ macros.submitLink("Save","index-contact-completed.html")}}
+      {{macros.formEnd()}}
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

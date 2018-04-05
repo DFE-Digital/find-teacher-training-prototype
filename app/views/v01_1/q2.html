@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      {{macros.backLink("q1.html")}}
+      {{macros.h1("What subjects would you like to teach?")}}
+      {{macros.text("Select all subjects you are interested in teaching:")}}
+      {{macros.formStart()}}
+        {{macros.checkbox("subject",["Art and Design","Biology","Business Studies","Chemistry","Classics","Computing","Design and Technology","Drama","Economics","English","Geography","History","Mathematics","Modern Foreign Languages","Music","Physical Education","Physics","Psychology","Religious","General","Other"]) }}
+        {{ macros.submitLink("Continue","q3.html")}}
+      {{macros.formEnd()}}
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "layout-withNav.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+<script>
+function addQualification(){
+  var qual = "";
+  var addAnother = "";
+  radios=document.getElementsByTagName("input");
+  console.log(radios.length);
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].type === 'radio' && radios[i].checked) {
+        // get value, set checked flag or do whatever you need to
+        addAnother = radios[i].value;
+    }
+  }
+  if(addAnother=="No"){
+    window.location.href = 'index-education-completed.html';
+  }
+  qual = "<div class=\"qualification\">"
+  qual += "Qualification type: "+document.getElementById("qualificationInput").value + "</br>";
+  qual += "Grade: "+document.getElementById("gradeInput").value + "</br>";
+  qual += "Insititute: "+document.getElementById("instituteInput").value + "</br>";
+  qual += "Year of completion: "+document.getElementById("yearInput").value + "</br>";
+  qual += "<a href=\"#\">Edit this qualification</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"#\">Delete this qualification</a>"
+  qual += "</div>";
+  document.getElementById("addedQualifications").innerHTML += qual;
+
+}
+</script>
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      {{macros.backLink("index2.html")}}
+      {{macros.h1("Educational details")}}
+      {{ macros.formStart("post","#")}}
+        <div class="form-group">
+          {{ macros.selectBox("qualificationInput","Qualification type","qualification_Input",["GCSE","A-levels"])}}
+          {{ macros.textbox("gradeInput","Grade")}}
+          {{ macros.textbox("instituteInput","Institution")}}
+          {{ macros.textbox("yearInput","Year of completion")}}
+          {{ macros.radioInline("addAnotherInput","Do you want to add another qualification?",["Yes","No"])}}
+          <input type="button" class="button" onclick="addQualification()" value="Save">
+        </div>
+        <div id="addedQualifications" class="topSeparator">
+          <h3 class="heading-medium">
+            Qualifications added
+          </h3>
+        </div>
+        <br>
+      {{macros.formEnd()}}
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

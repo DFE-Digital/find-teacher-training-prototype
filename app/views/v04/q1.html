@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      {{macros.backLink("index2.html")}}
+      {{macros.h1("Search for a teacher training course")}}
+      <form action="q2" method="post" class="form">
+        {{macros.formStart("post","q2")}}
+        <div class="form-group">
+
+          {{ macros.radio("radioProviderLocation","Search by postcode","radioSearchType","insetProviderLocation") }}
+            {{ macros.insetStart("insetProviderLocation") }}
+              {{ macros.textbox("locationInput","Postcode")}}
+              {{ macros.selectBox("location-radius","Distance from postcode","location-radius",["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
+          {{ macros.insetEnd()}}
+
+          {{ macros.radio("radioProviderNationwide","Search across England","radioSearchType","noInset") }}
+
+          {{ macros.radio("radioProviderName","Find a specific training provider","radioSearchType","insetProviderName") }}
+          {{ macros.insetStart("insetProviderName") }}
+            {{ macros.textbox("providerNameInput","Training provider name")}}
+          {{ macros.insetEnd()}}
+        </div>
+
+        {{macros.submit("Next")}}
+      {{macros.formEnd()}}
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

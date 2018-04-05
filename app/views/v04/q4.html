@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      {{macros.backLink("q3.html")}}
+      {{macros.h1("Choose your course")}}
+      {{macros.formStart("post","results")}}
+        <div class="form-group">
+          {{ macros.radio("radioSalary","With a salary","radioSalary","insetYes") }}
+            {{ macros.insetStart("insetYes") }}
+              <p>You can’t get a salary if:</p>
+              {{ macros.bulletList(["the course already offers a bursary","you don’t have relevant school or work experience"])}}
+            {{ macros.insetEnd()}}
+          {{ macros.radio("radioSalary","Without a salary","radioSalary","none") }}
+          {{ macros.radio("radioSalary","With or without a salary","radioSalary","none") }}
+        </div>
+
+      {{macros.submit("Find courses")}}
+      {{ macros.formEnd()}}
+</main>
+
+{% endblock %}

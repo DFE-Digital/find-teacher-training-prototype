@@ -1,0 +1,776 @@
+{% macro textbox(id,label,helpText) %}
+<div class="form-group">
+  <label class="form-label bold-text" for={{id}}>{{label}}</label>
+  <legend>
+      <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
+  </legend>
+  <input class="form-control" name={{id}} type="text" id={{id}}>
+</div>
+{% endmacro %}
+
+{% macro textArea(id,label,helpText) %}
+<div class="form-group">
+  <label class="form-label bold-text" for={{id}}>{{label}}</label>
+  <legend>
+      <span class="form-hint" id="hint">{{helpText}}</span>
+  </legend>
+  <textarea rows="5" class="form-control" name={{id}} type="text" id={{id}}></textarea>
+</div>
+{% endmacro %}
+
+{% macro password(id,label) %}
+<div class="form-group">
+  <label class="form-label bold-text" for={{id}}>{{label}}</label>
+  <input class="form-control" name={{id}} type="password" id={{id}}>
+</div>
+{% endmacro %}
+
+{% macro radio(id,label,groupName,target,value) %}
+  <div class="multiple-choice" data-target={{target}}>
+    <input id={{id}} type="radio" name={{groupName}} value={{value}}>
+    <label for={{target}} class="bold-text">{{label}}</label>
+  </div>
+{% endmacro %}
+
+{% macro radioInline(id,label,options)%}
+<div class="form-group">
+  <fieldset class="inline">
+    <legend>
+      <h1 class="heading-small">
+        {{label}}
+        </h1>
+    </legend>
+    {%for option in options%}
+      <div class="multiple-choice">
+        <input id={{option}} type="radio" name="radio-inline-group" value={{option}}>
+        <label for={{option}}>{{option}}</label>
+      </div>
+    {%endfor%}
+  </fieldset>
+</div>
+{% endmacro %}
+
+{% macro inset(id) %}
+<div class="panel panel-border-narrow js-hidden" id="providerName">
+  <label class="form-label" for="providerName">Training provider name</label>
+  <input class="form-control" name="providerName" type="text" id="providerNameInput">
+</div>
+{% endmacro %}
+
+{% macro formStart(method,action) %}
+<form action={{action}} method={{method}} class="form">
+{% endmacro %}
+
+{% macro formEnd() %}
+</form>
+{% endmacro %}
+
+{% macro h1(text) %}
+<h1 class="heading-large">
+{{text}}
+</h1>
+{% endmacro %}
+
+{% macro backLink(url) %}
+<a class="link-back" href={{url}}>Back</a>
+{% endmacro %}
+
+{% macro insetStart(id) %}
+<div class="panel panel-border-narrow js-hidden" id={{id}}>
+{% endmacro %}
+
+{% macro insetEnd() %}
+</div>
+{% endmacro %}
+
+{% macro selectBox(id,label,name,options) %}
+  <div class="form-group">
+    <label class="form-label bold-text" for={{id}}>{{label}}</label>
+    <select class="form-control" id={{id}} name={{name}}>
+    {% for option in options%}
+      <option>{{option}}</option>
+      {% endfor %}
+    </select>
+  </div>
+{% endmacro %}
+
+
+{% macro submitLink(label,url) %}
+  <div class="form-group">
+    <a href={{url}} class="button">{{label}}</a>
+  </div>
+{% endmacro %}
+
+{% macro submit(label) %}
+<div class="form-group">
+  <input type="submit" class="button" value={{label}}>
+</div>
+{% endmacro %}
+
+{% macro text(text) %}
+<div class="body-text">Select all subjects you are interested in teaching:</div>
+{% endmacro %}
+
+
+{% macro checkbox(name,choices)%}
+<fieldset class="form-group">
+  {% for choice in choices %}
+    <div class="multiple-choice">
+      <input id={{choice|replace(" ","")}}  name={{choice}} type="checkbox">
+      <label for={{choice|replace(" ","")}} class="bold-text">{{choice}}</label>
+    </div>
+  {% endfor %}
+</fieldset>
+{% endmacro %}
+
+{% macro checkboxWithBursary(name,choices,degree)%}
+<fieldset class="form-group ">
+  {% for choice in choices %}
+    <div class="multiple-choice subject">
+      <div>
+          <input id={{choice|replace(" ","")}}  name={{choice}} type="checkbox">
+          <label for={{choice|replace(" ","")}} class="bold-text">{{choice}}</label>
+      </div>
+      {% if choice | bursaryCost(degree) %}
+        <div class="bursarySubjectInfo">
+            {{ choice | bursaryCost(degree) }} bursary available
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</fieldset>
+{% endmacro %}
+
+{% macro bulletList(items) %}
+  <ul class="list list-bullet">
+    {%for item in items%}
+    <li>{{item}}</li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro filterResults()%}
+Filter by :
+
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Location</h4>
+  <div class="filters">
+    <form action="">
+      <input class="form-control filter-input results-data"  type="text" name="ni-number" value="London">
+      <select class="form-control filter-input"  name="select-box">
+        <option>5 miles</option>
+        <option>10 miles</option>
+        <option>20 miles</option>
+        <option>50 miles</option>
+        <option>100 miles</option>
+      </select>
+    </form>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category ">
+  <h4 class="heading-small filter-heading">Subjects</h4>
+  <div class="filters fixed-height-200">
+    <form action="">
+      <input type="checkbox" name="subject" value="English"> Art & Design<br>
+      <input type="checkbox" name="subject" value="Physics"> Biology<br>
+      <input type="checkbox" name="subject" value="English"> Business Studies<br>
+      <input type="checkbox" name="subject" value="Chemistry"> Chemistry<br>
+      <input type="checkbox" name="subject" value="Biology"> Classics<br>
+      <input type="checkbox" name="subject" value="Geography"> Computing<br>
+      <input type="checkbox" name="subject" value="PE"> Design & Technology<br>
+      <input type="checkbox" name="subject" value="English"> Drama<br>
+      <input type="checkbox" name="subject" value="Physics"> Economics<br>
+      <input type="checkbox" name="subject" value="English"> English<br>
+      <input type="checkbox" name="subject" value="Chemistry"> Geography<br>
+      <input type="checkbox" name="subject" value="Biology"> History<br>
+      <input type="checkbox" name="subject" value="Geography"> Mathematics<br>
+      <input type="checkbox" name="subject" value="PE"> Modern Foreign Languages<br>
+      <input type="checkbox" name="subject" value="English"> Music<br>
+      <input type="checkbox" name="subject" value="Physics"> Physical Education<br>
+      <input type="checkbox" name="subject" value="English"> Physics<br>
+      <input type="checkbox" name="subject" value="Chemistry"> Religious Education<br>
+      <input type="checkbox" name="subject" value="Biology"> General<br>
+      <input type="checkbox" name="subject" value="Geography"> Other<br>
+    </form>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Outcome</h4>
+  <div class="filters">
+    <form action="">
+      <input type="checkbox" name="route" value="uni"> QTS only<br>
+      <input type="checkbox" name="route" value="scitt"> QTS + PGCE<br>
+      <div class="filter-link">
+        <a href="outcome.html" >Know the difference</a>
+      </div>
+    </div>
+  </div>
+  <!-- End of a filter category -->
+  <!-- Start of a filter category -->
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Financing</h4>
+    <div class="filters">
+      <form action="">
+        <input type="checkbox" name="route" value="uni"> Salaried<br>
+        <input type="checkbox" name="route" value="scitt"> Fee paid<br>
+        <div class="filter-link">
+          <a href="outcome.html" >Learn about financing</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End of a filter category -->
+  <!-- Start of a filter category -->
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Study type</h4>
+    <div class="filters">
+      <form action="">
+        <input type="checkbox" name="route" value="uni"> Part time<br>
+        <input type="checkbox" name="route" value="scitt"> Full time<br>
+      </form>
+    </div>
+  </div>
+  <!-- End of a filter category -->
+  <a href="#" class="button">Apply filters</a><br><br>
+  <a href="#" >Clear filters</a>
+{% endmacro %}
+
+{% macro filterResultsV2()%}
+Filter by :
+
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Location</h4>
+  <div class="filters">
+    <form action="">
+      <input class="form-control filter-input results-data"  type="text" name="ni-number" value="London">
+      <select class="form-control filter-input"  name="select-box">
+        <option>5 miles</option>
+        <option>10 miles</option>
+        <option>20 miles</option>
+        <option>50 miles</option>
+        <option>100 miles</option>
+      </select>
+    </form>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category ">
+  <h4 class="heading-small filter-heading">Subjects</h4>
+  <div class="filters fixed-height-200">
+    <form action="">
+      <input type="checkbox" name="subject" value="English"> Art & Design<br>
+      <input type="checkbox" name="subject" value="Physics"> Biology<br>
+      <input type="checkbox" name="subject" value="English"> Business Studies<br>
+      <input type="checkbox" name="subject" value="Chemistry"> Chemistry<br>
+      <input type="checkbox" name="subject" value="Biology"> Classics<br>
+      <input type="checkbox" name="subject" value="Geography"> Computing<br>
+      <input type="checkbox" name="subject" value="PE"> Design & Technology<br>
+      <input type="checkbox" name="subject" value="English"> Drama<br>
+      <input type="checkbox" name="subject" value="Physics"> Economics<br>
+      <input type="checkbox" name="subject" value="English"> English<br>
+      <input type="checkbox" name="subject" value="Chemistry"> Geography<br>
+      <input type="checkbox" name="subject" value="Biology"> History<br>
+      <input type="checkbox" name="subject" value="Geography"> Mathematics<br>
+      <input type="checkbox" name="subject" value="PE"> Modern Foreign Languages<br>
+      <input type="checkbox" name="subject" value="English"> Music<br>
+      <input type="checkbox" name="subject" value="Physics"> Physical Education<br>
+      <input type="checkbox" name="subject" value="English"> Physics<br>
+      <input type="checkbox" name="subject" value="Chemistry"> Religious Education<br>
+      <input type="checkbox" name="subject" value="Biology"> General<br>
+      <input type="checkbox" name="subject" value="Geography"> Other<br>
+    </form>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Study type</h4>
+  <div class="filters">
+    <form action="">
+      <input type="checkbox" name="route" value="uni"> Part time<br>
+      <input type="checkbox" name="route" value="scitt"> Full time<br>
+    </form>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Outcome</h4>
+  <div class="filters">
+    <form action="">
+      <input type="checkbox" name="route" value="uni"> Qualified Teacher Status only<br>
+      <input type="checkbox" name="route" value="scitt"> Post Graduate Certificate in Education only<br>
+      <input type="checkbox" name="route" value="scitt"> Qualified Teacher Status + Post Graduate Certificate in Education<br>
+      <div class="filter-link">
+        <a href="outcome.html" >Know the difference</a>
+      </div>
+    </div>
+  </div>
+  <!-- End of a filter category -->
+  <!-- Start of a filter category -->
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Financing</h4>
+    <div class="filters">
+      <form action="">
+        <input type="radio" name="route" > Salaried<br>
+        <input type="radio" name="route" > Fee paid<br>
+        <input type="radio" name="route" > Both<br>
+        <div class="filter-link">
+          <a href="outcome.html" >Learn about financing</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End of a filter category -->
+  <a href="#" class="button">Apply filters</a><br><br>
+  <a href="#" >Clear filters</a>
+{% endmacro %}
+
+{% macro filterResultsV3()%}
+
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Location</h4>
+  <div class="filters">
+      50 miles around SW13<br>
+    <a href="#">Change</a>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category ">
+  <h4 class="heading-small filter-heading">Subject</h4>
+  <div class="filters">
+    English<br>
+  <a href="#">Change</a>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Study type</h4>
+  <div class="filters">
+    <form action="">
+      <input type="checkbox" name="route" value="uni"> Part time<br>
+      <input type="checkbox" name="route" value="scitt"> Full time<br>
+    </form>
+  </div>
+</div>
+<!-- End of a filter category -->
+
+  <!-- Start of a filter category -->
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Financing</h4>
+    <div class="filters">
+      Without salaries
+      <br>
+      <a href="#">Change</a>
+    </div>
+  </div>
+  <!-- End of a filter category -->
+
+{% endmacro %}
+
+{% macro providerResult(results) %}
+  {% for result in results %}
+    <div class="grid-row results">
+      <h4 class="heading-small">
+        <a href={{result.url}}>{{result.name}}</a>
+      </h4>
+      <div class="grid-row results-data">
+        <div class="column-full">
+          Provider type: {{result.type}}
+        </div>
+      </div>
+      <div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Subjects: {{result.subjects}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Duration: {{result.duration}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Study type: {{result.studyType}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Outcome: <a href="outcome.html">{{result.outcome}}</a>
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Number of partner schools: {{result.noOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Type of partner schools: {{result.typeOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Starts: {{result.starts}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Address: {{result.address}}
+          </div>
+        </div>
+        <div class="grid-row results-data results-link">
+          <div class="column-full">
+            <a href="compare-add2.html">Add to comparison list</a>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+<!-- Changing the comparison link to a button -->
+{% macro providerResultV2(results) %}
+  {% for result in results %}
+    <div class="grid-row results">
+      <h4 class="heading-small">
+        <a href={{result.url}}>{{result.name}}</a>
+      </h4>
+      <div class="grid-row results-data">
+        <div class="column-full">
+          Provider type: {{result.type}}
+        </div>
+      </div>
+      <div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Subjects: {{result.subjects}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Duration: {{result.duration}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Study type: {{result.studyType}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Outcome: <a href="outcome.html">{{result.outcome}}</a>
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Number of partner schools: {{result.noOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Type of partner schools: {{result.typeOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Starts: {{result.starts}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Address: {{result.address}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            <a href="compare-add2.html" class="button">Compare with other courses</a>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+<!-- Changing the comparison link to a button -->
+{% macro providerResultAddedV2(results) %}
+  {% for result in results %}
+    <div class="grid-row results">
+      <h4 class="heading-small">
+        <a href={{result.url}}>{{result.name}}</a>
+      </h4>
+      <div class="grid-row results-data">
+        <div class="column-full">
+          Provider type: {{result.type}}
+        </div>
+      </div>
+      <div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Subjects: {{result.subjects}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Duration: {{result.duration}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Study type: {{result.studyType}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Outcome: <a href="outcome.html">{{result.outcome}}</a>
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Number of partner schools: {{result.noOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Type of partner schools: {{result.typeOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Starts: {{result.starts}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            Address: {{result.address}}
+          </div>
+        </div>
+        <div class="grid-row results-data">
+          <div class="column-full">
+            <a href="results.html" class="button">Remove from comparison list</a>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+<!-- Changing the comparison link to a button -->
+{% macro providerResultV3(results) %}
+  {% for result in results %}
+    <div class="grid-row results">
+      <h4 class="heading-small">
+        <a href={{result.url}}>{{result.name}}</a>
+      </h4>
+      <div class="grid-row results-data-large">
+        <div class="column-full">
+          Provider type: {{result.type}}
+        </div>
+      </div>
+      <div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Subjects: {{result.subjects}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Duration: {{result.duration}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Study type: {{result.studyType}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Outcome: <a href="outcome.html">{{result.outcome}}</a>
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Number of partner schools: {{result.noOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Type of partner schools: {{result.typeOfPartnerSchools}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Starts: {{result.starts}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Address: {{result.address}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            <a href="compare-add2.html" class="button">Compare with other courses</a>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+<!-- Changing the comparison link to a button -->
+
+{% macro tabularResults(results)%}
+<table>
+  <thead>
+    <tr>
+      <th> Provider </th>
+      <th> Approach </th>
+      <th> Outcome </th>
+      <th> Fees </th>
+      <th> Partner schools</th>
+      <th> Employment rate </th>
+      <th> Study type </th>
+    </tr>
+    {%for result in results%}
+    <tr valign="top">
+    <td class="font-xsmall"> <a href="{{result.url}}">{{result.provider}}</td>
+    <td class="font-xsmall"> {{result.approach}}</td>
+    <td class="font-xsmall"> {{result.outcome}}</td>
+    <td class="font-xsmall"> {{result.fees}}</td>
+    <td class="font-xsmall">
+      <ul class="list list-bullet">
+        <li>
+          {{result.noOfSchools}} partner schools
+        </li>
+        <li>
+          {{result.typeOfSchools}}
+        </li>
+      </ul>
+    </td>
+    <td class="font-xsmall"> {{result.employmentRate}}</td>
+    <td class="font-xsmall"> {{result.studyType}}</td>
+    {{ formStart() }}
+    </tr>
+    {%endfor%}
+  </thead>
+</table>
+{% endmacro %}
+
+{% macro dateInput(id,label) %}
+<label class="form-label bold-text" for="{{label}}">
+    {{label}}
+    </label>
+<fieldset>
+    <legend>
+        <span class="form-hint" id="example-dob-hint-3">For example, 31 3 1993</span>
+    </legend>
+    <div class="form-date">
+        <div class="form-group form-group-day">
+            <label class="form-label" for="example-dob-day-3">Day</label>
+            <input class="form-control" id="example-dob-day-3" name="dob-day" type="number" pattern="[0-9]*"
+                   min="0" max="31" aria-describedby="example-dob-hint-3">
+        </div>
+        <div class="form-group form-group-month">
+            <label class="form-label" for="example-dob-month-3">Month</label>
+            <input class="form-control" id="example-dob-month-3" name="dob-month" type="number" pattern="[0-9]*"
+                   min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+            <label class="form-label" for="example-dob-year-3">Year</label>
+            <input class="form-control" id="example-dob-year-3" name="dob-year" type="number" pattern="[0-9]*"
+                   min="0" max="2016">
+        </div>
+    </div>
+</fieldset>
+{% endmacro %}
+
+{%macro update(date,update)%}
+
+<ul class="list list-bullet">
+<li>
+<div class="row">
+  <div class="column-one-third">{{date}}:</div>
+  <div class="column-two-third"><a href="#">{{update}}</a></div>
+</div>
+</li>
+</ul>
+
+{%endmacro%}
+
+{% macro helpText(label,text)%}
+<details>
+  <summary><span class="summary">{{label}}</span></summary>
+  <div class="panel panel-border-narrow">
+    <p>
+      {{text}}
+    </p>
+  </div>
+</details>
+{% endmacro %}
+
+{% macro monthInput(id,label) %}
+<div class="form-group">
+<label class="form-label bold-text" for="{{label}}">
+    {{label}}
+    </label>
+<fieldset>
+    <legend>
+        <span class="form-hint" id="example-dob-hint-3">For example, 3 1993</span>
+    </legend>
+    <div class="form-date">
+
+        <div class="form-group form-group-month">
+            <label class="form-label" for="example-dob-month-3">Month</label>
+            <input class="form-control" id={{id}}-month name="dob-month" type="number" pattern="[0-9]*"
+                   min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+            <label class="form-label" for="example-dob-year-3">Year</label>
+            <input class="form-control" id={{id}}-year name="dob-year" type="number" pattern="[0-9]*"
+                   min="0" max="2016">
+        </div>
+    </div>
+</fieldset>
+</div>
+{% endmacro %}
+
+{% macro secondaryButton(label,url)%}
+<div class="form-group secondaryButtonContainer">
+  <a href={{url}} class="secondaryButton">{{label}}</a>
+</div>
+{% endmacro %}
+
+{% macro link(url, label)%}
+<a href={{url}}>{{label}}</a>
+{% endmacro %}
+
+{% macro address(question,helpText,url)%}
+<div class="form-group addressContainer">
+  <label class="form-label bold-text" for={{id}}>{{question}}</label>
+  <legend>
+      <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
+  </legend>
+  <input class="form-control postcodeTextbox" name={{id}} type="text" id={{id}}>
+  <a href={{url}} class="addressButton">Find UK address</a>
+</div>
+{% endmacro %}

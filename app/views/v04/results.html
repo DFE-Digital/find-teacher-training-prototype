@@ -1,0 +1,177 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="column-three-thirds ">
+    {{macros.h1("73 teacher training courses found")}}
+    <p>
+      Courses around <span class="bold-text">London</span> offering training in <span class="bold-text">English</span>.
+      <br>{{macros.link("sign-in","Save this search")}}
+    </p>
+
+  </div>
+  <div>
+    <div class="grid-row">
+
+      <div class="column-one-third">
+        {{ macros.filterResultsV3()}}
+      </div>
+
+      <div class="column-two-thirds">
+        {{ macros.providerResultV3([
+
+          {
+            'url':'courses/lmu/ucl.html',
+            'name':'London Metropolitan University',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Postgraduate Certificate in Education and Qualified Teacher Status',
+            'noOfPartnerSchools':'17',
+            'typeOfPartnerSchools':'Primary, Secondary, Boys only schools, Girls only schools',
+            'starts':'September 2017',
+            'address':'Holloway Road, London N7 8DB'
+          },
+          {
+            'url':'courses/tls/ucl.html',
+            'name':'Teaching London SCITT',
+            'type':'SCITT',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Postgraduate Certificate in Education and Qualified Teacher Status',
+            'noOfPartnerSchools':'28',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'Gower Street, London WC1E 6BT'
+          },
+          {
+            'url':'courses/gul/ucl.html',
+            'name':'Goldsmiths University of London',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Qualified Teacher Status',
+            'noOfPartnerSchools':'8',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'New Cross, London SE14 6NW'
+          },
+          {
+            'url':'courses/gul/ucl.html',
+            'name':'Kensignton University of London',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Qualified Teacher Status',
+            'noOfPartnerSchools':'8',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'New Cross, London SE14 6NW'
+          },
+          {
+            'url':'courses/gul/ucl.html',
+            'name':'Imperial College London',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Qualified Teacher Status',
+            'noOfPartnerSchools':'8',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'New Cross, London SE14 6NW'
+          },
+          {
+            'url':'courses/gul/ucl.html',
+            'name':'University of Westminster',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Qualified Teacher Status',
+            'noOfPartnerSchools':'8',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'New Cross, London SE14 6NW'
+          },
+          {
+            'url':'courses/gul/ucl.html',
+            'name':'Brunnel University London',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Qualified Teacher Status',
+            'noOfPartnerSchools':'8',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'New Cross, London SE14 6NW'
+          },
+          {
+            'url':'courses/gul/ucl.html',
+            'name':'Middlesex University',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Qualified Teacher Status',
+            'noOfPartnerSchools':'8',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'New Cross, London SE14 6NW'
+          },
+          {
+            'url':'courses/gul/ucl.html',
+            'name':'Central Saint Martins',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Qualified Teacher Status',
+            'noOfPartnerSchools':'8',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'New Cross, London SE14 6NW'
+          },
+          {
+            'url':'courses/kcl/ucl.html',
+            'name':'King\'s College London',
+            'type':'University',
+            'subjects':'English',
+            'duration':'12 months',
+            'studyType':'Full time',
+            'outcome':'Postgraduate Certificate in Education and Qualified Teacher Status',
+            'noOfPartnerSchools':'13',
+            'typeOfPartnerSchools':'Primary, Secondary, Girls only school',
+            'starts':'September 2017',
+            'address':'Lampton Avenue, Hounslow TW3 4EP'
+          }
+          ])}}
+
+          <div class="pagination">
+            <div class="pagination-controls">
+              <ul class="pagination-items">
+                <li>1</li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+              <a class="pagination-next" href="#">Next</a>
+            </div>
+            <div class="pagination-summary">Showing 1 &ndash; 10 of 73 courses</div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+  {% endblock %}

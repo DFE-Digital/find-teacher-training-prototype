@@ -1,0 +1,204 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at in app/assets/sass/patterns/ to see which files are imported.
+@import 'patterns/check-your-answers';
+@import 'patterns/task-list';
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+}
+.iterationBody{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.course-detail h4{
+  margin-top: 0px;
+}
+.course-detail h3{
+  margin-top: 0px;
+}
+.compare-button{
+  float:right;
+  margin-top: -7px;
+  margin-right: 10px;
+}
+.course-detail{
+  margin-bottom:20px;
+}
+.column-one-third ul{
+  margin: 0px;
+}
+.column-one-third h3 {
+  margin-top: 5px;
+}
+.compare-text{
+  float: left;
+}
+.bold-text{
+  font-weight: bold;
+}
+.compare-link{
+  float: right;
+  padding-right: 20px;
+}
+.sticky-header{
+  background: #fff2a6;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  width: 960px;
+  height: 36px;
+  padding-top: 15px;
+  padding-left: 10px;
+  z-index: 10000;
+}
+.results-data{
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.results-data-large{
+  //margin-bottom: 8px;
+}
+.results-link{
+  float:right;
+}
+.filter-link{
+  margin-top: 5px;
+}
+.results{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.fixed-height-200{
+  height:100px;
+  overflow-y: scroll;
+}
+.filter-input{
+  width: 250px;
+}
+.filter-heading{
+  margin-top:3px;
+}
+.apply_button{
+}
+.filter-category{
+  background-color: #dee0e2;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.filters{
+  background-color: #ffffff;
+  padding: 5px;
+}
+.compare .grid-row .column-one-quarter{
+  margin-bottom: 5px;
+}
+.sidebar-section{
+  margin-top: 20px;
+}
+.greyButton{
+  color: #000;
+  margin-top: 20px;
+  background: #DEE0E2;
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 2px solid #444;
+}
+.marginTop20{
+  margin-top: 20px;
+}
+.userDetails{
+  float: right;
+  color: #fff;
+}
+.secondaryButton{
+  color: #fff;
+  margin-top: 20px;
+  background: #2B8CC4;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 2px solid #444;
+}
+.secondaryButtonContainer a{
+  color: #fff;
+}
+
+.addressButton{
+  color: #fff;
+  margin-top: 20px;
+  background: #2B8CC4;
+  padding: 6px 15px 5px 15px;;
+  text-decoration: none;
+  border-bottom: 2px solid #444;
+}
+.addressContainer a{
+  color: #fff;
+}
+.qualification{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.topSeparator{
+  border-top: 1px solid #ccc;
+}
+
+.postcodeTextbox{
+  width:200px;
+}
+.bursarySubjectInfo{
+  float: left;
+  margin-left: 12px;
+}
+.subject{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.results .grid-row{
+  padding-bottom: 12px;
+}
+
+.pagination{
+
+}
+
+.pagination-controls{
+float: right;
+}
+
+.pagination-items{
+float: left;
+}
+
+.pagination-items li{
+float: left;
+margin-right: 10px;
+}
+
+.pagination-summary{
+
+}
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <a class="link-back" href="/docs/tutorials-and-examples">Back</a>
+
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend>
+            <h1 class="heading-large">
+              Do you want to earn a salary while you train?
+            </h1>
+            <p class="body-text">
+
+            </p>
+          </legend>
+
+          <div class="multiple-choice" data-target="providerName">
+            <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+            <label for="example-contact-by-email">Yes</label>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="providerName">
+            <ul class="list list-bullet">
+              <li>This option is best suited for career changers</li>
+              <li>Providers may require you to have prior working experience for you to be eligible</li>
+              <li>Some providers might require you to have working experience in a school</li>
+            </ul>
+          </div>
+          <div class="multiple-choice" data-target="location">
+            <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+            <label for="example-contact-by-phone">No</label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <a href="results.html" class="button">Find courses</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

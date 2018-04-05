@@ -1,0 +1,90 @@
+{% extends "layout-withNav.html" %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="#">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <!--
+      <h1 class="heading-xlarge">
+        Welcome John !
+      </h1>
+    -->
+
+      <div class="notice">
+        <i class="icon icon-important">
+          <span class="visually-hidden">Warning</span>
+        </i>
+        <strong class="bold-small">
+          Activate your account
+        </strong>
+      </div>
+      <div class="marginTop20">
+        <p>
+          You need to validate your email address before you can apply to a course. Follow the instructions sent to your email address <span class="bold-text">johndoe@example.com</span>. If you have not received it, please check your spam or junk folders. You can also <a href="#">request a new activation email</a>
+        </p>
+      </div>
+      <div>
+        <h2 class="heading-medium">
+          Create your profile
+        </h2>
+        <p>
+          A profile is a part of your application that you submit to the provider of the courses. A profile consists generic details about you like personal details, contact details, education details and more that remain common across all your applications.
+        </p>
+        <a href="profileCreation/index.html" class="button">Create your profile</a>
+      </div>
+      <!--
+      <div>
+        <h2 class="heading-medium">
+          Course preferences
+        </h2>
+        <p>
+          Setup course preferences so that we can recommend courses that best suit you. You can change the course preferences anytime you need.</p>
+          <a href="course-preference.html" class="button">Setup course preferences</a>
+      </div>
+
+
+      <div>
+        <h2 class="heading-medium">
+          Find a teacher training course
+        </h2>
+        <p>
+          <a href="search.html">Search for a teacher training course in England</a>
+        </p>
+      </div>
+      -->
+      <div>
+        <h2 class="heading-medium">
+          Saved applications
+        </h2>
+        <p>
+          <a href="#">University College London</a>
+        </p>
+      </div>
+
+      </div>
+
+      <div class="column-one-third">
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Teaching</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">How to become a teacher?</a></li>
+              <li><a href="#">Bursaries and finance</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+
+  </main>
+
+  {% endblock %}
