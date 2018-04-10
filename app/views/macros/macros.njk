@@ -1,4 +1,4 @@
-{% macro betaBanner()%}
+{% macro betaBanner() %}
 <div class="phase-banner">
   <p>
     <strong class="phase-tag">BETA</strong>
@@ -14,39 +14,39 @@
 
 {% macro textbox(id,label,helpText) %}
 <div class="form-group">
-  <label class="form-label bold-text" for={{id}}>{{label}}</label>
+  <label class="form-label bold-text" for="{{id}}">{{label}}</label>
   <legend>
       <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
   </legend>
-  <input class="form-control" name={{id}} type="text" id={{id}}>
+  <input class="form-control" name="{{id}}" type="text" id="{{id}}">
 </div>
 {% endmacro %}
 
 {% macro textArea(id,label,helpText) %}
 <div class="form-group">
-  <label class="form-label bold-text" for={{id}}>{{label}}</label>
+  <label class="form-label bold-text" for="{{id}}">{{label}}</label>
   <legend>
       <span class="form-hint" id="hint">{{helpText}}</span>
   </legend>
-  <textarea rows="5" class="form-control" name={{id}} type="text" id={{id}}></textarea>
+  <textarea rows="5" class="form-control" name="{{id}}" type="text" id="{{id}}"></textarea>
 </div>
 {% endmacro %}
 
 {% macro password(id,label) %}
 <div class="form-group">
-  <label class="form-label bold-text" for={{id}}>{{label}}</label>
-  <input class="form-control" name={{id}} type="password" id={{id}}>
+  <label class="form-label bold-text" for="{{id}}">{{label}}</label>
+  <input class="form-control" name="{{id}}" type="password" id="{{id}}">
 </div>
 {% endmacro %}
 
 {% macro radio(id,label,groupName,target,value) %}
-  <div class="multiple-choice" data-target={{target}}>
-    <input id={{id}} type="radio" name={{groupName}} value={{value}}>
-    <label for={{target}} class="bold-text">{{label}}</label>
+  <div class="multiple-choice" data-target="{{target}}">
+    <input id="{{id}}" type="radio" name="{{groupName}}" value="{{value}}">
+    <label for="{{target}}" class="bold-text">{{label}}</label>
   </div>
 {% endmacro %}
 
-{% macro radioInline(id,label,options)%}
+{% macro radioInline(id,label,options) %}
 <div class="form-group">
   <fieldset class="inline">
     <legend>
@@ -54,10 +54,10 @@
         {{label}}
         </h4>
     </legend>
-    {%for option in options%}
+    {% for option in options%}
       <div class="multiple-choice">
-        <input id={{option}} type="radio" name="radio-inline-group" value={{option}}>
-        <label for={{option}}>{{option}}</label>
+        <input id="{{option}}" type="radio" name="radio-inline-group" value="{{option}}">
+        <label for="{{option}}">{{option}}</label>
       </div>
     {%endfor%}
   </fieldset>
@@ -72,7 +72,7 @@
 {% endmacro %}
 
 {% macro formStart(method,action) %}
-<form action={{action}} method={{method}} class="form">
+<form action="{{action}}" method="{{method}}" class="form">
 {% endmacro %}
 
 {% macro formEnd() %}
@@ -86,11 +86,11 @@
 {% endmacro %}
 
 {% macro backLink(label,url) %}
-<a class="link-back" href={{url}}>{{label}}</a>
+<a class="link-back" href="{{url}}">{{label}}</a>
 {% endmacro %}
 
 {% macro insetStart(id) %}
-<div class="panel panel-border-narrow js-hidden" id={{id}}>
+<div class="panel panel-border-narrow js-hidden" id="{{id}}">
 {% endmacro %}
 
 {% macro insetEnd() %}
@@ -99,8 +99,8 @@
 
 {% macro selectBox(id,label,name,options) %}
   <div class="form-group">
-    <label class="form-label bold-text" for={{id}}>{{label}}</label>
-    <select class="form-control" id={{id}} name={{name}}>
+    <label class="form-label bold-text" for="{{id}}">{{label}}</label>
+    <select class="form-control" id="{{id}}" name="{{name}}">
     {% for option in options%}
       <option>{{option}}</option>
       {% endfor %}
@@ -111,7 +111,7 @@
 
 {% macro submitLink(label,url) %}
   <div class="form-group">
-    <a href={{url}} class="button">{{label}}</a>
+    <a href="{{url}}" class="button">{{label}}</a>
   </div>
 {% endmacro %}
 
@@ -126,28 +126,28 @@
 {% endmacro %}
 
 
-{% macro checkbox(name,choices)%}
+{% macro checkbox(name,choices) %}
 <fieldset class="form-group">
   {% for choice in choices %}
     <div class="multiple-choice">
-      <input id={{choice|replace(" ","")}}  name={{choice}} type="checkbox">
-      <label for={{choice|replace(" ","")}} class="bold-text">{{choice}}</label>
+      <input id="{{choice|replace(" ","")}}"  name="{{choice}}" type="checkbox">
+      <label for="{{choice|replace(" ","")}}" class="bold-text">{{choice}}</label>
     </div>
   {% endfor %}
 </fieldset>
 {% endmacro %}
 
-{% macro checkboxWithBursary(name,choices,degree)%}
+{% macro checkboxWithBursary(name,choices,degree) %}
 <fieldset class="form-group ">
   {% for choice in choices %}
     <div class="multiple-choice subject">
       <div>
-          <input id={{choice|replace(" ","")}}  name={{choice}} type="checkbox">
-          <label for={{choice|replace(" ","")}} class="bold-text">{{choice}}</label>
+        <input id="{{choice|replace(" ","")}}"  name="{{choice}}" type="checkbox">
+        <label for="{{choice|replace(" ","")}}" class="bold-text">{{choice}}</label>
       </div>
       {% if choice | bursaryCost(degree) %}
         <div class="bursarySubjectInfo">
-            {{ choice | bursaryCost(degree) }} bursary available
+          {{ choice | bursaryCost(degree) }} bursary available
         </div>
       {% endif %}
     </div>
@@ -155,17 +155,17 @@
 </fieldset>
 {% endmacro %}
 
-{% macro checkboxWithHelpText(name,choices)%}
+{% macro checkboxWithHelpText(name,choices) %}
 <fieldset class="form-group ">
   {% for choice in choices %}
     <div class="multiple-choice">
       <div>
-          <input name={{choice.label}} type="checkbox">
-          <label class="bold-text">{{choice.label}}</label>
+        <input name="{{choice.label}}" type="checkbox">
+        <label class="bold-text">{{choice.label}}</label>
       </div>
-        <div class="bursarySubjectInfo">
-             {{choice.helpText}}
-        </div>
+      <div class="bursarySubjectInfo">
+        {{choice.helpText}}
+      </div>
     </div>
   {% endfor %}
 </fieldset>
@@ -173,13 +173,13 @@
 
 {% macro bulletList(items) %}
   <ul class="list list-bullet">
-    {%for item in items%}
+    {% for item in items%}
     <li>{{item}}</li>
     {% endfor %}
   </ul>
 {% endmacro %}
 
-{% macro filterResults()%}
+{% macro filterResults() %}
 Filter by :
 
 <!-- Start of a filter category -->
@@ -270,7 +270,7 @@ Filter by :
   <a href="#" >Clear filters</a>
 {% endmacro %}
 
-{% macro filterResultsV2()%}
+{% macro filterResultsV2() %}
 Filter by :
 
 <!-- Start of a filter category -->
@@ -363,7 +363,7 @@ Filter by :
   <a href="#" >Clear filters</a>
 {% endmacro %}
 
-{% macro filterResultsV3()%}
+{% macro filterResultsV3() %}
 
 <!-- Start of a filter category -->
 <div class="filter-category">
@@ -408,7 +408,7 @@ Filter by :
 
 {% endmacro %}
 
-{% macro filterResultsV4()%}
+{% macro filterResultsV4() %}
 
 <!-- Start of a filter category -->
 <div class="filter-category">
@@ -475,7 +475,7 @@ Filter by :
   {% for result in results %}
     <div class="grid-row results">
       <h4 class="heading-small">
-        <a href={{result.url}}>{{result.name}}</a>
+        <a href="{{result.url}}">{{result.name}}</a>
       </h4>
       <div class="grid-row results-data">
         <div class="column-full">
@@ -540,7 +540,7 @@ Filter by :
   {% for result in results %}
     <div class="grid-row results">
       <h4 class="heading-small">
-        <a href={{result.url}}>{{result.name}}</a>
+        <a href="{{result.url}}">{{result.name}}</a>
       </h4>
       <div class="grid-row results-data">
         <div class="column-full">
@@ -605,7 +605,7 @@ Filter by :
   {% for result in results %}
     <div class="grid-row results">
       <h4 class="heading-small">
-        <a href={{result.url}}>{{result.name}}</a>
+        <a href="{{result.url}}">{{result.name}}</a>
       </h4>
       <div class="grid-row results-data">
         <div class="column-full">
@@ -670,7 +670,7 @@ Filter by :
   {% for result in results %}
     <div class="grid-row results">
       <h4 class="heading-small">
-        <a href={{result.url}}>{{result.name}}</a>
+        <a href="{{result.url}}">{{result.name}}</a>
       </h4>
       <div class="grid-row results-data-large">
         <div class="column-full">
@@ -737,7 +737,7 @@ Filter by :
   {% for result in results %}
     <div class="grid-row results">
       <h2 class="heading-medium">
-        <a href={{result.url}}>{{result.subject}}</a>
+        <a href="{{result.url}}">{{result.subject}}</a>
       </h2>
       <div class="grid-row results-data-large">
         <div class="column-full">
@@ -765,9 +765,6 @@ Filter by :
             Financial support: {{result.financialSupport}}
           </div>
         </div>
-
-        <div>
-        </div>
       </div>
     </div>
   {% endfor %}
@@ -775,7 +772,7 @@ Filter by :
 
 
 <!-- Header on top of the results showing number of courses, New search and sorting order -->
-{% macro resultsHeader()%}
+{% macro resultsHeader() %}
 <div class="resultsHeader">
   <div>
     198 courses found
@@ -784,18 +781,18 @@ Filter by :
     </span>
   </div>
   <div class="resultsSortingOptions">
-      <label class="form-label sortLabel" for="select-box">Sorted by</label>
-      <select class="form-control sortSelectBox" id="select-box" name="select-box">
-        <option>Alphabetical A-Z</option>
-        <option>Alphabetical Z-A</option>
-      </select>
+    <label class="form-label sortLabel" for="select-box">Sorted by</label>
+    <select class="form-control sortSelectBox" id="select-box" name="select-box">
+      <option>Alphabetical A-Z</option>
+      <option>Alphabetical Z-A</option>
+    </select>
   </div>
 </div>
 {% endmacro %}
 
 
 
-{% macro tabularResults(results)%}
+{% macro tabularResults(results) %}
 <table>
   <thead>
     <tr>
@@ -807,7 +804,7 @@ Filter by :
       <th> Employment rate </th>
       <th> Study type </th>
     </tr>
-    {%for result in results%}
+    {% for result in results %}
     <tr valign="top">
     <td class="font-xsmall"> <a href="{{result.url}}">{{result.provider}}</td>
     <td class="font-xsmall"> {{result.approach}}</td>
@@ -860,20 +857,18 @@ Filter by :
 </fieldset>
 {% endmacro %}
 
-{%macro update(date,update)%}
-
+{% macro update(date,update) %}
 <ul class="list list-bullet">
-<li>
-<div class="row">
-  <div class="column-one-third">{{date}}:</div>
-  <div class="column-two-third"><a href="#">{{update}}</a></div>
-</div>
-</li>
+  <li>
+  <div class="row">
+    <div class="column-one-third">{{date}}:</div>
+    <div class="column-two-third"><a href="#">{{update}}</a></div>
+  </div>
+  </li>
 </ul>
+{% endmacro %}
 
-{%endmacro%}
-
-{% macro helpText(label,text)%}
+{% macro helpText(label,text) %}
 <details>
   <summary><span class="summary">{{label}}</span></summary>
   <div class="panel panel-border-narrow">
@@ -886,10 +881,10 @@ Filter by :
 
 {% macro monthInput(id,label) %}
 <div class="form-group">
-<label class="form-label bold-text" for="{{label}}">
+  <label class="form-label bold-text" for="{{label}}">
     {{label}}
-    </label>
-<fieldset>
+  </label>
+  <fieldset>
     <legend>
         <span class="form-hint" id="example-dob-hint-3">For example, 3 1993</span>
     </legend>
@@ -897,36 +892,36 @@ Filter by :
 
         <div class="form-group form-group-month">
             <label class="form-label" for="example-dob-month-3">Month</label>
-            <input class="form-control" id={{id}}-month name="dob-month" type="number" pattern="[0-9]*"
+            <input class="form-control" id="{{id}}"-month name="dob-month" type="number" pattern="[0-9]*"
                    min="0" max="12">
         </div>
         <div class="form-group form-group-year">
             <label class="form-label" for="example-dob-year-3">Year</label>
-            <input class="form-control" id={{id}}-year name="dob-year" type="number" pattern="[0-9]*"
+            <input class="form-control" id="{{id}}"-year name="dob-year" type="number" pattern="[0-9]*"
                    min="0" max="2016">
         </div>
     </div>
-</fieldset>
+  </fieldset>
 </div>
 {% endmacro %}
 
-{% macro secondaryButton(label,url)%}
+{% macro secondaryButton(label,url) %}
 <div class="form-group secondaryButtonContainer">
-  <a href={{url}} class="secondaryButton">{{label}}</a>
+  <a href="{{url}}" class="secondaryButton">{{label}}</a>
 </div>
 {% endmacro %}
 
-{% macro link(url, label)%}
-<a href={{url}}>{{label}}</a>
+{% macro link(url, label) %}
+<a href="{{url}}">{{label}}</a>
 {% endmacro %}
 
-{% macro address(question,helpText,url)%}
+{% macro address(question,helpText,url) %}
 <div class="form-group addressContainer">
-  <label class="form-label bold-text" for={{id}}>{{question}}</label>
+  <label class="form-label bold-text" for="{{id}}">{{question}}</label>
   <legend>
-      <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
+    <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
   </legend>
-  <input class="form-control postcodeTextbox" name={{id}} type="text" id={{id}}>
-  <a href={{url}} class="addressButton">Find UK address</a>
+  <input class="form-control postcodeTextbox" name="{{id}}" type="text" id="{{id}}">
+  <a href="{{url}}" class="addressButton">Find UK address</a>
 </div>
 {% endmacro %}
