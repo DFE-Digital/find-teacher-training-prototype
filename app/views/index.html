@@ -1,39 +1,49 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-Becoming a teacher alpha
+Find postgraduate teacher training for business studies
 {% endblock %}
 
 {% block content %}
-<div class="grid-row iterationBody">
-  <div class="column-full font-xsmall">
-    <h1 class="heading-large">
-      Becoming a teacher beta
-    </h1>
-    <p class="bold-text">
-      <a href="/v01/">The latest version of the prototype</a>
-    </p>
-    <h1 class="heading-medium">
-      Experiments
-    </h1>
-    <p>
-      The following are the experiments we have conducted so far.
-    </p>
-    <table >
-      <thead>
-        <tr>
-          <th >Theme</th>
-          <th >Version</th>
-          <th >Experiment / Hypotheses</th>
-          <th >URL</th>
-          <th >Key findings </th>
-        </tr>
-      </thead>
-      <tbody>
 
-      </tbody>
-    </table>
+<main id="content" role="main">
+  {{macros.betaBanner()}}
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Find postgraduate teacher training for business studies
+      </h1>
+      <p class="lede">
+        Use this service to search and compare postgraduate teacher training courses in England.
+      </p>
+
+      <h2 class="heading-medium">Qualifications and experience</h2>
+      <div>
+        <p>
+          To get onto a training course you’ll need the following qualifications, or the international equivalent:
+        </p>
+        <ul class="list list-bullet">
+          <li>grade C or above GCSEs in maths and English, plus a science subject if you want to teach in a primary school</li>
+          <li>a British degree</li>
+        </ul>
+        <p>
+          In most cases you’ll also need <a href="https://getintoteaching.education.gov.uk/school-experience"> school experience</a>.
+        </p>
+
+        <p>
+          If English isn't your first language you'll need to pass the IELTS exam with a score of 6.5 or higher, or an equivalent qualification.
+        </p>
+
+        <a class="button button-start" href="/start/location" role="button">Get started</a>
+
+        <h2 class="heading-medium">If you don’t want to teach business studies</h2>
+        <p>You can <a href="https://www.ucas.com/ucas/teacher-training/ucas-teacher-training-search-training-programmes">find all teacher training courses</a>  on the UCAS website. </p>
+        <h2 class="heading-medium">If you don’t have a degree</h2>
+        <p>Find out about <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training"> teaching if you don’t have a degree</a>  on the Get into Teaching website. </p>
+      </div>
+    </div>
   </div>
-</div>
-
+</main>
 {% endblock %}

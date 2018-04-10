@@ -10,8 +10,10 @@ Question page
   {{macros.betaBanner()}}
   <div class="grid-row">
     <div class="column-full">
-      {{macros.backLink("Back to results","../results.html")}}
-      {{macros.h1("Choose your search")}}
+      {{ macros.backLink("Back to start","/") }}
+      {{ macros.h1("Choose your search") }}
+
+      <form action="/start/funding" method="post" class="form">
         <div class="form-group">
 
           {{ macros.radio("radioProviderLocation","By postcode, town or city","radioSearchType","insetProviderLocation") }}
@@ -27,9 +29,9 @@ Question page
             {{ macros.textbox("providerNameInput","Training provider ")}}
           {{ macros.insetEnd()}}
         </div>
-        <a href="../results.html" class="button">Find courses</a>
 
-
+        {{macros.submit("Next")}}
+      </form>
     </div>
   </div>
 </main>
