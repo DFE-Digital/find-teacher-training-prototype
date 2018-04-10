@@ -1,3 +1,17 @@
+{% macro betaBanner()%}
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">BETA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+<div class="phase-banner beta-banner">
+  <p>
+    You can <a href="https://www.ucas.com/ucas/teacher-training/ucas-teacher-training-search-training-programmes">search for other teacher training courses</a> on the UCAS website.
+  </p>
+</div>
+{% endmacro %}
+
 {% macro textbox(id,label,helpText) %}
 <div class="form-group">
   <label class="form-label bold-text" for={{id}}>{{label}}</label>
@@ -36,9 +50,9 @@
 <div class="form-group">
   <fieldset class="inline">
     <legend>
-      <h1 class="heading-small">
+      <h4 class="heading-small">
         {{label}}
-        </h1>
+        </h4>
     </legend>
     {%for option in options%}
       <div class="multiple-choice">
@@ -66,13 +80,13 @@
 {% endmacro %}
 
 {% macro h1(text) %}
-<h1 class="heading-large">
+<h1 class="heading-xlarge">
 {{text}}
 </h1>
 {% endmacro %}
 
-{% macro backLink(url) %}
-<a class="link-back" href={{url}}>Back</a>
+{% macro backLink(label,url) %}
+<a class="link-back" href={{url}}>{{label}}</a>
 {% endmacro %}
 
 {% macro insetStart(id) %}
@@ -103,7 +117,7 @@
 
 {% macro submit(label) %}
 <div class="form-group">
-  <input type="submit" class="button" value={{label}}>
+  <input type="submit" class="button" value="{{label}}">
 </div>
 {% endmacro %}
 
@@ -136,6 +150,22 @@
             {{ choice | bursaryCost(degree) }} bursary available
         </div>
       {% endif %}
+    </div>
+  {% endfor %}
+</fieldset>
+{% endmacro %}
+
+{% macro checkboxWithHelpText(name,choices)%}
+<fieldset class="form-group ">
+  {% for choice in choices %}
+    <div class="multiple-choice">
+      <div>
+          <input name={{choice.label}} type="checkbox">
+          <label class="bold-text">{{choice.label}}</label>
+      </div>
+        <div class="bursarySubjectInfo">
+             {{choice.helpText}}
+        </div>
     </div>
   {% endfor %}
 </fieldset>
@@ -372,6 +402,69 @@ Filter by :
       Without salaries
       <br>
       <a href="#">Change</a>
+    </div>
+  </div>
+  <!-- End of a filter category -->
+
+{% endmacro %}
+
+{% macro filterResultsV4()%}
+
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Location</h4>
+  <div class="filters">
+      50 miles around SW13
+  </div>
+  <div class="filter-link">
+    <a href="filters/searchBy.html" >Change location</a>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category ">
+  <h4 class="heading-small filter-heading">Subject</h4>
+  <div class="filters">
+    Business studies
+  </div>
+  <div class="filter-link">
+    <a href="filters/subjects.html" >Change subjects</a>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Financial support</h4>
+  <div class="filters">
+    All
+  </div>
+  <div class="filter-link">
+    <a href="filters/finance.html" >Change financial support options</a>
+  </div>
+</div>
+<!-- End of a filter category -->
+<!-- Start of a filter category -->
+<div class="filter-category">
+  <h4 class="heading-small filter-heading">Study type</h4>
+  <div class="filters">
+    Full time (12 months),<br>
+    Part time (18-24 months)
+  </div>
+  <div class="filter-link">
+    <a href="filters/studyType.html" >Change study type</a>
+  </div>
+</div>
+<!-- End of a filter category -->
+
+  <!-- Start of a filter category -->
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Qualifications</h4>
+    <div class="filters">
+      Postgraduate Certificate in Education with Qualified Teacher Status,<br>
+      Qualified Teacher Status
+    </div>
+    <div class="filter-link">
+      <a href="filters/qualifications.html" >Change qualifications</a>
     </div>
   </div>
   <!-- End of a filter category -->
@@ -638,6 +731,69 @@ Filter by :
 {% endmacro %}
 
 <!-- Changing the comparison link to a button -->
+
+<!-- Changing the comparison link to a button -->
+{% macro resultsV4(results) %}
+  {% for result in results %}
+    <div class="grid-row results">
+      <h2 class="heading-medium">
+        <a href={{result.url}}>{{result.subject}}</a>
+      </h2>
+      <div class="grid-row results-data-large">
+        <div class="column-full">
+          Training provider: {{result.trainingProvider}}
+        </div>
+      </div>
+      <div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Training provider's location: {{result.trainingProviderLocation}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Study type: {{result.studyType}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Vacancies: {{result.vacancies}}
+          </div>
+        </div>
+        <div class="grid-row results-data-large">
+          <div class="column-full">
+            Financial support: {{result.financialSupport}}
+          </div>
+        </div>
+
+        <div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+
+<!-- Header on top of the results showing number of courses, New search and sorting order -->
+{% macro resultsHeader()%}
+<div class="resultsHeader">
+  <div>
+    198 courses found
+    <span class="">
+      <a href>New search</a>
+    </span>
+  </div>
+  <div class="resultsSortingOptions">
+      <label class="form-label sortLabel" for="select-box">Sorted by</label>
+      <select class="form-control sortSelectBox" id="select-box" name="select-box">
+        <option>Alphabetical A-Z</option>
+        <option>Alphabetical Z-A</option>
+      </select>
+  </div>
+</div>
+{% endmacro %}
+
+
 
 {% macro tabularResults(results)%}
 <table>

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {{macros.betaBanner()}}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {{macros.backLink("Back to results","../results.html")}}
+      {{macros.h1("Financial support while you train")}}
+      <p>Some courses come with financial support to help you with the cost of teacher training.</p>
+        <div class="form-group">
+          {{ macros.radio("radioSalary","Show courses with and without financial support","radioSalary","none") }}
+          {{ macros.radio("radioSalary","Only show me courses that come with financial support","radioSalary","insetYes") }}
+            {{ macros.insetStart("insetYes") }}
+            <p>Show me courses that come with a:</p>
+            <h3 class="heading-small">Salary</h3>
+            <p>Earn a salary while you train. If you choose this type of course you don’t pay any fees.</p>
+            <p>Salaries are taxed. The precise amount you get varies – it depends on the training provider and subject.</p>
+            <h3 class="heading-small">Financial support for other subjects</h3>
+            <p>Other subjects offer other types of financial support, besides salaries.</p>
+            <p>With a bursary you could get up to £26,000 tax free. You’ll need a 2:2 degree or higher to be eligible.</p>
+            <p>With a scholarship you could get up to £28,000 tax free. However, these are only available to outstanding graduates – you’ll usually need a 2:1 or higher, and to provide evidence that you’re passionate about the subject. Scholarships also give you access to networking, training resources and other support.</p>
+            <p>If you do get a scholarship you can’t get a bursary.</p>
+            <p>Find out <a href="#">more about financial support</a> on the Get into Teaching website.</p>
+            {{ macros.insetEnd()}}
+        </div>
+        <a href="../results.html" class="button">Find courses</a>
+</main>
+
+{% endblock %}

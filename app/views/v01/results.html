@@ -1,0 +1,134 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  {{macros.betaBanner()}}
+  <div class="column-three-thirds ">
+    {{macros.h1("Business studies teacher training courses")}}
+  </div>
+  <div>
+    <div class="grid-row">
+
+      <div class="column-one-third">
+        {{ macros.filterResultsV4()}}
+      </div>
+
+      <div class="column-two-thirds">
+        {{macros.resultsHeader()}}
+        {{ macros.resultsV4([
+
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'None'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          }
+          ])}}
+            <div class="pagination">
+                  <a href="#"  rel="next" aria-label="Go to page 2 of 20">
+                    <span class="paginationTitle">
+                      Next page
+                      <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                        <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                      </svg>
+                    </span>
+                      <br>
+                      <span class="pub-c-pagination__link-label">2 of 20</span>
+                  </a>
+            </div>
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+  {% endblock %}

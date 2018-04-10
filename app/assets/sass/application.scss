@@ -83,7 +83,7 @@ $path: "/public/images/";
   float:right;
 }
 .filter-link{
-  margin-top: 5px;
+  padding-top: 10px;
 }
 .results{
   border-bottom: 1px solid #ccc;
@@ -104,12 +104,12 @@ $path: "/public/images/";
 }
 .filter-category{
   background-color: #dee0e2;
-  padding: 5px;
+  padding: 12px;
   margin-bottom: 10px;
 }
 .filters{
   background-color: #ffffff;
-  padding: 5px;
+  padding: 10px;
 }
 .compare .grid-row .column-one-quarter{
   margin-bottom: 5px;
@@ -178,13 +178,93 @@ $path: "/public/images/";
 }
 
 .results .grid-row{
-  padding-bottom: 12px;
+  padding-bottom: 5px;
+}
+
+.resultsSortingOptions{
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  text-align: right;
+}
+
+.sortSelectBox{
+  width:200px;
+}
+
+.sortLabel{
+  display: inline;
+}
+
+.courseDetailsMeta{
+
+}
+
+.altTable th{
+  padding: 10px;
+}
+
+.altTable td{
+  padding: 10px;
+}
+
+.altTable thead{
+  background: #cccccc;
+}
+
+.contactLabel{
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.courseDetailsMeta dt{
+  width:25%;
+  float: left;
+  padding-bottom: 5px;
+}
+
+.contactDetails dd{
+  clear: both;
+  float: left;
+  padding-right: 10px;
+  font-weight: bold;
+  width: 100px;
+}
+
+.contactDetails dt{
+  float: left;
+}
+
+.courseDetailsMeta dd{
+  width: 75%;
+  float: right;
+  padding-bottom: 5px;
+}
+
+.courseContents{
+  padding-top: 50px;
+  clear: both;
 }
 
 .pagination{
-
+  float: right;
+  text-align: right;
 }
-
+.paginationTitle{
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.resultsHeader{
+  margin-left: -15px;
+}
+.resultsHeader span{
+  float: right;
+}
+.beta-banner{
+  background-color: #FFF8C4;
+  padding-left: 10px;
+}
 .pagination-controls{
 float: right;
 }
@@ -200,5 +280,9 @@ margin-right: 10px;
 
 .pagination-summary{
 
+}
+
+.multiple-choice{
+  margin-bottom: 30px;
 }
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

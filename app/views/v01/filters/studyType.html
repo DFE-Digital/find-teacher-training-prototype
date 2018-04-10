@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {{macros.betaBanner()}}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {{macros.backLink("Back to results","../results.html")}}
+      {{macros.h1("Study type")}}
+        <div class="form-group">
+          {{macros.checkboxWithHelpText("name",[{label:"Full time(12 months)",helpText:"You'll usually spend 5 days a week on a full-time course"},{label:"Part time(18-24 months)",helpText:"You'll usually spend 3 days a week on a part-time course"}])}}
+        </div>
+        <a href="../results.html" class="button">Find courses</a>
+</main>
+
+{% endblock %}
