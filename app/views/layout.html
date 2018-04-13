@@ -47,7 +47,13 @@
   {% endif %}
 {% endblock %}
 
+{% block body_start %}
+  <div data-module="edge">
+{% endblock %}
+
 {% block body_end %}
+  </div>
+
   {% block scripts %}
     {% include "includes/scripts.html" %}
     {% block page_scripts %}{% endblock %}

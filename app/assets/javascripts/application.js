@@ -7,6 +7,8 @@ if (window.console && window.console.info) {
 }
 
 $(document).ready(function () {
+  GOVUK.modules.start();
+
   // Use GOV.UK shim-links-with-button-role.js to trigger a link styled to look like a button,
   // with role="button" when the space key is pressed.
   GOVUK.shimLinksWithButtonRole.init()
