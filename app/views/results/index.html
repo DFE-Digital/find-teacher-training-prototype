@@ -10,13 +10,64 @@
     <div class="grid-row">
 
       <div class="column-one-third">
-        {{ macros.filterResultsV4()}}
+
+        <div class="filter-category">
+          <h4 class="heading-small filter-heading">Location</h4>
+          <div class="filters">
+              50 miles around SW13
+          </div>
+          <div class="filter-link">
+            <a href="/results/filters/location">Change location</a>
+          </div>
+        </div>
+
+        <div class="filter-category ">
+          <h4 class="heading-small filter-heading">Subject</h4>
+          <div class="filters">
+            Business studies
+          </div>
+          <div class="filter-link">
+            <a href="/results/filters/subjects">Change subjects</a>
+          </div>
+        </div>
+
+        <div class="filter-category">
+          <h4 class="heading-small filter-heading">Financial support</h4>
+          <div class="filters">
+            All
+          </div>
+          <div class="filter-link">
+            <a href="/results/filters/funding">Change financial support options</a>
+          </div>
+        </div>
+
+        <div class="filter-category">
+          <h4 class="heading-small filter-heading">Study type</h4>
+          <div class="filters">
+            Full time (12 months),<br>
+            Part time (18-24 months)
+          </div>
+          <div class="filter-link">
+            <a href="/results/filters/studytype">Change study type</a>
+          </div>
+        </div>
+
+        <div class="filter-category">
+          <h4 class="heading-small filter-heading">Qualifications</h4>
+          <div class="filters">
+            Postgraduate Certificate in Education with Qualified Teacher Status,<br>
+            Qualified Teacher Status
+          </div>
+          <div class="filter-link">
+            <a href="/results/filters/qualification">Change qualifications</a>
+          </div>
+        </div>
       </div>
 
       <div class="column-two-thirds">
         {{macros.resultsHeader()}}
-        {{ macros.resultsV4([
 
+        {% set results = [
           {
             'url':'courses/',
             'trainingProvider':'Academies Enterprise Trust: South East',
@@ -106,29 +157,58 @@
             'studyType':'1 year, school-led, full time',
             'vacancies':'Yes',
             'financialSupport':'Salary'
-          }
-          ])}}
-            <div class="pagination">
-                  <a href="#"  rel="next" aria-label="Go to page 2 of 20">
-                    <span class="paginationTitle">
-                      Next page
-                      <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
-                        <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
-                      </svg>
-                    </span>
-                      <br>
-                      <span class="pub-c-pagination__link-label">2 of 20</span>
-                  </a>
+          }]
+        %}
+
+        {% for result in results %}
+          <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="{{result.url}}">{{result.subject}}</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: {{result.trainingProvider}}
+              </div>
             </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: {{result.trainingProviderLocation}}
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: {{result.studyType}}
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: {{result.vacancies}}
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: {{result.financialSupport}}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
 
-
-
-
+        <div class="pagination">
+          <a href="#"  rel="next" aria-label="Go to page 2 of 20">
+            <span class="paginationTitle">
+              Next page
+              <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg>
+            </span>
+              <br>
+              <span class="pub-c-pagination__link-label">2 of 20</span>
+          </a>
         </div>
-
-
       </div>
     </div>
-
-  </main>
-  {% endblock %}
+  </div>
+</main>
+{% endblock %}
