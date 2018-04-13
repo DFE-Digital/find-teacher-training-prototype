@@ -4,33 +4,53 @@
 Question page
 {% endblock %}
 
+{% if not backLink %}
+  {% set backLink = { text: 'Back to start', href: '/'} %}
+{% endif %}
+
 {% block content %}
 
 <main id="content" role="main">
   {{macros.betaBanner()}}
   <div class="grid-row">
     <div class="column-full">
-      {{ macros.backLink("Back to start","/") }}
+      {{ macros.backLink(backLink.text, backLink.href) }}
       {{ macros.h1("Choose your search") }}
 
-      <form action="/start/funding" method="post" class="form">
+      <form action="{% if filtering %}/results{% else %}/start/funding{% endif %}" method="post" class="form">
         <div class="form-group">
+          {% set postcodeFields %}
+            {{ macros.textbox("locationInput","Postcode, town or city")}}
+            {{ macros.selectBox("location-radius","Within radius","location-radius",["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
+          {% endset %}
 
-          {{ macros.radio("radioProviderLocation","By postcode, town or city","radioSearchType","insetProviderLocation") }}
-            {{ macros.insetStart("insetProviderLocation") }}
-              {{ macros.textbox("locationInput","Postcode, town or city")}}
-              {{ macros.selectBox("location-radius","Within radius","location-radius",["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
-          {{ macros.insetEnd()}}
+          {% set trainingProviderFields %}
+            {{ macros.textbox("providerNameInput","Training provider ") }}
+          {% endset %}
 
-          {{ macros.radio("radioProviderNationwide","Across England","radioSearchType","noInset") }}
+          {% set fields = [
+              {
+                name: 'By postcode, town or city',
+                more: postcodeFields
+              },
+              {
+                name: 'Across England'
+              },
+              {
+                name: 'By training provider',
+                more: trainingProviderFields
+              }
+            ]
+          %}
 
-          {{ macros.radio("radioProviderName","By training provider","radioSearchType","insetProviderName") }}
-          {{ macros.insetStart("insetProviderName") }}
-            {{ macros.textbox("providerNameInput","Training provider ")}}
-          {{ macros.insetEnd()}}
+          {{ macros.radioGroup('location', fields) }}
         </div>
 
-        {{macros.submit("Next")}}
+        {% if filtering %}
+          {{ macros.submit("Find courses") }}
+        {% else %}
+          {{ macros.submit("Next") }}
+        {% endif %}
       </form>
     </div>
   </div>

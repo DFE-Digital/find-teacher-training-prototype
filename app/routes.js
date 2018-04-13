@@ -8,7 +8,12 @@ router.get('/', function (req, res) {
 
 router.get('/results/filters/funding', function(req, res) {
   backLink = { text: 'Back to results', href: '/results'}
-  res.render('start/funding', { 'backLink': backLink });
+  res.render('start/funding', { 'backLink': backLink, 'filtering': true });
+});
+
+router.get('/results/filters/location', function(req, res) {
+  backLink = { text: 'Back to results', href: '/results'}
+  res.render('start/location', { 'backLink': backLink, 'filtering': true });
 });
 
 // add your routes here
