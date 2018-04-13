@@ -60,6 +60,31 @@
   {% endfor %}
 {% endmacro %}
 
+{% macro checkboxGroup(name, fields) %}
+  {% for field in fields %}
+    <div class="multiple-choice" data-target="checkbox-part-{{ loop.index }}-extra">
+      <input
+        id="checkbox-part-{{ loop.index }}"
+        type="checkbox"
+        name="{{ name }}"
+        value="{{ field.name }}"
+        {{ checked(name, field.name) }}
+      >
+      <label for="checkbox-part-{{ loop.index }}">
+        <span class="bold">{{ field.name }}</span>
+        {% if field.text %}
+          <br />{{ field.text | safe }}
+        {% endif %}
+      </label>
+    </div>
+    {% if field.more %}
+      <div class="panel panel-border-wide js-hidden" id="checkbox-part-{{ loop.index }}-extra">
+        {{ field.more | safe }}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
 {% macro h1(text) %}
 <h1 class="heading-xlarge">{{text}}</h1>
 {% endmacro %}
@@ -109,22 +134,6 @@
           {{ choice | bursaryCost(degree) }} bursary available
         </div>
       {% endif %}
-    </div>
-  {% endfor %}
-</fieldset>
-{% endmacro %}
-
-{% macro checkboxWithHelpText(name,choices) %}
-<fieldset class="form-group ">
-  {% for choice in choices %}
-    <div class="multiple-choice">
-      <div>
-        <input id="{{choice.label|replace(" ","-")|lower}}" name="{{choice.label}}" type="checkbox">
-        <label for="{{choice.label|replace(" ","-")|lower}}" class="bold">{{choice.label}}</label>
-      </div>
-      <div class="bursarySubjectInfo">
-        {{choice.helpText}}
-      </div>
     </div>
   {% endfor %}
 </fieldset>
