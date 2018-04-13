@@ -46,6 +46,37 @@
   </div>
 {% endmacro %}
 
+{#
+  field:
+    name:
+    text:
+    more:
+#}
+{% macro radioGroup(name, fields) %}
+  {% for field in fields %}
+    <div class="multiple-choice" data-target="radio-part-{{ loop.index }}-extra">
+      <input required
+        id="radio-part-{{ loop.index }}"
+        type="radio"
+        name="{{ name }}"
+        value="{{ field.name }}"
+        {{ checked(name, field.name) }}
+      >
+      <label for="radio-part-{{ loop.index }}">
+        <span class="bold">{{ field.name }}</span>
+        {% if field.text %}
+          {{ field.text | safe }}
+        {% endif %}
+      </label>
+    </div>
+    {% if field.more %}
+      <div class="panel panel-border-wide js-hidden" id="radio-part-{{ loop.index }}-extra">
+        {{ field.more | safe }}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
 {% macro radioInline(id,label,options) %}
 <div class="form-group">
   <fieldset class="inline">
