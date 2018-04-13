@@ -42,7 +42,7 @@
 {% macro radio(id,label,groupName,target,value) %}
   <div class="multiple-choice" data-target="{{target}}">
     <input id="{{id}}" type="radio" name="{{groupName}}" value="{{value}}">
-    <label for="{{target}}" class="bold-text">{{label}}</label>
+    <label for="{{id}}" class="bold-text">{{label}}</label>
   </div>
 {% endmacro %}
 
