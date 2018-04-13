@@ -8,13 +8,12 @@
   </div>
   <div>
     <div class="grid-row">
-
       <div class="column-one-third">
 
         <div class="filter-category">
           <h4 class="heading-small filter-heading">Location</h4>
           <div class="filters">
-              50 miles around SW13
+              50 miles around {{ data['postcode-town-or-city'] or 'SW13' }}
           </div>
           <div class="filter-link">
             <a href="/results/filters/location">Change location</a>
@@ -34,7 +33,11 @@
         <div class="filter-category">
           <h4 class="heading-small filter-heading">Financial support</h4>
           <div class="filters">
-            All
+            {% if data['funding'] == 'Show courses with and without financial support' %}
+              All
+            {% else %}
+              Salaries
+            {% endif %}
           </div>
           <div class="filter-link">
             <a href="/results/filters/funding">Change financial support options</a>
@@ -44,8 +47,9 @@
         <div class="filter-category">
           <h4 class="heading-small filter-heading">Study type</h4>
           <div class="filters">
-            Full time (12 months),<br>
-            Part time (18-24 months)
+            {% for type in data['study-type'] %}
+              {{ type }}<br />
+            {% endfor %}
           </div>
           <div class="filter-link">
             <a href="/results/filters/studytype">Change study type</a>
