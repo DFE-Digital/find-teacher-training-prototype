@@ -20,8 +20,8 @@ Question page
       <form action="{% if filtering %}/results{% else %}/start/funding{% endif %}" method="post" class="form">
         <div class="form-group">
           {% set postcodeFields %}
-            {{ macros.textbox("locationInput","Postcode, town or city")}}
-            {{ macros.selectBox("location-radius","Within radius","location-radius",["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
+            {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
+            {{ macros.selectBox("location-radius", "Within radius", "location-radius", ["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
           {% endset %}
 
           {% set trainingProviderFields %}

@@ -12,13 +12,13 @@
 </div>
 {% endmacro %}
 
-{% macro textbox(id,label,helpText) %}
+{% macro textbox(id, label, helpText = false) %}
 <div class="form-group">
   <label class="form-label-bold" for="{{id}}">{{label}}</label>
-  <legend>
-      <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
-  </legend>
-  <input class="form-control" name="{{id}}" type="text" id="{{id}}">
+  {% if helpText %}
+    <span class="form-hint">{{helpText}}</span>
+  {% endif %}
+  <input class="form-control" name="{{id}}" type="text" id="{{id}}" value="{{ value(id) }}">
 </div>
 {% endmacro %}
 

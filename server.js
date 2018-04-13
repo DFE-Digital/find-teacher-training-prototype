@@ -160,6 +160,19 @@ var addCheckedFunction = function (app, nunjucksEnv) {
       return checked
     })
 
+    nunjucksEnv.addGlobal('value', function (name) {
+      if (req.session.data === undefined) {
+        return ''
+      }
+
+      var value = req.session.data[name]
+      if (value === undefined) {
+        return ''
+      }
+
+      return value;
+    })
+
     next()
   })
 }
