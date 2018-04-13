@@ -14,7 +14,7 @@
 
 {% macro textbox(id,label,helpText) %}
 <div class="form-group">
-  <label class="form-label bold-text" for="{{id}}">{{label}}</label>
+  <label class="form-label-bold" for="{{id}}">{{label}}</label>
   <legend>
       <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
   </legend>
@@ -24,7 +24,7 @@
 
 {% macro textArea(id,label,helpText) %}
 <div class="form-group">
-  <label class="form-label bold-text" for="{{id}}">{{label}}</label>
+  <label class="form-label-bold" for="{{id}}">{{label}}</label>
   <legend>
       <span class="form-hint" id="hint">{{helpText}}</span>
   </legend>
@@ -34,7 +34,7 @@
 
 {% macro password(id,label) %}
 <div class="form-group">
-  <label class="form-label bold-text" for="{{id}}">{{label}}</label>
+  <label class="form-label-bold" for="{{id}}">{{label}}</label>
   <input class="form-control" name="{{id}}" type="password" id="{{id}}">
 </div>
 {% endmacro %}
@@ -42,7 +42,7 @@
 {% macro radio(id,label,groupName,target,value) %}
   <div class="multiple-choice" data-target="{{target}}">
     <input id="{{id}}" type="radio" name="{{groupName}}" value="{{value}}">
-    <label for="{{id}}" class="bold-text">{{label}}</label>
+    <label for="{{id}}" class="bold">{{label}}</label>
   </div>
 {% endmacro %}
 
@@ -99,7 +99,7 @@
 
 {% macro selectBox(id,label,name,options) %}
   <div class="form-group">
-    <label class="form-label bold-text" for="{{id}}">{{label}}</label>
+    <label class="form-label-bold" for="{{id}}">{{label}}</label>
     <select class="form-control" id="{{id}}" name="{{name}}">
     {% for option in options%}
       <option>{{option}}</option>
@@ -131,7 +131,7 @@
   {% for choice in choices %}
     <div class="multiple-choice">
       <input id="{{choice|replace(" ","")}}"  name="{{choice}}" type="checkbox">
-      <label for="{{choice|replace(" ","")}}" class="bold-text">{{choice}}</label>
+      <label for="{{choice|replace(" ","")}}" class="bold">{{choice}}</label>
     </div>
   {% endfor %}
 </fieldset>
@@ -143,7 +143,7 @@
     <div class="multiple-choice subject">
       <div>
         <input id="{{choice|replace(" ","")}}"  name="{{choice}}" type="checkbox">
-        <label for="{{choice|replace(" ","")}}" class="bold-text">{{choice}}</label>
+        <label for="{{choice|replace(" ","")}}" class="bold">{{choice}}</label>
       </div>
       {% if choice | bursaryCost(degree) %}
         <div class="bursarySubjectInfo">
@@ -161,7 +161,7 @@
     <div class="multiple-choice">
       <div>
         <input name="{{choice.label}}" type="checkbox">
-        <label class="bold-text">{{choice.label}}</label>
+        <label class="bold">{{choice.label}}</label>
       </div>
       <div class="bursarySubjectInfo">
         {{choice.helpText}}
@@ -830,7 +830,7 @@ Filter by :
 {% endmacro %}
 
 {% macro dateInput(id,label) %}
-<label class="form-label bold-text" for="{{label}}">
+<label class="form-label-bold" for="{{label}}">
     {{label}}
     </label>
 <fieldset>
@@ -881,7 +881,7 @@ Filter by :
 
 {% macro monthInput(id,label) %}
 <div class="form-group">
-  <label class="form-label bold-text" for="{{label}}">
+  <label class="form-label-bold" for="{{label}}">
     {{label}}
   </label>
   <fieldset>
@@ -917,7 +917,7 @@ Filter by :
 
 {% macro address(question,helpText,url) %}
 <div class="form-group addressContainer">
-  <label class="form-label bold-text" for="{{id}}">{{question}}</label>
+  <label class="form-label-bold" for="{{id}}">{{question}}</label>
   <legend>
     <span class="form-hint" id="example-dob-hint-3">{{helpText}}</span>
   </legend>
