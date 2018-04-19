@@ -252,12 +252,17 @@ $path: "/public/images/";
   text-decoration: none;
   font-size: 1.5em;
 }
-.resultsHeader{
-  margin-left: -15px;
-}
-.resultsHeader span{
+
+.resultsHeader span {
   float: right;
 }
+
+.results-header-empty {
+  border-bottom: 1px solid $border-colour;
+  margin-bottom: $gutter;
+  min-height: 48px;
+}
+
 .beta-banner{
   background-color: #FFF8C4;
   padding-left: 10px;
