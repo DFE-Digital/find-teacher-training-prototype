@@ -4,6 +4,7 @@ var path = require('path')
 var express = require('express')
 var session = require('express-session')
 var nunjucks = require('nunjucks')
+var request = require('request')
 var routes = require('./app/routes.js')
 var documentationRoutes = require('./docs/documentation_routes.js')
 var favicon = require('serve-favicon')
@@ -13,6 +14,7 @@ var bodyParser = require('body-parser')
 var browserSync = require('browser-sync')
 var config = require('./app/config.js')
 var utils = require('./lib/utils.js')
+var courseApi = require('./lib/course-api.js')
 var packageJson = require('./package.json')
 
 // Grab environment variables specified in Procfile or as Heroku config vars
@@ -113,6 +115,16 @@ app.locals.cookieText = config.cookieText
 app.locals.promoMode = promoMode
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
+
+request('http://search-and-compare-api-bat-development.e4ff.pro-eu-west-1.openshiftapps.com/api/courses?pageSize=40', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    var importedJSON = JSON.parse(body);
+    jsonWithIds = courseApi.parseIds(importedJSON);
+    app.locals.courses = jsonWithIds.items;
+  } else {
+    console.log('Could not load courses');
+  }
+});
 
 // Support session data
 app.use(session({

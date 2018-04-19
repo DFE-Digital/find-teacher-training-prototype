@@ -71,6 +71,41 @@
       <div class="column-two-thirds">
         {{macros.resultsHeader()}}
 
+        {% for course in courses %}
+          <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="/course">{{ course.name }}</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: {{ course.provider.name }}
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: {{ course.providerLocation.address }}
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: {{result.studyType}}
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
         {% set results = [
           {
             'url':'courses/',
