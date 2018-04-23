@@ -3,76 +3,22 @@
 
 <main id="content" role="main">
   {{macros.betaBanner()}}
-  <div class="column-three-thirds ">
-    {{macros.h1("Business studies teacher training courses")}}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {{macros.h1("Business studies teacher training courses")}}
+    </div>
   </div>
   <div>
     <div class="grid-row">
       <div class="column-one-third">
-
-        <div class="filter-category">
-          <h4 class="heading-small filter-heading">Location</h4>
-          <div class="filters">
-              50 miles around {{ data['postcode-town-or-city'] or 'SW13' }}
-          </div>
-          <div class="filter-link">
-            <a href="/results/filters/location">Change location</a>
-          </div>
-        </div>
-
-        <div class="filter-category ">
-          <h4 class="heading-small filter-heading">Subject</h4>
-          <div class="filters">
-            Business studies
-          </div>
-          <div class="filter-link">
-            <a href="/results/filters/subjects">Change subjects</a>
-          </div>
-        </div>
-
-        <div class="filter-category">
-          <h4 class="heading-small filter-heading">Financial support</h4>
-          <div class="filters">
-            {% if data['funding'] == 'Show courses with and without financial support' %}
-              All
-            {% else %}
-              Salaries
-            {% endif %}
-          </div>
-          <div class="filter-link">
-            <a href="/results/filters/funding">Change financial support options</a>
-          </div>
-        </div>
-
-        <div class="filter-category">
-          <h4 class="heading-small filter-heading">Study type</h4>
-          <div class="filters">
-            {% for type in data['study-type'] %}
-              {{ type }}<br />
-            {% endfor %}
-          </div>
-          <div class="filter-link">
-            <a href="/results/filters/studytype">Change study type</a>
-          </div>
-        </div>
-
-        <div class="filter-category">
-          <h4 class="heading-small filter-heading">Qualifications</h4>
-          <div class="filters">
-            Postgraduate Certificate in Education with Qualified Teacher Status,<br>
-            Qualified Teacher Status
-          </div>
-          <div class="filter-link">
-            <a href="/results/filters/qualification">Change qualifications</a>
-          </div>
-        </div>
+        {% include "results/filter-sidebar.html" %}
       </div>
 
       <div class="column-two-thirds">
         {{macros.resultsHeader()}}
 
         {% for course in courses %}
-          <div class="grid-row results">
+          <div class="results">
             <h2 class="heading-medium">
               <a href="/course">{{ course.name }}</a>
             </h2>
@@ -200,7 +146,7 @@
         %}
 
         {% for result in results %}
-          <div class="grid-row results">
+          <!-- <div class="grid-row results">
             <h2 class="heading-medium">
               <a href="{{result.url}}">{{result.subject}}</a>
             </h2>
@@ -231,7 +177,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         {% endfor %}
 
         <div class="pagination">
