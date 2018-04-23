@@ -13,7 +13,7 @@
         <div class="filter-category">
           <h4 class="heading-small filter-heading">Location</h4>
           <div class="filters">
-              50 miles around {{ data['postcode-town-or-city'] or 'SW13' }}
+              {{ data['location-radius'] or '5 miles' }} around {{ data['postcode-town-or-city'] or 'SW13' }}
           </div>
           <div class="filter-link">
             <a href="/results/filters/location">Change location</a>
@@ -78,12 +78,20 @@
           </div>
         </div>
         <div>
-          <h2 class="heading-medium">
-            There are no courses that match your search.
+          <h2 class="heading-large">
+            There are no courses matching your&nbsp;search
           </h2>
+
           <p>
             You can <a href="/start/location">try again</a>, for example by changing subject and location.
           </p>
+
+          <h3 class="heading-medium">Suggested searches</h3>
+          <p>For business studies there are:</p>
+          <ul class="list list-bullet">
+            <li><a href="#">8 courses within 10 miles of {{ data['postcode-town-or-city'] or 'SW13' }}</a></li>
+            <li><a href="#">2 courses with funding options available</a></li>
+          </ul>
         </div>
       </div>
     </div>
