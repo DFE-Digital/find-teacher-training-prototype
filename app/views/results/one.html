@@ -1,0 +1,71 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+  {{macros.betaBanner()}}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {{macros.h1("Business studies teacher training courses")}}
+    </div>
+  </div>
+  <div>
+    <div class="grid-row">
+      <div class="column-one-third">
+        {% include "results/filter-sidebar.html" %}
+      </div>
+
+      <div class="column-two-thirds">
+        {{macros.resultsHeader('1 course')}}
+
+        {% for course in courses %}
+          {% if loop.index == 1 %}
+            <div class="results">
+              <h2 class="heading-medium">
+                <a href="/course">{{ course.name }}</a>
+              </h2>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider: {{ course.provider.name }}
+                </div>
+              </div>
+              <div>
+                <div class="grid-row results-data-large">
+                  <div class="column-full">
+                    Training provider's location: {{ course.providerLocation.address }}
+                  </div>
+                </div>
+                <!-- <div class="grid-row results-data-large">
+                  <div class="column-full">
+                    Study type: {{result.studyType}}
+                  </div>
+                </div> -->
+                <div class="grid-row results-data-large">
+                  <div class="column-full">
+                    Vacancies: Yes
+                  </div>
+                </div>
+                <div class="grid-row results-data-large">
+                  <div class="column-full">
+                    Financial support: None
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        <h2 class="heading-medium">Suggested searches</h2>
+        <p>For business studies there are:</p>
+        <ul class="list list-bullet">
+          <li><a href="#">8 courses within 10 miles of {{ data['postcode-town-or-city'] or 'SW13' }}</a></li>
+          <li><a href="#">2 courses with funding options available</a></li>
+        </ul>
+
+        <p>
+          You can <a href="#">search for courses in other subjects</a> on the UCAS website
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
