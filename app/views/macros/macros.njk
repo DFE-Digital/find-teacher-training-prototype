@@ -46,7 +46,7 @@
         {{ checked(name, field.name) }}
       >
       <label for="radio-part-{{ loop.index }}">
-        <span class="bold">{{ field.name }}</span>
+        <span {% if field.text %}class="bold"{% endif %}>{{ field.name }}</span>
         {% if field.text %}
           {{ field.text | safe }}
         {% endif %}
@@ -140,10 +140,10 @@
 {% endmacro %}
 
 <!-- Header on top of the results showing number of courses, New search and sorting order -->
-{% macro resultsHeader() %}
+{% macro resultsHeader(countString = '40 courses') %}
 <div class="resultsHeader">
   <div>
-    198 courses found
+    {{ countString }} found
     <span>
       <a href="/start/location">New search</a>
     </span>
@@ -151,6 +151,7 @@
   <div class="resultsSortingOptions">
     <label class="form-label sortLabel" for="select-box">Sorted by</label>
     <select class="form-control sortSelectBox" id="select-box" name="select-box">
+      <option selected>Distance</option>
       <option>Alphabetical A-Z</option>
       <option>Alphabetical Z-A</option>
     </select>
