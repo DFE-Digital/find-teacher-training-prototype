@@ -1,27 +1,21 @@
-# GOV.UK Prototype kit · [![Greenkeeper badge](https://badges.greenkeeper.io/alphagov/govuk_prototype_kit.svg)](https://greenkeeper.io/)
+# Find postgraduate teacher training courses – prototype
+Also known as “search and compare”
 
-Go to the [GOV.UK Prototype Kit site](https://govuk-prototype-kit.herokuapp.com/docs) to download the latest version and read the documentation.
+Prototype:
+https://search-and-compare-beta.herokuapp.com/
 
-## About the prototype kit
+Beta design history:
+https://search-and-compare-beta.herokuapp.com/history
 
-The prototype kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research.
+Alpha designs and history (see branch `alpha`):
+https://search-and-compare-alpha.herokuapp.com/
 
-Read the [project principles](https://govuk-prototype-kit.herokuapp.com/docs/principles).
+The live service:
+http://find-postgraduate-teacher-training.education.gov.uk/
+https://github.com/DFE-Digital/search-and-compare-ui
 
-## Security
+Forks of the live service for user research are hosted at:
+https://search-and-compare-ui.herokuapp.com/
 
-If you publish your prototypes online, they **must** be protected by a [username and password](https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku). This is to prevent members of the public finding prototypes and thinking they are real services.
-
-You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like GOV.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.
-
-## Installation instructions
-
-- [Installation guide for new users (non technical)](https://govuk-prototype-kit.herokuapp.com/docs/install/introduction)
-- [Installation guide for developers (technical)](https://govuk-prototype-kit.herokuapp.com/docs/install/developer-install-instructions)
-
-## Community
-
-We have two Slack channels for the Prototype kit. You'll need a government email address to join them.
-
-* [Slack channel for users of the prototype kit](https://ukgovernmentdigital.slack.com/messages/prototype-kit/)
-* [Slack channel for developers of the prototype kit](https://ukgovernmentdigital.slack.com/messages/prototype-kit-dev/)
+* [Increased search radius to 20 miles](https://github.com/DFE-Digital/search-and-compare-ui/tree/research-2-may)
+* [Prototyped no results and disclaimer banner](https://github.com/DFE-Digital/search-and-compare-ui/tree/copy-sweep-cut)
