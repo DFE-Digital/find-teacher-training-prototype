@@ -1,7 +1,6 @@
 // node scripts/screenshot-live.js 2018-05-08-live
 var webshot = require('webshot');
 var fs = require('fs');
-var dir = './tmp';
 
 var directoryName = process.argv.slice(-1)[0];
 
@@ -11,7 +10,7 @@ if (directoryName.startsWith('/Users')) {
   return;
 }
 
-var directory = 'screenshots/' + directoryName;
+var directory = 'app/views/history/screenshots/' + directoryName;
 
 if ( ! fs.existsSync(directory)){
   fs.mkdirSync(directory);
