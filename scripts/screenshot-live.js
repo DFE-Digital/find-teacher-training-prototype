@@ -42,7 +42,9 @@ var paths = [
 ]
 
 paths.forEach(function(path, index) {
-  webshot('https://find-postgraduate-teacher-training.education.gov.uk' + path, directory + '/' + directoryName + '-' + index + '.png', options, function(err) {
+  var i = index + 1;
+  var indexStr = i < 10 ? '0' + i : i;
+  webshot('https://find-postgraduate-teacher-training.education.gov.uk' + path, directory + '/' + directoryName + '-' + indexStr + '.png', options, function(err) {
     console.log(path);
   });
 });
