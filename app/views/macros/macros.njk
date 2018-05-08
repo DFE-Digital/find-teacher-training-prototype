@@ -12,6 +12,22 @@
 </div>
 {% endmacro %}
 
+{% macro screenshot(title, thumbnail, full, text = '') %}
+<h2 class="heading-large" id="index">{{ title }}</h2>
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <p>
+      <a href="{{ full }}">
+        <img src="{{ thumbnail }}" />
+      </a>
+    </p>
+  </div>
+  <div class="column-one-third">
+    {{ text }}
+  </div>
+</div>
+{% endmacro %}
+
 {% macro textbox(id, label, helpText = false) %}
 <div class="form-group">
   <label class="form-label-bold" for="{{id}}">{{label}}</label>
