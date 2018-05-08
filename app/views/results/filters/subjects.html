@@ -8,14 +8,18 @@ Question page
 
 <main id="content" role="main">
   {{macros.betaBanner()}}
-  <div class="grid-row">
-    <div class="column-full">
-      {{ macros.backLink("Back to results","/results") }}
-      {{ macros.h1("Filter by subjects") }}
+  {{ macros.backLink("Back to results","/results") }}
 
-      <p>This is a beta service to find courses offering Business studies.</p>
-      <p>For courses offering other subjects, visit <a href="#">UCAS</a></p>
-      <a href="/results" >Back to results</a>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {{ macros.h1("Teach a different subject") }}
+
+      <p>
+        If you don’t want to teach business studies you can <a href="https://www.ucas.com/ucas/teacher-training/ucas-teacher-training-search-training-programmes"> find teacher training in other subjects</a> on the UCAS website.
+      </p>
+      <p>
+        <a href="/results" >Back to results</a>
+      </p>
     </div>
   </div>
 </main>
