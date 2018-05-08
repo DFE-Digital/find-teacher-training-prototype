@@ -58,19 +58,15 @@ paths.forEach(function(item, index) {
   var screenshot = directory + '/' + indexStr + '-' + item.name + '.png';
   var thumbnail = directory + '/thumbnails/' + indexStr + '-' + item.name + '.png';
   var heading = item.name.replace(/-/g, ' ');
+  heading = heading.charAt(0).toUpperCase() + heading.slice(1)
 
   template += `
-    <h2 class="heading-large" id="${item.name}">${heading.charAt(0).toUpperCase() + heading.slice(1)}</h2>
-    <p>
-      <a href="${screenshot.replace('app/assets', '/public')}">
-        <img src="${thumbnail.replace('app/assets', '/public')}" />
-      </a>
-    </p>
+    {{ macros.screenshot('${heading}', '${thumbnail.replace('app/assets', '/public')}', '${screenshot.replace('app/assets', '/public')}', '')}}
   `
 
   webshot('https://find-postgraduate-teacher-training.education.gov.uk' + item.path, screenshot, options, function(err) {
     console.log(screenshot);
-    sharp(screenshot).resize(500, null).toFile(thumbnail);
+    sharp(screenshot).resize(630, null).toFile(thumbnail);
   });
 });
 
