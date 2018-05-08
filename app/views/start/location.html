@@ -21,11 +21,11 @@ Question page
         <div class="form-group">
           {% set postcodeFields %}
             {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
-            {{ macros.selectBox("location-radius", "Within radius", "location-radius", ["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
+            {{ macros.selectBox("location-radius", "Within", "location-radius", ["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
           {% endset %}
 
           {% set trainingProviderFields %}
-            {{ macros.textbox("providerNameInput","Training provider ") }}
+            {{ macros.textbox("providerNameInput","School, university or other training provider") }}
           {% endset %}
 
           {% set fields = [
@@ -37,7 +37,7 @@ Question page
                 name: 'Across England'
               },
               {
-                name: 'By training provider',
+                name: 'School, university or other training provider',
                 more: trainingProviderFields
               }
             ]
@@ -49,7 +49,7 @@ Question page
         {% if filtering %}
           {{ macros.submit("Find courses") }}
         {% else %}
-          {{ macros.submit("Next") }}
+          {{ macros.submit("Continue") }}
         {% endif %}
       </form>
     </div>
