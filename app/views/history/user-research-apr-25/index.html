@@ -1,6 +1,6 @@
 
 {% extends "layout.html" %}
-{% block page_title %}User research apr 25{% endblock %}
+{% block page_title %}User research 25 April 2018{% endblock %}
 
 {% block content %}
 <main id="content" role="main">
@@ -9,28 +9,62 @@
       <li><a href="/history">Design history</a></li>
     </ol>
   </div>
-  <h1 class="heading-xlarge">User research apr 25</h1>
+  <h1 class="heading-xlarge">User research 25 April 2018</h1>
+
+  <ul class="list">
+    <li>
+      <a href="https://dfedigital.atlassian.net/wiki/spaces/BaT/pages/301596673/15th+Round+-+26th+April">Research summary</a>
+    </li>
+    <li>
+      <a href="https://docs.google.com/document/d/12-FAWM0O5FxnodMo2B_1t4y88iOWSPqTZALVfhNC1Tc/edit">Discussion guide</a>
+    </li>
+  </ul>
 
     {{ macros.screenshot('Index', 'index', '/public/images/history/user-research-apr-25/thumbnails/01-index.png', '/public/images/history/user-research-apr-25/01-index.png', '')}}
 
-    {{ macros.screenshot('Choose your search', 'choose-your-search', '/public/images/history/user-research-apr-25/thumbnails/02-choose-your-search.png', '/public/images/history/user-research-apr-25/02-choose-your-search.png', '')}}
+    {# macros.screenshot('Choose your search', 'choose-your-search', '/public/images/history/user-research-apr-25/thumbnails/02-choose-your-search.png', '/public/images/history/user-research-apr-25/02-choose-your-search.png', '') #}
 
-    {{ macros.screenshot('Search by location', 'search-by-location', '/public/images/history/user-research-apr-25/thumbnails/03-search-by-location.png', '/public/images/history/user-research-apr-25/03-search-by-location.png', '')}}
+    {# macros.screenshot('Search by location', 'search-by-location', '/public/images/history/user-research-apr-25/thumbnails/03-search-by-location.png', '/public/images/history/user-research-apr-25/03-search-by-location.png', '') #}
 
-    {{ macros.screenshot('Search by provider', 'search-by-provider', '/public/images/history/user-research-apr-25/thumbnails/04-search-by-provider.png', '/public/images/history/user-research-apr-25/04-search-by-provider.png', '')}}
+    {# macros.screenshot('Search by provider', 'search-by-provider', '/public/images/history/user-research-apr-25/thumbnails/04-search-by-provider.png', '/public/images/history/user-research-apr-25/04-search-by-provider.png', '') #}
 
     {{ macros.screenshot('Financial support', 'financial-support', '/public/images/history/user-research-apr-25/thumbnails/05-financial-support.png', '/public/images/history/user-research-apr-25/05-financial-support.png', '')}}
 
     {{ macros.screenshot('Search results', 'search-results', '/public/images/history/user-research-apr-25/thumbnails/06-search-results.png', '/public/images/history/user-research-apr-25/06-search-results.png', '
       <p>When launching private beta we will not have every business studies course. Trial a banner to indicate this and to point to where users can continue their search.</p>
 
-      <h3 class="heading-medium">Results</h3>
-      <p>Users did not see this banner, when they reached this page they went straight to search results. When the banner was pointed out they misinterpreted it’s meaning.</p>
+      <h3 class="heading-medium">Result</h3>
+      <p>Users did not see this banner, when they reached this page they went straight to search results. When the banner was pointed out they misinterpreted its meaning.</p>
 
       <p>We iterated this design to create a <a href="/history/private-beta-launch#disclaimer">full-page disclaimer</a> in the search flow.</p>
+
+      <hr />
+
+      <p>In the private beta all courses are for business studies. Having the subject as the search result title made it difficult to differentiate between results.</p>
+
+      <p>In this round we updated the title to include both subject and course provider.</p>
+
+      <h3 class="heading-medium">Result</h3>
+
+      <p>Users were able to scan and find results more easily.</p>
+
+      <p>Work is still needed to standardise course titles in the data.</p>
     ')}}
 
-    {{ macros.screenshot('No search results', 'no-search-results', '/public/images/history/user-research-apr-25/thumbnails/07-no-search-results.png', '/public/images/history/user-research-apr-25/07-no-search-results.png', '')}}
+    {{ macros.screenshot('No search results', 'no-search-results', '/public/images/history/user-research-apr-25/thumbnails/07-no-search-results.png', '/public/images/history/user-research-apr-25/07-no-search-results.png', '
+      <p>With private beta data and a limited number of courses we found users often filtered themselves into a no results view (<a href="https://dfedigital.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=BATSA&modal=detail&selectedIssue=BATSA-217">BATSA-217</a>).</p>
+
+      <p class="panel">
+        As a user without any nearby courses I need to see the next closest ones so that I can still apply to the most appropriate courses
+      </p>
+
+      <p class="panel">As a user with no nearby courses with financial support I need to see my alternatives so that I can still apply to the most appropriate courses</p>
+
+      <p>In this round we trialled a ‘suggested searches’ view. We wanted to indicate to users that their search was too constrained and that more results were available.</p>
+
+      <h3 class="heading-medium">Result</h3>
+      <p>Users saw and interacted with these links, but this didn’t prevent an initial misconception about the number of courses available to them. The design helps users find more courses but more work is needed to avoid this situation altogether.</p>
+    ')}}
 
     {{ macros.screenshot('Course details', 'course-details', '/public/images/history/user-research-apr-25/thumbnails/09-full-course-details.png', '/public/images/history/user-research-apr-25/09-full-course-details.png', '')}}
 
