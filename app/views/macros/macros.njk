@@ -12,18 +12,18 @@
 </div>
 {% endmacro %}
 
-{% macro screenshot(title, thumbnail, full, text = '') %}
-<h2 class="heading-large" id="index">{{ title }}</h2>
+{% macro screenshot(title, id, thumbnail, full, text = '') %}
+<h2 class="heading-large" id="{{ id }}">{{ title }}</h2>
 <div class="grid-row">
   <div class="column-two-thirds">
     <p>
       <a href="{{ full }}">
-        <img src="{{ thumbnail }}" />
+        <img src="{{ thumbnail }}" width="630" alt="Screenshot of {{ title }}" />
       </a>
     </p>
   </div>
   <div class="column-one-third">
-    {{ text }}
+    {{ text | safe }}
   </div>
 </div>
 {% endmacro %}
