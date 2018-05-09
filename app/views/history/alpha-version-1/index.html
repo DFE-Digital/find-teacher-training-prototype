@@ -1,0 +1,34 @@
+
+{% extends "layout.html" %}
+{% block page_title %}Alpha version 1{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">Alpha version 1</h1>
+  <a href="https://search-and-compare-alpha.herokuapp.com/search/v01/index2">Version 1 prototype</a>
+
+  {{ macros.screenshot('Index', 'index', '/public/images/history/alpha-version-1/thumbnails/01-index.png', '/public/images/history/alpha-version-1/01-index.png', '') }}
+
+  {{ macros.screenshot('Choose your search', 'choose-your-search', '/public/images/history/alpha-version-1/thumbnails/02-choose-your-search.png', '/public/images/history/alpha-version-1/02-choose-your-search.png', '') }}
+
+  {{ macros.screenshot('What subject', 'what-subject', '/public/images/history/alpha-version-1/thumbnails/03-what-subject.png', '/public/images/history/alpha-version-1/03-what-subject.png', '') }}
+
+  {{ macros.screenshot('Financial support', 'financial-support', '/public/images/history/alpha-version-1/thumbnails/04-financial-support.png', '/public/images/history/alpha-version-1/04-financial-support.png', '') }}
+
+  {{ macros.screenshot('Search results', 'search-results', '/public/images/history/alpha-version-1/thumbnails/05-search-results.png', '/public/images/history/alpha-version-1/05-search-results.png', '') }}
+
+  {{ macros.screenshot('Course details', 'course-details', '/public/images/history/alpha-version-1/thumbnails/06-course-details.png', '/public/images/history/alpha-version-1/06-course-details.png', '') }}
+
+  {{ macros.screenshot('About the course', 'about-the-course', '/public/images/history/alpha-version-1/thumbnails/07-about-the-course.png', '/public/images/history/alpha-version-1/07-about-the-course.png', '') }}
+
+  {{ macros.screenshot('Modules', 'modules', '/public/images/history/alpha-version-1/thumbnails/08-modules.png', '/public/images/history/alpha-version-1/08-modules.png', '') }}
+
+  {{ macros.screenshot('Compare results', 'compare-results', '/public/images/history/alpha-version-1/thumbnails/09-compare-results.png', '/public/images/history/alpha-version-1/09-compare-results.png', '') }}
+
+</main>
+{% endblock %}
