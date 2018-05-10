@@ -1,0 +1,27 @@
+
+{% extends "layout.html" %}
+{% block page_title %}User research 10 May 2018{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">User research 10 May 2018</h1>
+
+  {{ macros.screenshot('Choose your search', 'choose-your-search', '/public/images/history/user-research-may-10/thumbnails/01-choose-your-search.png', '/public/images/history/user-research-may-10/01-choose-your-search.png', '') }}
+
+  {{ macros.screenshot('Search by location', 'search-by-location', '/public/images/history/user-research-may-10/thumbnails/02-search-by-location.png', '/public/images/history/user-research-may-10/02-search-by-location.png', '
+    <p>Trialled removing the radius field for location. Instead defaulting to 100 miles and ordered results by distance.</p>
+  ') }}
+
+  {{ macros.screenshot('Financial support', 'financial-support', '/public/images/history/user-research-may-10/thumbnails/03-financial-support.png', '/public/images/history/user-research-may-10/03-financial-support.png', '
+    <p>Trialled previewing of course counts to help users make informed choices based on what’s available and to prevent them from seeing the no results page.</p>
+  ') }}
+
+  {{ macros.screenshot('Search results', 'search-results', '/public/images/history/user-research-may-10/thumbnails/04-search-results.png', '/public/images/history/user-research-may-10/04-search-results.png', '') }}
+
+</main>
+{% endblock %}
