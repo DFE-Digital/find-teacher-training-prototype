@@ -1,4 +1,4 @@
-// node scripts/screenshot-live.js 2018-05-08-live
+// node scripts/screenshot.js directory-name-with-hyphens
 var webshot = require('webshot');
 var fs = require('fs');
 var sharp = require('sharp');
@@ -6,7 +6,7 @@ var directoryName = process.argv.slice(-1)[0];
 
 if (directoryName.startsWith('/Users')) {
   console.log('No arguments set');
-  console.log('Please set a screenshot directory in the format 2018-XX-XX-name');
+  console.log('Please set a screenshot directory in the format directory-name-with-hyphens');
   return;
 }
 
