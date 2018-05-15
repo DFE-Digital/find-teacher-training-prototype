@@ -47,7 +47,8 @@ var paths = [
   { path: '/course/62?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=15&pgce=False&qts=False&fulltime=False&parttime=False', name: 'minimal-course-details'},
   { path: '/course/27?lat=51.5073509&lng=-0.1277583&rad=5&loc=London,%20UK&lq=London,%20UK&l=1&subjects=2&sortby=2&funding=15&pgce=False&qts=False&fulltime=False&parttime=False', name: 'full-course-details'},
   { path: '/results/filter/studytype?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=14&pgce=False&qts=False&fulltime=False&parttime=False', name: 'study-type-filter'},
-  { path: '/results/filter/qualification?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=14&pgce=False&qts=False&fulltime=False&parttime=False', name: 'qualifications-filter'}
+  { path: '/results/filter/qualification?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=14&pgce=False&qts=False&fulltime=False&parttime=False', name: 'qualifications-filter'},
+  { path: '/results/filter/subject?l=2&subjects=2&funding=15&pgce=False&qts=False&fulltime=False&parttime=False', name: 'subjects-filter'}
 ]
 
 var template = '';
