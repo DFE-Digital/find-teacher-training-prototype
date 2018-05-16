@@ -1,0 +1,15 @@
+.dont-print {
+  display: none;
+}
+
+.design-history-text {
+  display: none;
+}
+
+.design-history-item {
+  page-break-before: always;
+
+  a:after {
+    display: none;
+  }
+}
