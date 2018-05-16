@@ -13,17 +13,17 @@
 {% endmacro %}
 
 {% macro screenshot(title, id, thumbnail, full, text = '') %}
-<h2 class="heading-large" id="{{ id }}">{{ title }}</h2>
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <p>
+<div class="design-history-item">
+  <h2 class="heading-large" id="{{ id }}">{{ title }}</h2>
+  <div class="grid-row">
+    <div class="column-two-thirds design-history-screenshot">
       <a href="{{ full }}">
         <img src="{{ thumbnail }}" width="630" alt="Screenshot of {{ title }}" />
       </a>
-    </p>
-  </div>
-  <div class="column-one-third">
-    {{ text | safe }}
+    </div>
+    <div class="column-one-third design-history-text">
+      {{ text | safe }}
+    </div>
   </div>
 </div>
 {% endmacro %}
