@@ -286,3 +286,41 @@ margin-right: 10px;
   margin-bottom: 30px;
 }
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.remove-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.add-heading-bottom-margin {
+  margin-bottom: 20px !important;
+}
+
+
+dt, dd {
+    display: inline;
+    line-height: 30px;
+}
+
+dt {
+    margin-right: 0.25em;
+}
+dt::after {
+    content: ':';
+}
+dd::after {
+    display: block;
+    content: '';
+}
+
+
+dl.aligned dt {
+    width: 30%;
+    float: left;
+    margin: 0;
+    clear: both;
+}
+
+dl.aligned dd {
+    width: 70%;
+    float: right;
+}
