@@ -213,10 +213,11 @@ $path: "/public/images/";
   padding-right: 10px;
 }
 
-.courseDetailsMeta dt{
+.courseDetailsMeta dt {
   width:25%;
   float: left;
   padding-bottom: 5px;
+  margin-right: 0;
 }
 
 .contactDetails dd{
@@ -308,13 +309,13 @@ dt, dd {
 dt {
     margin-right: 0.25em;
 }
-dt::after {
-    content: ':';
-}
-dd::after {
-    display: block;
-    content: '';
-}
+// dt::after {
+//     content: ':';
+// }
+// dd::after {
+//     display: block;
+//     content: '';
+// }
 
 
 dl.aligned dt {
