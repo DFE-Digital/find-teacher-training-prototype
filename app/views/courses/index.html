@@ -5,13 +5,13 @@
   {{ macros.betaBanner()}}
   <a class="link-back" href="/results">Back to search results</a>
   <h1 class="heading-xlarge">
-    Business studies
+    Business studies at Academies Enterprise Trust: South East
   </h1>
   <div class="grid-row">
     <div class="column-full">
       <div class="courseDetailsMeta">
         <dl>
-          <dt>Qualifications:</dt>
+          <!-- <dt>Qualifications:</dt>
           <dd>
             <details>
               <summary><span class="summary">Postgraduate Certificate in Education and Qualified Teacher Status</span></summary>
@@ -28,14 +28,21 @@
               </div>
             </details>
           </dd>
-          <dt>Training provider:</dt>
-          <dd>Academies Enterprise Trust: South East</dd>
           <dt>Financial support:</dt>
           <dd>None</dd>
           <dt>Study type:</dt>
           <dd>1 year, school-led, full time</dd>
-          <dt>Vancies:</dt>
-          <dd>Yes</dd>
+          <dt>Vacancies:</dt>
+          <dd>Yes</dd> -->
+          <dt>Study options:</dt>
+          <dd>
+            <ul class="multiple-options">
+              <li>PGCE with QTS, 1 year full time</li>
+              <li>PGCE with QTS, 1 year full time with salary</li>
+              <li>QTS, 1 year full time</li>
+              <li>QTS, 1 year full time with salary</li>
+            </ul>
+          </dd>
           <dt>Date you can apply from:</dt>
           <dd>26 October 2017</dd>
           <dt>Date course starts:</dt>
@@ -43,7 +50,7 @@
         </dl>
       </div>
       <div class="courseContents">
-        <h3 class="heading-small">Contents:</h3>
+        <h3 class="heading-small">Contents</h3>
         <div class="grid-row">
           <div class="column-two-thirds">
             <ul class="list list-contents">
@@ -152,12 +159,104 @@
               <dt>15 High Street<br>Hornsey<br>N8 5AL</dt>
             </dl>
 
-            <div style="clear:both;"></div>
-            <a name="apply"></a>
-            <h2 class="heading-medium">How to apply</h2>
-            <p><a href="#">Apply on the UCAS website</a>. You’ll need to register before you can apply. </p>
-            <p>You'll need these codes for the Choices section of the application form:<p>
-            <ul class="list list-bullet">
+            <h2 class="heading-large">Apply</h2>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>
+                  <h3 class="heading-medium">Pick a study option to apply to</h3>
+                </legend>
+
+                {% set more %}
+                <p><a href="#">Apply for this course on the UCAS website</a>.</p>
+                <h3 class="heading-medium">Codes for the Choices section of your application</h3>
+
+                ‘Academies Enterprise Trust: South East’<br />
+                Training provider code:
+                <div class="heading-medium remove-top-margin">134</div>
+                Business studies<br />
+                Training programme code:
+                <div class="heading-medium remove-top-margin">2HCD</div>
+
+                <div class="body">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Campus code</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Soho Parish CofE Primary School</td>
+                        <td>- (Main Site)</td>
+                      </tr>
+                      <tr>
+                        <td>Harris Westminster Sixth Form</td>
+                        <td>B</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                {% endset %}
+
+                {% set moreFolded %}
+                <p><a href="#">Apply for this course on the UCAS website</a>.</p>
+                <h3 class="heading-medium">Codes for the Choices section of your application</h3>
+
+                ‘Academies Enterprise Trust: South East’<br />
+                Training provider code:
+                <div class="heading-medium remove-top-margin">134</div>
+
+                <div class="body">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Course code</th>
+                        <th>Campus code</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Soho Parish CofE Primary School</td>
+                        <td>2HCD</td>
+                        <td>- (Main Site)</td>
+                      </tr>
+                      <tr>
+                        <td>Harris Westminster Sixth Form</td>
+                        <td>2HAA</td>
+                        <td>B</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                {% endset %}
+
+                {% set fields = [
+                    {
+                      name: 'PGCE with QTS, 1 year full time',
+                      more: more
+                    },
+                    {
+                      name: 'PGCE with QTS, 1 year full time with salary',
+                      more: moreFolded
+                    },
+                    {
+                      name: 'QTS, 1 year full time'
+                    },
+                    {
+                      name: 'QTS, 1 year full time with salary'
+                    }
+                  ]
+                %}
+
+                <div class="form-group">
+                  {{ macros.radioGroup('funding', fields) }}
+                </div>
+              </fieldset>
+            </form>
+
+            <!-- <ul class="list list-bullet">
               <li>training provider code name: A1131</li>
               <li>training provider code: 134</li>
               <li>training programme code: 2HCD</li>
@@ -169,7 +268,7 @@
               <li>B for Harris Westminster Sixth Form</li>
               <li>3 for St Clement Danes CofE Primary School</li>
               <li>G for Westminster Abbey Choir School</li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>

@@ -220,7 +220,11 @@ $path: "/public/images/";
   margin-right: 0;
 }
 
-.contactDetails dd{
+.contactDetails {
+  overflow: hidden;
+}
+
+.contactDetails dd {
   clear: both;
   float: left;
   padding-right: 10px;
@@ -232,13 +236,17 @@ $path: "/public/images/";
   float: left;
 }
 
+.courseDetailsMeta dt {
+  clear: both;
+}
+
 .courseDetailsMeta dd{
   width: 75%;
   float: right;
   padding-bottom: 5px;
 }
 
-.courseContents{
+.courseContents {
   padding-top: 50px;
   clear: both;
 }
@@ -317,7 +325,6 @@ dt {
 //     content: '';
 // }
 
-
 dl.aligned dt {
     width: 30%;
     float: left;
@@ -328,4 +335,9 @@ dl.aligned dt {
 dl.aligned dd {
     width: 70%;
     float: right;
+}
+
+.multiple-options li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
 }
