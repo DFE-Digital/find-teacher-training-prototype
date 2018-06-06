@@ -5,7 +5,7 @@
   {{macros.betaBanner()}}
   <div class="grid-row">
     <div class="column-two-thirds">
-      {{macros.h1("Business studies teacher training courses")}}
+      <h1 class="heading-xlarge">{{ (data['subject'] or 'Business studies') }} teacher training courses</h1>
     </div>
   </div>
   <div>
@@ -20,35 +20,23 @@
         {% for course in courses %}
           <div class="results">
             <h2 class="heading-medium">
-              <a href="/course">{{ course.name }}</a>
+              <a href="/courses">{{ data['subject'] or 'Business studies' }} at {{ course.provider.name }}</a>
             </h2>
-            <div class="grid-row results-data-large">
-              <div class="column-full">
-                Training provider: {{ course.provider.name }}
-              </div>
-            </div>
-            <div>
-              <div class="grid-row results-data-large">
-                <div class="column-full">
-                  Training provider's location: {{ course.providerLocation.address }}
-                </div>
-              </div>
-              <!-- <div class="grid-row results-data-large">
-                <div class="column-full">
-                  Study type: {{result.studyType}}
-                </div>
-              </div> -->
-              <div class="grid-row results-data-large">
-                <div class="column-full">
-                  Vacancies: Yes
-                </div>
-              </div>
-              <div class="grid-row results-data-large">
-                <div class="column-full">
-                  Financial support: None
-                </div>
-              </div>
-            </div>
+            <dl class="aligned">
+              <dt>Distance:</dt>
+              <dd>4 miles to nearest school</dd>
+              <dt>Nearest school:</dt>
+              <dd>{{ course.providerLocation.address }}</dd>
+              <dt>Study options:</dt>
+              <dd>
+                <ul class="multiple-options">
+                  <li>PGCE with QTS, 1 year full time</li>
+                  <li>PGCE with QTS, 1 year full time with salary</li>
+                  <li>QTS, 1 year full time</li>
+                  <li>QTS, 1 year full time with salary</li>
+                </ul>
+              </dd>
+            </dl>
           </div>
         {% endfor %}
 
