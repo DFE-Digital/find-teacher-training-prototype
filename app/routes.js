@@ -3,10 +3,15 @@ var router = express.Router()
 
 // Route index page
 router.get('/', function (req, res) {
-  //res.render('index')
+  res.render('index')
 
   // While the prototype is not being used as a prototype:
-  res.redirect('/history')
+  //res.redirect('/history')
+})
+
+// Route index page
+router.post('/', function (req, res) {
+  res.render('index')
 })
 
 router.get('/results/filters/funding', function(req, res) {
