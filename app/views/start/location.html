@@ -25,7 +25,6 @@ Question page
         <div class="form-group">
           {% set postcodeFields %}
             {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
-            {{ macros.selectBox("location-radius", "Within", "location-radius", ["5 miles","10 miles","20 miles","50 miles","100 miles"]) }}
           {% endset %}
 
           {% set trainingProviderFields %}
