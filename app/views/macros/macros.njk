@@ -53,25 +53,29 @@
 #}
 {% macro radioGroup(name, fields) %}
   {% for field in fields %}
-    <div class="multiple-choice" data-target="radio-part-{{ name }}-{{ loop.index }}-extra">
-      <input required
-        id="radio-part-{{ name }}-{{ loop.index }}"
-        type="radio"
-        name="{{ name }}"
-        value="{{ field.name }}"
-        {% if field.checked %}checked{% else %}{{ checked(name, field.name) }}{% endif %}
-      >
-      <label for="radio-part-{{ name }}-{{ loop.index }}">
-        <span {% if field.text %}class="bold"{% endif %}>{{ field.name }}</span>
-        {% if field.text %}
-          {{ field.text | safe }}
-        {% endif %}
-      </label>
-    </div>
-    {% if field.more %}
-      <div class="panel panel-border-wide js-hidden" id="radio-part-{{ name }}-{{ loop.index }}-extra">
-        {{ field.more | safe }}
+    {% if field.or %}
+      <p class="form-block form-block--or">or</p>
+    {% else %}
+      <div class="multiple-choice" data-target="radio-part-{{ name }}-{{ loop.index }}-extra">
+        <input required
+          id="radio-part-{{ name }}-{{ loop.index }}"
+          type="radio"
+          name="{{ name }}"
+          value="{{ field.name }}"
+          {% if field.checked %}checked{% else %}{{ checked(name, field.name) }}{% endif %}
+        >
+        <label for="radio-part-{{ name }}-{{ loop.index }}">
+          <span {% if field.text %}class="bold"{% endif %}>{{ field.name }}</span>
+          {% if field.text %}
+            {{ field.text | safe }}
+          {% endif %}
+        </label>
       </div>
+      {% if field.more %}
+        <div class="panel panel-border-wide js-hidden" id="radio-part-{{ name }}-{{ loop.index }}-extra">
+          {{ field.more | safe }}
+        </div>
+      {% endif %}
     {% endif %}
   {% endfor %}
 {% endmacro %}

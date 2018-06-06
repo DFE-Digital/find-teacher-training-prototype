@@ -7,7 +7,7 @@ Question page
 {% set filtering = true %}
 
 {% if not backLink %}
-  {% set backLink = { text: 'Back to start', href: '/'} %}
+  {% set backLink = { text: 'Back', href: '/'} %}
 {% endif %}
 
 {% block content %}
@@ -17,7 +17,9 @@ Question page
   <div class="grid-row">
     <div class="column-full">
       {{ macros.backLink(backLink.text, backLink.href) }}
-      {{ macros.h1("Choose your search") }}
+      <h1 class="heading-xlarge">
+        Find courses by location or<br /> by training provider
+      </h1>
 
       <form action="{% if filtering %}/results{% else %}/start/funding{% endif %}" method="post" class="form">
         <div class="form-group">
@@ -37,6 +39,9 @@ Question page
               },
               {
                 name: 'Across England'
+              },
+              {
+                or: true
               },
               {
                 name: 'School, university or other training provider',
