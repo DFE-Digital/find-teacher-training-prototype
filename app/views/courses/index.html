@@ -62,19 +62,25 @@
             {% if course.qual %}
               <h2 class="heading-medium" id="section-qualification-options">Qualification options</h2>
 
-              <p>You can choose to apply for one of two qualifications with this course.</p>
+              <p>You can apply for either of the following:</p>
 
               <h3 class="heading-small">PGCE with QTS course</h3>
-              {{ macros.part(course['pgce-with-qts-qual']) }}
+              <p>A PGCE with QTS allows you to teach in England. Unlike a QTS course, in Scotland, Wales and Northern Ireland. This qualification is also recognised internationally. Our PGCE course includes 60 credits that count towards a Master's qualification.</p>
 
-              <h3 class="heading-small">QTS only course</h3>
-              {{ macros.part(course['qts-qual']) }}
+              <h3 class="heading-small">QTS course</h3>
+              You must have QTS in order to teach in a state school in England.
             {% endif %}
 
             {% if course.salary %}
               <h2 class="heading-medium" id="section-salary-options">Earn a salary while you train</h2>
-              <p>You can choose to apply to earn a salary for this course.</p>
-              {{ macros.part(course['salaried']) }}
+              <p>You have the option to earn a salary with this course.</p>
+              <p>With a salaried course you:</p>
+              <ul class="list list-bullet">
+                <li>won’t pay any fees</li>
+                <li>could have to pay tax and National Insurance</li>
+                <li>won’t be eligible for student finance</li>
+              </ul>
+              <p>You'll be employed directly by the school and will be spending four days a week there, mostly in the classroom. Most people who choose this type of course are employed by the school once they qualify.</p>
             {% endif %}
 
             <h2 class="heading-medium" id="section-fees">Fees</h3>
@@ -104,7 +110,7 @@
             {% endif %}
 
             {% if (course['qts-fee']) %}
-            <h3 class="heading-small">Fees for QTS only course</h3>
+            <h3 class="heading-small">Fees for QTS course</h3>
             <div class="body-text">
               <table>
                 <tbody>
@@ -157,7 +163,98 @@
 
             <h2 class="heading-medium" id="section-apply">Apply</h2>
 
-            <a href="#" class="button">Apply</a>
+            {% set apply_preamble %}
+              <p><a href="#">Apply for this course on the UCAS website</a>.</p>
+              <h3 class="heading-small">Codes for the choices section of your application</h3>
+
+              <dl class="aligned" style="margin-bottom: 40px">
+                <dt>Provider code:</dt>
+                <dd>1A9 ({{ course.provider }})</dd>
+                <dt>Programme code:</dt>
+            {% endset %}
+
+            {% set apply_more_1 %}
+              {{ apply_preamble | safe }}
+                <dd>2L79 ({{ data['subject'] }})</dd>
+              </dl>
+
+              <p>When asked for the training location or campus code, use:</p>
+              <div class="body">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Training location code</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Weatherhead High School</td>
+                      <td>- (Main Site)</td>
+                    </tr>
+                    <tr>
+                      <td>Wirral Grammar School for Boys</td>
+                      <td>F</td>
+                    </tr>
+                    <tr>
+                      <td>Wirral Grammar School for Girls</td>
+                      <td>G</td>
+                    </tr>
+                    <tr>
+                      <td>The Mosslands School</td>
+                      <td>T</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            {% endset %}
+
+            {% set apply_more_2 %}
+              {{ apply_preamble | safe }}
+                <dd>23CV ({{ data['subject'] }})</dd>
+              </dl>
+
+              <p>When asked for the training location or campus code, use:</p>
+              <div class="body">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Training location code</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tanbridge House School</td>
+                      <td>5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            {% endset %}
+
+            {% if course.options.length > 1 %}
+              <p>Pick a study option to apply to:</p>
+              {% set fields = [
+                  {
+                    name: course.options[0],
+                    more: apply_more_1
+                  },
+                  {
+                    name: course.options[1],
+                    more: apply_more_2
+                  }
+                ]
+              %}
+
+              <div class="form-group">
+                {{ macros.radioGroup('funding-example-one', fields) }}
+              </div>
+            {% else %}
+              {{ apply_preamble | safe }}
+                <dd>2L79 ({{ data['subject'] }})</dd>
+              </dl>
+            {% endif %}
           </div>
         </div>
       </div>
