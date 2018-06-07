@@ -80,6 +80,12 @@
   {% endfor %}
 {% endmacro %}
 
+{% macro part(data) %}
+  {% if (data) %}
+    <p>{{ data }}</p>
+  {% endif %}
+{% endmacro %}
+
 {% macro checkboxGroup(name, fields) %}
   {% for field in fields %}
     <div class="multiple-choice" data-target="checkbox-part-{{ loop.index }}-extra">
