@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% set title = "Study options user research 8 June 2018" %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main" class="design-history">
+  <div class="breadcrumbs dont-print">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p><a href="https://docs.google.com/document/d/1bKRxKlHHSVm9lZ4vJHxOoJpYkklJiz51oukQ7tsG4N0/edit?usp=sharing">Discussion guide</a></p>
+      <p>6 remote user research sessions recorded using Lookback:</p>
+      <ul class="list list-bullet">
+        <li><a href="https://lookback.io/watch/kw8NGRosYvft9yM3G">Participant 1</a></li>
+        <li><a href="https://lookback.io/watch/fNgMHR8TLkg3d2Kr2">Participant 2</a></li>
+        <li><a href="https://lookback.io/watch/FuAzAMcbq9LcCswXv">Participant 3</a></li>
+        <li><a href="https://lookback.io/watch/kH3oS3z8nAoWMsJ8B">Participant 4</a></li>
+        <li><a href="https://lookback.io/watch/Z3nCygSqTdw3agSGh">Participant 5</a></li>
+        <li><a href="https://lookback.io/watch/8QnFPjo5LYrFdFBdd">Participant 6</a></li>
+      </ul>
+    </div>
+  </div>
+
+  {{ macros.screenshot('Index', 'index', '/public/images/history/course-options-user-research-june-8/thumbnails/01-index.png', '/public/images/history/course-options-user-research-june-8/01-index.png', '') }}
+
+  {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/course-options-user-research-june-8/thumbnails/02-find-by-location.png', '/public/images/history/course-options-user-research-june-8/02-find-by-location.png', '') }}
+
+  {{ macros.screenshot('Search results with variants', 'search-results-with-variants', '/public/images/history/course-options-user-research-june-8/thumbnails/03-search-results-with-variants.png', '/public/images/history/course-options-user-research-june-8/03-search-results-with-variants.png', '') }}
+
+  {{ macros.screenshot('First course', 'first-course', '/public/images/history/course-options-user-research-june-8/thumbnails/04-first-course.png', '/public/images/history/course-options-user-research-june-8/04-first-course.png', '') }}
+
+  {{ macros.screenshot('Second course', 'second-course', '/public/images/history/course-options-user-research-june-8/thumbnails/05-second-course.png', '/public/images/history/course-options-user-research-june-8/05-second-course.png', '') }}
+
+  {{ macros.screenshot('Third course', 'third-course', '/public/images/history/course-options-user-research-june-8/thumbnails/06-third-course.png', '/public/images/history/course-options-user-research-june-8/06-third-course.png', '') }}
+
+  {{ macros.screenshot('Fourth course', 'fourth-course', '/public/images/history/course-options-user-research-june-8/thumbnails/07-fourth-course.png', '/public/images/history/course-options-user-research-june-8/07-fourth-course.png', '') }}
+
+</main>
+{% endblock %}
