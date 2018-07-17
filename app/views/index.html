@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-Find postgraduate teacher training for {{ (data['subject'] or 'business studies') | lower }}
+Find postgraduate teacher training
 {% endblock %}
 
 {% block content %}
@@ -13,66 +13,56 @@ Find postgraduate teacher training for {{ (data['subject'] or 'business studies'
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge" role="heading">
-            Find postgraduate teacher training in {{ (data['subject'] or 'business studies') | lower }}
-        </h1>
-        <p class="lede">
-            Use this service to search and compare postgraduate teacher training courses in England.
-        </p>
+        Find postgraduate teacher training
+      </h1>
+      <p class="lede">
+        Use this service to search and compare postgraduate teacher training courses in England.
+      </p>
 
-        <a class="button button-start" href="/start/location" role="button">Start now</a>
+      <a class="button button-start" href="/start/location" role="button">Start now</a>
 
-        <h2 class="heading-medium">
-            What you’ll need
-        </h2>
+      <h2 class="heading-medium">
+        What you’ll need
+      </h2>
 
-        <h3 class="heading-small">GCSEs</h3>
+      <h3 class="heading-small">GCSEs</h3>
 
-        <p>To apply for a course you’ll need grade 4 (previously grade C) GCSEs in maths and English.</p>
+      <p>To apply for a course you’ll need grade 4 (previously grade C) GCSEs in maths and English.</p>
 
-        <p>If you want to teach in a primary school you’ll also need a minimum grade 4 in a science subject.</p>
+      <p>If you want to teach in a primary school you’ll also need a minimum grade 4 in a science subject.</p>
 
-        <p>If you don’t have these qualifications, you must prove you have the equivalent level of knowledge in these subjects.</p>
+      <p>If you don’t have these qualifications, you must prove you have the equivalent level of knowledge in these subjects.</p>
 
-        <h3 class="heading-small">Degree</h3>
+      <h3 class="heading-small">Degree</h3>
 
-        <p>You’ll need a UK degree, or the international equivalent.</p>
+      <p>You’ll need a UK degree, or the international equivalent.</p>
 
-        <h3 class="heading-small">Tests and checks</h3>
+      <h3 class="heading-small">Tests and checks</h3>
 
-        <p>Before you start the course you’ll need to:</p>
+      <p>Before you start the course you’ll need to:</p>
 
-        <ul class="list list-bullet">
-            <li>pass literacy and numeracy skills tests</li>
-            <li>have a Disclosure and Barring Service (DBS) security check</li>
-        </ul>
+      <ul class="list list-bullet">
+        <li>pass literacy and numeracy skills tests</li>
+        <li>have a Disclosure and Barring Service (DBS) security check</li>
+      </ul>
 
-        <h2 class="heading-medium">
-            If you don&#8217;t want to teach {{ (data['subject'] or 'business studies') | lower }}
-        </h2>
-        <p>
-            You can
-            <a href="https://www.ucas.com/ucas/teacher-training/ucas-teacher-training-search-training-programmes">find all teacher training courses</a>
-            on the UCAS website.
-        </p>
-
-        <h2 class="heading-medium">
-            Other ways into teaching
-        </h2>
-        <p>
-            Find out more about teaching:
-        </p>
-        <ul class="list list-bullet">
-            <li>
-              if you <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training">don’t have a degree</a>
-            </li>
-            <li>
-              if you <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/specialist-training-options/assessment-only">have a degree and teaching experience already</a>&nbsp;–&nbsp;you might not need to do any more training
-            </li>
-            <li>
-              <a href="https://www.teachfirst.org.uk/">young people from poorer backgrounds</a>, through Teach First
-            </li>
-        </ul>
-      </div>
+      <h2 class="heading-medium">
+        Other ways into teaching
+      </h2>
+      <p>
+        Find out more about teaching:
+      </p>
+      <ul class="list list-bullet">
+        <li>
+          if you <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training">don’t have a degree</a>
+        </li>
+        <li>
+          if you <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/specialist-training-options/assessment-only">have a degree and teaching experience already</a>&nbsp;–&nbsp;you might not need to do any more training
+        </li>
+        <li>
+          <a href="https://www.teachfirst.org.uk/">young people from poorer backgrounds</a>, through Teach First
+        </li>
+      </ul>
     </div>
   </div>
 </main>

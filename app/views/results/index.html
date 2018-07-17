@@ -1,11 +1,12 @@
-{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+{% set title = 'Teacher training courses' %}
+{% block page_title %}{{ title }}{% endblock %} {% block content %}
 
 <main id="content" role="main">
   {{macros.betaBanner()}}
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-xlarge">{{ (data['subject'] or 'Business studies') }} teacher training courses</h1>
+      <h1 class="heading-xlarge">{{ title }}</h1>
     </div>
   </div>
   <div>
