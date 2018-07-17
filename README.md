@@ -1,10 +1,13 @@
 # Find postgraduate teacher training courses – prototype
 Also known as “search and compare”
 
-Prototype:<br /> https://search-and-compare-beta.herokuapp.com/
+Prototype:<br /> https://search-and-compare-prototype.herokuapp.com/
 
-Beta design history:<br />
-https://search-and-compare-beta.herokuapp.com/history
+Design history:<br />
+https://search-and-compare-prototype.herokuapp.com/history
+
+Private beta designs and history (see branch [`beta`](https://github.com/fofr/snc_beta/tree/beta)):<br />
+https://search-and-compare-beta.herokuapp.com/
 
 Alpha designs and history (see branch [`alpha`](https://github.com/fofr/snc_beta/tree/alpha)):<br />
 https://search-and-compare-alpha.herokuapp.com/
