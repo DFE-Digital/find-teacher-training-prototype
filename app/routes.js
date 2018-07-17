@@ -14,15 +14,6 @@ router.post('/', function (req, res) {
   res.render('index')
 })
 
-// Route index page
-router.get('/course/:id', function (req, res) {
-  var course = req.session.data['results'].find(function(result) {
-    return result.id == req.params.id;
-  });
-
-  res.render('courses/index', { course: course });
-})
-
 router.get('/results/filters/funding', function(req, res) {
   backLink = { text: 'Back to results', href: '/results'}
   res.render('start/funding', { 'backLink': backLink, 'filtering': true });

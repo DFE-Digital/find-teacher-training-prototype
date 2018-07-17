@@ -67,7 +67,7 @@
 
         {% for course in data['results'] %}
           <h2 class="heading-medium">
-            <a href="{% if (loop.index > 5) %}#{% else %}/course/{{ course.id }}{% endif %}">{{ data['subject'] or 'Business studies' }} at {{ course.provider }}</a>
+            <a href="/course/{{ course.id }}">{{ data['subject'] or 'Business studies' }} at {{ course.provider }}</a>
           </h2>
           <dl class="aligned">
             <dt>Distance:</dt>

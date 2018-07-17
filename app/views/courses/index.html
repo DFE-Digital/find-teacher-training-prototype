@@ -5,159 +5,270 @@
   {{ macros.betaBanner()}}
   <a class="link-back" href="/results">Back to search results</a>
   <h1 class="heading-xlarge">
-    {{ (data['subject'] or 'Business studies') }} at {{ course.provider }}
+    {{ (data['subject'] or 'Business studies') }} at Academies Enterprise Trust: South East
   </h1>
   <div class="grid-row">
     <div class="column-full">
       <div class="courseDetailsMeta">
         <dl>
-          <dt>Website:</dt>
-          <dd><a href="{{ course.website }}">{{ course.website }}</a></dd>
+          <!-- <dt>Qualifications:</dt>
+          <dd>
+            <details>
+              <summary><span class="summary">Postgraduate Certificate in Education and Qualified Teacher Status</span></summary>
+              <div class="panel panel-border-narrow">
+                <p>
+                  A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) allows you to teach in England, Scotland, Wales and Northern Ireland.
+                </p>
+                <p>
+                  This qualification is also recognised internationally.
+                </p>
+                <p>
+                  Many PGCE courses include credits that count toward a Master’s degree.
+                </p>
+              </div>
+            </details>
+          </dd>
+          <dt>Financial support:</dt>
+          <dd>None</dd>
+          <dt>Study type:</dt>
+          <dd>1 year, school-led, full time</dd>
+          <dt>Vacancies:</dt>
+          <dd>Yes</dd> -->
           <dt>Date you can apply from:</dt>
           <dd>26 October 2018</dd>
           <dt>Date course starts:</dt>
           <dd>15 October 2019</dd>
           <dt>Study options:</dt>
           <dd>
-            {% if course.options.length == 1 %}
-              {{ course.options }}
-            {% else %}
-              <ul class="multiple-options">
-                {% for option in course.options %}
-                  <li>{{ option }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
+            <ul class="multiple-options">
+              <li>PGCE with QTS, 1 year full time</li>
+              <li>PGCE with QTS, 1 year full time with salary</li>
+              <li>QTS, 1 year full time</li>
+              <li>QTS, 1 year full time with salary</li>
+            </ul>
           </dd>
         </dl>
       </div>
       <div class="courseContents">
+        <h3 class="heading-small">Contents</h3>
         <div class="grid-row">
           <div class="column-two-thirds">
-            <h2 class="heading-small">Contents</h2>
-            <ul class="list">
-              <li><a href="#section-about">About the course</a></li>
-              <li><a href="#section-entry">Requirements</a></li>
-              {% if course.qual %}<li><a href="#section-qualification-options">Qualification options</a></li>{% endif %}
-              {% if course.salary %}<li><a href="#section-salary-options">Salary</a></li>{% endif %}
-              <li><a href="#section-fees">Fees</a></li>
-              <li><a href="#section-financial-support">Financial support</a></li>
-              <li><a href="#section-schools">Schools</a></li>
-              <li><a href="#section-about-provider">About {{ course.provider }}</a></li>
-              <li><a href="#section-contact">Contact details</a></li>
-              <li><a href="#section-apply">Apply</a></li>
+            <ul class="list list-contents">
+              <li><a href="#aboutCourse">About the course</a></li>
+              <li><a href="#requirements">Requirements</a></li>
+              <li><a href="#placementSchools">Placement schools</a></li>
+              <li><a href="#feesAndFunding">Fees and financial support</a></li>
+              <li><a href="#aboutTrainingProvider">About the training provider</a></li>
+              <li><a href="#contactDetails">Contact details</a></li>
+              <li><a href="#apply">How to apply</a></li>
             </ul>
+            <a name="aboutCourse"></a>
+            <h2 class="heading-medium">About the course</h2>
+            <p>You'll train to teach Key Stages 4 and 5. You'll spend the majority of time in a school, learning on the job. You'll also attend classes at the university campus in Hornsey. The amount of time you spend teaching will gradually increase over the year.  In school you'll work closely with a mentor and an initial teacher training (ITT) coordinator. Over 95% of people who train with UNEL get a teaching job in their first year.</p>
 
-            <h2 class="heading-medium" id="section-about">About the course</h2>
-            {{ macros.part(course['about-this-course']) }}
-
-            <h2 class="heading-medium" id="section-entry">Requirements</h2>
-
+            <a name="requirements"></a>
+            <h2 class="heading-medium">Requirements</h2>
             <h3 class="heading-small">Qualifications</h3>
-            {{ macros.part(course['qualifications-required']) }}
-
+            <p>
+              You'll need a degree: 2:2 or higher, ideally in business studies. Ideally you'll have at least a B in A-Level business studies.
+            </p>
+            <h3 class="heading-small">Personal qualities</h3>
+            <p>
+              You'll need to demonstrate confidence in using computers and other technology in the classroom. You'l also need to be able to pick up new skills quickly.
+            </p>
             <h3 class="heading-small">Other requirements</h3>
-            {{ macros.part(course['other-requirements']) }}
+            <p>
+              If you're successful in your application, you'll need to do the following before you start the course: demonstrate an ability to communicate clearly and grammatically in spoken and written English; have at least 2 weeks' experience in a school, including observing lessons taking place; pass the skills test in literacy and numeracy; apply for Disclosure and Barring Service (DBS) security checks.
+            </p>
 
-            {% if course.qual %}
-              <h2 class="heading-medium" id="section-qualification-options">Qualification options</h2>
+            <a name="placementSchools"></a>
+            <h2 class="heading-medium">Placement schools</h2>
+            <p>
+              Candidates will, where possible, be placed at Biddulph High School for one of their placements. Their second placement will take into consideration the place they live, so that travel time can be kept to a minimum.
+            </p>
+            <p>
+              We have strong links across both Staffordshire and South Cheshire, so that you can get a wide teaching experience taking size and catchment areas of schools into consideration.
+            </p>
+            <p>
+              You will start with 3 days a week in your first placement school from September to Christmas, with 50% teaching time. You will then begin at your second placement on 4 days a week from Christmas until Easter, with 50% teaching time. For the final block, you will be in schools for the full 5 days, with a commitment of 50% teaching time.
+            </p>
 
-              <p>You can choose to apply for one of two qualifications with this course.</p>
 
-              <h3 class="heading-small">PGCE with QTS course</h3>
-              {{ macros.part(course['pgce-with-qts-qual']) }}
-
-              <h3 class="heading-small">QTS only course</h3>
-              {{ macros.part(course['qts-qual']) }}
-            {% endif %}
-
-            {% if course.salary %}
-              <h2 class="heading-medium" id="section-salary-options">Earn a salary while you train</h2>
-              <p>You can choose to apply to earn a salary for this course.</p>
-              {{ macros.part(course['salaried']) }}
-            {% endif %}
-
-            <h2 class="heading-medium" id="section-fees">Fees</h3>
-
+            <a name="feesAndFunding"></a>
+            <h2 class="heading-medium">Fees and financial support</h2>
+            <h3 class="heading-small">Fees</h3>
             <p>The course fees for 2018/2019 are as follows:</p>
+            <table>
+              <tr>
+                <td>UK students</td>
+                <td>£9,250</td>
+              </tr>
+              <tr>
+                <td>EU students</td>
+                <td>£9,250</td>
+              </tr>
+              <tr>
+                <td>International students</td>
+                <td>£9,250</td>
+              </tr>
+            </table>
+            <p>
+              You could be eligible for <a href="#" class="">other types of financial support</a>.
+            </p>
 
-            {% if (course['pgce-fee']) %}
-            <h3 class="heading-small">Fees for PGCE with QTS course</h3>
-            <div class="body-text">
-              <table>
-                <tbody>
-                  <tr class="visually-hidden">
-                    <th>Student type</th>
-                    <th>Fees to pay</th>
-                  </tr>
-                  <tr>
-                    <td>UK students</td>
-                    <td>£{{ course['pgce-fee'] }}</td>
-                  </tr>
-                  <tr>
-                    <td>EU students</td>
-                    <td>£{{ course['pgce-fee'] }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            {% endif %}
+            <a name="aboutTrainingProvider"></a>
+            <h2 class="heading-medium">About the training provider</h2>
+            <p>
+              We make our decisions to offer a place based on your enthusiasm, aptitude and commitment to teaching
+              as demonstrated by your application form, qualifications, experience, reference and performance at the
+              interview.
+            </p>
+            <h3 class="heading-small">Access for disabled people</h3>
 
-            {% if (course['qts-fee']) %}
-            <h3 class="heading-small">Fees for QTS only course</h3>
-            <div class="body-text">
-              <table>
-                <tbody>
-                  <tr class="visually-hidden">
-                    <th>Student type</th>
-                    <th>Fees to pay</th>
-                  </tr>
-                  <tr>
-                    <td>UK students</td>
-                    <td>£{{ course['qts-fee'] }}</td>
-                  </tr>
-                  <tr>
-                    <td>EU students</td>
-                    <td>£{{ course['qts-fee'] }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            {% endif %}
-
-            <h2 class="heading-medium" id="section-financial-support">Financial support</h3>
-            <p>You may be eligible for <a href="https://www.gov.uk/student-finance">financial support for students</a>.</p>
-            <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">Financial support if you’re from outside of the UK</a></p>
-
-            <h2 class="heading-medium" id="section-schools">Schools you’ll be placed at</h3>
-            {{ macros.part(course['placement-school-policy']) }}
-
-            <h2 class="heading-medium" id="section-about-provider">About {{ course.provider }}</h2>
-
-            <h3 class="heading-small">Training with a disability</h3>
-            {{ macros.part(course['training-with-a-disability']) }}
+            <p>
+              The university is committed to supporting trainees with disabilities. Contact the university if you would like them to make any adjustments during your application, interview process and training programme. The campus has a ramp for wheelchair access to its front entrance, as well as a lift to all floors.
+            </p>
 
             <h3 class="heading-small">Interview process</h3>
-            {{ macros.part(course['interview-process']) }}
+            <p>
+              If you're shortlisted you'll get an initial interview at the university, which will give you the chance to demonstrate your skills and experience.
+            </p>
+            <p>
+              The most successful applicants will be those who have focused their personal statements on why they want to teach and given examples of what they can bring to the teaching profession.
+            </p>
+            <p>
+              As part of the selection process you must pass 2 skills tests in literacy and numeracy. You should register before the interview.
+            </p>
+            <h3 class="heading-small">After you've qualified</h3>
+            <p>
+              All shortlisted candidates will be invited for an interview day, generally held at UNEL but sometimes at
+              partnership schools too. As there are limited dates available for us to interview and a fixed number of places
+              we can offer, we may not be able to offer you another date if you cannot attend the interview day.
+            </p>
 
-            <h2 class="heading-medium" id="section-contact">Contact details</h2>
-
-            <dl class="aligned">
-              <dt>Email:</dt>
-              <dd><a href="#">admissions@apply-for-itt-at-pro.com</a></dd>
-              <dt>Telephone:</dt>
-              <dd>0208 123986</dd>
-              <dt>Website:</dt>
-              <dd><a href="{{ course.website }}">{{ course.website }}</a></dd>
-              <dt>Address:</dt>
-              <dd>
-                {{ course.address }}
-              </dd>
+            <a name="contactDetails"></a>
+            <h2 class="heading-medium">Contact details</h2>
+            <dl class="contactDetails">
+              <dd>Email:</dd>
+              <dt><a href="#">contact@provider.co.uk</a></dt>
+              <dd>Telephone:</dd>
+              <dt>01234 567890</dt>
+              <dd>Website:</dd>
+              <dt><a href="#">http://wwww.provider.co.uk</a></dt>
+              <dd>Address:</dd>
+              <dt>15 High Street<br>Hornsey<br>N8 5AL</dt>
             </dl>
 
-            <h2 class="heading-medium" id="section-apply">Apply</h2>
+            <h2 class="heading-large">Apply</h2>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>
+                  <h3 class="heading-medium">Pick a study option to apply to</h3>
+                </legend>
 
-            <a href="#" class="button">Apply</a>
+                {% set more %}
+                <p><a href="#">Apply for this course on the UCAS website</a>.</p>
+                <h3 class="heading-medium">Codes for the Choices section of your application</h3>
+
+                ‘Academies Enterprise Trust: South East’<br />
+                Training provider code:
+                <div class="heading-medium remove-top-margin">134</div>
+                Business studies<br />
+                Training programme code:
+                <div class="heading-medium remove-top-margin">2HCD</div>
+
+                <div class="body">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Campus code</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Soho Parish CofE Primary School</td>
+                        <td>- (Main Site)</td>
+                      </tr>
+                      <tr>
+                        <td>Harris Westminster Sixth Form</td>
+                        <td>B</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                {% endset %}
+
+                {% set moreFolded %}
+                <p><a href="#">Apply for this course on the UCAS website</a>.</p>
+                <h3 class="heading-medium">Codes for the Choices section of your application</h3>
+
+                ‘Academies Enterprise Trust: South East’<br />
+                Training provider code:
+                <div class="heading-medium remove-top-margin">134</div>
+
+                <div class="body">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Course code</th>
+                        <th>Campus code</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Soho Parish CofE Primary School</td>
+                        <td>2HCD</td>
+                        <td>- (Main Site)</td>
+                      </tr>
+                      <tr>
+                        <td>Harris Westminster Sixth Form</td>
+                        <td>2HAA</td>
+                        <td>B</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                {% endset %}
+
+                {% set fields = [
+                    {
+                      name: 'PGCE with QTS, 1 year full time',
+                      more: more
+                    },
+                    {
+                      name: 'PGCE with QTS, 1 year full time with salary',
+                      more: moreFolded
+                    },
+                    {
+                      name: 'QTS, 1 year full time'
+                    },
+                    {
+                      name: 'QTS, 1 year full time with salary'
+                    }
+                  ]
+                %}
+
+                <div class="form-group">
+                  {{ macros.radioGroup('funding', fields) }}
+                </div>
+              </fieldset>
+            </form>
+
+            <!-- <ul class="list list-bullet">
+              <li>training provider code name: A1131</li>
+              <li>training provider code: 134</li>
+              <li>training programme code: 2HCD</li>
+            </ul>
+            <p>When asked for the training location or campus code, use:</p>
+            <ul class="list list-bullet">
+              <li>V for Soho Parish CofE Primary School</li>
+              <li>U for The Royal Ballet School</li>
+              <li>B for Harris Westminster Sixth Form</li>
+              <li>3 for St Clement Danes CofE Primary School</li>
+              <li>G for Westminster Abbey Choir School</li>
+            </ul> -->
           </div>
         </div>
       </div>
