@@ -1,7 +1,7 @@
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Location</h4>
   <div class="filters">
-    {{ data['postcode-town-or-city'] or 'Across England' }}
+    {{ data['postcode-town-or-city'] or 'SW13' }}
   </div>
   <div class="filter-link">
     <a href="/results/filters/location">Change location</a>
@@ -11,14 +11,14 @@
 <div class="filter-category ">
   <h4 class="heading-small filter-heading">Subject</h4>
   <div class="filters">
-    {{ (data['subject'] or 'Business studies') }}
+    Business studies
   </div>
   <div class="filter-link">
     <a href="/results/filters/subjects">Change subject</a>
   </div>
 </div>
 
-<!-- <div class="filter-category">
+<div class="filter-category">
   <h4 class="heading-small filter-heading">Financial support</h4>
   <div class="filters">
     {% if data['funding'] == 'Show courses with and without financial support' %}
@@ -30,7 +30,7 @@
   <div class="filter-link">
     <a href="/results/filters/funding">Change financial support options</a>
   </div>
-</div> -->
+</div>
 
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Study type</h4>
@@ -47,8 +47,8 @@
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Qualifications</h4>
   <div class="filters">
-    PGCE with QTS<br>
-    QTS
+    Postgraduate Certificate in Education with Qualified Teacher Status,<br>
+    Qualified Teacher Status
   </div>
   <div class="filter-link">
     <a href="/results/filters/qualification">Change qualifications</a>
