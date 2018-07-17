@@ -6,10 +6,10 @@ Prototype:<br /> https://search-and-compare-prototype.herokuapp.com/
 Design history:<br />
 https://search-and-compare-prototype.herokuapp.com/history
 
-Private beta designs and history (see branch [`beta`](https://github.com/fofr/snc_beta/tree/beta)):<br />
+Private beta designs and history (see branch [`beta`](https://github.com/DFE-Digital/search-and-compare-prototype/tree/beta)):<br />
 https://search-and-compare-beta.herokuapp.com/
 
-Alpha designs and history (see branch [`alpha`](https://github.com/fofr/snc_beta/tree/alpha)):<br />
+Alpha designs and history (see branch [`alpha`](https://github.com/DFE-Digital/search-and-compare-prototype/tree/alpha)):<br />
 https://search-and-compare-alpha.herokuapp.com/
 
 Private design documentation in Confluence:<br />
