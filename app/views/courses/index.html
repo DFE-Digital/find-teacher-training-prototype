@@ -13,10 +13,6 @@
         <dl>
           <dt>Website:</dt>
           <dd><a href="{{ course.website }}">{{ course.website }}</a></dd>
-          {% if course.entity != 'university' %}
-          <dt>Accredited provider:</dt>
-          <dd>University of Hayes</dd>
-          {% endif %}
           <dt>Date you can apply from:</dt>
           <dd>26 October 2018</dd>
           <dt>Date course starts:</dt>
@@ -168,8 +164,8 @@
             <h2 class="heading-medium" id="section-apply">Apply</h2>
 
             {% set apply_preamble %}
-              <p><a href="#">Apply for this course on the UCAS website</a>. You'll need to register before you can apply.</p>
-              <h3 class="heading-medium">Codes for the Choices section of your application</h3>
+              <p><a href="#">Apply for this course on the UCAS website</a>.</p>
+              <h3 class="heading-small">Codes for the choices section of your application</h3>
 
               <dl class="aligned" style="margin-bottom: 40px">
                 <dt>Provider code:</dt>
@@ -238,7 +234,7 @@
             {% endset %}
 
             {% if course.options.length > 1 %}
-              <p>Choose one of these options:</p>
+              <p>Pick a study option to apply to:</p>
               {% set fields = [
                   {
                     name: course.options[0],
