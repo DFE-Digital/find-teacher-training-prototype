@@ -15,27 +15,44 @@
       </div>
 
       <div class="column-two-thirds">
-        {{macros.resultsHeader()}}
 
-        {% for course in courses %}
+<div class="resultsHeader">
+  <div>
+    40 courses found
+    <span>
+      <a href="/start/location">New search</a>
+    </span>
+  </div>
+  <div class="resultsSortingOptions">
+    <label class="form-label sortLabel" for="select-box">Sorted by</label>
+    <select class="form-control sortSelectBox" id="select-box" name="select-box">
+      <option selected="">Distance</option>
+      <option>Alphabetical A-Z</option>
+      <option>Alphabetical Z-A</option>
+    </select>
+  </div>
+</div>
+
+
+
           <div class="results">
             <h2 class="heading-medium">
-              <a href="/course">{{ course.name }}</a>
+              <a href="/courses">Secondary Business Studies</a>
             </h2>
             <div class="grid-row results-data-large">
               <div class="column-full">
-                Training provider: {{ course.provider.name }}
+                Training provider: Associated Merseyside Partnership SCITT
               </div>
             </div>
             <div>
               <div class="grid-row results-data-large">
                 <div class="column-full">
-                  Training provider's location: {{ course.providerLocation.address }}
+                  Training provider's location: Deyes Lane, Maghull, Merseyside, L31 6DE
                 </div>
               </div>
               <!-- <div class="grid-row results-data-large">
                 <div class="column-full">
-                  Study type: {{result.studyType}}
+                  Study type:
                 </div>
               </div> -->
               <div class="grid-row results-data-large">
@@ -50,138 +67,1631 @@
               </div>
             </div>
           </div>
-        {% endfor %}
 
-        {% set results = [
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust: South East',
-            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'None'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
-            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust: South East',
-            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
-            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust: South East',
-            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
-            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust: South East',
-            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
-            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust: South East',
-            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          },
-          {
-            'url':'courses/',
-            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
-            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
-            'subject':'Business studies',
-            'studyType':'1 year, school-led, full time',
-            'vacancies':'Yes',
-            'financialSupport':'Salary'
-          }]
-        %}
-
-        {% for result in results %}
-          <!-- <div class="grid-row results">
+          <div class="results">
             <h2 class="heading-medium">
-              <a href="{{result.url}}">{{result.subject}}</a>
+              <a href="/courses">Business studies</a>
             </h2>
             <div class="grid-row results-data-large">
               <div class="column-full">
-                Training provider: {{result.trainingProvider}}
+                Training provider: Astra SCITT
               </div>
             </div>
             <div>
               <div class="grid-row results-data-large">
                 <div class="column-full">
-                  Training provider's location: {{result.trainingProviderLocation}}
+                  Training provider's location: Dr Challoner's Grammar School, Chesham Rd, Amersham, Buckinghamshire, HP6 5HA
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
                 </div>
               </div>
               <div class="grid-row results-data-large">
                 <div class="column-full">
-                  Study type: {{result.studyType}}
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Astra SCITT
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Dr Challoner's Grammar School, Chesham Rd, Amersham, Buckinghamshire, HP6 5HA
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
                 </div>
               </div>
               <div class="grid-row results-data-large">
                 <div class="column-full">
-                  Vacancies: {{result.vacancies}}
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Bath Spa University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Newton Saint Loe, Bath, BA2 9BN
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
                 </div>
               </div>
               <div class="grid-row results-data-large">
                 <div class="column-full">
-                  Financial support: {{result.financialSupport}}
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Biddulph High School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Conway Road, Knypersley, Stoke-on-Trent, Staffordshire, ST8 7AR
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies School Direct Fee Funded</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Bishop Ramsey CofE School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: c/o Bishop Ramsey School, Hume Way, Ruislip, Middlesex, HA4 8EE
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Bitterne Park Teaching School Alliance
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Bitterne Park School, Dimond Road, Bitterne Park, Southampton, SO18 1BU
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies 14-19</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Bluecoat Academy
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Aspley Lane, Aspley, Nottingham, NG8 5GY
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies - 11 to 19</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Bromley Schools' Collegiate
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Chislehurst School for Girls, Beaverwood Road, Chislehurst, BR7 6HE
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Applied Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Canterbury Christ Church University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Old Sessions House, N Holmes Rd, Canterbury, CT1 1NX
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Chauncy School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Park Rd, Ware, SG12 0DP
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Claydon High School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Claydon High School, Church Lane, Claydon, Suffolk, IP6 0EG
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Comberton Village College (Cambs Teaching Schools Network)
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: West St, Comberton, Cambridge, CB23 7DU
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Compton SCITT
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: The Compton School, North Finchley, Summers Lane, London, N12 0QG
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Doncaster Regional Alliance For Teacher Training Secondary
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Doncaster Regional Alliance For Teacher Training Secondary, Ridgewood School, Barnsley Road, Scawsby, Doncaster, South Yorkshire, DN5 7UB
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Dr Challoner's High School (ITT Bucks Hub)
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Cokes Lane, Little Chalfont, Buckinghamshire, HP7 9QB
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: East Herts Schools Direct Partnership
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Goffs Academy, Goffs Lane, Cheshunt, EN7 5QW
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: e-Qualitas
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: 23 Mountfield Gardens, Tunbridge Wells, TN1 1SJ
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: e-Qualitas
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: 23 Mountfield Gardens, Tunbridge Wells, TN1 1SJ
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary QTS in Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Fakenham Academy Partnership
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: City College Norwich, Ipswich Road, Norwich, NR2 2LJ
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">School Direct Business Studies Training Programme</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: George Spencer Academy And Technology College
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Arthur Mee Road, Stapleford, Nottingham, NG9 7EW
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">School Direct Business Studies Training Programme</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: George Spencer Academy And Technology College
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Arthur Mee Road, Stapleford, Nottingham, NG9 7EW
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: GLF Schools' Teacher Training
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Glyn School, Kingsway, Ewell, Surrey, KT17 1NB
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Goffs School (East Herts Partnership)
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Goff's Ln, Cheshunt, Waltham Cross, EN7 5QW
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies - School Direct</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Green Light Teaching School Alliance
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Shelley College, Huddersfield Road, Shelley, HD8 8NL
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Harris Initial Teacher Education
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Steel House, 11 Tothill Street, Westminster, SW1H 9LH
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">PGCE - Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Harton Technology School Alliance
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Harton Academy, Lisle Road, South Shields, Tyne and Wear, NE34 6DL
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Haybridge Alliance SCITT
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Brake Lane, Hagley, West Midlands, DY8 2XS
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Hitchin Boys School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Grammar School Walk, Hitchin, SG5 1JB
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">School Direct Secondary Business Studies (unsalaried)</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Humber Teaching School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Low Road, Healing, NE Lincs, DN41 7QD
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">PGCE Secondary Business Studies tuition fee route</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Kingston School Direct
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: UCL IOE, 20 Bedford Way, WC1H 0AL
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Kirklees and Calderdale SCITT
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: The John Curwen Primary Academy, Leeds Old Road, Heckmondwike, WF16 9BB
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies (14-19)</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Leeds Trinity University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Brownberrie Lane, Horsforth, Leeds, LS18 5HD
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Lightwoods Teaching School Alliance
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Castle Road East, Oldbury, B68 9BG
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Manchester Nexus SCITT
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: The Blue Coat School, Egerton St, Oldham, OL1 3SQ
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Mid Essex Initial Teacher Training
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Notley High School, Notley Road, Braintree, Essex, CM7 1WY
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: North London New River Teaching Alliance
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Alexandra Park School, Bidwell Gardens, London, N11 2AZ
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Education</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Nottingham Trent University
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Clifton Campus, Nottingham, NG11 8NS
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Secondary Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Parmiter's School
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: High Elms Lane, Watford, WD25 0UU
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="results">
+            <h2 class="heading-medium">
+              <a href="/courses">Business Studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Partnership London SCITT (PLS)
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Sydney Russell School, Parsloes Avenue, Dagenham, Essex, RM9 5QT
+                </div>
+              </div>
+              <!-- <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type:
+                </div>
+              </div> -->
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust: South East
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Pell Lane, Ryde, Isle of Wight, PO33 3LN
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: None
                 </div>
               </div>
             </div>
           </div> -->
-        {% endfor %}
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust &amp; Tendring Teaching
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Woolwich Road, Bexleyheath, DA6 7DA
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust: South East
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Pell Lane, Ryde, Isle of Wight, PO33 3LN
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust &amp; Tendring Teaching
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Woolwich Road, Bexleyheath, DA6 7DA
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust: South East
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Pell Lane, Ryde, Isle of Wight, PO33 3LN
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust &amp; Tendring Teaching
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Woolwich Road, Bexleyheath, DA6 7DA
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust: South East
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Pell Lane, Ryde, Isle of Wight, PO33 3LN
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust &amp; Tendring Teaching
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Woolwich Road, Bexleyheath, DA6 7DA
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust: South East
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Pell Lane, Ryde, Isle of Wight, PO33 3LN
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="courses/">Business studies</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: Academies Enterprise Trust &amp; Tendring Teaching
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: Woolwich Road, Bexleyheath, DA6 7DA
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: 1 year, school-led, full time
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: Yes
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: Salary
+                </div>
+              </div>
+            </div>
+          </div> -->
+
 
         <div class="pagination">
-          <a href="#"  rel="next" aria-label="Go to page 2 of 20">
+          <a href="#" rel="next" aria-label="Go to page 2 of 20">
             <span class="paginationTitle">
               Next page
               <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
