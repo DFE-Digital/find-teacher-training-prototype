@@ -3,11 +3,6 @@ var router = express.Router()
 
 // Route index page
 router.get('/', function (req, res) {
-  var subject = req.params.subject;
-  if (subject) {
-    req.session.data['subject'] = subject;
-  }
-
   res.render('index')
 
   // While the prototype is not being used as a prototype:
