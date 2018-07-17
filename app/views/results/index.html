@@ -18,32 +18,7 @@
         {{macros.resultsHeader()}}
 
         {% for course in courses %}
-          <!--{% if 'University' in course.provider.name %}
-            {% set options = ['PGCE with QTS, 1 year full time'] %}
-          {% else %}
-            {% set options = [
-              ['PGCE with QTS, 1 year full time'],
-              ['PGCE with QTS, 1 year full time', 'QTS, 1 year full time'],
-              ['PGCE with QTS, 1 year full time', 'QTS, 1 year full time with salary'],
-              ['PGCE with QTS, 1 year full time', 'PGCE with QTS, Up to 2 years part time'],
-              ['PGCE with QTS, 1 year full time with salary', 'PGCE with QTS, 1 year full time']
-            ] | random %}
-          {% endif %}
-
-
-          {<br>
-            "distance": "{{ (loop.index * 1.2 - loop.index + 1) | int }}",<br>
-            "id": "{{ loop.index }}",<br>
-            "entity": "{% if 'University' in course.provider.name %}university{% else %}school{% endif %}",<br>
-            "provider": "{{ course.provider.name }}",<br>
-            "options": [<br>
-              {% for o in options %}
-                "{{ o }}"{% if not loop.last %},{% endif %}<br >
-              {% endfor %}
-            ],<br>
-            "address": "{{ course.providerLocation.address }}"<br>
-          },<br>-->
-          <!-- <div class="results">
+          <div class="results">
             <h2 class="heading-medium">
               <a href="/courses">{{ data['subject'] or 'Business studies' }} at {{ course.provider.name }}</a>
             </h2>
@@ -62,38 +37,149 @@
                 </ul>
               </dd>
             </dl>
+          </div>
+        {% endfor %}
+
+        {% set results = [
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'None'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust: South East',
+            'trainingProviderLocation':'Pell Lane, Ryde, Isle of Wight, PO33 3LN',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          },
+          {
+            'url':'courses/',
+            'trainingProvider':'Academies Enterprise Trust & Tendring Teaching ',
+            'trainingProviderLocation':'Woolwich Road, Bexleyheath, DA6 7DA',
+            'subject':'Business studies',
+            'studyType':'1 year, school-led, full time',
+            'vacancies':'Yes',
+            'financialSupport':'Salary'
+          }]
+        %}
+
+        {% for result in results %}
+          <!-- <div class="grid-row results">
+            <h2 class="heading-medium">
+              <a href="{{result.url}}">{{result.subject}}</a>
+            </h2>
+            <div class="grid-row results-data-large">
+              <div class="column-full">
+                Training provider: {{result.trainingProvider}}
+              </div>
+            </div>
+            <div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Training provider's location: {{result.trainingProviderLocation}}
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Study type: {{result.studyType}}
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Vacancies: {{result.vacancies}}
+                </div>
+              </div>
+              <div class="grid-row results-data-large">
+                <div class="column-full">
+                  Financial support: {{result.financialSupport}}
+                </div>
+              </div>
+            </div>
           </div> -->
         {% endfor %}
 
-        {% for course in data['results'] %}
-          <h2 class="heading-medium">
-            <a href="/course/{{ course.id }}">{{ data['subject'] or 'Business studies' }} at {{ course.provider }}</a>
-          </h2>
-          <dl class="aligned">
-            <dt>Distance:</dt>
-
-            {% if course.entity == 'university' %}
-              <dd>{{ course.distance }} {% if course.distance == 1 %}mile{% else %}miles{% endif %} to {{ course.entity }}</dd>
-              <dt>University:</dt>
-            {% else %}
-              <dd>{{ course.distance }} {% if course.distance == 1 %}mile{% else %}miles{% endif %} to nearest {{ course.entity }}</dd>
-              <dt>Nearest {{ course.entity }}:</dt>
-            {% endif %}
-            <dd>{{ course.address }}</dd>
-            <dt>Study options:</dt>
-            <dd>
-              {% if course.options.length == 1 %}
-                {{ course.options }}
-              {% else %}
-                <ul class="multiple-options">
-                  {% for option in course.options %}
-                    <li>{{ option }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </dd>
-          </dl>
-        {% endfor %}
+        <div class="pagination">
+          <a href="#"  rel="next" aria-label="Go to page 2 of 20">
+            <span class="paginationTitle">
+              Next page
+              <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg>
+            </span>
+              <br>
+              <span class="pub-c-pagination__link-label">2 of 20</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
