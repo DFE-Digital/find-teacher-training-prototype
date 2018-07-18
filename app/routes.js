@@ -1,5 +1,6 @@
 var express = require('express')
 var router = express.Router()
+var geolib = require('geolib')
 
 // Route index page
 router.get('/', function (req, res) {
@@ -51,19 +52,32 @@ router.get('/results', function (req, res) {
   // Find by qualification
   if (req.session.data['qualification'].length == 1) {
     var qualification = req.session.data['qualification'].join(' ').includes('Postgraduate') ? 'PGCE with' : 'QTS';
-    console.log(qualification);
-
     results = results.filter(function(course) {
       return course.options.some(o => o.startsWith(qualification))
     });
   }
+
+  // Sort by location
+  var london = {latitude: 51.508530, longitude: -0.076132};
+
+  results.forEach(function(course) {
+    var latLong = { latitude: course.addresses[0].latitude, longitude: course.addresses[0].longitude };
+    var d = geolib.getDistanceSimple(london, latLong);
+    course.distance = (d / 1000).toFixed(0);
+  });
+
+  results.sort(function(c1, c2) {
+    return c1.distance - c2.distance;
+  });
+
+  var originalCount = results.length;
 
   if (results.length > 10) {
     results.length = 10;
     paginated = true;
   }
 
-  res.render('results/index', { results: results, paginated: paginated });
+  res.render('results/index', { results: results, paginated: paginated, count: originalCount });
 })
 
 router.get('/results/filters/funding', function(req, res) {
