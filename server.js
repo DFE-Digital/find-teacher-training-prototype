@@ -116,15 +116,15 @@ app.locals.promoMode = promoMode
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
 
-request('http://search-and-compare-api-bat-development.e4ff.pro-eu-west-1.openshiftapps.com/api/courses?pageSize=40', function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    var importedJSON = JSON.parse(body);
-    jsonWithIds = courseApi.parseIds(importedJSON);
-    app.locals.courses = jsonWithIds.items;
-  } else {
-    console.log('Could not load courses');
-  }
-});
+// request('http://search-and-compare-api-bat-development.e4ff.pro-eu-west-1.openshiftapps.com/api/courses?pageSize=40', function (error, response, body) {
+//   if (!error && response.statusCode == 200) {
+//     var importedJSON = JSON.parse(body);
+//     jsonWithIds = courseApi.parseIds(importedJSON);
+//     app.locals.courses = jsonWithIds.items;
+//   } else {
+//     console.log('Could not load courses');
+//   }
+// });
 
 // Support session data
 app.use(session({
