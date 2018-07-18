@@ -1,0 +1,457 @@
+{
+  "study-type": ["Full time (12 months)", "Part time (18-24 months)"],
+  "qualification": ["Postgraduate certificate in education with qualified teacher status", "Qualified teacher status"],
+  "results": [
+    {
+      "distance": "1",
+      "id": "1",
+      "entity": "school",
+      "provider": "Associated Partnership SCITT",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time with salary"
+      ],
+      "salary": true,
+      "qual": true,
+      "address": "Deyes Lane, Maghull, L31 6DE",
+      "about-this-course": "This is an intense school led programme, tightly focused on providing you with the skills and knowledge you will need when embarking on your teaching career. Support is an important part of the process and you will receive a personalised service that will enable you to set targets and achieve to your highest potential.",
+      "qualifications-required": "A first or second class honours degree, GCSEs (or equivalents) at grade C / level 5 or above in English Language and Mathematics",
+      "other-requirements": "Successful completion of DBS, Professional skills tests and a medical questionnaire",
+      "placement-school-policy": "Placements schools from our partnership are matched to applicants to ensure breadth of experience and high quality mentoring. In term one, 4 days a week are in school and 1 day at the training base. In terms 2 and 3 trainees are in school 5 days a week.",
+      "training-with-a-disability": "Applicants who would benefit from disabled access should let us know on their application so that they can be considered for placements at the appropriate schools.",
+      "interview-process": "The interview day involves supporting pupils in a teacher led lesson, a group task, a literacy assessment, a subject knowledge interview and a panel interview and presentation",
+      "pgce-fee": "9,000",
+      "qts-fee": "7,000",
+      "website": "https://amp-scitt.lydiatelearningtrust.co.uk/"
+    },
+    {
+      "distance": "1",
+      "id": "2",
+      "entity": "school",
+      "provider": "Astra SCITT",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time with salary"
+      ],
+      "address": "Dr Challoner's Grammar School, Chesham Rd, Amersham, Buckinghamshire, HP6 5HA",
+      "salary": true,
+      "qual": true,
+      "pgce-fee": "9,000",
+      "qts-fee": "7,000",
+      "website": "http://www.astra-alliance.com/388/astra-scitt-prospectus",
+      "about-this-course": "The course content covers both core QTS and subject-specific skills. You will have opportunities to consider issues raised in school against a wide range of educational principles. The majority of training is school-based. You will spend the majority of your time in your main placement schools, but will also spend five weeks in a contrasting, second placement school.",
+      "qualifications-required": "GCSE or equivalent in Maths and English; degree at 2:2 or above (or equivalent)",
+      "other-requirements": "Completion of national numeracy and literacy skills tests; DBS clearance; medical clearance",
+      "placement-school-policy": "Candidates can apply against their preferred main placement school. Trainees spend 4 days per week at their main placement school, and one day with Astra doing Professional/Subject Studies. Trainees also have a shorter second placement at a contrasting school allocated by Astra.",
+      "training-with-a-disability": "Access is dependent on individual schools. Every effort is made to place trainees in a school that meets their needs.",
+      "interview-process": "Shortlisted candidates will be invited to their preferred main placement school to teach a short lesson (lesson brief given in advance), complete a written test and have a panel interview."
+    },
+    {
+      "distance": "1",
+      "id": "4",
+      "entity": "university",
+      "provider": "Bath Spa University",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Newton Saint Loe, Bath, BA2 9BN",
+      "pgce-fee": "9,000",
+      "website": "https://www.bathspa.ac.uk/education/teacher-education/",
+      "about-this-course": "At the heart of the PGCE Secondary programme is the notion of the teacher as a reflective practitioner. The course nurtures and develops a reflective approach to teaching and learning, and encourages BSTs (Bath Spa Teachers) to take a critical stance in their work. The Professional Studies programme is at the core of the PGCE Secondary programme, which integrates both University and partnership training.",
+      "qualifications-required": "To apply you'll need to have completed, or be in the final year of a UK degree (or an equivalent qualification). You’re required to have a minimum 2:2 honours degree with at least 50% suitable content for the route you’re applying to do, which you should state clearly on your application. You’ll be enthusiastic about your subject and working with children. You'll also need GCSE passes at grade C or above (or recognised equivalents) including English, Mathematics and a Science subject. In addition, for some Secondary programmes you are also required to have an A-level in the subject.",
+      "other-requirements": "All applicants are subject to a number of checks designed to maintain the integrity of the teaching profession. You'll be required to attend an interview, complete Professional Skills Tests and undergo DBS checks. You may also need to enrol on a Subject Knowledge Enhancement course.",
+      "placement-school-policy": "As a Bath Spa Teacher, you'll learn in a variety of locations within our wide partnership, both at the University and in schools. University teaching takes place in rooms equipped with relevant texts, equipment, training materials, and electronic resources.",
+      "training-with-a-disability": "Access is dependent on individual schools. Every effort is made to place trainees in a school that meets their needs.",
+      "interview-process": "Shortlisted candidates will be invited to campus to teach a short lesson (lesson brief given in advance), complete a written test and have a panel interview."
+    },
+    {
+      "distance": "2",
+      "id": "5",
+      "qual": true,
+      "entity": "school",
+      "provider": "Biddulph High School",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "Conway Road, Knypersley, Stoke-on-Trent, Staffordshire, ST8 7AR",
+      "pgce-fee": "9,000",
+      "qts-fee": "7,000",
+      "website": "http://biddulph.staffs.sch.uk/our-school/school-direct-teacher-training/",
+      "about-this-course": "After an Induction Programme at the university, you will be in school in two block placements to gain a supported understanding of the role of the teacher. Within a school, you will receive expert support from a subject or class mentor who will hold weekly meetings with you to help you to prepare, teach and review lessons and develop your subject knowledge. Each school or college will have a professional mentor who will help you to understand the organisation of the school, pastoral care systems and the legal and social framework of school including supporting services. Associate Teachers have a phased introduction to teaching that will reflect your personal needs. Initially you will observe the regular teacher, help with group work and then move towards sharing classes with the teacher before eventually taking classes yourself. As well as teaching your subject, you will be required to contribute generally to the life of the school. The University element of the course is designed to engage Associate Teachers in critical reflection on the nature of education. We also aim to develop your knowledge of the curriculum for Mathematics. Group and individual tutorials in the university will give you an opportunity to discuss your ideas and the challenges you may face.The University aspects of the course take place on the Stafford and Stoke campuses and will draw upon the experience of practicing teachers as well as highly experienced tutors. The school experience is based in local, carefully selected partnership schools. The blend of practical experience and university study will be evidenced by the compilation of portfolios and the production of short written academic papers.",
+      "placement-school-policy": "Candidates will where feasible be placed at at Biddulph High School for one of their placements. Their second placement will take into consideration the students place of residence to keep travel down to a reasonable distance. We have strong links across both Staffordshire and South Cheshire to ensure students gain a wide teaching experience taking size and catchment areas of schools into consideration. Students will start with 3 days a week in their first placement school from September to Christmas with 50% teaching time. They will then begin at their second placement on 4 days a week from Christmas until easter with 50% teaching time. For the final block students will be in schools for the full 5 days with a teaching commitment of 50% lessons.",
+      "qualifications-required": "Minimum 2:2 Honours Degree in an appropriate subject; GCSE in Mathematics and English grade C or above; a good general education; you must be ICT literate; all students must pass tests in Literacy and Numeracy (skills tests) prior to being offered a place on the course.",
+      "other-requirements": "You will be required to successfully complete a Disclosure and Barring Service (DBS) application and be certified fit to teach.You will also be required to have school experience. If you do not currently have school experience you may still apply but must state how you intend to gain school experience. Subject enhancement courses are available for some secondary subjects. If your degree subject does not link to your chosen teaching subject, it is recommended that you undertake a subject knowledge enhancement course before you begin training.",
+      "training-with-a-disability": "Biddulph High School aims to provide a curriculum and building that is accessible to all, differentiated to meet individual needs and abilities and free from discrimination on any grounds. The SEN and Disability Act (2001) extended the Disability Discrimination Act (1995) to cover education. Since September 2002, the Trustees have key duties towards the disabled under Part 4 of the DDA: not to treat the disabled less favourably for a reason related to their disability; to make reasonable adjustments for the disabled. In addition we have continued to make improvements installing lifts and ramps, lowering curbs and ensuring that designated parking is clearly marked. We cater for disabilities in our transport arrangements including sports/PE, coaches/school minibus bookings. We have improved lighting and are re carpeting areas on a rolling programme.",
+      "interview-process": "Successful applicants will be invited to attend one interview at Biddulph High School where they will be required to deliver a 30 minute lesson and complete a simple written task, followed by a formal interview with 2/3 interviewers. For the 30 minute lesson, candidates will be provided with advance notification of the topic, age, ability range and number of students (maximum 15)."
+    },
+    {
+      "distance": "2",
+      "id": "6",
+      "qual": true,
+      "entity": "school",
+      "provider": "Bishop Ramsey CofE School",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "c/o Bishop Ramsey School, Hume Way, Ruislip, Middlesex, HA4 8EE",
+      "pgce-fee": "9,000",
+      "qts-fee": "7,000",
+      "about-this-course": "The Secondary Business Studies ITT Programme is based upon 1 day a week professional learning at Bishop Ramsey School and 4 days in your placement school throughout the year. Throughout your learning journey a dedicated Mentor/Coach will support you.",
+      "placement-school-policy": "Trainees will spend 4 days a week in placement schools. During the year there will be 2 placement schools.",
+      "other-requirements": "DBS, Professional Skills, Health Screening, GCSE English and Maths at Grade C/4 or above",
+      "training-with-a-disability": "Accessibility provisions for disabled people are available in our partner schools.",
+      "interview-process": "Interview, Numeracy and Literacy test, Short presentation, interaction with students which will include teaching a lesson"
+    },
+    {
+      "distance": "2",
+      "id": "7",
+      "entity": "school",
+      "provider": "Bitterne Park Teaching School Alliance",
+      "options": [
+        "PGCE with QTS, 1 year full time with salary",
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Bitterne Park School, Dimond Road, Bitterne Park, Southampton, SO18 1BU",
+      "salary": true,
+      "pgce-fee": "9,000"
+    },
+    {
+      "distance": "2",
+      "id": "8",
+      "entity": "school",
+      "provider": "Bluecoat Academy",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Aspley Lane, Aspley, Nottingham, NG8 5GY",
+      "pgce-fee": "9,000"
+    },
+    {
+      "distance": "2",
+      "id": "9",
+      "entity": "school",
+      "provider": "Bromley Schools' Collegiate",
+      "options": [
+        "PGCE with QTS, 1 year full time with salary",
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Chislehurst School for Girls, Beaverwood Road, Chislehurst, BR7 6HE",
+      "salary": true,
+      "pgce-fee": "9,000"
+    },
+    {
+      "distance": "3",
+      "id": "10",
+      "entity": "university",
+      "provider": "Canterbury Christ Church University",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Old Sessions House, N Holmes Rd, Canterbury, CT1 1NX"
+    },
+    {
+      "distance": "3",
+      "id": "11",
+      "entity": "school",
+      "provider": "Chauncy School",
+      "options": [
+        "PGCE with QTS, 1 year full time with salary",
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Park Rd, Ware, SG12 0DP",
+      "salary": true
+    },
+    {
+      "distance": "3",
+      "id": "12",
+      "entity": "school",
+      "provider": "Claydon High School",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "Claydon High School, Church Lane, Claydon, Suffolk, IP6 0EG"
+    },
+    {
+      "distance": "3",
+      "id": "13",
+      "entity": "school",
+      "provider": "Comberton Village College (Cambs Teaching Schools Network)",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "West St, Comberton, Cambridge, CB23 7DU"
+    },
+    {
+      "distance": "3",
+      "id": "14",
+      "entity": "school",
+      "provider": "Compton SCITT",
+      "options": [
+        "PGCE with QTS, 1 year full time with salary",
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "The Compton School, North Finchley, Summers Lane, London, N12 0QG"
+    },
+    {
+      "distance": "4",
+      "id": "15",
+      "entity": "school",
+      "provider": "Doncaster Regional Alliance For Teacher Training Secondary",
+      "options": [
+        "PGCE with QTS, 1 year full time with salary",
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Doncaster Regional Alliance For Teacher Training Secondary, Ridgewood School, Barnsley Road, Scawsby, Doncaster, South Yorkshire, DN5 7UB"
+    },
+    {
+      "distance": "4",
+      "id": "16",
+      "entity": "school",
+      "provider": "Dr Challoner's High School (ITT Bucks Hub)",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "Cokes Lane, Little Chalfont, Buckinghamshire, HP7 9QB"
+    },
+    {
+      "distance": "4",
+      "id": "17",
+      "entity": "school",
+      "provider": "East Herts Schools Direct Partnership",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time with salary"
+      ],
+      "address": "Goffs Academy, Goffs Lane, Cheshunt, EN7 5QW"
+    },
+    {
+      "distance": "4",
+      "id": "19",
+      "entity": "school",
+      "provider": "e-Qualitas",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "23 Mountfield Gardens, Tunbridge Wells, TN1 1SJ"
+    },
+    {
+      "distance": "5",
+      "id": "20",
+      "entity": "school",
+      "provider": "Fakenham Academy Partnership",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time with salary"
+      ],
+      "address": "City College Norwich, Ipswich Road, Norwich, NR2 2LJ"
+    },
+    {
+      "distance": "5",
+      "id": "22",
+      "entity": "school",
+      "provider": "George Spencer Academy And Technology College",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "PGCE with QTS, Up to 2 years part time"
+      ],
+      "address": "Arthur Mee Road, Stapleford, Nottingham, NG9 7EW"
+    },
+    {
+      "distance": "5",
+      "id": "23",
+      "entity": "school",
+      "provider": "GLF Schools' Teacher Training",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "PGCE with QTS, Up to 2 years part time"
+      ],
+      "address": "Glyn School, Kingsway, Ewell, Surrey, KT17 1NB"
+    },
+    {
+      "distance": "5",
+      "id": "24",
+      "entity": "school",
+      "provider": "Goffs School (East Herts Partnership)",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Goff's Ln, Cheshunt, Waltham Cross, EN7 5QW"
+    },
+    {
+      "distance": "6",
+      "id": "25",
+      "entity": "school",
+      "provider": "Green Light Teaching School Alliance",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "PGCE with QTS, Up to 2 years part time"
+      ],
+      "address": "Shelley College, Huddersfield Road, Shelley, HD8 8NL"
+    },
+    {
+      "distance": "6",
+      "id": "26",
+      "entity": "school",
+      "provider": "Harris Initial Teacher Education",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "Steel House, 11 Tothill Street, Westminster, SW1H 9LH"
+    },
+    {
+      "distance": "6",
+      "id": "27",
+      "entity": "school",
+      "provider": "Harton Technology School Alliance",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "Harton Academy, Lisle Road, South Shields, Tyne and Wear, NE34 6DL"
+    },
+    {
+      "distance": "6",
+      "id": "28",
+      "entity": "school",
+      "provider": "Haybridge Alliance SCITT",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Brake Lane, Hagley, West Midlands, DY8 2XS"
+    },
+    {
+      "distance": "6",
+      "id": "29",
+      "entity": "school",
+      "provider": "Hitchin Boys School",
+      "options": [
+        "PGCE with QTS, 1 year full time with salary",
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Grammar School Walk, Hitchin, SG5 1JB"
+    },
+    {
+      "distance": "7",
+      "id": "30",
+      "entity": "school",
+      "provider": "Humber Teaching School",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time with salary"
+      ],
+      "address": "Low Road, Healing, NE Lincs, DN41 7QD"
+    },
+    {
+      "distance": "7",
+      "id": "31",
+      "entity": "school",
+      "provider": "Kingston School Direct",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "PGCE with QTS, Up to 2 years part time"
+      ],
+      "address": "UCL IOE, 20 Bedford Way, WC1H 0AL"
+    },
+    {
+      "distance": "7",
+      "id": "32",
+      "entity": "school",
+      "provider": "Kirklees and Calderdale SCITT",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "The John Curwen Primary Academy, Leeds Old Road, Heckmondwike, WF16 9BB"
+    },
+    {
+      "distance": "7",
+      "id": "33",
+      "entity": "university",
+      "provider": "Leeds Trinity University",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Brownberrie Lane, Horsforth, Leeds, LS18 5HD"
+    },
+    {
+      "distance": "7",
+      "id": "34",
+      "entity": "school",
+      "provider": "Lightwoods Teaching School Alliance",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "PGCE with QTS, Up to 2 years part time"
+      ],
+      "address": "Castle Road East, Oldbury, B68 9BG"
+    },
+    {
+      "distance": "8",
+      "id": "35",
+      "entity": "school",
+      "provider": "Manchester Nexus SCITT",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "The Blue Coat School, Egerton St, Oldham, OL1 3SQ"
+    },
+    {
+      "distance": "8",
+      "id": "36",
+      "entity": "school",
+      "provider": "Mid Essex Initial Teacher Training",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "PGCE with QTS, Up to 2 years part time"
+      ],
+      "address": "Notley High School, Notley Road, Braintree, Essex, CM7 1WY"
+    },
+    {
+      "distance": "8",
+      "id": "37",
+      "entity": "school",
+      "provider": "North London New River Teaching Alliance",
+      "options": [
+        "PGCE with QTS, 1 year full time with salary",
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Alexandra Park School, Bidwell Gardens, London, N11 2AZ"
+    },
+    {
+      "distance": "8",
+      "id": "38",
+      "entity": "university",
+      "provider": "Nottingham Trent University",
+      "options": [
+        "PGCE with QTS, 1 year full time"
+      ],
+      "address": "Clifton Campus, Nottingham, NG11 8NS"
+    },
+    {
+      "distance": "8",
+      "id": "39",
+      "entity": "school",
+      "provider": "Parmiter's School",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time"
+      ],
+      "address": "High Elms Lane, Watford, WD25 0UU"
+    },
+    {
+      "distance": "9",
+      "id": "40",
+      "entity": "school",
+      "provider": "Partnership London SCITT (PLS)",
+      "options": [
+        "PGCE with QTS, 1 year full time",
+        "QTS, 1 year full time with salary"
+      ],
+      "address": "Sydney Russell School, Parsloes Avenue, Dagenham, Essex, RM9 5QT"
+    }
+  ]
+}
