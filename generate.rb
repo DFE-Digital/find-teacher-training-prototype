@@ -3,6 +3,10 @@
 # Run './generate.rb'
 require 'json'
 file = File.read('courses-clean.json')
+
+geo_file = File.read('geocoded_address_data.json')
+geocoded_addresses = JSON.parse(geo_file)
+
 data = JSON.parse(file)
 sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(400)
 
@@ -51,7 +55,7 @@ prototype_data['courses'] = sample.map do |c|
     providerCode: c['providerCode'],
     programmeCode: c['programmeCode'],
     schools: c['campuses'].map { |a| { name: a['name'], address: a['address'], code: a['code'] } },
-    addresses: c['campuses'].map { |a| a['address'] },
+    addresses: c['campuses'].map { |a| geocoded_addresses.find {|g| g['address'] == a['address'] } },
     options: options
   }
 
