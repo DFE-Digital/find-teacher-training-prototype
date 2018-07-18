@@ -18,53 +18,45 @@
       <div class="column-two-thirds">
         {{macros.resultsHeader()}}
 
-        {% for course in courses %}
-          <!--{% if 'University' in course.provider.name %}
-            {% set options = ['PGCE with QTS, 1 year full time'] %}
-          {% else %}
-            {% set options = [
-              ['PGCE with QTS, 1 year full time'],
-              ['PGCE with QTS, 1 year full time', 'QTS, 1 year full time'],
-              ['PGCE with QTS, 1 year full time', 'QTS, 1 year full time with salary'],
-              ['PGCE with QTS, 1 year full time', 'PGCE with QTS, Up to 2 years part time'],
-              ['PGCE with QTS, 1 year full time with salary', 'PGCE with QTS, 1 year full time']
-            ] | random %}
-          {% endif %}
+        {% for course in data['courses'] %}
+          <h2 class="heading-medium">
+            <a href="/course/{{ course.slug }}">{{ course.name }} at {{ course.provider }}</a>
+          </h2>
+          <!-- <p>Accredited by {{ course.accrediting }}</p> -->
+          <dl class="aligned">
+            <dt>Course offered:</dt>
+            <dd>{{ course.options }}</dd>
+            {% if course.accrediting %}
+             <dt>Accredited by:</dt>
+             <dd>{{ course.accrediting }}</dd>
+            {% endif %}
+            <dt>Distance:</dt>
+            <dd>4 miles{% if course.addresses.length > 1 %} to nearest {{ course.locationType | lower }}{% endif %}</dd>
 
-
-          {<br>
-            "distance": "{{ (loop.index * 1.2 - loop.index + 1) | int }}",<br>
-            "id": "{{ loop.index }}",<br>
-            "entity": "{% if 'University' in course.provider.name %}university{% else %}school{% endif %}",<br>
-            "provider": "{{ course.provider.name }}",<br>
-            "options": [<br>
-              {% for o in options %}
-                "{{ o }}"{% if not loop.last %},{% endif %}<br >
-              {% endfor %}
-            ],<br>
-            "address": "{{ course.providerLocation.address }}"<br>
-          },<br>-->
-          <!-- <div class="results">
-            <h2 class="heading-medium">
-              <a href="/courses">{{ data['subject'] or 'Business studies' }} at {{ course.provider.name }}</a>
-            </h2>
-            <dl class="aligned">
-              <dt>Distance:</dt>
-              <dd>4 miles to nearest school</dd>
-              <dt>Nearest school:</dt>
-              <dd>{{ course.providerLocation.address }}</dd>
-              <dt>Study options:</dt>
-              <dd>
-                <ul class="multiple-options">
-                  <li>PGCE with QTS, 1 year full time</li>
-                  <li>PGCE with QTS, 1 year full time with salary</li>
-                  <li>QTS, 1 year full time</li>
-                  <li>QTS, 1 year full time with salary</li>
-                </ul>
-              </dd>
-            </dl>
-          </div> -->
+            {% if course.addresses[0] %}
+              <dt>
+                {% if course.addresses.length > 1 %}
+                  Nearest {{ course.locationType | lower }}:
+                {% else %}
+                  {{ course.locationType }}:
+                {% endif %}
+              </dt>
+              <dd>{{ course.addresses[0] }}</dd>
+            {% endif %}
+            <!-- <dt>Nearest school:</dt>
+            <dd></dd> -->
+            <!-- <dt>Study options:</dt>
+            <dd>
+              <ul class="multiple-options">
+                <li>PGCE with QTS, 1 year full time</li>
+                <li>PGCE with QTS, 1 year full time with salary</li>
+                <li>QTS, 1 year full time</li>
+                <li>QTS, 1 year full time with salary</li>
+              </ul>
+            </dd> -->
+          </dl>
         {% endfor %}
+
 
         {% for course in data['results'] %}
           <h2 class="heading-medium">
