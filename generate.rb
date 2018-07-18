@@ -4,7 +4,7 @@
 require 'json'
 file = File.read('courses-clean.json')
 data = JSON.parse(file)
-sample = data.reject {|c| c['campuses'].empty? }.sample(400)
+sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(400)
 
 def to_slug(string)
   string.downcase.gsub(/[^a-zA-Z0-9]/, '-').gsub(/--*/, '-').gsub(/-$/,'')
@@ -12,7 +12,8 @@ end
 
 prototype_data = {
   "study-type": ["Full time (12 months)", "Part time (18-24 months)"],
-  "qualification": ["Postgraduate certificate in education with qualified teacher status", "Qualified teacher status"]
+  "qualification": ["Postgraduate certificate in education with qualified teacher status", "Qualified teacher status"],
+  "selectedSubjects": ["Biology", "Mathematics"]
 }
 
 prototype_data['subjects'] = data.map { |c| c['subjects'].map {|s| s.downcase.capitalize } }.flatten.uniq.sort

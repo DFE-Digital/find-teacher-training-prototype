@@ -11,7 +11,9 @@
 <div class="filter-category ">
   <h4 class="heading-small filter-heading">Subject</h4>
   <div class="filters">
-    {{ (data['subject'] or 'Business studies') }}
+    {% for subject in data['selectedSubjects'] %}
+      {{ subject }}<br />
+    {% endfor %}
   </div>
   <div class="filter-link">
     <a href="/results/filters/subjects">Change subject</a>

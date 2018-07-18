@@ -18,7 +18,7 @@
       <div class="column-two-thirds">
         {{macros.resultsHeader()}}
 
-        {% for course in data['courses'] %}
+        {% for course in results %}
           <h2 class="heading-medium">
             <a href="/course/{{ course.slug }}">{{ course.name }} at {{ course.provider }}</a>
           </h2>
