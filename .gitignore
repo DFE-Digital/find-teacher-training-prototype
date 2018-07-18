@@ -10,3 +10,4 @@ node_modules/*
 .tmuxp.*
 package-lock.json
 courses-clean.json
+geocoded_address_data.json
