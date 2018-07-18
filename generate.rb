@@ -8,7 +8,7 @@ geo_file = File.read('geocoded_address_data.json')
 geocoded_addresses = JSON.parse(geo_file)
 
 data = JSON.parse(file)
-sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(400)
+sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(1000)
 
 def to_slug(string)
   string.downcase.gsub(/[^a-zA-Z0-9]/, '-').gsub(/--*/, '-').gsub(/-$/,'')
@@ -62,4 +62,8 @@ prototype_data['courses'] = sample.map do |c|
   course
 end
 
+# Don't include courses without geocodes
+prototype_data['courses'].reject! { |c| !c[:addresses] || c[:addresses].any? { |a| !a || !a['geocode'] } }
+
+puts "#{prototype_data['courses'].length} courses"
 File.open('lib/prototype_data.json', 'w') { |file| file.write(JSON.pretty_generate(prototype_data) + "\n") }

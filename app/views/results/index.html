@@ -16,7 +16,7 @@
       </div>
 
       <div class="column-two-thirds">
-        {{macros.resultsHeader()}}
+        {{macros.resultsHeader(count + ' courses')}}
 
         {% for course in results %}
           <h2 class="heading-medium">
@@ -31,7 +31,7 @@
              <dd>{{ course.accrediting }}</dd>
             {% endif %}
             <dt>Distance:</dt>
-            <dd>4 miles{% if course.addresses.length > 1 %} to nearest {{ course.locationType | lower }}{% endif %}</dd>
+            <dd>{{ course.distance }} miles{% if course.addresses.length > 1 %} to nearest {{ course.locationType | lower }}{% endif %}</dd>
 
             {% if course.addresses[0] %}
               <dt>
@@ -41,7 +41,13 @@
                   {{ course.locationType }}:
                 {% endif %}
               </dt>
-              <dd>{{ course.addresses[0] }}</dd>
+              <dd>
+                {% if course.addresses[0].route %}
+                  {{ course.addresses[0].route }}, {{ course.addresses[0].postal_town }}, {{ course.addresses[0].post_code }}
+                {% else %}
+                  {{ course.addresses[0].address }}
+                {% endif %}
+              </dd>
             {% endif %}
             <!-- <dt>Nearest school:</dt>
             <dd></dd> -->
