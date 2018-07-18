@@ -28,3 +28,9 @@ https://search-and-compare-ui.herokuapp.com/
 
 * [Increased search radius to 20 miles](https://github.com/DFE-Digital/search-and-compare-ui/tree/research-2-may)
 * [Prototyped no results and disclaimer banner](https://github.com/DFE-Digital/search-and-compare-ui/tree/copy-sweep-cut)
+
+## Update prototype data
+
+* Copy `courses-clean.json` from [courses-clean.zip](https://github.com/DFE-Digital/search-and-compare-data/blob/master/courses-clean.zip) in the search-and-compare-data repo to this repo (it’s in .gitignore already)
+* Run the ruby script: `./generate.rb`, which generates a new `prototype_data.json` file
+* Commit the changes to master, which auto-deploys to Heroku
