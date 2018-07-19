@@ -21,12 +21,12 @@ router.post('/', function (req, res) {
 })
 
 // Route index page
-router.get('/course/:id', function (req, res) {
-  var course = req.session.data['results'].find(function(result) {
-    return result.id == req.params.id;
+router.get('/course/:providerCode/:courseCode', function (req, res) {
+  var course = req.session.data['courses'].find(function(c) {
+    return c.programmeCode == req.params.courseCode;
   });
 
-  res.render('courses/index', { course: course });
+  res.render('course', { course: course });
 })
 
 // Route index page
