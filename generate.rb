@@ -37,12 +37,16 @@ prototype_data['courses'] = sample.map do |c|
   fullTime = c['campuses'].map {|g| g['fullTime'] }.uniq.reject {|r| r == "n/a"}.count > 0
   salaried = c['route'] == "School Direct training programme (salaried)" ? ' with salary' : ''
 
-  if partTime
-    options << "#{qual}, part time#{salaried}"
-  end
+  if partTime && fullTime
+    options << "#{qual}, full time or part time#{salaried.length > 0 ? ', ' + salaried : ''}"
+  else
+    if partTime
+      options << "#{qual}, part time#{salaried}"
+    end
 
-  if fullTime
-    options << "#{qual}, full time#{salaried}"
+    if fullTime
+      options << "#{qual}, full time#{salaried}"
+    end
   end
 
   course = {
