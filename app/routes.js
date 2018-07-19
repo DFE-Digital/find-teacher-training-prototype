@@ -4,15 +4,7 @@ var geolib = require('geolib')
 
 // Route index page
 router.get('/', function (req, res) {
-  var subject = req.params.subject;
-  if (subject) {
-    req.session.data['subject'] = subject;
-  }
-
   res.render('index')
-
-  // While the prototype is not being used as a prototype:
-  //res.redirect('/history')
 })
 
 // Route index page
@@ -88,12 +80,6 @@ router.get('/results/filters/funding', function(req, res) {
 router.get('/results/filters/location', function(req, res) {
   backLink = { text: 'Back to results', href: '/results'}
   res.render('start/location', { 'backLink': backLink, 'filtering': true });
-});
-
-// add your routes here
-
-router.get('/v04/q3', function(req, res) {
-    res.render('v04/q3', req.query);
 });
 
 module.exports = router
