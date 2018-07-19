@@ -22,7 +22,6 @@
           <h2 class="heading-medium">
             <a href="/course/{{ course.slug }}">{{ course.name }} at {{ course.provider }}</a>
           </h2>
-          <!-- <p>Accredited by {{ course.accrediting }}</p> -->
           <dl class="aligned">
             <dt>Course offered:</dt>
             <dd>{{ course.options }}</dd>
@@ -49,48 +48,6 @@
                 {% endif %}
               </dd>
             {% endif %}
-            <!-- <dt>Nearest school:</dt>
-            <dd></dd> -->
-            <!-- <dt>Study options:</dt>
-            <dd>
-              <ul class="multiple-options">
-                <li>PGCE with QTS, 1 year full time</li>
-                <li>PGCE with QTS, 1 year full time with salary</li>
-                <li>QTS, 1 year full time</li>
-                <li>QTS, 1 year full time with salary</li>
-              </ul>
-            </dd> -->
-          </dl>
-        {% endfor %}
-
-
-        {% for course in data['results'] %}
-          <h2 class="heading-medium">
-            <a href="{% if (loop.index > 5) %}#{% else %}/course/{{ course.id }}{% endif %}">{{ data['subject'] or 'Business studies' }} at {{ course.provider }}</a>
-          </h2>
-          <dl class="aligned">
-            <dt>Distance:</dt>
-
-            {% if course.entity == 'university' %}
-              <dd>{{ course.distance }} {% if course.distance == 1 %}mile{% else %}miles{% endif %} to {{ course.entity }}</dd>
-              <dt>University:</dt>
-            {% else %}
-              <dd>{{ course.distance }} {% if course.distance == 1 %}mile{% else %}miles{% endif %} to nearest {{ course.entity }}</dd>
-              <dt>Nearest {{ course.entity }}:</dt>
-            {% endif %}
-            <dd>{{ course.address }}</dd>
-            <dt>Study options:</dt>
-            <dd>
-              {% if course.options.length == 1 %}
-                {{ course.options }}
-              {% else %}
-                <ul class="multiple-options">
-                  {% for option in course.options %}
-                    <li>{{ option }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </dd>
           </dl>
         {% endfor %}
       </div>
