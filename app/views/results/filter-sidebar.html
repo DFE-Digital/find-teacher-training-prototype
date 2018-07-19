@@ -49,8 +49,13 @@
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Qualifications</h4>
   <div class="filters">
-    PGCE with QTS<br>
-    QTS
+    {% for q in data['qualification'] %}
+      {% if 'Postgraduate' in q %}
+        PGCE with QTS<br />
+      {% else %}
+        QTS<br />
+      {% endif %}
+    {% endfor %}
   </div>
   <div class="filter-link">
     <a href="/results/filters/qualification">Change qualifications</a>
