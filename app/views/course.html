@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+{% set title %}{{ course.name }} at {{ course.provider }}{% endset %}
+{% block page_title %}{{ title }}{% endblock %}
+{% block content %}
+
+<main id="content" role="main">
+  {{ macros.betaBanner()}}
+  <a class="link-back" href="/results">Back to search results</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">
+        {{ course.name }} at {{ course.provider }}
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <dl class="aligned">
+        <dt>Course offered:</dt>
+        <dd>{{ course.options[0] }}</dd>
+        <!-- <dt>Website:</dt>
+        <dd><a href="{{ course.website }}">{{ course.website }}</a></dd> -->
+        {% if course.accrediting %}
+          <dt>Accredited by:</dt>
+          <dd>{{ course.accrediting }}</dd>
+        {% endif %}
+        <dt>Qualification:</dt>
+        <dd>
+          <details role="group">
+            {% if 'PGCE' in course.options[0] %}
+              <summary style="margin-bottom: 0;" role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">PGCE with Qualified teacher status (QTS)</span></summary>
+
+              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+                  <p>A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) allows you to teach in England, Scotland, Wales and Northern Ireland.</p>
+                  <p>This qualification is also recognised internationally.</p>
+                  <p>Many PGCE courses include credits that count toward a Master’s degree.</p>
+              </div>
+            {% else %}
+              <summary style="margin-bottom: 0;" role="button" aria-controls="details-content-0" aria-expanded="true"><span class="summary">Qualified teacher status (QTS)</span></summary>
+
+              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="false">
+                  <p>Qualified teacher status (QTS) allows you to teach in state schools in England.</p>
+                  <p>If you want to teach in the rest of the UK or internationally, consider a course that gives you the qualification 'postgraduate certificate in education with qualified teacher status' instead.</p>
+              </div>
+            {% endif %}
+          </details>
+        </dd>
+        <dt>Apply from:</dt>
+        <dd>October 2018</dd>
+        <dt>Course starts:</dt>
+        <dd>October 2019</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <!-- <h2 class="heading-small">Contents</h2>
+      <ul class="list">
+        <li><a href="#section-financial-support">Financial support</a></li>
+        <li><a href="#section-schools">Host schools</a></li>
+        <li><a href="#section-contact">Contact details</a></li>
+        <li><a href="#section-apply">Apply</a></li>
+      </ul> -->
+
+      <h2 class="heading-medium" id="section-financial-support">Financial support</h3>
+      <p>You may be eligible for <a href="https://www.gov.uk/student-finance">financial support for students</a>.</p>
+      <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">Financial support if you’re from outside of the UK</a>.</p>
+
+      <h2 class="heading-medium" id="section-contact">Contact details</h2>
+
+      <dl class="aligned">
+        <dt>Email:</dt>
+        <dd><a href="#">admissions@apply-for-itt-at-pro.com</a></dd>
+        <dt>Telephone:</dt>
+        <dd>0208 123986</dd>
+        <dt>Website:</dt>
+        <dd><a href="{{ course.website }}">{{ course.website }}</a></dd>
+        <dt>Address:</dt>
+        <dd>
+          {{ course.address }}
+        </dd>
+      </dl>
+
+      <h2 class="heading-medium" id="section-apply">
+          Apply
+      </h2>
+      <p>
+        <a href="https://2018.teachertraining.apply.ucas.com/apply/student/login.do">Apply on the UCAS website</a>. You’ll need to register before you can apply.
+      </p>
+      <p>
+        You’ll need these codes for the Choices section of the application form:
+      </p>
+      <ul class="list list-bullet">
+        <li>training provider code: {{ course.providerCode }}</li>
+        <li>training programme code: {{ course.programmeCode }}</li>
+        <!-- <li>training location or campus code: leave empty</li> -->
+      </ul>
+
+      <h3 class="heading-medium">Schools you can apply to train in</h3>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 30%">School</th>
+            <th style="width: 60%">Address</th>
+            <th>Training location code</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for school in course.schools %}
+          <tr>
+            <td>{{ school.name }}</td>
+            <td>{{ school.address }}</td>
+            <td>{{ school.code }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+{% endblock %}
