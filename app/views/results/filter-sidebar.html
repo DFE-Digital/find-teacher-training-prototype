@@ -1,7 +1,7 @@
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Location</h4>
   <div class="filters">
-    {{ data['postcode-town-or-city'] or 'Across England' }}
+    {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
   </div>
   <div class="filter-link">
     <a href="/results/filters/location">Change location</a>
