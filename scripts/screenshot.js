@@ -81,7 +81,8 @@ title = title.charAt(0).toUpperCase() + title.slice(1)
 
 var templateStart = `
 {% extends "layout.html" %}
-{% block page_title %}${title}{% endblock %}
+{% set title = '${title}' %}
+{% block page_title %}{{ title }}{% endblock %}
 
 {% block content %}
 <main id="content" role="main" class="design-history">
@@ -90,7 +91,7 @@ var templateStart = `
       <li><a href="/history">Design history</a></li>
     </ol>
   </div>
-  <h1 class="heading-xlarge">${title}</h1>
+  <h1 class="heading-xlarge">{{ title }}</h1>
 `;
 
 var templateEnd = `
