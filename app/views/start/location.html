@@ -21,7 +21,18 @@ Question page
         Find courses by location or<br /> by training provider
       </h1>
 
-      <form action="{% if filtering %}/results{% else %}/start/funding{% endif %}" method="post" class="form">
+      {% if error %}
+      <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          We couldn’t find that location
+        </h2>
+        <p>
+          {{ error }}
+        </p>
+      </div>
+      {% endif %}
+
+      <form action="/start/location" method="post" class="form">
         <div class="form-group">
           {% set postcodeFields %}
             {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
