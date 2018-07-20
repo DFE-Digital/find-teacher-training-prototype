@@ -12,14 +12,19 @@ Question page
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      {{ macros.h1("Teach a different subject") }}
+      {{ macros.h1("What subjects would you like to teach?") }}
 
-      <p>
-        If you don’t want to teach {{ (data['subject'] or 'business studies') | lower }} you can <a href="https://www.ucas.com/ucas/teacher-training/ucas-teacher-training-search-training-programmes"> find teacher training in other subjects</a> on the UCAS website.
-      </p>
-      <p>
-        <a href="/results" >Back to results</a>
-      </p>
+      <p>You can get a bursary for certain subjects.</p>
+
+      <p>Select all subjects you are interested in teaching:</p>
+
+      <form action="/results">
+        <div class="form-group">
+          {{ macros.checkboxGroup('selectedSubjects', subjects) }}
+        </div>
+
+        {{ macros.submit("Find courses") }}
+      </form>
     </div>
   </div>
 </main>
