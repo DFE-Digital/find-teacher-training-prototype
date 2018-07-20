@@ -37,23 +37,19 @@ var options = {
 
 var paths = [
   { path: '/', name: 'index' },
-  { path: '/disclaimer', name: 'disclaimer'},
-  { path: '/start/location', name: 'choose-your-search'},
-  { path: '/start/location?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&pgce=False&qts=False&fulltime=False&parttime=False', name: 'search-by-location'},
-  { path: '/start/location?l=3&subjects=2&query=University%20of%20Sussex&pgce=False&qts=False&fulltime=False&parttime=False', name: 'search-by-provider'},
-  { path: '/start/funding?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&pgce=False&qts=False&fulltime=False&parttime=False', name: 'financial-support'},
-  { path: '/results?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=15&pgce=False&qts=False&fulltime=False&parttime=False', name: 'search-results'},
-  { path: '/results?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=14&pgce=False&qts=False&fulltime=False&parttime=False', name: 'no-search-results'},
-  { path: '/course/62?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=15&pgce=False&qts=False&fulltime=False&parttime=False', name: 'minimal-course-details'},
-  { path: '/course/27?lat=51.5073509&lng=-0.1277583&rad=5&loc=London,%20UK&lq=London,%20UK&l=1&subjects=2&sortby=2&funding=15&pgce=False&qts=False&fulltime=False&parttime=False', name: 'full-course-details'},
-  { path: '/results/filter/studytype?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=14&pgce=False&qts=False&fulltime=False&parttime=False', name: 'study-type-filter'},
-  { path: '/results/filter/qualification?lat=50.82253&lng=-0.137163&rad=5&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=2&sortby=2&funding=14&pgce=False&qts=False&fulltime=False&parttime=False', name: 'qualifications-filter'},
-  { path: '/results/filter/subject?l=2&subjects=2&funding=15&pgce=False&qts=False&fulltime=False&parttime=False', name: 'subjects-filter'}
+  { path: '/start/location', name: 'find-by-location'},
+  { path: '/results', name: 'teacher-training-courses'},
+  { path: '/results/filters/subjects', name: 'change-subject'},
+  { path: '/course/S90/C1X1', name: 'minimum-course-page'}
 ]
 
 var template = '';
-var contents = '{% set contents = ['
-var endContents = '] %}{{ macros.screenshotContents(contents) }}'
+var contents = `
+  {% set contents = [`;
+var endContents = `
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+`;
 
 paths.forEach(function(item, index) {
   var i = index + 1;
@@ -68,7 +64,8 @@ paths.forEach(function(item, index) {
   {{ macros.screenshot('${heading}', '${item.name}', '${thumbnail.replace('app/assets', '/public')}', '${screenshot.replace('app/assets', '/public')}', '') }}
   `
 
-  contents += `${comma}{ text: '${heading}', id: '${item.name}' }`;
+  contents += `${comma}
+    { text: '${heading}', id: '${item.name}' }`;
 
   webshot('http://localhost:3000' + item.path, screenshot, options, function(err) {
     console.log(screenshot);
@@ -79,8 +76,7 @@ paths.forEach(function(item, index) {
 var title = directoryName.replace(/-/g, ' ');
 title = title.charAt(0).toUpperCase() + title.slice(1)
 
-var templateStart = `
-{% extends "layout.html" %}
+var templateStart = `{% extends "layout.html" %}
 {% set title = '${title}' %}
 {% block page_title %}{{ title }}{% endblock %}
 

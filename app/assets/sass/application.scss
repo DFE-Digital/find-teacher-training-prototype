@@ -16,6 +16,10 @@ $path: "/public/images/";
   @include core-19;
 }
 
+.design-history-text h3:first-child {
+  margin-top: 5px;
+}
+
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
 .govuk-related-items {
@@ -53,9 +57,6 @@ $path: "/public/images/";
 }
 .column-one-third ul{
   margin: 0px;
-}
-.column-one-third h3 {
-  margin-top: 5px;
 }
 .compare-text{
   float: left;

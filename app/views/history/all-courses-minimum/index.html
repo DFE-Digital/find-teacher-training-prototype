@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% set title = 'Just the UCAS data' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main" class="design-history">
+  <div class="breadcrumbs dont-print">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>To deliver a viable service by October we are aggressively reducing scope, limiting many features to their irreducible core. When we have built the minimum viable service, we can begin to improve on features to better meet user needs. This is being tracked using a <a href="https://trello.com/b/9fCxMchD/bat-search-story-map">Story map in Trello</a>.</p>
+
+      <p>To visualise what that service might look like, this is a design which uses:</p>
+      <ul class="list list-bullet">
+        <li>only the existing UCAS course data on course detail pages – eg there’s been no enrichment and there is no bespoke text</li>
+        <li>the list of subjects as provided by UCAS</li>
+        <li>only the locations that exist in the data for location search</li>
+      </ul>
+
+      <p>All private beta specifics (eg anything pertaining to business studies only) have been removed.</p>
+    </div>
+  </div>
+
+  {% set contents = [
+    { text: 'Index', id: 'index' },
+    { text: 'Find by location', id: 'find-by-location' },
+    { text: 'Teacher training courses', id: 'teacher-training-courses' },
+    { text: 'Change subject', id: 'change-subject' },
+    { text: 'Minimum course page', id: 'minimum-course-page' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
+  {{ macros.screenshot('Index', 'index', '/public/images/history/all-courses-minimum/thumbnails/01-index.png', '/public/images/history/all-courses-minimum/01-index.png', '') }}
+
+  {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/all-courses-minimum/thumbnails/02-find-by-location.png', '/public/images/history/all-courses-minimum/02-find-by-location.png', '') }}
+
+  {{ macros.screenshot('Teacher training courses', 'teacher-training-courses', '/public/images/history/all-courses-minimum/thumbnails/03-teacher-training-courses.png', '/public/images/history/all-courses-minimum/03-teacher-training-courses.png', '
+    <h3 class="heading-medium">Search results</h3>
+    <p>The results have been updated from the private beta to make it easier to differentiate them. Changes include:</p>
+    <ul class="list list-bullet">
+      <li>adding a summary of the course type</li>
+      <li>including the (QTS) accrediting provider</li>
+      <li>denoting the type of location</li>
+      <li>cleaning up the address formatting</li>
+      <li>removing decimal places from distance</li>
+    </ul>
+
+    <h3 class="heading-medium add-top-margin">Vacancies</h3>
+    <p>The design includes filters for vacancies. We aim to show only courses with vacancies but will provide a filter to see all courses – sometimes users need to see if there are more suitable courses nearby that they could apply to in the next cycle. This doesn’t need to be addressed until after launch – at launch all courses will have vacancies.</p>
+  ') }}
+
+  {{ macros.screenshot('Change subject', 'change-subject', '/public/images/history/all-courses-minimum/thumbnails/04-change-subject.png', '/public/images/history/all-courses-minimum/04-change-subject.png', '
+    <p>UCAS doesn’t have subjects for "Primary general", "Primary mathematics" or "Primary physical education".</p>
+    <p>Business education is more commonly referred to as business studies.</p>
+    <p>The alphabetical listing seems arbitrary.</p>
+    <p>Helpful guidance: <a href="https://medium.com/tripaneer-techblog/improving-the-usability-of-multi-selecting-from-a-long-list-63e1a67aab35">Improving the usability of multi-selecting from a long list</a></p>
+  ') }}
+
+  {{ macros.screenshot('Minimum course page', 'minimum-course-page', '/public/images/history/all-courses-minimum/thumbnails/05-minimum-course-page.png', '/public/images/history/all-courses-minimum/05-minimum-course-page.png', '') }}
+
+</main>
+{% endblock %}
