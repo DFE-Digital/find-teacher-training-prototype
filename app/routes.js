@@ -21,6 +21,16 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
   res.render('course', { course: course });
 })
 
+router.get('/results/filters/subjects', function (req, res) {
+  var subjects = [];
+
+  req.session.data['subjects'].forEach(function(s) {
+    subjects.push({name: s});
+  });
+
+  res.render('results/filters/subjects', { subjects: subjects });
+})
+
 // Route index page
 router.get('/results', function (req, res) {
   var paginated = false;
