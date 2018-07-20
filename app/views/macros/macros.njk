@@ -7,6 +7,15 @@
 </div>
 {% endmacro %}
 
+{% macro screenshotContents(contents) %}
+<h2 class="heading-medium">Screenshots</h2>
+<ul class="list">
+  {% for c in contents %}
+    <li><a href="#{{ c.id }}">{{ c.text }}</a></li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
 {% macro screenshot(title, id, thumbnail, full, text = '') %}
 <div class="design-history-item">
   <h2 class="heading-large" id="{{ id }}">{{ title }}</h2>
