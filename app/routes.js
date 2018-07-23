@@ -94,18 +94,24 @@ router.get('/results', function (req, res) {
     });
   }
 
-  // Sort by location
-  var savedLatLong = req.session.data['latLong'] || {latitude: 51.508530, longitude: -0.076132};
+  if (req.session.data['location'] == 'Across England') {
+    results.sort(function(c1, c2) {
+      return c1.provider.toLowerCase().localeCompare(c2.provider.toLowerCase());
+    });
+  } else {
+    // Sort by location
+    var savedLatLong = req.session.data['latLong'] || {latitude: 51.508530, longitude: -0.076132};
 
-  results.forEach(function(course) {
-    var latLong = { latitude: course.addresses[0].latitude, longitude: course.addresses[0].longitude };
-    var d = geolib.getDistanceSimple(savedLatLong, latLong);
-    course.distance = (d / 1000).toFixed(0);
-  });
+    results.forEach(function(course) {
+      var latLong = { latitude: course.addresses[0].latitude, longitude: course.addresses[0].longitude };
+      var d = geolib.getDistanceSimple(savedLatLong, latLong);
+      course.distance = (d / 1000).toFixed(0);
+    });
 
-  results.sort(function(c1, c2) {
-    return c1.distance - c2.distance;
-  });
+    results.sort(function(c1, c2) {
+      return c1.distance - c2.distance;
+    });
+  }
 
   var originalCount = results.length;
 
