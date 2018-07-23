@@ -23,12 +23,9 @@ Question page
 
       {% if error %}
       <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-          We couldn’t find that location
-        </h2>
-        <p>
+        <h2 class="heading-medium error-summary-heading remove-bottom-margin" id="error-summary-heading-example-1">
           {{ error }}
-        </p>
+        </h2>
       </div>
       {% endif %}
 

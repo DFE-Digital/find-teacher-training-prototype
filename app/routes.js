@@ -30,7 +30,7 @@ router.post('/start/location', function (req, res) {
         console.log(err);
         originalRes.render('start/location', {error: err});
       } else if (res.length == 0) {
-        originalRes.render('start/location', {error: 'No location found'});
+        originalRes.render('start/location', {error: 'Sorry, we couldn’t find that location'});
       } else {
         console.log(res[0]);
         req.session.data['latLong'] = res[0].location;
@@ -64,6 +64,11 @@ router.get('/results/filters/subjects', function (req, res) {
 
 // Route index page
 router.get('/results', function (req, res) {
+  if (req.session.data['location'] == 'School, university or other training provider') {
+    res.render('start/location', {error: 'Searching by training provider isn’t available in this prototype.'});
+    return;
+  }
+
   var paginated = false;
   var phase = "Secondary";
   var subjects = req.session.data['selectedSubjects'];
