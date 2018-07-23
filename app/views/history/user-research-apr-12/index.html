@@ -20,6 +20,20 @@
     </li>
   </ul>
 
+  {% set contents = [
+  { text: 'Index', id: 'index' },
+  { text: 'Choose your search', id: 'choose-your-search' },
+  { text: 'Search by provider', id: 'search-by-provider' },
+  { text: 'Financial support', id: 'financial-support' },
+  { text: 'Search results', id: 'search-results' },
+  { text: 'No search results', id: 'no-search-results' },
+  { text: 'Course details #1', id: 'course-details-1' },
+  { text: 'Course details #2', id: 'course-details-2' },
+  { text: 'Study type filter', id: 'study-type-filter' },
+  { text: 'Qualifications filter', id: 'qualifications-filter' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
   {{ macros.screenshot('Index', 'index', '/public/images/history/user-research-apr-12/thumbnails/01-index.png', '/public/images/history/user-research-apr-12/01-index.png', '
     <p>Users had a tendency to click the first link on the page, in this case ‘school experience’.</p>
     <p>In response we <a href="/history/user-research-apr-25#index">moved the start button to the top</a>.</p>

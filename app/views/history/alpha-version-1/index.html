@@ -12,6 +12,19 @@
   <h1 class="heading-xlarge">Alpha version 1</h1>
   <a href="https://search-and-compare-alpha.herokuapp.com/search/v01/index2">Version 1 prototype</a>
 
+  {% set contents = [
+  { text: 'Index', id: 'index' },
+  { text: 'Choose your search', id: 'choose-your-search' },
+  { text: 'What subject', id: 'what-subject' },
+  { text: 'Financial support', id: 'financial-support' },
+  { text: 'Search results', id: 'search-results' },
+  { text: 'Course details', id: 'course-details' },
+  { text: 'About the course', id: 'about-the-course' },
+  { text: 'Modules', id: 'modules' },
+  { text: 'Compare results', id: 'compare-results' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
   {{ macros.screenshot('Index', 'index', '/public/images/history/alpha-version-1/thumbnails/01-index.png', '/public/images/history/alpha-version-1/01-index.png', '') }}
 
   {{ macros.screenshot('Choose your search', 'choose-your-search', '/public/images/history/alpha-version-1/thumbnails/02-choose-your-search.png', '/public/images/history/alpha-version-1/02-choose-your-search.png', '') }}

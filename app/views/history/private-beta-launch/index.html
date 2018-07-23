@@ -13,6 +13,22 @@
 
   <p class="lede"><a href="/history/user-research-may-3">Tested with users on May 3</a>, with key observations noted below.</p>
 
+  {% set contents = [
+  { text: 'Index', id: 'index' },
+  { text: 'Disclaimer', id: 'disclaimer' },
+  { text: 'Choose your search', id: 'choose-your-search' },
+  { text: 'Search by location', id: 'search-by-location' },
+  { text: 'Search by provider', id: 'search-by-provider' },
+  { text: 'Financial support', id: 'financial-support' },
+  { text: 'Search results', id: 'search-results' },
+  { text: 'No search results', id: 'no-search-results' },
+  { text: 'Minimal course details', id: 'minimal-course-details' },
+  { text: 'Full course details', id: 'full-course-details' },
+  { text: 'Study type filter', id: 'study-type-filter' },
+  { text: 'Qualifications filter', id: 'qualifications-filter' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
   {{ macros.screenshot('Index', 'index', '/public/images/history/private-beta-launch/thumbnails/01-index.png', '/public/images/history/private-beta-launch/01-index.png', '') }}
 
   {{ macros.screenshot('Disclaimer', 'disclaimer', '/public/images/history/private-beta-launch/thumbnails/02-disclaimer.png', '/public/images/history/private-beta-launch/02-disclaimer.png', '

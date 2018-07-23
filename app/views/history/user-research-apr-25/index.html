@@ -20,72 +20,84 @@
     </li>
   </ul>
 
-    {{ macros.screenshot('Index', 'index', '/public/images/history/user-research-apr-25/thumbnails/01-index.png', '/public/images/history/user-research-apr-25/01-index.png', '')}}
+  {% set contents = [
+  { text: 'Index', id: 'index' },
+  { text: 'Search by provider', id: 'search-by-provider' },
+  { text: 'Financial support', id: 'financial-support' },
+  { text: 'Search results', id: 'search-results' },
+  { text: 'No search results', id: 'no-search-results' },
+  { text: 'Course details', id: 'course-details' },
+  { text: 'Study type filter', id: 'study-type-filter' },
+  { text: 'Qualifications filter', id: 'study-type-filter' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
 
-    {# macros.screenshot('Choose your search', 'choose-your-search', '/public/images/history/user-research-apr-25/thumbnails/02-choose-your-search.png', '/public/images/history/user-research-apr-25/02-choose-your-search.png', '') #}
+  {{ macros.screenshot('Index', 'index', '/public/images/history/user-research-apr-25/thumbnails/01-index.png', '/public/images/history/user-research-apr-25/01-index.png', '')}}
 
-    {# macros.screenshot('Search by location', 'search-by-location', '/public/images/history/user-research-apr-25/thumbnails/03-search-by-location.png', '/public/images/history/user-research-apr-25/03-search-by-location.png', '') #}
+  {# macros.screenshot('Choose your search', 'choose-your-search', '/public/images/history/user-research-apr-25/thumbnails/02-choose-your-search.png', '/public/images/history/user-research-apr-25/02-choose-your-search.png', '') #}
 
-    {{ macros.screenshot('Search by provider', 'search-by-provider', '/public/images/history/user-research-apr-25/thumbnails/04-search-by-provider.png', '/public/images/history/user-research-apr-25/04-search-by-provider.png', '
-      <p>Trial improved training provider copy</p>
+  {# macros.screenshot('Search by location', 'search-by-location', '/public/images/history/user-research-apr-25/thumbnails/03-search-by-location.png', '/public/images/history/user-research-apr-25/03-search-by-location.png', '') #}
 
-      <h3 class="heading-medium">Result</h3>
-      <p>Users had a better understanding of how to use this field.</p>
-      <p>The private beta data highlighted a new problem with this autocomplete: If we don’t have course data for the provider a user searches for, the user sees a confusing error. (In this case the provider was the well known ‘Goldsmiths’)</p>
-      <p>By using school in the label we risk users searching for schools that are not ‘lead-schools’ – we haven’t seen this as a problem in research yet.</p>
-    ') }}
+  {{ macros.screenshot('Search by provider', 'search-by-provider', '/public/images/history/user-research-apr-25/thumbnails/04-search-by-provider.png', '/public/images/history/user-research-apr-25/04-search-by-provider.png', '
+    <p>Trial improved training provider copy</p>
 
-    {{ macros.screenshot('Financial support', 'financial-support', '/public/images/history/user-research-apr-25/thumbnails/05-financial-support.png', '/public/images/history/user-research-apr-25/05-financial-support.png', '
-      <p>Trial financial support content that is specific to business studies, <a href="/history/user-research-apr-12#financial-support">removing content about bursaries and scholarships</a>, and moving details of support for other subjects to the bottom.</p>
+    <h3 class="heading-medium">Result</h3>
+    <p>Users had a better understanding of how to use this field.</p>
+    <p>The private beta data highlighted a new problem with this autocomplete: If we don’t have course data for the provider a user searches for, the user sees a confusing error. (In this case the provider was the well known ‘Goldsmiths’)</p>
+    <p>By using school in the label we risk users searching for schools that are not ‘lead-schools’ – we haven’t seen this as a problem in research yet.</p>
+  ') }}
 
-      <h3 class="heading-medium">Result</h3>
-      <p>Users understood the salary options and were not confused by expanding pop-ups or overwhelmed with content.</p>
+  {{ macros.screenshot('Financial support', 'financial-support', '/public/images/history/user-research-apr-25/thumbnails/05-financial-support.png', '/public/images/history/user-research-apr-25/05-financial-support.png', '
+    <p>Trial financial support content that is specific to business studies, <a href="/history/user-research-apr-12#financial-support">removing content about bursaries and scholarships</a>, and moving details of support for other subjects to the bottom.</p>
 
-      <p>Being clear about the options available to users for their specific subject is important.</p>
+    <h3 class="heading-medium">Result</h3>
+    <p>Users understood the salary options and were not confused by expanding pop-ups or overwhelmed with content.</p>
 
-      <p>Fact-check highlighted missing student finance options.</p>
-    ')}}
+    <p>Being clear about the options available to users for their specific subject is important.</p>
 
-    {{ macros.screenshot('Search results', 'search-results', '/public/images/history/user-research-apr-25/thumbnails/06-search-results.png', '/public/images/history/user-research-apr-25/06-search-results.png', '
-      <p>When launching private beta we will not have every business studies course. Trial a banner to indicate this and to point to where users can continue their search.</p>
+    <p>Fact-check highlighted missing student finance options.</p>
+  ')}}
 
-      <h3 class="heading-medium">Result</h3>
-      <p>Users did not see this banner, when they reached this page they went straight to search results. When the banner was pointed out they misinterpreted its meaning.</p>
+  {{ macros.screenshot('Search results', 'search-results', '/public/images/history/user-research-apr-25/thumbnails/06-search-results.png', '/public/images/history/user-research-apr-25/06-search-results.png', '
+    <p>When launching private beta we will not have every business studies course. Trial a banner to indicate this and to point to where users can continue their search.</p>
 
-      <p>We iterated this design to create a <a href="/history/private-beta-launch#disclaimer">full-page disclaimer</a> in the search flow.</p>
+    <h3 class="heading-medium">Result</h3>
+    <p>Users did not see this banner, when they reached this page they went straight to search results. When the banner was pointed out they misinterpreted its meaning.</p>
 
-      <hr />
+    <p>We iterated this design to create a <a href="/history/private-beta-launch#disclaimer">full-page disclaimer</a> in the search flow.</p>
 
-      <p>In the private beta all courses are for business studies. Having the subject as the search result title <a href="/history/user-research-apr-12#search-results">made it difficult to differentiate between results</a>.</p>
+    <hr />
 
-      <p>In this round we updated the title to include both subject and course provider.</p>
+    <p>In the private beta all courses are for business studies. Having the subject as the search result title <a href="/history/user-research-apr-12#search-results">made it difficult to differentiate between results</a>.</p>
 
-      <h3 class="heading-medium">Result</h3>
+    <p>In this round we updated the title to include both subject and course provider.</p>
 
-      <p>Users were able to scan and find results more easily.</p>
+    <h3 class="heading-medium">Result</h3>
 
-      <p>Work is still needed to standardise course titles in the data.</p>
-    ')}}
+    <p>Users were able to scan and find results more easily.</p>
 
-    {{ macros.screenshot('No search results', 'no-search-results', '/public/images/history/user-research-apr-25/thumbnails/07-no-search-results.png', '/public/images/history/user-research-apr-25/07-no-search-results.png', '
-      <p>With private beta data and a limited number of courses we found users often filtered themselves into a no results view (<a href="https://dfedigital.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=BATSA&modal=detail&selectedIssue=BATSA-217">BATSA-217</a>).</p>
+    <p>Work is still needed to standardise course titles in the data.</p>
+  ')}}
 
-      <p class="panel">
-        As a user without any nearby courses I need to see the next closest ones so that I can still apply to the most appropriate courses
-      </p>
+  {{ macros.screenshot('No search results', 'no-search-results', '/public/images/history/user-research-apr-25/thumbnails/07-no-search-results.png', '/public/images/history/user-research-apr-25/07-no-search-results.png', '
+    <p>With private beta data and a limited number of courses we found users often filtered themselves into a no results view (<a href="https://dfedigital.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=BATSA&modal=detail&selectedIssue=BATSA-217">BATSA-217</a>).</p>
 
-      <p class="panel">As a user with no nearby courses with financial support I need to see my alternatives so that I can still apply to the most appropriate courses</p>
+    <p class="panel">
+      As a user without any nearby courses I need to see the next closest ones so that I can still apply to the most appropriate courses
+    </p>
 
-      <p>In this round we trialled a ‘suggested searches’ view. We wanted to indicate to users that their search was too constrained and that more results were available.</p>
+    <p class="panel">As a user with no nearby courses with financial support I need to see my alternatives so that I can still apply to the most appropriate courses</p>
 
-      <h3 class="heading-medium">Result</h3>
-      <p>Users saw and interacted with these links, but this didn’t prevent an initial misconception about the number of courses available to them. The design helps users find more courses but more work is needed to avoid this situation altogether.</p>
-    ')}}
+    <p>In this round we trialled a ‘suggested searches’ view. We wanted to indicate to users that their search was too constrained and that more results were available.</p>
 
-    {{ macros.screenshot('Course details', 'course-details', '/public/images/history/user-research-apr-25/thumbnails/09-full-course-details.png', '/public/images/history/user-research-apr-25/09-full-course-details.png', '')}}
+    <h3 class="heading-medium">Result</h3>
+    <p>Users saw and interacted with these links, but this didn’t prevent an initial misconception about the number of courses available to them. The design helps users find more courses but more work is needed to avoid this situation altogether.</p>
+  ')}}
 
-    {{ macros.screenshot('Study type filter', 'study-type-filter', '/public/images/history/user-research-apr-25/thumbnails/10-study-type-filter.png', '/public/images/history/user-research-apr-25/10-study-type-filter.png', '')}}
+  {{ macros.screenshot('Course details', 'course-details', '/public/images/history/user-research-apr-25/thumbnails/09-full-course-details.png', '/public/images/history/user-research-apr-25/09-full-course-details.png', '')}}
 
-    {{ macros.screenshot('Qualifications filter', 'study-type-filter', '/public/images/history/user-research-apr-25/thumbnails/11-qualifications-filter.png', '/public/images/history/user-research-apr-25/11-qualifications-filter.png', '')}}
+  {{ macros.screenshot('Study type filter', 'study-type-filter', '/public/images/history/user-research-apr-25/thumbnails/10-study-type-filter.png', '/public/images/history/user-research-apr-25/10-study-type-filter.png', '')}}
+
+  {{ macros.screenshot('Qualifications filter', 'study-type-filter', '/public/images/history/user-research-apr-25/thumbnails/11-qualifications-filter.png', '/public/images/history/user-research-apr-25/11-qualifications-filter.png', '')}}
 </main>
 {% endblock %}
