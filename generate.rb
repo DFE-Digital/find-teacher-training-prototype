@@ -7,8 +7,11 @@ file = File.read('courses-clean.json')
 geo_file = File.read('geocoded_address_data.json')
 geocoded_addresses = JSON.parse(geo_file)
 
+addresses_file = File.read('provider_address_website.json')
+addresses = JSON.parse(addresses_file)
+
 data = JSON.parse(file)
-sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(1000)
+sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }
 
 def to_slug(string)
   string.downcase.gsub(/[^a-zA-Z0-9]/, '-').gsub(/--*/, '-').gsub(/-$/,'')
@@ -60,6 +63,7 @@ prototype_data['courses'] = sample.map do |c|
     programmeCode: c['programmeCode'],
     schools: c['campuses'].map { |a| { name: a['name'], address: a['address'], code: a['code'] } },
     addresses: c['campuses'].map { |a| geocoded_addresses.find {|g| g['address'] == a['address'] } },
+    providerAddress: addresses.find {|a| a['inst_code'] == c['providerCode']},
     options: options
   }
 
