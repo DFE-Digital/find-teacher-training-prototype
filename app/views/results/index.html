@@ -41,11 +41,7 @@
                 {% endif %}
               </dt>
               <dd>
-                {% if course.addresses[0].route %}
-                  {{ course.addresses[0].route }}, {{ course.addresses[0].postal_town }}, {{ course.addresses[0].post_code }}
-                {% else %}
-                  {{ course.addresses[0].address }}
-                {% endif %}
+                {{ course.providerAddress.route }}, {{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
               </dd>
             {% endif %}
           </dl>

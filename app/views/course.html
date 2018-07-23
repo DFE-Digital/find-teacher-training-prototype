@@ -20,8 +20,6 @@
       <dl class="aligned">
         <dt>Course offered:</dt>
         <dd>{{ course.options[0] }}</dd>
-        <!-- <dt>Website:</dt>
-        <dd><a href="{{ course.website }}">{{ course.website }}</a></dd> -->
         {% if course.accrediting %}
           <dt>Accredited by:</dt>
           <dd>{{ course.accrediting }}</dd>
@@ -47,6 +45,10 @@
             {% endif %}
           </details>
         </dd>
+        {% if course.providerAddress.url %}
+          <dt>Website:</dt>
+          <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
+        {% endif %}
         <dt>Apply from:</dt>
         <dd>October 2018</dd>
         <dt>Course starts:</dt>
@@ -77,10 +79,10 @@
         <dt>Telephone:</dt>
         <dd>0208 123986</dd>
         <dt>Website:</dt>
-        <dd><a href="{{ course.website }}">{{ course.website }}</a></dd>
+        <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
         <dt>Address:</dt>
         <dd>
-          {{ course.address }}
+          {{ course.provider }}, {{ course.providerAddress.route }}, {{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
         </dd>
       </dl>
 
