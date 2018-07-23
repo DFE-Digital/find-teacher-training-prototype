@@ -63,7 +63,7 @@ prototype_data['courses'] = sample.map do |c|
     programmeCode: c['programmeCode'],
     schools: c['campuses'].map { |a| { name: a['name'], address: a['address'], code: a['code'] } },
     addresses: c['campuses'].map { |a| geocoded_addresses.find {|g| g['address'] == a['address'] } },
-    providerAddress: addresses.find {|a| a['inst_code'] == c['providerCode']},
+    providerAddress: addresses.find {|a| a['inst_code'] == c['providerCode'] },
     options: options
   }
 
@@ -72,6 +72,7 @@ end
 
 # Don't include courses without geocodes
 prototype_data['courses'].reject! { |c| !c[:addresses] || c[:addresses].any? { |a| !a || !a['geocode'] } }
+prototype_data['courses'].reject! { |c| !c[:providerAddress] }
 
 puts "#{prototype_data['courses'].length} courses"
 File.open('lib/prototype_data.json', 'w') { |file| file.write(JSON.pretty_generate(prototype_data) + "\n") }

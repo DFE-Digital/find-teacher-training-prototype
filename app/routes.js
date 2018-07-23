@@ -46,7 +46,7 @@ router.post('/start/location', function (req, res) {
 // Route index page
 router.get('/course/:providerCode/:courseCode', function (req, res) {
   var course = req.session.data['courses'].find(function(c) {
-    return c.programmeCode == req.params.courseCode;
+    return c.programmeCode == req.params.courseCode && c.providerCode == req.params.providerCode;
   });
 
   res.render('course', { course: course });
@@ -108,7 +108,7 @@ router.get('/results', function (req, res) {
     var savedLatLong = req.session.data['latLong'] || {latitude: 51.508530, longitude: -0.076132};
 
     results.forEach(function(course) {
-      var latLong = { latitude: course.addresses[0].latitude, longitude: course.addresses[0].longitude };
+      var latLong = { latitude: course.providerAddress.latitude, longitude: course.providerAddress.longitude };
       var d = geolib.getDistanceSimple(savedLatLong, latLong);
       course.distance = (d / 1000).toFixed(0);
     });
