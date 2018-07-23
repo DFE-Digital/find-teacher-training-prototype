@@ -1,8 +1,8 @@
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Location</h4>
-  <div class="filters">
+  <ul class="filters list">
     {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
-  </div>
+  </ul>
   <div class="filter-link">
     <a href="/results/filters/location">Change location</a>
   </div>
@@ -10,11 +10,11 @@
 
 <div class="filter-category ">
   <h4 class="heading-small filter-heading">Subject</h4>
-  <div class="filters">
+  <ul class="filters list">
     {% for subject in data['selectedSubjects'] %}
-      {{ subject }}<br />
+      <li>{{ subject }}</li>
     {% endfor %}
-  </div>
+  </ul>
   <div class="filter-link">
     <a href="/results/filters/subjects">Change subject</a>
   </div>
@@ -22,13 +22,13 @@
 
 <!-- <div class="filter-category">
   <h4 class="heading-small filter-heading">Financial support</h4>
-  <div class="filters">
+  <ul class="filters list">
     {% if data['funding'] == 'Show courses with and without financial support' %}
-      All
+      <li>All</li>
     {% else %}
-      Salaries
+      <li>Salaries</li>
     {% endif %}
-  </div>
+  </ul>
   <div class="filter-link">
     <a href="/results/filters/funding">Change financial support options</a>
   </div>
@@ -36,11 +36,11 @@
 
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Study type</h4>
-  <div class="filters">
+  <ul class="filters list">
     {% for type in data['study-type'] %}
-      {{ type }}<br />
+      <li>{{ type }}</li>
     {% endfor %}
-  </div>
+  </ul>
   <div class="filter-link">
     <a href="/results/filters/studytype">Change study type</a>
   </div>
@@ -48,15 +48,15 @@
 
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Qualifications</h4>
-  <div class="filters">
+  <ul class="filters list">
     {% for q in data['qualification'] %}
       {% if 'Postgraduate' in q %}
-        PGCE with QTS<br />
+        <li>PGCE with QTS</li>
       {% else %}
-        QTS<br />
+        <li>QTS</li>
       {% endif %}
     {% endfor %}
-  </div>
+  </ul>
   <div class="filter-link">
     <a href="/results/filters/qualification">Change qualifications</a>
   </div>
@@ -64,9 +64,9 @@
 
 <div class="filter-category ">
   <h4 class="heading-small filter-heading">Salary</h4>
-  <div class="filters">
-    Courses with and without salary
-  </div>
+  <ul class="filters list">
+    <li>Courses with and without salary</li>
+  </ul>
   <div class="filter-link">
     <a href="#">Change salary option</a>
   </div>
@@ -75,9 +75,9 @@
 
 <div class="filter-category ">
   <h4 class="heading-small filter-heading">Vacancies</h4>
-  <div class="filters">
-    Only courses with vacancies
-  </div>
+  <ul class="filters list">
+    <li>Only courses with vacancies</li>
+  </ul>
   <div class="filter-link">
     <a href="#">Change vacancies</a>
   </div>

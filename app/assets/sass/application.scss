@@ -112,7 +112,18 @@ $path: "/public/images/";
 .filters{
   background-color: #ffffff;
   padding: 10px;
+  padding-bottom: 5px;
+
+  li {
+    border-bottom: 1px solid $border-colour;
+
+    &:only-child,
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
 }
+
 .compare .grid-row .column-one-quarter{
   margin-bottom: 5px;
 }
