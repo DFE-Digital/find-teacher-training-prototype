@@ -19,29 +19,40 @@ router.post('/', function (req, res) {
   res.render('index')
 })
 
-//
 router.post('/start/location', function (req, res) {
-  var location = req.body['postcode-town-or-city'];
-  var originalRes = res;
+  handleLocationSearch(req.body['postcode-town-or-city'], req, res, '/start/subjects');
+})
 
+router.get('/results/filters/location', function(req, res) {
+  backLink = { text: 'Back to results', href: '/results'}
+  res.render('start/location', { 'backLink': backLink, 'filtering': true });
+});
+
+router.post('/results/filters/location', function(req, res) {
+  backLink = { text: 'Back to results', href: '/results'}
+  handleLocationSearch(req.body['postcode-town-or-city'], req, res, '/results', { 'backLink': backLink, 'filtering': true });
+});
+
+function handleLocationSearch(location, req, res, successRedirect, options = {}) {
   if (location) {
-    geo.find(location + ', UK', function(err, res) {
+    geo.find(location + ', UK', function(err, geoResponse) {
       if (err) {
         console.log(err);
-        originalRes.render('start/location', {error: err});
-      } else if (res.length == 0) {
-        originalRes.render('start/location', {error: 'Sorry, we couldn’t find that location'});
+        options.error = err;
+        originalRes.render('start/location', options);
+      } else if (geoResponse.length == 0) {
+        options.error = 'Sorry, we couldn’t find that location';
+        res.render('start/location', options);
       } else {
-        console.log(res[0]);
-        req.session.data['latLong'] = res[0].location;
-        req.session.data['formattedAddress'] = res[0].formatted_address;
-        originalRes.redirect('/results');
+        req.session.data['latLong'] = geoResponse[0].location;
+        req.session.data['formattedAddress'] = geoResponse[0].formatted_address;
+        res.redirect(successRedirect);
       }
     });
   } else {
-    originalRes.redirect('/results');
+    res.redirect(successRedirect);
   }
-})
+}
 
 // Route index page
 router.get('/course/:providerCode/:courseCode', function (req, res) {
@@ -54,12 +65,23 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
 
 router.get('/results/filters/subjects', function (req, res) {
   var subjects = [];
+  var backLink = { text: 'Back to results', href: '/results'}
 
   req.session.data['subjects'].forEach(function(s) {
     subjects.push({name: s});
   });
 
-  res.render('results/filters/subjects', { subjects: subjects });
+  res.render('start/subjects', { subjects: subjects, filtering: true, backLink: backLink });
+})
+
+router.get('/start/subjects', function (req, res) {
+  var subjects = [];
+
+  req.session.data['subjects'].forEach(function(s) {
+    subjects.push({name: s});
+  });
+
+  res.render('start/subjects', { subjects: subjects });
 })
 
 // Route index page
@@ -131,11 +153,6 @@ router.get('/results', function (req, res) {
 router.get('/results/filters/funding', function(req, res) {
   backLink = { text: 'Back to results', href: '/results'}
   res.render('start/funding', { 'backLink': backLink, 'filtering': true });
-});
-
-router.get('/results/filters/location', function(req, res) {
-  backLink = { text: 'Back to results', href: '/results'}
-  res.render('start/location', { 'backLink': backLink, 'filtering': true });
 });
 
 module.exports = router

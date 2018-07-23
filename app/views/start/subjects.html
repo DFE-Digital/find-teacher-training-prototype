@@ -4,11 +4,15 @@
 Question page
 {% endblock %}
 
+{% if not backLink %}
+  {% set backLink = { text: 'Back', href: '/start/location'} %}
+{% endif %}
+
 {% block content %}
 
 <main id="content" role="main">
   {{macros.betaBanner()}}
-  {{ macros.backLink("Back to results","/results") }}
+  {{ macros.backLink(backLink.text, backLink.href) }}
 
   <div class="grid-row">
     <div class="column-two-thirds">

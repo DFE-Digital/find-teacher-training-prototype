@@ -1,10 +1,5 @@
 {% extends "layout.html" %}
-
-{% block page_title %}
-Question page
-{% endblock %}
-
-{% set filtering = true %}
+{% block page_title %}Find courses by location or by training provider{% endblock %}
 
 {% if not backLink %}
   {% set backLink = { text: 'Back', href: '/'} %}
@@ -29,7 +24,7 @@ Question page
       </div>
       {% endif %}
 
-      <form action="/start/location" method="post" class="form">
+      <form action="{% if filtering %}/results/filters/location{% else %}/start/location{% endif %}" method="post" class="form">
         <div class="form-group">
           {% set postcodeFields %}
             {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
