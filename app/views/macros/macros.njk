@@ -179,12 +179,15 @@
     </span>
   </div>
   <div class="resultsSortingOptions">
-    <label class="form-label sortLabel" for="select-box">Sorted by</label>
-    <select class="form-control sortSelectBox" id="select-box" name="select-box">
-      <option selected>Distance</option>
-      <option>Alphabetical A-Z</option>
-      <option>Alphabetical Z-A</option>
-    </select>
+    {% if value('location') == 'Across England' %}
+      <div class="sortLabel">Sorted by training provider</div>
+    {% else %}
+      <label class="form-label sortLabel" for="select-box">Sorted by</label>
+      <select class="form-control sortSelectBox" id="select-box" name="select-box">
+        <option selected>Distance</option>
+        <option>By training provider</option>
+      </select>
+    {% endif %}
   </div>
 </div>
 {% endmacro %}
