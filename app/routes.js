@@ -146,8 +146,8 @@ router.get('/results', function (req, res) {
 
   var originalCount = results.length;
 
-  if (results.length > 10) {
-    results.length = 10;
+  if (results.length > 20) {
+    results.length = 20;
     paginated = true;
   }
 
