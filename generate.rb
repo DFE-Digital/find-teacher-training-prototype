@@ -147,7 +147,7 @@ end
 
 # Don't include courses without geocodes
 prototype_data['courses'].reject! { |c| !c[:addresses] || c[:addresses].any? { |a| !a || !a['geocode'] } }
-prototype_data['courses'].reject! { |c| !c[:providerAddress] }
+prototype_data['courses'].reject! { |c| !c[:providerAddress] || !c[:providerAddress]["latitude"] }
 
 puts "#{prototype_data['courses'].length} courses"
 File.open('lib/prototype_data.json', 'w') { |file| file.write(JSON.pretty_generate(prototype_data) + "\n") }
