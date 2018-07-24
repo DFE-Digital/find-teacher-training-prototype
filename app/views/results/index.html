@@ -36,8 +36,10 @@
              <dt>Accredited by:</dt>
              <dd>{{ course.accrediting }}</dd>
             {% endif %}
-            <dt>Distance:</dt>
-            <dd>{{ course.distance }} miles{% if course.addresses.length > 1 %} to nearest {{ course.locationType | lower }}{% endif %}</dd>
+            {% if data['location'] != 'Across England' %}
+              <dt>Distance:</dt>
+              <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd>
+            {% endif %}
             <dt>
               {% if course.addresses.length > 1 %}
                 Nearest {{ course.locationType | lower }}:
