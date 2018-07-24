@@ -11,7 +11,7 @@ addresses_file = File.read('provider_address_website.json')
 addresses = JSON.parse(addresses_file)
 
 data = JSON.parse(file)
-sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }
+sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(3000)
 
 def to_slug(string)
   string.downcase.gsub(/[^a-zA-Z0-9]/, '-').gsub(/--*/, '-').gsub(/-$/,'')
@@ -93,10 +93,10 @@ prototype_data['groupedSubjects'] = {
   ],
   "Other subjects": [
     "Citizenship",
-    "Literacy",
+    # "Literacy", # Only University of Greenwich
     "Post-compulsory",
-    "Middle years",
-    "Numeracy",
+    # "Middle years", No courses
+    # "Numeracy", Only University of Greenwich
     "Special educational needs"
   ]
 }
