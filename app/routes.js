@@ -96,16 +96,16 @@ router.get('/results', function (req, res) {
   }
 
   var paginated = false;
-  var phase = "Secondary";
+  var phase = ["Secondary"];
   var subjects = req.session.data['selectedSubjects'];
 
   if (req.session.data['selectedSubjects'].some(s => s.match(/primary/i))) {
-    phase = "Primary";
+    phase.push("Primary");
   }
 
   // Find by subject
   var results = req.session.data['courses'].filter(function(course) {
-    return course.subjects.includes(phase) && course.subjects.some(r => subjects.indexOf(r) >= 0)
+    return course.subjects.some(r => phase.indexOf(r) >= 0) && course.subjects.some(r => subjects.indexOf(r) >= 0)
   });
 
   // Find by type
