@@ -20,6 +20,11 @@ router.post('/', function (req, res) {
 })
 
 router.post('/start/location', function (req, res) {
+  if (req.session.data['location'] == 'School, university or other training provider') {
+    res.render('start/location', {error: 'Searching by training provider isn’t available in this prototype.'});
+    return;
+  }
+
   handleLocationSearch(req.body['postcode-town-or-city'], req, res, '/start/subjects');
 })
 
@@ -90,11 +95,6 @@ function subjectGroups(req) {
 
 // Route index page
 router.get('/results', function (req, res) {
-  if (req.session.data['location'] == 'School, university or other training provider') {
-    res.render('start/location', {error: 'Searching by training provider isn’t available in this prototype.'});
-    return;
-  }
-
   var paginated = false;
   var phase = ["Secondary"];
   var subjects = req.session.data['selectedSubjects'];
