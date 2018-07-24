@@ -106,16 +106,16 @@ $path: "/public/images/";
 }
 .filter-category{
   background-color: #dee0e2;
-  padding: 12px;
+  padding: 8px;
   margin-bottom: 10px;
 }
-.filters{
+.filters {
   background-color: #ffffff;
-  padding: 10px;
-  padding-bottom: 5px;
 
   li {
-    border-bottom: 1px solid $border-colour;
+    border-bottom: 2px solid #dee0e2;
+    padding: 8px 8px 5px;
+    margin-bottom: 0;
 
     &:only-child,
     &:last-child {
