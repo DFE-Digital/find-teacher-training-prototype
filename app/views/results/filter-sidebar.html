@@ -1,7 +1,13 @@
 <div class="filter-category">
   <h4 class="heading-small filter-heading">Location</h4>
   <ul class="filters list">
-    <li>{{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}</li>
+    <li>
+      {% if data['location'] == 'Across England' %}
+        Across England
+      {% else %}
+        {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
+      {% endif %}
+    </li>
   </ul>
   <div class="filter-link">
     <a href="/results/filters/location">Change location</a>
