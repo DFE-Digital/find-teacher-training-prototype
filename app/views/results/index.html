@@ -38,19 +38,16 @@
             {% endif %}
             <dt>Distance:</dt>
             <dd>{{ course.distance }} miles{% if course.addresses.length > 1 %} to nearest {{ course.locationType | lower }}{% endif %}</dd>
-
-            {% if course.addresses[0] %}
-              <dt>
-                {% if course.addresses.length > 1 %}
-                  Nearest {{ course.locationType | lower }}:
-                {% else %}
-                  {{ course.locationType }}:
-                {% endif %}
-              </dt>
-              <dd>
-                {{ course.providerAddress.route }}, {{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
-              </dd>
-            {% endif %}
+            <dt>
+              {% if course.addresses.length > 1 %}
+                Nearest {{ course.locationType | lower }}:
+              {% else %}
+                {{ course.locationType }}:
+              {% endif %}
+            </dt>
+            <dd>
+              {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
+            </dd>
           </dl>
         {% endfor %}
       </div>
