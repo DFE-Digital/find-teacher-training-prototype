@@ -11,7 +11,7 @@ addresses_file = File.read('provider_address_website.json')
 addresses = JSON.parse(addresses_file)
 
 data = JSON.parse(file)
-sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(1000)
+sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }
 
 def to_slug(string)
   string.downcase.gsub(/[^a-zA-Z0-9]/, '-').gsub(/--*/, '-').gsub(/-$/,'')
@@ -26,7 +26,80 @@ prototype_data = {
 prototype_data['subjects'] = data.map { |c| c['subjects'].map {|s| s.downcase.capitalize } }.flatten.uniq.sort
 
 # Clean up subjects
-prototype_data['subjects'].reject! { |s| s.include?('abridged') || s.include?('Secondary') }
+# prototype_data['subjects'].reject! { |s| s.include?('abridged') || s.include?('Secondary') }
+
+prototype_data['groupedSubjects'] = {
+  "Primary": [
+    "Primary",
+    "Lower primary",
+    "Upper primary",
+    "Early years"
+  ],
+  "Secondary": [
+    "Art / art & design",
+    "Biology",
+    "Business education",
+    "Chemistry",
+    "Classics",
+    "Communication and media studies",
+    "Computer studies",
+    "Dance and performance",
+    "Design and technology",
+    "Design and technology (food)",
+    "Design and technology (product design)",
+    "Design and technology (systems and control)",
+    "Design and technology (textiles)",
+    "Drama and theatre studies",
+    "Economics",
+    "Engineering",
+    "English",
+    "English language",
+    "English literature",
+    "Geography",
+    "Greek",
+    "Health and social care",
+    "History",
+    "Humanities",
+    "Information communication technology",
+    "Information technology",
+    "Latin",
+    "Mathematics",
+    "Music",
+    "Outdoor activities",
+    "Personal and social education",
+    "Philosophy",
+    "Physical education",
+    "Physics",
+    "Psychology",
+    "Religious education",
+    "Science",
+    "Social science"
+  ],
+  "Modern languages": [
+    "Languages",
+    "Languages (asian)",
+    "Languages (european)",
+    "Arabic",
+    "English as a second or other language",
+    "French",
+    "German",
+    "Italian",
+    "Japanese",
+    "Mandarin",
+    "Russian",
+    "Spanish",
+    "Urdu",
+    "Welsh"
+  ],
+  "Other subjects": [
+    "Citizenship",
+    "Literacy",
+    "Post-compulsory",
+    "Middle years",
+    "Numeracy",
+    "Special educational needs"
+  ]
+}
 
 prototype_data['courses'] = sample.map do |c|
   options = []
@@ -52,11 +125,13 @@ prototype_data['courses'] = sample.map do |c|
     end
   end
 
+  subjects = c['subjects'].map {|s| s.downcase.capitalize }
+
   course = {
     locationType: c['route'] == 'Higher Education programme' ? 'University' : 'School',
     accrediting: c['accrediting'],
     provider: c['provider'].gsub("'", "’"),
-    subjects: c['subjects'].map {|s| s.downcase.capitalize },
+    subjects: subjects,
     name: c['name'],
     slug: "#{c['providerCode']}/#{c['programmeCode']}",
     providerCode: c['providerCode'],

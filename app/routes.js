@@ -64,25 +64,29 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
 })
 
 router.get('/results/filters/subjects', function (req, res) {
-  var subjects = [];
   var backLink = { text: 'Back to results', href: '/results'}
-
-  req.session.data['subjects'].forEach(function(s) {
-    subjects.push({name: s});
-  });
-
-  res.render('start/subjects', { subjects: subjects, filtering: true, backLink: backLink });
+  res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink });
 })
 
 router.get('/start/subjects', function (req, res) {
-  var subjects = [];
-
-  req.session.data['subjects'].forEach(function(s) {
-    subjects.push({name: s});
-  });
-
-  res.render('start/subjects', { subjects: subjects });
+  res.render('start/subjects', { subjectGroups: subjectGroups(req) });
 })
+
+function subjectGroups(req) {
+  var subjectGroups = [];
+
+  for (const subjectGroup of Object.keys(req.session.data['groupedSubjects'])) {
+    var subjects = [];
+
+    req.session.data['groupedSubjects'][subjectGroup].forEach(function(subject) {
+      subjects.push({name: subject});
+    });
+
+    subjectGroups.push({ group: subjectGroup, subjects: subjects });
+  }
+
+  return subjectGroups
+}
 
 // Route index page
 router.get('/results', function (req, res) {
