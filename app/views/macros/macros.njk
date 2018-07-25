@@ -172,23 +172,17 @@
 <!-- Header on top of the results showing number of courses, New search and sorting order -->
 {% macro resultsHeader(countString = '40 courses') %}
 <div class="resultsHeader">
-  <div>
+  <div class="results-found">
     {{ countString }} found
     <span>
       <a href="/start/location">New search</a>
     </span>
   </div>
+  {% if value('location') == 'Across England' %}
   <div class="resultsSortingOptions">
-    {% if value('location') == 'Across England' %}
-      <div class="sortLabel">Sorted by training provider</div>
-    {% else %}
-      <label class="form-label sortLabel" for="select-box">Sorted by</label>
-      <select class="form-control sortSelectBox" id="select-box" name="select-box">
-        <option selected>Distance</option>
-        <option>Training provider</option>
-      </select>
-    {% endif %}
+    <div class="sortLabel">Sorted by training provider</div>
   </div>
+  {% endif %}
 </div>
 {% endmacro %}
 
