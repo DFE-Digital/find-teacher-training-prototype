@@ -11,6 +11,22 @@
   </div>
   <h1 class="heading-xlarge">{{ title }}</h1>
 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>Improvements to the <a href="/history/all-courses-minimum">minimum viable service</a> include:</p>
+
+      <ul class="list list-bullet">
+        <li>separating and classifying UCAS course subjects</li>
+        <li>tweaked distance copy in search results</li>
+        <li>added ‘address’ to location field in results</li>
+        <li>removed the sort by controls above search results</li>
+        <li>changed ‘at’ to ‘with’ in search results</li>
+        <li>highlighted course website on course details view</li>
+        <li>changed schools you can apply to, to ‘places’</li>
+      </ul>
+    </div>
+  </div>
+
   {% set contents = [
     { text: 'Find by subject collapsed', id: 'find-by-subject-collapsed' },
     { text: 'Find by subject expanded', id: 'find-by-subject-expanded' },
@@ -19,7 +35,17 @@
   ] %}
   {{ macros.screenshotContents(contents) }}
 
-  {{ macros.screenshot('Find by subject collapsed', 'find-by-subject-collapsed', '/public/images/history/mvp-iteration-jul-25/thumbnails/01-find-by-subject-collapsed.png', '/public/images/history/mvp-iteration-jul-25/01-find-by-subject-collapsed.png', '') }}
+  {{ macros.screenshot('Find by subject collapsed', 'find-by-subject-collapsed', '/public/images/history/mvp-iteration-jul-25/thumbnails/01-find-by-subject-collapsed.png', '/public/images/history/mvp-iteration-jul-25/01-find-by-subject-collapsed.png', '
+    <p>Rather than listing alphabetically, group subjects by categories.</p>
+
+    <h3 class="heading-medium">Results</h3>
+
+    <p>Users found and searched for the subjects they wanted.</p>
+
+    <p>Participant 2 questioned the modern languages group, “<a href="https://lookback.io/watch/QCBC3KYjNxtEuQH5R?t=15m21s">it’s not clear if modern languages is primary or secondary or both</a>”</p>
+
+    <p>As expected, some of the subject names weren’t clear. For example: “<a href="https://lookback.io/watch/QCBC3KYjNxtEuQH5R?t=16m22s">I’m not sure what Social science means</a>”</p>
+  ') }}
 
   {{ macros.screenshot('Find by subject expanded', 'find-by-subject-expanded', '/public/images/history/mvp-iteration-jul-25/thumbnails/03-find-by-subject-expanded.png', '/public/images/history/mvp-iteration-jul-25/03-find-by-subject-expanded.png', '') }}
 
