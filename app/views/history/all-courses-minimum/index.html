@@ -23,6 +23,30 @@
       </ul>
 
       <p>All private beta specifics (eg anything pertaining to business studies only) have been removed.</p>
+
+      <h2 class="heading-large">User research</h2>
+
+      <p>We tested this design with remote users in Leeds on 25 July 2018:</p>
+
+      <ul class="list">
+        <li>
+          <a href="https://lookback.io/watch/m3ue4g3QBwbt7pq9G">Participant 1</a>
+        </li>
+        <li>
+          <a href="https://lookback.io/watch/QCBC3KYjNxtEuQH5R">Participant 2</a>
+        </li>
+        <li>
+          <a href="https://lookback.io/watch/aHYeZsGupN6oFuGGv">Participant 3</a>
+        </li>
+      </ul>
+
+      <p>Aiming to test:</p>
+      <ul class="list list-bullet">
+        <li>the minimum viable service, looking for any major difficulties in the journey to prioritise focus</li>
+        <li>reactions to minimum course details page</li>
+        <li>results listings including distance to nearest place you can apply to attribute</li>
+        <li>current filters and what is a priority in terms of building</li>
+      </ul>
     </div>
   </div>
 
@@ -37,7 +61,12 @@
 
   {{ macros.screenshot('Index', 'index', '/public/images/history/all-courses-minimum/thumbnails/01-index.png', '/public/images/history/all-courses-minimum/01-index.png', '') }}
 
-  {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/all-courses-minimum/thumbnails/02-find-by-location.png', '/public/images/history/all-courses-minimum/02-find-by-location.png', '') }}
+  {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/all-courses-minimum/thumbnails/02-find-by-location.png', '/public/images/history/all-courses-minimum/02-find-by-location.png', '
+    <h3 class="heading-medium">Results</h3>
+    <p>As expected, location continues to be the number 1 need for users and the first choice was selected.</p>
+    <p>“I can’t travel far with kids at the moment”</p>
+    <p>“Wanted to do Physics with Maths, but closest was Sheffield, which was too far to travel”</p>
+  ') }}
 
   {{ macros.screenshot('Teacher training courses', 'teacher-training-courses', '/public/images/history/all-courses-minimum/thumbnails/03-teacher-training-courses.png', '/public/images/history/all-courses-minimum/03-teacher-training-courses.png', '
     <h3 class="heading-medium">Search results</h3>
@@ -52,6 +81,17 @@
 
     <h3 class="heading-medium add-top-margin">Vacancies</h3>
     <p>The design includes filters for vacancies. We aim to show only courses with vacancies but will provide a filter to see all courses – sometimes users need to see if there are more suitable courses nearby that they could apply to in the next cycle. This doesn’t need to be addressed until after launch – at launch all courses will have vacancies.</p>
+
+    <h3 class="heading-medium">Results</h3>
+    <p>Users <a href="https://lookback.io/watch/m3ue4g3QBwbt7pq9G?t=41m39s">seemed to understand</a> that they were only seeing courses with vacancies, and that they could use the filter to view courses that were full. (When a result didn’t show – “probably because there are no vacancies”)</p>
+
+    <hr />
+
+    <p>The ‘sort by’ dropdown caused some confusion. It isn’t clear how sorting by training provider would be useful. This was <a href="/history/mvp-iteration-jul-25#teacher-training-courses">removed in the next iteration</a>. The ordering of results by distance seemed implicit enough to remove the "sorted by distance" label too. We’ll see how this tests.</p>
+
+    <hr />
+
+    <p>Participant 1 didn’t know if courses were salaried or not, “<a href="https://lookback.io/watch/m3ue4g3QBwbt7pq9G?t=31m31s">None of them tell you if they are salaried or not – I assume it’s not salaried</a>” (no salaried courses were shown, they were looking for unsalaried courses because they had a bursary)</p>
   ') }}
 
   {{ macros.screenshot('Change subject', 'change-subject', '/public/images/history/all-courses-minimum/thumbnails/04-change-subject.png', '/public/images/history/all-courses-minimum/04-change-subject.png', '
@@ -59,9 +99,29 @@
     <p>Business education is more commonly referred to as business studies.</p>
     <p>The alphabetical listing seems arbitrary.</p>
     <p>Helpful guidance: <a href="https://medium.com/tripaneer-techblog/improving-the-usability-of-multi-selecting-from-a-long-list-63e1a67aab35">Improving the usability of multi-selecting from a long list</a></p>
+
+    <h3 class="heading-medium">Iteration</h3>
+    <p>Before research we iterated the long list of subjects into <a href="/history/mvp-iteration-jul-25#find-by-subject-collapsed">a grouped list</a>.</p>
   ') }}
 
-  {{ macros.screenshot('Minimum course page', 'minimum-course-page', '/public/images/history/all-courses-minimum/thumbnails/05-minimum-course-page.png', '/public/images/history/all-courses-minimum/05-minimum-course-page.png', '') }}
+  {{ macros.screenshot('Minimum course page', 'minimum-course-page', '/public/images/history/all-courses-minimum/thumbnails/05-minimum-course-page.png', '/public/images/history/all-courses-minimum/05-minimum-course-page.png', '
+    <p>The course website, not shown here, was added prior to research.</p>
+
+    <h3 class="heading-medium">Results</h3>
+
+    <p>The course website provided a much needed jumping off point to find more information about a course.</p>
+    <p>Most websites point to the provider’s home page rather than something more specific, for each course a user will need to navigate the provider website to find further information: “<a href="https://lookback.io/watch/QCBC3KYjNxtEuQH5R?t=32m59s">a lot of time and effort</a>”</p>
+
+    <p>The website prevents the user from reaching a dead end.</p>
+
+    <hr />
+
+    <p>Participant 1 wanted to see requirements and eligibility, “<a href="https://lookback.io/watch/m3ue4g3QBwbt7pq9G?t=21m21s">I want to see what they’re looking for</a>”</p>
+
+    <p>Participant 2 noted that a ‘<a href="https://lookback.io/watch/QCBC3KYjNxtEuQH5R?t=24m8s">school bio</a>’ would be useful information to show.</p>
+
+
+  ') }}
 
 </main>
 {% endblock %}
