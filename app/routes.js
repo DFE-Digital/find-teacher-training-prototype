@@ -44,7 +44,7 @@ function handleLocationSearch(location, req, res, successRedirect, options = {})
       if (err) {
         console.log(err);
         options.error = err;
-        originalRes.render('start/location', options);
+        res.render('start/location', options);
       } else if (geoResponse.length == 0) {
         options.error = 'Sorry, we couldn’t find that location';
         res.render('start/location', options);
