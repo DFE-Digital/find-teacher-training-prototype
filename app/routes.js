@@ -3,6 +3,7 @@ var router = express.Router()
 var geolib = require('geolib')
 var geocoder = require('google-geocoder')
 var geo = geocoder({ key: process.env.GOOGLE_API_KEY })
+var fs = require('fs')
 
 // geo.find('223 Edenbridge Dr, Toronto', function(err, res){
 //   console.log(err);
@@ -61,11 +62,13 @@ function handleLocationSearch(location, req, res, successRedirect, options = {})
 
 // Route index page
 router.get('/course/:providerCode/:courseCode', function (req, res) {
-  var course = req.session.data['courses'].find(function(c) {
-    return c.programmeCode == req.params.courseCode && c.providerCode == req.params.providerCode;
-  });
+  var course;
 
-  res.render('course', { course: course });
+  fs.readFile(`lib/courses/course_${req.params.providerCode}_${req.params.courseCode}.json`, (err, data) => {
+    if (err) throw err;
+    course = JSON.parse(data);
+    res.render('course', { course: course });
+  });
 })
 
 router.get('/results/filters/subjects', function (req, res) {

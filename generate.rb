@@ -155,6 +155,7 @@ prototype_data['courses'] = sample.map do |c|
       # Use JSON5 to parse most of the entries: https://github.com/bartoszkopinski/json5
       json_data = JSON5.parse(e["json_data"])
       course[:enrichment] = json_data
+      course[:has_enrichment] = true
       # puts "Success: #{c['programmeCode']}"
     rescue SyntaxError
       # It's ok to ignore some of the courses
@@ -169,17 +170,27 @@ prototype_data['courses'] = sample.map do |c|
     begin
       json_data = JSON5.parse(i["json_data"])
       course[:inst] = json_data
+      course[:has_inst] = true
     rescue SyntaxError
     rescue
     end
   end
 
+  if (course[:has_inst] && course[:has_enrichment])
+    File.open("lib/courses/course_#{c['providerCode']}_#{c['programmeCode']}.json", 'w') do |file|
+      file.write(JSON.pretty_generate(course) + "\n")
+    end
+  end
+
+  course.delete(:inst)
+  course.delete(:enrichment)
+  course.delete(:schools)
+  course.delete(:addresses)
   course
 end
 
-# Don't include courses without geocodes
-prototype_data['courses'].reject! { |c| !(c[:enrichment] && c[:inst]) }
-prototype_data['courses'].reject! { |c| !c[:addresses] || c[:addresses].any? { |a| !a || !a['geocode'] } }
+# Don't include courses without geocodes or enrichments
+prototype_data['courses'].reject! { |c| !(c[:has_enrichment] && c[:has_inst]) }
 prototype_data['courses'].reject! { |c| !c[:providerAddress] || !c[:providerAddress]["latitude"] }
 
 puts "#{prototype_data['courses'].length} courses"
