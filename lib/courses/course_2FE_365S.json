@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Cumbria",
+  "provider": "Kendal Primary Partnership School Direct",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2FE/365S",
+  "providerCode": "2FE",
+  "programmeCode": "365S",
+  "schools": [
+    {
+      "name": "Kendal Primary Partnership Schools",
+      "address": "Oxenholme Lane, Natland, Cumbria, LA9 7QH",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Oxenholme Lane, Natland, Cumbria, LA9 7QH",
+      "geocode": true,
+      "formatted_address": "Oxenholme Ln, Natland, Kendal LA9 7QH, UK",
+      "latitude": 54.2985757,
+      "longitude": -2.7328409,
+      "post_code": "LA9 7QH",
+      "city": "Natland",
+      "route": "Oxenholme Lane",
+      "postal_town": "Kendal"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2FE",
+    "addr_1": "Kendal Primary Partnership",
+    "addr_2": "Oxenholme Lane",
+    "addr_3": "Natland",
+    "addr_4": "Cumbria",
+    "postcode": "LA9 7QH ",
+    "url": "http://www.stmarksschoolnatland.co.uk",
+    "geocode": true,
+    "formatted_address": "Oxenholme Ln, Natland, Kendal LA9 7QH, UK",
+    "latitude": 54.2970261,
+    "longitude": -2.736147,
+    "post_code": "LA9 7QH",
+    "city": "Natland",
+    "route": "Oxenholme Lane",
+    "postal_town": "Kendal"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "From the first day of our course, you will be in school.  The majority of your training will be in educational settings, working with the age group you have selected to train in.  \\r\n\\r\nThere will be at least sixty training days during the year where you will learn the craft of teaching through a range of group sessions, observations, role play, tutorials, self-directed study, research and presentations. These training days will be in schools in South Cumbria so that you can learn from the best practitioners and experience a wide range of settings. \\r\n\\r\nIn order to extend your training, there will be immersion days and weeks within different schools, including large primaries with over 400 children on roll and smaller ones with less than 50.  This will enable you to experience a wide range of teaching and learning approaches. \\r\n\\r\nThe first few weeks of the course will have a more theoretical input and opportunities to observe lessons.  This will be followed by regular weekly training days linked to the craft of teaching as well as whole school issues, such as behaviour management and assessment for learning.  As a Primary trainee teacher, you are required to teach every curriculum subjects.  There will be sessions throughout the year that provide opportunities to learn about the pedagogy of teaching all core and foundation areas. \\r\n\\r\nAcademic assignments will be at Masters level, which requires reading, research and reflection on your own learning and experiences within the training year.  \\r\n\\r\nThere will be five modules which integrate theory and practical application within the classroom.\\r\n* Raising the Achievement of Children - understanding factors that affect children’s achievement. \\r\n* High Quality Learning and Teaching - understanding the principles of high quality learning and teaching.\\r\n* Pedagogy and Practice - introduction to key concepts and principles in learning and teaching.\\r\n* Leading and Managing Change - developing skills, knowledge and understanding of leadership and managing change for employability.\\r\n* The Cumbria Teacher of Reading - teaching children to read with a focus on Systematic Synthetic Phonics.\\r\n\\r\nYou will complete a portfolio of evidence of your journey to QTS, reflecting on experiences, identifying future training needs, progress towards the Teachers’ Standards and celebrating achievements. \\r\n\\r\nThroughout the year you will be supported by mentors and staff within our partner schools in addition to your Personal Tutor (Primary Programme Lead - PPL) and a University tutor (University Programme Lead - UPL).\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree - ideally related to a National Curriculum subject. Minimum of  Lower Second  (Upper second is preferable)\\r\n\\r\nSchool Experience (recommended not a requirement) - ten days primary school experience in the last two years; five days in both Key Stage 1 and Key Stage 2\\r\n\\r\nGCSE Qualifications - minimum of five GCSEs at grade C or above at the point of application, including grade C in English, mathematics and science plus at least one other National Curriculum subject. \\r\n",
+    "InterviewProcess": "The Interview process will be based at one of our partner schools and involve two local Headteachers and our PPL.  \\r\n\\r\nThere will be a number of activities during the interview, including:\\r\n* Check of ID, qualifications, certificates\\r\n* Small group teaching activity with 6 children of mixed ability (20 minutes)\\r\n* An academic writing task (20 minutes) \\r\n* Personal audit of curriculum subject knowledge \\r\n* Any relevant school experience (recommendation)\\r\n* Individual interview (20 minutes)\\r\n* Outline of our programme\\r\n* Opportunity to ask any questions\\r\n\\r\nThe Interview process takes no more than half a day.\\r\n\\r\nAll applicants will be given a decision on the day.  \\r\n\\r\nSuccessful applicants will be offered a conditional place as there are conditions that must be met prior to starting the course. All ITT trainees must have Disclosure and Barring (DBS) clearance, a medical health check, passed both the Numeracy and the Literacy Skills tests and all the required qualifications before the course starts in September.",
+    "PersonalQualities": "A Kendal Primary Partnership student is someone who has the potential to inspire young people and be an excellent teacher of the future. \\r\n\\r\nSome of the attributes we will be looking for are: \\r\n* An enthusiastic and approachable person \\r\n* Good interpersonal and communication skills \\r\n* Someone who enjoys working with  young children\\r\n* A passion for education and an interest in teaching all subjects \\r\n* Good organisation and time management skills \\r\n* A role model for young people \\r\n* Creativity \\r\n* Ability to reflect and improve \\r\n* Hard working \\r\n* Potential for leadership in the future \\r\n",
+    "HowSchoolPlacementsWork": "During the year, you will have three assessed placements in school. These must take place in at least two different settings and in two phases to give you a range of deep learning experiences and to meet the requirements for QTS.\\r\n\\r\nAutumn Term - Beginning Placement  (4 weeks) \\r\nSpring Term - Developing Placement (5 weeks)\\r\nSummer Term - Extending Placement (10 weeks)\\r\n\\r\nIn addition you will have an Enrichment Experience as a whole cohort for a week in another school setting, which is not assessed but closely linked to research for your final assignment.\\r\n\\r\nAll the schools we use for placements are in South Cumbria with a few in Lancashire.  The majority are in Kendal.  Placements are carefully selected to match students' individual needs and travel limitations as closely as possible.  \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Kendal Primary Partnership School Direct programme (KPP) is proud to work with the University of Cumbria.  Study with us towards a PgCE at Masters level, with Qualified Teacher Status.  Our exciting programme provides opportunities to experience critical and creative teaching approaches in Early Years and/or Primary settings.\\r\n\\r\nWe work with the Kendal Collaborative Partnership (KCP), which consists of 13 Primary schools, a Nursery, two Secondary schools and a Special school, who work together to train the next generation of outstanding teachers.\\r\n\\r\nThe KPP is based in Kendal, where you will learn from experienced teachers.  Our training is led by staff from local schools in partnership with University of Cumbria tutors and takes place within our partner schools. You will immediately be immersed in school-life and benefit from experiencing an exciting variety of settings. The KPP has established partnerships with many schools who support placements and the academic modules.\\r\n\\r\nOur course brings together the expertise of current practitioners, complimented by staff from one of the largest ITT universities. You will join a learning community where everyone is interested in reflecting and researching the pedagogies of teaching and learning.\\r\n\\r\nAcademic philosophy will underpin your learning, which you then apply in classroom settings.  You will develop the craft of teaching at the same time as reflecting on the impact that a range of approaches have on pupils, staff, school and the wider community.\\r\n\\r\nWe are very proud of our UoC Excellence nomination 2016 and to be a Golden Apple finalist 2018.\\r\n\\r\n",
+    "TrainWithDisability": "The Kendal Primary Partnership aims to provide a supportive environment that allows all individuals to flourish, and actively encourage applications from disabled people. \\r\n\\r\nWe are committed to widening participation and provide a range of services to enable those with disability or specific learning difficulty (SpLD) to access our courses. This has included prior access to module notes in preparation for taught sessions, individual tutorial support and  consideration in matching placements to student needs.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The Kendal Primary Partnership is an experienced alliance and our partner schools have worked with the University of Cumbria (UoC) for over 20 years.  All of our schools have employed teachers trained at UoC and a number of our staff have been involved in devising the PgCE programme or been regular guest lecturers at the university.\\r\n\\r\n",
+        "UcasInstitutionCode": "C99"
+      }
+    ]
+  },
+  "has_inst": true
+}

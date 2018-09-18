@@ -1,0 +1,68 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Wolverhampton",
+  "provider": "Wednesbury Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1R5/253H",
+  "providerCode": "1R5",
+  "programmeCode": "253H",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Harvills Hawthorn Primary, Wolseley Road, Hill Top, West Bromwich, B70 0NG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Harvills Hawthorn Primary, Wolseley Road, Hill Top, West Bromwich, B70 0NG",
+      "geocode": true,
+      "formatted_address": "Wolseley Rd, West Bromwich B70 0NG, UK",
+      "latitude": 52.5357269,
+      "longitude": -2.0220787,
+      "post_code": "B70 0NG",
+      "city": "West Midlands",
+      "route": "Wolseley Road",
+      "postal_town": "West Bromwich"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1R5",
+    "addr_1": "Harvills Hawthorn Primary School",
+    "addr_2": "Wolseley Road,",
+    "addr_3": "Hill Top",
+    "addr_4": "West Bromwich",
+    "postcode": "B70 0NG ",
+    "url": "http://www.wednesburyteachingschoolalliance.co.uk",
+    "geocode": true,
+    "formatted_address": "Wolseley Rd, West Bromwich B70 0NG, UK",
+    "latitude": 52.5357269,
+    "longitude": -2.0220787,
+    "post_code": "B70 0NG",
+    "city": "West Midlands",
+    "route": "Wolseley Road",
+    "postal_town": "West Bromwich"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "                For 2019-2020 WTSA will be offering places in:\\r\n                        School Direct Tuition, Primary-PGCE.\\r\n\\r\nOur School Direct Tuition programme has been designed to ensure that our student teachers are expertly trained to take up posts as outstanding NQTs. To support this, most of the training will take place in the School Direct schools and will be blended with face-to-face training sessions at the university.\\r\n\\r\nCourse Overview:\\r\n\\r\n- a comprehensive introduction to the course both at WTSA and the university\\r\n\\r\n- WTSA taught sessions in English, Maths and Professional Studies are led by outstanding teachers, SLE’s (Specialist Leaders in Education) and senior members of staff \\r\n\\r\n- many of these sessions are followed by or informed by classroom observation and interaction with children\\r\n\\r\n- university taught sessions in Science, all other foundation subjects, assessments and accreditation are led by outstanding lecturers and staff members\\r\n\\r\n- two main teaching placements (one in Key stage 1 and one in Key Stage 2)\\r\n\\r\n- additional experience in nursery and secondary settings\\r\n\\r\n- opportunities to enhance and further develop subject area knowledge (e.g. English, Maths, SEND, PE etc)\\r\n\\r\n- opportunity to experience teaching abroad\\r\n\\r\nIn School Experience:\\r\n\\r\n- student teachers start to visit their first placement school from the beginning of September and their second placement school from January. Where possible, these are weekly visits\\r\n\\r\n- school based WTSA taught sessions as above\\r\n\\r\n- nursery, secondary and enhancement placements in schools and settings\\r\n\\r\nAccreditation and Assessment:\\r\n\\r\n- successful completion of the course will result in QTS and a PGCE with 60 Masters Level credits\\r\n\\r\n- assessment is through 5 masters level modules throughout the year (which includes your 2 teaching placements)\\r\n\\r\n- the modules are assessed by the University of Wolverhampton\\r\n\\r\n- each module is accessible via Canvas (Virtual Learning Environment) and the CANVAS app\\r\n",
+    "InterviewProcess": "Harvills Hawthorn Primary School is the lead school in WTSA and as such will be coordinating the recruitment process. \\r\n\\r\nIf shortlisted, potential candidates should endeavour to visit the school prior to interview for a tour and an opportunity to ask any questions. Visits to the school are actively encouraged (and welcomed) prior to application. We run a number of Open Mornings/ Open Afternoons where candidates are welcome to attend and details of these can be found at(www.wednesburyteachingschoolalliance.co.uk/content/news)\\r\n\\r\nThe interview process is likely to last up to half a day and will require you to complete a number of tasks including a written task and a task with the children. The interview panel will consist of headteachers and senior leaders from the alliance as well as a representative from the University of Wolverhampton.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "                               \"A course that feels like you are part of a family\" \\r\n                                                          PGCE  2018\\r\n\\r\nWednesbury Teaching School Alliance prides itself on its caring and nurturing approach to training our student teachers. You will become part of 'our family' of schools who all care passionately about the education and opportunities for the children in our area.We are an alliance of good and outstanding schools in Sandwell and Dudley  and offer student teachers  bespoke, personalised training and development throughout  the year long PGCE programme.\\r\n\\r\nAs a Teaching School, we also have the flexibility to adapt and change the programme to respond to our student teachers’ specific needs and concerns. This is a unique feature of our PGCE programme and one that is consistently praised by our students.\\r\n\\r\n \"The WTSA programme is fantastic, well-organised and well-tailored                                                                      \\r\n                       to the individual needs of everyone\" PGCE  2017\\r\n\\r\nLast year, 100% of our student teachers rated the course and support as outstanding. We pride ourselves on the fact that we have an extremely high pass and employment rate. Many of our graduates have chosen to work in the Sandwell area and benefit further from our Teaching School CPDL programme which ranges from PGCE programmes through to nationally recognised leadership qualifications.\\r\n\\r\n  \"I've enjoyed being part of an amazing group of people who all help and support one another. I have had unconditional support from mentors, staff and the course lead. Thank You!\" PGCE  2017\\r\n  \\r\n    Make a difference with your career and train to be a teacher with WTSA  ",
+    "TrainWithDisability": "Wednesbury Teaching School Alliance is a caring institution that aims to ensure that all provision, teaching, documentation, conditions and circumstances are presented in a way that is unbiased and which promotes harmony. We endeavour to ensure that where possible no-one is barred from accessing our PGCE programme for reasons of ethnicity, disability, sexual orientation, religion or race. All of our provision promotes and supports both the Teaching Schools and the University of Wolverhamptons  Equality and Diversity Policies.To support this, all sites have wheelchair access and there are a variety of support and advice systems  that the university can provide to support student teachers with their learning. This can be accessed via the Student Support and Wellbeing Team. Further details can be found at (www.wlv.ac.uk/study-here/student-support) . We work closely with these support systems to ensure that our provision enables each of our student teachers to succeed and thrive.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "\\r\nFor our PGCE School Direct programme, Wednesbury Teaching School Alliance works in a very strong partnership with the University of Wolverhampton. This means that our student teachers will benefit from the expertise of a good HEI provider who knows the schools in our area really well. The University taught sessions are based at their Walsall campus which has a plethora of resources and facilities and is only approximately twenty minutes from the Teaching School base at Harvills Hawthorn. We work very closely together to develop and then deliver a programme that maximises the strengths and abundant resources of both partners.\\r\n\\t\\t\\t\\t    \\r\n",
+        "UcasInstitutionCode": "W75"
+      }
+    ]
+  },
+  "has_inst": true
+}

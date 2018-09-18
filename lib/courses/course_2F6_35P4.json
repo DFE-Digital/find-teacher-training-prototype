@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Associated Merseyside Partnership SCITT",
+  "provider": "Green Park Primary School",
+  "subjects": [
+    "Physical education",
+    "Primary"
+  ],
+  "name": "Primary Physical Education Specialist",
+  "slug": "2F6/35P4",
+  "providerCode": "2F6",
+  "programmeCode": "35P4",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Green Lane, Maghull, Liverpool, L31 8BW",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Green Lane, Maghull, Liverpool, L31 8BW",
+      "geocode": true,
+      "formatted_address": "Maghull, Liverpool L31 8BW, UK",
+      "latitude": 53.5190603,
+      "longitude": -2.9538281,
+      "post_code": "L31 8BW",
+      "city": "Maghull",
+      "route": null,
+      "postal_town": "Liverpool"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2F6",
+    "addr_1": "Green Park Primary School",
+    "addr_2": "Green Lane",
+    "addr_3": "Maghull",
+    "addr_4": null,
+    "postcode": "L31 8BW ",
+    "url": "http://amp-scitt.lydiatelearningtrust.co.uk",
+    "geocode": true,
+    "formatted_address": "Green Park Primary School, Green Ln, Maghull L31 8BW, United Kingdom",
+    "latitude": 53.5190823,
+    "longitude": -2.9537835,
+    "post_code": "L31 8BW",
+    "city": "Maghull",
+    "route": "Green Lane"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "There is also an administration fee of £60 for the DBS check.",
+    "AboutCourse": "The AMP SCITT School Direct model is a school based, 100% teacher led, training route, where participating schools recruit and select their own trainees with the expectation that they will then go on to work within the Associated Merseyside Partnership (AMP), although there is no absolute guarantee of employment.\\r\nKey aspects of the training\\r\n\\r\n* Day one in school- you start on the first day of term as a member of staff, welcomed by your fellow teaching professionals. \\r\n* Develop the skills, enthusiasm and confidence, you need to be a successful teacher of pupils of all abilities through two separate and contrasting placements\\r\n* Build your knowledge of primary education and specifically curriculum delivery for years 3-6 through working with practising teachers and the latest educational research.\\r\n* Learn about the wider role of teachers in school and child development.\\r\n* Develop as a reflective practitioner and be fully prepared for your NQT year.\\r\n\\r\nThis is an intense school led programme. Support is an important part of the training and you will receive personalised coaching that will enable you to set targets and achieve to your highest potential. You will receive support from;\\r\n\\r\n* School Subject Coach\\r\n* School Professional Mentor/Head teacher\\r\n* SCITT Management team\\r\n* Our team of Subject Expert Practitioners for Literacy, Numeracy, Science, PE and the foundation subjects.\\r\n\\r\nThe course is 37 working weeks in length. During the first term you will spend 4 days a week on school placement and 1 day a week participating in our professional studies programme based at Deyes High School. This means trainees will spend up to 150 days of the course actually training in school. One of the major strengths is that the training is delivered throughout the course by practising teachers within our schools who are able to model best current practice.\\r\nDuring the course you will also complete a PGCE (60 Master's level credit), assessed by two written assignments. As a trainee teacher with AMP you will have full access to the Liverpool Hope University, the on-line library and student services to support your academic writing.\\r\nAssessment for the QTS award is through an e-portfolio of evidence of your teaching practise and lesson observations. There are 4 review points across the training year to support your continued development. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You will be required to present certificates for:\\r\n\\r\n* Honours Degree  (2:2 classification or above) from a UK higher education institution or equivalent qualification. \\r\n* GCSE (or equivalents) at grade C / level 5 or above in English Language, Mathematics and Science. \\r\n\\r\nEquivalency tests are available for applicants and we are happy to recommend suitable courses.\\r\nOverseas applicants will need a NARIC equivalency certificate. [Please click] (https://www.naric.org.uk/naric/)  for further information.\\r\n",
+    "InterviewProcess": "The initial stage of selection is reviewing your UCAS application. We ensure your qualifications meet our entry requirements and your personal statement indicates you have a passion for education and working with children. If you are successful, you will be invited to interview hosted at one of our partner primary schools. This is usually within 1-2 weeks of receiving your application.\\r\nThe interview process will include the following:\\r\n\\r\n* Tour of the School\\r\n* Opportunity to ask questions/obtain further information\\r\n* An opportunity to work with students in a classroom including teaching a short lesson \\r\n* A numeracy and literacy assessment\\r\n* A prepared presentation\\r\n* Group Activity\\r\n\\r\nAt AMP SCITT we are looking for candidates who have a solid foundation of Mathematics and English, but it is just as important that teachers have personal attributes that will help them to relate to young children and enable them to communicate effectively.  Appropriate ICT and interpersonal skills with an awareness of teaching and educational issues within primary schools is expected for a successful candidate. Based upon the activities listed above, shortlisting may occur and a panel interviews will take place for the successful candidates.\\r\n",
+    "OtherRequirements": "You are also required to undertake Professional Skills Tests in Literacy and Numeracy prior to entry to this programme.  These can be completed after interview as successful completion of the Professional Skills Tests will form part of the conditions of any offer of a place by AMPSCITT.  \\r\nAlthough not essential applicants can benefit from relevant school experience. [Click this link] (https://amp-scitt.lydiatelearningtrust.co.uk/get-school-experience/)  for further details.\\r\n",
+    "PersonalQualities": "Teachers inspire, that’s just one of the qualities AMP SCITT looks for in our trainee teachers. You need to have the ability to empower students to think critically, be innovative, creative, adaptable, passionate, and flexible. Your interpersonal skills need to encourage and motivate students and you should able to solve problems, self-direct, self-reflect, and lead. ",
+    "HowSchoolPlacementsWork": "All trainee teachers are required to complete two contrasting school placements: with AMP SCITT the main placement is known as the Home School.  In Term 2 you will experience a contrasting placement in your Away school for 6-8 weeks, returning to the Home school for the second half of term 2 and the whole of term 3. One placement will cover year 3 or 4 and the other year 5 or 6. Additionally, AMP SCITT will ensure all primary trainees experience the teaching of early reading and mathematics and visit Secondary schools to understand the importance of effective transition and the KS3 curriculum.\\r\nWe have a personalised approach to placement selection. We utilise information from interview to select the most appropriate home school to allow you to develop quickly and then your away school placement is informed by your e-portfolio.  For details of our 27 partner schools please review our website by [clicking here] (https://amp-scitt.lydiatelearningtrust.co.uk/ourpartners/). There will be some scope for trainees to have additional enrichment placements including Special Needs and pupil referral units depending upon your career aspirations and interests. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Green Park Primary School is a lead school for The Associated Merseyside Partnership SCITT (AMP). Our 7-11 Primary School Direct programme offers exceptional personalised postgraduate initial teacher training. Our primary schools have  guided many successful trainees into the teaching profession and  we have a passion for developing future leaders of education.\\r\nOur course is led by experienced practising teachers who ensure your learning is completely focused on working with and in schools. In addition, AMP works with Liverpool Hope University to ensure relevant academic  research is available to support our trainees. This partnership allows us to offer an extremely strong learning experience with enhanced school experience in two contrasting schools, in addition to special education experience.\\r\nYour learning is enhanced by being integrated with the continuing professional development programmes of the SCITT giving you extra opportunities and the benefits of learning alongside qualified teachers. We also collaborate with the Holy Rosary Teaching School Alliance on research programmes, which again provides extra opportunities to boost your learning and enhance your employability.\\r\nWe are a small course and have a great reputation for being friendly, enthusiastic and highly supportive. We work hard and skilfully to ensure trainees come together as a supportive team. These approaches, combined with the range of schools means that trainees get an individualised learning experience that is customised for their strengths and needs.\\r\nOur trainees graduate with a Post Graduate Certificate in Education (PGCE) with qualified teacher status (QTS.) The PGCE offers sixty credits at master's degree level.\\r\n",
+    "TrainWithDisability": "We endeavour to ensure equality of training and teaching opportunity across our diverse trainee teacher community. AMP SCITT will take reasonable steps to ensure that the general need for access and the specific requirements of individuals with additional support needs are addressed. Our team works with disabled students in order to minimise any potential disadvantage they may face because of their disability. \\r\nMental health and well-being\\r\nAdjusting to a new role can be difficult for some. Stress factors such as moving away from home, academic demands and financial worries can all impact on trainees’ mental well-being. We provide support for anyone who is experiencing any form of mental health difficulty. \\r\nCounselling\\r\nWe provide access to a professional and confidential student counselling service to help you with any personal issues that may be affecting your studies, self-esteem, relationships, emotional or general feelings of well-being. \\r\nDisability access\\r\nApplicants who would benefit from disabled access should let us know on their UCAS application so that they can be considered for placements at the most appropriate schools.\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "25F"
+      }
+    ]
+  },
+  "has_inst": true
+}

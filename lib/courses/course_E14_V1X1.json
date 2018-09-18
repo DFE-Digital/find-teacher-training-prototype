@@ -1,0 +1,69 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of East Anglia",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "slug": "E14/V1X1",
+  "providerCode": "E14",
+  "programmeCode": "V1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "University of East Anglia, Norwich, Norfolk, NR4 7TJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "University of East Anglia, Norwich, Norfolk, NR4 7TJ",
+      "geocode": true,
+      "formatted_address": "Norwich Research Park, Norwich NR4 7TJ, UK",
+      "latitude": 52.6219215,
+      "longitude": 1.2391761,
+      "post_code": "NR4 7TJ",
+      "city": "Norfolk",
+      "route": null,
+      "postal_town": "Norwich"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E14",
+    "addr_1": "University of East Anglia",
+    "addr_2": "Norwich Research Park",
+    "addr_3": "Norwich",
+    "addr_4": "Norfolk",
+    "postcode": "NR4 7TJ ",
+    "url": "http://www.uea.ac.uk/education/pgce",
+    "geocode": true,
+    "formatted_address": "Norwich Research Park, Norwich NR4 7TJ, UK",
+    "latitude": 52.6219215,
+    "longitude": 1.2391761,
+    "post_code": "NR4 7TJ",
+    "city": "Norfolk",
+    "route": null,
+    "postal_town": "Norwich"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary English course leads to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYour tutors are active researchers in matters relating to history education. They are regarded as experts in the field, both nationally and internationally, and have been consulted by a number of national and international organisations, such as the Historical Association, QCA and QCDA, the TDA, Ofqual, the Department for Education and Council of Europe on matters relating to the history curriculum.\\r\n\\r\nYour assignments are designed to help you plan your teaching effectively and imaginatively and to evaluate your skills, particularly in terms of the quality of learning achieved by pupils. Tutors weave together personal experience, practice and research into challenging but highly practical and relevant sessions.\\r\n\\r\nYou will learn in first-class facilities through a series of practical seminars and workshops, where interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n*gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "UEA is a top UK university with an international reputation for excellence in teaching and research. We're ranked among the top 200 universities in the world (Times Higher Education World University Rankings 2018). The 2019 Guardian University Guide ranked UEA 3rd in the UK for Education.\\r\n\\r\nThe School of Education and Lifelong Learning is internationally recognised for the quality of its educational research. Our research has made a difference in schools across the country, influencing approaches to managing classroom behaviour, understanding students' motivation, and creating effective communities for learning.\\r\n\\r\nAll of our PGCE tutors have experience of school teaching and leadership, and all are specialists in particular areas of the curriculum. You'll be well-supported throughout your PGCE, both during your time on placement and on campus.\\r\n\\r\nImagine a career where you inspire, motivate, and unlock the full potential of those around you. Teaching is something that can truly make a difference.",
+    "TrainWithDisability": "UEA operates an equal opportunities policy. Our Wellbeing Service offers a range of interventions including self-help resources, workshops and one-to-one appointments. \\r\n\\r\nIndividual needs are catered for and can be discussed through the interview process. \\r\n\\r\n[Find out more about the information and advice available](https://portal.uea.ac.uk/student-support-service/wellbeing)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

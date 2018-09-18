@@ -1,0 +1,61 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Sheffield Hallam University",
+  "subjects": [
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages",
+  "slug": "S21/R9X1",
+  "providerCode": "S21",
+  "programmeCode": "R9X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S21",
+    "addr_1": "City Campus",
+    "addr_2": "Pond Street",
+    "addr_3": "Sheffield",
+    "addr_4": null,
+    "postcode": "S1 1WB  ",
+    "url": "http://www.shu.ac.uk",
+    "geocode": true,
+    "formatted_address": "City Campus, Howard St, Sheffield S1 1WB, UK",
+    "latitude": 53.37958769999999,
+    "longitude": -1.4651842,
+    "post_code": "S1 1WB",
+    "city": "South Yorkshire",
+    "route": "Howard Street",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The programme is designed for those intending to teach French, German or Spanish as their subject specialism; all students must be able to offer French as at least their second language. The aim is to give you an understanding of the way modern foreign languages are taught in schools, including the use of the target language as the principal means of classroom communication. \\r\n\\r\n\\r\nYou will be encouraged to try out a wide range of approaches to teaching, as well as strategies for organising the classroom for effective learning. University sessions include a large amount of practically based activities to help you develop your skills. You will have the opportunity to acquire an understanding of the demands of the National Curriculum orders for modern foreign languages. The work in schools will be closely linked with the university-based sessions so that you will have the opportunity to use a range of up-to-date language resources, including ICT, to set up active and engaging learning activities. \\r\n\\r\nFor more information please visit our website here. \\r\n(https://www.roehampton.ac.uk/postgraduate-courses/pgce-secondary/pgce-secondary-modern-foreign-languages-specialism/)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants should have a degree with French, German or Spanish as a major component. The ability to offer a second language is essential. We welcome applications from native speakers who have a degree in another subject.\\r\n\\r\nStudents must have achieved at least a grade C or above in both Mathematics and English Language GCSEs (or approved equivalents), applicants without one or both of these GCSEs (or approved equivalents) will be considered for interview. If you do not currently hold a GCSE grade C or above in Mathematics and English Language, we accept the equivalency tests offered by Equivalency Testing.\\r\n",
+    "InterviewProcess": "On the interview day you will be registered by a member of the admissions team. There will then be a course talk and an introduction to the subject tutors. There will be a group interview, this is a discussion based on what you have learned from your observations in school and teaching in general. \\r\n\\r\nFollowing the group task will be individual interviews with the subject tutor lasting 20-45 minutes you will have an opportunity to ask questions about the course during the interview. You may be asked to discuss a portfolio where relevant, or to give a presentation. \\r\n\\r\nThere will also be a written task, where you will be asked to write a short piece on the role of your subject within the national curriculum. This is to check your Spelling, Punctuation and Grammar, and to see what your response would be to writing at Master’s level.\\r\n\\r\nThese interview elements are not intimidating, but carefully planned to give you the best possible opportunity to show your potential for teaching and working with young people in school. A teacher from one of our partner schools may take part in the interview.",
+    "OtherRequirements": "Pre entry Professional Skills Test All students starting an Initial Teacher Training (ITT) course from September 2013 are required to pass the Professional Skills tests in literacy and numeracy before the start of the programme (www.education.gov.uk). ",
+    "HowSchoolPlacementsWork": "During school placements, students benefit from working alongside experienced teachers of art and design. Students have opportunities to observe excellent teaching before experimenting with approaches to teaching and learning across the secondary age range, during which time they are supervised and supported by teachers and tutors. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Sheffield Hallam University is one of the UK's largest universities, based in the heart of Sheffield, one of the UK’s biggest student cities.\\r\n\\r\nSheffield is the fifth biggest city in the UK with over 60,000 students, it has a mix of culture and green spaces. \\r\n\\r\nWe have invested over £100 million in new buildings and facilities over the last five years, providing innovative, flexible and sustainable spaces to enhance student experience.\\r\n\\r\nWe pride ourselves on the applied nature of our courses. We offer one of the largest and most diverse\\r\nrange of placements in the region. We’ve built up a network of over 600 partner schools, colleges and other educational establishments, and we work together to our mutual advantage.\\r\n\\t\\r\nYou will study at our centre of education that is recognised for excellence and innovation in teaching and learning. Our academics, researchers and partners in schools work together to ensure you become a committed and professional graduate, with the opportunity to return to us throughout your career to further your professional development.\\r\n\\t\\r\nWe received an overall student satisfaction rating of 86% in the 2018 National Student Survey. This result places us in the top 30 universities in the country for student satisfaction. We also received a Silver rating in the 2017 Teaching Excellence Framework. \\r\n",
+    "TrainWithDisability": "If you have a disability, including long term medical conditions, specific learning difficulties (such as dyslexia, dyspraxia and A(D)HD) and mental health conditions, you can access additional support for your academic studies whilst at Sheffield Hallam.\\r\n\\r\nStudents can receive support for a wide variety of conditions. There is extensive support available, including\\r\n\\r\n•\\tLearning contracts- reasonable adjustments to your course such as extensions or extra time in exams\\r\n\\r\n•\\tSupport workers - like a mentor to help with organisation, or a personal assistant to help with mobility\\r\n\\r\n•\\tEquipment/Assistive Technology and software - such as digital recorders or text to speech software\\r\n\\r\nWe have an on-site assessment Centre, the Sheffield Regional Assessment Centre, where a range of disability specialists can carry out Study Needs Assessments.\\r\n\\r\nWe run daily drop in sessions - come and talk to us, no appointment needed. You can also register for support online.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

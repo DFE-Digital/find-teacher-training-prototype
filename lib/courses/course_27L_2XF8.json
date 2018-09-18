@@ -1,0 +1,78 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Winchester",
+  "provider": "Winchester Teaching School Alliance",
+  "subjects": [
+    "French",
+    "Languages",
+    "Languages (european)",
+    "Secondary"
+  ],
+  "name": "Modern Languages (French)",
+  "slug": "27L/2XF8",
+  "providerCode": "27L",
+  "programmeCode": "2XF8",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Romsey Road, Winchester, Hampshire, SO22 5PN",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Romsey Road, Winchester, Hampshire, SO22 5PN",
+      "geocode": true,
+      "formatted_address": "Romsey Rd, Winchester SO22 5BE, UK",
+      "latitude": 51.0595118,
+      "longitude": -1.3380995,
+      "post_code": "SO22 5BE",
+      "city": "Hampshire",
+      "route": "Romsey Road",
+      "postal_town": "Winchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "27L",
+    "addr_1": "Romsey Road",
+    "addr_2": null,
+    "addr_3": "Winchester",
+    "addr_4": "Hampshire",
+    "postcode": "SO22 5PN",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Romsey Rd, Winchester SO22 5BE, UK",
+    "latitude": 51.0595118,
+    "longitude": -1.3380995,
+    "post_code": "SO22 5BE",
+    "city": "Hampshire",
+    "route": "Romsey Road",
+    "postal_town": "Winchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Trainees who follow our School Direct Training Programme, are based in school for much of the year but are not employed by that institution. Course/Tuition fees are paid by trainees although funding is often available through tuition fee loans, bursaries or scholarships.\\r\n\\r\nThe tuition fees for September 2019 entry are £9,250 for UK, EU and Islands (Channel Islands and Isle of Man) students; however, the tuition fees for students outside the EU are yet to be confirmed for 2019 entry. Please contact studentsandmoney@winchester.ac.uk in the autumn for confirmation of the fee.\\r\n",
+    "AboutCourse": "You will follow a programme that, alongside classroom teaching, includes lesson observation, training within a host school, alliance based training days and time spent at university. Our schools have a close working relationship with The University of Winchester and a proven track record of success in training teachers and this is reflected in the training that is provided.\\r\n\\r\nThe course prepares you to teach across the age ranges 11-16 and is structured around six modules - a combination of taught modules based at the University and placement modules based in schools or educational settings.\\r\n\\r\nYou will undertake studies in all elements of secondary education; extend your knowledge of learning and teaching, of the breadth and scope of the curriculum and the professional skills associated with high-quality teaching. You will then apply these areas of understanding and skill to classroom practice throughout the year, including during two assessed placements in schools or educational settings.\\r\n\\r\nOur School Direct trainee teachers generally spend Monday to Thursday each week in school with either in-school or university based training on Fridays. Some Fridays are given to preparation for assignments or self-directed study.\\r\n\\r\nIn the first half term after Christmas, our trainee teachers spend six weeks in a second placement school and you will be in school for five days per weeks for most of these.\\r\n\\r\nSuccessful completion of the course leads to Qualified Teacher Status, a Postgraduate Certificate in Education (PGCE) and credits towards a Master's Degree.\\r\n\\r\nAssessment of your teaching will take place throughout the year. There are more formal reviews of your in-school performance though and these take place at the following points:\\r\n•\\tat the end of the first full term\\r\n•\\tafter your second placement has been completed\\r\n•\\tat the end of your second full term \\r\n•\\ttowards the end of the Summer Term.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "The minimum requirements you will be expected to meet are as follows: an honours degree, usually a 2:2 or above; GCSE English Language and Mathematics at grade C or 4 or above; and passes in the Department for Education (DfE) skills tests in Literacy and Numeracy. Equivalencies to academic qualifications are considered on an individual basis, so if you hold qualifications from a number of years ago or from outside the UK, please contact us for confirmation of their suitability.",
+    "InterviewProcess": "Following the receipt of applications, there will be a shortlisting procedure involving representatives from partner schools who will look to match applicants with the most appropriate placements.\\r\n\\r\nWe interview all shortlisted applicants prior to making an offer to train with us. Interview panels include senior staff from alliance schools, heads of subject (secondary) and a representative from The University of Winchester.\\r\n\\r\nInterviews may include any of the following: a tour of the school; small group or class teaching; a written task; a verbal presentation; a formal interview; lesson observation; time within the relevant subject area for secondary applicants.\\r\n\\r\n",
+    "OtherRequirements": "If you accept an offer of a place, you will be required to complete a Disclosure and Barring Service (DBS) criminal records check and Prohibition Order check. If you have spent time overseas in the last 5 years you may also be required to obtain criminal records checks from each of the countries you visited. You will also be required to complete an occupational health check to confirm that you are fit to teach. The University of Winchester will send you more information about when and how you need to complete each of these checks if you accept our offer.",
+    "PersonalQualities": "We will look for evidence of a commitment to the teaching profession, an understanding of professional requirements, and an awareness of current educational issues in an application. Prior experience in a school is not required; however, prospective students may find experience in a school useful for obtaining insights into the primary education classroom. Experience in a school or similar setting may also provide reassurance to prospective students that teaching is the right choice for their career.",
+    "HowSchoolPlacementsWork": "For much of the year, you will be based in your main host school for four days per week and you will be supported to develop your own classroom practice, learning from experienced teachers and receiving guidance and feedback from them. You will have a nominated in-school mentor who will support you on a day-to-day basis and you will have dedicated time to meet with them each week.\\r\n\\r\nGenerally, by the end of the first term, our School Direct trainee teachers are teaching about 50 per cent of a qualified teacher’s timetable. In order to prepare you for your Newly Qualified Teacher’s (NQT) year, this increases to approximately 60 and then 70 per cent in terms two and three respectively. Your main host school will always be a school that is part of Winchester Teaching School Alliance.\\r\n\\r\nYou will complete a six week second placement in another school after Christmas and there is flexibility around the nature of the school that you attend for this period. It is possible for you to undertake your placement in another WTSA school but if you wish to experience teaching in a school in another area, we can generally arrange this for you. We always look to ensure that our trainee teachers have a broad and balanced experience but also try to respond to their individual interests where possible.\\r\n\\r\nAny questions about how school placements work or, indeed, any other queries, can be raised at interview.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Winchester Teaching School Alliance comprises of schools within the City of Winchester, Peter Symonds Sixth Form College and The University of Winchester. Our aim is to provide excellent teacher training for our city and the surrounding area.\\r\n\\r\nThe University of Winchester is recognised by OFSTED as an ‘Outstanding’ provider of teacher education at both primary and secondary level and has a long history of training teachers. Our schools, meanwhile, have considerable experience and expertise in developing and supporting both qualified teachers and those entering the teaching profession. \\r\n\\r\nWinchester is a beautiful and well situated city which has many good and outstanding schools and children growing up in the area receive an education of high quality. It is a fantastic place to live and work and, as a trainee teacher, you will be within schools that are totally committed to providing you with the best training year possible. We offer both primary and secondary positions and also are able to provide short term placements within a special school or sixth form college to interested applicants.\\r\n\\r\nThe school based mentors of our School Direct teachers are experienced and often outstanding teachers who are well trained in coaching, classroom observation and feedback skills. They work closely with staff at The University of Winchester, an institution with which the schools have an excellent relationship. Since the inception of School Direct, all those who have completed the course with WTSA and wanted to apply for newly qualified teacher posts have successfully gained employment.\\r\n",
+    "TrainWithDisability": "Your well-being is a top priority and we will do all we can to give you the chance to flourish and maximise your potential. In partnership with The University of Winchester, there is a dedicated student support team to help with any questions or challenges you might experience during your studies. We work with you to support your well-being and mental health, provide confidential advice and offer workshops to boost your academic skills. If you have a disability or learning difference, we encourage you to get in touch before you apply so we can discuss tailored support for your individual needs.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The  University of Winchester is recognised by Ofsted as an ‘Outstanding’ provider of teacher education at both primary and secondary level and has a long history of training teachers. Our colleagues at The University of Winchester are passionate about providing you with a university experience that helps you reach your full potential and make a real difference in the world. They can offer you a stimulating and supportive learning environment that challenges and inspires, in a beautiful, historic cathedral city, located an hour from London by train. ",
+        "UcasInstitutionCode": "W76"
+      }
+    ]
+  },
+  "has_inst": true
+}

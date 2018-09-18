@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "e-Qualitas",
+  "provider": "The St Marylebone CofE School",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "slug": "1ET/2R5F",
+  "providerCode": "1ET",
+  "programmeCode": "2R5F",
+  "schools": [
+    {
+      "name": "St Augustine's High School",
+      "address": "London",
+      "code": "U"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "London",
+      "geocode": true,
+      "formatted_address": "London, UK",
+      "latitude": 51.5073509,
+      "longitude": -0.1277583,
+      "post_code": null,
+      "city": "London",
+      "route": null,
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1ET",
+    "addr_1": "64 Marylebone High Street",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "W1U 5BA ",
+    "url": "http://www.stmaryleboneschool.com",
+    "geocode": true,
+    "formatted_address": "64 Marylebone High St, Marylebone, London W1U 5BA, UK",
+    "latitude": 51.5221787,
+    "longitude": -0.1518985,
+    "post_code": "W1U 5BA",
+    "city": "Greater London",
+    "route": "Marylebone High Street",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "At St Marylebone you will work with experienced teachers, first of all observing and team teaching, then teaching independently. This is complimented by a placement of about 6 weeks’ teaching in another school. \\r\nWe have been successively rated ‘outstanding’ by Ofsted and SIAMS,  and are one of the best performing non-selective state schools nationally. \\r\nWe are based in in the fantastic Marylebone High Street with all the attractions of central London nearby and the benefits of excellent transport links. Nearest tube stations: Baker Street, Regents’ Park. You will be able to develop your career in a beautiful school with excellent facilities and positive links with parents and the vibrant local community. \\r\n\\r\nThe course content is organised into six modules, the first three of which may be worked on concurrently.\\r\nTraining Module 1A: Lesson planning. How to plan lessons well, including choosing the most appropriate teaching and learning strategies.\\r\nTraining Module 1B: Behaviour. How to manage pupils during lessons, and motivating them towards learning.\\r\nTraining Module 1C: Assessment. How to assess pupils' learning in each subject, and use assessment information when planning and teaching lessons.\\r\nTraining Module 2: Meeting needs of different groups of pupils. How to ensure that all groups of pupils do as well as possible e.g. those who speak English as an additional language, high attaining pupils, those with special educational needs.\\r\nTraining Module 3: The wider context of teaching and learning in schools today. Barriers to learning i.e. why some pupils do not do as well as they should, and how teachers can make a difference to this.\\r\nTraining Module 4: Subject teaching. Bringing everything together, how to teach really effectively. This builds on all the earlier training in how to teach effectively, and involves an in-depth study of an aspect of subject teaching.\\r\nThere are two formal assignments: an essay exploring aspects of meeting the needs of different groups of pupils (linked to Training Module 2), and a subject-related essay (linked to Training Module 4).\\r\nPGCE\\r\ne-Qualitas collaborates with Leeds Beckett University, who offer a distance learning PGCE as an addition to the e-Qualitas QTS-focused training programme. The PGCE may be undertaken during the teacher training programme or afterwards (for workload reasons, we suggest that it is better to do it afterwards, as part of the continuing professional development of the induction year). Leeds Beckett charges £1500 for the PGCE. PGCE entry is in September.\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "Your provider fees are paid by the school.  You’ll be paid and taxed as an unqualified teacher.",
+    "Qualifications": "Most successful applicants will have a 2:1-degree classification or better although we are prepared to accept candidates with a 2:2-degree classification if he or she is able to demonstrate good potential.\\r\nYou will also need at least 5 GCSEs including a grade C or above in English Language, Mathematics and a Science (or equivalent qualifications). \\r\nThere also needs to be evidence at application of your ability to demonstrate a high standard of written English.\\r\nYou are required to have passed the Professional skills test in numeracy and literacy before you start the course. \\r\n",
+    "InterviewProcess": "We will invite selected candidates to an interview. The invitation letter will give full details of the interview.  This is likely to be a classroom exercise, literacy test, and panel interview. \\r\nInterview\\r\nApplicants must bring the following to interview: their qualifications certificates; identity documents (photo id e.g. a passport, and evidence of residence e.g. a mobile phone bill or bank/savings statement); evidence of having taken the practice skills tests, or passed the actual skills tests. Overseas applicants must provide evidence of their eligibility to live and study in the UK\\r\nOffers\\r\nIf we make you an offer, it could be conditional upon various things such as DBS clearance, passing the professional skills tests by a set date. You are entitled to wait for the outcome of all your applications before accepting an offer on UCAS and we fully endorse this\\r\n",
+    "OtherRequirements": "Prior to the course, it is a requirement that you undertake at least 10 days’ experience in the UK state secondary sector. Five of these days must be before you apply, to strengthen your application and to support interview answers. The lack of any observational experience in a UK state primary classroom is a common reason for rejection. These two weeks are an important and integral element of the course, providing you with the opportunity to observe a variety of teaching styles and to engage in some initial group and class teaching. ",
+    "PersonalQualities": "We are looking for applicants who have the potential to become outstanding teachers, and who are able to work independently on their studies while training in a school context. These personal attributes include:\\r\n•\\tSubject knowledge \\r\n•\\tMotivation to become the best teacher possible\\r\n•\\tAbility to analyse and learn from experience\\r\n•\\tCreativity and imagination \\r\n•\\tCapacity for hard work \\r\n•\\tPerseverance \\r\n•\\tGood organisational skills \\r\n•\\tEmpathy and a liking for young people.\\r\n•\\tAmbition to make a difference by becoming an inspirational teacher.\\r\n•\\tMust pass Secretary of State’s requirement for physical and mental fitness to teach. \\r\n",
+    "HowSchoolPlacementsWork": "Your training will be predominantly based in your host (employing) school other than\\r\n•\\tTen days with the e’Qualitas across the year\\r\n•\\tyour second placement at another school for approx. 6 weeks.\\r\nThrough an initial programme of observations and research you will become familiar with the organisation and working of your host school (pupil groups and pastoral systems, staffing, curriculum, resources, facilities, methods of teaching, lesson planning, Assessment for Learning).  \\r\nFrom the beginning, you will be treated like a member of the teaching staff by fellow professionals. With your School Based Mentor (SBM), you will feel supported as you progress and become ready to teach as the placement progresses. Our mentors are experienced teachers and undertake rigorous training to develop their mentoring skills to support your development as a teacher. Your time in school provides you with the opportunity to develop your teaching expertise and relationships with young people in a familiar environment. \\r\nAs a secondary trainee you will have the opportunity to teach a range of year groups between years 7 to 11. You will have experience of the new curriculum and assessment procedures. \\r\nYour second teaching placement is intended for you to apply and develop your teaching skills at a different setting whilst also widening your experience of the school system in a new context. \\r\nWhile in your main host school and during your second placement, your tutor from e’Qualitas will visit to monitor your progress and discuss your development with you and your mentors. You will maintain close links with your host school throughout the programme.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The St Marylebone School was part of the first cohort of a hundred Teaching schools (http://teaching.stmarylebone.school/)\\r\nand won this accolade largely due to a proven track record of training and outreach work. We are experienced in supporting successful trainees over a number of years on different training routes, for instance PGCE, Teach First, the Graduate Teacher Programme, School Direct Pilot and School Direct. Staff are eager to be involved in training and mentoring, many of them having themselves trained at St Marylebone School. \\r\n\\r\nYou will work with experienced teachers, first of all observing and team teaching, then teaching independently. This is complimented by a placement of about 6 weeks’ teaching in another school. \\r\n\\r\nWe have been successively rated ‘outstanding’ by Ofsted and SIAMS and are one of the best performing non-selective state schools nationally. \\r\n\\r\nWe are based in in the fantastic location of Marylebone High Street with all the attractions of central London nearby and the benefits of excellent transport links. Nearest tube stations: Baker Street, Regents’ Park (both a 2-minute walk away).  You will be able to develop your career in a beautiful school with excel-lent facilities and positive links with parents and the vibrant local community\\r\n\\r\nWe work with a big group alliance of school in central London and further afield. Often the six week second school placements are shared between alliance schools to ensure that trainees have a good experience.\\r\n",
+    "TrainWithDisability": "For IOE trainees\\r\nSchool Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team.\\r\nYou can find more information here:-\\r\n(https://www.ucl.ac.uk/students/disability-support)\\r\n\\r\nFor e'Qualitas trainees. \\r\nAlso contact the eQualitas office for a discussion of your needs if they are not related to mobility, so that we can identify what additional support might be appropriate for you.\\r\n\\r\nDisability access is limited in some of the schools due to the nature of the historic buildings in which they are based. Please contact the school concerned directly if you wish to discuss this in detail.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education is the world’s leading centre for research and teaching in education and\\r\nrelated social sciences. You can view UCL’s online teacher training prospectus is here:-\\r\n(https://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes)\\r\n",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "Our school-based course is focused on your becoming the best possible teacher. You will work with experienced teachers, observing and team-teaching, then teaching independently. A placement of about 6 weeks in a contrasting school and other, short visits broaden your experience. Your study is based on the distance learning resources on the e-Qualitas website. Training sessions by experienced school staff are complemented by 10-12 training days run by e-Qualitas in a venue in central London. You also have  a subject-specialist visiting tutor from eQ who visits the school each half term.",
+        "UcasInstitutionCode": "E69"
+      }
+    ]
+  },
+  "has_inst": true
+}

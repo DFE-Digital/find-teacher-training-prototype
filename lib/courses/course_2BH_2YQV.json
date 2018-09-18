@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Southampton",
+  "provider": "SUPA",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "2BH/2YQV",
+  "providerCode": "2BH",
+  "programmeCode": "2YQV",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "North Road, Dibden Purlieu, Southampton, Hampshire, SO45 4ZF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "North Road, Dibden Purlieu, Southampton, Hampshire, SO45 4ZF",
+      "geocode": true,
+      "formatted_address": "North Rd, Southampton SO45 4ZF, UK",
+      "latitude": 50.8581575,
+      "longitude": -1.4194396,
+      "post_code": "SO45 4ZF",
+      "city": "Hampshire",
+      "route": "North Road",
+      "postal_town": "Southampton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2BH",
+    "addr_1": "North Road",
+    "addr_2": "Dibden Purlieu",
+    "addr_3": "Southampton",
+    "addr_4": "Hampshire",
+    "postcode": "SO45 4ZF",
+    "url": "http://noadswood.hants.sch.uk",
+    "geocode": true,
+    "formatted_address": "North Rd, Southampton SO45, UK",
+    "latitude": 50.8558965,
+    "longitude": -1.4173349,
+    "post_code": "SO45",
+    "city": "Hampshire",
+    "route": "North Road",
+    "postal_town": "Southampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Our PGCE Secondary English course will equip you with the necessary skills and knowledge to teach English across the secondary age range, including some opportunities to know more about 16-19 teaching. The course is designed to create English teachers that have a clear and well-founded philosophy towards the subject and can teach English to all levels. We aim for reflective and dynamic practitioners willing to use a variety of teaching strategies to inspire all the youngsters in their classes. They will have a clear understanding of the problems pupils encounter in English, be prepared to find ways to overcome these difficulties and help pupils make progress.  In a combined effort from the university and our partnership schools, we develop your subject knowledge in English through a range of approaches: workshops, seminars, lectures and demonstrations, micro-teaching activities, independent and group research. We utilise the wide range of teaching resources currently available to create fully reflective practitioners who really impact on pupil learning. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree\\r\nYou will normally need a 2:2 degree (or better). You should also have a good knowledge of your chosen teaching subject from your degree. The normal expectation is that students will have at least 50% of their degree in their chosen subject. \\r\nSubject Knowledge Enhancement courses may be offered to you if you hold a degree in a different specialism. \\r\nGCSE\\r\nYou will be expected to hold a minimum of grade C in both GCSE English Language and Mathematics. If your qualifications are not considered to be appropriate, we can offer GCSE equivalent tests in English and Maths.\\r\n",
+    "FeeInternational": 18104.0,
+    "FinancialSupport": "Trainee teachers are eligible for financial support through government bursaries and subject scholarships. The amount payable is dependent on your degree classification. For more information visit https://getintoteaching.education.gov.uk/funding-and-salary/overview",
+    "InterviewProcess": "Once you have applied to SUPA Southampton you will be invited for interview at one of the schools in the Alliance.  The interview process will involve three key elements:\\r\n1). An interview with a panel containing at least one senior member of staff from the school and a member of staff from the University of Southampton.\\r\n2). A basic written task to check literacy levels. This task will not require you to carry out any preparation and is a normal task that a teacher might need to carry out in their working day.\\r\n3). A  student based activity - a brief task with a small group of students. Further details will be provided to you in advance of your interview so that you have time to prepare. We understand that you are not yet trained as a teacher and so this task is simply to assess your potential and your ability to relate to our students.\\r\n",
+    "OtherRequirements": "Before starting on the PGCE programme you will be required:\\r\n- To complete a form describing your state of health which will be checked against the DfE Fitness to Teach regulations \\r\n- To provide an Enhanced Disclosure from the Disclosure and Barring Service (DBS) to confirm that there are no criminal offences on your record which would bar you from teaching. \\r\n- To pass 2 QTS Skills Tests in Literacy and Numeracy.\\r\nIt would also be a great advantage if you have had some recent experience in a school or working with children either in a school environment or elsewhere.\\r\n\\r\n",
+    "PersonalQualities": "We are looking for trainee teachers who are passionate and enthusiastic about their subject and have a desire to share this with young people.\\r\nSkills\\r\nYou will need to demonstrate dedication, tenacity and creativity and be an excellent communicator. \\r\nYou should hold a strong knowledge of your specialist subject and be able to communicate your knowledge in a clear and inspiring way. \\r\n",
+    "HowSchoolPlacementsWork": "School placements will make up the bulk of your training year as they play a vital role in providing you with the skills and experience needed to be a successful teacher. However, we fully understand that standing in front of a class for the first time can be a very daunting experience for some. For this reason, we will provide you with all the training and support you need so that you feel fully prepared when the time comes.\\r\nThe training year is broken down as follows:\\r\nTerm 1 – Initial Training and First Placement School\\r\nYou will spend the first week in September following an induction programme in your Home School. This gives you the opportunity to gain an understanding of the systems and functions of your Home School, meet key staff and observe some lessons so when you return you are familiar with procedures and routines. You will then attend approximately two weeks training in the university. Once this initial training is complete the rest of the term is spent in your first placement school while still attending some university training days. The first placement is selected from the whole of the  University partnership to give the best possible contrast, not just the alliance. However, we will always endeavour to keep your daily commute to a minimum.\\r\n Terms 2 and 3 – The Home School\\r\nIn January, you will move onto your second teaching placement in your Home School. You will remain there until June whilst you complete a personalised programme of teaching practice and professional training.  During this time, you will return to the University for regular training days and will also be given the opportunity to visit a primary school and experience a 6th form setting as well.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "SUPA Southampton offers the best of both worlds in terms of teacher training. Not only will an applicant have access to the skills and support of a world class university but also the opportunity to train in schools with a long history of excellent practice in developing new teachers. We endeavour to create an environment in our schools where trainee teachers feel valued and supported and in return we appreciate the enthusiasm and energy that they bring to our school communities. Overall, we aim to produce outstanding teachers with up-to-date pedagogy who are continually striving to improve their practice in one of the most dynamic career paths on offer.\\r\nDuring the course the University will provide extensive training on the theoretical aspects of teaching and learning, while the practical aspects will be centred on the schools. Consequently, trainees should be aware that although the course programme will be focussed on Southampton, most Friday's will be spent at the University throughout the year. \\r\nOverall, SUPA Southampton provides any trainee teacher with the opportunity to 'learn their trade' in a very professional and supportive environment.\\r\nOnce a  place has been accepted trainees will be allocated a \"home\" school which they will be invited to before the course starts. The \"home\" school is where the main placement will be spent from January to June. Placement 1 is selected from the whole of the University partnership to give the best possible contrast.\\r\n\\r\n",
+    "TrainWithDisability": "The schools in the Alliance welcome applications from candidates with disabilities and other needs. SEND is a very important element of our training and trainees who have personal experiences of SEND are of real benefit to our programmes, as they bring a wealth of experience.\\r\nHow are Trainee Teachers with disabilities and other needs supported?\\r\n1.\\tTrainees with dyslexia meet together at the start of the course for an informal session, led by a tutor with significant SEND experience. This group is then enabled to support one another throughout the course, with individual, personalised, input from the tutor as required.\\r\n2.\\tTrainees with Physical Disabilities are always accommodated as appropriate and a wide variety of modifications are available.  For example, a student with a hearing impairment may be supported by our enabling services, as well as by their Personal Academic Tutor with services such as remote transcription available - we work with individuals to ensure that their needs are met both when at the University and when teaching in our schools.\\r\n3.\\tWe recognise that teaching can be stressful. The University offers a variety of services for Trainees who may be suffering from anxiety or depression, for example trainees can access talking therapies via the University Enabling Services. Trainees are also encouraged to make full use of their Personal Academic Tutor.\\r\n4.\\tThe course team are able to personalise many aspects of the programme, to accommodate need on an individual basis, to enable successful completion of the course.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Southampton Initial Teacher Education department is a dynamic and thriving community of professional educators and researchers. It has an impressive national reputation and in 2017-2018 the Education School was ranked 2nd in the Guardian University League Table. During your course, the University will not only provide you with high quality teaching but will also offer you excellent advice and support when you are on teaching practice. This was recognised in a recent Ofsted report that highlighted the ‘high quality of mentoring and support’ offered by the University to their trainees.",
+        "UcasInstitutionCode": "S27"
+      }
+    ]
+  },
+  "has_inst": true
+}

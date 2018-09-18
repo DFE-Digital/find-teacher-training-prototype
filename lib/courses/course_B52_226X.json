@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": "Bournemouth Poole & Dorset Secondary Training Partnership",
+  "provider": "Bournemouth Poole & Dorset Secondary Training Partnership",
+  "subjects": [
+    "Music",
+    "Secondary"
+  ],
+  "name": "Music",
+  "slug": "B52/226X",
+  "providerCode": "B52",
+  "programmeCode": "226X",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "geocode": true,
+      "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+      "latitude": 50.73322599999999,
+      "longitude": -1.782691,
+      "post_code": "BH23 1JF",
+      "city": "Dorset",
+      "route": "Sopers Lane",
+      "postal_town": "Christchurch"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "B52",
+    "addr_1": "BPD Secondary Training Partnership",
+    "addr_2": "Twynham School",
+    "addr_3": "Sopers Lane",
+    "addr_4": "Christchurch",
+    "postcode": "BH23 1JF",
+    "url": "http://www.bpdscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+    "latitude": 50.73322599999999,
+    "longitude": -1.782691,
+    "post_code": "BH23 1JF",
+    "city": "Dorset",
+    "route": "Sopers Lane",
+    "postal_town": "Christchurch"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The purpose of the Music training programme is to help you to become a good teacher of Music. You will be encouraged to engage in a variety of activities in order to develop your own understanding, and will be supported in your use of different strategies for effective Music teaching. \\r\n\\r\na) To enable you to meet the objectives of the course towards the PGCE qualification and to show that you have achieved the standards which lead to being awarded Qualified Teacher Status (QTS) \\r\nb) To prepare you to teach broadly across the whole Music curriculum for pupils in Key Stages 3 and 4, and to experience some post-16 specialist teaching. \\r\nc) To interact with the Professional Studies programme in developing your understanding of the whole role of the teacher. \\r\nd) To provide you with knowledge of the basic areas fundamental to the teaching of Music \\r\ne) To help you plan, deliver and evaluate a variety of lessons effectively \\r\nand develop a variety of styles and techniques for use within the classroom \\r\nf) To give you the opportunity to discover your own personal qualities and talents as a teacher of Music\\r\ng) To encourage reflection and critical evaluation of your practice and that of others, in order to improve the quality of your teaching \\r\nh) To help you to understand the context of Music within your school \\r\ni) To help you develop classroom management skills \\r\nj) To enable you to become a professional colleague of other teachers \\r\n\\r\n You will have a series of subject pedagogy sessions in which you will develop some key skills, ideas and concepts of Music teaching. These will take place fortnightly. The majority of these sessions will take place at the Lead School for Music (currently Twynham School, Christchurch) although some will take place at other locations as appropriate. \\r\n\\r\nYou will be able to share practice and discuss critically the progress you are making. You will have the opportunity to work collaboratively with fellow trainees and other colleagues, to develop new ideas and improve as teachers of Music.\\r\n\\r\nWithin your placement schools you will also follow a school-based Music subject pedagogy programme. This will be the focus for your work with your Music Subject Tutors in the two schools to which you are allocated. For each week of the course there is identified a particular focus on which you should concentrate. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "An degree with at least 2.2 honours, in Music. A music practitioner or performer with a degree in another subject area may be considered depending on their theoretical knowledge of Music.\\r\n\\r\nGCSE or equivalent in Maths and English at grade C/4 or above\\r\n\\r\nCandidates will also need to pass the DFE skills tests in literacy and numeracy before the start of the training programme",
+    "InterviewProcess": "Upon receipt of your application, the BPD Partnership will consider each candidate according to the selection criteria described above. Applicants are not expected to fulfil all of the additional requirements, but should be aware that these criteria will be applied in determining whether an applicant will be called to interview. Candidates who are receipt of their application. \\r\n\\r\n\\r\nInterviews will take place at the relevant lead school and will include the selected for interview will normally be informed within 30 days of the opportunity to observe teaching. There will also be a number of tasks including a subject-based assessment, and a pupil interaction activity.  Candidates will be expected to perform a brief recital on their chosen instrument as part of the interview. Candidates will complete a subject knowledge audit in advance of the interview. The exact format of the day will be determined by the number of candidates being interviewed and the timetable of the lead school for that day. The day will conclude with a formal panel interview, and applicants will be informed within 48 hours of the decision. The selection panel will take the evidence from all aspects of the day into consideration in making their judgement. Unsuccessful candidates will be offered feedback and a debrief on their application. \\r\n",
+    "OtherRequirements": "Candidates who are successful at interview will also be required to demonstrate: \\r\na) that they have no criminal convictions which might prevent them from working with children or young people, or as a teacher \\r\nb) that they are physically and mentally fit to teach, and are capable of undertaking a course of study to become a qualified teacher ",
+    "PersonalQualities": "In addition to the academic entry requirements, the  Partnership applies the following criteria to judge whether an applicant may be offered a place on the course: \\r\na) The ability to communicate clearly and accurately in both written and spoken English \\r\nb) Some practical experience or similar recent connection with young people\\r\nc) Details of appropriate referees who will provide confirmation of the applicant's suitability for teaching \\r\nd) The ability to cope with the demands of an exacting profession \\r\ne) Evidence of appropriate levels of commitment and motivation for successful study, including the intellectual capacity for academic study at Masters' level \\r\n\\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "The course runs for 37 weeks from September to July. During this time, trainees will spend the majority of their time (30 weeks) in school and a total of 7 weeks will be spent on central training covering both professional and subject-based themes, and academic sessions linked to the award of the PGCE.\\r\n\\r\nThe teaching programme in school is based on 2 placements. In the Autumn term in the first school, this commences with lesson observations and builds gradually to a maximum of a 50% teaching commitment by Christmas. Trainees spend the Spring & Summer term in their main school, which will provide a contrast to their first school. During this phase the teaching commitment will be around 60%, increasing slightly in the Summer term to a maximum of around 70% of a timetable. \\r\n\\r\nThe BPD course is a KS3&4 (11-16) training programme. However, where possible trainees will be offered experience of post-16, whether as an observer or as a teacher of part of a lesson or a sequence of lessons if appropriate. At least one of the placements will be in an 11-18 or 13-18 school.\\r\n\\r\n\\r\nSchool placements are arranged on behalf of trainees and where possible such aspects as home location and travel are taken into account when allocating schools. Although the partnership consists of 14 schools, it should be noted that not all schools have the capacity to offer placements in all subjects."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Bournemouth Poole & Dorset Teacher Training Partnership is a consortium of 16 secondary schools working in close partnership. Our partnership schools extend from Swanage in the west to Lymington on the edge of the New Forest in the east. The Lead School for the Partnership is Twynham School, located in the historic harbour town of Christchurch, an OFSTED  'Outstanding' school and national Teaching School.  The Partnership offers a full-time one-year course running from September-July. Successful completion of this course brings with it the award of QTS (Qualified Teacher Status) with a PGCE (Post-Graduate Certificate in Education) validated by the University of Winchester \\r\n\\r\nA distinctive feature of the BPD course is the focus on carefully staged and appropriately supervised practical classroom experience within two secondary schools, which is further supported by academic and professional study via central training. All partner schools have experience of Initial Teacher Training and a good record of pupil progress and achievement. \\r\n\\r\nCurrently the BPD Partnership offers SCITT training in the following subject areas: English, Mathematics, Biology, Chemistry, Physics, MFL, Design & Technology, Geography, Computer Science, Music, Physical Education, Art & Design, Religious Education, History & Dance/Performance. \\r\n\\r\nIf you are looking for a training course which is grounded in practical classroom experience then the school-centred route is ideal for you.\\r\nOur trainees have a very high success rate in completion and moving onto employment,  with the majority of those gaining employment working in the local area where many gain rapid promotion.\\r\n\\r\n {Check out our website](www.bpdscitt.org.uk)",
+    "TrainWithDisability": "There is access for people with disabilities, although not all schools offering placements are able to cater for people with disabilities in all subjects due to the architecture and layout of school departments. Please contact the Partnership Office if you wish to discuss this aspect further. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Winchester",
+  "provider": "Greentrees Primary School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1DD/28TR",
+  "providerCode": "1DD",
+  "programmeCode": "28TR",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Sycamore Drive, Bishopdown, Salisbury, SP1 3GZ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Sycamore Drive, Bishopdown, Salisbury, SP1 3GZ",
+      "geocode": true,
+      "formatted_address": "Salisbury SP1 3GZ, UK",
+      "latitude": 51.090118,
+      "longitude": -1.782264,
+      "post_code": "SP1 3GZ",
+      "city": "Wiltshire",
+      "route": null,
+      "postal_town": "Salisbury"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1DD",
+    "addr_1": "Sycamore Drive",
+    "addr_2": "Bishopdown",
+    "addr_3": null,
+    "addr_4": "Salisbury",
+    "postcode": "SP1 3GZ ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Sycamore Dr, Salisbury SP1 3GZ, UK",
+    "latitude": 51.0896987,
+    "longitude": -1.782232,
+    "post_code": "SP1 3GZ",
+    "city": "Wiltshire",
+    "route": "Sycamore Drive",
+    "postal_town": "Salisbury"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The training course is a PGCE  Level 7 with full QTS status. \\r\nThe time spent at the University of Winchester is where the students are taught the modules of the PGCE programme. Further details of the content of the course are available from the University of Winchester.\\r\nThe students spend 120 days in school on two block placements. A shorter 7 week placement in Term 2 of the Autumn Term followed by a longer 12 week placement in Terms 5 and 6.\\r\nThe University assesses all the assignments. \\r\nThe teacher tutor and the link tutor assess the teacher placements. There is a clear process to seek help from the University where students are at risk of reaching the minimum standards.\\r\nThe University is an Outstanding University and the lead school, Greentrees is also outstanding (Ofsted March 2015)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE Grade C in English, Maths and a Science required\\r\nThe Maths and English skills test needs to be completed before the course starts. Any offer will be conditional on this.",
+    "InterviewProcess": "Suitable applicants who meet all of the selection criteria, will be invited to interview.\\r\nThe candidates will be assessed by at least two head teachers in the ArrowITT alliance and a representative from the University of Winchester. There will be a formal interview, a written task, a group task with other candidates and a 15 minute lesson with a small group of children. Candidates will need to demonstrate some understanding of education and current issues.  All the tasks are completed on a single day.\\r\nIf successful at interview, commencement of training will be conditional on passing the skills tests and meeting all academic requirements, DBS checks, medical checks etc.",
+    "OtherRequirements": "A DBS and medical check will be required before commencing the course.",
+    "PersonalQualities": "We are looking for highly committed potential trainee teachers who are passionate about a career in education. Applicants should enjoy working with young people and be hard working, flexible and have a sense of humour.\\r\nSuccessful candidates will work well in collaboration with others as well as independently and will be creative in their outlook.\\r\nWe are looking for candidates with some prior experience of working with children. \\r\nWe are looking for candidates who are aware of the rewards and challenges of the year.\\r\nWe are also looking for students who can listen and act upon advice.",
+    "HowSchoolPlacementsWork": "The schools are all in the Salisbury area making travel to schools easily accessible.\\r\nOne placement will be in KS1 and one placement will be in KS2.\\r\nThere will also be a three week School Based enquiry.\\r\nWe have 11 partner schools in ArrowITT.\\r\nThe schools in our cluster all have recent and relevant experience hosting students successfully.\\r\nThe total number of days in schools will be 120."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "ArrowITT provides a Schools Direct programme based in 11 schools in the Salisbury area. We have been established for 5 years but this is the first year under the name ArrowITT, as we have grown our capacity through the merger of two smaller Schools Direct programmes (Greentrees Primary School and Salisbury Primary Teaching School Alliance).\\r\nWe are very excited about this growth as we can now provide placements in a wide range of schools, including church, community, Infant , Junior and Primary, LA led and academy. We can also offer access to a Special School and a Resource Base within the cluster of schools. \\r\nOur link tutors are all members of staff at the schools providing excellent access to advice and support at all times.\\r\nThe interview process takes place at one of the cluster schools giving you the opportunity to experience a school in the cluster at an early stage.\\r\nWe organise and inform you of your placements prior to you starting the course providing you with security and the chance to be in contact with your schools at an early stage.\\r\nWe have a 100% record of students getting a job prior to leaving the course often within the cluster of schools. There will be opportunities given throughout the year to practice interview techniques in readiness for applying for jobs.\\r\nOur purpose in running ArrowITT is to help Salisbury schools recruit high quality NQTS for the benefit of all schools in our region.\\r\n\\r\n",
+    "TrainWithDisability": "We always meet the needs of candidates with disabilities and respond to individual requests for support as necessary. \\r\nA number of the schools in our cluster are new builds with excellent access. Placements can be tailored to meet needs as a result.\\r\nWe work closely with the University of Winchester at the recruitment stage to ensure that all candidates needs are met.\\r\nThe lead school, Greentrees is in a modern building, on two sites in close proximity. We have toilet and shower facilities for the disabled. Please contact us to discuss any needs that you may have and we will do our utmost to accommodate you.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Arrow ITT has a close working relationship with The University of Winchester. Our link tutors attend training at the University. The University of Winchester also train our teacher tutors.\\r\nThe University of Winchester is rated as Outstanding by Ofsted for its PGCE provision.\\r\nThe training will involve 60 days of training at the University of Winchester.",
+        "UcasInstitutionCode": "W76"
+      }
+    ]
+  },
+  "has_inst": true
+}

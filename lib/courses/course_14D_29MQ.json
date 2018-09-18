@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Derby",
+  "provider": "Britannia Teaching School Alliance at Belgrave St Bartholomew’s Academy",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "14D/29MQ",
+  "providerCode": "14D",
+  "programmeCode": "29MQ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Sussex Place, Longton, Stoke-on-Trent, ST3 4TP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Sussex Place, Longton, Stoke-on-Trent, ST3 4TP",
+      "geocode": true,
+      "formatted_address": "Sussex Pl, Stoke-on-Trent ST3 4TP, UK",
+      "latitude": 52.9775131,
+      "longitude": -2.1261888,
+      "post_code": "ST3 4TP",
+      "city": "Stoke-on-Trent",
+      "route": "Sussex Place",
+      "postal_town": "Stoke-on-Trent"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "14D",
+    "addr_1": "Sussex Place",
+    "addr_2": "Longton",
+    "addr_3": null,
+    "addr_4": "Stoke-on-Trent",
+    "postcode": "ST3 4TP ",
+    "url": "http://www.britanniateachingschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Sussex Pl, Stoke-on-Trent ST3 4TP, UK",
+    "latitude": 52.9771836,
+    "longitude": -2.1259416,
+    "post_code": "ST3 4TP",
+    "city": "Stoke-on-Trent",
+    "route": "Sussex Place",
+    "postal_town": "Stoke-on-Trent"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Fee for UK and EU students: £9,250 per year (2018/19)\\r\nPlease note that all fees may be subject to annual increase.\\r\n",
+    "AboutCourse": "BTSA is an alliance of schools, and other partners, who are working together to train the next generation of outstanding teachers. Every member of the Alliance has a track record of being totally committed to delivering on this National College priority area.\\r\n\\r\nWhy choose BTSA?\\r\n\\r\n* A strong, well established partnership\\r\n* A successful track record\\r\n* An employment record well above the national success rate\\r\n* In partnership with The University of Derby – an outstanding provider for ITT\\r\n* Opportunities for varied placements in great schools\\r\n* A unique opportunity for an enhanced international placement in Holland\\r\n* A wide range of experts to provide practical help and support\\r\n* 100% of 2017/18 School Direct trainees rated as a good or outstanding\\r\n* Excellent track record of trainees securing NQT posts following completion of the programme\\r\n\\r\nThe School Direct teacher training route is led by BTSA, working in partnership with local schools and The University of Derby. You have the option to choose a route that matches your career aspirations - choose Early Years (3-7), Primary (5-11) or Special Educational Needs and Disability (SEND) which encompasses either Early Years (3-7) or Primary (5-11). As well as Qualified Teacher Status, you will also gain a PGCE equivalent to a third of a master’s degree with The University of Derby upon completion of the programme.\\r\n\\r\nAway from the classroom, you’ll receive practical training sessions from Specialist Leaders of Education, experienced teachers and the team at BTSA. These training sessions will take place at the BTSA hub located in Longton, Stoke-on-Trent. The University of Derby will also lead sessions to support your academic development; these sessions will take place at the university site in Derby.\\r\n\\r\nHow are you assessed?\\r\n\\r\nAll assessments relate to your school placements; you will complete three assessed teaching placements, two in your main school and one in a second school, and additional enhanced school opportunities, which will provide you with the challenging and exciting experience you need. There will be in-depth teacher enquiry on school-based issues. There are a variety of assessment modes which you will encounter e.g. presentation, academic poster, essay.\\r\n\\r\nYou'll also have the opportunity to reflect on and discuss your developing subject knowledge of the core and wider curriculum subjects, as well as developing your skills in research-informed practice.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You must have a UK Honours degree (preferably 2:1) or equivalent, plus grade C or above in GCSE Mathematics, English Language and a Science. You need to have already gained the required GCSE grades when you apply. \\r\n\\r\nYou will be required to have successfully completed the QTS Skills Tests in literacy and numeracy in order to secure a place on the course. You need to pass both skills tests before you can start the programme, but not before applying. You can book these skills tests once you have received an invitation to interview.\\r\n For more information, please visit: (http://sta.education.gov.uk/)\\r\n\\r\n\\r\n\\r\n",
+    "InterviewProcess": "Our interview process has been tailored to ensure that all candidates have the opportunity to demonstrate their potential to train to teach in a warm and welcoming environment. ",
+    "HowSchoolPlacementsWork": "All of our schools are quality assured, effective schools. Most schools belong to St. Bart’s Trust or are Strategic Partnership schools. We will work with you to place you in the best school to meet your training needs and to ensure that you are placed in a school located closely to where you live. The responsibility of allocating placements rests with BTSA. \\r\n\\r\nYou will complete a main placement in a Key Stage of your choice. This will cover the Autumn term and the Summer term. In the Spring term, you will complete a second placement in a contrasting school and Key Stage. There will also be enhanced placements e.g. Special Educational Needs, Early Years, as well as a week long international placement in Holland.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Britannia Teaching School Alliance (BTSA) is an alliance of schools, and other partners, who are working together to train the next generation of outstanding teachers. At BTSA, we are clear about what we are doing, and more importantly why. This is encapsulated in our aim and vision: “Releasing Potential.”\\r\n\\r\nOur School Direct teacher training programme is an excellent opportunity for graduates and career changers to join the teaching profession.  \\r\n\\r\nThe School Direct teacher training route is led by BTSA, working in partnership with local schools and The University of Derby. Our programme is primary with a 3-7, 5-11 and a SEND pathway. As well as Qualified Teacher Status, you will also gain a PGCE equivalent to a third of a master’s degree with The University of Derby upon completion of the programme.\\r\n\\r\nOn our School Direct teacher training programme, you will complete a main placement in a Key Stage of your choice and a second placement in a contrasting school and Key Stage. You will also have the opportunity to complete enhanced placements e.g. Special Educational Needs, Early Years, as well as a week long international placement in Holland.\\r\nAway from the classroom, you will receive practical training sessions from Specialist Leaders of Education, experienced teachers and the team at BTSA. \\r\n\\r\nWe are very proud of our success in recent years:\\r\n\\r\n100% of 2018 School Direct trainees rated as good or outstanding.\\r\n\\r\n100% of trainees in NQT posts following completion for the fifth year running.\\r\n",
+    "TrainWithDisability": "Our School Direct teacher training programme is inclusive and responsive to the needs of our trainees. School placements are tailored to the needs of trainees with disabilities and other needs. Due to the nature of this professional course, where reasonable adjustments can be made, we aim to support all trainees through their school placements. The University of Derby also provides support for all trainees with regards to their professional and academic studies.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Derby has a strong reputation for nurturing successful, confident and forward-thinking primary teachers with a rich heritage in teacher training dating back over 150 years. Rated outstanding by Ofsted - the highest possible accolade - and top ten in the Good Teacher Training Guide, The University of Derby will lead sessions to support your academic development. The University of Derby has recently been awarded Gold in the Teaching Excellence Framework (TEF), reflecting the high quality of the learning environment and learning experience.",
+        "UcasInstitutionCode": "D39"
+      }
+    ]
+  },
+  "has_inst": true
+}

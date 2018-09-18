@@ -1,0 +1,78 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Winchester",
+  "provider": "Gosport and Fareham MAT",
+  "subjects": [
+    "Languages",
+    "Languages (european)",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages (Spanish)",
+  "slug": "1AS/37G5",
+  "providerCode": "1AS",
+  "programmeCode": "37G5",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Bay House School, Gomer Lane, Alverstoke, Gosport, PO12 2QP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bay House School, Gomer Lane, Alverstoke, Gosport, PO12 2QP",
+      "geocode": true,
+      "formatted_address": "Gomer Ln, Gosport PO12 2QP, UK",
+      "latitude": 50.7878374,
+      "longitude": -1.1654254,
+      "post_code": "PO12 2QP",
+      "city": "Hampshire",
+      "route": "Gomer Lane",
+      "postal_town": "Gosport"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1AS",
+    "addr_1": "Bay House School",
+    "addr_2": "Gomer Lane",
+    "addr_3": "Alverstoke",
+    "addr_4": "Gosport",
+    "postcode": "PO12 2QP",
+    "url": "http://www.bayhouse.hants.sch.uk",
+    "geocode": true,
+    "formatted_address": "Gomer Ln, Gosport PO12 2QP, UK",
+    "latitude": 50.7878374,
+    "longitude": -1.1654254,
+    "post_code": "PO12 2QP",
+    "city": "Hampshire",
+    "route": "Gomer Lane",
+    "postal_town": "Gosport"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "The tuition fees for September 2019 entry are £9,250 for UK, EU and Islands (Channel Islands and Isle of Man) students, however the tuition fee for students outside the EU are yet to be confirmed for 2019 entry. Please contact (studentsandmoney@winchester.ac.uk) in the autumn for confirmation of the fee.\\r\nAs the GFM Academy Trust work in partnership with Winchester University, you will not be employed by the school during your training year, so will be required to pay the fees specified by the University.  To see if you are eligible for funding through tuition fee loans, training bursaries or scholarships, please consult the Get into Teaching website.",
+    "AboutCourse": "The course prepares you to teach across the age ranges 11-16 and is structured around six modules - a combination of taught modules based at the University and placement modules based in schools or educational settings.\\r\nYou will undertake studies in all elements of secondary education; extend your knowledge of learning and teaching, of the breadth and scope of the curriculum and the professional skills associated with high-quality teaching. You will then apply these areas of understanding and skill to classroom practice throughout the year, including during two assessed placements in schools or educational settings.\\r\n\\r\nUpon successful completion of the course you will be awarded a PGCE with recommendations for the award of Qualified Teacher Status (QTS).\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "The minimum requirements you will be expected to meet are as follows: an honours degree, usually a 2:2 or above; GCSE English language and mathematics at grade C or 4 or above; and passes in the Department for Education (DfE) skills tests in Literacy and Numeracy. Equivalencies to academic qualifications are considered on an individual basis, so if you hold qualifications from a number of years ago or from outside the UK, please contact us for confirmation of their suitability.\\r\n",
+    "InterviewProcess": "If your UCAS application is selected, you will be contacted and invited to one interview. As part of the interview, candidates will be expected to teach 30 minutes of a lesson, have a further 30 minutes to perform a basic letter-writing task and demonstrate subject knowledge through a second written exercise.\\r\nCandidates will then have the opportunity to participate in an interview (up to an hour) with the Director of Initial Teacher Training, the Department Lead and usually, a representative from Winchester University. \\r\nCandidates will also be offered an optional tour of the school.  The interview process is complete within a half day.\\r\nCandidates will be notified of the interview decision via personal contact from the Director of Initial Teacher Training and the UCAS notification procedure. ",
+    "OtherRequirements": "If you accept an offer of a place you will be required to complete a Disclosure and Barring Service (DBS) criminal records check and Prohibition Order check. If you have spent time overseas in the last 5 years you may also be required to obtain criminal records checks from each of the countries you visited. You will also be required to complete an occupational health check to confirm that you are fit to teach. The University of Winchester will send you more information about when and how you need to complete each of these checks if you accept our offer.\\r\n",
+    "PersonalQualities": "We will look for evidence of a commitment to the teaching profession, an understanding of professional requirements, and an awareness of current educational issues in an application. Prior experience in a school is not required, however prospective students may find experience in a school useful for obtaining insights into the primary education classroom. Experience in a school or similar setting may also provide reassurance to prospective students that teaching is the right choice for their career.\\r\n",
+    "HowSchoolPlacementsWork": "Bay House School & Sixth Form is the lead school for Initial Teacher Training with the GFM. Trainees focus on the 11-16 age range during the first year, although there are observation opportunities in the 6th form. Those trainees who are employed during their NQT year will have the opportunity to teach 6th form. Also within the GFM family currently are Brune Park Community School, an 11-16 school also within Gosport, Gomer Junior and Rowner Junior, primary schools within Gosport and Lord Wilson School, a specialist secondary provision on the outskirts of Fareham. This diversity offers a broad spectrum of experiences. We are partnered with other schools in the Fareham area, with whom we share resources to offer placements, allowing our trainees to gather even wider and more diverse experience of a variety of schools."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Gosport & Fareham Multi-Academy Trust has a dedicated and experienced ITT team, through which we provide an exceptional standard (as recognised by Ofsted) of school-based Initial Teacher Training through a stimulating and supportive environment. Trainees are supported to become reflective, enthusiastic and knowledgeable practitioners; ready to enhance the learning of young people. An allocated mentor will work with you on a daily basis to develop the qualities needed to meet the Teacher Standards and support your passion to become an outstanding practitioner.   A continuous programme of professional learning is part of a package of personal and professional support, tailored specifically to meet your individual needs. \\r\nOur expectations are for high calibre trainees who are excited by our learning ethos and who feel that they could make a positive contribution to enhancing our offer to pupils. We welcome applications from ambitious trainees who are enthusiastic about training to teach, who are creative, imaginative and forward thinking, with high aspirations for learners. You need to be  patient, resilient and adaptable, with good interpersonal skills, but also be approachable and passionate about your subject.",
+    "TrainWithDisability": "Your wellbeing is a top priority and we will do all we can to give you the chance to flourish and maximise your potential. In partnership with the University of Winchester there is a dedicated student support team to help with any questions or challenges you might experience during your studies. We work with you to support your wellbeing and mental health, provide confidential advice and offer workshops to boost your academic skills. If you have a disability or learning difference, we encourage you to get in touch before you apply so we can discuss tailored support for your individual needs.\\r\nThe GFM have a culture of supporting you to ensure you are able to thrive in a school environment through our mentoring scheme and the continuous nurture of the Initial Teacher Training team.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The  University of Winchester is recognised by OfSted as an ‘Outstanding’ provider of teacher education at both primary and secondary level and has a long history of training teachers. Our passion is to provide you with a university experience that helps you reach your full potential in a stimulating and supportive learning environment that challenges and inspires, in a beautiful, historic cathedral city. \\r\nThe city of Winchester has a rich heritage and vibrant contemporary culture, so whether living here or commuting, there is plenty to enjoy in the city and surrounding area. \\r\n",
+        "UcasInstitutionCode": "W76"
+      }
+    ]
+  },
+  "has_inst": true
+}

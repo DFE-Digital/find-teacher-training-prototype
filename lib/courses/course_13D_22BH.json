@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Edge Hill University",
+  "provider": "Ladywood Teaching School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "13D/22BH",
+  "providerCode": "13D",
+  "programmeCode": "22BH",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Masefield Road, Little Lever, Bolton, BL3 1NG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Masefield Road, Little Lever, Bolton, BL3 1NG",
+      "geocode": true,
+      "formatted_address": "Masefield Rd, Little Lever, Bolton BL3 1NG, UK",
+      "latitude": 53.5644535,
+      "longitude": -2.3656437,
+      "post_code": "BL3 1NG",
+      "city": "Little Lever",
+      "route": "Masefield Road",
+      "postal_town": "Bolton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "13D",
+    "addr_1": "Masefield Road",
+    "addr_2": "Little Lever",
+    "addr_3": null,
+    "addr_4": "Bolton",
+    "postcode": "BL3 1NG ",
+    "url": "http://www.ladywood.bolton.sch.uk/teaching-school",
+    "geocode": true,
+    "formatted_address": "Masefield Rd, Little Lever, Bolton BL3 1NG, UK",
+    "latitude": 53.5633963,
+    "longitude": -2.3646565,
+    "post_code": "BL3 1NG",
+    "city": "Little Lever",
+    "route": "Masefield Road",
+    "postal_town": "Bolton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Subject to eligibility, UK and EU students can apply for a Tuition Fee Loan from the Government to cover the full cost of tuition fees. UK and EU students may also be eligible to apply for additional funding to help with living costs. \\r\n\\r\nFinancial support arrangements for eligible UK and EU students joining this programme in academic year 2019/20 are still to be announced by the Government.  \\r\n\\r\nFor more details visit edgehill.ac.uk/study/fees-and-funding \\r\n\\r\nFinancial support information for international students can be found at edgehill.ac.uk/international/fees\\r\n",
+    "AboutCourse": "Our mission at Ladywood is to enable you to enthuse and inspire children aged 5-11 with creative teaching. Through a combination of local school based training within the Bolton area and  EHU sessions, we aim to provide an innovative, school-led programme whereby you can learn from specialist tutors and expert practitioners at the cutting edge of developments in education.\\r\n\\r\nYou will benefit from high quality training through our excellent partnerships  and experience a variety of Key Stage 1 and Key Stage 2 classes in good and outstanding settings. We will consider your personal  interests and work alongside you to create a tailor made experience.\\r\n\\r\nThe PGCE School Direct route will train you to teach across the 5-11 age range in Key Stages 1 and 2 and achieve the Teachers’ Standards. You will receive a high quality training experience and learn the latest approaches and strategies necessary to fully prepare you for your first year as a Newly Qualified Teacher (NQT). \\r\n\\r\nDuring the programme you will study a breadth of subjects, including all of the National Curriculum subjects. Through a focus on evidence-based research, you will specialise in one of the following: \\r\n\\r\n    Computing/Technology Enhanced Learning \\r\n\\r\n    Creative Arts \\r\n\\r\n    English \\r\n\\r\n    Humanities \\r\n\\r\n    Mathematics \\r\n\\r\n    Modern Languages \\r\n\\r\n    Physical Education \\r\n\\r\n    Science \\r\n\\r\n    Special Educational Needs/Disabilities \\r\n\\r\n    Learning Outside The Classroom \\r\n\\r\nThis PGCE School Direct route consists of three main elements. \\r\n\\r\nAcademic and Professional Development – gaining knowledge of how children learn and how their needs differ, you will develop the core skills of planning, assessment, teaching and classroom management. You will also gain an understanding of the education system, consider the wider professional role of a teacher, and learn how to reflect upon and take responsibility for your professional development. \\r\n\\r\n\\r\nCurriculum Subject Knowledge – working with expert tutors, you will acquire essential subject knowledge for the Primary National Curriculum. Exploring a range of teaching methods, including the use of ‘new’ technologies, you will be guided in how to provide children with stimulating, imaginative and effective learning experiences. \\r\n\\r\n\\r\nSpecialism – you will identify a specific focus of personal interest relevant to current issues, initiatives and discussions within your chosen specialism. You will conduct a literature review and develop proposals for school improvement. \\r\n\\r\nYou may choose a research specialism from a variety of subjects. \\r\n\\r\nSuccessful completion of the programme leads to recommendation for Qualified Teacher Status.\\r\n\\r\nWe strongly recommend an early application as there is high demand for places.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Before the programme commences, you must have: \\r\n\\r\nA first or second class Honours degree from a UK university (or equivalent qualification); \\r\n\\r\nGCSE at Grade C or Grade 4 (or equivalent qualification) in English Language and Mathematics; \\r\nGCSE at Grade C or Grade 4 (or equivalent qualification) in Combined Science / Physics / Chemistry / Biology. \\r\n\\r\n\\r\nYou are required to undertake Professional Skills Tests in Literacy and Numeracy prior to entry to this programme. Successful completion of the Professional Skills Tests will form part of the conditions of any offer of a place. Further details can be found at edgehill.ac.uk/skillstests\\r\n",
+    "FeeInternational": 13000.0,
+    "FinancialSupport": "Edge Hill University offers a range of scholarships with a competitive application process for prospective full-time PGCE students. These scholarships aren’t linked to academic success and celebrate determination, talent and achievement beyond your coursework, for instance in creativity, enterprise, ICT, performance, sport or volunteering. \\r\n\\r\nTo find out more about scholarships, to assess your eligibility, and to meet some of our dedicated scholarship winners, visit edgehill.ac.uk/scholarships\\r\n",
+    "InterviewProcess": "What are we looking for?\\r\n\\r\nIf you want to inspire life-long learners and are passionate to improve the outcomes for primary pupils you are what Ladywood is looking for. You need to be dedicated in creating innovative environments for primary pupils to thrive.\\r\n\\r\nHow we select our Trainees?\\r\n\\r\nLadywood Teaching School is the lead school in the partnership and will be coordinating the recruitment process. The interview will take place within one of our local Partner schools and will include:\\r\n\\r\n•\\tClassroom observation\\r\n•\\t10 minute observed focus activity \\r\n•\\tAn interview\\r\n•\\tLiteracy, Mathematics and Science knowledge tests\\r\n\\r\nThe aim of the interview is to get the very best from our candidates and is carried out in a fair and professional manner.\\r\n\\r\nYou will be informed prior to your interview the content of the activity \\r\nand the age group you will be teaching. Our Interview team will consist of Alliance school staff and Edge Hill University staff.\\r\nThe rigorous and thorough process is aimed at recruiting trainees of the highest calibre.\\r\nWe look forward to receiving your application to join this prestigious programme.\\r\n",
+    "OtherRequirements": "If you accept a formal offer from Edge Hill University and Ladywood Teaching School Alliance you will be required to meet the Department for Education’s standards for physical and mental fitness to teach and clearance to work with children.  \\r\n\\r\n\\r\nFurther information, including a Declaration of Health questionnaire and details of how to apply for a Disclosure and Barring Service (DBS) Enhanced Disclosure will be sent to you after you have firmly accepted an offer.\\r\n",
+    "PersonalQualities": "When you apply, you need to demonstrate to us that you have: \\r\n\\r\nA genuine commitment to, and an understanding of, primary education. You will need to demonstrate the personal attributes, values and motivation you feel are required to join the teaching profession \\r\n\\r\nIn addition, you must have suitable presentational qualities, including a good standard of written English.\\r\n",
+    "HowSchoolPlacementsWork": "The Ladywood Alliance programme, in partnership with Edge Hill University and over 20 schools in Bolton, offers a PGCE with QTS and is aimed at producing Outstanding Teachers and Leaders of tomorrow. Our schools are selected on the basis of their commitment to supporting our future teaching profession.\\r\nHere are some of our Partner Schools:\\r\n\\r\nThe Oaks Primary School\\r\nSt. Saviours C of E Primary School\\r\nRed Lane Primary School\\r\nPikes Lane School\\r\nCastle Hill Primary School\\r\nEatock Primary School\\r\nMarkland Hill Primary School\\r\nMoorgate Primary School\\r\nHaslam Park\\r\nHardy Mill Primary School\\r\nSt Matthews Primary School\\r\nMytham Primary School\\r\nRivington and Blackrod High School\\r\nMasefield Primary School \\r\nBeaumont Primary School\\r\nBrownlow Fold Primary School\\r\nGreen Fold School\\r\nDevonshire Road Primary School\\r\nLadywood School and Outreach Service\\r\n\\r\nEach trainee will be expected to receive the following:\\r\n\\r\nThree placement blocks in differing schools and covering all primary phases (between 6 and 11 weeks depending on the placement block). One of these blocks can be within a Special School setting if this is of particular interest to you. \\r\n\\r\nExperience of an EYFS setting\\r\n\\r\nExperience of an SEND setting\\r\n\\r\nPlacements are discussed on an individual basis as we endeavour to accommodate your bespoke requests.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Ladywood is a three times 'Outstanding' school, based within Bolton, Greater Manchester. Ladywood Teaching School is an integral part of the overall organisation. \\r\n\\r\nLadywood Teaching School Alliance programme will be delivered by outstanding practitioners in a highly supportive and aspirational environment. We offer primary placements in both mainstream and special school settings. \\r\n\\r\nThe programme is aimed at transferring your skills, knowledge and understanding into those required for teaching within a primary classroom of tomorrow.  Therefore, offering a uniquely holistic approach that allows trainees to develop, each and every day.\\r\n\\r\nThe majority of training will be facilitated by our Alliance Partners (currently 20 schools) together with Edge Hill University. The programme allows you to take risks and discover your potential in a safe environment. It allows you to be a reflective practitioner whilst focusing on current pedagogy and bringing this to life in the classroom setting. \\r\n\\r\nThis innovative programme aims to meet the needs of the group and the individual, as well as reflecting the current educational concepts; creating a dynamic and diverse training programme. From day one you will be treated as a fellow professional and receive high quality individual support.\\r\n\\r\nThe Alliance provides opportunities to teach in both urban and semi-rural settings. You will be joining us and be part of our Alliance’s journey at this exciting and innovative time as we cultivate the next generation of outstanding teachers.\\r\nWe offer a range of specialisms linked with EHU including Early Years and SEND   – please ask for further details.\\r\n",
+    "TrainWithDisability": "EHU's Inclusion Team provide information, guidance and support to applicants and students who have disclosed any of the following: Autism Spectrum Conditions (ASC), Mental Health, Sensory Impairment, Mobility difficulties or a medical condition e.g. Epilepsy, Diabetes, Heart Condition, Asthma and we work closely with academic and support staff across the University. \\r\n\\r\nLearning Services provides support to students with a specific learning difficulty – SpLD, such as Dyslexia. \\r\n\\r\nEHU and Ladywood Teaching School encourage disabled applicants to make contact with us early in the application process to enable us to plan for support you may need right from start of your university course. We provide a friendly and professional service and applicants and students can discuss individual requirements in complete confidence. Our highly experienced team are here to advise you about: \\r\n\\r\n Impact of disability/health condition and potential impact on study \\r\n\\r\nSupport available including 1-1 sessions, group support and study skills sessions \\r\n\\r\nThe benefits of a Student Support Plan \\r\n\\r\nDisabled Students Allowance (DSA) and eligibility \\r\n\\r\nReasonable adjustments to support your study \\r\n\\r\nExam modifications and alternative assessments \\r\n\\r\nRights and Responsibilities \\r\n\\r\nSupport whilst on placement\\r\n\\r\nDisclosure and Confidentiality \\r\n\\r\nRights and Responsibilities \\r\n\\r\nPEEPs and Emergency Action Plans \\r\n\\r\nOne of our priorities is to ensure safe environment for all students. If you have Epilepsy, Diabetes, Asthma or another serious health condition which may require First Aid, we strongly recommend that you complete one of our Emergency Action Plans. We can discuss this with you when you come to see us. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Edge Hill University is based on an attractive, award-winning 160-acre campus in Lancashire, close to Liverpool and Manchester. The institution has been providing higher education since 1885, with a mission to create opportunity from knowledge. \\r\n\\r\nThe institution’s significant success in achieving its mission is recognised by a range of awards and high rankings for teaching, student experience, accommodation and more. Edge Hill is ranked as Gold in the Teaching Excellence Framework (TEF), the government’s evaluation of excellence in teaching quality, learning environment and student outcomes. The University has previously held the coveted UK University of the Year title.\\r\n\\r\n\\r\n",
+        "UcasInstitutionCode": "E42"
+      }
+    ]
+  },
+  "has_inst": true
+}

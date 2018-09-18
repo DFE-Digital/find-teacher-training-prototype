@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Fareham and Gosport Primary SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "25M/2X7P",
+  "providerCode": "25M",
+  "programmeCode": "2X7P",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Harrison Primary School, Harrison Road, Fareham, PO16 7EQ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Harrison Primary School, Harrison Road, Fareham, PO16 7EQ",
+      "geocode": true,
+      "formatted_address": "Harrison Rd, Fareham PO16 7EQ, UK",
+      "latitude": 50.8571411,
+      "longitude": -1.1803586,
+      "post_code": "PO16 7EQ",
+      "city": "Hampshire",
+      "route": "Harrison Road",
+      "postal_town": "Fareham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "25M",
+    "addr_1": "Fareham and Gosport Primary SCITT",
+    "addr_2": "Harrison Primary School",
+    "addr_3": "Harrison Road",
+    "addr_4": "Fareham",
+    "postcode": "PO16 7EQ",
+    "url": "http://www.farehamandgosportprimaryscitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Harrison Rd, Fareham PO16 7EG, UK",
+    "latitude": 50.8572125,
+    "longitude": -1.1799325,
+    "post_code": "PO16 7EG",
+    "city": "Hampshire",
+    "route": "Harrison Road",
+    "postal_town": "Fareham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "School Direct (salaried) training programme:\\r\nEach trainee teacher is based in a school and will be employed as a Unqualified teacher. Training fees will be paid by DfE.\\r\n\\r\nSCITT (tuition fee) training programme:\\r\nAlthough trainee teachers will be based in a school they are not employed by the school. Fees must be paid by the trainee teacher through student finance.\\r\n",
+    "AboutCourse": "\\r\n\\r\nLed by an Outstanding school, Harrison Primary School, the Fareham and Gosport Primary SCITT and its Partner schools have extensive experience of involvement in and leading initial teacher training. Our training package is tailor made to meet the learning needs of trainee teachers working in Fareham and Gosport. \\r\n\\r\nWe offer a one year programme designed to enable trainee teachers to meet the Teachers’ Standards in addition to the academic award, PGCE. The training programme combines school experience with Professional Studies and Subject Knowledge development.  We believe this blended approach of school based learning and academic study gives trainee teachers the ‘best of both worlds’; the opportunity to link theory and practice, thus developing reflective practitioners. \\r\n\\r\nFrom the first day trainee teachers will be in the classroom, part of an established teaching team in a school. The training programme will provide experience of teaching in early years, key stages one and two, and enrichment activities in both the secondary and nursery phases. Expert class teacher mentors and professional mentors (often senior leaders/Head teachers) will support trainee teachers to develop and refine their teaching skills.\\r\n\\r\nTrainee teachers will spend the majority of the year in one of the best schools in the Fareham and Gosport area, working within early years, key stage one and key stage two. All trainee teachers will also undertake a second school placement, typically six weeks, which will give them the opportunity to extend their practice in a different setting, age range and context.\\r\n\\r\nWe work closely with the University of Winchester who will provide expertise and support for the 4 academic assignments, (at Masters level) woven into the training programme. Trainee Teachers will have access to the study facilities, including the library, at the University.  \\r\n\\r\nEach Friday the group comes together at Harrison Primary School, or one of the Partner schools, for the taught elements of the comprehensive training programme which is facilitated by SCITT Lead Facilitators and expert school practitioners. The training programme will consist of at least 60 training days. \\r\n\\r\n\\r\nThe training programme is designed to support trainee teachers to achieve Qualified Teacher Status (QTS).  On successful completion of the programme trainee teachers will be recommended for QTS by Harrison Primary School and awarded PGCE (Postgraduate Certificate of Education) by the University of Winchester.   \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "All applications to initial teacher training must be made using the ‘Apply’ system administered by the Universities and College Admissions Service \\r\nAll Trainee Teachers must hold:\\r\n - a standard equivalent to a grade C in the GCSE examinations in English (English Language), mathematics and science \\r\n - a first degree with honours of a United Kingdom higher education institution or equivalent qualification \\r\n - NARIC (National Academic Recognition Information Centre for the United Kingdom) ‘Statement of Comparability’ if qualifications are not from a British awarding body.\\r\n\\r\n",
+    "FeeInternational": 9000.0,
+    "InterviewProcess": "A summary of our Interview Process\\r\n\\r\nStage 1:\\r\n - a five minute presentation by the applicant, to be delivered to the Interview panel and other applicants, on a  topic of the applicant’s choice related to education, followed by opportunities for applicants to question each other and participate in discussion\\r\n - a pre-planned teaching of reading activity with a small group of pupils \\r\n - a hand-written subject knowledge assessment in written English (to assess applicant’s written communication skills – standard conventions for spelling, punctuation, grammar and syntax)\\r\n\\r\nFollowing stage 1, selection of applicants who have shown sufficient potential to continue through to Stage 2.\\r\n\\r\nStage 2:\\r\n - a teaching panel interview with subject specific questions, non-cognitive assessment  questions, and general cognitive questions, including child protection\\r\n\\r\nStage 3: \\r\n - The Interview panel will meet to discuss and confirm decisions about applicants’ suitability for the programme at the end of each cohort of interviews.  The Chair of interview procedures will quality-assure the processes and decision-making. Responsibility for debriefing will be agreed between panel members in advance of interview taking place.\\r\n\\r\nStage 4:\\r\n - Applicants will be notified of the outcome of their interview within seven days via the UCAS system; applicants will either be rejected or Conditional made.\\r\n - We also offer feedback to candidates regardless of the outcomes of their interview\\r\n - Successful candidates will also be telephoned and sent an offer in writing and by email\\r\n",
+    "OtherRequirements": "All applicants are required to show evidence to show that the Professional Skills tests have been booked (all applicants to initial teacher training must pass both the literacy and numeracy skills tests before starting the programme) and provide two academic professional references (as per UCAS)\\r\n\\r\nSuccessful applicants will be subject to a Disclosure and Barring Service (DBS) check. All Trainee Teachers must also complete the Health and physical capacity to teach documentation, (Hampshire Education Authority checks), before being offered a place on the programme.\\r\n",
+    "PersonalQualities": "Potential applicants to our programme should demonstrate some or all of the following:\\r\n\\r\n - a genuine passion for teaching\\r\n - an understanding of the role of a primary school teacher\\r\n - the ability or willing to be reflective, committed, articulate and clear in their delivery, organised, creative, resourceful, respectful, knowledgeable, decisive and collaborative\\r\n",
+    "HowSchoolPlacementsWork": "It is the SCITT’s responsibility to secure appropriate placements of quality for trainees’ school experience. Partner schools have a commitment to the provision of high quality training and provision for Initial Teacher Training. They will:\\r\n\\r\n - provide a suitable setting and models of best practice for trainee teachers\\r\n - have effective policies for promoting and ensuring equal opportunities\\r\n - have appropriately qualified, experienced and trained staff to take on the roles of Class Teacher Mentor and Professional Mentor\\r\n - be fully involved in the SCITT Management Structure\\r\n\\r\nThe SCITT Director will have responsibility for co-ordinating the allocation of trainee teachers to one of the Partner Schools.  Allocation follows attendance by trainee teachers at Partner school Open Days and the ‘School Trainee Teacher/Partner School Meet and Greet Event'. Both are designed give Head teachers the opportunity to identify a potential trainee teacher for their school, whilst giving the trainee teachers the chance to meet and get to know some of the partnership schools’ Head teachers.\\r\n\\r\nTrainee Teachers and Head teachers are then invited to provide feedback to the SCITT Director indicating their preferred options in terms of schools/trainee teachers. Taking into account trainees' geographical locations, this information is then used to allocate trainee teachers to their placements schools for the year.\\r\n\\r\nIn total, trainees will be placed with 2 partner schools during their training year. These will be their main placement school and their shorter second placement school.\\r\n\\r\nDuring each placement, trainee teachers will normally spend 4 days in their school and one day, typically Fridays , in formal training. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "By choosing Fareham and Gosport Primary SCITT’s PGCE programme for your teacher training year, you will be carrying out your course with an ‘Outstanding’ provider (Ofsted 2017).  Ofsted report that “The Partnership is fully committed to and passionate about ‘growing their own teachers’, recruiting and training high-calibre trainees who aspire to become excellent primary school teachers.” \\r\n\\r\nYou will be immersed in school life from day one on our programme. You will gain valuable experience of creating an effective learning environment for pupils to support good progress in their learning, as well as building strong  relationships with pupils and colleagues. You will spend the majority of your time in school but will also benefit from SCITT based training days and input sessions from the University of Winchester for the PGCE assignment writing elements of the programme. \\r\n\\r\nYou will receive personal, professional and academic support throughout our programme to support the successful completion of your teacher training. As a trainee teacher with us you will receive high quality training and mentoring which will enable you to develop highly effective teaching skills and to develop into confident, reflective practitioners. \\r\n\\r\nOur highly effective collaboration with over forty partner schools, the local authority, and the University of Winchester ensures high-quality support for trainees as they enter the teaching profession. We work closely with schools and the local authority to make sure you are well supported throughout the NQT year as well as your teacher training year.\\r\n\\r\nFor more information, please visit our website at[www.farehamandgosportprimaryscitt.co.uk]\\r\n\\r\n",
+    "TrainWithDisability": "At Fareham and Gosport Primary SCITT programme we strive to make all aspects of our programme accessible to everyone. Wherever possible we will make reasonable adjustments so that you are not disadvantaged by your disability. \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,65 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Cornwall School Centred Initial Teacher Training (Cornwall SCITT)",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "slug": "C79/C66X",
+  "providerCode": "C79",
+  "programmeCode": "C66X",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Truro College, College Road, Truro, Cornwall, TR1 3XX",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Truro College, College Road, Truro, Cornwall, TR1 3XX",
+      "geocode": true,
+      "formatted_address": "College Road, Truro TR1 3XX, United Kingdom",
+      "latitude": 50.26305139999999,
+      "longitude": -5.1006011,
+      "post_code": "TR1 3XX",
+      "city": null,
+      "route": null,
+      "postal_town": "Truro"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "C79",
+    "addr_1": "Truro College",
+    "addr_2": "College Road",
+    "addr_3": "Truro",
+    "addr_4": "Cornwall",
+    "postcode": "TR1 3XX ",
+    "url": "http://www.cornwallscitt.org",
+    "geocode": true,
+    "formatted_address": "College Road, Truro TR1 3XX, United Kingdom",
+    "latitude": 50.26305139999999,
+    "longitude": -5.1006011,
+    "post_code": "TR1 3XX",
+    "city": null,
+    "route": null,
+    "postal_town": "Truro"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "The PGCE programme in your chosen subject will give you the necessary knowledge and skills to meet the standards for Qualified Teacher Status (QTS) and the PGCE award. The PGCE carries 60 credits at Masters Level which could later contribute towards a Master’s Degree in Education (180 credits).\\r\n\\r\nThe programme covers a wide range of topics that you will need to address as a teacher. These include planning for learning, classroom management, inclusion, assessment, subject work, wider school issues and other important topics. The topics are not just covered once in the course but are regularly revisited during the year in various contexts. This approach allows continual reinforcement and deepening of your knowledge and understanding of teaching and learning.\\r\n\\r\nThe course duration is approximately 180 days. You will spend approximately 60 days during the course of the training, mostly outside of the classroom on many aspects of teaching. Most of these 60 days of training will be at the Lancaster campus. A number of days will be subject specific, designed to develop your knowledge of how to teach your subject known as Pedagogy for Learning (PFL) days. On these days the both School Direct and university based students are taught together. The other 120 days will be in two contrasting school placements. For these placements you will be supported by both school and university colleagues to meet the standards for QTS. \\r\n\\r\nThe course is assessed in two different ways. The placement module for the QTS element is assessed by school and university colleagues on a pass/ fail basis using a widely recognised trainee teacher assessment matrix. You will also prepare an electronic portfolio to submit as evidence of meeting the QTS standards. The two modules connected to the PGCE are assessed by the submission of four written assignments on teaching and learning in your subject and wider educational issues. The four written assignments are spread across the year to try to even out workload and two of them are formative to help develop your Masters level writing towards the two summative assignments.\\r\n\\r\nThe University of Cumbria and its legacy institutions, St Martins and Charlotte Mason colleges, have a long history of training successful teachers and an excellent record in producing good and outstanding teachers.\\r\n\\r\nFor information:\\r\n(https://www.cumbria.ac.uk/study/courses/postgraduate/secondary-education-with-qts-physical-education-pgce/)\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Cornwall SCITT is an outstanding provider of teacher training for Primary and Secondary teaching routes.\\r\n\\r\nWe are deeply committed to ensuring the very best outcome for our student teachers and for the young people of Cornwall. Our training programmes reflect the unique needs of young people at all stages of their educational development, and value the importance of bespoke training to ensure that our graduates possess the knowledge and skills to successfully embark on a career in education. For this reason our Primary Course is based at Heartlands, near Redruth, and our Secondary Course is based at Truro College. \\r\n\\r\nOfsted has graded both primary and secondary courses as Outstanding in all categories in their most recent inspections. Embedded in our approach is a strong relationship with local schools; our reputation for providing outstanding training endorses our graduates to local employers. We are supported by specialists working within our partnership schools to ensure that our training reflects current best practice and continues to be innovative.\\r\n\\r\n[Visit the Cornwall SCITT Website] (https://www.cornwallscitt.org/)",
+    "TrainWithDisability": "Cornwall SCITT is founded on the principles of equality and inclusion. Our management team, academic tutors, subject leaders and school-based mentors strive to ensure the best possible outcomes for all student teachers. Prior to the start of the course all student teachers undertake a fitness to teach check.\\r\n\\r\nFor those with additional learning needs, every student teacher receives bespoke support from a dedicated academic tutor who can provide support with assignment writing. Truro College offer additional support through the learning resources centre. \\r\n\\r\nWe carefully select placement schools for those with physical needs to optimise any reasonable adjustments that may be required. Mentors and subject leaders provide support to those with visual and hearing difficulties to develop impairment-friendly strategies within the classroom.\\r\n\\r\nOur personalised approach to learning allows those with mental health needs to develop their practice with support from the central management team. We offer in an empathetic dialogue to provide an appropriate balance of support and challenge throughout the programme.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

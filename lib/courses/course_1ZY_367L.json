@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Roehampton University",
+  "provider": "Lilian Baylis",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "slug": "1ZY/367L",
+  "providerCode": "1ZY",
+  "programmeCode": "367L",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "323 Kennington Lane, Kennington, London, SE11 5QY",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "323 Kennington Lane, Kennington, London, SE11 5QY",
+      "geocode": true,
+      "formatted_address": "323 Kennington Ln, London SE11 5QY, UK",
+      "latitude": 51.48637979999999,
+      "longitude": -0.1173787,
+      "post_code": "SE11 5QY",
+      "city": "Greater London",
+      "route": "Kennington Lane",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1ZY",
+    "addr_1": "Lambeth Teaching Schools' Alliance",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "SE11 5RR",
+    "url": "http://www.ltsa.org.uk",
+    "geocode": true,
+    "formatted_address": "The Foundry, 17 Oval Way, London SE11 5RR, UK",
+    "latitude": 51.4858439,
+    "longitude": -0.1163457,
+    "post_code": "SE11 5RR",
+    "city": "Greater London",
+    "route": "Oval Way",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "This postgraduate qualification gives you the tools to build a successful career in teaching while providing a holistic view of the profession; you will look at the child, curriculum and teacher. The course will build your confidence in the classroom, your understanding of the wider role a teacher plays and provide you with all the subject knowledge to effectively teach your specialist subject to all age groups of secondary school children.\\r\n\\r\nYou will be based in a host school for 32 weeks of the year, which will enable you to develop strong relationships with your school mentor who will oversee your training. You will undertake a short placement in a contrasting school in term 2, and attend lectures and seminars at Roehampton throughout terms 1 and 3. You will be assigned a tutor from Roehampton who will support you with both the practical and academic elements of the course.\\r\n\\r\nYou will also be part of a large cohort of trainee teachers in Lambeth and will attend an innovative training programme in local schools led by leading Lambeth teachers.",
+    "CourseLength": "OneYear",
+    "Qualifications": "* Degree at 2.2 or above\\r\n* GCSE English and maths at grade C or above or equivalent. If you do not hold these on applying we will arrange for equivalency testing prior to course start.",
+    "FinancialSupport": "We offer unsalaried trainees accommodation in our renovated Victorian School house in Zone 1 for £300pcm including bills to help support you whilst on the course.",
+    "InterviewProcess": "If you are shortlisted for interview we will ask you to complete a short interview with the senior leadership at the host school, undertake a pupil interaction task, and complete an English written test. We will then notify you within 24 hours to confirm your offer of a place.",
+    "OtherRequirements": "You will need to complete a DBS check prior to taking up the offer of a place.",
+    "PersonalQualities": "We are looking for candidates who are passionate and knowledgeable about their specialist subject and keen to have a positive impact on the lives of young people in the Capital.",
+    "HowSchoolPlacementsWork": "Candidates are invited to visit schools in the partnership prior to starting the course and are welcome to express a preference for where they will be placed. In most cases we are able to accommodate these requests. Our schools are all easily accessible by public transport and we will take into account travel times when placing trainees. In most cases you will be teaching 11-16 with opportunities to observe and possibly teach 16-18."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Lambeth is a dynamic and diverse borough in which to get in to teaching. Our schools are passionate about learning and teaching and ambitious for their pupils. Lambeth's young people deserve the best and we aim to deliver this by recruiting and training outstanding candidates for teaching posts in the borough. In return we offer first class training and support in some of the most dynamic, forward thinking and diverse schools in the country. \\r\n\\r\nWhat we offer:\\r\n*  Award of PGCE and QTS on all courses\\r\n* Enhanced inner London salaries on the salaried school direct route of between   £21,000-£27,000\\r\n* Highly subsidised accommodation in one of our renovated Victorian school houses\\r\n* Exceptional teachers working in our schools who are keen to share their diverse range of skills, knowledge and distinctive teaching methodology with the next generation of teachers. \\r\n* Schools that have close partnerships with the range of world class organisations on our doorstep, such as the Royal Festival Hall and the Southbank Centre, Royal Society of Arts, University of Roehampton, London South Bank University, King’s College London University, St Thomas’ University Medical School and the Engineering Development Trust.\\r\n* Excellent access to employment opportunities once qualified through our network of Lambeth Schools. All of our trainees in 2017-18 have gone on to secure NQT positions in Lambeth.\\r\n\\r\n",
+    "TrainWithDisability": "* The majority of our schools have lifts and step free access to teaching spaces. \\r\n* We ask all candidates shortlisted for interview to complete a declaration of health form, which enables us, in partnership with the University, to provide bespoke support to trainees with additional health needs\\r\n* In the past we have provided additional time in interview tests  for trainees with specific needs.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The School of Education is one of the principal providers of teacher training in the UK, with partnerships of over 350 schools. We have a rich history of over 175 years.\\r\n\\r\nStudents enjoy high quality teaching and employment prospects are excellent: 99% of teacher training graduates are in work or study six months after leaving us (Destinations of Leavers of Higher Education 2013/14). \\r\n\\r\nOur beautiful parkland campus in south-west London is only 30 minutes from the West End. Our School is ranked third in London for the quality of our research in the field of education (Research Excellence Framework 2014).\\r\n",
+        "UcasInstitutionCode": "R48"
+      }
+    ]
+  },
+  "has_inst": true
+}

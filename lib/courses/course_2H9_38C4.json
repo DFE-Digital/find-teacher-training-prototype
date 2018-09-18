@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Hertfordshire",
+  "provider": "Watton-at-Stone Primary and Nursery School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2H9/38C4",
+  "providerCode": "2H9",
+  "programmeCode": "38C4",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Rectory Lane, Watton-at-Stone, Hertford, Hertfordshire, SG14 3SG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Rectory Lane, Watton-at-Stone, Hertford, Hertfordshire, SG14 3SG",
+      "geocode": true,
+      "formatted_address": "Rectory Ln, Watton at Stone, Hertford SG14 3SG, UK",
+      "latitude": 51.85615319999999,
+      "longitude": -0.1143589,
+      "post_code": "SG14 3SG",
+      "city": "Watton at Stone",
+      "route": "Rectory Lane",
+      "postal_town": "Hertford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2H9",
+    "addr_1": "Rectory Lane",
+    "addr_2": "Watton-at-Stone",
+    "addr_3": "Hertford",
+    "addr_4": "Hertfordshire",
+    "postcode": "SG14 3SG",
+    "url": "http://www.wattonatstone.herts.sch.uk",
+    "geocode": true,
+    "formatted_address": "Rectory Ln, Watton at Stone, Hertford SG14 3SG, UK",
+    "latitude": 51.8562276,
+    "longitude": -0.1144425,
+    "post_code": "SG14 3SG",
+    "city": "Watton at Stone",
+    "route": "Rectory Lane",
+    "postal_town": "Hertford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9200.0,
+    "AboutCourse": "We support all trainees throughout their training year with the acquisition of subject knowledge, developed further through independent study and practitioner enquiry. Pedagogy and philosophy of teaching are integrated with the course content throughout the programme.\\r\n\\r\nTraining we offer is tailored to the needs of our trainees. It is delivered by experienced teachers and trainers in the partnership. We will also provide additional learning opportunities through our wider networks to support you through your training with the University of Hertfordshire to ensure you become a reflective teacher who inspires and motivates children to achieve their full potential academically and socially.\\r\n\\r\nSome of the overarching themes in our programmes are below:\\r\n\\r\n* Creating a Learning Climate\\r\n* Relationships and classroom culture\\r\n* Inclusion (EAL, Equalities, Gifted and Talented learners, Behaviour, SEN)\\r\n* Community and Culture\\r\n* Developing evidence-informed teaching and learning\\r\n* Planning\\r\n* Teaching for progression and assessment\\r\n* Subject Knowledge\\r\n\\r\nPlease see the University of Hertfordshire website for more information about the different School Direct programmes www.herts.ac.uk/apply/schools-of-study/education/initial-teacher-training/school-direct. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "Literacy and numeracy skills tests.\\r\n\\r\nPasses  in GCSE English, Mathematics and Science (or iGCSE) to be evidenced at the point of applying (at grades 6 to 9  - previously A*-C). We regret equivalent GCSE qualifications will not be accepted by the university.\\r\n\\r\nA 1st Class or 2.1 honours degree classification. Candidates with a 2.2 and experience of working in schools already, will also be considered. Candidates with degree qualifications from outside the UK will be considered, subject to NARIC confirmation of equivalence, if called to interview.\\r\n",
+    "InterviewProcess": "Watton-at-Stone is the Lead School for School Direct programmes. We have good and outstanding placement schools in Enfield and Hertfordshire. \\r\nThe Headteacher with the School Direct Coordinator in the school leads the selection and recruitment process for trainee teachers.\\r\nIf you are considering applying to join our programme or wish to arrange a visit to one of our schools before applying, please contact admin@wattonatstone.herts.sch.uk\\r\nSuccessful applicants for our programme will be invited to spend a morning or afternoon with us. Our aim is to help you to show your full potential to train to teach.\\r\nThe day will include:\\r\n•\\tan observed teaching lesson;\\r\n•\\ta short, written task (set by the University of Hertfordshire)\\r\n•\\tan opportunity to share your curriculum knowledge.\\r\nThose who are successful at this point will be invited to attend a short panel interview in the second part of the day.\\r\nWe inform candidates of our decision at the end of the day.\\r\n\\r\n",
+    "OtherRequirements": "Candidates who have experience in a primary school prior to starting the programme make the transition into the role of a trainee teacher much faster and gain greater benefit from their training.\\r\n\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about learning and have the desire to share this with children from diverse backgrounds with different abilities and capabilities. We will look for this potential in applications and at interview.",
+    "HowSchoolPlacementsWork": "We have good and outstanding  placement schools in both Enfield North London and Hertfordshire. Our aim is to ensure that our trainees become strong classroom teachers prepared for work in diverse school settings. Our programme provides trainees with breadth of experience in their primary school training - type of school and across the full age range.\\r\nAs a trainee teacher you will be based in a main placement school that best suits your training needs and is, where-ever possible, close to where you are based. This is usually agreed at interview. The second school placement of 6 weeks takes place in the Spring Term and will provide a contrasting school experience.\\r\nWe pride ourselves on the personalised programmes we offer our trainees and the level of support we provide.\\r\nIn each of our partnership schools there is a designated Professional Mentor who coordinates the programme in the school. The Professional Mentor is supported by the Lead Professional Mentor for Watton,  Zoe Hussain the headteacher.\\r\nAs a Trainee teacher you will be mentored throughout your training by an experienced classroom-based teacher (Teacher Mentor) during each of your school placements. The role of the Teacher Mentor, as an outstanding practitioner, is to provide support and challenge for you as you develop in your new role as a teacher. \\r\nYour Teacher Mentor will meet with you weekly to create an individualised training plan, support your planning and teaching and provide constructive feedback. You will also be supported by  tutors at the University of Hertfordshire.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Watton at Stone Primary School is a good school with outstanding personal development, behaviour and welfare (OfSTED Summer 2017). \\r\nOur aim is to deliver quality initial teacher training in diverse and inclusive school settings committed to securing the highest standards of teaching and learning outcomes for all our children.\\r\nWe have successfully trained over 30 teachers since 2013.\\r\nWe have close links with local schools in Hertfordshire and Enfield. \\r\nTrainee teachers who complete their training with us often join our schools as NQTS.  Many have gone on to become mentors for new trainees.\\r\nTeachers and trainees in our schools work extremely hard to capture the children's imaginations creatively in indoor and outdoor learning contexts. Our trainee teachers contribute to and benefit from being part of our school learning communities. They enrich our children's learning experiences through the Arts, Languages, IT, Sports or outdoors activities as well as in creative cross curricular teaching.\\r\nWe pride ourselves on providing our trainees with breadth of knowledge and experience of different schools to prepare them for long and successful careers in teaching and leadership.\\r\nWe are committed to providing lifelong learning experiences for children, parents and all members of staff. Continuous professional development and research learning is at the heart of what we do.\\r\n\\r\n",
+    "TrainWithDisability": "We are proud that our schools are fully inclusive. We welcome trainees from diverse ethnic, cultural and linguistic backgrounds, with different strengths and interests. The University of Hertfordshire and many of our placement schools offer full disabled access. Applicants who would benefit from additional support or who need disabled access should let us know when applying to our School Direct partnership so we can carefully consider the most appropriate placement schools.\\r\n\\r\nWe provide additional time for tasks at interview and laptops for trainees with specific language or literacy difficulties (e.g Dyslexia) and have tailored support plans to the needs of trainees with disabilities when on placement. The University of Hertfordshire offers additional support for writing for trainees who would benefit from this. One of our partnership schools runs a hearing impairment unit on site for pupils and all staff and pupils in the school learn and use British Sign Language",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We enjoy a strong partnership with our accredited provider, the University of Hertfordshire.  We work closely with the ITT team to ensure our school based-programmes are tailored to the needs of our trainees each year. We have also designed and delivered university-based sessions for the wider ITT and School Direct trainee groups. We benefit from regular attendance at University ITT partnership meetings and the expertise of other School Direct providers, which helps us to ensure that our courses fully  meet the needs of our trainees. ",
+        "UcasInstitutionCode": "H36"
+      }
+    ]
+  },
+  "has_inst": true
+}

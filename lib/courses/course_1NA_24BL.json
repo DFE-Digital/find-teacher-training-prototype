@@ -1,0 +1,83 @@
+{
+  "locationType": "School",
+  "accrediting": "King's College London (University of London",
+  "provider": "Beal High School",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "slug": "1NA/24BL",
+  "providerCode": "1NA",
+  "programmeCode": "24BL",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Beal High School, Woodford Bridge Road, Ilford, Essex, IG4 5LP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Beal High School, Woodford Bridge Road, Ilford, Essex, IG4 5LP",
+      "geocode": true,
+      "formatted_address": "Essex, UK",
+      "latitude": 51.7343313,
+      "longitude": 0.4690888,
+      "post_code": null,
+      "city": "Essex",
+      "route": null
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1NA",
+    "addr_1": "Beal High School",
+    "addr_2": "Woodford Bridge Road",
+    "addr_3": null,
+    "addr_4": "Ilford",
+    "postcode": "IG4 5LP ",
+    "url": "http://nelta.co.uk",
+    "geocode": true,
+    "formatted_address": "Woodford Bridge Road, London IG4 5LP, UK",
+    "latitude": 51.586046,
+    "longitude": 0.051729,
+    "post_code": "IG4 5LP",
+    "city": "Greater London",
+    "route": "Woodford Bridge Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. \\r\n\\r\nThe PGCE RE course offers opportunities to investigate the different religious and non-religious worldviews that are taught in schools, but we still assume that you will come onto the course with significant subject knowledge. This is why we require degree level evidence of such knowledge.\\r\n\\r\nThe course is designed to train you to become a skilful and reflective classroom practitioner. To this end we focus equipping you to meet the professional standards required to attain Qualified Teacher Status and these provide the framework for the course. There are two strands to our course: one focuses on RE subject-specific work, the other encompasses an exploration of generic issues related to professional practice and educational policy.\\r\n\\r\nThe RE strand is met through subject-specific sessions, in which we explore, debate, and clarify the aims in religious education. We focus on how to translate these aims into effective classroom practice, exploring practically how to devise lesson plans, how to choose or create engaging and appropriate resources, and how to ensure that our planning is shaped by an accurate and responsive understanding of the nature and needs of our pupils. In this way we seek to enable our pupils to become religiously literate.\\r\n\\r\nThe other strand is met through our 'Policy and Professional Practice' programme, through which we explore and debate the aims, purposes and provision of education in the UK today. This programme is formed of a weekly lecture, followed by seminars in cross-curricular groups, in which you are encouraged to discuss and reflect upon these issues, in light of insights gained from your school placements.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants should have one of the following degrees at 2:1 level or above: \\r\n - a degree in Theology or Religious Studies or Philosophy\\r\n - a joint degree in Theology or Religious Studies and one other subject \\r\n - a degree in a related subject in which Theology or Religious Studies constitutes roughly 40% of the content of the degree \\r\n - a higher degree containing a range of Theological or Religious Studies components such as a Masters or a PhD.\\r\n",
+    "FeeInternational": 19320.0,
+    "InterviewProcess": "The selection process normally involves an interview, a short presentation by the candidate, a discussion and a short piece of writing.\\r\n\\r\nWe select our trainees when we have evidence of the following qualities:\\r\n\\r\n-  a conceptual understanding of the content of religious education or philosophical thinking\\r\n-  an ability to think and reason clearly\\r\n-  an ability to interact effectively with pupils\\r\n-  an ability to interact with colleagues\\r\n-  an ability to present ideas clearly and at an appropriate level\\r\n-  an ability to recognise own shortcomings\\r\n-  a strong desire to continue to learn\\r\n-  flexibility of mind and the potential necessary to improve\\r\n-  successful experience with children or clear potential for this\\r\n-  clarity and accuracy of written and spoken English\\r\n-  a successful study record\\r\n-  perseverance and stamina\\r\n-  a passion for Religious Education\\r\n",
+    "OtherRequirements": "All applicants for teacher training programmes must pass the Department for Education’s Literacy and Numeracy Skills Tests prior to commencing their teacher training course.\\r\n\\r\nThe Department for Education requires the Disclosure and Barring Service (formerly the Criminal Records Bureau) to vet the background of persons working in their schools. Candidates offered a place on a PGCE course will be asked to complete an enhanced check with the DBS to ensure they do not have a criminal background which might prevent them from working as a teacher. This must be completed before you register on the programme.\\r\n",
+    "PersonalQualities": "- an ability to think and reason clearly\\r\n - an ability to interact effectively with pupils\\r\n - an ability to interact with colleagues\\r\n - an ability to present ideas clearly and at an appropriate level\\r\n - an ability to recognise own shortcomings\\r\n - a strong desire to continue to learn\\r\n - flexibility of mind and the potential necessary to improve\\r\n - successful experience with children or clear potential for this\\r\n - clarity and accuracy of written and spoken English\\r\n - evidence of conceptual understanding\\r\n - a successful study record\\r\n - perseverance and stamina\\r\n - a passion for Religious Education\\r\n",
+    "HowSchoolPlacementsWork": "You will have two different school placements during the course. Both placements will be at one of the lead school's (Beal High School) partner schools located in the London Borough of Redbridge.\\r\n\\r\nWe try to ensure that all trainees have a reasonable journey to school and to ensure that you have a balanced teaching experience including the full secondary age (11-18) and ability range.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "North East London Teaching Alliance (NELTA) is a large teaching school alliance of 20 schools. Beal High School is the lead school.\\r\n\\r\nWe are passionate about developing the next generation of teachers and school leaders. Teachers and leaders who will ensure an outstanding educational future for all pupils irrespective of background or ability. \\r\n\\r\nWorking with our alliance you can expect:\\r\n* Guidance from an experienced school based mentor and provider tutor\\r\n* Very well established support programmes\\r\n* Access to a wide network of schools including community secondary, primary, independent, grammar and special education\\r\n* Professional development opportunities beyond your training year focused on outstanding teaching and leadership\\r\n\\r\nNELTA, which spans Barking and Dagenham, Waltham Forest, Redbridge, Newham and beyond, we offer opportunities to work in a range of different socio-economic areas. Working in a partnership which includes independent schools, boys' and girls' grammar schools, faith schools, comprehensive schools and special schools means you will have access to a broad range of training experiences which will give you the opportunity to you develop your practice in a variety of different settings.\\r\n\\r\nWe offer teacher training places for both the tuition fee and salaried routes to Qualified Teacher Status. \\r\nFor tuition fee routes routes we work with King’s College London, UCL and NELTA as our accredited providers.\\r\nFor our salaried route the accredited provider is NELTA (the operating name of teacher training provided by the Beacon Multi-Academy Trust)\\r\n",
+    "TrainWithDisability": "We are committed to supporting equal opportunities and disability access.\\r\n\\r\nWe have accommodated trainees in the past with a range of disabilities including mental health conditions, dyslexia and physical impairments.\\r\n\\r\nDisability access in schools varies according to the specific training location. Please check with the relevant accredited provider or email us to discuss your needs [NELTA](admin@nelta.co.uk).\\r\n\\r\n\\r\nAt UCL School Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team. You can find more information here:-\\r\n[UCL Student Support](https://www.ucl.ac.uk/students/disability-support)\\r\n\\r\n\\r\nKing's offer information, advice and guidance to current and prospective disabled students about support that may help them to engage with their studies. When we refer to the term “disability” we also include long-term medical or mental health conditions and Specific Learning Difficulties (SpLDs).  \\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education is the world’s leading centre for research and teaching in education and related social sciences. You can view UCL’s online teacher training prospectus is here:-\\r\n[Online teacher training prospectus](https://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes)\\r\n\\r\n\\r\n \\r\n",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "We are committed to working in partnership with trainees and partner schools to provide highly trained teachers for the local community and beyond.\\r\n\\r\nWeekly contact with other trainees and our programme tutors means that you will always feel fully supported.\\r\n\\r\nThe Ofsted inspection of our initial teacher training provision on 2017 said:\\r\n“Leaders’ ambitious vision for excellence and their aspirations for trainees are of the highest order”\\r\n“The quality of training is outstanding”\\r\n“Trainees are overwhelmingly positive about the quality of mentoring”",
+        "UcasInstitutionCode": "251"
+      },
+      {
+        "Description": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. ",
+        "UcasInstitutionCode": "K60"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,70 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "UCL, University College London (University of London)",
+  "subjects": [
+    "Art / art & design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "slug": "U80/2P35",
+  "providerCode": "U80",
+  "programmeCode": "2P35",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Registrar's Division, Gower Street, London, WC1E 6BT",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Registrar's Division, Gower Street, London, WC1E 6BT",
+      "geocode": true,
+      "formatted_address": "Gower St, Bloomsbury, London WC1E 6BT, UK",
+      "latitude": 51.52423330000001,
+      "longitude": -0.1345379,
+      "post_code": "WC1E 6BT",
+      "city": "Greater London",
+      "route": "Gower Street",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "U80",
+    "addr_1": "Student and Registry Services",
+    "addr_2": "UCL",
+    "addr_3": "Gower Street",
+    "addr_4": "London",
+    "postcode": "WC1E 6BT",
+    "url": "http://www.ucl.ac.uk/ioe/courses/teacher-training",
+    "geocode": true,
+    "formatted_address": "Gower St, Bloomsbury, London WC1E 6BT, UK",
+    "latitude": 51.52455920000001,
+    "longitude": -0.1340401,
+    "post_code": "WC1E 6BT",
+    "city": "Greater London",
+    "route": "Gower Street",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This programme aims to inform and inspire, to challenge orthodoxies and encourage a freshness of vision. It provides support and guidance for learning and teaching in art and design, identifying strategies to motivate and engage pupils in making, discussing and evaluating visual and material culture.\\r\n\\r\nThrough seminars and studio-based activities, students will study the concepts, processes and skills of art, craft and design, sharing their knowledge and understanding with other student teachers and considering how it relates to the secondary curriculum. Towards the end of the PGCE, students will build on their own practice by initiating a curriculum development project, culminating in the display of their work at a final exhibition that represents their personal philosophy for art and design education.\\r\n\\r\nStudents undertake two level 7 (Master’s-level) modules of 30 credits each, totaling 60 credits. These can be carried forward onto full Master’s programmes at the IOE.\\r\n\\r\nThe Secondary PGCE consists of three core modules: two Master’s-level (level 7) modules, which are assessed through written assignments, and the Professional Practice module, which is assessed by the observation of practical teaching in placement schools.",
+    "CourseLength": "OneYear",
+    "Qualifications": "- A minimum of a lower second-class UK Bachelor’s degree or an overseas qualification of an equivalent standard in an Art and Design related subject. \\r\n\\r\n- GCSE English Language and Mathematics at grade C/ 5 or above.",
+    "InterviewProcess": "Applicants successful at shortlisting stage will be invited to an interview at UCL Institute of Education.",
+    "OtherRequirements": "For information about all UCL's statutory requirements linked to Teacher Training programmes please visit our website: [https://www.ucl.ac.uk/prospective-students/graduate/teacher-training/entry-requirements]",
+    "HowSchoolPlacementsWork": "Text to be decided by the UCL Placements team."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The UCL Institute of Education (IOE) is a global leader in teacher education. Our programmes are recognised by Ofsted as 'outstanding' in every criterion across Primary, Secondary and Post-Compulsory education (FE). \\r\n\\r\n- We'll support you with the skills and knowledge you'll need from the moment you step into a classroom, but we know that learning to teach is much more than that we'll prepare you to build a rewarding and fulfilling long-term career in education. \\r\n\\r\n- Our focus on quality means that whatever route you select, you will be taught by experts in your subject and education phase, many of whom are world leaders in their field. \\r\n\\r\n- We are committed to supporting education in London, where schools lead the country in performance and pupil progress. We work with around 500 London schools, including long-term partners who work with us to harness our wider research and expertise. \\r\n\\r\n- When you walk into the UCL Institute of Education, you'll join a lively, friendly and diverse community of 8,000 students and more than 600 distinguished academics, committed to improving lives through education and promoting social participation to address local and global challenges. ",
+    "TrainWithDisability": "Please visit our Student Support and Wellbeing website:[https://www.ucl.ac.uk/students/student-support-and-wellbeing] for information about the services they offer to incoming students.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

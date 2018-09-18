@@ -1,0 +1,125 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Wolverhampton",
+  "provider": "Wood Green Academy",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "1O7/2YJW",
+  "providerCode": "1O7",
+  "programmeCode": "2YJW",
+  "schools": [
+    {
+      "name": "Wodensborough Ormiston Academy",
+      "address": "Hydes Road, Wednesbury, West Midlands, WS10 0DR",
+      "code": "O"
+    },
+    {
+      "name": "Pool Hayes Academy",
+      "address": "Castle Drive, Willenhall, West Midlands, WV12 4QZ",
+      "code": "P"
+    },
+    {
+      "name": "The Royal Wolverhampton School",
+      "address": "Penn Road, Wolverhampton, West Midlands, WV3 0EG",
+      "code": "R"
+    },
+    {
+      "name": "South Wolverhampton and Bilston Academy",
+      "address": "Dudley Steet, Bilston, West Midlands, WV14 0LN",
+      "code": "S"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hydes Road, Wednesbury, West Midlands, WS10 0DR",
+      "geocode": true,
+      "formatted_address": "Hydes Rd, Wednesbury WS10 0DR, UK",
+      "latitude": 52.5478045,
+      "longitude": -2.0037056,
+      "post_code": "WS10 0DR",
+      "city": "West Midlands",
+      "route": "Hydes Road",
+      "postal_town": "Wednesbury"
+    },
+    {
+      "address": "Castle Drive, Willenhall, West Midlands, WV12 4QZ",
+      "geocode": true,
+      "formatted_address": "Castle Dr, Willenhall WV12 4QZ, UK",
+      "latitude": 52.60066450000001,
+      "longitude": -2.0500463,
+      "post_code": "WV12 4QZ",
+      "city": "West Midlands",
+      "route": "Castle Drive",
+      "postal_town": "Willenhall"
+    },
+    {
+      "address": "Penn Road, Wolverhampton, West Midlands, WV3 0EG",
+      "geocode": true,
+      "formatted_address": "Penn Rd, Wolverhampton WV4 4HU, UK",
+      "latitude": 52.5723393,
+      "longitude": -2.1394584,
+      "post_code": "WV4 4HU",
+      "city": null,
+      "route": "Penn Road",
+      "postal_town": "Wolverhampton"
+    },
+    {
+      "address": "Dudley Steet, Bilston, West Midlands, WV14 0LN",
+      "geocode": true,
+      "formatted_address": "Dudley St, Bilston WV14 0LA, UK",
+      "latitude": 52.55949889999999,
+      "longitude": -2.07493,
+      "post_code": "WV14 0LA",
+      "city": "West Midlands",
+      "route": "Dudley Street",
+      "postal_town": "Bilston"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1O7",
+    "addr_1": "Wood Green Academy",
+    "addr_2": "Wood Green Road",
+    "addr_3": null,
+    "addr_4": "Wednesbury",
+    "postcode": "WS10 9QU",
+    "url": "http://www.woodgreenacademy.co.uk/",
+    "geocode": true,
+    "formatted_address": "Wood Green Rd, Wednesbury WS10 9QU, UK",
+    "latitude": 52.5635097,
+    "longitude": -2.0043309,
+    "post_code": "WS10 9QU",
+    "city": "West Midlands",
+    "route": "Wood Green Road",
+    "postal_town": "Wednesbury"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "This is a School Direct PGCE Initial Teacher Training course which is run by the Wood Green Academy Teaching School Alliance in partnership with  the University of Wolverhampton. Our 2017-18 cohort of School Direct trainees all qualified with good or outstanding grades and all found employment. Our School Direct route allows you to apply directly for your preferred main training school; the schools available for this course are listed below. \\r\nThis year long, full-time course will train you to teach secondary school pupils aged 11-18. (120 days in school; 50 days approx at university)\\r\nThe course is split into three placement phases. In Phases 1 and 3, 18 weeks in total,  you will train at your chosen training school. In Phase 2, you will have the opportunity to train at a different school.  \\r\nYou will be trained as a subject specialist but some school based elements of the course will be devoted to whole school aspects of the teaching profession. An essential part of the course is the Professional Learning and Development programme that addresses such aspects as Special Educational Needs, behaviour management, working with pupils who have English as an Additional Language and of course, the professional standards that any teacher must demonstrate in order to qualify.  This programme has been developed to include a mixture of university and school-based sessions, delivered by both academic tutors and practising teaching staff.\\r\nThis is a demanding, full-time course during which you will be required to produced essays and research projects for university alongside your teaching practice. However, our Alliance is committed to providing you with all the support you need from both your school-based and university tutors. Your progress and well-being will be closely monitored, with supportive target setting and action planning at regular intervals so that you are kept on track to achieving an outstanding outcome. You will also take part in the extensive whole school CPD programme and be encouraged to reflect on your own professional learning needs. So, if you are enthusiastic and have a personal commitment to teaching, you will not find a better place to begin your career.\\r\nNB: This course is not available at main site.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Bachelor honours degree, (ideally 2:1 or above) \\r\nor a degree of equivalent level from outside the UK.\\r\n\\r\n*You will need to be able to demonstrate that 50% of modules studied were in the subject you wish to teach. If this is not the case a Subject Knowledge Enhancement course may be set as a condition of the offer of a place.\\r\n*For MFL applicants - An alternative subject degree may be acceptable for native speakers.  \\r\n\\r\nNB: Applicants with a degree gained outside the UK, must gain validation from NARIC, to demonstrate that qualifications are equivalent to the UK standard.\\r\nhttp://www.naric.org.uk\\r\n",
+    "FeeInternational": 12500.0,
+    "InterviewProcess": "Once applications have been received by the Director of the Wood Green Teaching School through UCAS, in partnership with the University of Wolverhampton subject tutors, candidates will be shortlisted for interview at the University of Wolverhampton and for a School Assessment day at the training school chosen by the applicant.\\r\nAfter the interview and the school assessment have taken place, if both the training school and the university agree that the candidate is  suitable for a place on the School Direct PGCE teacher training course, an offer will be made to the candidate on UCAS. Please note that it make take a little time for the offer to come through the electronics systems. The applicant has then the opportunity to accept or decline the offer. ",
+    "OtherRequirements": "Applicants must be aware that an enhanced disclosure certificate from the Disclosure and Barring Service will also be required before commencing the programme. The University of Wolverhampton will assist you with reagrds to applying for your DBS. ",
+    "PersonalQualities": "Applicants should be passionate about their subject and have a strong desire to share their knowledge with young people of all abilities in the secondary age range. They should be committed, resilient and enthusiastic.\\r\nHaving a meaningful experience of working with young people will favour an applicant but such experience is not a compulsory requirement. \\r\nApplicants should be able to demonstrate that they can communicate effectively with both adults and young people.\\r\nThe ability to reflect on any recent educational experiences and articulate their own perceived professional learning needs will also be taken into consideration during the selection process.\\r\n",
+    "HowSchoolPlacementsWork": "After two or three September weeks of university-based initial training, you will start your school-based training at your chosen main training school at the start of October.  \\r\nTraining programme breakdown:\\r\nPhase 1: 10 weeks - chosen main training school (Oct-Dec)\\r\nPhase 2: 6 weeks - second school  (Jan-March)\\r\nPhase 3: 8 weeks - chosen main training school (March- May/June)\\r\n+ 1 week's placement in a Primary school (Jan) \\r\nThroughout the three phases of your school-based training, you will have the opportunity to observe many lessons and many teachers, not just in your subject area. Your co-teaching or lead teaching timetable will increase from 30% to 60% of a qualified teacher's timetable in at least two key stages throughout the year according to your strengths. You will be supported and observed all year long by a school-based subject mentor, a professional mentor and university tutor.  All will provide you with the quality feedback you need to achieve the best outcome. \\r\nWe will seek to allocate Phase 2 placements within our Alliance but a degree of flexibility is possible in this regard. Our aim is to give you experience in contrasting secondary schools in order to equip you to teach in any context in your future career. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Wood Green Academy Teaching School is a Lead School for the School Direct Route with an extensive proven track record in training students to become outstanding teachers.  Our main ITT pathway is the School Direct with QTS & PGCE route with in excess of 60 places advertised in 15 different curriculum areas across the Wood Green Teaching School Alliance for 2019-20.  As such, we support all our Alliance partner schools to recruit for and deliver the highest quality teacher training school direct programmes. It has always been our philosophy as a Lead School to give teacher training applicants the opportunity to specifically apply for the training school/campus of their choice; you are therefore able, from the start, to select your preferred training school. It is our belief that this mutual assessment both enhances the training experience and produces the best outcomes. \\r\nAs a Teaching School, Wood Green is at the forefront of national innovation. Having been judged as 'Outstanding' by Ofsted in our last 3 inspections, our ethos is based on high professional standards in all aspects. \\r\nTrainees based at Wood Green Academy will be thoroughly supported by dedicated ITT and Departmental teams. Our subject mentors are extremely committed to your development and their vast experience will guide you to success. \\r\nWood Green Alliance trainees will benefit from a precious extra layer of support. Our large Alliance of schools enables a more convenient arrangement for second school placements and greater opportunities for employment after the completion of your training. \\r\n",
+    "TrainWithDisability": "Wood Green Academy Teaching School is committed to supporting applicants with disabilities and special needs. In partnership with the University of Wolverhampton, we endeavour to break down any barrier that may stand in an individual's way of training as a teacher. \\r\nFurthermore, our trainees' mental health is at the heart of our mentoring and professional learning and development programmes.  ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our partnership with the University of Wolverhampton is very well established and we are their flag ship Lead school for the School Direct Secondary Route. As such, we play a very important part in many aspects of their ITE programme. Our close geographical proximity facilitates a well-balanced training experience. Our teaching staff also work with the university to provide teacher subject specialism training and support for the professional skills tests required before training can begin.  In addition, Wood Green Academy Teaching School works with the University to develop a coherent structure for training through your NQT year. \\r\nhttp://www.wlv.ac.uk/schooldirect\\r\n",
+        "UcasInstitutionCode": "W75"
+      }
+    ]
+  },
+  "has_inst": true
+}

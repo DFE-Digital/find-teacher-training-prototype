@@ -1,0 +1,68 @@
+{
+  "locationType": "School",
+  "accrediting": "Inspiring Leaders - Teacher Training",
+  "provider": "Inspiring Leaders Teacher Training",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1BJ/2JQP",
+  "providerCode": "1BJ",
+  "programmeCode": "2JQP",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Hillcrest Avenue, Kibworth, Leicester and Nottingham, LE8 0NH",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hillcrest Avenue, Kibworth, Leicester and Nottingham, LE8 0NH",
+      "geocode": true,
+      "formatted_address": "Hillcrest Ave, Kibworth, Kibworth Harcourt, Leicester LE8 0NJ, UK",
+      "latitude": 52.5415958,
+      "longitude": -0.9971226999999999,
+      "post_code": "LE8 0NJ",
+      "city": "Kibworth",
+      "route": "Hillcrest Avenue",
+      "postal_town": "Leicester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1BJ",
+    "addr_1": "Holmfield Avenue West",
+    "addr_2": "Leicester Forest East",
+    "addr_3": "Leicester",
+    "addr_4": null,
+    "postcode": "LE3 3FF ",
+    "url": "http://www.inspiringleadersscitt.com",
+    "geocode": true,
+    "formatted_address": "Holmfield Ave W, Leicester Forest East, Leicester LE3 3FE, UK",
+    "latitude": 52.6249445,
+    "longitude": -1.2042771,
+    "post_code": "LE3 3FE",
+    "city": "Leicester Forest East",
+    "route": "Holmfield Avenue West",
+    "postal_town": "Leicester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "General Primary\\r\nOur General Primary course will require you working in two contrasting schools across our partnership, depending on the location selected (Don't worry, if you apply to a Leicestershire course, we won't be sending you to Nottingham and visa versa). We call these placements your host and your alternative school. You will complete your placement at your host school in the Autumn and Summer term, whilst your alternative placement will be completed in the Spring term. With each placement, you will change year group to cover these 3 age phases: Year 1 and 2; Year 3 and 4; Year 5 and 6, ensuring you gain a variety of experience so you can work out where you would like to be when you qualify as a teacher.\\r\n\\r\n[For more information about our course, click here](https://www.inspiringleadersscitt.com/the-course)",
+    "InterviewProcess": "[Applying to our course](https://www.inspiringleadersscitt.com/applying)\\r\n",
+    "HowSchoolPlacementsWork": "General Primary\\r\nOur General Primary course will require you working in two contrasting schools across our partnership, depending on the location selected (Don't worry, if you apply to a Leicestershire course, we won't be sending you to Nottingham and visa versa). We call these placements your host and your alternative school. You will complete your placement at your host school in the Autumn and Summer term, whilst your alternative placement will be completed in the Spring term. With each placement, you will change year group to cover these 3 age phases: Year 1 and 2; Year 3 and 4; Year 5 and 6, ensuring you gain a variety of experience so you can work out where you would like to be when you qualify as a teacher.\\r\n\\r\n[For more information about our course, click here](https://www.inspiringleadersscitt.com/the-course)"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Inspiring Leaders Teacher Training, is an Ofsted 'Outstanding' rated partnership of schools working across Leicestershire, Leicester City and Rutland working together to develop outstanding teachers and leaders of the future. \\r\n\\r\nAs part of the Discovery Schools Academy Trust and Affinity Teaching School Alliance we are committed to helping every child the opportunity to 'Discover their Potential' and believe the best way to achieve this is through outstanding teaching and leadership. \\r\n\\r\nOur SCITT / School Direct training route provides all trainees with a blend of school experience alongside an innovative and inspiring taught programme, leading to the award of QTS and a PGCE, with our partners the University of Leicester.\\r\n\\r\nWe are passionate, experienced and successful at developing great teachers with 100% of our trainees being successfully employed in the past 3 years.\\r\n\\r\nWe offer more than just a one year teacher training programme by supporting trainees into employment in our schools and delivering ongoing career opportunities tailored to their needs.\\r\n\\r\nFor more information visit our websites:\\r\n(https://www.inspiringleadersscitt.com)\\r\n(https://www.discoveryschoolstrust.org.uk/)\\r\n\\r\nCall us on 0116 3184066 or email us at info@iltt.org.uk\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work tirelessly to ensure that all of our trainees are supported and become great teachers. In 2017/18 of those who completed the course – 100% of them moved into jobs in local schools and are now accessing high quality support in their first year of teaching.\\r\n\\r\nWe work with the University of Leicester to award PGCE to all trainees on our programme.",
+        "UcasInstitutionCode": "2A5"
+      }
+    ]
+  },
+  "has_inst": true
+}

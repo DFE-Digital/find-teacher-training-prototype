@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Liverpool John Moores University",
+  "provider": "Cheshire Vale Teaching School Alliance School Direct",
+  "subjects": [
+    "Music",
+    "Secondary"
+  ],
+  "name": "Music",
+  "slug": "26L/2QBG",
+  "providerCode": "26L",
+  "programmeCode": "2QBG",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Cheshire Vale Alliance, CW6 0BL",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Cheshire Vale Alliance, CW6 0BL",
+      "geocode": true,
+      "formatted_address": "Tarporley CW6 0BL, UK",
+      "latitude": 53.1535068,
+      "longitude": -2.6652439,
+      "post_code": "CW6 0BL",
+      "city": "Cheshire West and Chester",
+      "route": null,
+      "postal_town": "Tarporley"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "26L",
+    "addr_1": "Cheshire Vale",
+    "addr_2": "Teaching School Alliance",
+    "addr_3": "Tarporley High School",
+    "addr_4": "Tarporley",
+    "postcode": "CW6 0BL ",
+    "url": "http://www.cvtsa.co.uk",
+    "geocode": true,
+    "formatted_address": "Eaton Rd, Tarporley CW6 0BL, UK",
+    "latitude": 53.15308479999999,
+    "longitude": -2.6652247,
+    "post_code": "CW6 0BL",
+    "city": "Cheshire West and Chester",
+    "route": "Eaton Road",
+    "postal_town": "Tarporley"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Cheshire Vale Teaching School Alliance, working in partnership with Liverpool John Moores University,  provides a school led initial teacher training programme. Our course offers in-depth professional development experiences and is delivered by expert teachers drawn from our partnership schools.  Each school will also develop a more bespoke Professional Development Programme to match the needs of the individual trainees placed at that school. \\r\n\\r\nYou will attend taught sessions at the IMMarsh campus at LJMU which focus predominantly on developing your subject knowledge and subject pedagogy. Sessions are led by subject experts and are designed to equip students with the knowledge, understanding and skills needed to become confident teachers. In addition, lead lectures and seminars develop student teachers’ confidence in a range of relevant issues; classroom and behaviour management; meeting individual needs and inclusion; planning and assessment etc. There is a strong emphasis on social justice issues in education and on mental health and well-being. Sessions are largely workshop-based and participatory so that theoretical, research-informed teaching is explicitly linked to its practical implications for the classroom.You will be trained in a highly supportive and aspirational environment and will develop the rigour, professional knowledge, understanding and skills necessary for the delivery of creative, purposeful and challenging teaching and learning. \\r\n\\r\nThe Postgraduate Certificate is assessed through 2 Modules. The course team and our partnership schools have worked together to ensure that the PGCE Award is both relevant and manageable. The Award of QTS is integral to one of the academic modules. Trainees also submit one academic essay in two parts which focuses on reflecting on aspects of your practice.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree-Applications are welcomed from high quality graduates or holders of equivalent qualifications or those in the final year of their degree programme.\\r\nAt the start of your teacher training you must hold a relevant first degree from a UK higher education institution with a degree classification of 2:2 (Hons) or above.\\r\nGCSEs- Grade C (or equivalent) in Mathematics and English Language prior to application. For the purpose of initial teacher training level 2 numeracy and literacy qualifications are not considered as equivalent to GCSE Grade C in Mathematics or English.",
+    "FeeInternational": 14000.0,
+    "InterviewProcess": "Applications are screened initially by the Admissions and Information Officer at LJMU. \\r\n\\r\nInterviews take place in one of our partner schools and take about half a day. \\r\nYour interview will include: \\r\n•\\tA formal  interview\\r\n•\\t25-30 min lesson to about 12 x KS3 students (Details will be forwarded prior to interview)\\r\n•\\tTour of the school\\r\n•\\tWritten task-This is an opportunity for you to further demonstrate your enthusiasm for your subject.\\r\n\\r\nAt the end of the interview you will be asked if you have a geographical preference for your home school placement should you be successful in securing a conditional offer of a place on our School Direct course.\\r\n\\r\nAfter the interview your application will be considered and you will be notified later that day whether you have been successful and, if so, you you will be given details of the conditions of any offer.\\r\n \\r\n ",
+    "OtherRequirements": "You are required by the DfE to undertake Professional Skills Tests in Literacy and Numeracy prior to entry to this programme. \\r\nYou will also be required to meet the Department for Education’s standards for physical and mental fitness to teach and clearance to work with children. Further information, including a Declaration of Health questionnaire and details of how to apply for a Disclosure and Barring Service (DBS) Enhanced Disclosure will be sent to you after you have firmly accepted an offer. \\r\n\\r\nYour offer is conditional on completing ALL conditions of entry. These will be made available on UCAS.\\r\n",
+    "PersonalQualities": "Teaching is both a demanding and rewarding job. Applicants need to be enthusiastic and  committed and able to take responsibility for their continuing professional development. They need to value and respect all the students they work with and be concerned for raising their educational achievement. They need to respect students' social, cultural, linguistic, religious and ethnic backgrounds and have the highest expectations for all.\\r\nApplicants need to demonstrate that they are capable of reflective practice; that they can learn from their experiences and use research and understanding to inform their work with young people. ",
+    "HowSchoolPlacementsWork": "In addition to attending regular training at LJMU over the course, you will complete your training in 2 schools. You will be assigned to a home school for the majority of your training. When allocating home schools, we aim to accommodate geographical preferences across our alliance wherever possible and this will be discussed with you at interview. Home school placements are confirmed in July, prior to the start of the course. \\r\nYou will join your home school at the beginning of September having completed a summer school at LJMU. \\r\nYou will spend half a term, from January to February, at an alternate placement and then return to your home school to complete your training.\\r\n\\r\n\\r\n \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Cheshire Vale TSA is a group of more than 25 Secondary and Primary schools working in partnership with Liverpool John Moores University and key partners from across Cheshire and the Wirral including Chester, Northwich, The Wirral, Ellesmere Port, Helsby and rural Cheshire and can provide a variety of teaching experiences in a range of schools which can be viewed at (http://cvtsa.co.uk/become-teacher)\\r\n\\r\nAs an Alliance it is our mission to provide high quality, school based initial teacher training. We know our provision ensures trainees feel fully prepared for life in the classroom and a career in teaching. Trainee teachers will have the benefit of working with a strong alliance of schools during their training year. You will train in one of our alliance schools who have a strong history of highly successful teacher-training, where you will receive intensive support from experienced teachers and mentors.\\r\n\\r\nYour School Direct Programme will consist of a combination of classroom practice and high quality training from experienced school staff and Liverpool John Moores University tutors. You will be given the opportunity to spend much of your time 'improving your teaching and students learning experiences' with high quality school placements from across our Teaching School Alliance.",
+    "TrainWithDisability": "Our University partner LJMU is committed to Equality of Opportunity. Their Disability Advice Team will help you access the support you need. The best time to contact the Disability Advice Team is before you start your course. By contacting the team before you begin and disclosing your disability, you'll be able to receive support from when you arrive. Email: disability@ljmu.ac.uk Tel: 0151 231 3164/3165.\\r\n \\r\nAll trainees are encouraged to disclose any specific learning need that they experience, in order to make any adjustments, both at LJMU and within our partner schools. As part of the enrolment process to Teacher Training Programmes all students are required to complete a Health Questionnaire and some may be asked to attend a screening appointment with LJMU’s Occupational Health Unit. This is designed to ensure that arrangements are in place, from the outset, to support any students who may need additional support or reasonable adjustments to be made.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work in partnership with Liverpool John Moores University (LJMU), which has a long established reputation for providing high quality Teacher Training, taught at the IMMarsh campus. LJMU are responsible for the PGCE Academic Award and your recommendation for Qualified Teacher Status. You will attend LJMU for aspects of your programme, which we have designed in collaboration with them.",
+        "UcasInstitutionCode": "L51"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "Birmingham City University",
+  "provider": "Greenholm Primary School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "19R/22VW",
+  "providerCode": "19R",
+  "programmeCode": "22VW",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Greenholm Road, Birmingham, B44 8HS",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Greenholm Road, Birmingham, B44 8HS",
+      "geocode": true,
+      "formatted_address": "Greenholm Rd, Birmingham B44 8HS, UK",
+      "latitude": 52.535664,
+      "longitude": -1.8931348,
+      "post_code": "B44 8HS",
+      "city": "West Midlands",
+      "route": "Greenholm Road",
+      "postal_town": "Birmingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "19R",
+    "addr_1": "Greenholm Primary School",
+    "addr_2": "Greenholm Road",
+    "addr_3": "Great Barr",
+    "addr_4": "Birmingham",
+    "postcode": "B44 8HS ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Greenholm Rd, Birmingham B44 8HS, UK",
+    "latitude": 52.5364428,
+    "longitude": -1.8926708,
+    "post_code": "B44 8HS",
+    "city": "West Midlands",
+    "route": "Greenholm Road",
+    "postal_town": "Birmingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Please get in contact with BCU for further details",
+    "AboutCourse": "We offer excellent practical teaching experience under the guidance of highly skilled and dedicated professionals. We offer personalised training to develop teaching skills within a wide range of settings. \\r\nWe work in close association with BCU so all  students are supported with academic studies, career guidance and pastoral care. \\r\nTrainees will be placed with a well-qualified teacher and trained about all aspects of primary teaching and learning. They develop their knowledge and understanding of teacher standards,  pedagogy and how  primary pupils learn. Trainees are observed  regularly  by highly qualified teachers who give personalised targets which develop trainee's knowledge and understanding. Most training will happen at the main school allocated but trainees will visit other venues during the training. There will be block placements at BCU who  will set the assignments and inform all trainees about when they need to be submitted and the grade criteria. At BCU trainees study three modules - Core Curriculum, Foundation Curriculum and Professional Studies and Leadership which are assessed and graded by BCU. The range of assignments involve an essay, cross-phase curriculum map and presentation. There is one assignment per term for which guidance and support is given to the trainee.\\r\nBCU has been graded 17th nationally and 1st in the West Midlands for teacher training provision.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Minimum of Grade C GCSE in English, Maths, Science or equivalent\\r\nDegree 2:2 or above from registered university.\\r\nsome experience in schools - voluntary or salaried\\r\n\\r\n",
+    "FinancialSupport": "Please get in contact with BCU for any further details.",
+    "InterviewProcess": "Candidates will be interviewed by a panel including headteachers from within the partnership and representatives from BCU . There is one interview to attend and during the interview candidates will take part in a range of tasks including a presentation, writing task, curriculum task, classroom observation and  an interview by the school council.\\r\nAll candidates are expected to pass the literacy and numeracy skills tests prior to starting their training.",
+    "OtherRequirements": "All trainees are DBS checked and will need to complete CDF form\\r\nIf they have been out of the country for more than 3 months, potential candidate needs to provide a certificate of good conduct from the embassy of the country they visited.\\r\nIt is beneficial if trainees have some experience either salaried or voluntary of working within a primary school.",
+    "PersonalQualities": "Candidates will :\\r\nHave excellent speaking and written skills. \\r\nExcellent numeracy and ICT skills. \\r\nBe inspirational and aspirational. \\r\nWork effectively in a team. \\r\nMake decisions, problem-solve, have and show empathy. \\r\nBe hardworking. \\r\nBe dynamic. \\r\nBe creative. \\r\nBe flexible. \\r\nBe enthusiastic. \\r\nListen well. \\r\nBe determined to achieve and do the best for the pupils within the partnership\\r\nStrive for excellence. \\r\nBe caring. \\r\nBe emotionally literate. \\r\nShow leadership skills. \\r\nHave a 'can do' attitude and be up for a challenge. \\r\nBe someone who wants to give children in their care the best start to life that they can. \\r\nHave some school experience",
+    "HowSchoolPlacementsWork": "All trainees  do at least two placements in two different schools in two different phases. All placements are within the primary phase and trainees teach pupils between the ages of 4-11 years of age with a range of abilities and disabilities. \\r\nGreenholm endeavours to  support the needs of the trainee and the requirement  of the primary school when allocating placements, we try to allocate schools close to trainee's home address, for both the main placement and second placement, if it is possible.\\r\nOur partnership of schools extends all across Birmingham with a wide range of primary schools."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Greenholm  has an excellent reputation for training teachers and retaining them once qualified. We are a highly respected school which  has an established history of training and producing excellent primary school teachers. Our unique program is personalised to the needs of all our trainees. All trainees receive professional development  which is appropriate to their needs and prepares them to work independently as successful  NQTs by the end of their training.\\r\n100% of our trainee teachers leave us with a good or outstanding level in classroom practice with all employed in schools as qualified teachers. Added  to this, teachers trained with Greenholm have an excellent start in their NQT year with 100% remaining in the teaching profession for at least 5 years and with many progressing to senior management and leadership positions. \\r\nWe work  in close and effective  collaboration with  BCU and Services for Education with whom we have  long, successful and established relationships ensuring the training that all students receive is of a very high quality and supports them in becoming excellent teachers.  \\r\nFeedback from our trainees state that 100%  will highly recommend Greenholm to other trainees and the training received at Greenholm is outstanding.\\r\nWe guarantee an exceptional teacher training experience in our friendly and supportive school. You learn on the job in at least two different  schools, learning from experienced, dedicated and inspiring colleagues. You'll be putting your new skills into practise from day one while you gain qualified teacher status. \\r\n\\r\n",
+    "TrainWithDisability": "Our mentors are highly qualified in supporting trainees with a range of needs. We have a  unique, personalised training program, which is developed in line with the needs of the trainee. Trainees with dyslexia and mental health  have recently  qualified through our program at a good and outstanding level and have successfully been employed  in both main stream and special schools. Greenholm and its partners has wheel chair access to most of its sites. Within the partnership there are schools which have a range of disability units\\r\nThe close relationship we have with both BCU and Services for Education ensures we have access to a range of resources which can support the needs of all our trainees ensuring they succeed and become highly qualified NQTs. \\r\nTrainees are supported throughout the program with their assignments and observations ensuring they get the best opportunity to succeed in becoming qualified teachers.\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "BCU works in close collaboration with Greenholm ensuring they provide an academic training program which enhances the outstanding,  in- house, practical training at Greenholm. 100% of  trainee teachers working within this partnership leave with a good or outstanding level in classroom practice with 100% employed as NQTs by the end of the training. 100% of our teachers have remained in the teaching profession for at least 5 years after qualification with many in senior and leadership positions.\\r\nBCU is ranked 1st in the West Midlands for teacher training provision and 17th nationally.  ",
+        "UcasInstitutionCode": "B25"
+      },
+      {
+        "Description": "Services for Education works in close collaboration with Greenholm ensuring they provide an academic training program which enhances the outstanding  in- house, practical training at Greenholm. 100% of  trainee teachers working within this partnership leave with a good or outstanding level in classroom practice with 100% employed as NQTs by the end of the training. 100% of our  teachers have remained in the teaching profession for at least 5 years after qualification with many in senior and leadership positions.",
+        "UcasInstitutionCode": "1WE"
+      }
+    ]
+  },
+  "has_inst": true
+}

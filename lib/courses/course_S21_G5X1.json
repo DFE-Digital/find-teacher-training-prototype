@@ -1,0 +1,62 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Sheffield Hallam University",
+  "subjects": [
+    "Computer studies",
+    "Secondary"
+  ],
+  "name": "Computer Science",
+  "slug": "S21/G5X1",
+  "providerCode": "S21",
+  "programmeCode": "G5X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S21",
+    "addr_1": "City Campus",
+    "addr_2": "Pond Street",
+    "addr_3": "Sheffield",
+    "addr_4": null,
+    "postcode": "S1 1WB  ",
+    "url": "http://www.shu.ac.uk",
+    "geocode": true,
+    "formatted_address": "City Campus, Howard St, Sheffield S1 1WB, UK",
+    "latitude": 53.37958769999999,
+    "longitude": -1.4651842,
+    "post_code": "S1 1WB",
+    "city": "South Yorkshire",
+    "route": "Howard Street",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The Southampton University Led Secondary M level PGCE course provides an excellent route into teaching. The course has consistently been rated highly by former trainees, and has been successful in a series of recent Ofsted inspections. Our PGCE Secondary programme is designed and taught jointly by the Southampton Education School (SEdS) in partnership with over 125 schools across the region in seven different subject areas, and has a very good track record of moving successful trainees into employment, locally and beyond. Two thirds of the PGCE is spent in two school placements, starting in October, under the guidance of curriculum mentors who are all experienced classroom teachers. One third is spent in university, under the guidance of curriculum tutors, who all have extensive school teaching experience.\\r\nOverview of the PGCE Secondary Computer Science and Information Technology course \\r\nOur PGCE Secondary CS&IT course will equip you with the necessary skills and knowledge to teach Computing (CS, IT, Digital Literacy) across the secondary age range, including some opportunities to explore 16-19 teaching.  The course is designed to create Computing teachers that have a clear and well-founded philosophy towards the subject and can teach Computing at all levels.  \\r\nWe aim for reflective and dynamic practitioners willing to use a variety of teaching strategies to inspire all learners.  After completing the course, you will have a clear understanding of the problems pupils encounter in Computing, you will be prepared to find ways to overcome these challenges, and you will be able to help learners make progress.  \\r\nIn a combined effort from the university and our partnership schools, we develop your subject knowledge in Computing and your understanding of how to teach Computing through a range of approaches.  These include workshops, seminars, lectures and demonstrations, micro-teaching activities, and independent and group research.  \\r\nWe utilise the wide range of teaching resources currently available to create fully reflective practitioners who have the potential to truly impact pupil learning.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Prospective candidates will have good knowledge of the subject, from a first degree award. The normal expectation is that students will have at least 50% of their first degree in their chosen subject. Minimum degree required: 2:2.\\r\nCurrently, you must have GCSE passes at grade C/grade 4 or above in English Language and Mathematics. This is a government requirement, and ‘equivalent qualifications' are as designated by the PGCE admissions team (IELTS qualifications are not considered equivalent). If your qualifications are not considered to be appropriate, we can offer GCSE equivalent tests in English and Maths.\\r\n",
+    "FeeInternational": 18104.0,
+    "InterviewProcess": "At interview, candidates will meet the tutor team and learn about key elements of the programme, including how trainees are supported and developed, how placements work and how trainees are assessed. Each candidate will give a short presentation related to their curriculum subject and will complete a written task followed by an individual interview with subject tutors.",
+    "OtherRequirements": "You will be required to obtain:\\r\n* complete a form describing your state of health which will be checked against the DfE Fitness to Teach regulations \\r\n* to provide an Enhanced Disclosure from the Disclosure and Barring Service (DBS) to confirm that there are no criminal offences on your record which should bar you from teaching. Visit www.disclosure.gov.uk for more information. \\r\n* pass 2 QTS Skills Tests in Literacy and Numeracy before you are eligible to be accepted on to any ITE programme. \\r\n\\r\nThese must be completed before commencement of the programme to which you have applied.\\r\n",
+    "HowSchoolPlacementsWork": "Each trainee undertakes two block placements in schools within our Partnership. We aim to provide schools that offer contrasting placement experiences in order to develop a breadth and range of skills. During the placement blocks, one day per week is dedicated to training with the university in either curriculum or professional development. A regular programme of school based professional training is also delivered whilst trainees are on placement. Whilst on placement, each trainee is allocated a mentor from their subject area and a professional mentor to oversee the professional training. Trainees will also receive visits from their university tutor to support them in their teaching and professional development."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Sheffield Hallam University is one of the UK's largest universities, based in the heart of Sheffield, one of the UK’s biggest student cities.\\r\n\\r\nSheffield is the fifth biggest city in the UK with over 60,000 students, it has a mix of culture and green spaces. \\r\n\\r\nWe have invested over £100 million in new buildings and facilities over the last five years, providing innovative, flexible and sustainable spaces to enhance student experience.\\r\n\\r\nWe pride ourselves on the applied nature of our courses. We offer one of the largest and most diverse\\r\nrange of placements in the region. We’ve built up a network of over 600 partner schools, colleges and other educational establishments, and we work together to our mutual advantage.\\r\n\\t\\r\nYou will study at our centre of education that is recognised for excellence and innovation in teaching and learning. Our academics, researchers and partners in schools work together to ensure you become a committed and professional graduate, with the opportunity to return to us throughout your career to further your professional development.\\r\n\\t\\r\nWe received an overall student satisfaction rating of 86% in the 2018 National Student Survey. This result places us in the top 30 universities in the country for student satisfaction. We also received a Silver rating in the 2017 Teaching Excellence Framework. \\r\n",
+    "TrainWithDisability": "If you have a disability, including long term medical conditions, specific learning difficulties (such as dyslexia, dyspraxia and A(D)HD) and mental health conditions, you can access additional support for your academic studies whilst at Sheffield Hallam.\\r\n\\r\nStudents can receive support for a wide variety of conditions. There is extensive support available, including\\r\n\\r\n•\\tLearning contracts- reasonable adjustments to your course such as extensions or extra time in exams\\r\n\\r\n•\\tSupport workers - like a mentor to help with organisation, or a personal assistant to help with mobility\\r\n\\r\n•\\tEquipment/Assistive Technology and software - such as digital recorders or text to speech software\\r\n\\r\nWe have an on-site assessment Centre, the Sheffield Regional Assessment Centre, where a range of disability specialists can carry out Study Needs Assessments.\\r\n\\r\nWe run daily drop in sessions - come and talk to us, no appointment needed. You can also register for support online.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

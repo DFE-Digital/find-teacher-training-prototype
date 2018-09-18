@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Angel Islington Teaching School Alliance",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "slug": "2BZ/2YNR",
+  "providerCode": "2BZ",
+  "programmeCode": "2YNR",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Donegal Street, Islington, London, N1 9QG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Donegal Street, Islington, London, N1 9QG",
+      "geocode": true,
+      "formatted_address": "Donegal St, London N1 9QG, UK",
+      "latitude": 51.5324731,
+      "longitude": -0.1132531,
+      "post_code": "N1 9QG",
+      "city": "Greater London",
+      "route": "Donegal Street",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2BZ",
+    "addr_1": "Donegal Street",
+    "addr_2": "Islington",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "N1 9QG  ",
+    "url": "http://www.egaschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Donegal St, London N1 9PX, UK",
+    "latitude": 51.5325162,
+    "longitude": -0.1127635,
+    "post_code": "N1 9PX",
+    "city": "Greater London",
+    "route": "Donegal Street",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Trainees pay fees directly to the university. \\r\nBursaries are available for some trainees, please follow the below link for further information:\\r\n\\r\n[Gov.uk](https://www.gov.uk/education/initial-teacher-training-funding)",
+    "AboutCourse": "This is a Schools Direct tuition fee training programme. \\r\nTrainees gain QTS (Qualified Teacher Status) and PGCE (Postgraduate Certificate in Education). Candidates study at University College London Institute of Education one day per week and have training placements in two schools. Candidates also have weekly proessional studies sessions within the alliance. \\r\n\\r\n[Elizabeth Garrett Anderson School](http://www.egaschool.co.uk/244/the-angel-islington-teaching-school-alliance)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants should have an honours degree 2:2 or better, with 50% of the content in the subject to be taught. \\r\nCandidates should also have GCSE English and Maths at C/4+. \\r\n\\r\nExperience in a primary school (5 days) is an advantage. We can help successful candidates arrange this between accepting a place and the start of the course. ",
+    "InterviewProcess": "Applicants will be interviewed at one of our partner schools. Successful applicants will then be recommended to University College London Institute of Education for a second interview.\\r\nAt the school Interview candidates will be asked to deliver a lesson/part of a lesson to a class on a topic provided in advance and will be observed as they teach. Candidates may be asked to observe part of a lesson and discuss what they observed at interview.\\r\nCandidates will also get a school tour and be given the opportunity to ask questions of students and school staff.",
+    "OtherRequirements": "All candidates will need to pass literacy and numeracy skills tests and trainees are subject to enhanced DBS checks. ",
+    "PersonalQualities": "We are looking for candidates who are passionate about improving the life chances of young people, who want to be part of building the future and who see education as a process that goes beyond subject  strengthening  skills. \\r\n\\r\nYou need to be resilient; able to work as part of a team and find creative solutions. Teaching is hard work but rewarding and you will never be bored.\\r\nIt is an advantage if you have had experience working with young people. ",
+    "HowSchoolPlacementsWork": "Trainees will spend time in their first placement school in early September to gain experience of how the school functions. They will then spend two to three weeks at UCL IOE before returning to their placement one school in October, where they will observe lessons, teach parts of lessons and gradually build up to teaching classes. Trainees are observed regularly and get feedback on how to develop. You will have a school based subject mentor.\\r\nPlacement two starts around February and here you teach more. \\r\nDuring both placements you will have one afternoon of professional study sessions which run across the alliance, for all subjects, and at times, will bring primary and secondary trainees together. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Elizabeth Garrett Anderson School is an outstanding, inner city 11-16 girls community school. We have been judged as ‘outstanding’ by Ofsted since 2005 and our progress 8 scores are significantly positive. \\r\n \\r\nWe are committed to supporting the well-being of staff and students. \\r\nEverything we do is based on our core belief that every student can achieve in whatever field they chose, regardless of their starting point or background. \\r\n\\r\nTrain with us and make a difference to the lives of young people, many of whom are disadvantaged. You will be part of a peer group of trainees across our alliance that receives high quality training and support. Our trainees undertake professional studies across the alliance, and at times, across phases, to maximise learning. We hope our trainees will go on to work locally and take advantage of our career long training opportunities. We are located close to good transport hubs (Angel Islington and Kings Cross). Islington is a thriving borough with many opportunities for social activities. We are close to central London and all that offers.\\r\n\\r\n[Angel Teaching School Alliance](http://www.egaschool.co.uk/244/the-angel-islington-teaching-school-alliance)\\r\n",
+    "TrainWithDisability": "Candidates with disabilities and other needs are supported by DDA compliance and  personal evacuation plans, with adaptations made to accommodate needs. Some sites are fully accessible while others (in older buildings) are not. We will interview candidates at accessible sites and ensure placements take place at suitable sites and with appropriate adjustments.\\r\n \\r\nAll placements offer mentor support. Trainees who are employed in Islington schools (apprentices) can access Islington staff support. Tuition fee trainees are provided with additional pastoral support through their university.\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "University College London Institute of Education has been rated the number one centre in the world for education research and training. UCL IOE can be reached within 30 minutes from our main centre. \\r\n \\r\n[University College London Institute of Education](https://www.ucl.ac.uk/ioe)\\r\n ",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "London Metropolitan University is a short bus ride from our main centre and can be reached within 30 minutes from all our schools. They have a proven track record of training teachers who go on to gain employment. They share our values of providing quality education, lifelong learning and opportunities for local people. Together we are training the outstanding teachers of the future who want to make a difference to the lives of our young learners.\\r\n\\r\n[London Metropolitan University](https://www.londonmet.ac.uk/)\\r\n",
+        "UcasInstitutionCode": "L68"
+      }
+    ]
+  },
+  "has_inst": true
+}

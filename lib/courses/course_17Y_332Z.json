@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Warwick",
+  "provider": "St. Peter’s Solihull Teaching School Alliance",
+  "subjects": [
+    "Art / art & design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "slug": "17Y/332Z",
+  "providerCode": "17Y",
+  "programmeCode": "332Z",
+  "schools": [
+    {
+      "name": "St. Peter's Catholic School",
+      "address": "Whitefields Road, Solihull, West Midlands, B91 3NZ",
+      "code": "P"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Whitefields Road, Solihull, West Midlands, B91 3NZ",
+      "geocode": true,
+      "formatted_address": "Whitefields Rd, Solihull B91 3NZ, UK",
+      "latitude": 52.4051031,
+      "longitude": -1.7885585,
+      "post_code": "B91 3NZ",
+      "city": "West Midlands",
+      "route": "Whitefields Road",
+      "postal_town": "Solihull"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "17Y",
+    "addr_1": "St Peters Catholic School",
+    "addr_2": "Whitefields Rd",
+    "addr_3": null,
+    "addr_4": "Solihull",
+    "postcode": "B91 3NZ ",
+    "url": "http://www.st-peters.solihull.sch.uk/index.htm",
+    "geocode": true,
+    "formatted_address": "Whitefields Rd, Solihull B91 3NZ, UK",
+    "latitude": 52.40586709999999,
+    "longitude": -1.7885268,
+    "post_code": "B91 3NZ",
+    "city": "West Midlands",
+    "route": "Whitefields Road",
+    "postal_town": "Solihull"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "On our School Direct programme, you gain \"hands on\" experience of teaching in a school with the added benefit of academic post-graduate study through the University. Rest assured that we don't throw you in at the deep end! You start by observing excellent practice in a range of subjects to help you develop an understanding of what outstanding teaching and learning looks like. Then gradually you start teaching - perhaps a starter or part of a lesson at first - until you feel confident and competent enough to take whole lessons by yourself. By the end of the training year, you'll be teaching just under what an NQT teaches. \\r\n\\r\nBeing on a school-led programme means you get the benefit of being a member of staff from the outset; you will support a form group, to help develop your pastoral experience, and will engage in all aspects of school life - curriculum, pastoral and social. You will receive excellent subject knowledge development from your mentor and other teachers in school. \\r\n\\r\nYou spend the equivalent of one day a week at University, developing pedagogical understanding, and the rest of the week in school. As part of the programme, you will complete a second placement in a different school. In school, you will receive a weekly mentor meeting as well as weekly training to enhance your professional development.\\r\n\\r\nWhilst in school, you are regularly observed by members of staff and University tutors to help you develop and progress. Assessment forms are completed half-termly and you will have  academic assignment deadlines for the University.\\r\n\\r\nWe have trained teachers for many years and have an excellent track record. We are different to many other providers in that we are a relatively small Alliance; this means we know all of our trainees well and can offer bespoke and personalised programmes to meet their needs. We are passionate about what we do and love working with the next generation of teachers!",
+    "InterviewProcess": "If you are invited to interview, this will take place in school. The interview will comprise of three main parts:\\r\n* Teaching a micro lesson to a class of pupils\\r\n* Completing diagnostic tests\\r\n* A panel interview",
+    "HowSchoolPlacementsWork": "We have a range of schools within our Alliance including primary schools, 11-16 secondary schools and 11-18 secondary schools. When you apply for a place within our Alliance, you specify which school (sometimes known as a \"campus\") you would like to work at. We try to place you in your chosen school wherever possible. If you are selected for interview, your interview will be at that school. In the event that a training place has already been filled at your chosen school, you may be offered the opportunity to train at a different school (if applicable).\\r\n\\r\nTrainees will be based in their main school for the vast majority of the year. Primary trainees complete one term in a second school; secondary trainees complete one half-term in second school. All trainees will also have the opportunity to attend short placements in different phase schools."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "St. Peter's Solihull Teaching School Alliance  is an Alliance of primary and secondary schools based in Solihull and Birmingham. We offer non-salaried places at primary and salaried and non-salaried places in a range of secondary subjects. As a relatively small Alliance, we pride ourselves on the personal and bespoke training that you receive with us; we tailor your training year around your experience, needs and progress. It isn't a \"one-size-fits-all\" approach for us. We work closely with two local Universities, Newman University and The University of Warwick, to offer our School Direct programmes in our schools. All of our courses allow trainees to gain QTS, a PGCE and Masters credits. If you train with us, you will receive an excellent programme of support and professional development to enable you to become an outstanding classroom practitioner.  Our friendly and approachable staff are highly experienced in training and developing teachers and we are incredibly proud to have a 100% recruitment rate. We are passionate about training the next generation of teachers, and our future stars of the profession, and we help our trainees every step of the way. ",
+    "TrainWithDisability": "Candidates with disabilities or other needs should not be afraid of following their dream of becoming a teacher. We welcome applications from all candidates, and no applicant will be disadvantaged in the admissions process due to a disability, health condition or learning difficulty.\\r\n\\r\nIf you have a disability, including a specific learning difficulty, we strongly encourage you to tell us on your application form, as this will enable our administrative team to contact you to begin to discuss any support requirements you may have.\\r\n\\r\nIf you have disclosed a disability in your application, the selection processes we follow is identical to those for all other applicants.\\r\n\\r\n \\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work closely with The University of Warwick on our School Direct programme. As well as having a mentor in your school, you would also have a University tutor who would support you throughout the course. You would spend one day a week at the University and four days a week in school. At the end of the year, you would gain QTS, a PGCE and Masters credits.",
+        "UcasInstitutionCode": "W20"
+      },
+      {
+        "Description": "We have worked with Newman University on our School Direct programme for many years and have an excellent relationship with them. As well as having a mentor in your school, you would also have a University tutor who would support you throughout the course. You would spend some days at the University, developing knowledge pedagogy. As a relatively small University, Newman are people-focused; the staff know the trainees well and really look after them.",
+        "UcasInstitutionCode": "N36"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,86 @@
+{
+  "locationType": "School",
+  "accrediting": "NELTA (North East London Teaching Alliance",
+  "provider": "Beal High School",
+  "subjects": [
+    "French",
+    "German",
+    "Languages",
+    "Languages (european)",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages (French, Spanish, German)",
+  "slug": "1NA/2XFM",
+  "providerCode": "1NA",
+  "programmeCode": "2XFM",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Beal High School, Woodford Bridge Road, Ilford, Essex, IG4 5LP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Beal High School, Woodford Bridge Road, Ilford, Essex, IG4 5LP",
+      "geocode": true,
+      "formatted_address": "Essex, UK",
+      "latitude": 51.7343313,
+      "longitude": 0.4690888,
+      "post_code": null,
+      "city": "Essex",
+      "route": null
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1NA",
+    "addr_1": "Beal High School",
+    "addr_2": "Woodford Bridge Road",
+    "addr_3": null,
+    "addr_4": "Ilford",
+    "postcode": "IG4 5LP ",
+    "url": "http://nelta.co.uk",
+    "geocode": true,
+    "formatted_address": "Woodford Bridge Road, London IG4 5LP, UK",
+    "latitude": 51.586046,
+    "longitude": 0.051729,
+    "post_code": "IG4 5LP",
+    "city": "Greater London",
+    "route": "Woodford Bridge Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 7500.0,
+    "AboutCourse": "NELTA is committed to delivering a comprehensive and bespoke training experience and supporting the development of the next generation of teachers and school leaders.\\r\n\\r\nThis is an innovative approach to teacher training delivered and supported by outstanding teachers and school leaders with current and relevant experience. This programme is highly supportive of the realities of the modern classroom. \\r\n\\r\nYou will spend the majority of your training in local schools. There are two school placements each lasting approximately 15 weeks. You will gradually be introduced to teaching; spending some time observing lessons, working with small groups and individuals in the classroom, leading activities, team teaching and then building up to about 10 hours of whole class teaching per week. There is a comprehensive programme of mentoring, training and support delivered by the school and NELTA. This is an 11-16 training programme although there will be pre and post phase experience as part of the training. There will be a three day primary school placement.\\r\n\\r\nAs well as the school-based support from your subject mentor there is also a team of dedicated tutors who will deliver training and fully support your school placement experience. You will have small group subject tutorials every Thursday afternoon followed by a facilitated teaching and learning workshop (with all trainees) from 4.15 to 5.15. There is also a programme of five ‘extended study days’ during the year which will focus on teacher training priorities such as behaviour for learning, SEND and EAL. All training sessions are held centrally at Beal High School in our bespoke NELTA training facility.\\r\n\\r\nThis course aims to prepare you to: \\r\n\\r\nBecome outstanding secondary school teachers \\r\nBecome knowledgeable subject specialists who can support the leadership of curriculum development \\r\nBecome good classroom managers \\r\nBecome successful form tutors and collaborative colleagues. \\r\n\\r\nYou will be assessed through a combination of professional practice reports (written by your subject mentor), tutor visits to see you teach, two written assignments and a portfolio of evidence to demonstrate how you are meeting the Teachers’ Standards.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Usually a minimum 2:2 degree (usually including at least 50% of the content in the subject you wish to teach) or a qualification recognised as equivalent. Candidates with other classifications may be considered if it is judged that your experience in other areas compensates.\\r\n\\r\nMinimum GCSE grade C (4) in Mathematics and English Language or equivalent. Where you do not have these qualifications, you will have to sit a GCSE equivalency test which NELTA can administer and mark.\\r\n\\r\nIf English is not your first language you will have to demonstrate a satisfactory level of English language proficiency. \\r\n",
+    "InterviewProcess": "There is one interview which will be held at NELTA in Beal High School. You will be interviewed by two members of the NELTA tutor team.\\r\n\\r\nThe interview process may include some or all of the following activities: \\r\nSubject knowledge activity (set before interview day) \\r\nDelivery of a half hour teaching activity to students \\r\nWritten task\\r\nInterview by panel \\r\nSubject Knowledge activity\\r\n\\r\nWe do not give automatic feedback to all candidates rejected at interview. This is due to the large numbers of interviews that we carry out and the additional workload involved in feeding back to candidates. \\r\n",
+    "OtherRequirements": "We have a duty to protect children and vulnerable adults, and to ensure that they are not put at risk by trainee teachers whose previous conduct shows that they are unsuitable for access to these vulnerable groups. \\r\n\\r\nBackground checks will include an Enhanced Disclosure certificate from the DBS as a requirement of a place on the course.\\r\n\\r\nTeaching is physically and mentally demanding, and there are ‘fitness’ requirements set by the Department for Education for applicants to initial teacher training programmes. This does not however preclude disabled people from pursuing a programme of study or a career in teaching.\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject and have a desire to share that with young people of all abilities in the secondary age range. You need to want to make a real difference to young people’s lives. You should be resilient, have the potential to be able to communicate with an audience and be able to develop positive professional relationships with young people and colleagues. We want you to be able to continually reflect on their practice and respond positively to feedback. The best teachers are learners themselves.",
+    "HowSchoolPlacementsWork": "Most placements will be within our alliance of 14 secondary schools which includes community schools (maintained and academies), faith schools, boys and girls grammar schools and an independent school. We can also offer opportunities to complete some of your training in special schools or a 14-19 alternative provision to widen your experience of different learning environments.\\r\n\\r\nAll of our schools are geographically close, with most being within the London Borough of Redbridge which means that trainees can easily engage with more than one school in the partnership. We do look at home addresses and journey times when considering placements. \\r\n\\r\nThe age range of training is 11-16 for most course except for Business Studies and Social Sciences which are 14-18 although there is a requirement for pre and post phase experience as part of the training programme.\\r\n\\r\nThere are two placements each of which is approximately 15 weeks. The majority of the time will be spent in school with NELTA based training from 2.15 pm every Thursday. There are also five extended study days throughout the year.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "North East London Teaching Alliance (NELTA) is a large teaching school alliance of 20 schools. Beal High School is the lead school.\\r\n\\r\nWe are passionate about developing the next generation of teachers and school leaders. Teachers and leaders who will ensure an outstanding educational future for all pupils irrespective of background or ability. \\r\n\\r\nWorking with our alliance you can expect:\\r\n* Guidance from an experienced school based mentor and provider tutor\\r\n* Very well established support programmes\\r\n* Access to a wide network of schools including community secondary, primary, independent, grammar and special education\\r\n* Professional development opportunities beyond your training year focused on outstanding teaching and leadership\\r\n\\r\nNELTA, which spans Barking and Dagenham, Waltham Forest, Redbridge, Newham and beyond, we offer opportunities to work in a range of different socio-economic areas. Working in a partnership which includes independent schools, boys' and girls' grammar schools, faith schools, comprehensive schools and special schools means you will have access to a broad range of training experiences which will give you the opportunity to you develop your practice in a variety of different settings.\\r\n\\r\nWe offer teacher training places for both the tuition fee and salaried routes to Qualified Teacher Status. \\r\nFor tuition fee routes routes we work with King’s College London, UCL and NELTA as our accredited providers.\\r\nFor our salaried route the accredited provider is NELTA (the operating name of teacher training provided by the Beacon Multi-Academy Trust)\\r\n",
+    "TrainWithDisability": "We are committed to supporting equal opportunities and disability access.\\r\n\\r\nWe have accommodated trainees in the past with a range of disabilities including mental health conditions, dyslexia and physical impairments.\\r\n\\r\nDisability access in schools varies according to the specific training location. Please check with the relevant accredited provider or email us to discuss your needs [NELTA](admin@nelta.co.uk).\\r\n\\r\n\\r\nAt UCL School Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team. You can find more information here:-\\r\n[UCL Student Support](https://www.ucl.ac.uk/students/disability-support)\\r\n\\r\n\\r\nKing's offer information, advice and guidance to current and prospective disabled students about support that may help them to engage with their studies. When we refer to the term “disability” we also include long-term medical or mental health conditions and Specific Learning Difficulties (SpLDs).  \\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education is the world’s leading centre for research and teaching in education and related social sciences. You can view UCL’s online teacher training prospectus is here:-\\r\n[Online teacher training prospectus](https://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes)\\r\n\\r\n\\r\n \\r\n",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "We are committed to working in partnership with trainees and partner schools to provide highly trained teachers for the local community and beyond.\\r\n\\r\nWeekly contact with other trainees and our programme tutors means that you will always feel fully supported.\\r\n\\r\nThe Ofsted inspection of our initial teacher training provision on 2017 said:\\r\n“Leaders’ ambitious vision for excellence and their aspirations for trainees are of the highest order”\\r\n“The quality of training is outstanding”\\r\n“Trainees are overwhelmingly positive about the quality of mentoring”",
+        "UcasInstitutionCode": "251"
+      },
+      {
+        "Description": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. ",
+        "UcasInstitutionCode": "K60"
+      }
+    ]
+  },
+  "has_inst": true
+}

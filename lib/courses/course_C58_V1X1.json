@@ -1,0 +1,68 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Chichester",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "slug": "C58/V1X1",
+  "providerCode": "C58",
+  "programmeCode": "V1X1",
+  "schools": [
+    {
+      "name": "Bognor Regis Campus",
+      "address": "Upper Bognor Road, Bognor Regis, West Sussex, PO21 1HR",
+      "code": "B"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Upper Bognor Road, Bognor Regis, West Sussex, PO21 1HR",
+      "geocode": true,
+      "formatted_address": "Upper Bognor Rd, Bognor Regis PO21 1HR, UK",
+      "latitude": 50.7881893,
+      "longitude": -0.6658381999999999,
+      "post_code": "PO21 1HR",
+      "city": "West Sussex",
+      "route": "Upper Bognor Road",
+      "postal_town": "Bognor Regis"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "C58",
+    "addr_1": "Bishop Otter Campus",
+    "addr_2": "College Lane",
+    "addr_3": "Chichester",
+    "addr_4": "West Sussex",
+    "postcode": "PO19 6PE",
+    "url": "http://www.chi.ac.uk",
+    "geocode": true,
+    "formatted_address": "College Lane, Chichester PO19 6PE, United Kingdom",
+    "latitude": 50.84493000000001,
+    "longitude": -0.775787,
+    "post_code": "PO19 6PE",
+    "city": null,
+    "route": null,
+    "postal_town": "Chichester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary English course leads to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYour tutors are active researchers in matters relating to history education. They are regarded as experts in the field, both nationally and internationally, and have been consulted by a number of national and international organisations, such as the Historical Association, QCA and QCDA, the TDA, Ofqual, the Department for Education and Council of Europe on matters relating to the history curriculum.\\r\n\\r\nYour assignments are designed to help you plan your teaching effectively and imaginatively and to evaluate your skills, particularly in terms of the quality of learning achieved by pupils. Tutors weave together personal experience, practice and research into challenging but highly practical and relevant sessions.\\r\n\\r\nYou will learn in first-class facilities through a series of practical seminars and workshops, where interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n*gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are recognised as one of the leading institutions in the country for teacher training, we have a long and distinguished record of training teachers dating back to 1839.\\r\n\\r\n  - We offer high-quality training and experience that will prepare you to become a confident and effective teacher\\r\n  -  Much of your training will be practical, school-based experiences\\r\n   - You’re supported throughout your school-based learning by experienced mentor teachers and university tutors\\r\n   - You’ll gain a respected professional qualification in a career of major importance\\r\n  -  You’ll learn how to use research to improve your teaching skills\\r\n  -  Our courses have varied content, including: lectures, seminars, presentations, group tasks, mini-research projects and assessments\\r\n  -  You’ll develop a range of communication, interpersonal and problem-solving skills that will be invaluable in a teaching career and beyond\\r\n -   Political and public policy announcements are built into the curriculum, so you will be up to date on contemporary teaching issues.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

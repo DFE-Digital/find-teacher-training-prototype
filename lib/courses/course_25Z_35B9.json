@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Brent Teaching School Alliance",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "slug": "25Z/35B9",
+  "providerCode": "25Z",
+  "programmeCode": "35B9",
+  "schools": [
+    {
+      "name": "Brent Teaching School Alliance",
+      "address": "Claremont High School, Claremont Avenue, Kenton, HA3 0UH",
+      "code": "C"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Claremont High School, Claremont Avenue, Kenton, HA3 0UH",
+      "geocode": true,
+      "formatted_address": "1601 N Indian Hill Blvd, Claremont, CA 91711, USA",
+      "latitude": 34.1126312,
+      "longitude": -117.7219428,
+      "post_code": "91711",
+      "city": "Claremont",
+      "route": "North Indian Hill Boulevard"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "25Z",
+    "addr_1": "Spencer Road",
+    "addr_2": null,
+    "addr_3": "Wembley",
+    "addr_4": "Middlesex",
+    "postcode": "HA0 3SF ",
+    "url": "http://www.btsa.london",
+    "geocode": true,
+    "formatted_address": "Spencer Rd, Wembley HA0 3SF, UK",
+    "latitude": 51.5693045,
+    "longitude": -0.3116673,
+    "post_code": "HA0 3SF",
+    "city": "Greater London",
+    "route": "Spencer Road",
+    "postal_town": "Wembley"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "You will attend university training days at UCL Institute of Education alongside students recruited via other routes. On the Tuition Fee routes you will carry out academic assignments leading to the award of masters level credits.\\r\n\\r\nThe School Direct Physics PGCE helps students to develop the professional skills and knowledge they need to teach all aspects of science to pupils up to age 16, and prepares physics student teachers to teach the 11-16 age range. We are committed to creative and interactive approaches to teaching science to promote student engagement and learning.\\r\n\\r\nStudents will acquire a critical understanding of current debates and issues relating to science education, and will be guided and supported in developing their subject knowledge. We expect students to engage with reading and research into science education and to regularly reflect upon their own progress, towards meeting the teaching standards across the 11–16 age range.\\r\n\\r\nThe Secondary PGCE consists of three core modules: two Master’s-level (level 7) modules, which are assessed through written assignments, and the Professional Practice module, which is assessed by the observation of practical teaching in placement schools.\\r\n\\r\nCompletion of the Professional Practice module and the two level 7 (Master’s level) modules (60 credits) will result in the award of a Postgraduate Certificate of Education (PGCE). Students who successfully complete this programme will be recommended for Qualified Teacher Status (QTS).\\r\n\\r\nThe Physics Secondary PGCE is delivered via keynote lectures, seminars, workshops, tutorials and directed study days at the IOE as well as time spent in placement schools or colleges. Assessment is by practical teaching observation, assignments and a portfolio (which links with continuing professional development in the induction year).\\r\n\\r\nFor further information\\r\nhttp://www.ucl.ac.uk/ioe/courses/teacher-training/physics-pgce",
+    "CourseLength": "OneYear",
+    "Qualifications": "UCL requires a minimum of a 2:2 honours degree and GCSEs in English Language and Maths at grade C/5 or above. UCL does not accept ‘additional’ or ‘applied’ GCSE subjects. For equivalency testing UCL will only accept tests from www.equivalencytesting.com\\r\n\\r\nA minimum of a lower second-class UK Bachelor’s degree or an overseas qualification of an equivalent standard in Physics or a Physics-related subject.\\r\n\\r\nApplicants must achieve a pass in the Literacy and Numeracy Professional Skills Tests before training begins.\\r\n",
+    "FeeInternational": 17110.0,
+    "FinancialSupport": "Funding information is available on the following web page:\\r\nhttps://getintoteaching.education.gov.uk/funding-and-salary\\r\n",
+    "InterviewProcess": "The BTSA will coordinate the selection process. All applications will be checked to see if the applicant meets the entry criteria. Those who are shortlisted will be invited for an interview, which will involve a range of  activities to assess suitability for teaching. \\r\n\\r\nUCL carries out second interviews on the Tuition Fee Secondary route.\\r\n\\r\n\\r\n",
+    "OtherRequirements": "All applicants will be expected to have gained some experience in a classroom, ideally prior to interview. \\r\n\\r\nTeacher Training providers have a responsibility to ensure that trainees have the health and physical capacity to teach and will not put children and young people at risk of harm. All applicants will be required to successfully complete Occupational Health and Disclosure Barring Service (DBS) Enhanced Disclosure checks.\\r\n\\r\nIf you have lived, worked or travelled in another country for three months or longer in the last ten years, you will need to obtain a Certificate of Good Conduct from the relevant country/countries.\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who demonstrate their passion and enthusiasm for teaching and have a desire to share this with young people. \\r\n\\r\nYou should be highly motivated, able to adapt and have the resilience to work well under pressure. Ideal candidates will be organised and demonstrate good inter-personal skills.\\r\n\\r\nTrainees should have the ability to reflect critically on their own practice and progress.\\r\n",
+    "HowSchoolPlacementsWork": "Student teachers undertake at least two placements (totaling 120 days). \\r\n\\r\nAs a BTSA School Direct trainee you will spend a total of 120 days on school placements applying the educational theories learned and developing your teaching practice.\\r\n\\r\nThe main placement will be hosted by the School Direct Secondary School the applicant applied to. The second, will be within a contrasting Secondary school, organised by the BTSA.  \\r\n\\r\nDuring your time in school your teaching practice will be supported by an experience Subject Mentor and Professional Coordinator Mentor.  The Professional Practice module is assessed through these placements, associated tasks and a portfolio. \\r\n\\r\nYour tutor from the UCL Institute of Education will visit you in school on a regular basis and liaise with your school mentor regarding your training and development. Your Institute tutor will carry out your final assessment in school against the national Teachers’ Standards.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "If you want an interesting career where you can really make a difference to the lives of young people, train to be a teacher with the Brent Teaching School Alliance.\\r\n\\r\nThe Brent Teaching School Alliance (BTSA) is a strong partnership of primary and secondary schools working with the UCL Institute of Education to provide high quality teacher training among our mainly 'outstanding' establishments. Our vision is to train and develop the next generation of outstanding teachers. \\r\n\\r\nWe have been successful providers of initial teacher training for many years. The consortium of schools involved have a high level of expertise and strong commitment to delivering excellent quality training. We enable our student teachers to realise their full potential. A high percentage of our students gain full employment within their placement school or within the Alliance, once qualified. \\r\n\\r\nYou will be trained in a highly supportive and aspirational environment and will develop the rigour, professional knowledge, understanding and skills necessary for the delivery of creative, purposeful and challenging teaching and learning. Our teachers are excellent practitioners with exemplary behaviour management strategies and are eager to share their skills, knowledge and practice with the next generation of teachers. \\r\n\\r\nThe Brent Teaching School Alliance can provide a broad range of experiences and developmental opportunities within a multi-culturally diverse population, which enriches the experience of teaching within this unique community.\\r\n",
+    "TrainWithDisability": "The BTSA is fully inclusive. \\r\nApplicants who would benefit from disabled access should let us know on their application form so that they can be considered for placements at the appropriate schools. \\r\n\\r\nTrainees with a disability or other needs will be offered additional  support with reasonable adjustments made to accommodate their individual circumstances.  \\r\n\\r\nSchool Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team. You can find more information here:- \\r\nhttps://www.ucl.ac.uk/students/disability-support\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as “outstanding” in very criterion across Primary and Secondary Education.”\\r\n\\r\nAll UCL School Direct students have full access to UCL student support services and facilities\\r\n\\r\n\\r\nhttps://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes\\r\n",
+        "UcasInstitutionCode": "U80"
+      }
+    ]
+  },
+  "has_inst": true
+}

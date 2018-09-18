@@ -1,0 +1,70 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "South Coast  SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary (General)",
+  "slug": "S70/X104",
+  "providerCode": "S70",
+  "programmeCode": "X104",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Bransgore Primary, Ringwood Road, Bransgore, Dorset, BH23 JH",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bransgore Primary, Ringwood Road, Bransgore, Dorset, BH23 JH",
+      "geocode": true,
+      "formatted_address": "Ringwood Rd, Walkford, Bransgore, Christchurch BH23 5RF, UK",
+      "latitude": 50.77257179999999,
+      "longitude": -1.7303357,
+      "post_code": "BH23 5RF",
+      "city": "Walkford",
+      "route": "Ringwood Road",
+      "postal_town": "Christchurch"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S70",
+    "addr_1": "SCITT Learning Centre",
+    "addr_2": "Bransgore Primary,  Ringwood Road",
+    "addr_3": "Bransgore, Christchurch",
+    "addr_4": "Dorset",
+    "postcode": "BH23 8JH",
+    "url": "http://www.scscitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Ringwood Rd, Bransgore, Christchurch BH23 8JH, UK",
+    "latitude": 50.7773289,
+    "longitude": -1.7303104,
+    "post_code": "BH23 8JH",
+    "city": "Bransgore",
+    "route": "Ringwood Road",
+    "postal_town": "Christchurch"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The General Primary Course is designed for candidates who want to specialise in teaching children in the 5 to 11 age ranges (Key Stages 1 and 2). It is extremely similar to the Lower Primary Course in terms of general content and time spent in school, but the age ranges taught on placement are different.\\r\n\\r\nThe training comprises taught modules related to Professional Theory and Practice, The Curriculum and Personalising Learning. People who undertake this course will learn about a wide range of facets of primary practice including planning, assessment and pupil progress, behaviour management, working with other professionals and parents and how to effectively teach all primary curriculum subjects.  \\r\n\\r\nOver the course of the whole year there are four assignments to write, each designed to embed understanding of core elements and to support trainees in linking educational research to the most current practice.  Assignment submission dates are always timed during periods when trainees are not undertaking school placements so that trainees have ample time to focus on different elements of their training and tutors are on hand to provide feedback and support.\\r\n\\r\nTrainees undertake two nine week school placements in two different partnership schools, one in a key stage 1 class and one in a key stage 2 class. They will receive the daily support of their school-based mentor whilst on placement, who is the teacher of the class in which they are based. Practical assessment is ongoing with weekly lesson observations leading to an end of placement report. Trainees will also, collect a portfolio of evidence demonstrating how they meet the National 'Teachers' Standards'. \\r\n\\r\nThe majority of the central training is based at the SCITT site - a purpose built 'learning centre' based in the grounds of Bransgore Primary school, near Christchurch. Occasionally training is also based in schools or premises in the Hampshire and Dorset areas. Similarly, our placement schools are based predominantly across Dorset and Hampshire.\\r\n\\r\nThe course has an excellent reputation locally and about a third to a half of each cohort of trainees go on to gain employment in the local area, often in a school in which they were placed during training. South Coast SCITT is noted in the 2017 'Good Teacher Training Guide' as being one of just 9 Primary Providers nationally form which 100% of trainees are successfully in entering the teaching profession.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "All entrants require a grade C or above or 4 or above under the revised system in GCSE examinations in English, Mathematics, and Science.\\r\n\\r\n\\r\nAll entrant must also hold a first degree of a United Kingdom higher education institution or equivalent qualification. A first degree comprises 300 HE credit points of which 60 must be at level 6 of the QCF. Applicants with a foundation degree will need to supplement this qualification with at least 60 credits at level 6 (HE level 3) in order to attain an equivalent single qualification. ",
+    "FeeInternational": 9000.0,
+    "OtherRequirements": "All entrants must successfully pass the professional skills tests in English and Mathematics before the start of the course and will be subject to a criminal records check.",
+    "HowSchoolPlacementsWork": "South Coast SCITT works with a partnership of 30 to 35 schools based across Hampshire and Dorset. Placements are offered by schools which are then selected and matched to each trainee by the SCITT Director. A good, bespoke match is sought between school and trainee, based on proximity to the trainee's home, what kinds of support or challenge they may require from their mentor and their personal characteristics. The two placements undertaken are chosen to be as contrasting as possible and to offer a range of experiences to each trainee. \\r\n\\r\nIn addition to the seven week initial training period during which all trainees are based in Bransgore Primary School, trainees undertake two nine week placements in two different partnership schools. They may or may not be at a school where other trainees are on placement for this period. \\r\n\\r\nTrainees undertaking the General Primary Training Specialism will have one placement in a Key Stage 1 class and one placement in a key stage 2 class. Those undertaking the Lower Primary Specialism will have one placement in a Foundation Stage class and one placement in a key stage 1 class. Despite this, on completion of the course all trainees are free to apply for teaching posts in any year group. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "South Coast SCITT was rated Outstanding in all areas by Ofsted in 2017. The overall quality of the training was rated as Outstanding by 100% of course participants for the last five years. At the end of our one year course, trainees achieve Qualified Teacher Status (QTS) and a Post Graduate Certificate in Education (PGCE), validated by the University of Winchester. \\r\n\\r\nTrainees can expect:\\r\n•\\tA well led and managed course with central training led by experts in primary practice\\r\n•\\tSeminars rooted in reliable research and including practical, current hands-on approaches \\r\n•\\tIntegration of theory and practice in order to embed understanding efficiently and effectively \\r\n•\\tA friendly and professional working environment in which mutual support, reflective practice and high expectations are the cultural norm\\r\n•\\tA highly personalised approach with excellent pastoral support \\r\n•\\tIndividualised support in how to gain a teaching post and excellent employment rates – usually 100% each year\\r\n\\r\nOur training model includes two nine week teaching placements and a short placement in a special school setting. In addition, trainees undertake a very unique seven week placement in the lead school, Bransgore Primary School, at the beginning of the course. This is an exciting opportunity to learn from teachers and observe classes in all age ranges from year R to year 6. Trainees take part in and lead a range of curriculum activities in order to practise their emerging teaching skills in a safe, non-assessed environment before undertaking formal school placements.\\r\n",
+    "TrainWithDisability": "Applications are welcomed from all candidates irrespective of race, nationality, ethnic origin, gender, sexual orientation, disability or religious beliefs. \\r\n\\r\nWe have worked with many trainees who have dyslexia, dyspraxia, dyscalculia or other impairments or conditions and treat each person as an individual with their own strengths and areas for development. \\r\n\\r\nApplicants are encouraged to disclose any specific needs they may have at the application stage so that specific arrangements can be made, for example additional time to undertake assessments, additional study skills support or physical arrangements.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

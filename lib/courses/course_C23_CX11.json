@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Carmel Teacher Training Partnership (CTTP)",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "C23/CX11",
+  "providerCode": "C23",
+  "programmeCode": "CX11",
+  "schools": [
+    {
+      "name": "Main site",
+      "address": "The Headlands, Darlington, DL3 8RW",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The Headlands, Darlington, DL3 8RW",
+      "geocode": true,
+      "formatted_address": "The Headlands, Darlington DL3 8RP, UK",
+      "latitude": 54.5236052,
+      "longitude": -1.5836444,
+      "post_code": "DL3 8RP",
+      "city": "Darlington",
+      "route": "The Headlands",
+      "postal_town": "Darlington"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "C23",
+    "addr_1": "The Headlands",
+    "addr_2": "Darlington",
+    "addr_3": null,
+    "addr_4": "Co. Durham",
+    "postcode": "DL3 8RW ",
+    "url": "http://www.carmel.org.uk",
+    "geocode": true,
+    "formatted_address": "The Headlands, Darlington DL3 8RP, UK",
+    "latitude": 54.52360299999999,
+    "longitude": -1.5825947,
+    "post_code": "DL3 8RP",
+    "city": "Darlington",
+    "route": "The Headlands",
+    "postal_town": "Darlington"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Carmel Teacher Training Partnership (CTTP) is an outstanding Initial Teacher Training Provider based at Carmel College Darlington, an outstanding 11-18 college. Our training programmes are Primary 5-11 years and Secondary 11-16. We pride ourselves on the bespoke level of training for all our trainees, focused on our high quality training provision from very experienced practitioners. The Partnership is made up of Catholic and non-Catholic, primary and secondary schools, widely spread across the North East of England. The CTTP School Centred Initial Teacher Training course aims to promote excellence in all aspects of education.  This is achieved through high quality central and school-based training activities, regular observations with developmental feedback, to secure progress throughout the training programme.  Central training takes place in clusters around our Lead Schools. Our overarching aim is to provide the most skilled and competent practitioners for our schools, improving the outcomes and life chances for young people. \\r\n\\r\nA very high percentage of trainees on our programme either gain employment in their placement schools, or within our Partnership of schools. Carmel Teacher Training Partnership is a well-established Provider, offering a friendly, nurturing and supportive environment for all trainees. Successful completion leads to Qualified Teacher Status (QTS), a Post Graduate Certificate in Education (PGCE) and 60 credits towards Masters accreditation, which is completed via the flying faculty of St.  Mary’s University Twickenham but delivered at Carmel College and one of our Northern Lead schools, St Cuthbert’s High, Newcastle.  \\r\n",
+    "TrainWithDisability": "All Schools within the Carmel Teacher Training Partnership are fully accessible. Provision for additional support where needed is provided on site. Please contact Claire Hutton on chutton@carmel.org.uk with any specific disability access requirements.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

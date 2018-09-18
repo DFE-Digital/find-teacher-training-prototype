@@ -1,0 +1,73 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The Manchester Metropolitan University",
+  "subjects": [
+    "French",
+    "Languages",
+    "Languages (european)",
+    "Secondary"
+  ],
+  "name": "Modern Languages (French)",
+  "slug": "M40/R1X1",
+  "providerCode": "M40",
+  "programmeCode": "R1X1",
+  "schools": [
+    {
+      "name": "Faculty of Education (Manchester)",
+      "address": "Birley Fields, Hulme, Manchester",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Birley Fields, Hulme, Manchester",
+      "geocode": true,
+      "formatted_address": "Birley Fields Campus, 53 Bonsall St, Manchester M15 6GX, UK",
+      "latitude": 53.4667373,
+      "longitude": -2.2464233,
+      "post_code": "M15 6GX",
+      "city": "Greater Manchester",
+      "route": "Bonsall Street",
+      "postal_town": "Manchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "M40",
+    "addr_1": "All Saints Building",
+    "addr_2": "All Saints",
+    "addr_3": "Manchester",
+    "addr_4": "Greater Manchester",
+    "postcode": "M15 6BH ",
+    "url": "http://www.mmu.ac.uk",
+    "geocode": true,
+    "formatted_address": "All Saints Building, All Saints, Manchester M15 6BH, United Kingdom",
+    "latitude": 53.471068,
+    "longitude": -2.238619,
+    "post_code": "M15 6BH",
+    "city": null,
+    "route": null,
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At Manchester Met, you won’t just develop the practical and organisational skills you’ll need to teach a subject in the classroom. You’ll explore how children learn and factors that can affect the way we learn, from our environment to our teachers.\\r\n\\r\nYou will look at the latest educational research, identifying how research might help you in the classroom, perhaps when you’re dealing with children’s behaviour or you’re investigating if there’s a new way to teach a topic.\\r\n\\r\nWe offer University-led and School-led routes into teaching both Primary and Secondary education.\\r\n\\r\nBoth routes lead to Qualified Teacher Status (QTS) and include 60 masters level credits (a full-time masters degree typically consists of 180 credits, and you can usually put your 60 credits towards your masters).\\r\n\\r\nWe work with over 500 primary schools and over 400 secondary schools across the North West region. This means you could experience placements in inner city or rural settings, mixed or single gender, faith schools, selective or comprehensive schools. This variety helps you to experience different situations and develop your practical skills as a teacher in different settings.\\r\n\\r\nYou can also choose from over 20 secondary subject specialisms. Maybe you’re excited to share your love of Shakespeare or perhaps you can’t wait to hear your year 7 class share their first words in Mandarin. Or, you’re already thinking of all of the incredible science experiments you’ll show your class. \\r\n\\r\nYou will learn in a diverse community of students, replicating the environment you will experience in schools.\\r\n",
+    "TrainWithDisability": "A member of staff from Disability Service is often available at MMU Open days and Visit Days to offer advice on disability related issues. However, you can always phone or email us if you have any specific queries. \\r\n\\r\nManchester Metropolitan University is committed to providing equal opportunities in education for all students and will take reasonable steps to meet both the general need for access and the specific needs of individuals with additional support needs. The University works with disabled students to ensure they are not disadvantaged as a result of their disability.\\r\n\\r\nBefore accepting a place, disabled applicants should explore how the university might be able to meet any additional study support or accommodation needs they may have. This should be done at the earliest opportunity by contacting the Disability Service on 0161 247 3491 or (disability.service@mmu.ac.uk)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

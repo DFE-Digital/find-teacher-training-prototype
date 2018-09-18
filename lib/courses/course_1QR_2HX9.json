@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": "University of St Mark & St John",
+  "provider": "Primary Excellence Teaching School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1QR/2HX9",
+  "providerCode": "1QR",
+  "programmeCode": "2HX9",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Blackpool Academy, Liverton, Newton Abbot, TQ12 6JB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Blackpool Academy, Liverton, Newton Abbot, TQ12 6JB",
+      "geocode": true,
+      "formatted_address": "Newton Abbot TQ12 6JB, UK",
+      "latitude": 50.5544781,
+      "longitude": -3.6774354,
+      "post_code": "TQ12 6JB",
+      "city": "Newton Abbot",
+      "route": null,
+      "postal_town": "Newton Abbot"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1QR",
+    "addr_1": "Primary Excellence Teaching School",
+    "addr_2": "Blackpool CE Primary School",
+    "addr_3": "Liverton",
+    "addr_4": "Newton Abbot",
+    "postcode": "TQ12 6JB",
+    "url": "http://www.primaryexcellence.org",
+    "geocode": true,
+    "formatted_address": "Newton Abbot TQ12 6JB, UK",
+    "latitude": 50.5544781,
+    "longitude": -3.6774354,
+    "post_code": "TQ12 6JB",
+    "city": "Newton Abbot",
+    "route": null,
+    "postal_town": "Newton Abbot"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "School Direct  trains you in one year to become a Newly Qualified Teacher in a primary school. You will be based in two different primary schools across the year, immersed in school life and take an active role in the school team. You will work mainly in a lead school, with an additional placement for 10 weeks to give you  breadth of experience. You will be assigned a home school and have experience of 2 different classes/age groups. In the second term you have 10 weeks experience in a contrasting school.  You will be given a mentor who will work with you throughout the year. The mentor is a teacher from your home school. Weekly they will travel to meet  you at your second school. Your class teachers and mentor will be a very good/outstanding practitioner.\\r\nDuring your training amount of direct contact with your class is:\\r\nTerm 1: 50% contact/50% non-contact\\t\\r\nTerm 2: 60% contact/40% non-contact\\r\nTerm 3: 70% contact/30% non-contact\\r\n\\r\nAs your teaching commitment increases, so your university set assignments decrease.\\r\n\\r\nOur partnership schools are a diverse and broad selection;  small rural schools of less than 100 pupils,  larger urban schools of more than 350 pupils. This means that you will be able to experience a range of teaching scenarios and class sizes. You will have opportunities to visit schools in the academy other than your home or second school.\\r\nSome of your training will be school-based, led by teachers and working with other trainees from other schools; you will also attend University and be part of a broader cohort of University students.\\r\nWe provide 12 Subject Knowledge Days delivered by talented ‘SLEs’ and teachers who have expertise in a range of curriculum areas. We also offer 5 afternoon workshops in the final term delivering information on curriculum areas and educational issues of your choice so that you can ‘lead your training’. \\r\nWe organise 6 ‘Teach Meets’ during the year when you are able to meet  your fellow trainees to discuss and share teaching strategies and methodology that has been observed in the classroom.\\r\nOur expertise covers many specialisms of education: childhood development, early years, literacy and wellbeing.\\r\nAs well as working with outstanding teachers you will also be able to participate in ‘cpd’ offered to permanent teaching staff. Cpd is delivered by the Teaching School’s ‘SLEs’ as well as cpd that is bought in by the academy.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants must have:\\r\n -  a degree at 2:1 or above [consideration may be given to applicants with a 2:2]\\r\n-  GCSE English, Mathematics, Science at grade C or above (or equivalent qualifications). \\r\n -  completed the Professional Skills' tests in Literacy and Numeracy  by  June 30th prior to beginning training in September. \\r\n- completed a declaration regarding any criminal convictions, clearance from the Criminal Records Bureau regarding suitability to work with young people and a fitness to teach declaration.\\r\n- relevant experience of 10 days  observing and working  in a school setting.\\r\n",
+    "InterviewProcess": "Following your application, a decision is made to invite you to interview at our ‘home’ school, Blackpool Primary School. The interview process lasts around 4 hours during which time you will be asked to:\\r\n•\\ttake part in a discussion task with other candidates around a pertinent educational issue\\r\n•\\tlead a teaching activity for 6 children – you choose the teaching topic and age group of children\\r\n•\\tfollowing a tour of the school, produce a piece of writing linked to the learning environment and school ethos\\r\n•\\tcomplete a short Maths test\\r\n•\\ttake part in a formal interview\\r\n\\r\nYou will be interviewed by the Director of Primary Excellence Teaching School, the ITT Lead, a Head of Teaching & Learning and a representative from our partner university, Plymouth Marjon. You will be notified of the interview decision within 24 hours.\\r\n",
+    "PersonalQualities": "Are you a 'hands on' learner? If so School Direct is for you.\\r\n We need candidates with values, qualities and attributes to become outstanding teachers,  the drive and motivation to succeed. \\r\nCandidates with:\\r\n•\\tpassion to make differences to the lives of young people\\r\n•\\t a 'can do' attitude \\r\n•\\tgood interpersonal skills\\r\n•\\timagination\\r\n•\\texcellent organisational and time management skills\\r\nWanting experience of:\\r\n         being part of a school team\\r\n         how  schools address behaviour management\\r\n         different school settings\\r\n         how  parents support children’s learning\\r\n         the challenges of different learning environments\\r\n        how you create deep rather than surface learning\\r\n",
+    "HowSchoolPlacementsWork": "From day one, trainees will be school based and a part of a school team, will be working with outstanding teachers and mentors in our Teaching School alliance schools. School Direct brings together all the necessary elements required for excellence in Initial Teacher Education and Training; this is built upon a partnership of expert school-based practitioners and our experienced accrediting provider, University of St Mark & St John. The programme brings teacher education pedagogy and up to date research within a school-based setting, providing enriched, school-based essential classroom experiences that allows you to put theory into practice as you develop into an outstanding teacher. The School Direct programme duration is one academic year (September - July), during which time you will be based in a home school and to ensure a breadth of experience you will undertake a number of high quality school placements across our Partner schools, as well as a bespoke programme of training developed and delivered by University lecturers and outstanding teachers. Our programme has been designed to build your confidence and subject knowledge and give you the necessary skills to become an outstanding classroom teacher. \\r\nCollaborative Programme Design\\r\nSet in School from Day 1\\r\nBroad and rich variety of high quality diverse school-based settings \\r\nStrong ethos of support working with outstanding teachers and mentors in each school\\r\nBespoke programme with further opportunity to develop a specialist area\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Primary Excellence Teaching School has been delivering the School Direct programme since 2013. We are proud to be recognised as a supportive partnership. Our schools are highly aspirational across the South West who believe that collaborative practice enables everyone to improve. We are committed to sharing very best practice and provide the highest quality of teaching and learning for our children. Collaboration is at the heart of our teaching school model. Fundamental to our Teaching School is the development of high quality leadership at every level. Through the development of ‘Leaders of Learning’ in every classroom and sustainable leadership within and across schools, we will be able to contribute to the growth of a world class education system. We believe that every child has the right to be taught by excellent teachers in excellent schools that nurtures, challenges and supports their potential. Our School Direct Partnership is an exciting training route for top graduates, in partnership with University of St Mark & St John. Our programme uses a variety of school-based settings, enabling trainees to experience a wide range of learning environments and contexts. This ensures that trainees are fully prepared to take up posts in schools. We are offering School Direct places for those interested in teaching in EYFS, Primary and Secondary Mathematics. Our programme awards both QTS and PGCE on successful completion of the programme.  It is expected that as a reflective, highly developed, newly qualified teacher, you will secure employment in one of our partner schools.\\r\n",
+    "TrainWithDisability": "We are very aware of, and sympathetic to, disabilities and different individual  needs that the trainees may have and we work with our ITT partner to ensure that opportunities are the same for all.\\r\n Disability and needs disclosure: If you have an illness or a disability which you think may benefit from support from the partnership, we encourage you to disclose this to your mentor.  Disclosure is a personal preference and not compulsory but for your needs to be met you will need to declare them as we do not have access to this information otherwise.  For further information, it is suggested that you contact the University Disability & Inclusion Advice Service (DIAS) in Student Support. \\r\n[Plymouth Marjon University]\\r\n(https://www.marjon.ac.uk/student-life/student-support-/disability--inclusion-advice-service/)",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": " Marjon has a tradition of outstanding training. Educators and teachers have been trained here for 180 years. Alumni network and school relationships support your career.\\r\nTraining is mostly school-based, alongside attending University, becoming part of a broad cohort of  students.\\r\nWhy Marjon?\\r\n•\\tRelationships with successful school partnerships across the South West giving breadth of learning experiences.\\r\n•\\t96% satisfaction on Postgraduate  training vs 81% sector average (Postgraduate Taught Experience Survey, 2016).\\r\n•\\tGraduates earn more than other education graduates in  South West and Wales (LEO data, DforE, 2017).\\r\n•\\tMany education specialisms offered: childhood development, early years, literacy, wellbeing.\\r\n",
+        "UcasInstitutionCode": "P63"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,65 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Portsmouth Primary SCITT",
+  "subjects": [
+    "Early years",
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "P82/X110",
+  "providerCode": "P82",
+  "programmeCode": "X110",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "P82",
+    "addr_1": "Beacon View Primary Academy",
+    "addr_2": "Allaway Avenue",
+    "addr_3": null,
+    "addr_4": "Portsmouth",
+    "postcode": "PO6 3PS ",
+    "url": "http://www.portsmouthscitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Allaway Ave, Portsmouth PO6 3PS, UK",
+    "latitude": 50.8484079,
+    "longitude": -1.0911601,
+    "post_code": "PO6 3PS",
+    "city": "Portsmouth",
+    "route": "Allaway Avenue",
+    "postal_town": "Portsmouth"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Studying for a postgraduate degree is a good investment in your future, but you need to carefully consider how you’re going to pay for your course and your living costs.\\r\n\\r\nMost students will be able to apply for loans and depending on where you live and your circumstances, bursaries and scholarships might also be available.\\r\n\\r\nOur postgraduate degrees are competitively priced and all the essential equipment and activities are included.\\r\n\\r\nThey vary slightly from course to course depending on what facilities and resources are required. For example, online courses tend to be slightly cheaper because they use fewer facilities.\\r\n\\r\nThe most up-to-date fees will be listed on the course page – search for your course on our website and look for the section on fees.\\r\n\\r\nThe fees are slightly different depending on whether you normally live in the UK/EU or outside of the EU.",
+    "AboutCourse": "If you’re a graduate keen to embark on an exciting and rewarding future in primary teaching, this course is for you.\\r\n\\r\nStudy a course ranked as ‘outstanding’ by Ofsted – the highest possible accolade, and gain substantial practical experience on teaching placements in our partnership schools across the region.\\r\n\\r\nOur PGCE Primary leads to the recommendation for Qualified Teacher Status (QTS) and prepares you for a fulfilling career where you can make a real difference to children’s lives. You will be fully equipped for the practical demands of the role, including teaching all the National Curriculum subjects. \\r\n\\r\nYou can tailor your studies to match your own interests and career plans. Depending on your preference and any prior experience, you can choose to specialise in teaching Early Years (3–7 year olds).",
+    "CourseLength": "OneYear",
+    "Qualifications": "You must have a good UK Honours degree (preferably 2:1) or equivalent, plus grade C or above in GCSE Mathematics, English Language and a Science. You need to have already gained the required GCSE grades when you apply. There are currently a range of equivalences which can be accepted - please contact our Admissions team if you need clarification.",
+    "FeeInternational": 12500.0,
+    "FinancialSupport": "To pay for your tuition fees and living costs, you may be able to take out a student loan. These loans don’t usually need to be paid back until you have graduated and are earning a good salary.\\r\n\\r\nSometimes, bursaries and scholarships are also available - it depends on your circumstances and which country you usually live in. These don’t need to be paid back.\\r\n\\r\nPlease visit our website for more information. ",
+    "InterviewProcess": "Your interview experience is an exciting opportunity for you to demonstrate your passion for the course you are applying for.\\r\n\\r\nYour invitation is subject to NCTL places still being available under government policy for 2018 entry. \\r\n\\r\nAs a result we may retain your appointment to consider you for 2019 entry instead or another related programme where possible. Otherwise, your appointment will be cancelled accordingly as soon as NCTL inform universities and this could be without prior notice.\\r\n\\r\nThe selection process will last approximately half a day and will include:\\r\n\\r\n- identification and documentation check\\r\n- a course presentation by academic staff\\r\n- a group introduction \\r\n- a group lateral thinking activity \\r\n- an individual micro teach \\r\n- a short writing activity\\r\n- a one to one interview",
+    "OtherRequirements": "You must have successfully gained a Disclosure and Barring Service (DBS) check, which is required at the point of accepting a place at the University.\\r\n\\r\nYou must also have successfully completed the National College for Teaching and Leadership’s Skills Tests in literacy and numeracy before 2 September 2018 in order to secure a place on the course. You must have registered for the tests before we can interview you. We offer Skills Test preparation days to help you to gain the knowledge to successfully complete the tests.",
+    "PersonalQualities": "Demand for places on the course is very high, so you must also:\\r\n\\r\n- be able to communicate clearly and in spoken and written English, with a good understanding of correct grammar\\r\n- meet the Secretary of State's requirements for physical and mental fitness to teach\\r\n- achieve clearance from the Disclosure and Barring Service at the start of the course. You must not have previously been excluded from teaching or working with children\\r\n- meet all the Department for Education entry requirements for Initial Teacher Education courses including suitability and fitness to teach checks",
+    "HowSchoolPlacementsWork": "Hands-on teaching experience in schools is a key part of our PGCE Primary. For a total of 24 weeks, you will undertake two main teaching placements – and a number of shorter enhanced placements – in different settings, supported throughout by our trained school mentors and link tutors.\\r\n\\r\nAs one of the major Initial Teacher Education providers in the East Midlands, we have longstanding partnerships with more than 400 schools across the region – a relationship which Ofsted described as ‘excellent’. All placements are organised for you by our Partnership Office. \\r\n\\r\nWith the support of your mentor and link tutor, you will undertake two assessed school experiences as well as shorter placements, adding up to 24 weeks in total.\\r\n\\r\nFor 'Professional Practice: Becoming a Teacher' you will observe experienced practitioners in the classroom, teach alongside your mentor and begin to take responsibility for the class as a whole. \\r\nYou will put into practice the skills of planning, delivery and assessment that you cover in your University-based training. You will also gain the wider professional skills demanded of a teacher such as dealing with parents, contributing to after-school activities and planning school trips.\\r\n\\r\nFor 'Professional Practice: Aiming for Excellence' you will be placed at a different school or setting, with the opportunity to work with children from another age group. \\r\nAt first, you will be given time to observe other teachers and get to know your class. You can then expect to progress more quickly to taking fuller responsibility for the class. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Why choose us?\\r\n- 17 years experience of bespoke school based teacher training\\r\n- Exceptional retention rates (95% of our trainees are still in the teaching \\r\n  profession 5 years later)\\r\n- 100% employment for the last 5 years\\r\n- Outstanding provider since 2004 (OfSTED)\\r\n\\r\nVisit our website (www.portsmouthscitt.co.uk) for more information regarding our course.\\r\n\\r\nThe course is run from Beacon View Primary Academy, Portsmouth. It is a one year course that qualifies successful primary students to teach children aged 5-11 years in primary, junior and infant schools. We offer a PGCE and QTS (option for Masters credits) validated by the University of Portsmouth.\\r\n\\r\nPortsmouth Primary SCITT can give a considerable amount of individual support to each trainee. Our aim is to train good teachers and our standards are high. You will have the opportunity to observe good teachers at work and be able to work alongside them, gradually developing your own teaching skills. You will receive high quality mentoring, together with support from the SCITT team to enable you to develop into a competent and confident newly qualified teacher.\\r\n\\r\nA strong feature of the course is the mutual support that the trainees give one another. The group is usually around 36 in number – a good size for cohesion and diversity. Lasting friendships are made. And what trainees learn about team work serves them well when they graduate to become Newly Qualified Teachers in their first posts.\\r\n\\r\nPast trainees have said \"Exceptional course, very well managed\".",
+    "TrainWithDisability": "Portsmouth Primary SCITT is committed to the inclusion of all eligible participants. There are no significant differences in the outcomes achieved by different groups of trainees. This is the result of high quality training which is carefully personalised. Each year an Intervention & Inclusion Log monitors and supports a variety of declared or emerging needs. Bespoke training is essential to ensuring every trainee has the opportunity to maximise his or her potential.\\r\n\\r\nWe have specific support in place for students with additional needs. For example, students with dyslexia are offered additional support with assignment writing. We also offer extended pastoral support to students struggling with mental health or anxiety conditions.\\r\n\\r\nPlacements are carefully chosen taking in account the varying needs of students. These might include: parents who require a placement closer to home; access based on physical needs; or whether the mentor and school are a 'good fit' based on the emotional needs of students.\\r\n\\r\nPortsmouth Primary SCITT is focussed on establishing firm relationships with all stakeholders and we are therefore able to tailor training to meet the needs of individual students. \\r\n\\r\nPast trainees have said:\\r\n\"The training I received at SCITT has given me a wealth of tools and strategies in all areas of teaching. My placements were selected based on my strengths and weaknesses. I was supported by the SCITT staff throughout. The pastoral care given has been exemplary. I also received advice when applying for jobs based on my particular skill set, which was invaluable to me\".",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

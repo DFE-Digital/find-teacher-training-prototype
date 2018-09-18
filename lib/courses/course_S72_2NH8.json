@@ -1,0 +1,62 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Staffordshire University",
+  "subjects": [
+    "Art / art & design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "slug": "S72/2NH8",
+  "providerCode": "S72",
+  "programmeCode": "2NH8",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S72",
+    "addr_1": "College Road",
+    "addr_2": "Stoke-on-Trent",
+    "addr_3": null,
+    "addr_4": null,
+    "postcode": "ST4 2DE ",
+    "url": "http://www.staffs.ac.uk",
+    "geocode": true,
+    "formatted_address": "College Rd, Stoke-on-Trent ST4 2EA, UK",
+    "latitude": 53.0143101,
+    "longitude": -2.1792526,
+    "post_code": "ST4 2EA",
+    "city": "Stoke-on-Trent",
+    "route": "College Road",
+    "postal_town": "Stoke-on-Trent"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "We focus on school student learning right from the start of the PGCE and this encourages our trainees to develop very quickly as teachers. You will be well supported by subject experts in both school and University and welcomed into a warm and friendly PGCE team who will challenge you to become the best teacher than you can be. All academic assignments focused around pupil progress and your classroom practice. On successful completion, you will receive 60 Masters level credits with Qualified Teacher Status (QTS), which is governed by DfE regulations.\\r\n\\r\nOur PGCE takes 36 weeks to complete. This school-led course includes a one-week induction to prepare you for your placement and weekly sessions to develop your knowledge of the curriculum. The equivalent of 24 weeks (120 days) is spent in 2 carefully selected placement schools and 12 weeks is spent in the university.\\r\n\\r\nYou will be very well supported during your time on the course and will benefit from a designated subject mentor in school who will hold weekly meetings with you, help you teach and review lessons, develop your subject knowledge and set and monitor agreed targets. \\r\nIn addition, you will have a University Tutor who will oversee your overall development as a teacher. Improvement Planning sessions in the University will take place to support you throughout the year with your University Tutor. \\r\n\\r\nAs a trainee, you will be given a phased introduction to teaching that will reflect your personal needs. You will normally begin by observing the regular class teacher, helping with group work and then moving towards sharing classes with the teacher before eventually taking classes yourself. As well as teaching, you will be expected to contribute generally to the life of the school. \\r\n\\r\nThe blend of practical experience and University study gained during your course will be assessed through the compilation of portfolios of evidence and the production of short written academic papers. \\r\nTo see posts about activities that we run during the PGCE course and for details of our upcoming events and open days please visit the [Staffordshire University website](http://www.staffs.ac.uk/) or our [PGCE Facebook page](https://www.facebook.com/StaffsUniPGCE/).\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree: 2:2 or above honours degree in an appropriate subject area. \\r\nIf you do not hold a directly-related degree, you can still be considered if you hold a relevant A Level or equivalent. Please contact us prior to submitting your application if you require further guidance.\\r\n\\r\nGCSEs: Grade 4 or grade C at GCSE or equivalent in English Language and Mathematics is essential for all applicants before starting the course. We do not accept Adult Numeracy or Literacy, Key Skills or any other GCSE alternatives. \\r\n\\r\nApplicants with international qualifications will be considered if their qualifications are recognised as equivalent.\\r\n",
+    "InterviewProcess": "Following an initial screening to ensure your applications meets our entry requirements, applications will be submitted to the Subject staff for review. Successful applicants at this stage will be offered an interview. \\r\n\\r\nThe main purposes of the interview are to: \\r\n* Allow you to understand as fully as possible the nature of the course, the teaching profession and your commitments to it \\r\n* Begin to explore your subject strengths and areas for development\\r\n* Assess your ability to communicate effectively in spoken and written English \\r\n* Answer any questions you may have\\r\n\\r\nWhilst school experience is not a requirement for being invited to interview, successful candidates will be able to demonstrate during their interview that they have a good understanding of student learning and progress. Applicants may wish to draw upon on experiences from their own education or paid or voluntary work in schools or with school-age children to show evidence of their understanding.\\r\n\\r\nEach subject area will require applicants to teach a lesson/activity based upon a specific topic or a topic of the applicant’s choosing. Further information about the topic will be disclosed to applicants via an invitation to an interview. \\r\n\\r\nApplicants will participate in a group discussion based on factors that impact learning in the classroom, and for specific subjects will be required to complete a subject knowledge audit form and a non-cognitive ability test, before completing a face-to-face interview with an interview panel. \\r\n",
+    "OtherRequirements": "Whilst school experience is not required for entry, successful applicants will demonstrate a good understanding of student learning and progress.   \\r\n\\r\nSuccessful applicants will also be required to:\\r\n\\r\n* Pass QTS Professional Skills Tests in both Numeracy and Literacy\\r\n* Complete a Medical Questionnaire, which will be assessed by an Occupational Therapist\\r\n* Provide an Enhanced Disclosure Certificate from the Disclosure and Barring Service (application can be obtained through the University)",
+    "PersonalQualities": "We are looking for enthusiastic, professionally restless individuals for whom teaching will always be a voyage of discovery. You should have:\\r\n\\r\n* The desire and ability to impact on student learning and to see issues from students' points of view\\r\n* High level communication skills, empathy and persistent optimism\\r\n* Potential for critical reflection, independent learning and taking initiative for personal and professional development \\r\n* The ability to work effectively in a team and to lead \\r\n* Creativity, innovation and understanding of when to take risks\\r\n* Resilience to accept and learn from professional criticism\\r\n* Self-confidence balanced with humility\\r\n",
+    "HowSchoolPlacementsWork": "The quality of our relationships with our schools and colleges is extremely high and is based on a shared vision of teaching and a genuine partnership. We know our partnership schools very well and they know us. This means that we can match your development needs with your school placements. \\r\n\\r\nWe have a wide outreach into some 50 plus high performing early years settings and schools within the local area and in Birmingham, the Black Country, Shropshire, Manchester, Derbyshire and beyond. \\r\n\\r\nTo give you experience in the classroom, you’ll spend at least 120 days working in two local secondary schools as well as visiting a local primary school. Our school led programme provides support at the university whilst also challenging your thinking about learning and teaching. \\r\nEach of your two main placement schools will also have a professional mentor who will provide an introduction to the organisation of the school, the school curriculum, pastoral care, personal and social education, active tutorial work, student behaviour and the legal and social framework of the school. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The structure of our PGCE courses reflects our vision of excellent teachers as being both excellent thinkers about teaching and outstanding practitioners in the classroom. We believe in developing thoughtful, self-confident teachers who are comfortable questioning everything around them whilst simultaneously having confidence in everything they do.  We focus on school student learning right from the start of the PGCE and this encourages our trainees to develop very quickly as teachers. You will be well supported by subject experts in both school and University and welcomed into a warm and friendly PGCE team who will challenge you to become the best teacher than you can be. \\r\n\\r\nIn our latest Ofsted Inspection (2017), the inspectors found that we:\\r\n* Are passionate about, and committed to, ensuring that pupils in the local area and beyond are taught by highly skilled and knowledgeable teachers so that pupils’ outcomes improve quickly. \\r\n* Have extremely strong relationships between school mentors, trainees and the University based tutors, which is underpinned by effective communication and ongoing support. \\r\n* Help trainees understand how pupils learn, which has a positive impact on pupil progress over time. \\r\n\\r\n\\r\n",
+    "TrainWithDisability": "Staffordshire University's [AccessAbility Services](http://www.staffs.ac.uk/study/disabled/support/) are a team of Disability Support Coordinators, Disability Administrators and Sessional Assessors. The team support and assist anyone with a disability, including specific learning difficulties, mental health needs and with physical and unseen disabilities. The team can advise on Disabled Student Allowances, accessibility issues and a wide range of support and adjustments to meet the individual needs of students. They can also offer a diagnostic service for students who think they may have a specific learning difficulty. Students who have disclosed a disability will receive a welcome from the team and advice on how to access further support. \\r\n\\r\nThe Student Hub in the Science Centre at our Stoke-on-Trent Campus will provide a one-stop location for access to student support and guidance teams. \\r\n\\r\nThere are lots of on campus support options including drop-in clinics as well as  workshops specifically in relation to mental health and wellbeing.\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

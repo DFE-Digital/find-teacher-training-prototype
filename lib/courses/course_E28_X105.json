@@ -1,0 +1,72 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of East London",
+  "subjects": [
+    "English as a second or other language",
+    "Primary"
+  ],
+  "name": "Primary with English as an Additional Language",
+  "slug": "E28/X105",
+  "providerCode": "E28",
+  "programmeCode": "X105",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Student Admissions Office, 4-6 University way, London, E16 2RD",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Student Admissions Office, 4-6 University way, London, E16 2RD",
+      "geocode": true,
+      "formatted_address": "4, East Building, 6 University Way, London E16, UK",
+      "latitude": 51.5075163,
+      "longitude": 0.0648165,
+      "post_code": "E16",
+      "city": "Greater London",
+      "route": "University Way",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E28",
+    "addr_1": "Docklands Campus",
+    "addr_2": "4-6 University Way",
+    "addr_3": "Newham",
+    "addr_4": "London",
+    "postcode": "E16 2RD ",
+    "url": "http://www.uel.ac.uk",
+    "geocode": true,
+    "formatted_address": "University Way, London E16 2RD, UK",
+    "latitude": 51.5076024,
+    "longitude": 0.0650809,
+    "post_code": "E16 2RD",
+    "city": "Greater London",
+    "route": "University Way",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Professional Studies\\r\n\\r\nEvery aspect of the programme is focused upon developing trainees as professionals. Schools are involved in the recruitment and selection of trainees and want to employ the most competent of teachers in their schools. The central training sessions address the key areas of professional practice including: - assessment, lesson planning, behaviour management, Safeguarding Level 1, Data and Progress 8, EAL, Inclusion and Diversity, Literacy, Phonics, Numeracy and Special Educational Needs and Disability; this training continues for trainees in their schools.  Subject specific training is also delivered centrally and continues under the guidance of mentor and PT.  St Mary’s University deliver all elements of the PGCE academic reading and writing.\\r\n\\r\nCurriculum Studies\\r\n\\r\nThe training programme is designed to develop subject knowledge and understanding of the current curriculum issues in the chosen subject or phase of training. \\r\nIn the classroom\\r\nThe programme is designed to develop pedagogical skills. The school- based training begins with observations of experienced practitioners where trainees learn to identify key elements of a successful lesson. Small group teaching, team teaching and co -planning of lessons are integral to build confidence and expertise. With this experience, trainees begin to develop all the skills of an outstanding teacher, independently and confidently planning and teaching. By the end of the training programme they will be teaching 70 -80% of a newly qualified teacher.\\r\n\\r\n The Assessment of Trainees\\r\n\\r\nFor the successful completion of the course, trainees must demonstrate competence against all the QTS standards, and need to have successfully completed the Skills Tests before the course begins. Trainees will be continually assessed through lesson observations. The Professional Tutor will complete a TPR each half-term which documents the progress made in each of the Standards.   This is moderated by the PLT.  Throughout the year, evidence will be collected in lesson observation, training and subject knowledge file and evidence against the standards collated in a final presentation file.  This evidence is also moderated by St Mary’s University.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "We will be looking for a second class Honours Degree as the minimum requirement. A 2:1 or better is preferred in all cases, however a 2:2 will be accepted if the shortlisting panel see potential in the candidate.\\r\nAll entrants will have attained as a minimum a Grade C/4 at GCSE (or equivalent) examinations in English and Mathematics (and Science if applying for the Primary phase course).\\r\n",
+    "InterviewProcess": "The selection procedures which follow aim to ensure that:\\r\nEntry requirements specified in DfE Qualified Teacher Status Standards (2012) are applied carefully, giving due weight to academic equivalencies, experiences and motivation.\\r\n\\r\nEntrants are given a sound understanding of the nature and demands of the course in order to assure successful applicants complete the course and enjoy their new profession in education\\r\nSelection will be based on: - a teaching activity related to the age and phase of the class, completion of a written task and a formal interview. \\r\nDocumentation\\r\nApplicants are asked to bring to the interview the relevant certificates which verify the academic profile described on the application form.  Successful applicants will also be asked to bring appropriate certification and other documentation as requested to verify their identity and for the DBS check, prior to the start of the course. The document check is made by the Administrator and provides an audit for registration purposes at the commencement of the course. All documents must be 'original' and not a photocopy. Copies of critical documents will be stored on file under the new GDPR guidelines.\\r\n",
+    "OtherRequirements": "All entrants will go through an enhanced Disclosures and Barring Service DBS, in order to ascertain that they have no criminal background which might prevent them from working with children. In addition, entrants are required to sign a declaration that they have not previously been excluded from teaching or working with children.\\r\n\\r\nSchool experience is a desirable characteristic but not essential and no applicant would be rejected because of a lack of school experience.  \\r\n",
+    "PersonalQualities": "We are looking for enthusiastic applicants with very good communication skills, the determination to succeed, a commitment to working hard and the ability to work with others. Successful applicants are confident and passionate about teaching and also able to contribute to the wider school ethos and community. Training to teach is both challenging and rewarding. Developing excellent interpersonal skills will enable trainees to support the learning of groups of young people from diverse backgrounds effectively. We are looking for people who strive to improve and who are committed to their own professional development.",
+    "HowSchoolPlacementsWork": "All trainees teach in two schools during their training year. Their second school placement is chosen to provide a different context to their main school experience.  Trainees will have a mentor and PT in this placement.  A Partnership Link Tutor (PLT) is assigned to each trainee; each half term she/he will visit the trainee in school to support, observe and QA the school-based experience to moderate and to ensure consistency of training across the Partnership."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The University of East London is a highly experienced and successful initial teacher training (ITT) and education provider. Courses are taught and supported by exceptional and dynamic staff. All of whom foster creativity, collaboration, innovation and student engagement at the heart of what they offer. We also value the link between the academic and the practice, and this will form a significant part of the ITT programme you undertake.\\r\n\\r\nThis year, UEL has achieved its best ever student satisfaction score and we officially have  the happiest students of any modern university in London, according to recent NSS league tables. To complement this, our end of programme survey outcomes in July 2018, suggest that over 95% of our teacher trainees rate the quality of their training through UEL as good or higher. Employability is also excellent with most subjects, phases and routes achieving 95-100% employment each year. \\r\n\\r\nUEL is an inclusive university and our teacher training programmes are highly diverse and multicultural. We are very proud of our trainee teachers, new and old, and what they have gone on to achieve in our schools. We are especially proud of the community we serve and how we take people from the local community who then go back into this community to teach - over 70% of our trainees find jobs within our partner schools each year. \\r\n\\r\nWe look forward to welcoming you to UEL and the Cass School of Education and Communities.",
+    "TrainWithDisability": "Applications from students with disabilities or other specific needs are welcomed. Initial teacher training programmes are based at our Stratford campus, which is fully accessible to all. UEL operates a very clear inclusivity policy. As a large provider of ITT, we have access to various support mechanisms for students who need this or would benefit from this additional support.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

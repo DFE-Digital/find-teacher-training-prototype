@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Yorkshire and Humber Teacher Training",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "2B2/2TG3",
+  "providerCode": "2B2",
+  "programmeCode": "2TG3",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "296 Anlaby Park Rd South, Hull, HU4 7JB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "296 Anlaby Park Rd South, Hull, HU4 7JB",
+      "geocode": true,
+      "formatted_address": "296 Anlaby Park Rd S, Hull HU4 7JD, UK",
+      "latitude": 53.734614,
+      "longitude": -0.41002,
+      "post_code": "HU4 7JD",
+      "city": "Kingston upon Hull",
+      "route": "Anlaby Park Road South",
+      "postal_town": "Hull"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2B2",
+    "addr_1": "Yorkshire & Humber Teacher Training",
+    "addr_2": "540 Hall Road",
+    "addr_3": "Hull",
+    "addr_4": null,
+    "postcode": "HU6 9BP ",
+    "url": "http://yhtt.co.uk",
+    "geocode": true,
+    "formatted_address": "540 Hall Rd, Hull HU6 9BP, UK",
+    "latitude": 53.786476,
+    "longitude": -0.3651989,
+    "post_code": "HU6 9BP",
+    "city": "Kingston upon Hull",
+    "route": "Hall Road",
+    "postal_town": "Hull"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our trainees receive five weeks of core teacher training over the year which cover the nuts and bolts of teaching.  Sessions focus on areas such as assessment, behaviour management, special educational needs, legal responsibilities, inspiring teaching and many more.  These are all delivered by experts in their field, often practicing teachers, so you be confident that the content is both up to date and real life!\\r\n\\r\nOur subject training centres around two intensive subject weeks led by a specialist tutor.  This may be enhanced by external trainers and industry experts.  These weeks develop subject knowledge, common misconceptions made by pupils.\\r\n\\r\nFollowing phase one of core training, induction and subject training, you will spend 10 weeks on placement A.  Initially co-teaching with experienced practitioners, you will develop your skills and confidence to be taking about 11 lessons a week by Christmas.  After the winter break you will enhance your teaching with three weeks of intensive training and subject development before embarking on placement B at a contrasting school.  You will again be teaching about 11 lessons a week for the six week period.  You are then back to you original placement until mid-June, working on your weekly targets with \"your\" classes.  As you are in school full time, you will feel like a member of staff!  Our final placement week is an enhancement week at one of our partners such as Adult Education or alternative provision.\\r\n\\r\nYou are assessed continually during the year by your mentor.  They will guide you with weekly review and target setting meetings and specific in school training.  Your subject tutor will also be on hand to develop your skills.  You will expected to complete a PGCE which will enhance your teaching through the academic study of pedagogy.  This assessment for this element is through three assignments submitted in the spring and summer terms.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You will require a grade C or above in Maths and English (or equivalent) and a recognised degree which includes at least 60 credits at level 6.",
+    "InterviewProcess": "At Yorkshire and Humber Teacher Training we believe that our children deserve the very best teachers and therefore our selection process is rigorous.  It consists of four elements:\\r\n\\r\n\\r\n- interview\\r\n\\r\n-taught session\\r\n\\r\n-subject knowledge test\\r\n\\r\n-educational knowledge test\\r\n\\r\nThese four elements combine to allow us to assess your potential to train to teach with Yorkshire and Humber Teacher Training.  The interview allows us to get to know you as a person, your interests and rationale for applying.  The taught session enables you to show you natural flair and how you interact with children.  The subject knowledge test is used to identify areas for work before you start, and the educational test shows us that you have an interest in current educational practice and school life.\\r\n",
+    "OtherRequirements": "All applicants will be subject to and enhanced DBS check and a fitness to teach questionnaire carried hour by occupational health.",
+    "PersonalQualities": "We are looking for the best teachers for our children, so we want you to have a real desire to see them succeed.  It is important that you are enthusiast about your subject - you will be teaching it for the foreseeable future, so you need to enjoy it!  Finally, you need to be proactive, ready to put yourself out there to make a difference.",
+    "HowSchoolPlacementsWork": "Initial Teacher Training is a professional course and we therefore discuss placement requests with our applicants.  We aim to balance the requirements of the school, and it ethos, with the personality of you as a trainee.  We also try to minimize travel time, as it is not the best use of that scarce resource!  As we are a large partnership, both with number and geographically, we can meet most requests.\\r\n\\r\nOur schools are either 11-16 or 11-18.  You will be timetabled for classes across the 11-16 range, with additional post 16 experience if available in that school.  If it is not, you will gain that experience in your second placement or enhancement week."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are a partnership of 20 schools, colleges and educational establishments covering Yorkshire and The Humber.  Our core training programme is delivered by expert trainers at our Hull base in September and January during our core training blocks.  Once on placement you will be treated as a member of staff, being fully immersed in the life of a school and the education of it's pupils.  \\r\n\\r\nOur training programmes were developed by educational experts to update traditional training routes and equip our trainees for teaching in the 21st century.\\r\n\\r\nYHTT has a highly successful track record of developing outstanding school teachers. We have excellent rates of employment for our graduates both within our alliance schools and also elsewhere in the region and beyond. Our alliance and partnership is made up of excellent schools.  Additionally, we are delighted to be working with The Constellation Trust and The Yorkshire and the Humber Co-operative Learning Trust.  Their Teacher Training activity has an excellent track record of producing first rate trained teachers and we believe this Alliance allows us to, together, produce a generation of outstanding teachers. \\r\n\\r\nOur Secondary partnership ranges from Scarborough in the North to Lincoln in the South, whereas our Primary partners are predominantly in Hull.  Whichever phase you wish to train in, we offer extensive enhancement opportunities in all Primary and Secondary, Post-16, EAL, SEND and Alternative Provision settings.\\r\n \\r\n[What's a SCITT?](yhtt.co.uk)",
+    "TrainWithDisability": "Meeting our trainees needs allows them to flourish in the classroom.  We carry out extensive pre-course assessments which allows trainees with additional needs to access the support they require throughout the year.\\r\nIn addition, we offer mental health training and a dedicated pastoral tutor to offer emotional support both during the training year and beyond.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

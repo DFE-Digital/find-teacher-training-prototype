@@ -1,0 +1,279 @@
+{
+  "locationType": "School",
+  "accrediting": "Newman University",
+  "provider": "Lightwoods Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "142/2BPS",
+  "providerCode": "142",
+  "programmeCode": "2BPS",
+  "schools": [
+    {
+      "name": "Crocketts Community Primary School",
+      "address": "Coopers Lane, Smethwick, West Midlands, B67 7DW",
+      "code": "3"
+    },
+    {
+      "name": "Grove Vale Primary School",
+      "address": "Monksfield Avenue, Great Barr, Birmingham, B43 6AL",
+      "code": "4"
+    },
+    {
+      "name": "Devonshire Junior School",
+      "address": "Auckland Road, Smethwick, B67 7AT",
+      "code": "A"
+    },
+    {
+      "name": "Eaton Valley Primary School",
+      "address": "Dagger Lane, West Bromwich, B71 4BU",
+      "code": "B"
+    },
+    {
+      "name": "Warley Infant and Nursery School",
+      "address": "Bleakhouse Road, Oldbury, B68 9DS",
+      "code": "D"
+    },
+    {
+      "name": "Burnt Tree Primary School",
+      "address": "Hill Road, Oldbury, B69 2LN",
+      "code": "G"
+    },
+    {
+      "name": "Causeway Green Primary School",
+      "address": "Penncricket Lane, Oldbury, B68 8LX",
+      "code": "I"
+    },
+    {
+      "name": "Christ Church CofE Primary School",
+      "address": "Church Road, Coseley, Bilston, WV14 8YB",
+      "code": "J"
+    },
+    {
+      "name": "Lightwoods Primary School",
+      "address": "Castle Road East, Oldbury, Warley, West Midlands, B68 9BG",
+      "code": "L"
+    },
+    {
+      "name": "Langley Primary School",
+      "address": "Titford Road, Oldbury, B69 4QB",
+      "code": "N"
+    },
+    {
+      "name": "Old Hill Primary School",
+      "address": "Lawrence Lane, Cradley Heath, B64 6DR",
+      "code": "O"
+    },
+    {
+      "name": "Ocker Hill Infant School",
+      "address": "Gospel Oak Road, Tipton, DY4 0DS",
+      "code": "Q"
+    },
+    {
+      "name": "St James' CofE Primary School",
+      "address": "Wolverley Crescent, Oldbury, B69 1BG",
+      "code": "T"
+    },
+    {
+      "name": "Tividale Hall Primary School",
+      "address": "Regent Road, Tividale, B69 1TR",
+      "code": "X"
+    },
+    {
+      "name": "Whitecrest Primary School",
+      "address": "Whitecrest, Great Barr, Birmingham, B43 6HQ",
+      "code": "Z"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Coopers Lane, Smethwick, West Midlands, B67 7DW",
+      "geocode": true,
+      "formatted_address": "Coopers Ln, Smethwick B67 7DW, UK",
+      "latitude": 52.4920766,
+      "longitude": -1.9708323,
+      "post_code": "B67 7DW",
+      "city": "West Midlands",
+      "route": "Coopers Lane",
+      "postal_town": "Smethwick"
+    },
+    {
+      "address": "Monksfield Avenue, Great Barr, Birmingham, B43 6AL",
+      "geocode": true,
+      "formatted_address": "Monksfield Ave, Birmingham B43 6AZ, UK",
+      "latitude": 52.5458896,
+      "longitude": -1.9473737,
+      "post_code": "B43 6AZ",
+      "city": "West Midlands",
+      "route": "Monksfield Avenue",
+      "postal_town": "Birmingham"
+    },
+    {
+      "address": "Auckland Road, Smethwick, B67 7AT",
+      "geocode": true,
+      "formatted_address": "Auckland Rd, Smethwick B67 7AU, UK",
+      "latitude": 52.4929479,
+      "longitude": -1.9787512,
+      "post_code": "B67 7AU",
+      "city": "West Midlands",
+      "route": "Auckland Road",
+      "postal_town": "Smethwick"
+    },
+    {
+      "address": "Dagger Lane, West Bromwich, B71 4BU",
+      "geocode": true,
+      "formatted_address": "Dagger Ln, West Bromwich B71 4BU, UK",
+      "latitude": 52.5268871,
+      "longitude": -1.9839285,
+      "post_code": "B71 4BU",
+      "city": "West Midlands",
+      "route": "Dagger Lane",
+      "postal_town": "West Bromwich"
+    },
+    {
+      "address": "Bleakhouse Road, Oldbury, B68 9DS",
+      "geocode": true,
+      "formatted_address": "Bleakhouse Rd, Oldbury B68 9DS, UK",
+      "latitude": 52.47520919999999,
+      "longitude": -1.9985216,
+      "post_code": "B68 9DS",
+      "city": "West Midlands",
+      "route": "Bleakhouse Road",
+      "postal_town": "Oldbury"
+    },
+    {
+      "address": "Hill Road, Oldbury, B69 2LN",
+      "geocode": true,
+      "formatted_address": "Hill Rd, Tividale, Oldbury B69 2LN, UK",
+      "latitude": 52.51374269999999,
+      "longitude": -2.0545804,
+      "post_code": "B69 2LN",
+      "city": "Tividale",
+      "route": "Hill Road",
+      "postal_town": "Oldbury"
+    },
+    {
+      "address": "Penncricket Lane, Oldbury, B68 8LX",
+      "geocode": true,
+      "formatted_address": "Penncricket Ln, Oldbury B68 8LX, UK",
+      "latitude": 52.4824506,
+      "longitude": -2.0202144,
+      "post_code": "B68 8LX",
+      "city": "West Midlands",
+      "route": "Penncricket Lane",
+      "postal_town": "Oldbury"
+    },
+    {
+      "address": "Church Road, Coseley, Bilston, WV14 8YB",
+      "geocode": true,
+      "formatted_address": "Church Rd, Bilston WV14 8YB, UK",
+      "latitude": 52.545517,
+      "longitude": -2.0792458,
+      "post_code": "WV14 8YB",
+      "city": "West Midlands",
+      "route": "Church Road",
+      "postal_town": "Bilston"
+    },
+    {
+      "address": "Castle Road East, Oldbury, Warley, West Midlands, B68 9BG",
+      "geocode": true,
+      "formatted_address": "Castle Rd E, Oldbury B68 9BG, UK",
+      "latitude": 52.4688007,
+      "longitude": -1.989265,
+      "post_code": "B68 9BG",
+      "city": "West Midlands",
+      "route": "Castle Road East",
+      "postal_town": "Oldbury"
+    },
+    {
+      "address": "Titford Road, Oldbury, B69 4QB",
+      "geocode": true,
+      "formatted_address": "Titford Rd, Oldbury B69, UK",
+      "latitude": 52.4894751,
+      "longitude": -2.0172345,
+      "post_code": "B69",
+      "city": "West Midlands",
+      "route": "Titford Road",
+      "postal_town": "Oldbury"
+    },
+    {
+      "address": "Lawrence Lane, Cradley Heath, B64 6DR",
+      "geocode": true,
+      "formatted_address": "Lawrence Ln, Cradley Heath B64 6DR, UK",
+      "latitude": 52.4739381,
+      "longitude": -2.0666324,
+      "post_code": "B64 6DR",
+      "city": "West Midlands",
+      "route": "Lawrence Lane",
+      "postal_town": "Cradley Heath"
+    },
+    {
+      "address": "Gospel Oak Road, Tipton, DY4 0DS",
+      "geocode": true,
+      "formatted_address": "Gospel Oak Rd, Tipton DY4 0DS, UK",
+      "latitude": 52.543684,
+      "longitude": -2.0424936,
+      "post_code": "DY4 0DS",
+      "city": "West Midlands",
+      "route": "Gospel Oak Road",
+      "postal_town": "Tipton"
+    },
+    {
+      "address": "Wolverley Crescent, Oldbury, B69 1BG",
+      "geocode": true,
+      "formatted_address": "Wolverley Cres, Shelsley Ave, Oldbury B69 1BG, UK",
+      "latitude": 52.4927167,
+      "longitude": -2.0319288,
+      "post_code": "B69 1BG",
+      "city": "West Midlands",
+      "route": "Wolverley Crescent",
+      "postal_town": "Oldbury"
+    },
+    {
+      "address": "Regent Road, Tividale, B69 1TR",
+      "geocode": true,
+      "formatted_address": "Regent Rd, Tividale, Oldbury B69 1TR, UK",
+      "latitude": 52.50873410000001,
+      "longitude": -2.0571967,
+      "post_code": "B69 1TR",
+      "city": "Tividale",
+      "route": "Regent Road",
+      "postal_town": "Oldbury"
+    },
+    {
+      "address": "Whitecrest, Great Barr, Birmingham, B43 6HQ",
+      "geocode": true,
+      "formatted_address": "Birmingham B43 6HQ, UK",
+      "latitude": 52.5493313,
+      "longitude": -1.9241849,
+      "post_code": "B43 6HQ",
+      "city": "West Midlands",
+      "route": null,
+      "postal_town": "Birmingham"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "What is the course?\\r\nA PGCE course which focuses on teaching skills and subject knowledge working with Newman University College. there will be up to 31 weeks spent in two schools. The second placement will be 4 to 6 weeks. There is also the opportunity to complete 2 masters elements worth a total of 60 credits (180 is needed for the full masters).\\r\nWhat qualifications do I need?\\r\nA UK bachelor’s degree or equivalent qualification, a standard equivalent to a grade C in English and Maths GCSE and for primary you will additionally need a standard equivalent to a C GCSE Science. Please see http://www.ucas.com/how-it-all-works/teacher-training/entry-requirements\\r\nHow can I find out more?\\r\nIf you have specific questions you can call Jan Williams at Lightwoods Primary School on 0121 429 2542 or email sarah.verrecchia@lightwoods.sandwell.sch.uk\\r\nHow long does it take?\\r\nThe PGCE will start in September and be completed at the end of July.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "A UK bachelor’s degree or equivalent qualification, a standard equivalent to a grade C in English and Maths GCSE and for primary you will additionally need a standard equivalent to a C GCSE Science. ",
+    "InterviewProcess": "If you have specific questions regarding the interview process you can call Jan Williams at Lightwoods Primary School on 0121 429 2542 or email sarah.verrecchia@lightwoods.sandwell.sch.uk",
+    "HowSchoolPlacementsWork": "Placement schools are chosen with candidate's in mind and the distance trainees have to travel from home to school is always considered.\\r\nThere will be up to 31 weeks spent in two schools. The second placement will be 4 to 6 weeks."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Welcome to the Lightwoods Teaching School Alliance and Newman University School Direct PGCE Programme.\\r\n\\r\nLightwoods Teaching School Alliance\\r\n\\r\n\"Working in partnership to develop expertise and raise standards.\"\\r\n\\r\nLightwoods Teaching School Alliance (TSA) is a strategic partnership including primary schools and secondary schools and a University. It is an excellent place to train to teach for reasons including:\\r\n\\r\n•\\tA decade of successful training with Newman University on undergraduate, postgraduate and GTP routes.\\r\n•\\tLightwoods TSA has a range of expertise in teacher development having successfully delivered support to other schools across the West Midlands. \\r\n•\\tThe Head Teacher is trained as a School Improvement Partner and National Leader in Education and all the Senior Leadership Team have worked and supported in other schools. Lightwoods Primary School is a National Support School.\\r\n•\\tLightwoods TSA have hosted a range of training and CPD opportunities including observation of teaching, support for planning and moderation.\\r\n\\r\nWe have developed a close knit partnership which has a strong foundation based on a depth of experience within a family community; overall this allows us to create an excellent, personalised experience with outstanding support. We tailor and customise each individual’s training programme to develop them into balanced well rounded professionals. At the heart of our alliance is the need to provide outstanding teaching and a positive learning experience for all pupils.\\r\n",
+    "TrainWithDisability": "Lightwoods Teaching School Alliance value diversity and the unique contribution that all their staff and trainees bring. If you have a disability, you shouldn’t be dissuaded from applying as our training programme caters for individual needs. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "\\r\n\\r\n\\r\n\\r\nWith a strong community cluster of schools we can offer training tailored to the individual’s needs which are superbly supported by the longstanding expertise from Newman University. \\r\n\\r\nWhat can I expect at Newman University?\\r\n•\\tAcademic and Professional Tutor - There will be a named tutor to support your academic and professional development through tutorial and email support\\r\n•\\tPartnership Tutor- A tutor from Newman will oversee and moderate the assessment of your school-based training\\r\n•\\tHigh quality taught sessions delivered by expert tutors\\r\n•\\tA virtual learning environment\\r\n•\\tAccess to the Newman University library\\r\n",
+        "UcasInstitutionCode": "N36"
+      }
+    ]
+  },
+  "has_inst": true
+}

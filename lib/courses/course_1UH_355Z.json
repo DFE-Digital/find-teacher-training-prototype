@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Reading",
+  "provider": "Calthorpe Park Fleet",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "1UH/355Z",
+  "providerCode": "1UH",
+  "programmeCode": "355Z",
+  "schools": [
+    {
+      "name": "Yateley School",
+      "address": "School Lane, Yateley, Hampshire, GU46 6NW",
+      "code": "Y"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "School Lane, Yateley, Hampshire, GU46 6NW",
+      "geocode": true,
+      "formatted_address": "School Ln, Yateley GU46 6NL, UK",
+      "latitude": 51.3388824,
+      "longitude": -0.837063,
+      "post_code": "GU46 6NL",
+      "city": "Hampshire",
+      "route": "School Lane",
+      "postal_town": "Yateley"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1UH",
+    "addr_1": "Hitches Lane",
+    "addr_2": null,
+    "addr_3": "Fleet",
+    "addr_4": "Hampshire",
+    "postcode": "GU51 5JA",
+    "url": "http://www.calthorpepark.hants.sch.uk",
+    "geocode": true,
+    "formatted_address": "Hitches Ln, Crookham Village, Fleet GU51 5SW, UK",
+    "latitude": 51.2775634,
+    "longitude": -0.8636345,
+    "post_code": "GU51 5SW",
+    "city": "Crookham Village",
+    "route": "Hitches Lane",
+    "postal_town": "Fleet"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "£7,710 for QTS",
+    "AboutCourse": "Your training will lead to the award of a PGCE by the University of Reading as well as a recommendation for the award of Qualified Teacher Status (QTS) by the Department for Education (DfE). The PGCE includes 60 credits at Masters level, the equivalent of one third of an MA that you can add to subsequently.\\r\n\\r\nThe course content has been developed in collaboration between the University and partnership schools so that you can explore issues raised in the University through your work with pupils in school. You will have opportunities to consider issues raised in school against a wide range of educational principles to which you will be introduced.\\r\n\\r\nPeriods of school experience are integrated into all aspects of the course, and you work in schools throughout the year. Your work in school takes a variety of forms including observing experienced teachers, team teaching, working with small groups, taking responsibility for the learning of whole classes and getting involved in all aspects of school life. You will be well supported in school by a range of experienced and well-trained people including a subject and a professional mentor and university-based tutors.\\r\n\\r\nThe university-based programme comprises two main aspects: Professional Studies and Subject Studies.\\r\n\\r\nProfessional Studies develops insights into general aspects of education essential for entrants to the teaching profession. It gives consideration to whole-school issues, such as behaviour management, special educational needs and educational theories that contextualise the teaching of your subject. It is taught in small, mixed-subject seminar groups.\\r\n\\r\nSubject Studies enables you to study the teaching of your chosen subject. This includes consideration of aspects such as: the nature of the subject in the secondary school; its place in The National Curriculum; what is taught; how it is taught; how it is assessed; providing for young people with different backgrounds and abilities; teaching in accordance with examination specification requirements; and using ICT effectively to facilitate learning.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Candidates should normally have a 1st, 2:1 or 2:2 honours degree in a subject that is closely related to the subject they intend to teach. All candidates must have at least a C grade (or equivalent) for GCSE  Maths and English.\\r\n\\r\nSubject Knowledge Enhancement (SKE) courses are offered in Maths, Chemistry, Physics, and Computer Science. These courses are for candidates whose degree included an element of the subject they intend to teach or who have extensive experience in the subject. They are designed to enable candidates to develop the level of specialist knowledge required to teach their chosen subject.\\r\n\\r\n",
+    "InterviewProcess": "If your application is shortlisted, you will be invited for an interview and assessment day at Calthorpe Park School or at one of our consortium partner schools.\\r\n\\r\nIf you are successful at interview, a conditional offer of a place will be made. The conditions will include providing proof that you have met the eligibility conditions for Initial Teacher Training, including a criminal record check and an occupational health assessment. Further conditions may be discussed with you at interview.\\r\n\\r\nIf you accept the offer of a place, you will be required to attend an Induction and Needs Assessment Afternoon at the University of Reading. This will be an opportunity to meet the University subject tutor, who will help you identify pre-course targets to prepare you for your training. If you are offered a salaried place, you will be asked to attend an induction day at school, on which you will agree an Individual Training Plan and the details of your contract with the school.\\r\n",
+    "PersonalQualities": "All candidates must have passed the QTS Skills Tests in numeracy and literacy before starting the course.\\r\n\\r\nAll applicants are expected to have gained some experience in a state secondary school prior to interview.\\r\n",
+    "HowSchoolPlacementsWork": "This placement is at Yateley School. Yateley School is a popular 11-18 comprehensive school with approximately 1500 students. We pride ourselves on high standards, which are achieved through a friendly and caring atmosphere and a dedicated team of well-qualified teachers. At Yateley, we believe we offer the chance for every child to fulfill potential and achieve success. We have had specialist status in performing arts since 2002.\\r\n\\r\nAs part of the Calthorpe Park Consortium and in partnership with Reading University, we offer a full range of initial teacher training. Trainees are supported by highly successful teaching mentors and a full professional studies programme.\\r\n\\r\nwww.yateleyschool.net\\r\n\\r\nYour second placement is after Christmas for 8 weeks at another school – either a school in our consortium or a school of your choice.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Calthorpe Park consortium is an exciting place to work and learn. We have a long and successful history of training and developing future teachers and are proud to offer a number of training places for 2019/2020.\\r\n \\r\nThe consortium comprises nine very varied schools which present dynamic and exciting training possibilities for those wishing to pursue a career in teaching. We have five secondary schools in the consortium, one of which also has a sixth form. We also have one infant school, one junior school, one primary school and one special needs primary school which provides a unique opportunity for trainees to experience a very different educational setting.\\r\n \\r\nCalthorpe Park School is the lead school in this consortium and our partner schools are located in north-east Hampshire within a few miles of each other. Our partners include:\\r\n \\r\n-      Frogmore Community College, Yateley\\r\n-      Yateley School, Yateley\\r\n-      Cove School, Farnborough\\r\n-      Alderwood School, Aldershot\\r\n-      All Saints Church of England Junior School, Fleet\\r\n-      Potley Hill Primary School, Yateley\\r\n-      Henry Tyndale School, Farnborough\\r\n-      Tavistock Infant School, Fleet\\r\n\\r\nCalthorpe Park School and partners work collaboratively as part of the University of Reading ITT Partnership to ensure that its trainees receive the best of what School-based and University-based training has to offer. These two aspects of the course are closely integrated and supported by University subject tutors as well by members of staff in school who receive specialist training at the University.\\r\n\\r\n",
+    "TrainWithDisability": "The University of Reading welcomes all students and has a dedicated Disability Advisory Service which offers advice and guidance to students with any disability, mental health condition, or specific learning difficulty (SpLD). ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Reading has a long and highly successful experience of ITT and particularly of working with schools on school-based training programmes. Initial Teacher Training courses at the University of Reading are based on the belief that education is about active and meaningful learning through which teachers become analytical, creative and receptive to new ideas. \\r\n \\r\nAt Reading, the University-based route into teaching is fully integrated with the School-Direct routes, ensuring high-quality outcomes for all trainees. You will experience substantially the same training whether you apply direct to the University or to one of our partnership schools.\\r\n",
+        "UcasInstitutionCode": "R12"
+      }
+    ]
+  },
+  "has_inst": true
+}

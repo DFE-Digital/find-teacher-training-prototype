@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "University of St Mark & St John",
+  "provider": "Atlantic Coast Co-operative Trust",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1ZS/2MX6",
+  "providerCode": "1ZS",
+  "programmeCode": "2MX6",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Woolsery, Bideford, Devon, EX39 5QS",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Woolsery, Bideford, Devon, EX39 5QS",
+      "geocode": true,
+      "formatted_address": "Chapel St, Woolfardisworthy, Bideford EX39 5QS, UK",
+      "latitude": 50.9639503,
+      "longitude": -4.3771714,
+      "post_code": "EX39 5QS",
+      "city": "Woolfardisworthy",
+      "route": "Chapel Street",
+      "postal_town": "Bideford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1ZS",
+    "addr_1": "Atlantic Coast Co-operative Trust",
+    "addr_2": "Woolsery Primary School, Woolsery",
+    "addr_3": "Bideford",
+    "addr_4": "Devon",
+    "postcode": "EX39 5QS",
+    "url": "http://www.acct.education",
+    "geocode": true,
+    "formatted_address": "Woolfardisworthy, Bideford EX39 5QS, UK",
+    "latitude": 50.9641665,
+    "longitude": -4.3776807,
+    "post_code": "EX39 5QS",
+    "city": "Woolfardisworthy",
+    "route": null,
+    "postal_town": "Bideford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our training course follows one academic year (from September to July). All trainees are based in one Trust school for their main practice of five half terms. In the January half term, Trainees are placed in a contrasting placement - one which not only provides age-related balance to the training experience, but also provides trainees with experience of both rural and urban schools and the challenges and advantages each brings.\\r\nEach Trainee has a named Class Teacher with whom they will work for the majority of the year. They will also have a school based Mentor to guide the Trainee through the programme, offer challenge and support and assist in the vital element of developing deep reflective practice.\\r\nAcross the Trust, there is also a Lead Mentor who has responsibility for all Trainees, organising half termly hub meetings across the Trust and signposting Trainees to all training opportunities in all nine schools, plus our Teaching School Partner, across the year.\\r\nAs each school has a strong committment to outdoor learning, there is also the expectation that towards the end of the Summer Term, each Trainee will complete a Level 2 Forest School qualification which is included in the course cost and the training programme.\\r\n\\r\nAlongside the practical experience of running a classroom and managing the many challenges of being a primary teacher, our Trainees attend Marjon University in Plymouth for academic development, linking pedagogy to practice and opportunities to  apply changes in the education world to their own experiences. There are around 20 days in the programme where Tainees are required to attend the University Campus at Derriford, Plymouth. Many of our Trainees elect to car share from north Devon for this purpose.\\r\n\\r\nThe programme is quality assured through Marjon University and each term, Trainees receive a QA visit from a University Mentor who in turn are quality assured through their own external processes.",
+    "CourseLength": "OneYear",
+    "Qualifications": "To access our Training Programme, we require the equivalent of GCSE C in English, Maths and Science, plus an undergraduate degree of 2:2 or better.\\r\n",
+    "FinancialSupport": "As the Trust comprises all maintained Primary phase schools we are unable to offer any financial assistance for completion of this course.",
+    "InterviewProcess": "Interviews are held with small groups of applicants at one of our urban primary schools. The selection panel comprises a mixture of Headteachers, Governors and University personnel.\\r\n\\r\nEach candidate is required to sit two  short tasks which are marked during the day. They also work with a small group of children to gauge the likely quality of relationships with children. All candidates are asked to teach the other candidates a skill or technique, to enable the panel to assess their explanation skills, resilience and and organisational skills. (In the past we've watched things a diverse as instruction in creating origami creatures to playing musical instruments!)\\r\n\\r\nThere is also a formal interview, with a range of question topics to assess existing knowledge of the primary curriculum, motivation for the course, views on inclusion, current educational thinking and personal skills & attributes.\\r\n\\r\nThere are also many opportunities to have informal conversations with any of the ACCT representatives about different aspects of the course. \\r\n\\r\nWe aim to give you a decision by the end of the working day. This could be a rejection, a request to complete more preparation and reapply in a following cycle, a conditional offer or, if all entrance criteria are met, an unconditional offer.",
+    "OtherRequirements": "We require a minimum of 10 days relevant experience in schools or similar institutions before Interview, and many of our successful applicants build up more experience than this before the course commences.\\r\n\\r\nDisclosure and Barring Service checks are also made before the commencement of the training programme.",
+    "PersonalQualities": "First and foremost, you must have a love of working with children, seeing them think and learn, question and develop over time. That part of the course just can't be taught!\\r\nIn addition, we are looking for trainees with resilience, motivation and good communication skills with both adults and children.\\r\nYou will also need to be well organised: this is an extremely demanding course and you will need to be very disciplined in directing your own time in order to complete successfuly.",
+    "HowSchoolPlacementsWork": "We allocate trainees to schools through discussion with them, based on their needs and existing commitments. Although ACCT ultimately reserve the right to decide on trainee placements, we recognise that it is a very tough and rigorous year, and complicating home arrangements unnecessarily helps neither the Trust or the Trainee.\\r\nOur schools are based from Hartland in the west to Instow in the east - a distance of around 20 miles along the A39. From the ACCT area to Marjon in Plymouth is around 50 miles.\\r\nOur courses take place wholly in Key Stages 1 and 2 (although a contrasting placement in Foundation Stage can be arranged in conjunction with Marjon University if required). All trainees have experience of both Key Stages through their training, but will have a main placement fixed with one age group.\\r\nTrainees spend the whole academic year in schools, from September 1st through to the end of July. 20 days are set aside for attendance at University and both school practice and the academic side of the qualification demand a significant amount of commitment to work at home and beyond the children's day at school.\\r\nContact time (the time spent in classrooms in a teaching role) varies across the course, with around 50% non contact time in the Autumn Term, decreasing to around 30% by the Summer Term, when Trainees assume much of the responsibility of the substantive class teacher."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Atlantic Coast Co-operative Trust is a partnership of 9 aspirational primary schools across the north Devon Atlantic Coastline. The Trust formed in 2013 to unite local schools through shared core values which inspire and empower our children to achieve their full potential. We work together to share expertise and excellent classroom practice. Learning with us will enable you to draw upon a strong network of professionals dedicated to building your confidence, subject knowledge and skills as a primary practitioner, as well as providing access to opportunities to our partner organisation the Dartmoor Teaching School Alliance.\\r\nThe ACCT comprises a diverse group of nine settings including urban, coastal, rural, church and community schools, ranging from around 45 to 400 children from nursery through to Year 6.\\r\nOur schools are all based very close to the North Devon Biosphere and areas of Outstanding Natural Beauty which we all frequently access as part of our curriculum. \\r\n\\r\nAll ACCT schools have a strong commitment to outdoor learning experiences. As part of our training programme, we offer the opportunity to study towards Forest School Level 2 accreditation.\\r\nAlthough you will be based in one of our Trust schools, there will be many opportunities to work in our partner settings and with other trainee teachers on this programme.\\r\nAs a small collection of schools, we are able to offer a flexible programme in which you will work in partnership with your fully trained and experienced Mentor in order to fully personalise your training programme.\\r\n\\r\n",
+    "TrainWithDisability": "Our programme is small and flexible and we will always talk to successful applicants about which school would be right for them to complete their training in. This includes whether access arrangements to the geography of the site, or around the site itself are suited to each Trainee's needs. \\r\nMany of our schools have first hand experience of employing staff memebers will additional needs and we welcome the diversity this brings to all levels of our school community. For example, some of our senior staff have hearing loss and schools have worked closely with the DWP to provide specialist equipment to enable them to continue in their role, some staff have mobility issues and again, our schools have a good record of modifying their work arrangements to enable them to make a full contribution to the live of their school.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "As a School Direct trainee, you will be enrolled alongside PGCE students at the Marjon University with access to the full range facilities, resources and both social and academic opportunities. As a full member of Marjon, you will benefit from all aspects of student life and student support facilities on offer there. \\r\nThroughout the training year, you will have opportunities to meet with Trainees on other ITE routes and from other School Direct Partnerships affiliated to the University. Some seminars, lectures and events are held at the University’s campus at Derriford, Plymouth.\\r\n",
+        "UcasInstitutionCode": "P63"
+      }
+    ]
+  },
+  "has_inst": true
+}

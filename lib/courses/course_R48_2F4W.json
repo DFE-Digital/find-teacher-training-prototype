@@ -1,0 +1,70 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Roehampton University",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary (KS1/2)",
+  "slug": "R48/2F4W",
+  "providerCode": "R48",
+  "programmeCode": "2F4W",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Roehampton University, Roehampton Lane, London, SW15 5PU",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Roehampton University, Roehampton Lane, London, SW15 5PU",
+      "geocode": true,
+      "formatted_address": "Roehampton Ln, London SW15 5PU, UK",
+      "latitude": 51.4579866,
+      "longitude": -0.2432869,
+      "post_code": "SW15 5PU",
+      "city": "Greater London",
+      "route": "Roehampton Lane",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "R48",
+    "addr_1": "Roehampton Lane",
+    "addr_2": "London",
+    "addr_3": null,
+    "addr_4": null,
+    "postcode": "SW15 5PU",
+    "url": "http://www.roehampton.ac.uk",
+    "geocode": true,
+    "formatted_address": "Roehampton Ln, London SW15 5LS, UK",
+    "latitude": 51.4554361,
+    "longitude": -0.2431242,
+    "post_code": "SW15 5LS",
+    "city": "Greater London",
+    "route": "Roehampton Lane",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "We will help you to become a confident, highly employable primary teacher. During the course, you will receive excellent training, the majority delivered in small groups by our supportive staff. \\r\n\\r\nYou will gain 120 hours of practical placement experience in one of our diverse range of partner schools during the course, providing you with substantial classroom experience appropriately staged throughout the year. During the placements, you will progress from participant observer, via support teacher and sharing teacher, to lead teacher. Our partners include over 300 primary schools in London and the South East. \\r\n\\r\nGraduates of this programme are qualified to teach children across the full primary age range, but with a specialism in the Key Stage 1/2 age range.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants should have or be predicted good second class honours degree awarded in the UK, or the equivalent awarded by an approved university outside the UK.\\r\n\\r\nIt is a requirement that all those training to teach must have achieved a grade C or above in Mathematics, English Language and a Science subject (or approved equivalents). Please note that we will only consider applicants who have already achieved two out of the three GCSEs (or approved equivalents) prior to submitting their application.   ",
+    "InterviewProcess": "A typical interview experience will look like this, although the order of activities may differ slightly depending on the number of people attending. \\r\n\\r\n(*) Optional Campus tour \\r\n(*) Registration & qualifications check \\r\n(*) Written English \\r\n(*) Course Talk \\r\n(*) One-to-one Interviews  \\r\n(*) Group discussion \\r\n(*) Roehampton Live talk \\r\n\\r\nFurther information about the interview day will be made available if you are invited to attend. ",
+    "OtherRequirements": "Pre entry Professional Skills Test All students starting an Initial Teacher Training (ITT) course from September 2013 are required to pass the Professional Skills tests in literacy and numeracy before the start of the programme (www.education.gov.uk). ",
+    "HowSchoolPlacementsWork": "The University of Roehampton Schools Partnership encompasses a range of different types of school across London and the surrounding counties. These include:  local authority schools, academies, free schools and faith schools. The schools we work with also reflect the culturally and ethnically diverse community surrounding the University. Student Teachers benefit enormously from such varied school experiences and it is a key strength of our Partnership. We ensure that Student Teachers are offered two contrasting assessed placements (called Block School Experience 1 and 2), which meet the requirements of the age range for which their course is accredited. \\r\n\\r\nStudents spend approximately 24 weeks in school during the programme. Placements are driven first and foremost by the Student Teachers’ identified learning needs, to ensure they meet the Teachers’ Standards at the highest level and are best prepared for their careers as primary school teachers. High numbers of University of Roehampton students secure their NQT (Newly Qualified Teacher) posts in our partnership schools- in 2017/18, 64% of graduates were employed by our partnership schools. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at Roehampton is one of the principal providers of teacher training in the UK, with partnerships with over 350 schools. We have a rich history of over 175 years providing teacher training education through our four Colleges. \\r\n\\r\nAs a student in our School, you will enjoy high quality teaching, which will equip you for a successful career with a competitive starting salary. Your employment prospects will be excellent: 99% of our teacher training graduates are in work or further study six months after leaving us (Destinations of Leavers of Higher Education 2013/14). \\r\n\\r\nWe are based on a beautiful parkland campus in south-west London, close to Putney and Hammersmith, and just 30 minutes from the West End. Our School is ranked third in London for the quality of our research in the field of education (Research Excellence Framework 2014), reflecting the work-class expertise of our staff.\\r\n\\r\nFor more information about the university, please see here.\\r\n\\r\n(https://www.roehampton.ac.uk/why-roehampton/)",
+    "TrainWithDisability": "The University of Roehampton welcomes students with disabilities and offers flexible support services tailored to your needs. Our Disability and Dyslexia Services are on the main campus, Digby Stuart, along with our Access Centre: Access@SW15.\\r\n\\r\nFor new students, we strongly recommend that you get in touch to let us know about your specific disability and support needs. Any information provided will be kept strictly confidential and will only be used to support you with your studies. \\r\n\\r\nWe recommend to inform us of your specific learning difference (SpLDs) such as Dyslexia, Dyspraxia, Dyscalculia and Attention Deficit Hyperactivity Disorder (ADHD).\\r\n\\r\nFor more information please see our disability services website here.\\r\n\\r\n(https://www.roehampton.ac.uk/disability-services/)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

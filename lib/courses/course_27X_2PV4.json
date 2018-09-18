@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Manchester",
+  "provider": "Hursthead Junior School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "27X/2PV4",
+  "providerCode": "27X",
+  "programmeCode": "2PV4",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Kirkstead Road, Cheadle Hulme, Cheshire, SK8 7PZ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Kirkstead Road, Cheadle Hulme, Cheshire, SK8 7PZ",
+      "geocode": true,
+      "formatted_address": "Kirkstead Rd, Cheadle Hulme, Cheadle SK8 7PZ, UK",
+      "latitude": 53.3614808,
+      "longitude": -2.1808562,
+      "post_code": "SK8 7PZ",
+      "city": "Cheadle Hulme",
+      "route": "Kirkstead Road",
+      "postal_town": "Cheadle"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "27X",
+    "addr_1": "Kirkstead Road",
+    "addr_2": null,
+    "addr_3": "Cheadle Hulme",
+    "addr_4": "Cheshire",
+    "postcode": "SK8 7PZ ",
+    "url": "http://www.hursthead-jun.stockport.sch.uk",
+    "geocode": true,
+    "formatted_address": "Kirkstead Rd, Cheadle Hulme, Cheadle SK8 7PZ, UK",
+    "latitude": 53.3614808,
+    "longitude": -2.1808562,
+    "post_code": "SK8 7PZ",
+    "city": "Cheadle Hulme",
+    "route": "Kirkstead Road",
+    "postal_town": "Cheadle"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "The fees quoted above will be fully inclusive for the course tuition, administration and computational costs during your studies.\\r\n\\r\nAll fees for entry will be subject to yearly review and incremental rises per annum are also likely over the duration of courses lasting more than a year for UK/EU students (fees are typically fixed for international students, for the course duration at the year of entry). \\r\n\\r\nSelf-funded international applicants for this course will be required to pay a deposit of £1,000 towards their tuition fees before a confirmation of acceptance for studies (CAS) is issued. This deposit will only be refunded if immigration permission is refused. We will notify you about how and when to make this payment.\\r\n\\r\n",
+    "AboutCourse": "You will train you to teach children aged 5 to 11 and this ten-month course provides training in all primary-stage National Curriculum subjects. It leads to both a postgraduate qualification and qualified teacher status (QTS).\\r\n\\r\nOur Primary PGCE includes both school-based and university-based learning.  You will spend over 50% of your time training in our seven alliance schools, as well as spending time at The University of Manchester*.\\r\n\\r\n* This programme has been graded as outstanding and is considered to be in the top ten teacher training institutions nationally. \\r\n\\r\nYou will spend a significant amount of time studying each of the core subjects of English, mathematics and science. You will also spend time studying Religious Education (RE), Physical Education (PE), history, geography, art, music, and design and technology.\\r\n\\r\nProfessional studies are a central component of the course, covering topics such as: pupil assessment; lesson planning; managing pupil behaviour; the role of the reflective practitioner; making primary education inclusive for all.\\r\n\\r\nAll training sessions deploy a wide range of teaching methods, including group discussion, practical workshops, lectures and presentations. You will be an active participant and driver in your own professional development.  \\r\n\\r\nThe course offers a brilliant opportunity if you want to train and learn ‘on the job’ and prepares you fully for a future career in teaching.  You will spend more than 50% of your time in primary schools on placements and will be immersed in school life. \\r\n\\r\nIn addition, as a School Direct trainee, you will receive an additional 18 days school-based learning within the seven schools in our alliance.  In these sessions, you will be taught, coached and mentored by experienced, highly-effective practising teachers.  \\r\n\\r\nYour subject knowledge in English, mathematics and science will be audited regularly and you will also complete assignments relating to the teaching of English, mathematics, science, and Information and Communication Technology (ICT). The written assignments will allow you to gain a maximum of 60 master's-level credits and guidance and support to complete these assignments will be available from your University tutors.\\r\n\\r\nYour university-based learning will take place at The University of Manchester's Oxford Road campus, adjacent to Manchester's city centre. The campus is easily accessible by road or by an extensive network of public transport including trains, trams and buses.\\r\n\\r\nYour school-based learning will take place at:  Hursthead Juniors/Infants, Wilmslow Grange, Bradshaw Hall, Oak Tree, Didsbury Road and Heald Place.",
+    "CourseLength": "OneYear",
+    "Qualifications": "A 2:1 or above* honours degree in non-vocational subjects are preferred. (Vocational subjects may be considered.)\\r\n\\r\n*Applicants with a 2:2 honours degree may be considered but must be able to demonstrate evidence of higher academic attainment (eg through postgraduate study).\\r\n\\r\nTwo A-levels at grade C or above in non-vocational subjects.\\r\n\\r\nMinimum grade C or 4 at GCSE (or equivalent) in English language*, mathematics and science, plus GCSE grade C in at least three other non-vocational subjects.\\r\n\\r\n*In addition to English Language GCSE, applicants whose first language is not English are required to meet the additional language requirements.  Please see: (https://www.manchester.ac.uk/study/masters/courses/list/02846/pgce-primary/entry-requirements/#course-profile)",
+    "FeeInternational": 18000.0,
+    "FinancialSupport": "Home/EU students may be eligible for a repayable tuition fee loan. Home students in England may also be eligible for a repayable student maintenance loan. The loans support available to PGCE students is similar to what is available for undergraduate students. \\r\n\\r\nIf you have graduated in the last three years from The University of Manchester with a 1st class honours degree, you may also be eligible for an  Alumni Scholarship .\\r\n\\r\nInformation about additional funding options for September 2018 can be found on the  Department for Education website .",
+    "InterviewProcess": "The School Direct Lead and Head Teacher at Hursthead Junior School review all written applications jointly.  We consider a range of factors in the written application, other than the entry requirements, and your personal statement should make clear:\\r\n* your commitment to and enthusiasm for teaching\\r\n* your rationale for applying to be a Primary teacher\\r\n* an awareness of the role and responsibilities of the teacher\\r\n* any relevant experience suggesting suitability for the role\\r\n* a good standard of written English.\\r\n\\r\nIf successful, you will be invited to attend an assessment centre at Hursthead Junior School.  On the day, you will be interviewed by two members of the Hursthead Junior School Alliance and asked to complete a small group task with children.\\r\n\\r\nInterview:\\r\nAs well as answering a series of questions, you will be asked to prepare a 5 minute presentation:  reflecting on any recent experience in school or your own experience as a pupil, what do you consider makes an effective teacher? What skills and attributes does the effective teacher require? How will this inspire your future practice?\\r\n\\r\nSmall Group Task:\\r\nSelect a book to introduce to a group of six children and prepare an activity for them linked to the story.\\r\n\\r\nPlease note, all applicants must pass the Professional Skills Tests prior to commencing the course. Preference will be given to those applicants who have passed their skills tests at the time of interview. However, we will interview those who have not yet passed their tests.",
+    "OtherRequirements": "We recommend that applicants spend five days observing primary teaching following a UK curriculum prior to attending an interview. However, this is not mandatory.\\r\n\\r\nSuccessful candidates are required to pass the Professional Skills Tests prior to commencing the course. \\r\n\\r\nSuccessful candidates are required to comply with a confidential health screening check as advised by the Department for Education. \\r\n\\r\nSuccessful candidates are required to comply with an enhanced check through the Disclosure and Barring Service as advised by the Department for Education.",
+    "PersonalQualities": "Our trainees will need to:\\r\n* have a ‘can do’ philosophy and a creative approach to learning\\r\n* enjoy working with young people and have a passion for learning\\r\n* be flexible and have the ability to use initiative \\r\n* carry out professional duties in a positive and courteous manner\\r\n* have high expectations for their students and themselves\\r\n* be committed to ongoing professional development\\r\n\\r\nPersonal Qualities:\\r\n* A sensitive, caring professional\\r\n* A committed, hard-worker\\r\n* An enthusiastic team player with a sense of humour\\r\n* A confident, engaging communicator \\r\n* A resilient learner",
+    "HowSchoolPlacementsWork": "The main professional placements are:\\r\n* eight weeks in the autumn term in either Key Stage 1 or Key Stage 2\\r\n* eleven weeks in the summer term in either Key Stage 1 or Key Stage 2\\r\n* two-week enquiry placement in either key stage\\r\n* two-week placement in the Early Years Foundation Stage\\r\n* one-week placement in Key Stage 3.\\r\n\\r\nYour school-based placements will take place at:\\r\n\\r\nHursthead Junior School provides children with a bespoke creative curriculum, rich in wider learning activities inside and outside the classroom.  The school has subject specialists in English and Maths, with a wealth of teaching and training experience.\\r\n\\r\nHursthead Infant School excels in creating a nurturing environment for young children, whilst stimulating their minds with a creative, cross-curricular approach to learning. \\r\n\\r\nOak Tree Primary School is a purpose-built, 3-form entry school that has heavily invested in new technology.  The school, which has a wealth of expertise in SEN and a Maths specialist, offers an exciting opportunity to experience life in a rapidly expanding and developing school. \\r\n\\r\nDidsbury Road Primary School serves a diverse community. It has a long track record of successful teacher training.  Its school vision of \"happy, caring, confident learners\" encompasses all aspects of school life. Lead Associate Partners for Early Years teaching and learning, the school also takes a lead on a range of Action Research Groups.\\r\n\\r\nWilmslow Grange Primary School provides a wealth of creative learning opportunities within and outside the core curriculum, particularly in Music and Art.  A Gold Kitemark PE School, it also has Resource Provision for children with Autistic Spectrum Condition.\\r\n\\r\nBradshaw Hall Primary School is an innovative school, particularly in the fields of computing and outdoor learning.  The school has the Primary Science Quality Mark Gold Award.  With a warm and welcoming learning environment, the school also has a Speech and Language unit on site.\\r\n\\r\nHeald Place Primary School serves a very rich and diverse community in the heart of Central Manchester.  The school offers a number of specialisms: computing, art, outdoor games, dance, bespoke therapeutic approaches, ECO."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our alliance is led by Hursthead Junior School, a three-form entry Junior School in the south Manchester suburb of Cheadle Hulme.   The school is committed to sharing best practice and leading the training of the teachers of the future. \\r\n\\r\nWe are a close-knit alliance of primary schools in the South Manchester area, who individually have substantial experience of working with trainees and a strong track record of producing high quality teachers.  \\r\n\\r\nTo date, all trainees on our School Direct programme have been graded by Manchester University as Good or Outstanding and secured full-time employment before the end of the course, with all of the 2017-18 cohort gaining teaching posts within the alliance.\\r\n\\r\nPartner schools in the alliance are:\\r\n\\r\n* Hursthead Junior School (SK8 7PZ) \\r\n(http://www.hursthead-jun.stockport.sch.uk/)\\r\n\\r\n* Hursthead Infant School (SK8 7PZ)\\r\n(http://hurstheadinfant.co.uk/)\\r\n\\r\n* Oak Tree Primary School (SK8 5HH)\\r\n(http://www.oaktree.stockport.sch.uk/)\\r\n\\r\n* Didsbury Road Primary School (SK4 3HB)\\r\n(http://www.didsburyroad.stockport.sch.uk/)\\r\n\\r\n* Wilmslow Grange Primary & Nursery School (SK9 3NG)\\r\n(http://www.wilmslowgrange.cheshire.sch.uk/)\\r\n\\r\n* Bradshaw Hall Primary School (SK8 6AN)\\r\n(http://www.bradshawhall.stockport.sch.uk/)\\r\n\\r\n* Heald Place Primary School (M14 7GG)\\r\n(http://www.healdplace.manchester.sch.uk/)\\r\n\\r\nWhilst each school has its own unique ethos, we all share a passion for developing teachers who are committed to delivering creative and fun teaching and learning opportunities.\\r\n\\r\n Successful applicants to our alliance will become part of a family, which offers mentoring from highly experienced practitioners across the full range of primary phases and which will help you to learn and grow in confidence within stimulating environments.",
+    "TrainWithDisability": "Equal Opportunities\\r\n\\r\nThe Hursthead Junior School Alliance confirms its commitment to a comprehensive policy of equal opportunities for trainees and prospective trainees in: its admissions policy; all aspects of its teaching and assessment; its counselling of trainees; the way it affords access to any of its benefits, facilities and services. \\r\n\\r\nThe aim of this commitment is to ensure that no trainee or prospective trainee receives less favourable treatment directly or indirectly on grounds of race, colour, nationality, ethnic origins, gender, sexuality, marital or parental status, disability, creed, political belief, social or economic class.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The alliance offers School Direct places in partnership with the University of Manchester, who validate the course with a PGCE qualification and QTS.\\r\n\\r\nThe course was judged by Ofsted to be 'Outstanding'.  Of particular note:\\r\n* 'The high quality and challenge of the training, most especially in mathematics and science.'\\r\n* 'The wide range of school-based experiences and the tailored use of practitioners and expertise from within the partnership to plan and deliver training.'\\r\n* 'The regular auditing of trainees' progress and their views, with a timely response to identified needs so that trainees benefit quickly from improvements and amendments.'",
+        "UcasInstitutionCode": "M20"
+      }
+    ]
+  },
+  "has_inst": true
+}

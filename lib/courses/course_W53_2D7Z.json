@@ -1,0 +1,65 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "West Midlands Consortium",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "slug": "W53/2D7Z",
+  "providerCode": "W53",
+  "programmeCode": "2D7Z",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "THOMAS TELFORD SCHOOL, OLD PARK, TELFORD, SHROPSHIRE, TF3 4NW",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "THOMAS TELFORD SCHOOL, OLD PARK, TELFORD, SHROPSHIRE, TF3 4NW",
+      "geocode": true,
+      "formatted_address": "Old Park, Telford TF3 4NW, UK",
+      "latitude": 52.6776164,
+      "longitude": -2.4581974,
+      "post_code": "TF3 4NW",
+      "city": "Shropshire",
+      "route": null,
+      "postal_town": "Telford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "W53",
+    "addr_1": "Thomas Telford School (Lead School)",
+    "addr_2": "Old Park",
+    "addr_3": "Telford",
+    "addr_4": "Shropshire",
+    "postcode": "TF3 4NW ",
+    "url": "http://www.wmc.ac",
+    "geocode": true,
+    "formatted_address": "Old Park, Telford TF3 4NW, UK",
+    "latitude": 52.6776164,
+    "longitude": -2.4581974,
+    "post_code": "TF3 4NW",
+    "city": "Shropshire",
+    "route": null,
+    "postal_town": "Telford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "The Physical Education course prepares students to teach all areas of National Curriculum Physical Education at Secondary level. It develops reflective practitioners through an evaluative process of their own knowledge and skills. An audit of skill is conducted to ascertain the levels of knowledge; this is enhanced by a strong programme reinforced with opportunities to obtain Governing Body Awards. Trainees are supported and encouraged to develop ideas in the delivery of the attainment targets in Physical Education across the six practical activity areas. The course reflects the very latest teaching in Physical Education responding to the needs and changes within our Consortium of Schools and the National Curriculum. GCSE, A level, BTEC and leadership courses in Physical Education and Sport are experienced by all trainees and resources for all courses are explored. Use of Information and Communications Technology is studied and a range of information handling skills are utilised to enhance teaching and learning."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The West Midlands Consortium has successfully managed School Centred Initial Teacher Training Courses for the past 20 years.  We are a well-established leading provider for teacher training based at the prestigious Thomas Telford School, the top performing comprehensive in England.  Our Post Graduate Certificate in Education (PGCE) courses are highly effective in nurturing the talents of future generations of outstanding teachers, with a proven track record of high employment rate and career progression.  We believe in fostering reflective, self-assured teachers who are confident in questioning and rationalising their progress and ability as teachers.\\r\nOur Schools Direct courses are highly effective in nurturing the talents of future generations of outstanding teachers, with a proven track record of high employment rate and career progression.\\r\nOur Post Graduate Certificate in Education courses award 60 Masters level credits for teaching ability as well as research and academic writing.  We individualise student learning right from the onset encouraging students to progress quickly and effectively into proficient teachers. You have access to and are supported by subject experts and an approachable PGCE team who will encourage and challenge you to become an outstanding teacher.\\r\n \\r\n",
+    "TrainWithDisability": "If you have special needs, please contact the Course Administrator to discuss how we might be able to help with your particular individual requirements. \\r\n\\r\nAccess for wheelchairs is not a problem. The school has a lift, and the car park for disabled drivers is right outside the main doors. \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

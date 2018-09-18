@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Bourton Meadow Initial Teacher Training Centre",
+  "provider": "Bourton Meadow Academy",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "16F/27GP",
+  "providerCode": "16F",
+  "programmeCode": "27GP",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Bourton Meadow Academy, Burleigh Piece, Buckingham, MK18 7HX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bourton Meadow Academy, Burleigh Piece, Buckingham, MK18 7HX",
+      "geocode": true,
+      "formatted_address": "Burleigh Piece, Buckingham MK18 7HX, UK",
+      "latitude": 51.996812,
+      "longitude": -0.971904,
+      "post_code": "MK18 7HX",
+      "city": "Buckinghamshire",
+      "route": "Burleigh Piece",
+      "postal_town": "Buckingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "16F",
+    "addr_1": "Bourton Meadow Academy",
+    "addr_2": "Burleigh Piece",
+    "addr_3": "Buckingham",
+    "addr_4": null,
+    "postcode": "MK18 7HX",
+    "url": "http://www.bourtonmeadowittc.co.uk",
+    "geocode": true,
+    "formatted_address": "Burleigh Piece, Buckingham MK18 7HX, UK",
+    "latitude": 51.996812,
+    "longitude": -0.971904,
+    "post_code": "MK18 7HX",
+    "city": "Buckinghamshire",
+    "route": "Burleigh Piece",
+    "postal_town": "Buckingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "In addition to the fees, you will also be required to cover the cost of a Disclosure and Barring Service (DBS) application (Approx. £60), which is a prerequisite for working in schools.",
+    "AboutCourse": "This is a non-salaried primary general (5 - 11 years) course, leading to QTS with a PGCE. It prepares applicants to teach the full range of national curriculum subjects across Key Stage 1 and Key Stage 2. \\r\n\\r\nThe vast majority of training takes place in schools. Each trainee will be given at least two placements across the partnership, during which they work closely alongside experienced teacher tutors who demonstrate outstanding practice and can provide daily coaching and support. More information about the school placements can be found below.\\r\n\\r\nIn addition to the school-based training, trainees attend weekly core training sessions at a range of venues across the partnership. These generally take place on Fridays and provide a coherent programme, closely linked to the Teachers’ Standards and national curriculum as well as covering areas such as safeguarding, E-Safety and stress management.  \\r\n\\r\nThese weekly sessions, along with post-session tasks, enable trainees to develop a deeper understanding of key issues and pedagogical thinking by encouraging them to critically reflect on research in relation to their own classroom practice.  They also provide an opportunity for trainees to compare notes with peers working in other schools and share experiences within a supportive environment.\\r\n\\r\nIn addition to the core (QTS) training, trainees on this course attend approximately 9 PGCE workshops with Oxford Brookes University (usually in Buckingham). On successful completion of three modules, trainees gain a PGCE with 60 Masters' credits.\\r\n\\r\nTrainees are assessed against the Teachers' Standards and their progress towards these standards is reviewed at regular intervals throughout the course. A wide range of evidence is used when making judgements such as observations, half termly reports, evidence bundles (collated by trainees on a half-termly basis),  assignments and the trainees own reflections and self evaluations.\\r\n\\r\nThe focus of all assessment activities is developmental - with the clear aim of helping trainees to further improve the quality of their teaching.\\r\n\\r\nA final Assessment takes place in June and will consist of a paired observation, scrutiny of evidence against the Teachers' Standards, a formal interview and a final report from the teacher tutor. \\r\n\\r\nA detailed and rigorous assessment procedure is in place, which is transparent, understood by all partners and consistently implemented.  It has also been reviewed in line with the government's workload initiative, ensuring that the collection of evidence is both meaningful and manageable and has a positive impact on the progress of trainees.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "- BA First degree or equivalent qualification \\r\n- GCSE grade C/4 or above in English language (or equivalent qualification)\\r\n- GCSE grade C/4 or above in mathematics (or equivalent qualification)\\r\n- GCSE grade C/4 or above in a science (or equivalent qualification)\\r\n-  literacy and numeracy professional skills tests\\r\n\\r\nIf you studied outside of the UK, you should contact the National Academic Recognition Centre website (https://www.naric.org.uk/naric) to obtain written confirmation that your qualifications are of an equivalent level to the required UK GCSEs and undergraduate degree.\\r\n\\r\n",
+    "InterviewProcess": "It is our aim to recruit the highest quality applicants into the profession who have the capacity to become outstanding teachers.\\r\n\\r\nFor this reason, we carry out a rigorous three-stage selection process.\\r\n\\r\nStage 1: An application sift is carried out by course leaders to check for minimum academic requirements as well as strong references.\\r\n\\r\nStage 2: Applicants are invited to a selection day at Bourton Meadow Academy where they will take part in a range of activities including a presentation, group task, written task and a short teaching activity.\\r\n\\r\nThese tasks enable us to identify applicants who possess the desired characteristics and interpersonal skills.\\r\n\\r\nThe interview panel comprises two course managers and sometimes a headteacher from the partnership.\\r\n\\r\nStage 3: Formal interview\\r\n\\r\nThis interview lasts approximately 20 minutes and consists of a series of questions which enable the applicant to share more information about their previous experience and to elaborate on the skills they bring to the profession.\\r\n\\r\nThroughout the whole selection process, we look for evidence that the applicant has a thorough understanding of the roles and responsibilities of a class teacher and what this entails on a daily basis.\\r\n\\r\nFollowing a successful interview, a conditional offer is made. This offer is conditional on the applicant obtaining any pending qualifications (including the literacy and numeracy professional skills tests), an Enhanced DBS check and a 'Fit to Teach' health assessment.\\r\n",
+    "OtherRequirements": "- Fit to Teach assessment\\r\n\\r\n- Enhanced DBS check\\r\n\\r\n- Prohibition Check\\r\n\\r\nWe recommend that applicants gain a small amount of experience within a primary school, in order to gain first hand experience of a classroom environment and a small insight into the role of a teacher.  Doing so, will provide valuable experience and  may help to strengthen their performance at our selection day.  However, this work experience is NOT a requirement and applications will still be considered from candidates without such experience. ",
+    "PersonalQualities": "We aim to recruit individuals who can:\\r\n\\r\n- demonstrate a passion for teaching and a genuine concern for children's welfare\\r\n- demonstrate good subject knowledge \\r\n- show resilience and perseverance\\r\n- be adaptable, creative and patient\\r\n- work under pressure\\r\n- proactively seek opportunities to enhance their training\\r\n- communicate clearly and accurately in Standard English\\r\n- form positive relationships with individuals from all walks of life \\r\n- support the values, attitudes and ethos of our partnership schools\\r\n- maintain high standard of professionalism \\r\n- reflect on their own practice and act upon advice\\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Generally, trainees will have two school placements during the course: a main placement and a second placement.  They will work in these placement schools four days a week (Monday - Thursday), giving them approximately 140 days in school.\\r\n\\r\nMain Placement: This is the school in which the trainee will spend most of their time throughout the year.  By remaining with the same class for the majority of the year, trainees develop a secure understanding of pupils' progress over time, how this is tracked and used to inform future teaching. \\r\n \\r\nSecond Placement: This usually takes place in the first half of the spring term  and gives trainees an opportunity to experience a contrasting setting and different key stage. \\r\n \\r\nEnhancement Visits: These visits are built into our core training programme so that trainees are given regular opportunity to spend time in different schools and settings, enabling them to focus on specific areas such as behaviour management, Pupil Premium, Special Educational Needs (SEND) and transition from KS2 to KS3. \\r\n\\r\nThe aim of these placements and visits is to further enhance the training programme, equipping trainees with the knowledge, skills and understanding to teach in a wide range of contexts.\\r\n\\r\nBourton Meadow arranges all placements on behalf of trainees. When selecting schools, we consider a wide range of factors including geographical location, preferred key stage, type of school, previous experience, chosen course etc.  However, we are also able to accommodate requests for a specific school (with the Headteacher's agreement) if an applicant already has a link with the school. \\r\n\\r\nTrainee online surveys in January 2018 indicated that 100% of trainees agreed that their placements had been in contrasting schools and had been arranged in a timely manner.\\r\n\\r\nA second placement familiarisation week in November, also provides trainees with an opportunity to spend time in their new school, prior to the placement commencing in January. This enables trainees to receive a thorough induction, form positive relationships with colleagues and pupils and familiarise themselves with planning, helping them to maximise their learning and progress during this short but vital phase of the training programme."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Bourton Meadow Initial Teacher Training Centre (BMITTC) is an established provider of teacher training - recognised by Ofsted as an outstanding provider (March 2014) and has been since its formation in 2000.\\r\n\\r\nBourton Meadow ITTC works within Bourton Meadow Education Trust (BMET) and operates from Bourton Meadow Academy: the Lead school in our growing partnership.\\r\n\\r\nBased in Buckingham, the partnership is ideally placed for Milton Keynes, Aylesbury, Leighton Buzzard, Oxford, Brackley, Bicester, Towcester and Northampton and we currently have over 20 schools  within the partnership.\\r\n\\r\nA very unique and  important aspect of our training programme, which was recognised by Ofsted in our most recent inspection, is the fortnightly visits from a training manager. These visits take place within school, enabling both the trainee and their teacher tutor to be well-supported and the training to be personalised to meet trainees' individual needs. The same training manager will respond quickly to any queries that arise in between visits, helping us to maintain the outstanding communication and support, for which we are renowned, as reflected in the stakeholder online surveys (January 2018).\\r\n\\r\nOther benefits of training with Bourton Meadow include:\\r\n\\r\n- opportunity to observe and be coached by outstanding teachers;\\r\n\\r\n- large focus on practical experience and application of skills in the classroom;\\r\n\\r\n- opportunity for university-led learning with Oxford Brookes University, leading to the award of a PGCE;\\r\n\\r\n- a diverse range of high-quality placements;\\r\n\\r\n- excellent employment opportunities and rapid career progression;\\r\n\\r\n- continued support into your NQT year and beyond\\r\n\\r\n",
+    "TrainWithDisability": "We strongly encourage skilled and talented applicants from a variety of backgrounds, including those with a disability.\\r\n\\r\nWe therefore endeavour to cater for your individual needs, through the application and selection process, as well as the duration of the training programme by working in collaboration with our schools to make reasonable adjustments, as recommended by occupational therapy.\\r\n\\r\nPlacements are carefully chosen to ensure that the specific needs of an individual can be met within the setting and this includes accessibility for trainees with a physical disability. \\r\n\\r\nThe fortnightly school visits by a training manager from the lead school  enable us to keep in close contact with trainees and to personalise the training and support they receive.  \\r\n\\r\nIn the past, trainees with dyslexia have benefitted from additional visits and meetings to support them with the completion and organisation of course-related paperwork as well as their time management.   Bourton Meadow has also helped to signpost trainees to various organisations who can provide more specialist advice.\\r\n\\r\nAs a result of these factors, data analysis from 2017-18 demonstrated that there were no differences in the outcomes of trainees with a known disability compared to those with no disability.\\r\n\\r\nIf you have a disability or other need you'd like to discuss before applying to our training programme, please contact us so we can discuss your specific requirements in more detail and answer any questions that you may have.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Bourton Meadow ITTC is an established, outstanding provider of initial teacher training. It accredits School Direct courses for two lead school partnerships: Bourton Meadow Academy (Primary General - 5 - 11 years) and Bedgrove Infant School (Primary General -  3 - 7 years). All trainees, regardless of the route, benefit from the same high quality training and support, including the fortnightly visits from a training manager. \\r\n\\r\nBourton Meadow ITTC has a wealth of experience across the sector and is also registered to provide the AO route to QTS as well as post-graduate teaching apprenticeships.",
+        "UcasInstitutionCode": "1WR"
+      }
+    ]
+  },
+  "has_inst": true
+}

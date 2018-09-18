@@ -1,0 +1,82 @@
+{
+  "locationType": "School",
+  "accrediting": "Roehampton University",
+  "provider": "Kingston School Direct",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1FM/2RP7",
+  "providerCode": "1FM",
+  "programmeCode": "2RP7",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Coombe Girls' School, Clarence Avenue, New Malden, Kingston-Upon-Thames, KT3 3TU",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Coombe Girls' School, Clarence Avenue, New Malden, Kingston-Upon-Thames, KT3 3TU",
+      "geocode": true,
+      "formatted_address": "Clarence Ave, New Malden KT3 3TU, UK",
+      "latitude": 51.4099484,
+      "longitude": -0.2635318,
+      "post_code": "KT3 3TU",
+      "city": "Greater London",
+      "route": "Clarence Avenue",
+      "postal_town": "New Malden"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1FM",
+    "addr_1": "Coombe Girls' School",
+    "addr_2": "Clarence Avenue",
+    "addr_3": "New Malden",
+    "addr_4": "Kingston-Upon-Thames",
+    "postcode": "KT3 3TU ",
+    "url": "http://www.coombegirlsschool.org",
+    "geocode": true,
+    "formatted_address": "Clarence Ave, New Malden KT3 3TU, UK",
+    "latitude": 51.4099484,
+    "longitude": -0.2635318,
+    "post_code": "KT3 3TU",
+    "city": "Greater London",
+    "route": "Clarence Avenue",
+    "postal_town": "New Malden"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Primary course is for graduates intending to qualify as primary school teachers.  You will develop the knowledge and skills required of primary and early years teachers. \\r\n\\r\nYou will gain a broad understanding of a wide range of curricular areas, including English, mathematics, science, art and design, design and technology, geography, history, information and communication technology, music, physical education and religious education. \\r\n\\r\nDuring the course you will develop the skills and knowledge appropriate for teaching across the 3-11 age range, with opportunities for particular emphasis on either the Foundation Stage and Key Stage 1, or Key Stage 1 and Key Stage 2. Roehampton also provides plenty of opportunity for your self-development. \\r\n\\r\nYou will undertake 120 days of practical placements in one of our diverse range of partner schools during the course, providing you with substantial classroom experience appropriately staged throughout the year. During the placements, you will progress from participant observer, via support teacher and sharing teacher, to lead teacher. \\r\n\\r\nThe assessment of your professional development takes place at regular intervals during the year and is a collaborative exercise involving you, your class teacher and your university tutor.  We do all we can to ensure that this process takes place smoothly, and that there is a continuous monitoring of professional development throughout the course. \\r\n\\r\nAll our tutors have extensive teaching experience in schools, and many have served in local authorities or subject associations as advisory teachers, as Ofsted inspectors or as consultants. This means our programmes are based on the reality of the classroom and education system. Many work at the cutting edge of research in teacher education, which has a positive impact on the quality of provision for all of our students. \\r\n\\r\nThe PGCE will prepare you to organise pupils' learning effectively. In particular, the course aims to foster the following qualities in student teachers:- \\r\n* positive attitudes, values and high standards of personal and professional conduct \\r\n* the facility to engage and motivate pupils to develop a love of learning \\r\n* knowledge and understanding of how pupils learn and how this impacts on teaching \\r\n* an understanding of the need to respond to the strengths and needs of all pupils \\r\n* good subject knowledge across the curriculum \\r\n* effective use of assessment data to develop teaching practice and secure pupils' progress \\r\n* responsibility for development through self-evaluation, responding to advice and feedback \\r\n\\r\nFor further information [click here](https://www.roehampton.ac.uk/postgraduate-courses/pgce-primary/)",
+    "CourseLength": "OneYear",
+    "Qualifications": "Roehampton University requires a minimum of a 2:2 honours degree, with GCSEs in English Language, Maths and one science at Grade C or Grade 5, or above.   For equivalency testing, we will accept tests from [equivalencytesting.com](http://www.equivalencytesting.com/)\\r\n\\r\nYou should have a good degree in a relevant area. Candidates with a 2:1 are preferred.  You must have three A levels at grade C or above (or the equivalent), and we expect you to have studied a broad range of national curriculum subjects or other directly related areas as part of your wider experience. \\r\n\\r\nFor full details of entry requirements [click here](https://www.roehampton.ac.uk/applying/pgce-primary-entry-requirements/)",
+    "InterviewProcess": "We operate a one stage interview process on our primary tuition fee route.\\r\n\\r\nCoombe Girls' School, as the lead school in the partnership, will co-ordinate the recruitment process.  Roehampton University will carry out all the necessary academic eligibility checks. \\r\n\\r\nFollowing successful shortlisting, you will spend a day in school carrying out the following tasks: an individual interview, a presentation task, leading part of a lesson and a written task. \\r\n\\r\nThis will also be an opportunity for you to learn about the training programme and partnership, see the school and talk to some staff and pupils. The process will be rigorous and will enable us to assess your potential for the teaching profession and to identify strengths and weaknesses for you to begin to address. ",
+    "OtherRequirements": "You will ideally have some experience of working with young people, perhaps through volunteer work, young clubs, sports teams or charities. \\r\n\\r\nWe strongly recommend that you gain some experience in a classroom prior to interview.\\r\n\\r\nAll places on the PGCE are subject to satisfactory health and criminal convictions assessments. Applicants will be required to complete an enhanced Criminal Records Bureau Disclosure and Barring Service (DBS) check.  We expect you to share our commitment to safeguarding and promoting the welfare of children, young people and vulnerable adults.",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject, with a real desire and ability to communicate this with young people of all abilities, needs and backgrounds at primary level. \\r\n\\r\nPrevious experience of working with, or observing, primary age children in school or other contexts is a considerable advantage. Part of the interview process will include reflection on this experience. \\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Once you have been accepted onto the programme, your placement schools will be allocated from the pool of schools offering your subject.  \\r\nThis process is not normally finalised until late June, by when our schools will have fixed their staffing for September.\\r\n\\r\nYou will carry out two blocks of teaching practice, in two different placement schools in our area. You will also attend two weeks in an alternative setting/phase, such as a special school or secondary school, in order to give you a wider experience from which to build your practice. \\r\nFrom the beginning you will be treated as a member of staff, welcomed into your team and invited to attend staff meetings, development days, staff social activities and any relevant educational trips. \\r\n\\r\nYour placement schools will provide a mentor to guide you and work alongside you to identify needs and provide personalised support as you develop. You will gradually build up your contact time with students as you develop your confidence, teaching skills and time management. You will also shadow and support all-important pastoral work. \\r\n\\r\nOur mentors are outstanding teachers who are required to undertake a rigorous training programme to develop their coaching, effective classroom observation and feedback skills. They will work with you to develop rigour, professional knowledge, understanding and skills in order to deliver creative, purposeful and challenging teaching and learning. \\r\n\\r\nOn the course you will have full access to the university's facilities.  You will be assigned a university tutor who will support your development as a teacher through tutorials, visits to school and guidance with assignments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our partnership aims to create a caring and vibrant environment, where trainee teachers can develop their teaching expertise, knowledge and skills while feeling valued and supported by expert professionals and inspirational leaders.  Our teachers are excellent practitioners, committed to sharing their skills, knowledge and practice with the next generation of teachers. \\r\n\\r\nCoombe Girls' School is a nationally designated Teaching School judged 'outstanding' by Ofsted outstanding in every category at its last inspection.\\r\n\\r\nSchools involved in our programme have included:\\r\nChessington Community College, Coombe Boys' School, Coombe Girls' School, Hinchley Wood School, King's College School (Wimbledon - independent), Raynes Park High School, Richard Challoner School, Rutlish High School, Southborough High School, The Holy Cross School, The Kingston Academy, The Tiffin School, The Tiffin Girls' School and Tolworth Girls' School. \\r\n\\r\nAnd in our primary programme:\\r\nBurlington Juniors, Christ Church Primary (New Malden), Coombe Hill Infants, Coombe Hill Juniors, Ellingham Primary, Green Lane Primary, King's Oak Primary, Knollmead Primary, Robin Hood Primary, Sacred Heart Primary (Teddington) and St Mary's and St Peter's Primary (Teddington).\\r\n\\r\nThe unique strength to the secondary partnership lies in the diversity of provision, offering our student teachers an enriching, contrasting experience.  The partnership includes co-educational schools, single sex, selective and non-selective and one independent.  Our secondary programmes provide opportunities to develop post-16 teaching practice. \\r\n\\r\nOur schools enjoy a highly valued reputation locally, many oversubscribed due to the competitive, high-performing profile of our borough.  Student behaviour is generally excellent and results show that many students consistently out-perform their national peers.",
+    "TrainWithDisability": "All school direct students have full access to the student services in our university provider partners.  This includes support services for students with a range of physical and mental health needs.  Their campuses have full disability access.\\r\n\\r\nStudents may also access well-being and counselling services and support services for specific learning needs, including dyslexia and dyspraxia, through academic achievement advisers.\\r\n\\r\nThe Institute of Education has a nursery available (run by University College London).  However, for student teachers we recommend you look into childcare options near your place of residence or host teaching school.  \\r\n\\r\nOur partner universities also offer accommodation for student teachers, although it may be better to find accommodation near placement schools. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as 'outstanding' in every criterion across Primary and Secondary Education.\\r\n\\r\nUCL IOE has been providing first-class teacher training, in partnership with schools and colleges for over 100 years.  UCL IOE graduates are highly sought after in schools and colleges throughout London and the UK. Its central location in historic Bloomsbury means that it is in the heart of London.  Close by are stations at Russell Square, King's Cross, St Pancras and Euston.",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "The Roehampton University School of Education is one of the principal providers of teacher training in the UK, with partnerships of over 350 schools and a rich history of over 175 years.\\r\n\\r\nStudents enjoy high quality teaching and excellent employment prospects: 99% of teacher training graduates are in work or study six months after leaving (Destinations of Leavers of Higher Education 2013/14). \\r\n\\r\nThe beautiful parkland campus in south-west London is only 30 minutes from the West End. The School is ranked third in London for the quality of our research in the field of education (Research Excellence Framework 2014).\\r\n",
+        "UcasInstitutionCode": "R48"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "G56"
+      }
+    ]
+  },
+  "has_inst": true
+}

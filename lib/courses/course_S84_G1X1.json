@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Sunderland",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "slug": "S84/G1X1",
+  "providerCode": "S84",
+  "programmeCode": "G1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "The Student Gateway, Edinburgh Building, Chester Road, Sunderland, SR1 3SD",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The Student Gateway, Edinburgh Building, Chester Road, Sunderland, SR1 3SD",
+      "geocode": true,
+      "formatted_address": "Sunderland SR1 3SD, UK",
+      "latitude": 54.9044941,
+      "longitude": -1.391347,
+      "post_code": "SR1 3SD",
+      "city": "Tyne and Wear",
+      "route": null,
+      "postal_town": "Sunderland"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S84",
+    "addr_1": "Edinburgh Building",
+    "addr_2": "City Campus",
+    "addr_3": "Chester Road",
+    "addr_4": "Sunderland",
+    "postcode": "SR1 3SD ",
+    "url": "http://www.sunderland.ac.uk",
+    "geocode": true,
+    "formatted_address": "Edinburgh Building, Chester Road, Sunderland SR1 3SD, United Kingdom",
+    "latitude": 54.90448989999999,
+    "longitude": -1.3919524,
+    "post_code": "SR1 3SD",
+    "city": null,
+    "route": null,
+    "postal_town": "Sunderland"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The University of Sunderland is an ambitious university with a global reach. We have 20,000 students at our four campuses worldwide – two in Sunderland on the north east coast, one in London and our newest in Hong Kong. \\r\n\\r\nThe University has been awarded Silver in the Teaching Excellence Framework which demonstrates our high-quality teaching, learning and outcomes for our students.\\r\n\\r\nAccording to our most recent Ofsted report, some key strengths of our provisions are strong communication and positive relationships between the University and its partner schools, and the commitment of trainers in partnership schools to the all-round development of the trainees. Our comprehensive courses will give you the skills needed to make a real difference in educating the next generation, as well as thrive on a personal level with a rewarding career. \\r\n\\r\n\\r\n",
+    "TrainWithDisability": "We celebrate and value the diversity of all students and staff, working to ensure that all are welcome in our community and do not face discrimination or encounter barriers with regard to their disability.\\r\n\\r\nPlease contact the Disability Support Team for disability-related queries:\\r\n\\r\nEmail: disability.support@sunderland.ac.uk\\r\nTel: 0191 515 2952",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

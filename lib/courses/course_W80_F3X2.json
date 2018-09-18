@@ -1,0 +1,72 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Worcester",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "slug": "W80/F3X2",
+  "providerCode": "W80",
+  "programmeCode": "F3X2",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "geocode": true,
+      "formatted_address": "Worcester WR2 6AJ, UK",
+      "latitude": 52.1975549,
+      "longitude": -2.2430422,
+      "post_code": "WR2 6AJ",
+      "city": "Worcestershire",
+      "route": null,
+      "postal_town": "Worcester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "W80",
+    "addr_1": "Henwick Grove",
+    "addr_2": "Worcester",
+    "addr_3": "Worcestershire",
+    "addr_4": null,
+    "postcode": "WR2 6AJ ",
+    "url": "http://www.worcester.ac.uk",
+    "geocode": true,
+    "formatted_address": "Henwick Grove, Worcester WR1 3JE, UK",
+    "latitude": 52.201139,
+    "longitude": -2.237474,
+    "post_code": "WR1 3JE",
+    "city": "Worcestershire",
+    "route": null,
+    "postal_town": "Worcester"
+  },
+  "options": [
+    "PGCE with QTS, full time or part time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at the University of Worcester has a long-standing reputation for training excellent, highly employable teachers. You will be supported by a dynamic team of tutors who have been outstanding school teachers and are now regarded as education experts with national profiles in a wide range of secondary subjects. \\r\n\\r\nOur courses provide unique opportunities. Trainee teachers may if they wish add depth to their qualifications by involvement in additional enhancement programmes in key areas, such as Special Educational Needs and Disabilities; working with learners who have English as an Additional Language; developing expertise in Citizenship; developing skills in a second STEM subject; preparing to be Education Leaders, or developing skills in Technology Enhanced Learning. These popular enhancements to your training build your confidence as well as greatly enhancing your employability. \\r\n\\r\nYou will benefit from our excellent partnerships with secondary schools across the West Midlands, where our highly-trained mentors pay close attention to your individual development within a friendly and professional context. We also offer pre-training Subject Knowledge Enhancement courses in a range of subjects (Biology, Chemistry, Computer Science, Design and Technology (Food & Textiles), English, French, Geography, Mathematics, Physics) for those who need them and our PGCE offers Master's-level credits as well as Qualified Teacher Status. ",
+    "TrainWithDisability": "The University of Worcester offers a wide range of support and advice to disabled students and also to parents, staff and those external agencies supporting disabled students.\\r\n\\r\nOur Disability and Dyslexia Service offers support, advice and guidance to students who have a disability, medical condition or Specific Learning Difficulty (SpLD). This support lasts throughout a student’s studies at the University of Worcester. We also work with and offer support and advice to University staff on how to meet the needs of disabled students.\\r\n \\r\n* Supporting disabled students with general enquiries\\r\n* Implementing special arrangements for lectures, exams and field trips. This might include notes in advance or special arrangements in exams.\\r\n* Where appropriate, we can arrange note takers, academic support tutors, library assistance, interpreters and transcribers.\\r\n* Help with applying for the Disabled Students Allowance (DSA) which is there to fund these types of support in higher education.\\r\n* Limited loans of equipment\\r\n* Confidential advice and support for students and staff\\r\n* Training and awareness raising workshops\\r\n* Assistive technology ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

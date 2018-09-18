@@ -1,0 +1,60 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Durham SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "D87/2BWR",
+  "providerCode": "D87",
+  "programmeCode": "2BWR",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "D87",
+    "addr_1": "The Work Place",
+    "addr_2": "Heighington Lane",
+    "addr_3": "Aycliffe Business Park",
+    "addr_4": "Newton Aycliffe, County Durham",
+    "postcode": "DL5 6AH ",
+    "url": "http://www.durhamscitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Aycliffe Business Park, Heighington Ln, Newton Aycliffe DL5 6AH, UK",
+    "latitude": 54.595944,
+    "longitude": -1.5759368,
+    "post_code": "DL5 6AH",
+    "city": "County Durham",
+    "route": "Heighington Lane",
+    "postal_town": "Newton Aycliffe"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Durham SCITT primary trainees will be allocated a 'home school' but will also do a second placement in one of the other primary partnership schools. On each placement you will be allocated a Mentor who will support and guide you through the school based training. \\r\n\\r\nThe centrally based training is delivered by highly skilled practitioners from our Partnership Schools as well as SCITT staff, producing highly reflective trainees with a very good understanding of how children learn. There is a strong emphasis on giving you the knowledge and understanding to secure pupils' progress in the core subjects, English, Science and Mathematics. The course will also enable you to improve your knowledge and understanding of other subjects in the curriculum. \\r\n\\r\nThe training has been designed to reflect local and national priorities and covers a wide range of general professional subjects including Behaviour Management and Special Educational Needs. \\r\n\\r\nAll trainees must demonstrate that they can fully meet each of the Standards for Qualified Teacher Status by the end of the course. Trainees will be continually assessed through lesson observations and placement reports whilst on teaching placements, and through a series of 3 short assignments. Detailed portfolios of evidence are submitted 3 times during the year to demonstrate how trainees are meeting the Standards for Qualified Teacher Status. Following the first 2 submissions, trainees receive feedback on their progress.\\r\n\\r\nThe PGCE is accredited by University of Sunderland and assessed through 2 written assignments. The 2 PGCE training modules will be held at The Work Place in Newton Aycliffe.\\r\n\\r\nIf a trainee does not meet the Standards for Qualified Teacher Status, but has passed the 2 PGCE modules, the credits can still be used towards a MA programme.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "2.2 or higher honours degree (or equivalent). GCSE grade C or above in English Language, Mathematics and Science. Additional GCSE's showing a good spread of curriculum subjects and at least 2 A levels. \\r\n\\r\nIf your degree classification is lower second then the following additional requirements will apply: \\r\n\\r\nGCSE grade B or above in English language. GCSE grade C or above in Mathematics and Science. Other GCSE's required showing a good spread of curriculum subjects and at least 2 A Levels at grade C or above. \\r\n\\r\nPlease email info@durhamscitt.co.uk if you need further guidance re your qualifications before you apply.",
+    "FinancialSupport": "Small travel bursaries are available (whilst on placement) to trainees who do not qualify for a DfE bursary.",
+    "InterviewProcess": "The first thing we look at is your application form and your references to decide whether or not we should invite you for interview. It is, therefore, important to include all the relevant information on the form to help us make this decision.\\r\n\\r\nIf you are invited to interview and have a disability, please let the Course Administrator know in advance if there are any special arrangements that should be made for the interview process, for example large print copies of documentation, additional time for reading or wheelchair access to the interview rooms.  The interview process will take place in one of our primary partnerships schools.\\r\n\\r\nIf you are invited to interview, you will be sent information about a 15 minute teaching task. The activity should be devised to be appropriate for a class of primary school children (year group will be notified beforehand). The interview panel will then ask you several questions to establish your motivation for wanting to teach in the primary age range and some administration questions. There will also be an opportunity for you to ask questions about the course. The interview process will include a mathematics test and literacy exercise.\\r\n\\r\nYour performance on the day will be assessed against criteria linked to the Standards for Qualified Teacher Status. \\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Placement schools are selected not only based in relation to a trainee's home location, but also on our judgments of how a trainee would fit into their primary school. Whilst we try and keep travelling to a minimum this is dependent on the location of a trainee’s home address and small travel bursaries are available for those trainees not in receipt of a DfE training bursary.\\r\n\\r\nPrimary trainees will be allocated a 'home school' but will also do a second placement in one of the other primary partnership schools. The course is full time and runs from September until the beginning of July. \\r\n\\r\nThe course will provide a rigorous and structured programme of training leading to QTS after one year. There are three compulsory elements: \\r\n\\r\nProfessional Studies Programme (PSP) \\r\nReflective Practice Programme (RPP) \\r\nClassroom Practice Programme (CPP)\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Durham SCITT has been training teachers since 2005. It’s the personal attention we give to our trainees which makes this a great place to learn. We pride ourselves on the personal approach. We know there is no such thing as a “typical trainee” so we don’t provide a one-size-fits-all course. We will help you to grow and become a great teacher. Our secondary Subject Specialist programme (SSP) was recognised by Ofsted as outstanding and highly innovative practice.\\r\n\\r\nSecondary trainees will have the opportunity to gain experience in 11-16/11-18 comprehensive schools/academies; special schools (EBD); a school with BESD status; Sixth Form colleges and primary schools. Trainees undertake substantial placements in at least 2 Partnership Schools. On each main placement you will be allocated a Subject Tutor and a School Tutor who will support and guide you through the school based training. \\r\n\\r\nWe have 2 primary hubs; 1 based in St Michael's, Bishop Middleham and 1 based in Benedict Biscop Academy, Sunderland.  Primary trainees will be allocated a 'home school' but will also do a second placement in one of the other primary partnership schools. On each placement you will be allocated a Mentor who will support and guide you through the school based training. \\r\n\\r\nAll trainees have access to our purpose built learning centre in Newton Aycliffe.  High quality trainees, impressive employment rates and effective partnerships with schools, mean we are in the position to offer outstanding teacher training.\\r\n",
+    "TrainWithDisability": "Durham SCITT prides ourselves on the personal approach and fully supports candidates with disabilities during the interview process and throughout the course. \\r\n\\r\nThe Occupational Health Service provides an assessment and advisory service on the occupational health aspects of trainees.  As part of the recruitment process, you will be required to complete an Occupational Health questionnaire and, if any needs are identified, will be followed up. Any necessary recommendations will be put in place.  \\r\n\\r\nAll of our buildings are fully accessible.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

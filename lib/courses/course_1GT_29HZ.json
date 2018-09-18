@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Suffolk and Norfolk Secondary SCITT",
+  "provider": "Notre Dame High School Norwich",
+  "subjects": [
+    "Art / art & design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "slug": "1GT/29HZ",
+  "providerCode": "1GT",
+  "programmeCode": "29HZ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Notre Dame High School, Surrey Street, Norwich, Norfolk, NR1 3PB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Notre Dame High School, Surrey Street, Norwich, Norfolk, NR1 3PB",
+      "geocode": true,
+      "formatted_address": "Surrey St, Norwich NR1 3PB, UK",
+      "latitude": 52.6229053,
+      "longitude": 1.2967905,
+      "post_code": "NR1 3PB",
+      "city": "Norfolk",
+      "route": "Surrey Street",
+      "postal_town": "Norwich"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1GT",
+    "addr_1": "Notre Dame High School",
+    "addr_2": "Surrey Street",
+    "addr_3": "Norwich",
+    "addr_4": "Norfolk",
+    "postcode": "NR1 3PB ",
+    "url": "http://www.ndhs.org.uk/page/?title=Initial+Teacher+Training&pid=1",
+    "geocode": true,
+    "formatted_address": "Surrey St, Norwich NR1 3PB, UK",
+    "latitude": 52.6229053,
+    "longitude": 1.2967905,
+    "post_code": "NR1 3PB",
+    "city": "Norfolk",
+    "route": "Surrey Street",
+    "postal_town": "Norwich"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Secondary SCITT Salaried trainees receive core and subject knowledge training on one day per week throughout the training period. You will receive at least six subject knowledge days led by a subect specialist. As a Secondary SCITT Salaried trainee you will become part of a team of experienced professionals in a school from the start of the academic year and will, therefore, benefit from opportunities to work and learn alongside experienced teachers.  Former trainees identify this as a particular strength: ‘On the job training is the best way to find out what works in practice’\\r\nSuffolk Secondary SCITT Salaried core training will be largely split between training venues in Ipswich and Norwich.",
+    "CourseLength": "TwoYears",
+    "SalaryDetails": "Salaries will vary depending on the subject you are training in",
+    "Qualifications": "A UK first degree (or equivalent). Normally 2.2 or better (or equiv. 360 CAT points). \\r\nGCSE English Language Grade 4/C or above (or equivalent) \\r\nGCSE Mathematics Grade 4/C or above (or equivalent)",
+    "InterviewProcess": "After your application is shortlisted by the SCITT and Lead School team, you will be invited to a formal interview by SCITT. This interview may take place at a Lead School or it may take place at one of the SCITT venues in Norwich or Ipswich. The interview will  consist of  questions by an interview panel; a student panel; subject knowledge task and a reflective task.   If successful at the SCITT interview, you will be invited to the final part of the process known as Task Day which will be held in Norwich and Ipswich. You will complete group activities with other trainees, deliver a very short presentation and complete a couple of written tasks and you will be observed by senior members of the SCITT Team. If you are successful after Task Day and have attended an interview at a school then you will be made an offer which is agreed by the Lead School and Suffolk and Norfolk SCITT as the training provider.",
+    "OtherRequirements": "Passes in the professional skills tests in literacy and numeracy before starting the course. Confirmation of clear DBS check before you start the course. Meet the 'Fit to Teach' criteria. ",
+    "PersonalQualities": "We find that successful trainees have a passion for their subject which they wish to pass onto secondary school students. Trainees should be motivated, well-organised and demonstrate resilience. Trainees should understand  the importance of developing strong learning relationships with teenagers and can demonstrate that they view teaching as a valuable career. Additionally trainees  should be reflective, able to take respond positively to feedback about their progress during their training year and also value being part of a team. ",
+    "HowSchoolPlacementsWork": "On the salaried programme, in partnership with the Lead School and Suffolk and Norfolk SCITT as the training provider, we will find you  a training place in one of our local partnership schools, taking into account your home address and travel arrangements, as well as ensuring you have a high-quality school placement. Most trainees train in subjects within the 11-16 age range but there is also the opportunity to train in the 14-19 age phase in specific subjects. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Notre Dame High School, a National Teaching and Research School in Norfolk in partnership with the Suffolk & Norfolk Secondary SCITT Tuition PGCE programme has an excellent local reputation for providing training of the highest quality. The Secondary Tuition course is one of the courses offered by Suffolk & Norfolk SCITT which is the biggest SCITT in the country. All trainees on this course will obtain the following qualification,  QTS, PGCE with 60 Masters’ credits on successful completion of the course. Our aim is to 'train you not as a teacher for a specific school but as a future member of the teaching profession.' ",
+    "TrainWithDisability": "We are committed to supporting trainees with disabilities. Please contact us to discuss any access requirements.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The Suffolk and Norfolk SCITT Tuition programme has very high attainment and employment outcomes for our trainees. On average 65% of our trainees are outstanding and 90% of trainees are employed by the end of their training year.  Trainees are supported by school mentors and  SCITT Tutors who have a range of experience in schools in as either headteachers, members of senior leadership teams, classroom practitioners so have a wealth of experience to share with trainees. The Secondary SCITT Tuition course is a highly personalised course which offers a range of opportunities to trainees. ",
+        "UcasInstitutionCode": "S14"
+      }
+    ]
+  },
+  "has_inst": true
+}

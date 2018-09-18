@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Thamesmead SCITT",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "T26/CX11",
+  "providerCode": "T26",
+  "programmeCode": "CX11",
+  "schools": [
+    {
+      "name": "Thamesmead School",
+      "address": "Manygate Lane, Shepperton, TW17 9EE",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Manygate Lane, Shepperton, TW17 9EE",
+      "geocode": true,
+      "formatted_address": "Manygate Ln, Shepperton TW17 9EE, UK",
+      "latitude": 51.394527,
+      "longitude": -0.4425552,
+      "post_code": "TW17 9EE",
+      "city": "Surrey",
+      "route": "Manygate Lane",
+      "postal_town": "Shepperton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "T26",
+    "addr_1": "Thamesmead School Centred Initial T",
+    "addr_2": "Manygate Lane",
+    "addr_3": "Shepperton",
+    "addr_4": "Middlesex",
+    "postcode": "TW17 9EE",
+    "url": "http://www.SCITT@thamesmeadschool.com",
+    "geocode": true,
+    "formatted_address": "Manygate Ln, Shepperton TW17 9EE, UK",
+    "latitude": 51.393301,
+    "longitude": -0.441973,
+    "post_code": "TW17 9EE",
+    "city": "Surrey",
+    "route": "Manygate Lane",
+    "postal_town": "Shepperton"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Thamesmead SCITT is an ITT provider that is highly regarded by Ofsted and heads up a partnership of schools in Surrey with a network of effective and high committed mentors, coordinators and head teachers.  \\r\n\\r\nDuring the past 15 years we have been in the privileged position of not only educating children, but also being able to train the next generation of high calibre teachers and in doing so have built up an excellent reputation across Surrey.  \\r\n\\r\nOur programme will enable graduates to engage with the academic and pastoral curriculum in their placement school in order to give them a rounded understanding of what it means to work in an educational setting and will also find themselves working in a welcoming and stimulating environment alongside highly experienced teachers.  \\r\n\\r\nOur data shows that our trainees are, year on year, graded as either good or outstanding and that 100% of our trainees gain employment, many of them within our partner schools.  We have a growing number of alumni who have rapidly moved up to positions of leadership within their schools.\\r\n\\r\nEach year we look forward to working with high calibre graduates who are passionate about their subject, who engage with a wide range of young people and who will give their all to become an outstanding teacher.\\r\n\\r\nThamesmead SCITT is committed to providing a trainee teacher, with challenging and meaningful experiences to enable them to develop high level skills, knowledge and understanding that are required to teach young people in the 21st century.\\r\n",
+    "TrainWithDisability": "Thamesmead SCITT welcomes applications from all graduates, including those with disabilities, those from ethnic minority groups and those that can bring a wealth of life experience to the teaching profession as a mature graduate.\\r\n\\r\nAn on-line occupational health check will need to be completed as part of the pre-employment induction process and any recommendations that are provided by occupational health would be reviewed to ensure that candidates have the correct support for their disability/needs.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

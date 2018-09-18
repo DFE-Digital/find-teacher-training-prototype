@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "Middlesex University",
+  "provider": "Priestmead & Harrow Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "27Z/2PZJ",
+  "providerCode": "27Z",
+  "programmeCode": "2PZJ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Hartford Avenue, Harrow, London, HA3 8SZ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hartford Avenue, Harrow, London, HA3 8SZ",
+      "geocode": true,
+      "formatted_address": "Hartford Ave, Harrow HA3 8TA, UK",
+      "latitude": 51.5950932,
+      "longitude": -0.313909,
+      "post_code": "HA3 8TA",
+      "city": "Greater London",
+      "route": "Hartford Avenue",
+      "postal_town": "Harrow"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "27Z",
+    "addr_1": "Hartford Avenue",
+    "addr_2": "Kenton",
+    "addr_3": "Harrow",
+    "addr_4": "London",
+    "postcode": "HA3 8SZ ",
+    "url": "http://www.priestmead.harrow.sch.uk/schooldirect",
+    "geocode": true,
+    "formatted_address": "Hartford Ave & Kenton Ln, Harrow HA3, UK",
+    "latitude": 51.5953927,
+    "longitude": -0.312292,
+    "post_code": "HA3",
+    "city": "Greater London",
+    "route": null,
+    "postal_town": "Harrow"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Why study School Direct at Middlesex University?\\r\nThe School Direct Training programme is available to high-quality graduates and our partnership schools offer places on both the tuition fee route and the salaried route. The salaried route means you will be able to earn a salary while you train, and aims to attract career changers and high quality candidates in hard to fill subjects.\\r\n\\r\nAt Middlesex, the School Direct programmes are closely aligned to the PGCE routes, meaning you will benefit from the provision of a range of high-quality central training, delivered by research-leaders and academics, who are widely published across disciplines such as multilingualism, diversity and childhood development.\\r\n\\r\nAll of our School Direct programmes provide the opportunity to gain a postgraduate qualification, which can be used towards a Masters award in the future. This will enable you to develop your skills for teaching and for understanding the interrelationship between learning and teaching, as you develop into a critically reflective practitioner. Our Primary School Direct programme is aligned with the PGCert Teaching qualification. \\r\n\\r\nOur extensive history of delivering leading education courses ensures that you will benefit from the guidance of expert tutors who bring a wealth of professional experience to their teaching.\\r\nCourse content\\r\nWhat will you study on the School Direct (QTS)?\\r\nAs a school-led route the great majority of your time will be spent in your training school, and the content and focus of many aspects of the training programme will be targeted to meet your individual needs, by utilising the resources of the school and their alliance partners. In addition, at Middlesex you will also benefit from access to the University's extensive resources, including those provided by the library and student support services.\\r\n\\r\nThe Middlesex School Direct programme provides you with a series of subject enhancement sessions, and a programme of professional studies which will be run at the University. These may include sessions which:\\r\n\\r\nAllow you to visit a variety of partnership schools and non-formal educational sites to enhance learning in specialist areas.\\r\nProvide you with opportunities to enhance your knowledge and pedagogy of your subject, or specialist areas of the curriculum.\\r\nDevelop your understanding of key contemporary issues within education, such as those around inclusion or EAL and SEND provision in schools.",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "All our trainee \"Associate Teachers\" are paid on a full-time salary on the Unqualified Teacher Scale (UPS) 1.  \\r\n\\r\nThey are employed by the host school for the duration of the course.  This means as an employee of the school, they must abide by the school's policy, procedures and ways of working, being accountable within the School Teachers' Pay and Conditions Document (STPCD).  \\r\n\\r\nAs this is a SALARIED COURSE, there are NO FEES TO PAY as this is covered through funding.\\r\n\\r\nYou receive a salary each month.  NQTs the following September start from £27k+ a year!  \\r\n\\r\n",
+    "Qualifications": "1. GCSE pass in English, Maths and Science or equivalent including NARIC recognised documentation.\\r\n2.  Passing or be booked onto the Basic Skills Tests for English and Maths - you must have the basic skills such as grammar and calculations secure\\r\n3.  Degree at least graded 2:2 or higher, including NARIC recognised documentation. \\r\n4.  Desirable evidence of recent academic study.\\r\n5.  Successful DBS check and no previous convictions or barring from working with children\\r\n\\r\n",
+    "InterviewProcess": "There are three stages:\\r\n1.   Your UCAS application form\\r\n2.  An informal interview with two Headteachers from the Harrow Teaching School Alliance to explore your application with you in person (\"live\" shortlisting)\\r\n3.  A formal interview to assess your skill set against the Teacher Standards including group task, teaching, reflecting, written task and marking task.  You will be interviewed by a panel of 4 Headteachers during the process.",
+    "OtherRequirements": "We want candidates who are realistic about education.  It will be hard.  there are long hours, rainy wet play days and lots of planning and marking.  But your drive and ambition must be to make a real difference to every child you teach and enable them to be the best they can be.  Schools are the heartbeat of our communities and every child matters - every teacher is part of their life journey.  Be inspired and make a difference in Harrow.",
+    "PersonalQualities": "We seek experience of working with children as you will be teaching classes from the day you start!  We look for transferrable skills for career changers.  We want to see enthusiasm, passion, organisational skills, an understanding of educational pedagogy and practice.  \\r\n\\r\nAbove all else, every school has rigorous Safeguarding procedures and high expectations with all prospective staff to understand Safeguarding in its widest sense and having read Keeping Children Safe in Education (Part 1) - ensure it is the most recent version.",
+    "HowSchoolPlacementsWork": "Once successful, any of the Headteachers involved can offer you a placement at their school.  if more than one school would like you, you have the chance to visit each school and choose which you would prefer.  If there was a specific school or you are currently at a school, we can try and accommodate this too. The age ranges of our primary schools are 5-11 although we can support 3-7 is desired. We have 17 schools in our partnership.  You will have the host school all year but also a second 6-week placement within the alliance and a KS3 experience at Secondary School, within your local cluster.  Apart from University training on a Wednesday, you spend all other time in school, matching the working hour expectations of the school."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Priestmead is the Lead School for ITT within the Harrow Teaching School Alliance.  \\r\n\\r\nThe alliance is made up of Good and Outstanding schools - Harrow has just under 50% of all schools as Outstanding.  We work together as a partnership, ensuring a consistency of approach, so all our trainees perform brilliantly - we also ensure you have a strong second placement and KS3 placement.  \\r\n\\r\nUnique to our programme is we offer a residential experience with a contrasting set of schools in the North of England, helping our trainees to see education in different localities.  \\r\n\\r\nFinally, although you are trainees, we call you our Associate Teachers! \\r\n\\r\nOutstanding candidates are guaranteed NQT positions for the following September!",
+    "TrainWithDisability": "As part of our recruitment process, we ask candidates to let us know of any specific needs and disabilities and also any personal contexts which will enable us to best support you.  All schools are committed to equal opportunities and are DDA compliant.  Unfortunately, we do not offer a part-time training option.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Middlesex University provides an excellent academic programme focusing on reflective practice as well as developing strong subject knowledge.  They hold Wednesday training sessions at their Hendon campus.  Your allocated mentors also receive regular training to ensure we all work cohesively to enable you to achieve your best!",
+        "UcasInstitutionCode": "M80"
+      }
+    ]
+  },
+  "has_inst": true
+}

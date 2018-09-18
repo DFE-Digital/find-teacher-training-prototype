@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Essex Primary SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary General - unsalaried",
+  "slug": "E73/2T3R",
+  "providerCode": "E73",
+  "programmeCode": "2T3R",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Essex Primary SCITT, c/o Moulsham Infant School, Princes Road, Chelmsford, CM2 9DG",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Essex Primary SCITT, c/o Moulsham Infant School, Princes Road, Chelmsford, CM2 9DG",
+      "geocode": true,
+      "formatted_address": "Princes Rd, Chelmsford CM2 9DG, UK",
+      "latitude": 51.7204005,
+      "longitude": 0.4702744,
+      "post_code": "CM2 9DG",
+      "city": "Essex",
+      "route": "Princes Road",
+      "postal_town": "Chelmsford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E73",
+    "addr_1": "c/o Moulsham Infant School",
+    "addr_2": "Princes Road",
+    "addr_3": "Chelmsford",
+    "addr_4": "Essex",
+    "postcode": "CM2 9DG ",
+    "url": "http://www.essexprimaryscitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Princes Rd, Chelmsford CM2 9DG, UK",
+    "latitude": 51.7204005,
+    "longitude": 0.4702744,
+    "post_code": "CM2 9DG",
+    "city": "Essex",
+    "route": "Princes Road",
+    "postal_town": "Chelmsford"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 8600.0,
+    "AboutCourse": "Essex Primary SCITT was recognised as an outstanding provider by Ofsted in November 2017.  Our training programme covers the effective teaching of all National Curriculum subjects, development of generic teaching skills such as behaviour for effective learning, assessment, pupil wellbeing and other current educational issues. Trainees attend a pre-course induction day with their host school mentor in July and a second induction day prior to taking up their main placement. The course is structured so that trainees gain hands on experience in their host schools from the very beginning. Trainees spend approximately three days a week in school and two days a week on our taught course for the first 2 terms. During this time there are also opportunities to visit other partnership schools to further develop practice. In the final term there are two block teaching practices, one in a second placement school and a final assessed teaching practice back in the main placement school. Trainees are allocated to one of our 2 cohorts with training days based either at Lyons Hall Primary in Braintree or Newlands Spring Primary School in Chelmsford. Some training days are also held in other partnership schools.\\r\n\\r\nEach trainee is assigned a mentor in each school and an external mentor who support and guide them through their professional development. Throughout the year trainees complete directed tasks and 3 written  assignments which build up a range of evidence against the Teachers’ Standards for their Professional Portfolio which is a core requirement for the successful completion of the course.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Entry requirements\\r\nAn honours degree from a UK Higher Education Institution (2,2 or above) \\r\n; equivalent overseas qualification or a qualification recognised as equivalent to a degree \\r\nGCSE English language, maths and a science grade 4 (C) or above or equivalent \\r\nWe accept equivalency tests from:\\r\nA* Star Teachers www.astarteachers.co.uk\\r\nEquivalency Testing www.equivalencytesting.co.uk\\r\nCandidates must also pass professional skills tests in literacy and numeracy",
+    "InterviewProcess": "Short listed candidates will be invited to interview at one of our partnership schools. The interview panel will consist of programme leaders, head teachers or members of our external mentor team. As well as the interview candidates will deliver a short pre-prepared presentation; carry out a written task; a class based task and for candidates yet to pass the numeracy skills test a maths task.\\r\nInterviews will take place either for the whole morning or the whole afternoon and will last approximately 3.5 to 4 hours in total- the start times vary between schools.\\r\n",
+    "OtherRequirements": "All successful candidates who go on to accept a place will be required to have a clear DBS check.",
+    "PersonalQualities": "We are looking for applications from those with a passion and enthusiasm for working with children and ensuring the best outcomes for them. Candidates should be good communicators with a willingness to learn and  potential to become engaging, reflective practitioners. It is helpful for candidates to have some experience of working or volunteering in schools to develop their understanding of the role of a teacher and to affirm that they are making the right career choice. ",
+    "HowSchoolPlacementsWork": "Every trainee undertaking teacher training must teach in at least  2 different schools or settings. Our primary trainees begin their main school  placement in their preferred key stage from the first day of the new school year. Candidates are asked at interview their preference of key stage for their main placement and may chose  EYFS, KS1, lower KS2 and upper KS2. Trainees undertake a 6 week placement in their second contrasting school with a different age range. Trainees also have the opportunity to visit and learn from a range of different partnership schools  throughout the programme. Trainees attend 60 (65 for those in EYFS) course days either in Braintree or Chelmsford with the other days in school.\\r\nWe have partnership schools (over 50 ) across Essex from small rural to large multi-form entry primaries, including church schools. Our largest number of partnership schools are in the Chelmsford  Braintree  and across Uttlesford but we also have school in Colchester, Clacton, Harlow, Southwoodham Ferrers, Clacton, Coggeshall, Witham,  Earls Colne, Halstead, West Bergholt.\\r\nEach school is unique and we take care to match trainees to schools that are suited to their individual needs and that are within a reasonable travelling distance."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Essex Primary SCITT's primary teacher training programme was recognised  as outstanding in all categories by Ofsted in November 2017. Two quotes from our inspection report help to summarise what we do which is to train the very best teachers for our schools. We are 'recognised by local head teachers as providing well trained trainees who help school raise standards.' and our 'trainees make strong progress as the result of highly effective school-based and central training.' The final line of our report reads - 'typical of their comments was one trainee who said  the training programme is 'the best thing I have done in my life.''\\r\nTrainees are encouraged to make the most of every opportunity that our strong partnership of schools offers throughout this unique training year  and are well supported and challenged to achieve the very best outcomes that prepare them well for the start of their teaching careers.  ",
+    "TrainWithDisability": "Over the years Essex Primary SCITT has supported trainees with disabilities and other needs to achieve at least good and often outstanding outcomes by the end of their training by taking in to account their individual needs and tailoring their training accordingly. This includes trainees with dyslexia, dyspraxia, dyscalculia, hearing impairments, ME and other long standing illnesses who have successfully completed their training. For 2018-19 9% of our primary cohort and 20% of our EYITT cohort have disabilities.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

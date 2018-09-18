@@ -1,0 +1,194 @@
+{
+  "locationType": "School",
+  "accrediting": "Liverpool Hope University",
+  "provider": "Saint Patrick’s Greater Manchester Alliance",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "18A/2422",
+  "providerCode": "18A",
+  "programmeCode": "2422",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St Patrick's RC High School, 56 New Lane, Eccles, Salford, M30 7JJ",
+      "code": "-"
+    },
+    {
+      "name": "St Matthew's RC High School",
+      "address": "Nuthurst Road, Moston, Manchester, M40 0EW",
+      "code": "B"
+    },
+    {
+      "name": "Harrop Fold Specialist Arts College",
+      "address": "Hilton Lane, Worsley, Manchester, M28 0SY",
+      "code": "D"
+    },
+    {
+      "name": "Walkden High School",
+      "address": "Old Clough Lane, Worsley, Manchester, M28 7JB",
+      "code": "E"
+    },
+    {
+      "name": "Our Lady and St John Catholic Arts College.",
+      "address": "",
+      "code": "J"
+    },
+    {
+      "name": "Thornleigh Salesian College",
+      "address": "Sharples Park, Bolton, BL1 6PQ",
+      "code": "K"
+    },
+    {
+      "name": "Atherton Community School",
+      "address": "Hamilton Street, Atherton, Manchester, M46 9jp",
+      "code": "L"
+    },
+    {
+      "name": "Loreto High School",
+      "address": "Nell Lane, Chorlton, Manchester, M21 7SW",
+      "code": "M"
+    },
+    {
+      "name": "Moorside",
+      "address": "57 Deans Road,, swinton, salford, M27 0AP",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St Patrick's RC High School, 56 New Lane, Eccles, Salford, M30 7JJ",
+      "geocode": true,
+      "formatted_address": "56 New Ln, Eccles, Manchester M30 7JJ, UK",
+      "latitude": 53.4836725,
+      "longitude": -2.3664097,
+      "post_code": "M30 7JJ",
+      "city": "Eccles",
+      "route": "New Lane",
+      "postal_town": "Manchester"
+    },
+    {
+      "address": "Nuthurst Road, Moston, Manchester, M40 0EW",
+      "geocode": true,
+      "formatted_address": "Nuthurst Rd, Manchester M40 5QL, UK",
+      "latitude": 53.5175789,
+      "longitude": -2.1717519,
+      "post_code": "M40 5QL",
+      "city": "Greater Manchester",
+      "route": "Nuthurst Road",
+      "postal_town": "Manchester"
+    },
+    {
+      "address": "Hilton Lane, Worsley, Manchester, M28 0SY",
+      "geocode": true,
+      "formatted_address": "Hilton Ln, Worsley, Manchester M28 0SY, UK",
+      "latitude": 53.5232713,
+      "longitude": -2.4119738,
+      "post_code": "M28 0SY",
+      "city": "Worsley",
+      "route": "Hilton Lane",
+      "postal_town": "Manchester"
+    },
+    {
+      "address": "Old Clough Lane, Worsley, Manchester, M28 7JB",
+      "geocode": true,
+      "formatted_address": "Old Clough Ln, Worsley, Manchester M28 3HQ, UK",
+      "latitude": 53.5138002,
+      "longitude": -2.3831064,
+      "post_code": "M28 3HQ",
+      "city": "Worsley",
+      "route": "Old Clough Lane",
+      "postal_town": "Manchester"
+    },
+    null,
+    {
+      "address": "Sharples Park, Bolton, BL1 6PQ",
+      "geocode": true,
+      "formatted_address": "Sharples Park, Bolton BL1 6PQ, UK",
+      "latitude": 53.6022377,
+      "longitude": -2.4425992,
+      "post_code": "BL1 6PQ",
+      "city": "Greater Manchester",
+      "route": "Sharples Park",
+      "postal_town": "Bolton"
+    },
+    {
+      "address": "Hamilton Street, Atherton, Manchester, M46 9jp",
+      "geocode": true,
+      "formatted_address": "Hamilton St, Atherton, Manchester M46 0AY, UK",
+      "latitude": 53.5215252,
+      "longitude": -2.4945576,
+      "post_code": "M46 0AY",
+      "city": "Atherton",
+      "route": "Hamilton Street",
+      "postal_town": "Manchester"
+    },
+    {
+      "address": "Nell Lane, Chorlton, Manchester, M21 7SW",
+      "geocode": true,
+      "formatted_address": "Nell Ln, Manchester M21 7UD, UK",
+      "latitude": 53.43566819999999,
+      "longitude": -2.2667244,
+      "post_code": "M21 7UD",
+      "city": "Greater Manchester",
+      "route": "Nell Lane",
+      "postal_town": "Manchester"
+    },
+    {
+      "address": "57 Deans Road,, swinton, salford, M27 0AP",
+      "geocode": true,
+      "formatted_address": "57 Deans Rd, Swinton, Manchester M27 0AP, UK",
+      "latitude": 53.5080618,
+      "longitude": -2.3467428,
+      "post_code": "M27 0AP",
+      "city": "Swinton",
+      "route": "Deans Road",
+      "postal_town": "Manchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "18A",
+    "addr_1": "56 New Lane",
+    "addr_2": "Eccles",
+    "addr_3": "Salford",
+    "addr_4": "Manchester",
+    "postcode": "M30 7JJ ",
+    "url": "http://teachingschool.stpatricksrchigh.co.uk/initial-teacher-training",
+    "geocode": true,
+    "formatted_address": "56 New Ln, Eccles, Manchester M30 7JJ, UK",
+    "latitude": 53.4838065,
+    "longitude": -2.3660085,
+    "post_code": "M30 7JJ",
+    "city": "Eccles",
+    "route": "New Lane",
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "During your training year you will receive outstanding professional issue sessions provided by staff currently working in a National Teaching School and across our family of Alliance Schools. This research based training ensures that you have an effective understanding of Teaching and Learning so that you can make a real difference in your own classrooms.\\r\n\\r\nFind out more about our courses on our [website] (https://teachingschool.stpatricksrchigh.co.uk/initial-teacher-training/what-is-school-direct/)\\r\n\\r\nAll of our trainees have support from mentors in placement schools, university and a Lead Develop Tutor from Saint Patrick’s. This tutor is with you from day one until the end of the course to help coach, guide and support you.\\r\n\\r\nYou will have the opportunity to continue to develop your own subject specific knowledge, linking this to the wider curriculum. The Saint Patrick's school direct course includes 12 days of intense, focused, subject specific input from our partner University and an additional 9 days of support and lectures to enable you to achieve your PGCE. \\r\n\\r\nSessions are timed to support what you are doing in schools and allow you to reflect and learn from your expereinces.\\r\n\\r\nThe course has a gradualised build up into teaching. You can plan, teach and share classes with the class teacher so that you can learn as your confidence develops. We have two full induction days before September and a chance to visit your placement schools. This helps you to build a wonderful community with all the trainees and staff that you will be working with.\\r\n\\r\nWe work in partnership with Liverpool Hope University who have a Gold Standard in Teaching Excellence, ensuring that you always receive the very best training during your teaching year. These university sessions also provide you with an additional chance to network and share outstanding practice across Initial Teaching Training cohorts. As well as your QTS and PGCE you will receive 60 masters credits on our Schools Direct course.\\r\n\\r\nFind out more about our Gold Standard University partner by visiting their [website] (www.hope.ac.uk/teachereducation)",
+    "CourseLength": "Sept  - End July",
+    "Qualifications": "* GCSE in Mathematics and English Language Grade C or above (or equivalent)\\r\n* Degree classification of 2:1 or above. We will consider applications from candidates who have a 2:2.\\r\n* Degree must preferably be in a related academic subject area.\\r\n*All students must pass the QTS skills tests in Literacy and Numeracy.\\r\n",
+    "InterviewProcess": "You will be interviewed by staff who are passionate about Education and supporting the next generation of teachers. These small panels may contain members of Saint Patrick's RC High School Teaching School, our Departmental Heads, Alliance School mentors and University partners. You are joining our family and we all wish to support you and get to know you.\\r\n\\r\nDuring the day you will have the opportunity to meet with pupils. We will email you all the information that you need before you attend an interview. We do not attempt to trip you up or have any surprises in your day.\\r\n\\r\nThe interview days are a wonderful chance to meet staff you will be working with, other trainees who may join you on the course next year and have any questions answered that you have.\\r\n\\r\nWe work in partnership with our Trainees, supporting them in becoming the best teachers so that young people in our care can achieve. Our interviews ensure that you have the opportunity to flourish. With this in mind we complete a short subject knowledge test. This is so that we can give you help and advice about the areas of the curriculum in schools that you might need to revise before your course begins.\\r\n\\r\nWe realise that you may have more than one interview offered to you and that your work commitments might prevent you from attending an interview. Please let us know if this happens so we can reschedule them for you.",
+    "OtherRequirements": "You will be asked to provide certificates as prove of your academic achievements. You can get these from the exam board that you sat for GCSE or for your degree, from your University. We will ask you to complete a DBS check after interview and a short medical form. This is standard practice across many providers.",
+    "PersonalQualities": "We are looking to support you as you enter a profession that is rewarding and life changing for the young people that we serve. The young people in our care deserve the very best. As a result we look to work with people who:\\r\n*Have a passion for learning, social justice and supporting every child\\r\n*Are reflective and always looking to improve and push themselves to excel\\r\n*Work in collaboration and partnership. We expect our trainees to support each other, share advice and be open to learning. They are willing to ask for help and look forward, learning from mistakes.",
+    "HowSchoolPlacementsWork": "Our trainees complete two contrasting placements so that they can develop the skills needed to be an effective teacher in a range of settings. \\r\n\\r\nThe Course offers a gradualised teaching timetable, slowly building up your teaching time.\\r\n\\r\nWe do not have any blocked weeks away from school at University. You are in schools every week so that you can build a relationship with staff and pupils.\\r\n\\r\n*Sept - December: School Placement A: 16 weeks. \\r\n\\r\nMondays: At Saint Patrick’s National Teaching School (Salford) or our Sister school, Our Lady and St John (Blackburn), to receive training that will help in your placement schools. You will be in the School Direct hub of your choice closest to you.\\r\n\\r\nTuesday/Wednesday/Thursday:  In your placement schools fully immersed in school life and your departments.\\r\n\\r\nFriday: You are at Liverpool Hope. A chance to Network, receive subject specific advice and support and support for your Masters writing.\\r\n\\r\n*January – July: School Placement B.\\r\n\\r\nMonday – Thursday You will be in your schools for the majority of this time. A chance to embed the skills developed in your first school. You will be working in a contrast school so that you can gain new skills, working alongside expert teachers. You still have some training at your School Direct Hub base but you are normally in school.\\r\n\\r\nFriday: You are training at Liverpool Hope.\\r\n\\r\nWhen deciding placements schools:\\r\n\\r\n*When possible we try to match where you live to Alliance Schools in your area. We have a Greater Manchester and Blackburn schools.\\r\n\\r\n*We look at the departmenys that you will be placed in. Sometimes an extra travel time benefits you as you work in a department that is supportive and welcoming. This reduces your stress and workload during the year.\\r\n\\r\n*We do allow you to make your own placements (it may be you have connections in schools or wish to work in a particular school you are currently working in as a TA or have completed school experience in). If the school matches our ethos and agrees to support you and join our alliance we can accommodate this.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We aim to support and encourage the next generation of teachers through a personal approach to teacher training. You can decided to be based in our Salford or Blackburn hub to train.\\r\n\\r\n* Be a part of a family of Alliance of Schools working together to ensure that every pupil, in every school, is inspired, happy and achieving. \\r\n* A personalised approached helping you to develop into the teacher that you want to be.\\r\n* Supportive, well trained mentors, who work alongside you to ensure that you have the time to develop into an outstanding teacher. You have a dedicated mentor in your placement schools but also a coach from Saint Patrick’s and a University Tutor to help you across the entire year.\\r\n* You will gain the skills needed to support pupils in their learning journey, gaining confidence to become a future leader in education.\\r\n* You achieve both QTS and a PGCE providing you with the best possible start to your teaching career.\\r\n* Our teacher training courses use outstanding facilitators, with a proven track record. These include: Outstanding teachers, Senior Leaders in Education, a range of trained Pastoral Staff,  SLT staff, Headteachers and National Leaders of Education. \\r\n\\r\nPlease join us on Twitter by following @stpatsalliance we share advice on the application process but you can also see how our trainees this year are doing!\\r\n\\r\nPlease visit our [website] (https://teachingschool.stpatricksrchigh.co.uk/initial-teacher-training/course-information/)\\r\n\\r\nTeaching is a wonderful, exciting and joyous profession, we wish you all the very best with your applications.\\r\n",
+    "TrainWithDisability": "Please visit our [website] (https://teachingschool.stpatricksrchigh.co.uk/initial-teacher-training/course-information/) to find out more and those of our Alliance Schools.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Liverpool Hope University has a long established tradition of delivering high quality Teacher Education. \\r\nAs a National Teaching School we are one of the top achieving schools in Salford, shown by National Data and League tables. We work in close Partnership with our University partner sharing our values and passion for education.\\r\nThey are a gold standard university for teaching excellence (TEF 2017), Alongside this academic reputation, they are equally proud of the supportive pastoral care that they provide. \\r\nAs one of our trainees, you will receive advice from a high performing National Teaching School and a gold standard university.\\r\n",
+        "UcasInstitutionCode": "L46"
+      }
+    ]
+  },
+  "has_inst": true
+}

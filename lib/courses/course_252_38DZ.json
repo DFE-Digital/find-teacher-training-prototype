@@ -1,0 +1,55 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Fylde Coast Teaching School SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "252/38DZ",
+  "providerCode": "252",
+  "programmeCode": "38DZ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Fylde Coast Teaching Sch, c/o Blackpool 6th Form Coll, Blackpool Old Road, Blackpool, FY3 7LR",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Fylde Coast Teaching Sch, c/o Blackpool 6th Form Coll, Blackpool Old Road, Blackpool, FY3 7LR",
+      "geocode": true,
+      "formatted_address": "Blackpool Old Rd, Blackpool FY3 7LR, UK",
+      "latitude": 53.8388771,
+      "longitude": -3.0169354,
+      "post_code": "FY3 7LR",
+      "city": "Blackpool",
+      "route": "Blackpool Old Road",
+      "postal_town": "Blackpool"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 6165.0,
+    "AboutCourse": "As a primary trainee teacher on our SCITT, you will have the option to train to teach in one of two age ranges; either 3-7 year olds (Early Years and Key Stage One) or 5-11 year olds (Key Stage One and Key Stage Two). As a primary trainee teacher, you will experience contrasting placements in our partner schools. The autumn term will be in your main school, in the spring term you will carry out a placement in a contrasting primary school, before returning to your main school for your final placement in the summer term. Placements will ensure that you have experience of teaching across the primary age range.  \\r\nYou will spend most of your time in school, learning how to teach your selected age range from experienced practitioners. Your bespoke, personalised timetable will grow organically as you progress towards meeting the Teachers' Standards. Your assigned mentor will support you and meet with you on a weekly basis to review and reflect on your training.   You will also regularly come together with your fellow trainees for the professional studies programme (usually weekly) and you will explore relevant theories relating to how children learn and how to maximise their learning experiences in the classroom. You will receive training sessions from a wider range of experienced practitioners, covering all areas of primary education. You will complete three assignments, one per term, and they focus on: theories of learning, understanding our local context and meeting the needs of our children, and how you have and will make an impact on the Fylde Coast. There are no lengthy essays but we promote lots of reading and reflection alongside. \\r\nWe have a vastly varied partnership and our schools are based on the Fylde Coast so you will rarely have to travel far. We have our own life coach, and our mission is to train healthy teachers for future generations in our area. Because of this, and our close collaborations, we also have excellent local employment rates therefore you are very likely to secure employment near home if you train to teach with us.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "All candidates must have achieved a standard equivalent to a Grade 4 [C on the old system] in the GCSE English, Maths and Science exams for our primary programme. We can offer equivalency tests for this entry requirement.\\r\nAll candidates must hold a degree in any given subject (3rd or above). The degree must comprise of 300 HE credit points of which 60 must be at Level 6 of the QCF. \\r\nWe also welcome applicants who are in the final year of their degree and can offer conditional placements, dependent on successful completion of degree or any other pending qualifications. \\r\n",
+    "InterviewProcess": "Our interview days are rigorous, but candidates always report that they are an enjoyable experience and certainly serve to provide further confirmation that this is the right career choice for them. We ask candidates to prepare a 10 minute mini lesson for a group of pupils on any curriculum area and to any year group within the primary age range. Your interactions with our pupils and ability to communicate and build rapport is really important on the day. If you are successful at the mini lesson stage of the recruitment process you will be offered an interview with a panel of school leaders from the area. During your interview the panel will explore your suitability to train on either the Early Years and Key Stage One programme or the Key Stage One and Key Stage Two programme. You will also have literacy and numeracy tests on the day. It may sound daunting, but it is extremely supportive and we will make all reasonable adjustments a candidate may need on the day. We are assessing your capacity to train to teach, not yet your capacity to teach.",
+    "OtherRequirements": "Please bring DBS certificates with you to interview if you have one, but you will receive a very detailed set of instructions prior to the day. School experience is always preferred but not essential.  If successful, you will be required to pass the Numeracy and Literacy Professional Skills Tests and have a health clearance check before commencing the course.  ",
+    "PersonalQualities": "Successful candidates have strong communication and interpersonal skills. They have clarity in their expression and are at ease with the pupils during the mini-teach. They often demonstrate a love of learning and this enthuses those around them. We welcome applications from anyone who meets the entry requirements and has a commitment to improving the lives of young people in our region.",
+    "HowSchoolPlacementsWork": "We very carefully select your school placements based on what we learn about you at your interview. The Fylde coast is a 13 mile square-shaped peninsula so travel times between schools is minimal. On our primary programme, we partner with 20 local schools and you will teach either Early Years and Key Stage One pupils or Key Stage One and Key Stage Two pupils, depending on the age range you have selected to train to teach. We have enhancement visits on the calendar where you will have opportunities to visit local secondary schools, sixth forms, special schools and schools with a high percentage of English as an Additional Language. You could also opt to visit our local pupil referral units. This is the beauty of our varied partnership, and a unique aspect of our SCITT provision."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our programme is a school-centred initial teacher training programme that leads to Qualified Teacher Status. It’s designed to maximise time spent on the job, in contrasting schools, to fully prepare candidates for life as a teacher in the area. It’s a programme designed by our schools to grow our own workforce. \\r\n\\r\nFirstly, our programme is completely personalised to each candidate; no two people have the same experience because we only train between 20 and 25 each year. We tailor the year to maximise your skills and make you better prepared to teach. \\r\n\\r\nSecondly, because our trainees don’t have to attend University lectures, we have time to give them a bespoke enhancement programme running alongside the mainstream placements. Our trainees teach in primary schools, pupil referral units, Special Educational Needs settings and Sixth Forms. They also spend two days at our local private school to teach children with English as an additional language. \\r\n\\r\nFinally, our programme is competitively priced because we know graduates are already carrying huge university debts. We charge £6165 for the year, as opposed to £9k+, but we also give our secondary trainees a free qualification in addition to QTS so trainees leave as Chartered Teachers of the PSHE Association [Personal, Social, Health and Economic Education]. This gives them an edge over other candidates when applying for jobs, and fully prepares them for teaching beyond the curriculum. \\r\n\\r\nOur graduates are getting the local jobs. This year, we had 100% local employment rates!\\r\n",
+    "TrainWithDisability": "The Fylde Coast Teaching School encourages the development of a teacher training community in which diversity is valued. An important part of putting this into practice is a commitment to prohibit discrimination on the grounds of disability in all training matters, to increase employment opportunities for people who have a disability and to ensure that its recruitment and selection processes are fully accessible.\\r\n\\r\nAt the point of application, we ask candidates if they need any adjustments for the interview or any extra time. We make it clear that any information will always be kept strictly confidential unless they agree to it being shared with schools or mentors.\\r\n\\r\nWe meet individually with trainees regularly about their needs. Trainees have different learning needs and are members of diverse communities: a trainee with dyslexia may also be a single parent and a trainee with depression may also be struggling with finance. Talking to trainees about their individual needs early, and ensuring all reasonable adjustments are in place before they begin their placements in schools, is crucial. \\r\n\\r\nIn our Ofsted inspection report 2017, it states:\\r\nBoth pastoral support and wrap-around, bespoke care across the partnership are outstanding. Every trainee teacher has access to the partnership’s life coach. He delivers regular sessions to individuals and to the cohort on developing resilience, maintaining a work–life balance and ensuring emotional well-being. Trainees really value this unique feature of the partnership.\\r\n\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

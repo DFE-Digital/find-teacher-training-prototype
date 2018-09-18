@@ -1,0 +1,89 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "HART of Yorkshire",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "25C/2MBY",
+  "providerCode": "25C",
+  "programmeCode": "2MBY",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Askwith Lane, Askwith, Otley, North Yorkshire, LS21 2JB",
+      "code": "-"
+    },
+    {
+      "name": "Harrogate Town and Rural Area Schools",
+      "address": "HG1 3BA",
+      "code": "3"
+    },
+    {
+      "name": "Ripon and Rural Schools",
+      "address": "HG4 3BH",
+      "code": "4"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Askwith Lane, Askwith, Otley, North Yorkshire, LS21 2JB",
+      "geocode": true,
+      "formatted_address": "Askwith Ln, Askwith, Otley LS21 2JB, UK",
+      "latitude": 53.9312946,
+      "longitude": -1.7427565,
+      "post_code": "LS21 2JB",
+      "city": "Askwith",
+      "route": "Askwith Lane",
+      "postal_town": "Otley"
+    },
+    {
+      "address": "HG1 3BA",
+      "geocode": false
+    },
+    {
+      "address": "HG4 3BH",
+      "geocode": false
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "25C",
+    "addr_1": "YCAT",
+    "addr_2": "Bilton Grange Primary School",
+    "addr_3": "Bilton Lane",
+    "addr_4": "Harrogate",
+    "postcode": "HG1 3BA ",
+    "url": "http://www.yorkshirescitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Bilton Ln, Harrogate HG1 3BA, UK",
+    "latitude": 54.005832,
+    "longitude": -1.5380079,
+    "post_code": "HG1 3BA",
+    "city": "North Yorkshire",
+    "route": "Bilton Lane",
+    "postal_town": "Harrogate"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "There are eight main elements to the programme:\\r\nInduction Day – when all of the trainees come together to meet the team and in the afternoon they spend some time with their school based tutors.\\r\nTrainee School Visit Day – held in July for trainees to meet their tutors in school.\\r\nBeginning of Training – the programme begins in the first week of September. Trainees spend eight days together over the first two weeks at the central training venue in Harrogate preparing to start their placement\\r\nPlacements – Trainees have one main placement school starting in September with a contrasting placement in a different key stage in the Spring term.\\r\nStructured Mentoring – to develop classroom skills and to support the application of skills, knowledge and understanding gained by trainees as they progress through the programme.\\r\nCore Subjects – extended central training on the three core subjects, English, Mathematics and Science.\\r\nOther Curriculum Subjects – focused central training in Art, SMSC, Design and Technology, Geography, History, Computing, Music, PE, PSHE and RE\\r\nBroad Professional Studies – an introduction to issues relating to:\\r\n* Pedagogy\\r\n* Child Development\\r\n* The National Curriculum, including planning teaching strategies, assessment for learning and cross-curriculum themes and dimensions\\r\n* Aspects of the broader educational debate including Child Protection and Principles of Safeguarding, Special Educational Needs and Disabilities, Spiritual, Moral, Social and Cultural values\\r\n* Behaviour Management, Inclusion and Systematic Synthetic Phonics\\r\nTraining as a teacher under supervision – in compliance with The Education (School Teachers’ Qualifications) (England) Regulations 2003 (SI 1662), our trainees carry out the following duties under supervision of their class teacher or school based tutor:\\r\n* planning and preparing lessons and courses for pupils;\\r\n* delivering lessons to pupils;\\r\n* assessing the development, progress and attainment of pupils; and\\r\n* reporting on the development, progress and attainment of pupils.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE grade C or above in English Language, Mathematics and Science. These three qualifications should have been awarded prior to application or be underway during application. Equivalency examinations are accepted but NOT in Key Skills at Level 2. HART offer equivalency testing in Science\\r\nMinimum 2, preferably 3 A-levels of good grades.\\r\n\\r\n2.1 honours degree from a UK University or equivalent qualification ( 2.2 degrees will be considered if supported by evidence of other academic achievement, experience or personal qualities).\\r\n\\r\nSome experience is helpful prior to application as it will help applicants to better understand the role of a teacher.\\r\n",
+    "InterviewProcess": "[http://yorkshirescitt.co.uk/apply/selection-process/]",
+    "OtherRequirements": "we will need to complete the following for all applicants prior to the start of the programme:\\r\n* More detailed references\\r\n* Identity and security checks\\r\n* Health Checks\\r\n",
+    "PersonalQualities": "You will be able to demonstrate -\\r\n* A high degree of emotional intelligence, the ability to empathise and have a sound understanding of equality and diversity.\\r\n* A real sense of moral purpose and a tireless energy to achieve the best for your pupils.\\r\n* Commitment, resilience and the ability to reflect in order to learn from your own experiences as well as the experiences of others.\\r\n",
+    "HowSchoolPlacementsWork": "Placement schools are selected on suitability for the trainee and geographical location.  Placement schools are matched with trainees based on the current strengths of the school.  In this way we ensure that trainees have the best possible support in school over their training year.\\r\nStarting on the first day of the autumn term, you will be based in your “home” school.  You will be seen as a member of staff, quickly appreciating the workplace and seeing theory put into practice every day.  You will undertake training by staff in your “home” school as well as workshops and other activities with student teachers from across our Alliance of schools.  \\r\n\\r\nWhen you are ready, you will start to take responsibility to deliver parts of lessons on your own. The ITT programme will build your confidence and subject knowledge and give you the necessary skills to become an effective classroom practitioner.  As you become more confident and competent you will take on greater responsibility until you are teaching full lessons.\\r\n\\r\nHow many school placements will there be?\\r\nYou are required to teach in 2 schools during the course of the year.  The first placement (Autumn) and the third placement (Summer) are usually in the same school.  In the Spring term you will spend time teaching in another school.  Our placement strategy is aimed at giving you the best preparation possible for your teaching career.  During the programme you will spend time in a variety of schools and contexts including mainstream schools, special schools, Pupil Referral Units (PRU), and the Medical Needs Teaching Service.\\r\n\\r\nWhat kind of assessments are there for trainee teachers?\\r\nYou will need to demonstrate that you meet the Teachers’ Standards to achieve QTS.  You will also complete academic assignments in order to achieve a PGCE.  These assignments are focused on your understanding of how children learn, your specialist subject knowledge and your vision for education. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are a specialist primary training provider based in beautiful North Yorkshire.  We have very high rates of completion, and employment at the end of the programme, especially in North Yorkshire Schools.\\r\n\\r\nOur trainees tell us that they love training with us, would recommend the programme to others and are well supported during their training year both in school and by the central SCITT team.\\r\n\\r\nHART of Yorkshire SCITT operate as an independent provider of initial teacher training provider. Our programme, administered by Yorkshire Collaborative Academy Trust, runs across 50 schools in North Yorkshire and Leeds. Our cutting edge training draws upon the best research and development across the globe, with nationally acclaimed trainers who prepare trainees for a successful career.\\r\n\\r\n\"training focuses on teaching and learning, is continually updated, linked to evidence-based research and rooted in successful classroom practice.\" Ofsted 2018.\\r\n",
+    "TrainWithDisability": "HART of Yorkshire SCITT believes that diversity in applicants brings a richness to education in our schools.  \\r\nConsiderations are made from the point of applications, and after the offer of a place on the programme a health questionnaire is completed and adjustments are made to support accessibility for trainees with physical, mental or other health issues.\\r\n\\r\nPlacement schools across North Yorkshire are selected to support trainees with accessibility issues.  Trainees needing support in different ways will be placed according to the strengths of the schools within the partnership.\\r\n\\r\nThe main central training site and on-line learning platform supports access for all learners.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

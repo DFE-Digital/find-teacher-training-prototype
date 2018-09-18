@@ -1,0 +1,84 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Bristol",
+  "provider": "Backwell (North Somerset Teaching Alliance)",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "16Z/2YPY",
+  "providerCode": "16Z",
+  "programmeCode": "2YPY",
+  "schools": [
+    {
+      "name": "Backwell School",
+      "address": "Station Road, Backwell, Bristol, BS48 3BX",
+      "code": "B"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Station Road, Backwell, Bristol, BS48 3BX",
+      "geocode": true,
+      "formatted_address": "Bristol BS48 3BX, UK",
+      "latitude": 51.4162422,
+      "longitude": -2.7391929,
+      "post_code": "BS48 3BX",
+      "city": "North Somerset",
+      "route": null,
+      "postal_town": "Bristol"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "16Z",
+    "addr_1": "Station Road",
+    "addr_2": "Backwell",
+    "addr_3": null,
+    "addr_4": "North Somerset",
+    "postcode": "BS48 3BX",
+    "url": "http://www.nsta.org.uk",
+    "geocode": true,
+    "formatted_address": "Station Rd, Backwell, Bristol BS48 3LN, UK",
+    "latitude": 51.41771989999999,
+    "longitude": -2.7456398,
+    "post_code": "BS48 3LN",
+    "city": "Backwell",
+    "route": "Station Road",
+    "postal_town": "Bristol"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeDetails": "Your tuition fees are paid to our link HEI. ",
+    "AboutCourse": "You will do a combination of subject and pedagogical learning in School and with your HEI link. \\r\n\\r\nFormal assessment for the School Direct programme takes place throughout the year in partnership with your HEI link partner. \\r\n\\r\nAssessment takes the form of assessed practical teaching against the Teachers' Standards and course work assignments set by your HEI link partner. \\r\n\\r\nSuccessful completion of the programme requires passes in practical teaching and in all assignments; the marking criteria for both scales are against a comprehensive range of criteria explicitly linked to the standards for Qualified Teacher Status. (QTS).",
+    "CourseLength": "OneYear",
+    "FinancialSupport": "For information about financial support please refer to the information shared by our link HEIs. ",
+    "InterviewProcess": "Backwell School is the Lead School for the North Somerset Teaching Alliance and will be co-ordinating the recruitment process. Its partner schools will be hosting subject based interviews on behalf of the Alliance. If you are invited for interview you will receive full details of what will be expected of you in a letter of invitation. You will experience a programme which will include: you taking a small group of students through an activity that interests you (20 Mins), time spent with subject staff, students and a formal interview process. We work closely with our HEI link partner in the selection process. You will be expected to be familiar with key issues and developments in secondary schools - especially those in your subject area. It will help you to read the educational press and to talk to teachers and those currently undertaking teacher training. Our interview procedure is a rigorous and thorough process, designed to get the best match of applicant to the School Direct places available. \\r\nThe best preparation for interview is a visit to a school or schools. Talk to teachers and students, try to evaluate what is being learned and how the teachers encourage the learning to take place. You will be expected to discuss these observations in your formal interview; where we will be looking for your ability to analyse your experience and show a deeper understanding of the learning process. ",
+    "OtherRequirements": "We expect applicants to come from a wide range of backgrounds and, therefore with a wide range of skills. This is a strength of the programme as it allows us to use your differences to learn with and from one another. \\r\n\\r\nYou will be expected to pass the Skills Tests. You will be expected to meet the criteria for Safer Recruitment in Education. \\r\n\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject and have a desire to share that with young people of all abilities in the secondary age range. You are looking to enter an exciting and demanding career and you will need to be resilient, honest and brave. \\r\nYour commitment should be demonstrated by meaningful, recent experience of working with young people of this age. For example, you may have been involved with some experience in schools through visits you have organised. ",
+    "HowSchoolPlacementsWork": "If you are successful in being offered a School Direct placement with the NSTA you will choose which school you would like to be your 'home school' from the range of partner schools wishing to train in your subject. \\r\n\\r\nFor more information relating to subjects on offer in schools please check the detail of this on our website (https://www.nsta.org.uk/)\\r\n\\r\nAll of our schools are easily commutable from Bristol. Six of our seven partner schools are 11-18 provision. All of our schools provide a highly supportive and aspirational environment in which to train. One that offers the rigour, professional knowledge, understanding and skills necessary for the delivery of creative, purposeful and challenging teaching and learning. \\r\n\\r\nEach School Direct trainee will undertake two placements, a longer placement starting in their 'home school' and a second shorter placement usually taking place in one of our other partner schools. \\r\n\\r\nFor more information about the general nature of placements please check our website (https://www.nsta.org.uk/)\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The North Somerset Teaching Alliance is a fantastic place to work and learn; located as it is close to Bristol City centre.\\r\n\\r\nA trainee's thoughts: \" A big thank you!  I have had an incredible experience. Everyone was very welcoming, helpful and encouraging which has made the hardest part of this year easier for me. I feel very lucky to be part of a wonderful team.\" \\r\n\\r\nThis is an inspirational partnership of eight Secondary Schools, many of which have achieved outstanding ratings. Our vision is to ensure a clear pathway of the highest quality training and succession opportunities for School Direct trainees in partnership with our HEI partners. \\r\n\\r\nThe NSTA website address is (https://www.nsta.org.uk/)  \\r\n\\r\nThe NSTA guarantees successful School Direct trainees an interview in its partner schools should a vacancy arise in a suitable post. \\r\n\\r\nWe create an environment in which staff, students and trainee teachers' feel valued and supported. We have a strong track record of working with trainee teachers for many years and fully embrace the energy, enthusiasm and drive they offer to a school community. \\r\n\\r\nStudents across the partnership are happy, friendly and well-behaved and are at the heart of everything we do. We believe that our staff are our most valuable resource, ambitious and confident, and therefore provide access to high quality on-going training and professional development opportunities. Our teachers are excellent practitioners with exemplary behaviour management skills and are eager to share their skills, knowledge and practice with the next generation of teachers. \\r\n\\r\n",
+    "TrainWithDisability": "Please find detailed information about the support we provide in conjunction with our HEI partners for trainees with disabilities or other needs\\r\n\\r\nUniversity of Bristol: (http://www.bristol.ac.uk/education/study/initial-teacher-education/application-guidance/)\\r\n\\r\nUniversity of St Mark and St John (Marjons) :(https://www.marjon.ac.uk/student-life/student-support-/disability--inclusion-advice-service/)\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "University of St Mark and St John is a valued partner in providing our NSTA School Direct programme. It's education programme is rated outstanding by Ofsted.\\r\n \\r\nYou will benefit from full access to a dynamic facilitator of both innovative and traditional approaches to teaching and learning. You will spend time studying your subject specialism with peers at the University and then developing these skills with training in the school setting. You will have two mentors, one at your home School and a University based mentor to guide you through your year.   ",
+        "UcasInstitutionCode": "P63"
+      },
+      {
+        "Description": "The University of Bristol is a valued partner in providing our NSTA School Direct programme. It's education programme is rated outstanding by Ofsted. \\r\nYou will benefit from full access to a dynamic facilitator of both innovative and traditional approaches to teaching and learning. You will spend time studying your subject specialism with peers at the University and then developing these skills with training in the school setting. You will have two mentors, one at your home School and a University based mentor to guide you through your year.  ",
+        "UcasInstitutionCode": "B78"
+      },
+      {
+        "Description": "University of St Mark and St John is a valued partner in providing our NSTA School Direct programme. It's education programme is rated outstanding by Ofsted.\\r\n \\r\nYou will benefit from full access to a dynamic facilitator of both innovative and traditional approaches to teaching and learning. You will spend time studying your subject specialism with peers at the University and then developing these skills with training in the school setting. You will have two mentors, one at your home School and a University based mentor to guide you through your year.   ",
+        "UcasInstitutionCode": "B20"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,166 @@
+{
+  "locationType": "School",
+  "accrediting": "Goldsmiths, University of London",
+  "provider": "Working Together Group",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "26F/2P49",
+  "providerCode": "26F",
+  "programmeCode": "2P49",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Lee Church Street, SE13 5SG",
+      "code": "-"
+    },
+    {
+      "name": "Christ Church CE Primary, Shooters Hill",
+      "address": "Shooters Hill, London, SE18 3rs",
+      "code": "A"
+    },
+    {
+      "name": "Trinity",
+      "address": "Primary School site, Leahurst Road, SE13 5HZ",
+      "code": "B"
+    },
+    {
+      "name": "Millennium Primary",
+      "address": "50 John Harrison Way, Greenwich, SE10 0BG",
+      "code": "C"
+    },
+    {
+      "name": "Timbercroft Primary",
+      "address": "Timbercroft Lane, Plumstead, SE18 2sg",
+      "code": "D"
+    },
+    {
+      "name": "Eltham CE Primary",
+      "address": "Roper Street, Eltham, Se9 1tr",
+      "code": "E"
+    },
+    {
+      "name": "Brooklands",
+      "address": "Medebourne Close, Blackheath, se3 9ab",
+      "code": "F"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Lee Church Street, SE13 5SG",
+      "geocode": true,
+      "formatted_address": "Lee Church St, London SE13 5SG, UK",
+      "latitude": 51.4597104,
+      "longitude": 0.004419,
+      "post_code": "SE13 5SG",
+      "city": "Greater London",
+      "route": "Lee Church Street",
+      "postal_town": "London"
+    },
+    {
+      "address": "Shooters Hill, London, SE18 3rs",
+      "geocode": true,
+      "formatted_address": "Shooters Hill, Welling SE18 3RS, UK",
+      "latitude": 51.4703026,
+      "longitude": 0.0603793,
+      "post_code": "SE18 3RS",
+      "city": "Greater London",
+      "route": "Shooters Hill",
+      "postal_town": "Welling"
+    },
+    {
+      "address": "Primary School site, Leahurst Road, SE13 5HZ",
+      "geocode": true,
+      "formatted_address": "Leahurst Rd, London SE13 5LT, UK",
+      "latitude": 51.4559945,
+      "longitude": -0.0039512,
+      "post_code": "SE13 5LT",
+      "city": "Greater London",
+      "route": "Leahurst Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "50 John Harrison Way, Greenwich, SE10 0BG",
+      "geocode": true,
+      "formatted_address": "Millennium Village School, 50 John Harrison Way, Greenwich, London SE10 0BG, UK",
+      "latitude": 51.4939082,
+      "longitude": 0.0107903,
+      "post_code": "SE10 0BG",
+      "city": "Greater London",
+      "route": "John Harrison Way",
+      "postal_town": "London"
+    },
+    {
+      "address": "Timbercroft Lane, Plumstead, SE18 2sg",
+      "geocode": true,
+      "formatted_address": "Timbercroft Ln, London SE18 2SB, UK",
+      "latitude": 51.47777929999999,
+      "longitude": 0.0886667,
+      "post_code": "SE18 2SB",
+      "city": "Greater London",
+      "route": "Timbercroft Lane",
+      "postal_town": "London"
+    },
+    {
+      "address": "Roper Street, Eltham, Se9 1tr",
+      "geocode": true,
+      "formatted_address": "Roper St, London SE9 1TR, UK",
+      "latitude": 51.4511688,
+      "longitude": 0.056753,
+      "post_code": "SE9 1TR",
+      "city": "Greater London",
+      "route": "Roper Street",
+      "postal_town": "London"
+    },
+    {
+      "address": "Medebourne Close, Blackheath, se3 9ab",
+      "geocode": true,
+      "formatted_address": "Medebourne Cl, London SE3 9AB, UK",
+      "latitude": 51.46401050000001,
+      "longitude": 0.0189803,
+      "post_code": "SE3 9AB",
+      "city": "Greater London",
+      "route": "Medebourne Close",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "26F",
+    "addr_1": "Lee Church Street",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": null,
+    "postcode": "SE13 5SG",
+    "url": "http://sml.london",
+    "geocode": true,
+    "formatted_address": "Church St, Lee, MA 01238, USA",
+    "latitude": 42.285038,
+    "longitude": -73.2795375,
+    "post_code": "01238",
+    "city": "Lee",
+    "route": "Church Street"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "CourseLength": "OneYear",
+    "SalaryDetails": "You will be paid as an unqualified teacher (currently £20,909)\\r\nYou do not pay for your PGCE.",
+    "Qualifications": "*a good honours degree (2:2 or above)- you must have received the results for this before applying for the salaried programme\\r\n*English, Maths and Science GCSE (or equivalent) grade C or above- you must have received the results for these qualifications before applying.\\r\n*evidence of at least two weeks experience in a UK primary school\\r\n*at least 3 years work experience.\\r\n*you will need to undergo an occupational health screening.\\r\n*In addition you will need to have passed the DfE Numeracy and Literacy skills tests by July 2018.  Practice tests and guidance can be found online at:  http://www.education.gov.uk/schools/careers/traininganddevelopment/professional",
+    "InterviewProcess": "There is one morning interview process:\\r\n \\r\n*A short individual interview - this will be roughly 15 minutes and the questions will be one to one with an interviewer \\r\n*A short maths test (8 questions KS2 level) and phonics test (identifying the number of phonemes in a list of words)\\r\n*A 20 minute writing task\\r\n*A 10 minute group discussion with other candidates. Please note that this is an open discussion between the group members and interviewers will be observers during this time.\\r\n*An activity of your choice with a group of 4 children – this will be an activity lasting approximately 10 minutes. \\r\n",
+    "HowSchoolPlacementsWork": "After interview, successful candidates may be offered a place in one or more schools. The candidate can then make the choice based on the offers made. In other words, you are fully involved in the placement process. You will also spend half a term at another school in the partnership, usually in the spring term. Again, we aim to involve you in the process. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Working Together schools are a group of successful and forward-thinking primary schools that want the best possible outcomes for our children. A key ingredient in our continued success is the effective training of our future teachers and leaders through the School Direct programme. You will be based in an outstanding or rapidly improving school in which you will work alongside an experienced teacher and mentor. You will also have the opportunity to spend time at partner schools within the Working Together group to broaden your experience. It is our intention to recruit our School Direct students following their training.",
+    "TrainWithDisability": "Disability should not be a barrier to teacher training. In all our schools, we actively promote equality of opportunity.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work with Goldsmiths University to provide an excellent training programme for prospective School Direct trainee teachers. This programme is an employment-based route available to high-quality graduates who are looking to become teachers and earn a salary whilst they train. This non-modular programme runs for one year and successful completion will lead to the award of Qualified Teacher Status (QTS) with PGCE",
+        "UcasInstitutionCode": "G56"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": "Forest Independent Primary Collegiate SCITT",
+  "provider": "Mayespark Primary School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2BX/2XXL",
+  "providerCode": "2BX",
+  "programmeCode": "2XXL",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Goodmayes Lane, Goodmayes, Ilford, IG3 9PX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Goodmayes Lane, Goodmayes, Ilford, IG3 9PX",
+      "geocode": true,
+      "formatted_address": "Goodmayes Ln, United Kingdom",
+      "latitude": 51.5574591,
+      "longitude": 0.1087585,
+      "post_code": null,
+      "city": "Greater London",
+      "route": "Goodmayes Lane"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2BX",
+    "addr_1": "Goodmayes Lane",
+    "addr_2": "Goodmayes",
+    "addr_3": null,
+    "addr_4": "Ilford",
+    "postcode": "IG3 9PX ",
+    "url": "http://www.mayesparkprimaryschool.org.uk",
+    "geocode": true,
+    "formatted_address": "Goodmayes Ln, United Kingdom",
+    "latitude": 51.5574591,
+    "longitude": 0.1087585,
+    "post_code": null,
+    "city": "Greater London",
+    "route": "Goodmayes Lane"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "You may be eligible for a student loan.",
+    "AboutCourse": "We believe that teaching is an exciting, challenging and rewarding profession. We pride ourselves on having a proven track record over the past 15 years in training excellent practitioners and supporting them in gaining positions within our partnership schools. \\r\nRedbridge Head Teachers in partnership with Forest Independent Primary Collegiate, the accredited provider, have written this highly comprehensive and bespoke programme. It reflects the exceptional standards in Redbridge schools and our understanding of what makes an excellent teacher. We are committed to offering high quality training for local candidates with the aim of securing the beginning of a successful career in a Redbridge school. We also aim to support trainees' careers after completing the programme through excellent CPD opportunities on offer from the Gants Hill Partnership Teaching Alliance. This includes subject knowledge and leadership training, and opportunities to take part in research and to work collaboratively with colleagues in other schools. There is also the opportunity to achieve a masters in your NQT year, taking forward an action research school direct module credit towards this qualification, through a successfully run school-led course in collaboration with UEL. \\r\n\\r\nWe scrutinize the School Direct applications and place trainees in the partnership schools. These are excellent mainstream schools that are committed to supporting the process of the training in Redbridge.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "To qualify for this school-led route the minimum requirement is English, Mathematics and Science GCSEs at grade C or above, and a good quality first degree.\\r\n\\r\nTwo references are required and certificates to demonstrate the acquisition of both the English and Maths Professional Skills Tests before a formal offer can be made.\\r\n",
+    "InterviewProcess": "We encourage candidates to visit our school prior to the selection process consisting of the following:\\r\n\\r\n -The scrutiny of a lesson plan to teach a specified aspect of the curriculum.\\r\n\\r\n- The observation by a head teacher of the applicant delivering a lesson to the agreed year group.\\r\n \\r\n-A formal interview\\r\n",
+    "HowSchoolPlacementsWork": "This one-year primary course is based in one school for the majority of the year with a contrast setting placement. Candidates learn the art of teaching in the classroom for four days each week, guided by their mentors.  Each trainee is allocated a professional tutor who visits and supports the trainee on a regular basis. Host schools are able to offer insights into their successful practices and induct trainees in line with the best of current teaching.  Part of the course is theory based and there will be formal training each Thursday.  School Direct requires a full time commitment of 5 days per week from September to July and trainees are expected to participate fully in the everyday life of the schools in which they train."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "\\r\nWe believe that teaching is an exciting, challenging and rewarding profession. We pride ourselves on having a proven track record over the past 15 years in training excellent practitioners and supporting them in gaining positions within our partnership schools. \\r\nRedbridge Head Teachers in partnership with Forest Independent Primary Collegiate, the accredited provider, have written this highly comprehensive and bespoke programme. It reflects the exceptional standards in Redbridge schools and our understanding of what makes an excellent teacher. We are committed to offering high quality training for local candidates with the aim of securing the beginning of a successful career in a Redbridge school. We also aim to support trainees' careers after completing the programme through excellent CPD opportunities on offer from the Gants Hill Partnership Teaching Alliance. This includes subject knowledge and leadership training, and opportunities to take part in research and to work collaboratively with colleagues in other schools. There is also the opportunity to achieve a masters in your NQT year, taking forward an action research school direct module credit towards this qualification, through a successfully run school-led course in collaboration with UEL. \\r\n\\r\nWe scrutinize the School Direct applications and place trainees in the partnership schools. These are excellent mainstream schools that are committed to supporting the process of the training in Redbridge.\\r\n",
+    "TrainWithDisability": "We welcome applications from candidates including those with special educational needs and disabilities.  \\r\n\\r\nWe aim to meet the challenge of all declared disabilities and other needs placing candidates in our diverse range of school.  \\r\n\\r\nWe are committed to supporting the full inclusion of individuals ensuring their needs are met.  \\r\n\\r\nIn Redbridge, we are proud of our inclusive practices meeting the needs of children and adults alike.\\r\n\\r\nOur locations are all DDE compliant.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "F82"
+      }
+    ]
+  },
+  "has_inst": true
+}

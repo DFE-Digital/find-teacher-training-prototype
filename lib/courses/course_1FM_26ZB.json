@@ -1,0 +1,84 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Kingston School Direct",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "1FM/26ZB",
+  "providerCode": "1FM",
+  "programmeCode": "26ZB",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Coombe Girls' School, Clarence Avenue, New Malden, Kingston-Upon-Thames, KT3 3TU",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Coombe Girls' School, Clarence Avenue, New Malden, Kingston-Upon-Thames, KT3 3TU",
+      "geocode": true,
+      "formatted_address": "Clarence Ave, New Malden KT3 3TU, UK",
+      "latitude": 51.4099484,
+      "longitude": -0.2635318,
+      "post_code": "KT3 3TU",
+      "city": "Greater London",
+      "route": "Clarence Avenue",
+      "postal_town": "New Malden"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1FM",
+    "addr_1": "Coombe Girls' School",
+    "addr_2": "Clarence Avenue",
+    "addr_3": "New Malden",
+    "addr_4": "Kingston-Upon-Thames",
+    "postcode": "KT3 3TU ",
+    "url": "http://www.coombegirlsschool.org",
+    "geocode": true,
+    "formatted_address": "Clarence Ave, New Malden KT3 3TU, UK",
+    "latitude": 51.4099484,
+    "longitude": -0.2635318,
+    "post_code": "KT3 3TU",
+    "city": "Greater London",
+    "route": "Clarence Avenue",
+    "postal_town": "New Malden"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The course is run by the UCL Institute of Education (Russell Square), lasts from September to June, and leads to the award of Qualified Teacher Status, PGCE and 60 MA credits.\\r\n\\r\nThe PGCE course will help you to develop the professional skills and knowledge you need to teach all aspects of science to pupils at least up to age 16, as well as biology to pupils aged up to 18. We are committed to creative approaches to teaching science, and you will be encouraged to develop resources during the programme. The experienced tutors have previously been classroom teachers and heads of school science departments, and have worked in industry. They are actively involved in science education research, work on national curriculum development, and lead sessions for Science Learning Centre London. \\r\n\\r\nYou will acquire a critical understanding of current debates and issues relating to science education and, particularly biology, and we will guide and support you in developing your subject knowledge. You are expected to engage with reading and research in science education and to regularly reflect upon your own progress. \\r\n\\r\nThe PGCE course covers health and safety, management of teaching and learning in laboratories and outdoors, the use of ICT, facilitating small group discussion, meeting pupils' special needs, and assessment. The facilities include a suite of laboratories and a micro-computing laboratory. You will also have the opportunity to teach outside the classroom in a variety of London venues such as Kew Gardens. \\r\n\\r\nFor further information [click here](http://www.ucl.ac.uk/ioe/courses/teacher-training/biology-pgce)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "UCL requires a minimum of a 2:2 honours degree, with GCSEs in English Language and Maths at Grade C or Grade 5, or above.  UCL does not accept additional or applied GCSE subjects.  For equivalency testing, UCL will only accept tests from [equivalencytesting.com](http://www.equivalencytesting.com/)\\r\n\\r\nYou should have a good degree in biology or biology related subject (including psychology), or a joint degree with biology as the major component (ie at least two years of biology studies at undergraduate level). \\r\n\\r\nFor full details of entry requirements [click here](https://www.ucl.ac.uk/prospective-students/graduate/teacher-training/entry-requirements)",
+    "InterviewProcess": "We operate a two stage process on our UCL programmes.\\r\n\\r\nCoombe Girls' School, as the lead school in the partnership, will co-ordinate the recruitment process. The UCL IOE will carry out all the necessary academic eligibility checks. \\r\n\\r\nFollowing successful shortlisting, the first stage will involve you spending a day in school, up to twenty five working days after we receive your application. This may include an individual interview, teaching part of a lesson, a subject knowledge assessment and a written task. This will also be an opportunity for you to learn about the training programme and partnership, see the school and talk to some staff and pupils. The process will be rigorous and will enable us to assess your potential for the teaching profession and to identify strengths and weaknesses for you to begin to address. \\r\n\\r\nIf you are successful at the school interview, our university partner will also invite you to an interview day at the UCL Institute of Education. This day will also serve as an opportunity to learn more about the PGCE course, the tutors and the facilities at the Institute. ",
+    "OtherRequirements": "You must have good practical skills and technical know-how, particularly in biology-related practical work. \\r\n\\r\nYou will ideally have some experience of working with young people, perhaps through volunteer work, young clubs, sports teams or charities. \\r\n\\r\nWe recommend that you gain some experience in a classroom prior to interview.\\r\n\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject, with a real desire to share this with young people of all abilities, needs and backgrounds at secondary level. \\r\n\\r\nWe expect you to have a good basic knowledge of biology, chemistry and physics, and be willing to learn more.  We normally expect you to have an A level in biology and one other science subject at minimum grade D, or the equivalent. Candidates without these qualifications may be accepted if they have acquired knowledge through other routes (e.g. work experience).\\r\n",
+    "HowSchoolPlacementsWork": "Once you have been accepted onto the programme, your placement schools will be allocated from the pool of schools offering your subject.  \\r\nThis process is not normally finalised until late June, by when our schools will have fixed their staffing for September.\\r\n\\r\nYou will have two consecutive placements of roughly equal length - something which we consider a real strength of our programme, as it means that you will gain a deep understanding of both schools, their challenges, approaches and contexts.  We aim to give you two contrasting settings, in order for you to experience this variety.  Schools will give you a balance of year groups and abilities and, where possible, arrange for you to teach KS5, but this is not always manageable in both placement schools.\\r\n\\r\nPlacement one will run from October to January and placement two will run from February to May.\\r\n\\r\nYou may express a preference of school, which we will consider when drawing up the placements - but we cannot guarantee it.  We aim to keep your travel time to a maximum of one hour, although in most cases travel time is much less.\\r\n\\r\nFrom the beginning you will be treated as a member of staff, welcomed into your subject department and invited to attend staff meetings, development days, staff social activities and relevant educational trips.\\r\n\\r\nEach trainee will have a dedicated mentor in their placement school, who will guide you and work alongside you to identify needs and provide personalised support as you develop. Our mentors are outstanding teachers who are required to undertake a rigorous training programme to develop their coaching, effective classroom observation and feedback skills. They will work with you to develop rigour, professional knowledge, understanding and skills in order to deliver creative, purposeful and challenging teaching and learning. \\r\n\\r\nYou will gradually build up your contact time with students as you develop your confidence, teaching skills and time management. \\r\n\\r\nYou will be assigned to a tutor group, in order to regularly shadow a tutor and support all-important pastoral work. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our partnership aims to create a caring and vibrant environment, where trainee teachers can develop their teaching expertise, knowledge and skills while feeling valued and supported by expert professionals and inspirational leaders.  Our teachers are excellent practitioners, committed to sharing their skills, knowledge and practice with the next generation of teachers. \\r\n\\r\nCoombe Girls' School is a nationally designated Teaching School judged 'outstanding' by Ofsted outstanding in every category at its last inspection.\\r\n\\r\nSchools involved in our programme have included:\\r\nChessington Community College, Coombe Boys' School, Coombe Girls' School, Hinchley Wood School, King's College School (Wimbledon - independent), Raynes Park High School, Richard Challoner School, Rutlish High School, Southborough High School, The Holy Cross School, The Kingston Academy, The Tiffin School, The Tiffin Girls' School and Tolworth Girls' School. \\r\n\\r\nAnd in our primary programme:\\r\nBurlington Juniors, Christ Church Primary (New Malden), Coombe Hill Infants, Coombe Hill Juniors, Ellingham Primary, Green Lane Primary, King's Oak Primary, Knollmead Primary, Robin Hood Primary, Sacred Heart Primary (Teddington) and St Mary's and St Peter's Primary (Teddington).\\r\n\\r\nThe unique strength to the secondary partnership lies in the diversity of provision, offering our student teachers an enriching, contrasting experience.  The partnership includes co-educational schools, single sex, selective and non-selective and one independent.  Our secondary programmes provide opportunities to develop post-16 teaching practice. \\r\n\\r\nOur schools enjoy a highly valued reputation locally, many oversubscribed due to the competitive, high-performing profile of our borough.  Student behaviour is generally excellent and results show that many students consistently out-perform their national peers.",
+    "TrainWithDisability": "All school direct students have full access to the student services in our university provider partners.  This includes support services for students with a range of physical and mental health needs.  Their campuses have full disability access.\\r\n\\r\nStudents may also access well-being and counselling services and support services for specific learning needs, including dyslexia and dyspraxia, through academic achievement advisers.\\r\n\\r\nThe Institute of Education has a nursery available (run by University College London).  However, for student teachers we recommend you look into childcare options near your place of residence or host teaching school.  \\r\n\\r\nOur partner universities also offer accommodation for student teachers, although it may be better to find accommodation near placement schools. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as 'outstanding' in every criterion across Primary and Secondary Education.\\r\n\\r\nUCL IOE has been providing first-class teacher training, in partnership with schools and colleges for over 100 years.  UCL IOE graduates are highly sought after in schools and colleges throughout London and the UK. Its central location in historic Bloomsbury means that it is in the heart of London.  Close by are stations at Russell Square, King's Cross, St Pancras and Euston.",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "The Roehampton University School of Education is one of the principal providers of teacher training in the UK, with partnerships of over 350 schools and a rich history of over 175 years.\\r\n\\r\nStudents enjoy high quality teaching and excellent employment prospects: 99% of teacher training graduates are in work or study six months after leaving (Destinations of Leavers of Higher Education 2013/14). \\r\n\\r\nThe beautiful parkland campus in south-west London is only 30 minutes from the West End. The School is ranked third in London for the quality of our research in the field of education (Research Excellence Framework 2014).\\r\n",
+        "UcasInstitutionCode": "R48"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "G56"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Leicester",
+  "provider": "The Beauchamp Lionheart Training Partnership",
+  "subjects": [
+    "Geography",
+    "Secondary"
+  ],
+  "name": "Geography",
+  "slug": "1O8/35PB",
+  "providerCode": "1O8",
+  "programmeCode": "35PB",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Beauchamp College, Ridgeway, Oadby, Leicester, LE2 5TP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Beauchamp College, Ridgeway, Oadby, Leicester, LE2 5TP",
+      "geocode": true,
+      "formatted_address": "Ridge Way, Oadby, Leicester LE2 5TP, UK",
+      "latitude": 52.5892504,
+      "longitude": -1.0722621,
+      "post_code": "LE2 5TP",
+      "city": "Oadby",
+      "route": "Ridge Way",
+      "postal_town": "Leicester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1O8",
+    "addr_1": "Ridge Way",
+    "addr_2": "Oadby",
+    "addr_3": null,
+    "addr_4": "Leicester",
+    "postcode": "LE2 5TP ",
+    "url": "http://www.beauchamp.org.uk/vacancies/teacher-training",
+    "geocode": true,
+    "formatted_address": "Ridge Way, Oadby, Leicester LE2 5TN, UK",
+    "latitude": 52.5893826,
+    "longitude": -1.0735106,
+    "post_code": "LE2 5TN",
+    "city": "Oadby",
+    "route": "Ridge Way",
+    "postal_town": "Leicester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "UK and EU Students\\r\nThis is the total course fee.\\r\n\\r\nStarting in September 2019\\r\nTuition fees for the 2019/20 academic year are yet to be confirmed.\\r\n\\r\nAs an indication of what you might pay, the fee for students who started in September 2018 was:\\r\n\\r\n£9,250\\r\nPGCE students can apply for loans from Student Finance England and may be entitled to a tax-free NCTL bursary.\\r\n\\r\nScholarship\\r\nTeacher Training Scholarships for Secondary Biology, Physics, Chemistry, Mathematics, Languages, History, Religious Education, English and Geography Trainees\\r\n\\r\nScholarships of up to £32,000 (depending on the subject) are awarded to the most talented trainees in place of the NCTL bursary.\\r\n\\r\nTo be awarded a Scholarship you will need outstanding subject knowledge and the potential to become an inspirational physics, chemistry, mathematics, languages or geography teacher. \\r\n\\r\nTo view the full eligibility criteria and submit an application, please visit the website of the appropriate organisation:\\r\n\\r\nInstitute of Physics (Physics and Physics with Maths)\\r\nInstitute of Mathematics and its Applications (Maths)\\r\nRoyal Society of Chemistry (Chemistry)\\r\nRoyal Geographical Society (Geography)\\r\nBritish Council (Modern Languages)\\r\nInternational Students\\r\nThis is the total course fee.\\r\n\\r\nStarting in September 2019\\r\nTuition fees for the 2019/20 academic year are yet to be confirmed.\\r\n\\r\nAs an indication of what you might pay, the fee for students who started in September 2018 was:\\r\n\\r\n£15,405\\r\nPlease note that International Students will not be eligible for bursaries offered by the Department for Education. For more information, please visit the Get into Teaching website.",
+    "AboutCourse": "How this course is organised? \\r\n \\r\nThe PGCE course at the University of Leicester is divided into two halves, Phase A and Phase B, each with clearly delineated priorities to guide progress towards successful completion.  \\r\n\\r\nTwo-thirds of the time (currently 24 weeks out of 36) is spent in schools, starting with a two-week preliminary attachment to a primary school with time spent in a secondary school that its pupils transfer to. A pack of materials incorporating designated tasks and critical reading enables student teachers to make the most of this experience and also supports the completion of a preliminary assignment.  \\r\n\\r\nOn arrival in Leicester, students begin Phase A of their training, starting with an intensive University-based programme consisting of days devoted to subject work and days for the core Professional Studies Programme, which all students follow (A1). This helps prepare students for their first school placement, which at Leicester comes early in the PGCE course. By Christmas, everyone will have completed over a month's teaching in school (A2). Students then return to the same school after Christmas, continuing with their teaching for a further two weeks. \\r\n\\r\nA similar format is repeated in the second half of the year (Phase B). Some mainly University-based weeks (B1) lead into a substantial period of teaching experience in a different school (B2). A concluding spell in the same school, working on a subject project and other activities while continuing with a reduced teaching load, (B3) is followed by a final week in the School of Education.  \\r\n\\r\nWhat is taught on this course? \\r\nThere are two inter-related strands: subject work and the Professional Studies Programme, with elements of both developed through taught sessions in the University and through practical teaching experiences in schools.  \\r\n\\r\n A number of features are common to all courses, regardless of the specific subject students are preparing to teach: \\r\n\\r\nClose links between the University and its partner schools/colleges, ensuring  placement experiences in different institutions draw on and inform each other  \\r\n\\r\nIndividual Action Planning that helps students identify their own development needs and make appropriate plans to fulfil them as they progress through the course \\r\n\\r\nSubject sessions, particularly in the early part of the course, which concentrate on fundamental matters such as lesson planning and evaluation, literacy, preparation of resources, adapting to various levels of pupil ability and the importance of assessment, recording and reporting achievement  \\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Minimum degree required: Upper Second\\r\n\\r\nDegree and Post-16 qualifications Applicants for all subjects should normally have an upper second honours degree. This should be in a subject closely related to the subject specialism you wish to pursue. As a guideline, the main subject should have comprised at least 50% of the degree course and/or have been successfully studied at GCE Advanced level or in a further degree. In exceptional circumstances we accept applicants whose degree does not meet these general guidelines. ",
+    "FeeInternational": 15405.0,
+    "InterviewProcess": "Our selection process is in two parts: School based interview and University based interview.  During the process you will participate in a small group discussion and presentation activity with candidates from a range of subjects.\\r\n\\r\nTeachers from Partnership schools are normally involved, as well as University Tutors.\\r\n\\r\nThe day will also involve:\\r\n\\r\n* An individual interview with the University Subject Tutor(s) and visiting teacher(s). You will be encouraged to demonstrate commitment to your subject, to reflect on relevant previous experience, and expand upon the skills, knowledge, experiences and aptitude that you can bring to your training.\\r\n\\r\n* A short subject specific written task which is designed to explore aspects of your subject knowledge and the quality of your expression*\\r\n\\r\nFurther details about the selection process are on the School of Education website http://www.le.ac.uk/education\\r\n\\r\n*The University of Leicester is committed to Equal Opportunities for all students and potential students, and support is available for candidates for whom this task might present a challenge. Potential applicants for whom this may be a consideration are advised to contact the Secondary PGCE team in advance.",
+    "PersonalQualities": "Applicants without Geography as a major subject would be expected to undertake essential background reading before the start of the course. We welcome applications from mature students who are returning to full-time work or who are making carefully considered decisions to change careers.\\r\n\\r\nGeography students will form part of a Humanities subject group along with Citizenship, History and RE specialists for generic sessions. In addition there will be a programme of Geography subject enhancement sessions to further secure your subject knowledge. This approach recognises the need for flexibility and adaptability required of the Humanities based teacher.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Placements schools will be those within The Beauchamp Lionheart Trust.  Schools are selected to ensure a breadth of experience, though we will consider any preferences.  You will have the opportunity to experience teaching across the 11-18 age range.\\r\n\\r\nThe placements are referred to as 'Phase A' and 'Phase B' placements.\\r\n\\r\nPhase A\\r\nYour first placement is the 'Phase A' placement. After induction you will then spend about 10 weeks in this school. You will build on existing experience and develop new skills with support from the school's Co-ordinator for Initial Teacher Training and the subject mentor who will oversee your professional development during the placement.\\r\n\\r\nPhase B\\r\nDuring your 'Phase B' placement you will spend about 12 weeks in your second placement school. The Phase B school has a Co-ordinator and mentor who have similar roles and responsibilities as those in the 'Phase A' School.\\r\n\\r\nModules shown represent choices available to current students. The range of modules available and the content of any individual module may change in future years."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Beauchamp College is an outstanding 11-19 school with a 6th form of over 1200 students.  We have a strong tradition of supporting young people in gaining the highest GCSE and A’ Level results through high quality teaching and subject specialism.  \\r\n\\r\nOur educational mission is simple:  ANY young person from ANY background deserves an EQUAL chance to be successful in whatever they choose to do. The trust is committed to supporting young people to open doors to their futures and to feel confident that they can thrive in a competitive world.\\r\n\\r\nAll schools in the partnership will be part of the same Multi-Academy Trust.  The Lionheart Academies Trust seeks to develop teachers to work within our partnership and provide our students with teaching that secures academic excellence and holistic development. \\r\n\\r\nWe aim to provide you with an excellent experience, developing your subject specialism and approach to teaching in collaboration with an expert team.\\r\n\\r\nOur Schools:\\r\n* Beauchamp College, an 11-19 school in Oadby (Lead School)\\r\n* The Cedars Academy, an 11-19 school in Birstall\\r\n* Sir Jonathan North Community College, an 11-16 girls’ school based in Leicester\\r\n* Judgemeadow Community College, and 11-16 school in Evington\\r\n* The Martin High School, an 11-19 school in Anstey\\r\n\\r\n\\r\nThere are 3 primary schools in The Trust:\\r\n* Riverside\\r\n* Hallam Fields\\r\n* Highcliffe Academy\\r\n\\r\nWe are currently in the process of opening Beauchamp City Sixth Form, a 16-18 school delivering A level provision in Leicester.\\r\n\\r\nFind out more here: [BeauchampTeach](www.beauchampteach.org.uk)\\r\n",
+    "TrainWithDisability": "Definition of Disability\\r\nA person has a disability if:\\r\n* they have a physical or mental impairment \\r\n* the impairment has a substantial and long-term adverse effect on their ability to perform normal day-to-day activities \\r\n(Equality Act 2010)\\r\n\\r\nReasonable Adjustments:\\r\nTo achieve this level playing field the concept of reasonable adjustment has been established. Please contact as at info@beauchampteach.org.uk to talk about how we can support you.\\r\n\\r\nA vitally important aspect of providing a reasonable adjustment is that the dignity of individuals is paramount. This point is relevant to all of us whatever our role.  Disabled people do not want favours and do not want to stand out as special cases. They simply want the same level of opportunity to achieve and to live. \\r\n\\r\nIn addition to support available from The Beauchamp Lionheart Training Partnership, as a University of Leicester PGCE student you’ll have access to the full range of University student services such as study support and welfare counselling.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our PGCE teacher training courses are taught by experts with years of experience as teachers themselves. We aim to develop inspirational teaching, informed by current research and grounded in a practical understanding of what works in the classroom.\\r\n\\r\nYou’ll have ongoing support from a range of tutors throughout your studies, helping to build your confidence and skills as you progress.\\r\n\\r\nOur PGCE courses focus on developing the kind of teachers schools tell us they want to employ. It’s no wonder our graduates are in high demand, with 96% securing their first teaching post within 12 months of finishing the course.",
+        "UcasInstitutionCode": "L34"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,55 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The University of Warwick",
+  "subjects": [
+    "Design and technology",
+    "Secondary"
+  ],
+  "name": "Design and Technology",
+  "slug": "W20/2WS7",
+  "providerCode": "W20",
+  "programmeCode": "2WS7",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "W20",
+    "addr_1": "Westwood Campus",
+    "addr_2": "University of Warwick",
+    "addr_3": "Kirby Corner Road",
+    "addr_4": "Coventry",
+    "postcode": "CV4 8EE ",
+    "url": "http://www2.warwick.ac.uk/fac/soc/cte/thinking-about-being-a-teacher/",
+    "geocode": true,
+    "formatted_address": "Coventry CV4 7AL, UK",
+    "latitude": 52.3792525,
+    "longitude": -1.5614704,
+    "post_code": "CV4 7AL",
+    "city": null,
+    "route": null,
+    "postal_town": "Coventry"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "CourseLength": "OneYear"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Ofsted have rated us an \"Outstanding\" provider of teacher training.\\r\nThe University of Warwick has been training teachers for over 50 years and part of the Russell Group, whose members represent outstanding teaching and learning experience.\\r\nWe work in partnership with over 300 schools in eight different Local Education Authorities to deliver the highest quality training.\\r\nYou will be taught using the most current technology enhanced learning tools and techniques.\\r\n86% of our trainees rate the course as good or outstanding.\\r\nYou will be taught and supported by highly experienced tutors, class teachers and school mentors who have national reputations for the quality of their training.\\r\n98% of our trainees complete our courses with 94% being awarded good or outstanding. \\r\nOur employment rate into teaching is 95% . \\r\nUpon completing this course you gain 90 credits at master's level. This allows you to fast-track to stage two of a master's degree, quickly progressing your professional development.\\r\nAs alumni, our Professional Development team will support you to develop your skills through a range of CPD programmes to support your career progression.\\r\nOur courses attract a diverse range of age groups and backgrounds, creating a welcoming, inclusive and supportive community, that everyone can feel a part of.\\r\n\\r\n'I got the first job I applied for, I was told a few months after starting that the reputation from the University of Warwick alone had been enough to secure the job (luckily they were also impressed by my teaching!)' - Sophie, PGCE Alumni. ",
+    "TrainWithDisability": "[How will Warwick support you](https://warwick.ac.uk/fac/soc/cte/start-teaching/how-will-warwick-support-you/) \\r\n\\r\n[Support available to those with additional needs](https://warwick.ac.uk/fac/soc/cte/start-teaching/expectationsofateacher/#Disabilities) \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

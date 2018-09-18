@@ -1,0 +1,106 @@
+{
+  "locationType": "School",
+  "accrediting": "Astra SCITT",
+  "provider": "Astra Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1MP/2W97",
+  "providerCode": "1MP",
+  "programmeCode": "2W97",
+  "schools": [
+    {
+      "name": "St Mary and All Saints CE Primary School",
+      "address": "Maxwell Road, Beaconsfield, HP9 1RG",
+      "code": "2"
+    },
+    {
+      "name": "Beechview Academy",
+      "address": "Guinions Road, High Wycombe, Buckinghamshire, HP13 7NT",
+      "code": "Q"
+    },
+    {
+      "name": "Great Kingshill C of E Combined School",
+      "address": "Cryers Hill Rd, Great Kingshill, Buckinghamshire, HP15 6JP",
+      "code": "V"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Maxwell Road, Beaconsfield, HP9 1RG",
+      "geocode": true,
+      "formatted_address": "Maxwell Rd, Beaconsfield HP9 1RG, UK",
+      "latitude": 51.6106247,
+      "longitude": -0.6345558,
+      "post_code": "HP9 1RG",
+      "city": "Buckinghamshire",
+      "route": "Maxwell Road",
+      "postal_town": "Beaconsfield"
+    },
+    {
+      "address": "Guinions Road, High Wycombe, Buckinghamshire, HP13 7NT",
+      "geocode": true,
+      "formatted_address": "Guinions Rd, High Wycombe HP13 7NT, UK",
+      "latitude": 51.6231916,
+      "longitude": -0.7227559,
+      "post_code": "HP13 7NT",
+      "city": "Buckinghamshire",
+      "route": "Guinions Road",
+      "postal_town": "High Wycombe"
+    },
+    {
+      "address": "Cryers Hill Rd, Great Kingshill, Buckinghamshire, HP15 6JP",
+      "geocode": true,
+      "formatted_address": "Cryers Hill Rd, Great Kingshill, High Wycombe HP14 4LG, UK",
+      "latitude": 51.6696202,
+      "longitude": -0.7334071999999999,
+      "post_code": "HP14 4LG",
+      "city": "Great Kingshill",
+      "route": "Cryers Hill Road",
+      "postal_town": "High Wycombe"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1MP",
+    "addr_1": "Dr Challoner's Grammar School",
+    "addr_2": "Chesham Rd",
+    "addr_3": "Amersham",
+    "addr_4": "Buckinghamshire",
+    "postcode": "HP6 5HA ",
+    "url": "http://astra-alliance.com",
+    "geocode": true,
+    "formatted_address": "Chesham Rd, Amersham HP6 5HA, UK",
+    "latitude": 51.6760321,
+    "longitude": -0.6094492,
+    "post_code": "HP6 5HA",
+    "city": "Buckinghamshire",
+    "route": "Chesham Road",
+    "postal_town": "Amersham"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Astra trainees spend four days per week in their placement schools (minimum of 120 days across the year). All training and assessment will lead to the award of Qualified Teacher Status by the DfE.  \\r\nPrimary and secondary trainees across all subjects are assessed against the Teachers’ Standards, based on the evidence of teaching, wider contribution to school life and the ability to reflect on and evaluate these experiences.  Progress is monitored through weekly reflections on progress, objective setting, regular lesson observations and two QTS assignments. \\r\nWeekly QTS Professional Studies will develop understanding of education essential for entrants to the teaching profession, providing consideration to whole-school issues, such as behaviour management, special educational needs and educational theories that contextualise the teaching of your subject. For primary trainees, subject and / or phase-specific studies will enable you to develop your understanding of the teaching of your chosen age range. This includes consideration of aspects such as the nature of the subject / phase in the context of the whole primary school experience, the use and application of the National Curriculum, what is taught, how it is taught, how it is assessed, providing for young people with different backgrounds and abilities and using ICT effectively to facilitate learning.\\r\nSalaried trainees are contracted to be an employee of their main placement school and are likely be accountable for up to a 50% timetable from the start of the course with time also allocated for observing experienced teachers, team teaching, working with small groups and getting involved in all aspects of school life.  \\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "The salary for a Salaried trainee is usually the minimum point of the Unqualified Teacher pay scale. The course fee on this route is paid by the main placement school. ",
+    "Qualifications": "Essential:\\r\n*at least grade 4 (C) (or equivalent) for GCSE Maths and English. \\r\n*grade 4 (C) (or equivalent) GCSE in a Science subject\\r\n*Degree: preferably a 1st or 2:1, though we will consider applicants with a 2:2 or even third class degree who can demonstrate an aptitude for teaching, dependent on the subject/specialism. Your degree should ideally be in or closely related to the subject you intend to teach.  \\r\n",
+    "InterviewProcess": "For 2019/20, there will be three Teaching School Hubs operating on behalf of the Astra SCITT for both primary and secondary recruitment across our network of over 30 schools:\\r\nDr Challoner's Grammar School - Amersham and surrounding area\\r\nAylesbury High School - Aylesbury / surrounding area\\r\nSir William Borlase’s Grammar School - Marlow / Maidenhead \\r\nCandidates should apply via UCAS to their preferred Astra SCITT Hub,  which will then coordinate the recruitment process. If your application is shortlisted, you will be invited for interview at one of our partner schools.  \\r\nThe application and interview process for each hub is identical and is quality assured by the Astra SCITT.\\r\nAs well as having a panel interview, you will also be asked to carry out a reading and writing task, deliver a short presentation on a current education issue as part of a panel interview, undertake a subject knowledge test and meet key staff.  You will also be observed leading a teaching activity with a small group of students; you will be told in advance about the content of the lesson you will need to plan, and the age group you will be teaching. \\r\nYou can expect the selection process to take a minimum of  half a day; it is a rigorous process, designed to get the best match of applicant to the places available.  Please note that applicants for salaried positions may be asked to teach a full lesson and/or complete other tasks which the employing school may specify.\\r\n",
+    "OtherRequirements": "Candidates will be required to have an Enhanced DBS check, and pass the national Numeracy and Literacy skills tests.   Requirement to complete a funded Subject Knowledge Enhancement course will be determined at the point of offer.\\r\nHard copy evidence of all required academic qualifications will need to be provided before an unconditional offer can be made. \\r\n",
+    "PersonalQualities": "Candidates should have the potential to become outstanding teachers, demonstrated by strong subject knowledge; ability to communicate with enthusiasm about learning; ability to reflect on experiences of working with young people, and knowledge of the curriculum and educational issues. \\r\nOther requirements include being ambitious to teach at a good or outstanding level; highly motivated (with the ability to also motivate students); high professional standards; a willingness to play a part in the wider school life; commitment to professional development, and strong communication skills.\\r\nFurther experience of working with children, for example helping with a youth/sports club is desirable.  \\r\n",
+    "HowSchoolPlacementsWork": "We endeavour to match the right trainee to the right partner school for their main placement based on their initial preference, geography / distance from home, and areas of specific interest. Trainees will have two placements; a main placement, where they spend the Autumn, summer and second half of the Spring terms.  Trainees will also be expected to attend an induction day with their main placement school ahead of the September course start.  \\r\nDuring the first half of the Spring term, all trainees complete a second, 5-6 week placement in a contrasting school (eg for Secondary this is usually Grammar/non-selective; for Primary, the placements are Key Stage 1/Key Stage 2).  Secondary trainees will teach across the 11-16 age range (14-19 yrs for Business Studies ). Primary trainees will, across their two placements, have taught across the 5-11 age range.  \\r\nQTS studies take place with the SCITT every Wednesday, with the other four days per week being spent in school (minimum of 120 days across the year).  Bursary-led / unsalaried trainee timetable allocations is approximately 30% in the first term, rising to a maximum allocation of 75% in the final placement out of the four days in school.   Salaried trainees on contracts with their employing school will be expected to teach a 50% in their first term.\\r\nAstra has over 30 partners signed up to the SCITT Partnership Agreement which demands that each school supplies dedicated and high quality one-to-one Mentor support and in-school Professional Studies to complement the core QTS programme offered by the SCITT each week.  Trainees will also be expected to attend events such as parents’ evening and contribute to report writing during the year.  While there is no guarantee of permanent employment with placement schools, a considerable number of our trainees do go on to secure NQTs positions within our partnership.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Astra SCITT offers a talented and dedicated team of subject-based Mentors, a professional working environment and forward-looking technology systems for the 21st century teacher.  We offer a highly personalised support to all trainees from the moment of appointment to course completion, as well as a package of CPD opportunities beyond the training year.  At Astra, we see you as an individual and as a leader of the future.  Our School Direct salaried programmes are offered as QTS-only in a wide range of subjects and phases.\\r\nFrom the beginning of your training year you will be treated like a member of staff at your designated school, attending staff meetings, parents’ evenings and development days.  \\r\nYour main placement school will be one in our wide network across Buckinghamshire, Bedfordshire or Hertfordshire.   See  [our website](www.astra-alliance.com/) for a full list of our schools.  During your training, you will be assigned a Mentor, subject Tutors and ITTCO; these colleagues will monitor your progress and support you on your learning journey. Our staff are experienced teachers and are required to undertake a rigorous training programme.\\r\nWeekly Professional Studies sessions take place every Wednesday, hosted at a range of our partner schools. \\r\n",
+    "TrainWithDisability": "Astra trainees will be assessed through our Occupational Health service before starting the course in order to ensure they meet the “Fitness to Teach” requirements.  This is also to help us identify any additional needs which will require support during the programme. \\r\nWe are experienced in making necessary adjustments to help facilitate trainees with disabilities and other conditions, including dyslexia (eg making training slides available in advance where possible), physical, hearing and visual impairments (eg providing handouts on specific coloured paper; supporting the use of specific software); and mental health conditions, to ensure they are not disadvantaged in any way.  If a preferred main location was not fully accessible for a trainee, we would find an alternative wherever possible. \\r\nAstra gives all trainees full access to an Employee Assistance Programme which can provide counselling and other support and advice as well as access to counselling support, where appropriate.  \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "28E"
+      }
+    ]
+  },
+  "has_inst": true
+}

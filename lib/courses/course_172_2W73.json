@@ -1,0 +1,57 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Exeter",
+  "provider": "JCTSA",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "slug": "172/2W73",
+  "providerCode": "172",
+  "programmeCode": "2W73",
+  "schools": [
+    {
+      "name": "The King's School",
+      "address": "Cadhay Lane, Ottery Saint Mary, EX11 1RA",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Cadhay Lane, Ottery Saint Mary, EX11 1RA",
+      "geocode": true,
+      "formatted_address": "Cadhay Ln, Ottery Saint Mary EX11 1QU, UK",
+      "latitude": 50.7498842,
+      "longitude": -3.2935859,
+      "post_code": "EX11 1QU",
+      "city": "Devon",
+      "route": "Cadhay Lane",
+      "postal_town": "Ottery Saint Mary"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The History PGCE course is concerned with theoretical and practical classroom approaches to the teaching of history. This involves examining a range of appropriate learning and teaching strategies through Key Stages 3-5 in the varied classroom situations you will encounter.  You will develop a rigorous understanding of when and where particular activities might be appropriate. The course is underpinned by the belief that history teaching is a stimulating, creative activity that gives pleasure to both teachers and pupils and educates young people to take a full and active role as citizens. The course draws heavily on current and recent research findings from both the Graduate School of Education and other researchers at the forefront of history education.\\r\nRead more at (https://www.exeter.ac.uk/teachertraining/secondary/history/#7eFhXtXtHeBbo57F.99)\\r\n\\r\nIt includes two assessments at Masters level, work a total of 60 credits.\\r\n\\r\nThe programme has three fully integrated components:\\r\n\\r\n*Secondary Education and Professional Studies Module\\r\nThe Professional Studies component introduces you to key educational ideas and principles within a range of educational contexts. The module is followed throughout the year with both University and school-based elements and is concerned with classroom issues, whole school issues and the role of education in the wider society.\\r\n\\r\n*Secondary Professional Learning Module\\r\nCentral to school-based work is the development of your ability to meet the standards of professional competence which trainees must demonstrate in order to meet national standards for the award of QTS.\\r\n\\r\n*Secondary History Subject Knowledge and Pedagogy Module\\r\nThe principal aims of the module are to equip students with a comprehensive understanding of the background issues and practice of the current teaching of History in the secondary school, and to enable them to meet the Standards for the Award of Qualified Teacher Status. In addition, the module seeks to nurture reflective and autonomous professional practitioners who are able to identify strengths and areas for development in their subject knowledge and pedagogy, through evaluating current professional practice in relationship to developments in research and curriculum theory.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "*2:1 degree in History or a History Joint Honours degree. The course will also consider applications from those with degrees in related subjects such as Ancient History, Archaeology, International Relations or Politics.\\r\n* GCSE English and maths at grade C+/4+\\r\n",
+    "InterviewProcess": "Interviews will take place in the home school. You will be interviewed by the head of department, a member of the leadership team and a teacher with responsibility for initial teacher training. Before the interview day, but as part of the interview process, you will be expected to arrange a visit to the school. On the interview day itself you will be asked to observe a lesson and discuss what you notice and you will be asked to work with a small group of students for part of a lesson, supporting them through an activity prepared by their teacher.",
+    "HowSchoolPlacementsWork": "JCTSA schools decide on an individual basis in which subjects they wish to offer training. This means that you are applying to a specific school to study your subject. Your contrasting school experience will be as close as possible to your home school but you will need access to a car.\\r\nThere are two school placements. The majority of your in-school experience is done in your home school. This is the school to which you applied for your place. In addition there will be a six-week placement to a contrasting school. \\r\nThe majority of our schools are 11-18 and are judged as good or outstanding. They are all rural and are located in West Dorset, Chard and in South East Devon. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Woodroffe is the lead school in a large alliance of secondary and primary schools. We are an outstanding school, as are a number of our partner schools. Woodroffe is all a regional maths hub, providing specialist maths support to teachers across Dorset and parts of Devon. The Jurassic Coast teaching School Alliance has many years of experience in delivering teacher training programmes, working with The University of Exeter who have been judged by Ofsted as outstanding providers of initial teacher education.",
+    "TrainWithDisability": "Our practice with regard to students with disabilities and other needs is in line with that of The University of Exeter.   \\r\n(https://search.exeter.ac.uk/s/redirect?collection=all-exeter-uni&url=http%3A%2F%2Fwww.exeter.ac.uk%2Fmedia%2Funiversityofexeter%2Fcollegeofsocialsciencesandinternationalstudies%2Feducation%2Fpgce%2Fdocuments%2FITE_Fitness_to_Teach_and_Disability_Support_procedure_2018.doc&index_url=http%3A%2F%2Fwww.exeter.ac.uk%2Fmedia%2Funiversityofexeter%2Fcollegeofsocialsciencesandinternationalstudies%2Feducation%2Fpgce%2Fdocuments%2FITE_Fitness_to_Teach_and_Disability_Support_procedure_2018.doc&auth=VvL%2Bz4sSTtW8bG5yJ1304g&profile=_default&rank=1&query=fitness+to+teach)",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "E84"
+      }
+    ]
+  },
+  "has_inst": true
+}

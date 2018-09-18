@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": "Cornwall School Centred Initial Teacher Training (Cornwall SCITT",
+  "provider": "Mounts Bay Academy",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "12U/2CS3",
+  "providerCode": "12U",
+  "programmeCode": "2CS3",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Boscathnoe Lane, Heamoor, Penzance, TR18 3JT",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Boscathnoe Lane, Heamoor, Penzance, TR18 3JT",
+      "geocode": true,
+      "formatted_address": "Boscathnoe Ln, Heamoor, Penzance, UK",
+      "latitude": 50.1282186,
+      "longitude": -5.558324199999999,
+      "post_code": null,
+      "city": "Heamoor",
+      "route": "Boscathnoe Lane",
+      "postal_town": "Penzance"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "12U",
+    "addr_1": "Mounts Bay Academy",
+    "addr_2": "Boscathnoe Lane",
+    "addr_3": "Heamoor",
+    "addr_4": "Penzance",
+    "postcode": "TR18 3JT",
+    "url": "http://www.appliedminds.eu",
+    "geocode": true,
+    "formatted_address": "Boscathnoe Ln, Heamoor, Penzance TR18 3JT, UK",
+    "latitude": 50.1290438,
+    "longitude": -5.5558571,
+    "post_code": "TR18 3JT",
+    "city": "Heamoor",
+    "route": "Boscathnoe Lane",
+    "postal_town": "Penzance"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "We run our course in partnership with Cornwall SCITT. You can access information about the course structure from their website. Our trainees follow the same course structure as they do. It gives an overview of the training year, how trainees are assessed, the PGCE expectations and much more. For each Secondary subject there are subject based training days with a specialist teacher. This is usually based in a school. \\r\n\\r\nCornwall SCITT\\r\n(https://www.cornwallscitt.org/)\\r\n\\r\n ",
+    "CourseLength": "OneYear",
+    "Qualifications": "UK Honours Degree 2.2 or above or approved other degree (e.g. overseas). \\r\nMaths and English C or above\\r\nAll qualifications required are detailed on the Scitt website. ",
+    "InterviewProcess": "We have an interview process which we agree with our ITT Provider. We always have a formal interview with a Panel. We try where possible to include a short teaching episode in one of our partner schools. We include a tour at this time so you can see how school life is in practice. ",
+    "HowSchoolPlacementsWork": "Secondary - we use Mounts Bay Academy as the main placement school - based in Penzance. The website link for scitt also details the placement info.\\r\n\\r\nThere are very good transport links to and from the town and many people also car-share. Trainees quite often rent rooms or airbnb during the placements. We are 11-16. \\r\n\\r\nWe provide our Secondary trainees with a Macbook and an iPad as this is an essential part of our teaching and learning. We work with Cornwall SCITT to choose a suitable second placement school. \\r\n\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We believe in investing in the growth of teachers, unlocking potential and encouraging both critical thinking and engaged, dynamic learning. We believe that teacher learning is an ongoing process, beginning with this initial training phase and continuing throughout your professional life. \\r\nWe are a group of schools with like-minded educational philosophies. We work together to promote leading teaching methods and cutting-edge learning services. For Secondary our main placement school is Mounts Bay Academy, an Outstanding school in Penzance. We use other good and outstanding schools for the second placement. We use a selection of good and outstanding Primary schools in and around this area to give a positive and varied experience. All our schools used experienced teachers to support their trainees and a comprehensive CPD programme of training and support. There are many wider opportunities during the training programme and we encourage people to apply who are motivated, creative, patient, confident and engaging as your enthusiasm for teaching will empower the futures of others. ",
+    "TrainWithDisability": "We support all candidates who meet the minimum selection criteria to participate fully in the training. Each school used for placements will have their own accessibility differences and they will work with any candidates to accommodate their needs. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We have worked with Cornwall SCITT for many years and have built up a positive and trusting relationship over this time. We work very well together and receive consistently excellent feedback from all our trainees. We hold attend regular meetings with them and support the development of the course through this to provide the best programme for training teaching. They are an Outstanding provider. ",
+        "UcasInstitutionCode": "C79"
+      }
+    ]
+  },
+  "has_inst": true
+}

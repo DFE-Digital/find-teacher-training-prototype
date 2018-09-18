@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": "University of East London",
+  "provider": "Paradigm Trust: Old Ford Primary Academy (Primary) & Ipswich Academy (Secondary)",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1C8/2T3D",
+  "providerCode": "1C8",
+  "programmeCode": "2T3D",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Old Ford Primary-an Academy, Wrights Road, Bow, London, E3 5LD",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Old Ford Primary-an Academy, Wrights Road, Bow, London, E3 5LD",
+      "geocode": true,
+      "formatted_address": "Old Ford Rd, London, UK",
+      "latitude": 51.5332461,
+      "longitude": -0.0413467,
+      "post_code": null,
+      "city": "Greater London",
+      "route": "Old Ford Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1C8",
+    "addr_1": "Old Ford Primary Academy",
+    "addr_2": "Wrights Road",
+    "addr_3": "Bow",
+    "addr_4": "London",
+    "postcode": "E3 5LD  ",
+    "url": "http://oldfordacademy.paradigmtrust.org/",
+    "geocode": true,
+    "formatted_address": "Wright's Rd, London E3 5LD, UK",
+    "latitude": 51.5330808,
+    "longitude": -0.0316843,
+    "post_code": "E3 5LD",
+    "city": "Greater London",
+    "route": "Wright's Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Candidates will be trained to teach by experienced practitioners from within the Trust and from our partner organisation, Essex Teacher Traning. The Paradigm Trust Schools Direct programme combines classroom 'hands on' experience with professional development sessions.  \\r\n\\r\n\\r\nCandidates can expect to spend approximately 80% of their time in classrooms, working alongside and learning from established teachers. Professional development sessions are held either in our Ipswich hub for our  Suffolk based primary trainees, or in one of our London schools for London based trainees. Our partner, Essex Teacher Training leads  professional development sessions for London based trainees in Harlow (all travel costs are covered). Essex Teacher Training provides training for our Suffolk and Ipswich based trainees based in Colchester.\\r\n\\r\nWe have had great success with our Schools Direct programme and the majority of our trainees successfully apply for teaching roles within the Trust at the conclusion of their training.",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "Trainees on the School Direct (salaried) programme are paid at point 1 on the unqualified teacher scale.\\r\n\\r\nAs of September 2018, this is currently £20,908 for inner London and £16,626 nationally.",
+    "Qualifications": "Primary candidates will need GCSE minimum 'C' grades in English, mathematics and science and at least a 2:2 degree.\\r\n\\r\nWe will look at comparable alternative qualifications",
+    "InterviewProcess": "If you are successfully shortlisted for interview, you can expect to be observed teaching a short lesson with a class so we can assess your teaching potential.\\r\n\\r\nIn addition, you will attend a face-to-face interview with senior members of staff.\\r\n\\r\nAs with all Initial Teacher Training programmes, you will be required to sit English and mathematics skills tests before the commencement of training.",
+    "OtherRequirements": "Experience working with children is preferred although not essential.",
+    "PersonalQualities": "We are looking for enthusiastic, motivated and  inspirational individuals who see teaching as more than 'just a job.' People who want to make a difference and help pupils to be their very best. People who want to  change lives.",
+    "HowSchoolPlacementsWork": "Trainees will be based in one of our primary academies with ages ranging from 3 - 11.\\r\n\\r\nCurrently, we have 3 primary academies in Tower Hamlets, London: Old Ford Primary Academy, Culloden Primary Academy and Solebay Primary Academy.  Two further primary schools are located in Ipswich: Murrayfield Primary Academy and Piper's Vale Primary Academy. We also partner with St. Edmund's primary school in Tower Hamlets who offer training places. \\r\n\\r\nTrainees will spend the majority of their time in their base academy in 3 different age ranges within the school. They will also undertake a short placement in one of the nearest partner schools.\\r\n\\r\n[Old Ford Primary Academy](http://oldfordacademy.paradigmtrust.org/)\\r\n[Culloden Primary Academy](http://cullodenacademy.paradigmtrust.org/)\\r\n[Solebay Primary Academy](http://solebayacademy.paradigmtrust.org/)\\r\n[Murrayfield Primary Academy](http://murrayfieldacademy.paradigmtrust.org/)\\r\n[Piper's Vale Primary Academy](http://http://pipersvaleacademy.paradigmtrust.org/.paradigmtrust.org/)\\r\n[St. Edmund's Primary School](http://www.st-edmunds-school.org/website)"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "“The best thing has been hands-on training that I can take into the classroom immediately. Lots of chances to see others teach and learn best practice.”  (2017/18 trainee).\\r\n\\r\nAt Paradigm Trust, we have a teaching motto: “We teach the right things, efficiently.” Every minute we have with our learners is important and we can’t afford to waste time. We take what’s most important in every subject and make sure we teach it in the most effective way. Cognitive science is at the heart of our initial teaching programme  - the science of learning. We know what works in the classroom and we want to share that with you.\\r\n\\r\nParadigm Trust has a significant track record of delivering high-quality initial teaching training. Last year 100% of our trainees were graded good or better. 90% of last year’s trainees successfully applied for permanent teaching posts with us this year.  \\r\n\\r\n“The second placement at Old Ford was really useful. Working in a different environment in a new year group was important for getting used to teaching in a different way and understanding the differences between year groups.” (2017/18 trainee).\\r\n\\r\nParadigm Trust’s mission is “to develop and sustain great schools where we can make the biggest difference to pupils.” Education changes lives. Come and train to teach with us.\\r\n\\r\n[Paradigm Trust](http://paradigmtrust.org/)\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Essex Teacher Training is a large provider of ITT in the Eastern Region, offering a variety of different routes to QTS.  \\r\n\\r\nWorking with in excess of 80 schools in Essex and neighbouring counties, they provide excellent opportunities in primary, secondary and special schools. \\r\n\\r\nWith excellent employment rates and over 95% of trainees finishing the programmes, each year, as good or outstanding, headteachers comment that trainees are well prepared for their NQT year. ",
+        "UcasInstitutionCode": "E75"
+      }
+    ]
+  },
+  "has_inst": true
+}
