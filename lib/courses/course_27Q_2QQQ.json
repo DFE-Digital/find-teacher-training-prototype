@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Liverpool Hope University",
+  "provider": "Wigan and West Lancashire Catholic School Direct (St. Edmund Arrowsmith)",
+  "subjects": [
+    "Drama and theatre studies",
+    "Secondary"
+  ],
+  "name": "Drama",
+  "slug": "27Q/2QQQ",
+  "providerCode": "27Q",
+  "programmeCode": "2QQQ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Rookery Avenue, Ashton-in-Makerfield, Wigan, WN4 9PF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Rookery Avenue, Ashton-in-Makerfield, Wigan, WN4 9PF",
+      "geocode": true,
+      "formatted_address": "Rookery Ave, Ashton-in-Makerfield, Wigan WN4 9PE, UK",
+      "latitude": 53.483554,
+      "longitude": -2.6396697,
+      "post_code": "WN4 9PE",
+      "city": "Ashton-in-Makerfield",
+      "route": "Rookery Avenue",
+      "postal_town": "Wigan"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "27Q",
+    "addr_1": "Rookery Avenue",
+    "addr_2": "Ashton-in-Makerfield",
+    "addr_3": null,
+    "addr_4": "Wigan",
+    "postcode": "WN4 9PF ",
+    "url": "http://www.catholicsd.org.uk",
+    "geocode": true,
+    "formatted_address": "Rookery Ave, Ashton-in-Makerfield, Wigan WN4 9PE, UK",
+    "latitude": 53.483554,
+    "longitude": -2.6396697,
+    "post_code": "WN4 9PE",
+    "city": "Ashton-in-Makerfield",
+    "route": "Rookery Avenue",
+    "postal_town": "Wigan"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "UK applicants may receive at least part of the fees payment back in a cash bursary from the University.\\r\nDiscretionary bursaries are available in some instances.\\r\nAll applicants are eligible for student loans to cover fees.\\r\n\\r\n[Full details of courses and fees can be found on the Liverpool Hope University website](www.hope.ac.uk/schooldirect)",
+    "AboutCourse": "Our course ensures that you receive as much training as possible in our partner schools. \\r\nYou will be allocated a HOME school placement from the first day of the school year, from September until February half term, and an AWAY school placement from February half term until July. A Key Stage 5 placement of at least two weeks will also be provided during the year.\\r\nYou will attend subject pedagogy at Liverpool Hope University one day per week in your Home placement. Also, each week, one afternoon will be spent receiving Professional Development training with the rest of the WWLCSD cohort, at one of the nine partner schools. 15 Masters level days at Liverpool Hope will take place across the year, and you will also complete two modules of the Catholic Certificate in Religious Studies (CCRS) as part of your training. Training for the CCRS will be delivered at some of the school-run Professional Development sessions.\\r\nYou will be assessed through the completion of two assignments at Masters level by Liverpool Hope University. This will ensure that you are awarded a PGCE, plus you will submit evidence of meeting the Teacher Standards to your placement schools at four review points through the year. To complete the double module of the CCRS, you will be required to submit two 1500 word assignments.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should be a graduate in your subject area, preferably with a 1st or a 2:1.\\r\nWe are, however, willing to consider applicants who have a 2:2 who demonstrate a real aptitude for teaching.\\r\nApplicants with degrees in subjects which are not wholly focused on their chosen subject area for teaching could be expected to complete a Subject Knowledge Enhancement course of between 8 and 28 weeks in length. \\r\nAll trainees must have attained at least a Grade C or equivalent in GCSE English and Mathematics and have passed the national literacy and numeracy skills tests. ",
+    "FinancialSupport": "We encourage our applicants to investigate possible scholarships which may be offered by appropriate professional bodies. Such scholarships are awarded in place of a bursary.",
+    "InterviewProcess": "The interview process will involve you spending one day at St Mary's Catholic High School in Astley, which is where our administrative team is based.\\r\nYou will be asked to deliver a thirty minute task to a group of five Key Stage Three pupils, on a topic which you will have been given to prepare in advance of the day. We will be observing how well you can engage with the pupils, and whether you are able to prepare an appropriate task, and resource it effectively, to ensure that they make some progress. We are not looking for an already competent teacher, we are looking for people who we believe have the necessary qualities to be \"trained\" to that level.\\r\nAfter the teaching task, you will be asked to complete a thirty minute written task, where you will reflect upon the strengths and areas in need of development in your group teaching task, This is intended to assess your ability to evaluate a lesson effectively, and indicates the standard of your written English. \\r\nAfter lunch, you will have a formal interview where the panel will be made up of the Director (and/or the Assistant Director) of the course, a Head Teacher and a Professional Mentor from one of our partnership schools.\\r\nA representative from Liverpool Hope University will also attend some of the Interview Days as a Quality Assurance measure.\\r\nWe will inform you of the outcome of the interview and offer feedback within the next five working days. ",
+    "OtherRequirements": "We do not require you to have done a set amount of classroom observations prior to the application process. However, meaningful experience of working with young people of secondary age in ways such as helping with a sports team, drama or youth group, or simply having spent some time in a secondary school, would demonstrate, at interview, a commitment to the application.\\r\nAll trainees accepted onto the course require DBS clearance before commencing their training.",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about making a difference to the lives of the young people that we serve. We want you to have a desire to share your passion with students of all abilities across the secondary age range.\\r\nTrainees on our programme do not need to be Catholics themselves, but would be individuals who recognise the intangible extras which working as part of a faith-based community can bring to the lives of both staff and young people.\\r\n",
+    "HowSchoolPlacementsWork": "We are confident that, through our personalised, structured interview process, we get to know our applicants quickly, and strive to place them in the schools and departments within our programme where they would be able to flourish during their training year. Travelling distances from home are taken into consideration, wherever possible. \\r\nWe do not usually place trainees in a school if they used to attend it as a pupil, since we feel it is important for the training year to provide as broad an experience as possible. Trainees can express a preference for a placement at a specific school in the partnership, although we cannot guarantee to meet their request.\\r\nAll schools in the partnership have comprehensive intakes and you will gain experience of working with young people of all abilities across the age range from 11-18. \\r\nYou will be assigned a Professional Mentor and a Subject Mentor in each of your two placement schools. Our mentors are outstanding teachers themselves, and they are all required to undertake a rigorous training programme to develop their mentoring skills. This includes coaching, effective classroom observation and feedback skills."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Wigan & West Lancashire Catholic School Direct Programme is a fantastic opportunity to work and learn within a partnership of eight Catholic Secondary schools and one Catholic Sixth Form college, all of which share the same outstanding values and ethos:\\r\n\\r\n* St Edmund Arrowsmith Catholic High School, Ashton-in-Makerfield (Lead School) \\r\n* St Mary's Catholic High School, Astley \\r\n* St Bede's Catholic High School, Ormskirk \\r\n* St John Fisher Catholic High School, Wigan \\r\n* Our Lady Queen of Peace Catholic Engineering College, Skelmersdale \\r\n* St Peter's Catholic High School, Orrell \\r\n* Holy Cross Catholic High School, Chorley \\r\n* St Gregory's Catholic High School, Warrington \\r\n* St John Rigby Catholic Sixth Form College, Orrell \\r\n\\r\nWe work closely together, with a shared vision and commitment to providing first class Initial Teacher Training, that not only equips trainees with the skills and knowledge required to teach their subject, but also appreciates the distinct nature that working as part of a Catholic community can bring. \\r\nAll of our schools are conveniently located, with excellent transport network links. \\r\nThe pupils in our schools are happy, friendly and well behaved, and are at the heart of everything we do.  Many of our pupils consistently out-perform their national peers and make significantly more progress. \\r\nEmployability rates of our trainees are excellent, with a significant proportion gaining positions within our partner schools. We believe that our staff are our most valuable resource. By training potential new staff ourselves, we ensure we recruit the best.\\r\n\\r\n[visit our website:](www.catholicsd.org.uk)\\r\n\\r\n \\r\n",
+    "TrainWithDisability": "We are committed to ensuring equality of opportunity for all applicants. It is a personal choice if you wish to inform us of your disability, however we would want to support you, and put reasonable adjustments in place, as much as possible. The Liverpool Hope University Learning Support Team assist us, with Learning Support Plans being used as the main method by which information is communicated to all relevant parties.\\r\n\\r\n[For further information:](www.hope.ac.uk)",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "In partnership with Liverpool Hope University, we have designed an exciting training opportunity that combines school placement experiences with training and development opportunities taking place across our partnership schools, and at the University's Hope Park Campus. \\r\nYou will be trained in a highly supportive and aspirational environment, and will develop the rigour, professional knowledge, understanding and skills necessary for the delivery of creative, purposeful and challenging teaching and learning. \\r\nMost of the training will be delivered by expert, current practitioners from across our partnership schools, enhanced by subject-specific sessions held at Liverpool Hope University.",
+        "UcasInstitutionCode": "L46"
+      }
+    ]
+  },
+  "has_inst": true
+}

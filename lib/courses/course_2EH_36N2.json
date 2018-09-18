@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Gloucestershire",
+  "provider": "The Cotswold Teaching School Partnership",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2EH/36N2",
+  "providerCode": "2EH",
+  "programmeCode": "36N2",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "The Avenue, Bourton-on-the-Water, Cheltenham, GL54 2BD",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The Avenue, Bourton-on-the-Water, Cheltenham, GL54 2BD",
+      "geocode": true,
+      "formatted_address": "Bourton-on-the-Water, Cheltenham GL54 2BD, UK",
+      "latitude": 51.8887566,
+      "longitude": -1.7581285,
+      "post_code": "GL54 2BD",
+      "city": "Bourton-on-the-Water",
+      "route": null,
+      "postal_town": "Cheltenham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2EH",
+    "addr_1": "The Avenue",
+    "addr_2": "Bourton-on-the-Water",
+    "addr_3": null,
+    "addr_4": "Cheltenham",
+    "postcode": "GL54 2BD",
+    "url": "http://www.cotswoldteachingschoolpartnership.org.uk",
+    "geocode": true,
+    "formatted_address": "The Avenue, Bourton-on-the-Water, Cheltenham GL54 2BB, UK",
+    "latitude": 51.88956460000001,
+    "longitude": -1.757238,
+    "post_code": "GL54 2BB",
+    "city": "Bourton-on-the-Water",
+    "route": "The Avenue",
+    "postal_town": "Cheltenham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "For more details about our course please visit:\\r\nwww.cotswoldteachingschoolpartnership.org.uk",
+    "CourseLength": "OneYear",
+    "Qualifications": "All applicants must have at least a 2:2 degree and GCSEs (or equivalent) in English, Maths and Science.",
+    "PersonalQualities": "More information about our recruitment and application process can be found at:\\r\nwww.cotswoldteachingschoolpartnership.org.uk",
+    "HowSchoolPlacementsWork": "Trainees undertake three placements.  They will experience both main key stages and have a contrasting experience between their schools.  The third, final placement, is known as the enhancement placement, where trainees get to really hone their skills and develop their best practice."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Cotswold Teaching School Partnership offers trainees the opportunity to train on a School Direct route in an Outstanding Comprehensive school.  We have a long tradition of training excellent teachers and superb employment rates, many at our school or in one of our near partners.  We were named the Sunday Time Comprehensive School of the Year in 2016 and the school is an excellent place to learn how to teach.  Pupils are receptive, engaged and enthusiastic.  We are also a true comprehensive school and all trainees get opportunities to work with pupils of different abilities and at all key stages, including sixth form.  We have a team of experienced mentors who will support you through your training year and excellent training managers who oversee your development, provide coaching and help you to pass the course with flying colours!\\r\nPlease see our website [www.cotswoldteachingschoolpartnership.org.uk] (www.cotswoldteachingschoolpartnership.org.uk) for me more details",
+    "TrainWithDisability": "As a school familiar with supporting pupils with special needs, we are more than ready to support candidates with disabilities and particular needs.  In the past, this has included supporting teachers with dyslexia and giving them extra support with preparing teaching resources and preparing for academic assignments.  We are also always on hand to help trainee teachers who are finding the strains of the course difficult and offer 1:1 mentor support and have a team of training managers ready to give support, advice and guidance.  We are able to tailor our course at times to fit the needs of each individual and this has, in the past, enabled some trainees who have had difficulties to complete the course and enter teaching successfully.  We are also very aware that practical arrangements and geography play a key part in choosing a teacher training provider, especially for the many career changers who apply.  We look to accommodate this as best as possible when deciding upon placement schools.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work hand-in-hand with GITEP, a long established, outstanding provider who support the work of trainee teachers across Gloucestershire and beyond.  Our PGCE course is accredited by the University of Bristol who has a superb academic reputation in developing teachers and educational research.",
+        "UcasInstitutionCode": "G48"
+      },
+      {
+        "Description": "We have recently moved to be accredited by the University of Bristol.",
+        "UcasInstitutionCode": "G50"
+      }
+    ]
+  },
+  "has_inst": true
+}

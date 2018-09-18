@@ -1,0 +1,73 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Kirklees and Calderdale SCITT",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "slug": "1WK/2XS5",
+  "providerCode": "1WK",
+  "programmeCode": "2XS5",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "The John Curwen, Primary Academy, Leeds old road, Heckmondwike, WF16 9BB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The John Curwen, Primary Academy, Leeds old road, Heckmondwike, WF16 9BB",
+      "geocode": true,
+      "formatted_address": "Leeds Old Rd, Heckmondwike WF16 9BB, UK",
+      "latitude": 53.7209121,
+      "longitude": -1.6668446,
+      "post_code": "WF16 9BB",
+      "city": "West Yorkshire",
+      "route": "Leeds Old Road",
+      "postal_town": "Heckmondwike"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1WK",
+    "addr_1": "(covering Huddersfield and Halifax)",
+    "addr_2": "adj The John Curwen Primary",
+    "addr_3": "Leeds Old Road",
+    "addr_4": "Heckmondwike, West Yorkshire",
+    "postcode": "WF16 9BB",
+    "url": "http://www.kcscitt.com",
+    "geocode": true,
+    "formatted_address": "Leeds Old Rd, Heckmondwike WF16 9BB, UK",
+    "latitude": 53.7209121,
+    "longitude": -1.6668446,
+    "post_code": "WF16 9BB",
+    "city": "West Yorkshire",
+    "route": "Leeds Old Road",
+    "postal_town": "Heckmondwike"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 7500.0,
+    "FeeDetails": "We offer 2 options\\r\n\\r\n£7500 for Qualified Teacher Status alone (QTS) \\r\n\\r\n£9000 for  QTS with PGCE. This PGCE element equates to 60 Masters credits which we offer through the University of Huddersfield.",
+    "AboutCourse": "You will be based in a school four days a week from the start of term in September.  Working alongside your subject mentor, you will identify your current level of knowledge, skills and experience and from that draw up a training plan.  This will involve observing experienced teachers, other teaching experiences and training activities leading to delivering whole class.\\r\n\\r\nThroughout the year you will have one day per week at the central training base in Heckmondwike (or visiting schools, colleges or other educational establishments).  The programme is extremely diverse from theoretical input to observing Sensory Rooms in local Special Schools and Voice Projection workshops.  Our trainees have also benefited from our Mindfulness and Yoga sessions to support their personal well-being.\\r\n\\r\nYou will also benefit from 10 additional Subject Specific Training days which will give you the opportunity to further enhance your subject knowledge with other subject specialist trainees.\\r\n\\r\nBy the end of the training year you will be fully equipped to deliver your subject from Year 7 pupils to Year 11 including the GCSE specification.\\r\n\\r\nIn order to gain Qualified Teach er Status (QTS) you have to be judged competent against the [Teacher Standards](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/665522/Teachers_standard_information.pdf) \\r\n\\r\nFor Kirklees & Calderdale SCITT this involves:\\r\n\\r\n* 3 Evidence Bundles (these are training activities which focus on a group of standards)\\r\n* 2 Assignments (these form the concluding part of the Evidence bundle)\\r\n* Tutor visit reports - your Tutor will visit you half-termly\\r\n* 3 Periodic Reports - your school will write a report at the end of each term",
+    "CourseLength": "OneYear",
+    "Qualifications": "All qualifications must be gained by the start of the course. We will consider applications from people who are finishing a qualification but any offer would be fully subject to the successful completion of relevant qualifications.\\r\n\\r\n* GCSE Maths and English at least Grade C/4 or equivalent\\r\n * A UK Bachelors degree or equivalent\\r\n * A NARIC certificate for qualifications gained overseas \\r\n\\r\nFor Secondary, degrees are usually, though not exclusively, relevant to the subjects to be taught. We may request you undertake an SKE course to increase your subject knowledge.\\r\n",
+    "InterviewProcess": "If you are selected for interview, you will be asked to prepare a task to bring to your interview and should expect to undertake a written task on the day.\\r\n\\r\nYou will be invited to an interview by a small panel comprising a Partnership tutor and a senior colleague from one of our partner schools.\\r\n\\r\nYou will be expected to answer a range of questions which are designed to explore your personal qualities and meeting the course criteria.\\r\n\\r\nYou will need to bring to interview original certificates of all qualifications and proof of identity.\\r\n\\r\nYou will be asked to complete a short exercise to demonstrate your ability to read effectively and communicate clearly and accurately in Standard English.\\r\n\\r\nIf you are successful at the partnership interview you will be offered a place.\\r\n\\r\nIf you accept, you will be recommended to a partner school as a prospective trainee.  \\r\n\\r\nWhen a school is confirmed as the host school you should expect to be interviewed by the school, following its recruitment and selection processes.\\r\n\\r\nBefore commencing the programme you will sign a contract between you, the host school and the Partnership.\\r\n\\r\nYou will have had a satisfactory criminal background check and all other requisite checks will be carried out.\\r\n\\r\nFormal offers of SCITT places will be made by Kirklees & Calderdale SCITT and not by individual schools.\\r\n",
+    "OtherRequirements": "Before starting on the course you will be required to pass the professional skills tests in literacy and numeracy.\\r\n\\r\nYou will also be subject to the following checks: health, identity, relevant work qualifications, right to work in the UK, professional registration, DBS check, references and a Childcare Disqualification and Disqualification by Association Declaration. \\r\n",
+    "PersonalQualities": "A commitment to teaching and learning\\r\nUnderstanding of children as learners\\r\nA clear educational philosophy\\r\nUnderstanding of educational issues\\r\nA knowledge/understanding of the subject specialism within the curriculum\\r\nA satisfactory standard of written/spoken English\\r\nAbility to use ICT, establish effective working relationships and take responsibility for own professional development\\r\nUnderstanding of the demands of this school based route into teaching\\r\nResilience\\r\n\\r\nYou should demonstrate that you have recent experience working with primary or secondary-age children (relevant to the phase of your application)\\r\n\\r\nRecent experience of your subject in a secondary school or of the National Curriculum in a primary school.\\r\n",
+    "HowSchoolPlacementsWork": "You will be placed in a school which we feel will fully support you in your subject specialism.\\r\n\\r\nYou are training to teach 11-16 age range but some of our schools do have 6th forms which obviously enhances your training opportunity.\\r\n\\r\nYou will spend most of the year in one school with a second experience in a contrasting school (usually Christmas to February half term).\\r\n\\r\nWe try to take into consideration the location of our trainees and their placement schools to assist in their daily commute."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are an established and successful teacher training provider and have been training teachers across West Yorkshire since 2003, rated 'Good' in our Ofsted Inspection in 2015.\\r\n\\r\nAs a trainee you will benefit from experienced mentors in school, supporting you on a daily basis.  This runs alongside highly regarded tutors and core team who ensure your training year is a positive and successful experience in becoming a qualified teacher.\\r\n\\r\nOur trainees are placed in a whole range of schools across Kirklees, Calderdale and Bradford which ensures a real diverse mix of schools, catering for our trainees as far as their location, strengths, needs and skills.\\r\n\\r\nYou will be based four days in school and one day at our central base for  the core programme.  On this day will benefit from the expertise of a range of trainers who have both local and national reputations, delivering sessions such as behaviour management, differentiation, planning, etc.  This also offers the opportunity for our trainees to network, share and support each other throughout the training year.\\r\n\\r\nIn addition to this, our Secondary trainees receive additional Subject knowledge days to enhance their confidence, knowledge and skills in their chosen subject.\\r\n\\r\nWe offer the option of either Qualified Teacher Status alone (QTS) or QTS with PGCE.  This PGCE element equates to 60 Masters credits which we offer through the University of Huddersfield.\\r\n\\r\nFor more information visit our [website](www.kcscitt.com)",
+    "TrainWithDisability": "The Kirklees & Calderdale SCITT is committed to Equality and Diversity.  All partner organisations and all schools participating in the programme have clearly established policies, processes and systems for monitoring.  All trainees will be introduced to their school’s policy through focused training by the host school.\\r\n \\r\nThe Kirklees & Calderdale SCITT is committed to the achievement of equal opportunities. This is central to our mission as a provider of school-based teacher training and have a proven track record of supporting trainees with additional needs. \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

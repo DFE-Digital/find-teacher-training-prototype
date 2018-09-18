@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "North Tyneside SCITT",
+  "provider": "North Tyneside SCITT (New York Primary School Direct)",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1NB/2C4K",
+  "providerCode": "1NB",
+  "programmeCode": "2C4K",
+  "schools": [
+    {
+      "name": "North Tyneside SCIT",
+      "address": "Langdale Centre, Langdale Gardens, Wallsend, Tyne and Wear, NE28 0HG",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Langdale Centre, Langdale Gardens, Wallsend, Tyne and Wear, NE28 0HG",
+      "geocode": true,
+      "formatted_address": "Langdale Gardens, Wallsend NE28 0HG, UK",
+      "latitude": 55.00653999999999,
+      "longitude": -1.496984,
+      "post_code": "NE28 0HG",
+      "city": "Tyne and Wear",
+      "route": "Langdale Gardens",
+      "postal_town": "Wallsend"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1NB",
+    "addr_1": "North Tyneside  SCITT",
+    "addr_2": "Langdale Centre",
+    "addr_3": "Langdale Gardens",
+    "addr_4": "Wallsend",
+    "postcode": "NE28 0HG",
+    "url": "http://www.ntscitt.org.uk/",
+    "geocode": true,
+    "formatted_address": "Langdale Gardens, Wallsend NE28 0HG, UK",
+    "latitude": 55.00653999999999,
+    "longitude": -1.496984,
+    "post_code": "NE28 0HG",
+    "city": "Tyne and Wear",
+    "route": "Langdale Gardens",
+    "postal_town": "Wallsend"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our ambition is to develop the next generation of teachers in an environment which provides the support and guidance necessary to be a successful practitioner. You will train within a local collaborative of schools all of whom are good or outstanding and who nurture the skills and talents of their teachers. We work in partnership with North Tyneside SCITT in order to deliver the highest quality training experience. \\r\n\\r\nWe offer training specialising in primary (5-11 year olds). The award of Post Graduate Certificate in Education (PGCE) is validated by Northumbria University.\\r\n\\r\nWe have developed our teaching programme to allow students to learn alongside experienced practitioners, learning on the job and being part of the school team from the start. You will help to build relationships with pupils, families and our communities, experiencing the ethos of high aspirations alongside a belief that every child really matters. You will meet pupils who strive to do their best and who enjoy learning and you will bring a unique set of skills which inspires them to go further. \\r\n\\r\nFor the duration of the programme you will be based at The Langdale Centre in Wallsend, Tyne and Wear and is located just off the A1058 Coast Road, in close proximity to the Silverlink Retail Park and within walking distance of Howdon Metro station.\\r\n\\r\nThe course offers many layers of professional guidance both whilst centre-based and in schools to support and enable students to become highly effective primary teachers. The programme is structured around four distinct but inter-related modules. The four modules are:\\r\n\\r\n• Reflective Primary Teacher\\r\n• Curriculum Studies\\r\n• Critical Curriculum Studies\\r\n• Educational Placements\\r\n\\r\nA key strength of the programme is that the practical and taught elements are strongly linked. Each week trainees spend time in schools in addition to assessed block placements; this enables the taught the taught elements of the course to be firmly grounded in classroom experience.\\r\n\\r\nThe programme has no formal examinations. Instead you will be assessed through written assignments and practical work in school. The assessed school placements represent a vital component of this assessment.\\r\n\\r\nThe standards for Qualified Teacher Status require you to be successful in all areas, and from the outset you will be involved in auditing your own learning and setting targets for your own professional development.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You must possess a 2:2 degree classification or above from a UK university or a recognised equivalent qualification. It is also a requirement before commencement of the course that you have obtained a GCSE grade C/4 or above in mathematics, English language and a science subject. We will also accept qualifications that are of a standard equivalent - please contact the SCITT office for further clarification.",
+    "FeeInternational": 9000.0,
+    "InterviewProcess": "Successful applicants will initially be invited to attend an interview day at a SCITT partnership school where you will have an opportunity to meet school staff and tutors involved in the North Tyneside SCITT programme.\\r\n\\r\nDuring the interview process you will receive further information about the course and will also be required to undertake a series of short tasks and a formal interview. School staff and SCITT tutors are members of the interviewing panels. The roll out of the interview day and tasks to be completed will be detailed within correspondence prior to the interview.\\r\n\\r\nWhilst ensuring that we can provide the conditions and training required, you must be prepared to demonstrate an outstanding potential to train as a primary teacher and your suitability for an offer of a place. The SCITT has thorough and rigorous selection procedures to ensure that the strongest applicants are offered places on the programme.\\r\n\\r\nInterview results are communicated as soon as possible after the interview takes place. However any offer is conditional upon receipt of a satisfactory medical check and enhanced DBS check alongside sight of original qualification certificates.\\r\n\\r\nIt is also a requirement that all candidates have successfully completed the Department for Education (DfE) Professional Skills Tests in Literacy and Numeracy. These tests must be passed by all candidates before entry to the course and we would strongly encourage applicants to ensure that these are secured as early as possible during the application process.\\r\n",
+    "OtherRequirements": "As teaching involves working with children on a daily basis we strongly recommend that you have had at least 5 days recent and relevant experience of working with primary aged children in mainstream UK schools within the key stages you are looking to train in prior to interview. This experience will strengthen your application and should be detailed within your personal statement.\\r\n\\r\nAll offers are conditional upon you obtaining a satisfactory health check and enhanced DBS check however these checks will be done once you have accepted your offer of a place.\\r\n",
+    "PersonalQualities": "When completing your application form you must include within your personal statement the reason(s) and motivation as to why you wish to teach primary aged children.\\r\n\\r\nWe will also need details of all recent and relevant experience with children (length of time and dates need to be included). We are particularly interested in your experience with children in the key stages you are looking to train in.\\r\n",
+    "HowSchoolPlacementsWork": "The SCITT offers guaranteed placements within our North Tyneside partnership schools where you'll get practical, hands-on classroom experience and train alongside some really inspiring teachers.\\r\n\\r\nYou will undertake three block placements throughout the year within your chosen key stages. Placements are confirmed once the course starts and are allocated based on specific elements such as locality, transport and other additional needs.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our highly successful programme combines high quality, extensive classroom experience with expert guidance and continues to be judged as Outstanding by OFSTED (2015). \"Outstanding school and centre-based training, which draws on the passion and expertise of school-based colleagues and members of the local authority's school improvement service to ensure trainees are very well prepared for employment.\"(OFSTED 2015)\\r\n\\r\nMore than 90% of our trainees are recommended for QTS each year and the majority of our graduates go straight into teaching jobs in local schools. In our 2018 student satisfaction survey, all (100%) of our completing graduates said they would recommend the SCITT to others and were also 'very satisfied' with the level of service received.\\r\n\\r\nThe course is constructed around a partnership of over 30 primary and first schools in North Tyneside and North Tyneside Council's School Improvement Service.\\r\n\\r\nThe Langdale Centre is a high quality, bespoke professional training and development centre and is the base for the North Tyneside Early Years and Primary advisers, consultants and inspectors of the North Tyneside School Improvement Service. You will receive centre-based training from our experienced and passionate school improvement advisory team and other primary professionals. In addition the SCITT offers the following facilities to our trainees:\\r\n\\r\n• Free printing and photocopying\\r\n• Free WiFi\\r\n• Use of laptop and IT equipment for the duration of the course\\r\n• SCITT common room where trainees can relax\\r\n• A high quality restaurant\\r\n• Free parking\\r\n• Free access to North Tyneside Council's Schools Library Service\\r\n",
+    "TrainWithDisability": "New York Primary - School Direct and North Tyneside SCITT welcomes applications from trainees with disabilities and other needs. New York Primary School and the SCITT is committed to ensuring that all trainees have the same opportunities to access centre-based and school-based training and will receive tailored support in order to meet their needs.\\r\n\\r\nThe Langdale Centre where the SCITT is primarily based is equipped with disabled access and facilities.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "N73"
+      }
+    ]
+  },
+  "has_inst": true
+}

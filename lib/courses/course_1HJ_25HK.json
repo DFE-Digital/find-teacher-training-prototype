@@ -1,0 +1,84 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Manchester",
+  "provider": "Teach Manchester",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "1HJ/25HK",
+  "providerCode": "1HJ",
+  "programmeCode": "25HK",
+  "schools": [
+    {
+      "name": "Teach Manchester",
+      "address": "Kirkmanshulme Lane, Manchester, M12 4WB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Kirkmanshulme Lane, Manchester, M12 4WB",
+      "geocode": true,
+      "formatted_address": "Kirkmanshulme Ln, Manchester M12 4WB, UK",
+      "latitude": 53.4596185,
+      "longitude": -2.1960659,
+      "post_code": "M12 4WB",
+      "city": "Greater Manchester",
+      "route": "Kirkmanshulme Lane",
+      "postal_town": "Manchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1HJ",
+    "addr_1": "Kirkmanshulme Lane",
+    "addr_2": "Gorton",
+    "addr_3": null,
+    "addr_4": "Manchester",
+    "postcode": "M12 4WB ",
+    "url": "http://www.stpetershigh.com/sp/home/school_direct",
+    "geocode": true,
+    "formatted_address": "Kirkmanshulme Ln, Manchester M12 4WB, UK",
+    "latitude": 53.4604851,
+    "longitude": -2.1923327,
+    "post_code": "M12 4WB",
+    "city": "Greater Manchester",
+    "route": "Kirkmanshulme Lane",
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Our School Direct course consists of a variety of learning experiences, focused on practical training in teaching and learning related skills. This practical training is underpinned by the development of participant’s knowledge and understanding of education theories, ideas and concepts and by enhancing their awareness of current educational issues and developments. \\r\n\\r\nThis course will be delivered in partnership with The University of Manchester, who will award both Qualified Teacher Status and 60 Masters level credits as a PGCE on successful completion.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "- A second or first class honours degree in English Literature, English Language, Linguistics or a joint honours degree with at least 50% of these subjects. Applicants with degrees in other English-related subjects may also be considered in some circumstances.\\r\n\\r\n- A-level (or equivalent)\\r\n\\r\n- Minimum grade C or 4 at GCSE (or equivalent) in English language and mathematics.\\r\n\\r\n\\r\n\\r\n",
+    "FeeInternational": 16500.0,
+    "FinancialSupport": "Subject Knowledge Enhancement (SKE)\\r\n\\r\nFunded courses may be available for those who hold a PGCE place offer conditional upon topping up subject knowledge. The main focus is       national priority subjects including Mathematics, Physics, Chemistry,    Biology, English, Computing with ICT, Geography and Modern Foreign Languages (French and Spanish).\\r\n",
+    "InterviewProcess": "All programmes include a panel interview where we are looking to find our more about your skills, knowledge, experience and passion.  \\r\n\\r\nThe interview process takes place over a half-day at our lead School St Peter's High RC School.\\r\n- an introductory talk\\r\n- a personal interview designed to identify your suitability and commitment to teaching\\r\n- a short presentation \\r\n- a subject knowledge assessment\\r\n- identity and qualification checks (please provide photographic ID, proof of address and copies of your academic qualifications)\\r\n\\r\nAll offers we make after interview will be conditional on; successful completion of the professional skills tests, satisfactory medical clearance, clearance through the Disclosure and Barring service, validation of any declared qualification and the acquisition of any pending qualifications.  Individual offers may have additional conditions and you are advised to carefully read these.\\r\n",
+    "OtherRequirements": "All School Direct PGCE applicants will need to pass pre-entry Professional Skills Tests in Numeracy and Literacy. \\r\n\\r\nWe also recommend you check the Department of Education website at (www.education.gov.uk/get-into-teaching) for the latest updates.\\r\n\\r\n A Disclosure and Barring Service Check and satisfactory DfE Fitness to Teach health form are required.",
+    "PersonalQualities": "Our strongest applicants have undertaken some observation in a school and reflected on their experiences and the role of the teacher.",
+    "HowSchoolPlacementsWork": "You will become part of your main placement school team from September, this is earlier than University led programmes.  You will receive intensive support from our experienced team of teachers and mentors from the beginning of your placement.  You will build your skills through observation, reflection, and attendance at both alliance training sessions and university led sessions.  This will support you in building your skill set towards teaching whole class lessons, and then onto a significant timetable by the end of the year."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Teach Manchester is an experienced School Direct Alliance of primary, secondary, specialist and sixth form schools and colleges based in central Manchester, working in partnership to offer innovative and exciting Initial Teacher Education. We are committed to providing an outstanding programme of support to training teachers so that they develop into confident and competent teachers who can contribute to the culture of excellence across the alliance and beyond.\\r\n\\r\nWe work in partnership with Manchester Metropolitan University, University of Manchester and University of Cumbria to offer innovative and exciting Initial Teacher Education across primary, primary with SEND and secondary subject specialisms. Our programme equips new teachers with the skills and knowledge to be outstanding teachers and is delivered by our Specialist Leaders of Education, School Leaders and colleagues from our university partners. Upon successful completion of our programme you will be awarded both Qualified Teacher Status and 60 Masters Level Credits as a Postgraduate Certificate in Education (PGCE) by our partner universities.\\r\n\\r\nEvery child should be taught by an outstanding teacher.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "M40"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "M20"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "C99"
+      }
+    ]
+  },
+  "has_inst": true
+}

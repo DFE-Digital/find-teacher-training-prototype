@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Bluecoat SCITT Alliance Nottingham",
+  "provider": "Bluecoat Academy",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "slug": "12W/298F",
+  "providerCode": "12W",
+  "programmeCode": "298F",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Bluecoat Academy, Aspley Lane, Aspley, Nottingham, NG8 5GY",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bluecoat Academy, Aspley Lane, Aspley, Nottingham, NG8 5GY",
+      "geocode": true,
+      "formatted_address": "Aspley Ln, Aspley, Nottingham NG8 5GY, UK",
+      "latitude": 52.9694319,
+      "longitude": -1.1938616,
+      "post_code": "NG8 5GY",
+      "city": "Aspley",
+      "route": "Aspley Lane",
+      "postal_town": "Nottingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "12W",
+    "addr_1": "Bluecoat SCITT Alliance Nottingham",
+    "addr_2": "Aspley Lane",
+    "addr_3": "Aspley",
+    "addr_4": "Nottingham",
+    "postcode": "NG8 5GY ",
+    "url": "http://www.bluecoat.uk.com",
+    "geocode": true,
+    "formatted_address": "Aspley Ln, Aspley, Nottingham NG8 5GY, UK",
+    "latitude": 52.9694319,
+    "longitude": -1.1938616,
+    "post_code": "NG8 5GY",
+    "city": "Aspley",
+    "route": "Aspley Lane",
+    "postal_town": "Nottingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Fees are paid pro rata across the three terms to fall in line with the arrangements of student finance with the SLC;\\r\n\\r\nOctober 25%\\r\nFebruary 25%\\r\nMay 50%\\r\n\\r\n\\r\nThere are no other costs.\\r\n\\r\nWe will ask you to confirm your method of payment, and agree to maintaining repayments by completing a tuition fee payment agreement.  \\r\n\\r\nAll trainees will be invoiced for payments at each of the instalment periods.\\r\n\\r\n",
+    "AboutCourse": "Our school based training means you will be based in one of our partner schools on a main placement Monday – Thursday, and treated by the school as a member of staff. On Friday trainees come together for a day’s training of pedagogy and subject knowledge, following a comprehensive programme across the year.  The PGCE delivered by Sheffield Hallam University will also take place on four Fridays across the year at the SCITT Training Centre (Nottingham).  In the Spring term you will spend 6 weeks at another school, as the training must include you teaching in two schools.   Trainees will be assessed throughout the year against the Teaching Standards as your work to gain QTS.  There are two PGCE assignments due in January and May.\\r\n\\r\nThe course has been carefully structured to guide you through your transformation from a skilled practitioner to a confident teacher within a practical learning environment. Your choice to begin this course was just the beginning of your journey to learn and understand how to capture the observations and curiosity of young, aspiring children.\\r\n\\r\nYou will understand the National Curriculum and relevant Key Stages. \\r\n\\r\nThe course aims to:\\r\n\\r\n* Fulfil and support the general aims of the Bluecoat SCITT Alliance Nottingham Programme as set out in the submitted scheme\\r\n\\r\n* Develop competencies specific to the phase and subject which you are teaching\\r\n\\r\n* Ensure that trainees are competent professionals and effective teachers\\r\n\\r\n* Encourage an enthusiasm for education\\r\n\\r\n* Encourage trainees to challenge pupils and to meet their individual needs through personalisation.\\r\n\\r\nYou will be assigned a Subject Lead/Phase Lead. They will help you with specific subject issues and lead the Sessions. \\r\n\\r\nYou will have your own Mentor on each placement. This is an experienced teacher in your subject. They will give you an hour’s 1:1 mentoring session every week. They will also be the first person you should ask when you need help.\\r\n\\r\nIn addition to others in the department, you will also work with colleagues in the SCITT, throughout the Academy, in learning support and the Senior Leadership Team who will be pro-active in helping you. One of the advantages of choosing school based training is that you spend a significant amount of time in schools which have been selected because they want to train new entrants to the profession to become outstanding practitioners. \\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\nUK Degree or recognised standard equivalent at least 2:2 or above (please contact us if this is not the case to discuss)\\r\n\\r\nFor primary applicants, the degree does not need to be subject specific\\r\n\\r\nFor secondary applicants this should be in, or closely related to, your proposed teaching subject. Ideally, we would expect that at least 50% of your degree is relevant to the National Curriculum subject you intend to teach. \\r\n\\r\nGCSE (or recognised standard equivalent) grade C or 4 or above in English and Mathematics (and a Science subject for Primary) \\r\n\\r\nLiteracy and Numeracy Professional Skills tests\\r\n",
+    "InterviewProcess": "If you are offered an interview this will be at one of the alliance schools for the phase range.  The  interview usually takes ½ a day.   We are looking for an understanding of school based training, an awareness of current educational issues, a realistic and positive view of schools and schooling, clear reasons for wanting to teach, commitment to teaching pupils of all levels of ability, maturity and self-confidence, and an appropriate level of subject knowledge. You can expect to undertake the following tasks, \\r\n\\r\nThe interview process will include;\\r\n\\r\n* a short presentation (5 minutes)\\r\n* a mini lesson with small group of students (20 minutes) \\r\n* a formal interview (small panel)\\r\n* a short written literacy test (20 minutes)\\r\n* a short numeracy and literacy questions booklet (25 minutes)\\r\n* subject knowledge test (where appropriate)\\r\n\\r\n….as well as the opportunity to ask any questions.\\r\n\\r\n\\r\nIf you are successful at this interview you will be offered a conditional place.\\r\n\\r\nBluecoat SCITT Alliance is committed to safeguarding and promoting the welfare of children and young people.  Throughout the day staff involved in the interviews and activities will be assessing applicants, their suitability to work with children, experience, qualifications (and subject knowledge) and potential to become a trainee teacher.\\r\n",
+    "OtherRequirements": "Admission to the course is subject to a satisfactory medical report, as you are required to meet the standards for 'Fitness to Teach'. \\r\n\\r\nAll applicants must undertake an Enhanced Disclosure from the DBS. You will be required to disclose previous offences as part of the checks. \\r\n\\r\nWe would expect applicants have shown an interest in teaching by gaining school experience, to complement their personal statement and underpin the requirements of training to teach.\\r\n\\r\nFor salaried places we would expect at least 3 years’ relevant work experience (please contact us directly if this is not the case for you to discuss)\\r\n\\r\n",
+    "PersonalQualities": "A desire to teach and work with young people. \\r\n\\r\nAll teachers need to be able to communicate well. \\r\n\\r\nA commitment to work hard.  Our teachers and partnership schools will work hard in supporting you, and you must demonstrate equal commitment.\\r\n\\r\nTeaching is about working with others, we encourage you to work collaboratively, both with other trainees and with teachers. \\r\n\\r\nYou need to be open to new ideas, willing to review your own progress and reflect on the new situations in which you will find yourself. You will need to be organised and independent. ",
+    "HowSchoolPlacementsWork": "Bluecoat SCITT Alliance works with a range of partner schools within the Alliance, and are selected carefully.  Collaboration and partnership is the foundation of school based training.  In hosting trainees Partner schools shall ensure that trainees have access to a range of experiences allowing them to fulfil the requirements of all of the Teachers’ Standards applicable to the phase being taught, and will be invited to participate in programme planning and improvements to the programme as part of the self-evaluation process.\\r\n\\r\nTrainees are asked at interview if they have a preference of placement school, taking into account any personal circumstances and ability to travel.\\r\n\\r\nTraining takes place across the full academic year, September to July.  Trainees will be in their placement school from the first day of term (having been suitably inducted and orientated by their mentor/school staff), and will undertake a second school placement in the spring for 6 weeks.\\r\n\\r\nTrainees will be in school Monday – Thursday and will be at the SCITT Training Centre on a Friday for their training day.\\r\n\\r\nThe trainees increase their teaching commitment throughout the year. \\r\n\\r\nThey will roughly follow the programme below:\\r\n\\r\nWeeks 1 - 2 \\tObserving lessons\\r\nAutumn Term\\tWorking up to teaching 6 hours a week\\r\nSpring Term\\tWorking up to teaching 10 hours a week\\r\nSummer Term\\tWorking up to teaching 15 hours a week\\r\n\\r\nTrainees would be expected to plan and mark for the lessons they are teaching, as well as attending relevant parents evening and extra-curricular sessions. The trainees are not to be left unattended whilst teaching and should receive feedback on each of their teaching episodes."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Bluecoat Aspley Academy is the Lead School for Bluecoat SCITT Alliance;  a Church of England Academy, our mission is to create a\\r\ndistinctive educational community for all based upon Christian faith\\r\nand values. Our ethos is based on our mission statement ‘believe in\\r\nyourself, in others, in God.’ \\r\n\\r\nWe support a one year School Direct Training Programme offered for Primary and Secondary, as well as a salaried option in certain subjects. \\r\n\\r\nTrainees follow a school based teacher training programme and work alongside experienced teachers, supported by expert teaching professionals and outstanding teachers to support subject specific teaching. Our training is unique in that training is tailored to individual needs, to ensure all trainees are given the opportunity to succeed.  Bluecoat SCITT Alliance Nottingham works in partnership with a range of schools situated in Nottingham, and Nottinghamshire to provide high quality initial teacher training.\\r\n\\r\nWhat our Trainees say about our programme\\r\n\\r\n \"What a fantastic year! The SCITT course is well structured and progressively introduces trainees to the demands of the profession in preparation for a successful career in teaching. I was unquestionably supported during the year by course leaders, mentors and friends.\" \\r\n\\r\n“I enjoy coming together for our training day , where we can share our experiences from our placement schools, and take away excellent advice and information that we take back into the classroom.\"\\r\n\\r\n“Mentor meetings, support and guidance is constantly excellent and invaluable. SCITT team are all very supportive.”\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "Bluecoat SCITT Alliance Nottingham is committed to developing, maintaining and supporting a culture of equality and diversity across all aspects of the partnership. We aim to ensure equality of opportunity for all trainee teachers and staff, in an environment in which all individuals are recognised as being of equal value and are able to make best use of their skills through equality of opportunity. Our commitment to equality is, in part, achieved through the eradication of discrimination including disability (physical or mental impairment).  We support the ethos of the social model of disability which attempts to remove barriers that restrict life choices for disabled people. We encourage all trainee teachers, or stakeholders to alert a relevant member of staff if they are disabled or become disabled in order that the SCITT can support them as appropriate.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We offer QTS + PGCE (60 Master Credits from Sheffield Hallam University).   \\r\n\\r\nOfsted 2017 reported;\\r\n\\r\n* Leadership of the provision is a strength;  Leaders have a clear moral purpose and ambition to ensure that the provision meets the needs of trainees.\\r\n\\r\n* Very strong and effective engagement of the partnership.  Employment rates are good, meeting local needs well. \\r\n\\r\n* Trainees have high standards of professionalism, \\r\nreceive high-quality and tailored support in response to their emerging needs. \\r\n\\r\n* High-quality well planned subject training takes place weekly, carefully focused so that trainees are quickly able to apply their learning in classroom. \\r\n",
+        "UcasInstitutionCode": "1YH"
+      }
+    ]
+  },
+  "has_inst": true
+}

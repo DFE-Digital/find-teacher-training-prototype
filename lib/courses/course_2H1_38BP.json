@@ -1,0 +1,137 @@
+{
+  "locationType": "School",
+  "accrediting": "Inspiration Teacher Training",
+  "provider": "Hethersett Academy",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2H1/38BP",
+  "providerCode": "2H1",
+  "programmeCode": "38BP",
+  "schools": [
+    {
+      "name": "Charles Darwin Primary School",
+      "address": "Rose Lane, Norwich, Norfolk, NR1 1DJ",
+      "code": "B"
+    },
+    {
+      "name": "Cobholm Primary Academy",
+      "address": "Mill Road, Cobholm, Great Yarmouth, Norfolk, NR31 0BA",
+      "code": "C"
+    },
+    {
+      "name": "Norwich Primary Academy",
+      "address": "Clarkson Road, Norwich, Norfolk, NR5 8ED",
+      "code": "I"
+    },
+    {
+      "name": "Stradbroke Primary Academy",
+      "address": "Lowestoft Road, Gorleston-on-Sea, Great Yarmouth, Norfolk, NR31 6LZ",
+      "code": "J"
+    },
+    {
+      "name": "Cottenham Primary School",
+      "address": "Lambs Lane, Cottenham, Cambridge, CB24 8TG",
+      "code": "N"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Rose Lane, Norwich, Norfolk, NR1 1DJ",
+      "geocode": true,
+      "formatted_address": "Rose Ln, Norwich NR1 1PL, UK",
+      "latitude": 52.6283717,
+      "longitude": 1.3033708,
+      "post_code": "NR1 1PL",
+      "city": "Norfolk",
+      "route": "Rose Lane",
+      "postal_town": "Norwich"
+    },
+    {
+      "address": "Mill Road, Cobholm, Great Yarmouth, Norfolk, NR31 0BA",
+      "geocode": true,
+      "formatted_address": "Mill Rd, Great Yarmouth NR31 0HS, UK",
+      "latitude": 52.60759890000001,
+      "longitude": 1.7155189,
+      "post_code": "NR31 0HS",
+      "city": "Norfolk",
+      "route": "Mill Road",
+      "postal_town": "Great Yarmouth"
+    },
+    {
+      "address": "Clarkson Road, Norwich, Norfolk, NR5 8ED",
+      "geocode": true,
+      "formatted_address": "Clarkson Rd, Norwich NR5 8ED, UK",
+      "latitude": 52.6377476,
+      "longitude": 1.2445222,
+      "post_code": "NR5 8ED",
+      "city": "Norfolk",
+      "route": "Clarkson Road",
+      "postal_town": "Norwich"
+    },
+    {
+      "address": "Lowestoft Road, Gorleston-on-Sea, Great Yarmouth, Norfolk, NR31 6LZ",
+      "geocode": true,
+      "formatted_address": "Lowestoft Rd, Gorleston-on-Sea, Great Yarmouth NR31 6JH, UK",
+      "latitude": 52.5672305,
+      "longitude": 1.7226511,
+      "post_code": "NR31 6JH",
+      "city": "Gorleston-on-Sea",
+      "route": "Lowestoft Road",
+      "postal_town": "Great Yarmouth"
+    },
+    {
+      "address": "Lambs Lane, Cottenham, Cambridge, CB24 8TG",
+      "geocode": true,
+      "formatted_address": "Lambs Ln, Victory Way, Cottenham, Cambridge CB24 8TB, UK",
+      "latitude": 52.2871442,
+      "longitude": 0.120713,
+      "post_code": "CB24 8TB",
+      "city": "Cottenham",
+      "route": "Lambs Lane",
+      "postal_town": "Cambridge"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2H1",
+    "addr_1": "Inspiration Trust ",
+    "addr_2": "Hethersett Academy, Queen's Road",
+    "addr_3": "Hethersett",
+    "addr_4": "Norwich",
+    "postcode": "NR9 3DB ",
+    "url": "http://www.inspirationtrust.org/teacher-training",
+    "geocode": true,
+    "formatted_address": "Queen's Rd, Hethersett, Norwich NR9 3DB, UK",
+    "latitude": 52.6005463,
+    "longitude": 1.182097,
+    "post_code": "NR9 3DB",
+    "city": "Hethersett",
+    "route": "Queen's Road",
+    "postal_town": "Norwich"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Our primary courses are designed to train you to teach in a primary school. Primary school teachers usually have one class of pupils to whom they teach all subjects. This means that a primary course needs to place a strong emphasis on building up your expertise in all of the subjects that you will teach. Some of this will be taught in our Curriculum Centre and some will be taught in schools. It is not possible to master all the subjects you have to teach in your primary year, but you will get a decent introduction to each one and a number of chances to practise teaching each subject. \\r\n \\r\nAll our primary trainees train in a particular subject specialism. We offer specialist subjects of English, natural sciences, or humanities to trainees on this course - you can choose your specialism once you have been accepted onto the course. If you want to train as a maths specialist, then please apply for the primary (maths) course.\\r\n \\r\nEarly in the course you will have an intensive focus on teaching phonics. Learning phonics is a crucial stage in learning to read well, and getting this right at an early stage in primary school is of the utmost importance. You will learn about strategies for teaching phonics, and get the chance to practise these regularly in schools. The same is true of basic numeracy. Young children need to learn their number bonds before they can do more complex mathematics. You will learn about different methods of teaching numeracy, the misunderstandings that children often have, and what you as a teacher can do about this. \\r\n \\r\nYou will learn to teach well through professional practice and through critically reflecting on your own practice. Your school placements within the course will give you the opportunity to teach, to observe, to practise, to experiment, and to innovate. You have the opportunity to reflect upon your own practice within your school context. As a course entitlement, you will have the time to discuss this with you school-based subject mentor; you can then identify the ways in which you need to develop as a specialist and as a professional. What results is a highly personalised programme in which, through dialogue with your mentor, you develop your teaching style, practice, and ideas in a bespoke way.\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "If you are successful in gaining a place on a salaried course, you will receive a salary at point one of the unqualified teacher scale. \\r\n",
+    "Qualifications": "You should have at least a GCSE Grade C/4 in English and maths; for primary, science is also required. \\r\nYou should have a degree at 2:1 or above. For secondary courses this must be in or closely related to the subject you want to train in. \\r\nYou have to pass a professional skills test in literacy and numeracy before you begin your teacher training. Tests need to be booked through Learndirect, who have test centres across the country. \\r\nEquivalent non-UK qualifications are acceptable; please contact us for more details. \\r\n",
+    "InterviewProcess": "If your application is shortlisted you will be invited to a selection day which will be held in one of our partnership schools. You will spend the day with mentors and with students, taking part in tasks including delivering a presentation, completing a written task, observing and analysing a lesson, and completing an interview. \\r\nThe day will give you an insight into what it will be like to work in one of our schools, along with the opportunity to ask questions and meet members of our teaching team.\\r\nWe aim to provide applicants with a decision within a week following the selection day. Depending on the outcome of the day we also offer a phone call to provide feedback on your performance during the tasks.\\r\n",
+    "OtherRequirements": "If you are successful in gaining a place on our course we will need to complete suitability checks related to safeguarding, require confirmation of your health and fitness and will also need to obtain satisfactory references.\\r\n",
+    "HowSchoolPlacementsWork": "Trainees will have two placements, each in one of our alliance of primary, secondary, and sixth form schools across East Anglia. We have 13 schools within our Trust and additional partnership schools which we are able to place you in, please see [here] (http://www.inspirationtrust.org/page/?title=Where+will+my+placements+be%3F&pid=1029) for a map of where our placement schools are located. \\r\nWe will try to place you in schools that are convenient for you, with priority given to trainees who have families to care for. Where possible, we will do our best to ensure your commute time is no longer than 40 minutes. \\r\nIf you are on a Primary course you will be teaching pupils in the age range of 5-11. If you are on a secondary course you will be teaching pupils in the age range of 11-16 with post 16 enhancement. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Inspiration Teacher Training has been born out of the Inspiration Trust, one of the country's most influential and dynamic academy groups. Formed in 2012, the trust has been at the forefront of radical new approaches to improve education. It has built up an impressive track record in improving existing schools and launching high-quality new provision.\\r\n\\r\nOur curriculum centre is in Norwich and our placement schools are in East Anglia. East Anglia is a fantastic place to live and work, with unspoilt countryside, vibrant communities, and easy access to London.\\r\n\\r\nWe think that what makes you special is your knowledge of, and passion for, the subject you teach. We want to help you share this knowledge and passion with children. One of the most exciting things about training as a teacher is the need to broaden your knowledge - there is always something more to learn! This is a philosophy that runs to the core of our training programmes. \\r\n\\r\nAs a trainee with Inspiration Teacher Training, you will have a unique, tailored, and special journey through your training year. We have recruited a central team of subject specialist leads with exceptional reputations in their fields who will be leading your programme.\\r\n\\r\nWe guarantee that your mentor will be a subject specialist who has read the same course materials that you have. You will have allocated time every week with your mentor focused on discussing readings, setting targets, and reviewing your progress. ",
+    "TrainWithDisability": "We do not discriminate against trainees on the basis of age; race; sex; disability; sexual orientation; gender reassignment; marriage and civil partnership; pregnancy and maternity; religion, faith or belief. (Equality Act 2010 protected characteristics). The principles of non-discrimination and equality of opportunity also apply to the way in which staff and Governors\\r\ntreat visitors, volunteers, contractors and former staff members.\\r\n\\r\nIf you are disabled or become disabled, we encourage you to tell us about your condition so that we can support you as appropriate. Please be aware that such information will be treated confidentially but on the basis of need as some staff will need to know in order for them to provide support. If you experience difficulties during your training, reasonable adjustments can be made to help overcome or minimise the difficulty. We may wish to consult with you and your medical adviser(s) about possible adjustments, Occupational Health will be arranged as appropriate to give advice on reasonable adjustments. We will consider the matter carefully and try to accommodate your needs. If we consider a particular adjustment would not be reasonable we will explain our reasons and try to find an alternative solution where possible.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "2H7"
+      }
+    ]
+  },
+  "has_inst": true
+}

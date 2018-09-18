@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "London Metropolitan University",
+  "provider": "Viridis Schools Partnership",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2CN/2YKW",
+  "providerCode": "2CN",
+  "programmeCode": "2YKW",
+  "schools": [
+    {
+      "name": "Orchard School",
+      "address": "Holcroft Road, London, E9 7BB",
+      "code": "O"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Holcroft Road, London, E9 7BB",
+      "geocode": true,
+      "formatted_address": "Holcroft Rd, London E9 7BB, UK",
+      "latitude": 51.540754,
+      "longitude": -0.0483889,
+      "post_code": "E9 7BB",
+      "city": "Greater London",
+      "route": "Holcroft Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2CN",
+    "addr_1": "Holcroft Road",
+    "addr_2": "Hackney",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "E9 7BB  ",
+    "url": "http://www.orchard.hackney.sch.uk/",
+    "geocode": true,
+    "formatted_address": "Holcroft Rd, London E9 7BA, UK",
+    "latitude": 51.540754,
+    "longitude": -0.0483889,
+    "post_code": "E9 7BA",
+    "city": "Greater London",
+    "route": "Holcroft Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Initial Teacher Training Bursary\\r\nYou do not need to apply for the Initial Teacher Training bursary (ITT) Bursary personally. Upon enrolment to the course in September, your details will be taken by the University and we will manage your bursary (where eligible) in line with the guidelines given on the Department of Education website. We will confirm the level of bursary you have been assessed for in advance of you starting the course.\\r\n\\r\nEnroling and funding your PGCE\\r\nPGCE Students may be entitled to a tuition fee loan. You are required to pay your fees at the point of enrolling which will be before you have received any bursary payments to which you may be entitled. Most students will initially fund the course with a loan. Additional information on preparing for a PGCE course are on the UCAS Teacher Training website. You can use the student finance calculator to get an indication of the loan you would be entitled to.",
+    "AboutCourse": "Orchard is a lead partner school for Schools Direct at London Metropolitan University (LMU). We work in partnership with eight other good or outstanding Hackney schools to offer Schools Direct Places to LMU students. We are now recruiting trainee Primary School teachers for the new academic year including Early Years (ages 3-5), Key Stage 1 (ages 4-7) and Key Stage 2 (ages 8-11).\\r\n\\r\nOur primary teaching programmes give trainee teachers the opportunity to learn from, and alongside, experienced classroom practitioners. Trainees have the opportunity to carry out a range of training activities in two different schools and in two key stages. The programmes include observing experienced teachers; working with groups and the whole class; planning; teaching and assessing children and reflecting on their developing classroom practice. Trainees “learn on the job” and quickly develop a good understanding and practical experience of the full role of the teacher.\\r\n\\r\nAs well as one to one advice from experienced tutors and mentors we offer group training sessions which cover key themes such as providing for children with Special Educational Needs and behaviour management. Assignments and tasks are designed to allow trainees to put the theory into practice and to reflect on their training. Successful completion of either of these programmes leads to the award of Qualified Teacher Status (QTS) and the academic award of a Post Graduate Certificate of Education (PGCE). \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You will be required to have a minimum of a 2.2 UK degree or master’s (MA/MSc), a pass in professional skills tests for literacy and numeracy, \\r\na valid Disclosure and Barring Service (DBS) certificate and Confirmation of Fitness to Teach (eg a London Metropolitan University Health Check). \\r\nGCSE English, Mathematics and Science at grade C (grade 4) or above (or equivalent, see Equivalency Testing or A Star Teachers). All applicants must be able to demonstrate proficiency in the English language. ",
+    "FeeInternational": 12890.0,
+    "InterviewProcess": "Congratulations you've been invited to interview...\\r\n\\r\nShortlisted applicants are invited to interview by email. This will ask you to choose a date that you can attend from our booking page. If you have not had an initial decision on your application within 3 weeks of applying then contact Admissions (0207 133 4203).\\r\n\\r\nInterviews are listed in eventbrite by subject/route and you will need to click into these to see the available dates. As UCAS only permit 40 working days for us to provide the final decision on your application you must attend the earliest interview possible. The deadline will be on your email invitation.\\r\n\\r\nYou should expect to be on campus for up to 4 hours for the full interview process to be completed. There will be a literacy test in the form of a written task, a teaching exercise/presentation and an individual interview with a course tutor to discuss your application and merits for the course. Full details of this are on the booking page. \\r\n\\r\nIf you cannot attend interview by the deadline specified UCAS will reject your application. If unsuccessful with your other choices you could then use APPLY2 to be reconsidered with us. For further details on this process contact the admissions office.",
+    "OtherRequirements": "You must not already hold QTS or be qualified to teach in another EU/EEA country. Prior to the interview for this course, London Met recommends:\\r\nYou have a minimum of 10 working days recent experience in a school\\r\nYou are prepared for your understanding of current teaching practice and issues in schools to be assessed\\r\nYou have an awareness of multiculturalism and other contexts unique to urban schools\\r\nYou're aware you may be invited to interview based on information given in your application\\r\nSome offers may recommend further school experience if required.\\r\n",
+    "PersonalQualities": "We are looking for applicants who:\\r\nAre self-reflective and seeking to be the best at their profession.\\r\nHave a professional outlook and thrive on challenge\\r\nHave a passion for teaching, and are ambitious for children, and for making a difference.\\r\nGenuinely enjoy the company of children and can see the fun as well as the serious side of teaching \\r\nUnderstand that different children learn in different ways\\r\n",
+    "HowSchoolPlacementsWork": "Our partnership currently consists of seven Hackney primary schools:\\r\nOrchard Primary\\r\nSouthwold Primary\\r\nHoxton Garden Primary\\r\nLondon Fields Primary\\r\nShoreditch Park Primary\\r\nWentworth Nursery School\\r\nLondon Fields Primary\\r\n\\r\nWho will teach me during my training?\\r\nExperienced classroom teachers, educational consultants, subject specialists and lecturers from London Metropolitan deliver the training.\\r\n\\r\nWill I earn a salary?\\r\nTrainees on the School Direct programme do not earn a salary but are eligible to apply for a student loan to cover fees and living expenses. \\r\n\\r\nHow will I be assessed?\\r\nA number of different people are responsible for assessing your progress towards the standards. Your practical teaching will be assessed by your mentor, link tutor and other experienced teachers. Tasks and assignments are marked by link tutors and moderated by lecturers from UEL. Rigorous quality assurance procedures ensure that assessment is carried out effectively and fairly.\\r\n\\r\nWhat support will I get during the programme?\\r\nYou will be allocated a Link Tutor who will visit you at least once every half term to observe your teaching and give you feedback. You will also meet your Link Tutor half termly for a review meeting to discuss progress and targets. You will also be allocated a school-based mentor; this may be your class teacher or it may be another experienced member of the school staff. Your mentor will observe you and give you feedback on your teaching at least once a week. They will also meet you weekly to discuss your training plan, targets and progress.\\r\nAdditional support is available as necessary. If you have a special need or disability we urge you to discuss this with us as early as possible so that we can make any necessary adjustments and provide the support that you need.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our in-school teacher training is based in the vibrant and diverse community of Hackney, East London with easy transport links into and out of Central London. We successfully provide for many children from disadvantaged backgrounds and have a passion for making a difference.  Our teachers are committed to the fact that establishing a strong social and academic grounding will unlock the fantastic potential our pupils hold. We provide a rich and dynamic learning experience which will inspire our pupils, and have earned many awards and achievements that celebrate our inclusivity and curriculum design. \\r\nOur schools have a long involvement with teacher training, and a strong commitment to on-going professional development for all our staff, with a great track record of training and developing professionals from their very first teaching experience through to experienced school leaders.   We offer all students a mentor to work alongside, as well as links with other students and tutors across our organisation. We understand that the journey to being a great teacher is never simple and have the expertise and ambition to ensure that our programme is of the highest quality and personalised to the needs of each individual. If you want to work in a dynamic and forward thinking community school that really makes a difference for those who most deserve it, then we are the organisation for you.\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "We are able to provide for a range of need, and our staff profile reflects this. Our schools are committed to safeguarding and promoting the welfare of children and young people and expects all staff and  volunteers to share this commitment. We welcome applications from all sections of the community, regardless of gender, race, religion, disability, sexual orientation or age.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "London Metropolitan University has a long history of providing high quality Initial Teacher Education from its base in Holloway Road, and is a principal trainer of new teachers wishing to work in and around London. Its diverse student body reflects the multicultural contexts in which they teach. Around 80 schools work with London Met, in different clusters, each with a lead school, of which Orchard school is one. ",
+        "UcasInstitutionCode": "L68"
+      }
+    ]
+  },
+  "has_inst": true
+}

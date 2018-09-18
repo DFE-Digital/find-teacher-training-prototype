@@ -1,0 +1,73 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Northampton",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary (5-11 years)",
+  "slug": "N38/X100",
+  "providerCode": "N38",
+  "programmeCode": "X100",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Boughton Green Road, NORTHAMPTON, NN2 7AL",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Boughton Green Road, NORTHAMPTON, NN2 7AL",
+      "geocode": true,
+      "formatted_address": "Boughton Green Rd, Northampton NN2 7SP, UK",
+      "latitude": 52.2709989,
+      "longitude": -0.8900870999999999,
+      "post_code": "NN2 7SP",
+      "city": "Northamptonshire",
+      "route": "Boughton Green Road",
+      "postal_town": "Northampton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "N38",
+    "addr_1": "Park Campus",
+    "addr_2": "Boughton Green Road",
+    "addr_3": "Northampton",
+    "addr_4": "Northamptonshire",
+    "postcode": "NN2 7AL ",
+    "url": "http://www.northampton.ac.uk",
+    "geocode": true,
+    "formatted_address": "Park Campus, Boughton Green Rd, Northampton NN2 7AL, UK",
+    "latitude": 52.2735352,
+    "longitude": -0.8826008,
+    "post_code": "NN2 7AL",
+    "city": "Northamptonshire",
+    "route": "Boughton Green Road",
+    "postal_town": "Northampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Tuition Fees are £9,000 for the year.",
+    "AboutCourse": "“Outstanding training contributes to outstanding outcomes for all trainees” (Ofsted 2016)\\r\n\\r\nDPSCITT offers a one year PGCE Programme with Qualified Teacher Status, preparing you to teach in the 5-11 age range.  Tuition Fees are £9,000.\\r\n\\r\nThis is a highly interactive, relationship based course where learning is through dialogue and reflection on experience linked to educational theory \\r\n\\r\nA Cohort of 40 Trainees forms an enthusiastic, positive learning environment - large enough to bring a broad range of experiences and small enough for everyone to feel known and valued.  You first meet on Induction day and then our 3 day Residential.\\r\n\\r\nOne of our experienced core team will be your Personal Tutor. They are available at central training days for 1:1 discussions, visit you in your school and provide 24/7 support through e-mail and phone.\\r\n\\r\nCentre-Based Training forms 25% of our programme.  This is a cohesive, holistically structured taught course, delivered centrally by outstanding consultants and serving practitioners who are passionate about their subject.  \\r\nWe provide outstanding training in the core subjects of English, Mathematics and Science, the National Curriculum Foundation subjects, Child Development, Behaviour Management, Diversity and Inclusion.  Tutors encourage creative and dynamic approaches to curriculum design.\\r\n\\r\nYou complete 4 Assignments during the year to further develop your subject knowledge for teaching by interaction with children, enabling you to relate theory and practice in Calculation, SEND, Phonics and Creative Curriculum Design.\\r\n\\r\nSchool-based training forms 75% of our programme.  You are welcomed on the first day of term into our Partnership Schools, where you train in both Key Stage 1 and Key Stage 2, working alongside successful practitioners who model excellent practice and support planning.\\r\nA dedicated School-Based tutor and experienced learning coach meets with you every week to guide your training.\\r\nGap tasks link your centre based training to working with children in school, enabling theory and research to be observed in practice across different classrooms.\\r\n\\r\nYou complete Assessed Teaching Practices each term (4 weeks in Autumn, 4 weeks in Spring and 8 weeks in the Summer term) together with an additional 2 week Integrated Project (a creative, cross-curricular sequence that you design yourself and bring all of your passions and interests into).\\r\n\\r\nThere is an opportunity to complete a 12 week placement in a Special School setting in the Spring Term, for those who may wish to teach within a Special School or become a SENCO. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree \\r\nCandidates will need to hold a degree of a United Kingdom Higher Education Institution or equivalent qualification. \\r\n\\r\nGCSE \\r\nAt the time of application, candidates must have GCSE Grade C or above (or equivalent) in English, Mathematics and Science. \\r\n",
+    "FinancialSupport": "\\r\nDPSCITT has a small means tested bursary for Trainees on the programme that may experience financial difficulties during the year.  Contact us if you wish to know more.\\r\n",
+    "InterviewProcess": "Applications are accepted through the UCAS system and we encourage applicants to apply as early as possible. \\r\nYou will be asked to supply 2 references. These should be from professional referees which includes your current employer if working, Academic referees if you graduated within the last 3 years, and a school experience reference if applicable.  Please ask your referees to include the following statement in their reference if applicable “I know of no reason why the applicant should not work with children”.\\r\n\\r\nUp to six candidates are invited to an interview day which takes place at one of our Partnership Schools. The selection panel comprises of the Programme Manager, Senior Tutor and Headteachers. \\r\n\\r\nDuring the day, candidates will: \\r\n\\r\n* Share a prepared story to a group of six children followed by an activity, linked to the story, to extend the children's learning \\r\n* Complete a written evaluation of the story session. The written evaluation should identify what went well and how the teaching session could be improved in preparation for the individual interview in the afternoon.\\r\n* Complete a Literacy and Maths paper\\r\n* Take part in a group exercise to show their ability to collaborate and give a one minute presentation based on the outcome of this exercise \\r\n* Candidates are also interviewed individually by the selection panel. \\r\n\\r\nThere are plenty of opportunities to ask questions and understand the nature of the course you are committing to, and to meet current and past Trainees.\\r\n",
+    "OtherRequirements": "Candidates are required to successfully complete the following before starting the programme:\\r\n\\r\n* The Professional Skills Tests in Literacy and Numeracy.\\r\n* A range of Safeguarding Checks regarding your suitability to work with young people, including an Enhanced DBS check \\r\n* A fitness to teach medical declaration.\\r\n",
+    "PersonalQualities": "Can you inspire learning in children? \\r\nDo you have a passion for learning yourself? \\r\nDo you have strong interpersonal skills and a desire to develop your personal and professional attributes in a career that makes a difference? \\r\n\\r\nYou will need to: \\r\n\\r\n* love being in the company of children and enjoy their perspectives \\r\n* have excellent interpersonal skills \\r\n* be positive, creative and professional \\r\n* articulate clear and appropriate reasons for wanting to teach primary aged pupils\\r\n* convey enthusiasm and commitment to learning and teaching \\r\n* demonstrate the skills of reflection and analysis \\r\n",
+    "HowSchoolPlacementsWork": "School Placements form 75% of the programme.   We organise your placements in schools close to your home base, so you do not need to move during the training year.  You gain experience of teaching in both Key Stage 1 and Key Stage 2 and you decide which Key Stage you would like to focus on.  \\r\n\\r\nYou are welcomed from the first day of term into your main placement school and preferred Key Stage, where you spend the Autumn and Summer Terms.  Then in the Spring term you transfer to your second placement school.  \\r\n\\r\nOur structured school-based programme maximises the power of learning through working alongside successful practitioners who model excellent practice and support your personal development.  A dedicated School-Based tutor, who is an experienced learning coach, meets with you every week to guide your training.\\r\n\\r\nYou will receive: \\r\n\\r\n* The regular support of your School-based Tutor and Class Teacher\\r\n* Weekly seminar meetings to review and develop practice and planning\\r\n* Opportunities to observe and work alongside excellent practitioners\\r\n* Professional guidance from the staff in the school\\r\n* Access to the appropriate school's documentation, resources and ICT facilities \\r\n\\r\n\\r\n“Strong professional relationships lie at the heart of the high-quality training offered by the SCITT. Leaders possess a deep understanding of how teachers learn their craft. Their expert skills in training teachers have been honed through years of collaborative practice and rigorous self-evaluation.” (Ofsted 2016)\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Faculty of Education and Humanities has over forty years of successful experience in initial teacher training, education and research. We are passionate about inspiring change which transforms the lives of children and young people both in the UK and internationally.\\r\n\\r\nInitial teacher training (ITT) programmes received an Ofsted grade of 'Good' in November 2014. The Ofsted report comments on the strongly cohesive training programmes between the University and partner schools. Individual students are very well supported during their training and into their teaching posts. Trainees are well prepared to teach the primary/early years curriculum through the use of interactive face to face technology enhanced learning events as well as on line packages. These all address national ITT content criteria as well as focusing on behaviour management strategies.  There is a high level of employment for newly qualified teachers which demonstrates the value placed on the trainees in the Partnership of over 150 diverse schools and settings.\\r\n\\r\nAll students have access to purpose-built teaching and learning resources on the new Waterside Campus allowing them to develop their professional abilities. Facilities include fully equipped rooms; teaching and learning involves using technology, high quality teaching resources, workshops and group work relevant to the variety of educational settings in which students will be working.\\r\n\\r\n",
+    "TrainWithDisability": "The University of Northampton offers support for applicants with a declared need. Individual meetings are held with trainees throughout the year with the Head of Initial Teacher Training and Programme Leader to discuss needs and signpost support. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

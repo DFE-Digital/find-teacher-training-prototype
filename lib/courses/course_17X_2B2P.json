@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Cumbria Primary Teacher Training",
+  "provider": "West Cumbria and North Lakes School Direct",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "slug": "17X/2B2P",
+  "providerCode": "17X",
+  "programmeCode": "2B2P",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Castlegate Drive, Cockermouth, CA13 9HF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Castlegate Drive, Cockermouth, CA13 9HF",
+      "geocode": true,
+      "formatted_address": "Castlegate Dr, Cockermouth CA13 9HD, UK",
+      "latitude": 54.66693619999999,
+      "longitude": -3.3501845,
+      "post_code": "CA13 9HD",
+      "city": "Cumbria",
+      "route": "Castlegate Drive",
+      "postal_town": "Cockermouth"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "17X",
+    "addr_1": "Secondary School Direct",
+    "addr_2": "c/o Cockermouth School",
+    "addr_3": "Castlegate Drive",
+    "addr_4": "Cockermouth",
+    "postcode": "CA13 9HF",
+    "url": "http://www.cptt.co.uk/secondaryORwww.westernlakesteachingschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Castlegate Dr, Cockermouth CA13 9HF, UK",
+    "latitude": 54.66708999999999,
+    "longitude": -3.350082,
+    "post_code": "CA13 9HF",
+    "city": "Cumbria",
+    "route": "Castlegate Drive",
+    "postal_town": "Cockermouth"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our Religious Education School Direct course – 11-16 PGCE (with KS5 enhancement) is an intensive year of preparation for the teaching profession.  It will be valuable, stimulating and enjoyable for you and you will emerge as a qualified and enthusiastic teacher of your subject.\\r\n\\r\n* You will be placed in a host school from week one of the course.\\r\n\\r\n* You will have at least 10 specific subject pedagogy days where you will develop your knowledge and skills of the Religious Education curriculum at key stages 3, 4 and 5.\\r\n\\r\n* You will also be teaching your subject in at least 2 schools.\\r\n\\r\n* You will have a number of training (or conference days) in our Alliance Schools, covering all aspects of Professional Development including Safeguarding, Behaviour Management and Assessment. \\r\n\\r\nThe schools chosen will be personalised to your specific needs, but are likely to offer contrasting experiences. You will have access to a subject and professional mentor within each of your schools who will assess you against the QTS standards offering guidance on how to improve. \\r\n\\r\nThe PGCE is provided in partnership with Sheffield Hallam University and delivered locally at the CPTT centre. PGCE assignments are closely linked to reflective practice of your school experience, minimizing workload.\\r\n\\r\nYou will complete placements in at least two schools.\\r\n\\r\nThe first placement will be structured to allow for a gradual transition. You will, however, be delivering full lessons by the end of the first placement. (This typically runs from October to December).\\r\n\\r\nThe second placement begins after Christmas in a different school - as stated earlier, this will be a contrasting school to help broaden your experiences.\\r\n\\r\nBoth these placements will be assessed.\\r\n\\r\nAll trainees will have the opportunity to spend some time in partner schools and settings - this could include Primary schools, Special schools and Post 16.\\r\n\\r\nAll academic assignments will be at Masters level.\\r\n\\r\nQuote from previous School Direct trainee: \\r\n\\r\n'WLTSA School Direct gave me the chance to get to grips with teaching as a career from day one of my training. I chose to go into teaching as I was completely inspired by my teachers as a student. School Direct helped me in fulfilling my career ambition, by supporting my training to the highest standard possible. With WLTSA School Direct I learnt on the job from the experts and received the best start to my teaching career\"\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect graduates with at least a second class degree (in a relevant subject, with at least half the content in the subject you wish to teach).\\r\nHowever, there are exceptions to this, so please contact us to discuss your own circumstances prior to application.\\r\n\\r\nGCSE Maths and English to at least Grade C (equivalent).\\r\n\\r\nYou will also need to pass the literacy and numeracy skills test before commencement of the course\\r\n",
+    "FeeInternational": 9000.0,
+    "OtherRequirements": "Before commencing the course you must complete a fit to work assessment and be declared fit to work in the teaching profession. Acceptance on the course will be dependant on satisfactory  Disclosure and Barring clearance. Your name will also be checked against the \"prohibited from teaching\" list. \\r\n\\r\nAlthough it is not a requirement, we strongly recommend that you have relevant secondary school experience.\\r\n",
+    "PersonalQualities": "The Western Lakes Teaching School Alliance is looking for people who want to train in schools and wish to be part of a school based community for their training year.\\r\n\\r\nYou will need to display a range of Emotional Intelligences and personal attributes, as the PGCE year is demanding. These could include:\\r\n\\r\n* a love of your subject\\r\n* a positive attitude \\r\n* enthusiasm and humour\\r\n* ability to evaluate and reflect\\r\n* excellent administrative, organisational and self-management skills.\\r\n",
+    "HowSchoolPlacementsWork": "The WLTSA is an outstanding partnership of schools and currently comprises:\\r\n\\r\nCockermouth School, Cockermouth\\r\nBeacon Hill School, Aspatria\\r\nKeswick School, Keswick\\r\nMayfield Special School, Whitehaven\\r\nNetherhall School, Maryport\\r\nSolway Community School, Silloth\\r\nWorkington Academy, Workington\\r\nSt Benedict's RC Catholic High School, Whitehaven\\r\nSt Joseph's RC Catholic High School, Workington\\r\nUllswater Community College, Penrith\\r\nWest Lakes Academy, Egremont\\r\nWhitehaven Academy, Whitehaven\\r\n\\r\nYou will be teaching 11 to 16 with the opportunity for a KS5 enhancement placement.\\r\n\\r\nOur partner schools are all located on the Western and Northern fringes of the Lake District, adjacent to some of the most beautiful parts of the country. A strength of our programme is the opportunity for trainees to engage with a diverse range of teaching and training experiences. The school catchments are contrasting, with schools covering urban areas, small towns and very rural regions.\\r\n\\r\nOur alliance schools have significant levels of experience in Initial Teacher Training (ITT) and all have worked with PGCE courses for many years. We have excellent professional and subject mentors who are eager to share their skills, knowledge and practice and who have and a track record of supporting trainees effectively.\\r\n\\r\nWe also have an excellent record of employment \\r\n\\r\nYou will complete placements in at least two  schools. Candidates' schools are selected after discussion and travelling distance is taken into account.\\r\n\\r\nThe first placement will be structured to allow for a gradual transition. You will, however, be delivering full lessons by the end of the first placement. (This typically runs from October to December).\\r\n\\r\nThe second placement begins after Christmas in a different school - as stated earlier, this will be a contrasting school to help broaden your experiences.\\r\n\\r\nBoth these placements will be assessed.\\r\n\\r\nAll trainees will have the opportunity to spend some time in partner schools and settings - this could include Primary schools, Special schools and Post 16.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Western Lakes Teaching School Alliance (WLTSA) is a great place to work and learn. Our alliance of Secondary schools works closely with the Sheffield Hallam University and Cumbria Primary Teacher Training to provide an outstanding opportunity to follow a largely school-based route towards Qualified Teacher Status (QTS) and a Post Graduate Certificate in Education (60 credits at Masters level).\\r\n\\r\nThe WLTSA is an outstanding partnership of schools and currently comprises of 12 schools.\\r\n\\r\nOur partner schools are all located on the Western and Northern fringes of the Lake District, adjacent to some of the most beautiful parts of the country. A strength of our programme is the opportunity for trainees to engage with a diverse range of teaching and training experiences. The school catchments are contrasting, with schools covering urban areas, small towns and very rural regions.\\r\n\\r\nOur alliance schools have significant levels of experience in Initial Teacher Training (ITT) and all have worked with PGCE courses for many years. We have excellent professional and subject mentors who are eager to share their skills, knowledge and practice and who have and a track record of supporting trainees effectively.\\r\n\\r\nWe also have an excellent record of employment - last year all of our School Direct trainees  gained employment.\\r\n\\r\nWe welcome students with disabilities or other needs. As we are a  small organisation, we are able to cater for individual needs and provide support where necessary. \\r\n\\r\nYou will be part of a Teaching School Alliance whose experiences are tried and trusted.\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "All candidates including those with disabilities and other needs have an initial fit to work assessment and from these relevant support programmes can be implemented. \\r\n\\r\nAlthough accessibility does vary between different locations, every endeavour is made to accommodate an individual's needs.\\r\n\\r\nTrainees are supported throughout the course and if any issues or concerns arise they are dealt with promptly.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Cumbria Teacher Training is a partnership between Cumbria Primary Teacher Training and Western Lakes Teaching School Alliance offering Primary and Secondary Post Graduate Certificates in Education with Qualified Teacher Status (QTS). \\r\n\\r\nPrimary and Secondary trainees work closely together enabling cross phase insight.",
+        "UcasInstitutionCode": "C97"
+      }
+    ]
+  },
+  "has_inst": true
+}

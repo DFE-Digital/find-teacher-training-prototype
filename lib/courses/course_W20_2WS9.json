@@ -1,0 +1,62 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The University of Warwick",
+  "subjects": [
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Foreign Languages",
+  "slug": "W20/2WS9",
+  "providerCode": "W20",
+  "programmeCode": "2WS9",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "W20",
+    "addr_1": "Westwood Campus",
+    "addr_2": "University of Warwick",
+    "addr_3": "Kirby Corner Road",
+    "addr_4": "Coventry",
+    "postcode": "CV4 8EE ",
+    "url": "http://www2.warwick.ac.uk/fac/soc/cte/thinking-about-being-a-teacher/",
+    "geocode": true,
+    "formatted_address": "Coventry CV4 7AL, UK",
+    "latitude": 52.3792525,
+    "longitude": -1.5614704,
+    "post_code": "CV4 7AL",
+    "city": null,
+    "route": null,
+    "postal_town": "Coventry"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Fees are for 2018/19 academic year and subject to change. \\r\n\\r\nAdditional costs incurred during your PGCE training year\\r\nTravel\\r\nTrainees are required to pay for their travel to and from their placement schools either using private and public transport. You will need to be prepared for the possibility of extra travelling time to and from your schools – possibly over an hour by car or significantly longer by public transport, although we make every reasonable effort to minimise your journey times.\\r\n\\r\nBooks\\r\nBooks are recommended but there is no requirement to purchase specific texts and you have access to the University of Warwick library.\\r\n\\r\nMaterials\\r\nYou will need writing materials. Ideally, you will need a laptop or tablet: you will certainly need access to some type of PC.\\r\n\\r\nFees\\r\nIf you are a nationality other than 'British' selected on your application you may be classed as having overseas fees status unless proven otherwise. Please contact our International Office for advice on your fees status before you apply.\\r\n",
+    "AboutCourse": "This course prepares you to teach Modern Foreign Languages to pupils aged 11 to 18. You should consider this course if you want to contribute to young people's development by enabling them to acquire a knowledge base in Modern Foreign Languages as well as the skills associated with practical aspects of the subject.\\r\n\\r\nOn a personal level, you will develop a professional understanding of current issues in education along with the ability to effectively communicate and reflect upon your teaching.\\r\n\\r\nOur aim is to produce confident, imaginative and successful Modern Foreign Languages teachers.\\r\n\\r\nYou will be taught and supported by highly experienced teams who have a national reputation for the quality of their training. \\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching/secondary)",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree\\r\n\\r\nHave graduated, or be about to graduate, from a UK Higher Educational Institute or equivalent, with a 2:2 or above honours degree in the languages or a related discipline. Preference is given to candidates with a 2:1 or above honours degree in a relevant subject.\\r\n\\r\nIf you have a good A-Level in this subject, you may still be considered by completing a Subject Knowledge Enhancement (SKE) programme. \\r\n\\r\nGCSE\\r\n\\r\nHold at least Grade C in GCSE English Language and Mathematics. Other qualifications may be approved as equivalent.\\r\n\\r\n[Further Information about Entry Requirements](https://warwick.ac.uk/fac/soc/cte/start-teaching/entry-requirements#secondary)",
+    "OtherRequirements": "[School Experience](https://warwick.ac.uk/fac/soc/cte/start-teaching/school-experience)\\r\n\\r\nHave had experience in schools focusing on mainstream Key Stages 3, 4 and 5, so that you are familiar with the atmosphere and demands across Secondary.\\r\n\\r\nSkills Tests\\r\nPass the Professional Skills Tests in numeracy and literacy. We suggest you register for the Skills Tests as soon as you have made your application to us.\\r\n\\r\nFitness to Teach\\r\nIn order to comply with the Department for Education, all applicants must satisfy to the University their physical and mental suitability to undertake teacher training.\\r\n",
+    "PersonalQualities": "Through your motivation, enthusiasm and passion for a subject, you can make a difference to students. Teaching is full of challenges and extraordinary rewards and the best teachers nurture creativity, discovery and character development in students.\\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching)\\r\n",
+    "HowSchoolPlacementsWork": "In partnership with our schools, we ensure you have access to the best and most inspiring, practising teachers and mentors. You will have opportunities to observe the best classroom practice and your individual needs will be met through mentoring on each of your placements. \\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching/secondary#inspiring)\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Ofsted have rated us an \"Outstanding\" provider of teacher training.\\r\nThe University of Warwick has been training teachers for over 50 years and part of the Russell Group, whose members represent outstanding teaching and learning experience.\\r\nWe work in partnership with over 300 schools in eight different Local Education Authorities to deliver the highest quality training.\\r\nYou will be taught using the most current technology enhanced learning tools and techniques.\\r\n86% of our trainees rate the course as good or outstanding.\\r\nYou will be taught and supported by highly experienced tutors, class teachers and school mentors who have national reputations for the quality of their training.\\r\n98% of our trainees complete our courses with 94% being awarded good or outstanding. \\r\nOur employment rate into teaching is 95% . \\r\nUpon completing this course you gain 90 credits at master's level. This allows you to fast-track to stage two of a master's degree, quickly progressing your professional development.\\r\nAs alumni, our Professional Development team will support you to develop your skills through a range of CPD programmes to support your career progression.\\r\nOur courses attract a diverse range of age groups and backgrounds, creating a welcoming, inclusive and supportive community, that everyone can feel a part of.\\r\n\\r\n'I got the first job I applied for, I was told a few months after starting that the reputation from the University of Warwick alone had been enough to secure the job (luckily they were also impressed by my teaching!)' - Sophie, PGCE Alumni. ",
+    "TrainWithDisability": "[How will Warwick support you](https://warwick.ac.uk/fac/soc/cte/start-teaching/how-will-warwick-support-you/) \\r\n\\r\n[Support available to those with additional needs](https://warwick.ac.uk/fac/soc/cte/start-teaching/expectationsofateacher/#Disabilities) \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

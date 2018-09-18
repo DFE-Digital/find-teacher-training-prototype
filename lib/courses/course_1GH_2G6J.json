@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "The Cambridge Partnership",
+  "provider": "Lawrence Sheriff School",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "1GH/2G6J",
+  "providerCode": "1GH",
+  "programmeCode": "2G6J",
+  "schools": [
+    {
+      "name": "Avon Valley School",
+      "address": "Newbold Road, Rugby, Warwickshire, CV211EH",
+      "code": "C"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Newbold Road, Rugby, Warwickshire, CV211EH",
+      "geocode": true,
+      "formatted_address": "Newbold Rd, Rugby CV21 1EG, UK",
+      "latitude": 52.3872924,
+      "longitude": -1.27647,
+      "post_code": "CV21 1EG",
+      "city": "Warwickshire",
+      "route": "Newbold Road",
+      "postal_town": "Rugby"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1GH",
+    "addr_1": "Lawrence Sheriff School",
+    "addr_2": "Clifton Road",
+    "addr_3": null,
+    "addr_4": "Rugby",
+    "postcode": "CV21 3AG",
+    "url": "http://www.lawrencesheriffschool.net",
+    "geocode": true,
+    "formatted_address": "Clifton Rd, Rugby CV21 3AG, UK",
+    "latitude": 52.3709915,
+    "longitude": -1.2551402,
+    "post_code": "CV21 3AG",
+    "city": "Warwickshire",
+    "route": "Clifton Road",
+    "postal_town": "Rugby"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Lawrence Sheriff School is a National Teaching School and a lead school for School Direct. We work in partnership with a range of schools in the Warwickshire and Coventry areas as well as several higher education teacher training providers. \\r\n\\r\nThis is the fifth year that we have been involved with the School Direct training programme and we have successfully placed trainees throughout the area, with many former trainees in full-time employment within the partnership.\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "We have trained professional mentors available to discuss and where possible meet the specific needs of trainees and we can offer support across our range of schools.\\r\n\\r\nLawrence Sheriff School is an inclusive community which welcomes students, staff and visitors with disabilities. \\r\n\\r\nPartner school accessibility arrangements can be found on their school websites. \\r\n\\r\nPlease contact us if you have any specific queries.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "\\r\n\\r\nTraining teachers for over 50 years, we are an Ofsted \"Outstanding\" provider of teacher training, working with over 300 schools.\\r\n\\r\n•\\t98% of our trainees complete our courses with 94% being awarded good or outstanding. \\r\n•\\tOur employment rate into teaching is 95%. \\r\n•\\t86% of our trainees rate the course as good or outstanding.\\r\n\\r\nUpon completing this course you gain 90 credits at master's level for our MA in Professional Education. You will be taught and supported by highly experienced tutors, class teachers and school mentors who have national reputations for the quality of their training.\\r\n\\r\n",
+        "UcasInstitutionCode": "W20"
+      },
+      {
+        "Description": "The Cambridge Partnership works to provide inspirational teachers and future school leaders for a significant area of the East of England. Centred in Cambridgeshire, we have developed strong partnerships with schools across the region including Norfolk, Suffolk, Bedfordshire, Essex, Leicestershire, Northamptonshire, Warwickshire and Hertfordshire. \\r\nWe work to ensure that the teachers of tomorrow have the best possible chance of developing the transferable skills necessary for the wide variety of school contexts in the East of England and beyond.\\r\n",
+        "UcasInstitutionCode": "C03"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "W80"
+      }
+    ]
+  },
+  "has_inst": true
+}

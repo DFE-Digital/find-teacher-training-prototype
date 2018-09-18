@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Hull SCITT",
+  "subjects": [
+    "Primary",
+    "Special educational needs"
+  ],
+  "name": "Primary (Special Educational Needs)",
+  "slug": "25O/36TJ",
+  "providerCode": "25O",
+  "programmeCode": "36TJ",
+  "schools": [
+    {
+      "name": "Hull SCITT",
+      "address": "Dorchester Primary School, Dorchester Road, Hull, HU7 6AH",
+      "code": "A"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Dorchester Primary School, Dorchester Road, Hull, HU7 6AH",
+      "geocode": true,
+      "formatted_address": "Dorchester Rd, Hull HU7 6AH, UK",
+      "latitude": 53.7802765,
+      "longitude": -0.3176333,
+      "post_code": "HU7 6AH",
+      "city": "Kingston upon Hull",
+      "route": "Dorchester Road",
+      "postal_town": "Hull"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "25O",
+    "addr_1": "C/o Andrew Marvell B& E College",
+    "addr_2": "Barham Road",
+    "addr_3": "Hull",
+    "addr_4": null,
+    "postcode": "HU9 4EE ",
+    "url": "http://www.hullscitt.com",
+    "geocode": true,
+    "formatted_address": "Barham Rd, Hull HU9 4EE, UK",
+    "latitude": 53.7720777,
+    "longitude": -0.2599284,
+    "post_code": "HU9 4EE",
+    "city": "Kingston upon Hull",
+    "route": "Barham Road",
+    "postal_town": "Hull"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 8075.0,
+    "FeeDetails": "QTS only programme £8,075 \\r\noptional PGCE £925 \\r\nTherefore total QTS and PGCE £9,000\\r\n",
+    "AboutCourse": "This Primary course focuses on the age group 5-11 years across special school and maintained school provision.  The course leads to Qualified Teacher Status (QTS).  We work with University of Hull to provide trainees with the option to undertake a PGCE (This decision is made at the start of the programme). \\r\n\\r\nOur aim is to provide a realistic on the job experience which fully prepares you for the teaching profession.  Training is predominantly school based and you will spend approximately 160 days in school. Your host school, where you will spend the majority of your training will be a special school.  You will spend the equivalent of a term in a mainstream Primary school.  You will work alongside a highly skilled mentor with further support from your School ITT-coordinator and SCITT tutors.  \\r\n\\r\nYou will undertake a wide range of school tasks which will include significant opportunities to observe a range of teaching approaches in your host school and schools across our partnership.  You will be asked to reflect and record your learning in relation to these tasks.  These will be referred to in training discussions and feedback rather than submitted and marked in the traditional essay manner, as always our practice is based upon recent research regarding marking and feedback.  \\r\n\\r\nYou will work with your mentor to engage in a combination of team teaching, small group work and whole class teaching that is both unobserved and observed.  All of which are developmental and highly focussed upon the right training and advice, given at the right time.  \\r\n\\r\nCore provides a comprehensive introduction to the wide range of Curriculum areas and pedagogy needed to become an excellent Primary school teacher.  We ensure that this training is provided by current practitioners therefore ensuring that theory is supported by current practice. Where possible our trainers will conduct their sessions in school.  Our PE trainer will invite you into her school wearing you PE kit ready to observe and engage in training opportunities with each other and pupils.  \\r\n \\r\nHalf termly assessments are based upon reviewing the progress of the children you have been teaching.   This is evidenced through lesson observation and pupil’s outcomes which are used to identify your achievements and future targets. This process is based upon the current accountability systems in our partnership schools.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "- Degree of a UK higher education institution or equivalent.  \\r\n- GCSE  grade 4 (grade C) or equivalent  in maths, English and a science subject \\r\n- Professional skills tests to be completed prior to course commencement\\r\n",
+    "InterviewProcess": "You will be interviewed by a group of Head teachers/senior leaders from our partnership schools.  Our interview day includes a number of tasks one of which includes visiting one of our partnership schools to work with a group of our pupils.  Outcomes of the interviews are shared with candidates on the day.  As part of the interview process you will complete a written task and maths test.  ",
+    "OtherRequirements": "RELEVANT EXPERIENCE \\r\nRecent experience in a Primary school in the UK which allows candidates to have a clear understanding of the role of a Primary teacher in terms of relevant skills and time commitments required for the profession\\r\n\\r\nFollowing successful  interview all conditional offers will include \\r\n- Health and physical capacity to teach standards met (assessed through a occupational health questionnaire) \\r\n-  Satisfactory Disclosure and Baring service check (DBS) \\r\n- Satisfactory criminal record check for overseas \\r\n- No Prohibition order to teach in Uk or European Economic Area (EEA) \\r\n",
+    "PersonalQualities": "We are looking for people who are passionate about working with children and enabling them to reach their potential.  \\r\n\\r\nA proactive mentality! \\r\nWhat experience have you already undertaken to prepare for a career in teaching? \\r\n\\r\nA love for learning! \\r\nDo you reflect upon what you have learnt and constantly strive to improve? \\r\n\\r\nA can do attitude! \\r\nAre you resilient, determined and flexible? \\r\n\\r\nA creative problem solver! \\r\nDo you see barriers, challenges to overcome, or new opportunities? \\r\n\\r\nA collaborative worker! \\r\nHow do you engage with others to get the best out of all situations? \\r\n",
+    "HowSchoolPlacementsWork": "We understand that the appropriate match between trainee and school mentor is crucial to a successful year. We use the information collated from application and interview process to identify your strengths, areas for development and learning style and match these to your host school and mentor.  Many of our candidates have existing experience in our partnership schools and this is taken into consideration when planning placements.  \\r\n\\r\nYour host Special school is the school in which you will be predominantly based and you will become part of the school community.  You will undertake a contrasting placement during the Autumn and Spring term in a maintained Primary school.  \\r\n\\r\nFurther enhancement visits include schools with high proportion of pupils with English as an additional language (EAL), secondary school and other special school provision in our partnership.  \\r\n\\r\nWe currently work with 30 schools in Hull and surrounding area.  Our priority it to secure a placement that works for you. In addition to considering your training needs when planning placements, we will ask you to identify considerations relating to commuting distances and family needs.  \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Hull SCITT (School Centred Initial Teacher Training) works passionately to train the best teachers for Hull and beyond.  The clue is in the title ‘School Centred’; our trainees are in school on day one learning and developing alongside our experienced mentors and school based coordinators.  School based provision is supported by core training delivered by Specialist Leaders of Education (SLEs). \\r\n\\r\n“Centre-based training draws effectively on the expertise of SLEs from partnership schools, ensuring that it reflects current educational thinking” Ofsted 2017\\r\n\\r\nWhen asked to identify the most beneficial aspects of our programmes previous trainees frequently refer to our “hands on approach”.  We deliver a personalised programme that builds upon trainee’s previous experience, strengths and learning styles.  We carefully select and match trainees to the school and mentors with whom they will be working.  \\r\n\\r\n“Leaders are determined to put trainees first to ensure that they have a successful start to their teaching career” Ofsted 2017 \\r\n\\r\nEmployment rates for the last 2 years have ben 100%, teachers trained by Hull SCITT are sought-after by employing head teachers.   The nature of our programme ensures a smooth transition into the teaching profession and our partnership with Hull Collaborative Teaching School and the University of Hull further support ongoing professional development.  \\r\n\\r\n“Head teachers are delighted that NQTs (Newly Qualified Teachers) ‘hit the ground running’ and commented that graduates of the SCITT need little support in their transition to employment because of the breadth of their training” Ofsted 2017 \\r\n",
+    "TrainWithDisability": "We work closely with our Occupational Health partners to ensure support is put into place as needed.   ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

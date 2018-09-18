@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Durham SCITT",
+  "provider": "Richmond School",
+  "subjects": [
+    "Computer studies",
+    "Secondary"
+  ],
+  "name": "Computing",
+  "slug": "18L/34WH",
+  "providerCode": "18L",
+  "programmeCode": "34WH",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Darlington Road, Richmond, DL10 7BQ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Darlington Road, Richmond, DL10 7BQ",
+      "geocode": true,
+      "formatted_address": "Darlington Rd, Richmond DL10 7AW, UK",
+      "latitude": 54.40801889999999,
+      "longitude": -1.7249961,
+      "post_code": "DL10 7AW",
+      "city": "North Yorkshire",
+      "route": "Darlington Road",
+      "postal_town": "Richmond"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "18L",
+    "addr_1": "Richmond School & Sixth Form Coll",
+    "addr_2": "Darlington Road",
+    "addr_3": null,
+    "addr_4": "Richmond",
+    "postcode": "DL10 7BQ",
+    "url": "http://richmondschool.net",
+    "geocode": true,
+    "formatted_address": "Darlington Rd, Richmond, North Yorkshire DL10 7BQ, UK",
+    "latitude": 54.4080559,
+    "longitude": -1.723381,
+    "post_code": "DL10 7BQ",
+    "city": "Richmond",
+    "route": "Darlington Road",
+    "postal_town": "North Yorkshire"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Fees for this course are £9,000. Tuition fee loans are available through Student Finance England.",
+    "AboutCourse": "The course is full time and runs from September until the end of June.\\r\nThe majority of your time will be spent in your 'home school' where there will be a comprehensive training programme, supplemented by training at Durham SCITT.\\r\nOther features of the course will include; an enhancement course with the opportunity to visit an SEN school as well as a school for autistic students along with a school with a high proportion of EAL students. Subject knowledge training through Durham SCITT's SSP programme.\\r\nAll trainees must demonstrate that they can fully meet each of the Standards for Qualified Teacher Status by the end of the course. Trainees will be continually assessed through lesson observations and placement reports whilst on teaching placements, and through a series of 3 short assignments.\\r\nDetailed portfolios of evidence are submitted 3 times during the year to demonstrate how trainees are meeting the Standards for Qualified Teacher Status. Following the first 2 submissions, trainees receive feedback on their progress.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "To be considered for a place, you must normally hold a degree or arecognised equivalent in the subject you wish to teach or in a related area. Recent experience of a secondary school environment and / or working with young people will also be considered. If you are unsure about whether or not your degree contains sufficient relevant content, please email info@durhamscitt.co.uk. You must provide original documentary evidence that you have achieved GCSE in English Language and Mathematics at Grade C or above, or that you have an equivalent qualification.\\r\n",
+    "FinancialSupport": "Trainees are advised to check the most up-to-date funding information on the NCTL website www.education.gov.uk.",
+    "InterviewProcess": "The first thing we look at is your application form and your references to decide whether or not we should invite you for interview. It is, therefore, important to include all the relevant information on the form to help us make this decision. If you have a disability, please let the school know in advance if there are any special arrangements that should be made for the interview process, for example large print copies of documentation, additional time for reading or wheelchair access to the interview rooms. The interview will be held in your chosen school.\\r\nThe selection process will be in 2 stages. If you are invited to interview, you will be sent information about a 15 minute teaching task.\\r\nOnce you have completed Stage 1 you will be told by a member of the panel whether or not you have been selected to go through to Stage 2. At this point you will also be given verbal feedback.\\r\nStage 2 will consist of a formal interview and other activities which may be used to identify training needs.\\r\nYour performance on the day will be assessed against criteria linked to the Standards for Qualified Teacher Status.\\r\n",
+    "OtherRequirements": "The Disclosure and Barring Service (DBS) provides employers and other authorised organisations with details of an individual's convictions, cautions, police reprimands and warnings held on the Police National Computer. You will not be permitted to begin your training without being in possession of an enhanced DBS check.",
+    "PersonalQualities": "Potential trainees will need very good communication skills, the determination to succeed, a commitment to working hard and the ability to work with others. Training to teach is both challenging and rewarding. Developing excellent interpersonal skills will enable trainees to effectively support the learning of groups of young people from diverse backgrounds. We are looking for people who strive to improve and who are committed to their own professional development.",
+    "HowSchoolPlacementsWork": "Trainees have the opportunity to gain experience in 11-16/11-18 comprehensive schools/academies; special schools (EBD); a school with BESD status; Sixth Form colleges and primary schools. Richmond School trainees will undertake 2 placements, 1 diagnostic and an extended placement in the trainees 'home school'. You will be allocated a mentor in both schools as well as being assigned a Subject Specialist by Durham SCITT.\\r\nThe training has been designed to reflect local and national priorities and covers a wide range of general professional subjects including Behaviour Management and Special Educational Needs. The training will offer relevant, practical, up-to-date guidance for the classroom, whilst encouraging trainees to become reflective practitioners committed to improving teaching and learning in schools.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "This is an exciting time in the history of Richmond School and Sixth Form College; a history that goes back nearly 700 years.  With recent refurbishment and new buildings, teachers and students now have facilities that rank as some of the best in the country. On December 1st 2017 Richmond School and Sixth Form College became part of the Areté Learning Trust.  In an educational climate in which there is so much volatility and change, we wanted to ensure we could secure our future, stay true to our values and work with others who are similarly committed to helping all young people, whatever their starting point, to “be the best they can be.”\\r\n\\r\nWe are delighted that a recent Ofsted inspection (January 2017) confirmed that we continue to be a good school, with leadership and management, and behaviour and safety, all deemed as ‘Good’.  Our goal now is to push on towards becoming a truly outstanding school. We are confident that we will achieve this through our shared responsibility for the future success of all students.\\r\n\\r\nWe have a team of dedicated staff who work hard together to ensure our agenda of continual improvement and future success.  We are looking for positive and ambitious people to join our team, share our values and drive innovation in this exciting setting.  In return, we will provide you with the stretch and support to develop your career as an educational leader.  \\r\n\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "We welcome interest from people who want to work in a hard-working and collegiate environment with fellow colleagues who are constantly seeking to improve and help one another get better. \\r\n\\r\nWe are an Equal Opportunities employer and welcome applications from appropriately qualified persons regardless of gender, race, religion, disability or age.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "D87"
+      }
+    ]
+  },
+  "has_inst": true
+}

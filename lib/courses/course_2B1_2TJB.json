@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Partnership London SCITT (PLS)",
+  "subjects": [
+    "Art / art & design",
+    "Secondary"
+  ],
+  "name": "Art",
+  "slug": "2B1/2TJB",
+  "providerCode": "2B1",
+  "programmeCode": "2TJB",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Sydney Russell School, Parsloes Avenue, Dagenham, Essex, RM9 5QT",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Sydney Russell School, Parsloes Avenue, Dagenham, Essex, RM9 5QT",
+      "geocode": true,
+      "formatted_address": "Parsloes Avenue, Parsloes Ave, Dagenham RM9 5QT, United Kingdom",
+      "latitude": 51.548375,
+      "longitude": 0.1331319,
+      "post_code": "RM9 5QT",
+      "city": null,
+      "route": "Parsloes Avenue",
+      "postal_town": "Dagenham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2B1",
+    "addr_1": "Sydney Russell School",
+    "addr_2": "Parsloes Avenue",
+    "addr_3": "Dagenham",
+    "addr_4": "Essex",
+    "postcode": "RM9 5QT ",
+    "url": "http://partnershiplondonscitt.com",
+    "geocode": true,
+    "formatted_address": "Parsloes Avenue, Parsloes Ave, Dagenham RM9 5QT, United Kingdom",
+    "latitude": 51.548375,
+    "longitude": 0.1331319,
+    "post_code": "RM9 5QT",
+    "city": null,
+    "route": "Parsloes Avenue",
+    "postal_town": "Dagenham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "DBS and fitness to teach medical are an additional cost ",
+    "AboutCourse": "You will join Partnership London SCITT's  programme with full access to all services and facilities. You will benefit from the world-class expertise and research profile of our team.  You are supported professionally by a system of school and personal tutoring and will spend a minimum of 120 days in school , divided into three assessment phases. This will give you an opportunity to gain experience in contrasting educational settings \\r\n\\r\nThe programme covers your chosen National Curriculum subject in detail as well as providing opportunities to learn about professional issues and research in education. You will benefit from an approach to teacher education that puts creative, inclusive and reflective practice at the heart of our programmes. \\r\n\\r\nThis programme will give you a thorough grounding in all aspects of the National Curriculum for your chosen subject. \\r\nIt offers a balance of theory and practice, including the opportunity to understand the historical forces and ideas that have shaped today's curriculum. You're taught to appreciate a wide range of teaching approaches and we deal in detail with the planning and evaluation of lessons, assessment, marking and examination syllabuses. \\r\n\\r\nPGCE Accreditation with Sussex University\\r\nWe offer the PGCE in pedagogy and practice awarded by Sussex University. The course structure is a three-fold assessment through a 6000 word essay, presentation of directed tasks and portfolio evidence presented orally towards the end of the course. There will be support from the university as well as from PLS and this is an ideal way to gain PGCE for those wishing to have that academic award in addition to QTS. \\r\n\\r\nProfessional Studies and Subject Development Sessions\\r\nThese will take place on a weekly basis throughout your training and will cover the key issues both in the classroom and those wider issues of professional responsibility and professional conduct. \\r\n\\r\nIn addition to the subject development and professional studies sessions you will also have a mentor who you will meet with on a weekly basis for review, reflection and target setting. \\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree\\r\nStudents must have an honours degree, usually at a minimum of 2:2 (or equivalent) \\r\nThe student can demonstrate a relationship between their first/higher degree content or other academic/professional qualifications that they might hold and the subject they will be teaching in. \\r\nWhere PLS deem it necessary, a Subject Knowledge Enhancement course (SKE) may also be required. This will be indicated if a conditional offer is made.\\r\n\\r\nGCSEs\\r\nCandidates must hold a GCSE A*-C or equivalent in Mathematics and English for secondary teacher training and  a GCSE A*-C or equivalent in Mathematics, English and Science for primary teacher training. \\r\n",
+    "FinancialSupport": "You can find information about tuition fee loans and other financial help on the Gov.uk website - (https://www.gov.uk/student-finance) ",
+    "InterviewProcess": "Selection Process\\r\nYou will be interviewed by a Partnership London SCITT director and a subject specialist. In order for your application to be considered you should consider your personal statement as being an important part of this process. \\r\n\\r\nReferences\\r\nWe require two references one of which will be an academic reference. If you completed your studies more than five years ago your employer should provide your first reference. \\r\n\\r\nInterview\\r\nWe will interview all shortlisted candidates prior to making an offer of training. If you are invited to interview, we expect knowledge of key aspects of education and excellent subject knowledge. \\r\nThe interview process will include \\r\n- Teaching a short lesson \\r\n- Written tasks\\r\n- A formal interview \\r\n\\r\nYou will be assessed on your ability to communicate clearly and engage the audience. \\r\nAll teachers need to be able to write English clearly without errors in spelling, punctuation or grammar because this is part of the job. Therefore there will be a literacy written task as part of the selection process as well as a subject related written task. \\r\n\\r\nThe interview will assess you on the following criteria:-\\r\n- Appropriateness of subject qualifications \\r\n- Capacity to expand subject knowledge \\r\n- Awareness of the roles and responsibilities of a teacher \\r\n- Any teaching or school based experience \\r\n- Resilience \\r\n- Ability to communicate effectively \\r\n- Enthusiasm for, and commitment to teaching \\r\n- Self-awareness of both strengths and areas to improve \\r\n",
+    "OtherRequirements": "Equivalency testing\\r\nA NARIC statement of comparability  should be provided for non UK GCSE and degree level qualifications.\\r\n\\r\nQTS Skills tests\\r\nSkills tests in numeracy and literacy must be passed prior to the course starting.  \\r\n\\r\nDBS and Medical\\r\nPLS places are offered conditionally subject to successful DBS check \\r\nSuccessful applicants will also be required to complete a health questionnaire to ensure that they have the health and physical capacity to teach without putting young people at risk. \\r\nFailure to complete this questionnaire or any trainee deemed being unfit to teach will result in any offer of a place being withdrawn. \\r\n",
+    "PersonalQualities": "Enthusiasm for teaching \\r\nPositive attitudes to young people and their education\\r\nUnderstanding of the importance of establishing respectful, supportive and constructive relationships\\r\nAbility to communicate effectively and accurately in standard spoken and written English\\r\nAbility to reflect critically and creatively\\r\nA good sense of humour\\r\nEvidence of wider educational reading and knowledge of key issues facing today's educators \\r\nA sense of the scope of teachers' professional skills and responsibilities\\r\nUnderstanding ‘Fundamental British - Values’ and its importance to all aspects of teaching\\r\nAwareness of key safeguarding issues \\r\nCommitment to inclusion and equal opportunity\\r\nA strong work ethic\\r\n",
+    "HowSchoolPlacementsWork": "The training model is very much rooted in the philosophy of our mission statement, viewing all as life-long learners. \\r\nWe find the following definition of pedagogy useful:-\\r\nPedagogy is the act of teaching together with its attendant discourse. It is what one needs to know, and the skills one needs to command in order to make and justify the many different kinds of decisions of which teaching is constituted (Alexander 2003) \\r\n\\r\nYou will have two teaching placements in contrasting schools covering at least two different key stages. \\r\nThe training will follow what is commonly referred to as an ABA model. The second placement (B) is six weeks and takes place in the spring term. \\r\nTherefore most of the training year will be spent in your main placement school (A), allowing you to get to know the systems, students and staff. \\r\nYou will get weekly input on subject pedagogy as well as professional studies. These sessions will be delivered by very experienced practicing teachers, a key part of our training model. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "‘Inspiring today’s learners to be tomorrow’s leaders’.  \\r\n\\r\nWe see teaching as a vocation and we aim to recognise and respond to the talents and needs of every trainee and provide the best means of developing their full potential. \\r\nWe aim to recruit, train and retain the very best teachers.  A key part of our philosophy is that we ensure equality of opportunity and welcome, value and respect all who train with PLS.\\r\nWe aim to build a learning community based on justice and a sense of personal responsibility.  Central to our philosophy is promoting dialogue and cooperation with the wider community and encouraging a commitment to life-long learning.\\r\n\\r\nPLS is led by two Outstanding schools, Sydney Russell in Dagenham and St Angela’s Ursuline in Newham both with long track records of outstanding teacher training. Now, as a SCITT, we are in the position to offer you top class training from outstanding professionals in a vibrant teaching atmosphere.  The perfect start to your career.\\r\n\\r\nFrom the outset you will be part of the school staff.  You will be seen by colleagues and students as a member of staff and not a ‘trainee’  placed by a university.  This seemingly small point makes a huge difference to your standing in school and provides a  firmer platform from which you can develop your teaching skills.  Our courses give you the very best of both worlds: theory, practice, professional development and placements with colleagues who really want to make you an outstanding teacher.\\r\n",
+    "TrainWithDisability": "All PLS partner schools are compliant with disability access",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

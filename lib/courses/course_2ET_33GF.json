@@ -1,0 +1,121 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Prince Henry’s High School & South Worcestershire SCITT",
+  "subjects": [
+    "Computer studies",
+    "Secondary"
+  ],
+  "name": "Computer Science",
+  "slug": "2ET/33GF",
+  "providerCode": "2ET",
+  "programmeCode": "33GF",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Victoria Avenue, Evesham, Worcestershire, WR11 4QH",
+      "code": "-"
+    },
+    {
+      "name": "Bredon Middle School",
+      "address": "Elmely Road, Ashton under Hill, WR11 7SW",
+      "code": "B"
+    },
+    {
+      "name": "The De Montfort School",
+      "address": "Four Pools Road, Evesham, WR11 1DQ",
+      "code": "F"
+    },
+    {
+      "name": "Pershore High School",
+      "address": "Station Road, Pershore, WR10 2BX",
+      "code": "P"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Victoria Avenue, Evesham, Worcestershire, WR11 4QH",
+      "geocode": true,
+      "formatted_address": "Victoria Ave, Evesham WR11 4QH, UK",
+      "latitude": 52.0990611,
+      "longitude": -1.9418775,
+      "post_code": "WR11 4QH",
+      "city": "Worcestershire",
+      "route": "Victoria Avenue",
+      "postal_town": "Evesham"
+    },
+    {
+      "address": "Elmely Road, Ashton under Hill, WR11 7SW",
+      "geocode": true,
+      "formatted_address": "Elmley Rd, Ashton under Hill, Evesham WR11 7SW, UK",
+      "latitude": 52.04280019999999,
+      "longitude": -2.0048821,
+      "post_code": "WR11 7SW",
+      "city": "Ashton under Hill",
+      "route": "Elmley Road",
+      "postal_town": "Evesham"
+    },
+    {
+      "address": "Four Pools Road, Evesham, WR11 1DQ",
+      "geocode": true,
+      "formatted_address": "Four Pools Rd, Evesham WR11 1EF, UK",
+      "latitude": 52.0850415,
+      "longitude": -1.9394751,
+      "post_code": "WR11 1EF",
+      "city": "Worcestershire",
+      "route": "Four Pools Road",
+      "postal_town": "Evesham"
+    },
+    {
+      "address": "Station Road, Pershore, WR10 2BX",
+      "geocode": true,
+      "formatted_address": "Pershore WR10 2BX, UK",
+      "latitude": 52.1254091,
+      "longitude": -2.0742308,
+      "post_code": "WR10 2BX",
+      "city": "Worcestershire",
+      "route": null,
+      "postal_town": "Pershore"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2ET",
+    "addr_1": "Victoria Avenue",
+    "addr_2": "Evesham",
+    "addr_3": "Worcestershire",
+    "addr_4": null,
+    "postcode": "WR11 4QH",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Victoria Ave, Evesham WR11 4QQ, UK",
+    "latitude": 52.0992015,
+    "longitude": -1.9435083,
+    "post_code": "WR11 4QQ",
+    "city": "Worcestershire",
+    "route": "Victoria Avenue",
+    "postal_town": "Evesham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Trainees have the option to pay the tuition fees either through the Student Loan Company or Privately.  \\r\n\\r\nIf trainees choose to pay privately fees will be due to the accredited provider at the same time as the Student Loan Company release fees.\\r\n* 25% October.\\r\n* 25% March.\\r\n* 50% May.\\r\n",
+    "AboutCourse": "Course Content\\r\nTrainees were overwhelmingly positive about the impact of the contribution of the subject course, provided by subject leaders. (External Examiner 2018)\\r\n\\r\nThe secondary SCITT training programme for Business Studies consists of 3 distinct 'phases to teaching' to develop the Skills, Knowledge and Understanding to teach young people in the 21st Century.  The course content will be delivered through centrally taught sessions of subject knowledge, pedagogy, and academic assignments.\\r\n\\r\nPhase 1 'Enable and Establish' \\r\nPutting the foundations of classroom management, teaching and learning in place.\\r\n\\r\nPhase 2 Empower \\r\nTrainees take more ownership of foundations and develop greater independence. \\r\n\\r\nPhase 3 Embedding \\r\nTrainees demonstrating advanced classroom practice and consistently performing to good or outstanding.\\r\n\\r\nProfessional Studies\\r\n\\r\nThe SCITT Training Programme will also consist of a programme of professional studies and subject studies across the cluster of schools, and will be integrated into the training year. These will be overseen by professional mentors who will have the overall responsibility for the management of the provision, ensuring that student teachers have full access to the appropriate age and ability range. Subject mentors are responsible for providing a programme which will involve individual and collaborative teaching and weekly mentor support.  \\r\n\\r\nSubject knowledge and Pedagogy\\r\n\\r\nSubject Knowledge of Business Studies will be delivered and developed by experienced professionals throughout the training year. These sessions will equip you with the skills, knowledge and confidence to teach young people. It will cover all aspects of the National Curriculum for KS 4 and will encompass GCSE Specifications and Post 16.\\r\n\\r\nHow much time they’ll spend training in school\\r\n\\r\nWe exceed the statutory number of 120 days in school by offering over 140 days school based experience providing significant opportunities to develop your practice.\\r\n\\r\nHow will you be assessed?\\r\n\\r\nThe Assessment of the course is in 2 parts: \\r\n\\r\nAwarding QTS: \\r\n\\r\nYou will be assessed and monitored throughout the course against the Teachers Standards. You will be assessed in line with the HEI Ofsted framework and trainees must demonstrate the minimum standard in order to achieve QTS in both Parts 1 and 2 of the Teahers’ Standards.\\r\n\\r\nPGCE element of the Course. \\r\n\\r\nThe academic element of the award is delivered by the University of Worcester, a long standing collaborative partner of the SCITT. The 4 assignments completed throughout the year will give trainees Masters credits and the PGCE award alongside QTS.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Qualifications needed.\\r\n\\r\nMinimum degree required: Lower Second\\r\n\\r\nA degree, usually an Honours degree in a subject applicable to your teaching subject. For maths and physics the minimum degree entry requirement is third class degree \\r\n\\r\nGCSE's.\\r\n\\r\nGrade 4 or C  at GCSE (or equivalent) in English Language and Mathematics is essential for all applicants. The SCITT will organise alternative examinations for those without these qualifications to demonstrate the equivalence to GCSE standard.\\r\n\\r\nProfessional skills Tests.\\r\n\\r\nNumeracy and Literacy skills tests  must be completed and passed  prior to the start of the course.\\r\n\\r\n(http://sta.education.gov.uk/)\\r\n",
+    "InterviewProcess": "Interview Process.\\r\n\\r\nThe ITT programme is an intensive year, demanding full time commitment. Colleagues across the partnership will go the extra mile to support  trainees throughout the year so long as they demonstrate the commitment needed to succeed on the course. \\r\n\\r\nThe selection process is rigorous, robust and transparent and is designed to help us decide whether we believe you should train with us, and to help you decide if teaching is the right career for you. The interview is a 2 way process, teaching and the school has to be right for you and vice versa. \\r\n\\r\nApplication form.\\r\n\\r\nSubject and curriculum knowledge: \\r\n\\r\n*Strong subject-based academic background. \\r\n*An awareness of current educational issues. \\r\n*Familiarity with the curriculum for the relevant key stages. \\r\n*Capacity to extend subject knowledge.\\r\n\\r\nAptitude for teaching. \\r\n\\r\n*A desire to teach and enthuse young people. \\r\n*An awareness of the challenges of teaching and the training year. \\r\n* Commitment. \\r\n* Good written communication skills. \\r\n*Good oral communication skills. \\r\n* Team work. \\r\n* An ability to engage young people in learning. \\r\n* Adaptability. \\r\n* Perseverance. \\r\n* Professionalism. \\r\n* Awareness of personal strengths and weaknesses \\r\n\\r\nSelection Process\\r\n\\r\n* A lesson observation if appropriate. \\r\n* A tour of the school. \\r\n* A pupil panel. \\r\n* Teaching task. \\r\n* Subject Knowledge audit. \\r\n*Formal panel interview. \\r\n* A 5 minute presentation on the importance of your subject to the secondary curriculum. \\r\n* Group task to evaluate team work and communication skills. \\r\n* Fitness to teach questionnaire. \\r\n\\r\n",
+    "OtherRequirements": "DBS Check.\\r\n\\r\nAll trainees need to have an enhanced DBS check prior to the start of the course. \\r\n\\r\nThe enhanced DBS check will be carried out by the Accredited Provider prior to commencing your training. You will be required to bring your DBS certificate to admissions at Prince Henry's and South Worcestershire SCITT along with proof of identity so that your DBS number can be recorded.\\r\n\\r\nFitness to Teach.\\r\n\\r\nThe DfE requires all trainees to satisfactorily complete a medical questionnaire to demonstrate their fitness to teach. This will we provided at interview if your application is successful.\\r\n",
+    "PersonalQualities": "What We Are Looking For.\\r\n\\r\nInterest in and commitment to education and children.\\r\n\\r\nYou will need to be enthusiastic about working with children, and possess an ability to relate to them. On the course, you will be encouraged to develop good working relationships with teachers and their pupils. \\r\n\\r\nOral and written communication.\\r\n\\r\nCommunication skills are, of course, vital to the teacher's role and your skills will be developed through all course elements. \\r\n\\r\nInterpersonal skills.\\r\n\\r\nYou will need to work co-operatively on joint projects, work as a member of a team and accept the responsibility of leadership roles.\\r\n",
+    "HowSchoolPlacementsWork": "School Placements.\\r\n\\r\nThe placement of trainees is carefully managed to ensure a breadth of experience in relation to the designated key stages for training as well as enhancement in Key Stage 5 for the 11-16 trainees and Key Stage 3 for the 14-19 trainee. The minimum expectation for the Key Stage 5 enhancement is identified.( External Examiner 2018)\\r\n\\r\nYou will have 2 Placements throughout the year and these will be in contrasting schools. These will the full age and ability range you have chosen to train in and covers 11-18 including 2 middle schools. \\r\n\\r\nYour contrasting placement will be early in the spring term to allow you to return to your training school to complete the course.   The contrasting placement is 8 weeks in duration.\\r\n\\r\nPartnership schools are located in South Worcestershire from Droitwich in north of the region to Evesham in the South and also includes Malvern and Ledbury and includes 7 high schools and  2 middle schools.\\r\nTimetable\\r\n\\r\nYour course will begin at the start of the academic year and will include an induction period into your school, central sessions focusing on the pedagogy of teaching and subject specific knowledge development. You will be a valued colleague within the school from the start of the course, developing your wider professional role focusing on part 2 of the Teachers Standards. \\r\n\\r\nYour timetable within the school setting will be incremental during placement 1 and 2. \\r\n\\r\nPhase 1 Collaborative teaching, observation, and some solo teaching with timetable of 25-50%. \\r\n\\r\nPhase 2 Collaborative and solo teaching with 50% teaching timetable.\\r\n \\r\nPhase 3 Increased solo teaching to 50% timetable. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Why train with us?\\r\nPrince Henry's and South Worcestershire SCITT along with its partnership of schools have extensive experience of working with Initial Teacher Training, both School Direct and PGCE Core. \\r\n\\r\nAcross the South Worcestershire ITT consortium of schools we train no more than 40 trainees a year working in partnership with HEI institutions to support and train the next generation of teachers. Our partnership and family ethos would support the view of Ofsted in 2012 when they stated: 'It is significant that all the outstanding training our inspectors have found so far is being led by consortia of neighbouring schools, with trainees taught by experienced, practising teachers'. \\r\n\\r\nTrainees choosing to train with the Prince Henry's and South Worcestershire SCITT will be trained by outstanding practitioners across a partnership of schools in the south of the county with one clear aim: Providing the highest quality of Initial Teacher Training producing the next generation of outstanding practitioners in order to continually raise standards and pupil achievement. \\r\n\\r\nWe work with Worcester University to award the PGCE  and  to gain Masters Credits throughout the year\\r\n\\r\nTrainees identified the following features of the SCITT Partnership:\\r\n* Strong and clear leadership from the SCITT Team\\r\n* Support and advice provided by the SCITT Director\\r\n* High expectations and aspirations across the SCITT with a focus on excellence\\r\n* Commitment to trainee wellbeing\\r\n* Very good communication within the placement schools\\r\nExternal Examiner 2018.\\r\n\\r\nWhere to Find Us\\r\n\\r\n(http://www.princehenrys.worcs.sch.uk/ )\\r\n\\r\nWhy train with us?\\r\n(https://vimeo.com/217014901/89bcad694c)\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "Our equal opportunities and accessibility to training allows all trainees to apply and be trained through the SCITT.  Extensive support from both the SCITT administration team, subject lead tutors and mentors have provided trainees with extra support and guidance if needed. \\r\n\\r\n We have trained trainees who have been diagnosed with dyslexia and they have been given extra support with the PGCE assignments through the University and also further considerations with planning and marking by the partner schools and mentors.  \\r\n\\r\nWe have a trainee 2018-19 who has visual impairments and again extra support with templates, assignments lesson planning, marking will be given throughout the year.\\r\n\\r\nWe are constantly aware of the demands of the course on any person’s health and well- being and we provide pastoral support through our internal verifier and pastoral support colleague within the SCITT. \\r\n\\r\nThis provides an extra avenue for trainees to access to share concerns and issues if they are finding difficulties with the course.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

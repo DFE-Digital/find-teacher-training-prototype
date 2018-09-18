@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Sheffield Hallam University",
+  "provider": "Barnsley Teaching School Alliance",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "slug": "1GW/22SR",
+  "providerCode": "1GW",
+  "programmeCode": "22SR",
+  "schools": [
+    {
+      "name": "Barnsley TSA SD Alliance",
+      "address": "Alliance partner schools, Barnsley, South Yorkshire",
+      "code": "2"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Alliance partner schools, Barnsley, South Yorkshire",
+      "geocode": true,
+      "formatted_address": "Barnsley, UK",
+      "latitude": 53.55263,
+      "longitude": -1.479726,
+      "post_code": null,
+      "city": "Barnsley",
+      "route": null,
+      "postal_town": "Barnsley"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1GW",
+    "addr_1": "Barnsley TSA training centre",
+    "addr_2": "Darton College",
+    "addr_3": "Ballfield Lane",
+    "addr_4": "Barnsley",
+    "postcode": "S75 5EF ",
+    "url": "http://barnsleytsa.net/initial-teacher-training/",
+    "geocode": true,
+    "formatted_address": "Digital Media Centre, County Way, Barnsley S75 5EF, UK",
+    "latitude": 53.555192,
+    "longitude": -1.479098,
+    "post_code": "S75 5EF",
+    "city": "South Yorkshire",
+    "route": "County Way",
+    "postal_town": "Barnsley"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This unsalaried teacher training programme leads to a recommendation for the award of Qualified Teacher Status (QTS) and PGCE comprising of 60 credits at Masters level.\\r\nFor the duration of the course you will be in school for 4 days a week, apart from assessed periods where you will be in school 5 days.\\r\nWithin school, you will have a host mentor who will have undertaken a training programme at Sheffield Hallam University to develop their mentoring skills, including coaching and classroom observation. \\r\nYou will take part in our bespoke twilight Programme, delivered by outstanding practitioners from partner schools within the Alliance. All practitioners have strengths in ensuring the progress of vulnerable groups of learners and in leading the development of innovative and creative pedagogy.\\r\nYou will develop the professional knowledge, understanding and skills required to be an outstanding practitioner through participation in training such as:\\r\nThe effective use of data to inform intervention and planning and target setting;\\r\nAssessment for learning personalised and differentiated learning;\\r\nEffective behaviour management and nurture approaches; Key theories underpinning child development and attachment disorders;\\r\nProfessional expectations and the wider role of teachers;\\r\nCareer development and preparing for interview.\\r\nOur programme is further enhanced by attendance one day a week at Sheffield Hallam University for further subject-specific development and accreditation work. Sheffield Hallam University will also provide intensive preparation for your school placement at the start of the autumn term.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "To be eligible for the course,  you will need a UK degree, or the international equivalent.\\r\nYou will need grade 4 (previously grade C) GCSEs in Maths and English.\\r\nIf you do not have these qualifications, you must prove you have the equivalent level of knowledge in these subjects.\\r\n\\r\nBefore you start the course, you will need to:\\r\n•\\tpass the literacy and numeracy skills tests\\r\n•\\thave a Disclosure and Barring Service (DBS) security check\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "InterviewProcess": "Our recruitment process is shared across the partner schools within the Positive Regard Teaching School Alliance. We try to hold interviews within the school asking for the specialist subject. However, this may not always be possible.\\r\nThere is an initial selection process based on how applicants meet the qualifications and experience criteria. Should you pass this 'initial sift' successfully, then it is likely you will be called to interview.\\r\nInterviews take place in our partner schools and the panel may include representatives from Positive Regard TSA, Sheffield Hallam University and Senior Leaders from our partner schools. \\r\nThe interview process is designed to enable you to show the extent to which you have the potential to meet the Teachers’ Standards. The day consist of four different tasks, a Written Communication Task, a Subject Specific Planning Task, a Pupil Teaching Activity and a formal interview. \\r\nWe will inform you in advance about the age group you will be teaching, as well as any pre-interview guidance for the other activities as required.\\r\nDuring the interview, you will have the opportunity to meet and talk to staff and children and ask questions. Although please be aware if successful you may not be placed in the school in which the interviews are taking place. However, we do organise pre-visits to designated placement schools further into the process\\r\n",
+    "OtherRequirements": "Before you start the course, you will need to:\\r\n•\\tpass the literacy and numeracy skills tests\\r\n•\\thave a Disclosure and Barring Service (DBS) security check\\r\n\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about working with children, with a desire to share that with children of all abilities.\\r\nWe also want our teachers to be able to effectively meet the learning needs of pupils who may have a diverse range of educational needs.\\r\nExperience of working with children of this age range would be very helpful, particularly if in a school setting though previous employment or voluntary work.\\r\n",
+    "HowSchoolPlacementsWork": "We work with Secondary Schools across four different Local Authorities. Our schools are both 11-16 and 11-18 and you will have the opportunity to experience Special school settings as well. You will become part of the department allowing you to train alongside experienced and specialist teachers. \\r\nWe follow the Sheffield Hallam ABA model, where you will spend the majority of your course in one of our partner schools, supported by experienced and supportive staff, one of whom will be assigned as your host mentor. You will undertake a second contrasting placement in another of our partner schools in the first half of the Spring Term.\\r\nThroughout the duration of the course, you will be in school for 4 days a week, apart from assessed periods where you will be in school 5 days a week. The assessed periods are in your host school.\\r\nYou will also need to spend two days in a primary school as well as a four-day post 16 experience.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Positive Regard Teaching School Alliance (formerly Barnsley TSA) is led by an outstanding school- Springwell Special Academy. We are a values driven alliance and we believe relationships do make a difference. Through School Direct, we wish to recruit, nurture and develop new and exciting talent to the profession as part of our drive to promote outstanding teaching and learning in our schools.\\r\n \\r\nOur Alliance comprises of a range of Primary, Secondary and Special School partners including PRU provision. Therefore, we can offer you a wide and contrasting range of teaching and training opportunities. We are committed to ensuring that your training experience provides you with tailored support, thereby maximising your chances for success. Many of our trainees have gone on to secure employment in our schools\\r\n \\r\nWe are located in Barnsley, South Yorkshire, but also work regionally in over six local authorities. Barnsley is conveniently located close to motorways and rail networks within South Yorkshire, with close and easy access to the larger surrounding cities of Sheffield, and Leeds. \\r\n \\r\nWe aim to better meet the social and academic learning needs of our students, thereby enhancing and improving their life chances in society and the world of work.\\r\n",
+    "TrainWithDisability": "Disability Support at interview:\\r\nIf you have a sensory or physical disability, dyslexia, a mental health or medical condition, please let us know if you need some support during the selection process. We recommend you contact both ourselves and Sheffield Hallam University Admissions within three days of receiving an invite to interview so we can arrange (for example) extra time in order to complete reading or written tasks if required; a sign language interpreter; a note taker; materials in a different format; wheelchair access. We will try to accommodate your requests so that you can fully participate in the interview without any disadvantage.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work in partnership with Sheffield Hallam University, who are one of the largest providers of the School Direct programme in the region. ",
+        "UcasInstitutionCode": "S21"
+      }
+    ]
+  },
+  "has_inst": true
+}

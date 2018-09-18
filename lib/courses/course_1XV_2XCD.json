@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": "Bishop Grosseteste University",
+  "provider": "Hampton Hargate Primary School.",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1XV/2XCD",
+  "providerCode": "1XV",
+  "programmeCode": "2XCD",
+  "schools": [
+    {
+      "name": "Bishop Grosseteste University",
+      "address": "Lincoln, LN1 3DY",
+      "code": "B"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Lincoln, LN1 3DY",
+      "geocode": true,
+      "formatted_address": "Lincoln LN1 3DY, UK",
+      "latitude": 53.2440132,
+      "longitude": -0.5357149999999999,
+      "post_code": "LN1 3DY",
+      "city": "Lincolnshire",
+      "route": null,
+      "postal_town": "Lincoln"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1XV",
+    "addr_1": "Hampton Hargate Primary School",
+    "addr_2": "Hargate Way",
+    "addr_3": "Peterborough",
+    "addr_4": "Cambridgeshire",
+    "postcode": "PE7 8BZ ",
+    "url": "http://www.hampton-hargate.peterborough.sch.uk",
+    "geocode": true,
+    "formatted_address": "76 Hargate Way, Peterborough PE7 8DS, UK",
+    "latitude": 52.5385052,
+    "longitude": -0.2740554,
+    "post_code": "PE7 8DS",
+    "city": "Peterborough",
+    "route": "Hargate Way",
+    "postal_town": "Peterborough"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This course can be taken full or part-time, studying for 3-7 age phase or 7-11 age phase. \\r\nThe full-time course is for one year with 120 days in school and 60 days training. School placements are carefully structured to ensure gradual development of your confidence as an effective teacher through building up experiences by working with other trainees, link tutors and teachers. \\r\nPlacements begin in the Autumn Term with a non-assessed placement when you will share organisational responsibilities with another trainee. The longer placements follow in the second and third terms and there is a one week enrichment placement. \\r\nDepending on the age range you choose, you will be trained to teach all National Curriculum subjects. The Early Years Foundation Stage (EYFS) is also studied for those on the 3-7 routes with an emphasis on the core subjects and ICT. \\r\nOur recent Ofsted Report (2010) shows that we are highly successful and that we have 'High quality trainees with the potential to be good or better teachers'. Our trainees' strengths include their: \\r\n* self-motivation in identifying and securing their own professional development \\r\n* well-developed personal qualities, which allow them to establish productive relationships with staff and pupils, and create a good climate for learning in the classroom  \\r\n* professional attributes and personal qualities, including their commitment and self-motivation in relation to their own professional development. \\r\nSpecial Features\\r\nAt present you register for the course at Post Graduate level, gaining 60 masters credits (level 7) or you can gain a professional graduate qualification with either 60 credits at level 6 or 30 credits at level 6 and 30 at level 7. \\r\nThe modules relate to the professional role of the teacher, the need to be a reflective practitioner, to developing your own knowledge of subjects and areas taught within primary schools and early years setting and how you teach to support children in effective learning. \\r\nThe course will include lectures, seminars, workshops, Independent Study, tutorials, school-based training and will recommend you for Qualified Teacher Status (QTS). The University-based sessions are very much a starting point for the training undertaken in schools through observation and working alongside experienced teachers. \\r\nAssessment\\r\nWe offer a mix of lectures, seminars, tutorials, practical workshops independent study and school-based training. Assessments include written assignments, group and individual presentations, ICT based assessment, peer assessment and practical teaching in partnership with schools. \\r\n\\r\n",
+    "Qualifications": "\\r\nMinimum degree required: Lower Second\\r\nEntry Requirements\\r\nYou will have, or be predicted to obtain, an honours degree at a 2.2 classification or above with 50% of your degree in a related subject. \\r\nIf you are unsure as to the relevance of your degree, please call Admissions(01522 583658) or email admissions@bishopg.ac.uk ",
+    "InterviewProcess": "What we are looking for - Qualities of a trainee\\r\nWe are looking for someone who has a love of learning and who wishes to ensure that others do too. \\r\nBesides academic qualifications we are looking for a confident communicator who has a passion for learning. Someone who is well organised and has the ability and desire to become a team player. Your interpersonal skills are important as is your curriculum knowledge. We want to work with people who want to make a difference to individuals' lives. \\r\nSelection process\\r\nWe will invite you to one of our schools and during the time you are with us you will be asked to complete a number of tasks. You will meet with students and staff to discuss topical issues. The purpose of the day is for us to get to know you and for you to get to know us. Once the interview has taken place the panel will discuss how they can best support you in becoming an outstanding teacher and which one of our schools are best placed to help you achieve. \\r\nThere will be a pre-course task which will enable you to be prepared for your first placement school. \\r\n\\r\n\\r\n",
+    "PersonalQualities": "Qualities of a trainee\\r\nWe are looking for someone who has a love of learning and who wishes to ensure that others do too. \\r\nBesides academic qualifications we are looking for a confident communicator who has a passion for learning; someone who is well organised and has the ability and desire to become a team player. Your interpersonal skills are important as is your curriculum knowledge. We want to work with people who want to make a difference to individuals' lives.",
+    "HowSchoolPlacementsWork": "The full-time course is for one year with a minimun of  120 days in school and 60 days training. School placements are carefully structured to ensure gradual development of your confidence as an effective teacher through building up experiences by working with other trainees, link tutors and teachers. \\r\nPlacements begin in the autumn Term. The spring and summer term placements follow with you taking the lead within the classroom across core and foundation subjects. You will also undertake an enrichment placement in key stage three and early years.\\r\nWhilst on placement you will work closely with your School Based Mentor(SBM). Your SBM will observe your practice throughout the week and will also meet with you weekly to enable you to identify targets to further develop your professional practice. \\r\nYou will also attend one afternoon a week at a local training session where senior staff will work with you and help you develop your classroom practice.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At Hampton Hargate Primary School & Ravensthorpe Primary School we are committed to the academic, personal, social and emotional development for all of our pupils. We promote an engaging environment where successful and inspiring teaching and enthusiastic learning, tolerance and mutual respect towards others is valued above all else. \\r\nIn pursuit of excellence we will always endeavour to demonstrate best practice, to promote the spiritual, moral, cultural, mental and physical developments of pupils in our school and in society, and prepare pupils in our school for the opportunities, responsibilities and experience of later life. \\r\nAll pupils will experience a broad and balanced curriculum, which supports, challenges and extends their self-discipline, motivation and self-esteem in order to achieve excellence in learning. In working closely with pupils, parents and the wider community we will encourage the children to develop into confident, successful, responsible, independent beings who have an appropriate sense of Citizenship. \\r\nThe full-time course is for one year with school experience starting in September of the training year.  School placements are carefully structured to ensure gradual development of your confidence as an effective teacher through building up experiences by working with other trainees, link tutors and teachers. \\r\n\\r\n \\r\n",
+    "TrainWithDisability": "We are committed to providing a friendly and accessible service for students so that they may study effectively and make full use of the opportunities. \\r\nThe following principles guide us: \\r\nWe value diversity and recognise that individuals bring different ideas, opinions, knowledge and culture and that this difference brings great strength. \\r\nWe do not discriminate based on a person's age; disability; family circumstance; gender; political opinion; race, colour, nationality, ethnic or national origin; religion or belief; sexual orientation; socio-economic background, trade union membership or other distinctions. Such forms of discrimination represent a waste of human resources and a denial of opportunity for individual self-fulfilment.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "BGU has a  beautiful self-contained campus, especially on a sunny day! Whether you want to relax outside in the sun, treat yourself in the cafes, work out in the gym or even catch a film at our cinema, the BGU campus has plenty to keep you entertained.\\r\nBGU we pride themselves on the fact that students are names and not numbers. The welcoming, family feel on campus will make you feel instantly at home!\\r\nPlease visit  (https://www.bishopg.ac.uk)",
+        "UcasInstitutionCode": "B38"
+      }
+    ]
+  },
+  "has_inst": true
+}

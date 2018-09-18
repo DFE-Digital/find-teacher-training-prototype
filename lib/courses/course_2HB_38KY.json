@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "Cornwall School Centred Initial Teacher Training (Cornwall SCITT",
+  "provider": "Aspire Teaching Trust",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2HB/38KY",
+  "providerCode": "2HB",
+  "programmeCode": "38KY",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Roddas Road, Mount Hawke, Truro, Cornwall, TR4 8BA",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Roddas Road, Mount Hawke, Truro, Cornwall, TR4 8BA",
+      "geocode": true,
+      "formatted_address": "Rodda's Rd, Mount Hawke, Truro TR4 8DX, UK",
+      "latitude": 50.2834847,
+      "longitude": -5.2059269,
+      "post_code": "TR4 8DX",
+      "city": "Mount Hawke",
+      "route": "Rodda's Road",
+      "postal_town": "Truro"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2HB",
+    "addr_1": "Aspire Teaching Trust",
+    "addr_2": "Unit 11",
+    "addr_3": "St Austell Business Park,StAustell,",
+    "addr_4": "Cornwall",
+    "postcode": "PL25 4FD",
+    "url": "http://www.aspireacademytrust.org",
+    "geocode": true,
+    "formatted_address": "Unit 11, Saint Austell PL25 4FD, United Kingdom",
+    "latitude": 50.3557575,
+    "longitude": -4.7747581,
+    "post_code": "PL25 4FD",
+    "city": null,
+    "route": null,
+    "postal_town": "Saint Austell"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Training with Aspire Teaching Trust begins in September at the start of the academic year, running right through to July at the end of the summer term. The structure of the course comprises 30 weeks spent in at least two Aspire academies, along with 11 weeks of centre-based training with Cornwall SCITT at their training centre at Heartlands. This time spent in school and centre-based training is spread throughout the year to maximise training and development.  \\r\n\\r\nWhile based in school, you will work alongside experienced Aspire class teachers, leaders and practitioners, completing a range of course-related tasks, leading group work and teaching practice. You will gain intensive, hands-on practical experience of working with children, classroom management and working in the school environment. Teaching practice is observed by the class teacher, with high-quality feedback, support and advice given as appropriate. Course tutors will also observe teaching practice during the course of the year.  \\r\n\\r\nYou will have dedicated 2-hour high-quality mentoring sessions each week in school with their Aspire school-based trainer (their class teacher), as well as having access to a mentor through Cornwall SCITT. We believe you can reach your full potential with the best mentoring support, so we train and support our Aspire mentors to give you the best support.  \\r\n\\r\nThe centre based training sessions cover a range of themes including specific subject content, methods of teaching and learning, planning and resourcing. This is delivered by a number of specialists including education consultants, teachers, headteachers and course tutors. Some of Aspire Teaching Trust’s Specialist Leaders of Education deliver elements such as Maths and ICT, as well as giving you the opportunity to observe lessons in practice in our academies. A small number of the centre-based sessions will take place in key training settings such as outdoor education centres. \\r\n\\r\nThe course follows the Primary School Direct Unsalaried route, with the option to specialise in the early years age 3-7 or general primary age 5-11 routes. Both will qualify to teach either phase. You will complete a set of termly tasks, written assignments and a portfolio of evidence to demonstrate meeting the Teaching Standards.  \\r\n\\r\nUpon successful completion of the course, you will be awarded Qualified Teacher Status. You also have the option of completing a PGCE which may be a consideration if you wish to teach in other parts of the world in the future.  ",
+    "CourseLength": "OneYear",
+    "Qualifications": "A first degree of a UK Higher Education Institution, which must be a 2:2 or above (achieved or pending). \\r\n\\r\nAt the time of application, you must have already achieved GCSE or O-Level Maths, English and Science at grade C or above (or equivalent qualifications). From Summer 2017 the grades required under the new GCSE are 4-9. \\r\n\\r\nTo begin the initial teacher training course, you must have completed the literacy and numeracy Professional Skills Tests, more information can be found online. ",
+    "InterviewProcess": "If your application meets the required standard, you will be invited to a selection day. You will be asked to plan, prepare and deliver a 20-minute activity with a small group of children. This will be observed by members of the panel, who will be looking to see the structure of the activity and the rapport built with the children. We’re not looking for the finished article at this point, but the potential for candidates to become teachers.  \\r\n\\r\nFollowing the observed activity, you will complete a written task where the standard of English will be assessed.  \\r\n\\r\nThe third and final part of the selection process is the formal interview, where you will be asked a set of questions by the panel. The panel usually consists of colleagues from Cornwall SCITT, Aspire Teaching Trust and a teacher or Head of School.  \\r\n\\r\nIf successful at interview and a place on the course is offered, you must complete the Professional Skills Tests within 8 weeks of accepting the place. These tests – one for literacy and one for numeracy – are a requirement of all initial teacher training programmes, and a set by the Department for Education. Practice tests and support guides are available to help you prepare.  \\r\n\\r\nThere is no limit to the number of times these tests can be sat before achieving a pass, with the first three attempts for each test free of charge.  \\r\n\\r\nIn Cornwall our nearest test centres are Truro and Plymouth.  \\r\n\\r\n ",
+    "OtherRequirements": "All trainees will be required to undertake an enhanced DBS.  \\r\n\\r\nWe strongly recommend that you have undertaken employment or relevant work experience to demonstrate your skills, knowledge and practice, sharing this with us in your application and interview.  \\r\n\\r\nWe’d also be really interested to hear about any other experience, qualifications or training that you think would be relevant in your application to train to teach.  ",
+    "PersonalQualities": "We are looking for trainees who have the potential to be fantastic teachers. We would like to work with those who are passionate about teaching, learning and giving all children the best education experience. We are looking for creativity, enthusiasm and an energy to spark children’s interest and thirst for knowledge and learning to achieve their full potential.  \\r\n\\r\nWe’d love to hear about your experience with children and how you can be resourceful, build relationships with others (both colleagues and children) and what you can bring to teaching.   ",
+    "HowSchoolPlacementsWork": "School placements are arranged to give you the best training experience. We will look at the availability and capacity of our academies to ensure that you are given the best support and opportunities. We want to ensure the placement schools and trainees are the right fit for each other.  \\r\n\\r\nWe will look at the travel distance between your home address and school, to keep travel time to under 30 minutes where possible.  \\r\n\\r\nThe age ranges of placements will depend on which age group you choose to specialise in. For those opting for early years, the first and third terms will be spent in a Foundation Stage class (usually but not always at the same school), with the second term in a Key Stage One at a different school. Those choosing the general primary route will spend the first term in Key Stage One, followed by the second and third terms in Key Stage Two (one will be upper and one lower, usually in different academies).  \\r\n\\r\nAspire Teaching Trust, which is part of Aspire Academy Trust, has over 25 schools of varying sizes, and we are continuing to grow. Trainees will be placed in at least two different schools during the course, as directed by the ITT standards.  \\r\n\\r\nTrainees will spend a total of 30 weeks in school and 11 weeks with Cornwall SCITT for centre-based training, which is all spread throughout the year to give the best training and development experience.  "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Aspire Teaching Trust offers you a unique opportunity to train in a modern and forward-thinking Multi-Academy Trust of over 25 primary schools across Cornwall. Each of our academies is unique, giving access to a broad selection of schools of different sizes, demographics and geographical areas to strengthen and enrich the training experience. \\r\n\\r\nAcross our Trust we have a series of well-established networks of experts in their field who are working both across our schools as well as regionally and nationally to bring the best opportunities and practice to our schools. We strive for excellence and are passionate about giving the best for our staff and children. You will have full access and support from these networks. \\r\n\\r\nYou will have additional high-quality training, development and support from Aspire Teaching Trust, right from day one. Our aim is to produce outstanding system leaders of the future; with multiple career opportunities and specialisms available within our Trust, we recognise talent for the future. \\r\n\\r\nAspire put staff wellbeing at the forefront and so trainees also have access to a range of benefits and support through our Wellbeing Champions. Becoming a trainee with Aspire Teaching Trust means joining the Aspire community. \\r\n\\r\nAside from the high-quality training we offer, what better place to train, live and work than our beautiful county! ",
+    "TrainWithDisability": "Aspire Teaching Trust are a fully inclusive initial teacher training provider, as are our carefully selected accrediting providers, Cornwall SCITT. \\r\n\\r\nAll of our academies are fully committed to supporting those with disabilities, making reasonable adjustments where appropriate for specific disability needs. \\r\n\\r\nThe Cornwall SCITT venue where the centre-based training elements of the course take place is fully accessible.\\r\n\\r\nAppropriate support will be available for trainees with additional learning needs from tutors and mentors.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our initial teacher training is delivered in partnership with Ofsted Outstanding Cornwall SCITT, giving the choice of specialising in the early years 3-7 or 5-11 general primary routes, through the School Direct Unsalaried programme. \\r\n\\r\nSuccessful completion of the course will lead to Qualified Teacher Status, and trainees also have the option to complete a PGCE if they would like to. Both qualify to teach. A PGCE may be a consideration for those wishing to teach abroad in the future. ",
+        "UcasInstitutionCode": "C79"
+      }
+    ]
+  },
+  "has_inst": true
+}

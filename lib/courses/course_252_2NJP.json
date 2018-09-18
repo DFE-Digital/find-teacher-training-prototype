@@ -1,0 +1,56 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Fylde Coast Teaching School SCITT",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "slug": "252/2NJP",
+  "providerCode": "252",
+  "programmeCode": "2NJP",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Fylde Coast Teaching Sch, c/o Blackpool 6th Form Coll, Blackpool Old Road, Blackpool, FY3 7LR",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Fylde Coast Teaching Sch, c/o Blackpool 6th Form Coll, Blackpool Old Road, Blackpool, FY3 7LR",
+      "geocode": true,
+      "formatted_address": "Blackpool Old Rd, Blackpool FY3 7LR, UK",
+      "latitude": 53.8388771,
+      "longitude": -3.0169354,
+      "post_code": "FY3 7LR",
+      "city": "Blackpool",
+      "route": "Blackpool Old Road",
+      "postal_town": "Blackpool"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 6165.0,
+    "AboutCourse": "As a trainee teacher of RE on our SCITT, you will experience contrasting placements in our partner schools. The first runs September-Feb then the second is Feb-June. You will spend most of your time in school on the job learning how to teach your subject from experienced practitioners. Your timetable will grow organically as you progress towards meeting the Teachers' Standards. One day a week you will come together with your fellow trainees for the professional studies programme. You will explore relevant theories relating to how children learn and how to maximise their learning experiences in the classroom. We complete 3 assignments, one per term, and they focus on: planning for your curriculum, understanding our local context and meeting the needs of our children, and how you have and will make an impact on the Fylde Coast. There are no lengthy essays but we promote lots of reading and reflection alongside. We have a vastly varied partnership and our schools are very near to each other so you will rarely have to travel far. We have our own life coach, and our mission is to train healthy teachers for future generations in our area. As a result of this, and our close collaborations, we also have 100% local employment rates therefore you are very likely to secure employment near home if you train to teach with us. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "All candidates must have achieved a standard equivalent to a Grade 4 [C on the old system] in the GCSE English and maths exams for our secondary programme. We can offer equivalency tests for this entry requirement.\\r\n\\r\nAll candidates must hold a first degree, ideally in a subject relating to their chosen subject specialism, comprising 300 HE credit points of which 60 must be at Level 6 of the QCF.\\r\n\\r\nA Levels are preferred in relevant subjects but not essential.",
+    "InterviewProcess": "Our interview days are rigorous, but candidates always report that they are an enjoyable experience and certainly serve to provide further confirmation that this is the right career choice for them. We ask candidates to prepare a 20 minute lesson for a group of pupils on any topic within their curriculum area. Your interactions with our young people and ability to build rapport is really important on the day. For your subject knowledge assessment, you will be interviewed by a RE teacher to explore your understanding of the curriculum and your passion for teaching your subject. The findings from this inform your subject knowledge enhancement programme if you are successful. We also have literacy and numeracy tests on the day, and finally an interview with a panel of school leaders from the area. It may sound daunting, but it is extremely supportive and we will make all reasonable adjustments a candidate may need on the day. We are assessing your capacity to train to teach, not yet your capacity to teach. ",
+    "OtherRequirements": "Please bring DBS certificates with you to interview if you have one, but you will receive a very detailed set of instructions prior to the day. School experience is always preferred but not essential as we will help you with this before September. ",
+    "PersonalQualities": "Successful candidates have strong communication and interpersonal skills. They have clarity in their expression and are at ease with the children during the micro-teach. They often demonstrate a love of learning and this enthuses those around them. We welcome applications from anyone who meets the entry requirements and has a commitment to improving the lives of young people in our region. ",
+    "HowSchoolPlacementsWork": "We very carefully select your school placements based on what we learn about you at your interview, and during the pre-course activities and visits we arrange before September. The Fylde coast is a 13 mile square-shaped peninsula so travel times between schools is minimal. On our secondary programme, we partner with 9 local schools and you will teach 11-16 unless you have expressed an interest to teach beyond key stage 4 and we will tailor your programme accordingly. We have two enhancement weeks on the calendar where you will have opportunities to visit local primary schools to see your subject taught and KS2. You will also visit the local Sixth Form College for the KS5 experience, and our local private school for workshops on teaching children for whom English is an additional language. You could also opt to visit our local pupil referral units and special educational needs settings. This is the beauty of our varied partnership, and a unique aspect of our SCITT provision. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our programme is a school-centred initial teacher training programme that leads to Qualified Teacher Status. It’s designed to maximise time spent on the job, in contrasting schools, to fully prepare candidates for life as a teacher in the area. It’s a programme designed by our schools to grow our own workforce. \\r\n\\r\nFirstly, our programme is completely personalised to each candidate; no two people have the same experience because we only train between 20 and 25 each year. We tailor the year to maximise your skills and make you better prepared to teach. \\r\n\\r\nSecondly, because our trainees don’t have to attend University lectures, we have time to give them a bespoke enhancement programme running alongside the mainstream placements. Our trainees teach in primary schools, pupil referral units, Special Educational Needs settings and Sixth Forms. They also spend two days at our local private school to teach children with English as an additional language. \\r\n\\r\nFinally, our programme is competitively priced because we know graduates are already carrying huge university debts. We charge £6165 for the year, as opposed to £9k+, but we also give our secondary trainees a free qualification in addition to QTS so trainees leave as Chartered Teachers of the PSHE Association [Personal, Social, Health and Economic Education]. This gives them an edge over other candidates when applying for jobs, and fully prepares them for teaching beyond the curriculum. \\r\n\\r\nOur graduates are getting the local jobs. This year, we had 100% local employment rates!\\r\n",
+    "TrainWithDisability": "The Fylde Coast Teaching School encourages the development of a teacher training community in which diversity is valued. An important part of putting this into practice is a commitment to prohibit discrimination on the grounds of disability in all training matters, to increase employment opportunities for people who have a disability and to ensure that its recruitment and selection processes are fully accessible.\\r\n\\r\nAt the point of application, we ask candidates if they need any adjustments for the interview or any extra time. We make it clear that any information will always be kept strictly confidential unless they agree to it being shared with schools or mentors.\\r\n\\r\nWe meet individually with trainees regularly about their needs. Trainees have different learning needs and are members of diverse communities: a trainee with dyslexia may also be a single parent and a trainee with depression may also be struggling with finance. Talking to trainees about their individual needs early, and ensuring all reasonable adjustments are in place before they begin their placements in schools, is crucial. \\r\n\\r\nIn our Ofsted inspection report 2017, it states:\\r\nBoth pastoral support and wrap-around, bespoke care across the partnership are outstanding. Every trainee teacher has access to the partnership’s life coach. He delivers regular sessions to individuals and to the cohort on developing resilience, maintaining a work–life balance and ensuring emotional well-being. Trainees really value this unique feature of the partnership.\\r\n\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

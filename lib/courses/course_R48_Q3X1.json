@@ -1,0 +1,69 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Roehampton University",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "R48/Q3X1",
+  "providerCode": "R48",
+  "programmeCode": "Q3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Roehampton University, Roehampton Lane, London, SW15 5PU",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Roehampton University, Roehampton Lane, London, SW15 5PU",
+      "geocode": true,
+      "formatted_address": "Roehampton Ln, London SW15 5PU, UK",
+      "latitude": 51.4579866,
+      "longitude": -0.2432869,
+      "post_code": "SW15 5PU",
+      "city": "Greater London",
+      "route": "Roehampton Lane",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "R48",
+    "addr_1": "Roehampton Lane",
+    "addr_2": "London",
+    "addr_3": null,
+    "addr_4": null,
+    "postcode": "SW15 5PU",
+    "url": "http://www.roehampton.ac.uk",
+    "geocode": true,
+    "formatted_address": "Roehampton Ln, London SW15 5LS, UK",
+    "latitude": 51.4554361,
+    "longitude": -0.2431242,
+    "post_code": "SW15 5LS",
+    "city": "Greater London",
+    "route": "Roehampton Lane",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in English is a one-year, full-time course for graduates who wish to train as secondary school English teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). \\r\n\\r\nEnglish is a core subject of the secondary curriculum at Key Stage 3 and 4. English is an engaging and constantly evolving subject in the school curriculum. On the PGCE course you will learn not only about issues related to English teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe English course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*lesson planning\\r\n*classroom management\\r\n*special needs and inclusion\\r\n*assessment\\r\n*creative learning\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "An honours degree in a relevant subject, with approximately 50% English content and a classification of at least 2:1.  GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at Roehampton is one of the principal providers of teacher training in the UK, with partnerships with over 350 schools. We have a rich history of over 175 years providing teacher training education through our four Colleges. \\r\n\\r\nAs a student in our School, you will enjoy high quality teaching, which will equip you for a successful career with a competitive starting salary. Your employment prospects will be excellent: 99% of our teacher training graduates are in work or further study six months after leaving us (Destinations of Leavers of Higher Education 2013/14). \\r\n\\r\nWe are based on a beautiful parkland campus in south-west London, close to Putney and Hammersmith, and just 30 minutes from the West End. Our School is ranked third in London for the quality of our research in the field of education (Research Excellence Framework 2014), reflecting the work-class expertise of our staff.\\r\n\\r\nFor more information about the university, please see here.\\r\n\\r\n(https://www.roehampton.ac.uk/why-roehampton/)",
+    "TrainWithDisability": "The University of Roehampton welcomes students with disabilities and offers flexible support services tailored to your needs. Our Disability and Dyslexia Services are on the main campus, Digby Stuart, along with our Access Centre: Access@SW15.\\r\n\\r\nFor new students, we strongly recommend that you get in touch to let us know about your specific disability and support needs. Any information provided will be kept strictly confidential and will only be used to support you with your studies. \\r\n\\r\nWe recommend to inform us of your specific learning difference (SpLDs) such as Dyslexia, Dyspraxia, Dyscalculia and Attention Deficit Hyperactivity Disorder (ADHD).\\r\n\\r\nFor more information please see our disability services website here.\\r\n\\r\n(https://www.roehampton.ac.uk/disability-services/)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,61 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The University of Manchester",
+  "subjects": [
+    "Business education",
+    "Economics",
+    "Secondary"
+  ],
+  "name": "Economics and Business Education",
+  "slug": "M20/2WNF",
+  "providerCode": "M20",
+  "programmeCode": "2WNF",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "M20",
+    "addr_1": "Manchester Institute of Education",
+    "addr_2": "Oxford Road",
+    "addr_3": "Manchester",
+    "addr_4": "Greater Manchester",
+    "postcode": "M13 9PL ",
+    "url": "http://www.seed.manchester.ac.uk/subjects/education/",
+    "geocode": true,
+    "formatted_address": "Oxford Rd, Manchester M13 9PL, UK",
+    "latitude": 53.4668498,
+    "longitude": -2.2338837,
+    "post_code": "M13 9PL",
+    "city": "Greater Manchester",
+    "route": "Oxford Road",
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This course will train you to become a business education teacher across the 11-16 or 11-18 age range. It will prepare you to teach the National Curriculum and related national strategies at GCSE and A level. Completion of this ten-month course leads to both a postgraduate qualification and qualified teacher status (QTS), as well as up to 60 master's-level credits towards further study.\\r\n\\r\nThe course combines master's level academic study of science education with a range of school experiences. Approximately two-thirds of your time will be spent in our partnership schools and colleges developing your practical teaching skills with the support of trained business education mentors and experienced teachers. When on placement, you will observe and teach classes under the guidance of an experienced business education teacher mentor, improving your skills in planning, teaching and assessment.\\r\n\\r\nCollaborative learning and formative teaching will allow you to develop the knowledge and capabilities of students in your own classrooms in all aspects of business education, including business studies, economics, and accounting and key vocational business qualifications.  \\r\n\\r\nYou will be taught by a teaching team with a nationally recognised reputation for research, teaching and publications in business education.\\r\n",
+    "CourseLength": "10 Months. [Full-Time]",
+    "Qualifications": "- Minimum 2:2 honours degree in economics, or a related subject, with a minimum of 50% content directly related to economics (if you are unsure, please contact us to discuss your qualifications)\\r\n- A strong academic record at A-level (or equivalent).\\r\n- Minimum grade C or 4 at GCSE (or equivalent) in English language and mathematics.\\r\n",
+    "FeeInternational": 18500.0,
+    "HowSchoolPlacementsWork": "The course is a partnership between the University and schools and colleges drawn from a wide area, including Bolton, Bury, Cheshire, Deeside, Lancashire, Manchester, Merseyside, Oldham, Rochdale, Salford, Staffordshire, Stockport, Tameside, Trafford, Warrington and Wigan. In your placement schools and colleges, you will observe and teach classes under the guidance of experienced subject mentors.\\r\n\\r\nAs a trainee teacher you'll spend two-thirds of your course in schools or colleges, and the remaining time in University-based study.\\r\n\\r\nWe maintain close contact with our partnership establishments at every stage of the programme. These include:\\r\n\\r\n11-18 and 11-16 comprehensive and independent schools\\r\ncity academies\\r\nfurther education colleges\\r\nsixth-form colleges\\r\nspecialist schools (e.g technology colleges, arts colleges).\\r\n\\r\nAs a trainee teacher you'll spend two-thirds of your course in schools or colleges, and the remaining time in University-based study. In your placement schools and colleges, you will observe and teach classes under the guidance of experienced subject mentors.\\r\n\\r\nBoth your mentors and tutors will help you to record your achievements and set targets. During each placement, a University tutor will observe you teach, and at the end of each school experience, you will receive a report from your mentor. The report will grade you in the following areas:   \\r\n\\r\nteaching\\r\nplanning\\r\ndifferentiation and assessment\\r\nlearning environment\\r\nwider professional responsibilities. \\r\n\\r\nThe grades are awarded by your mentor in conjunction with your University tutor. These reports, together with your record of achievement and development, facilitate your progression as a teacher.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The University of Manchester is part of the prestigious Russell Group of universities and our research and teaching quality is recognised across the globe.\\r\n\\r\nChoose Manchester and you’ll put yourself ahead of the competition when the time comes to begin your career. With an award-winning careers service and courses built with your employability in mind, it’s no surprise that 94% of our trainees find employment at the end of the course. \\r\n\\r\nBy choosing a PGCE with us, you'll benefit from postgraduate-level study at a highly regarded university and significant school-based teaching experience. We are:\\r\n\\r\n- Rated as outstanding by Ofsted.\\r\n- Best university provider of postgraduate teacher training in the North of England (The Good Teacher Training Guide 2017).\\r\n\\r\n",
+    "TrainWithDisability": "Disabled students make up over 15% of University of Manchester students, and we’re proud to offer an accessible and inclusive service.\\r\n\\r\nThe Disability Advisory and Support Service (sometimes called the DASS) supports a variety of different people, whether students, staff or supporters. We want to help you succeed - in your studies, work, and the rest of your University experience.\\r\n\\r\nFor more information please follow this link: http://www.dso.manchester.ac.uk/\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

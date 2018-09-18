@@ -1,0 +1,85 @@
+{
+  "locationType": "School",
+  "accrediting": "Teach Kent and Sussex",
+  "provider": "Wealden Partnership",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Chemistry",
+  "slug": "1Z2/33X7",
+  "providerCode": "1Z2",
+  "programmeCode": "33X7",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Cade Street, Old Heathfield, Heathfield, TN21 8RJ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Cade Street, Old Heathfield, Heathfield, TN21 8RJ",
+      "geocode": true,
+      "formatted_address": "Cade Street, Heathfield TN21 8RJ, UK",
+      "latitude": 50.96813539999999,
+      "longitude": 0.2764728,
+      "post_code": "TN21 8RJ",
+      "city": "Cade Street",
+      "route": null,
+      "postal_town": "Heathfield"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1Z2",
+    "addr_1": "Cade Street",
+    "addr_2": "Old Heathfield",
+    "addr_3": "Heathfield",
+    "addr_4": null,
+    "postcode": "TN21 8RJ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Heathfield TN21, UK",
+    "latitude": 50.9667401,
+    "longitude": 0.2564428,
+    "post_code": "TN21",
+    "city": "Heathfield",
+    "route": null,
+    "postal_town": "Heathfield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "When costs such as health or DBS checks, or use of specialist materials are incurred as a mandatory requirement of the course they are included in your tuition fee.",
+    "AboutCourse": "Teach Kent & Sussex is a school based teacher training centre (SCITT) led by the Tenax Schools Trust of which Bennett is a part. Teach Kent & Sussex work in partnership  with the School of Education at the University of Brighton (rated outstanding by Ofsted).\\r\n\\r\nAs a result all of your training, including your professional development, will take place in the Teach Kent & Sussex training hub at Bennett and sometimes in our partner school, Beacon Community College, in Crowborough.\\r\n\\r\nAs a school based centre for teacher training your experience will always be rooted in the experience of training and working in a school. Consequently, we consider that this school led and school based system will allow you to flourish as you begin your teaching career.\\r\nThe majority of your training will be at Bennett Memorial Diocesan School. You will in school from the first day of the school year and will be made to feel part of our outstanding learning community.\\r\n\\r\nIn school you will be trained by our expert and experienced teaching staff. You will be allocated a subject specific mentor and be under the supervision of our professional tutor. Working with the school leadership team, the professional tutor will arrange a full and comprehensive training programme within school.\\r\n\\r\nAs the year progresses the training programme is personalised to the specific needs of our trainees. All mentors are outstanding teachers who have undertaken their own training programme to develop their mentoring skills. Through this you will develop the rigour, professional knowledge and understanding necessary for purposeful, challenging, outstanding teaching.\\r\n\\r\nBennett works in partnership with our own school centre for initial teacher training known as 'Teach Kent & Sussex' to award all successful trainees a PGCE: the internationally recognised English teacher training certificate.\\r\n\\r\nDuring the PGCE you will work with national experts in secondary education and in the teaching of your subject.\\r\n\\r\nAs part of the programme you will be assigned a Teach Kent & Sussex tutor who will support your development as a teacher through tutorials, visits to school and guidance with assignments. You will attend professional development and subject specific training with Teach Kent & Sussex based at Bennett or our training hub at Beacon Community College in Crowborough, East Sussex, once every week on Wednesday afternoon's from 11-6pm.  Therefore, most of your time will be spent training at Bennett.",
+    "CourseLength": "OneYear",
+    "Qualifications": "In order to be eligible to apply to train as a teacher you must have:\\r\n\\r\n* A UK undergraduate degree\\r\n* A standard equivalent to a grade C in GCSE English and maths.\\r\nIf you studied outside of the UK, you should visit the National Academic Recognition Centre (NARIC) website to find out whether your qualifications are of an equivalent level to UK GCSEs, A levels and an undergraduate degree.\\r\n\\r\nAll candidates for teaching training also need to pass literacy and numeracy professional skills tests before starting teacher training.",
+    "FinancialSupport": "Generous, tax-free funding is available to the best graduates training in a range of subjects. You could get up to £28,000 tax-free while you train, either as a bursary or prestigious scholarship. Early-career payments are also on offer for those choosing mathematics.Your eligibility for financial support, and the amount you can expect to receive, will depend on the subject you choose to teach and your degree classification or highest relevant academic qualification. \\r\n\\r\nIn addition, a small number of discretionary bursaries may be awarded to trainees who we identify as having outstanding potential, and who fall within the bottom and middle tier for core bursary payment purposes.\\r\n\\r\nYou don’t need to apply for a bursary – if you are enrolled on a non-salaried postgraduate course and meet the eligibility criteria, you will begin receiving payments automatically by your chosen teacher training provider. You will receive more information on the arrangements and how this is distributed prior to the start of your course.\\r\n\\r\n[Find out more about funding here] (https://getintoteaching.education.gov.uk/funding-and-salary/overview)\\r\nand [here] (https://www.teachkentandsussex.org.uk/funding/)",
+    "OtherRequirements": "Teach Kent & Sussex and all of our partner schools are committed to safeguarding and promoting the welfare of children and young people. We expect all staff, trainees and volunteers to share this commitment. All teacher training posts are subject to a satisfactory DBS (Disclosure and Barring Service) enhanced check.",
+    "PersonalQualities": "We are looking for people who are ambitious, determined and willing to work hard to make a difference to the lives of young people. You will need to be willing to go the extra mile to secure academic progress for every child whilst playing a role in shaping their resilience and character. You will need to be committed to sharing our vision that great teaching transforms the life opportunities of all students.\\r\n\\r\nYou will need a high standard of literacy, numeracy and personal presentation. At interview candidates will need to discuss reflections on school visits and/or school based work experience.",
+    "HowSchoolPlacementsWork": "The training will be delivered both at the Teach Kent & Sussex SCITT and by staff at the partnership schools. You will complete your first teaching placement in one of our schools and your second placement in a different partnership school. All four schools are able to provide access to post-16 learners and the opportunity to experience 6th form teaching in a successful and supportive environment.\\r\n\\r\nYou can express a preference for a placement at a specific school in the partnership, but we cannot guarantee that we can meet your request. You will be assigned two mentors from the staff of your teaching placement school, one from your subject area (your mentor) and a Professional Tutor from the senior leadership team. All our mentors and Professional Tutors are fully trained by the university and have extensive experience of mentoring trainee teachers. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Wealden Partnership offers high quality teacher training by dedicated professionals in a supportive and inspirational environment. We have worked with trainee teachers from our local universities for many years and value the enthusiasm they can offer to a school community. We believe that teaching is a wonderful career and that this is a successful, innovative and vibrant group of schools to work with. \\r\n\\r\nWe work alongside the University of Brighton, Sussex University and the SCITT Provider Teach Kent Sussex. Your choice of provider will very much depend on the programme you wish to study. We will be happy to discuss and support with this decision making process. ",
+    "TrainWithDisability": "Our partnership consists of 4 mainstream schools who all have a fully inclusive approach to education and recruitment. \\r\n\\r\nAny additional support required can be discussed during the interview process and support can be put in place if needed.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our training is supported by the University of Brighton, which has a long and successful tradition in teacher education. The university works with us to provide quality input on how to teach and assess in secondary & primary schools and  and also provides a comprehensive programme of professional studies which complements the sessions offered in our partnership. \\r\n\\r\n\\r\n",
+        "UcasInstitutionCode": "B72"
+      },
+      {
+        "Description": "Teach Kent & Sussex is a school based teacher training centre (SCITT) led by the Tenax Schools Trust of which Bennett is a part. Teach Kent & Sussex work in partnership  with the School of Education at the University of Brighton (rated outstanding by Ofsted).\\r\n\\r\nAs a school based centre for teacher training your experience will always be rooted in the experience of training and working in a school. Consequently, we consider that this school led and school based system will allow you to flourish as you begin your teaching career.",
+        "UcasInstitutionCode": "2EZ"
+      },
+      {
+        "Description": "Our training is supported by the University of Sussex which has a long and successful tradition in teacher education in partnership with local schools. \\r\n\\r\nThe University of Sussex Initial Teacher Training (ITE) Partnership’s most recent quality outcomes relating to the School Direct and PGCE cohort completing their course in Summer 2016 included; 94% completing their teacher education with either a Merit or a Distinction, 96 per cent securing their first staff teaching post on completion of their course and 99 per cent of ex-trainees rating the quality of their initial teacher training as 'good' or 'very good'. ",
+        "UcasInstitutionCode": "S90"
+      }
+    ]
+  },
+  "has_inst": true
+}

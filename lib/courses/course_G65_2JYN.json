@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Alliance for Learning SCITT",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "slug": "G65/2JYN",
+  "providerCode": "G65",
+  "programmeCode": "2JYN",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "The Alliance for Learning, Cavendish Road, Bowdon, Altrincham, WA14 2NL",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The Alliance for Learning, Cavendish Road, Bowdon, Altrincham, WA14 2NL",
+      "geocode": true,
+      "formatted_address": "Cavendish Rd, Altrincham WA14 2NL, UK",
+      "latitude": 53.3815609,
+      "longitude": -2.3604553,
+      "post_code": "WA14 2NL",
+      "city": "Greater Manchester",
+      "route": "Cavendish Road",
+      "postal_town": "Altrincham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "G65",
+    "addr_1": "c/o AGGS",
+    "addr_2": "Cavendish Road",
+    "addr_3": "Bowden",
+    "addr_4": "Altrincham",
+    "postcode": "WA14 2NL",
+    "url": "http://allianceforlearning.co.uk/",
+    "geocode": true,
+    "formatted_address": "Cavendish Rd, Bowdon, Altrincham WA14 2NL, United Kingdom",
+    "latitude": 53.38185739999999,
+    "longitude": -2.3596009,
+    "post_code": "WA14 2NL",
+    "city": "Cheshire",
+    "route": null,
+    "postal_town": "Altrincham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Applicants who are not British citizens or a citizen of one of the EEA (European Economic Area) countries will need a visa to study in the UK. More details can be found from [the Home Office](http://www.ukba.homeoffice.gov.uk/)",
+    "AboutCourse": "This course is designed to enable you to become a successful teacher of mathematics. The SCITT offers trainees the opportunity to work with outstanding teachers and experienced practitioners from day one of the course. Over 150 days of the course will be spent in schools working alongside highly professional and well qualified colleagues. Specific subject knowledge training and audits will enable you to build up a strong knowledge of the mathematics curriculum for key stage 3 and 4. Trainee timetables are designed to increase in size and complexity over the training year, but trainees are supported at all times to ensure a balance between challenge and support is met.\\r\nAll trainees gain experience of both key stage 2 (upper primary) and key stage 5 (post 16).\\r\nTrainees are assessed through their mentor and by SCITT staff. Observations of teaching form a large portion of the assessment process, with a range of opportunities for trainees to reflect on their progress against the teachers’ standards (2012). Trainees reflect on a weekly basis, culminating in termly written reports produced jointly with mentors. This process is summarised through a moderation interview at the end of the course. Trainees are supported on this journey through a series of school based tasks to enable a thorough understanding of the teachers’ standards.\\r\nThroughout the course trainees receive face to face training in pedagogy and subject knowledge. This training is delivered by current practitioners and takes an evidence-informed approach to teaching and learning, enabling trainees to adapt their own learning for the context of their placement schools. Whilst the majority of training takes place at Altrincham Grammar School for Girls, some training will take place in partner schools across Greater Manchester and Lancashire.\\r\nApplicants undertaking the PGCE programme are expected to compete four written assignments leading to 60 M level credits. \\r\n“The high quality face-to-face training, assignments and placements combine to give trainees a firm basis on which to develop their skills and knowledge” Ofsted 2017\\r\n“Employers of trainees comment very favourably on the significant improvements in trainees’ expertise and knowledge, brought about by their training” Ofsted 2017\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "A UK degree of classification 2.2 or higher (we may consider experience applicants with a 3rd class degree for a QTS only programme).\\r\nYou should be able to demonstrate how approximately 50% of your degree course is relevant to the subject you wish to teach.\\r\nAt least 3 GCSEs grade A*-C (4 or better) with GCSE grade C or above in both English and Mathematics (or equivalent qualifications) \\r\n",
+    "FeeInternational": 9000.0,
+    "InterviewProcess": "Following an application that meets our criteria, the SCITT will arrange a recruitment day at a partner school. This day will included the following elements:\\r\n* A short pupil-based activity where we ask you to prepare and teach for around 15 minutes\\r\n* An interview with staff from the SCITT and Alliance schools\\r\n* A knowledge audit to ascertain your needs\\r\n* A written communication task\\r\n",
+    "OtherRequirements": "All applicants must undergo a suitability to teach check: this included a disclosure and barring service check and a fitness to teach check.\\r\nAll applicant must have successfully completed the [DfE professional skills tests]( http://sta.education.gov.uk/) prior to the course start.\\r\nSome applicants may be required to complete a subject knowledge enhancement course.\\r\n[Full admissions policy]( http://allianceforlearning.co.uk/scitt/policies/)\\r\n",
+    "PersonalQualities": "\\r\n* A passion for the subject you wish to teach\\r\n* The potential to train to teach\\r\n* Excellent subject knowledge\\r\n* Resilience\\r\n* Enthusiasm\\r\n\\r\nApplicants must produce a well written and clear personal statement that sets out how they meet the course requirements. The personal statement is part of the application process.\\r\n",
+    "HowSchoolPlacementsWork": "This course leads to qualified teacher status (11-16). All secondary placements are arranged through an A-B-A model. This means that trainees will be placed at their teaching practice one school for the winter term, and then teach in a contrasting school from January to April. Following Easter, trainees will return to their main placement school until the end of June. Placement schools are chosen through a number of factors, including prior experience, training needs and location We do not expect anyone to be traveling for more than an hour to their placement schools, and usually it is much less.\\r\nFace to face training takes place on Fridays. Whilst the majority of training takes place at Altrincham Grammar School for Girls, some training will take place in partner schools across Greater Manchester and Lancashire.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Alliance for Learning Teaching School is a partnership of primary and secondary schools, colleges, universities and organisations from across the North-West, who share their knowledge, skills, expertise and experience to achieve a common goal of continuous educational improvement. The Alliance for Learning SCITT aims to promote excellence in all aspects of education through focused, central and school-based training activities. Trainees are based in our partner schools for the duration of the programme.\\r\nWe believe that every child deserves the very best start in life, irrespective of background or circumstance. We are committed to training teachers who can provide the next generation with the opportunity to develop happy, successful futures.\\r\nTrainees who complete our programme are “regarded as an asset by employing schools because they are well prepared to begin their career in teaching” (Ofsted 2017). On average 95% of trainees gain employment at the end of the programme and are able to make a difference to young people in schools across the country.\\r\nKey elements of our training programme\\r\n\\r\n* Training in schools from the first day\\r\n* Two contrasting schools experiences to prepare you for employment\\r\n* A trained, dedicated mentor\\r\n* Face to face subject knowledge training\\r\n* Leads to Qualified Teacher Status (QTS)\\r\n* Post Graduate Certificate of Education delivered by our partner, the University of Manchester\\r\n\\r\nFind out more about the [Alliance for Learning SCITT]( http://allianceforlearning.co.uk/scitt/introduction/)",
+    "TrainWithDisability": "It is the goal of the Alliance for Learning SCITT to recruit people of outstanding potential, irrespective of their background and to ensure that the admission process is transparent, has minimal barriers to entry, is based on merit and potential, is fair with regard to diversity, professional in its nature and reliable.\\r\nThe Alliance for Learning SCITT will not discriminate against a disabled person on the grounds of disability -\\r\n\\r\n* in the arrangements i.e. application form, interview or arrangements for selection for determining to whom a place should be offered; or\\r\n* by refusing to offer, or deliberately not offering the disabled person a place for reasons connected with their disability.\\r\n\\r\nWherever possible The Alliance for Learning SCITT will make reasonable adjustments to hallways, passages and doors in order to provide and improve means of access for disabled candidates. However, this may not always be feasible, if circumstances  render such adjustments as being beyond what is reasonable.\\r\nWe are committed to taking positive action to welcome persons with disabilities who have met the requirements, and to enable them to meet their full potential\\r\nConsideration will be given to all planned activities, resource allocation and procedures to ensure that we can enable disabled trainees full participation in all aspects of the academic, work-based and social activities of the course.\\r\nRead our [Equal Opportunities Policy]( http://allianceforlearning.co.uk/wp-content/uploads/2017/03/Equal-Opportunities-Policy.pdf)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

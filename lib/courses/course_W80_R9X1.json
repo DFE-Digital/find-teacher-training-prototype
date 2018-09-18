@@ -1,0 +1,75 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Worcester",
+  "subjects": [
+    "French",
+    "German",
+    "Languages",
+    "Languages (european)",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages (French, German, Spanish)",
+  "slug": "W80/R9X1",
+  "providerCode": "W80",
+  "programmeCode": "R9X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "geocode": true,
+      "formatted_address": "Worcester WR2 6AJ, UK",
+      "latitude": 52.1975549,
+      "longitude": -2.2430422,
+      "post_code": "WR2 6AJ",
+      "city": "Worcestershire",
+      "route": null,
+      "postal_town": "Worcester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "W80",
+    "addr_1": "Henwick Grove",
+    "addr_2": "Worcester",
+    "addr_3": "Worcestershire",
+    "addr_4": null,
+    "postcode": "WR2 6AJ ",
+    "url": "http://www.worcester.ac.uk",
+    "geocode": true,
+    "formatted_address": "Henwick Grove, Worcester WR1 3JE, UK",
+    "latitude": 52.201139,
+    "longitude": -2.237474,
+    "post_code": "WR1 3JE",
+    "city": "Worcestershire",
+    "route": null,
+    "postal_town": "Worcester"
+  },
+  "options": [
+    "PGCE with QTS, full time or part time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The programme is designed for those intending to teach French, German or Spanish as their subject specialism; all students must be able to offer French as at least their second language. The aim is to give you an understanding of the way modern foreign languages are taught in schools, including the use of the target language as the principal means of classroom communication. \\r\n\\r\n\\r\nYou will be encouraged to try out a wide range of approaches to teaching, as well as strategies for organising the classroom for effective learning. University sessions include a large amount of practically based activities to help you develop your skills. You will have the opportunity to acquire an understanding of the demands of the National Curriculum orders for modern foreign languages. The work in schools will be closely linked with the university-based sessions so that you will have the opportunity to use a range of up-to-date language resources, including ICT, to set up active and engaging learning activities. \\r\n\\r\nFor more information please visit our website here. \\r\n(https://www.roehampton.ac.uk/postgraduate-courses/pgce-secondary/pgce-secondary-modern-foreign-languages-specialism/)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants should have a degree with French, German or Spanish as a major component. The ability to offer a second language is essential. We welcome applications from native speakers who have a degree in another subject.\\r\n\\r\nStudents must have achieved at least a grade C or above in both Mathematics and English Language GCSEs (or approved equivalents), applicants without one or both of these GCSEs (or approved equivalents) will be considered for interview. If you do not currently hold a GCSE grade C or above in Mathematics and English Language, we accept the equivalency tests offered by Equivalency Testing.\\r\n",
+    "InterviewProcess": "On the interview day you will be registered by a member of the admissions team. There will then be a course talk and an introduction to the subject tutors. There will be a group interview, this is a discussion based on what you have learned from your observations in school and teaching in general. \\r\n\\r\nFollowing the group task will be individual interviews with the subject tutor lasting 20-45 minutes you will have an opportunity to ask questions about the course during the interview. You may be asked to discuss a portfolio where relevant, or to give a presentation. \\r\n\\r\nThere will also be a written task, where you will be asked to write a short piece on the role of your subject within the national curriculum. This is to check your Spelling, Punctuation and Grammar, and to see what your response would be to writing at Master’s level.\\r\n\\r\nThese interview elements are not intimidating, but carefully planned to give you the best possible opportunity to show your potential for teaching and working with young people in school. A teacher from one of our partner schools may take part in the interview.",
+    "OtherRequirements": "Pre entry Professional Skills Test All students starting an Initial Teacher Training (ITT) course from September 2013 are required to pass the Professional Skills tests in literacy and numeracy before the start of the programme (www.education.gov.uk). ",
+    "HowSchoolPlacementsWork": "During school placements, students benefit from working alongside experienced teachers of art and design. Students have opportunities to observe excellent teaching before experimenting with approaches to teaching and learning across the secondary age range, during which time they are supervised and supported by teachers and tutors. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at the University of Worcester has a long-standing reputation for training excellent, highly employable teachers. You will be supported by a dynamic team of tutors who have been outstanding school teachers and are now regarded as education experts with national profiles in a wide range of secondary subjects. \\r\n\\r\nOur courses provide unique opportunities. Trainee teachers may if they wish add depth to their qualifications by involvement in additional enhancement programmes in key areas, such as Special Educational Needs and Disabilities; working with learners who have English as an Additional Language; developing expertise in Citizenship; developing skills in a second STEM subject; preparing to be Education Leaders, or developing skills in Technology Enhanced Learning. These popular enhancements to your training build your confidence as well as greatly enhancing your employability. \\r\n\\r\nYou will benefit from our excellent partnerships with secondary schools across the West Midlands, where our highly-trained mentors pay close attention to your individual development within a friendly and professional context. We also offer pre-training Subject Knowledge Enhancement courses in a range of subjects (Biology, Chemistry, Computer Science, Design and Technology (Food & Textiles), English, French, Geography, Mathematics, Physics) for those who need them and our PGCE offers Master's-level credits as well as Qualified Teacher Status. ",
+    "TrainWithDisability": "The University of Worcester offers a wide range of support and advice to disabled students and also to parents, staff and those external agencies supporting disabled students.\\r\n\\r\nOur Disability and Dyslexia Service offers support, advice and guidance to students who have a disability, medical condition or Specific Learning Difficulty (SpLD). This support lasts throughout a student’s studies at the University of Worcester. We also work with and offer support and advice to University staff on how to meet the needs of disabled students.\\r\n \\r\n* Supporting disabled students with general enquiries\\r\n* Implementing special arrangements for lectures, exams and field trips. This might include notes in advance or special arrangements in exams.\\r\n* Where appropriate, we can arrange note takers, academic support tutors, library assistance, interpreters and transcribers.\\r\n* Help with applying for the Disabled Students Allowance (DSA) which is there to fund these types of support in higher education.\\r\n* Limited loans of equipment\\r\n* Confidential advice and support for students and staff\\r\n* Training and awareness raising workshops\\r\n* Assistive technology ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

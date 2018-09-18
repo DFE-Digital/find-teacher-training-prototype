@@ -1,0 +1,70 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "South West Teacher Training",
+  "subjects": [
+    "Design and technology",
+    "Secondary"
+  ],
+  "name": "Design Technology",
+  "slug": "S66/W9X1",
+  "providerCode": "S66",
+  "programmeCode": "W9X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "South West Teacher Training, WETC, Hatherleigh Road, EXETER, EX2 9JU",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "South West Teacher Training, WETC, Hatherleigh Road, EXETER, EX2 9JU",
+      "geocode": true,
+      "formatted_address": "West Exe School, Hatherleigh Rd, Exeter EX2 9JU, UK",
+      "latitude": 50.7066379,
+      "longitude": -3.5399153,
+      "post_code": "EX2 9JU",
+      "city": "Devon",
+      "route": "Hatherleigh Road",
+      "postal_town": "Exeter"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S66",
+    "addr_1": "West Exe School",
+    "addr_2": "Hatherleigh Road",
+    "addr_3": "Exeter",
+    "addr_4": "Devon",
+    "postcode": "EX2 9JU ",
+    "url": "http://www.swtt.net",
+    "geocode": true,
+    "formatted_address": "Hatherleigh Road, Exeter EX2 9JU, United Kingdom",
+    "latitude": 50.7066379,
+    "longitude": -3.5399153,
+    "post_code": "EX2 9JU",
+    "city": null,
+    "route": null,
+    "postal_town": "Exeter"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "- Train for a rewarding career in secondary design and technology teaching.\\r\n- Undertake 120 days of school-based training in two different school settings.\\r\n- Participate in practical work in our well-equipped facilities to help you learn creative and innovative teaching methods.\\r\n- Attain a masters-level PGCE, or a PCE alongside Qualified Teacher status (QTS).\\r\n\\r\nThis course will help you to grow academically and professionally and has, as its primary aim, the development and supply of competent teachers who are capable of securing employment in an education setting. You graduate as an experienced and employable design and technology teacher, ready to inspire young people.\\r\n\\r\nThis course provides an advanced academic qualification alongside the real-world experience in school settings. Along with honing your subject skills, you'll learn crucial teaching techniques including behaviour management and student support. There are 120 days of school-based training that allow you to become used to the realities of teaching before graduation. You are assessed through supportive, collaborative means, helping you to grow and improve.\\r\n\\r\nYou learn through\\r\n\\r\n- 120 days of school based training across at least two settings\\r\n- classes in our well-equipped facilities\\r\n- seminars and lectures\\r\n- workshops\\r\n- school-based experiences\\r\n- independent study\\r\n- group work\\r\n- practical work\\r\n- written assessments and feedback",
+    "CourseLength": "OneYear",
+    "FeeInternational": 13500.0,
+    "InterviewProcess": "If you are shortlisted, we will invite you to a selection event, and you should bring a passport or photo driving license with you. You can bring other forms of photo ID for the selection event, but if you do, you will still need to present valid identity documents required by the Disclosure and Barring Service (DBS) at your pre-course day.\\r\n\\r\nThe selection event is a process which assesses if you're suitable for a place on the course. It's a chance to show us your knowledge about the subject and your enthusiasm for the career. Being invited to a selection event doesn't mean you're guaranteed a place on the course - the point of the day is to help us come to a mutual decision. We need to decide whether to make you an offer and you need to decide whether you like the course and the university.\\r\n\\r\nWe aim to make the interview process as rigorous and informative as possible. It's very much a two-way process, where you can evaluate what we offer while we find out more about you. In order to help us explore your thinking and subject knowledge, and for you to decide if this is the right course for you, we have a number of activities we usually use as part of the interview process.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "This course ensures that you'll have the real-life experience you need to enter teaching. You'll spend 120 days across two or more sites, with school-based mentors and campus-based tutors monitoring your progress and providing support. Upon graduating, some of our students go into full-time employment at their placement school.\\r\n\\r\nYou will take responsibility for your own development against the statutory requirements for QTS and will record your progress in a Professional Development Portfolio (PDP). This collaborative process involves you, university-based tutors and school-based mentors. As you complete the course you will review your progress, plan for your entry to the teaching profession and for your ongoing development as a Newly Qualified Teacher (NQT)."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "South West Teacher Training is based at West Exe School, part of the highly successful Ted Wragg Multi-Academy Trust. We are situated in Exeter, placing our trainees in a partnership of schools across Exeter, Plymouth and in rural and coastal schools throughout Devon, Somerset and Cornwall. We match individual trainees to schools that suit their skills and location.\\r\n\\r\nWe work with Bath Spa University who provide our PGCE, an Ofsted rated Outstanding provider. They offer a balanced programme of academic excellence alongside school-based training. Bath Spa tutors visit our Exeter site, providing one-to-one tutorials. \\r\n\\r\nWe work with Exeter Consortium Teaching Schools Alliance and the Ted Wragg Multi-Academy Trust, who themselves work with Exeter University and Exeter College. We offer a programme of study that links our Secondary and Primary teacher training models, giving our Secondary trainees an enviable insight into the workings of Primary education, an aspect that future employers find attractive and distinctive to our route. The programme is taught by leading practitioners from within our partnership, who provide thoughtful training sessions rooted in educational theory and current classroom practice. \\r\n\\r\nSubject Mentors offer one-to-one support throughout the school-based training and this is mirrored by a team of Subject Course Tutors. Our trainees begin teaching in staged steps from their first weeks, integrating academic study with classroom practice. Our trainees say they value our truly school-centred route as it places them in a school setting swiftly, yet allows them to build their teaching skills gradually. Visit www.swtt.net to learn more.\\r\n",
+    "TrainWithDisability": "At South West Teacher Training we have a long history of accommodating trainees with a wide range of disabilities and other needs. Our training programme emphasises the need for trainees to manage their own pace of learning. Trainee well-being is at the heart of our vision for creating resilient teachers capable of managing their workload.\\r\n\\r\nTo that end, in the past we have successfully trained teachers who have learned strategies to manage their dyslexia, colour-blindness as well as mobility issues whilst meeting the demands of classroom practice. Trainees are asked to discuss their needs during a health check before starting the course and this information is swiftly communicated to the course team.\\r\n\\r\nOur partnership work with Bath Spa University is designed to support trainees with a range of needs and we have a differentiated programme of support tutorials, offering our trainees the help and guidance they need as individuals.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

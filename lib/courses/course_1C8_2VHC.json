@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "University of East London",
+  "provider": "Paradigm Trust: Old Ford Primary Academy (Primary) & Ipswich Academy (Secondary)",
+  "subjects": [
+    "Design and technology",
+    "Design and technology (systems and control)",
+    "Secondary"
+  ],
+  "name": "Design and Technology (Systems and Control)",
+  "slug": "1C8/2VHC",
+  "providerCode": "1C8",
+  "programmeCode": "2VHC",
+  "schools": [
+    {
+      "name": "Ipswich Academy",
+      "address": "Braziers Wood Road, Ipswich, IP3 0SP",
+      "code": "I"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Braziers Wood Road, Ipswich, IP3 0SP",
+      "geocode": true,
+      "formatted_address": "Brazier's Wood Rd, Ipswich IP3 0SP, UK",
+      "latitude": 52.0317461,
+      "longitude": 1.1876339,
+      "post_code": "IP3 0SP",
+      "city": "Suffolk",
+      "route": "Brazier's Wood Road",
+      "postal_town": "Ipswich"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1C8",
+    "addr_1": "Old Ford Primary Academy",
+    "addr_2": "Wrights Road",
+    "addr_3": "Bow",
+    "addr_4": "London",
+    "postcode": "E3 5LD  ",
+    "url": "http://oldfordacademy.paradigmtrust.org/",
+    "geocode": true,
+    "formatted_address": "Wright's Rd, London E3 5LD, UK",
+    "latitude": 51.5330808,
+    "longitude": -0.0316843,
+    "post_code": "E3 5LD",
+    "city": "Greater London",
+    "route": "Wright's Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Candidates will be trained to teach by experienced practitioners from within the Trust and from our partner organisation, Essex Teacher Traning. The Paradigm Trust Schools Direct programme combines classroom 'hands on' experience with professional development sessions.  \\r\n\\r\nWe take what’s most important in every subject and make sure we teach it in the most effective way. Cognitive science is at the heart of our initial teaching programme  - the science of learning. We know what works in the classroom and we want to share that with you.\\r\n\\r\nCandidates can expect to spend approximately 80% of their time in classrooms, working alongside and learning from established teachers. Professional development sessions are held at Ipswich Academy in Suffolk. Our partner, Essex Teacher Training leads  professional development sessions for trainees based in Colchester. (all travel costs are covered)\\r\n\\r\nWe have had great success with our Schools Direct programme and the majority of our trainees successfully apply for teaching roles within the Trust at the conclusion of their training.",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "Trainees on the School Direct (salaried) programme are paid at point 1 on the unqualified teacher scale.\\r\n\\r\nAs of September 2018, this is currently £20,908 for inner London and £16,626 nationally.",
+    "Qualifications": "Secondary candidates will need GCSE minimum 'C' grades in English and mathematics and at least a 2:2 degree.\\r\n\\r\nWe will look at comparable alternative qualifications \\r\n\\r\nSubject Knowledge Enhancement courses are offered for candidates who do not meet the above qualification requirements.",
+    "InterviewProcess": "If you are successfully shortlisted for interview, you can expect to be observed teaching a short lesson with a class so we can assess your teaching potential.\\r\n\\r\nIn addition, you will attend a face-to-face interview with senior members of staff.\\r\n\\r\nAs with all Initial Teacher Training programmes, you will be required to sit English and mathematics skills tests before the commencement of training.",
+    "OtherRequirements": "Experience working with children is preferred although not essential.",
+    "PersonalQualities": "We are looking for enthusiastic, motivated and  inspirational individuals who see teaching as more than 'just a job.' People who want to make a difference and help pupils to be their very best. People who want to  change lives.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Trainees will be based in Ipswich Academy with ages ranging from 11 - 16.\\r\n\\r\nTrainees will spend the majority of their time at the school in either KS3 or KS4 with some time in an alternative key stage. They will also undertake a short placement in another school."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "“The best thing has been hands-on training that I can take into the classroom immediately. Lots of chances to see others teach and learn best practice.”  (2017/18 trainee).\\r\n\\r\nAt Paradigm Trust, we have a teaching motto: “We teach the right things, efficiently.” Every minute we have with our learners is important and we can’t afford to waste time. We take what’s most important in every subject and make sure we teach it in the most effective way. Cognitive science is at the heart of our initial teaching programme  - the science of learning. We know what works in the classroom and we want to share that with you.\\r\n\\r\nParadigm Trust has a significant track record of delivering high-quality initial teaching training. Last year 100% of our trainees were graded good or better. 90% of last year’s trainees successfully applied for permanent teaching posts with us this year.  \\r\n\\r\n“The second placement at Old Ford was really useful. Working in a different environment in a new year group was important for getting used to teaching in a different way and understanding the differences between year groups.” (2017/18 trainee).\\r\n\\r\nParadigm Trust’s mission is “to develop and sustain great schools where we can make the biggest difference to pupils.” Education changes lives. Come and train to teach with us.\\r\n\\r\n[Paradigm Trust](http://paradigmtrust.org/)\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Essex Teacher Training is a large provider of ITT in the Eastern Region, offering a variety of different routes to QTS.  \\r\n\\r\nWorking with in excess of 80 schools in Essex and neighbouring counties, they provide excellent opportunities in primary, secondary and special schools. \\r\n\\r\nWith excellent employment rates and over 95% of trainees finishing the programmes, each year, as good or outstanding, headteachers comment that trainees are well prepared for their NQT year. ",
+        "UcasInstitutionCode": "E75"
+      }
+    ]
+  },
+  "has_inst": true
+}

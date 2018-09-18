@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Warwick",
+  "provider": "Shireland Teaching School Alliance",
+  "subjects": [
+    "Music",
+    "Secondary"
+  ],
+  "name": "Music",
+  "slug": "13A/2LKG",
+  "providerCode": "13A",
+  "programmeCode": "2LKG",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Waterloo Road, Smethwick, B66 4ND",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Waterloo Road, Smethwick, B66 4ND",
+      "geocode": true,
+      "formatted_address": "Smethwick B66 4ND, UK",
+      "latitude": 52.484326,
+      "longitude": -1.9641289,
+      "post_code": "B66 4ND",
+      "city": "West Midlands",
+      "route": null,
+      "postal_town": "Smethwick"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "13A",
+    "addr_1": "Waterloo Road",
+    "addr_2": "Smethwick",
+    "addr_3": "West Midlands",
+    "addr_4": null,
+    "postcode": "B66 4ND ",
+    "url": "http://www.collegiateacademy.org.uk/",
+    "geocode": true,
+    "formatted_address": "Waterloo Rd, Smethwick B66 4JS, UK",
+    "latitude": 52.48475,
+    "longitude": -1.9645645,
+    "post_code": "B66 4JS",
+    "city": "West Midlands",
+    "route": "Waterloo Road",
+    "postal_town": "Smethwick"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The University of Warwick, as a Russell Group university, brings quality and depth to the academic side of training together with a wealth of experience in initial training to ensure the highest standard of pedagogical provision. Hence it is a partner that Shireland is proud to work with.\\r\n\\r\nShireland Teaching School Alliance is an alliance of both secondary and primary schools across the West Midlands. As the lead school, Shireland Collegiate Academy delivers the strategic vision, and provides the capacity and expertise to promote excellence across the Teaching Schools agenda.\\r\n\\r\nThe School Direct teacher training course runs for an academic year and leads to qualified teacher status (QTS), a postgraduate certificate in education (PGCE) and 60 masters-level credits. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "You need a 2:2 or above at degree level from a UK Higher Education Institution, or an equivalent qualification. In terms of GCSE’s you need at least a C in English and Mathematics, although if you wish to teach primary you will also require a C in Science. ",
+    "FeeInternational": 19250.0,
+    "FinancialSupport": "There are three types of funding available for teacher training - depending on your circumstances, you could receive all three:\\r\n1.Tax-free bursary or scholarship\\r\n2.Tuition Fee Loan and Maintenance Loan\\r\n3.Additional financial support if you’re a parent or have a disability\\r\n\\r\n",
+    "InterviewProcess": "You will be invited to attend a selection day, the structure of which will depend on the phase and subject you have applied for. The day will include a literacy and numeracy test for primary applicants and a literacy test for secondary applicants (this does not replace the Professional Skills Tests). All applicants will be observed working with students and undergo a formal interview. In some instances applicants may be invited to a further interview at their potential host school. ",
+    "PersonalQualities": "Candidates should have some experience of mainstream UK schools/early years settings to become familiar with the atmosphere and demands of the age phase they are applying for. ",
+    "HowSchoolPlacementsWork": "The training is a blend of theory and practice. You will attend university for regular days during the year giving you strong theoretical foundations and subject knowledge. Your school will give you lots of practical experience and expert support, giving you a solid foundation to build your career. You will be in the classroom from day one so once you have learned something new you can put it straight into practice. You will have an extensive support network with support from university tutors and mentors, mentors within your own school and the Teaching School Director. In addition you will have weekly training with other trainees across the Alliance. You will spend the majority of the year in your host school with a 4 – 6 week second placement in the spring term. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We believe outstanding teachers absolutely make a difference. Here at Shireland we aim to make a difference to the lives and academic achievement of each and every learner. Join us and inspire a love of learning in young people and change attitudes, aspirations, and their lives forever.\\r\n\\r\nSTSA, working in partnership with both the University of Warwick and Newman University, aims to develop the next generation of outstanding teachers.\\r\n\\r\nOur belief is that through emersion within a school environment trainee teachers will have continual opportunities to relate theory into practice by working alongside outstanding practitioners. \\r\n\\r\nOur unique approach allows trainee teachers to develop the skills and self-awareness needed to become outstanding and remain outstanding, giving them an advantage in their future teaching careers.",
+    "TrainWithDisability": "Shireland Teaching School Alliance welcomes candidates with disabilities and under the Disability Discrimination Act those candidates who disclose their disability have the right to have reasonable adjustments made to enable them to train to teach. If you have any particular needs please contact Emily Hughes via email at emily.hughes@collegiateacademy.org.uk to discuss these arrangements.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Warwick, as a Russell Group university, brings quality and depth to the academic side of training together with a wealth of experience in initial training to ensure the highest standard of pedagogical provision. Hence it is a partner that Shireland is proud to work with.",
+        "UcasInstitutionCode": "W20"
+      },
+      {
+        "Description": "Newman University has trained teachers for over 40 years and has an established reputation for producing high quality professionals. With it’s central focus rooted in the local community Newman University shares a common ethos with Shireland Teaching School Alliance.",
+        "UcasInstitutionCode": "N36"
+      }
+    ]
+  },
+  "has_inst": true
+}

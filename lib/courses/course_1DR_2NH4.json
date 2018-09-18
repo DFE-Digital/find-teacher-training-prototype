@@ -1,0 +1,86 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Portsmouth",
+  "provider": "Portsmouth TSA",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "1DR/2NH4",
+  "providerCode": "1DR",
+  "programmeCode": "2NH4",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Gisors Road, Southsea, Portsmouth, PO4 8GT",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Gisors Road, Southsea, Portsmouth, PO4 8GT",
+      "geocode": true,
+      "formatted_address": "Gisors Rd, Portsmouth, Southsea PO4 8GT, UK",
+      "latitude": 50.7932066,
+      "longitude": -1.0556943,
+      "post_code": "PO4 8GT",
+      "city": "Portsmouth",
+      "route": "Gisors Road",
+      "postal_town": "Southsea"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1DR",
+    "addr_1": "Gisors Road",
+    "addr_2": "Southsea",
+    "addr_3": null,
+    "addr_4": "Portsmouth",
+    "postcode": "PO4 8GT ",
+    "url": "https://portsmouthtsa.org/what-we-do/initial-teacher-training/",
+    "geocode": true,
+    "formatted_address": "Gisors Rd, Portsmouth, Southsea PO4 8GW, UK",
+    "latitude": 50.793218,
+    "longitude": -1.0562243,
+    "post_code": "PO4 8GW",
+    "city": "Portsmouth",
+    "route": "Gisors Road",
+    "postal_town": "Southsea"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Training in school and learning ‘on the job’ with experienced teachers is the best way to gain first-hand experience of teaching. Your training year will be underpinned with regular theory sessions and pedagogy either delivered at a partner HEI or within the alliance. Typically you will be based in a school four days a week and attend training on day five.\\r\n\\r\nWe believe it is important that trainees feel part of the school environment from Day 1 so we host our interviews in school. This is an opportunity to meet the staff and feel part of their community. Once you have accepted your place you will have the opportunity to visit your host school before you officially start in September.\\r\n\\r\nWe start with 3 days pre-course training on 9, 10 July and 3 September 2019, these days are delivered in our dedicated training centre. You will meet fellow trainees, gain an understanding of the programme and attend essential training to prepare you for your first day in school e.g. behaviour management, lesson observations, Teacher's Standards etc. Our trainees really valued being prepared for their first few weeks in school.\\r\n\\r\nEvery trainee is allocated a mentor who is a highly-experienced teacher and will offer personalised support and guidance throughout the year. Weekly mentor meetings will focus on setting short and long-term targets and reviewing progress against the Teachers' Standards. You will feel like a valued member of staff as you will attend staff meetings and school training sessions. Assessment takes place in a variety of forms e.g. weekly formal lesson observations, weekly review meetings, academic assignments and gathering evidence towards the Teachers Standards.\\r\n\\r\nYou will be assigned a host school for the autumn and summer term and in the spring term you will spend a minimum 6 weeks in another school to teach in another Key Stage. All school placements are organised by the Teaching School Alliance.\\r\n\\r\nOn successful completion you will achieve a PGCE with the option of 60 Masters Credits) and QTS. We are so proud that we have a strong track record and 100% of our School Direct trainees pass and subsequently find employment in schools.\\r\n\\r\nWhere appropriate we support secondary trainees with Subject Knowledge Enhancement (SKE). This training is free and applicants may be eligible for a bursary.\\r\n\\r\nIf you want to be part of our success, then join us on your journey to teaching.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should be a graduate with at least a 2:2 degree. \\r\n\\r\nA grade C or grade 4 or above in English and maths (additionally for primary science GCSE).\\r\n\\r\nWe look for applicants who show a particular passion and aptitude for teaching or bring relevant additional experience.\\r\n\\r\nSecondary: If your degree is not in the subject then where appropriate we support applicants with Subject Knowledge Enhancement programmes. \\r\n\\r\nMFL need French and one other language.\\r\n\\r\nPass the Professional skills tests in English and maths before starting the course (not before interview).\\r\n\\r\nSalaried trainees need at least three years' work experience.",
+    "InterviewProcess": "Your application is important to us and we will carefully consider you for interview. Our partner schools host the interviews in school so they are involved in the process and can select trainees who are ‘best fit’ for school.\\r\n\\r\nInterview day schedule includes:\\r\n\\r\nWritten task\\r\nGroup discussion\\r\nMicro teach\\r\nInterview\\r\nShort teaching session\\r\n\\r\nYou will be given at least one week's notice to prepare for your interview. We appreciate that you will feel a little nervous and we take that into account. Remember, we look for your potential to teach and how you engage and interact with the pupils. Feedback from applicants states that they really value our interview days.\\r\n\\r\nOnce accepted you will be invited to our pre- course training days on 9, 10 July and 3 September 2019.\\r\n\\r\nSelection criteria\\r\n\\r\nWe are looking for potential, not the finished article.\\r\n\\r\nApplicant qualities:\\r\n\\r\nConfident, articulate and who can communicate clearly in written and spoken English.\\r\nCommand the attention of young people and adults.\\r\nCan demonstrate a passion for working with young people.\\r\nUnderstand the importance of being professional and committed.\\r\nBe open to learning and adaptable to changing situations.\\t\\r\nWork collaboratively as a member of a team.\\r\nA willingness to work beyond the 'school day'.\\r\nHave a good sense of humour and an ability to laugh at oneself.\\r\nBe resilient and in good health.\\r\nBe confident in the use of Information and Communication Technology (ICT).\\r\nHave gained some school experience so you know that a school environment is for you.\\r\n\\r\n",
+    "OtherRequirements": "You need to be a competent user of ICT and are required to pass the Skills Tests in Numeracy and Literacy.\\r\n\\r\nDisclosure and Barring Service\\r\nWe have a duty to protect children and ensure that they are not put at risk. Successful completion of an Enhanced Disclosure Certificate from the DBS.\\r\n\\r\nMedical Fitness\\r\nTeaching is physically and mentally demanding and there are fitness requirements set by the DfE for applicants to initial teacher training programmes. Successful candidates will be sent a relevant health questionnaire to complete.",
+    "PersonalQualities": "We are looking for enthusiastic, ambitious and talented trainee teachers who are passionate about improving educational outcomes for children of all abilities. You should have some experience working with young people within the age group you wish to teach. This may be as little as a few days school experience or voluntary work.",
+    "HowSchoolPlacementsWork": "As we interview in school you will know your placement when we offer you a training place. The advantage of knowing your host school early is that you will feel part of their community, can visit school before you start to meet your mentor.\\r\n\\r\nWe work with over 40 primary and secondary schools in Portsmouth, Hampshire and the Isle of Wight. When shortlisting for interview we select you based on your geographical area, skills and experience. The interview stage is an opportunity to select the ‘best fit’ applicants to school.\\r\n\\r\nYou will spend the autumn and summer term in your host school and then in the spring term you will spend a minimum of 6 weeks in a different Key Stage or setting.\\r\n\\r\nOur School Direct route has the advantage of 38 weeks in school so you experience the full academic year cycle which prepares you for your NQT year. Each programme varies slightly but typically you will spend the average of four days in school and one day in training. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our lead school has achieved ‘Outstanding’ status in its last three Ofsted visits demonstrating our high quality School Direct initial teacher training. We consistently achieve a 100% pass rate and all trainees successfully gain employment in schools.\\r\n\\r\nThe Portsmouth Teaching School Alliance (PTSA) mission is 'By schools, for schools, for Portsmouth'. We achieve this mission by recruiting and retaining the best graduates who will have the opportunity to inspire the next generation and help them realise their ambitions. http://www.portsmouthtsa.org\\r\n\\r\nTrainee teachers chose us because we have an excellent reputation and offer personalised support. Our expert trainers have all been teachers and have years of experience. Trainees are attracted to training predominately in school underpinned with our first-rate training days.\\r\n\\r\nTrainees value our 'personal approach' and the support we offer from initial application queries right through to supporting their Newly Qualified Training (NQT) year. \\r\n\\r\nOn successful completion you will achieve a Postgraduate Certificate in Education (PGCE) with the option of 60 Master Credits and Qualified Teacher Status (QTS). \\r\n\\r\nWe believe in a continuum of professional development and support trainees beyond their training year through to leadership. We are a key member of the Portsmouth Education Partnership (PEP) working with the Local Authority and schools to focus on school improvement to get the best outcomes for our children. \\r\n\\r\nAdditional expertise includes the Solent Maths Hub, subject specialist networks, ‘Women Leading in Education’ and access to a range of national level projects.\\r\n\\r\nWe offer School Direct Salaried and School Direct Tuition Fee places.\\r\n",
+    "TrainWithDisability": "Teachers with disabilities make an important contribution to schools on both the classroom and in shaping the wider culture. If you have a disability then that shouldn’t dissuade you from school.\\r\nThe Equality Act 2010 and Special Educational Needs and Disability Act 2001, require teacher training providers to ensure they are not discriminating against applicants with disabilities or special educational needs (SEN).\\r\nIt is helpful to let us know your requirements so we can consider your placement and any reasonable adjustments that may need to be considered. All partners within the alliance are committed to supporting trainees with disabilities. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Training is delivered in collaboration with the University of Sussex. You will spend four days in school from the very start of term and on day five you will attend training at Sussex. Alliance training is offered throughout the year at our dedicated centre in Portsmouth. Sussex is ranked in to top 20% of universities.\\r\n(https://www.sussex.ac.uk/about/facts/rankings)",
+        "UcasInstitutionCode": "S90"
+      },
+      {
+        "Description": "Training is delivered in collaboration with the University of Portsmouth. You will spend four days in school from the very start of term and on day five you will attend training either at the university or at our alliance dedicated training centre in Portsmouth.",
+        "UcasInstitutionCode": "P80"
+      },
+      {
+        "Description": "Training is delivered in collaboration with the University of Chichester. You will spend four days in school from the very start of term and on day five you will attend training either at the university or at our alliance dedicated training centre in Portsmouth. ",
+        "UcasInstitutionCode": "C58"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "P82"
+      }
+    ]
+  },
+  "has_inst": true
+}

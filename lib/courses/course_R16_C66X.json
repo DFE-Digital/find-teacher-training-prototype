@@ -1,0 +1,65 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Redcar and Cleveland Teacher Training Partnership",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "slug": "R16/C66X",
+  "providerCode": "R16",
+  "programmeCode": "C66X",
+  "schools": [
+    {
+      "name": "Eston Civic and Learning Centre",
+      "address": "Normanby Road, Eston, TS6 9AE",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Normanby Road, Eston, TS6 9AE",
+      "geocode": true,
+      "formatted_address": "Normanby Rd, Middlesbrough TS6, UK",
+      "latitude": 54.5701001,
+      "longitude": -1.1676083,
+      "post_code": "TS6",
+      "city": "Redcar and Cleveland",
+      "route": "Normanby Road",
+      "postal_town": "Middlesbrough"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "R16",
+    "addr_1": "Eston Civic And Learning Centre",
+    "addr_2": "Normanby Road",
+    "addr_3": "Eston",
+    "addr_4": null,
+    "postcode": "TS6 9AE ",
+    "url": "http://WWW.INSPIRE2LEARNBLOG.COM/GTP",
+    "geocode": true,
+    "formatted_address": "South Bank, Normanby Rd, Middlesbrough TS6 9AE, UK",
+    "latitude": 54.5676099,
+    "longitude": -1.1637299,
+    "post_code": "TS6 9AE",
+    "city": "Redcar and Cleveland",
+    "route": "Normanby Road",
+    "postal_town": "Middlesbrough"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "The PGCE programme in your chosen subject will give you the necessary knowledge and skills to meet the standards for Qualified Teacher Status (QTS) and the PGCE award. The PGCE carries 60 credits at Masters Level which could later contribute towards a Master’s Degree in Education (180 credits).\\r\n\\r\nThe programme covers a wide range of topics that you will need to address as a teacher. These include planning for learning, classroom management, inclusion, assessment, subject work, wider school issues and other important topics. The topics are not just covered once in the course but are regularly revisited during the year in various contexts. This approach allows continual reinforcement and deepening of your knowledge and understanding of teaching and learning.\\r\n\\r\nThe course duration is approximately 180 days. You will spend approximately 60 days during the course of the training, mostly outside of the classroom on many aspects of teaching. Most of these 60 days of training will be at the Lancaster campus. A number of days will be subject specific, designed to develop your knowledge of how to teach your subject known as Pedagogy for Learning (PFL) days. On these days the both School Direct and university based students are taught together. The other 120 days will be in two contrasting school placements. For these placements you will be supported by both school and university colleagues to meet the standards for QTS. \\r\n\\r\nThe course is assessed in two different ways. The placement module for the QTS element is assessed by school and university colleagues on a pass/ fail basis using a widely recognised trainee teacher assessment matrix. You will also prepare an electronic portfolio to submit as evidence of meeting the QTS standards. The two modules connected to the PGCE are assessed by the submission of four written assignments on teaching and learning in your subject and wider educational issues. The four written assignments are spread across the year to try to even out workload and two of them are formative to help develop your Masters level writing towards the two summative assignments.\\r\n\\r\nThe University of Cumbria and its legacy institutions, St Martins and Charlotte Mason colleges, have a long history of training successful teachers and an excellent record in producing good and outstanding teachers.\\r\n\\r\nFor information:\\r\n(https://www.cumbria.ac.uk/study/courses/postgraduate/secondary-education-with-qts-physical-education-pgce/)\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Redcar and Cleveland Teacher Training Partnership (RCTTP) is fully accredited initial teacher training provider. We were graded  as Outstanding in all judgement areas following our most recent Ofsted Inspection.\\r\n\\r\nOur aim is to train reflective practitioners with the necessary skills to become committed, creative, enthusiastic and knowledgeable professionals, able to meet the demands of teaching in the 21st century.\\r\n\\r\nWhy Train with RCTTP?\\r\n\\r\n* We are a well established provider and have been successfully training teachers for over 15 years.\\r\n\\r\n* We are a small and highly supportive programme focussed on meeting the needs of the trainees.\\r\n\\r\n*We work with a network of primary and secondary schools in and beyond the Redcar and Cleveland area.  \\r\n\\r\n* We have a very strong, mutually supportive relationship with our Partnership Schools.\\r\n\\r\n* Our high quality school-based training is underpinned by a comprehensive programme.\\r\n\\r\n* We have very high rates of employment with many of our trainees securing jobs within Redcar & Cleveland schools.\\r\n\\r\nFor more information about training with RCTTP please visit our [website](www.redcar-cleveland.gov.uk/gtp)\\r\n",
+    "TrainWithDisability": "Redcar and Cleveland Teacher Training Partnership welcomes all applications and would strive to meet any individual needs on a case by case basis.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

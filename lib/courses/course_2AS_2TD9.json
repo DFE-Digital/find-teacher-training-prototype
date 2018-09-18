@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Prestolee SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2AS/2TD9",
+  "providerCode": "2AS",
+  "programmeCode": "2TD9",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Prestolee Teaching School, Church Road, Stoneclough, M26 1HJ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Prestolee Teaching School, Church Road, Stoneclough, M26 1HJ",
+      "geocode": true,
+      "formatted_address": "Prestolee Primary School, Church Rd, Radcliffe, Manchester M26 1HJ, UK",
+      "latitude": 53.548302,
+      "longitude": -2.371116,
+      "post_code": "M26 1HJ",
+      "city": "Radcliffe",
+      "route": "Church Road",
+      "postal_town": "Manchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2AS",
+    "addr_1": "Prestolee Teaching School",
+    "addr_2": "Church Road",
+    "addr_3": "Stoneclough",
+    "addr_4": null,
+    "postcode": "M26 1HJ ",
+    "url": "http://www.prestoleescitt.co.uk/",
+    "geocode": true,
+    "formatted_address": "44 Church Rd, Radcliffe, Manchester M26 1HJ, UK",
+    "latitude": 53.54844620000001,
+    "longitude": -2.3708514,
+    "post_code": "M26 1HJ",
+    "city": "Radcliffe",
+    "route": "Church Road",
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Trainees have 2 options for payment, either via a loan from Student Finance or via self-funding. If you fund via Student Finance, once your loan application is approved the payments will be made directly to us and you do not need to take any further action. If you self-fund, payments can be made either by BACS or cheque.",
+    "AboutCourse": "The programmes have a comprehensive schedule of subject and theoretical training, which is delivered by outstanding practitioners and experts from across our partnership and wider alliance of schools.\\r\n\\r\nYou can choose to specialise in either Early Primary (3-7 years) or General Primary (5-11 years). Early Primary trainees will complete their training in Early Years and KS1, whilst General Primary trainees will complete their training in KS1 and KS2",
+    "CourseLength": "OneYear",
+    "Qualifications": "A UK Bachelor degree qualification or a recognised equivalent qualification.\\r\n 3 GCSE grades A-C in English Language, Mathematics and Science (or equivalent).\\r\n\\r\nInternational qualifications\\r\n Applicants with international qualifications must provide a Statement of Comparability obtained from the National Academic Recognition Information Centre (NARIC), at https://www.naric.org.uk/naric\\r\n",
+    "InterviewProcess": "Once applications are received through UCAS, they undergo a careful screening process to ascertain suitability for interview.\\r\n Consideration is given to how much experience applicants have had in primary schools; academic qualifications (or predictions for pending degrees); suitability to teach & personal qualities and the quality of the personal statement in terms of grammar and spelling. Those selected will be invited to attend an interview day which will involve a mini teach.",
+    "OtherRequirements": "School experience is not essential in order to apply for one of our courses. However, you may find it beneficial to have some school experience for the interview process where you will be asked to deliver a ‘mini-teach’ – a short lesson to a small group of pupils. You may also be asked questions which relate to the classroom. All offers will be conditional of DBS and Fitness to Teach checks and will need to pass the DfE Literacy and Numeracy skills tests.",
+    "PersonalQualities": "Put simply, we are looking for potential. More specifically, we are looking for candidates who have the qualities required for a career in teaching, the potential to turn these qualities into a journey towards becoming a great teacher, and the work ethic and determination required to make this a reality. We want to hear from people who are personable, friendly and engaging; have a strong work ethic and a positive outlook; who understand the importance of teaching and want to make a difference.",
+    "HowSchoolPlacementsWork": "All trainees will be allocated to a Home School. You will start the academic year in your Home School and spend the majority of your school-based experience time there. All trainees will spend a placement in an Away School during term 2 of the academic year.\\r\n\\r\nThe course combines practical classroom experience with academic study to give you the knowledge and understanding to teach successfully. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Joining #teampresto as an ITT trainee gives aspiring teachers the opportunity to work with one of the most innovative and successful teams of Teachers and Leaders in Greater Manchester. \\r\n\\r\nThe name 'Prestolee' is synonymous with educational innovation, with the legacy of famous Headteacher Teddy O'Neill continuing to this day through the work of Prestolee: an outstanding primary school, a National Teaching School and an established teacher training provider. Prestolee School Centred Initial Teacher Training (SCITT) aims to ensure you are supported to become the best teaching practitioner and future leader you can be. We work with a number of schools to ensure you can undertake your primary school placement at different locations across the region.\\r\n",
+    "TrainWithDisability": "Prestolee SCITT is inclusive and recognises its obligation to make reasonable adjustments for disabled students and those diagnosed with a Specific Learning Difficulty (SpLD), long-term health condition or mental health condition. We are keen to ensure these can be put in place to support students when applying to and studying at Prestolee. Therefore, we encourage disabled applicants to get in touch with our admissions office as soon as possible to discuss any requirements and their application.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,186 @@
+{
+  "locationType": "School",
+  "accrediting": "Cabot Learning Federation SCITT",
+  "provider": "NEXUS Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "27R/2PTC",
+  "providerCode": "27R",
+  "programmeCode": "2PTC",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Church Farm Road, Emersons Green, Mangotsfield, South Gloucestershire, BS16 7EY",
+      "code": "-"
+    },
+    {
+      "name": "Blackhorse Primary School",
+      "address": "Blackhorse Lane, Emersons Green, South Glos, BS16 6TR",
+      "code": "B"
+    },
+    {
+      "name": "Emersons Green Primary School",
+      "address": "Guest Avenue, Emersons Green, Bristol, BS16 7GA",
+      "code": "E"
+    },
+    {
+      "name": "Bromley Heath Infant School",
+      "address": "Quaker's Road, Downend, Bristol, BS16 6NJ",
+      "code": "I"
+    },
+    {
+      "name": "Bromley Heath Junior School",
+      "address": "Quaker's Road, Downend, Bristol, BS16 6NJ",
+      "code": "J"
+    },
+    {
+      "name": "Kings' Forest Primary School",
+      "address": "Station Road, Kingswood, Bristol, BS15 4PQ",
+      "code": "K"
+    },
+    {
+      "name": "Stanbridge Primary School",
+      "address": "Stanbridge Road, Downend, Bristol, BS16 6AL",
+      "code": "S"
+    },
+    {
+      "name": "St Stephens Junior School",
+      "address": "Lansdown Road, Kingswood, Bristol, BS15 1XD",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Church Farm Road, Emersons Green, Mangotsfield, South Gloucestershire, BS16 7EY",
+      "geocode": true,
+      "formatted_address": "Church Farm Rd, Emersons Green, Bristol BS16 7BE, UK",
+      "latitude": 51.4873485,
+      "longitude": -2.4776981,
+      "post_code": "BS16 7BE",
+      "city": "Emersons Green",
+      "route": "Church Farm Road",
+      "postal_town": "Bristol"
+    },
+    {
+      "address": "Blackhorse Lane, Emersons Green, South Glos, BS16 6TR",
+      "geocode": true,
+      "formatted_address": "Blackhorse Ln, Emersons Green, Bristol BS16 6TR, UK",
+      "latitude": 51.4997649,
+      "longitude": -2.48987,
+      "post_code": "BS16 6TR",
+      "city": "Emersons Green",
+      "route": "Blackhorse Lane",
+      "postal_town": "Bristol"
+    },
+    {
+      "address": "Guest Avenue, Emersons Green, Bristol, BS16 7GA",
+      "geocode": true,
+      "formatted_address": "Guest Ave, Emersons Green, Bristol BS16 7DA, UK",
+      "latitude": 51.4939725,
+      "longitude": -2.481244,
+      "post_code": "BS16 7DA",
+      "city": "Emersons Green",
+      "route": "Guest Avenue",
+      "postal_town": "Bristol"
+    },
+    {
+      "address": "Quaker's Road, Downend, Bristol, BS16 6NJ",
+      "geocode": true,
+      "formatted_address": "Quaker's Rd, Bristol BS16 6NJ, UK",
+      "latitude": 51.4994758,
+      "longitude": -2.5015409,
+      "post_code": "BS16 6NJ",
+      "city": "South Gloucestershire",
+      "route": "Quaker's Road",
+      "postal_town": "Bristol"
+    },
+    {
+      "address": "Quaker's Road, Downend, Bristol, BS16 6NJ",
+      "geocode": true,
+      "formatted_address": "Quaker's Rd, Bristol BS16 6NJ, UK",
+      "latitude": 51.4994758,
+      "longitude": -2.5015409,
+      "post_code": "BS16 6NJ",
+      "city": "South Gloucestershire",
+      "route": "Quaker's Road",
+      "postal_town": "Bristol"
+    },
+    {
+      "address": "Station Road, Kingswood, Bristol, BS15 4PQ",
+      "geocode": true,
+      "formatted_address": "Station Rd, Bristol BS15 4PQ, UK",
+      "latitude": 51.4728179,
+      "longitude": -2.4907233,
+      "post_code": "BS15 4PQ",
+      "city": "South Gloucestershire",
+      "route": "Station Road",
+      "postal_town": "Bristol"
+    },
+    {
+      "address": "Stanbridge Road, Downend, Bristol, BS16 6AL",
+      "geocode": true,
+      "formatted_address": "Stanbridge Rd, Bristol BS16 6AL, UK",
+      "latitude": 51.4893368,
+      "longitude": -2.4954156,
+      "post_code": "BS16 6AL",
+      "city": "South Gloucestershire",
+      "route": "Stanbridge Road",
+      "postal_town": "Bristol"
+    },
+    {
+      "address": "Lansdown Road, Kingswood, Bristol, BS15 1XD",
+      "geocode": true,
+      "formatted_address": "Lansdown Rd, Bristol BS15 1XB, UK",
+      "latitude": 51.47089099999999,
+      "longitude": -2.507663,
+      "post_code": "BS15 1XB",
+      "city": "South Gloucestershire",
+      "route": "Lansdown Road",
+      "postal_town": "Bristol"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "27R",
+    "addr_1": "Church Farm Road",
+    "addr_2": "Emersons Green",
+    "addr_3": "Mangotsfield",
+    "addr_4": "South Gloucestershire",
+    "postcode": "BS16 7EY",
+    "url": "http://www.nexustsa.org.uk",
+    "geocode": true,
+    "formatted_address": "Church Farm Rd, Emersons Green, Bristol BS16 7BE, UK",
+    "latitude": 51.4895842,
+    "longitude": -2.476709,
+    "post_code": "BS16 7BE",
+    "city": "Emersons Green",
+    "route": "Church Farm Road",
+    "postal_town": "Bristol"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The NEXUS programme offers a one year, full-time course, based on the academic year starting in September. \\r\n\\r\nOur vision is to develop and prepare the teachers of tomorrow with the skills and knowledge they need to deliver creative and challenging teaching and learning in the Primary setting. The programme has been designed to ensure that you are expertly trained as a Primary teacher to take up your post as an outstanding NQT and is enhanced by attending training at the CLF SCITT. \\r\n\\r\nRight from day one, trainees are treated as a member of staff and take part in all aspects of school life including attending all staff meetings and other CPD opportunities. Trainees attend one days joint training a week and then put their learning into practice straight away back in school so it really is learning on the job. Trainees work with their school-based mentor, who is responsible for supporting and guiding their professional development, ensuring that they have the opportunities that they need both within the school and drawing on expertise from other NEXUS schools. \\r\n\\r\nThe staff in our schools are our most valuable resource and have a proven track record for delivering high quality training and professional development. They have high expectations and are eager to share their skills, knowledge and practice with the next generation of teachers - they are in the best position to prepare trainee teachers for excellence in their own practice. They endeavour to support trainees in many different ways through coaching and mentoring, observations and feedback to ensure that they have the best possible preparation and training.\\r\n\\r\nTraining in school progresses from observing and working alongside an experienced teacher to taking full responsibility, firstly for groups, and later for the whole class as the academic year progresses. Progress is assessed through regular formal and informal monitoring of teaching competencies leading to profile reviews and assignments which link education/subject theory with the teaching and learning in the classroom. \\r\n\\r\nThe University aspect of the course brings together theory and practice and is carefully timetabled to ensure the work load dis not too high.\\r\nTrainees have access to their extensive library, resources and tutor for support. \\r\n\\r\nWhen you qualify, you will achieve a PGCE with QTS.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "The following entry requirements must be met:\\r\n\\r\n* Good degree of a United Kingdom Higher Education Institution or equivalent qualification, e.g. 2.2 or above.\\r\n* Have achieved GCSE C or above/4 or above or O level Grade C or above in English, Mathematics and Science.  \\r\n* Successful completion of QTS Skills Tests for English & Mathematics by July 2019.\\r\n* Have the intellectual and academic capabilities needed to meet the required Teachers' Standards. \\r\n* Can read effectively & are able to communicate clearly & accurately in Standard English. \\r\n\\r\n",
+    "InterviewProcess": "Our aim is to invite applicants to interview who have the talent, commitment and enthusiasm to become outstanding Primary teachers. \\r\n\\r\nEarly application is recommended. Interviews will take place from October to June. Following your application, shortlisting will take place to invite appropriate candidates to interview. \\r\n\\r\nInterviews last half a day and are held in one of the NEXUS Schools, where candidates will be asked to complete various tasks. This will include working with a small group of children. During the interview, we will have an informed discussion with candidates on teaching and learning, subject knowledge, the curriculum and previous school and/or setting experience. The interview will also explore your commitment and potential to become a teacher, including your professionalism and ability to manage the challenges and pressures of the course.\\r\n\\r\nSuccessful candidates will be offered a place on the course subject to the completion of the QTS skills tests (English, Maths) by a specified date. We strongly recommend that candidates sit these tests as soon as they register their application.\\r\n",
+    "OtherRequirements": "The following entry requirements must be met:\\r\n\\r\n* Have been subject to a Criminal Records Bureau enhanced disclosure and subject to the Independent Safeguarding Authority (ISA) regulations.\\r\n* Have had recent experience of working with children in school or other settings, e.g. volunteering or paid employment in any sector for example schools, nurseries, crèche facilities, play groups, forest schools and adventure play grounds.\\r\n* Fitness to work screening passed",
+    "PersonalQualities": "We are looking for positive, dynamic applicants who are committed and enthusiastic about working with Primary age children, wanting to share a genuine passion for learning. Applicants also need to demonstrate confidence, an aptitude for listening and learning, the ability to reason critically, ability to manage an often heavy workload, ability to meet deadlines and who show enjoyment working with others as part of a team. \\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Each candidate will have three placements, placements 1 and 3 will be in the same school and placement 2 will be in a contrasting school. Each trainee will complete at least one placement in key stage 1 (5 to 7) and at least one in key stage 2 (7 to 11). We work with our trainees to look at their strengths and interests in order to choose the right placement school for them. All of our placement schools are within a 2 mile radius. Trainees will also spend some time in the key stage before (EYFS) and after (Key Stage 3) to broaden their experience and understanding of childrens' educational journey.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "NEXUS Teaching School Alliance are a group of ten schools in South Glos (on the edge of Bristol) who work together to provide high quality, school led teacher training. With all of the schools being good or outstanding, you will learn from excellent teachers who are keen to share their expertise. Each of our schools has their own specialism including one school with a resource base for children with visual impairments and/or physical disabilities and another for children with social and communication needs. \\r\n\\r\nEven though the schools are in a 2 miles radius, they all have different contexts giving you a really good grounding in teaching. We will work with you to identify your strengths and interests to find the best placement school for you. You will spend a large percentage of time in the class, applying what you have learnt straight away and we will make you feel like part of the school team from day one. \\r\n\\r\nWe are extremely proud of our work with trainee teachers and are committed to developing great teachers for the future. As we only have a small cohort of trainees, we really get to know you and tailor the training to suit individuals. We want the best possible teachers for our children and the majority of our trainees go on to gain a full time teaching position in one of our schools. ",
+    "TrainWithDisability": "We understand that many disabled students will have additional support needs to enable them to access their course. We support all candidates with disabilities and other needs such as dyslexia, physical, hearing and visual impairments and mental health conditions, putting an individualised package of support in place for each trainee. This might include ICT support and software, extra mentor support, specialist equipment, parking arrangements and reasonable adjustments for coursework.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work closely with the CLF SCITT, who have a long history of being involved in Initial Teacher Training, to provide high quality training. As well as working with the NEXUS group of trainees, you will have the chance to work with all of the other primary and secondary trainees at the SCITT to share your experiences and learning across the whole age range. You will also receive subject knowledge training from a range of current practitioners and SLEs (Specialist Leaders of Education) including from the Boolean Maths Hub.",
+        "UcasInstitutionCode": "2AV"
+      }
+    ]
+  },
+  "has_inst": true
+}

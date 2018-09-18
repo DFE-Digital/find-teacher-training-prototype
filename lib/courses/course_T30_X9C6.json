@@ -1,0 +1,69 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Titan Partnership Ltd",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "slug": "T30/X9C6",
+  "providerCode": "T30",
+  "programmeCode": "X9C6",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St George's Community Hub, Great Hampton Row, Birmingham, B19 3JG",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St George's Community Hub, Great Hampton Row, Birmingham, B19 3JG",
+      "geocode": true,
+      "formatted_address": "Great Hampton Row, Birmingham B19 3JG, UK",
+      "latitude": 52.4904307,
+      "longitude": -1.9053447,
+      "post_code": "B19 3JG",
+      "city": "West Midlands",
+      "route": "Great Hampton Row",
+      "postal_town": "Birmingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "T30",
+    "addr_1": "Titan Teacher Training",
+    "addr_2": "75 Harborne Road",
+    "addr_3": "Birmingham",
+    "addr_4": "West Midlands",
+    "postcode": "B19 3JG ",
+    "url": "http://www.titanteachertraining.co.uk",
+    "geocode": true,
+    "formatted_address": "75 Harborne Rd, Birmingham B15 3DH, UK",
+    "latitude": 52.4708263,
+    "longitude": -1.9245948,
+    "post_code": "B15 3DH",
+    "city": "West Midlands",
+    "route": "Harborne Road",
+    "postal_town": "Birmingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Physical Education course leads to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYou will be taught by staff with national and international reputations as experts in the field of physical education; these staff are supported by expert practitioners from local schools.\\r\n\\r\nOur excellent teaching facilities, including a sports hall and gymnasium with extensive resources and equipment, will provide the setting for your practical teaching.\\r\n\\r\nThe content of the programme is grounded in the evidence-based principles of teaching and learning. You will examine a range of pedagogical approaches to physical education teaching, including workshop-led and informal approaches to learning. Other teaching methods include a series of lectures, practical seminars and workshops, where interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n* gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Titan Teacher Training has successfully trained teachers for over 20 years. We work in partnership with Primary and Secondary schools across Birmingham's inner city to deliver outstanding and supportive school based Teacher Training.\\r\n\\r\nOur course offers Qualified Teacher Status (QTS) and a Post Graduate Certificate in Education (PGCE) with Master's credits.  The PGCE qualification is validated by Birmingham City University. To support your academic work you have access to the university's facilities and services.\\r\n\\r\nYou will have the chance to train in a variety of settings: comprehensive, selective and single sex. You will also be able to follow specialist training pathways in SEND, STEM and alternative provision.  \\r\n\\r\nTitan is a small but highly successful provider. Our size enables us to deliver personalised training in a very supportive environment.\\r\n\\r\nAs a trainee you will attend cross-phased taught sessions designed to complement your school placements as well as bespoke subject specific sessions.\\r\n\\r\n100% of our 2017/18 cohort secured employment. Many of our trainees choose to remain within our partnership schools and we offer a comprehensive programme to support you through your NQT year.\\r\n\\r\nAs a trainee you will also have access to events & activities from our wider partnership network of over 50 educational institutions across Birmingham\\r\n\\r\nWe look forward to supporting you into teaching! \\r\n\\r\nMore information can be found on our [website](https://www.titanteachertraining.co.uk/)",
+    "TrainWithDisability": "Titan is an inclusive provider. We will support you during your training year and make any reasonable adjustments to ensure we meet your specific needs.\\r\n ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

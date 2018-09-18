@@ -1,0 +1,120 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The National Maths and Physics SCITT",
+  "subjects": [
+    "Physics",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "slug": "2H8/38BC",
+  "providerCode": "2H8",
+  "programmeCode": "38BC",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Marlow Road, High Wycombe, Buckinghamshire, HP11 1TB",
+      "code": "-"
+    },
+    {
+      "name": "Central Hub",
+      "address": "Wycombe High School, Marlow, Bucks, HP11 1TB",
+      "code": "A"
+    },
+    {
+      "name": "London Hub",
+      "address": "Dulwich College, Dulwich Common, London, SE21 7LD",
+      "code": "B"
+    },
+    {
+      "name": "Northern Hub",
+      "address": "Bolton School, Chorley New Road, Bolton, BL1 4PA",
+      "code": "C"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Marlow Road, High Wycombe, Buckinghamshire, HP11 1TB",
+      "geocode": true,
+      "formatted_address": "Marlow Rd, High Wycombe HP11 1TA, UK",
+      "latitude": 51.6182683,
+      "longitude": -0.7637482,
+      "post_code": "HP11 1TA",
+      "city": "Buckinghamshire",
+      "route": "Marlow Road",
+      "postal_town": "High Wycombe"
+    },
+    {
+      "address": "Wycombe High School, Marlow, Bucks, HP11 1TB",
+      "geocode": true,
+      "formatted_address": "Marlow Hill, High Wycombe HP11 1TB, UK",
+      "latitude": 51.619574,
+      "longitude": -0.7623869999999999,
+      "post_code": "HP11 1TB",
+      "city": "Buckinghamshire",
+      "route": "Marlow Hill",
+      "postal_town": "High Wycombe"
+    },
+    {
+      "address": "Dulwich College, Dulwich Common, London, SE21 7LD",
+      "geocode": true,
+      "formatted_address": "Dulwich Common, London SE21 7LD, UK",
+      "latitude": 51.44029020000001,
+      "longitude": -0.0851461,
+      "post_code": "SE21 7LD",
+      "city": "Greater London",
+      "route": "Dulwich Common",
+      "postal_town": "London"
+    },
+    {
+      "address": "Bolton School, Chorley New Road, Bolton, BL1 4PA",
+      "geocode": true,
+      "formatted_address": "Chorley New Rd, Bolton BL1 4PA, UK",
+      "latitude": 53.579883,
+      "longitude": -2.455008,
+      "post_code": "BL1 4PA",
+      "city": "Greater Manchester",
+      "route": "Chorley New Road",
+      "postal_town": "Bolton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2H8",
+    "addr_1": "Marlow Road",
+    "addr_2": null,
+    "addr_3": "High Wycombe",
+    "addr_4": "Buckinghamshire",
+    "postcode": "HP11 1TB",
+    "url": "http://nmapscitt.org.uk/",
+    "geocode": true,
+    "formatted_address": "Marlow Rd, High Wycombe HP11 1TA, UK",
+    "latitude": 51.6167417,
+    "longitude": -0.7672374,
+    "post_code": "HP11 1TA",
+    "city": "Buckinghamshire",
+    "route": "Marlow Road",
+    "postal_town": "High Wycombe"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The National Mathematics and Physics SCITT (NMAPS) offers high quality specialist teacher training, led by outstanding, practising, teachers of Mathematics and Physics, in a unique collaboration between the state and independent sectors, and in partnership with subject associations.  \\r\n\\r\nBecause we only offer training in Maths and Physics, you will benefit from a bespoke programme focused on your subject, with enhanced specialist subject knowledge and pedagogical training to ensure your career gets off to a flying start.  Trainees will gain teaching experience across all key stages, including Sixth Form. \\r\n\\r\nTo prepare for their ITT year, all trainees are required to attend our 3 day Induction Course (27-29 August 2019) at Headington School in Oxford.  \\r\n\\r\nSubject Knowledge and Professional Studies training is delivered by tutors who have been chosen because of the high quality of their own teaching practice and experience. These weekly sessions will be delivered in your Hub Lead School and will develop your subject specific pedagogical skills and theories of education. Trainees will be individually supported by a mentor from their placement school who they will meet weekly to discuss progress and offer support. \\r\n\\r\nThe NMAPS programme allows trainee teachers to develop an understanding of their pupils, the education system in England today and to experience first-hand collaboration between the state and independent sectors. \\r\n\\r\nDuring the spring term we would expect all our trainees to be making good progress towards the Teachers' Standards and be on track to achieve QTS. Trainees will build an on-line portfolio of evidence to show the progress they have made, using our bespoke programme. \\r\n\\r\nOn successful completion of the training year, trainees are awarded QTS by NMAPS and a PGCE (Post Graduate Certificate in Education) by [The University of Buckingham](https://www.buckingham.ac.uk/), England's only independent university and top in three National rankings. \\r\n\\r\nThe programme also provides regular professional networking and social opportunities, based in English cities including London, throughout the PGCE training year and beyond. Links with key professional associations, including The Institute of Physics, The Mathematical Association and the National Centre for Excellence in the Teaching of Mathematics (NCETM) will provide on-going high quality professional development.\\r\n\\r\nThe trainees' relationship with NMAPS does not end with gaining QTS and a PGCE; former trainees continue to benefit from a range of alumni network meetings, events, career support, leadership development, coaching opportunities and professional association support. Masters opportunities beyond training are also a possibility. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "A minimum 2.2 UK Bachelor’s degree, or overseas equivalent, is required and should normally include at least 50% of the subject you wish to teach. \\r\n\\r\nApplicants who do not meet the requirements outlined above may be considered with appropriate experience or academic background. In such cases, applicants should have a good A Level in their subject and may be required to undertake a [Subject Knowledge Enhancement (SKE) course.](https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses)  Please contact us for advice. \\r\nA GCSE, or comparable qualification, at Grade C/4 is required in both English Language and Mathematics. \\r\nEquivalency for overseas degrees and GCSEs must be verified through NARIC. ",
+    "InterviewProcess": "The NMAPS recruitment process is a rigorous and thorough process, normally lasting half a day and designed to match the best candidates appropriately to the places available. \\r\n\\r\nThe selection process will be led by NMAPS staff and a subject knowledge expert from the school offering the main training place; it will comprise: \\r\n* A 30 minute teaching activity to establish the applicant's ability to engage and communicate with young people.\\r\n* A 10 minute presentation delivered by the applicant to the interview panel to determine the candidate’s ability to engage with their audience and their enthusiasm for teaching. The topic will be provided in advance. \\r\n* A written task focused on either subject knowledge or communication skills.\\r\n* An interview to determine the applicant's aptitude for teaching in terms of intellectual and academic capabilities and the personal qualities, values and ethics needed to work in a school setting. The interview will also explore the applicant's resilience, time-management and organisational skills; it will include a subject knowledge conversation, led by the relevant Subject leader, to ascertain the applicant's potential to meet Teachers' Standard 3 by the end of their training. \\r\n \\r\nIf you are successful at interview, a conditional offer of a place will be made. Conditions will include: verification of your qualifications, passing your Professional Skills Tests, a criminal record check (DBS) and an on-line occupational health assessment. Further conditions, such as Subject Knowledge Enhancement (SKE) training  may be discussed with you at interview as appropriate.\\r\n",
+    "OtherRequirements": "Skills Tests - applicants must pass literacy and numeracy [Professional Skills Tests](https://getintoteaching.education.gov.uk/how-to-apply/passing-the-skills-tests) before our Induction Course at the end of August.   \\r\n\\r\nDBS Clearance and Occupational Health Check - all applicants will be required to undergo Disclosure Barring Service (DBS) and Enhanced Disclosure checks and an on-line Occupational Health Check. If you have lived overseas in the last 5 years additional checks may be required. \\r\n\\r\nEnglish Language proficiency requirements - applicants must demonstrate an excellent command of both written and spoken English. \\r\n\\r\nPlease visit our website for further details.\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject with a desire to share that with young people of all abilities. Applicants should be confident and articulate communicators, who are keen to contribute to their subject team and the wider school community. \\r\n\\r\nPrevious school experience is not required, but applicants are advised to give details of all meaningful experience of working with young people. This may be school experience, but could also include any unpaid volunteering with, for example, a sports team, drama or youth club. ",
+    "HowSchoolPlacementsWork": "We carefully match trainees to placement schools, taking into consideration location and individual trainee needs. \\r\n\\r\nThe majority of time will be spent in the main placement school, with a six week second placement in a contrasting school. Trainees will spend four days a week in school, supported by a subject mentor, who they will meet with every week.  \\r\n\\r\nSubject Knowledge and Professional Studies training will take place on the fifth day in their local Hub Lead School.\\r\n\\r\nAdditional short placements will ensure that trainees gain exposure to the full range of English teaching organisations: state comprehensive and selective schools; independent, primary and special schools; and pupil referral units. Trainees will gain teaching experience across all key stages, including Sixth Form. \\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The National Mathematics and Physics SCITT (NMAPS) offers high quality specialist teacher training, led by outstanding, practising, teachers of Mathematics and Physics, in a unique collaboration between the state and independent sectors, and in partnership with subject associations such as The Institute of Physics, The Mathematical Association and the National Centre for Excellence in the Teaching of Mathematics (NCETM).\\r\n\\r\nBecause we only offer training in Maths and Physics, you will benefit from a bespoke programme focused on your subject, with enhanced specialist subject knowledge and pedagogical training to ensure your career gets off to a flying start. NMAPS trainees learn 'on the job' from the very beginning and benefit immediately from the insight into what teaching involves. Trainees are supported to 'find their feet' before delivering classes; schools in the NMAPS network do not require trainees to deliver a lesson unsupported until they are ready so. \\r\n\\r\nThe NMAPS programme begins with a 3 day residential Induction Course at Headington School in Oxford in late August to prepare you for the year ahead.\\r\n",
+    "TrainWithDisability": "The National Mathematics and Physics SCITT (NMAPS) is committed to equal opportunities. \\r\nOur partners schools are able to support trainees with additional needs, but facilities may vary from school to school and will be discussed at interview where appropriate. We will work with trainees to arrange suitable placements that can accommodate their needs.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

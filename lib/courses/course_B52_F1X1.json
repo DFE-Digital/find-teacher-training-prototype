@@ -1,0 +1,70 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Bournemouth Poole & Dorset Secondary Training Partnership",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Science (Chemistry)",
+  "slug": "B52/F1X1",
+  "providerCode": "B52",
+  "programmeCode": "F1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "geocode": true,
+      "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+      "latitude": 50.73322599999999,
+      "longitude": -1.782691,
+      "post_code": "BH23 1JF",
+      "city": "Dorset",
+      "route": "Sopers Lane",
+      "postal_town": "Christchurch"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "B52",
+    "addr_1": "BPD Secondary Training Partnership",
+    "addr_2": "Twynham School",
+    "addr_3": "Sopers Lane",
+    "addr_4": "Christchurch",
+    "postcode": "BH23 1JF",
+    "url": "http://www.bpdscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+    "latitude": 50.73322599999999,
+    "longitude": -1.782691,
+    "post_code": "BH23 1JF",
+    "city": "Dorset",
+    "route": "Sopers Lane",
+    "postal_town": "Christchurch"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Science course is consistently graded as good in Ofsted inspections, and will lead to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYou will be taught by staff with national and international reputations as experts in the field of science education. They are a diverse and incredibly experienced community of academics with extensive school teaching and academic experience.\\r\n\\r\nTake part in activities designed to help you to plan your teaching effectively and imaginatively. Discover how to evaluate your skills, particularly in terms of the quality of learning achieved by pupils.\\r\n\\r\nYour teaching is through a series of practical seminars and workshops in purpose-built science laboratorieswhere interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\nobservation of other teachers\\r\n\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n*gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Bournemouth Poole & Dorset Teacher Training Partnership is a consortium of 16 secondary schools working in close partnership. Our partnership schools extend from Swanage in the west to Lymington on the edge of the New Forest in the east. The Lead School for the Partnership is Twynham School, located in the historic harbour town of Christchurch, an OFSTED  'Outstanding' school and national Teaching School.  The Partnership offers a full-time one-year course running from September-July. Successful completion of this course brings with it the award of QTS (Qualified Teacher Status) with a PGCE (Post-Graduate Certificate in Education) validated by the University of Winchester \\r\n\\r\nA distinctive feature of the BPD course is the focus on carefully staged and appropriately supervised practical classroom experience within two secondary schools, which is further supported by academic and professional study via central training. All partner schools have experience of Initial Teacher Training and a good record of pupil progress and achievement. \\r\n\\r\nCurrently the BPD Partnership offers SCITT training in the following subject areas: English, Mathematics, Biology, Chemistry, Physics, MFL, Design & Technology, Geography, Computer Science, Music, Physical Education, Art & Design, Religious Education, History & Dance/Performance. \\r\n\\r\nIf you are looking for a training course which is grounded in practical classroom experience then the school-centred route is ideal for you.\\r\nOur trainees have a very high success rate in completion and moving onto employment,  with the majority of those gaining employment working in the local area where many gain rapid promotion.\\r\n\\r\n {Check out our website](www.bpdscitt.org.uk)",
+    "TrainWithDisability": "There is access for people with disabilities, although not all schools offering placements are able to cater for people with disabilities in all subjects due to the architecture and layout of school departments. Please contact the Partnership Office if you wish to discuss this aspect further. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

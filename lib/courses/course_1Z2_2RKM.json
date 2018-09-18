@@ -1,0 +1,85 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Sussex",
+  "provider": "Wealden Partnership",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "1Z2/2RKM",
+  "providerCode": "1Z2",
+  "programmeCode": "2RKM",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Cade Street, Old Heathfield, Heathfield, TN21 8RJ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Cade Street, Old Heathfield, Heathfield, TN21 8RJ",
+      "geocode": true,
+      "formatted_address": "Cade Street, Heathfield TN21 8RJ, UK",
+      "latitude": 50.96813539999999,
+      "longitude": 0.2764728,
+      "post_code": "TN21 8RJ",
+      "city": "Cade Street",
+      "route": null,
+      "postal_town": "Heathfield"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1Z2",
+    "addr_1": "Cade Street",
+    "addr_2": "Old Heathfield",
+    "addr_3": "Heathfield",
+    "addr_4": null,
+    "postcode": "TN21 8RJ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Heathfield TN21, UK",
+    "latitude": 50.9667401,
+    "longitude": 0.2564428,
+    "post_code": "TN21",
+    "city": "Heathfield",
+    "route": null,
+    "postal_town": "Heathfield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "When costs such as health or DBS checks, or use of specialist materials are incurred as a mandatory requirement of the course they are included in your tuition fee.",
+    "AboutCourse": "The training will be delivered both at the university and by staff at the partnership schools.\\r\n\\r\nOur training is supported by the University of Sussex which has a long and successful tradition in teacher education in partnership with local schools. Candidates on a School Direct Tuition Fee or Salaried place with University of Sussex will be automatically registered on the Sussex PGCE which offers up to 90 Master credits and enables progression onto a part-time MEd in the NQT year and beyond if you wish and is equivalent to half a Masters degree. \\r\n\\r\nYou will receive the same high quality level of training and support from the University of Sussex as would a traditional Sussex PGCE candidate in addition to the many benefits of undertaking a school–based model of training with our strong partnership of schools.\\r\n\\r\nUniversity of Sussex tutors work with us to provide high quality inputs on how to teach and assess in a variety of secondary subjects or across the curriculum in primary schools. The University also provides a comprehensive programme of professional studies which complements the school-based training offered across our partnership. \\r\n\\r\nThis training features a mix of lectures, workshops, tutorials and school visits led by University of Sussex education faculty, excellent teachers from partnership schools and other educational experts. These sessions also allow you to share your experiences with other trainee teachers and reflect upon the learning and teaching you engage with in schools during the week. \\r\n \\r\nEvery trainee is expected to complete academic assignments at Masters level which are designed to develop knowledge and understanding, encourage reflection and assess progress against the Teachers’ Standards. The assignments are carefully crafted to ensure that trainees The University works in partnership with the school to organise a final assessment and make a recommendation for Qualified Teacher Status (QTS). A university subject specialist tutor will be assigned to support you whilst on the programme and you will be eligible to access a range of support services provided by the University. \\r\n\\r\nYou will spend the majority of the year in your main placement school. We then arrange for you to undertake a shorter ‘complementary’ placement in another school during the year. For secondary the shorter placement takes place for 4-6 weeks after February half term and for primary after the Easter holiday until May half term when the course finishes.\\r\n\\r\nFurther information on the course can be found [here](http://www.sussex.ac.uk/education/ite/schooldirect). ",
+    "CourseLength": "OneYear",
+    "Qualifications": "Academic Qualifications\\r\nYou should be a graduate with a 'good' degree in English. You will need a grade C in at leave five GCSE subjects including English Language and Mathematics. \\r\n\\r\nPlease note that before starting the training programme all successful applicants are required to pass skills tests in numeracy and literacy.",
+    "FinancialSupport": "Generous, tax-free funding is available to the best graduates training in a range of subjects. You could get up to £28,000 tax-free while you train, either as a bursary or prestigious scholarship. Early-career payments are also on offer for those choosing mathematics.Your eligibility for financial support, and the amount you can expect to receive, will depend on the subject you choose to teach and your degree classification or highest relevant academic qualification. \\r\n\\r\nIn addition, a small number of discretionary bursaries may be awarded to trainees who we identify as having outstanding potential, and who fall within the bottom and middle tier for core bursary payment purposes.\\r\n\\r\nYou don’t need to apply for a bursary – if you are enrolled on a non-salaried postgraduate course and meet the eligibility criteria, you will begin receiving payments automatically by your chosen teacher training provider. You will receive more information on the arrangements and how this is distributed prior to the start of your course.\\r\n\\r\n[Find out more about funding here] (https://getintoteaching.education.gov.uk/funding-and-salary/overview)",
+    "InterviewProcess": "If we are interested in pursuing your application we will pass your details to the University of Sussex and you will be interviewed by the University in the first instance before being interviewed by the partnership. \\r\n\\r\nHeathfield Community College is the lead school in the partnership and will be co-ordinating the interview process. This will involve approximately 2-3 hours spent at one of the partnership schools and will include the delivery of a 30 minute classroom based activity with a small group of students, a short written task related to a current educational issue and the opportunity to talk to some staff and pupils as well as the formal interview. You will be told in advance about the content of the lesson and the age group you will be teaching. \\r\n\\r\nSubject staff and at least one Professional Tutor will be involved in the interviews. ",
+    "OtherRequirements": "We would expect you to have some experience of working with young people in this age group, possibly in a sports club or similar. \\r\n\\r\nIt is an advantage to have done some recent classroom observation in your subject area before you come to interview, a minimum of two weeks’ school experience.",
+    "PersonalQualities": "We are looking for well-qualified, committed and enthusiastic trainee teachers who are passionate about English and keen to share this passion with young people of all abilities in the secondary age range.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "You will complete your first teaching placement in one of our schools and your second placement in a different partnership school. \\r\n\\r\nAll four schools are able to provide access to post-16 learners and the opportunity to experience 6th form teaching in a successful and supportive environment.\\r\n\\r\nWe are keen to ensure that placement schools work for both the trainee and the "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Wealden Partnership offers high quality teacher training by dedicated professionals in a supportive and inspirational environment. We have worked with trainee teachers from our local universities for many years and value the enthusiasm they can offer to a school community. We believe that teaching is a wonderful career and that this is a successful, innovative and vibrant group of schools to work with. \\r\n\\r\nWe work alongside the University of Brighton, Sussex University and the SCITT Provider Teach Kent Sussex. Your choice of provider will very much depend on the programme you wish to study. We will be happy to discuss and support with this decision making process. ",
+    "TrainWithDisability": "Our partnership consists of 4 mainstream schools who all have a fully inclusive approach to education and recruitment. \\r\n\\r\nAny additional support required can be discussed during the interview process and support can be put in place if needed.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our training is supported by the University of Brighton, which has a long and successful tradition in teacher education. The university works with us to provide quality input on how to teach and assess in secondary & primary schools and  and also provides a comprehensive programme of professional studies which complements the sessions offered in our partnership. \\r\n\\r\n\\r\n",
+        "UcasInstitutionCode": "B72"
+      },
+      {
+        "Description": "Teach Kent & Sussex is a school based teacher training centre (SCITT) led by the Tenax Schools Trust of which Bennett is a part. Teach Kent & Sussex work in partnership  with the School of Education at the University of Brighton (rated outstanding by Ofsted).\\r\n\\r\nAs a school based centre for teacher training your experience will always be rooted in the experience of training and working in a school. Consequently, we consider that this school led and school based system will allow you to flourish as you begin your teaching career.",
+        "UcasInstitutionCode": "2EZ"
+      },
+      {
+        "Description": "Our training is supported by the University of Sussex which has a long and successful tradition in teacher education in partnership with local schools. \\r\n\\r\nThe University of Sussex Initial Teacher Training (ITE) Partnership’s most recent quality outcomes relating to the School Direct and PGCE cohort completing their course in Summer 2016 included; 94% completing their teacher education with either a Merit or a Distinction, 96 per cent securing their first staff teaching post on completion of their course and 99 per cent of ex-trainees rating the quality of their initial teacher training as 'good' or 'very good'. ",
+        "UcasInstitutionCode": "S90"
+      }
+    ]
+  },
+  "has_inst": true
+}

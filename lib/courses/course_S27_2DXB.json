@@ -1,0 +1,62 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Southampton",
+  "subjects": [
+    "Mathematics",
+    "Primary"
+  ],
+  "name": "Primary General with Mathematics",
+  "slug": "S27/2DXB",
+  "providerCode": "S27",
+  "programmeCode": "2DXB",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S27",
+    "addr_1": "Highfield",
+    "addr_2": null,
+    "addr_3": "Southampton",
+    "addr_4": null,
+    "postcode": "SO17 1BJ",
+    "url": "http://www.southampton.ac.uk/education/postgraduate/itt.page",
+    "geocode": true,
+    "formatted_address": "Highfield, Southampton SO17 3RU, UK",
+    "latitude": 50.93261099999999,
+    "longitude": -1.390369,
+    "post_code": "SO17 3RU",
+    "city": "Highfield",
+    "route": null,
+    "postal_town": "Southampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "\\r\nThe programme will suit people who aspire to become Mathematics specialists as well as excellent primary teachers with an understanding of some of the theory underpinning effective teaching and learning in order to improve their practice. \\r\nWe aim for reflective and dynamic practitioners who are committed to promoting the learning of all pupils in their classes and to help every child make progress in their primary education. Additionally those following the Maths specialism route will have a deeper understanding of key areas in this subject area. The school placements will include a particular focus on the teaching of Mathematics, alongside the other subjects in the Primary curriculum. \\r\nPlanned and delivered in close collaboration with practising teachers in local primary schools and the local Maths Hub, the primary course introduces you to the whole primary curriculum whilst providing a secure basis for you to learn how most effectively to plan, teach and assess subjects of the National Curriculum and to organise and manage a classroom. \\r\nThe course aims to develop your subject knowledge through a range of teaching and learning approaches: workshops, seminars, lectures and demonstrations, work in schools and micro-teaching activities, independent and group research, and through reading and writing activities. The assignments include a high degree of choice and strongly link theory and practice. \\r\nThose following the Mathematics specialism route will have additional sessions in school and University exploring the Mathematics curriculum in greater depth. Where there are elements of choice, for example in the three assignments, it is expected that they will select options reflecting their specialism. \\r\nThe Primary PGCE course\\r\n(http://www.southampton.ac.uk/education/postgraduate/itt_courses/pgce_primary.page)\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Students accepted onto the course must hold a 2:2 degree or above and the majority will be 2:1 or higher. This must be at Honours level and awarded by a British University (or equivalent as confirmed by NARIC). We accept a wide range of degree subjects, but expect you to demonstrate the relevance of your degree to primary teaching. \\r\nCurrently, you must have GCSE passes at grade C/grade 4 or above in English Language, Mathematics and Science. If your qualifications are not considered to be appropriate, we can offer GCSE equivalent tests in English, Maths and Science.\\r\n\\r\n",
+    "FeeInternational": 18104.0,
+    "InterviewProcess": "If you are invited for interview you will be asked to prepare a short presentation to a small group of candidates, and engage in discussion. You will also be interviewed by one or more members of the course team. We also ask you to undertake some short written tasks to satisfy ourselves of your capability in written English, spelling and mathematics. \\r\nYour performance will be assessed by several people, including senior staff from our partner schools, and decisions about acceptance are only made when all assessments are collated and discussed by the course team panel. \\r\nWe would encourage all prospective students to spend time in a Primary School so you are informed about the school environment, to confirm your own wish to teach and inform your own views. As these views will be explored at interview, you need to be able to reflect on aspects of what teachers and schools do and be able to talk convincingly about teaching in primary schools.\\r\n",
+    "OtherRequirements": "You will be required to obtain:\\r\n* complete a form describing your state of health which will be checked against the DfE Fitness to Teach regulations \\r\n* to provide an Enhanced Disclosure from the Disclosure and Barring Service (DBS) to confirm that there are no criminal offences on your record which should bar you from teaching. Visit www.disclosure.gov.uk for more information. \\r\n* pass 2 QTS Skills Tests in Literacy and Numeracy before you are eligible to be accepted on to any ITE programme. \\r\n\\r\nThese must be completed before commencement of the programme to which you have applied.\\r\n",
+    "HowSchoolPlacementsWork": "Each trainee undertakes two block placements in schools within our Partnership. We aim to provide schools that offer contrasting placement experiences in order to develop a breadth and range of skills. During the placement blocks, one day per week is dedicated to training with the university in either curriculum or professional development. A regular programme of school based professional training is also delivered whilst trainees are on placement. Whilst on placement, each trainee is allocated a mentor from their subject area and a professional mentor to oversee the professional training. Trainees will also receive visits from their university tutor to support them in their teaching and professional development."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our Initial Teacher Education department is a dynamic and thriving community of professional educators and researchers. In AY2017-2018 Southampton Education School was ranked 2nd in the Guardian University League Table.\\r\n\\r\nWhy come to Southampton?\\r\n\\r\n* Our Tutors. In every forum the dedication and commitment of our Tutors is praised. Trainee Teachers rate them extremely highly, External Examiners praise the time and effort that Tutors devote to Trainees and Ofsted recognises the ‘high quality mentoring and support’ offered. \\r\n* Our quality of teaching and our diverse partnerships and placements. Our Tutors are all Teachers. We thrive through continuous professional development – and very much enjoy implementing new research or theories in partnership with Trainee Teachers and the Schools that we work with. Our Partner Schools are key to our success, and the Mentors that we work are experienced, dedicated and enthusiastic. \\r\n* Our commitment to Health and Wellbeing. The health and wellbeing of our Trainee Teachers, and the students that they teach, is central to producing outstanding teachers and happy students who can make progress and succeed.\\r\n* Our scope to personalise and individualise your learning on your Programme. Every Trainee Teacher is unique, and we want each and every trainee to be the very best teacher that they can be. We achieve this by personalising our programmes to suit you.\\r\n* Our commitment to ‘Student Voice’. We actively encourage trainees to work with us to make our courses even better. \\r\n* Employability. Almost 100% of our Trainee Teachers get jobs. \\r\n",
+    "TrainWithDisability": "At Southampton we welcome applications from candidates with disabilities and other needs. SEND is a very important element of our training throughout the PGCE, and trainees who have personal experiences of SEND are of real benefit to our programmes, as they bring a wealth of experience.\\r\n\\r\nHow are Trainee Teachers with disabilities and other needs supported?\\r\n\\r\n* Trainees with dyslexia meet together at the start of the course for an informal session, led by a tutor with significant SEND experience. This group is then enabled to support one another throughout the course, with individual, personalised, input from the tutor as required.\\r\n* Trainees with Physical Disabilities are always accommodated as appropriate and a wide variety of modifications are available.  For example, a student with a hearing impairment may be supported by our enabling services, as well as by their Personal Academic Tutor with services such as remote transcription available - we work with individuals to ensure that their needs are met both when in University and when teaching in schools.\\r\n* We recognise that teaching can be stressful. The University offers a variety of services for Trainees who may be suffering from anxiety or depression, for example trainees can access talking therapies via the University Enabling Services. Trainees are also encouraged to make full use of their Personal Academic Tutor.\\r\n* The course team are able to personalise many aspects of the programme, to accommodate need on an individual basis, to enable successful completion of the course.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

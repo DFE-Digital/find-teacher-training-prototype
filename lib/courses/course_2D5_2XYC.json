@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "University of East Anglia",
+  "provider": "Litcham School",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "slug": "2D5/2XYC",
+  "providerCode": "2D5",
+  "programmeCode": "2XYC",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Church Street, Litcham, King's Lynn, PE32 2NS",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Church Street, Litcham, King's Lynn, PE32 2NS",
+      "geocode": true,
+      "formatted_address": "Church St, Litcham, King's Lynn PE32 2NS, UK",
+      "latitude": 52.722715,
+      "longitude": 0.7930037,
+      "post_code": "PE32 2NS",
+      "city": "Litcham",
+      "route": "Church Street",
+      "postal_town": "King's Lynn"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2D5",
+    "addr_1": "Church Street",
+    "addr_2": "Litcham",
+    "addr_3": null,
+    "addr_4": "King's Lynn",
+    "postcode": "PE32 2NS",
+    "url": "http://www.litchamschool.net/",
+    "geocode": true,
+    "formatted_address": "Church St, Litcham, King's Lynn PE32 2NS, UK",
+    "latitude": 52.7228885,
+    "longitude": 0.7932446,
+    "post_code": "PE32 2NS",
+    "city": "Litcham",
+    "route": "Church Street",
+    "postal_town": "King's Lynn"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The History Department is part of a larger Humanities Department at Litcham School and we consistently achieve GCSE results that are above the National Average. History is the largest option subject within the school, with the biggest uptake at GCSE. We are a team of very experienced teachers, but also have a member of the Department who was an NQT last year, who would be able to provide advice and guidance from a new teacher’s perspective too. In the past, we have successfully mentored PGCE students to reach the highest standards.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Our entry requirements are: \\r\nDegree classification of 2:1 or above. \\r\nGrade C or above in GCSE English, Mathematics and Science achieved before submitting the application.\\r\nCandidates applying for the Primary Language courses must have achieved an A-Level or gained considerable experience working with or using their chosen language.\\r\n",
+    "FinancialSupport": "Trainees pay a course fee to study on the course. Trainees may be eligible to receive a bursary based on subject and degree level. \\r\n\\r\nFor further information on bursaries and scholarships, please take a look at the information on the following link: \\r\nwww.education.gov.uk/get-into-teaching/funding/postgraduate-funding.aspx ",
+    "InterviewProcess": "Both school partners and university partners will be involved in the selection process.  You will have an opportunity to visit the school to which you have applied.\\r\nThe selection process will include:\\r\n•\\tAn interview \\r\n•\\tA group discussion task\\r\n•\\tA written task\\r\nYou may also be asked to complete other relevant selection tasks such as:\\r\n•\\tWorking with small groups of pupils\\r\n•\\tGiving a presentation\\r\n•\\tLiteracy, numeracy and subject knowledge questions\\r\n",
+    "OtherRequirements": "Disclosure and Barring Service (DBS)\\r\nPROTECTION OF CHILDREN: Disclosure of Criminal Background for Those with Access to Children\\r\nAll applicants for the PGCE will be required to obtain an Enhanced Criminal Records check from the Disclosure and Barring Service (DBS). The enhanced disclosure will be used to assess suitability for the programme and information provided may be discussed with the external members of the School's Safeguarding Sub-Committees. Candidates are responsible for payment of the DBS fee. \\r\nSuccessful completion of both QTS skills tests before the start of the course: \\r\nwww.education.gov.uk/schools/careers/traininganddevelopment/professional \\r\n",
+    "PersonalQualities": "Applicants should ensure they have  gained recent experience, in school, with children of the relevant age range that they wish to teach. It is important that they have an understanding of and reflect on how classrooms are managed and how teaching and learning takes place.\\r\n\\r\nWe are looking for trainees who are able to communicate effectively at all levels with young people and adult and they should have good ICT skills. \\r\n\\r\nWe are looking for trainees who will commit to teaching as a profession and will also commit to teaching their subject at all levels.  \\r\n\\r\n",
+    "HowSchoolPlacementsWork": "You will be assigned a mentor and will additionally have mentoring support from a member of the senior leadership team. From the beginning you will be treated as a member of staff and will be able to attend staff meetings and staff development days, if you are available. Our mentors are outstanding teachers but they have also undertaken training to develop their mentoring skills. \\r\n\\r\nThroughout the programme you will attend curriculum subject training days as well as professional development training days. UEA tutors and experienced teaching staff from the partnership will deliver these training days. \\r\n\\r\nFor more information visit www.uea.ac.uk/education/pgce/school-direct  \\r\n\\r\nAs well as specific training in your subject and professional training sessions, you will at the start of your training in your placement school carry out focused observation of lessons. Gradually you will progress from observing other teachers to working with small groups of pupils in a lesson and then planning and teaching your own lessons. You will receive informative guidance and constructive feedback from your tutors and mentors and you will be supported to reflect critically on what you do. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At Litcham School we have been supporting PGCE students for many years and have experienced and enthusiastic staff, who value the process of mentoring students through their first steps to becoming outstanding teachers.\\r\n\\r\nIn partnership with the UEA we can offer a supportive Early Years and Key Stage 1, 2, 3 and 4 placements where students are offered a personal programme to support their development and progress their teaching skills. \\r\n\\r\nLitcham School is situated about 18 miles west of Norwich and is one of only two all through schools in Norfolk. We have pupils from Reception to GCSE split across two sites. We are situated in a rural location and serve many small villages, with the secondary phase offering places to pupils from over 30 villages. The catchment area provides a mix of backgrounds. The school has close links with the other schools in the cluster and across the west of the county. \\r\n\\r\nThe school was inspected by Ofsted in November 2015 when we were judged to be a “good school”. The report states: “Teachers provide effective learning opportunities and engage well with pupils. Teachers plan lessons that help pupils make good progress from their individual starting points. Pupils make good progress. The school’s work to promote pupils’ personal development and welfare is outstanding.”",
+    "TrainWithDisability": "We operate an equal opportunities policy. Individual needs are catered for and can be discussed at interview or on task day. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "E14"
+      }
+    ]
+  },
+  "has_inst": true
+}

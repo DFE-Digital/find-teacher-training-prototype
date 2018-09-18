@@ -1,0 +1,64 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Harefield SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "26U/2PKJ",
+  "providerCode": "26U",
+  "programmeCode": "2PKJ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Yeovil Chase, Bitterne, Southampton, SO18 5NZ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Yeovil Chase, Bitterne, Southampton, SO18 5NZ",
+      "geocode": true,
+      "formatted_address": "Yeovil Chase, Southampton SO18 5PA, UK",
+      "latitude": 50.91970680000001,
+      "longitude": -1.3479092,
+      "post_code": "SO18 5PA",
+      "city": "Southampton",
+      "route": "Yeovil Chase",
+      "postal_town": "Southampton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "26U",
+    "addr_1": "Yeovil Chase",
+    "addr_2": "Bitterne",
+    "addr_3": null,
+    "addr_4": "Southampton",
+    "postcode": "SO18 5NZ",
+    "url": "http://www.harefieldscitt.org",
+    "geocode": true,
+    "formatted_address": "Yeovil Chase, Southampton SO18 5PA, UK",
+    "latitude": 50.91970680000001,
+    "longitude": -1.3479092,
+    "post_code": "SO18 5PA",
+    "city": "Southampton",
+    "route": "Yeovil Chase",
+    "postal_town": "Southampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Our programme runs from September - July  during term time. Trainees are in school from Monday to Thursday and then on Friday they have a centred based training session. \\r\nTrainees are placed in 2 different schools. They start in their preferred age group and then in the 2nd term move to the alternate key stage. In the 3 rd term they return to their first placement "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The SCITT is an integral part of Hamwic Multi Academy Trust and we see our trainees as the future. We look at our trainees and see future leaders within the Trust. \\r\nDuring previous years 100% of trainees said that they would recommend us to others and 100% of our trainees over the past 2 year have had jobs when they completed the programme. \\r\nOur partnership is made up of Primary, Infant and Junior schools which serve a wide variety of communities. \\r\nThe programme is bespoke and is adaptable where needed to ensure that the needs of our trainees are fully met. ",
+    "TrainWithDisability": "We are fully supportive of trainees with disabilities. All of our schools are accessible and academic support is available where needed. \\r\nThe well being of our trainees is hugely important and trainees have access to  free counselling and a range of on-line resources if needed.\\r\nThere are 1:1 sessions that can be arranged to ensure that our trainees are fully supported throughout the programme. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

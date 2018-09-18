@@ -1,0 +1,54 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The Pilgrim Partnership School Centred Teacher Training",
+  "subjects": [
+    "Physical education",
+    "Primary"
+  ],
+  "name": "General Primary with PE as a specialism",
+  "slug": "P57/2V22",
+  "providerCode": "P57",
+  "programmeCode": "2V22",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "P57",
+    "addr_1": "The Priory Centre",
+    "addr_2": "63 Newnham Avenue",
+    "addr_3": "Bedford",
+    "addr_4": "Bedfordshire",
+    "postcode": "MK41 9QJ",
+    "url": "http://www.pilgrim-partnership.org.uk",
+    "geocode": true,
+    "formatted_address": "63 Newnham Ave, Bedford MK41 9QJ, UK",
+    "latitude": 52.1372458,
+    "longitude": -0.4444667,
+    "post_code": "MK41 9QJ",
+    "city": "Bedford",
+    "route": "Newnham Avenue",
+    "postal_town": "Bedford"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "If you are considering teacher training on a one year course leading to Qualified Teacher Status (QTS) with a PGCE, SAF Pilgrim Partnership as part of Sharnbrook Academy Federation (SAF) may be the provider for you.  We pride ourselves in being able to offer a personalised training programme with a journey that begins as soon as you contact us.  We will guide you all the way, from 'just thinking about teaching', getting your first job, to offering you advice and guidance about your continuing career development.\\r\n\\r\nWe offer a variety of training programmes to suit individual needs.  This includes the School Direct - salaried and tuition fee routes and the SCITT route.  If you are interested in working with children with Special Educational Needs and Disabilities (SEND), we work with a number of Special Schools.\\r\n\\r\nWith us, you will be choosing a provider with a proven track record for producing outstanding teachers for schools within our partnership which covers Bedfordshire, Northamptonshire, Hertfordshire, Cambridgeshire, Milton Keynes and beyond.\\r\n\\r\nTrainee experiences are designed to meet individual needs from the start of the course, encouraging trainees to progress quickly and effectively into proficient teachers. \\r\n\\r\nOur courses are highly effective in nurturing the talents of future generations of outstanding teachers.  We believe in fostering reflective, self-assured trainees who are confident in questioning and rationalising their progress and ability as teachers.\\r\n\\r\nTrainees will be trained in a highly supportive and aspirational environment, and will develop the rigour, professional knowledge, understanding and skills necessary for teaching.",
+    "TrainWithDisability": "SAF Pilgrim Partnership is committed to the employment and career development of disabled people.\\r\n\\r\nWhat do we mean by disability?\\r\nThe Disability Discrimination Act, 1995 defines a disabled person as someone who has a physical or mental impairment, which has a substantial and adverse long-term effect on his or her ability to carry out normal day-to-day activities.\\r\n\\r\nWe have been successful in working with trainees who have either a physical or mental impairment to become effective classroom practitioners.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

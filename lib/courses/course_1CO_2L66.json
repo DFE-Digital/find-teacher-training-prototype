@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Teach SouthEast",
+  "provider": "Teach SouthEast",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "slug": "1CO/2L66",
+  "providerCode": "1CO",
+  "programmeCode": "2L66",
+  "schools": [
+    {
+      "name": "St John the Baptist School",
+      "address": "Elmbridge Lane, Woking, Surrey, GU22 9AL",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Elmbridge Lane, Woking, Surrey, GU22 9AL",
+      "geocode": true,
+      "formatted_address": "Elmbridge Ln, Woking GU22 9AW, UK",
+      "latitude": 51.3086016,
+      "longitude": -0.5500868999999999,
+      "post_code": "GU22 9AW",
+      "city": "Surrey",
+      "route": "Elmbridge Lane",
+      "postal_town": "Woking"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1CO",
+    "addr_1": "St John the Baptist School",
+    "addr_2": "Elmbridge Lane",
+    "addr_3": "Woking",
+    "addr_4": "Surrey",
+    "postcode": "GU22 9AL",
+    "url": "http://www.teachsoutheast.co.uk",
+    "geocode": true,
+    "formatted_address": "Elmbridge Ln, Woking GU22 9AL, UK",
+    "latitude": 51.3083055,
+    "longitude": -0.5488316,
+    "post_code": "GU22 9AL",
+    "city": "Surrey",
+    "route": "Elmbridge Lane",
+    "postal_town": "Woking"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "The course offers you a weekly General Professional Studies (GPS) session lasting 3 hours, which is held at SJB School in Woking.  In these sessions you will receive practical strategies and ideas to develop your practice within the classroom.  Areas of pedagogy covered within these sessions include: assessment for learning, smart marking, lesson planning, behaviour management and differentiation.  Our Non-Salaried and SCITT courses are awarded with QTS and PGCE carrying 60 masters credits (awarded in partnership with the University of Sussex).  Our salaried courses lead to QTS only.\\r\n\\r\nAlongside your General Professional Studies, all trainees receive subject specific training, which is led by one of the schools within the partnership. All subject hubs within the partnership have been chosen for their renowned reputation as training centres and outstanding levels of learning and teaching as well as results. English subject studies gives trainees a weekly dedicated session focusing on subject related topics, preparing you to teach English to a high level within the classroom. Areas of training include writing, reading and speaking and listening assessments, planning an effective scheme of work, deconstructing literature texts, teaching language at KS4 and KS5. Chris, a former Teach SouthEast  English trainee commented on the English programme: “The sessions are always engaging and relevant and have ensured that I become the very best English teacher I can.” As a Teach SouthEast trainee you would spend the majority of time in your placement school with the weekly day of training delivered by the Teach SouthEast SCITT and their partnership of schools. The PGCE (60 masters credits) is delivered by and accredited by The University of Sussex, whose ITT provision has been graded as outstanding by Ofsted.  Trainees have the opportunity to go to The University of Sussex on a number of occasions throughout the year to access keynote lectures and the PGCE element of the course is delivered at one of the two lead schools within the SCITT.\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "Teach SouthEast's School Direct Non-Salaried and Core SCITT courses carry tuition fees.  \\r\n\\r\nOur Salaried and Apprenticeship courses do not carry tuition fees and these trainees will earn a salary equivalent to Unqualified Teacher Salary Pay-scale Point 1.\\r\n\\r\n\\r\n",
+    "Qualifications": "•\\tDegree - 2:2 or above\\r\n•\\t5 GCSEs (or acceptable equivalent) – Grade A*- C (new gradings 4-9) which must include Maths & English\\r\n•\\tIf your degree is not in the subject in which you train to teach, an A-Level in a related subject is required\\r\n\\r\nIf your degree or high school education were undertaken outside the UK, you will need to obtain a statement of comparability from NARIC: https://www.naric.org.uk/naric/\\r\n",
+    "InterviewProcess": "Once we receive your application through UCAS we will make a call to interview within approximately one week. The interview day will be held at one of the schools within the partnership within approximately  two weeks. The interview day will consist of: \\r\n•\\tA tour of the school in which the interviews are being held\\r\n•\\tA subject knowledge test.  This is usually part of a GCSE paper and will last no longer than 30 minutes\\r\n•\\tAn exercise on resilience \\r\n•\\tTeaching an advised topic to a class of approximately 30 students for approximately 25 minutes\\r\n•\\tAn interview with staff from Teach SouthEast and our partner schools\\r\n",
+    "OtherRequirements": "All trainees are required to undergo an enhanced DBS check to verify your suitability for working with young people.  If you have lived overseas for more than 12 months in the past 10 years, you will need to provide an overseas police check.   All trainees will be required to complete a Fitness to Teach on-line health questionnaire to ensure they are well enough for the rigors of the teaching profession.  Prior to the start of the course, all trainees are required to pass the government literacy and numeracy skills tests for teaching.   ",
+    "PersonalQualities": "We are looking to recruit talented candidates who have the qualities and attributes suited to a career in teaching and the drive and ambition to make it happen.  These personal qualities include:\\r\n\\r\n•\\tA friendly and approachable nature\\r\n•\\tGood interpersonal skills\\r\n•\\tOrganisation and time management\\r\n•\\tA passion for your subject \\r\n•\\tAn innate ability to communicate and relate to young people \\r\n•\\tA positive outlook and resilient nature\\r\n•\\tA creative and innovative approach\\r\n•\\tThe ability to reflect on and improve practice\\r\n•\\tPotential leadership capabilities\\r\n•\\tA passion and drive for delivering first class education.",
+    "HowSchoolPlacementsWork": "Teach SouthEast is a partnership of 15 schools around the SouthEast of England.  Placing trainees is a complex process and we take many factors into consideration when doing so.  These factors include: \\r\n•\\tEstablishing which schools in the partnership have the capacity to host a trainee in a particular subject\\r\n•\\tSelecting a mentor who will be the best fit for the trainee\\r\n•\\tWe will establish at interview where the candidate will be living for the course, if the candidate drives and if they have access to a car or if they will be dependent on public transport\\r\n•\\tWe do not expect trainees to travel for longer than an hour each way to their placement school.  Trainee journeys to their placement schools are typically between 20 – 40 minutes\\r\n•\\tWe always do our best to accommodate trainees’ personal circumstances when placing them.\\r\nTrainees will spend the first term in their Home School.   After Christmas, trainees will be given a 6 week contrasting Away School placement until the February half term, after which they will return to their Home School.  \\r\nAll of our Initial Teacher Training courses teach the age range 11-16 with post 16 enhancement so every trainee will get an exposure to teaching Key Stages 3, 4 and 5.  The only exceptions to this are Business Studies  and Media Studies which cover ages 14-19 as these subjects are not taught at Key Stage 3 in our partnership of schools.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "As an Initial Teacher Training (ITT) provider, Teach SouthEast delivers high quality bespoke school-centred ITT programmes for aspiring secondary teachers in South East England.  Led by two outstanding teaching schools, St John the Baptist (SJB) and Salesian School, who together with their vast network of partnership schools, are passionate about training and developing outstanding teachers of the future.  Since being involved in ITT, Teach SouthEast are proud to say that 100% of all trainees completing the course passed with Qualified Teacher Status (QTS) with 97% of our 2017-18 trainees graded as either good or outstanding (44% outstanding).  An impressive 70% of the 2017-18 trainees are now employed in schools within the partnership and 98% were employed by the end of their training year.  Teach SouthEast offers routes into teaching through School Direct, Core SCITT and Apprenticeship places.  We seek to provide a dynamic environment where trainees on any of the ITT pathways can immerse themselves in what it is to be a great teacher, be nurtured within their own practice and be empowered to deliver outstanding lessons to our students.  The two lead schools in the partnership have been graded as \"Outstanding\" by Ofsted in every category, which enables us to deliver an engaging and innovative training programme with unique opportunities to experience placement in primary, secondary and in a special school.  All trainees are provided with a trained and dedicated mentor to lead you through your training year.  ",
+    "TrainWithDisability": "We work with any trainees that have additional needs to put together a bespoke support plan that is individual to them.  In the past, this has included; providing printouts of presentation slides; enabling the use of recording devices during training sessions; enabling the use of laptop computers during training sessions; considered seating arrangements; providing additional pastoral support meetings throughout the year and extra support with paperwork.  Our unsalaried trainees, who study for the PGCE, also have access to support through the University of Sussex Student Life Centre.  We pride ourselves on knowing our trainees well, and catering for any needs they may have.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Teach SouthEast is pleased to be a recommending body for the qualification of Qualified Teacher Status (QTS) for all trainees.  For the qualification of PGCE, Teach SouthEast is pleased to work in partnership with the University of Sussex, who deliver the PGCE element of the course.  Trainees have the opportunity to go to the University of Sussex on a number of occasions throughout the year to access keynote lectures. \\r\n\\r\nAt Teach SouthEast, every trainee benefits from the strong support system as well as having individual named tutors to whom they can turn for advice and support.",
+        "UcasInstitutionCode": "2EW"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,95 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Worcester",
+  "provider": "South Bromsgrove Community High School",
+  "subjects": [
+    "Geography",
+    "Secondary"
+  ],
+  "name": "Geography",
+  "slug": "19S/2X8F",
+  "providerCode": "19S",
+  "programmeCode": "2X8F",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Charford Road, Bromsgrove, Worcestershire, B60 3NL",
+      "code": "-"
+    },
+    {
+      "name": "Trinity High School",
+      "address": "Easemore Road, Redditch, B98 8HB",
+      "code": "D"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Charford Road, Bromsgrove, Worcestershire, B60 3NL",
+      "geocode": true,
+      "formatted_address": "Charford Rd, Bromsgrove B60 3NL, UK",
+      "latitude": 52.32433589999999,
+      "longitude": -2.0623872,
+      "post_code": "B60 3NL",
+      "city": "Worcestershire",
+      "route": "Charford Road",
+      "postal_town": "Bromsgrove"
+    },
+    {
+      "address": "Easemore Road, Redditch, B98 8HB",
+      "geocode": true,
+      "formatted_address": "Easemore Rd, Redditch B98 8HH, UK",
+      "latitude": 52.3106354,
+      "longitude": -1.9340661,
+      "post_code": "B98 8HH",
+      "city": "Worcestershire",
+      "route": "Easemore Road",
+      "postal_town": "Redditch"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "19S",
+    "addr_1": "South Bromsgrove High School",
+    "addr_2": "Charford Road",
+    "addr_3": "Bromsgrove",
+    "addr_4": null,
+    "postcode": "B60 3NL ",
+    "url": "http://www.southbromsgrove.worcs.sch.uk",
+    "geocode": true,
+    "formatted_address": "Charford Rd, Bromsgrove B60 3NL, UK",
+    "latitude": 52.324718,
+    "longitude": -2.061353,
+    "post_code": "B60 3NL",
+    "city": "Worcestershire",
+    "route": "Charford Road",
+    "postal_town": "Bromsgrove"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This course prepares trainees to teach Geography within secondary schools, from Key Stage 3 to Key Stage 5. The course involves a combination of practical teaching experience and taught modules on pedagogy and broader aspects of education. We offer training places at South Bromsgrove High Academy or Trinity High School, Redditch. Trainees will be placed at South Bromsgrove / Trinity for the main placement and will undertake a second, contrasting school experience placement at another school.  Second school placements will be arranged during the first term and will be carefully matched to the needs of the trainee.\\r\n\\r\nThe professional studies element of the course will be coordinated by South Bromsgrove High Academy on a particular day each week. The unique aspect of this programme is that the delivery will be shared across schools in a wider alliance, who have specific areas of expertise. This will also allow insight into First, Middle, High and Special Schools. Much of the Professional Studies element will involve linking theory to classroom practice and will involve input from a variety of teachers, school leaders and Specialist Leaders in Education.\\r\n \\r\nThe subject based elements of the programme will be delivered in collaboration with University of Worcester, School of Education.  Trainees are required to undertake 3 assignments across the year. These will be coordinated by Worcester University.\\r\n\\r\nAssessment on this course is carried out via a combination of lesson observation and written assignment.  On completion, trainees receive QTS and a PGCE qualification.",
+    "CourseLength": "OneYear",
+    "Qualifications": "You'll need to hold an undergraduate degree awarded by a UK higher education provider, or a recognised equivalent qualification.\\r\n\\r\nYou’ll need to have achieved a standard equivalent to grade C/4, or above, in the GCSE examinations in English and mathematics.\\r\n\\r\nYou'll also need to pass the professional skills tests in numeracy and literacy before you begin your teacher training.",
+    "InterviewProcess": "Candidates will attend two interviews. The first interviews will take place at South Bromsgrove High Academy / Trinity High School.  These will typically take one half  day and will involve the following:\\r\n\\r\n* written task \\r\n* small group / class teaching\\r\n* interview\\r\n\\r\nInterviews will be conducted by the Lead Mentor and the Subject Mentor for Geography.\\r\n\\r\nThe second interview will be held at University of Worcester and will involve the following:\\r\n\\r\n* written task\\r\n* group discussion \\r\n* presentation\\r\n* interview\\r\n\\r\nInterviews will be carried out by Subject Tutors and other key staff from the School of Education.",
+    "OtherRequirements": "All prospective trainees will be subject to a medical questionnaire, assessing their fitness to teach and an Enhanced DBS check.",
+    "PersonalQualities": "We are looking for the following personal qualities in our prospective trainees:\\r\n\\r\n* A commitment to the welfare and well-being of young people\\r\n* Enthusiasm for teaching and an ability to relate to young people\\r\n* A passion for your subject and for education in general\\r\n* A willingness to learn through experience and respond to feedback\\r\n* Some prior school experience is not expected, but is recommended\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "This programme is based at South Bromsgrove High Academy / Trinity High School. The school, in collaboration with University of Worcester will arrange a second school experience placement that will take place during the Spring term. The school will be selected based on the training needs of the individual trainee and location.\\r\n\\r\nTrainees will be assigned a designated Subject Mentor whilst in school, along with a Professional Mentor.  Mentors will work together to ensure that trainees are making good progress in their teaching practice and that all emerging training needs are being met. \\r\n\\r\nThe school experience placements will ensure that trainees are able to teach across the full age range, from 11 - 18.  \\r\n\\r\nTrainees will spend the majority of their time in school, but will attend Worcester University for professional and subject studies for a number of days across the year.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "South Bromsgrove High Teaching School Alliance provides a high quality, school-based learning opportunity.  ‘South’ is an outstanding school (Ofsted 2012/13) where students enjoy learning in a way which stimulates their imagination and creativity. We maintain high standards of achievement, offer a broad and relevant curriculum, and place great emphasis on high quality learning experiences in lessons.\\r\n\\r\nThe unique aspect of our School Direct training programmes is that delivery is shared across schools from across our wider alliance, who have specific areas of expertise. This allows insight into First, Middle, High and Special Schools and a broader understanding of education and pedagogy.  Our highly successful primary programme is coordinated by St John’s CofE Middle School (judged Outstanding by Ofsted in 2012) and placements are provided in a range of excellent local First, Middle and Primary Schools.  For our secondary training programmes, we can offer placements at South Bromsgrove High Academy or Trinity High School, Redditch (depending on subject).\\r\n\\r\nAll schools in the alliance are highly committed to the training of teachers in a school based environment with access to high quality support from  Higher Education Institutions. South Bromsgrove High Teaching Alliance has experienced subject and professional mentors who are involved in the planning and development of the School Direct courses.  Every trainee is assigned a Professional and Subject Mentor who will be experienced in mentoring, coaching and giving feedback. You will meet with your mentor regularly, to review and set targets related to the teacher standards. ",
+    "TrainWithDisability": "South Bromsgrove High Teaching School Alliance recognises that teachers with disabilities make an important contribution to schools, both in the classroom and in shaping the wider culture and ethos. We value diversity and the unique contribution that all staff and trainees bring. We welcome applications from candidates with disabilities or specific educational needs and we are committed to fulfilling our duty to make reasonable adjustments to ensure that all trainees can access all aspects of our training provision. We also work closely with our accredited providers to ensure that support mechanisms are in place for emerging needs of trainees throughout the course.\\r\n\\r\nSpecific support might include:\\r\n\\r\n* Training materials produced in advance or made available online;\\r\n* Specific print requirements, such as large print / coloured paper;   \\r\n* Flexible working hours;\\r\n* Wheelchair access to relevant training / classrooms;\\r\n* Designated quiet working areas.\\r\n\\r\nIt is a trainee's choice whether or not they disclose disabilities to us, but we would encourage you to do so in order that we can support you fully in completing your training.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "2B3"
+      },
+      {
+        "Description": "The University of Worcester has a longstanding reputation of excellent in Initial Teacher Training. Their programmes offer the following:\\r\n\\r\n* Placements in at least two different schools, giving  a breadth of experience and the chance to specialise whilst developing self-reflection, self-criticism and self-confidence\\r\n* Opportunities to develop additional specialisms in areas such as special educational needs, technology enhanced learning, and leadership\\r\n* Extra-curricular opportunities, such as conferences and special projects, to boost employability\\r\n\\r\nThe course lasts for 10 months and there are excellent tax free training bursaries available         \\r\n",
+        "UcasInstitutionCode": "W80"
+      }
+    ]
+  },
+  "has_inst": true
+}

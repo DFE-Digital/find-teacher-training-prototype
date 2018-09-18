@@ -1,0 +1,82 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Beal High School",
+  "subjects": [
+    "Geography",
+    "Secondary"
+  ],
+  "name": "Geography",
+  "slug": "1NA/24C3",
+  "providerCode": "1NA",
+  "programmeCode": "24C3",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Beal High School, Woodford Bridge Road, Ilford, Essex, IG4 5LP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Beal High School, Woodford Bridge Road, Ilford, Essex, IG4 5LP",
+      "geocode": true,
+      "formatted_address": "Essex, UK",
+      "latitude": 51.7343313,
+      "longitude": 0.4690888,
+      "post_code": null,
+      "city": "Essex",
+      "route": null
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1NA",
+    "addr_1": "Beal High School",
+    "addr_2": "Woodford Bridge Road",
+    "addr_3": null,
+    "addr_4": "Ilford",
+    "postcode": "IG4 5LP ",
+    "url": "http://nelta.co.uk",
+    "geocode": true,
+    "formatted_address": "Woodford Bridge Road, London IG4 5LP, UK",
+    "latitude": 51.586046,
+    "longitude": 0.051729,
+    "post_code": "IG4 5LP",
+    "city": "Greater London",
+    "route": "Woodford Bridge Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9259.0,
+    "AboutCourse": "We are committed to delivering a comprehensive and bespoke training experience and supporting the development of the next generation of teachers and school leaders.\\r\n\\r\nThis programme is highly supportive of the realities of the modern classroom. \\r\n\\r\nYour training will be divided between time spent at UCL and teaching experience in local schools. During the placements you will gradually be introduced to teaching; spending some time observing lessons, working with small groups and individuals in the classroom, leading activities, team teaching and then building up to about 10 hours of whole class teaching per week. There is a comprehensive programme of mentoring, training and support delivered by the school and UCL.\\r\n\\r\nAs well as the school-based support from your subject mentor there is also a team of dedicated UCL tutors who will deliver training and fully support your school placement experience. \\r\n\\r\nThis course aims to prepare you to: \\r\n\\r\nBecome outstanding secondary school teachers \\r\nBecome knowledgeable subject specialists who can support the leadership of curriculum development \\r\nBecome good classroom managers \\r\nBecome successful form tutors and collaborative colleagues. \\r\n\\r\n“UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as “outstanding” in very criterion across Primary and Secondary Education.”\\r\n\\r\n\\r\nAll UCL School Direct students have full access to UCL student support services and facilities.\\r\n\\r\nFull details of the PGCE programme can be found at[Geography PGCE](https://www.ucl.ac.uk/ioe/courses/teacher-training/business-education-pgce) ",
+    "CourseLength": "OneYear",
+    "Qualifications": "“UCL requires a minimum of a 2:2 honours degree and GCSEs in English Language and Maths (for Secondary programmes) plus Science (for Primary programmes) at grade C/5 or above. UCL does not accept ‘additional’ or ‘applied’ GCSE subjects. For equivalency testing UCL will only accept tests from (www.equivalencytesting.com).\\r\n\\r\nFor further information please see [Geography PGCE](https://www.ucl.ac.uk/ioe/courses/teacher-training/business-education-pgce)",
+    "InterviewProcess": "There will be two interviews\\r\n\\r\nOne will be at the lead school and if successful you will be recommended for a second interview at UCL\\r\n\\r\nThe interview process may include some or all of the following activities: \\r\nSubject knowledge activity (set before interview day) \\r\nDelivery of a half hour teaching activity to students \\r\nWritten task\\r\nInterview by panel \\r\nSubject Knowledge activity\\r\n\\r\nWe do not give automatic feedback to all candidates rejected at interview. This is due to the large numbers of interviews that we carry out and the additional workload involved in feeding back to candidates. \\r\n",
+    "OtherRequirements": "We recommend that you aim to gain some experience in a classroom prior to interview.",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject and have a desire to share that with young people of all abilities in the secondary age range. You need to want to make a real difference to young people’s lives. You should be resilient, have the potential to be able to communicate with an audience and be able to develop positive professional relationships with young people and colleagues. We want you to be able to continually reflect on their practice and respond positively to feedback. The best teachers are learners themselves.",
+    "HowSchoolPlacementsWork": "Most placements will be within our alliance of 14 secondary schools which includes community schools (maintained and academies), faith schools, boys and girls grammar schools and an independent school. We can also offer opportunities to complete some of your training in special schools or a 14-19 alternative provision to widen your experience of different learning environments.\\r\n\\r\nAll of our schools are geographically close, with most being within the London Borough of Redbridge which means that trainees can easily engage with more than one school in the partnership. We do look at home addresses and journey times when considering placements. \\r\n\\r\n\\r\n\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "North East London Teaching Alliance (NELTA) is a large teaching school alliance of 20 schools. Beal High School is the lead school.\\r\n\\r\nWe are passionate about developing the next generation of teachers and school leaders. Teachers and leaders who will ensure an outstanding educational future for all pupils irrespective of background or ability. \\r\n\\r\nWorking with our alliance you can expect:\\r\n* Guidance from an experienced school based mentor and provider tutor\\r\n* Very well established support programmes\\r\n* Access to a wide network of schools including community secondary, primary, independent, grammar and special education\\r\n* Professional development opportunities beyond your training year focused on outstanding teaching and leadership\\r\n\\r\nNELTA, which spans Barking and Dagenham, Waltham Forest, Redbridge, Newham and beyond, we offer opportunities to work in a range of different socio-economic areas. Working in a partnership which includes independent schools, boys' and girls' grammar schools, faith schools, comprehensive schools and special schools means you will have access to a broad range of training experiences which will give you the opportunity to you develop your practice in a variety of different settings.\\r\n\\r\nWe offer teacher training places for both the tuition fee and salaried routes to Qualified Teacher Status. \\r\nFor tuition fee routes routes we work with King’s College London, UCL and NELTA as our accredited providers.\\r\nFor our salaried route the accredited provider is NELTA (the operating name of teacher training provided by the Beacon Multi-Academy Trust)\\r\n",
+    "TrainWithDisability": "We are committed to supporting equal opportunities and disability access.\\r\n\\r\nWe have accommodated trainees in the past with a range of disabilities including mental health conditions, dyslexia and physical impairments.\\r\n\\r\nDisability access in schools varies according to the specific training location. Please check with the relevant accredited provider or email us to discuss your needs [NELTA](admin@nelta.co.uk).\\r\n\\r\n\\r\nAt UCL School Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team. You can find more information here:-\\r\n[UCL Student Support](https://www.ucl.ac.uk/students/disability-support)\\r\n\\r\n\\r\nKing's offer information, advice and guidance to current and prospective disabled students about support that may help them to engage with their studies. When we refer to the term “disability” we also include long-term medical or mental health conditions and Specific Learning Difficulties (SpLDs).  \\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education is the world’s leading centre for research and teaching in education and related social sciences. You can view UCL’s online teacher training prospectus is here:-\\r\n[Online teacher training prospectus](https://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes)\\r\n\\r\n\\r\n \\r\n",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "We are committed to working in partnership with trainees and partner schools to provide highly trained teachers for the local community and beyond.\\r\n\\r\nWeekly contact with other trainees and our programme tutors means that you will always feel fully supported.\\r\n\\r\nThe Ofsted inspection of our initial teacher training provision on 2017 said:\\r\n“Leaders’ ambitious vision for excellence and their aspirations for trainees are of the highest order”\\r\n“The quality of training is outstanding”\\r\n“Trainees are overwhelmingly positive about the quality of mentoring”",
+        "UcasInstitutionCode": "251"
+      },
+      {
+        "Description": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. ",
+        "UcasInstitutionCode": "K60"
+      }
+    ]
+  },
+  "has_inst": true
+}

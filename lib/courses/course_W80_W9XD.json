@@ -1,0 +1,75 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Worcester",
+  "subjects": [
+    "Design and technology",
+    "Design and technology (food)",
+    "Design and technology (textiles)",
+    "Secondary"
+  ],
+  "name": "Design and Technology (Food and Textiles)",
+  "slug": "W80/W9XD",
+  "providerCode": "W80",
+  "programmeCode": "W9XD",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "geocode": true,
+      "formatted_address": "Worcester WR2 6AJ, UK",
+      "latitude": 52.1975549,
+      "longitude": -2.2430422,
+      "post_code": "WR2 6AJ",
+      "city": "Worcestershire",
+      "route": null,
+      "postal_town": "Worcester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "W80",
+    "addr_1": "Henwick Grove",
+    "addr_2": "Worcester",
+    "addr_3": "Worcestershire",
+    "addr_4": null,
+    "postcode": "WR2 6AJ ",
+    "url": "http://www.worcester.ac.uk",
+    "geocode": true,
+    "formatted_address": "Henwick Grove, Worcester WR1 3JE, UK",
+    "latitude": 52.201139,
+    "longitude": -2.237474,
+    "post_code": "WR1 3JE",
+    "city": "Worcestershire",
+    "route": null,
+    "postal_town": "Worcester"
+  },
+  "options": [
+    "PGCE with QTS, full time or part time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Every course has day-to-day costs for essential books, stationery, printing and photocopying.\\r\n\\r\nTravel costs for placements vary depending on the location of schools and your mode of transport, sometimes these may be reclaimed depending on your individual circumstances.\\r\n\\r\nYou will need to buy some protective clothing to wear for practical work (apron, overall or chefs jacket). You will also be expected to purchase materials and ingredients to make the products you will be teaching pupils to make.\\r\n\\r\nIn addition, we encourage you to join subject specific associations. The cost is typically between £25 to £50 for which you benefit from their support, guidance and resources. ",
+    "AboutCourse": "The Design and Technology PGCE course aims to produce high-quality teachers who are enthusiastic, reflective, and able to engage pupils in this dynamic subject. \\r\n\\r\nThe course is designed to develop trainees' subject knowledge, skills and understanding of food and textiles and the design and technology curriculum. We welcome applications from graduates with subject-related degrees; but do consider applicants who have significant experience in either the food or textile industry and have graduated in another field. It is recognised that trainees undertaking the course will have different backgrounds. This diversity of experience enriches the course, as from the outset trainees are encouraged to collaborate and share their expertise. The spirit of collaboration is central to the ethos of the course and supports trainees to develop their practice. \\r\n\\r\nDuring the course trainees are encouraged to explore a range of strategies for teaching design and technology and will develop a specialism within design and technology in either food preparation and nutrition or textiles. There will also be opportunities during school placements for trainees to gain experience in other material and curriculum areas to enhance their employability. \\r\n\\r\nThe overall aim of the course is to equip trainees to meet the professional expectations of their early years in teaching and to give them a firm grounding for future professional development. \\r\n\\r\nBy the end of the course trainees will: \\r\n* Understand the nature of the subject in schools and have developed confidence and expertise in teaching design and technology. \\r\n* Have developed an understanding of recent curricular developments in the subject. \\r\n* Have developed an understanding of the latest examination specifications and expertise in planning and delivering lessons that meet these. \\r\n* Have developed practical classroom management skills; including the selection, development and use of a wide variety of resources and teaching strategies; and addressing the significant health and safety issues that arise when teaching a practical subject. \\r\n* Know how to assess the subject and ensure that pupils are able to make progress, as well as knowing how to record and report on this progress. \\r\n* Know how to respond to pupils' individual needs and develop a critical awareness of their own performance based upon evidence gained from a variety of sources. \\r\n\\r\nA design and technology (food and textiles) subject knowledge enhancement course is available. \\r\n\\r\nVisit our website to find out more: [https://www.worcester.ac.uk/courses/pgce-secondary-design-and-technology.html](https://www.worcester.ac.uk/courses/pgce-secondary-design-and-technology.html)\\r\n\\r\nYou will be trained to teach 11-16 with post 16 enhancement. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree or equivalent:\\r\nHonours degree (2:2 or above) from a United Kingdom higher education institution or equivalent qualification, in a relevant subject. Please email [secondary@worc.ac.uk](mailto:secondary@worc.ac.uk) if you are unsure of the relevance of your degree. \\r\n\\r\nApplicants with a 3rd class degree will be considered on an individual basis. \\r\n\\r\nGCSEs:\\r\nGrade C/level 4 at GCSE in English Language and Mathematics (or equivalent) passed at the time of entry. \\r\n\\r\nUniversity of Worcester equivalency tests are available. Please contact [admissions@worc.ac.uk](mailto:admissions@worc.ac.uk) for further information. ",
+    "InterviewProcess": "The selection process:\\r\nTrainees are recruited through a rigorous selection process. The team consider the personal statement and reference to decide whether to offer an interview. \\r\n\\r\nAt interview, you will be asked to complete: \\r\n* A timed written task \\r\n* A short presentation (details sent out with the interview invite) \\r\n* A group task \\r\n* An interview with two people usually a university tutor and a mentor from school \\r\n\\r\nReferences:\\r\nFor your application, you will need two references which are submitted online.",
+    "OtherRequirements": "Professional Skills Tests:\\r\nAll teacher training applicants need to have passed the Numeracy and Literacy skills tests before the start of the course. \\r\n\\r\nHealth and Physical Capacity to Teach:\\r\nThe DfE requires all trainees to satisfactorily complete a medical questionnaire to demonstrate their fitness to teach. People with disabilities or chronic illnesses may have the capacity to teach, just as those without disabilities or medical conditions may be unsuitable to teach. \\r\n\\r\nDBS:\\r\nAll entrants to ITT programmes will be subject to appropriate pre-selection checks, including disclosure and Barring Service (DBS), criminal records checks and children's barred list information. ",
+    "PersonalQualities": "We are looking for trainees who are: \\r\n\\r\n* skilled and inspirational subject specialists\\r\n* confident and reflective practitioners\\r\n* effective communicators who can work in partnership\\r\n* informed intellectuals who promote a love of learning\\r\n* resilient professionals able to demonstrate high standards of personal conduct\\r\n\\r\nSchool experience is desirable, but not essential prior to an interview. At interview we will discuss relevant prior school experience or opportunities you have had to work with school-aged children. At this point that we will discuss with you whether additional school experience would support you in deciding that teaching is right for you. ",
+    "HowSchoolPlacementsWork": "We work very closely with our partner schools, to provide you with high quality teacher training to prepare you for your first teaching job and beyond. Our partner schools provide a range of settings from rural to inner city. Most schools are within a 30 mile radius of the University. You will practise teaching in at least two contrasting schools. \\r\n\\r\nThe course is designed with periods in University to give you the opportunity to reflect on your future development. Former trainees have made positive comments on the balance between theory and practice, carefully structured sessions, tutors' commitment to supporting trainees and trainees supporting each other and sharing good practice. \\r\n\\r\nIn each school you will be supported by a Professional Mentor, as well as your Subject Mentor. Their job is to see that you get as much out of your teaching placements as possible, and provide you with support and guidance. At interview you may meet teachers from our partnership schools as they take part in the selection process alongside University tutors. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at the University of Worcester has a long-standing reputation for training excellent, highly employable teachers. You will be supported by a dynamic team of tutors who have been outstanding school teachers and are now regarded as education experts with national profiles in a wide range of secondary subjects. \\r\n\\r\nOur courses provide unique opportunities. Trainee teachers may if they wish add depth to their qualifications by involvement in additional enhancement programmes in key areas, such as Special Educational Needs and Disabilities; working with learners who have English as an Additional Language; developing expertise in Citizenship; developing skills in a second STEM subject; preparing to be Education Leaders, or developing skills in Technology Enhanced Learning. These popular enhancements to your training build your confidence as well as greatly enhancing your employability. \\r\n\\r\nYou will benefit from our excellent partnerships with secondary schools across the West Midlands, where our highly-trained mentors pay close attention to your individual development within a friendly and professional context. We also offer pre-training Subject Knowledge Enhancement courses in a range of subjects (Biology, Chemistry, Computer Science, Design and Technology (Food & Textiles), English, French, Geography, Mathematics, Physics) for those who need them and our PGCE offers Master's-level credits as well as Qualified Teacher Status. ",
+    "TrainWithDisability": "The University of Worcester offers a wide range of support and advice to disabled students and also to parents, staff and those external agencies supporting disabled students.\\r\n\\r\nOur Disability and Dyslexia Service offers support, advice and guidance to students who have a disability, medical condition or Specific Learning Difficulty (SpLD). This support lasts throughout a student’s studies at the University of Worcester. We also work with and offer support and advice to University staff on how to meet the needs of disabled students.\\r\n \\r\n* Supporting disabled students with general enquiries\\r\n* Implementing special arrangements for lectures, exams and field trips. This might include notes in advance or special arrangements in exams.\\r\n* Where appropriate, we can arrange note takers, academic support tutors, library assistance, interpreters and transcribers.\\r\n* Help with applying for the Disabled Students Allowance (DSA) which is there to fund these types of support in higher education.\\r\n* Limited loans of equipment\\r\n* Confidential advice and support for students and staff\\r\n* Training and awareness raising workshops\\r\n* Assistive technology ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

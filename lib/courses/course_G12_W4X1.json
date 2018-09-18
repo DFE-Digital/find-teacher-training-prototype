@@ -1,0 +1,69 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "George Abbot SCITT",
+  "subjects": [
+    "Drama and theatre studies",
+    "Secondary"
+  ],
+  "name": "Drama",
+  "slug": "G12/W4X1",
+  "providerCode": "G12",
+  "programmeCode": "W4X1",
+  "schools": [
+    {
+      "name": "Main site",
+      "address": "Woodruff Avenue, Burpham, Guildford, GU1 1XX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Woodruff Avenue, Burpham, Guildford, GU1 1XX",
+      "geocode": true,
+      "formatted_address": "Woodruff Ave, Guildford GU1 1XS, UK",
+      "latitude": 51.2542635,
+      "longitude": -0.546604,
+      "post_code": "GU1 1XS",
+      "city": "Surrey",
+      "route": "Woodruff Avenue",
+      "postal_town": "Guildford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "G12",
+    "addr_1": "Woodruff Avenue",
+    "addr_2": "Burpham",
+    "addr_3": "Guildford",
+    "addr_4": "Surrey",
+    "postcode": "GU1 1XX ",
+    "url": "http://www.georgeabbottraining.surrey.sch.uk",
+    "geocode": true,
+    "formatted_address": "Woodruff Ave, Guildford GU1 1XS, UK",
+    "latitude": 51.2542635,
+    "longitude": -0.546604,
+    "post_code": "GU1 1XS",
+    "city": "Surrey",
+    "route": "Woodruff Avenue",
+    "postal_town": "Guildford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Drama course leads to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYou will addresses all aspects of secondary drama, including specialist expertise in areas such as devising, teaching texts and key practitioners, theatre history and drama as a method of addressing subjects and issues across the curriculum\\r\n\\r\nAssignments are designed to help you to plan your teaching effectively and imaginatively and to evaluate your skills, particularly in terms of the quality of learning achieved by pupils\\r\n\\r\nOur tutors are a diverse and incredibly experienced community of academics. You will be taught by those with national and international reputations as experts in the field of drama in education,\\r\n\\r\nYou will learn through a series of practical seminars and workshops, taught in first-class facilities. Your teaching may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn a Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n* gaining experience of the range of responsibilities of classroom teachers.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "George Abbot SCITT is a highly respected and well-established provider delivering school-based Initial Teacher Training (ITT) through Teach Surrey.  Teach Surrey represents an alliance of Teaching Schools and their associated partner schools. \\r\n\\r\nWe offer Primary and Secondary teacher training on a full-time basis, all with a core focus on training all teachers to teach all children, and this includes offering trainees the option to specialise in Special Educational Needs (SEN).\\r\n\\r\nWith 17 years’ experience leading ITT, we offer practical training in a variety of schools, with experienced practitioners to mentor you through the course.  We have unrivalled experience in Surrey having trained over 500 teachers, and our provision across the partnership is rated as “Outstanding” by Ofsted, as well as by our past trainees.  \\r\n\\r\nWe are small enough to really get to know our trainees and to be able to tailor our training to meet the needs of everyone on our programme.  We are also proud to say that we have a 100% employment record at the end of our training programmes.\\r\n\\r\nGeorge Abbot SCITT has always led the way in teacher training and we work very closely with the DfE. In 2012, we were the first ITT provider in the UK to pilot the School Direct ITT programme. In 2013, alongside an educational charity, we created an entirely new route into teaching for candidates with PhDs, called Researchers in Schools. We were also selected to pilot a 2 year, part-time school-based training route for shortage subjects in September 2016.",
+    "TrainWithDisability": "George Abbot SCITT has trained teachers with a variety of individual needs.  We are able to adjust our programme accordingly.\\r\n\\r\nShould you be invited to interview, you will be asked to disclose any needs you may have so that we can support you appropriately.\\r\n\\r\nIf you would like to discuss how we could support you during training with your needs, please do get in touch on 01483 888048.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

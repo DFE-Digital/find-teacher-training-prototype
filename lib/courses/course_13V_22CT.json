@@ -1,0 +1,89 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Wandle Teaching School Alliance",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "slug": "13V/22CT",
+  "providerCode": "13V",
+  "programmeCode": "22CT",
+  "schools": [
+    {
+      "name": "Chestnut Grove Academy",
+      "address": "45 Chestnut Grove, Balham, London, SW12 8JZ",
+      "code": "G"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "45 Chestnut Grove, Balham, London, SW12 8JZ",
+      "geocode": true,
+      "formatted_address": "45 Chestnut Grove, London SW12 8JZ, UK",
+      "latitude": 51.444601,
+      "longitude": -0.1549619,
+      "post_code": "SW12 8JZ",
+      "city": "Greater London",
+      "route": "Chestnut Grove",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "13V",
+    "addr_1": "Chesterton Teaching School",
+    "addr_2": "Dagnall Street",
+    "addr_3": "Battersea",
+    "addr_4": "London",
+    "postcode": "SW11 5DT",
+    "url": "http://www.chesterton.wandsworth.sch.uk",
+    "geocode": true,
+    "formatted_address": "Dagnall St, London SW11 5DT, UK",
+    "latitude": 51.47341410000001,
+    "longitude": -0.1567853,
+    "post_code": "SW11 5DT",
+    "city": "Greater London",
+    "route": "Dagnall Street",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Some UK/EU students may be eligible for a training bursary or scholarship depending on subject and previous qualifications. See Get into Teaching for up-to-date details.",
+    "AboutCourse": "Students will understand why history is taught in schools, how pupils learn and make sense of the past, and how to teach history in an exciting way that develops learners. There are five key themes underpinning the programme: 'diverse histories', 'history for all', 'historical thinking', 'engaging with history' and ‘ becoming a professional history teacher'. These themes reflect our location in the capital, the wide range of schools and students that we work with and our ambition to engage, challenge and enlighten all learners.\\r\nStudents undertake two level 7 (Master’s-level) modules of 30 credits each, totaling 60 credits. These can be carried forward onto full Master’s programmes at the IOE.\\r\nThe Secondary PGCE consists of three core modules: two Master’s-level (level 7) modules, which are assessed through written assignments, and the Professional Practice module, which is assessed by the observation of practical teaching in placement schools.\\r\nCompletion of the Professional Practice module and the two level 7 (Master’s level) modules (60 credits) will result in the award of a Postgraduate Certificate of Education (PGCE). Completion of the Professional Practice module and one or two level 6 (undergraduate/Bachelor’s level) modules, will lead to the Professional Graduate Certificate of Education (PgCE).\\r\nTeaching at UCL-IOE is mostly through seminars and workshops in your teaching base group of about twenty trainee teachers, with additional keynote and subject lectures, tutorials and directed study days, as well as time spent in placements. Assessment is by practical teaching, assignments and portfolio tasks.\\r\nWandle history teachers and mentors will compliment and support your university learning by developing your classroom practice to have the greatest impact on student learning, achievement and attainment.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Wandle TSA in conjunction with  IOE/UCL require a minimum  of a 2.2 honours degree and GCSEs in English Language and Maths at Grade C/5 or above.\\r\nIOE/UCL does not accept \" additional\" or \" applied\" GCSE  subjects.\\r\nFor equivalency testing we will only accept tests from www.equivalencytesting.com \\r\n",
+    "FinancialSupport": "Some UK/EU students may be eligible for a training bursary or scholarship depending on subject and previous qualifications. See Get into Teaching for up-to-date details.",
+    "InterviewProcess": "Applicants who are shortlisted are invited to a  Wandle TSA selection day. Candidates should allow a full day for this and dress appropriately. Candidates will be asked to complete a set of tasks; this will include a written task, an oral presentation , student based task and an  interview with school subject specialists. \\r\nIf successful, candidates will be recommended to the IOE/UCL for an interview by the IOE/UCL subject specialist team. Candidates should allow a full day for this and dress appropriately. If successful at this stage, the IOE/UCL will make a conditional offer. Applicants will have 10 days to accept or reject the offer. \\r\nCandidates must also successfully complete the Skills Tests in Maths and English before starting the course. We normally expect candidates to complete the Skills Tests within six weeks of being offered and accepting a place. Candidates will also have to be certified as meeting the national requirements for physical and mental fitness to teach. The IOE/UCL will ask candidates to complete a health questionnaire for scrutiny by their occupational health provider. Candidates are responsible for the cost of obtaining occupational health clearance, which is approximately £45. Candidates will also be required to apply for an Enhanced Disclosure certificate from the DBS as a condition of entry. \\r\n",
+    "OtherRequirements": "We strongly recommend that you spend some time observing teaching and learning in an inner London school before applying or whilst waiting for interview. \\r\nThis is important as teaching and learning is a dynamic process and changes in pedagogy and curriculum content may mean classrooms are   very different places from when you last were in school. It is therefore important  to spend some time in a school so as you can reflect on what you have learned in your PGCE interviews.",
+    "PersonalQualities": "The Wandle Teaching School Alliance wishes to recruit high quality graduates committed to developing themselves as outstanding teachers. We are looking for candidates who have high expectations for their students. You should be a good communicator, enjoy challenge and have a love of learning. You will need to be resilient, flexible and hard working. We expect you to have excellent subject knowledge and the ability to build a strong rapport with students of all abilities. It also helps to have a sense of humour and, most importantly of all, to like and respect children. ",
+    "HowSchoolPlacementsWork": "Wandle TSA PGCE School Direct students will have two school placements. These will be in two of our partner schools and will offer you a contrasting school experience, for example, one placement in a mixed school and a second in a single sex school.  We will discuss with you the best school to have your placements taking into account your travel requirements. All our School Direct students are invited to spend the first week of term with their first placement school as an early induction and to gain invaluable experience in participating in the beginning of term. This also allows many of the induction processes to be carried out and for you to get to know staff, systems and students. The age range will be from 11 to 18 and you will be required to teach across two stages in your placement, Key Stage 3 and 4 or 5 when you join us for your formal placements and training.\\r\nWe have seven  secondary partner schools in our alliance. These schools are situated in SW London, primarily in Wandsworth and Lambeth and all schools have excellent transport links.\\r\nThe length of school placement is 120 days over the two placements In addition to the class teachers you will have a subject mentor, a  school mentor as well as your IOE/UCL mentor to support you through these placements. You will always be supported in your classroom teaching and all our schools have extensive in house  training programmes. The Alliance runs several extra workshops throughout the training .\\r\nWe have  special schools , primary schools  and Children centres in our Alliance and we encourage our students to take advantage by visiting to gain a wide understanding of the educational landscape.\\r\nAt all times we keep you at the centre of the learning process and we work hard to ensure you have a challenging but supportive experience. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Train to become a teacher with the Wandle Teaching School Alliance ( WTSA) and benefit from a tailored programme of personal development and support from outstanding, experienced professionals. Our aim is to always keep you at the centre of everything we do. Our programmes are high challenge and high support as we believe in preparing you to become the best possible teacher you can be.\\r\nOur Alliance of over forty members, based in south and south west London, offers a unique opportunity to train within a wide range of schools, Primary, Secondary and Special.\\r\nTraining with us will enable you to gain an in-depth experience of all aspects of teaching and learning within a secure and caring environment.\\r\nWe offer additional workshops throughout the year to develop your professional learning and practice to the highest level, for example, you will be able to take part in the Child Exploitation and Online Protection training, leading to the CEOPS certificate.\\r\nWe are a dynamic and collaborative learning community and we look forward to you starting your teaching career with us.",
+    "TrainWithDisability": "Wandle TSA aims to create an environment that enables anyone to participate fully in the mainstream of school life.\\r\nWe address disability, as defined by the Equality Act 2010:\\r\n•\\tmobility and sensory impairments\\r\n•\\tmental health issues\\r\n•\\tspecific learning difficulties (SpLD), including the autistic spectrum and Aspergers Syndrome\\r\n•\\tmedical conditions which may have an impact on day-to-day activities\\r\nAll our partner universities have well established student support services. Wandle TSA  proactively  works with our partner’s student services in meeting the needs of our PGCE students.  A wide range of support services is available to students through the universities with reference to all of the above.\\r\nWe encourage you to make contact with us as early in the application process as possible so as we can work with the university in identifying services appropriate to your individual needs. In the first instance you should contact the Director of the Teaching School, Mr Denys Wallace on dwallace5.212@lgflmail.org .\\r\nOur aim is to ensure that there as few barriers as possible to prevent you studying successfully. We therefore work closely with the university tutorial teams to customise programmes as necessary.\\r\nThe universities will provide ICT enabling support and our schools will help you understand, use and customise the accessibility options built-in to your devices\\r\nAlliance schools provide access for students with mobility impairments and have dedicated car parking allocated for the duration of school placements. Specific mobility issues for the individual schools will be addressed in collaboration with you.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "\\r\n\\r\nGoldsmiths, University of London have been training teachers since 1904 and  are  renowned  as   leaders in   educational  research  and teacher  training.  Wandle TSA works in close  collaboration  with   Goldsmiths, in  both  teacher  training  and  research.  We particularly value Goldsmiths  programmes  as they have  a  strong  emphasis  on  active  learning, creativity and  inclusion. Our  graduates  benefit  from  excellent employment  opportunities.  Goldsmiths have  internationally  recognised  professors in  their   Educational   Studies   department,   including   Michael   Rosen. Goldsmiths  campus  is  set  in  vibrant  New  Cross,  with  excellent  London Overground, National Rail and bus links into central London and to  Wandle TSA schools.",
+        "UcasInstitutionCode": "G56"
+      },
+      {
+        "Description": "UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as “outstanding” in every criterion across Primary and Secondary Education. Wandle TSA has a long established collaboration with the IOE  and is recognised as one of their principal partners in teacher training. We have excellent transport links from our schools to the IOE in central London and students enjoy a well thought out challenging ,highly supportive PGCE programme.  We have employed many of our PGCE students from this programme and several are now in middle and senior leadership positions in our schools.\\r\n\\r\n",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "Wandle TSA has collaborated with St Mary's University in  training PE teachers for several years. St Mary's provides an excellent campus with highly experienced staff .Their course is rigorous and demanding but with high support from St Mary's and Wandle TSA tutors . We value their emphasis on developing creative practitioners who can teach across the whole ability range. In your placements in Wandle TSA schools you will have support and guidance from highly experienced staff and Ernest Bevin, one of our partner schools , is a Sports College, which provides PE students with a unique training opportunity.",
+        "UcasInstitutionCode": "S64"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "R48"
+      }
+    ]
+  },
+  "has_inst": true
+}

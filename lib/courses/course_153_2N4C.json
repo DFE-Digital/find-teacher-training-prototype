@@ -1,0 +1,60 @@
+{
+  "locationType": "School",
+  "accrediting": "High Force Education (SCITT",
+  "provider": "Abbey School Direct",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "153/2N4C",
+  "providerCode": "153",
+  "programmeCode": "2N4C",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Cleveland Terrace, Darlington, DL3 8JA",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Cleveland Terrace, Darlington, DL3 8JA",
+      "geocode": true,
+      "formatted_address": "Cleveland Terrace, Darlington DL3 8JA, UK",
+      "latitude": 54.52141289999999,
+      "longitude": -1.576801,
+      "post_code": "DL3 8JA",
+      "city": "Darlington",
+      "route": "Cleveland Terrace",
+      "postal_town": "Darlington"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The SCITT  programme is a 42 week full time course. The programme is designed to be relevant to the demands of the modern classroom and leads to enhancement of the quality of teaching and learning. \\r\n\\r\nYou will be trained in a highly supportive classroom environment in which you will develop the knowledge, understanding and skills necessary to deliver challenging, creative and personalised lessons. \\r\n\\r\nThe programme provides you with 80 days of professional development, for example, in the core curriculum, foundation subjects and professional studies.   These sessions provide the opportunity to participate and to engage with the subject knowledge of the national curriculum, and the wider pedagogical and social theories around education. This is delivered through taught sessions at Green Lane CE Primary School. Each session is led by an outstanding practitioner or SLE working within a partnership school. Sessions are personalised to your specific needs and draw on expertise within school. \\r\n\\r\nYou will spend a minimum of 120 days in three different school settings across the primary age range, working for an extended period of time each term in a different school environment. High Force Education SCITT believes this creates the most diverse, versatile and adaptable teacher. Each practice provides a supportive environment to allow you to develop confidence in the classroom, observe good practice teaching, carry out focused case studies with pupils and engage in continued professional dialogue with school colleagues, to support you in developing into a truly reflective practitioner. \\r\n\\r\nPart of the assessment process involves three written assignments (Level 6 and Level 7) on specific aspects of teaching and learning. Successful completion of the assignments at  Level 7 will give you 60 Masters credits.  You will also be observed teaching and produce an assessment file that demonstrates you are meeting the Teachers' Standards.  \\r\n\\r\nAs part of the personalised package offered every trainee is assigned a supportive Professional Tutor who challenges you to achieve your full potential. You will be treated like a member of staff within their school and will attend staff meetings and development days making you part of the team from day one. Each school also has a mentor who you will work with for the duration of the placement. \\r\n\\r\nAs part of the programme, we can offer you some unique opportunities including spending time within a pupil referral unit, a special school and a residential to a SCITT in Bradford. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "*A  degree (with honours)  from a Higher Education Institution of a  1st, 2.1 or 2.2  \\r\n*Applicants can apply from any degree subject discipline however, applicants are required to demonstrate at interview how the skills, knowledge and understanding developed within the degree are applicable to primary teaching. \\r\n* GCSE English Language, mathematics and science at a standard equivalent to a grade 4 or grade C or above. \\r\n* 2 A levels or equivalent. \\r\n\\r\nApplicants successful at interview that are currently retaking a GCSE or awaiting a degree classification will be offered a conditional place until the grade can be confirmed. \\r\n",
+    "FeeInternational": 9000.0,
+    "FinancialSupport": "You may be able to access additional financial support and tuition fee loans to cover fees.  Eligibility for this is assessed through the Student Loans Company and you should contact them directly.    If you are privately funding the programme, arrangements can be made direct with High Force Education SCITT to pay in instalments. \\r\n\\r\nThe DfE are continuing to support postgraduate places with a training bursary and all details of bursaries can be found on the course page. \\r\n",
+    "InterviewProcess": "High Force Education SCITT leads and manages the assessment process with the support of the lead partnership school. The assessment day is a half- full day and you will complete a number of different tasks designed to assess your skills, knowledge, understanding and aptitude for teaching. \\r\n\\r\n\\r\nThe assessment day includes:\\r\n* group task\\r\n* teaching activity with a group of 6 children\\r\n* literacy skills test\\r\n* a formal interview with set questions. \\r\n\\r\nThe assessment panel will consist of the ITT Lead, a Headteacher and one other colleague from a partnership school. The ITT Lead will be on each panel to ensure consistency of interview procedures. \\r\n\\r\n\\r\nHigh Force Education SCITT considers a wide range of evidence to judge an applicant's potential to teach including the application form, references, results of assessment day tasks and assessment day skills demonstrated through interview. \\r\n\\r\nA decision to offer a place on the programme will be made as a result of the applicant's performance through all of the different tasks. All decisions from the assessment day will be made within 24 hours of the interview.  If you are successful, you will be offered a conditional place for the programme.\\r\n\\t\\t\\t\\t\\t\\t\\t\\t\\t     \\r\nWe offer all candidates the opportunity to receive written feedback if they are unsuccessful at the assessment day, this can be requested in writing. \\r\n\\r\n\\r\n",
+    "OtherRequirements": "In addition to the specific entry requirements detailed above, the  following ITT requirements must be met.\\r\n\\r\nThat all entrants:\\r\n*Have satisfactory references \\r\n* Are 'Fit to Teach'\\r\n*Have been subject to a Disclosure and Barring Service (DBS) enhanced disclosure check\\r\n* Have passed the DfE Professional Skills tests in literacy and numeracy prior to entry",
+    "PersonalQualities": "*Demonstrate a desire and passion to teach young children\\r\n*Motivate and inspire young children to reach their full educational potential in life \\r\n*Convey commitment and enthusiasm to primary teaching\\r\n*Demonstrate a strong desire to teach at an outstanding level and continually improve and develop as a practitioner \\r\n*Communicate clearly and articulately in spoken and written standard English, with accurate spelling and grammar \\r\n*Demonstrate openness to learning, self- development and welcome feedback\\r\n*Demonstrate empathy, sensitivity and respect for children, families and colleagues\\r\n*Value and contribute to team work\\r\n*Show creativity, flair, innovation and adaptability\\r\n*Have resilience \\r\n*Be able to meet deadlines    \\r\n",
+    "HowSchoolPlacementsWork": "High Force Education SCITT is a partnership of 20 primary schools leading initial teacher training in the North East. Each school provides a diverse and unique school ethos to provide you with the widest range of school environments to learn within. \\r\n\\r\nYou will be placed in 3 different schools across the year to gain a wealth of experience in a range of settings. School placements are specifically and carefully selected to meet your individual development needs, requested specialisms and to widen your  skills in working with a range of pupils.\\r\n\\r\nWe also arrange school placements on the criteria below:\\r\n*previous experience (if applicable) \\r\n*travel time\\r\n*your areas for development/targets \\r\n*a different context\\r\n\\r\nYou will complete 4 school placements across the year. Two of the placements are an assessed teaching practice where you will be required to be assessed in both KS1 and KS2. In addition to this, you will have the opportunity to observe in EYFS, a specialist school and a school with a high proportion of children with EAL (English as an Additional Language).\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Federation of Abbey Schools  are the lead for the Abbey School Direct route. Together with High Force Education SCITT, it offers an exciting and innovative School Direct primary programme.\\r\n\\r\nThe Lead School works collaboratively with a further 5 schools to provide and deliver a wide range of bespoke and innovative training . Each school is passionate about developing the teachers and school leaders of the future and trainees are regularly employed on completion of their training. In fact, 100% of our School Direct trainees gain employment in a local school. \\r\n\\r\nThe partnership of schools, in Darlington and the North East, include nursery, infant, junior, primary as well as specialist schools. As part of the School Direct programme, you will be placed in a range of good and outstanding schools to gain a broad and balanced experience with highly skilled practitioners.\\r\n\\r\nWe offer a PGCE validated by the University of Northumbria and on successful completion of the programme you are awarded Qualified Teacher Status and 60 Master level credits. \\r\n\\r\n",
+    "TrainWithDisability": "High Force Education SCITT is committed to equality of opportunity for all and does not discriminate on the grounds of race, gender, sexual orientation, age, disability, religion or socio-economic circumstances. For specific information and guidance on support, provision available and/or facilities for trainees with learning difficulties or disabilities, please contact the ITT Lead on 01833 630487. High Force Education SCITT produces a separate Disability Statement, outlining facilities for disabled learners. This is available on request.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "High Force Education is an Ofsted outstanding provider that produces inspirational, creative and high quality teachers of the future. \\r\n\\r\nHigh Force Education SCITT is a well-established teacher training provider in the North East working with a partnership of outstanding and good primary schools across Tees Valley, Darlington, Durham and North Yorkshire. \\r\n\\r\nThe SCITT is a small provider and as a result, all colleagues are accessible to you and trainees feel well supported and listened to. \\r\nMany of the mentors and tutors trained at High Force and they share with you the real demands, challenges and joys of primary teaching today.\\r\n",
+        "UcasInstitutionCode": "H38"
+      }
+    ]
+  },
+  "has_inst": true
+}

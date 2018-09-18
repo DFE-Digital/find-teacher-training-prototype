@@ -1,0 +1,74 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "King’s College London (University of London)",
+  "subjects": [
+    "Classics",
+    "Latin",
+    "Secondary"
+  ],
+  "name": "Latin with Classics",
+  "slug": "K60/Q8X1",
+  "providerCode": "K60",
+  "programmeCode": "Q8X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Franklin-Wilkins Building, Waterloo Bridge Wing, Waterloo Road, London, SE1 9NN",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Franklin-Wilkins Building, Waterloo Bridge Wing, Waterloo Road, London, SE1 9NN",
+      "geocode": true,
+      "formatted_address": "Waterloo Rd, South Bank, London SE1, UK",
+      "latitude": 51.502334,
+      "longitude": -0.1100842,
+      "post_code": "SE1",
+      "city": "Greater London",
+      "route": "Waterloo Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "K60",
+    "addr_1": "King's Admissions Office",
+    "addr_2": "James Clerk Maxwell Building",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "SE1 8WA ",
+    "url": "http://www.kcl.ac.uk",
+    "geocode": true,
+    "formatted_address": "57 Waterloo Rd, Lambeth, London SE1 8WA, UK",
+    "latitude": 51.50486650000001,
+    "longitude": -0.1126887,
+    "post_code": "SE1 8WA",
+    "city": "Greater London",
+    "route": "Waterloo Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. \\r\n\\r\nThe course aims to provide a practical and theoretical context for the development of subject pedagogical knowledge for teaching Classics (Latin, alongside a combination of Greek/Classical Civilisation/Ancient History) with confidence in secondary schools.  Sessions include opportunities to explore a variety of methodologies, as well as modelling ways in which you might teach Classics in the classroom.  There are also opportunities to consider the use of drama, technology and other media, as well as learning outside the classroom.  The sessions include input from tutors and other colleagues, seminars, workshops and presentations.  Students are required to undertake research and other independent learning tasks, as well as to work in collaboration with each other and with colleagues in their school placements.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Bachelor's degree with at least 2:1 honours (or overseas equivalent), preferably in classics, classical civilisation or ancient history.\\r\n\\r\nYour level of Latin will need to be at least AS level grade A (or the equivalent) and this will be assessed at interview through a translation exercise.\\r\n\\r\nAll applicants must possess a grade C/ grade 4 in GCSE English and Maths (or equivalent).",
+    "FeeInternational": 19320.0,
+    "InterviewProcess": "The selection process normally involves an interview, a short presentation by the candidate, a discussion and a short piece of writing.\\r\n\\r\nInterview\\r\n\\r\nIn addition to meeting the shortlisting requirements, it is desirable that you try to demonstrate the following if you are to be offered a place:\\r\n\\r\n-the ability to engage interest and communicate your own enthusiasm for Classics;\\r\n-evidence that you have a commitment to working with young people;\\r\n-commitment to inclusion;\\r\n-the ability to explain ideas clearly and to think on your feet;\\r\n-strong interpersonal skills;\\r\n-evidence of flexibility;\\r\n-interest in current educational issues;\\r\n-recent observation in a non-selective state secondary school;\\r\n-knowledge of Latin literature in the original;\\r\n-knowledge of some aspects of the literature, history, social and political life of Greece and Rome.\\r\n\\r\nPresentation\\r\n\\r\nIn your presentation, we will be looking for:\\r\n-an understanding of the subject you wish to teach;\\r\n-the ability to explain concepts at a school level;\\r\n-engagement with the audience;\\r\n-reference to the use of simple resources (e.g. visual aids);\\r\n-confidence and clarity.\\r\n\\r\n",
+    "OtherRequirements": "All applicants for teacher training programmes must pass the Department for Education’s Literacy and Numeracy Skills Tests prior to commencing their teacher training course.\\r\n\\r\nThe Department for Education requires the Disclosure and Barring Service (formerly the Criminal Records Bureau) to vet the background of persons working in their schools. Candidates offered a place on a PGCE course will be asked to complete an enhanced check with the DBS to ensure they do not have a criminal background which might prevent them from working as a teacher. This must be completed before you register on the programme.\\r\n\\r\n",
+    "PersonalQualities": "We are looking for people with:\\r\n\\r\n-a real enthusiasm for Classics;\\r\n-commitment to teaching;\\r\n-a good academic track record, including a degree in a classical subject;\\r\n-a good knowledge of Latin, Classical Civilisation/ Ancient History and the potential to teach;\\r\n-knowledge of Greek may be useful but is not essential;\\r\n-good communication skills;\\r\n-an ability to explain linguistic and non-linguistic concepts clearly;\\r\n-potential to manage young people effectively;\\r\n-flexibility of mind;\\r\n-awareness of current educational issues;\\r\n-successful experience with children or clear potential for this;\\r\n-commitment to equality and inclusion;\\r\n-commitment to continuous professional development.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "You will have two different school placements during the course. We work with a large number of schools around London and Greater London and we select school placements carefully, taking into account the teachers who act as mentors and the subjects they offer. \\r\n\\r\nWe try to ensure that all trainees have a reasonable journey to school and to ensure that you have a balanced teaching experience including the full secondary age (11-18) and ability range."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Experience: King’s has been training teachers for over 120 years and has developed a reputation for excellence in its training methods. The PGCE academics are qualified teachers themselves and are highly experienced in teacher training.\\r\n\\r\nReputation: King’s has developed a reputation for excellence in both training methods and the standards of new teachers we train. At the most recent Ofsted inspection King’s was graded 'Outstanding'.\\r\n\\r\nLocation: Based in the heart of London, King’s is surrounded by landmarks and cultural institutions that we incorporate into our training. Transport links are extensive as the campus is only minutes from Waterloo station.\\r\n\\r\nStudent satisfaction: Trainees value the effectiveness of their training in preparing them for their teaching career. 92% of graduates rated the quality of our training as very good or good in the 2018 student survey.\\r\n\\r\nEmployment prospects: 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. Many schools actively contact us to try and recruit our trainees during the academic year.\\r\n",
+    "TrainWithDisability": "All PGCE trainee teachers must meet the Secretary of State's requirements for physical and mental health, but few health problems past or present preclude applicants from teaching. \\r\n\\r\nWe always welcome applications from people with disabilities. Candidates offered a place must complete a pre-commencement health declaration form. If this reveals a need, King's provides appropriate school placements, support and monitoring for the trainee during the course. If you have any questions about health, disability, or the support provided, please do not hesitate to contact us.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

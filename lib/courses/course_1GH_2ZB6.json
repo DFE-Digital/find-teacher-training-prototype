@@ -1,0 +1,84 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Warwick",
+  "provider": "Lawrence Sheriff School",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "1GH/2ZB6",
+  "providerCode": "1GH",
+  "programmeCode": "2ZB6",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Clifton Road, Rugby, CV21 3AG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Clifton Road, Rugby, CV21 3AG",
+      "geocode": true,
+      "formatted_address": "Clifton Rd, Rugby CV21 3QZ, UK",
+      "latitude": 52.3715633,
+      "longitude": -1.254817,
+      "post_code": "CV21 3QZ",
+      "city": "Warwickshire",
+      "route": "Clifton Road",
+      "postal_town": "Rugby"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1GH",
+    "addr_1": "Lawrence Sheriff School",
+    "addr_2": "Clifton Road",
+    "addr_3": null,
+    "addr_4": "Rugby",
+    "postcode": "CV21 3AG",
+    "url": "http://www.lawrencesheriffschool.net",
+    "geocode": true,
+    "formatted_address": "Clifton Rd, Rugby CV21 3AG, UK",
+    "latitude": 52.3709915,
+    "longitude": -1.2551402,
+    "post_code": "CV21 3AG",
+    "city": "Warwickshire",
+    "route": "Clifton Road",
+    "postal_town": "Rugby"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "You’ll have the opportunity to work alongside experienced teachers and colleagues who can offer examples of good practice, advice and support during training. You’ll spend the majority of your training in your host school and will feel part of the school community. \\r\n\\r\nAs a guide, you will spend four days a week in your host school and one day a week at University to develop your subject and professional studies. To broaden your experience you will complete a six week placement in a contrasting school, usually after the Christmas break.\\r\n\\r\nIn order to develop expertise in your chosen subject area, you'll take three core modules. They're all designed to equip you with the knowledge, understanding and practical skills you'll need in your successful teaching career:\\r\n\\r\n•\\tSubject Studies: You'll learn all aspects of how to teach your subject, including planning, teaching, assessment and classroom management.\\r\n•\\tProfessional Studies: You'll learn about working in classrooms and schools, and the broader context of teaching today.\\r\n•\\tProfessional Practice: You'll take placements with opportunities for observation, practice and investigation in partner schools.\\r\n\\r\nYou’ll be assessed in the following three modules:\\r\n•\\tSubject Studies (PG1) M Level: A series of assessments focussing on both educational theory and issues in your specialist subject (1 x 1500 word formative essay, and 1 x 4000-word essay, 1 x Academic Poster)\\r\n•\\tReflective Practice (PG2) M Level: A reflective case study on an area of educational practice in your placement school(s) supported by a literature review (1 x 5000-word essay)\\r\n•\\tProfessional Practice H Level: Meeting the Teachers’ Standards at a Good or Outstanding level (Regular observations by mentors and Teaching Fellows; Tutorials; Professional Digital Portfolio, Viva Voce)\\r\n\\r\nYou’ll also be assessed on whether you meet the Teachers’ Standards at a level appropriate for a newly qualified teacher.\\r\n\\r\nAll assignments are submitted in electronic form. Your tutors will give you formal feedback identifying the strengths of the academic piece, and offer any advice for future work.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "1.   Degree\\r\nYou must have graduated, or be about to graduate, from a UK Higher Educational Institute or equivalent, with a 2:2 or above honours degree. \\r\n\\r\n2.\\tGCSEs \\r\nYou'll need at least Grade C in GCSE English Language and Mathematics. \\r\n\\r\n",
+    "InterviewProcess": "Interviews are generally held at Lawrence Sheriff School or the partner school you have applied to. We will send you an email to let you know the arrangements, which can vary slightly depending on the school.\\r\n\\r\nThe selection process lasts approximately half a day, during which you will attend an interview, conduct a short teaching task (usually about 20-30 minutes) and meet members of the department or school team you will be working with. There may also be a tour of the school and for Secondary applicants a discussion relating to your chosen subject.\\r\n\\r\nIf you are successful at interview, you will be informed via UCAS and the lead school.\\r\n",
+    "OtherRequirements": "Before starting your course you must also:\\r\n•\\tPass the Professional Skills Tests in numeracy and literacy. You will need to book a place at a test centre and take these as soon as you can.\\r\n•      Pass an occupational health check and a criminal record check.\\r\n",
+    "PersonalQualities": "We recommend that you have some experience in mainstream UK schools before applying. Whilst not compulsory, this will give you a flavour for your potential future career, and help you write your application.",
+    "HowSchoolPlacementsWork": "You will be able to apply to your chosen school (your host school) where you will spend the majority of your time. \\r\n\\r\nAll partner schools are within a reasonable travelling distance and we will try to ensure that for your six week placement you are placed in a school  that is convenient for you."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Lawrence Sheriff School is a National Teaching School and a lead school for School Direct. We work in partnership with a range of schools in the Warwickshire and Coventry areas as well as several higher education teacher training providers. \\r\n\\r\nThis is the fifth year that we have been involved with the School Direct training programme and we have successfully placed trainees throughout the area, with many former trainees in full-time employment within the partnership.\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "We have trained professional mentors available to discuss and where possible meet the specific needs of trainees and we can offer support across our range of schools.\\r\n\\r\nLawrence Sheriff School is an inclusive community which welcomes students, staff and visitors with disabilities. \\r\n\\r\nPartner school accessibility arrangements can be found on their school websites. \\r\n\\r\nPlease contact us if you have any specific queries.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "\\r\n\\r\nTraining teachers for over 50 years, we are an Ofsted \"Outstanding\" provider of teacher training, working with over 300 schools.\\r\n\\r\n•\\t98% of our trainees complete our courses with 94% being awarded good or outstanding. \\r\n•\\tOur employment rate into teaching is 95%. \\r\n•\\t86% of our trainees rate the course as good or outstanding.\\r\n\\r\nUpon completing this course you gain 90 credits at master's level for our MA in Professional Education. You will be taught and supported by highly experienced tutors, class teachers and school mentors who have national reputations for the quality of their training.\\r\n\\r\n",
+        "UcasInstitutionCode": "W20"
+      },
+      {
+        "Description": "The Cambridge Partnership works to provide inspirational teachers and future school leaders for a significant area of the East of England. Centred in Cambridgeshire, we have developed strong partnerships with schools across the region including Norfolk, Suffolk, Bedfordshire, Essex, Leicestershire, Northamptonshire, Warwickshire and Hertfordshire. \\r\nWe work to ensure that the teachers of tomorrow have the best possible chance of developing the transferable skills necessary for the wide variety of school contexts in the East of England and beyond.\\r\n",
+        "UcasInstitutionCode": "C03"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "W80"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": "e-Qualitas",
+  "provider": "Dunraven Training Partnership",
+  "subjects": [
+    "Psychology",
+    "Secondary"
+  ],
+  "name": "Psychology",
+  "slug": "1BW/35WD",
+  "providerCode": "1BW",
+  "programmeCode": "35WD",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Dunraven School, 94-98 Leigham Court Road, Streatham, London, SW16 2QB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Dunraven School, 94-98 Leigham Court Road, Streatham, London, SW16 2QB",
+      "geocode": true,
+      "formatted_address": "94/98 Leigham Ct Rd, London SW16 2QB, UK",
+      "latitude": 51.432948,
+      "longitude": -0.119755,
+      "post_code": "SW16 2QB",
+      "city": "Greater London",
+      "route": "Leigham Court Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1BW",
+    "addr_1": "Dunraven School",
+    "addr_2": "94-98 Leigham Court Road",
+    "addr_3": "Streatham",
+    "addr_4": "London",
+    "postcode": "SW16 2QB",
+    "url": "http://www.dunraven.org.uk",
+    "geocode": true,
+    "formatted_address": "94/98 Leigham Ct Rd, London SW16 2QB, UK",
+    "latitude": 51.432948,
+    "longitude": -0.119755,
+    "post_code": "SW16 2QB",
+    "city": "Greater London",
+    "route": "Leigham Court Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeDetails": "The tuition fee funded route fee is £6,000 + VAT, plus £2,000  paid to the school for your training. \\r\n\\r\n The maximum student loan is £6,000 for teacher training with e-Qualitas. ",
+    "CourseLength": "OneYear"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Dunraven's Teaching School, the Sharing Excellence Partnership, offers school based teacher training of the highest standard with our primary and secondary school partners and accrediting providers, University of Roehampton and e-Qualitas. Dunraven has a well established reputation for effective staff development and long-standing programmes for developing teachers, including traditional ITT routes, Teach First, and School Direct. We offer support and professional guidance in making a transition from support roles in school into teacher training and employment.\\r\nWe promote 'Excellence for All' by recruiting and training high calibre teachers for local schools.\\r\nAll our trainees have gone on to successful employment, mostly within our Partnership. The majority of our School Direct trainees have been formally assessed as 'Outstanding' by the time they complete their training.\\r\nDunraven is part of the South Lambeth Schools' Partnership working with ten local primary schools and SL6, a post-16 collaboration with local secondary schools, which provides a wide range of training and development opportunities for our trainees. A significant building programme means the school now has purpose-built facilities.\\r\nOur School Direct training partnership is a strong local network of Lambeth primary and secondary schools. It includes Julian's, Crown Lane, Van Gogh, Goldfinch, Corpus Christi and St Andrew's Catholic Primary Schools. Secondary partners are the The Elm Green School, Trinity Academy and City Heights Academy. Dunraven School, all-through from 4-18, offers training experiences in both primary and secondary phases.\\r\n\\r\n[Sharing Excellence Partnership] (https://www.dunraven.org.uk/281/school-direct-teacher-training-partnership)",
+    "TrainWithDisability": "All our training programmes are bespoke and tailored to meet individual needs, reflecting applicants' skills and experience and any health or disability requirements. Where possible we adapt our training provision to support trainees with disabilities and other needs. \\r\n\\r\nWe recognise that teaching is a rewarding but demanding career and that there are times when even the best trainees will face challenges. Feedback from previous trainees suggests high levels of satisfaction with the support we offer them, carefully co-ordinated between school, training provider and accrediting provider. We aim to promote trainee well-being and resilience to enable them to make a long-term commitment to the teaching profession.\\r\n\\r\nThe University of Roehampton offers an extensive range of student support services. There is a strong tutorial support system in the School of Education and on school placement. \\r\n\\r\n[University of Roehampton] (https://www.roehampton.ac.uk/why-roehampton/)",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University is a leading provider of teacher training in the UK with 175 years' history, working with over 350 schools. We offer  high quality training  in partnership with them, in preparation for a career with a competitive starting salary. Employment prospects are excellent: 99% of graduates are in work or further study six months after leaving. University buildings are on a beautiful parkland campus in south-west London. The School of Education is ranked third in London for its research, reflecting world-class expertise.\\r\nTrainees report high levels of satisfaction with their training experience on our training programmes.\\r\n",
+        "UcasInstitutionCode": "R48"
+      },
+      {
+        "Description": "In partnership with e-Qualitas we offer flexible training that is well structured  and personalised to meet individual needs and give trainees the best opportunity to become outstanding teachers.\\r\n\\r\nModules.\\r\n1.Lesson planning. \\r\n2. Behaviour. \\r\n3. Assessment.\\r\n4.Meeting needs of different pupils. \\r\n5.Barriers to learning.\\r\n6.Effective subject teaching. \\r\n \\r\nThe programme leads to QTS and trainees can opt into a PGCE with Leeds Beckett University for £1,800. \\r\n\\r\nThe tuition fee funded route fee is £6,000 + VAT, plus £2,000 which is a disbursement to be paid to the school for your training. \\r\n\\r\n The maximum student loan is £6,000 for teacher training with e-Qualitas. ",
+        "UcasInstitutionCode": "E69"
+      }
+    ]
+  },
+  "has_inst": true
+}

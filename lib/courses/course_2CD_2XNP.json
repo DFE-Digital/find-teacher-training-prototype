@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Liverpool John Moores University",
+  "provider": "CAPITAL (Sefton)",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2CD/2XNP",
+  "providerCode": "2CD",
+  "programmeCode": "2XNP",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Nicholas Road, Blundellsands, Merseyside, Liverpool, L23 6TS",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Nicholas Road, Blundellsands, Merseyside, Liverpool, L23 6TS",
+      "geocode": true,
+      "formatted_address": "Nicholas Rd, Blundellsands, Liverpool L23 6TS, UK",
+      "latitude": 53.4866605,
+      "longitude": -3.0454182,
+      "post_code": "L23 6TS",
+      "city": "Blundellsands",
+      "route": "Nicholas Road",
+      "postal_town": "Liverpool"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2CD",
+    "addr_1": "Nicholas Road",
+    "addr_2": "Blundellsands",
+    "addr_3": null,
+    "addr_4": "Liverpool",
+    "postcode": "L23 6TS ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Nicholas Rd, Blundellsands, Liverpool L23 6TS, UK",
+    "latitude": 53.4866605,
+    "longitude": -3.0454182,
+    "post_code": "L23 6TS",
+    "city": "Blundellsands",
+    "route": "Nicholas Road",
+    "postal_town": "Liverpool"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "CAPITAL Sefton, in partnership with Liverpool John Moores University (LJMU), offers a Postgraduate Certificate in Education (PGCE) with Qualified Teacher status. \\r\n\\r\nThe Postgraduate Certificate is assessed through the 2 Modules. The course team and our Partnership schools have worked together to ensure that the PGCE Award is both relevant and manageable. The Award of QTS is integral to one of the academic Modules. Trainees also submit one academic essay in two parts which focuses on reflecting on aspects of your practice.\\r\n\\r\nIn the first term, students spend one day per week with LJMU with the remaining days in the home school.  In the latter half of the training year, the amount of school-based experience increases to 5 days a week.  The LJMU taught programme focuses predominantly on developing your subject knowledge and subject pedagogy. Sessions are led by subject experts and are designed to equip students with the knowledge, understanding and skills needed to become confident teachers. In addition, lead lectures and seminars develop student teachers’ confidence in a range of relevant issues; classroom and behaviour management; meeting individual needs and inclusion; planning and assessment etc. There is a strong emphasis on social justice issues in education and on mental health and well-being. Sessions are largely workshop-based and participatory so that theoretical, research-informed teaching is explicitly linked to its practical implications for the classroom.\\r\nThere will also be professional development days held at St Nicholas CE Primary School, Crosby and at our Partner Schools.  These workshop based sessions are led by experienced teachers and senior leaders from Partner Schools and are designed to support students in developing the professional skills needed in the classroom.\\r\n\\r\nOur last cohort of trainees has consistently rated this provision and training as excellent with many commenting on positive support received and tailored experience and training offered. Over the course of the training, experience will be gained across all key stages and in at least two schools, with one school acting as a Home School for the majority of the year.  In accordance with ITT regulations, you will complete at least one alternative placement in another school within the CAPITAL Sefton consortium. \\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should hold, or be expected to achieve, a degree (or recognised equivalent). The degree classification should normally be at 2:1 or above. Strong applicants with a 2:2 will be considered if they have significant school experience prior to application, for instance as a Teaching Assistant or Learning Support Assistant in a primary school. You will need at least a grade C in GCSE English, Maths and Science. Students must demonstrate very high standards of communication in both spoken and written English. All entrants must have passed all aspects of the professional skills tests before the beginning of the programme.",
+    "FeeInternational": 14000.0,
+    "InterviewProcess": "As the Lead School in the partnership, St Nicholas CE Primary School will co-ordinate the recruitment process. \\r\n\\r\nInterviews will be held in partnership schools and will include a 20 minute observed mini-teach with a small group; written test to assess candidate’s ability to write at master’s level; followed by a formal interview with representatives from Partner Schools and the Lead School. Details about the mini-teach and age group will be sent in advance of an interview. This is a rigorous, thorough and reciprocal process, designed to best match the applicant and school .\\r\n",
+    "OtherRequirements": "Mainstream primary school experience would be highly beneficial, prior to application.",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who have enthusiasm, are highly motivated, energetic and creative. Those who enjoy new challenges; work effectively in a team and believe that all young people can achieve success.  We are seeking individuals who strive to improve, are reflective and are committed to their own professional development. It is very important that  candidates are familiar with the working environment of a school.    \\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Our partnership of 17 schools comprises a diverse range of settings and they are conveniently located, with good transport links.  \\r\n\\r\nCareful consideration is given to the placement of candidates. The profile of the successful candidate will be discussed prior to commencement of the course and taken into account when deciding on school placements. \\r\n\\r\nAll trainees will be expected to teach in both key stages (from Years 1-6).\\r\n\\r\nOver the course of the training, experience will be gained across all key stages and in at least two schools, with one school acting as a Home School for the majority of the year.\\r\n\\r\nIn the first term, students spend one day per week with LJMU with the remaining days in the home school.  In the latter half of the training year, the amount of school-based experience increases to 5 days a week.  \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "If you want your training to be based at a school where you can be fully immersed in the life of a teacher from day one, a school-led training course is for you.\\r\n\\r\nCAPITAL Sefton has an inspirational partnership of primary schools and our schools are at the cutting edge of teaching and learning.  We try to create an environment in which staff, pupils and trainee teachers’ alike feel valued and supported. Our partnership of schools is divers and allows trainees to engage with a variety of settings within the partnership.\\r\n\\r\nOur staff are our most valuable resource and have a proven track record in training.  Our teachers are excellent practitioners and have a range of skills to share their knowledge and practice with the next generation of teachers.\\r\n\\r\nStudents are encouraged to formally evaluate provision throughout the programme which contributes to the ongoing review and development of the partnership.\\r\n\\r\nYou will be trained in a highly supportive and aspirational environment and will develop the rigour, professional knowledge, understanding and skills necessary for the delivery of creative, purposeful and challenging teaching and learning.  \\r\n",
+    "TrainWithDisability": "Our University partner LJMU is committed to Equality of Opportunity. Their Disability Advice Team will help you access the support you need. The best time to contact the Disability Advice Team is before you start your course. By contacting the team before you begin and disclosing your disability, you'll be able to receive support from when you arrive. Email: disability@ljmu.ac.uk Tel: 0151 231 3164/3165. \\r\n\\r\nAll trainees are encouraged to disclose any specific learning need that they experience, in order to make any adjustments, both at LJMU and within our Partner Schools. As part of the enrolment process to Teacher Training Programmes all students are required to complete a Health Questionnaire and some may be asked to attend a screening appointment with LJMU’s Occupational Health Unit. This is designed to ensure that arrangements are in place, from the outset, to support any students who may need additional support or reasonable adjustments to be made.  \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work in close Partnership with Liverpool John Moores University (LJMU), which has a long established reputation for providing high quality Teacher Training, taught at the IMMarsh campus. LJMU are responsible for the PGCE/PGDE Academic Award and your recommendation for Qualified Teacher Status. You will attend LJMU for aspects of your programme, which we have designed in collaboration with them.  ",
+        "UcasInstitutionCode": "L51"
+      }
+    ]
+  },
+  "has_inst": true
+}

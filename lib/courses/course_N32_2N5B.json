@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "South Birmingham SCITT",
+  "subjects": [
+    "Geography",
+    "Secondary"
+  ],
+  "name": "Geography",
+  "slug": "N32/2N5B",
+  "providerCode": "N32",
+  "programmeCode": "2N5B",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Ninestilles ITT Consortium, Hartfield Crescent, Acocks Green, Birmingham, B27 7QG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Ninestilles ITT Consortium, Hartfield Crescent, Acocks Green, Birmingham, B27 7QG",
+      "geocode": true,
+      "formatted_address": "Hartfield Cres, Birmingham B27 7QL, UK",
+      "latitude": 52.44207,
+      "longitude": -1.8329683,
+      "post_code": "B27 7QL",
+      "city": "West Midlands",
+      "route": "Hartfield Crescent",
+      "postal_town": "Birmingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "N32",
+    "addr_1": "Solihull 6th Form College",
+    "addr_2": "Widney Manor Road",
+    "addr_3": "Solihull",
+    "addr_4": null,
+    "postcode": "B91 3WR ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Widney Manor Rd, Solihull B91 3WR, UK",
+    "latitude": 52.4057217,
+    "longitude": -1.7728004,
+    "post_code": "B91 3WR",
+    "city": "West Midlands",
+    "route": "Widney Manor Road",
+    "postal_town": "Solihull"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "£9000 tuition fee – you may be eligible for a student loan\\r\nSubject dependent training bursaries may be available \\r\n\\r\n",
+    "AboutCourse": "Please visit our website at (www.southbirminghamscitt.org.uk) for further information and a map of our whole partnership\\r\n\\r\n*\\tFull time; September to July\\r\n*\\t1 day in Professional Studies training (Solihull Campus - Our training suite is located at The Sixth Form College Solihull – 5 minutes from the centre of Solihull and 20 minutes from Birmingham City Centre\\r\n*\\t4 days in placement \\r\n*\\tPlacement schools allocated primarily upon the location of trainee\\r\n*\\tProfessional Studies includes subject pedagogy (occasionally these are held at the CPTSA and BCU Campus), research and reflective practice, routines & behaviour, teaching & learning strategies, meeting all children’s needs, the importance of assessment, understanding of the wider educational context\\r\n*\\tTrainees become reflective practitioners with specific targets to move their practice forwards\\r\n*\\tWeekly reflection of teaching practice collates evidence against the Teachers Standards to be awarded Qualified Teachers Status (QTS)\\r\n*\\t4 research assignments (3000 words each - Nov, Feb, May and Oct submission)\\r\n*\\t80 L7 Credits towards a Masters in Teaching and Learning (this is more than a PGCertEd)\\r\n*\\tOngoing early career development … including the opportunity to complete the PGDipEd at the end of the NQT year and the full Masters in subsequent year(s)\\r\n*\\tExpert support via School Based Trainers, Professional Tutors, Subject Tutors, Ex-Trainees and BCU Tutors – and cohort peers! \\r\n\\r\nOur programmes are all the same whether they are through our SCITT or our School Direct Partners. \\r\n\\tSouth Birmingham SCITT \\r\n\\tColmore Primary Teaching School Alliance\\r\n        Ninestiles Teaching School Alliance\\r\n        The Augustine Partnership\\r\n\\tWaverley Teaching School\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Primary - \\r\nGCSE Mathematics, GCSE English Language, GCSE Science Core – or equivalent – Grade C/4 or above \\r\nDegree (1, 2:1, 2:2, 3)\\r\nProfessional Skills tests. \\r\n\\r\nSecondary - \\r\nGCSE Mathematics, GCSE English Language – or equivalent – Grade C/4 or above \\r\nDegree (1, 2:1, 2:2, 3) - as a guide we would expect to see 50% of your degree and / or the ALevels that you took to be relevant to the subject in which you’re applying \\r\nProfessional Skills tests. \\r\n\\r\nPlease note all applications are individually assessed. Please contact us if you would like to discuss your entry qualifications. \\r\n",
+    "InterviewProcess": "Apply through UCAS\\r\nInterview day\\r\n\\r\n*\\tFormal panel interview\\r\n*\\tDelivery of a 20 minute pre planned learning activity\\r\n*\\tSubject Knowledge Baseline (to enable us to identify any specific gaps in knowledge) \\r\n*\\tProfessional Skills Mocks (if you haven’t already got them, this is to enable us to support you with any potential gaps)\\r\n*\\t5 minute presentation about yourself \\r\n\\r\nYour interview will take place in one of our Partnership Schools (but not necessarily the one you will be placed in!). You will have the opportunity to meet School Direct Leads, the SCITT Course Manager / Director and colleagues from the partnership. \\r\nWe will inform you of our decision within 48 hours\\r\nCheck out our website – (www.southbirminghamscitt.org.uk)\\r\n",
+    "OtherRequirements": "If you studied outside of the UK, you will need to visit NARIC, as a certificate of proof for equivalence will need to be attained. \\r\n\\r\nWe do not expect you to have school experience upon application -  But if you would like to gain some please get in touch and we will arrange this for you. \\r\n\\r\nA condition of your offer will be the successful completion of all Safeguarding procedures.\\r\n\\r\nYou will be asked to complete an Occupational Health Questionnaire \\r\n",
+    "PersonalQualities": "Enthusiasm \\r\nDedication \\r\nPassion\\r\nReflective practice \\r\nOrganised\\r\nProfessional\\r\n\\r\nCheck out our website – (www.southbirminghamscitt.org.uk)\\r\n",
+    "HowSchoolPlacementsWork": "School placements are based on two factors. The first is the location of the trainee. We want to ensure that your travel time is accessible and not too time constraining. The second is the availability of a Partnership school in your location. We always limit travel time to no more than 1 hour from home. \\r\nWe have a map of all our Primary and Secondary schools on our website (www.southbirminghamscitt.org.uk). We have 37 Primary Schools and 30 Secondary Schools to choose placements from. \\r\nThe majority of our trainees stay in their first allocated placement for the Autumn and Summer Term, completing their second placement in the Spring Term. We need to ensure that the second placement will give you a contrasting experience, so this may mean a slightly different journey for you  – but we will always ensure that it is accessible, for example if you don’t drive. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "South Birmingham SCITT …\\r\n… is the perfect place for someone who doesn’t just want a job in teaching, they want a career\\r\n… is a supportive, encouraging environment and the staff will go out of their way to make you a success\\r\n… will help find the teacher in you\\r\n\\r\n*\\tPrimary and Secondary Teacher Training\\r\n*\\tSchool – Led (SCITT and Schools Direct)\\r\n*\\tLearn from real teachers in real classrooms\\r\n*\\t100% employment rates\\r\n*\\tBespoke programme offering high levels of support to enable you to reach your full potential\\r\n*\\tQualified Teacher Status and Post Graduate Qualification (MA Level7 x 80)\\r\n*\\t1 day in training, 4 days in placement\\r\n*\\t50+ exciting and innovative schools in Birmingham and its surrounding areas\\r\n*\\tStrategic partners of a number of Teaching Schools to secure individuals early career entry and opportunities into leadership\\r\n*\\t16 years’ experience training new teachers\\r\n*\\tRecognised locally and nationally for its strong provision\\r\n*\\tHighly skilled practitioners to ensure high quality learning for the trainee \\r\n*\\tNQTs consistently rate us in the top 10 providers via the Good Teacher Training Guide\\r\n*\\tFantastic partnership of innovative schools who repeatedly employ our trainees\\r\n\\r\nOur programmes are all the same whether they are through our SCITT or our School Direct Partners. \\r\n\\tSouth Birmingham SCITT \\r\n\\tColmore Primary Teaching School Alliance\\r\n        Ninestiles Teaching School Alliance\\r\n        The Augustine Partnership\\r\n\\tWaverley Teaching School\\r\n",
+    "TrainWithDisability": "A condition of your offer will be the successful completion of an Occupational Health Check to satisfy the requirements for Fitness to Teach. \\r\n\\r\nWe endeavour to meet the needs of trainees with disabilities and you are welcome to discuss any needs or disabilities with us at any time during the application process. \\r\n\\r\nIf you are disabled or have a specific learning difficulty, all reasonable adjustments will be made. \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

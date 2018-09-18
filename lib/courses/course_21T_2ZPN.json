@@ -1,0 +1,126 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Worcester",
+  "provider": "Woodrush Teaching School Alliance",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "slug": "21T/2ZPN",
+  "providerCode": "21T",
+  "programmeCode": "2ZPN",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Shawhurst Lane, Wythall, Birmingham, West Midlands, B47 5JW",
+      "code": "-"
+    },
+    {
+      "name": "Pedmore Technology College and Community School",
+      "address": "Grange Lane, Stourbridge, DY9 7HS",
+      "code": "B"
+    },
+    {
+      "name": "Hanley Castle High School",
+      "address": "Church End, Hanley Castle, Worcester, WR8 0BL",
+      "code": "J"
+    },
+    {
+      "name": "Nunnery Wood High School",
+      "address": "Spetchley Road, Worcester, WR5 2LT",
+      "code": "N"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Shawhurst Lane, Wythall, Birmingham, West Midlands, B47 5JW",
+      "geocode": true,
+      "formatted_address": "Shawhurst Ln, Hollywood, Birmingham B47 5HL, UK",
+      "latitude": 52.3884152,
+      "longitude": -1.8794684,
+      "post_code": "B47 5HL",
+      "city": "Hollywood",
+      "route": "Shawhurst Lane",
+      "postal_town": "Birmingham"
+    },
+    {
+      "address": "Grange Lane, Stourbridge, DY9 7HS",
+      "geocode": true,
+      "formatted_address": "Stourbridge DY9 7HS, UK",
+      "latitude": 52.45006559999999,
+      "longitude": -2.126468,
+      "post_code": "DY9 7HS",
+      "city": "West Midlands",
+      "route": null,
+      "postal_town": "Stourbridge"
+    },
+    {
+      "address": "Church End, Hanley Castle, Worcester, WR8 0BL",
+      "geocode": true,
+      "formatted_address": "Hanley Castle, Worcester WR8 0BL, UK",
+      "latitude": 52.0767089,
+      "longitude": -2.2364753,
+      "post_code": "WR8 0BL",
+      "city": "Hanley Castle",
+      "route": null,
+      "postal_town": "Worcester"
+    },
+    {
+      "address": "Spetchley Road, Worcester, WR5 2LT",
+      "geocode": true,
+      "formatted_address": "Spetchley Rd, Worcester WR5 2LR, UK",
+      "latitude": 52.1832272,
+      "longitude": -2.1856187,
+      "post_code": "WR5 2LR",
+      "city": "Worcestershire",
+      "route": "Spetchley Road",
+      "postal_town": "Worcester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "21T",
+    "addr_1": "Shawhurst Lane",
+    "addr_2": "Wythall",
+    "addr_3": "Birmingham",
+    "addr_4": "West Midlands",
+    "postcode": "B47 5JW ",
+    "url": "http://www.woodrushtsa.co.uk",
+    "geocode": true,
+    "formatted_address": "Woodrush Community Hub, Shawhurst Lane, Hollywood, Birmingham B47 5JW, United Kingdom",
+    "latitude": 52.3896631,
+    "longitude": -1.8784498,
+    "post_code": "B47 5JW",
+    "city": "Hollywood",
+    "route": null,
+    "postal_town": "Birmingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Mathematics is a core curriculum subject that prepares students for the challenges of the modern world like no other subject can. A career in teaching mathematics offers fresh challenges that reap high levels of job satisfaction. No two days are ever the same for a teacher of mathematics. \\r\nThis course aims to produce reflective and inspiring teachers: you will be constantly evaluating your lessons and resources in order to improve and succeed as well as developing your personal mathematical skills by collaborating with others. It is imperative that all teachers are able to provide a safe and effective learning environment as well as producing innovative and creative ways of teaching Mathematics. ",
+    "InterviewProcess": "Application forms are considered by both the university and the individual schools involved with Woodrush Teaching School Alliance. \\r\n\\r\nAll successful applicants will have an interview at both Woodrush Teaching School Alliance and The University of Worcester. The University and Woodrush jointly design and manage the interview process.  Your interview will consist of a written task, a session with students and a formal interview.\\r\n\\r\nApplicants that demonstrate professionalism, commitment, a realistic understanding of the pressures of the course and the profession, an awareness of the school in which they are intending to train, creativity, organisational skills and a clear recognition of the need to synthesise practical and academic learning through refection are most likely to succeed. \\r\n",
+    "HowSchoolPlacementsWork": "Your placement school will primarily be selected on where there are vacancies for your subject. We aim to place you at a school with the minimal travelling distance. You will have two placements at contrasting schools. For primary you will teach ages 3 to 11 and for secondary ages 11 to 18. Woodrush TSA partner with over twenty schools in and across the Midlands and these can all be found at www.woodrushtsa.co.uk.\\r\n\\r\nWe have listed the locations that our partner schools will be running placements for the next year. You should indicate your preference of location on your application, this does not guarantee you will be placed at your preferred location. Throughout the year a schools staffing may change and therefore a school not listed may become available in your subject. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Woodrush Teaching School Alliance is an excellent place to start your teaching career. We aim to develop outstanding practitioners who are creative, highly effective and exceed the professional standards. Educational theory, innovative research and outstanding pedagogy are the foundations of our highly successful training programme. This was recognised by Ofsted in 2013 Leaders' procedures to ensure that the quality of teaching continues to improve and to support those teachers new to the profession are exemplary. Staff work as a close effective team, sharing good practice and providing support for each other . \\r\n\\r\nWoodrush High School, the lead in our teaching school alliance, is a consistently OFSTED Outstanding 11-18 school on the border of Birmingham and Worcestershire. We place an emphasis on ensuring all of our students achieve the qualifications, and equally important the life skills, to be successful in the world we live in.  We have hardworking and well qualified staff who are dedicated to delivering an ever-changing curriculum in a vibrant and exciting way. The curriculum we offer is broad, balanced and inspires students to learn. \\r\n \\r\nWoodrush works with over twenty schools both primary and secondary in and across the Midlands. In order to provide you with a variety of experience you will be placed at two schools with the alliance. These will be chosen based on your location. ",
+    "TrainWithDisability": "We welcome our duties under the Equality Act 2010 to eliminate discrimination, advance equality of opportunity and foster good relations in relation to age (as appropriate), disability, race, gender reassignment (maternity and pregnancy), religion and belief, sex and sexual orientation.\\r\n\\r\nTreating people equally does not necessarily involve treating them all the\\r\nsame. Our policies, procedures and activities must not discriminate but must nevertheless take account of differences of life-experience, outlook and background, and in the kinds of barrier and disadvantage which people may face,",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Studying at Warwick means you’ll be taught and supported by highly experienced practitioners. Known nationally for the quality of their training they are a top-ranked university in the Midlands, with Ofsted Outstanding ITT courses.\\r\nIf you study with Warwick, you’ll become a confident teacher, able to make a difference to young people's development. You'll see learners engaging in active and independent learning, and they will develop their knowledge and grow into young adults under your care.\\r\n\\r\nWarwick provide you with the skills needed to forge a strong personal and professional identity, which you will continue to develop throughout your career.",
+        "UcasInstitutionCode": "W20"
+      },
+      {
+        "Description": "Studying at Worcester provides an immersive and inspiring, school-centred training route into teaching.  The innovative design and delivery of the course places the trainee at the heart of a thriving school community from day one.\\r\n\\r\nAt Worcester you will benefit from their excellent partnerships with schools throughout the West Midlands region and beyond. They also provide state of the art facilities to support your research, subject knowledge and communication skills - enabling you to deliver teaching with impact.\\r\n\\r\nGraduates enjoy excellent employability prospects as the majority of their partner schools offer early career teaching posts to our PGCE trainees.",
+        "UcasInstitutionCode": "W80"
+      },
+      {
+        "Description": "The University of Birmingham's School of Education has a long-standing reputation as a centre of excellence for teaching and research in a wide range of areas of educational practice and policy. It is an international leader in education and has a history of top rated research.\\r\n\\r\nAwards include being ranked 39th in the World and 10th in Europe in the 2018 QS World Rankings and rated 'outstanding' in their latest Ofsted inspection (2013) for its Teacher Training programmes. They also have the prestigious award of being ranked fifth for Education in The Times Good University Guide 2018.",
+        "UcasInstitutionCode": "B32"
+      }
+    ]
+  },
+  "has_inst": true
+}

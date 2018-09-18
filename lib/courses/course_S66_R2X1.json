@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "South West Teacher Training",
+  "subjects": [
+    "German",
+    "Languages",
+    "Languages (european)",
+    "Secondary"
+  ],
+  "name": "Modern Languages (German)",
+  "slug": "S66/R2X1",
+  "providerCode": "S66",
+  "programmeCode": "R2X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "South West Teacher Training, WETC, Hatherleigh Road, EXETER, EX2 9JU",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "South West Teacher Training, WETC, Hatherleigh Road, EXETER, EX2 9JU",
+      "geocode": true,
+      "formatted_address": "West Exe School, Hatherleigh Rd, Exeter EX2 9JU, UK",
+      "latitude": 50.7066379,
+      "longitude": -3.5399153,
+      "post_code": "EX2 9JU",
+      "city": "Devon",
+      "route": "Hatherleigh Road",
+      "postal_town": "Exeter"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S66",
+    "addr_1": "West Exe School",
+    "addr_2": "Hatherleigh Road",
+    "addr_3": "Exeter",
+    "addr_4": "Devon",
+    "postcode": "EX2 9JU ",
+    "url": "http://www.swtt.net",
+    "geocode": true,
+    "formatted_address": "Hatherleigh Road, Exeter EX2 9JU, United Kingdom",
+    "latitude": 50.7066379,
+    "longitude": -3.5399153,
+    "post_code": "EX2 9JU",
+    "city": null,
+    "route": null,
+    "postal_town": "Exeter"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Modern Foreign Language course leads to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nThe programme has consistently been judged as excellent in both internal and external reviews, and is widely acknowledged as one of the best modern foreign language courses in the country.\\r\n\\r\nYour tutors are a diverse and incredibly experienced community of academics with wide practical experience in schools and international reputations as experts in the field of Modern Foreign Language teaching and learning.\\r\n\\r\nThe PGCE will provide you with a theoretical framework for language teaching closely integrated with practical advice on the preparation and delivery of effective and engaging language lessons. Your assignments are designed to help you to plan your teaching effectively and imaginatively and to evaluate your skills, particularly in terms of the quality of learning achieved by pupils.\\r\n\\r\nYou will be taught through a series of lectures, practical seminars and workshops, where interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n* gaining experience of the range of responsibilities of classroom teachers"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "South West Teacher Training is based at West Exe School, part of the highly successful Ted Wragg Multi-Academy Trust. We are situated in Exeter, placing our trainees in a partnership of schools across Exeter, Plymouth and in rural and coastal schools throughout Devon, Somerset and Cornwall. We match individual trainees to schools that suit their skills and location.\\r\n\\r\nWe work with Bath Spa University who provide our PGCE, an Ofsted rated Outstanding provider. They offer a balanced programme of academic excellence alongside school-based training. Bath Spa tutors visit our Exeter site, providing one-to-one tutorials. \\r\n\\r\nWe work with Exeter Consortium Teaching Schools Alliance and the Ted Wragg Multi-Academy Trust, who themselves work with Exeter University and Exeter College. We offer a programme of study that links our Secondary and Primary teacher training models, giving our Secondary trainees an enviable insight into the workings of Primary education, an aspect that future employers find attractive and distinctive to our route. The programme is taught by leading practitioners from within our partnership, who provide thoughtful training sessions rooted in educational theory and current classroom practice. \\r\n\\r\nSubject Mentors offer one-to-one support throughout the school-based training and this is mirrored by a team of Subject Course Tutors. Our trainees begin teaching in staged steps from their first weeks, integrating academic study with classroom practice. Our trainees say they value our truly school-centred route as it places them in a school setting swiftly, yet allows them to build their teaching skills gradually. Visit www.swtt.net to learn more.\\r\n",
+    "TrainWithDisability": "At South West Teacher Training we have a long history of accommodating trainees with a wide range of disabilities and other needs. Our training programme emphasises the need for trainees to manage their own pace of learning. Trainee well-being is at the heart of our vision for creating resilient teachers capable of managing their workload.\\r\n\\r\nTo that end, in the past we have successfully trained teachers who have learned strategies to manage their dyslexia, colour-blindness as well as mobility issues whilst meeting the demands of classroom practice. Trainees are asked to discuss their needs during a health check before starting the course and this information is swiftly communicated to the course team.\\r\n\\r\nOur partnership work with Bath Spa University is designed to support trainees with a range of needs and we have a differentiated programme of support tutorials, offering our trainees the help and guidance they need as individuals.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

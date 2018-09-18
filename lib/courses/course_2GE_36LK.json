@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Bedfordshire",
+  "provider": "Nene and Ramnoth",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "2GE/36LK",
+  "providerCode": "2GE",
+  "programmeCode": "36LK",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Norwich Road, Wisbech, Cambridgeshire, PE13 2AP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Norwich Road, Wisbech, Cambridgeshire, PE13 2AP",
+      "geocode": true,
+      "formatted_address": "Norwich Rd, Wisbech PE13 3UT, UK",
+      "latitude": 52.6629826,
+      "longitude": 0.165385,
+      "post_code": "PE13 3UT",
+      "city": "Cambridgeshire",
+      "route": "Norwich Road",
+      "postal_town": "Wisbech"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2GE",
+    "addr_1": "Norwich Road",
+    "addr_2": null,
+    "addr_3": "Wisbech",
+    "addr_4": "Cambridgeshire",
+    "postcode": "PE13 2AP",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Norwich Rd, Wisbech PE13 3UT, UK",
+    "latitude": 52.6657046,
+    "longitude": 0.1725154,
+    "post_code": "PE13 3UT",
+    "city": "Cambridgeshire",
+    "route": "Norwich Road",
+    "postal_town": "Wisbech"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Please note that this School Direct course is one year, full-time and unsalaried. \\r\n\\r\n",
+    "AboutCourse": "The University works in partnership with Nene and Ramnoth School / The Elliot Foundation Eastern Region schools to provide  a course that has a predominantly professional focus. Students will undertake two placements in contrasting schools. \\r\n\\r\nStudents will spend four days per week in their placement schools. Initially students will spend time observing current teachers during their classes. This enables students to become familiar with the school and the teaching practices already used in it. Over the year, as a student's skills and confidence develop, the amount of teaching time will increase. \\r\n\\r\nTeaching / Assessment\\r\nTeaching is through lectures, seminars and workshops with opportunities for working independently and collaboratively. There are course assignments but no formal examinations and the continuous assessment of teaching is based on achieving the national standards for Qualified Teacher Status (QTS) specified in the most recent Government documentation. \\r\n\\r\nPlacements will be in Wisbech and surrounding villages, Peterborough and Littleport.  We will endeavour to place trainees in schools near to where they live, although this is not always possible.  Trainees should be prepared to travel to both their school placements and to training venues.\\r\nOne day a week will be spent at the University of Bedfordshire or in other partnership schools.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants must possess a UK 2:2 Honours degree above or equivalent in any subject. \\r\n\\r\nPrimary course, all entrants must have achieved a standard equivalent to a grade 4 (or GCSE A to C) in the GCSE examinations in English, mathematics and a science subject. \\r\n\\r\nApplicants whose first language is not English who do not have GCSE 4 (or grade A-C English language) must have a valid IELTS certificate with a minimum score of 6.0 in each area of the test or appropriate equivalent. Please contact the University of Bedfordshire Admissions Team for information on the equivalency tests that are acceptable. \\r\n",
+    "FeeInternational": 11500.0,
+    "FinancialSupport": "UK students - can apply for a loan from the Government to help pay for PGCE tuition fees.  Please see: www.gov.uk/student-finance\\r\n\\r\nInternational students are not eligible for any extra government funding for the PGCE.",
+    "InterviewProcess": "Application process\\r\nThe University of Bedfordshire will check all applications to see if the applicants meet the entry criteria.  Those who are shortlisted will be invited back for an interview both with the Lead School and the University, which will involve a range of activities (see below) to assess their suitability for teaching.  Successful candidates are then informed of the outcome and will receive a formal letter of acceptance.\\r\n\\r\nGroup discussion\\r\nAs part of the interview, applicants will need to take part in a group discussion on a topic provided. We are looking for applicants to participate in the discussion by sharing their own views and being able to discuss and take on board other people's views. \\r\n\\r\nLiteracy and numeracy assessments\\r\nAll applicants invited to interview will be required to undertake a short literacy assessment and a short numeracy assessment to assess your skills in these areas. Please note that these tests are University of Bedfordshire tests and are not NCTL pre-course skills tests. \\r\n",
+    "OtherRequirements": "All suitable applicants will be interviewed and any offer of a place will be subject to medical clearance. \\r\nIt is the duty of all schools to protect vulnerable children and adults.  If you are offered a place on the programme, the school will apply for a DBS check for you, as it is a vital entry requirement for the training course.\\r\nThe form will contain details of any cautions, convictions, reprimands, or warnings against your name (even where they would generally be considered spent), or will confirm that you have none.  \\r\n\\r\n",
+    "PersonalQualities": "We are looking for those who have:\\r\n*  commitment to teaching and a desire to be an outstanding teacher\\r\n*  excellent communication, organisational skills and flexibility in an active and constantly changing environment\\r\n*  enthusiasm and commitment to working hard, as part of a professional team\\r\n*  the ability to establish good working relationships with children and staff\\r\n*  confidence and ability to engage with children \\r\n* a desire to work in the Eastern region (Cambridgeshire)\\r\n",
+    "HowSchoolPlacementsWork": "The School Direct (tuition fee) course is organised to give you an understanding of a range of teaching, learning and education experiences which, in turn, informs your teaching practice. Trainees are prepared to become dynamic and reflective teachers through an on-going analysis of their own knowledge. They will also be encouraged to broaden their skills and knowledge so that they are self-confident, creative and innovative teachers. \\r\n\\r\nThe course is full-time with a combination of training, study and time spent in school. These elements will combine to provide you with unique experiences of teaching and education. Trainees will have two school placements and will be supported by Mentors and Professional Tutors. As a trainee, you will be given a phased introduction to teaching. You will spend time observing, helping with group work, sharing classes with teachers, before moving towards teaching independently. As well as teaching, you will be expected to contribute generally to the life of the school. \\r\n\\r\nThe course is intensive and you will need to devote an extensive amount of time and effort to develop your teaching skills. Trainees should be prepared for a busy yet enjoyable training year. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Nene and Ramnoth School, Wisbech is the Lead School with the Eastern Region of the Elliot Foundation Academy Trust.  We follow the principles of the Elliot Foundation and provide education for children from the ages of 2 – 11 years old.  We are supported by partnership schools from the Elliot Foundation (Eastern Region) and the Wisbech Schools Partnership where your teaching experience will take place.  The schools within our partnership for this academic year are:\\r\nAlderman Payne Primary School, Parson Drove\\r\nElm Road Primary School, Wisbech\\r\nEyrescroft Primary School, Peterborough\\r\nHighlees Primary School, Peterborough\\r\nMillfield Primary School, Littleport\\r\nPeckover Primary School, Wisbech\\r\nRamnoth Junior School, Wisbech\\r\n\\r\nTogether we are committed to providing high quality training, where our trainees spend time in schools, learning from our dedicated and committed teachers. We will provide excellent guidance and support in order to find the right school for each trainee to give good classroom environments to practise and refine your professional skills. .  Trainees will have the opportunity to undertake placements that will provide a variety of experiences both academic and pastoral.  We will tailor our provision to meet the needs of our trainee teachers to enable them to have the best possible start to their teaching career.  \\r\n",
+    "TrainWithDisability": "We are committed to providing a friendly and accessible service for our trainees.  Trainees who have a disability should inform us on their application so that they can be supported through the recruitment process and be considered for placements at appropriate schools, if they are successful at interview.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We are delighted to be working alongside the University of Bedfordshire, one of the largest education providers in the UK.  The University of Bedfordshire has a long, established and proven record of training teachers and in many cases they have a 100% graduate employment rate.   If you successfully complete the course you will be recommended for Qualified Teacher Status to the National College for Teaching and Leadership.   We hope that by working together we can develop outstanding teachers of the future.",
+        "UcasInstitutionCode": "B22"
+      }
+    ]
+  },
+  "has_inst": true
+}

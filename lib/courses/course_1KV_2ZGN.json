@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "St Mary's University, Twickenham",
+  "provider": "Ealing Teaching School Alliance",
+  "subjects": [
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages",
+  "slug": "1KV/2ZGN",
+  "providerCode": "1KV",
+  "programmeCode": "2ZGN",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Twyford Crescent, Acton, London, W3 9PP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Twyford Crescent, Acton, London, W3 9PP",
+      "geocode": false
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1KV",
+    "addr_1": "Twyford Crescent",
+    "addr_2": null,
+    "addr_3": "Acton",
+    "addr_4": "London",
+    "postcode": "W3 9PP  ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Twyford Cres, London W3 9PP, UK",
+    "latitude": 51.5089583,
+    "longitude": -0.2810741,
+    "post_code": "W3 9PP",
+    "city": "Greater London",
+    "route": "Twyford Crescent",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Twyford Church of England High School is one of four Twyford Trust schools, and School Direct trainees will be joining us at a time of considerable growth. The Twyford Trust aims to deliver outstanding education in a comprehensive school setting, and embraces the Twyford School motto 'Life in all its fullness', encouraging students to use their individual gifts wisely and well. In its most recent Ofsted inspection, Twyford School was graded as outstanding , the highest grade attainable in an Ofsted inspection.\\r\n\\r\nThe Trust's ethos is strongly and distinctively Christian, with an emphasis on developing socially responsible individuals with a sense of their own capacity to do and be good.  The Twyford Trust prides itself on embracing 'life lived to the full' - a Christian-based concept it has developed as the 10:10 ethic.\\r\n\\r\nThe School Direct MFL programme at Twyford School begins in September 2019. Upon successful completion of the training programme in summer 2020, you will gain Qualified Teacher Status (QTS).\\r\n\\r\nAll schools in ETSA are highly supportive and inspirational environments where you will develop the necessary skills and acquire a true appreciation of the practice essential for outstanding teaching and learning. You will learn your craft in a safe environment which allows you to experiment with teaching styles, strategies and ideas.\\r\n\\r\nYour training will be delivered by expert teachers within the school. You will participate in weekly professional development sessions which will cover a wide range of topics and school policies which will be of use to you in your subject area and in the school as a whole. You will also attend Alliance-wide Golden Day  training events along with fellow ETSA trainees. Your school-led training will be complemented by attendance at the St Mary's.\\r\n\\r\nYou will be assigned an experienced mentor from within your subject area at Twyford School who will support you in your development over the course of what will be a challenging and rewarding year. All mentors are excellent teachers who are well-trained in mentoring, coaching, lesson observations and feedback skills. You will also work closely with a member of the Senior Leadership team who will oversee a great deal of your training and will provide an invaluable perspective on your role as a teacher and the wider issues of education leadership.",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "ETSA Salaried School Direct trainees will be paid on the Unqualified Teacher Pay Scale (Band A, Inner London) area.\\r\n\\r\nAll ETSA schools offering Salaried places in Maths, Physics and Computing will pay trainees at least £25,000 as a result of additional funding being offered by the government. \\r\n\\r\nSalaries for other subjects will vary depending on the subject and salary.\\r\n",
+    "Qualifications": "Before the start date of the training programme you must hold a UK degree (or equivalent). You should preferably have a 1st or a 2:1 in a relevant subject area. It is also preferable that you have at least 3 Bs at A level (or equivalent). All applicants must have at least a C in GCSE English, Maths and Science at the time of application.",
+    "InterviewProcess": "Shortlisted applicants should expect to first attend an interview at St Mary's University. \\r\n\\r\nIf successful, applicants will then be invited to an interview at school and to take part in some or all of the following activities: a presentation; a written task; small group teaching; curriculum discussion and an interview. You will be told in advance if you are required to prepare a presentation or to teach. \\r\n\\r\nIt is a rigorous and thorough process designed to ensure successful applicants are well placed to succeed.\\r\n\\r\nPlease note that we recruit on a rolling basis and usually offer only one position per subject area (unless otherwise stated). We suggest that you apply early as popular subjects are filled quickly.",
+    "OtherRequirements": "You must have 3 years full-time (or equivalent) work experience (this does not have to be from an educational setting).\\r\n\\r\nSchool experience is also essential if you are interested in applying for School Direct at ETSA. We prefer that candidates have up to 10 days of recent experience in a UK school. If you have arranged some classroom experience but it is yet to take place, please make a note of this in your application.\\r\n",
+    "HowSchoolPlacementsWork": "As well as your main training placement at Twyford School, you will complete a six-week placement in a contrasting context within ETSA; this will afford you the opportunity to experience working with different students, within different structures and with a wider range of colleagues."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Ealing Teaching School Alliance (ETSA) is an exciting and innovative collaboration striving to provide teaching excellence in the London Borough of Ealing. The Alliance comprises of 12 secondary schools and is in partnership with St Mary’s, Hillingdon SCITT and Goldsmiths. \\r\n\\r\nETSA has a fantastic reputation for its well-established training programmes and its excellent track-record of induction. ETSA’s commitment to ensuring that all trainees, regardless of subject or route, are able to benefit from the experience and expertise of the very best practitioners makes it an excellent place to train and procure employment once qualified. \\r\n\\r\nFor the past five years, the vast majority of ETSA trainees have secured their first qualified teacher role within the Alliance upon completion of their training year.\\r\n\\r\nPlease click on the following link to find out about recent ETSA School Direct trainees’ experiences: (https://vimeo.com/dfptv/review/122728167/cfdc270b64)",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The Hillingdon SCITT will be working in collaboration with Institute of Education (UCL/IOE) to study for a Postgraduate Certificate in Education (PGCE).  \\r\n\\r\nTraining throughout the year, both in school and together with other trainees, will consist of both lectures and workshops on Monday throughout the year.\\r\n\\r\nSuccessfully completing all aspects of the course will gain trainees the award of Postgraduate Certificate in Education (PGCE) which also carries 60 M level credits that may be used towards a subsequent Masters degree.  The course also leads to the award of QTS (Qualified Teacher Status).",
+        "UcasInstitutionCode": "2B5"
+      },
+      {
+        "Description": "You will be working in partnership with an ‘Outstanding’ (March 2011) provider for both Secondary and Primary provision.\\r\n\\r\nWe have a long standing tradition and proven excellence in providing initial teacher training since 1850.\\r\n\\r\nOpportunity to work within a professional community to provide excellence in practice and pedagogy.\\r\n\\r\nOpportunity for knowledge exchange and cooperation between educators, teachers and academies.",
+        "UcasInstitutionCode": "S64"
+      },
+      {
+        "Description": "We've been training teachers since 1904, and we're renowned as a leader in the field of teacher training\\r\n\\r\nYou'll benefit from excellent employment opportunities\\r\n\\r\nThere's a strong emphasis on active and collaborative learning\\r\n\\r\nTeaching practice in our partnership schools offers an excellent introduction to teaching in socially mixed, multi-ethnic urban classrooms\\r\n\\r\nWe offer a high level of support through a system of school and personal tutoring\\r\n\\r\nEmployers rank us as one of the country’s best universities from which to recruit graduates, according to a survey published in the Times Higher Education magazine\\r\n",
+        "UcasInstitutionCode": "G56"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Wessex Schools Training Partnership",
+  "subjects": [
+    "Art / art & design",
+    "Secondary"
+  ],
+  "name": "Art",
+  "slug": "W34/2Y8Y",
+  "providerCode": "W34",
+  "programmeCode": "2Y8Y",
+  "schools": [
+    {
+      "name": "Poole High School",
+      "address": "Wimborne Road, Poole, Dorset, BH15 2BW",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Wimborne Road, Poole, Dorset, BH15 2BW",
+      "geocode": true,
+      "formatted_address": "Wimborne Rd, Poole BH15, UK",
+      "latitude": 50.7288801,
+      "longitude": -1.9763032,
+      "post_code": "BH15",
+      "city": "Poole",
+      "route": "Wimborne Road",
+      "postal_town": "Poole"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "W34",
+    "addr_1": "Poole High School",
+    "addr_2": "Wimborne Road",
+    "addr_3": "Poole",
+    "addr_4": "Dorset",
+    "postcode": "BH15 2BW",
+    "url": "http://www.wessexschools.uk",
+    "geocode": true,
+    "formatted_address": "Wimborne Rd, Poole BH15 2BW, UK",
+    "latitude": 50.7245555,
+    "longitude": -1.9832656,
+    "post_code": "BH15 2BW",
+    "city": "Poole",
+    "route": "Wimborne Road",
+    "postal_town": "Poole"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The Wessex Schools Training Partnership (WSTP) is a School Centered accredited provider of Initial Teacher Training (SCITT), it is offering places for secondary level training in all main stream subjects. We are also offering PGCE through Bath Spa University. Applications are made through UCAS, please visit our how to apply section for more info.\\r\nOur training programme is designed to equip a person with the skills to work in any one of our secondary schools in the area and in particular in the partnership when vacancies arise.\\r\n\\r\nWhat does the training involve?\\r\n\\r\nWSTP offer experienced and outstanding teachers, who deliver bespoke training provision for the cohort. This training is delivered in our brand new training suite, at Poole High school and, offers a chance to take the learning and use it immediately with your peers.\\r\n\\r\nThis experience is coupled with in school training. During your training year, you will be placed in two of our partnership schools. Here you will immerse yourself in every aspect of the teaching profession. You will be given a mentor, who will meet with you each week to discuss the progress you and the students you teach, are making. You will also deliver 7 hours a week (during your first placement) and 15 hours a week (during your second placement).\\r\n\\r\nAssessment\\r\n\\r\nDuring the training year you will be assessed in 3 main ways;\\r\n1. Teaching ability – you will be observed teaching by numerous people, and graded on the lesson quality and the student progress. Don’t worry though, the grading only starts in your second placement\\r\n2. Evidence Portfolio – You will be asked to formulate evidence that you have achieved the teacher standards. This will be an ongoing collection of evidence submitted at the end of the training year.\\r\n3. Post Graduate Certificate of Education (PGCE) – This is offered and coordinated by Bath Spa University, who travel to us to deliver all the content you will need.\\r\n\\r\nOnce all of the above is complete you will gain Qualified Teacher Status and be able to start your teaching journey.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Academic Qualifications\\r\nYou will need to have at least a grade C or equivalent in English and Mathematics at GCSE and a degree in a relevant qualification of class 2.2 or above. If your degree is not directly related to the subject you wish to train in, or if you need to update your subject knowledge, than there are subject knowledge enhancement courses available, which are funded by the DfE\\r\n\\r\nSkills Tests\\r\nSkills tests must be completed before the training programme commences. It is beneficial to book your numeracy and literacy skills tests as soon as possible. ",
+    "InterviewProcess": "Once you have applied through UCAS and, should we feel that you have the potential to become a teacher, you will be invited to attend an interview.\\r\n\\r\nThe interview will take place in one of the partnership schools and will involve:\\r\nA subject knowledge interview\\r\nA suitability to teach interview\\r\nA presentation to a class\\r\nA pupil led tour of the school\\r\nA formal panel interview involving Headteachers/ representatives from the partnership schools\\r\n\\r\n",
+    "PersonalQualities": "What are we looking for?\\r\n\\r\nPotential to teach – We are looking for someone who is passionate about their subject and helping people to learn about it.\\r\nGood communication skills with strong organisational and planning skills.\\r\nSubject knowledge – We are looking for someone who has a genuine interest in the subject area in which they want to become a teacher.\\r\nCapacity for hard work – The teaching profession requires long hours, hard work and stamina.",
+    "HowSchoolPlacementsWork": "All WSTP trainees will have 2 placements within our partnership schools. \\r\n\\r\nA short placement (6-8 weeks) which takes place from end of Sept to end of November\\r\n\\r\nA long placement which will take place between January and the middle of June.\\r\n\\r\nYou will be expected to fully submerge yourself into the school working environment and plan and deliver lessons with the assistance of your school mentor. \\r\n\\r\nDuring these placements, you will continue to attend WSTP run seminar programme every Wednesday afternoon and will also have the support of a dedicated Subject Coach who will be a specialist in your particular teaching subject.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At the Wessex Schools Training Partnership, we pride ourselves on offering the most up to date, engaging and supportive programme of learning. With a cohort size of around 25, we are able to offer one to one support for every trainee teacher. This is invaluable during the challenging training year.\\r\n\\r\nPartnership Schools\\r\nWe have hand chosen schools based on their excellent environment to learn and their locality. We work closely with them and their outstanding staff deliver a large proportion of the training. The schools within the partnership allow us to offer a very different learning experience, ensuring that you find the right context for you. Our Schools are;\\r\n\\r\nPoole High School\\r\nPoole Grammar School\\r\nSt Edwards RC CE VA School\\r\nParkstone Grammar School\\r\nThe Purbeck School\\r\nCarter Community School\\r\nLytchett Minster School\\r\nGlenmoor & Winton Academies\\r\n\\r\nOur partnership schools are more than happy to welcome potential teachers into the classroom to observe lessons and the school day. If you would like to arrange this please contact Elisa Locke -WSTP@poolehigh.poole.sch.uk\\r\n\\r\nWhat are we looking for?\\r\n\\r\nPotential to teach – We are looking for someone who is passionate about their subject and helping people to learn about it.\\r\nGood communication skills with strong organisational and planning skills.\\r\nSubject knowledge – We are looking for someone who has a genuine interest in the subject area in which they want to become a teacher.\\r\nCapacity for hard work – The teaching profession requires long hours, hard work and stamina.",
+    "TrainWithDisability": "The WSTP training facilities are located on the ground floor with wheelchair access. All partnership schools are committed to equal opportunities provision and equipped to ensure access is available for all trainee teachers.\\r\n\\r\nThe partnership prides itself in running a small cohort which allows us to tailor any individual support required by a trainee teacher. \\r\n\\r\nOn receipt of any recommendations from the DSA, WSTP will ensure that all necessary provision is in place for that individual.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

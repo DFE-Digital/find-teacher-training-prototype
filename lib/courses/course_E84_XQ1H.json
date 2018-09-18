@@ -1,0 +1,72 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Exeter",
+  "subjects": [
+    "English",
+    "Primary"
+  ],
+  "name": "Primary with English",
+  "slug": "E84/XQ1H",
+  "providerCode": "E84",
+  "programmeCode": "XQ1H",
+  "schools": [
+    {
+      "name": "University of Exeter (Exeter Campuses)",
+      "address": "PGCE Admissions Office, Northcote House, The Queen's Drive, Exeter, DEVON, EX4 4QJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "PGCE Admissions Office, Northcote House, The Queen's Drive, Exeter, DEVON, EX4 4QJ",
+      "geocode": true,
+      "formatted_address": "Northcote House, Exeter EX4 4QB, UK",
+      "latitude": 50.7355102,
+      "longitude": -3.5353456,
+      "post_code": "EX4 4QB",
+      "city": "Devon",
+      "route": null,
+      "postal_town": "Exeter"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E84",
+    "addr_1": "Northcote House",
+    "addr_2": "The Queen's Drive",
+    "addr_3": "Exeter",
+    "addr_4": "Devon",
+    "postcode": "EX4 4QJ ",
+    "url": "http://www.exeter.ac.uk",
+    "geocode": true,
+    "formatted_address": "The Queen's Dr, Exeter EX4 4QJ, UK",
+    "latitude": 50.7353218,
+    "longitude": -3.5350734,
+    "post_code": "EX4 4QJ",
+    "city": "Devon",
+    "route": "The Queen's Drive",
+    "postal_town": "Exeter"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Fees are for 2018/19 academic year and subject to change. \\r\n\\r\nAdditional costs incurred during your PGCE training year\\r\nTravel\\r\nTrainees are required to pay for their travel to and from their placement schools either using private and public transport. You will need to be prepared for the possibility of extra travelling time to and from your schools – possibly over an hour by car or significantly longer by public transport, although we make every reasonable effort to minimise your journey times.\\r\n\\r\nBooks\\r\nBooks are recommended but there is no requirement to purchase specific texts and you have access to the University of Warwick library.\\r\n\\r\nMaterials\\r\nYou will need writing materials. Ideally, you will need a laptop or tablet: you will certainly need access to some type of PC.\\r\n\\r\nFees\\r\nIf you are a nationality other than 'British' selected on your application you may be classed as having overseas fees status unless proven otherwise. Please contact our International Office for advice on your fees status before you apply.\\r\n",
+    "AboutCourse": "Delivered by an Ofsted rated 'Outstanding' provider of teacher training, this one year postgraduate course will recommend you, on completion, for Qualified Teacher Status (QTS) with full PGCE, to teach children aged 5-11 in primary, infant, junior or first and middle schools. We work closely with over 300 partnership schools to prepare you fully for the practical demands of teaching, including teaching across the primary curriculum. \\r\n\\r\nSubject Specialism\\r\nThe course offers specialisms in English, Mathematics, Science, Physical Education, Special Educational Needs and Creative Arts. \\r\n\\r\nOutstanding Training\\r\nYou'll be taught and supported by highly experienced tutors, class teachers and school mentors who have a national reputation for the quality of their training. \\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching/primary)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree\\r\nHave graduated, or be about to graduate, from a UK Higher Educational Institute or equivalent, with a 2:2 or above honours degree. Preference is given to candidates with a 2:1 or above honours degree in a relevant subject. \\r\n\\r\nGCSE\\r\nHold at least a Grade C or above in GCSE English Language, Mathematics and Science. Other qualifications may be approved as equivalent. \\r\n\\r\n[Further Information about Entry Requirements](https://warwick.ac.uk/fac/soc/cte/start-teaching/primary#requirements)\\r\n",
+    "OtherRequirements": "[School Experience](https://warwick.ac.uk/fac/soc/cte/start-teaching/school-experience)\\r\nHave had some experience in schools focusing on mainstream Key Stage 1 and Key Stage 2 classrooms, so that you are familiar with the atmosphere and demands across Primary. \\r\n\\r\nSkills Test\\r\nPass the Professional Skills Tests in numeracy and literacy. We suggest you register for the Skills Tests as soon as you have made your application to us. \\r\n\\r\nFitness to Teach\\r\nIn order to comply with the Department for Education, all applicants must satisfy to the University their physical and mental suitability to undertake teacher training. \\r\n",
+    "PersonalQualities": "Through your motivation, enthusiasm and passion for a subject, you can make a difference to students. Teaching is full of challenges and extraordinary rewards and the best teachers nurture creativity, discovery and character development in students.\\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching)\\r\n",
+    "HowSchoolPlacementsWork": "In partnership with our schools, we ensure you have access to the best and most inspiring, practising teachers and mentors. You will have opportunities to observe the best classroom practice and your individual needs will be met through mentoring on each of your placements. \\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching/primary#inspiring)"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are leaders in Initial Teacher Education, consistently graded as outstanding in all areas by [Ofsted](https://files.api.beta.ofsted.gov.uk/v1/file/2739445) and ranked 3rd amongst university providers of teacher training in the most recent Good Teacher Training Guide (2017).\\r\n\\r\nOur latest Department for Education statistics (from the 2016 –17 cohort) show that 91% of our PGCE trainees who achieved Qualified Teacher Status secured a teaching post within six months of completion. Of the trainees who completed the course in 2017-18, over 70% were rated as outstanding. \\r\n\\r\nWe have strong partnerships with over 250 schools in the south west where you will spend two-thirds of your training year, putting into practice what you have learnt on the taught course. Our PGCE is uniquely characterised by innovative research-led teaching informed by professional practice and academic excellence. All our tutors have real-world experience as teachers, senior managers or OFSTED inspectors. They lead and innovate, developing the latest ideas in teacher education, leading research, writing textbooks, leading subject networks and advising government.\\r\n\\r\nWe provide unrivalled opportunities for trainees to achieve through our highly original PGCE teaching model ‘The Exeter Model’, praised by OFSTED and cited as an example of best practice. By learning on campus for most of the first term, you access the tools to rapidly build professional knowledge to underpin your work in school placements.\\r\n\\r\nOur unique approach gives you opportunities to become part of a community of trainees and teachers who are passionate about education and will support you during your course and beyond.\\r\n",
+    "TrainWithDisability": "The University of Exeter provides comprehensive student services that include AccessAbility and Wellbeing teams, Student Learning Skills Service, Student Advice Unit, Counselling Service, Students’ Union Advisors, Student Health Centre, Family Centre and the Chaplaincy.\\r\n\\r\nFor further details on the wealth of support available to you please go to [Student Support Services](http://www.exeter.ac.uk/newstudents/supportandservices/yourhealthandwelfare/#a4)\\r\n\\r\nPGCE trainees can access the support of a Wellbeing Services Welfare Caseworker to discuss concerns, talk through options for support or understand more about how the University Wellbeing Services may be able to help.\\r\n\\r\nAlongside the support described above, every PGCE trainee is assessed by an Occupational Health provider as part of the admissions process to ensure they are fit to teach in a school setting. If the Occupational Health provider recommends any adjustments, the University’s Partnership Office will ensure you are placed in schools where these adjustments can be made, providing they are logistically possible and reasonable.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

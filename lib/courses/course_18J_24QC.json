@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "The Manchester Metropolitan University",
+  "provider": "St James’s Teaching Partnership",
+  "subjects": [
+    "Computer studies",
+    "Secondary"
+  ],
+  "name": "Computing",
+  "slug": "18J/24QC",
+  "providerCode": "18J",
+  "programmeCode": "24QC",
+  "schools": [
+    {
+      "name": "St James's Teaching Partnership",
+      "address": "Bolton & Bury",
+      "code": "2"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bolton & Bury",
+      "geocode": true,
+      "formatted_address": "Bolton St, Bury BL9 0LL, UK",
+      "latitude": 53.5941664,
+      "longitude": -2.3030338,
+      "post_code": "BL9 0LL",
+      "city": "Greater Manchester",
+      "route": "Bolton Street",
+      "postal_town": "Bury"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "18J",
+    "addr_1": "Lucas Road",
+    "addr_2": "Farnworth",
+    "addr_3": null,
+    "addr_4": "Bolton",
+    "postcode": "BL4 9RU ",
+    "url": "http://www.st-james.bolton.sch.uk/",
+    "geocode": true,
+    "formatted_address": "Lucas Rd, Farnworth, Bolton BL4 9RP, UK",
+    "latitude": 53.5447406,
+    "longitude": -2.4179342,
+    "post_code": "BL4 9RP",
+    "city": "Farnworth",
+    "route": "Lucas Road",
+    "postal_town": "Bolton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "St James's Teaching Partnership offers a comprehensive training package for all our trainees. We have experienced and fully trained subject mentors who are committed to developing the next generation of ‘Outstanding’ teachers. \\r\nWithin our programme, trainees enjoy a blended programme which includes the following;\\r\n\\r\n•\\tTrainees benefit from at least one hour per week of subject mentor input as well as at least one hour of weekly Professional Studies with the professional mentor.\\r\n•\\tAttending group training session with the cohort of trainees, receiving high quality practitioner-led training, peer support and joint practice development opportunities.\\r\n•\\tTrainees follow weekly themes which build up pedagogy and practice.  Themes such as getting to know your school, how to write outstanding lesson plans, how to question pupils effectively to maximise learning and progress are to name but a few.\\r\n•\\tSchool-led professional learning where you would be able to take advantage of a range of professional development opportunities within your own school and schools within the Partnership.\\r\n•\\tAttending high quality training provided by other schools and the Teaching School throughout the year. \\r\n•\\tAttending MMU in line with the expectations as specified on their website.\\r\n•\\tFocussed support and mentoring, by the very best practitioners within their own school. \\r\n•\\tTrainees in secondary schools are attached to a form group and also gain PSHE experience from our trained PSHE mentors. \\r\n•\\tTrainees in primary schools are attached to a year group and are fully supported by the class teacher in their teaching.\\r\n•\\tOpportunities to participate in extra-curricular clubs which allow them to make a wider contribution to the life and ethos of their school.\\r\n\\r\nThroughout the year you will be very well supported. We are keen to see each individual trainee working to achieve the very best and enjoying success in their chosen career. We know professional development is a two way process. As such we will listen to you, work to identify your own development needs and support you in meeting your targets. \\r\nTowards the end of the Programme of training, trainees will be fully supported to seek and obtain employment. We currently have a 100% conversion rate from trainees who complete the course into full time employment, with the vast majority being employed in the local area. \\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "2:2 UK Honours degree (or international equivalent), which must support the National Curriculum subject knowledge requirements \\r\n\\r\nFor exceptional candidates, particularly those with substantial relevant work experience in schools/relevant occupations, we consider applications from those with a 3rd class degree.\\r\n\\r\nQTS Professional Skills tests\\r\n\\r\nGCSEs grade C/4 or above in English Language and Mathematics (equivalency tests offered MMU only). \\r\n\\r\nQualifications not accepted:\\r\nKey Skills. Adult Numeracy and Literacy, OCR National Award.\\r\n\\r\n\\r\n\\r\n",
+    "InterviewProcess": "Our interview day will be supported by staff from our Partnership schools and the day consists of the following tasks: \\r\n\\r\n•\\tObservation of a lesson and group discussion\\r\n•\\tWritten task\\r\n•\\tMini teach\\r\n•\\tFormal interview. \\r\n\\r\nWe endeavour to inform applicants the outcome of their interview on the same day. \\r\n",
+    "OtherRequirements": "Those applicants who do not have a degree in the subject they wish to teach may be required to take up a subject knowledge enhancement course to confirm your place on a course. St James’s Teaching Partnership will assist in getting applicants onto a suitable SKE programme. ",
+    "PersonalQualities": "We are looking for high quality graduates and career changers who want to make a difference to children and young people, to embark on our Initial Teacher Training Programme. We are looking to recruit outstanding trainees who have real potential to teach with the following personal qualities;\\r\n\\r\n•\\tPassion and knowledge in your subject area\\r\n•\\tAbility to work as part of a team and maintain appropriate relationships\\r\n•\\tGood organisational and time management skills\\r\n•\\tGood level of literacy and numeracy skills\\r\n•\\tWillingness to be involved in the wider life of the school/extracurricular activities\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Each Partnership school has unique qualities and these are shared with the cohort whichever school trainees are based in for placements. With our Programme, trainees will start their journey into teaching by coming into school on the first day of term in September and immediately feel like part of the school.  Trainees can be placed in any two of the partnership schools, Placements are decided by the partnership. Trainees will be placed in schools where the department is strong and the subject mentor is excellent, to allow the best possible learning journey for the trainee, this is organised in the following way; \\r\nOur programme follows an AB model, during the year you will be attached to two schools (placement A) for term 1 and carry out a contrasting placement in another Partnership school (placement B) for terms 2 & 3. This is designed to enhance and extend your knowledge of different teaching contexts, and of how pupils respond in different environments. Our programme will include a small amount of time looking at primary education and post 16 education so that trainees understand the full education journey of a pupil. \\r\n\\r\nPartnership Schools:\\r\n\\r\n•\\tSt James CE High School (Lead School)\\r\n•\\tCanon Slade Church of England School\\r\n•\\tBolton Muslim Girls School\\r\n•\\tLittle Lever School\\r\n•\\tSharples School Science Specialist College\\r\n•\\tSt Wilfred’s CE Academy\\r\n•\\tBolton St Catherine’s Academy\\r\n•\\tWesthoughton High School\\r\n•\\tSmithills School \\r\n•\\tBury Church of England High School\\r\n•\\tForward Centre\\r\n•\\tLever Park School\\r\n•\\tPark School Teaching Service\\r\n•\\tPersonal Learning Centre\\r\n•\\tYouth Challenge PRU\\r\n•\\tSt Peters Church of England Primary (Lead Primary School)\\r\n•\\tBishop Bridgeman CE Primary School \\r\n•\\tSt James's Church of England Primary School\\r\n•\\tHighfield Primary School \\r\n•\\tSt Johns Church of England Primary School\\r\n•\\tQueensbridge Primary\\r\n•\\tAll Saints Church of England Primary School\\r\n•\\tKearsley West Primary School\\r\n•\\tThe Orchards Nursery School\\r\n•\\tThe Ferns Primary Academy\\r\n•\\tCherry Tree Primary School \\r\n\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "St James’s Teaching Partnership is focussed on providing all pupils the opportunity to access high quality teaching and learning to help them reach their full potential. We want to be the inspiration that drives them to achieve their dreams.  With this in mind we are committed to training the next generation of outstanding teachers. \\r\nSo the question is ‘Do you want to be part of this journey?’\\r\nOur School Direct Programme is bespoke to each individual trainee and teacher training journey. As a teaching School we have a vast CPD programme which we encourage all trainees to access during their training year. It doesn’t end there, we are committed to supporting your teaching career and our former trainees can also access bespoke training as they develop into effective teachers, as can middle and senior leaders should they wish to follow this career path. \\r\nOur partnership is made up of a wide variety of schools including both faith and non-faith schools. There are currently 26 schools in our partnership and all schools bar one are based in Bolton and Bury. Head teachers in the local area are determined to attract outstanding practitioners into their schools and we work collaboratively to ensure our programme supports this. We are proud to have four outstanding schools within our partnership showing excellence really is at the forefront of what we do.\\r\n\\r\nAlternative education training is available in English, Maths and Primary. Please express an interest at interview if you wish to follow this route.  ",
+    "TrainWithDisability": "If you have a disability or special needs please contact us so that we can discuss your requirements and how these can be met.  Applicants who would benefit from disabled access should let us know on their application so that they can be considered for placements at the appropriate schools where access is high quality.  ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our programme is run in collaboration with Manchester Metropolitan University who provide the PGCE elements to the course. At Manchester Met, you won’t just develop the practical and organisational skills you’ll need to teach a subject in the classroom. You’ll explore how children learn and factors that can affect the way we learn, from our environment to our teachers.\\r\nYou’ll look at the latest educational research, identifying how research might help you in the classroom, perhaps when you’re dealing with children’s behaviour or you’re investigating if there’s a new way to teach a topic.\\r\n",
+        "UcasInstitutionCode": "M40"
+      }
+    ]
+  },
+  "has_inst": true
+}

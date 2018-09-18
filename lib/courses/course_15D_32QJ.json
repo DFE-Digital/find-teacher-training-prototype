@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "West Essex SCITT",
+  "provider": "West Essex SCITT (St Johns C of E Primary School)",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "15D/32QJ",
+  "providerCode": "15D",
+  "programmeCode": "32QJ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St John's CE Primary School, High Road, Buckhurst Hill, IG9 5RX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St John's CE Primary School, High Road, Buckhurst Hill, IG9 5RX",
+      "geocode": true,
+      "formatted_address": "High Rd, Buckhurst Hill IG9 5RX, UK",
+      "latitude": 51.629587,
+      "longitude": 0.0332199,
+      "post_code": "IG9 5RX",
+      "city": "Essex",
+      "route": "High Road",
+      "postal_town": "Buckhurst Hill"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "15D",
+    "addr_1": "West Essex SCITT",
+    "addr_2": "St. John's C of E Primary School",
+    "addr_3": "High Road",
+    "addr_4": "Buckhurst Hill, Essex",
+    "postcode": "IG9 5RX ",
+    "url": "http://st-johns-school.com/west-essex-scitt",
+    "geocode": true,
+    "formatted_address": "High Rd, Buckhurst Hill IG9 5RX, UK",
+    "latitude": 51.629587,
+    "longitude": 0.0332199,
+    "post_code": "IG9 5RX",
+    "city": "Essex",
+    "route": "High Road",
+    "postal_town": "Buckhurst Hill"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The School Direct Training Programme (fee funded/unsalaried)\\r\nThis year, St. John's CE Primary School (Provider code 15D) is hoping to offer 30 school direct (fee funded/unsalaried) placements to graduates who have little or no work experience. This path into teaching is a great way to gain the qualifications and practical skills you need to become a teacher. It enables those who have a degree to combine teacher training with actually doing and learning on the job, focusing on the 'Teachers' Standards' and leading to the award of Qualified Teacher Status (QTS). These places are School Direct only. \\r\nAll our partnership schools are in the Epping Forest and Harlow areas and are accessible by Central Line Tube, Overground or major bus routes. \\r\nThis course will be based in one school for the majority of the training period with a second placement in a contrast school setting. Part of the course is theory based and there will be formal training days held mainly in the training room. Trainees are awarded Qualified Teacher Status (QTS) upon completion of the programme. \\r\nOur Teacher Educators and Tutors are excellent teachers that attend training and meet regularly to further develop their skills and enable them to pass on feedback, coaching and classroom observation. \\r\nYour professional responsibilities will include assessing, planning and teaching the primary curriculum. \\r\nSchool Direct requires a commitment of 5 days a week for 10 months from September to July. Trainees are expected to participate fully in the everyday life of the schools in which they train and, therefore, occasional evening or extra-curricular events will be obligatory. \\r\nFurther information can be found on our website \\r\nhttp://www.westessexscitt.co.uk/School-Direct-ITT\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "To qualify for this school centered route you must have English, Maths and Science GCSE (or equivalent) grade C or 4 or above and a degree of preferably a 1st or a 2:1, though no minimum is specified as we are willing to consider applicants who have a degree who can demonstrate a real aptitude for teaching. You must be able to demonstrate an ability to communicate clearly and grammatically in both spoken and written Standard English. You must have passed the English and Maths professional skills tests. All overseas qualifications will need to be verified by NARIC\\r\n",
+    "InterviewProcess": "There are three parts to the selection process; \\r\n. There will be an initial observation of a short teaching activity followed by a written task. \\r\n. Successful candidates will be invited to a more formal interview \\r\n\\r\nApplicants who are successful at interview, are offered a conditional place. These are subject to: \\r\nSatisfactory references and satisfactory medical assessment. Disclosure and Barring Service (DBS) check and National and Local Terms and Conditions of Employment. \\r\n\\r\nIt is the duty of all schools to protect vulnerable children and adults. If you are offered a place on the programme, a DBS check is a vital entry requirement for this training programme. \\r\n",
+    "OtherRequirements": "Applicants who are successful at interview, are offered a conditional place. These are subject to: \\r\n\\r\nSatisfactory references and satisfactory medical assessment. \\r\nDisclosure and Barring Service (DBS) check and National and Local Terms and Conditions of Employment. \\r\n\\r\nIt is the duty of all schools to protect vulnerable children and adults. If you are offered a place on the programme, a DBS check is a vital entry requirement for this training programme.\\r\n",
+    "PersonalQualities": "We are looking for outstanding candidates who can demonstrate a real aptitude for teaching. Applicants must possess: \\r\n. a love of children and education \\r\n. good personal skills \\r\n. good levels of communication \\r\n. enthusiasm and be hard working \\r\n. desire to be the best that they can be\\r\n",
+    "HowSchoolPlacementsWork": "The School Direct training programme path into teaching is a great way to gain the qualifications and practical skills you need to become a teacher. It enables those who have finished a degree, to combine teacher training with actually doing and learning on the job, focusing on the 'Teachers' Standards' and leading to the award of Qualified Teacher Status (QTS). \\r\n\\r\nOur partnership schools are in the Epping Forest, Harlow and Peterborough areas. The Epping Forest and Harlow schools are accessible by Central Line Tube, London Overground or major bus routes. \\r\n\\r\nThe School Direct training programme courses are based in one Primary school for the majority of the training period with a second placement in a contrast Primary school setting. Part of the course is theory based and there will be formal training days held mainly in the training room. Trainees are awarded Qualified Teacher Status (QTS) upon completion of the programme. \\r\n\\r\nOur Teacher Educators and Tutors are excellent teachers that attend training and meet regularly to further develop their skills and enable them to pass on feedback, coaching and classroom observation. \\r\n\\r\nYour professional responsibilities will include assessing, planning and teaching the primary curriculum. \\r\n\\r\nSchool Direct requires a commitment of 5 days a week for 10 months from September to July. Trainees are expected to participate fully in the everyday life of the schools in which they train and, therefore, occasional evening or extra-curricular events will be obligatory\\r\n\\r\nA list of our partner schools is available on our website:\\r\nhttp://www.westessexscitt.co.uk/Partner-Schools/"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Department of Education accredits Epping Forest Schools Partnership Trust, operating as West Essex SCITT for the delivery of initial teacher training (ITT).\\r\n\\r\nThe West Essex SCITT Lead School for 2019/2020 is: \\r\n\\r\nSt John's CE Primary School, Buckhurst Hill, Essex, IG9 5RX\\r\n\\r\nAt St John's C of E Primary School and across our partnership schools, we believe that teaching is an exciting, challenging and rewarding profession. Our vision is to offer the highest standard of education for all, both in our local community and the wider area.\\r\n\\r\nSt John's is a National Teaching School and is located in Buckhurst Hill, on the edge of Epping Forest, which is London's largest open space of approximately 6,000 acres. The forest is of national and international conservation importance, with two thirds designated as a Site of Special Scientific Interest and a Special Area of Conservation, providing a great place to work and live. The school is close to Buckhurst Hill station on the Central Line with a 20 minute access to central London. \\r\n\\r\nWe pride ourselves on having a proven track record in training and professional development. Our teachers are excellent practitioners and are eager to share their skills, knowledge and vision with the next generation of teachers.\\r\n\\r\nMany of our School Direct trainees go on to secure full-time teaching positions within the West Essex Teaching School Alliance.\\r\n\\r\nPlease visit the West Essex Teaching School Alliance & West Essex SCITT websites, shown below,  for more information:\\r\nhttp://www.westessexscitt.co.uk/School-Direct-ITT/\\r\nhttp://www.westessextsa.org.uk/\\r\n",
+    "TrainWithDisability": "With regard to how we support candidates with disabilities and other needs, please contact Susan Marbe by email for further information at:\\r\ns.marbe@st-johns-buckhursthill.essex.sch.uk",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Epping Forest Schools Partnership Trust is accredited by The Department of Education, operating as West Essex SCITT, to deliver initial teacher training (ITT)",
+        "UcasInstitutionCode": "2BB"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Cumbria",
+  "provider": "Blackburn TEAM Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1UC/29YV",
+  "providerCode": "1UC",
+  "programmeCode": "29YV",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Manor Road, Blackburn, BB2 6LX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Manor Road, Blackburn, BB2 6LX",
+      "geocode": true,
+      "formatted_address": "Manor Rd, Blackburn BB2 6LX, UK",
+      "latitude": 53.7494631,
+      "longitude": -2.5073918,
+      "post_code": "BB2 6LX",
+      "city": "Blackburn with Darwen",
+      "route": "Manor Road",
+      "postal_town": "Blackburn"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1UC",
+    "addr_1": "Wensley Fold CE Primary Academy",
+    "addr_2": "Manor Road",
+    "addr_3": null,
+    "addr_4": "Blackburn",
+    "postcode": "BB2 6LX ",
+    "url": "http://wensleyfold.co.uk",
+    "geocode": true,
+    "formatted_address": "Manor Rd, Blackburn BB2 6LX, UK",
+    "latitude": 53.74801249999999,
+    "longitude": -2.5067962,
+    "post_code": "BB2 6LX",
+    "city": "Blackburn with Darwen",
+    "route": "Manor Road",
+    "postal_town": "Blackburn"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "A Unique Course\\r\nThrough the delivery of this Primary PGCE our Alliance is committed to ensuring that our trainees gain the highest level of primary teaching experience and professional development through the close link with our exceptional partner schools allowing you to relate learning from sessions instantly and directly to a classroom environment.  \\r\nAssessment\\r\nThis is a full time programme and the majority of time is spent in school as it is a PGCE it includes some work at masters level (Level 7) in recognition of the high levels achieved by students on this programme they are rewarded with 60 Masters level credits.\\r\nThe course consists of four modules\\r\n\\r\n*Raising Achievement of Children\\r\n*High Quality Learning and Teaching\\r\n*Leading and managing change in the primary school\\r\n*Pedagogy and Practice\\r\n*Cumbria Teacher of Reading.\\r\n\\r\nPlacements\\r\nFrom the very beginning of September you will be embedded in a local partnership school where you will be learning from teachers in school alongside input from the university lectures on a weekly basis who will guide and support you through all stages of your development and assessment.",
+    "CourseLength": "OneYear",
+    "Qualifications": "*A 2:1 degree is preferred, however applicants with a 2:2 honours degree will be considered and a decision made based on the overall strength of their application in competition with other applicants.\\r\n*3 GCSE's grade C or above to include English Language, Maths and Science\\r\n*Successful completion of the QTS skills tests in literacy and numeracy\\r\n\\r\nSome school experience would be recommended in order to support you in the interview process , however, this is not essential.",
+    "InterviewProcess": "If shortlisted, candidates will undertake a rigorous interview process to establish their suitability for the Alliance's School Direct Programme.\\r\nDuring your interview day you will be expected to do the following:\\r\n\\r\n*Teach a small group of children\\r\n*Complete a written task\\r\n*Answer questions in a formal interview.\\r\n\\r\nOur interview days are rigorous, thorough and we expect all candidates to present themselves in a professional manner, designed for us to get the best applicants possible onto our programme.",
+    "OtherRequirements": "School Work experience is not essential but we highly recommend you to arrange this if possible as it will benefit you in your mini teach at interview.",
+    "PersonalQualities": "We seek to recruit:\\r\n\\r\n*trainees who possess a genuine desire to enrich the lives of young children and who can conduce themselves in a manner fitting of the teaching profession.  \\r\nThis is the course for you if you are:\\r\n\\r\n*A graduate who is genuinely motivated by the prospect of a career in teaching\\r\n*Interested in benefitting from a school based approach to teacher training.\\r\n*Passionate about learning to teach from highly experienced and respected professionals\\r\n*Enthused by the prospect of working alongside good or outstanding teachers in high performing schools\\r\n",
+    "HowSchoolPlacementsWork": "We currently have 22 schools in our partnership.  You will be allocated a Host school where you will spend every Monday and Tuesday observing best practice.  You will also be allocated a fully trained mentor (class teacher) who will guide you through all steps whilst you are in the Host school.  You will also carry out the beginning Placement and Extending Placement in this school.  You will be allocated a contrasting school for your Developing Placement which will also be a contrasting Key Stage to give you the best and wider experience.  Enrichment week takes place in March in a different school. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are an established alliance consisting of a lead school who work in partnership with other high performing schools within the borough.  Our aim is to deliver outstanding ITT provision in our PGCE General Primary (5 - 11) delivered by outstanding practitioners who have all been designated Specialist Leaders of Education within the authority.  We have a strong commitment to providing a stimulating, challenging and rewarding training experience.  The length of the course is 1 full academic year.\\r\nWe have an exemplary employment record detailed below:\\r\nYear 1 - 19 out of 19 Associate Teachers gained employment.\\r\nYear 2 - 16 out of 16 Associate Teachers gained employment\\r\nYear 3 - 17 out of 18 Associate Teachers gained employment\\r\nYear 4 - 18 out of 20 Associate Teachers gained employment\\r\nCurrently we have 21 Associate Teachers training with us\\r\nEvidence from our course completion exit survey shows that our ATs are very happy with the training delivered . \\r\nQuotes from our trainees include:\\r\n'I am so pleased I chose Blackburn TEAM Alliance as from Day 1 I was straight into school life and very quickly gained a full understanding of the challenges and expectations of the job'\\r\n'I am very excited to begin my first teaching post and feel very prepared following a thorough and rigorous course with the highest expectations from TEAM'\\r\nQuotes from a Headteacher include:\\r\nThe students we have had have been of such a high calibre and the course has prepared them so well.",
+    "TrainWithDisability": "Full support will be given to those ATs with disabilities and other needs\\r\nEach AT will be assessed on an individual basis to ensure all partners involved in the training are fully aware of any additional needs and how best to support the AT through the different stages of the course.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our partnership of schools provides a diverse range of settings which include faith schools and schools with predominantly EAL learners.  \\r\nOur training is delivered in partnership with the University of Cumbria who are the 3rd largest School Direct higher education partner in the UK.  Lectures from the UOC will be delivered on site at Wensley Fold in Blackburn",
+        "UcasInstitutionCode": "C99"
+      }
+    ]
+  },
+  "has_inst": true
+}

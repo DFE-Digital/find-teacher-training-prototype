@@ -1,0 +1,214 @@
+{
+  "locationType": "School",
+  "accrediting": "Roehampton University",
+  "provider": "West London Teaching School Alliance (Primary Roehampton)",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1EL/2VP3",
+  "providerCode": "1EL",
+  "programmeCode": "2VP3",
+  "schools": [
+    {
+      "name": "St James & St John CE Primary School",
+      "address": "4 Craven Terrace, W2 3QD",
+      "code": "1"
+    },
+    {
+      "name": "St Peter's C of E Primary School",
+      "address": "W9 2AN",
+      "code": "3"
+    },
+    {
+      "name": "St Clement & St James C of E Primary School",
+      "address": "W11 4PG",
+      "code": "5"
+    },
+    {
+      "name": "Barnes Primary School",
+      "address": "Cross Street, Barnes, SW13 OQQ",
+      "code": "B"
+    },
+    {
+      "name": "Fox/Ashburnham Federation & Avonmore Primary School",
+      "address": "Kensington Place, London, W8 7PP",
+      "code": "F"
+    },
+    {
+      "name": "Barlby Primary School",
+      "address": "Barlby Primary School, Barlby Road, W10 6BH",
+      "code": "G"
+    },
+    {
+      "name": "Bevington Primary School",
+      "address": "Bevington Road, Ladbroke Grove, W10 5TW",
+      "code": "H"
+    },
+    {
+      "name": "Colville Primary School",
+      "address": "Lonsdale Road, London, W11 2DF",
+      "code": "J"
+    },
+    {
+      "name": "Oratory RC Primary School",
+      "address": "Bury Walk, Cale Street, Chelsea, SW3 6QH",
+      "code": "O"
+    },
+    {
+      "name": "Bousfield Primary School",
+      "address": "SW5 0DJ",
+      "code": "S"
+    },
+    {
+      "name": "West London Free School Primary Trust",
+      "address": "32 Bradmore Park Road, London, W6 0DT",
+      "code": "W"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "4 Craven Terrace, W2 3QD",
+      "geocode": true,
+      "formatted_address": "St James & St Michaels School, 4 Craven Terrace, London W2 3QD, UK",
+      "latitude": 51.5129246,
+      "longitude": -0.1791623,
+      "post_code": "W2 3QD",
+      "city": "Greater London",
+      "route": "Craven Terrace",
+      "postal_town": "London"
+    },
+    {
+      "address": "W9 2AN",
+      "geocode": false
+    },
+    {
+      "address": "W11 4PG",
+      "geocode": false
+    },
+    {
+      "address": "Cross Street, Barnes, SW13 OQQ",
+      "geocode": true,
+      "formatted_address": "Cross St, London SW13, UK",
+      "latitude": 51.4692926,
+      "longitude": -0.2517673,
+      "post_code": "SW13",
+      "city": "Greater London",
+      "route": "Cross Street",
+      "postal_town": "London"
+    },
+    {
+      "address": "Kensington Place, London, W8 7PP",
+      "geocode": true,
+      "formatted_address": "Kensington Pl, Kensington, London W8 7PR, UK",
+      "latitude": 51.5075564,
+      "longitude": -0.1968598,
+      "post_code": "W8 7PR",
+      "city": "Greater London",
+      "route": "Kensington Place",
+      "postal_town": "London"
+    },
+    {
+      "address": "Barlby Primary School, Barlby Road, W10 6BH",
+      "geocode": true,
+      "formatted_address": "145 Barlby Rd, London W10 5LN, UK",
+      "latitude": 51.5239718,
+      "longitude": -0.2155249,
+      "post_code": "W10 5LN",
+      "city": "Greater London",
+      "route": "Barlby Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Bevington Road, Ladbroke Grove, W10 5TW",
+      "geocode": true,
+      "formatted_address": "Bevington Rd, London W10 5TL, UK",
+      "latitude": 51.5210702,
+      "longitude": -0.208458,
+      "post_code": "W10 5TL",
+      "city": "Greater London",
+      "route": "Bevington Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Lonsdale Road, London, W11 2DF",
+      "geocode": true,
+      "formatted_address": "Lonsdale Rd, London W11 2DF, UK",
+      "latitude": 51.5145548,
+      "longitude": -0.2034899,
+      "post_code": "W11 2DF",
+      "city": "Greater London",
+      "route": "Lonsdale Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Bury Walk, Cale Street, Chelsea, SW3 6QH",
+      "geocode": true,
+      "formatted_address": "Cale Street & Bury Walk, Chelsea, London SW3, UK",
+      "latitude": 51.4902563,
+      "longitude": -0.170042,
+      "post_code": "SW3",
+      "city": "Greater London",
+      "route": null,
+      "postal_town": "London"
+    },
+    {
+      "address": "SW5 0DJ",
+      "geocode": false
+    },
+    {
+      "address": "32 Bradmore Park Road, London, W6 0DT",
+      "geocode": true,
+      "formatted_address": "32 Bradmore Park Rd, Hammersmith, London W6 0DT, UK",
+      "latitude": 51.4955364,
+      "longitude": -0.2318909,
+      "post_code": "W6 0DT",
+      "city": "Greater London",
+      "route": "Bradmore Park Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1EL",
+    "addr_1": "212  Hammersmith Road",
+    "addr_2": null,
+    "addr_3": "Hammersmith",
+    "addr_4": "London",
+    "postcode": "W6 7DG  ",
+    "url": "http://sacredhearthighschoolhammersmith.org.uk",
+    "geocode": true,
+    "formatted_address": "212 Hammersmith Rd, Hammersmith, London W6 7DG, UK",
+    "latitude": 51.4935679,
+    "longitude": -0.2233548,
+    "post_code": "W6 7DG",
+    "city": "Greater London",
+    "route": "Hammersmith Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "QUALIFICATION OUTCOME\\r\n\\r\nThis course 2VP3 leads to PGCE(M)QTS.  The significance of different teacher training qualifications can be found [here](http://www.wltsa.org.uk/initial-teacher-training/primary-courses/qualification-outcomes/)\\r\n\\r\nSPECIAL FEATURES\\r\nThis course is run by the West London Teaching School Alliance (WLTSA) as Provider in partnership with (and accredited by) the University of Roehampton with extra funding for trainees above DfE provision, see 'Financial Support' below.\\r\n\\r\nWLTSA enables you to choose your host school at application.  If there is a teaching vacancy in your school and they are keen to retain you, you can be employed for the following year without the post being advertised.  By becoming a WLTSA trainee, all our 43 primary schools could employ you this way; we operate a pool.  \\r\n\\r\nOur aim is to produce exceptional teachers who can then remain in alliance schools, continuing to further their career with the benefit of our on-going CPD.\\r\n\\r\nTeacher Training requires focus on Foundation Stage/Key Stage 1 or KS1/KS2.  You can teach any primary age when you qualify but it may influence the class you teach in your first job.  This programme focuses on KS1/KS2.\\r\n\\r\nTRAINING\\r\n\\r\nMost of the training occurs in your host school (and at the school that WLTSA select as a contrasting placement for approx. 6 weeks in the Autumn) but you still enrol as a student at the university with full access to their facilities and mentors. \\r\n\\r\nPart of your training is delivered from the university and part from our strategic lead primary (Fox Primary School, W8).  Fox is rated ‘Outstanding’ by Ofsted, with very high academic standards and significant experience of teacher training.\\r\n\\r\nAt school, through an initial programme of observations you will become familiar with the organisation and working of the school (pupil groups and pastoral systems, staffing, curriculum, resources, facilities, approaches to learning and teaching, lesson planning and assessment). \\r\n\\r\nYou will be treated like a member of staff.  With your school mentors you will feel supported as you progress and become ready to teach. Our mentors are excellent teachers and undertake rigorous training to develop their mentoring skills. In school you will have the opportunity to develop your teaching expertise and relationships with children in a familiar environment. \\r\n\\r\nYour university tutor will visit to monitor your progress at both schools, to discuss your development with you and your mentors. You will maintain close links with your host school throughout the programme. WLTSA also provides additional opportunities /seminars.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "* A UK undergraduate honours degree or an equivalent qualification at 2:2 or above.\\r\n* Grade C (or the newer Grade 5) in GCSE Mathematics, English Language and a Science subject (or approved equivalents). \\r\n* A ‘pass’ in the [DfE Literacy and Numeracy Skills Tests](https://getintoteaching.education.gov.uk/how-to-apply/passing-the-skills-tests)\\r\n\\r\nWhere appropriate, please read our important guidance [Overseas Qualifications & GCSE Equivalency Tests](http://www.wltsa.org.uk/initial-teacher-training/primary-courses/overseas-quals-gcse-equivalency/).\\r\n\\r\nOffers will be conditional on satisfactory outcome of a Disclosure & Barring Service check (£52) and an occupational health check (£20) both administered through the university after an offer is accepted.\\r\n",
+    "FinancialSupport": "SCHOOL BURSARIES\\r\n\\r\nQuite separate from DfE bursaries (and additional to anything offered by DfE) schools on this programme are offering bursaries of between £2,000 - £9,000) to help cover some of your costs.  \\r\n\\r\n See link for full details of all [WLTSA Primary School Bursaries](http://www.wltsa.org.uk/initial-teacher-training/primary-courses/wltsa-primary-school-bursaries/).\\r\n\\r\nOTHER\\r\n\\r\nWhile not provided by WLTSA directly, as a full time student you are eligible for cheaper travel in London using a student oyster card and in many boroughs you can get a reduction on your council tax payments.\\r\n",
+    "InterviewProcess": "On receipt of your UCAS application this will be considered by the named host school, in collaboration with the WLTSA centrally and the university.\\r\nThose applicants who are shortlisted for interview will be invited by email to the host school. This process is administered centrally by the WLTSA Teaching School office.\\r\n\\r\nInterviews are likely to include a tour of the school; WLTSA English and Maths tests; a classroom exercise and panel interview.  You will be asked to bring originals of your relevant qualifications (and some other completed forms which we will send you) to the interview. \\r\n\\r\nWe try to ensure that you have at least a week’s notice of interviews. \\r\nThe WLTSA English and Maths tests are quite separate to the DfE Skills tests referred to in the entry requirements below. Usually candidates have not taken the DfE skills tests when they come to interview and our own (very short) tests help us identify those who may need to do more practice papers ahead of the skills tests and those who are unlikely to pass them.\\r\n",
+    "OtherRequirements": "A realistic understanding of the role of a teacher and of some current issues facing the profession is important. It can really help to spend a couple of days observing relevant lessons in a state primary school to strengthen your application but this observation is not a strict requirement in itself.  [Top tips for getting some observational experience](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/school-experience/).\\r\n\\r\nIf you wish to train at one of our faith schools, they will also be looking for someone sympathetic to the values of their faith.\\r\n",
+    "PersonalQualities": "We want you to have passion and enthusiasm.  We need trainees who can engage and inspire students to a love of learning, who are:   \\r\n\\r\n*committed to championing their students;\\r\n*open to learn about children’s physical/social/emotional/cognitive needs and how these can affect behaviour;\\r\n*in good health with the ability to cope with stress.  Teaching is incredibly rewarding, but it also requires an element of resilience!\\r\n*professional and committed to equal opportunities;\\r\n*able to communicate well in written/spoken English, with at least basic computer skills and commitment to developing these.\\r\n*have a sense of humour and an ability to laugh at yourself.\\r\n",
+    "HowSchoolPlacementsWork": "With WLTSA you select the main host school at application.  We then later arrange your second placement at another contrasting WLTSA school to provide greater depth to your training experience. \\r\n\\r\nCHOOSING YOUR SCHOOL\\r\n\\r\nThe characters and location of our schools are varied.  When deciding on your preferred host school, we need you to consider where you might eventually like to work and how accessible it is to where you live.\\r\nThe schools seeking trainees on this particular programme are listed below.   \\r\n \\r\n* Barlby Primary School, W10\\r\n* Bevington Primary School, W10\\r\n* Colville Primary School, W11\\r\n* Fox Federation (3 schools, W8, SW10, W14)\\r\n* Oratory Primary RC School, SW3\\r\n* St Peter's CE Primary School, W9\\r\n* Thomson House School, SW14\\r\n* West London Free School Primaries (3 schools W6, W14)\\t\\r\n\\r\nYou can read descriptions of each of these schools in our overall [WLTSA Primary School Summary Descriptions](http://www.wltsa.org.uk/initial-teacher-training/primary-courses/wltsa-primary-school-summary-descriptions/).  Our [Map of WLTSA Schools](http://www.wltsa.org.uk/map-of-all-wltsa-schools/) may also be helpful.\\r\n\\r\nPlease be aware that we have many other [salaried and unsalaried primary teacher training courses](http://www.wltsa.org.uk/initial-teacher-training/primary-courses/primary-course-vacancies-for-2019-20-cohort/) at other schools.  You can make three choices overall when you apply.\\r\n\\r\nTHE TECHNICAL BIT!\\r\n\\r\nYou don’t have to restrict yourself to one school within a course, but each school would count as one application and you get three choices overall in Round 1.  Please also be aware that we have so many partner schools that we have been forced to split artificially on UCAS into three provider names.  See [How to apply & how to choose more than one school on a course](http://www.wltsa.org.uk/initial-teacher-training/primary-courses/how-to-apply-how-to-choose-more-than-1-school-on-a-course/). \\r\n \\r\nBE STRATEGIC WHEN YOU APPLY\\r\n\\r\nYou can always ring us up to ask how many applications (if any) are being considered by different schools at the point that you are about to apply.  We also keep our website up to date so that you can see which schools have already shortlisted and are interviewing. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "WHO ARE WE?\\r\n\\r\nWe are a large alliance of 60 schools: nurseries, primaries, special needs, secondaries, sixth forms; faith and non-faith, maintained schools, independent schools and free schools.   We have formal partnership arrangements with three universities.\\r\n\\r\nMost of our schools are in Hammersmith & Fulham and Kensington & Chelsea, but we also have schools in Westminster; Richmond; Ealing, Hounslow, Hillingdon and Southwark. \\r\n\\r\nThe central Teaching School Office for WLTSA is based at Sacred Heart High School, in Hammersmith. \\r\n\\r\nOUR APPROACH TO TRAINEE RECRUITMENT\\r\n\\r\nWe pride ourselves in the support that we provide potential applicants and speed of our shortlisting. We have a detailed website which is a good place to start.  We also hold two weekly [information sessions](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/recruitment-events-open-days/)  to explain the qualifications;  routes into teaching; finance; and how to secure a place!  \\r\n\\r\n‘That’s the first time that I have ever properly understood it all. Brilliant!’  Applicant 2018.\\r\n\\r\nThe Teaching School Office is staffed full time with experts to talk to on the phone. \\r\n\\r\nYou choose the schools when you apply. If you perform well but fail to get a place at your preferred school, we continue to work with you, recommending you to other WLTSA schools of your choice rather than rejecting you.\\r\n\\r\nWe place significant emphasis on getting a good fit between trainee and school because we are all keenly focussed on recruitment for qualified teachers in our alliance schools the following year.\\r\n\\r\n[Further opportunities to develop your career with WLTSA](http://www.wltsa.org.uk/initial-teacher-training/career-path1/)\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "WLTSA and all our partner universities are committed to supporting students with disabilities. Please contact us as early as possible in your application process so that your needs are met and support can be arranged.\\r\n\\r\nYou can also find support and information from the university accrediting the programme:\\r\n\\r\n[University of Roehampton Disabilities Support](http://www.roehampton.ac.uk/Disabilities/Support/)\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "This WLTSA course is accredited by University of Roehampton, who have been at the forefront of teacher education for over 100 years.  Many members of staff are at the cutting edge of research in teacher education, which has a positive impact on the quality of our provision; tutors have extensive teaching experience in schools with many having served as consultants or as Ofsted inspectors.\\r\n\\r\nThe university experience is enhanced by its beautiful campus - unique in being both close to central London and set in parkland with grand, historic buildings and lakes side by side with newly built modern facilities.\\r\n",
+        "UcasInstitutionCode": "R48"
+      }
+    ]
+  },
+  "has_inst": true
+}

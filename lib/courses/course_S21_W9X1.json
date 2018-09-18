@@ -1,0 +1,60 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Sheffield Hallam University",
+  "subjects": [
+    "Design and technology",
+    "Secondary"
+  ],
+  "name": "Design and Technology",
+  "slug": "S21/W9X1",
+  "providerCode": "S21",
+  "programmeCode": "W9X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S21",
+    "addr_1": "City Campus",
+    "addr_2": "Pond Street",
+    "addr_3": "Sheffield",
+    "addr_4": null,
+    "postcode": "S1 1WB  ",
+    "url": "http://www.shu.ac.uk",
+    "geocode": true,
+    "formatted_address": "City Campus, Howard St, Sheffield S1 1WB, UK",
+    "latitude": 53.37958769999999,
+    "longitude": -1.4651842,
+    "post_code": "S1 1WB",
+    "city": "South Yorkshire",
+    "route": "Howard Street",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "- Train for a rewarding career in secondary design and technology teaching.\\r\n- Undertake 120 days of school-based training in two different school settings.\\r\n- Participate in practical work in our well-equipped facilities to help you learn creative and innovative teaching methods.\\r\n- Attain a masters-level PGCE, or a PCE alongside Qualified Teacher status (QTS).\\r\n\\r\nThis course will help you to grow academically and professionally and has, as its primary aim, the development and supply of competent teachers who are capable of securing employment in an education setting. You graduate as an experienced and employable design and technology teacher, ready to inspire young people.\\r\n\\r\nThis course provides an advanced academic qualification alongside the real-world experience in school settings. Along with honing your subject skills, you'll learn crucial teaching techniques including behaviour management and student support. There are 120 days of school-based training that allow you to become used to the realities of teaching before graduation. You are assessed through supportive, collaborative means, helping you to grow and improve.\\r\n\\r\nYou learn through\\r\n\\r\n- 120 days of school based training across at least two settings\\r\n- classes in our well-equipped facilities\\r\n- seminars and lectures\\r\n- workshops\\r\n- school-based experiences\\r\n- independent study\\r\n- group work\\r\n- practical work\\r\n- written assessments and feedback",
+    "CourseLength": "OneYear",
+    "FeeInternational": 13500.0,
+    "InterviewProcess": "If you are shortlisted, we will invite you to a selection event, and you should bring a passport or photo driving license with you. You can bring other forms of photo ID for the selection event, but if you do, you will still need to present valid identity documents required by the Disclosure and Barring Service (DBS) at your pre-course day.\\r\n\\r\nThe selection event is a process which assesses if you're suitable for a place on the course. It's a chance to show us your knowledge about the subject and your enthusiasm for the career. Being invited to a selection event doesn't mean you're guaranteed a place on the course - the point of the day is to help us come to a mutual decision. We need to decide whether to make you an offer and you need to decide whether you like the course and the university.\\r\n\\r\nWe aim to make the interview process as rigorous and informative as possible. It's very much a two-way process, where you can evaluate what we offer while we find out more about you. In order to help us explore your thinking and subject knowledge, and for you to decide if this is the right course for you, we have a number of activities we usually use as part of the interview process.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "This course ensures that you'll have the real-life experience you need to enter teaching. You'll spend 120 days across two or more sites, with school-based mentors and campus-based tutors monitoring your progress and providing support. Upon graduating, some of our students go into full-time employment at their placement school.\\r\n\\r\nYou will take responsibility for your own development against the statutory requirements for QTS and will record your progress in a Professional Development Portfolio (PDP). This collaborative process involves you, university-based tutors and school-based mentors. As you complete the course you will review your progress, plan for your entry to the teaching profession and for your ongoing development as a Newly Qualified Teacher (NQT)."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Sheffield Hallam University is one of the UK's largest universities, based in the heart of Sheffield, one of the UK’s biggest student cities.\\r\n\\r\nSheffield is the fifth biggest city in the UK with over 60,000 students, it has a mix of culture and green spaces. \\r\n\\r\nWe have invested over £100 million in new buildings and facilities over the last five years, providing innovative, flexible and sustainable spaces to enhance student experience.\\r\n\\r\nWe pride ourselves on the applied nature of our courses. We offer one of the largest and most diverse\\r\nrange of placements in the region. We’ve built up a network of over 600 partner schools, colleges and other educational establishments, and we work together to our mutual advantage.\\r\n\\t\\r\nYou will study at our centre of education that is recognised for excellence and innovation in teaching and learning. Our academics, researchers and partners in schools work together to ensure you become a committed and professional graduate, with the opportunity to return to us throughout your career to further your professional development.\\r\n\\t\\r\nWe received an overall student satisfaction rating of 86% in the 2018 National Student Survey. This result places us in the top 30 universities in the country for student satisfaction. We also received a Silver rating in the 2017 Teaching Excellence Framework. \\r\n",
+    "TrainWithDisability": "If you have a disability, including long term medical conditions, specific learning difficulties (such as dyslexia, dyspraxia and A(D)HD) and mental health conditions, you can access additional support for your academic studies whilst at Sheffield Hallam.\\r\n\\r\nStudents can receive support for a wide variety of conditions. There is extensive support available, including\\r\n\\r\n•\\tLearning contracts- reasonable adjustments to your course such as extensions or extra time in exams\\r\n\\r\n•\\tSupport workers - like a mentor to help with organisation, or a personal assistant to help with mobility\\r\n\\r\n•\\tEquipment/Assistive Technology and software - such as digital recorders or text to speech software\\r\n\\r\nWe have an on-site assessment Centre, the Sheffield Regional Assessment Centre, where a range of disability specialists can carry out Study Needs Assessments.\\r\n\\r\nWe run daily drop in sessions - come and talk to us, no appointment needed. You can also register for support online.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

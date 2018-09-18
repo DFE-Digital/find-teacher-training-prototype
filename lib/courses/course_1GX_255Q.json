@@ -1,0 +1,85 @@
+{
+  "locationType": "School",
+  "accrediting": "Sheffield Hallam University",
+  "provider": "Learners First Schools Partnership",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "1GX/255Q",
+  "providerCode": "1GX",
+  "programmeCode": "255Q",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Bawtry Road, Wickersley, Rotherham, S66 1JL",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bawtry Road, Wickersley, Rotherham, S66 1JL",
+      "geocode": true,
+      "formatted_address": "Bawtry Rd, Rotherham S66 1JL, UK",
+      "latitude": 53.42236579999999,
+      "longitude": -1.2722454,
+      "post_code": "S66 1JL",
+      "city": "South Yorkshire",
+      "route": "Bawtry Road",
+      "postal_town": "Rotherham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1GX",
+    "addr_1": "Bawtry Road",
+    "addr_2": "Wickersley",
+    "addr_3": null,
+    "addr_4": "Rotherham",
+    "postcode": "S66 1JL ",
+    "url": "http://www.learnersfirst.net",
+    "geocode": true,
+    "formatted_address": "Bawtry Rd, Wickersley, Rotherham S66 2BW, UK",
+    "latitude": 53.4217391,
+    "longitude": -1.2813394,
+    "post_code": "S66 2BW",
+    "city": "Wickersley",
+    "route": "Bawtry Road",
+    "postal_town": "Rotherham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This program is delivered jointly by Learners First Schools Partnership (LFSP) and Sheffield Hallam University.  You will spend 85% of your time in one of our partner schools, with the other 15% spent attending training sessions facilitated by SLE’s or university tutors.  Upon successful completion of the program, you will be awarded QTS and a PGCE.\\r\nYou will be primarily based at your ‘home’ school, but will be expected to attend to attend training sessions at various local venues.\\r\nLFSP offer two School Direct Secondary ITT routes – salaried and non-salaried.  On the salaried route you are employed by your ‘home’ school and paid on the UQT Scale point 1.  Trainees on the salaried route are expected to be able to potentially undertake a higher teaching commitment.  The salaried route is generally best suited to those trainees that have broad experience within a school setting.  On the salaried route the tuition-fee is payable by LFSP; on the non-salaried route it is the responsibility of the trainee to pay the tuition-fee, but subject to eligibility they could access Student Finance if they so wished.  ",
+    "CourseLength": "OneYear",
+    "Qualifications": "UK BA/BSc degree (or equivalent) 2.2 or above, in a relevant subject to that of which you wish to teach in.  Applications for MFL will be considered without a languages degree dependant on the candidate’s fluency.  SKE’s are available for some subjects to deepen subject knowledge if required and applicable – please contact us if you’re unsure of the relevancy of your degree in relation to your chosen ITT program.\\r\nEnglish & Maths GCSEs Grade C/4 or above (or equivalents)\\r\nProfessional Skills Tests – Numeracy & Literacy\\r\n(Applications may still be considered if the above aren’t complete prior to interview)\\r\n",
+    "FeeInternational": 13500.0,
+    "InterviewProcess": "Subject to eligibility checks, you will be invited to attend an interview via UCAS, as well as email invitation from a member of the LFSP team.  At your interview, there will be a formal interview, as well as a variety of other tasks throughout the process in order for the panel to observe your interaction with the pupils.  You will be informed of these tasks prior to interview.  A decision as to whether or not you will be offered a place on this program will be made, and you will be informed of this decision via UCAS.",
+    "OtherRequirements": "Satisfactory enhanced DBS clearance",
+    "PersonalQualities": "\\r\n* High level of motivation\\r\n* Strong work ethic\\r\n* Potential to become an effective classroom leader\\r\n* Good communicator and listener\\r\n* Patience, adaptability, resilience, team-work, imagination\\r\n* Positive expectations\\r\n* Be organized, and have great time management\\r\n* Passion for your subject.\\r\n\\r\nLet us know why you want to teach, and provide evidence that you understand the rewards and challenges of teaching.  Previous experience is not compulsory, but if you do have relevant work/voluntary experience, please include this on your application.  Tell us about the range of relevant abilities and skills you can bring to teaching.\\r\n",
+    "HowSchoolPlacementsWork": "All school placements are arranged and organised by LFSP, and you will spend time in at least 2 contrasting schools, as well as gaining additional post-16 experience if required.  Whilst consideration is taken with regards to the location of your placement school/s in relation to your home address, trainees should anticipate that they could possibly have to travel up to 1 hour to reach their placement school.  The average travel time to a placement school is 10-30 minutes."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Learners First Schools Partnership is an inclusive, not-for-profit teaching school partnership of over 200 schools and academies.  Learners First is a large, well established and successful partnership covering all phases (0-19) and school contexts with a proven track record across all key performance indicators. Learners First is based in South Yorkshire and much of its work takes place across this area but the partnership has strong connections with many other schools, academies, multi academy trusts, teaching schools and system leaders from across the country.\\r\n\\r\nLearners First provides high quality, relevant professional development and facilitates opportunities for forward thinking research and school-to-school support to promote meaningful collaboration and school improvement. \\r\n\\r\nSchool Direct is an ever increasingly popular alternative route into teaching which is more school-based and school-led than a traditional one year PGCE.\\r\n\\r\n85% of the programme is spent in at least 2 schools training, teaching and observing lessons and best practice.  The remaining 15% is spent at one of our partner HEIs' studying for the PGCE element of the programme.  The school based part of the programme is bespoke to the individual, and there's a full and comprehensive support network for each trainee.  Graduating the programme means the award of QTS and PGCE.\\r\nUpon graduation via the School Direct route, there is the intention to offer graduates their first job as a teacher.  Over the past 2 years 96% of Learners First School Direct graduates have been offered employment within our partnership of schools.\\r\n",
+    "TrainWithDisability": "Learners First Schools Partnership (LFSP) is committed to promoting disability equality, eliminating unlawful discrimination in all of its activities and working towards ensuring that all trainees with disabilities realise their potential. LFSP values the diversity of its trainee population and is committed to ensuring that the highest equality and diversity standards are maintained.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "S21"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "2B6"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "H60"
+      }
+    ]
+  },
+  "has_inst": true
+}

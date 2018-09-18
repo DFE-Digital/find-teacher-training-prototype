@@ -1,0 +1,78 @@
+{
+  "locationType": "School",
+  "accrediting": "Alban Federation",
+  "provider": "Alban Federation",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "slug": "1MN/2FMX",
+  "providerCode": "1MN",
+  "programmeCode": "2FMX",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Sandringham School, The Ridgeway, St Albans, AL4 9NX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Sandringham School, The Ridgeway, St Albans, AL4 9NX",
+      "geocode": true,
+      "formatted_address": "St Albans, Hertfordshire AL4 9NX, UK",
+      "latitude": 51.770481,
+      "longitude": -0.306775,
+      "post_code": "AL4 9NX",
+      "city": "St Albans",
+      "route": null,
+      "postal_town": "Hertfordshire"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1MN",
+    "addr_1": "Alban Federation",
+    "addr_2": "c/o Sandringham School",
+    "addr_3": "The Ridgeway",
+    "addr_4": "St Albans",
+    "postcode": "AL4 9NX ",
+    "url": "http://www.albanfederation.com",
+    "geocode": true,
+    "formatted_address": "St Albans, Hertfordshire AL4 9NX, UK",
+    "latitude": 51.770481,
+    "longitude": -0.306775,
+    "post_code": "AL4 9NX",
+    "city": "St Albans",
+    "route": null,
+    "postal_town": "Hertfordshire"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 7500.0,
+    "FeeDetails": "For candidates following a fee paying course, who choose not to take out a student loan, payments are collected on a termly basis.",
+    "AboutCourse": "All Alban Federation (AF) trainees are based at one home school through their training with a second school placement taking place in the first half of the Spring term. Trainees are allocated a subject mentor who offer day to day support within the department. Federation training takes place every Wednesday afternoon, with sessions hosted at schools across the partnership. Additional core training is offered at the start of the course to support trainees in the developing teaching skills.\\r\n\\r\nTrainees are assessed continually through the programme with an acknowledgement that individuals develop at different rates. Trainees will receive feedback through formal lesson observations (at least one a week) and receive a formal report at three points through training. There are no essays to write.\\r\n\\r\nAF was graded 'Outstanding' by OFSTED in its most recent inspection and was ranked in the top 10 of all ITT providers in the Good Teacher Training Guide (2017).",
+    "CourseLength": "OneYear",
+    "Qualifications": "A degree in a relevant discipline; GCSE passes in English and Maths at Grade 4 / C or above.",
+    "FinancialSupport": "There is no additional financial support available to fee paying students.",
+    "InterviewProcess": "Applicants will have the opportunity to complete an informal visit to partner schools offering the subject before progressing to a formal selection day in which they will 'teach' and complete panel interviews. Successful applicants when then proceed to a final interview at Alban Federation.",
+    "OtherRequirements": "All candidates will be subject to DBS procedures before beginning the programme.",
+    "PersonalQualities": "Alban Federation is looking for applicants with a real commitment to develop their skills through training. Prior school experience is not necessary.",
+    "HowSchoolPlacementsWork": "Alban Federation has over 20 schools in its Secondary partnership so most successful applicants will have the chance to work in a school of their choice. Trainees are normally placed on 11-16 training programmes, following a core training induction in the first half term of the course, and then working in schools for at least 4 days a week from November of each training year. The second placement takes place in the half term immediately after the Christmas break."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Alban Federation (AF) have been training teachers across Hertfordshire since 2004. Both Secondary and Primary training programmes are now offered. AF was graded as an outstanding provider by OFSTED during the most recent inspection in November 2012.",
+    "TrainWithDisability": "Alban Federation and its partner schools are committed to promoting practices that take into account the rights of individuals to be treated with dignity and respect whilst ensuring that the content, structure, delivery and assessment of programmes:\\r\n\\r\na) enable trainee teachers to meet all the standards for QTS across the age range of training, and\\r\n\\r\nb) ensure that no trainee teacher is recommended for the award of QTS until they have met all of the standards for QTS.\\r\n\\r\nAll applicants are subject to the same recruitment processes. Training options and the capacity of schools to manage trainees needs are discussed on a case by case basis.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The growth of AF to a partnership of over 30 schools ensures that trainees can experience a range of school contexts through their two placements and further visits.  \\r\n\\r\n",
+        "UcasInstitutionCode": "A46"
+      }
+    ]
+  },
+  "has_inst": true
+}

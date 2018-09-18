@@ -1,0 +1,67 @@
+{
+  "locationType": "School",
+  "accrediting": "Nottinghamshire TORCH SCITT",
+  "provider": "Nottinghamshire Torch SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1EB/35BW",
+  "providerCode": "1EB",
+  "programmeCode": "35BW",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Toot Hill School, The Banks, Bingham, Nottingham, NG13 8BL",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Toot Hill School, The Banks, Bingham, Nottingham, NG13 8BL",
+      "geocode": true,
+      "formatted_address": "The Banks, Bingham, Nottingham NG13 8BL, UK",
+      "latitude": 52.9484862,
+      "longitude": -0.9530017,
+      "post_code": "NG13 8BL",
+      "city": "Bingham",
+      "route": "The Banks",
+      "postal_town": "Nottingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1EB",
+    "addr_1": "Toot Hill",
+    "addr_2": "The Banks",
+    "addr_3": "Bingham",
+    "addr_4": "Nottingham",
+    "postcode": "NG13 8BL",
+    "url": "http://www.toothill.notts.sch.uk",
+    "geocode": true,
+    "formatted_address": "The Banks, Bingham, Nottingham NG13 8BL, UK",
+    "latitude": 52.9484862,
+    "longitude": -0.9530017,
+    "post_code": "NG13 8BL",
+    "city": "Bingham",
+    "route": "The Banks",
+    "postal_town": "Nottingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "HowSchoolPlacementsWork": "\\r\n\\r\n\\r\n\\r\n\\r\n\\r\nPrimary Partner Schools are <a href= http://www.birklandsschool.co.uk >The Birklands School</a> in Warsop, <a href= http://www.carnarvonschool.co.uk >The Carnarvon School</a> in Bingham, <a href= http://www.churchvaleschool.co.uk >The Church Vale School</a> in Church Warsop, <a href= http://www.firbeckschool.co.uk >The Firbeck School</a> in Wollaton, <a href= http://www.gunthorpeschool.co.uk >The Gunthorpe School</a> in Gunthorpe,  <a href= http://www.robertmilesjuniorschool.co.uk >The Robert Miles Juniors</a> in Bingham, <a href= http://www.robertmilesinfantschool.co.uk >The Robert Miles Infant School</a> in Bingham, <a href= http://www.Stpeters.co.uk >The St Peter's School</a> in Farndon, <a href= http://www.standhillschool.co.uk >The Standhill School</a> in Mapperley, <a href= http://www.victoriaschool.co.uk >The Victoria School</a> in The Meadows, <a href= http://www.westdaleschool.co.uk >The Westdale School</a> in Mapperley."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are delighted you are looking at training with the Nottinghamshire Torch SCITT. The Nottinghamshire Torch SCITT (NTS) is part of the Nova Education Trust. The lead school is Toot Hill School; rated Outstanding by Ofsted.\\r\n \\r\nTraining with the Nottinghamshire Torch SCITT will provide:\\r\n\\r\n1.      First class school based training leading to Qualified Teacher Status with PGCE and Masters credits (through our partnership with the University of Nottingham)\\r\n2.      A wide range of schools offering a varied cross phase experience\\r\n3.      A funded international teaching experience (Finland) \\r\n4.      Leadership development future fast track employment opportunities\\r\n5.      Excellent support networks in schools and beyond\\r\n6.      Opportunities for paid employment whilst training \\r\n7.      Living and working in beautiful Nottinghamshire\\r\n\\r\nOur 30+ partner schools have a long, successful history of working with Initial Teacher Training students. More information on partner schools can be found on our website www.teachnottingham.co.uk \\r\n\\r\nWe have worked together closely to develop a high quality programme based on experience, excellent Quality Assurance and a commitment to a high level of support for trainees. We do not just train people to teach...we create the next generation of outstanding school practitioners and leaders. We offer over 40 days of core school based training utilising expertise from highly qualified teaching professionals within a broad range of schools.\\r\n",
+    "TrainWithDisability": "NTS are a highly inclusive training provider that is in the position to support trainees with additional physical and mental needs. Most of our school partners have wheelchair access and provision plans are put into place to support trainees with physical disabilities (e.g. visual/auditory impairment). We are experienced in supporting trainees with Dyslexia and provide support plans and adapted materials to ensure no one is at a disadvantage. \\r\n\\r\nWe provide regular training to support all trainees to develop wider skills that support mental and physical wellbeing. This includes links with wider partners such as counsellors, lifestyle and wellbeing coaches. Over the training year, trainees are coached to develop good work-life balance management and to develop good working habits that supports mental health and wellbeing. With trainees who have a history of mental health issues we continue to provide personalised support and if required will commission additional support. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "With high completion rates (100% over 3 years) all trainees secure employment offers within the first few months of gaining QTS. Many former trainees have fast tracked into school leadership roles and continue to benefit from the high quality continuous support and networks established.\\r\n\\r\nEmployment is not just about getting a job; you will be able to make very informed choices (supported by experts) about what type of school that suits your educational philosophy and vision. That is why such a large proportion of our former trainees continue to be highly successful teachers with high levels of teacher retention.\\r\n",
+        "UcasInstitutionCode": "254"
+      }
+    ]
+  },
+  "has_inst": true
+}

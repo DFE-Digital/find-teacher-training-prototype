@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Huddersfield",
+  "provider": "West Yorkshire Teaching Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "slug": "1JJ/259D",
+  "providerCode": "1JJ",
+  "programmeCode": "259D",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "School Terrace, Far Bank, Shelley, Huddersfield, HD8 8HU",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "School Terrace, Far Bank, Shelley, Huddersfield, HD8 8HU",
+      "geocode": true,
+      "formatted_address": "Huddersfield, UK",
+      "latitude": 53.645792,
+      "longitude": -1.7850351,
+      "post_code": null,
+      "city": "Huddersfield",
+      "route": null,
+      "postal_town": "Huddersfield"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1JJ",
+    "addr_1": "WYTA c/o School Terrace",
+    "addr_2": "Far Bank",
+    "addr_3": "Shelley",
+    "addr_4": "Huddersfield",
+    "postcode": "HD8 8HU ",
+    "url": "http://www.wyta.co.uk",
+    "geocode": true,
+    "formatted_address": "School Terrace, Shelley, Huddersfield HD8 8HU, UK",
+    "latitude": 53.5957141,
+    "longitude": -1.697899,
+    "post_code": "HD8 8HU",
+    "city": "Shelley",
+    "route": null,
+    "postal_town": "Huddersfield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Our tuition fees are determined by the University of Huddersfield.  \\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "FinancialSupport": "Your placements could be based in areas some distance from your point of study or home, so please be aware of potential associated travelling costs.  \\r\n\\r\nTravel costs are not routinely reimbursed however applications for contributions can be made to our Hardship Fund.",
+    "InterviewProcess": "Applications are received on our behalf by the University of Huddersfield and we work closely together to review applications to ensure they meet our criteria.  The university invites candidates to interview on our behalf.\\r\n\\r\nInterviews take place in our partner schools and our interview panel comprises representatives from the West Yorkshire Teaching Alliance, our partner schools and often a representative from the university.\\r\n\\r\nThe interview process includes:\\r\n\\r\n* A 15-20 minute teaching task in an appropriate Key Stage class\\r\n* A formal interview\\r\n* A Maths task*\\r\n* A Spelling, Punctuation and Grammar (SPaG) task*\\r\n* A written literacy task *\\r\n\\r\n* For 2019-20 applications we are exploring alternative ways to conduct the written tasks.  Further details will be provided when invited to interview.\\r\n\\r\nAll of our interview tasks assess your suitability to train to teach and are included in order to reassure us that you have the capacity to meet the Teachers' Standards.\\r\n\\r\nOur interview process is a rigorous one, designed to ensure we attract high quality candidates who understand the resilience required to complete this intensive one year course.  \\r\n\\r\nCandidates will be informed within the 40 day deadline as to whether their application has been successful or not.\\r\n",
+    "HowSchoolPlacementsWork": "School placements are a vital part of your training year, helping you to develop your teaching practice.  At WYTA we are fortunate to have over 40 primary schools in our partnership who have a long and strong history of training teachers and who are keen to support our trainees.  \\r\n\\r\nWhen allocating placement schools we always try to take into account your circumstances and area of residence whilst balancing our duty to provide you with the most appropriate school to best meet your training needs.  Most of our schools are based in Kirklees and placements are usually within this area.  \\r\n\\r\nOn our Primary course you will have the option to train in either:\\r\n\\r\n* Early Years and Key Stage (KS) 1 or \\r\n* KS 1 and KS 2\\r\n\\r\nAs part of your time in school it is important that you are able to gain an understanding of progression in learning across all key stages so whichever route you choose, you will also spend some time in the key stages before and after the ones you have selected.  For example, if you are studying KS1 and 2, you will spend a short amount of time in Early Years and KS3.  \\r\n\\r\nIn order to meet the course requirements, you will need to spend a minimum of 120 days in school although in reality our trainees tend to be in school for more than this.  The exact number of days often differs for each trainee, depending on their own circumstances.  You will have:\\r\n\\r\n* 2 main block placements (approximately 19 weeks in total)\\r\n* English and Maths placements (approximately 2 weeks)\\r\n* PE placement (approximately 1 week)\\r\n* Special Educational Needs and Disability (SEND) placement (approximately 1 week)\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The West Yorkshire Teaching Alliance (WYTA), established in 2014, has a strong and diverse network of over 70 partners based around Huddersfield and surrounding areas.   \\r\n\\r\nOur mission is to prepare trainee teachers to become confident, innovative, independent professionals who strive to achieve the best for themselves and for the children they teach.\\r\n\\r\nWYTA is led by two outstanding primary schools: Shelley First School and Spring Grove Junior Infant and Nursery School and is closely supported by our secondary strategic partners.  We work with all age groups from Early Years through to sixth forms and special schools.\\r\n\\r\nAs a relatively small provider, we really get to know and support you.  We offer a focused, in-depth and supportive yet challenging programme to build your confidence and subject knowledge and give you the necessary skills to become an effective classroom practitioner.  Our offer includes:\\r\n\\r\n* school-based specialists \\r\n* academic experts \\r\n* comprehensive mentoring to support your learning and your health and well-being\\r\n* a successful, high quality programme (97% of all of our trainees have achieved good or outstanding)\\r\n* strong employment opportunities within partner schools and our wider network\\r\n\\r\nWe are proud to celebrate the achievements of both our current and past trainees.  Some have taken on lead roles in schools, one is now a Head of Department and one is now delivering some of the training for our new trainees.  This year we were delighted for our PE trainee who was awarded ‘Examiner Trainee Teacher of the Year 2018’.  \\r\n",
+    "TrainWithDisability": "Whatever your circumstances, we take each application on its own merits and we actively welcome applications from suitably qualified persons from all backgrounds regardless of race, sex, disability, religion/belief or sexual orientation.\\r\n\\r\nWe have experience of supporting trainee teachers with a range of needs, including:\\r\n\\r\n* physical disability\\r\n* mental health conditions\\r\n* dyslexia\\r\n\\r\nAlthough each of our partner schools has differing access arrangements, all schools are Disability Discrimination Act (DDA) compliant.  \\r\n\\r\nWe encourage you to talk to us and we always try to place you in a school which meets your needs.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We are proud to work very closely with the [University of Huddersfield](http://www.hud.ac.uk) to deliver an ambitious, intensive and highly rewarding teacher training programme culminating in Qualified Teacher Status (QTS), a Postgraduate Certificate in Education (PGCE) and 90 Masters level credits.\\r\n\\r\nWe believe the theory and insight into the pedagogy of teaching is invaluable in creating outstanding teachers and the University has a proven track record:\\r\n\\r\n* Teaching Excellence Framework ‘gold-rated University’ for delivering ‘consistently outstanding teaching, learning and outcomes for its students’\\r\n*Athena SWAN bronze award for commitment to supporting women in science, technology, engineering, medicine and maths (STEMM)\\r\n",
+        "UcasInstitutionCode": "H60"
+      }
+    ]
+  },
+  "has_inst": true
+}
