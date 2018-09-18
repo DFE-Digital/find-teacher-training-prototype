@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set title %}{{ course.name }} at {{ course.provider }}{% endset %}
+{% set title %}{{ course.name }} with {{ course.provider }}{% endset %}
 {% block page_title %}{{ title }}{% endblock %}
 {% block content %}
 
@@ -63,18 +63,83 @@
       </ul> -->
 
       {% if course.providerAddress.url %}
-        <h2 class="heading-medium">About this course</h3>
+        <!-- <h2 class="heading-medium">About this course</h3>
         <div class="panel panel-border-wide add-top-margin">
           <p>
             Find out more about this course at:<br />
             <a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a>
           </p>
+        </div> -->
+      {% endif %}
+
+      <h2 class="heading-medium" id="section-about">About this course</h2>
+      {{ markdown(course.enrichment['AboutCourse']) | safe }}
+
+      {% if course.enrichment['InterviewProcess'] %}
+        <h2 class="heading-medium" id="section-interview">Interview process</h2>
+        {{ markdown(course.enrichment['InterviewProcess']) | safe }}
+      {% endif %}
+
+      <h2 class="heading-medium" id="section-schools">How school placements work</h2>
+      {{ markdown(course.enrichment['HowSchoolPlacementsWork']) | safe }}
+
+      {% if course.enrichment['SalaryDetails'] %}
+        <h2 class="heading-medium" id="section-salary">Salary</h2>
+        {{ markdown(course.enrichment['SalaryDetails']) | safe }}
+      {% else %}
+        <h2 class="heading-medium" id="section-fees">Fees</h2>
+        <p>The course fees for 2018/2019 are as follows:</p>
+        <div class="body-text">
+          <table>
+            <tbody>
+              <tr class="visually-hidden">
+                <th>Student type</th>
+                <th>Fees to pay</th>
+              </tr>
+              <tr>
+                <td>UK students</td>
+                <td>£{{ course.enrichment['FeeUkEu'] }}</td>
+              </tr>
+              <tr>
+                <td>EU students</td>
+                <td>£{{ course.enrichment['FeeUkEu'] }}</td>
+              </tr>
+              {% if course.enrichment['FeeInternational'] %}
+              <tr>
+                <td>International students</td>
+                <td>£{{ course.enrichment['FeeUkEu'] }}</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
         </div>
+
+        {{ markdown(course.enrichment['FeeDetails']) | safe }}
       {% endif %}
 
       <h2 class="heading-medium" id="section-financial-support">Financial support</h3>
       <p>You may be eligible for <a href="https://www.gov.uk/teacher-training-funding">financial support while you study, including bursaries, scholarships and loans</a>.</p>
       <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">Financial support if you’re from outside of the UK</a>.</p>
+
+      {% if course.enrichment['FinancialSupport'] %}
+        <h3 class="heading-small">Financial support from the training provider</h3>
+        {{ markdown(course.enrichment['FinancialSupport']) | safe }}
+      {% endif %}
+
+      <h2 class="heading-medium" id="section-entry">Requirements</h2>
+
+      <h3 class="heading-small">Qualifications needed</h3>
+      {{ markdown(course.enrichment['Qualifications']) | safe }}
+
+      {% if course.enrichment['PersonalQualities'] %}
+        <h3 class="heading-small">Personal qualities</h3>
+        {{ markdown(course.enrichment['PersonalQualities']) | safe }}
+      {% endif %}
+
+      {% if course.enrichment['OtherRequirements'] %}
+        <h3 class="heading-small">Other requirements</h3>
+        {{ markdown(course.enrichment['OtherRequirements']) | safe }}
+      {% endif %}
 
       <h2 class="heading-medium" id="section-contact">Contact details</h2>
 
