@@ -141,6 +141,12 @@
         {{ markdown(course.enrichment['OtherRequirements']) | safe }}
       {% endif %}
 
+      <h2 class="heading-medium" id="section-about-provider">About the training provider</h2>
+      {{ markdown(course.inst['TrainWithUs']) | safe }}
+
+      <h2 class="heading-medium" id="section-access-needs">Training with disabilities and other needs</h2>
+      {{ markdown(course.inst['TrainWithDisability']) | safe }}
+
       <h2 class="heading-medium" id="section-contact">Contact details</h2>
 
       <dl class="aligned">
