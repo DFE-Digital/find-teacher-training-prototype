@@ -12,10 +12,28 @@
   {{macros.betaBanner()}}
   {{ macros.backLink(backLink.text, backLink.href) }}
 
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-xlarge">{{ title }}</h1>
+      <p>Select the subjects you want to teach.</p>
 
+      <p>For some subjects you could be eligible for a tax-free bursary or scholarship, up to £28,000. Student finance and courses that pay a salary (around £16,000 or £22,000 in London) are available for all subjects.</p>
+
+      <p>You can train to teach in a subject different to your degree. For some subjects you can top-up your subject knowledge with a subject knowledge enhancement (SKE) course. <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses">Find out more about SKE courses on Get into Teaching</a>.</p>
+
+      <!-- <details>
+        <summary><span class="summary">Teach a subject that’s different to your degree</span></summary>
+        <div class="panel panel-border-narrow">
+
+        </div>
+      </details> -->
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
       <form action="/results">
         <div id="accordion" class="accordion add-double-bottom-margin">
           {% for subjectGroup in subjectGroups %}
