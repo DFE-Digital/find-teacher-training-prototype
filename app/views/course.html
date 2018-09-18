@@ -11,6 +11,7 @@
     <div class="column-two-thirds">
       <h1 class="heading-xlarge">
         {{ course.name }} with {{ course.provider }}
+        {% if course.accrediting %}<span class="heading-secondary">Accredited provider: {{ course.accrediting }}</span>{% endif %}
       </h1>
     </div>
   </div>
@@ -20,10 +21,6 @@
       <dl class="aligned">
         <dt>Course offered:</dt>
         <dd>{{ course.options[0] }}</dd>
-        {% if course.accrediting %}
-          <dt>Accredited by:</dt>
-          <dd>{{ course.accrediting }}</dd>
-        {% endif %}
         <dt>Qualification:</dt>
         <dd>
           <details role="group">
@@ -44,23 +41,39 @@
             {% endif %}
           </details>
         </dd>
-        <dt>Apply from:</dt>
-        <dd>October 2018</dd>
-        <dt>Course starts:</dt>
+        <dt>Course length:</dt>
+        <dd>1 year</dd>
+        <dt>Date you can apply from:</dt>
+        <dd>9 October 2018</dd>
+        <dt>Date course starts:</dt>
         <dd>October 2019</dd>
+        <dt>Website:</dt>
+        <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
       </dl>
     </div>
   </div>
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <!-- <h2 class="heading-small">Contents</h2>
+      <h2 class="heading-small">Contents</h2>
       <ul class="list">
+        <li><a href="#section-about">About the course</a></li>
+        {% if course.enrichment['InterviewProcess'] %}
+          <li><a href="#section-interview">Interview process</a></li>
+        {% endif %}
+        <li><a href="#section-schools">How school placements work</a></li>
+        {% if course.enrichment['SalaryDetails'] %}
+          <li><a href="#section-salary">Salary</a></li>
+        {% else %}
+          <li><a href="#section-fees">Fees</a></li>
+        {% endif %}
         <li><a href="#section-financial-support">Financial support</a></li>
-        <li><a href="#section-schools">Host schools</a></li>
+        <li><a href="#section-entry">Requirements</a></li>
+        <li><a href="#section-about-provider">About the training provider</a></li>
+        <li><a href="#section-access-needs">Training with disabilities and other needs</a></li>
         <li><a href="#section-contact">Contact details</a></li>
         <li><a href="#section-apply">Apply</a></li>
-      </ul> -->
+      </ul>
 
       {% if course.providerAddress.url %}
         <!-- <h2 class="heading-medium">About this course</h3>
