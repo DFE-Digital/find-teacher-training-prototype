@@ -85,7 +85,7 @@
         </div> -->
       {% endif %}
 
-      <h2 class="heading-medium" id="section-about">About this course</h2>
+      <h2 class="heading-medium" id="section-about">About the course</h2>
       {{ markdown(course.enrichment['AboutCourse']) | safe }}
 
       {% if course.enrichment['InterviewProcess'] %}
@@ -131,8 +131,13 @@
       {% endif %}
 
       <h2 class="heading-medium" id="section-financial-support">Financial support</h3>
-      <p>You may be eligible for <a href="https://www.gov.uk/teacher-training-funding">financial support while you study, including bursaries, scholarships and loans</a>.</p>
-      <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">Financial support if you’re from outside of the UK</a>.</p>
+      {% if course.enrichment['SalaryDetails'] %}
+        <p>Financial support isn’t available for this course.</p>
+        <p>If you choose a course without a salary, you may be eligible for financial support while you study, including bursaries, scholarships and loans.</p>
+      {% else %}
+        <p>You may be eligible for <a href="https://www.gov.uk/teacher-training-funding">financial support while you study, including bursaries, scholarships and loans</a>.</p>
+        <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">Financial support if you’re from outside of the UK</a>.</p>
+      {% endif %}
 
       {% if course.enrichment['FinancialSupport'] %}
         <h3 class="heading-small">Financial support from the training provider</h3>
