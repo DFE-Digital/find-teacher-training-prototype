@@ -2,6 +2,9 @@
 # Grab courses-clean.json from search-and-compare-data repo
 # Run './generate.rb'
 require 'json'
+gem 'json5'
+require 'json5'
+require 'csv'
 file = File.read('courses-clean.json')
 
 geo_file = File.read('geocoded_address_data.json')
@@ -10,8 +13,11 @@ geocoded_addresses = JSON.parse(geo_file)
 addresses_file = File.read('provider_address_website.json')
 addresses = JSON.parse(addresses_file)
 
+course_enrichments = CSV.read('course-enrichment.csv', :headers => true)
+inst_enrichments = CSV.read('institution-enrichment.csv', :headers => true)
+
 data = JSON.parse(file)
-sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }.sample(3000)
+sample = data.reject {|c| c['campuses'].empty? }.reject {|c| c['subjects'].include?('WELSH') }
 
 def to_slug(string)
   string.downcase.gsub(/[^a-zA-Z0-9]/, '-').gsub(/--*/, '-').gsub(/-$/,'')
@@ -142,10 +148,37 @@ prototype_data['courses'] = sample.map do |c|
     options: options
   }
 
+  e = course_enrichments.find {|e| e["ucas_course_code"] == c['programmeCode']}
+  if e
+    begin
+      # JSON data isn't valid JSON. It contains single quotes.
+      # Use JSON5 to parse most of the entries: https://github.com/bartoszkopinski/json5
+      json_data = JSON5.parse(e["json_data"])
+      course[:enrichment] = json_data
+      # puts "Success: #{c['programmeCode']}"
+    rescue SyntaxError
+      # It's ok to ignore some of the courses
+      # puts "Syntax error: #{c['programmeCode']}"
+    rescue
+      # puts "Error: #{c['programmeCode']}"
+    end
+  end
+
+  i = inst_enrichments.find {|e| e["inst_code"] == c['providerCode']}
+  if i
+    begin
+      json_data = JSON5.parse(i["json_data"])
+      course[:inst] = json_data
+    rescue SyntaxError
+    rescue
+    end
+  end
+
   course
 end
 
 # Don't include courses without geocodes
+prototype_data['courses'].reject! { |c| !(c[:enrichment] && c[:inst]) }
 prototype_data['courses'].reject! { |c| !c[:addresses] || c[:addresses].any? { |a| !a || !a['geocode'] } }
 prototype_data['courses'].reject! { |c| !c[:providerAddress] || !c[:providerAddress]["latitude"] }
 
