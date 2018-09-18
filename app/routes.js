@@ -85,9 +85,74 @@ function subjectGroups(req) {
 
   for (const subjectGroup of Object.keys(req.session.data['groupedSubjects'])) {
     var subjects = [];
+    var scholarshipAndBursarySubjects = [
+      'Chemistry',
+      'Geography',
+      'Physics',
+      'Computer studies',
+      'French',
+      'Spanish',
+      'German',
+    ];
+
+    var lowerBursarySubjects = [
+      'Biology',
+      'Classics'
+    ];
+
+    var englishBursarySubjects = [
+      'English',
+      'English language',
+      'English literature'
+    ];
+
+    var humanitiesBursarySubjects = [
+      'History',
+      'Music',
+      'Religious education'
+    ];
+
+    var skeSubjects = [
+      'Mathematics',
+      'Physics',
+      'Languages',
+      'French',
+      'Spanish',
+      'German',
+      'Chemistry',
+      'Computer studies',
+      'Biology',
+      'Geography',
+      'English',
+      'English language',
+      'English literature',
+      'Design and technology'
+    ];
 
     req.session.data['groupedSubjects'][subjectGroup].forEach(function(subject) {
-      subjects.push({name: subject});
+      var text = '';
+      if (scholarshipAndBursarySubjects.includes(subject)) {
+        text = 'Scholarships and bursaries up to £28,000 available.';
+      } else if (englishBursarySubjects.includes(subject)) {
+        text = 'Bursaries of £15,000 available.';
+      } else if (lowerBursarySubjects.includes(subject)) {
+        text = 'Bursaries of £26,000 available.';
+      } else if (humanitiesBursarySubjects.includes(subject)) {
+        text = 'Bursaries of up to £9,000 available.';
+      } else if (subject.includes('Design and technology')) {
+        text = 'Bursaries of up to £12,000 available.';
+      } else if (subject.includes('Mathematics')) {
+        text = 'Scholarships and bursaries up to £22,000 available with further early career payments up to £10,000.';
+      }
+
+      if (skeSubjects.includes(subject) || subject.includes('Design and technology')) {
+        if (text) {
+          text = text + "<br />"
+        }
+        text = text + "Subject knowledge enhancement (SKE) courses offered."
+      }
+      // TODO: Primary maths too (6,000)
+      subjects.push({name: subject, text: text ? '<span style="display: inline-block; margin-top: 5px; margin-bottom: -10px">' + text + '</span>' : null});
     });
 
     subjectGroups.push({ group: subjectGroup, subjects: subjects });
