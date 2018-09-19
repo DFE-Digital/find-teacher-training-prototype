@@ -82,37 +82,29 @@
   "groupedSubjects": {
     "Primary": [
       "Primary",
-      "Lower primary",
-      "Upper primary",
       "Early years"
     ],
     "Secondary": [
-      "Art / art & design",
+      "Art and design",
       "Biology",
-      "Business education",
+      "Business studies",
       "Chemistry",
+      "Citizenship",
       "Classics",
       "Communication and media studies",
-      "Computer studies",
-      "Dance and performance",
+      "Computing",
+      "Dance",
       "Design and technology",
-      "Design and technology (food)",
-      "Design and technology (product design)",
-      "Design and technology (systems and control)",
-      "Design and technology (textiles)",
       "Drama and theatre studies",
       "Economics",
       "Engineering",
       "English",
-      "English language",
-      "English literature",
       "Geography",
       "Greek",
       "Health and social care",
       "History",
       "Humanities",
       "Information communication technology",
-      "Information technology",
       "Latin",
       "Mathematics",
       "Music",
@@ -124,12 +116,10 @@
       "Psychology",
       "Religious education",
       "Science",
-      "Social science"
+      "Social sciences"
     ],
     "Modern languages": [
       "Languages",
-      "Languages (asian)",
-      "Languages (european)",
       "Arabic",
       "English as a second or other language",
       "French",
@@ -142,9 +132,8 @@
       "Urdu",
       "Welsh"
     ],
-    "Other subjects": [
-      "Citizenship",
-      "Post-compulsory",
+    "Further education": [
+      "Further education",
       "Special educational needs"
     ]
   },
@@ -154,7 +143,7 @@
       "accrediting": null,
       "provider": "University of East London",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Information communication technology",
         "Primary"
       ],
@@ -366,7 +355,6 @@
       "accrediting": null,
       "provider": "Goldsmiths, University of London",
       "subjects": [
-        "Lower primary",
         "Primary"
       ],
       "name": "Lower Primary",
@@ -1292,8 +1280,7 @@
       "accrediting": null,
       "provider": "Goldsmiths, University of London",
       "subjects": [
-        "Primary",
-        "Upper primary"
+        "Primary"
       ],
       "name": "Upper Primary",
       "slug": "G56/X171",
@@ -2789,7 +2776,7 @@
       "accrediting": "UCL, University College London (University of London",
       "provider": "Beal High School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -2824,7 +2811,7 @@
       "accrediting": null,
       "provider": "Compton SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art",
@@ -2859,7 +2846,7 @@
       "accrediting": null,
       "provider": "Goldsmiths, University of London",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -2894,7 +2881,7 @@
       "accrediting": "UCL, University College London (University of London",
       "provider": "Kingston School Direct",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -2929,7 +2916,7 @@
       "accrediting": null,
       "provider": "Partnership London SCITT (PLS)",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art",
@@ -2964,7 +2951,7 @@
       "accrediting": null,
       "provider": "Roehampton University",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -2999,7 +2986,7 @@
       "accrediting": "e-Qualitas",
       "provider": "The Royal Borough Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -3034,7 +3021,7 @@
       "accrediting": "e-Qualitas",
       "provider": "The Royal Borough Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -3069,7 +3056,7 @@
       "accrediting": null,
       "provider": "UCL, University College London (University of London)",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -3104,7 +3091,7 @@
       "accrediting": "Goldsmiths, University of London",
       "provider": "Wandle Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -4073,7 +4060,7 @@
       "accrediting": "UCL, University College London (University of London",
       "provider": "Beal High School",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -4108,7 +4095,7 @@
       "accrediting": null,
       "provider": "Compton SCITT",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -4143,7 +4130,7 @@
       "accrediting": "UCL, University College London (University of London",
       "provider": "Kingston School Direct",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -4178,7 +4165,7 @@
       "accrediting": "e-Qualitas",
       "provider": "The Royal Borough Teaching School Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -5290,7 +5277,7 @@
       "accrediting": "King's College London (University of London",
       "provider": "Beal High School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5325,7 +5312,7 @@
       "accrediting": "UCL, University College London (University of London",
       "provider": "Brent Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5360,7 +5347,7 @@
       "accrediting": null,
       "provider": "Compton SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5395,7 +5382,7 @@
       "accrediting": "Hillingdon SCITT",
       "provider": "Ealing Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5430,7 +5417,7 @@
       "accrediting": "Hillingdon SCITT",
       "provider": "Ealing Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5465,7 +5452,7 @@
       "accrediting": "Hillingdon SCITT",
       "provider": "Ealing Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5500,7 +5487,7 @@
       "accrediting": null,
       "provider": "King’s College London (University of London)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5535,7 +5522,7 @@
       "accrediting": "UCL, University College London (University of London",
       "provider": "Kingston School Direct",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5570,7 +5557,7 @@
       "accrediting": null,
       "provider": "Roehampton University",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5605,7 +5592,7 @@
       "accrediting": "Roehampton University",
       "provider": "South East Learning Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5640,7 +5627,7 @@
       "accrediting": "e-Qualitas",
       "provider": "The Royal Borough Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5675,7 +5662,7 @@
       "accrediting": null,
       "provider": "University of East London",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5710,7 +5697,7 @@
       "accrediting": "UCL, University College London (University of London",
       "provider": "Wandle Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5745,7 +5732,7 @@
       "accrediting": "Roehampton University",
       "provider": "West London Teaching School Alliance (Secondary)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -5780,7 +5767,7 @@
       "accrediting": "e-Qualitas",
       "provider": "Dunraven Training Partnership",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -6060,7 +6047,7 @@
       "accrediting": null,
       "provider": "Goldsmiths, University of London",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -6095,7 +6082,7 @@
       "accrediting": "Roehampton University",
       "provider": "Kingston School Direct",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -6130,7 +6117,7 @@
       "accrediting": null,
       "provider": "Roehampton University",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -6165,7 +6152,7 @@
       "accrediting": "e-Qualitas",
       "provider": "The Royal Borough Teaching School Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -6200,7 +6187,7 @@
       "accrediting": "e-Qualitas",
       "provider": "The St Marylebone CofE School",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -6235,7 +6222,7 @@
       "accrediting": null,
       "provider": "University of East London",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -7217,7 +7204,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7255,7 +7241,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7293,7 +7278,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7332,7 +7316,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7371,7 +7354,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -7408,7 +7390,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7447,7 +7428,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German with French)",
@@ -7484,7 +7464,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7522,7 +7501,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7561,7 +7539,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -7599,7 +7576,6 @@
         "French",
         "Italian",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with Italian)",
@@ -7636,7 +7612,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7674,7 +7649,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -7712,7 +7686,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German with French)",
@@ -7749,7 +7722,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -7787,7 +7759,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -13107,7 +13078,7 @@
       "provider": "Beal High School",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1NA/24CD",
@@ -13142,7 +13113,7 @@
       "provider": "Beal High School",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1NA/358N",
@@ -13177,7 +13148,7 @@
       "provider": "Kingston School Direct",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1FM/2FPT",
@@ -15601,7 +15572,7 @@
       "accrediting": null,
       "provider": "Bishop’s Stortford SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15636,7 +15607,7 @@
       "accrediting": "University of Southampton",
       "provider": "Bitterne Park Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15671,7 +15642,7 @@
       "accrediting": "The University of Reading",
       "provider": "Bracknell Forest Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art & Design",
@@ -15706,7 +15677,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "Dover Deal Sandwich Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art",
@@ -15741,7 +15712,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "East Kent Learning Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design - Dane Court Grammar School",
@@ -15776,7 +15747,7 @@
       "accrediting": "University of Brighton",
       "provider": "Eastbourne Area School Direct Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15811,7 +15782,7 @@
       "accrediting": "George Abbot SCITT",
       "provider": "George Abbot SCITT (School Direct)",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15846,7 +15817,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "Medway Teaching School Alliance (MTSA)",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15881,7 +15852,7 @@
       "accrediting": "University of Sussex",
       "provider": "Portsmouth TSA",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15916,7 +15887,7 @@
       "accrediting": "University of Southampton",
       "provider": "SUPA",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15951,7 +15922,7 @@
       "accrediting": null,
       "provider": "Teach SouthEast",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -15986,7 +15957,7 @@
       "accrediting": null,
       "provider": "Thamesmead SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16021,7 +15992,7 @@
       "accrediting": "The South Downs SCITT",
       "provider": "The South Downs School Direct Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16056,7 +16027,7 @@
       "accrediting": null,
       "provider": "The University of Reading",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16091,7 +16062,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "The Westlands School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16126,7 +16097,7 @@
       "accrediting": null,
       "provider": "University of Southampton",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16161,7 +16132,7 @@
       "accrediting": "University of Brighton",
       "provider": "Wealden Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16196,7 +16167,7 @@
       "accrediting": "Tes Institute",
       "provider": "West Essex School Direct Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16231,7 +16202,7 @@
       "accrediting": null,
       "provider": "Wildern Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -16266,7 +16237,7 @@
       "accrediting": "University of Winchester",
       "provider": "Winchester Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -17992,7 +17963,7 @@
       "accrediting": null,
       "provider": "Bishop’s Stortford SCITT",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -18027,7 +17998,7 @@
       "accrediting": "University of Winchester",
       "provider": "Bitterne Park Teaching School Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -18062,7 +18033,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "Medway Teaching School Alliance (MTSA)",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -18097,7 +18068,7 @@
       "accrediting": "Teach SouthEast",
       "provider": "Teach SouthEast",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Economics",
         "Secondary"
       ],
@@ -18133,7 +18104,7 @@
       "accrediting": null,
       "provider": "Teach SouthEast",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -18168,7 +18139,7 @@
       "accrediting": null,
       "provider": "The Grand Union Training Partnership",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -18203,7 +18174,7 @@
       "accrediting": "The Grand Union Training Partnership",
       "provider": "The Grand Union Training Partnership (Sponne School)",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -18238,7 +18209,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "The Westlands School",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -20209,7 +20180,7 @@
       "accrediting": "Bishop's Stortford SCITT",
       "provider": "Bishop’s Stortford SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20244,7 +20215,7 @@
       "accrediting": "University of Southampton",
       "provider": "Bitterne Park Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20279,7 +20250,7 @@
       "accrediting": "The University of Reading",
       "provider": "Burnham Teaching Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20314,7 +20285,7 @@
       "accrediting": "University of Sussex",
       "provider": "Eastbourne Area School Direct Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -20349,7 +20320,7 @@
       "accrediting": "University of Sussex",
       "provider": "Eastbourne Area School Direct Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -20384,7 +20355,7 @@
       "accrediting": "University of Winchester",
       "provider": "Gosport and Fareham MAT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20419,7 +20390,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "Medway Teaching School Alliance (MTSA)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20454,7 +20425,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "Medway Teaching School Alliance (MTSA)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20489,7 +20460,7 @@
       "accrediting": "University of East London",
       "provider": "Paradigm Trust: Old Ford Primary Academy (Primary) & Ipswich Academy (Secondary)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20524,7 +20495,7 @@
       "accrediting": "University of Portsmouth",
       "provider": "Portsmouth TSA",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20559,7 +20530,7 @@
       "accrediting": "University of Portsmouth",
       "provider": "Portsmouth TSA",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20594,7 +20565,7 @@
       "accrediting": "University of Southampton",
       "provider": "SUPA",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20629,7 +20600,7 @@
       "accrediting": "Teach SouthEast",
       "provider": "Teach SouthEast",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20664,7 +20635,7 @@
       "accrediting": null,
       "provider": "The Grand Union Training Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20699,7 +20670,7 @@
       "accrediting": "The Grand Union Training Partnership",
       "provider": "The Grand Union Training Partnership (Sponne School)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20734,7 +20705,7 @@
       "accrediting": null,
       "provider": "The South Downs SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20769,7 +20740,7 @@
       "accrediting": "The South Downs SCITT",
       "provider": "The South Downs School Direct Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20804,7 +20775,7 @@
       "accrediting": null,
       "provider": "The University of Reading",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -20839,7 +20810,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "The Westlands School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20874,7 +20845,7 @@
       "accrediting": "Canterbury Christ Church University",
       "provider": "The Westlands School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -20909,7 +20880,7 @@
       "accrediting": null,
       "provider": "University of Portsmouth",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -20944,7 +20915,7 @@
       "accrediting": null,
       "provider": "University of Southampton",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -20979,7 +20950,7 @@
       "accrediting": "University of Sussex",
       "provider": "Wealden Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -21014,7 +20985,7 @@
       "accrediting": "Tes Institute",
       "provider": "West Essex School Direct Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -21049,7 +21020,7 @@
       "accrediting": "Tes Institute",
       "provider": "West Essex School Direct Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -21084,7 +21055,7 @@
       "accrediting": null,
       "provider": "Wildern Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -21119,7 +21090,7 @@
       "accrediting": "University of Winchester",
       "provider": "Winchester Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -21154,7 +21125,7 @@
       "accrediting": "University of Southampton",
       "provider": "Bitterne Park Teaching School Alliance",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -21189,7 +21160,7 @@
       "accrediting": null,
       "provider": "University of Chichester",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -21330,7 +21301,6 @@
       "provider": "Medway Teaching School Alliance (MTSA)",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -21366,7 +21336,6 @@
       "provider": "Medway Teaching School Alliance (MTSA)",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -21402,7 +21371,6 @@
       "provider": "Paradigm Trust: Old Ford Primary Academy (Primary) & Ipswich Academy (Secondary)",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -21438,7 +21406,6 @@
       "provider": "Paradigm Trust: Old Ford Primary Academy (Primary) & Ipswich Academy (Secondary)",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -21474,7 +21441,6 @@
       "provider": "Paradigm Trust: Old Ford Primary Academy (Primary) & Ipswich Academy (Secondary)",
       "subjects": [
         "Design and technology",
-        "Design and technology (systems and control)",
         "Secondary"
       ],
       "name": "Design and Technology (Systems and Control)",
@@ -21510,7 +21476,6 @@
       "provider": "Paradigm Trust: Old Ford Primary Academy (Primary) & Ipswich Academy (Secondary)",
       "subjects": [
         "Design and technology",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology (Textiles)",
@@ -21651,10 +21616,6 @@
       "provider": "The University of Reading",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (product design)",
-        "Design and technology (systems and control)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology",
@@ -21900,7 +21861,6 @@
       "provider": "Winchester Teaching School Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -21936,7 +21896,6 @@
       "provider": "Winchester Teaching School Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -21971,7 +21930,7 @@
       "accrediting": "Bishop's Stortford SCITT",
       "provider": "Bishop’s Stortford SCITT",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22006,7 +21965,7 @@
       "accrediting": "University of Winchester",
       "provider": "Bitterne Park Teaching School Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22041,7 +22000,7 @@
       "accrediting": "The University of Reading",
       "provider": "Bracknell Forest Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22076,7 +22035,7 @@
       "accrediting": "The University of Reading",
       "provider": "Burnham Teaching Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22111,7 +22070,7 @@
       "accrediting": "The University of Reading",
       "provider": "Burnham Teaching Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22146,7 +22105,7 @@
       "accrediting": "The University of Reading",
       "provider": "Calthorpe Park Fleet",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22181,7 +22140,7 @@
       "accrediting": "University of Sussex",
       "provider": "Eastbourne Area School Direct Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22216,7 +22175,7 @@
       "accrediting": null,
       "provider": "George Abbot SCITT",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22251,7 +22210,7 @@
       "accrediting": "University of Winchester",
       "provider": "Gosport and Fareham MAT",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22286,7 +22245,7 @@
       "accrediting": "University of Sussex",
       "provider": "Portsmouth TSA",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22321,7 +22280,7 @@
       "accrediting": null,
       "provider": "Teach SouthEast",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22356,7 +22315,7 @@
       "accrediting": "The South Downs SCITT",
       "provider": "The South Downs School Direct Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22391,7 +22350,7 @@
       "accrediting": null,
       "provider": "The University of Reading",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22426,7 +22385,7 @@
       "accrediting": "University of Sussex",
       "provider": "Wealden Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22461,7 +22420,7 @@
       "accrediting": "Tes Institute",
       "provider": "West Essex School Direct Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -22496,7 +22455,7 @@
       "accrediting": "University of Winchester",
       "provider": "Winchester Teaching School Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -24703,7 +24662,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -24742,7 +24700,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Lanaguages (French and German)",
@@ -24780,7 +24737,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Lanaguages (French and German)",
@@ -24817,7 +24773,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -24855,7 +24810,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -24893,7 +24847,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -24966,7 +24919,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25003,7 +24955,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25041,7 +24992,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -25080,7 +25030,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -25117,7 +25066,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -25155,7 +25103,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25193,7 +25140,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German with French)",
@@ -25230,7 +25176,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25268,7 +25213,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French, German)",
@@ -25305,7 +25249,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages",
@@ -25342,7 +25285,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25379,7 +25321,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25416,7 +25357,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25453,7 +25393,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25491,7 +25430,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -25528,7 +25466,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -25566,7 +25503,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -25604,7 +25540,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -25643,7 +25578,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French and German)",
@@ -25681,7 +25615,6 @@
         "French",
         "Italian",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French and Italian)",
@@ -25718,8 +25651,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (asian)",
-        "Languages (european)",
         "Mandarin",
         "Secondary"
       ],
@@ -25757,7 +25688,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -25796,7 +25726,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German and French)",
@@ -25833,7 +25762,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -25871,7 +25799,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -25908,7 +25835,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -27275,7 +27201,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -27313,7 +27238,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -27351,7 +27275,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -27388,7 +27311,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages",
@@ -27425,7 +27347,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -27462,7 +27383,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -27499,7 +27419,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Lanaguages (German)",
@@ -27536,7 +27455,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -27573,7 +27491,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -27611,7 +27528,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -27648,7 +27564,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -29084,7 +28999,6 @@
       "provider": "Gosport and Fareham MAT",
       "subjects": [
         "Languages",
-        "Languages (asian)",
         "Mandarin",
         "Secondary"
       ],
@@ -29121,7 +29035,6 @@
       "provider": "Gosport and Fareham MAT",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -29403,7 +29316,6 @@
       "provider": "The Grand Union Training Partnership",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -29440,7 +29352,6 @@
       "provider": "The Grand Union Training Partnership (Sponne School)",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -29477,7 +29388,6 @@
       "provider": "The South Downs SCITT",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -29514,7 +29424,6 @@
       "provider": "The South Downs School Direct Partnership",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -29551,7 +29460,6 @@
       "provider": "The University of Reading",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -29658,7 +29566,6 @@
       "provider": "University of Southampton",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -29905,7 +29812,6 @@
       "provider": "Winchester Teaching School Alliance",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -35800,7 +35706,6 @@
       "accrediting": null,
       "provider": "North Tyneside SCITT",
       "subjects": [
-        "Lower primary",
         "Primary"
       ],
       "name": "Lower Primary",
@@ -36312,7 +36217,7 @@
       "accrediting": "Carmel Teacher Training (SCITT",
       "provider": "Carmel College A Catholic Academy",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36347,7 +36252,7 @@
       "accrediting": null,
       "provider": "Carmel Teacher Training Partnership (CTTP)",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36382,7 +36287,7 @@
       "accrediting": null,
       "provider": "Durham SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36417,7 +36322,7 @@
       "accrediting": "Carmel Teacher Training (SCITT",
       "provider": "Harton Technology School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36452,7 +36357,7 @@
       "accrediting": null,
       "provider": "Sacred Heart Newcastle SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36487,7 +36392,7 @@
       "accrediting": "Carmel Teacher Training Partnership (CTTP",
       "provider": "St Anthony’s Catholic Girls’ School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36522,7 +36427,7 @@
       "accrediting": null,
       "provider": "Stockton-on-Tees Teacher Training Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36557,7 +36462,7 @@
       "accrediting": "University of Northumbria at Newcastle",
       "provider": "Whitley Bay Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -36952,7 +36857,7 @@
       "accrediting": "Carmel Teacher Training (SCITT",
       "provider": "Harton Technology School Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -36987,7 +36892,7 @@
       "accrediting": null,
       "provider": "Sacred Heart Newcastle SCITT",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -37022,7 +36927,7 @@
       "accrediting": null,
       "provider": "University of Sunderland",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -37057,7 +36962,7 @@
       "accrediting": "University of Northumbria at Newcastle",
       "provider": "Whitley Bay Teaching School Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -37452,7 +37357,7 @@
       "accrediting": "Carmel Teacher Training (SCITT",
       "provider": "Carmel College A Catholic Academy",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -37487,7 +37392,7 @@
       "accrediting": null,
       "provider": "Carmel Teacher Training Partnership (CTTP)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -37522,7 +37427,7 @@
       "accrediting": "Carmel Teacher Training Partnership (CTTP",
       "provider": "Harton Technology School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -37557,7 +37462,7 @@
       "accrediting": null,
       "provider": "Sacred Heart Newcastle SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -37592,7 +37497,7 @@
       "accrediting": null,
       "provider": "Stockton-on-Tees Teacher Training Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -37627,7 +37532,7 @@
       "accrediting": null,
       "provider": "University of Sunderland",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -37662,7 +37567,7 @@
       "accrediting": "University of Northumbria at Newcastle",
       "provider": "Whitley Bay Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -37768,7 +37673,6 @@
       "provider": "Durham SCITT",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -37839,7 +37743,6 @@
       "provider": "St Anthony’s Catholic Girls’ School",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -37875,7 +37778,6 @@
       "provider": "St Anthony’s Catholic Girls’ School",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -38367,7 +38269,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -41003,7 +40904,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Primary"
       ],
       "name": "Primary Specialising in French",
@@ -41040,7 +40940,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Primary"
       ],
       "name": "Primary Specialising in German",
@@ -41076,7 +40975,6 @@
       "provider": "University of East Anglia",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Primary",
         "Spanish"
       ],
@@ -42994,7 +42892,7 @@
       "accrediting": "Alban Federation",
       "provider": "Alban Federation",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43029,7 +42927,7 @@
       "accrediting": null,
       "provider": "Chiltern Training Group",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art",
@@ -43064,7 +42962,7 @@
       "accrediting": "Suffolk and Norfolk Secondary SCITT",
       "provider": "Farlingaye & Kesgrave Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43099,7 +42997,7 @@
       "accrediting": "University of Hertfordshire",
       "provider": "Hitchin Boys’ School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43134,7 +43032,7 @@
       "accrediting": "University of Bedfordshire",
       "provider": "MCA Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43169,7 +43067,7 @@
       "accrediting": "University of Bedfordshire",
       "provider": "Newnham Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43204,7 +43102,7 @@
       "accrediting": "Suffolk and Norfolk Secondary SCITT",
       "provider": "Notre Dame High School Norwich",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43239,7 +43137,7 @@
       "accrediting": "Suffolk and Norfolk Secondary SCITT",
       "provider": "Notre Dame High School Norwich",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43274,7 +43172,7 @@
       "accrediting": "University of Hertfordshire",
       "provider": "Parmiter’s School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43309,7 +43207,7 @@
       "accrediting": "The Bedfordshire Schools Training Partnership",
       "provider": "The Bedfordshire Schools Training Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art",
@@ -43344,7 +43242,7 @@
       "accrediting": null,
       "provider": "The Pilgrim Partnership School Centred Teacher Training",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43379,7 +43277,7 @@
       "accrediting": null,
       "provider": "University of Hertfordshire",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -43954,7 +43852,7 @@
       "accrediting": null,
       "provider": "Chiltern Training Group",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -43989,7 +43887,7 @@
       "accrediting": "University of Hertfordshire",
       "provider": "Hitchin Boys’ School",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -44024,7 +43922,7 @@
       "accrediting": null,
       "provider": "The Pilgrim Partnership School Centred Teacher Training",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -44741,7 +44639,7 @@
       "accrediting": "Alban Federation",
       "provider": "Alban Federation",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -44776,7 +44674,7 @@
       "accrediting": null,
       "provider": "Billericay Educational Consortium",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -44811,7 +44709,7 @@
       "accrediting": null,
       "provider": "Billericay Educational Consortium",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing - QTS",
@@ -44846,7 +44744,7 @@
       "accrediting": null,
       "provider": "Chiltern Training Group",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -44881,7 +44779,7 @@
       "accrediting": "University of Hertfordshire",
       "provider": "Hitchin Boys’ School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -44916,7 +44814,7 @@
       "accrediting": "University of Hertfordshire",
       "provider": "Hitchin Boys’ School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -44951,7 +44849,7 @@
       "accrediting": "Suffolk and Norfolk Secondary SCITT",
       "provider": "Notre Dame High School Norwich",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -44986,7 +44884,7 @@
       "accrediting": "Suffolk and Norfolk Secondary SCITT",
       "provider": "Notre Dame High School Norwich",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -45021,7 +44919,7 @@
       "accrediting": null,
       "provider": "The Pilgrim Partnership School Centred Teacher Training",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -45056,7 +44954,7 @@
       "accrediting": null,
       "provider": "University of Hertfordshire",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -45091,7 +44989,7 @@
       "accrediting": null,
       "provider": "The Pilgrim Partnership School Centred Teacher Training",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -45162,7 +45060,6 @@
       "provider": "Billericay Educational Consortium",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology",
@@ -45268,7 +45165,6 @@
       "provider": "Hitchin Boys’ School",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -45409,9 +45305,6 @@
       "provider": "Teach East",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (product design)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology",
@@ -45481,7 +45374,7 @@
       "accrediting": null,
       "provider": "Billericay Educational Consortium",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -45516,7 +45409,7 @@
       "accrediting": null,
       "provider": "Billericay Educational Consortium",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama - QTS",
@@ -45551,7 +45444,7 @@
       "accrediting": "University of Hertfordshire",
       "provider": "Hitchin Boys’ School",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -45586,7 +45479,7 @@
       "accrediting": "University of Bedfordshire",
       "provider": "MCA Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -45621,7 +45514,7 @@
       "accrediting": "University of Bedfordshire",
       "provider": "Newnham Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -45656,7 +45549,7 @@
       "accrediting": "Suffolk and Norfolk Secondary SCITT",
       "provider": "Notre Dame High School Norwich",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -45691,7 +45584,7 @@
       "accrediting": null,
       "provider": "The Pilgrim Partnership School Centred Teacher Training",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -46289,8 +46182,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (asian)",
-        "Languages (european)",
         "Mandarin",
         "Secondary",
         "Spanish"
@@ -46330,7 +46221,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -46369,7 +46259,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -46445,7 +46334,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -46483,7 +46371,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -46522,7 +46409,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -46559,7 +46445,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -46597,7 +46482,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -46635,7 +46519,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German with French)",
@@ -47197,7 +47080,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -48038,7 +47920,6 @@
       "provider": "The Pilgrim Partnership School Centred Teacher Training",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages",
@@ -48074,7 +47955,6 @@
       "provider": "University of East Anglia",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -50407,7 +50287,7 @@
       "subjects": [
         "Science",
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "P57/3646",
@@ -50442,7 +50322,7 @@
       "provider": "Hitchin Boys’ School",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1QY/32SY",
@@ -50477,7 +50357,7 @@
       "provider": "Notre Dame High School Norwich",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1GT/28KT",
@@ -50511,7 +50391,7 @@
       "accrediting": null,
       "provider": "University of Exeter",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Primary"
       ],
       "name": "Upper Primary with Art",
@@ -51673,7 +51553,7 @@
       "accrediting": "Bath Spa University",
       "provider": "Backwell (North Somerset Teaching Alliance)",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51708,7 +51588,7 @@
       "accrediting": "Bournemouth Poole & Dorset Secondary Training Partnership",
       "provider": "Bournemouth Poole & Dorset Secondary Training Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51743,7 +51623,7 @@
       "accrediting": "University of the West of England, Bristol",
       "provider": "Concorde Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51778,7 +51658,7 @@
       "accrediting": "Bath Spa University",
       "provider": "Excalibur TSA",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51813,7 +51693,7 @@
       "accrediting": "Cornwall School Centred Initial Teacher Training (Cornwall SCITT",
       "provider": "Mounts Bay Academy",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51848,7 +51728,7 @@
       "accrediting": null,
       "provider": "North Wiltshire SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51883,7 +51763,7 @@
       "accrediting": "University of Exeter",
       "provider": "QE School, Wimborne Minster",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51918,7 +51798,7 @@
       "accrediting": "University of Southampton",
       "provider": "SUPA Salisbury",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51953,7 +51833,7 @@
       "accrediting": "Gloucestershire Initial Teacher Education Partnership (GITEP",
       "provider": "The Cotswold Teaching School Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -51988,7 +51868,7 @@
       "accrediting": null,
       "provider": "Wessex Schools Training Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art",
@@ -52023,7 +51903,7 @@
       "accrediting": "Bath Spa University",
       "provider": "West Wilts Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art & Design",
@@ -53210,7 +53090,7 @@
       "accrediting": "Bournemouth Poole & Dorset Secondary Training Partnership",
       "provider": "Bournemouth Poole & Dorset Secondary Training Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -53245,7 +53125,7 @@
       "accrediting": "University of the West of England, Bristol",
       "provider": "Concorde Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -53280,7 +53160,7 @@
       "accrediting": "Bath Spa University",
       "provider": "Excalibur TSA",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -53315,7 +53195,7 @@
       "accrediting": "University of Southampton",
       "provider": "SUPA Salisbury",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -53350,7 +53230,7 @@
       "accrediting": "Bath Spa University",
       "provider": "West Wilts Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -53385,7 +53265,7 @@
       "accrediting": null,
       "provider": "Bournemouth Poole & Dorset Secondary Training Partnership",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -53420,7 +53300,7 @@
       "accrediting": "University of Exeter",
       "provider": "QE School, Wimborne Minster",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -53561,7 +53441,6 @@
       "provider": "QE School, Wimborne Minster",
       "subjects": [
         "Design and technology",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology (Textiles)",
@@ -53666,7 +53545,7 @@
       "accrediting": "Bath Spa University",
       "provider": "Excalibur TSA",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -53701,7 +53580,7 @@
       "accrediting": "University of Exeter",
       "provider": "QE School, Wimborne Minster",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -53736,7 +53615,7 @@
       "accrediting": "Bath Spa University",
       "provider": "West Wilts Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -54229,7 +54108,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French and German)",
@@ -54267,7 +54145,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -54305,7 +54182,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -54343,7 +54219,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -54418,7 +54293,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -54455,7 +54329,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -54493,7 +54366,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -54531,7 +54403,6 @@
         "French",
         "Italian",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with Italian)",
@@ -54568,7 +54439,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -54606,7 +54476,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -54644,7 +54513,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German with French)",
@@ -54681,7 +54549,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -54719,7 +54586,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -55036,7 +54902,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -55073,7 +54938,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -55111,7 +54975,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -55149,7 +55012,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -55605,7 +55467,6 @@
       "provider": "QE School, Wimborne Minster",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -55712,7 +55573,6 @@
       "provider": "University of Exeter",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -57408,7 +57268,6 @@
       "accrediting": null,
       "provider": "University of Leicester",
       "subjects": [
-        "Lower primary",
         "Primary"
       ],
       "name": "Lower Primary (3-7)",
@@ -57886,7 +57745,7 @@
       "accrediting": null,
       "provider": "Bishop Grosseteste University",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -57921,7 +57780,7 @@
       "accrediting": "Bluecoat SCITT Alliance Nottingham",
       "provider": "Bluecoat Academy",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -57956,7 +57815,7 @@
       "accrediting": "University of Derby",
       "provider": "Forest Way Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -57991,7 +57850,7 @@
       "accrediting": "Nottinghamshire TORCH SCITT",
       "provider": "Nottinghamshire Torch SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -58026,7 +57885,7 @@
       "accrediting": "University of Derby",
       "provider": "The Northworthy Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -58529,7 +58388,7 @@
       "accrediting": null,
       "provider": "Bishop Grosseteste University",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -58564,7 +58423,7 @@
       "accrediting": "Bluecoat SCITT Alliance Nottingham",
       "provider": "Bluecoat Academy",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -58599,7 +58458,7 @@
       "accrediting": "University of Derby",
       "provider": "Forest Way Teaching School Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -58634,7 +58493,7 @@
       "accrediting": null,
       "provider": "Nottingham Trent University",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Education",
@@ -58669,7 +58528,7 @@
       "accrediting": "University of Derby",
       "provider": "The Northworthy Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -59134,7 +58993,7 @@
       "accrediting": null,
       "provider": "Bishop Grosseteste University",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -59169,7 +59028,7 @@
       "accrediting": "Bluecoat SCITT Alliance Nottingham",
       "provider": "Bluecoat Academy",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -59204,7 +59063,7 @@
       "accrediting": "University of Derby",
       "provider": "Forest Way Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -59239,7 +59098,7 @@
       "accrediting": null,
       "provider": "Nottingham Trent University",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -59274,7 +59133,7 @@
       "accrediting": "University of Derby",
       "provider": "The Northworthy Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -59309,7 +59168,7 @@
       "accrediting": null,
       "provider": "Bishop Grosseteste University",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -59344,7 +59203,7 @@
       "accrediting": "University of Derby",
       "provider": "The Northworthy Alliance",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -59485,7 +59344,6 @@
       "provider": "The Northworthy Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -59521,7 +59379,6 @@
       "provider": "The Northworthy Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (systems and control)",
         "Secondary"
       ],
       "name": "Design and Technology (Systems and Control)",
@@ -59557,7 +59414,6 @@
       "provider": "The Northworthy Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology (Textiles)",
@@ -59592,7 +59448,7 @@
       "accrediting": null,
       "provider": "Bishop Grosseteste University",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -59627,7 +59483,7 @@
       "accrediting": "University of Derby",
       "provider": "Forest Way Teaching School Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -59662,7 +59518,7 @@
       "accrediting": "University of Derby",
       "provider": "The Northworthy Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -60084,7 +59940,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -60158,7 +60013,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -60197,7 +60051,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -60235,7 +60088,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -60273,7 +60125,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -60310,7 +60161,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -60348,7 +60198,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -60386,7 +60235,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -60423,7 +60271,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -60461,7 +60308,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -60498,7 +60344,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -60816,7 +60661,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -60889,7 +60733,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -61240,7 +61083,6 @@
       "provider": "Bishop Grosseteste University",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -61277,7 +61119,6 @@
       "provider": "Bishop Grosseteste University",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -61454,7 +61295,6 @@
       "provider": "The Northworthy Alliance",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -63080,7 +62920,7 @@
       "provider": "Bluecoat Academy",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "12W/2989",
@@ -63115,7 +62955,7 @@
       "provider": "North Charnwood Learning Partnership",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1KB/26TZ",
@@ -63184,7 +63024,7 @@
       "provider": "The Beauchamp Lionheart Training Partnership",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1O8/35PF",
@@ -63219,7 +63059,7 @@
       "provider": "University of Leicester",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Science",
       "slug": "L34/L35X",
@@ -64587,7 +64427,7 @@
       "accrediting": "Birmingham City University",
       "provider": "Arthur Terry School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64622,7 +64462,7 @@
       "accrediting": "The University of Warwick",
       "provider": "CAT Teaching School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64657,7 +64497,7 @@
       "accrediting": "The John Taylor SCITT",
       "provider": "National Forest Teaching School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art And Design",
@@ -64692,7 +64532,7 @@
       "accrediting": "South Birmingham SCITT",
       "provider": "Ninestiles TSA",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64727,7 +64567,7 @@
       "accrediting": "The University of Warwick",
       "provider": "Shireland Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64762,7 +64602,7 @@
       "accrediting": "Haybridge Alliance SCITT",
       "provider": "South Bromsgrove Community High School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64797,7 +64637,7 @@
       "accrediting": "The University of Warwick",
       "provider": "St. Peter’s Solihull Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64832,7 +64672,7 @@
       "accrediting": null,
       "provider": "Staffordshire University",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64867,7 +64707,7 @@
       "accrediting": null,
       "provider": "Stourport SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art & Design",
@@ -64901,7 +64741,7 @@
       "accrediting": "University of Chester",
       "provider": "The Priory School A Business And Enterprise College",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64936,7 +64776,7 @@
       "accrediting": null,
       "provider": "The University of Warwick",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -64971,7 +64811,7 @@
       "accrediting": "University of Wolverhampton",
       "provider": "Wood Green Academy",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -65006,7 +64846,7 @@
       "accrediting": "The University of Warwick",
       "provider": "Woodrush Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -65868,7 +65708,7 @@
       "accrediting": null,
       "provider": "Prince Henry’s High School & South Worcestershire SCITT",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -65903,7 +65743,7 @@
       "accrediting": "University of Worcester",
       "provider": "South Bromsgrove Community High School",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -65938,7 +65778,7 @@
       "accrediting": null,
       "provider": "Staffordshire University",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business",
@@ -65973,7 +65813,7 @@
       "accrediting": null,
       "provider": "Stourport SCITT",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -66007,7 +65847,7 @@
       "accrediting": "University of Worcester",
       "provider": "Woodrush Teaching School Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Buisness Studies",
@@ -66832,7 +66672,7 @@
       "accrediting": "Birmingham City University",
       "provider": "Arthur Terry School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -66867,7 +66707,7 @@
       "accrediting": "The University of Warwick",
       "provider": "CAT Teaching School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -66902,7 +66742,7 @@
       "accrediting": "The University of Warwick",
       "provider": "CAT Teaching School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -66937,7 +66777,7 @@
       "accrediting": "South Birmingham SCITT",
       "provider": "Ninestiles TSA",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -66972,7 +66812,7 @@
       "accrediting": null,
       "provider": "Prince Henry’s High School & South Worcestershire SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -67007,7 +66847,7 @@
       "accrediting": "The University of Warwick",
       "provider": "Shireland Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67042,7 +66882,7 @@
       "accrediting": "Newman University",
       "provider": "Shireland Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67077,7 +66917,7 @@
       "accrediting": "University of Worcester",
       "provider": "Shires Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67112,7 +66952,7 @@
       "accrediting": "University of Worcester",
       "provider": "South Bromsgrove Community High School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67147,7 +66987,7 @@
       "accrediting": "Haybridge Alliance SCITT",
       "provider": "South Bromsgrove Community High School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67182,7 +67022,7 @@
       "accrediting": null,
       "provider": "Staffordshire University",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -67217,7 +67057,7 @@
       "accrediting": null,
       "provider": "Stourport SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -67251,7 +67091,7 @@
       "accrediting": "University of Chester",
       "provider": "The Priory School A Business And Enterprise College",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67286,7 +67126,7 @@
       "accrediting": null,
       "provider": "The University of Warwick",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -67321,7 +67161,7 @@
       "accrediting": null,
       "provider": "Titan Partnership Ltd",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67356,7 +67196,7 @@
       "accrediting": null,
       "provider": "University of Worcester",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -67391,7 +67231,7 @@
       "accrediting": "University of Wolverhampton",
       "provider": "Wood Green Academy",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67426,7 +67266,7 @@
       "accrediting": "University of Worcester",
       "provider": "Woodrush Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67461,7 +67301,7 @@
       "accrediting": "The University of Warwick",
       "provider": "Woodrush Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -67496,7 +67336,7 @@
       "accrediting": "Newman University",
       "provider": "Shireland Teaching School Alliance",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -67707,7 +67547,6 @@
       "provider": "Stourport SCITT",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Materials and Graphics)",
@@ -67777,9 +67616,6 @@
       "provider": "The Priory School A Business And Enterprise College",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (product design)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology (Food, Textiles and PD)",
@@ -67850,8 +67686,6 @@
       "provider": "University of Worcester",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology (Food and Textiles)",
@@ -67887,9 +67721,6 @@
       "provider": "Woodrush Teaching School Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (product design)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design Technology (Food, Textiles, Product Design)",
@@ -67925,8 +67756,6 @@
       "provider": "Woodrush Teaching School Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology (Food or Textiles)",
@@ -67961,7 +67790,7 @@
       "accrediting": "The Arthur Terry School SCITT",
       "provider": "Arthur Terry School",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -67996,7 +67825,7 @@
       "accrediting": "The University of Warwick",
       "provider": "CAT Teaching School",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -68031,7 +67860,7 @@
       "accrediting": "South Birmingham SCITT",
       "provider": "Ninestiles TSA",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -68066,7 +67895,7 @@
       "accrediting": null,
       "provider": "The University of Warwick",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -68101,7 +67930,7 @@
       "accrediting": "University of Wolverhampton",
       "provider": "Wood Green Academy",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -68136,7 +67965,7 @@
       "accrediting": "The University of Warwick",
       "provider": "Woodrush Teaching School Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -69082,7 +68911,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -69121,7 +68949,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages",
@@ -69159,7 +68986,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French and German)",
@@ -69196,7 +69022,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -69234,7 +69059,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -69272,7 +69096,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -69310,7 +69133,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -69348,7 +69170,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -69386,7 +69207,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -69424,7 +69244,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -69463,7 +69282,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German with French)",
@@ -69500,7 +69318,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -69538,7 +69355,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -69575,7 +69391,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -70277,7 +70092,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -71082,7 +70896,6 @@
       "provider": "Shireland Teaching School Alliance",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages",
@@ -71294,7 +71107,6 @@
       "provider": "Wood Green Academy",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -74146,7 +73958,7 @@
       "provider": "Wood Green Academy",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1O7/2YL3",
@@ -75860,7 +75672,7 @@
       "accrediting": null,
       "provider": "Altius Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -75895,7 +75707,7 @@
       "accrediting": "Staffordshire University",
       "provider": "Ashton Teacher Training Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -75930,7 +75742,7 @@
       "accrediting": null,
       "provider": "Associated Merseyside Partnership SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -75965,7 +75777,7 @@
       "accrediting": "University of Cumbria",
       "provider": "Bishop Rawstorne School Direct",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76000,7 +75812,7 @@
       "accrediting": "Endeavour Learning SCITT",
       "provider": "Bridgewater High School",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76035,7 +75847,7 @@
       "accrediting": "Buile Hill VA College SCITT",
       "provider": "Buile Hill Visual Arts College SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art & Design",
@@ -76070,7 +75882,7 @@
       "accrediting": "University of Cumbria",
       "provider": "Catholic Teaching Alliance [North]",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76105,7 +75917,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Cheshire Vale Teaching School Alliance School Direct",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76140,7 +75952,7 @@
       "accrediting": "Associated Merseyside Partnership SCITT",
       "provider": "Deyes High",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76175,7 +75987,7 @@
       "accrediting": null,
       "provider": "Liverpool John Moores University",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76210,7 +76022,7 @@
       "accrediting": "Liverpool Hope University",
       "provider": "Saint Patrick’s Greater Manchester Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76245,7 +76057,7 @@
       "accrediting": "The Manchester Metropolitan University",
       "provider": "St James’s Teaching Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76280,7 +76092,7 @@
       "accrediting": "The Manchester Metropolitan University",
       "provider": "Teach Manchester",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76315,7 +76127,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Teacher Training @ Knutsford",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76350,7 +76162,7 @@
       "accrediting": null,
       "provider": "The Manchester Metropolitan University",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76385,7 +76197,7 @@
       "accrediting": "Cumbria Primary Teacher Training",
       "provider": "West Cumbria and North Lakes School Direct",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -76420,7 +76232,7 @@
       "accrediting": "Liverpool Hope University",
       "provider": "Wigan and West Lancashire Catholic School Direct (St. Edmund Arrowsmith)",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -77247,7 +77059,7 @@
       "accrediting": null,
       "provider": "Associated Merseyside Partnership SCITT",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -77282,7 +77094,7 @@
       "accrediting": "Endeavour Learning SCITT",
       "provider": "Bridgewater High School",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -77317,7 +77129,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Cheshire Vale Teaching School Alliance School Direct",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -77352,7 +77164,7 @@
       "accrediting": null,
       "provider": "The Manchester Metropolitan University",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business",
@@ -77387,7 +77199,7 @@
       "accrediting": null,
       "provider": "The University of Manchester",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Education",
@@ -77422,7 +77234,7 @@
       "accrediting": null,
       "provider": "The University of Manchester",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Economics",
         "Secondary"
       ],
@@ -78213,7 +78025,7 @@
       "accrediting": null,
       "provider": "Altius Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78248,7 +78060,7 @@
       "accrediting": null,
       "provider": "Associated Merseyside Partnership SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78283,7 +78095,7 @@
       "accrediting": "University of Cumbria",
       "provider": "Bishop Rawstorne School Direct",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78318,7 +78130,7 @@
       "accrediting": "Endeavour Learning SCITT",
       "provider": "Bridgewater High School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78353,7 +78165,7 @@
       "accrediting": "University of Cumbria",
       "provider": "Catholic Teaching Alliance [North]",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78388,7 +78200,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Cheshire Vale Teaching School Alliance School Direct",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78423,7 +78235,7 @@
       "accrediting": "Associated Merseyside Partnership SCITT",
       "provider": "Deyes High",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78458,8 +78270,8 @@
       "accrediting": null,
       "provider": "Edge Hill University",
       "subjects": [
-        "Computer studies",
-        "Information technology",
+        "Computing",
+        "Information communication technology",
         "Secondary"
       ],
       "name": "Computer Science and Information Technology",
@@ -78494,8 +78306,8 @@
       "accrediting": null,
       "provider": "Liverpool John Moores University",
       "subjects": [
-        "Computer studies",
-        "Information technology",
+        "Computing",
+        "Information communication technology",
         "Secondary"
       ],
       "name": "Computer Science and Information Technology",
@@ -78530,7 +78342,7 @@
       "accrediting": "Edge Hill University",
       "provider": "North Sefton Coastal Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78565,7 +78377,7 @@
       "accrediting": "Liverpool Hope University",
       "provider": "Saint Patrick’s Greater Manchester Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78600,7 +78412,7 @@
       "accrediting": "The Manchester Metropolitan University",
       "provider": "St James’s Teaching Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78635,7 +78447,7 @@
       "accrediting": "The Manchester Metropolitan University",
       "provider": "Teach Manchester",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78670,7 +78482,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Teacher Training @ Knutsford",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78705,9 +78517,8 @@
       "accrediting": null,
       "provider": "The Manchester Metropolitan University",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Information communication technology",
-        "Information technology",
         "Secondary"
       ],
       "name": "Computing with ICT",
@@ -78742,7 +78553,7 @@
       "accrediting": "Cumbria Primary Teacher Training",
       "provider": "West Cumbria and North Lakes School Direct",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78777,7 +78588,7 @@
       "accrediting": "Liverpool Hope University",
       "provider": "Wigan and West Lancashire Catholic School Direct (St. Edmund Arrowsmith)",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -78812,7 +78623,7 @@
       "accrediting": null,
       "provider": "Associated Merseyside Partnership SCITT",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -78847,7 +78658,7 @@
       "accrediting": "Associated Merseyside Partnership SCITT",
       "provider": "Deyes High",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -78882,7 +78693,7 @@
       "accrediting": null,
       "provider": "Liverpool John Moores University",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Performing Arts (Dance)",
@@ -78917,7 +78728,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Teacher Training @ Knutsford",
       "subjects": [
-        "Dance and performance",
+        "Dance",
         "Secondary"
       ],
       "name": "Dance",
@@ -78988,7 +78799,6 @@
       "provider": "Altius Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design & Technology (Food)",
@@ -79024,9 +78834,6 @@
       "provider": "Associated Merseyside Partnership SCITT",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (product design)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology",
@@ -79062,7 +78869,6 @@
       "provider": "Associated Merseyside Partnership SCITT",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Food",
@@ -79238,7 +79044,6 @@
       "provider": "Deyes High",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -79309,7 +79114,6 @@
       "provider": "St James’s Teaching Partnership",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -79345,7 +79149,6 @@
       "provider": "St James’s Teaching Partnership",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -79381,8 +79184,6 @@
       "provider": "The Manchester Metropolitan University",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
-        "Design and technology (systems and control)",
         "Secondary"
       ],
       "name": "Design and Technology (Resistent Materials)",
@@ -79452,7 +79253,7 @@
       "accrediting": null,
       "provider": "Altius Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79487,7 +79288,7 @@
       "accrediting": "Staffordshire University",
       "provider": "Ashton Teacher Training Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79522,7 +79323,7 @@
       "accrediting": null,
       "provider": "Associated Merseyside Partnership SCITT",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79557,7 +79358,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Cheshire Vale Teaching School Alliance School Direct",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79592,7 +79393,7 @@
       "accrediting": "Associated Merseyside Partnership SCITT",
       "provider": "Deyes High",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79627,7 +79428,7 @@
       "accrediting": null,
       "provider": "Liverpool John Moores University",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Performing Arts (Drama)",
@@ -79662,7 +79463,7 @@
       "accrediting": "Liverpool Hope University",
       "provider": "Saint Patrick’s Greater Manchester Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79697,7 +79498,7 @@
       "accrediting": "The Manchester Metropolitan University",
       "provider": "St James’s Teaching Partnership",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79732,7 +79533,7 @@
       "accrediting": "Liverpool John Moores University",
       "provider": "Teacher Training @ Knutsford",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79767,7 +79568,7 @@
       "accrediting": null,
       "provider": "The Manchester Metropolitan University",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -79802,7 +79603,7 @@
       "accrediting": "Liverpool Hope University",
       "provider": "Wigan and West Lancashire Catholic School Direct (St. Edmund Arrowsmith)",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -80680,7 +80481,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -80717,7 +80517,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -80755,7 +80554,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -80794,7 +80592,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -80832,7 +80629,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -80869,7 +80665,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -80906,7 +80701,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages",
@@ -80943,7 +80737,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -80981,7 +80774,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -81055,7 +80847,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -81898,7 +81689,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -81935,7 +81725,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -81972,7 +81761,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages",
@@ -82813,7 +82601,6 @@
       "provider": "Altius Alliance",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -83025,7 +82812,6 @@
       "provider": "St James’s Teaching Partnership",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -83097,7 +82883,6 @@
       "provider": "The Manchester Metropolitan University",
       "subjects": [
         "Languages",
-        "Languages (asian)",
         "Mandarin",
         "Secondary"
       ],
@@ -83134,7 +82919,6 @@
       "provider": "The Manchester Metropolitan University",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -83171,7 +82955,6 @@
       "provider": "The University of Manchester",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -86629,7 +86412,7 @@
       "provider": "The Manchester Metropolitan University",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Science",
       "slug": "M40/L35X",
@@ -87792,7 +87575,7 @@
       "accrediting": "Sheffield Hallam University",
       "provider": "Barnsley Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -87827,7 +87610,7 @@
       "accrediting": "Leeds Trinity University",
       "provider": "Diocese of Leeds BKCAT Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -87862,7 +87645,7 @@
       "accrediting": "Leeds Trinity University",
       "provider": "Dixons Teacher Training",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -87897,7 +87680,7 @@
       "accrediting": null,
       "provider": "Kirklees and Calderdale SCITT",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -87932,7 +87715,7 @@
       "accrediting": "Sheffield Hallam University",
       "provider": "Learners First Schools Partnership",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -87967,7 +87750,7 @@
       "accrediting": "Sheffield Hallam University",
       "provider": "Outwood Institute of Education - South",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -88002,7 +87785,7 @@
       "accrediting": null,
       "provider": "Sheffield Hallam University",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -88037,7 +87820,7 @@
       "accrediting": "The University of Huddersfield",
       "provider": "Trinity TSA",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -88072,7 +87855,7 @@
       "accrediting": "Kirklees and Calderdale SCITT",
       "provider": "Yorkshire Inclusive Teaching School Alliance",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -88107,7 +87890,7 @@
       "accrediting": null,
       "provider": "Yorkshire Wolds Teacher Training",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -88142,7 +87925,7 @@
       "accrediting": null,
       "provider": "Yorkshire and Humber Teacher Training",
       "subjects": [
-        "Art / art & design",
+        "Art and design",
         "Secondary"
       ],
       "name": "Art and Design",
@@ -88860,7 +88643,7 @@
       "accrediting": "Leeds Trinity University",
       "provider": "Diocese of Leeds BKCAT Alliance",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -88895,7 +88678,7 @@
       "accrediting": "Leeds Trinity University",
       "provider": "Dixons Teacher Training",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -88930,7 +88713,7 @@
       "accrediting": null,
       "provider": "Kirklees and Calderdale SCITT",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Studies",
@@ -88965,7 +88748,7 @@
       "accrediting": null,
       "provider": "Sheffield Hallam University",
       "subjects": [
-        "Business education",
+        "Business studies",
         "Secondary"
       ],
       "name": "Business Education",
@@ -89610,7 +89393,7 @@
       "accrediting": null,
       "provider": "AA Teamworks West Yorkshire SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89644,7 +89427,7 @@
       "accrediting": "Leeds Trinity University",
       "provider": "Diocese of Leeds BKCAT Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89679,7 +89462,7 @@
       "accrediting": "Leeds Trinity University",
       "provider": "Dixons Teacher Training",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89714,7 +89497,7 @@
       "accrediting": null,
       "provider": "Kirklees and Calderdale SCITT",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89749,7 +89532,7 @@
       "accrediting": "Sheffield Hallam University",
       "provider": "Learners First Schools Partnership",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89784,7 +89567,7 @@
       "accrediting": "Sheffield Hallam University",
       "provider": "Outwood Institute of Education - South",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89819,7 +89602,7 @@
       "accrediting": "Durham SCITT",
       "provider": "Richmond School",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89854,7 +89637,7 @@
       "accrediting": null,
       "provider": "Sheffield Hallam University",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computer Science",
@@ -89889,7 +89672,7 @@
       "accrediting": "Kirklees and Calderdale SCITT",
       "provider": "Yorkshire Inclusive Teaching School Alliance",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89924,7 +89707,7 @@
       "accrediting": null,
       "provider": "Yorkshire Wolds Teacher Training",
       "subjects": [
-        "Computer studies",
+        "Computing",
         "Secondary"
       ],
       "name": "Computing",
@@ -89995,7 +89778,6 @@
       "provider": "Dixons Teacher Training",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -90066,7 +89848,6 @@
       "provider": "Learners First Schools Partnership",
       "subjects": [
         "Design and technology",
-        "Design and technology (product design)",
         "Secondary"
       ],
       "name": "Design and Technology (Product Design)",
@@ -90172,7 +89953,6 @@
       "provider": "Sheffield Hallam University",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -90208,7 +89988,6 @@
       "provider": "Sheffield Hallam University",
       "subjects": [
         "Design and technology",
-        "Engineering",
         "Secondary"
       ],
       "name": "Engineering",
@@ -90314,7 +90093,6 @@
       "provider": "The Sheffield SCITT",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Food",
@@ -90350,10 +90128,6 @@
       "provider": "Yorkshire Inclusive Teaching School Alliance",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
-        "Design and technology (product design)",
-        "Design and technology (systems and control)",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design And Technology",
@@ -90424,7 +90198,6 @@
       "provider": "Yorkshire Wolds Teacher Training",
       "subjects": [
         "Design and technology",
-        "Design and technology (food)",
         "Secondary"
       ],
       "name": "Design and Technology (Food)",
@@ -90460,7 +90233,6 @@
       "provider": "Yorkshire Wolds Teacher Training",
       "subjects": [
         "Design and technology",
-        "Design and technology (textiles)",
         "Secondary"
       ],
       "name": "Design and Technology (Textiles)",
@@ -90495,7 +90267,7 @@
       "accrediting": "Sheffield Hallam University",
       "provider": "Barnsley Teaching School Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -90530,7 +90302,7 @@
       "accrediting": "Leeds Trinity University",
       "provider": "Diocese of Leeds BKCAT Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -90565,7 +90337,7 @@
       "accrediting": null,
       "provider": "Kirklees and Calderdale SCITT",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -90600,7 +90372,7 @@
       "accrediting": "Sheffield Hallam University",
       "provider": "Outwood Institute of Education - South",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -90635,7 +90407,7 @@
       "accrediting": "Kirklees and Calderdale SCITT",
       "provider": "Yorkshire Inclusive Teaching School Alliance",
       "subjects": [
-        "Drama and theatre studies",
+        "Drama",
         "Secondary"
       ],
       "name": "Drama",
@@ -90670,7 +90442,7 @@
       "accrediting": "Durham SCITT",
       "provider": "Richmond School",
       "subjects": [
-        "Engineering",
+        "Design and technology",
         "Secondary"
       ],
       "name": "Design & Technology (Product Design/Engineering)",
@@ -91232,7 +91004,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -91270,7 +91041,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -91308,7 +91078,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -91347,7 +91116,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French with German)",
@@ -91384,7 +91152,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -91423,7 +91190,6 @@
         "French",
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German with French)",
@@ -91497,7 +91263,6 @@
       "subjects": [
         "French",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (French)",
@@ -91532,8 +91297,7 @@
       "accrediting": null,
       "provider": "Sheffield Hallam University",
       "subjects": [
-        "Further education",
-        "Post-compulsory"
+        "Further education"
       ],
       "name": "Post-16 and Further Education",
       "slug": "S21/XQ33",
@@ -92058,7 +91822,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -92096,7 +91859,6 @@
       "subjects": [
         "German",
         "Languages",
-        "Languages (european)",
         "Secondary"
       ],
       "name": "Modern Languages (German)",
@@ -92690,7 +92452,6 @@
       "provider": "Dixons Teacher Training",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -92797,7 +92558,6 @@
       "provider": "Yorkshire Wolds Teacher Training",
       "subjects": [
         "Languages",
-        "Languages (european)",
         "Secondary",
         "Spanish"
       ],
@@ -94841,7 +94601,7 @@
       "provider": "Diocese of Leeds BKCAT Alliance",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1ZX/2P2K",
@@ -94876,7 +94636,7 @@
       "provider": "Dixons Teacher Training",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1EP/2JGZ",
@@ -94911,7 +94671,7 @@
       "provider": "Learners First Schools Partnership",
       "subjects": [
         "Secondary",
-        "Social science"
+        "Social sciences"
       ],
       "name": "Social Sciences",
       "slug": "1GX/2G34",
