@@ -145,12 +145,12 @@ function subjectGroups(req) {
         text = 'Scholarships and bursaries up to £22,000 available with further early career payments up to £10,000.';
       }
 
-      if (skeSubjects.includes(subject) || subject.includes('Design and technology')) {
-        if (text) {
-          text = text + "<br />"
-        }
-        text = text + "Subject knowledge enhancement (SKE) courses offered."
-      }
+      // if (skeSubjects.includes(subject) || subject.includes('Design and technology')) {
+      //   if (text) {
+      //     text = text + "<br />"
+      //   }
+      //   text = text + "Subject knowledge enhancement (SKE) courses offered."
+      // }
       // TODO: Primary maths too (6,000)
       subjects.push({name: subject, text: text ? '<span style="display: inline-block; margin-top: 5px; margin-bottom: -10px">' + text + '</span>' : null});
     });
