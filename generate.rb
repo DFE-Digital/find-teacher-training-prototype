@@ -37,37 +37,29 @@ prototype_data['subjects'] = data.map { |c| c['subjects'].map {|s| s.downcase.ca
 prototype_data['groupedSubjects'] = {
   "Primary": [
     "Primary",
-    "Lower primary",
-    "Upper primary",
     "Early years"
   ],
   "Secondary": [
-    "Art / art & design",
+    "Art and design",
     "Biology",
-    "Business education",
+    "Business studies",
     "Chemistry",
+    "Citizenship",
     "Classics",
     "Communication and media studies",
-    "Computer studies",
-    "Dance and performance",
+    "Computing",
+    "Dance",
     "Design and technology",
-    "Design and technology (food)",
-    "Design and technology (product design)",
-    "Design and technology (systems and control)",
-    "Design and technology (textiles)",
     "Drama and theatre studies",
     "Economics",
     "Engineering",
     "English",
-    "English language",
-    "English literature",
     "Geography",
     "Greek",
     "Health and social care",
     "History",
     "Humanities",
     "Information communication technology",
-    "Information technology",
     "Latin",
     "Mathematics",
     "Music",
@@ -79,12 +71,10 @@ prototype_data['groupedSubjects'] = {
     "Psychology",
     "Religious education",
     "Science",
-    "Social science"
+    "Social sciences"
   ],
   "Modern languages": [
     "Languages",
-    "Languages (asian)",
-    "Languages (european)",
     "Arabic",
     "English as a second or other language",
     "French",
@@ -97,10 +87,9 @@ prototype_data['groupedSubjects'] = {
     "Urdu",
     "Welsh"
   ],
-  "Other subjects": [
-    "Citizenship",
+  "Further education": [
     # "Literacy", # Only University of Greenwich
-    "Post-compulsory",
+    "Further education",
     # "Middle years", No courses
     # "Numeracy", Only University of Greenwich
     "Special educational needs"
@@ -131,13 +120,38 @@ prototype_data['courses'] = sample.map do |c|
     end
   end
 
-  subjects = c['subjects'].map {|s| s.downcase.capitalize }
+  subjects = c['subjects'].map do |s|
+    subject = s.downcase.capitalize
+
+    replacements = [
+      [/\s\([^)]+\)/, ''], # Remove any text in brackets
+      ["Computer studies", "Computing"],
+      ["English literature", "English"],
+      ["English language", "English"],
+      ["Art / art & design", "Art and design"],
+      ["Business education", "Business studies"],
+      ["Engineering", "Design and technology"],
+      ["Dance and performance", "Dance"],
+      ["Drama and theatre studies", "Drama"],
+      ["Social science", "Social sciences"],
+      ["Lower primary", "Primary"],
+      ["Upper primary", "Primary"],
+      ["Chinese", "Mandarin"],
+      ["Literacy", "Further education"],
+      ["Numeracy", "Further education"],
+      ["Post-compulsory", "Further education"],
+      ["Information technology", "Information communication technology"]
+    ]
+    replacements.each {|replacement| subject.gsub!(replacement[0], replacement[1])}
+
+    subject
+  end
 
   course = {
     locationType: c['route'] == 'Higher Education programme' ? 'University' : 'School',
     accrediting: c['accrediting'],
     provider: c['provider'].gsub("'", "’"),
-    subjects: subjects,
+    subjects: subjects.uniq,
     name: c['name'],
     slug: "#{c['providerCode']}/#{c['programmeCode']}",
     providerCode: c['providerCode'],
