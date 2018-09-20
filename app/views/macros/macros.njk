@@ -71,7 +71,7 @@
         <label for="radio-part-{{ name }}-{{ loop.index }}">
           <span {% if field.text %}class="bold"{% endif %}>{{ field.name }}</span>
           {% if field.text %}
-            {{ field.text | safe }}
+            <br />{{ field.text | safe }}
           {% endif %}
         </label>
       </div>

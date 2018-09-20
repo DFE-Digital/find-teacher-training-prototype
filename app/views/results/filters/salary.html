@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% set title = 'Find courses that pay a salary' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {{macros.betaBanner()}}
+
+  {{ macros.backLink("Back to results","/results") }}
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  <div class="grid-row add-double-bottom-margin">
+    <div class="column-two-thirds">
+      <p>On a salaried course you’ll be paid and taxed as an unqualified teacher. The salary awarded will differ between schools; you should check the salary with the school before you apply.</p>
+      <p>Salaried courses are not eligible for bursaries, scholarships or student finance. There are usually no course fees to pay.</p>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form action="/results">
+        <div class="form-group">
+          {% set fields = [
+              {
+                name: 'All courses (with or without a salary)'
+              },
+              {
+                name: 'Only courses that come with a salary'
+              }
+            ]
+          %}
+
+          {{ macros.radioGroup('salary', fields) }}
+        </div>
+
+        {{ macros.submit("Find courses") }}
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -7,6 +7,19 @@ require 'json5'
 require 'csv'
 file = File.read('courses-clean.json')
 
+def to_sentence(arr)
+  case arr.length
+  when 0
+    ''
+  when 1
+    arr[0].to_s.dup
+  when 2
+    "#{arr[0]} or #{arr[1]}"
+  else
+    "#{arr[0...-1].join(', ')} or #{arr[-1]}"
+  end
+end
+
 geo_file = File.read('geocoded_address_data.json')
 geocoded_addresses = JSON.parse(geo_file)
 
@@ -25,6 +38,7 @@ end
 
 prototype_data = {
   "study-type": ["Full time (12 months)", "Part time (18-24 months)"],
+  "salary": "All courses (with or without a salary)",
   "qualification": ["PGCE with QTS (Postgraduate certificate in education with qualified teacher status)", "QTS (Qualified teacher status)"],
   "selectedSubjects": []
 }
@@ -73,7 +87,7 @@ prototype_data['groupedSubjects'] = {
     "Science",
     "Social sciences"
   ],
-  "Modern languages": [
+  "Secondary: Modern languages": [
     "Languages",
     "Arabic",
     "English as a second or other language",
@@ -147,12 +161,56 @@ prototype_data['courses'] = sample.map do |c|
     subject
   end
 
+  subjectsWithScholarships = [
+    'Chemistry',
+    'Geography',
+    'Physics',
+    'Computer studies',
+    'French',
+    'Spanish',
+    'German'
+  ]
+
+  subjectsWithBursaries = [
+    'Chemistry',
+    'Geography',
+    'Physics',
+    'Computing',
+    'French',
+    'Spanish',
+    'German',
+    'Biology',
+    'Classics',
+    'English',
+    'History',
+    'Music',
+    'Religious education',
+    'Design and technology',
+    'Mathematics'
+  ];
+
+  financial_support = []
+  if c['route'] == 'School Direct training programme (salaried)'
+    financial_support << 'Salary'
+  else
+    if (subjects & subjectsWithBursaries).empty?
+      financial_support << 'Bursary'
+    end
+
+    if (subjects & subjectsWithScholarships).empty?
+      financial_support << 'Scholarship'
+    end
+
+    financial_support << 'Student finance if you’re eligible'
+  end
+
   course = {
     locationType: c['route'] == 'Higher Education programme' ? 'University' : 'School',
     accrediting: c['accrediting'],
     provider: c['provider'].gsub("'", "’"),
     subjects: subjects.uniq,
     name: c['name'],
+    financial_support: to_sentence(financial_support),
     slug: "#{c['providerCode']}/#{c['programmeCode']}",
     providerCode: c['providerCode'],
     programmeCode: c['programmeCode'],

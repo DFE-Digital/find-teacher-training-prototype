@@ -50,6 +50,12 @@
             <dd>
               {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
             </dd>
+            <dt>
+              Financial support:
+            </dt>
+            <dd>
+              {{ course.financial_support }}
+            </dd>
           </dl>
         {% endfor %}
       </div>
