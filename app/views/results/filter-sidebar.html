@@ -71,10 +71,14 @@
 <div class="filter-category ">
   <h4 class="heading-small filter-heading">Salary</h4>
   <ul class="filters list">
-    <li>Courses with and without salary</li>
+    {% if data['salary'] == 'All courses (with or without a salary)' %}
+      <li>Courses with and without salary</li>
+    {% else %}
+      <li>Only courses with a salary</li>
+    {% endif %}
   </ul>
   <div class="filter-link">
-    <a href="#">Change salary option</a>
+    <a href="/results/filters/salary">Change salary option</a>
   </div>
 </div>
 

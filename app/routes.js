@@ -89,7 +89,7 @@ function subjectGroups(req) {
       'Chemistry',
       'Geography',
       'Physics',
-      'Computer studies',
+      'Computing',
       'French',
       'Spanish',
       'German',
@@ -98,12 +98,6 @@ function subjectGroups(req) {
     var lowerBursarySubjects = [
       'Biology',
       'Classics'
-    ];
-
-    var englishBursarySubjects = [
-      'English',
-      'English language',
-      'English literature'
     ];
 
     var humanitiesBursarySubjects = [
@@ -133,7 +127,7 @@ function subjectGroups(req) {
       var text = '';
       if (scholarshipAndBursarySubjects.includes(subject)) {
         text = 'Scholarships and bursaries up to £28,000 available.';
-      } else if (englishBursarySubjects.includes(subject)) {
+      } else if (subject == 'English') {
         text = 'Bursaries of £15,000 available.';
       } else if (lowerBursarySubjects.includes(subject)) {
         text = 'Bursaries of £26,000 available.';
@@ -182,6 +176,13 @@ router.get('/results', function (req, res) {
 
     results = results.filter(function(course) {
       return course.options.some(o => o.includes(type))
+    });
+  }
+
+  // Find by salary
+  if (req.session.data['salary'] != 'All courses (with or without a salary)') {
+    results = results.filter(function(course) {
+      return course.options.some(o => o.includes('salary'))
     });
   }
 
