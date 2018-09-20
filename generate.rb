@@ -165,7 +165,7 @@ prototype_data['courses'] = sample.map do |c|
     'Chemistry',
     'Geography',
     'Physics',
-    'Computer studies',
+    'Computing',
     'French',
     'Spanish',
     'German'
@@ -193,11 +193,11 @@ prototype_data['courses'] = sample.map do |c|
   if c['route'] == 'School Direct training programme (salaried)'
     financial_support << 'Salary'
   else
-    if (subjects & subjectsWithBursaries).empty?
+    if (subjects & subjectsWithBursaries).any?
       financial_support << 'Bursary'
     end
 
-    if (subjects & subjectsWithScholarships).empty?
+    if (subjects & subjectsWithScholarships).any?
       financial_support << 'Scholarship'
     end
 
