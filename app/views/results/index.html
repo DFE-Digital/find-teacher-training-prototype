@@ -38,17 +38,19 @@
             {% endif %}
             {% if data['location'] != 'Across England' %}
               <dt>Distance:</dt>
-              <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd>
+              <dd>{{ course.distance }} miles</dd>
+              <!-- <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd> -->
             {% endif %}
             <dt>
-              {% if course.addresses.length > 1 %}
+              <!--{% if course.addresses.length > 1 %}
                 Nearest {{ course.locationType | lower }}:
               {% else %}
                 {{ course.locationType }} address:
-              {% endif %}
+              {% endif %}-->
+              Address:
             </dt>
             <dd>
-              {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
+              {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}{% if course.providerAddress.postal_town %}, {% endif %} {{ course.providerAddress.post_code }}
             </dd>
             <dt>
               Financial support:
