@@ -6,15 +6,10 @@
 <main id="content" role="main">
   {{ macros.betaBanner()}}
   <a class="link-back" href="/results">Back to search results</a>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <h1 class="heading-xlarge">
-        {{ course.name }} with {{ course.provider }}
-        {% if course.accrediting %}<span class="heading-secondary">Accredited provider: {{ course.accrediting }}</span>{% endif %}
-      </h1>
-    </div>
-  </div>
+  <h1 class="heading-xlarge">
+    {{ course.name }} with {{ course.provider }}
+    {% if course.accrediting %}<div class="heading-secondary" style="margin-top: 10px">Accredited provider: {{ course.accrediting }}</div>{% endif %}
+  </h1>
 
   <div class="grid-row">
     <div class="column-full">
@@ -85,22 +80,22 @@
         </div> -->
       {% endif %}
 
-      <h2 class="heading-medium" id="section-about">About the course</h2>
+      <h2 class="heading-large" id="section-about">About the course</h2>
       {{ markdown(course.enrichment['AboutCourse']) | safe }}
 
       {% if course.enrichment['InterviewProcess'] %}
-        <h2 class="heading-medium" id="section-interview">Interview process</h2>
+        <h2 class="heading-large" id="section-interview">Interview process</h2>
         {{ markdown(course.enrichment['InterviewProcess']) | safe }}
       {% endif %}
 
-      <h2 class="heading-medium" id="section-schools">How school placements work</h2>
+      <h2 class="heading-large" id="section-schools">How school placements work</h2>
       {{ markdown(course.enrichment['HowSchoolPlacementsWork']) | safe }}
 
       {% if course.enrichment['SalaryDetails'] %}
-        <h2 class="heading-medium" id="section-salary">Salary</h2>
+        <h2 class="heading-large" id="section-salary">Salary</h2>
         {{ markdown(course.enrichment['SalaryDetails']) | safe }}
       {% else %}
-        <h2 class="heading-medium" id="section-fees">Fees</h2>
+        <h2 class="heading-large" id="section-fees">Fees</h2>
         <p>The course fees for 2018/2019 are as follows:</p>
         <div class="body-text">
           <table>
@@ -130,7 +125,7 @@
         {{ markdown(course.enrichment['FeeDetails']) | safe }}
       {% endif %}
 
-      <h2 class="heading-medium" id="section-financial-support">Financial support</h3>
+      <h2 class="heading-large" id="section-financial-support">Financial support</h3>
       {% if course.enrichment['SalaryDetails'] %}
         <p>Financial support isn’t available for this course.</p>
         <p>If you choose a course without a salary, you may be eligible for financial support while you study, including bursaries, scholarships and loans.</p>
@@ -140,32 +135,32 @@
       {% endif %}
 
       {% if course.enrichment['FinancialSupport'] %}
-        <h3 class="heading-small">Financial support from the training provider</h3>
+        <h3 class="heading-medium">Financial support from the training provider</h3>
         {{ markdown(course.enrichment['FinancialSupport']) | safe }}
       {% endif %}
 
-      <h2 class="heading-medium" id="section-entry">Requirements</h2>
+      <h2 class="heading-large" id="section-entry">Requirements</h2>
 
-      <h3 class="heading-small">Qualifications needed</h3>
+      <h3 class="heading-medium">Qualifications needed</h3>
       {{ markdown(course.enrichment['Qualifications']) | safe }}
 
       {% if course.enrichment['PersonalQualities'] %}
-        <h3 class="heading-small">Personal qualities</h3>
+        <h3 class="heading-medium">Personal qualities</h3>
         {{ markdown(course.enrichment['PersonalQualities']) | safe }}
       {% endif %}
 
       {% if course.enrichment['OtherRequirements'] %}
-        <h3 class="heading-small">Other requirements</h3>
+        <h3 class="heading-medium">Other requirements</h3>
         {{ markdown(course.enrichment['OtherRequirements']) | safe }}
       {% endif %}
 
-      <h2 class="heading-medium" id="section-about-provider">About the training provider</h2>
+      <h2 class="heading-large" id="section-about-provider">About the training provider</h2>
       {{ markdown(course.inst['TrainWithUs']) | safe }}
 
-      <h2 class="heading-medium" id="section-access-needs">Training with disabilities and other needs</h2>
+      <h2 class="heading-large" id="section-access-needs">Training with disabilities and other&nbsp;needs</h2>
       {{ markdown(course.inst['TrainWithDisability']) | safe }}
 
-      <h2 class="heading-medium" id="section-contact">Contact details</h2>
+      <h2 class="heading-large" id="section-contact">Contact details</h2>
 
       <dl class="aligned">
         <dt>Email:</dt>
@@ -180,38 +175,54 @@
         </dd>
       </dl>
 
-      <h2 class="heading-medium" id="section-apply">
-          Apply
+      <h2 class="heading-large" id="section-apply">
+        Apply
       </h2>
+
+      <div class="notice add-double-bottom-margin" style="margin-top: 40px">
+        <i class="icon icon-important">
+          <span class="visually-hidden">Important</span>
+        </i>
+        <strong class="bold-small">
+          You can’t apply for this course until 9 October 2018
+        </strong>
+      </div>
+
+      <p>Apply on the UCAS website from 9 October. You’ll need to register with UCAS before you can apply.</p>
+<!--
       <p>
         <a href="https://2018.teachertraining.apply.ucas.com/apply/student/login.do">Apply on the UCAS website</a>. You’ll need to register with UCAS before you can apply.
-      </p>
-      <p>
-        You’ll need these codes for the Choices section of the application form:
-      </p>
-      <ul class="list list-bullet">
-        <li>training provider code: {{ course.providerCode }}</li>
-        <li>training programme code: {{ course.programmeCode }}</li>
-        <!-- <li>training location or campus code: leave empty</li> -->
-      </ul>
+      </p> -->
 
+      <p>
+        When you apply you’ll need these codes for the Choices section of your application form:
+      </p>
+
+      <div class="panel panel-border-wide">
+        <ul class="list">
+          <li style="margin-bottom: 20px">Training provider code:<br /><strong class="bold-large">{{ course.providerCode }}</strong></li>
+          <li>Training programme code:<br /><strong class="bold-large">{{ course.programmeCode }}</strong></li>
+          <!-- <li>training location or campus code: leave empty</li> -->
+        </ul>
+      </div>
+
+      <h3 class="heading-medium">Available training locations</h3>
       <p>You’ll also need to choose a training location and give the relevant training location code.</p>
 
-      <p>Available training locations:</p>
       <table>
         <thead>
           <tr>
-            <th style="width: 30%">Name</th>
-            <th style="width: 60%">Address</th>
             <th>Code</th>
+            <th style="width: 40%">Name</th>
+            <th style="width: 50%">Address</th>
           </tr>
         </thead>
         <tbody>
           {% for school in course.schools %}
           <tr>
+            <td><strong class="bold-medium">{{ school.code }}</strong></td>
             <td>{{ school.name }}</td>
             <td>{{ school.address }}</td>
-            <td>{{ school.code }}</td>
           </tr>
           {% endfor %}
         </tbody>
