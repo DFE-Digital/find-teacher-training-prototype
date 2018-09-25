@@ -54,6 +54,7 @@ Accordion.prototype.setup = function() {
   open_or_close_all_button.textContent = 'Open all'
   open_or_close_all_button.setAttribute('class', 'accordion-expand-all')
   open_or_close_all_button.setAttribute('aria-expanded', 'false')
+  open_or_close_all_button.setAttribute('type', 'button')
 
   open_or_close_all_button.addEventListener('click', this.openOrCloseAll.bind(this))
 
@@ -64,7 +65,6 @@ Accordion.prototype.setup = function() {
 }
 
 Accordion.prototype.openOrCloseAll = function(event) {
-  event.preventDefault();
 
   var open_or_close_all_button = event.target
   var now_expanded = !(open_or_close_all_button.getAttribute('aria-expanded') == 'true')
@@ -109,7 +109,10 @@ Accordion.prototype.updateOpenAll = function() {
 }
 
 AccordionSection.prototype.setup = function() {
-  this.element.setAttribute('aria-expanded', 'false')
+
+  var sectionExpanded = this.element.classList.contains('accordion-section--expanded')
+
+  this.element.setAttribute('aria-expanded', sectionExpanded)
 
   var header = this.element.querySelector('.accordion-section-header')
   header.addEventListener('click', this.toggleExpanded.bind(this))
@@ -121,6 +124,13 @@ AccordionSection.prototype.setup = function() {
   icon.setAttribute('class', 'icon')
 
   header.appendChild(icon)
+
+  /* Remove this class now, as the `aria-expanded` attribute is being used
+       to store expanded state instead. */
+  if (sectionExpanded) {
+    this.element.classList.remove('accordion-section--expanded');
+  }
+
 }
 
 AccordionSection.prototype.toggleExpanded = function(){
