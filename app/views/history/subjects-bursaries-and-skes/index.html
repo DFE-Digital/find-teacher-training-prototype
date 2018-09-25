@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% set title = 'Subjects, bursaries and SKE courses' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main" class="design-history">
+  <div class="breadcrumbs dont-print">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>We tested this design with 4 users:</p>
+      <ul class="list list-bullet">
+        <li><a href="https://lookback.io/watch/az5TkZTc9rwgyoheL">Participant 1</a></li>
+        <li><a href="https://lookback.io/watch/K6SmyEx5Kz76j6TAf">Participant 2 (Multiple sclerosis)</a></li>
+        <li><a href="https://lookback.io/watch/YSyCpM8ERpT7oFEAK">Participant 3</a></li>
+        <li><a href="https://lookback.io/watch/Qm2gKZJYCTopwAKNM">Participant 4</a></li>
+      </ul>
+      <p><a href="https://docs.google.com/spreadsheets/d/1EEpqT5u2GLr3wJyk_SnKiysTtf5s88gYGiYqmWzNjl4/">User research findings</a></p>
+    </div>
+  </div>
+
+  {% set contents = [
+    { text: 'Start page', id: 'start-page' },
+    { text: 'Find by location', id: 'find-by-location' },
+    { text: 'Find by subject', id: 'find-by-subject' },
+    { text: 'Search results', id: 'search-results' },
+    { text: 'Salary filter', id: 'salary-filter' },
+    { text: 'Full course page', id: 'full-course-page' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
+  {{ macros.screenshot('Start page', 'start-page', '/public/images/history/subjects-bursaries-and-skes/thumbnails/01-start-page.png', '/public/images/history/subjects-bursaries-and-skes/01-start-page.png', '') }}
+
+  {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/subjects-bursaries-and-skes/thumbnails/02-find-by-location.png', '/public/images/history/subjects-bursaries-and-skes/02-find-by-location.png', '') }}
+
+  {{ macros.screenshot('Find by subject', 'find-by-subject', '/public/images/history/subjects-bursaries-and-skes/thumbnails/03-find-by-subject.png', '/public/images/history/subjects-bursaries-and-skes/03-find-by-subject.png', '') }}
+
+  {{ macros.screenshot('Search results', 'search-results', '/public/images/history/subjects-bursaries-and-skes/thumbnails/04-search-results.png', '/public/images/history/subjects-bursaries-and-skes/04-search-results.png', '') }}
+
+  {{ macros.screenshot('Salary filter', 'salary-filter', '/public/images/history/subjects-bursaries-and-skes/thumbnails/05-salary-filter.png', '/public/images/history/subjects-bursaries-and-skes/05-salary-filter.png', '') }}
+
+  {{ macros.screenshot('Full course page', 'full-course-page', '/public/images/history/subjects-bursaries-and-skes/thumbnails/06-full-course-page.png', '/public/images/history/subjects-bursaries-and-skes/06-full-course-page.png', '') }}
+
+</main>
+{% endblock %}

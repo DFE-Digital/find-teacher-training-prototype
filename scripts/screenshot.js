@@ -36,11 +36,12 @@ var options = {
 }
 
 var paths = [
-  { path: '/', name: 'index' },
+  { path: '/', name: 'start-page' },
   { path: '/start/location', name: 'find-by-location'},
-  { path: '/results', name: 'teacher-training-courses'},
-  { path: '/results/filters/subjects', name: 'change-subject'},
-  { path: '/course/S90/C1X1', name: 'minimum-course-page'}
+  { path: '/start/subjects', name: 'find-by-subject'},
+  { path: '/results?selectedSubjects=_unchecked&selectedSubjects=Biology', name: 'search-results'},
+  { path: '/results/filters/salary', name: 'salary-filter'},
+  { path: '/course/2GH/364R', name: 'full-course-page'}
 ]
 
 var template = '';
