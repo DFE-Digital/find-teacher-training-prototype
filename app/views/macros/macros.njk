@@ -102,10 +102,12 @@
       >
       <label for="checkbox-part-{{ loop.index + index }}">
         <span class="bold">{{ field.name }}</span>
-        {% if field.text %}
-          <br />{{ field.text | safe }}
-        {% endif %}
       </label>
+      {% if field.text %}
+      <div style="margin-left: 13px">
+        {{ field.text | safe }}
+      </div>
+      {% endif %}
     </div>
     {% if field.more %}
       <div class="panel panel-border-wide js-hidden" id="checkbox-part-{{ loop.index + index }}-extra">
