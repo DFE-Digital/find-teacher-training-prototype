@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set title = 'Live launch' %}
+{% set title = 'What we launched – 2 October 2018' %}
 {% block page_title %}{{ title }}{% endblock %}
 
 {% block content %}
@@ -12,6 +12,7 @@
   <h1 class="heading-xlarge">{{ title }}</h1>
 
   {% set contents = [
+    { text: 'GOV.UK start page', id: 'govuk-start-page' },
     { text: 'Find by location', id: 'find-by-location' },
     { text: 'Find by location (provider selected)', id: 'find-by-location-provided-selected' },
     { text: 'Find by subject', id: 'find-by-subject' },
@@ -27,6 +28,8 @@
     { text: 'Course not enriched', id: 'course-not-enriched' }
   ] %}
   {{ macros.screenshotContents(contents) }}
+
+  {{ macros.screenshot('GOV.UK start page', 'govuk-start-page', '/public/images/history/live-launch/thumbnails/01-govuk-start-page.png', '/public/images/history/live-launch/01-govuk-start-page.png', '') }}
 
   {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/live-launch/thumbnails/01-find-by-location.png', '/public/images/history/live-launch/01-find-by-location.png', '') }}
 
