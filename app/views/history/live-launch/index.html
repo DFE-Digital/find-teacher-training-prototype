@@ -11,6 +11,12 @@
   </div>
   <h1 class="heading-xlarge">{{ title }}</h1>
 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>On 2 October 2018 we launched the public beta of Find posgraduate teacher training to users. This included a new start page on GOV.UK and links to it from UCAS and Get into Teaching.</p>
+    </div>
+  </div>
+
   {% set contents = [
     { text: 'GOV.UK start page', id: 'govuk-start-page' },
     { text: 'Find by location', id: 'find-by-location' },
@@ -29,7 +35,28 @@
   ] %}
   {{ macros.screenshotContents(contents) }}
 
-  {{ macros.screenshot('GOV.UK start page', 'govuk-start-page', '/public/images/history/live-launch/thumbnails/01-govuk-start-page.png', '/public/images/history/live-launch/01-govuk-start-page.png', '') }}
+  {{ macros.screenshot('GOV.UK start page', 'govuk-start-page', '/public/images/history/live-launch/thumbnails/01-govuk-start-page.png', '/public/images/history/live-launch/01-govuk-start-page.png', '
+    <p>
+      <a href="https://www.gov.uk/guidance/find-postgraduate-teacher-training-courses-in-england">Go to GOV.UK start page</a>
+    </p>
+    <p>
+      This is published as a guidance page using Whitehall, rather than a standard service page such as <a href="https://www.gov.uk/state-pension-age">Check your state pension age</a>. This was because the service wasn’t ‘mainstream’, while it also gave DfE greater control over the content.
+    </p>
+    <p>
+      It introduces some problems, and we’re beginning the process of <a href="https://trello.com/c/QDFcFsSd/425-apply-for-a-mainstream-govuk-start-page">switching to a standard start page</a>. Namely:
+    </p>
+    <ul class="list list-bullet">
+      <li>the incorrect page template has misleading elements; page type, breadcrumbs, irrelevant related links, prominence on ‘Applies to England’ rather than ‘Start now’</li>
+      <li>we can’t easily track journeys from GOV.UK to our service, we have no visbility of referrers to the start page</li>
+      <li>the published date is irrelevant</li>
+    </ul>
+    <p class="add-top-margin">A standard start page would also give us:</p>
+    <ul class="list list-bullet">
+      <li>a shorter and cleaner URL</li>
+      <li>more prominence on GOV.UK in taxonomy and search</li>
+      <li>proper downtime messaging if we need it</li>
+    </ul>
+  ') }}
 
   {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/live-launch/thumbnails/01-find-by-location.png', '/public/images/history/live-launch/01-find-by-location.png', '') }}
 
