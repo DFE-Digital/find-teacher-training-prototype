@@ -36,12 +36,20 @@ var options = {
 }
 
 var paths = [
-  { path: '/', name: 'start-page' },
-  { path: '/start/location', name: 'find-by-location'},
-  { path: '/start/subjects', name: 'find-by-subject'},
-  { path: '/results?selectedSubjects=_unchecked&selectedSubjects=Biology', name: 'search-results'},
-  { path: '/results/filters/salary', name: 'salary-filter'},
-  { path: '/course/2GH/364R', name: 'full-course-page'}
+  { path: '/start/location?lat=50.82253&lng=-0.137163&rad=20&loc=Brighton,%20UK&lq=Brighton&l=1&sortby=2&qualification=QtsOnly&qualification=PgdePgceWithQts&qualification=Other&fulltime=False&parttime=False', name: 'find-by-location'},
+  { path: '/start/location?l=3&query=The%20University%20of%20Warwick&sortby=2&qualification=QtsOnly&qualification=PgdePgceWithQts&qualification=Other&fulltime=False&parttime=False', name: 'find-by-location-provided-selected'},
+  { path: '/start/subject?lat=50.82253&lng=-0.137163&rad=20&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=31,0,13,14&sortby=2&qualification=QtsOnly&qualification=PgdePgceWithQts&qualification=Other&fulltime=False&parttime=False', name: 'find-by-subject'},
+  { path: '/results?lat=50.82253&lng=-0.137163&rad=20&loc=Brighton,%20UK&lq=Brighton,%20UK&l=1&subjects=31,0,13,14&sortby=2&qualification=QtsOnly&qualification=PgdePgceWithQts&qualification=Other&fulltime=False&parttime=False', name: 'search-results'},
+  { path: '/results?subjects=14&funding=15&qualification=Other&fulltime=False&parttime=False', name: 'further-education-results'},
+  { path: '/results/filter/studytype', name: 'study-type-filter'},
+  { path: '/results/filter/qualification?qualification=QtsOnly&qualification=PgdePgceWithQts&qualification=Other&fulltime=False&parttime=False', name: 'qualification-filter'},
+  { path: '/results/filter/studytype', name: 'study-type-filter'},
+  { path: '/results/filter/funding?qualification=QtsOnly&qualification=PgdePgceWithQts&qualification=Other&fulltime=False&parttime=False', name: 'salary-filter'},
+  { path: '/results?funding=8&qualification=Other&fulltime=False&parttime=False', name: 'no-results'},
+  { path: '/course/T92/X130', name: 'full-course-page'},
+  { path: '/course/2DQ/34BZ', name: 'full-course-page-with-salary'},
+  { path: '/course/L46/2NJR', name: 'full-course-page-pgde'},
+  { path: '/course/2CG/2YXS', name: 'course-not-enriched'}
 ]
 
 var template = '';
@@ -68,7 +76,7 @@ paths.forEach(function(item, index) {
   contents += `${comma}
     { text: '${heading}', id: '${item.name}' }`;
 
-  webshot('http://localhost:3000' + item.path, screenshot, options, function(err) {
+  webshot('https://find-postgraduate-teacher-training.education.gov.uk' + item.path, screenshot, options, function(err) {
     console.log(screenshot);
     sharp(screenshot).resize(630, null).toFile(thumbnail);
   });
