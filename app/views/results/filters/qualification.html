@@ -17,15 +17,19 @@ Which qualifications do you want?
         <div class="form-group">
           {% set fields = [
               {
-                name: 'PGCE with QTS (Postgraduate certificate in education with qualified teacher status)',
-                text: '<p>A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) allows you to
-      teach in England, Scotland, Wales and Northern Ireland. This qualification is also recognised internationally.
-      Many PGCE courses include credits that count towards a Master’s degree.</p>'
+                name: 'QTS only',
+                text: '<div style="clear: left"></div><p>QTS (qualified teacher status) allows you to teach in state schools in England.
+      If you want to teach in the rest of the UK or internationally, consider a ‘PGCE (or PGDE) with QTS’ qualification instead.</p>'
               },
               {
-                name: 'QTS (Qualified teacher status)',
-                text: '<p>Qualified teacher status allows you to teach in state schools in England.
-      If you want to teach in the rest of the UK or internationally, consider a ‘PGCE with QTS’ qualification instead.</p>'
+                name: 'PGCE (or PGDE) with QTS',
+                text: '<div style="clear: left"></div><p>A PGCE (postgraduate certificate in education) with QTS (qualified teacher status) allows you to
+      teach in England, Scotland, Wales and Northern Ireland. This qualification is also recognised internationally.
+      </p><p>Many PGCE courses include credits that count towards a Master’s degree. A PGDE (postgraduate diploma in education) is equivalent to a PGCE but awards more Master’s credits.</p>'
+              },
+              {
+                name: 'Further education (PGCE or PGDE without QTS)',
+                text: '<div style="clear: left"></div><p>To teach further education you don’t need QTS. Instead you can study for a PGCE or PGDE without QTS.</p>'
               }
             ]
           %}
