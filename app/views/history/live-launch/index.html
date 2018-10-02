@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% set title = 'Live launch' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main" class="design-history">
+  <div class="breadcrumbs dont-print">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  {% set contents = [
+    { text: 'Find by location', id: 'find-by-location' },
+    { text: 'Find by location (provider selected)', id: 'find-by-location-provided-selected' },
+    { text: 'Find by subject', id: 'find-by-subject' },
+    { text: 'Search results', id: 'search-results' },
+    { text: 'Further education search results', id: 'further-education-results' },
+    { text: 'Study type filter', id: 'study-type-filter' },
+    { text: 'Qualification filter', id: 'qualification-filter' },
+    { text: 'Salary filter', id: 'salary-filter' },
+    { text: 'No results', id: 'no-results' },
+    { text: 'Full course page', id: 'full-course-page' },
+    { text: 'Full course page with salary', id: 'full-course-page-with-salary' },
+    { text: 'Full course page (PGDE)', id: 'full-course-page-pgde' },
+    { text: 'Course not enriched', id: 'course-not-enriched' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
+  {{ macros.screenshot('Find by location', 'find-by-location', '/public/images/history/live-launch/thumbnails/01-find-by-location.png', '/public/images/history/live-launch/01-find-by-location.png', '') }}
+
+  {{ macros.screenshot('Find by location (provider selected)', 'find-by-location-provided-selected', '/public/images/history/live-launch/thumbnails/02-find-by-location-provided-selected.png', '/public/images/history/live-launch/02-find-by-location-provided-selected.png', '') }}
+
+  {{ macros.screenshot('Find by subject', 'find-by-subject', '/public/images/history/live-launch/thumbnails/03-find-by-subject.png', '/public/images/history/live-launch/03-find-by-subject.png', '') }}
+
+  {{ macros.screenshot('Search results', 'search-results', '/public/images/history/live-launch/thumbnails/04-search-results.png', '/public/images/history/live-launch/04-search-results.png', '') }}
+
+  {{ macros.screenshot('Further education results', 'further-education-results', '/public/images/history/live-launch/thumbnails/05-further-education-results.png', '/public/images/history/live-launch/05-further-education-results.png', '') }}
+
+  {{ macros.screenshot('Study type filter', 'study-type-filter', '/public/images/history/live-launch/thumbnails/06-study-type-filter.png', '/public/images/history/live-launch/06-study-type-filter.png', '') }}
+
+  {{ macros.screenshot('Qualification filter', 'qualification-filter', '/public/images/history/live-launch/thumbnails/07-qualification-filter.png', '/public/images/history/live-launch/07-qualification-filter.png', '') }}
+
+  {{ macros.screenshot('Salary filter', 'salary-filter', '/public/images/history/live-launch/thumbnails/09-salary-filter.png', '/public/images/history/live-launch/09-salary-filter.png', '') }}
+
+  {{ macros.screenshot('No results', 'no-results', '/public/images/history/live-launch/thumbnails/10-no-results.png', '/public/images/history/live-launch/10-no-results.png', '') }}
+
+  {{ macros.screenshot('Full course page', 'full-course-page', '/public/images/history/live-launch/thumbnails/11-full-course-page.png', '/public/images/history/live-launch/11-full-course-page.png', '') }}
+
+  {{ macros.screenshot('Full course page with salary', 'full-course-page-with-salary', '/public/images/history/live-launch/thumbnails/12-full-course-page-with-salary.png', '/public/images/history/live-launch/12-full-course-page-with-salary.png', '') }}
+
+  {{ macros.screenshot('Full course page (PGDE)', 'full-course-page-pgde', '/public/images/history/live-launch/thumbnails/13-full-course-page-pgde.png', '/public/images/history/live-launch/13-full-course-page-pgde.png', '') }}
+
+  {{ macros.screenshot('Course not enriched', 'course-not-enriched', '/public/images/history/live-launch/thumbnails/14-course-not-enriched.png', '/public/images/history/live-launch/14-course-not-enriched.png', '') }}
+
+</main>
+{% endblock %}
