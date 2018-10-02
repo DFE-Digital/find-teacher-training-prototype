@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% set title = 'PGDE and further education courses' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main" class="design-history">
+  <div class="breadcrumbs dont-print">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>We started with two qualification options:</p>
+      <ul class="list list-bullet">
+        <li>PGCE with QTS</li>
+        <li>QTS</li>
+      </ul>
+
+      <p>For most courses this was acceptable. PGCEs are also known as PGCertEd or PGCert (if without an education specialism).</p>
+      <p>We need providers to always use PGCE and none of the variants, those variants can be considered something different and will confuse users.</p>
+
+      <p>The new options are:</p>
+      <ul class="list list-bullet">
+        <li>PGCE with QTS</li>
+        <li>PGDE with QTS</li>
+        <li>QTS</li>
+        <li>PGCE</li>
+        <li>PGDE</li>
+      </ul>
+
+      <h2 class="heading-large">PGDE</h2>
+
+      <p>Postgraduate diplomas in education (also known as PGDE or PGDipEd or PGDip if omitting the education specilisation) are almost the same as PGCE except they offer more Master’s credits, <i>we think</i>.</p>
+
+      <p>Historically there was a clear difference between the two types of course, but today they are largely interchangeable.</p>
+
+      <p>We updated the qualification filter from ‘PGCE with QTS’ to ‘PGCE (or PGDE) with QTS’ and briefly indicated that from a ‘what you’ll get’ perspective they are essentially equivalent.</p>
+
+      <p>On course pages we show PGDE, expand the abbreviation and indicate that these courses offer Master’s credits.</p>
+
+      <p>We identified PGDE courses by looking for any enriched course that used any of the PGDE terms then looked at each result to avoid false positives. <a href="https://gist.github.com/fofr/63073b212c76469ba88511dc0db63691">There's about 120</a>.</p>
+
+      <h2 class="heading-large">Further education</h2>
+      <p>There are no qualifications required to teach further education. This means further education courses don’t offer QTS. To say ‘with QTS’ would be wrong.</p>
+
+      <p>For any further education course (eg where the further education subject is used) we omit the ‘with QTS’ in the course offered description.</p>
+
+      <p>PGDE and PGCE descriptions on course pages make it explicit that these courses do not award QTS.</p>
+
+      <p class="panel panel-border-wide">
+        ‘A postgraduate certificate in education (PGCE) is recognised internationally. This course does not lead to the award of qualified teacher status (QTS).’
+      </p>
+
+      <h3 class="heading-medium">QTLS (Qualified teaching learning and skills)</h3>
+      <p>We investigated QTLS (Qualified teaching learning and skills). This used to be required to teach FE but is no longer needed. On completion of an FE course students can still apply for QTLS through the <a href="https://set.et-foundation.co.uk/professionalism/qtls/">Society for Education and Training</a>, and depending on the subject, <a href="https://www.gov.uk/guidance/qualified-teacher-status-qts#qualified-teacher-learning-and-skills-qtls">QTLS is considered equivalent to QTS</a>. We learnt that this can be years after completing the course and that courses don’t directly award QTLS, it’s different to the QTS process.</p>
+
+      <p>We chose to ignore QTLS. Providers who want to talk about it can use the course fields.</p>
+
+      <h3 class="heading-medium">ProfGCE (Professional graduate certificate in education)</h3>
+      <p>This qualification is at level lower than PGCE. It is mostly relevant in the FE sector. For now we have not done anything about ProfGCE courses, there is only one reference in all the enrichment data, and that refers to it as an option.</p>
+    </div>
+  </div>
+
+  {% set contents = [
+    { text: 'Qualification filter', id: 'qualification-filter' },
+    { text: 'Further education search results', id: 'further-education-results' },
+    { text: 'Full course page (PGDE)', id: 'full-course-page-pgde' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
+  {{ macros.screenshot('Qualification filter', 'qualification-filter', '/public/images/history/live-launch/thumbnails/07-qualification-filter.png', '/public/images/history/live-launch/07-qualification-filter.png', '') }}
+
+  {{ macros.screenshot('Further education results', 'further-education-results', '/public/images/history/live-launch/thumbnails/05-further-education-results.png', '/public/images/history/live-launch/05-further-education-results.png', '') }}
+
+  {{ macros.screenshot('Full course page (PGDE)', 'full-course-page-pgde', '/public/images/history/live-launch/thumbnails/13-full-course-page-pgde.png', '/public/images/history/live-launch/13-full-course-page-pgde.png', '') }}
+</main>
+{% endblock %}
