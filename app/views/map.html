@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+{% set title %}Map{% endset %}
+{% block page_title %}{{ title }}{% endblock %}
+{% block content %}
+
+<style>
+  #map {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  #results {
+    position: fixed;
+    top: 53px;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    overflow: scroll;
+    padding: 30px;
+    width: 500px;
+    box-sizing: border-box;
+    z-index: -1;
+  }
+
+  @media (max-width: 600px) {
+    #results {
+      right: 0;
+      top: auto;
+      height: 300px;
+      bottom: 0;
+      width: auto;
+    }
+
+    #map {
+      left: 0;
+      bottom: 300px;
+    }
+  }
+
+  .footer-wrapper {
+    display: none;
+  }
+
+  #global-header .header-wrapper {
+    max-width: none !important;
+  }
+</style>
+
+<main id="content" role="main">
+  {{ macros.betaBanner()}}
+  <a class="link-back" href="/results">Back to search results</a>
+  <h1 class="heading-xlarge">
+    {{ title }}
+  </h1>
+
+  {{ data['latLong'] }}
+
+  <div id="results">
+    <h1 class="heading-xlarge">
+      Teacher training courses
+      {% if data['formattedAddress'] or data['postcode-town-or-city'] %}
+        near {{ data['formattedAddress'] or data['postcode-town-or-city'] }}
+      {% else %}
+        in England
+      {% endif %}
+    </h1>
+
+    <div>
+    {% for course in results %}
+      <h2 class="heading-medium">
+        <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
+      </h2>
+      <dl class="aligned">
+        <dt>Course offered:</dt>
+        <dd>{{ course.options }}</dd>
+        {% if course.accrediting %}
+         <dt>Accredited provider:</dt>
+         <dd>{{ course.accrediting }}</dd>
+        {% endif %}
+        {% if data['location'] != 'Across England' %}
+          <dt>Distance:</dt>
+          <dd>{{ course.distance }} miles</dd>
+          <!-- <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd> -->
+        {% endif %}
+        <dt>
+          <!--{% if course.addresses.length > 1 %}
+            Nearest {{ course.locationType | lower }}:
+          {% else %}
+            {{ course.locationType }} address:
+          {% endif %}-->
+          Address:
+        </dt>
+        <dd>
+          {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}{% if course.providerAddress.postal_town %}, {% endif %} {{ course.providerAddress.post_code }}
+        </dd>
+        <dt>
+          Financial support:
+        </dt>
+        <dd>
+          {{ course.financial_support }}
+        </dd>
+      </dl>
+    {% endfor %}
+    </div>
+  </div>
+  <div id="map"></div>
+  <script>
+    var results = {{ results | dump | safe }};
+    var map;
+
+    var dot = {
+      path: 'M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0',
+      fillColor: 'white',
+      fillOpacity: 1,
+      scale: 0.1,
+      strokeColor: 'black',
+      strokeWeight: 4
+    };
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: {{ data['latLong']['lat']}}, lng: {{ data['latLong']['lng']}}},
+        zoom: 9,
+        disableDefaultUI: true,
+        zoomControl: true
+      });
+
+      // var markers = [];
+      //
+      // for (var i = 0, l = points.length; i < l; i++) {
+      //   //console.log(point);
+      //   var point = points[i];
+      //   var title = point[1];
+      //
+      //   var marker = new google.maps.Marker({
+      //     position: { lat: parseFloat(point[2]), lng: parseFloat(point[3]) },
+      //     map: map,
+      //     title: title,
+      //     icon: dot
+      //   });
+      //
+      //   marker.addListener('click', console.log.bind(null, title));
+      //   markers.push(marker);
+      // }
+
+      // Add a marker clusterer to manage the markers.
+      //var markerCluster = new MarkerClusterer(map, markers,
+      //    {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+      for (var i = 0, l = results.length; i < l; i++) {
+        var address = results[i]['providerAddress'];
+        var title = `${results[i]['name']} with ${results[i]['provider']}`;
+
+        var marker = new google.maps.Marker({
+          position: { lat: address['latitude'], lng: address['longitude'] },
+          map: map,
+          title: title
+        });
+
+        marker.addListener('click', console.log.bind(null, title));
+      }
+    }
+  </script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initMap"
+  async defer></script>
+</main>
+{% endblock %}
