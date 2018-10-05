@@ -160,6 +160,7 @@ router.get('/results', function (req, res) {
   var paginated = false;
   var phase = ["Secondary"];
   var subjects = req.session.data['selectedSubjects'];
+  var map = req.query.map;
 
   if (req.session.data['selectedSubjects'].some(s => s.match(/primary/i))) {
     phase.push("Primary");
@@ -220,7 +221,7 @@ router.get('/results', function (req, res) {
     paginated = true;
   }
 
-  res.render('results/index', { results: results, paginated: paginated, count: originalCount });
+  res.render(map ? 'map' : 'results/index', { results: results, paginated: paginated, count: originalCount });
 })
 
 router.get('/results/filters/funding', function(req, res) {
