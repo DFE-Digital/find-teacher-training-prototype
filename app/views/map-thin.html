@@ -73,7 +73,7 @@
 
     <div>
     {% for course in results %}
-      <div id="{{ course.slug | replace("/", "-") }}" style="display: none" class="map-result">
+      <div id="{{ course.slug }}">
         <h2 class="heading-medium">
           <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
         </h2>
@@ -143,6 +143,24 @@
         anchor: new google.maps.Point(0, 32)
       };
 
+      // var markers = [];
+      //
+      // for (var i = 0, l = points.length; i < l; i++) {
+      //   //console.log(point);
+      //   var point = points[i];
+      //   var title = point[1];
+      //
+      //   var marker = new google.maps.Marker({
+      //     position: { lat: parseFloat(point[2]), lng: parseFloat(point[3]) },
+      //     map: map,
+      //     title: title,
+      //     icon: dot
+      //   });
+      //
+      //   marker.addListener('click', console.log.bind(null, title));
+      //   markers.push(marker);
+      // }
+
       // Add a marker clusterer to manage the markers.
       //var markerCluster = new MarkerClusterer(map, markers,
       //    {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
@@ -158,7 +176,7 @@
           icon: customMarker
         });
 
-        marker.addListener('click', showCoursePane.bind(null, results[i]['slug'], marker));
+        marker.addListener('click', console.log.bind(null, title));
 
         loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
         bounds.extend(loc);
@@ -166,12 +184,6 @@
 
       map.fitBounds(bounds);       // auto-zoom
       map.panToBounds(bounds);     // auto-center
-
-      function showCoursePane(id, marker) {
-        var selector = "#" + id.replace("/", "-");
-        $('.map-result').hide();
-        $(selector).show();
-      }
     }
   </script>
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
