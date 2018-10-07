@@ -186,11 +186,15 @@
   <div class="resultsSortingOptions">
     <div class="sortLabel">Sorted by training provider</div>
   </div>
+  {% elseif (not mapView) %}
+  <div class="resultsSortingOptions">
+    <a href="/results?map=yes">View on a map</a>
+  </div>
   {% endif %}
   {% if mapView %}
   <ul class="list add-top-margin" style="padding-bottom: 20px; border-bottom: 1px solid #ccc">
     <li><a href="/start/location">New search</a></li>
-    <li><a href="/start/location">View list</a></li>
+    <li><a href="/results">View list</a></li>
     <li><a href="/start/location">Filter the results</a></li>
   </ul>
   {% endif %}
