@@ -148,7 +148,7 @@
     {% endfor %}
 
     {% for course in results %}
-      <div id="info-window-{{ course.slug | replace("/", "-") }}" style="display: none">
+      <!-- <div id="info-window-{{ course.slug | replace("/", "-") }}" style="display: none">
         <div class="info-window">
           <h2 class="heading-small">
             <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
@@ -165,13 +165,61 @@
             <p class="remove-bottom-margin">Financial support: <br /> {{ course.financial_support }} </p>
           </div>
         </div>
-      </div>
+      </div> -->
+    {% endfor %}
+
+    {% for provider in groupedByTrainingProvider %}
+      {% if provider[1].length == 1 %}
+        <div id="info-window-{{ provider[1][0].slug | replace("/", "-") }}" style="display: none">
+          <div class="info-window">
+            <h2 class="heading-small">
+              <a href="/provider[1][0]/{{ provider[1][0].slug }}">{{ provider[1][0].name }} with {{ provider[1][0].provider }}</a>
+            </h2>
+            <div class="govuk-body">
+              <p>{{ provider[1][0].distance }} miles away</p>
+
+              <p>Course offered: <br />{{ provider[1][0].options }}</p>
+
+              {% if provider[1][0].accrediting %}
+               <p>Accredited provider:<br />{{ provider[1][0].accrediting }}</p>
+              {% endif %}
+
+              <p class="remove-bottom-margin">Financial support: <br /> {{ provider[1][0].financial_support }} </p>
+            </div>
+          </div>
+        </div>
+      {% else %}
+        <div id="info-window-{{ provider[1][0]['providerCode'] }}">
+          <div class="govuk-body info-window info-window-provider">
+            <h2 class="heading-medium">{{ provider[0] }}</h2>
+            <p style="font-size: 19px">{{ provider[1][0].distance }} miles away</p>
+            <h3 class="heading-medium">
+              {{ provider[1].length }} courses
+            </h3>
+
+            {% for course in provider[1] %}
+              <h3 class="bold">
+                <a href="/course/{{ course.slug }}">{{ course.name }}</a>
+              </h3>
+
+              <p>
+                {{ course.options }}
+              </p>
+
+              <!-- {% if course.accrediting %}
+               <p>Accredited provider:<br />{{ course.accrediting }}</p>
+              {% endif %} -->
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
     {% endfor %}
     </div>
   </div>
   <div id="map"></div>
   <script>
     var results = {{ results | dump | safe }};
+    var groupedByTrainingProvider = {{ groupedByTrainingProvider | dump | safe }};
     var map;
     var bounds;
 
@@ -189,7 +237,7 @@
 
       map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: {{ data['latLong']['lat']}}, lng: {{ data['latLong']['lng']}}},
-        //zoom: 10,
+        zoom: 12,
         disableDefaultUI: true,
         zoomControl: true
       });
@@ -225,13 +273,15 @@
         bounds.extend(loc);
       }
 
-      map.fitBounds(bounds);       // auto-zoom
-      map.panToBounds(bounds);     // auto-center
+      // map.fitBounds(bounds);       // auto-zoom
+      // map.panToBounds(bounds);     // auto-center
 
       function showInfoWindow(id, marker) {
         var selector = "#info-window-" + id.replace("/", "-");
-        // $('.map-result').hide();
-        // $(selector).show();
+
+        if ($(selector).length == 0) {
+          selector = "#info-window-" + id.split("/")[0];
+        }
 
         infoWindow.setContent($(selector).html());
         infoWindow.setOptions({ maxWidth: 300 })

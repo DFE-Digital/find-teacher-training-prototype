@@ -501,6 +501,7 @@ dl.aligned dd {
 .info-window {
   @include core-16;
 
+  .heading-medium,
   .heading-small {
     margin-top: 5px;
   }
