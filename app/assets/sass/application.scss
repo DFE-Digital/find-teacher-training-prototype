@@ -181,12 +181,32 @@ $path: "/public/images/";
 .filter-heading{
   margin-top:3px;
 }
-.apply_button{
-}
-.filter-category{
+
+.filter-category {
+  display: block;
   background-color: #dee0e2;
   padding: 8px;
   margin-bottom: 10px;
+
+  &--toggle {
+    background-image: url('/public/images/option-select-toggle-sprite.png');
+    background-position: right -72px;
+    background-repeat: no-repeat;
+
+    @include media(tablet) {
+      display: none;
+    }
+
+    // &:hover,
+    // &:active,
+    // &:focus {
+    //   background-color:
+    // }
+  }
+
+  &--toggle-open {
+    background-position: right 10px;
+  }
 }
 .filters {
   background-color: #ffffff;

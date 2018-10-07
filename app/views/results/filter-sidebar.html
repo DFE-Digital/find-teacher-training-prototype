@@ -1,94 +1,100 @@
-<div class="filter-category">
-  <h4 class="heading-small filter-heading">Location</h4>
-  <ul class="filters list">
-    <li>
-      {% if data['location'] == 'Across England' %}
-        Across England
+<div class="filter-category filter-category--toggle" data-module="toggle-filters" tabindex="0" aria-expanded="false">
+  <h4 class="heading-small filter-heading remove-bottom-margin">Filter the results</h4>
+</div>
+
+<div id="filter-sidebar">
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Location</h4>
+    <ul class="filters list">
+      <li>
+        {% if data['location'] == 'Across England' %}
+          Across England
+        {% else %}
+          {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
+        {% endif %}
+      </li>
+    </ul>
+    <div class="filter-link">
+      <a href="/results/filters/location">Change location</a>
+    </div>
+  </div>
+
+  <div class="filter-category ">
+    <h4 class="heading-small filter-heading">Subject</h4>
+    <ul class="filters list">
+      {% for subject in data['selectedSubjects'] %}
+        <li>{{ subject }}</li>
+      {% endfor %}
+    </ul>
+    <div class="filter-link">
+      <a href="/results/filters/subjects">Change subject</a>
+    </div>
+  </div>
+
+  <!-- <div class="filter-category">
+    <h4 class="heading-small filter-heading">Financial support</h4>
+    <ul class="filters list">
+      {% if data['funding'] == 'Show courses with and without financial support' %}
+        <li>All</li>
       {% else %}
-        {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
+        <li>Salaries</li>
       {% endif %}
-    </li>
-  </ul>
-  <div class="filter-link">
-    <a href="/results/filters/location">Change location</a>
-  </div>
-</div>
+    </ul>
+    <div class="filter-link">
+      <a href="/results/filters/funding">Change financial support options</a>
+    </div>
+  </div> -->
 
-<div class="filter-category ">
-  <h4 class="heading-small filter-heading">Subject</h4>
-  <ul class="filters list">
-    {% for subject in data['selectedSubjects'] %}
-      <li>{{ subject }}</li>
-    {% endfor %}
-  </ul>
-  <div class="filter-link">
-    <a href="/results/filters/subjects">Change subject</a>
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Study type</h4>
+    <ul class="filters list">
+      {% for type in data['study-type'] %}
+        <li>{{ type }}</li>
+      {% endfor %}
+    </ul>
+    <div class="filter-link">
+      <a href="/results/filters/studytype">Change study type</a>
+    </div>
   </div>
-</div>
 
-<!-- <div class="filter-category">
-  <h4 class="heading-small filter-heading">Financial support</h4>
-  <ul class="filters list">
-    {% if data['funding'] == 'Show courses with and without financial support' %}
-      <li>All</li>
-    {% else %}
-      <li>Salaries</li>
-    {% endif %}
-  </ul>
-  <div class="filter-link">
-    <a href="/results/filters/funding">Change financial support options</a>
+  <div class="filter-category">
+    <h4 class="heading-small filter-heading">Qualifications</h4>
+    <ul class="filters list">
+      {% for q in data['qualification'] %}
+        {% if 'Postgraduate' in q %}
+          <li>PGCE with QTS (Postgraduate certificate of education with qualified teacher status)</li>
+        {% else %}
+          <li>QTS (Qualified teacher status)</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <div class="filter-link">
+      <a href="/results/filters/qualification">Change qualifications</a>
+    </div>
   </div>
-</div> -->
 
-<div class="filter-category">
-  <h4 class="heading-small filter-heading">Study type</h4>
-  <ul class="filters list">
-    {% for type in data['study-type'] %}
-      <li>{{ type }}</li>
-    {% endfor %}
-  </ul>
-  <div class="filter-link">
-    <a href="/results/filters/studytype">Change study type</a>
-  </div>
-</div>
-
-<div class="filter-category">
-  <h4 class="heading-small filter-heading">Qualifications</h4>
-  <ul class="filters list">
-    {% for q in data['qualification'] %}
-      {% if 'Postgraduate' in q %}
-        <li>PGCE with QTS (Postgraduate certificate of education with qualified teacher status)</li>
+  <div class="filter-category ">
+    <h4 class="heading-small filter-heading">Salary</h4>
+    <ul class="filters list">
+      {% if data['salary'] == 'All courses (with or without a salary)' %}
+        <li>Courses with and without salary</li>
       {% else %}
-        <li>QTS (Qualified teacher status)</li>
+        <li>Only courses with a salary</li>
       {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="filter-link">
-    <a href="/results/filters/qualification">Change qualifications</a>
+    </ul>
+    <div class="filter-link">
+      <a href="/results/filters/salary">Change salary option</a>
+    </div>
   </div>
-</div>
-
-<div class="filter-category ">
-  <h4 class="heading-small filter-heading">Salary</h4>
-  <ul class="filters list">
-    {% if data['salary'] == 'All courses (with or without a salary)' %}
-      <li>Courses with and without salary</li>
-    {% else %}
-      <li>Only courses with a salary</li>
-    {% endif %}
-  </ul>
-  <div class="filter-link">
-    <a href="/results/filters/salary">Change salary option</a>
-  </div>
-</div>
 
 
-<div class="filter-category ">
-  <h4 class="heading-small filter-heading">Vacancies</h4>
-  <ul class="filters list">
-    <li>Only courses with vacancies</li>
-  </ul>
-  <div class="filter-link">
-    <a href="#">Change vacancies</a>
+  <div class="filter-category ">
+    <h4 class="heading-small filter-heading">Vacancies</h4>
+    <ul class="filters list">
+      <li>Only courses with vacancies</li>
+    </ul>
+    <div class="filter-link">
+      <a href="#">Change vacancies</a>
+    </div>
   </div>
 </div>
