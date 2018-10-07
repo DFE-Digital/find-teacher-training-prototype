@@ -41,6 +41,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
       <form action="/results">
+        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div id="accordion" class="accordion add-double-bottom-margin">
           {% for subjectGroup in subjectGroups %}
             <div class="accordion-section">
