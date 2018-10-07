@@ -257,7 +257,7 @@ prototype_data['courses'] = sample.map do |c|
   course.delete(:inst)
   course.delete(:enrichment)
   course.delete(:schools)
-  course.delete(:addresses)
+  #course.delete(:addresses)
   course
 end
 
