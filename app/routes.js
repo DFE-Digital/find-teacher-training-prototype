@@ -248,12 +248,32 @@ router.get('/results', function (req, res) {
     }
   }
 
-  res.render(map ? 'map' : 'results/index', { results: results, paginated: paginated, count: originalCount });
+  var groupedByTrainingProvider = groupBy(results, course => course.provider);
+
+  res.render(map ? 'map' : 'results/index', {
+    results: results,
+    groupedByTrainingProvider: [...groupedByTrainingProvider],
+    paginated: paginated,
+    count: originalCount });
 })
 
 router.get('/results/filters/funding', function(req, res) {
   backLink = { text: 'Back to results', href: '/results'}
   res.render('start/funding', { 'backLink': backLink, 'filtering': true });
 });
+
+function groupBy(list, keyGetter) {
+    const map = new Map();
+    list.forEach((item) => {
+        const key = keyGetter(item);
+        const collection = map.get(key);
+        if (!collection) {
+            map.set(key, [item]);
+        } else {
+            collection.push(item);
+        }
+    });
+    return map;
+}
 
 module.exports = router
