@@ -211,6 +211,10 @@ $path: "/public/images/";
 .filters {
   background-color: #ffffff;
 
+  &.list {
+    margin-bottom: 0;
+  }
+
   li {
     border-bottom: 2px solid #dee0e2;
     padding: 8px 8px 5px;
@@ -491,5 +495,13 @@ dl.aligned dd {
   .form-block--or {
     margin-top: -10px;
     margin-bottom: 20px;
+  }
+}
+
+.info-window {
+  @include core-16;
+
+  .heading-small {
+    margin-top: 5px;
   }
 }
