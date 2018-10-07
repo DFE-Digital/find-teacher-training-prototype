@@ -3,6 +3,10 @@
     "Full time (12 months)",
     "Part time (18-24 months)"
   ],
+  "latLong": {
+    "lat": 52.6033,
+    "lng": -1.4183
+  },
   "salary": "All courses (with or without a salary)",
   "qualification": [
     "PGCE with QTS (Postgraduate certificate in education with qualified teacher status)",
