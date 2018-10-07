@@ -175,8 +175,8 @@
 {% macro resultsHeader(countString = '40 courses', mapView = false) %}
 <div class="resultsHeader">
   <div {% if not mapView %}class="results-found"{% endif %}>
-    {{ countString }} found
     {% if not mapView %}
+      {{ countString }} found
       <span>
         <a href="/start/location">New search</a>
       </span>
@@ -192,10 +192,12 @@
   </div>
   {% endif %}
   {% if mapView %}
-  <ul class="list add-top-margin" style="padding-bottom: 20px; border-bottom: 1px solid #ccc">
+  40 courses found within 20 miles
+
+  <ul class="list add-top-margin" style="padding-bottom: 20px">
+    <li><a href="/results">View results as a list</a></li>
     <li><a href="/start/location">New search</a></li>
-    <li><a href="/results">View list</a></li>
-    <li><a href="/start/location">Filter the results</a></li>
+    {# <li><a href="/start/location">Filter the results</a></li> #}
   </ul>
   {% endif %}
 </div>
