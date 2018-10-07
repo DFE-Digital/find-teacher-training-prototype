@@ -136,6 +136,13 @@
         zoomControl: true
       });
 
+      var customMarker = {
+        url: '/public/images/map-marker.png',
+        scaledSize: new google.maps.Size(20, 32),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(0, 32)
+      };
+
       // var markers = [];
       //
       // for (var i = 0, l = points.length; i < l; i++) {
@@ -166,7 +173,7 @@
           position: { lat: address['latitude'], lng: address['longitude'] },
           map: map,
           title: title,
-          icon: dot
+          icon: customMarker
         });
 
         marker.addListener('click', console.log.bind(null, title));
