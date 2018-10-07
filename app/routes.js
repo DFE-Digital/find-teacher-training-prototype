@@ -235,13 +235,17 @@ router.get('/results', function (req, res) {
     });
   }
 
+  results = results.filter(course => course.distance < 50);
+
   var originalCount = results.length;
 
-  var perPage = map ? 40 : 20;
+  var perPage = 20;
 
-  if (results.length > perPage) {
-    results.length = perPage;
-    paginated = true;
+  if (!map) {
+    if (results.length > perPage) {
+      results.length = perPage;
+      paginated = true;
+    }
   }
 
   res.render(map ? 'map' : 'results/index', { results: results, paginated: paginated, count: originalCount });
