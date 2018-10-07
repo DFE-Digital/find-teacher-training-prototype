@@ -216,8 +216,10 @@ router.get('/results', function (req, res) {
 
   var originalCount = results.length;
 
-  if (results.length > 20) {
-    results.length = 20;
+  var perPage = map ? 40 : 20;
+
+  if (results.length > perPage) {
+    results.length = perPage;
     paginated = true;
   }
 
