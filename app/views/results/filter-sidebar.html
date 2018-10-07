@@ -15,7 +15,7 @@
       </li>
     </ul>
     <div class="filter-link">
-      <a href="/results/filters/location">Change location</a>
+      <a href="/results/filters/location{% if isMap %}?map=yes{% endif %}">Change location</a>
     </div>
   </div>
 
@@ -27,7 +27,7 @@
       {% endfor %}
     </ul>
     <div class="filter-link">
-      <a href="/results/filters/subjects">Change subject</a>
+      <a href="/results/filters/subjects{% if isMap %}?map=yes{% endif %}">Change subject</a>
     </div>
   </div>
 
@@ -53,7 +53,7 @@
       {% endfor %}
     </ul>
     <div class="filter-link">
-      <a href="/results/filters/studytype">Change study type</a>
+      <a href="/results/filters/studytype{% if isMap %}?map=yes{% endif %}">Change study type</a>
     </div>
   </div>
 
@@ -69,7 +69,8 @@
       {% endfor %}
     </ul>
     <div class="filter-link">
-      <a href="/results/filters/qualification">Change qualifications</a>
+      <a href="#">Change qualifications</a>
+      <!-- <a href="/results/filters/qualification{% if isMap %}?map=yes{% endif %}">Change qualifications</a> -->
     </div>
   </div>
 
@@ -83,7 +84,7 @@
       {% endif %}
     </ul>
     <div class="filter-link">
-      <a href="/results/filters/salary">Change salary option</a>
+      <a href="/results/filters/salary{% if isMap %}?map=yes{% endif %}">Change salary option</a>
     </div>
   </div>
 

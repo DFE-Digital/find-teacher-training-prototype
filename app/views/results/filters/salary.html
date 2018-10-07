@@ -5,9 +5,9 @@
 {% block content %}
 
 <main id="content" role="main">
-  {{macros.betaBanner()}}
-
-  {{ macros.backLink("Back to results","/results") }}
+  {{ macros.betaBanner() }}
+  {{ macros.backLink(backLink.text, backLink.href) }}
+  
   <h1 class="heading-xlarge">{{ title }}</h1>
 
   <div class="grid-row add-double-bottom-margin">
@@ -20,6 +20,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
       <form action="/results">
+        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div class="form-group">
           {% set fields = [
               {
