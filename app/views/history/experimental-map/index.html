@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% set title = 'Results on a map' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>A first pass at putting search results on a full-width map.</p>
+
+      <p>By putting results on a map it should be:</p>
+      <ul class="list list-bullet">
+        <li>clearer where the search has focused (eg when choosing a city like London this is treated as a point rather than an area)</li>
+        <li>more obvious to see what is close to the user’s searched for location</li>
+      </ul>
+
+      <h2 class="heading-large">What do we show on the map?</h2>
+
+      <p>A map is a little more complex than a listing because:</p>
+
+      <ul class="list list-bullet">
+        <li>there could be multiple courses at any given location (eg PGCE with QTS and a QTS only course)</li>
+        <li>a course can be at multiple locations: each training provider has multiple locations, how do we represent this?</li>
+        <li>some of a training provider’s training locations will be outside of the search radius</li>
+        <li>the map could show an area larger than the searched for radius</li>
+      </ul>
+
+      <p>This could make our result count confusing.</p>
+
+      <p>The map design doesn’t currently cater for many of these scenarios.</p>
+
+      <h2 class="heading-large">What are users expectations?</h2>
+
+      <p>We need to test maps with users to find out how they expect the map to behave.</p>
+
+      <p>When a user moves a map what should they see:</p>
+      <ul class="list list-bullet">
+        <li>results are already showing on the map as they move around</li>
+        <li>new results appear as they move around</li>
+        <li>nothing new, the user needs to explicitly search again</li>
+      </ul>
+
+      <p>When they click a result, what do they expect to happen?</p>
+
+      <p>Do users want to see a list of results, pick one, and see where it is on a map? Or do they want to see where all courses are to compare them? The former need can be met with a map on the course page.</p>
+
+      <h2 class="heading-large">Design notes</h2>
+
+      <p>Give the map as much space as possible, going full width. This should make it easier to move around and navigate results on a map</p>
+
+      <p>As per convention, keep a space on the left for controlling the view: title, controls and filters for searching again.</p>
+
+      <p>On mobile this view moves to below the map and the filter toggle expands over the map like a modal. (In the screenshots it’s missing a + icon and a way of hiding the modal)</p>
+    </div>
+  </div>
+
+  {% set contents = [
+  { text: 'Results on a map', id: 'results-on-a-map' },
+  { text: 'Result open on a map', id: '01b-results-open-on-map' },
+  { text: 'Results on a map mobile', id: 'results-on-a-map-mobile' },
+  { text: 'Mobile filter open', id: 'mobile-filter-open' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
+{{ macros.screenshot('Results on a map', 'results-on-a-map', '/public/images/history/experimental-map/thumbnails/01-results-on-a-map.png', '/public/images/history/experimental-map/01-results-on-a-map.png', '') }}
+
+{{ macros.screenshot('Result open on a map', '01b-results-open-on-map', '/public/images/history/experimental-map/thumbnails/01b-results-open-on-map.png', '/public/images/history/experimental-map/01b-results-open-on-map.png', '') }}
+
+{{ macros.screenshot('Results on a map mobile', 'results-on-a-map-mobile', '/public/images/history/experimental-map/thumbnails/02-results-on-a-map-mobile.png', '/public/images/history/experimental-map/02-results-on-a-map-mobile.png', '') }}
+
+{{ macros.screenshot('Mobile filter open', 'mobile-filter-open', '/public/images/history/experimental-map/thumbnails/03-mobile-filter-open.png', '/public/images/history/experimental-map/03-mobile-filter-open.png', '') }}
+
+</main>
+{% endblock %}
