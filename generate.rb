@@ -40,7 +40,11 @@ prototype_data = {
   "study-type": ["Full time (12 months)", "Part time (18-24 months)"],
   "salary": "All courses (with or without a salary)",
   "qualification": ["PGCE with QTS (Postgraduate certificate in education with qualified teacher status)", "QTS (Qualified teacher status)"],
-  "selectedSubjects": []
+  "selectedSubjects": [],
+  "latLong": {
+    "lat": 52.6033,
+    "lng": -1.4183
+  }
 }
 
 prototype_data['subjects'] = data.map { |c| c['subjects'].map {|s| s.downcase.capitalize } }.flatten.uniq.sort
