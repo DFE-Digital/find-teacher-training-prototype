@@ -498,6 +498,12 @@ dl.aligned dd {
   }
 }
 
+.heading-secondary {
+  font-weight: normal;
+  color: $grey-1;
+  display: block;
+}
+
 .info-window {
   @include core-16;
 
