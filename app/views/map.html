@@ -177,7 +177,7 @@
           </h2>
 
           <h2 class="heading-small">
-            <a href="/address.course/{{ address.course.slug }}">{{ address.course.name }} with {{ address.course.provider }}</a>
+            <a href="/course/{{ address.course.slug }}">{{ address.course.name }} with {{ address.course.provider }}</a>
           </h2>
           <div class="govuk-body">
             <p>{{ address.course.distance }} miles away</p>
@@ -199,7 +199,7 @@
         <div id="info-window-{{ provider[1][0].slug | replace("/", "-") }}" style="display: none">
           <div class="info-window">
             <h2 class="heading-small">
-              <a href="/provider[1][0]/{{ provider[1][0].slug }}">{{ provider[1][0].name }} with {{ provider[1][0].provider }}</a>
+              <a href="/course/{{ provider[1][0].slug }}">{{ provider[1][0].name }} with {{ provider[1][0].provider }}</a>
             </h2>
             <div class="govuk-body">
               <p>{{ provider[1][0].distance }} miles away</p>
