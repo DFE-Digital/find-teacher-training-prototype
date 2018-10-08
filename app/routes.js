@@ -227,7 +227,7 @@ router.get('/results', function (req, res) {
     results.forEach(function(course) {
       var latLong = { latitude: course.providerAddress.latitude, longitude: course.providerAddress.longitude };
       var d = geolib.getDistanceSimple(savedLatLong, latLong);
-      course.distance = (d / 1000).toFixed(0);
+      course.distance = ((d / 1000) * 0.621371).toFixed(0);
     });
 
     results.sort(function(c1, c2) {
