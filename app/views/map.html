@@ -168,6 +168,32 @@
       </div> -->
     {% endfor %}
 
+    {% for address in addresses %}
+      <div id="info-window-address-{{ address.course.slug | replace("/", "-") }}" style="display: none">
+        <div class="info-window">
+          <h2 class="heading-medium">
+            <span class="heading-secondary">{{ address.course.provider }}<br />Training location</span>
+            {{ address.address }}
+          </h2>
+
+          <h2 class="heading-small">
+            <a href="/address.course/{{ address.course.slug }}">{{ address.course.name }} with {{ address.course.provider }}</a>
+          </h2>
+          <div class="govuk-body">
+            <p>{{ address.course.distance }} miles away</p>
+
+            <p>Course offered: <br />{{ address.course.options }}</p>
+
+            {% if address.course.accrediting %}
+             <p>Accredited provider:<br />{{ address.course.accrediting }}</p>
+            {% endif %}
+
+            <p class="remove-bottom-margin">Financial support: <br /> {{ address.course.financial_support }} </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
     {% for provider in groupedByTrainingProvider %}
       {% if provider[1].length == 1 %}
         <div id="info-window-{{ provider[1][0].slug | replace("/", "-") }}" style="display: none">
@@ -189,7 +215,7 @@
           </div>
         </div>
       {% else %}
-        <div id="info-window-{{ provider[1][0]['providerCode'] }}">
+        <div id="info-window-{{ provider[1][0]['providerCode'] }}" style="display: none">
           <div class="govuk-body info-window info-window-provider">
             <h2 class="heading-medium">{{ provider[0] }}</h2>
             <p style="font-size: 19px">{{ provider[1][0].distance }} miles away</p>
@@ -219,17 +245,18 @@
   <div id="map"></div>
   <script>
     var results = {{ results | dump | safe }};
+    var addresses = {{ addresses | dump | safe }};
     var groupedByTrainingProvider = {{ groupedByTrainingProvider | dump | safe }};
     var map;
     var bounds;
 
     var dot = {
       path: 'M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0',
-      fillColor: 'white',
+      fillColor: 'black',
       fillOpacity: 1,
-      scale: 0.1,
+      scale: 0.05,
       strokeColor: 'black',
-      strokeWeight: 4
+      strokeWeight: 1
     };
 
     function initMap() {
@@ -273,8 +300,34 @@
         bounds.extend(loc);
       }
 
+      for (var i = 0, l = addresses.length; i < l; i++) {
+        var address = addresses[i];
+        var title = address.address;
+
+        var marker = new google.maps.Marker({
+          position: { lat: address['latitude'], lng: address['longitude'] },
+          map: map,
+          title: title,
+          icon: dot
+        });
+
+        //marker.addListener('click', showCoursePane.bind(null, results[i]['slug'], marker));
+        marker.addListener('click', showAddrInfoWindow.bind(null, address.course.slug, marker));
+
+        //loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+        //bounds.extend(loc);
+      }
+
       // map.fitBounds(bounds);       // auto-zoom
       // map.panToBounds(bounds);     // auto-center
+
+      function showAddrInfoWindow(id, marker) {
+        console.log("#info-window-address-" + id.replace("/", "-"));
+        var selector = "#info-window-address-" + id.replace("/", "-");
+        infoWindow.setContent($(selector).html());
+        infoWindow.setOptions({ maxWidth: 300 })
+        infoWindow.open(map, marker)
+      }
 
       function showInfoWindow(id, marker) {
         var selector = "#info-window-" + id.replace("/", "-");

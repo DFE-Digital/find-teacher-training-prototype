@@ -248,12 +248,24 @@ router.get('/results', function (req, res) {
     }
   }
 
+  var addresses = [];
+  results.forEach((result) => {
+    result.addresses.forEach((addr) => {
+      var a = JSON.parse(JSON.stringify(addr));
+      if (a) {
+        a.course = result;
+        addresses.push(a)
+      }
+    });
+  });
+
   var groupedByTrainingProvider = groupBy(results, course => course.provider);
 
   res.render(map ? 'map' : 'results/index', {
     results: results,
     groupedByTrainingProvider: [...groupedByTrainingProvider],
     paginated: paginated,
+    addresses: addresses,
     count: originalCount });
 })
 
