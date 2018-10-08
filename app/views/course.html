@@ -180,20 +180,15 @@
         Apply
       </h2>
 
-      <div class="notice add-double-bottom-margin" style="margin-top: 40px">
-        <i class="icon icon-important">
-          <span class="visually-hidden">Important</span>
-        </i>
-        <strong class="bold-small">
-          You can’t apply for this course until 9 October 2018
-        </strong>
-      </div>
+      <p style="margin: 30px 0;">
+        <a href="https://2019.teachertraining.apply.ucas.com/apply/student/login.do" class="button button-start">Apply on the UCAS website</a>
+      </p>
 
-      <p>Apply on the UCAS website from 9 October. You’ll need to register with UCAS before you can apply. Visit Get into Teaching for <a href="https://getintoteaching.education.gov.uk/how-to-apply/apply">guidance on applying for teacher training</a>.</p>
-<!--
-      <p>
-        <a href="https://2018.teachertraining.apply.ucas.com/apply/student/login.do">Apply on the UCAS website</a>. You’ll need to register with UCAS before you can apply.
-      </p> -->
+      <p>Visit the Get into Teaching website for <a href="https://getintoteaching.education.gov.uk/how-to-apply/apply">guidance on applying for teacher training</a>.</p>
+
+      <h3 class="heading-medium">Before you apply</h3>
+
+      <p>You’ll need to register with UCAS before you can apply.</p>
 
       <p>
         When you apply you’ll need these codes for the Choices section of your application form:
@@ -207,8 +202,10 @@
         </ul>
       </div>
 
-      <h3 class="heading-medium">Available training locations</h3>
+      <h3 class="heading-medium">Choose a training location</h3>
       <p>You’ll also need to choose a training location and give the relevant training location code.</p>
+
+        <div id="map" class="add-double-bottom-margin" style="height: 500px"></div>
 
       <table>
         <thead>
@@ -229,9 +226,6 @@
         </tbody>
       </table>
 
-      <h4 class="heading-medium" id="section-location">Map of training locations</h4>
-
-      <div id="map" style="width: 960px; height: 500px"></div>
       <script>
         var course = {{ course | dump | safe }};
         var map;
@@ -250,7 +244,7 @@
           bounds = new google.maps.LatLngBounds();
 
           map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: {{ course.providerAddress.latitude }}, lng: {{ course.providerAddress.longitude }}},
+            center: { lat: {{ course.addresses[0].latitude }}, lng: {{ course.addresses[0].longitude }}},
             zoom: 12,
             disableDefaultUI: true,
             zoomControl: true
@@ -266,12 +260,12 @@
             anchor: new google.maps.Point(0, 32)
           };
 
-          var marker = new google.maps.Marker({
-            position: { lat: {{ course.providerAddress.latitude }}, lng: {{ course.providerAddress.longitude }}},
-            map: map,
-            title: course.provider,
-            icon: customMarker
-          });
+          // var marker = new google.maps.Marker({
+          //   position: { lat: {{ course.providerAddress.latitude }}, lng: {{ course.providerAddress.longitude }}},
+          //   map: map,
+          //   title: course.provider,
+          //   icon: customMarker
+          // });
 
           var infoWindow = new google.maps.InfoWindow();
 
