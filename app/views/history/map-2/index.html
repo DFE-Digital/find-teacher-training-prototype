@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set title = 'Map 2' %}
+{% set title = 'Results on a map – User research 18 October' %}
 {% block page_title %}{{ title }}{% endblock %}
 
 {% block content %}
@@ -11,13 +11,27 @@
   </div>
   <h1 class="heading-xlarge">{{ title }}</h1>
 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>We tested the second iteration of maps with 5 users on 18 October 2018. It is a combination of the best bits of the previous two designs which we tested together.</p>
+
+      <ul class="list">
+        <li><a href="https://lookback.io/watch/68a6mf8m44LkpWCa5">Participant 1</a></li>
+        <li><a href="https://lookback.io/watch/LEWcbDNA9pqwofRsv">Participant 2</a></li>
+        <li><a href="https://lookback.io/watch/Ajn7TA3rYjADXkBFh">Participant 3</a></li>
+        <li><a href="https://lookback.io/watch/Q4jwCGjsSPdCWxLep">Participant 4</a></li>
+        <li><a href="https://lookback.io/watch/ubmQNAZGpgQr4rFNu">Participant 5</a></li>
+      </ul>
+    </div>
+  </div>
+
   {% set contents = [
-    { text: 'List of results', id: 'list-of-results' }, 
-    { text: 'Results on a map', id: 'results-on-a-map' }, 
-    { text: 'Result open on a map', id: 'result-open-on-a-map' }, 
-    { text: 'Another result open on a map', id: 'another-result-open-on-a-map' }, 
-    { text: 'Mobile results for london', id: 'mobile-results-for-london' }, 
-    { text: 'Single result open on mobile', id: 'single-result-open-on-mobile' }, 
+    { text: 'List of results', id: 'list-of-results' },
+    { text: 'Results on a map', id: 'results-on-a-map' },
+    { text: 'Result open on a map', id: 'result-open-on-a-map' },
+    { text: 'Another result open on a map', id: 'another-result-open-on-a-map' },
+    { text: 'Mobile results for london', id: 'mobile-results-for-london' },
+    { text: 'Single result open on mobile', id: 'single-result-open-on-mobile' },
     { text: 'Multiple courses open on mobile', id: 'multiple-courses-open-on-mobile' }
   ] %}
   {{ macros.screenshotContents(contents) }}
