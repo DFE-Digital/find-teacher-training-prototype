@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% set title = 'Map 2' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+{{ macros.screenshot('List of results', 'list-of-results', '/public/images/history/map-2/thumbnails/01-list-of-results.png', '/public/images/history/map-2/01-list-of-results.png', '') }}
+
+{{ macros.screenshot('Results on a map', 'results-on-a-map', '/public/images/history/map-2/thumbnails/02-results-on-a-map.png', '/public/images/history/map-2/02-results-on-a-map.png', '') }}
+
+{{ macros.screenshot('Result open on a map', 'result-open-on-a-map', '/public/images/history/map-2/thumbnails/03-result-open-on-a-map.png', '/public/images/history/map-2/03-result-open-on-a-map.png', '') }}
+
+{{ macros.screenshot('Another result open on a map', 'another-result-open-on-a-map', '/public/images/history/map-2/thumbnails/04-another-result-open-on-a-map.png', '/public/images/history/map-2/04-another-result-open-on-a-map.png', '') }}
+
+{{ macros.screenshot('Mobile results for london', 'mobile-results-for-london', '/public/images/history/map-2/thumbnails/05-mobile-results-for-london.png', '/public/images/history/map-2/05-mobile-results-for-london.png', '') }}
+
+{{ macros.screenshot('Single result open on mobile', 'single-result-open-on-mobile', '/public/images/history/map-2/thumbnails/06-single-result-open-on-mobile.png', '/public/images/history/map-2/06-single-result-open-on-mobile.png', '') }}
+
+{{ macros.screenshot('Multiple courses open on mobile', 'multiple-courses-open-on-mobile', '/public/images/history/map-2/thumbnails/07-multiple-courses-open-on-mobile.png', '/public/images/history/map-2/07-multiple-courses-open-on-mobile.png', '') }}
+
+</main>
+{% endblock %}

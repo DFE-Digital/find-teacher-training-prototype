@@ -22,9 +22,15 @@ if ( ! fs.existsSync(indexDirectory)){
 }
 
 var template = '';
+var contents = `
+  {% set contents = [`;
+var endContents = `
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+`;
 
 fs.readdir(directory, (err, files) => {
-  files.forEach(file => {
+  files.forEach(file, index => {
     if (!(/^\d{2}/.test(file) && /\.png$/.test(file))) {
       console.log('Ignoring: ' + file);
       return;
@@ -32,6 +38,7 @@ fs.readdir(directory, (err, files) => {
 
     var screenshot = directory + '/' + file;
     var thumbnail = directory + '/thumbnails/' + file;
+    var comma = index > 0 ? ', ': '';
 
     // 01-name.png
     var name = file.replace(/^\d{2}-/, '').replace(/\.png$/, '');
@@ -41,6 +48,10 @@ fs.readdir(directory, (err, files) => {
     template += `
 {{ macros.screenshot('${heading}', '${name}', '${thumbnail.replace('app/assets', '/public')}', '${screenshot.replace('app/assets', '/public')}', '') }}
 `
+
+  contents += `${comma}
+    { text: '${heading}', id: '${item.name}' }`;
+
     sharp(screenshot).resize(630, null).toFile(thumbnail);
   });
 
@@ -66,7 +77,7 @@ fs.readdir(directory, (err, files) => {
 {% endblock %}
 `;
 
-  fs.writeFile(indexDirectory + "/index.html", templateStart + template + templateEnd, function(err) {
+  fs.writeFile(indexDirectory + "/index.html", templateStart + contents + endContents + template + templateEnd, function(err) {
     if (err) {
       return console.log(err);
     }
