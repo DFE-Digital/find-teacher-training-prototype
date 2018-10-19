@@ -180,20 +180,15 @@
         Apply
       </h2>
 
-      <div class="notice add-double-bottom-margin" style="margin-top: 40px">
-        <i class="icon icon-important">
-          <span class="visually-hidden">Important</span>
-        </i>
-        <strong class="bold-small">
-          You can’t apply for this course until 9 October 2018
-        </strong>
-      </div>
+      <p style="margin: 30px 0;">
+        <a href="https://2019.teachertraining.apply.ucas.com/apply/student/login.do" class="button button-start">Apply on the UCAS website</a>
+      </p>
 
-      <p>Apply on the UCAS website from 9 October. You’ll need to register with UCAS before you can apply. Visit Get into Teaching for <a href="https://getintoteaching.education.gov.uk/how-to-apply/apply">guidance on applying for teacher training</a>.</p>
-<!--
-      <p>
-        <a href="https://2018.teachertraining.apply.ucas.com/apply/student/login.do">Apply on the UCAS website</a>. You’ll need to register with UCAS before you can apply.
-      </p> -->
+      <p>Visit the Get into Teaching website for <a href="https://getintoteaching.education.gov.uk/how-to-apply/apply">guidance on applying for teacher training</a>.</p>
+
+      <h3 class="heading-medium">Before you apply</h3>
+
+      <p>You’ll need to register with UCAS before you can apply.</p>
 
       <p>
         When you apply you’ll need these codes for the Choices section of your application form:
@@ -207,8 +202,10 @@
         </ul>
       </div>
 
-      <h3 class="heading-medium">Available training locations</h3>
+      <h3 class="heading-medium">Choose a training location</h3>
       <p>You’ll also need to choose a training location and give the relevant training location code.</p>
+
+        <div id="map" class="add-double-bottom-margin" style="height: 500px"></div>
 
       <table>
         <thead>
@@ -228,6 +225,93 @@
           {% endfor %}
         </tbody>
       </table>
+
+      <script>
+        var course = {{ course | dump | safe }};
+        var map;
+        var bounds;
+
+        var dot = {
+          path: 'M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0',
+          fillColor: 'black',
+          fillOpacity: 1,
+          scale: 0.05,
+          strokeColor: 'black',
+          strokeWeight: 1
+        };
+
+        function initMap() {
+          bounds = new google.maps.LatLngBounds();
+
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: {{ course.addresses[0].latitude }}, lng: {{ course.addresses[0].longitude }}},
+            zoom: 12,
+            disableDefaultUI: true,
+            zoomControl: true
+          });
+
+          loc = new google.maps.LatLng({{ course.providerAddress.latitude }}, {{ course.providerAddress.longitude }});
+          bounds.extend(loc);
+
+          var customMarker = {
+            url: '/public/images/map-marker.png',
+            scaledSize: new google.maps.Size(20, 32),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(0, 32)
+          };
+
+          // var marker = new google.maps.Marker({
+          //   position: { lat: {{ course.providerAddress.latitude }}, lng: {{ course.providerAddress.longitude }}},
+          //   map: map,
+          //   title: course.provider,
+          //   icon: customMarker
+          // });
+
+          var infoWindow = new google.maps.InfoWindow();
+
+          for (var i = 0, l = course.addresses.length; i < l; i++) {
+            var address = course.addresses[i];
+            console.log(address);
+
+            if (address) {
+              var marker = new google.maps.Marker({
+                position: { lat: address['latitude'], lng: address['longitude'] },
+                map: map,
+                title: address.formatted_address,
+                icon: customMarker
+              });
+            }
+
+            marker.addListener('click', showLocationWindow.bind(null, address, marker));
+            loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+            bounds.extend(loc);
+          }
+
+          if (course.addresses.length > 1) {
+            map.fitBounds(bounds);       // auto-zoom
+            map.panToBounds(bounds);     // auto-center
+          }
+
+          function showLocationWindow(address, marker) {
+            var school = course.schools.find(function(school) {
+              return school.address == address.address;
+            });
+
+            var html = `
+                <div class="info-window">
+                  <h2 class="heading-medium">${school.name} (${school.code || '-'})</h2>
+                  <p>${ school.address }</p>
+                </div>
+              `;
+
+
+            infoWindow.setContent(html);
+            infoWindow.setOptions({ maxWidth: 300 })
+            infoWindow.open(map, marker)
+          }
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initMap"></script>
 
       <h2 class="heading-large" id="section-advice">
         Advice and support

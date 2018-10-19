@@ -25,6 +25,7 @@
       {% endif %}
 
       <form action="{% if filtering %}/results/filters/location{% else %}/start/location{% endif %}" method="post" class="form">
+        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div class="form-group">
           {% set postcodeFields %}
             {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}

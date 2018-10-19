@@ -8,12 +8,14 @@ Study type
 
 <main id="content" role="main">
   {{macros.betaBanner()}}
+  {{ macros.backLink(backLink.text, backLink.href) }}
+
   <div class="grid-row">
     <div class="column-two-thirds">
-      {{ macros.backLink("Back to results","/results") }}
       {{ macros.h1("Study type") }}
 
       <form action="/results">
+        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div class="form-group">
           {% set fields = [
               {

@@ -1,0 +1,422 @@
+{% extends "layout.html" %}
+{% set title %}Map{% endset %}
+{% block page_title %}{{ title }}{% endblock %}
+{% block content %}
+
+{% set isMap = true %}
+
+<style>
+  #map {
+    position: fixed !important;
+    top: 63px;
+    bottom: 0;
+    right: 0;
+    left: 360px;
+    background: #fff;
+    border-left: 1px solid #dee0e2;
+  }
+
+  #results {
+    position: fixed;
+    top: 63px;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    overflow: scroll;
+    padding: 20px;
+    width: 360px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  @media (max-width: 600px) {
+    #results {
+      right: 0;
+      top: auto;
+      height: 200px;
+      bottom: 0;
+      width: auto;
+    }
+
+    #results .heading-large {
+      font-size: 19px;
+    }
+
+    #results .resultsHeader .list li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    #results .list {
+      margin-bottom: 0;
+    }
+
+    #map {
+      left: 0;
+      bottom: 200px;
+      top: 95px;
+    }
+
+    #filter-sidebar {
+      position: fixed;
+      top: 95px;
+      background: #fff;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      overflow: scroll;
+    }
+  }
+
+  .footer-wrapper {
+    display: none;
+  }
+
+  #global-header .header-wrapper {
+    max-width: none !important;
+  }
+
+  #global-header.with-proposition .header-wrapper .header-global {
+    width: auto;
+  }
+
+  #global-header-bar {
+    max-width: none;
+  }
+</style>
+
+<main id="content" role="main">
+  {{ macros.betaBanner()}}
+  <a class="link-back" href="/results">Back to search results</a>
+  <h1 class="heading-xlarge">
+    {{ title }}
+  </h1>
+
+  {{ data['latLong'] }}
+
+  <div id="results">
+    <h1 class="heading-large remove-top-margin">
+      Teacher training courses
+      {% if data['formattedAddress'] or data['postcode-town-or-city'] %}
+        near {{ data['formattedAddress'] or data['postcode-town-or-city'] }}
+      {% else %}
+        in England
+      {% endif %}
+    </h1>
+
+    {{macros.resultsHeader(count + ' courses', true)}}
+
+    {% include "results/filter-sidebar.html" %}
+
+    <div>
+    {% for course in results %}
+      <div id="{{ course.slug | replace("/", "-") }}" style="display: none" class="map-result">
+        <h2 class="heading-medium">
+          <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
+        </h2>
+        <dl class="aligned">
+          <dt>Course offered:</dt>
+          <dd>{{ course.options }}</dd>
+          {% if course.accrediting %}
+           <dt>Accredited provider:</dt>
+           <dd>{{ course.accrediting }}</dd>
+          {% endif %}
+          {% if data['location'] != 'Across England' %}
+            <dt>Distance:</dt>
+            <dd>{{ course.distance }} miles</dd>
+            <!-- <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd> -->
+          {% endif %}
+          <dt>
+            <!--{% if course.addresses.length > 1 %}
+              Nearest {{ course.locationType | lower }}:
+            {% else %}
+              {{ course.locationType }} address:
+            {% endif %}-->
+            Address:
+          </dt>
+          <dd>
+            {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}{% if course.providerAddress.postal_town %}, {% endif %} {{ course.providerAddress.post_code }}
+          </dd>
+          <dt>
+            Financial support:
+          </dt>
+          <dd>
+            {{ course.financial_support }}
+          </dd>
+        </dl>
+      </div>
+    {% endfor %}
+
+    {% for course in results %}
+      <!-- <div id="info-window-{{ course.slug | replace("/", "-") }}" style="display: none">
+        <div class="info-window">
+          <h2 class="heading-small">
+            <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
+          </h2>
+          <div class="govuk-body">
+            <p>{{ course.distance }} miles away</p>
+
+            <p>Course offered: <br />{{ course.options }}</p>
+
+            {% if course.accrediting %}
+             <p>Accredited provider:<br />{{ course.accrediting }}</p>
+            {% endif %}
+
+            <p class="remove-bottom-margin">Financial support: <br /> {{ course.financial_support }} </p>
+          </div>
+        </div>
+      </div> -->
+    {% endfor %}
+
+    {% for address in addresses %}
+      <div id="info-window-address-{{ address.course.slug | replace("/", "-") }}" style="display: none">
+        <div class="info-window">
+          <h2 class="heading-medium">
+            <span class="heading-secondary">{{ address.course.provider }}</span>
+            School or campus
+          </h2>
+
+          <h2 class="heading-small">
+            <a href="/course/{{ address.course.slug }}">{{ address.course.name }}</a>
+          </h2>
+          <div class="govuk-body">
+            <!-- <p>{{ address.course.distance }} miles away</p> -->
+
+            <p>Course offered: <br />{{ address.course.options }}</p>
+
+            {% if address.course.accrediting %}
+             <p>Accredited provider:<br />{{ address.course.accrediting }}</p>
+            {% endif %}
+
+            <p class="remove-bottom-margin">Financial support: <br /> {{ address.course.financial_support }} </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    {% for provider in groupedByTrainingProvider %}
+      {% if provider[1].length == 1 %}
+        <div id="info-window-{{ provider[1][0].slug | replace("/", "-") }}" style="display: none">
+          <div class="info-window">
+            <h2 class="heading-small">
+              <a href="/course/{{ provider[1][0].slug }}">{{ provider[1][0].name }} with {{ provider[1][0].provider }}</a>
+            </h2>
+            <div class="govuk-body">
+              <p>{{ provider[1][0].distance }} miles away</p>
+
+              <p>Course offered: <br />{{ provider[1][0].options }}</p>
+
+              {% if provider[1][0].accrediting %}
+               <p>Accredited provider:<br />{{ provider[1][0].accrediting }}</p>
+              {% endif %}
+
+              <p class="remove-bottom-margin">Financial support: <br /> {{ provider[1][0].financial_support }} </p>
+            </div>
+          </div>
+        </div>
+      {% else %}
+        <div id="info-window-{{ provider[1][0]['providerCode'] }}" style="display: none">
+          <div class="govuk-body info-window info-window-provider">
+            <h2 class="heading-medium">{{ provider[0] }}</h2>
+            <p style="font-size: 19px">{{ provider[1][0].distance }} miles away</p>
+            <h3 class="heading-medium">
+              {{ provider[1].length }} courses
+            </h3>
+
+            {% for course in provider[1] %}
+              <h3 class="bold">
+                <a href="/course/{{ course.slug }}">{{ course.name }}</a>
+              </h3>
+
+              <p>
+                {{ course.options }}
+              </p>
+
+              <!-- {% if course.accrediting %}
+               <p>Accredited provider:<br />{{ course.accrediting }}</p>
+              {% endif %} -->
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+  <div id="map"></div>
+  <script>
+    var results = {{ results | dump | safe }};
+    var addresses = {{ addresses | dump | safe }};
+    var groupedByTrainingProvider = {{ groupedByTrainingProvider | dump | safe }};
+    var map;
+    var bounds;
+
+    var dot = {
+      path: 'M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0',
+      fillColor: 'black',
+      fillOpacity: 1,
+      scale: 0.05,
+      strokeColor: 'black',
+      strokeWeight: 1
+    };
+
+    function initMap() {
+      var d="prototype";function e(a){this.set("fontFamily","sans-serif");this.set("fontSize",12);this.set("fontColor","#000000");this.set("strokeWeight",4);this.set("strokeColor","#ffffff");this.set("align","center");this.set("zIndex",1E3);this.setValues(a)}e.prototype=new google.maps.OverlayView;window.MapLabel=e;e[d].changed=function(a){switch(a){case "fontFamily":case "fontSize":case "fontColor":case "strokeWeight":case "strokeColor":case "align":case "text":return h(this);case "maxZoom":case "minZoom":case "position":return this.draw()}};
+      function h(a){var b=a.a;if(b){var f=b.style;f.zIndex=a.get("zIndex");var c=b.getContext("2d");c.clearRect(0,0,b.width,b.height);c.strokeStyle=a.get("strokeColor");c.fillStyle=a.get("fontColor");c.font=a.get("fontSize")+"px "+a.get("fontFamily");var b=Number(a.get("strokeWeight")),g=a.get("text");if(g){if(b)c.lineWidth=b,c.strokeText(g,b,b);c.fillText(g,b,b);a:{c=c.measureText(g).width+b;switch(a.get("align")){case "left":a=0;break a;case "right":a=-c;break a}a=c/-2}f.marginLeft=a+"px";f.marginTop=
+      "-0.4em"}}}e[d].onAdd=function(){var a=this.a=document.createElement("canvas");a.style.position="absolute";var b=a.getContext("2d");b.lineJoin="round";b.textBaseline="top";h(this);(b=this.getPanes())&&b.mapPane.appendChild(a)};e[d].onAdd=e[d].onAdd;
+      e[d].draw=function(){var a=this.getProjection();if(a&&this.a){var b=this.get("position");if(b){b=a.fromLatLngToDivPixel(b);a=this.a.style;a.top=b.y+"px";a.left=b.x+"px";var b=this.get("minZoom"),f=this.get("maxZoom");if(b===void 0&&f===void 0)b="";else{var c=this.getMap();c?(c=c.getZoom(),b=c<b||c>f?"hidden":""):b=""}a.visibility=b}}};e[d].draw=e[d].draw;e[d].onRemove=function(){var a=this.a;a&&a.parentNode&&a.parentNode.removeChild(a)};e[d].onRemove=e[d].onRemove;
+
+      bounds = new google.maps.LatLngBounds();
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: {{ data['latLong']['lat']}}, lng: {{ data['latLong']['lng']}}},
+        zoom: 11,
+        disableDefaultUI: true,
+        zoomControl: true
+      });
+
+      var customMarker = {
+        url: '/public/images/map-marker.png',
+        scaledSize: new google.maps.Size(20, 32),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(0, 32)
+      };
+
+      var infoWindow = new google.maps.InfoWindow();
+
+      // Add a marker clusterer to manage the markers.
+      //var markerCluster = new MarkerClusterer(map, markers,
+      //    {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+      for (var i = 0, l = results.length; i < l; i++) {
+        var address = results[i]['providerAddress'];
+        var title = `${results[i]['name']} with ${results[i]['provider']}`;
+
+        var marker = new google.maps.Marker({
+          position: { lat: address['latitude'], lng: address['longitude'] },
+          map: map,
+          title: title,
+          icon: customMarker
+        });
+
+        //marker.addListener('click', showCoursePane.bind(null, results[i]['slug'], marker));
+        marker.addListener('click', showInfoWindow.bind(null, results[i]['slug'], marker));
+
+        loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+        bounds.extend(loc);
+      }
+
+      for (var i = 0, l = addresses.length; i < l; i++) {
+        var address = addresses[i];
+        var title = address.address;
+
+        var marker = new google.maps.Marker({
+          position: { lat: address['latitude'], lng: address['longitude'] },
+          map: map,
+          title: title,
+          icon: dot
+        });
+
+        //marker.addListener('click', showCoursePane.bind(null, results[i]['slug'], marker));
+        marker.addListener('click', showAddrInfoWindow.bind(null, address.course.slug, marker));
+
+        //loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+        //bounds.extend(loc);
+      }
+
+      var marker = new google.maps.Marker({
+        position: { lat: {{ data['latLong']['lat']}}, lng: {{ data['latLong']['lng']}}},
+        map: map,
+        title: '{{ data['formattedAddress']}}'
+      });
+
+      // var cityCircle = new google.maps.Circle({
+      //   strokeColor: '#000000',
+      //   strokeOpacity: 0.3,
+      //   strokeWeight: 2,
+      //   fillColor: '#000000',
+      //   fillOpacity: 0,
+      //   map: map,
+      //   center: { lat: {{ data['latLong']['lat']}}, lng: {{ data['latLong']['lng']}}},
+      //   radius: 1609.34 * 5
+      // });
+
+      var cityCircle = new google.maps.Circle({
+        strokeColor: '#000000',
+        strokeOpacity: 0.3,
+        strokeWeight: 2,
+        fillColor: '#000000',
+        fillOpacity: 0,
+        map: map,
+        center: { lat: {{ data['latLong']['lat']}}, lng: {{ data['latLong']['lng']}}},
+        radius: 1609.34 * 10
+      });
+
+      var cityCircle = new google.maps.Circle({
+        strokeColor: '#000000',
+        strokeOpacity: 0.3,
+        strokeWeight: 2,
+        fillColor: '#000000',
+        fillOpacity: 0,
+        map: map,
+        center: { lat: {{ data['latLong']['lat']}}, lng: {{ data['latLong']['lng']}}},
+        radius: 1609.34 * 20
+      });
+
+      // var mapLabel = new MapLabel({
+      //   text: '5 miles',
+      //   position: new google.maps.LatLng(({{ data['latLong']['lat']}} + (5.4 * 1.609/111.111)), {{ data['latLong']['lng']}}),
+      //   map: map,
+      //   fontSize: 16,
+      //   align: 'center'
+      // });
+
+      var mapLabel = new MapLabel({
+        text: '10 miles',
+        position: new google.maps.LatLng(({{ data['latLong']['lat']}} + (10.4 * 1.609/111.111)), {{ data['latLong']['lng']}}),
+        map: map,
+        fontSize: 16,
+        align: 'center'
+      });
+
+      var mapLabel = new MapLabel({
+        text: '20 miles',
+        position: new google.maps.LatLng(({{ data['latLong']['lat']}} + (20.4 * 1.609/111.111)), {{ data['latLong']['lng']}}),
+        map: map,
+        fontSize: 16,
+        align: 'center'
+      });
+
+      // map.fitBounds(bounds);       // auto-zoom
+      // map.panToBounds(bounds);     // auto-center
+
+      function showAddrInfoWindow(id, marker) {
+        console.log("#info-window-address-" + id.replace("/", "-"));
+        var selector = "#info-window-address-" + id.replace("/", "-");
+        infoWindow.setContent($(selector).html());
+        infoWindow.setOptions({ maxWidth: 300 })
+        infoWindow.open(map, marker)
+      }
+
+      function showInfoWindow(id, marker) {
+        var selector = "#info-window-" + id.replace("/", "-");
+
+        if ($(selector).length == 0) {
+          selector = "#info-window-" + id.split("/")[0];
+        }
+
+        infoWindow.setContent($(selector).html());
+        infoWindow.setOptions({ maxWidth: 300 })
+        infoWindow.open(map, marker)
+      }
+
+      function showCoursePane(id, marker) {
+        var selector = "#" + id.replace("/", "-");
+        $('.map-result').hide();
+        $(selector).show();
+      }
+    }
+  </script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initMap"></script>
+</main>
+{% endblock %}

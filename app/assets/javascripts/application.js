@@ -19,5 +19,7 @@ $(document).ready(function () {
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
 
-  new Accordion(document.getElementById('accordion'));
+  if (document.getElementById('accordion')) {
+    new Accordion(document.getElementById('accordion'));
+  }
 })

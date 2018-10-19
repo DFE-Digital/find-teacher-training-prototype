@@ -30,13 +30,15 @@ router.post('/start/location', function (req, res) {
 })
 
 router.get('/results/filters/location', function(req, res) {
-  backLink = { text: 'Back to results', href: '/results'}
-  res.render('start/location', { 'backLink': backLink, 'filtering': true });
+  var isMap = req.query.map;
+  var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'};
+  res.render('start/location', { 'backLink': backLink, 'filtering': true, 'isMap': isMap });
 });
 
 router.post('/results/filters/location', function(req, res) {
-  backLink = { text: 'Back to results', href: '/results'}
-  handleLocationSearch(req.body['postcode-town-or-city'], req, res, '/results', { 'backLink': backLink, 'filtering': true });
+  var isMap = req.body.map;
+  var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'};
+  handleLocationSearch(req.body['postcode-town-or-city'], req, res, isMap ? '/results?map=yes' : '/results', { 'backLink': backLink, 'filtering': true, 'isMap': isMap });
 });
 
 function handleLocationSearch(location, req, res, successRedirect, options = {}) {
@@ -72,8 +74,27 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
 })
 
 router.get('/results/filters/subjects', function (req, res) {
-  var backLink = { text: 'Back to results', href: '/results'}
-  res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink });
+  var isMap = req.query.map;
+  var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'}
+  res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink, isMap: isMap });
+})
+
+router.get('/results/filters/salary', function (req, res) {
+  var isMap = req.query.map;
+  var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'}
+  res.render('results/filters/salary', { backLink: backLink, isMap: isMap });
+})
+
+router.get('/results/filters/qualification', function (req, res) {
+  var isMap = req.query.map;
+  var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'}
+  res.render('results/filters/qualification', { backLink: backLink, isMap: isMap });
+})
+
+router.get('/results/filters/studytype', function (req, res) {
+  var isMap = req.query.map;
+  var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'}
+  res.render('results/filters/studytype', { backLink: backLink, isMap: isMap });
 })
 
 router.get('/start/subjects', function (req, res) {
@@ -160,6 +181,7 @@ router.get('/results', function (req, res) {
   var paginated = false;
   var phase = ["Secondary"];
   var subjects = req.session.data['selectedSubjects'];
+  var map = req.query.map;
 
   if (req.session.data['selectedSubjects'].some(s => s.match(/primary/i))) {
     phase.push("Primary");
@@ -205,7 +227,7 @@ router.get('/results', function (req, res) {
     results.forEach(function(course) {
       var latLong = { latitude: course.providerAddress.latitude, longitude: course.providerAddress.longitude };
       var d = geolib.getDistanceSimple(savedLatLong, latLong);
-      course.distance = (d / 1000).toFixed(0);
+      course.distance = ((d / 1000) * 0.621371).toFixed(0);
     });
 
     results.sort(function(c1, c2) {
@@ -213,19 +235,57 @@ router.get('/results', function (req, res) {
     });
   }
 
+  results = results.filter(course => course.distance < 50);
+
   var originalCount = results.length;
 
-  if (results.length > 20) {
-    results.length = 20;
-    paginated = true;
+  var perPage = 20;
+
+  if (!map) {
+    if (results.length > perPage) {
+      results.length = perPage;
+      paginated = true;
+    }
   }
 
-  res.render('results/index', { results: results, paginated: paginated, count: originalCount });
+  var addresses = [];
+  results.forEach((result) => {
+    result.addresses.forEach((addr) => {
+      var a = JSON.parse(JSON.stringify(addr));
+      if (a) {
+        a.course = result;
+        addresses.push(a)
+      }
+    });
+  });
+
+  var groupedByTrainingProvider = groupBy(results, course => course.provider);
+
+  res.render(map ? 'map' : 'results/index', {
+    results: results,
+    groupedByTrainingProvider: [...groupedByTrainingProvider],
+    paginated: paginated,
+    addresses: addresses,
+    count: originalCount });
 })
 
 router.get('/results/filters/funding', function(req, res) {
   backLink = { text: 'Back to results', href: '/results'}
   res.render('start/funding', { 'backLink': backLink, 'filtering': true });
 });
+
+function groupBy(list, keyGetter) {
+    const map = new Map();
+    list.forEach((item) => {
+        const key = keyGetter(item);
+        const collection = map.get(key);
+        if (!collection) {
+            map.set(key, [item]);
+        } else {
+            collection.push(item);
+        }
+    });
+    return map;
+}
 
 module.exports = router
