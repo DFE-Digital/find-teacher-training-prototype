@@ -29,8 +29,10 @@ var endContents = `
   {{ macros.screenshotContents(contents) }}
 `;
 
+var i = 0;
+
 fs.readdir(directory, (err, files) => {
-  files.forEach(file, index => {
+  files.forEach((file, index) => {
     if (!(/^\d{2}/.test(file) && /\.png$/.test(file))) {
       console.log('Ignoring: ' + file);
       return;
@@ -38,7 +40,7 @@ fs.readdir(directory, (err, files) => {
 
     var screenshot = directory + '/' + file;
     var thumbnail = directory + '/thumbnails/' + file;
-    var comma = index > 0 ? ', ': '';
+    var comma = i > 0 ? ', ': '';
 
     // 01-name.png
     var name = file.replace(/^\d{2}-/, '').replace(/\.png$/, '');
@@ -48,11 +50,11 @@ fs.readdir(directory, (err, files) => {
     template += `
 {{ macros.screenshot('${heading}', '${name}', '${thumbnail.replace('app/assets', '/public')}', '${screenshot.replace('app/assets', '/public')}', '') }}
 `
-
-  contents += `${comma}
-    { text: '${heading}', id: '${item.name}' }`;
+    contents += `${comma}
+    { text: '${heading}', id: '${name}' }`;
 
     sharp(screenshot).resize(630, null).toFile(thumbnail);
+    i = i + 1;
   });
 
   var title = directoryName.replace(/-/g, ' ');
