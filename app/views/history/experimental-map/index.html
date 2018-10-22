@@ -21,7 +21,9 @@
         <li>more obvious to see what is close to the user’s searched for location</li>
       </ul>
 
-      <h2 class="heading-large">What do we show on the map?</h2>
+      <h2 class="heading-large">Design questions</h2>
+
+      <h3 class="heading-medium">What do we show on the map?</h3>
 
       <p>A map is a little more complex than a listing because:</p>
 
@@ -36,7 +38,7 @@
 
       <p>The map design doesn’t currently cater for many of these scenarios.</p>
 
-      <h2 class="heading-large">What are users expectations?</h2>
+      <h3 class="heading-medium">What are users expectations?</h3>
 
       <p>We need to test maps with users to find out how they expect the map to behave.</p>
 
@@ -62,20 +64,21 @@
   </div>
 
   {% set contents = [
-  { text: 'Results on a map', id: 'results-on-a-map' },
-  { text: 'Result open on a map', id: '01b-results-open-on-map' },
-  { text: 'Results on a map mobile', id: 'results-on-a-map-mobile' },
-  { text: 'Mobile filter open', id: 'mobile-filter-open' }
+    { text: 'Results on a map', id: 'results-on-a-map' },
+    { text: '01b results open on map', id: '01b-results-open-on-map' },
+    { text: 'Results on a map mobile', id: 'results-on-a-map-mobile' },
+    { text: 'Mobile filter open', id: 'mobile-filter-open' }
   ] %}
   {{ macros.screenshotContents(contents) }}
 
 {{ macros.screenshot('Results on a map', 'results-on-a-map', '/public/images/history/experimental-map/thumbnails/01-results-on-a-map.png', '/public/images/history/experimental-map/01-results-on-a-map.png', '') }}
 
-{{ macros.screenshot('Result open on a map', '01b-results-open-on-map', '/public/images/history/experimental-map/thumbnails/01b-results-open-on-map.png', '/public/images/history/experimental-map/01b-results-open-on-map.png', '') }}
+{{ macros.screenshot('01b results open on map', '01b-results-open-on-map', '/public/images/history/experimental-map/thumbnails/01b-results-open-on-map.png', '/public/images/history/experimental-map/01b-results-open-on-map.png', '') }}
 
 {{ macros.screenshot('Results on a map mobile', 'results-on-a-map-mobile', '/public/images/history/experimental-map/thumbnails/02-results-on-a-map-mobile.png', '/public/images/history/experimental-map/02-results-on-a-map-mobile.png', '') }}
 
 {{ macros.screenshot('Mobile filter open', 'mobile-filter-open', '/public/images/history/experimental-map/thumbnails/03-mobile-filter-open.png', '/public/images/history/experimental-map/03-mobile-filter-open.png', '') }}
+
 
 </main>
 {% endblock %}
