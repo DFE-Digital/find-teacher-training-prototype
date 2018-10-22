@@ -13,11 +13,19 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <p>An iteration on the <a href="/history/experimental-map/">first pass</a> of putting search results on a full-width map.</p>
+      <p>An iteration on the <a href="/history/experimental-map/">first pass</a> of putting search results on a full-width map. This design adds:</p>
+
+      <ul class="list list-bullet">
+        <li>training locations with a black dot</li>
+        <li>different map windows for training locations (the prototype lacks the name of a place so "School or campus" is used as a placeholder)</li>
+        <li>radius circles to indicate distance</li>
+      </ul>
 
       <h2 class="heading-large">User research</h2>
 
       <p>We tested this design alongside the <a href="/history/map-original">original map</a> with <a href="https://lookback.io/upkurve/r4-live-routes-in">10 users from 9 October to 11 October 2018</a>.</p>
+
+      <p><a href="https://dfedigital.atlassian.net/wiki/spaces/BaT/pages/615219275/First+round+on+location">Initial findings are on confluence</a>.</p>
 
       <ul class="list list-bullet">
         <li><a href="https://lookback.io/watch/AprAGdLxxz9FdxGLJ">Participant 1</a></li>
@@ -32,14 +40,33 @@
         <li><a href="https://lookback.io/watch/JXJFEQMvzDBk8HH32">Participant 10</a></li>
       </ul>
 
+      <p>There is a general positive response on seeing the map. We need to consider using these results as the default, if we can fix the issues found.</p>
+
       <h3 class="heading-medium">Users prefer the larger map</h3>
       <p>We thought that the radically different page showing a large map might confuse or disorientate users. We instead found that users were comfortable using the full size map.</p>
+
+      <p>People could see the name of streets and places they recognised immediately. People could see places they did not consider before.</p>
 
       <h3 class="heading-medium">The black dots aren’t seen or used</h3>
       <p>We knew that we hadn’t explained the difference between the black dot (training locations) and the markers (administrative or main site addresses), and we expected users to not understand the difference, but we wanted to explore how they reacted to them.</p>
 
       <p>We found that most users didn’t engage with them:</p>
       <p><a href="https://lookback.io/watch/6fpoe9h3RPnvRxAti?t=28m39.88s">“I just thought it was a feature of the map”</a></p>
+
+      <p>Users cannot deduce what a training location is, as it is based on provider parameters of a place you can apply to and go to. A key is needed. However, we need to realise that this is a temporary fix whatever text we put in there. Currently the existence of training locations is unstable and predicated on the need to be able to apply to that location. <a href="/history/map-2">We added a key</a>.</p>
+
+      <h3 class="heading-medium">It’s too easy to misinterpret location</h3>
+
+      <p>The location markers strongly suggest that this is the location of training, at best that this is the main location, at worst that this is the only location. Where the location is an administrative one, we can’t be sure that any training takes place there.</p>
+
+      <h3 class="heading-medium">The radius circles helped</h3>
+      <p>Users responded well to the radius circles – they understood their meaning and it helpers them to gauge distance more easily. The label in this design wasn’t always clear – a white background was added in the <a href="/history/map-2">next design</a>.</p>
+
+      <h3 class="heading-medium">Filters</h3>
+
+      <p>Nobody used the filters unprompted. When prompted people used it and understood the filters.</p>
+
+      <p>In the follow-up design these filters were collapsed (like on mobile) and the results listed down the left.</p>
     </div>
   </div>
 
