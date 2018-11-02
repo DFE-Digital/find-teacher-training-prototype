@@ -90,7 +90,7 @@
   {% endif %}
 {% endmacro %}
 
-{% macro checkboxGroup(name, fields, index = 0) %}
+{% macro checkboxGroup(name, fields, index = 0, bold = true) %}
   {% for field in fields %}
     <div class="multiple-choice" data-target="checkbox-part-{{ loop.index + index }}-extra">
       <input
@@ -101,7 +101,11 @@
         {{ checked(name, field.name) }}
       >
       <label for="checkbox-part-{{ loop.index + index }}">
-        <span class="bold">{{ field.name }}</span>
+        {% if bold %}
+          <span class="bold">{{ field.name }}</span>
+        {% else %}
+          {{ field.name }}
+        {% endif %}
       </label>
       {% if field.text %}
       <div style="margin-left: 13px">
