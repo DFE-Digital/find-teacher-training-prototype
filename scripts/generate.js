@@ -33,7 +33,7 @@ var i = 0;
 
 fs.readdir(directory, (err, files) => {
   files.forEach((file, index) => {
-    if (!(/^\d{2}/.test(file) && /\.png$/.test(file))) {
+    if (!(/^\d{2}/.test(file) && /\.(png|jpg)$/.test(file))) {
       console.log('Ignoring: ' + file);
       return;
     }
@@ -43,7 +43,7 @@ fs.readdir(directory, (err, files) => {
     var comma = i > 0 ? ', ': '';
 
     // 01-name.png
-    var name = file.replace(/^\d{2}-/, '').replace(/\.png$/, '');
+    var name = file.replace(/^\d{2}-/, '').replace(/\.(png|jpg)$/, '');
     var heading = name.replace(/-/g, ' ');
     heading = heading.charAt(0).toUpperCase() + heading.slice(1)
 
