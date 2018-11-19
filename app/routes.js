@@ -79,6 +79,10 @@ router.get('/results/filters/subjects', function (req, res) {
   res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink, isMap: isMap });
 })
 
+router.get('/static/subjects', function (req, res) {
+  res.render('static/subjects', { subjectGroups: subjectGroups(req), filtering: true });
+})
+
 router.get('/results/filters/salary', function (req, res) {
   var isMap = req.query.map;
   var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'}
