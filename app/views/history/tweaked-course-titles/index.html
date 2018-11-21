@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% set title = 'Iterate course titles' %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<main id="content" role="main" class="design-history">
+  <div class="breadcrumbs dont-print">
+    <ol>
+      <li><a href="/history">Design history</a></li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">{{ title }}</h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>Search results must be distinct, and the differences between courses must be clear. When a provider offers multiple courses for the same subject, it’s not obvious to users what the difference is (<a href="/public/images/history/live-launch/04-search-results.png">see BHSSA example</a>).</p>
+
+      <p>Make courses more obviously different by:</p>
+      <ul class="list list-bullet">
+        <li>using course codes to differentiate</li>
+        <li>putting the course offered at the top as most common differentiator</li>
+      </ul>
+
+      <p>Other design changes include:</p>
+      <ul class="list list-bullet">
+        <li>Use a format where name and code match what’s in UCAS Apply</li>
+        <li>Make it easier to skip past a provider’s courses by separating subject and provider</li>
+        <li>Update each course detail page to match the formatting of the search result</li>
+        <li>Demote accredited provider on a course page to minimise candidate confusion around ‘accredited provider’ alluded to in research with providers</li>
+      </ul>
+      <p>
+        <a href="https://github.com/DFE-Digital/search-and-compare-ui/pull/286">Pull request</a><br />
+        <a href="https://manage-courses-prototype.herokuapp.com/history/what-is-a-course">Previous examples of the problem</a>
+      </p>
+    </div>
+  </div>
+
+  {% set contents = [
+    { text: 'Search results', id: 'search-results' },
+    { text: 'Course', id: 'course' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
+  {{ macros.screenshot('Search results', 'search-results', '/public/images/history/tweaked-course-titles/thumbnails/01-search-results.png', '/public/images/history/tweaked-course-titles/01-search-results.png', '') }}
+
+  {{ macros.screenshot('Course', 'course', '/public/images/history/tweaked-course-titles/thumbnails/02-course.png', '/public/images/history/tweaked-course-titles/02-course.png', '') }}
+
+</main>
+{% endblock %}
