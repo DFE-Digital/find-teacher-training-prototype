@@ -21,12 +21,14 @@
   <h2 class="heading-large" id="{{ id }}">{{ title }}</h2>
   <div class="grid-row">
     <div class="column-two-thirds design-history-screenshot">
-      <a href="{{ full }}">
-        <img src="{{ thumbnail }}" width="630" alt="Screenshot of {{ title }}" />
-      </a>
-    </div>
-    <div class="column-one-third design-history-text">
-      {{ text | safe }}
+      <div class="add-double-bottom-margin">
+        <a href="{{ full }}">
+          <img src="{{ thumbnail }}" width="630" alt="Screenshot of {{ title }}" />
+        </a>
+      </div>
+      <div class="design-history-text">
+        {{ text | safe }}
+      </div>
     </div>
   </div>
 </div>
