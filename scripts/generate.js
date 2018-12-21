@@ -65,7 +65,6 @@ fs.readdir(directory, (err, files) => {
 {% block page_title %}{{ title }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main">
   <div class="breadcrumbs">
     <ol>
       <li><a href="/history">Design history</a></li>
@@ -74,9 +73,7 @@ fs.readdir(directory, (err, files) => {
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 `;
 
-  var templateEnd = `
-</main>
-{% endblock %}
+  var templateEnd = `{% endblock %}
 `;
 
   fs.writeFile(indexDirectory + "/index.html", templateStart + contents + endContents + template + templateEnd, function(err) {

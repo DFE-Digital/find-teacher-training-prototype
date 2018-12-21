@@ -90,7 +90,6 @@ var templateStart = `{% extends "layout.html" %}
 {% block page_title %}{{ title }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
   <div class="breadcrumbs dont-print">
     <ol>
       <li><a href="/history">Design history</a></li>
@@ -99,9 +98,7 @@ var templateStart = `{% extends "layout.html" %}
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 `;
 
-var templateEnd = `
-</main>
-{% endblock %}
+var templateEnd = `{% endblock %}
 `;
 
 fs.writeFile(indexDirectory + "/index.html", templateStart + contents + endContents + template + templateEnd, function(err) {
