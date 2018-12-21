@@ -1,60 +1,50 @@
 {% extends "layout.html" %}
 {% block page_title %}Pick a location{% endblock %}
-
 {% if not backLink %}
   {% set backLink = { text: 'Back', href: '/'} %}
 {% endif %}
+{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
 
 {% block content %}
+  <h1 class="govuk-heading-xl">
+    Pick a location
+  </h1>
 
-<main id="content" role="main">
-  
   <div class="grid-row">
-    <div class="column-full">
-      {{ macros.backLink(backLink.text, backLink.href) }}
-      <h1 class="govuk-heading-xl">
-        Pick a location
-      </h1>
+    <div class="column-two-thirds">
+      <p>You searched for ‘brighton’.</p>
 
-      <div class="grid-row">
-        <div class="column-two-thirds">
-          <p>You searched for ‘brighton’.</p>
+      <p>We found these places which matched your search:</p>
 
-          <p>We found these places which matched your search:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="#">Brighton, UK</a>
+        </li>
+        <li>
+          <a href="#">Brighton Railway Station, Brighton, UK</a>
+        </li>
+        <li>
+          <a href="#">Brighton Marina, Brighton, UK</a>
+        </li>
+        <li>
+          <a href="#">Brighton Road, South Croydon, UK</a>
+        </li>
+        <li>
+          <a href="#">Brighton Station, Queens Road, Brighton, UK</a>
+        </li>
+      </ul>
 
-          <ul class="govuk-list govuk-list--bullet">
-            <li>
-              <a href="#">Brighton, UK</a>
-            </li>
-            <li>
-              <a href="#">Brighton Railway Station, Brighton, UK</a>
-            </li>
-            <li>
-              <a href="#">Brighton Marina, Brighton, UK</a>
-            </li>
-            <li>
-              <a href="#">Brighton Road, South Croydon, UK</a>
-            </li>
-            <li>
-              <a href="#">Brighton Station, Queens Road, Brighton, UK</a>
-            </li>
-          </ul>
+      <hr />
 
-          <hr />
-
-          <details role="group">
-            <summary style="margin-bottom: 0;" role="button" aria-controls="details-content-0" aria-expanded="false">
-              <span class="summary">Try another postcode, town or city</span>
-            </summary>
-            <div class="panel panel-border-narrow">
-              {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
-              {{ macros.submit("Search again") }}
-            </div>
-          </details>
+      <details role="group">
+        <summary style="margin-bottom: 0;" role="button" aria-controls="details-content-0" aria-expanded="false">
+          <span class="summary">Try another postcode, town or city</span>
+        </summary>
+        <div class="panel panel-border-narrow">
+          {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
+          {{ macros.submit("Search again") }}
         </div>
-      </div>
+      </details>
     </div>
   </div>
-</main>
-
 {% endblock %}
