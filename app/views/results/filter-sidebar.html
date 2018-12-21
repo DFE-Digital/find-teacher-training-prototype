@@ -5,7 +5,7 @@
 <div id="filter-sidebar">
   <div class="filter-category">
     <h4 class="govuk-heading-s filter-heading">Location</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       <li>
         {% if data['location'] == 'Across England' %}
           Across England
@@ -14,63 +14,63 @@
         {% endif %}
       </li>
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="/results/filters/location{% if isMap %}?map=yes{% endif %}">Change location</a>
-    </div>
+    </p>
   </div>
 
   <div class="filter-category ">
     <h4 class="govuk-heading-s filter-heading">Subject</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       {% if data['sen'] %}<li>Only SEN courses</li>{% endif %}
       {% for subject in data['selectedSubjects'] %}
         <li>{{ subject }}</li>
       {% endfor %}
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="/results/filters/subjects{% if isMap %}?map=yes{% endif %}">Change subjects</a>
-    </div>
+    </p>
   </div>
 
   <!-- <div class="filter-category">
     <h4 class="govuk-heading-s filter-heading">Special educational needs (SEN)</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       <li>Only SEN courses</li>
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="#">Change</a>
     </div>
   </div> -->
 
   <!-- <div class="filter-category">
     <h4 class="govuk-heading-s filter-heading">Financial support</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       {% if data['funding'] == 'Show courses with and without financial support' %}
         <li>All</li>
       {% else %}
         <li>Salaries</li>
       {% endif %}
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="/results/filters/funding">Change financial support options</a>
     </div>
   </div> -->
 
   <div class="filter-category">
     <h4 class="govuk-heading-s filter-heading">Study type</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       {% for type in data['study-type'] %}
         <li>{{ type }}</li>
       {% endfor %}
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="/results/filters/studytype{% if isMap %}?map=yes{% endif %}">Change study type</a>
-    </div>
+    </p>
   </div>
 
   <div class="filter-category">
     <h4 class="govuk-heading-s filter-heading">Qualifications</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       {% for q in data['qualification'] %}
         {% if 'Postgraduate' in q %}
           <li>PGCE with QTS (Postgraduate certificate of education with qualified teacher status)</li>
@@ -79,33 +79,33 @@
         {% endif %}
       {% endfor %}
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="#">Change qualifications</a>
       <!-- <a href="/results/filters/qualification{% if isMap %}?map=yes{% endif %}">Change qualifications</a> -->
-    </div>
+    </p>
   </div>
 
   <div class="filter-category ">
     <h4 class="govuk-heading-s filter-heading">Salary</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       {% if data['salary'] == 'All courses (with or without a salary)' %}
         <li>Courses with and without salary</li>
       {% else %}
         <li>Only courses with a salary</li>
       {% endif %}
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="/results/filters/salary{% if isMap %}?map=yes{% endif %}">Change salary option</a>
-    </div>
+    </p>
   </div>
 
   <div class="filter-category ">
     <h4 class="govuk-heading-s filter-heading">Vacancies</h4>
-    <ul class="filters list">
+    <ul class="filters govuk-list">
       <li>Only courses with vacancies</li>
     </ul>
-    <div class="filter-link">
+    <p class="filter-link">
       <a href="#">Change vacancies</a>
-    </div>
+    </p>
   </div>
 </div>
