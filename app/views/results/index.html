@@ -27,15 +27,14 @@
 
         {% for course in results %}
           <h2 class="govuk-heading-m">
-            <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
+            <a href="/course/{{ course.slug }}" style="text-decoration: none">
+              <span class="govuk-!-font-size-19">{{ course.provider }}</span><br />
+              <span style="text-decoration: underline">{{ course.name }} ({{ course.programmeCode }})</span>
+            </a>
           </h2>
           <dl class="aligned">
-            <dt>Course offered:</dt>
+            <dt>Course:</dt>
             <dd>{{ course.options }}</dd>
-            {% if course.accrediting %}
-             <dt>Accredited provider:</dt>
-             <dd>{{ course.accrediting }}</dd>
-            {% endif %}
             {% if data['location'] != 'Across England' %}
               <dt>Distance:</dt>
               <dd>{{ course.distance }} miles</dd>
@@ -58,6 +57,10 @@
             <dd>
               {{ course.financial_support }}
             </dd>
+            {% if course.accrediting %}
+             <dt>Accredited provider:</dt>
+             <dd>{{ course.accrediting }}</dd>
+            {% endif %}
           </dl>
         {% endfor %}
       </div>
