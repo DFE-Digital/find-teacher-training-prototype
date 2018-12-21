@@ -7,7 +7,7 @@ if (window.console && window.console.info) {
 }
 
 $(document).ready(function () {
-  //GOVUK.modules.start();
+  GOVUK.modules.start();
 
   if (document.getElementById('accordion')) {
     new Accordion(document.getElementById('accordion'));
