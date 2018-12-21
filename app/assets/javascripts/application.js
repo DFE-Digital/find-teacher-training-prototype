@@ -22,4 +22,5 @@ $(document).ready(function () {
   if (document.getElementById('accordion')) {
     new Accordion(document.getElementById('accordion'));
   }
+  window.GOVUKFrontend.initAll()
 })
