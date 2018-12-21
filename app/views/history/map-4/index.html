@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Showing a map in the filters column' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -49,6 +44,4 @@
 {{ macros.screenshot('Mobile view scrolled', 'mobile-view-scrolled', '/public/images/history/map-4/thumbnails/05-mobile-view-scrolled.png', '/public/images/history/map-4/05-mobile-view-scrolled.png', '') }}
 
 {{ macros.screenshot('Full view map on mobile', 'full-view-map-on-mobile', '/public/images/history/map-4/thumbnails/06-full-view-map-on-mobile.png', '/public/images/history/map-4/06-full-view-map-on-mobile.png', '') }}
-
-
 {% endblock %}

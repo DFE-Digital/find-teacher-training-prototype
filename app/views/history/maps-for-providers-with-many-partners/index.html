@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Maps for providers with many partner&nbsp;schools' %}
 {% block pageTitle %}Maps for providers with many partner schools{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title | safe }}</h1>
 
   <div class="govuk-grid-row">
@@ -119,6 +114,4 @@
 
   <p>In Publish there might need to be a ‘Show/hide partner schools’ option. An obfuscate option.</p>
 ') }}
-
-
 {% endblock %}

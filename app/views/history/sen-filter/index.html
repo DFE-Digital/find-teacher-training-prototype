@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Special educational needs (SEN) filter' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -44,6 +39,4 @@
   {{ macros.screenshot('Subject filter with SEN option', 'subject-filter-with-sen', '/public/images/history/sen-filter/thumbnails/01-subject-filter-with-sen.png', '/public/images/history/sen-filter/01-subject-filter-with-sen.png', '') }}
 
   {{ macros.screenshot('Results with SEN filter enabled', 'results-with-sen-filter', '/public/images/history/sen-filter/thumbnails/02-results-with-sen-filter.png', '/public/images/history/sen-filter/02-results-with-sen-filter.png', '') }}
-
-
 {% endblock %}

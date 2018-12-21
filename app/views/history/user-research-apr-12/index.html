@@ -1,14 +1,8 @@
-
 {% extends "layout.html" %}
 {% block pageTitle %}User research 12  April 2018{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">User research 12  April 2018</h1>
 
   <ul class="govuk-list">
@@ -71,6 +65,4 @@
   {{ macros.screenshot('Study type filter', 'study-type-filter', '/public/images/history/user-research-apr-12/thumbnails/10-study-type-filter.png', '/public/images/history/user-research-apr-12/10-study-type-filter.png', '') }}
 
   {{ macros.screenshot('Qualifications filter', 'qualifications-filter', '/public/images/history/user-research-apr-12/thumbnails/11-qualifications-filter.png', '/public/images/history/user-research-apr-12/11-qualifications-filter.png', '') }}
-
-
 {% endblock %}

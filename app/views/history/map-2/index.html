@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Results on a map – User research 18 October' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -115,6 +110,4 @@
 {{ macros.screenshot('Single result open on mobile', 'single-result-open-on-mobile', '/public/images/history/map-2/thumbnails/06-single-result-open-on-mobile.png', '/public/images/history/map-2/06-single-result-open-on-mobile.png', '') }}
 
 {{ macros.screenshot('Multiple courses open on mobile', 'multiple-courses-open-on-mobile', '/public/images/history/map-2/thumbnails/07-multiple-courses-open-on-mobile.png', '/public/images/history/map-2/07-multiple-courses-open-on-mobile.png', '') }}
-
-
 {% endblock %}

@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Results on a map – Full screen iteration' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -114,6 +109,4 @@
 {{ macros.screenshot('Another provider open on map', 'another-provider-open-on-map', '/public/images/history/experimental-map/thumbnails/07-another-provider-open-on-map.png', '/public/images/history/experimental-map/07-another-provider-open-on-map.png', '') }}
 
 {{ macros.screenshot('Provider with one course open on map', 'provider-with-one-course-open-on-map', '/public/images/history/experimental-map/thumbnails/08-provider-with-one-course-open-on-map.png', '/public/images/history/experimental-map/08-provider-with-one-course-open-on-map.png', '') }}
-
-
 {% endblock %}

@@ -88,13 +88,9 @@ title = title.charAt(0).toUpperCase() + title.slice(1)
 var templateStart = `{% extends "layout.html" %}
 {% set title = '${title}' %}
 {% block page_title %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 `;
 

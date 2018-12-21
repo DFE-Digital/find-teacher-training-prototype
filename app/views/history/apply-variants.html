@@ -1,6 +1,8 @@
-{% extends "layout.html" %} {% block pageTitle %} Apply for a course variants
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+{% block pageTitle %}Apply for a course variants{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
+{% block content %}
 <style>
   .listing-example-container {
     margin-top: 60px;
@@ -12,13 +14,6 @@
     margin-top: 0;
   }
 </style>
-
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   {{macros.h1("Apply for a course variants")}}
 
   <div class="govuk-grid-row">
@@ -358,6 +353,4 @@
       <p>Each study option has different schools.</p>
     </div>
   </div>
-
-
 {% endblock %}

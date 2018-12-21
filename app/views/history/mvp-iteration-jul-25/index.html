@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Just the UCAS data – 25 July iteration' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -52,6 +47,4 @@
   {{ macros.screenshot('Teacher training courses', 'teacher-training-courses', '/public/images/history/mvp-iteration-jul-25/thumbnails/04-teacher-training-courses.png', '/public/images/history/mvp-iteration-jul-25/04-teacher-training-courses.png', '') }}
 
   {{ macros.screenshot('Minimum course page', 'minimum-course-page', '/public/images/history/mvp-iteration-jul-25/thumbnails/05-minimum-course-page.png', '/public/images/history/mvp-iteration-jul-25/05-minimum-course-page.png', '') }}
-
-
 {% endblock %}
