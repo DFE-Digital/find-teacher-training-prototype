@@ -1,15 +1,15 @@
 {% extends "layout.html" %}
 {% set title = 'Filter by the type of training provider' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
 
 {% block content %}
 
-<main id="content" role="main">
-  {{ macros.betaBanner() }}
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <h1 class="heading-xlarge">{{ title }}</h1>
+  
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">{{ title }}</h1>
 
       <form action="/results">
         {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
@@ -37,6 +37,6 @@
       </form>
     </div>
   </div>
-</main>
+
 
 {% endblock %}

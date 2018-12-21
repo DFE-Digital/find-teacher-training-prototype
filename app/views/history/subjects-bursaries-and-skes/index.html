@@ -1,20 +1,15 @@
 {% extends "layout.html" %}
 {% set title = 'Subjects, bursaries and SKE courses' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>We tested this design with 4 users:</p>
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li><a href="https://lookback.io/watch/az5TkZTc9rwgyoheL">Participant 1</a></li>
         <li><a href="https://lookback.io/watch/K6SmyEx5Kz76j6TAf">Participant 2 (Multiple sclerosis)</a></li>
         <li><a href="https://lookback.io/watch/YSyCpM8ERpT7oFEAK">Participant 3</a></li>
@@ -22,7 +17,7 @@
       </ul>
       <p><a href="https://docs.google.com/spreadsheets/d/1EEpqT5u2GLr3wJyk_SnKiysTtf5s88gYGiYqmWzNjl4/">User research findings</a></p>
 
-      <h2 class="heading-large">Choosing a subject behaviour</h2>
+      <h2 class="govuk-heading-l">Choosing a subject behaviour</h2>
 
       <p>The text above the subject listing was hardly read. Nobody read the information about SKE courses. One user responded to the financial support information.</p>
 
@@ -36,7 +31,7 @@
 
       <p>We <a href="/history/live-launch#find-by-subject">iterated the design</a> to remove the SKE text at the top and shortened and simplified the financial support details. We  added jumping off links to Get into Teaching. SKE information was added to each of the subjects, where it is more likely to be noticed.</p>
 
-      <h2 class="heading-large">You can’t apply yet</h2>
+      <h2 class="govuk-heading-l">You can’t apply yet</h2>
 
       <p>In lieu of the "Apply on UCAS" link, users frequently clicked through to the Get into Teaching guidance, which was deemed to be useful.</p>
 
@@ -65,6 +60,4 @@
   {{ macros.screenshot('Salary filter', 'salary-filter', '/public/images/history/subjects-bursaries-and-skes/thumbnails/05-salary-filter.png', '/public/images/history/subjects-bursaries-and-skes/05-salary-filter.png', '') }}
 
   {{ macros.screenshot('Full course page', 'full-course-page', '/public/images/history/subjects-bursaries-and-skes/thumbnails/06-full-course-page.png', '/public/images/history/subjects-bursaries-and-skes/06-full-course-page.png', '') }}
-
-</main>
 {% endblock %}

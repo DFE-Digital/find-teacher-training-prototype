@@ -1,46 +1,54 @@
-{% extends "layout.html" %} {% block page_title %} Course listing variants
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+{% block pageTitle %}Course listing variants{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
+{% block content %}
 <style>
   .listing-example-container {
     margin-bottom: 60px;
   }
 
+  .listing-example {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
   .listing-example li {
     overflow: hidden;
+    margin-left: 0;
   }
 
   .listing-example li:first-child h3,
-  .column-one-third h3:first-child {
+  .govuk-grid-column-one-third h3:first-child {
     margin-top: 0;
+  }
+
+  .multiple-options {
+    padding-left: 0;
   }
 </style>
 
-<main id="content" role="main">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   {{macros.h1("Course listing variants")}}
 
-  <p>Some notes:</p>
-
-  <ul class="list list-bullet" style="margin-bottom: 60px;">
-    <li>removed financial support options for now, salary listed within study options. Needs more work.</li>
-    <li>removed vacancies – by default only show courses with vacancies or waiting list</li>
-    <li>removed school led or university led, infer this from name of provider, distance to thing (school, campus or uni) and address of thing</li>
-    <li>for SCITT and School Direct we need all schools and their addresses to surface results to users accurately</li>
-  </ul>
-  <hr />
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p>Some notes:</p>
+      <ul class="govuk-list govuk-list--bullet" style="margin-bottom: 60px;">
+        <li>removed financial support options for now, salary listed within study options. Needs more work.</li>
+        <li>removed vacancies – by default only show courses with vacancies or waiting list</li>
+        <li>removed school led or university led, infer this from name of provider, distance to thing (school, campus or uni) and address of thing</li>
+        <li>for SCITT and School Direct we need all schools and their addresses to surface results to users accurately</li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Millais school -->
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at Associated Merseyside Partnership SCITT</a>
           </h3>
           <dl class="aligned">
@@ -60,11 +68,13 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">SCITT with one school</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">SCITT with one school</h3>
       <p>SCITT offers same course as "SCITT" or "School Direct". The course appears to be the same, only with the latter course seeing the candidate more likely to get a job at the end of it. Need to investigate.</p>
 
-      <a href="https://amp-scitt.lydiatelearningtrust.co.uk/chemistry/">Course page</a><br />
+      <p>
+        <a href="https://amp-scitt.lydiatelearningtrust.co.uk/chemistry/">Course page</a>
+      </p>
       <!--
       ?inst=25F&course=2MFF
       ?inst=1CD&course=26BZ
@@ -72,11 +82,11 @@
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at Millais Alliance</a>
           </h3>
           <dl class="aligned">
@@ -100,11 +110,11 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">Multiple accreditors</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">Multiple accreditors</h3>
       <p>Millais Alliance have multiple accreditors. For the same provider, subject and school-direct school – but either with University of Sussex or University of Brighton.</p>
 
-      <a href="http://www.millaisalliance.org.uk/initial-teacher-training-school-direct/school-direct.aspx">Course page</a><br />
+      <p><a href="http://www.millaisalliance.org.uk/initial-teacher-training-school-direct/school-direct.aspx">Course page</a></p>
       <!--
       ?inst=25F&course=2MFF
       ?inst=1CD&course=26BZ
@@ -112,11 +122,11 @@
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at United Teaching National SCITT</a>
           </h3>
           <dl class="aligned">
@@ -141,7 +151,7 @@
           </dl>
         </li>
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at United Teaching National SCITT</a>
           </h3>
           <dl class="aligned">
@@ -162,24 +172,26 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">SCITT with schools around country</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">SCITT with schools around country</h3>
       <p>Use distance of closest school. State what that school is. Do not show range of distances.</p>
 
       <p>SCITT offers 4 courses – all combinations of qualification (2) and salary (2)</p>
 
       <p>Schools are distributed around the country, across 11 locations on UCAS.</p>
 
-      <a href="https://www.unitedteaching.org.uk/apply/subject-availability">Course page</a><br />
-      <a href="https://www.unitedteaching.org.uk/about-us/our-schools">Schools maps</a>
+      <p>
+        <a href="https://www.unitedteaching.org.uk/apply/subject-availability">Course page</a><br />
+        <a href="https://www.unitedteaching.org.uk/about-us/our-schools">Schools maps</a>
+      </p>
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at UCL, University College London (University of London)</a>
           </h3>
           <dl class="aligned">
@@ -199,20 +211,22 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">University with one campus</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">University with one campus</h3>
 
       <p>Training based at University (London, Bloomsbury) with 120 days at 2 placement schools.</p>
 
-      <a href="http://www.ucl.ac.uk/ioe/courses/teacher-training/chemistry-pgce">Course page</a>
+      <p>
+        <a href="http://www.ucl.ac.uk/ioe/courses/teacher-training/chemistry-pgce">Course page</a>
+      </p>
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at Weatherhead Teaching School Alliance</a>
           </h3>
           <dl class="aligned">
@@ -230,21 +244,23 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">School Direct with schools near to each other</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">School Direct with schools near to each other</h3>
 
       <p>4 schools in one course, candidates specify the school applying to by using campus code on UCAS.</p>
       <p>Listing shows nearest school as well as range of distances for clustered schools.</p>
 
-      <a href="http://weatherheadtsa.co.uk/school-direct-train-to-teach/train-to-teach-places/">Course page</a>
+      <p>
+        <a href="http://weatherheadtsa.co.uk/school-direct-train-to-teach/train-to-teach-places/">Course page</a>
+      </p>
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at Calthorpe Park Fleet</a>
           </h3>
           <dl class="aligned">
@@ -262,20 +278,22 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">School Direct with schools near to each other</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">School Direct with schools near to each other</h3>
 
       <p>6 schools each modelled as individual courses on UCAS. They have consistent details except for a section detailing the school. Candidates apply using a unique course code and unique campus code.</p>
 
-      <a href="http://www.calthorpepark.hants.sch.uk/92/school-direct-placements">Course page</a>
+      <p>
+        <a href="http://www.calthorpepark.hants.sch.uk/92/school-direct-placements">Course page</a>
+      </p>
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Chemistry at Ark Teacher Training</a>
           </h3>
           <dl class="aligned">
@@ -298,8 +316,8 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">School Direct</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">School Direct</h3>
 
       <p>Ark uses one course on UCAS with campuses to note different regions. “We’ll work with you to place you in the school of your choice.”</p>
 
@@ -307,16 +325,18 @@
 
       <p>Listing shows nearest school, but this isn't data that Ark currently add to UCAS.</p>
 
-      <a href="https://www.arkteachertraining.org/apply-now/subjects-available/">Course page</a><br />
-      <a href="https://www.arkteachertraining.org/locations/london/">Ark London schools</a>
+      <p>
+        <a href="https://www.arkteachertraining.org/apply-now/subjects-available/">Course page</a><br />
+        <a href="https://www.arkteachertraining.org/locations/london/">Ark London schools</a>
+      </p>
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Science with chemistry at Bishop Grosseteste University</a>
           </h3>
           <dl class="aligned">
@@ -337,26 +357,24 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">University</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">University</h3>
 
       <p>Offers full time and part time courses.</p>
 
       <p>What is ‘Science with Chemistry’?: “The PGCE Secondary Science course supports trainees to teach all of the Science subjects at KS3 and KS4 (GCSE) with post-16 enhancement in their specialist subject of Biology, Chemistry or Physics. There is a part-time option available.”</p>
 
-
-      <a href="http://www.bishopg.ac.uk/study/courses/pgcesec/">Course page</a>
+      <p><a href="http://www.bishopg.ac.uk/study/courses/pgcesec/">Course page</a></p>
     </div>
   </div>
 
-  <hr />
-  <h2 class="heading-large" style="margin-bottom: 60px">Edge cases</h2>
+  <h2 class="govuk-heading-l">Edge cases</h2>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Primary at University of Cumbria</a>
           </h3>
 
@@ -373,23 +391,22 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">Multiple campuses</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">Multiple campuses</h3>
       <p>This is an edge case, only 7 courses in Higher Education with multiple campuses</p>
     </div>
   </div>
 
-  <hr />
-  <h2 class="heading-large" style="margin-bottom: 60px">Refinements on live</h2>
+  <h2 class="govuk-heading-l">Refinements on live</h2>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Secondary Business Studies at Associated Merseyside Partnership SCITT</a>
           </h3>
-          <dl>
+          <dl class="aligned">
             <dt>Distance:</dt>
             <dd>3.8 miles</dd>
             <dt>Location:</dt>
@@ -402,16 +419,16 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">Private beta</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">Private beta</h3>
     </div>
   </div>
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <ul class="listing-example">
         <li>
-          <h3 class="heading-medium">
+          <h3 class="govuk-heading-m">
             <a href="#">Business studies at Associated Merseyside Partnership SCITT</a>
           </h3>
           <dl class="aligned">
@@ -425,53 +442,9 @@
         </li>
       </ul>
     </div>
-    <div class="column-one-third">
-      <h3 class="heading-medium">Simplified private beta</h3>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">Simplified private beta</h3>
       <p>Always present miles without decimal places. Show less address information. Standardised subject names.</p>
     </div>
   </div>
-
-
-
-  <div>
-    <div class="grid-row">
-      <div class="column-two-thirds">
-
-        <!-- <h2 class="heading-large">Private beta</h2>
-        <ul class="listing-example">
-
-        </ul>
-
-        <h2 class="heading-large">Simplified private beta</h2>
-
-
-        <ul class="listing-example">
-
-        </ul>
-
-        <h2 class="heading-large">Multiple campuses</h2>
-
-
-        <ul class="listing-example">
-
-        </ul>
-
-        <h2 class="heading-large">Multiple schools (School direct)</h2>
-
-        <ul class="listing-example">
-          <li>
-            <h3 class="heading-medium">
-              <a href="#">Chemistry at Weatherhead Teaching School Alliance</a>
-            </h3>
-
-
-          </li>
-        </ul> -->
-
-        <!-- <h2 class="heading-large">Multiple options</h2> -->
-
-      </div>
-    </div>
-  </div>
-</main>
 {% endblock %}

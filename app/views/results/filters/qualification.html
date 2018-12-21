@@ -1,16 +1,13 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
+{% block pageTitle %}
 Which qualifications do you want?
 {% endblock %}
+{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
 
 {% block content %}
-
-<main id="content" role="main">
-  {{ macros.betaBanner() }}
-  {{ macros.backLink(backLink.text, backLink.href) }}
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       {{ macros.h1("Which qualifications do you want?") }}
 
       <form action="/results">
@@ -42,6 +39,4 @@ Which qualifications do you want?
       </form>
     </div>
   </div>
-</main>
-
 {% endblock %}

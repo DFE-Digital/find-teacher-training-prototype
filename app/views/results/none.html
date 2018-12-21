@@ -1,30 +1,22 @@
-{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK prototype kit
 {% endblock %} {% block content %}
 
-<main id="content" role="main">
-  {{macros.betaBanner()}}
-  <div class="grid-row">
-    <div class="column-two-thirds">
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       {{macros.h1("Business studies teacher training courses")}}
     </div>
   </div>
   <div>
-    <div class="grid-row">
-      <div class="column-one-third">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
         {% include "results/filter-sidebar.html" %}
       </div>
 
-      <div class="column-two-thirds">
-        <!-- <div class="resultsHeader results-header-empty">
-          <div>
-            No courses found
-            <span>
-              <a href="/start/location">New search</a>
-            </span>
-          </div>
-        </div> -->
+      <div class="govuk-grid-column-two-thirds">
         <div>
-          <h2 class="heading-large" style="margin-top: 0">
+          <h2 class="govuk-heading-l" style="margin-top: 0">
             There are no courses matching your&nbsp;search
           </h2>
 
@@ -32,9 +24,9 @@
             You can <a href="/start/location">try another search</a>, for example by changing subject or location.
           </p>
 
-          <h3 class="heading-medium">Suggested searches</h3>
+          <h3 class="govuk-heading-m">Suggested searches</h3>
           <p>For business studies there are:</p>
-          <ul class="list list-bullet">
+          <ul class="govuk-list govuk-list--bullet">
             <li><a href="#">8 courses within 10 miles of {{ data['postcode-town-or-city'] or 'SW13' }}</a></li>
             <li><a href="#">2 courses with salaries available in England</a></li>
           </ul>
@@ -46,5 +38,5 @@
       </div>
     </div>
   </div>
-</main>
+
 {% endblock %}

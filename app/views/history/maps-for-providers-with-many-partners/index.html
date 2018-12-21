@@ -1,28 +1,23 @@
 {% extends "layout.html" %}
 {% set title = 'Maps for providers with many partner&nbsp;schools' %}
-{% block page_title %}Maps for providers with many partner schools{% endblock %}
+{% block pageTitle %}Maps for providers with many partner schools{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main">
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">{{ title | safe }}</h1>
+  <h1 class="govuk-heading-xl">{{ title | safe }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>From research with providers we found that for courses offered by large SCITTs and universities we didn’t have enough data to accurately tell candidates the full story around location. This also applies to growing school direct alliances (for example <a href="https://find-postgraduate-teacher-training.education.gov.uk/course/1YF/2QL9">Trinity TSA</a>).</p>
       <p>When we tested with these providers they compared their courses with those of a School Direct. A School Direct course usually has many training locations, leading to many points on a map for each course. These extra locations put School Direct courses closer to more users. In comparison, a university usually has one location – it's main campus, and a large SCITT will use a set of locations that represent many more schools.</p>
 
-      <div class="panel panel-border-wide">
+      <div class="govuk-inset-text">
         <p>“We want people to see a wide range of partner schools that we work with, for this subject” (<a href="https://lookback.io/watch/j7XGfjfS8Bh4WrSzz?t=19m18s">video</a>)</p>
       </div>
 
       <p>(This work was parked to focus on UCAS transition. When providers can manage their locations in one place, it’ll be easier to fix and improve those locations. Map ideas haven’t been tested with users.)</p>
 
-      <h2 class="heading-large">Partner schools</h2>
+      <h2 class="govuk-heading-l">Partner schools</h2>
 
       <p>Partner schools are the schools a training provider works with, they are schools a candidate might be based in for 60 days or more.</p>
 
@@ -31,14 +26,14 @@
       <p>Providers will need an easy way to manage their list of partner schools, numbers range from 20 to 1,000+.</p>
 
       <p>There are constraints around how we show partner schools:</p>
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li>not all schools for next year are known</li>
         <li>this year’s schools give the best illustration but must be caveated</li>
         <li>these schools can’t be broken down by subject, only by phase</li>
         <li>providers don’t want to give the impression that people can apply to specific schools</li>
       </ul>
 
-      <blockquote class="panel panel-border-wide">
+      <blockquote class="govuk-inset-text">
         <p>
           “We have to be careful that someone doesn’t apply to us because they want to work at a specific school … they can only apply to [us]” (<a href="https://lookback.io/watch/j7XGfjfS8Bh4WrSzz?t=48m2.26s">video</a>)
         </p>
@@ -46,7 +41,7 @@
 
       <p>Breaking down schools by subject, if possible, can be misleading. For one provider they had 2 biology locations which just happened to be in Walthamstow, someone seeing that and looking from elsewhere might think that’s the only place they could be, which isn’t right.</p>
 
-      <blockquote class="panel panel-border-wide">
+      <blockquote class="govuk-inset-text">
         <p>
           “Just doing it by subject is misleading” (<a href="https://lookback.io/watch/j7XGfjfS8Bh4WrSzz?t=1h17m12.81s">video</a>)
         </p>
@@ -119,6 +114,4 @@
 
   <p>In Publish there might need to be a ‘Show/hide partner schools’ option. An obfuscate option.</p>
 ') }}
-
-</main>
 {% endblock %}

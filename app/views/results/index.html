@@ -7,35 +7,34 @@
     in England
   {% endif %}
 {% endset %}
-{% block page_title %}{{ title }}{% endblock %} {% block content %}
+{% block pageTitle %}{{ title }}{% endblock %} {% block content %}
 
-<main id="content" role="main">
-  {{macros.betaBanner()}}
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <h1 class="heading-xlarge">{{ title }}</h1>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">{{ title }}</h1>
     </div>
   </div>
   <div>
-    <div class="grid-row">
-      <div class="column-one-third">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
         {% include "results/filter-sidebar.html" %}
       </div>
 
-      <div class="column-two-thirds">
+      <div class="govuk-grid-column-two-thirds">
         {{macros.resultsHeader(count + ' courses')}}
 
         {% for course in results %}
-          <h2 class="heading-medium">
-            <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
+          <h2 class="govuk-heading-m">
+            <a href="/course/{{ course.slug }}" style="text-decoration: none">
+              <span class="govuk-!-font-size-19">{{ course.provider }}</span><br />
+              <span style="text-decoration: underline">{{ course.name }} ({{ course.programmeCode }})</span>
+            </a>
           </h2>
           <dl class="aligned">
-            <dt>Course offered:</dt>
+            <dt>Course:</dt>
             <dd>{{ course.options }}</dd>
-            {% if course.accrediting %}
-             <dt>Accredited provider:</dt>
-             <dd>{{ course.accrediting }}</dd>
-            {% endif %}
             {% if data['location'] != 'Across England' %}
               <dt>Distance:</dt>
               <dd>{{ course.distance }} miles</dd>
@@ -58,10 +57,14 @@
             <dd>
               {{ course.financial_support }}
             </dd>
+            {% if course.accrediting %}
+             <dt>Accredited provider:</dt>
+             <dd>{{ course.accrediting }}</dd>
+            {% endif %}
           </dl>
         {% endfor %}
       </div>
     </div>
   </div>
-</main>
+
 {% endblock %}

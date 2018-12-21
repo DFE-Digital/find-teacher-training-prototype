@@ -1,33 +1,28 @@
 {% extends "layout.html" %}
 {% set title = 'Results on a map – Full screen iteration' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main">
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>An iteration on the <a href="/history/experimental-map/">first pass</a> of putting search results on a full-width map. This design adds:</p>
 
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li>training locations with a black dot</li>
         <li>different map windows for training locations (the prototype lacks the name of a place so "School or campus" is used as a placeholder)</li>
         <li>radius circles to indicate distance</li>
       </ul>
 
-      <h2 class="heading-large">User research</h2>
+      <h2 class="govuk-heading-l">User research</h2>
 
       <p>We tested this design alongside the <a href="/history/map-original">original map</a> with <a href="https://lookback.io/dfe-digital/r4-live-routes-in">10 users from 9 October to 11 October 2018</a>.</p>
 
       <p><a href="https://dfedigital.atlassian.net/wiki/spaces/BaT/pages/615219275/First+round+on+location">Initial findings are on confluence</a>.</p>
 
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li><a href="https://lookback.io/watch/AprAGdLxxz9FdxGLJ">Participant 1</a></li>
         <li><a href="https://lookback.io/watch/u9cZaEQQRZGDofaKP">Participant 2</a></li>
         <li><a href="https://lookback.io/watch/ASAKdsr783jwsPMxh">Participant 3</a> (<a href="https://lookback.io/watch/E9934fSeb3Zu5ubP4">part 2</a>)</li>
@@ -44,14 +39,14 @@
 
       <p><a href="https://lookback.io/watch/GiTRz4TGGFdkWrQAy?t=32m5.36s">“Straight away I received information that I didn't know about, which is brilliant”</a></p>
 
-      <h3 class="heading-medium">Users prefer the larger map</h3>
+      <h3 class="govuk-heading-m">Users prefer the larger map</h3>
       <p>We thought that the radically different page showing a large map might confuse or disorientate users. We instead found that users were comfortable using the full size map.</p>
 
       <p>People could see the name of streets and places they recognised immediately. People could see places they did not consider before.</p>
 
       <p>On toggling the full screen mode of a smaller map when prompted: <a href="https://lookback.io/watch/GiTRz4TGGFdkWrQAy?t=33m26.05s">“[The bigger map] makes life easier”</a></p>
 
-      <h3 class="heading-medium">The black dots aren’t seen or used</h3>
+      <h3 class="govuk-heading-m">The black dots aren’t seen or used</h3>
       <p>We knew that we hadn’t explained the difference between the black dot (training locations) and the markers (administrative or main site addresses), and we expected users to not understand the difference, but we wanted to explore how they reacted to them.</p>
 
       <p>We found that most users didn’t engage with them:</p>
@@ -59,20 +54,20 @@
 
       <p>Users cannot deduce what a training location is, as it is based on provider parameters of a place you can apply to and go to. A key is needed. However, we need to realise that this is a temporary fix whatever text we put in there. Currently the existence of training locations is unstable and predicated on the need to be able to apply to that location. <a href="/history/map-2">We added a key</a>.</p>
 
-      <h3 class="heading-medium">It’s too easy to misinterpret location</h3>
+      <h3 class="govuk-heading-m">It’s too easy to misinterpret location</h3>
 
       <p>The location markers strongly suggest that this is the location of training, at best that this is the main location, at worst that this is the only location. Where the location is an administrative one, we can’t be sure that any training takes place there.</p>
 
       <p><a href="https://lookback.io/watch/6fpoe9h3RPnvRxAti?t=30m7.54s">“The pins are where the courses are”</a></p>
 
-      <h3 class="heading-medium">The radius circles helped</h3>
+      <h3 class="govuk-heading-m">The radius circles helped</h3>
       <p>Users responded well to the radius circles – they understood their meaning and it helpers them to gauge distance more easily. The label in this design wasn’t always clear – a white background was added in the <a href="/history/map-2">next design</a>.</p>
 
       <p>Without the circles there’s a fair assumption that all points shown are within the radius searched (<a href="https://lookback.io/watch/GiTRz4TGGFdkWrQAy?t=27m43.27s">video</a>), which <a href="https://lookback.io/watch/GiTRz4TGGFdkWrQAy?t=30m27.11s">isn’t always the case</a>. <a href="https://lookback.io/watch/u9cZaEQQRZGDofaKP?t=53m34s">Another example</a>.</p>
 
       <p>Without the red indicator it’s not always clear what location was searched for. The red marker and the circles work well together.</p>
 
-      <h3 class="heading-medium">Distances in pop-ups</h3>
+      <h3 class="govuk-heading-m">Distances in pop-ups</h3>
 
       <p>Users found the distance in the map pop-up helpful.</p>
 
@@ -80,13 +75,13 @@
 
       <p><a href="https://lookback.io/watch/2y5X6M8ZqsKpthh3Q?t=1m12.15s">“And this is 10 miles away”</a></p>
 
-      <h3 class="heading-medium">Filters</h3>
+      <h3 class="govuk-heading-m">Filters</h3>
 
       <p>Nobody used the filters unprompted. When prompted people used it and understood the filters.</p>
 
       <p>In the follow-up design these filters were collapsed (like on mobile) and the results listed down the left.</p>
 
-      <h3 class="heading-medium">Clustering</h3>
+      <h3 class="govuk-heading-m">Clustering</h3>
 
       <p>In the original design we tried clustering results: when zoomed out many results get grouped into one map pointer with a number. The colour of the pointer changes as the value gets larger. Users didn’t understand the <a href="https://developers.google.com/maps/documentation/javascript/marker-clustering">default Google Maps clustering pattern</a>.</p>
 
@@ -114,6 +109,4 @@
 {{ macros.screenshot('Another provider open on map', 'another-provider-open-on-map', '/public/images/history/experimental-map/thumbnails/07-another-provider-open-on-map.png', '/public/images/history/experimental-map/07-another-provider-open-on-map.png', '') }}
 
 {{ macros.screenshot('Provider with one course open on map', 'provider-with-one-course-open-on-map', '/public/images/history/experimental-map/thumbnails/08-provider-with-one-course-open-on-map.png', '/public/images/history/experimental-map/08-provider-with-one-course-open-on-map.png', '') }}
-
-</main>
 {% endblock %}

@@ -1,28 +1,24 @@
 {% extends "layout.html" %}
 {% set title = 'Find courses by subject' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
 
 {% if not backLink %}
   {% set backLink = { text: 'Back', href: '/start/location'} %}
 {% endif %}
+{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
 
 {% block content %}
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-<main id="content" role="main">
-  {{macros.betaBanner()}}
-  {{ macros.backLink(backLink.text, backLink.href) }}
-
-  <h1 class="heading-xlarge">{{ title }}</h1>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>Select the subjects you want to teach.</p>
 
       <!-- <p>You can train to teach a subject even if you don’t have a degree in it, or if you haven’t used your degree knowledge recently. For some subjects you can take a subject knowledge enhancement (SKE) course.</p>
 
       <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses">Find out more about SKE courses on Get into Teaching</a>.</p> -->
 
-      <h2 class="heading-medium">Get financial support</h2>
+      <h2 class="govuk-heading-m">Get financial support</h2>
       <p>Most courses charge a fee. You can get financial support to help with the costs of your course. The financial support options available to you will depend on the subject you choose.</p>
       <!-- <p>For some subjects you could be eligible for up to £28,000 tax-free while you train, through a bursary or scholarship.</p> -->
       <!-- <p>Most subjects have a few courses that pay a salary. These usually have no fees and you’ll be paid and taxed as an unqualified teacher with salaries starting from £16,000.</p> -->
@@ -31,8 +27,8 @@
     </div>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <form action="/results">
         {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div id="accordion" class="accordion add-double-bottom-margin">
@@ -40,11 +36,11 @@
             <div class="accordion-section">
 
               <div class="accordion-section-header">
-                <h2 class="heading-medium">{{ subjectGroup.group }}</h2>
+                <h2 class="govuk-heading-m">{{ subjectGroup.group }}</h2>
               </div>
               <div class="accordion-section-body">
                 <div class="form-group">
-                  {{ macros.checkboxGroup('selectedSubjects', subjectGroup.subjects, loop.index * 100) }}
+                  {{ macros.checkboxGroup('selectedSubjects', subjectGroup.subjects, false, loop.index * 100, true) }}
                 </div>
               </div>
             </div>
@@ -52,25 +48,24 @@
         </div>
 
         <div class="add-double-bottom-margin">
-          <details {% if data['sen'] %}open{% endif %}>
-            <summary><span class="summary">Do you want to teach special educational needs (SEN)?</span></summary>
-            <div class="panel panel-border-narrow">
-              {% set fields = [
-                  {
-                    name: 'Show only SEN courses for the subjects you’ve selected above'
-                  }
-                ]
-              %}
+          {% set fields = [
+              {
+                name: 'Show only SEND courses'
+              }
+            ]
+          %}
 
-              {{ macros.checkboxGroup('sen', fields, 0, false) }}
-            </div>
-          </details>
+          {% set detailsHtml %}{{ macros.checkboxGroup('sen', fields) }}{% endset %}
+
+          {{ govukDetails({
+            summaryText: "Do you want to teach Special educational needs and disability (SEND)?",
+            html: detailsHtml,
+            open: data['sen']
+          }) }}
         </div>
 
         {{ macros.submit("Find courses") }}
       </form>
     </div>
   </div>
-</main>
-
 {% endblock %}

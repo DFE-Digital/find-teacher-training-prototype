@@ -1,15 +1,9 @@
-
 {% extends "layout.html" %}
-{% block page_title %}Private beta iteration 15 May 2018{% endblock %}
+{% block pageTitle %}Private beta iteration 15 May 2018{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">Private beta iteration 15 May 2018</h1>
+  <h1 class="govuk-heading-xl">Private beta iteration 15 May 2018</h1>
 
   {% set contents = [
   { text: 'Find courses by', id: 'find-courses-by' },
@@ -41,6 +35,4 @@
   ') }}
 
   {{ macros.screenshot('Subjects filter', 'subjects-filter', '/public/images/history/private-beta-iteration-may-15/thumbnails/05-subjects-filter.png', '/public/images/history/private-beta-iteration-may-15/05-subjects-filter.png', '') }}
-
-</main>
 {% endblock %}
