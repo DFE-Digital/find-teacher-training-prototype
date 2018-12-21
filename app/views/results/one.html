@@ -3,18 +3,18 @@
 
 <main id="content" role="main">
   
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       {{macros.h1("Business studies teacher training courses")}}
     </div>
   </div>
   <div>
-    <div class="grid-row">
-      <div class="column-one-third">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
         {% include "results/filter-sidebar.html" %}
       </div>
 
-      <div class="column-two-thirds">
+      <div class="govuk-grid-column-two-thirds">
         {{macros.resultsHeader('1 course')}}
 
         {% for course in courses %}
@@ -23,29 +23,29 @@
               <h2 class="govuk-heading-m">
                 <a href="/course">{{ course.name }}</a>
               </h2>
-              <div class="grid-row results-data-large">
-                <div class="column-full">
+              <div class="govuk-grid-row results-data-large">
+                <div class="govuk-grid-column-full">
                   Training provider: {{ course.provider.name }}
                 </div>
               </div>
               <div>
-                <div class="grid-row results-data-large">
-                  <div class="column-full">
+                <div class="govuk-grid-row results-data-large">
+                  <div class="govuk-grid-column-full">
                     Training provider's location: {{ course.providerLocation.address }}
                   </div>
                 </div>
-                <!-- <div class="grid-row results-data-large">
-                  <div class="column-full">
+                <!-- <div class="govuk-grid-row results-data-large">
+                  <div class="govuk-grid-column-full">
                     Study type: {{result.studyType}}
                   </div>
                 </div> -->
-                <div class="grid-row results-data-large">
-                  <div class="column-full">
+                <div class="govuk-grid-row results-data-large">
+                  <div class="govuk-grid-column-full">
                     Vacancies: Yes
                   </div>
                 </div>
-                <div class="grid-row results-data-large">
-                  <div class="column-full">
+                <div class="govuk-grid-row results-data-large">
+                  <div class="govuk-grid-column-full">
                     Financial support: None
                   </div>
                 </div>

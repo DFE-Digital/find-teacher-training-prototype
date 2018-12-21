@@ -10,8 +10,8 @@
 {% block content %}
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>Select the subjects you want to teach.</p>
 
       <!-- <p>You can train to teach a subject even if you don’t have a degree in it, or if you haven’t used your degree knowledge recently. For some subjects you can take a subject knowledge enhancement (SKE) course.</p>
@@ -27,8 +27,8 @@
     </div>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <form action="/results">
         {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div id="accordion" class="accordion add-double-bottom-margin">
