@@ -9,7 +9,7 @@
 
 {% macro screenshotContents(contents) %}
 <h2 class="govuk-heading-m">Screenshots</h2>
-<ul class="list">
+<ul class="govuk-list">
   {% for c in contents %}
     <li><a href="#{{ c.id }}">{{ c.text }}</a></li>
   {% endfor %}
@@ -200,7 +200,7 @@
   {% if mapView %}
   {{ countString }} found within 50 miles
 
-  <ul class="list add-top-margin" style="padding-bottom: 20px">
+  <ul class="govuk-list add-top-margin" style="padding-bottom: 20px">
     <li><a href="/results">View results as a list</a></li>
     <li><a href="/start/location">New search</a></li>
     {# <li><a href="/start/location">Filter the results</a></li> #}
