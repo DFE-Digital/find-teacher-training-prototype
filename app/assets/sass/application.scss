@@ -182,11 +182,12 @@ blockquote {
   height:100px;
   overflow-y: scroll;
 }
-.filter-input{
+.filter-input {
   width: 250px;
 }
-.filter-heading{
-  margin-top:3px;
+.filter-heading {
+  margin-top: 3px;
+  margin-bottom: 0;
 }
 
 .filter-category {
@@ -217,6 +218,7 @@ blockquote {
 }
 .filters {
   background-color: #ffffff;
+  margin: 10px 0;
 
   &.list {
     margin-bottom: 0;
