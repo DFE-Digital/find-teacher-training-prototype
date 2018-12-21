@@ -94,7 +94,7 @@
   {% endif %}
 {% endmacro %}
 
-{% macro checkboxGroup(name, fields, errors = false, index = 0) %}
+{% macro checkboxGroup(name, fields, errors = false, index = 0, allBold = false) %}
   {% set e = false %}
   <div class="govuk-form-group {% if e %} govuk-form-group--error{% endif %}">
     {% if e %}
@@ -117,7 +117,7 @@
           >
           <label
             for="checkbox-part-{{ i }}"
-            class="govuk-label govuk-checkboxes__label{% if field.text %} govuk-label--s{% endif %}"
+            class="govuk-label govuk-checkboxes__label{% if field.text or allBold %} govuk-label--s{% endif %}"
             {% if field.text %}aria-describedby="checkbox-part-{{ i }}-extra-hint"{% endif %}
           >
             {{ field.name }}
