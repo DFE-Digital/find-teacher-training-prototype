@@ -480,6 +480,10 @@ dl.aligned dd {
   width: 70%;
   float: right;
   margin: 0;
+
+  .govuk-details {
+    margin-bottom: 0;
+  }
 }
 
 .multiple-options li {
