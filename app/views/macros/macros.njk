@@ -170,22 +170,22 @@
 <!-- Header on top of the results showing number of courses, New search and sorting order -->
 {% macro resultsHeader(countString = '40 courses', mapView = false) %}
 <div class="resultsHeader">
-  <div {% if not mapView %}class="results-found"{% endif %}>
+  <p {% if not mapView %}class="results-found"{% endif %}>
     {% if not mapView %}
       {{ countString }} found
       <span>
         <a href="/start/location">New search</a>
       </span>
     {% endif %}
-  </div>
+  </p>
   {% if value('location') == 'Across England' %}
-  <div class="resultsSortingOptions">
+  <p class="resultsSortingOptions">
     <div class="sortLabel">Sorted by training provider</div>
-  </div>
+  </p>
   {% elseif (not mapView) %}
-  <div class="resultsSortingOptions">
+  <p class="resultsSortingOptions">
     <a href="/results?map=yes">View on a map</a>
-  </div>
+  </p>
   {% endif %}
   {% if mapView %}
   {{ countString }} found within 50 miles
