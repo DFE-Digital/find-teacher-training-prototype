@@ -6,15 +6,15 @@
 {% block content %}
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row add-double-bottom-margin">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row add-double-bottom-margin">
+    <div class="govuk-grid-column-two-thirds">
       <p>On a salaried course you’ll be paid and taxed as an unqualified teacher. The salary awarded will differ between schools; you should check the salary with the school before you apply.</p>
       <p>Salaried courses are not eligible for bursaries, scholarships or student finance. There are usually no course fees to pay.</p>
     </div>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <form action="/results">
         {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div class="form-group">

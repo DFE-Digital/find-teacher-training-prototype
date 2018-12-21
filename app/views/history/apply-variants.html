@@ -8,7 +8,7 @@
   }
 
   .listing-example li:first-child h3,
-  .column-one-third h3:first-child {
+  .govuk-grid-column-one-third h3:first-child {
     margin-top: 0;
   }
 </style>
@@ -21,16 +21,16 @@
   </div>
   {{macros.h1("Apply for a course variants")}}
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p class="lede">Examples of the ‘Apply’ section on different course details pages. Each example is based on a real course and matches with <a href="/history/variants">course variant examples</a>.</p>
     </div>
   </div>
 
   <hr />
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-l remove-top-margin">Apply</h2>
       <p><a href="#">Apply for this course on the UCAS website</a>.</p>
       <h3 class="govuk-heading-m">Codes for the choices section of your application</h3>
@@ -42,7 +42,7 @@
       Training programme code for Chemistry:
       <div class="govuk-heading-m remove-top-margin remove-bottom-margin">2MFF</div>
     </div>
-    <div class="column-one-third">
+    <div class="govuk-grid-column-one-third">
       <h3 class="govuk-heading-m">SCITT with one school (single study option)</h3>
       <a href="https://amp-scitt.lydiatelearningtrust.co.uk/chemistry/">Course page</a><br />
     </div>
@@ -50,8 +50,8 @@
 
   <hr />
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-l remove-top-margin">Apply</h2>
       <p><a href="#">Apply for this course on the UCAS website</a>.</p>
       <h3 class="govuk-heading-m">Codes for the choices section of your application</h3>
@@ -63,7 +63,7 @@
       Training programme code for Chemistry:
       <div class="govuk-heading-m remove-top-margin remove-bottom-margin">2P38</div>
     </div>
-    <div class="column-one-third">
+    <div class="govuk-grid-column-one-third">
       <h3 class="govuk-heading-m">University with one campus (single study option)</h3>
       <a href="http://www.ucl.ac.uk/ioe/courses/teacher-training/chemistry-pgce">Course page</a>
     </div>
@@ -71,8 +71,8 @@
 
   <hr />
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-l remove-top-margin">Apply</h2>
 
       {% set national_scitt_preamble %}
@@ -130,7 +130,7 @@
         {{ macros.radioGroup('funding-example-one', fields) }}
       </div>
     </div>
-    <div class="column-one-third">
+    <div class="govuk-grid-column-one-third">
       <h3 class="govuk-heading-m">SCITT with course folded on qualification and salary (multiple study options)</h3>
       <p>Beneath the ‘Apply’ section on the course detail page, indicate the choice a user must make before applying to a course.</p>
       <p>Selecting a study option reveals how to apply to that variant. This hides the complexity of the logic around folded courses and reduces the risk of a user picking the wrong course codes.</p>
@@ -141,8 +141,8 @@
 
   <hr />
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-l remove-top-margin">Apply</h2>
       <p><a href="#">Apply for this course on the UCAS website</a>.</p>
       <h3 class="govuk-heading-m">Codes for the choices section of your application</h3>
@@ -184,7 +184,7 @@
         </table>
       </div>
     </div>
-    <div class="column-one-third">
+    <div class="govuk-grid-column-one-third">
       <h3 class="govuk-heading-m">School Direct with schools as campuses in one course on UCAS</h3>
 
       <p>A School Direct course that hasn’t been folded.</p>
@@ -195,8 +195,8 @@
 
   <hr />
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-l remove-top-margin">Apply</h2>
       <p><a href="#">Apply for this course on the UCAS website</a>.</p>
       <h3 class="govuk-heading-m">Codes for the choices section of your application</h3>
@@ -250,7 +250,7 @@
         </table>
       </div>
     </div>
-    <div class="column-one-third">
+    <div class="govuk-grid-column-one-third">
       <h3 class="govuk-heading-m">6 School Direct courses folded into one</h3>
 
       <p>6 schools each modelled as individual courses on UCAS folded into a single course. Candidates apply using a unique course code and unique campus code.</p>
@@ -263,8 +263,8 @@
 
   <hr />
 
-  <div class="grid-row listing-example-container">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row listing-example-container">
+    <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-l remove-top-margin">Apply</h2>
 
       {% set salary_and_unsalaried_preamble %}
@@ -352,7 +352,7 @@
         {{ macros.radioGroup('funding-example-three', fields) }}
       </div>
     </div>
-    <div class="column-one-third">
+    <div class="govuk-grid-column-one-third">
       <h3 class="govuk-heading-m">School Direct salary and unsalaried folded into one course</h3>
       <p>Beneath the ‘Apply’ section on the course detail page, indicate the choice a user must make before applying to a course.</p>
       <p>Each study option has different schools.</p>

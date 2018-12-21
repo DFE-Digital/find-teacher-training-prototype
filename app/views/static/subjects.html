@@ -10,8 +10,8 @@
 {% block content %}
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>Select the subject you want to teach.</p>
 
       <h2 class="govuk-heading-m">Get financial support</h2>
@@ -21,8 +21,8 @@
     </div>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <form action="/results">
         <div id="accordion" class="accordion add-double-bottom-margin">
           {% for subjectGroup in subjectGroups %}
