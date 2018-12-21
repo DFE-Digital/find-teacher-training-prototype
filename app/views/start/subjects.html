@@ -48,19 +48,20 @@
         </div>
 
         <div class="add-double-bottom-margin">
-          <details {% if data['sen'] %}open{% endif %}>
-            <summary><span class="summary">Do you want to teach special educational needs (SEN)?</span></summary>
-            <div class="govuk-inset-text">
-              {% set fields = [
-                  {
-                    name: 'Show only SEN courses for the subjects you’ve selected above'
-                  }
-                ]
-              %}
+          {% set fields = [
+              {
+                name: 'Show only SEND courses'
+              }
+            ]
+          %}
 
-              {{ macros.checkboxGroup('sen', fields, 0, false) }}
-            </div>
-          </details>
+          {% set detailsHtml %}{{ macros.checkboxGroup('sen', fields) }}{% endset %}
+
+          {{ govukDetails({
+            summaryText: "Do you want to teach Special educational needs and disability (SEND)?",
+            html: detailsHtml,
+            open: data['sen']
+          }) }}
         </div>
 
         {{ macros.submit("Find courses") }}
