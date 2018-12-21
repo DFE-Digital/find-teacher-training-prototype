@@ -10,13 +10,14 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
 .heading-medium .heading-secondary {
   font-weight: normal;
   color: $grey-1;
   @include core-19;
 }
-// Components that aren't in Frontend
-@import "components/cookie-banner";
 
 .design-history-text h3:first-child {
   margin-top: 5px;
