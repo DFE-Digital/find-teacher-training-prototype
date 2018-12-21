@@ -521,3 +521,8 @@ dl.aligned dd {
     margin-top: 5px;
   }
 }
+
+.markdown ul {
+  @extend .govuk-list;
+  @extend .govuk-list--bullet;
+}

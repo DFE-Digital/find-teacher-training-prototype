@@ -249,18 +249,15 @@ app.use(function (req, res, next) {
      return value;
    })
 
-  nunjucksAppEnv.addGlobal('markdown', function(name) {
-   if (req.session.data === undefined) {
-     return ''
-   }
+   nunjucksAppEnv.addGlobal('markdown', function(text) {
+     if (text === undefined) {
+       return ''
+     }
 
-   var text = req.session.data[name]
-   if (text === undefined) {
-     return ''
-   }
+     t = text.replace(/\\r/g, "\n").replace(/\\t/g, " ")
 
-   return marked(text);
-  })
+     return '<div class="markdown">' + marked(t) + '</div>';
+   })
 
   next()
 });
