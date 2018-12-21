@@ -1,71 +1,94 @@
-{% extends "govuk_template.html" %}
-{% import 'macros/macros.njk' as macros  %}
+{% extends "template.njk" %}
+
+{% from "back-link/macro.njk"     import govukBackLink %}
+{% from "breadcrumbs/macro.njk"   import govukBreadcrumbs %}
+{% from "button/macro.njk"        import govukButton %}
+{% from "character-count/macro.njk"  import govukCharacterCount %}
+{% from "checkboxes/macro.njk"    import govukCheckboxes %}
+{% from "date-input/macro.njk"    import govukDateInput %}
+{% from "details/macro.njk"       import govukDetails %}
+{% from "error-message/macro.njk" import govukErrorMessage %}
+{% from "error-summary/macro.njk" import govukErrorSummary %}
+{% from "fieldset/macro.njk"      import govukFieldset %}
+{% from "file-upload/macro.njk"   import govukFileUpload %}
+{% from "input/macro.njk"         import govukInput %}
+{% from "inset-text/macro.njk"    import govukInsetText %}
+{% from "panel/macro.njk"         import govukPanel %}
+{% from "phase-banner/macro.njk"  import govukPhaseBanner %}
+{% from "radios/macro.njk"        import govukRadios %}
+{% from "select/macro.njk"        import govukSelect %}
+{% from "skip-link/macro.njk"     import govukSkipLink %}
+{% from "table/macro.njk"         import govukTable %}
+{% from "tabs/macro.njk"          import govukTabs %}
+{% from "tag/macro.njk"           import govukTag %}
+{% from "textarea/macro.njk"      import govukTextarea %}
+{% from "warning-text/macro.njk"  import govukWarningText %}
 
 {% block head %}
   {% include "includes/head.html" %}
 {% endblock %}
 
-{% block cookie_message %}
-  <p>{{cookieText | safe }}</p>
+{% block pageTitle %}
+  GOV.UK
 {% endblock %}
 
-{% block proposition_header %}
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
 
-  <div class="header-proposition">
-    <div class="content">
-      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-      <nav id="proposition-menu">
-        <a href="/" id="proposition-name">
-          {# Set serviceName in config.js. Use a block to override on a page. #}
-          {% block service_name %}
-            Find postgraduate teacher training
-          {% endblock %}
-        </a>
-      </nav>
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a prototype of a new service. Some parts of this prototype do not work yet.'
+  }) }}
+
+  {% block breadcrumbs %}{% endblock %}
+  {% block backLink %}{% endblock %}
+  {% block afterPhaseBanner %}{% endblock %}
+{% endblock %}
+
+{% if useAutoStoreData %}
+  {% block footer %}
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <p>For advice about teaching or teacher training you can call <a href="https://getintoteaching.education.gov.uk/">Get into Teaching</a> on Freephone 0800 389 2500 or chat to an adviser using their <a href="https://ta-chat.education.gov.uk/chat/chatstart.aspx?domain=www.education.gov.uk&amp;department=GetIntoTeaching%27,%27new_win%27,%27width=0,height=0%27);return%20false;%22&SID=1">online chat service</a> between 8am and 8pm, Monday to Friday.</p>
+      </div>
     </div>
-  </div>
 
-{% endblock %}
+    {{ govukFooter({
+      meta: {
+        items: [
+          {
+            href: "https://govuk-prototype-kit.herokuapp.com/",
+            text: "GOV.UK Prototype Kit " + releaseVersion
+          },
+          {
+            href: "/prototype-admin/clear-data",
+            text: "Clear data"
+          }
+        ]
+      }
+    }) }}
+  {% endblock %}
+{% endif %}
 
-{% block header_class %}
-  with-proposition
-{% endblock %}
-
-{% block footer_top %}
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <p>For advice about teaching or teacher training you can call <a href="https://getintoteaching.education.gov.uk/">Get into Teaching</a> on Freephone 0800 389 2500 or chat to an adviser using their <a href="https://ta-chat.education.gov.uk/chat/chatstart.aspx?domain=www.education.gov.uk&amp;department=GetIntoTeaching%27,%27new_win%27,%27width=0,height=0%27);return%20false;%22&SID=1">online chat service</a> between 8am and 8pm, Monday to Friday.</p>
-  </div>
-</div>
-{% endblock %}
-
-{% block footer_support_links %}
-  <ul>
-    <li>
-      <a href="#">Give feedback or report a problem</a>
-    </li>
-    <li>
-      <a href="#">Cookies</a>
-    </li>
-    <li>
-      <a href="#">Privacy policy</a>
-    </li>
-    <li>
-      <a href="#">Terms and conditions</a>
-    </li>
-  </ul>
-{% endblock %}
-
-{% block body_start %}
+{% block bodyStart %}
   <div data-module="edge">
 {% endblock %}
 
-{% block body_end %}
+{% block bodyEnd %}
   </div>
 
   {% block scripts %}
     {% include "includes/scripts.html" %}
-    {% block page_scripts %}{% endblock %}
+    {% block pageScripts %}{% endblock %}
   {% endblock %}
-  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+  <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
 {% endblock %}
