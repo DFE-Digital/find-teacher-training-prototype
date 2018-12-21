@@ -40,7 +40,7 @@
               </div>
               <div class="accordion-section-body">
                 <div class="form-group">
-                  {{ macros.checkboxGroup('selectedSubjects', subjectGroup.subjects, loop.index * 100) }}
+                  {{ macros.checkboxGroup('selectedSubjects', subjectGroup.subjects, false, loop.index * 100, true) }}
                 </div>
               </div>
             </div>
