@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% set title %}Map{% endset %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block backLink %}{{ macros.backLink('/results', 'Back to search results') }}{% endblock %}
+
 {% block content %}
 
 <style>
@@ -50,17 +52,14 @@
   }
 </style>
 
-<main id="content" role="main">
-  {{ macros.betaBanner()}}
-  <a class="link-back" href="/results">Back to search results</a>
-  <h1 class="heading-xlarge">
+  <h1 class="govuk-heading-xl">
     {{ title }}
   </h1>
 
   {{ data['latLong'] }}
 
   <div id="results">
-    <h1 class="heading-large remove-top-margin">
+    <h1 class="govuk-heading-l remove-top-margin">
       Teacher training courses
       {% if data['formattedAddress'] or data['postcode-town-or-city'] %}
         near {{ data['formattedAddress'] or data['postcode-town-or-city'] }}
@@ -74,7 +73,7 @@
     <div>
     {% for course in results %}
       <div id="{{ course.slug }}">
-        <h2 class="heading-medium">
+        <h2 class="govuk-heading-m">
           <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
         </h2>
         <dl class="aligned">
@@ -189,5 +188,4 @@
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initMap"
   async defer></script>
-</main>
 {% endblock %}

@@ -1,27 +1,37 @@
-{% macro betaBanner() %}
-<div class="phase-banner">
-  <p>
-    <strong class="phase-tag">BETA</strong>
-    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-  </p>
+{% macro screenshotContents(contents) %}
+<div class="govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+  <h2 class="govuk-heading-m">Screenshots</h2>
+  <ul class="govuk-list">
+    {% for c in contents %}
+      <li><a href="#{{ c.id }}">{{ c.text }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
 {% endmacro %}
 
-{% macro screenshotContents(contents) %}
-<h2 class="heading-medium">Screenshots</h2>
-<ul class="list">
-  {% for c in contents %}
-    <li><a href="#{{ c.id }}">{{ c.text }}</a></li>
-  {% endfor %}
-</ul>
+{% macro designHistoryBreadcrumbs() %}
+  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+  <div class="dont-print">
+    {{
+      govukBreadcrumbs({
+        items: [
+          {
+            href: "/history",
+            text: "Design history"
+          }
+        ]
+      })
+    }}
+  </div>
 {% endmacro %}
 
-{% macro screenshot(title, id, thumbnail, full, text = '') %}
-<div class="design-history-item">
-  <h2 class="heading-large" id="{{ id }}">{{ title }}</h2>
-  <div class="grid-row">
-    <div class="column-two-thirds design-history-screenshot">
-      <div class="add-double-bottom-margin">
+{% macro screenshot(title, id, thumbnail, full, text = '', headingClass = 'govuk-heading-l', headingLevel = 'h2') %}
+<div class="design-history-item govuk-!-margin-bottom-9">
+  <{{headingLevel}} class="{{headingClass}}" id="{{ id }}">{{ title }}</{{headingLevel}}>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds design-history-screenshot">
+      <div class="govuk-!-margin-bottom-6">
         <a href="{{ full }}">
           <img src="{{ thumbnail }}" width="630" alt="Screenshot of {{ title }}" />
         </a>
@@ -34,21 +44,9 @@
 </div>
 {% endmacro %}
 
-{% macro textbox(id, label, helpText = false) %}
-<div class="form-group">
-  <label class="form-label-bold" for="{{id}}">{{label}}</label>
-  {% if helpText %}
-    <span class="form-hint">{{helpText}}</span>
-  {% endif %}
-  <input class="form-control" name="{{id}}" type="text" id="{{id}}" value="{{ value(id) }}">
-</div>
-{% endmacro %}
-
-{% macro radio(id, label, groupName, target, value) %}
-  <div class="multiple-choice" data-target="{{target}}">
-    <input id="{{id}}" type="radio" name="{{groupName}}" value="{{value}}">
-    <label for="{{id}}" class="bold">{{label}}</label>
-  </div>
+{% macro backLink(href = "/", text = "Back") %}
+  {% from "back-link/macro.njk" import govukBackLink %}
+  {{ govukBackLink({ text: text, href: href }) }}
 {% endmacro %}
 
 {#
@@ -57,33 +55,56 @@
     text:
     more:
 #}
-{% macro radioGroup(name, fields) %}
-  {% for field in fields %}
-    {% if field.or %}
-      <p class="form-block form-block--or">or</p>
-    {% else %}
-      <div class="multiple-choice" data-target="radio-part-{{ name }}-{{ loop.index }}-extra">
-        <input required
-          id="radio-part-{{ name }}-{{ loop.index }}"
-          type="radio"
-          name="{{ name }}"
-          value="{{ field.name }}"
-          {% if field.checked %}checked{% else %}{{ checked(name, field.name) }}{% endif %}
-        >
-        <label for="radio-part-{{ name }}-{{ loop.index }}">
-          <span {% if field.text %}class="bold"{% endif %}>{{ field.name }}</span>
-          {% if field.text %}
-            <br />{{ field.text | safe }}
-          {% endif %}
-        </label>
-      </div>
-      {% if field.more %}
-        <div class="panel panel-border-wide js-hidden" id="radio-part-{{ name }}-{{ loop.index }}-extra">
-          {{ field.more | safe }}
-        </div>
-      {% endif %}
+
+{% macro radioGroup(name, fields, errors = false, index = 0) %}
+  {% set e = false %}
+  <div class="govuk-form-group {% if e %} govuk-form-group--error{% endif %}">
+    {% if e %}
+      <span class="govuk-error-message">
+        {{ e.text }}
+      </span>
     {% endif %}
-  {% endfor %}
+
+    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+      {% for field in fields %}
+        {% set i = loop.index + index %}
+        {% if field.or %}
+          <div class="govuk-radios__divider">or</div>
+        {% else %}
+          <div class="govuk-radios__item">
+            <input
+              class="govuk-radios__input"
+              id="radio-{{ name }}-part-{{ i }}"
+              type="radio"
+              name="{{ name }}"
+              value="{{ field.name }}"
+              {% if field.more %}data-aria-controls="radio-{{ name }}-part-{{ i }}-extra"{% endif %}
+              {{ checked(name, field.name) }}
+            >
+            <label
+              class="govuk-label govuk-radios__label{% if field.text %} govuk-label--s{% endif %}"
+              for="radio-{{ name }}-part-{{ i }}"
+              {% if field.text %}aria-describedby="radio-{{ name }}-part-{{ i }}-hint"{% endif %}
+            >
+              {{ field.name }}
+            </label>
+            {% if field.text %}
+              <span
+                class="govuk-hint govuk-radios__hint"
+                id="radio-{{ name }}-part-{{ i }}-hint">
+                  {{ field.text | safe }}
+              </span>
+            {% endif %}
+          </div>
+          {% if field.more %}
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="radio-{{ name }}-part-{{ i }}-extra">
+              {{ field.more | safe }}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 {% endmacro %}
 
 {% macro part(data) %}
@@ -92,115 +113,103 @@
   {% endif %}
 {% endmacro %}
 
-{% macro checkboxGroup(name, fields, index = 0, bold = true) %}
-  {% for field in fields %}
-    <div class="multiple-choice" data-target="checkbox-part-{{ loop.index + index }}-extra">
-      <input
-        id="checkbox-part-{{ loop.index + index }}"
-        type="checkbox"
-        name="{{ name }}"
-        value="{{ field.name }}"
-        {{ checked(name, field.name) }}
-      >
-      <label for="checkbox-part-{{ loop.index + index }}">
-        {% if bold %}
-          <span class="bold">{{ field.name }}</span>
-        {% else %}
-          {{ field.name }}
-        {% endif %}
-      </label>
-      {% if field.text %}
-      <div style="margin-left: 13px">
-        {{ field.text | safe }}
-      </div>
-      {% endif %}
-    </div>
-    {% if field.more %}
-      <div class="panel panel-border-wide js-hidden" id="checkbox-part-{{ loop.index + index }}-extra">
-        {{ field.more | safe }}
-      </div>
+{% macro checkboxGroup(name, fields, errors = false, index = 0, allBold = false) %}
+  {% set e = false %}
+  <div class="govuk-form-group {% if e %} govuk-form-group--error{% endif %}">
+    {% if e %}
+      <span class="govuk-error-message">
+        {{ e.text }}
+      </span>
     {% endif %}
-  {% endfor %}
-{% endmacro %}
-
-{% macro h1(text) %}
-<h1 class="heading-xlarge">{{text}}</h1>
-{% endmacro %}
-
-{% macro backLink(label,url) %}
-<a class="link-back" href="{{url}}">{{label}}</a>
-{% endmacro %}
-
-{% macro selectBox(id,label,name,options) %}
-  <div class="form-group">
-    <label class="form-label-bold" for="{{id}}">{{label}}</label>
-    <select class="form-control" id="{{id}}" name="{{name}}">
-    {% for option in options%}
-      <option>{{option}}</option>
+    <div class="govuk-checkboxes" data-module="checkboxes">
+      {% for field in fields %}
+        {% set i = loop.index + index %}
+        <div class="govuk-checkboxes__item">
+          <input
+            id="checkbox-part-{{ i }}"
+            type="checkbox"
+            name="{{ name }}"
+            value="{{ field.name }}"
+            class="govuk-checkboxes__input"
+            {% if field.more %}data-aria-controls="checkbox-part-{{ i }}-extra"{% endif %}
+            {{ checked(name, field.name) }}
+          >
+          <label
+            for="checkbox-part-{{ i }}"
+            class="govuk-label govuk-checkboxes__label{% if field.text or allBold %} govuk-label--s{% endif %}"
+            {% if field.text %}aria-describedby="checkbox-part-{{ i }}-extra-hint"{% endif %}
+          >
+            {{ field.name }}
+          </label>
+          {% if field.text %}
+            <span
+              class="govuk-hint govuk-checkboxes__hint"
+              id="checkbox-{{ name }}-part-{{ i }}-hint">
+                {{ field.text | safe }}
+            </span>
+          {% endif %}
+        </div>
+        {% if field.more %}
+          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="checkbox-part-{{ i }}-extra">
+            {{ field.more | safe }}
+          </div>
+        {% endif %}
       {% endfor %}
-    </select>
+    </div>
   </div>
 {% endmacro %}
 
+{% macro textbox(id, label, helpText = false, size = '', prefix = false, errors = false, v = false) %}
+  {% set e = false %}
+  <div class="govuk-form-group {% if e %} govuk-form-group--error{% endif %}">
+    <label class="govuk-label" for="{{id}}">{{label | safe}}</label>
+    {% if helpText %}
+      <span class="govuk-hint">{{helpText | safe}}</span>
+    {% endif %}
+    {% if e %}
+      <span class="govuk-error-message">
+        {{ e.text }}
+      </span>
+    {% endif %}
+    {% if prefix %}
+      <span class="govuk-prefix-input">{{ prefix }}</span>
+    {% endif %}
+    <input class="govuk-input {{ size or 'govuk-input--width-20' }}" name="{{id}}" type="text" id="{{id}}" value="{{ v or value(id) }}">
+  </div>
+{% endmacro %}
+
+{% macro h1(text) %}
+<h1 class="govuk-heading-xl">{{text}}</h1>
+{% endmacro %}
+
 {% macro submit(label) %}
-<div class="form-group">
-  <input type="submit" class="button" value="{{label}}">
-</div>
-{% endmacro %}
-
-{% macro checkbox(name,choices) %}
-<fieldset class="form-group">
-  {% for choice in choices %}
-    <div class="multiple-choice">
-      <input id="{{choice|replace(" ","")}}"  name="{{choice}}" type="checkbox">
-      <label for="{{choice|replace(" ","")}}" class="bold">{{choice}}</label>
-    </div>
-  {% endfor %}
-</fieldset>
-{% endmacro %}
-
-{% macro checkboxWithBursary(name,choices,degree) %}
-<fieldset class="form-group ">
-  {% for choice in choices %}
-    <div class="multiple-choice subject">
-      <div>
-        <input id="{{choice|replace(" ","")}}"  name="{{choice}}" type="checkbox">
-        <label for="{{choice|replace(" ","")}}" class="bold">{{choice}}</label>
-      </div>
-      {% if choice | bursaryCost(degree) %}
-        <div class="bursarySubjectInfo">
-          {{ choice | bursaryCost(degree) }} bursary available
-        </div>
-      {% endif %}
-    </div>
-  {% endfor %}
-</fieldset>
+<input type="submit" class="govuk-button" value="{{label}}">
 {% endmacro %}
 
 <!-- Header on top of the results showing number of courses, New search and sorting order -->
 {% macro resultsHeader(countString = '40 courses', mapView = false) %}
 <div class="resultsHeader">
-  <div {% if not mapView %}class="results-found"{% endif %}>
+  <p {% if not mapView %}class="results-found"{% endif %}>
     {% if not mapView %}
       {{ countString }} found
       <span>
         <a href="/start/location">New search</a>
       </span>
     {% endif %}
-  </div>
+  </p>
   {% if value('location') == 'Across England' %}
-  <div class="resultsSortingOptions">
+  <p class="resultsSortingOptions">
     <div class="sortLabel">Sorted by training provider</div>
-  </div>
+  </p>
   {% elseif (not mapView) %}
-  <div class="resultsSortingOptions">
+  <p class="resultsSortingOptions">
     <a href="/results?map=yes">View on a map</a>
-  </div>
+  </p>
   {% endif %}
   {% if mapView %}
-  {{ countString }} found within 50 miles
+  <p>{{ countString }} found within 50 miles</p>
 
-  <ul class="list add-top-margin" style="padding-bottom: 20px">
+  <ul class="govuk-list add-top-margin" style="padding-bottom: 20px">
     <li><a href="/results">View results as a list</a></li>
     <li><a href="/start/location">New search</a></li>
     {# <li><a href="/start/location">Filter the results</a></li> #}
@@ -212,7 +221,7 @@
 {% macro helpText(label,text) %}
 <details>
   <summary><span class="summary">{{label}}</span></summary>
-  <div class="panel panel-border-narrow">
+  <div class="govuk-inset-text">
     <p>
       {{text}}
     </p>

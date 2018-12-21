@@ -1,15 +1,9 @@
-
 {% extends "layout.html" %}
-{% block page_title %}Private beta as launched{% endblock %}
+{% block pageTitle %}Private beta as launched{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">Private beta as launched</h1>
+  <h1 class="govuk-heading-xl">Private beta as launched</h1>
 
   <p class="lede"><a href="/history/user-research-may-3">Tested with users on May 3</a>, with key observations noted below.</p>
 
@@ -62,6 +56,4 @@
   {{ macros.screenshot('Study type filter', 'study-type-filter', '/public/images/history/private-beta-launch/thumbnails/11-study-type-filter.png', '/public/images/history/private-beta-launch/11-study-type-filter.png', '') }}
 
   {{ macros.screenshot('Qualifications filter', 'qualifications-filter', '/public/images/history/private-beta-launch/thumbnails/12-qualifications-filter.png', '/public/images/history/private-beta-launch/12-qualifications-filter.png', '') }}
-
-</main>
 {% endblock %}

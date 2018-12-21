@@ -1,17 +1,10 @@
 {% extends "layout.html" %}
-
-{% block page_title %}
-Study type
-{% endblock %}
+{% block pageTitle %}Study type{% endblock %}
+{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
 
 {% block content %}
-
-<main id="content" role="main">
-  {{macros.betaBanner()}}
-  {{ macros.backLink(backLink.text, backLink.href) }}
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       {{ macros.h1("Study type") }}
 
       <form action="/results">
@@ -36,6 +29,4 @@ Study type
       </form>
     </div>
   </div>
-</main>
-
 {% endblock %}

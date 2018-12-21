@@ -1,18 +1,13 @@
 {% extends "layout.html" %}
 {% set title = 'What we launched – 2 October 2018' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>On 2 October 2018 we launched the public beta of Find posgraduate teacher training to users. This included a new start page on GOV.UK and links to it from UCAS and Get into Teaching.</p>
     </div>
   </div>
@@ -45,13 +40,13 @@
     <p>
       It introduces some problems, and we’re beginning the process of <a href="https://trello.com/c/QDFcFsSd/425-apply-for-a-mainstream-govuk-start-page">switching to a standard start page</a>. Namely:
     </p>
-    <ul class="list list-bullet">
+    <ul class="govuk-list govuk-list--bullet">
       <li>the incorrect page template has misleading elements; page type, breadcrumbs, irrelevant related links, prominence on ‘Applies to England’ rather than ‘Start now’</li>
       <li>we can’t easily track journeys from GOV.UK to our service, we have no visbility of referrers to the start page</li>
       <li>the published date is irrelevant</li>
     </ul>
     <p class="add-top-margin">A standard start page would also give us:</p>
-    <ul class="list list-bullet">
+    <ul class="govuk-list govuk-list--bullet">
       <li>a shorter and cleaner URL</li>
       <li>more prominence on GOV.UK in taxonomy and search</li>
       <li>proper downtime messaging if we need it</li>
@@ -83,6 +78,4 @@
   {{ macros.screenshot('Full course page (PGDE)', 'full-course-page-pgde', '/public/images/history/live-launch/thumbnails/13-full-course-page-pgde.png', '/public/images/history/live-launch/13-full-course-page-pgde.png', '') }}
 
   {{ macros.screenshot('Course not enriched', 'course-not-enriched', '/public/images/history/live-launch/thumbnails/14-course-not-enriched.png', '/public/images/history/live-launch/14-course-not-enriched.png', '') }}
-
-</main>
 {% endblock %}

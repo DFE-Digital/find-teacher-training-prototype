@@ -88,20 +88,13 @@ title = title.charAt(0).toUpperCase() + title.slice(1)
 var templateStart = `{% extends "layout.html" %}
 {% set title = '${title}' %}
 {% block page_title %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 `;
 
-var templateEnd = `
-</main>
-{% endblock %}
+var templateEnd = `{% endblock %}
 `;
 
 fs.writeFile(indexDirectory + "/index.html", templateStart + contents + endContents + template + templateEnd, function(err) {

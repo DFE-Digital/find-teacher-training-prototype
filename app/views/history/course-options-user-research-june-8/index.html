@@ -1,18 +1,13 @@
 {% extends "layout.html" %}
 {% set title = "Folded courses research 8 June 2018" %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>We tested a hypothesis around folding courses - eg salaried and unsalaried folded into one course listing and course detail page. (More on folding: ‘<a href="https://manage-courses-prototype.herokuapp.com/history/what-is-a-course">What is a course?</a>’, <a href="https://manage-courses-prototype.herokuapp.com/history/imported-from-ucas">folding detail</a>)</p>
 
       <p> Course folding reduces the number of results per search and allows search results to surface more variety. Rather than English at Catholic Teach Alliance listed four or five times, it would be listed just once, allowing for the next course to be surfaced immediately, also making results fairer.</p>
@@ -22,7 +17,7 @@
       <p><a href="https://docs.google.com/document/d/1bKRxKlHHSVm9lZ4vJHxOoJpYkklJiz51oukQ7tsG4N0/edit?usp=sharing">Discussion guide</a></p>
 
       <p>6 remote user research sessions recorded using Lookback:</p>
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li><a href="https://lookback.io/watch/kw8NGRosYvft9yM3G">Participant 1</a></li>
         <li><a href="https://lookback.io/watch/fNgMHR8TLkg3d2Kr2">Participant 2</a></li>
         <li><a href="https://lookback.io/watch/FuAzAMcbq9LcCswXv">Participant 3</a></li>
@@ -31,7 +26,7 @@
         <li><a href="https://lookback.io/watch/8QnFPjo5LYrFdFBdd">Participant 6</a></li>
       </ul>
 
-      <h2 class="heading-medium">Results</h2>
+      <h2 class="govuk-heading-m">Results</h2>
 
       <p>The UX needed to be clearer on the course listings/results page, showing the course options, but most candidates understood the meaning; there is evidence that people did navigate differently the course listing page depending on which course they would choose.</p>
 
@@ -75,6 +70,4 @@
   {{ macros.screenshot('Third course', 'third-course', '/public/images/history/course-options-user-research-june-8/thumbnails/06-third-course.png', '/public/images/history/course-options-user-research-june-8/06-third-course.png', '') }}
 
   {{ macros.screenshot('Fourth course', 'fourth-course', '/public/images/history/course-options-user-research-june-8/thumbnails/07-fourth-course.png', '/public/images/history/course-options-user-research-june-8/07-fourth-course.png', '') }}
-
-</main>
 {% endblock %}

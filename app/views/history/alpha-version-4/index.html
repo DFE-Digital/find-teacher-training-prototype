@@ -1,17 +1,13 @@
-
 {% extends "layout.html" %}
-{% block page_title %}Alpha version 4{% endblock %}
+{% block pageTitle %}Alpha version 4{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">Alpha version 4</h1>
+  <h1 class="govuk-heading-xl">Alpha version 4</h1>
 
-  <a href="https://search-and-compare-alpha.herokuapp.com/v04/">Version 4 prototype</a>
+  <p>
+    <a href="https://search-and-compare-alpha.herokuapp.com/v04/">Version 4 prototype</a>
+  </p>
 
   {% set contents = [
   { text: 'Index', id: 'index' },
@@ -46,6 +42,4 @@
   {{ macros.screenshot('Modules', 'modules', '/public/images/history/alpha-version-4/thumbnails/09-modules.png', '/public/images/history/alpha-version-4/09-modules.png', '') }}
 
   {{ macros.screenshot('Course comparison', 'course-comparison', '/public/images/history/alpha-version-4/thumbnails/10-course-comparison.png', '/public/images/history/alpha-version-4/10-course-comparison.png', '') }}
-
-</main>
 {% endblock %}

@@ -1,112 +1,41 @@
-// Path to assets for use with the file-url function
-// in the govuk frontend toolkit's url-helpers partial
-$path: "/public/images/";
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
 
-// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
-// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
-@import 'govuk-elements';
+// Import GOV.UK Frontend
+@import "node_modules/govuk-frontend/all";
 
-// Take a look at in app/assets/sass/patterns/ to see which files are imported.
-@import 'patterns/check-your-answers';
-@import 'patterns/task-list';
+// Patterns that aren't in Frontend
+@import "patterns/check-your-answers";
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
 
-.heading-medium .heading-secondary {
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+@import "components/accordion";
+
+blockquote {
+  margin: 0;
+}
+
+.govuk-heading-m .heading-secondary {
   font-weight: normal;
-  color: $grey-1;
-  @include core-19;
+  color: govuk-colour("grey-1");
+  @include govuk-font(19);
 }
 
 .design-history-text h3:first-child {
   margin-top: 5px;
 }
 
-.accordion-controls {
-  text-align: right;
-}
-
-.accordion-expand-all {
-  display: inline;
-  background: transparent;
-  border-width: 0;
-  font-size: 16px;
-  color: #005EA5;
-  cursor: pointer;
-}
-
-.accordion .accordion-section[aria-expanded="false"] .accordion-section-body {
-  display: none;
-}
-
-.accordion-section-body {
-  padding-top: 20px;
-}
-
-.accordion.with-js {
-  border-bottom-width: 1px;
-  border-bottom-color: #bfc1c3;
-  border-bottom-style: solid;
-}
-
-.accordion.with-js .accordion-section {
-  border-top-width: 1px;
-  border-top-color: #bfc1c3;
-  border-top-style: solid;
-}
-
-.accordion.with-js h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.accordion.with-js .accordion-section-header {
-  cursor: pointer;
-  position: relative;
-  padding-top: 14px;
-  padding-bottom: 12px;
-}
-
-// .accordion.with-js .accordion-section-header h2 {
-//   color: #005EA5;
-// }
-
-.accordion.with-js .accordion-section-header:hover {
-  background-color: #f8f8f8;
-}
-
-.accordion.with-js .icon {
-
-  position: absolute;
-  top: 50%;
-  right: 15px;
-
-  height: 16px;
-  width: 16px;
-  margin-top: -8px;
-
-  /* Note: you may have to update these URL paths */;
-
-  /* PNG fallback for SVG */
-  background-image: file-url('icon-plus-minus.png');
-
-  /* SVG sprite */
-  background: file-url("icon-plus-minus.svg"), linear-gradient(transparent, transparent);
-
-  background-repeat: no-repeat;
-  background-position: 0 -16px;
-}
-
-.accordion.with-js .accordion-section[aria-expanded="true"] .icon {
-  background-position: 0 0;
-}
-
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
 .govuk-related-items {
-  margin-top: $gutter;
-  border-top: 10px solid $govuk-blue;
+  margin-top: $govuk-gutter;
+  border-top: 10px solid govuk-colour("blue");
   padding-top: 5px;
 
-  .heading-medium {
+  .govuk-heading-m {
     margin-top: 0.3em;
     margin-bottom: 0.5em;
   }
@@ -165,8 +94,8 @@ $path: "/public/images/";
 .results-link{
   float:right;
 }
-.filter-link{
-  padding-top: 10px;
+.filter-link {
+  margin-bottom: 0;
 }
 .results{
   margin-bottom: 20px;
@@ -175,11 +104,12 @@ $path: "/public/images/";
   height:100px;
   overflow-y: scroll;
 }
-.filter-input{
+.filter-input {
   width: 250px;
 }
-.filter-heading{
-  margin-top:3px;
+.filter-heading {
+  margin-top: 3px;
+  margin-bottom: 0;
 }
 
 .filter-category {
@@ -193,7 +123,7 @@ $path: "/public/images/";
     background-position: right -72px;
     background-repeat: no-repeat;
 
-    @include media(tablet) {
+    @include govuk-media-query($from: tablet) {
       display: none;
     }
 
@@ -210,6 +140,7 @@ $path: "/public/images/";
 }
 .filters {
   background-color: #ffffff;
+  margin: 10px 0;
 
   &.list {
     margin-bottom: 0;
@@ -389,15 +320,11 @@ $path: "/public/images/";
 }
 
 .results-header-empty {
-  border-bottom: 1px solid $border-colour;
-  margin-bottom: $gutter;
+  border-bottom: 1px solid $govuk-border-colour;
+  margin-bottom: $govuk-gutter;
   min-height: 48px;
 }
 
-.beta-banner{
-  background-color: #FFF8C4;
-  padding-left: 10px;
-}
 .pagination-controls{
 float: right;
 }
@@ -433,15 +360,15 @@ margin-right: 10px;
 }
 
 .add-bottom-margin {
-  margin-bottom: $gutter / 2;
+  margin-bottom: $govuk-gutter / 2;
 }
 
 .add-double-bottom-margin {
-  margin-bottom: $gutter;
+  margin-bottom: $govuk-gutter;
 }
 
 .add-top-margin {
-  margin-top: $gutter / 2;
+  margin-top: $govuk-gutter / 2;
 }
 
 .add-margin-for-label {
@@ -467,18 +394,24 @@ dt {
 
 dl.aligned {
   overflow: hidden;
+  @include govuk-font(19);
 }
 
 dl.aligned dt {
-    width: 30%;
-    float: left;
-    margin: 0;
-    clear: both;
+  width: 30%;
+  float: left;
+  margin: 0;
+  clear: both;
 }
 
 dl.aligned dd {
-    width: 70%;
-    float: right;
+  width: 70%;
+  float: right;
+  margin: 0;
+
+  .govuk-details {
+    margin-bottom: 0;
+  }
 }
 
 .multiple-options li {
@@ -500,15 +433,20 @@ dl.aligned dd {
 
 .heading-secondary {
   font-weight: normal;
-  color: $grey-1;
+  color: govuk-colour("grey-1");
   display: block;
 }
 
 .info-window {
-  @include core-16;
+  @include govuk-font(16);
 
-  .heading-medium,
-  .heading-small {
+  .govuk-heading-m,
+  .govuk-heading-s {
     margin-top: 5px;
   }
+}
+
+.markdown ul {
+  @extend .govuk-list;
+  @extend .govuk-list--bullet;
 }

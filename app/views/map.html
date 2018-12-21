@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% set title %}Map{% endset %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block backLink %}{{ macros.backLink('/results', 'Back to search results') }}{% endblock %}
+
 {% block content %}
 
 {% set isMap = true %}
@@ -38,7 +40,7 @@
       width: auto;
     }
 
-    #results .heading-large {
+    #results .govuk-heading-l {
       font-size: 19px;
     }
 
@@ -85,17 +87,14 @@
   }
 </style>
 
-<main id="content" role="main">
-  {{ macros.betaBanner()}}
-  <a class="link-back" href="/results">Back to search results</a>
-  <h1 class="heading-xlarge">
+  <h1 class="govuk-heading-xl">
     {{ title }}
   </h1>
 
   {{ data['latLong'] }}
 
   <div id="results">
-    <h1 class="heading-large remove-top-margin">
+    <h1 class="govuk-heading-l remove-top-margin">
       Teacher training courses
       {% if data['formattedAddress'] or data['postcode-town-or-city'] %}
         near {{ data['formattedAddress'] or data['postcode-town-or-city'] }}
@@ -111,7 +110,7 @@
     <div>
     {% for course in results %}
       <div id="{{ course.slug | replace("/", "-") }}" style="display: none" class="map-result">
-        <h2 class="heading-medium">
+        <h2 class="govuk-heading-m">
           <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
         </h2>
         <dl class="aligned">
@@ -150,7 +149,7 @@
     {% for course in results %}
       <!-- <div id="info-window-{{ course.slug | replace("/", "-") }}" style="display: none">
         <div class="info-window">
-          <h2 class="heading-small">
+          <h2 class="govuk-heading-s">
             <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
           </h2>
           <div class="govuk-body">
@@ -171,12 +170,12 @@
     {% for address in addresses %}
       <div id="info-window-address-{{ address.course.slug | replace("/", "-") }}" style="display: none">
         <div class="info-window">
-          <h2 class="heading-medium">
+          <h2 class="govuk-heading-m">
             <span class="heading-secondary">{{ address.course.provider }}</span>
             School or campus
           </h2>
 
-          <h2 class="heading-small">
+          <h2 class="govuk-heading-s">
             <a href="/course/{{ address.course.slug }}">{{ address.course.name }}</a>
           </h2>
           <div class="govuk-body">
@@ -198,7 +197,7 @@
       {% if provider[1].length == 1 %}
         <div id="info-window-{{ provider[1][0].slug | replace("/", "-") }}" style="display: none">
           <div class="info-window">
-            <h2 class="heading-small">
+            <h2 class="govuk-heading-s">
               <a href="/course/{{ provider[1][0].slug }}">{{ provider[1][0].name }} with {{ provider[1][0].provider }}</a>
             </h2>
             <div class="govuk-body">
@@ -217,9 +216,9 @@
       {% else %}
         <div id="info-window-{{ provider[1][0]['providerCode'] }}" style="display: none">
           <div class="govuk-body info-window info-window-provider">
-            <h2 class="heading-medium">{{ provider[0] }}</h2>
+            <h2 class="govuk-heading-m">{{ provider[0] }}</h2>
             <p style="font-size: 19px">{{ provider[1][0].distance }} miles away</p>
-            <h3 class="heading-medium">
+            <h3 class="govuk-heading-m">
               {{ provider[1].length }} courses
             </h3>
 
@@ -418,5 +417,4 @@
   </script>
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initMap"></script>
-</main>
 {% endblock %}

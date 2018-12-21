@@ -1,21 +1,16 @@
 {% extends "layout.html" %}
 {% set title = 'Just the UCAS data – 25 July iteration' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-<main id="content" role="main" class="design-history">
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p>Improvements to the <a href="/history/all-courses-minimum">minimum viable service</a> include:</p>
 
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li>separating and classifying UCAS course subjects</li>
         <li>tweaked distance copy in search results</li>
         <li>added ‘address’ to location field in results</li>
@@ -38,7 +33,7 @@
   {{ macros.screenshot('Find by subject collapsed', 'find-by-subject-collapsed', '/public/images/history/mvp-iteration-jul-25/thumbnails/01-find-by-subject-collapsed.png', '/public/images/history/mvp-iteration-jul-25/01-find-by-subject-collapsed.png', '
     <p>Rather than listing alphabetically, group subjects by categories.</p>
 
-    <h3 class="heading-medium">Results</h3>
+    <h3 class="govuk-heading-m">Results</h3>
 
     <p>Users found and searched for the subjects they wanted.</p>
 
@@ -52,6 +47,4 @@
   {{ macros.screenshot('Teacher training courses', 'teacher-training-courses', '/public/images/history/mvp-iteration-jul-25/thumbnails/04-teacher-training-courses.png', '/public/images/history/mvp-iteration-jul-25/04-teacher-training-courses.png', '') }}
 
   {{ macros.screenshot('Minimum course page', 'minimum-course-page', '/public/images/history/mvp-iteration-jul-25/thumbnails/05-minimum-course-page.png', '/public/images/history/mvp-iteration-jul-25/05-minimum-course-page.png', '') }}
-
-</main>
 {% endblock %}
