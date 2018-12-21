@@ -1,18 +1,37 @@
 {% macro screenshotContents(contents) %}
-<h2 class="govuk-heading-m">Screenshots</h2>
-<ul class="govuk-list">
-  {% for c in contents %}
-    <li><a href="#{{ c.id }}">{{ c.text }}</a></li>
-  {% endfor %}
-</ul>
+<div class="govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+  <h2 class="govuk-heading-m">Screenshots</h2>
+  <ul class="govuk-list">
+    {% for c in contents %}
+      <li><a href="#{{ c.id }}">{{ c.text }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
 {% endmacro %}
 
-{% macro screenshot(title, id, thumbnail, full, text = '') %}
-<div class="design-history-item">
-  <h2 class="govuk-heading-l" id="{{ id }}">{{ title }}</h2>
-  <div class="grid-row">
-    <div class="column-two-thirds design-history-screenshot">
-      <div class="add-double-bottom-margin">
+{% macro designHistoryBreadcrumbs() %}
+  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+  <div class="dont-print">
+    {{
+      govukBreadcrumbs({
+        items: [
+          {
+            href: "/history",
+            text: "Design history"
+          }
+        ]
+      })
+    }}
+  </div>
+{% endmacro %}
+
+{% macro screenshot(title, id, thumbnail, full, text = '', headingClass = 'govuk-heading-l', headingLevel = 'h2') %}
+<div class="design-history-item govuk-!-margin-bottom-9">
+  <{{headingLevel}} class="{{headingClass}}" id="{{ id }}">{{ title }}</{{headingLevel}}>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds design-history-screenshot">
+      <div class="govuk-!-margin-bottom-6">
         <a href="{{ full }}">
           <img src="{{ thumbnail }}" width="630" alt="Screenshot of {{ title }}" />
         </a>
