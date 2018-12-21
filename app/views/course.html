@@ -6,15 +6,15 @@
 {% block content %}
 
   <h1 class="govuk-heading-xl">
-    {{ course.name }} with {{ course.provider }}
-    {% if course.accrediting %}<div class="heading-secondary" style="margin-top: 10px">Accredited provider: {{ course.accrediting }}</div>{% endif %}
+    <span class="govuk-!-font-size-36">{{ course.provider }}</span><br />
+    {{ course.name }} ({{ course.programmeCode }})
   </h1>
+
+  <p class="govuk-body-l">{{ course.options[0] }}</p>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <dl class="aligned">
-        <dt>Course offered:</dt>
-        <dd>{{ course.options[0] }}</dd>
         <dt>Qualification:</dt>
         <dd>
           <details role="group">
@@ -43,6 +43,10 @@
         <dd>October 2019</dd>
         <dt>Website:</dt>
         <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
+        {% if course.accrediting %}
+          <dt>Accredited provider:</dt>
+          <dd>{{ course.accrediting }}</dd>
+        {% endif %}
       </dl>
     </div>
   </div>
