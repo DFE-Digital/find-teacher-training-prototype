@@ -17,23 +17,19 @@
       <dl class="aligned">
         <dt>Qualification:</dt>
         <dd>
-          <details role="group">
-            {% if 'PGCE' in course.options[0] %}
-              <summary style="margin-bottom: 0;" role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">PGCE with QTS</span></summary>
-
-              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
-                  <p>A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) allows you to teach in England, Scotland, Wales and Northern Ireland. It’s also recognised internationally.</p>
-                  <p>Many PGCE courses include credits that count toward a Master’s degree.</p>
-              </div>
-            {% else %}
-              <summary style="margin-bottom: 0;" role="button" aria-controls="details-content-0" aria-expanded="true"><span class="summary">QTS</span></summary>
-
-              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="false">
-                  <p>Qualified teacher status (QTS) allows you to teach in state schools in England.</p>
-                  <p>If you want to teach in the rest of the UK or internationally, consider the qualification PGCE (postgraduate certificate in education) with QTS instead.</p>
-              </div>
-            {% endif %}
-          </details>
+          {% if 'PGCE' in course.options[0] %}
+            {{ govukDetails({
+              summaryText: "PGCE with QTS",
+              text: "<p>A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) allows you to teach in England, Scotland, Wales and Northern Ireland. It’s also recognised internationally.</p>
+              <p>Many PGCE courses include credits that count toward a Master’s degree.</p>" | safe
+            }) }}
+          {% else %}
+            {{ govukDetails({
+              summaryText: "QTS",
+              text: "<p>Qualified teacher status (QTS) allows you to teach in state schools in England.</p>
+              <p>If you want to teach in the rest of the UK or internationally, consider the qualification PGCE (postgraduate certificate in education) with QTS instead.</p>" | safe
+            }) }}
+          {% endif %}
         </dd>
         <dt>Course length:</dt>
         <dd>1 year</dd>
@@ -102,24 +98,24 @@
         <h2 class="govuk-heading-l" id="section-fees">Fees</h2>
         <p>The course fees for 2018/2019 are as follows:</p>
         <div class="body-text">
-          <table>
-            <tbody>
-              <tr class="visually-hidden">
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-visually-hidden">
                 <th>Student type</th>
                 <th>Fees to pay</th>
               </tr>
-              <tr>
-                <td>UK students</td>
-                <td>£{{ course.enrichment['FeeUkEu'] }}</td>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">UK students</td>
+                <td class="govuk-table__cell">£{{ course.enrichment['FeeUkEu'] }}</td>
               </tr>
-              <tr>
-                <td>EU students</td>
-                <td>£{{ course.enrichment['FeeUkEu'] }}</td>
+              <tr class="govuk-table_row">
+                <td class="govuk-table__cell">EU students</td>
+                <td class="govuk-table__cell">£{{ course.enrichment['FeeUkEu'] }}</td>
               </tr>
               {% if course.enrichment['FeeInternational'] %}
-              <tr>
-                <td>International students</td>
-                <td>£{{ course.enrichment['FeeUkEu'] }}</td>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">International students</td>
+                <td class="govuk-table__cell">£{{ course.enrichment['FeeUkEu'] }}</td>
               </tr>
               {% endif %}
             </tbody>
@@ -183,8 +179,8 @@
         Apply
       </h2>
 
-      <p style="margin: 30px 0;">
-        <a href="https://2019.teachertraining.apply.ucas.com/apply/student/login.do" class="button button-start">Apply on the UCAS website</a>
+      <p class="govuk-!-margin-bottom-0">
+        <a href="https://2019.teachertraining.apply.ucas.com/apply/student/login.do" class="govuk-button govuk-button--start">Apply on the UCAS website</a>
       </p>
 
       <p>Visit the Get into Teaching website for <a href="https://getintoteaching.education.gov.uk/how-to-apply/apply">guidance on applying for teacher training</a>.</p>
@@ -197,10 +193,10 @@
         When you apply you’ll need these codes for the Choices section of your application form:
       </p>
 
-      <div class="panel panel-border-wide">
+      <div class="govuk-inset-text">
         <ul class="govuk-list">
-          <li style="margin-bottom: 20px">Training provider code:<br /><strong class="bold-large">{{ course.providerCode }}</strong></li>
-          <li>Training programme code:<br /><strong class="bold-large">{{ course.programmeCode }}</strong></li>
+          <li style="margin-bottom: 20px">Training provider code:<br /><strong class="govuk-!-display-block govuk-!-font-size-36 govuk-!-font-weight-bold">{{ course.providerCode }}</strong></li>
+          <li>Training programme code:<br /><strong class="govuk-!-display-block govuk-!-font-size-36 govuk-!-font-weight-bold">{{ course.programmeCode }}</strong></li>
           <!-- <li>training location or campus code: leave empty</li> -->
         </ul>
       </div>
@@ -210,20 +206,20 @@
 
         <div id="map" class="add-double-bottom-margin" style="height: 500px"></div>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Code</th>
-            <th style="width: 40%">Name</th>
-            <th style="width: 50%">Address</th>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" style="width: 40%">Name</th>
+            <th class="govuk-table__header" style="width: 50%">Address</th>
+            <th class="govuk-table__header">Code</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="govuk-table__body">
           {% for school in course.schools %}
-          <tr>
-            <td><strong class="bold-medium">{{ school.code }}</strong></td>
-            <td>{{ school.name }}</td>
-            <td>{{ school.address }}</td>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">{{ school.name }}</td>
+            <td class="govuk-table__cell">{{ school.address }}</td>
+            <td class="govuk-table__cell">{{ school.code }}</td>
           </tr>
           {% endfor %}
         </tbody>
