@@ -13,6 +13,10 @@ $govuk-global-styles: true;
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
+blockquote {
+  margin: 0;
+}
+
 .govuk-heading-m .heading-secondary {
   font-weight: normal;
   color: govuk-colour("grey-1");
