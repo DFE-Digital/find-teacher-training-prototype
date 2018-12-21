@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% set title %}Map{% endset %}
 {% block page_title %}{{ title }}{% endblock %}
+{% block backLink %}{{ macros.backLink('/results', 'Back to search results') }}{% endblock %}
+
 {% block content %}
 
 <style>
@@ -50,9 +52,6 @@
   }
 </style>
 
-<main id="content" role="main">
-
-  <a class="link-back" href="/results">Back to search results</a>
   <h1 class="govuk-heading-xl">
     {{ title }}
   </h1>
@@ -189,5 +188,4 @@
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initMap"
   async defer></script>
-</main>
 {% endblock %}

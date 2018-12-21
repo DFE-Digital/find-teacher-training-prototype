@@ -1,11 +1,10 @@
 {% extends "layout.html" %}
 {% set title %}{{ course.name }} with {{ course.provider }}{% endset %}
 {% block page_title %}{{ title }}{% endblock %}
+{% block backLink %}{{ macros.backLink('/results', 'Back to search results') }}{% endblock %}
+
 {% block content %}
 
-<main id="content" role="main">
-
-  <a class="link-back" href="/results">Back to search results</a>
   <h1 class="govuk-heading-xl">
     {{ course.name }} with {{ course.provider }}
     {% if course.accrediting %}<div class="heading-secondary" style="margin-top: 10px">Accredited provider: {{ course.accrediting }}</div>{% endif %}
@@ -326,6 +325,4 @@
       <p>If you have feedback or have had a problem using Find postgraduate teacher training you can <a href="#">contact us by email</a>.
     </div>
   </div>
-
-</main>
 {% endblock %}

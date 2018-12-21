@@ -1,20 +1,14 @@
 {% extends "layout.html" %}
-
-{% block page_title %}
-Question page
-{% endblock %}
-
-{% block content %}
-
+{% block page_title %}Question page{% endblock %}
 {% if not backLink %}
   {% set backLink = { text: 'Back to location', href: '/start/location'} %}
 {% endif %}
+{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
 
-<main id="content" role="main">
-  
+
+{% block content %}
   <div class="grid-row">
     <div class="column-two-thirds">
-      {{macros.backLink(backLink.text, backLink.href)}}
       {{macros.h1("Financial support while you train")}}
       <p>
         Business studies courses come with either student finance (a tuition fee loan and maintenance loan, if you’re eligible) or a salary.
@@ -51,6 +45,4 @@ Question page
       </p>
     </div>
   </div>
-</main>
-
 {% endblock %}

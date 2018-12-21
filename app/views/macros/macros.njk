@@ -25,6 +25,11 @@
 </div>
 {% endmacro %}
 
+{% macro backLink(href = "/", text = "Back") %}
+  {% from "back-link/macro.njk" import govukBackLink %}
+  {{ govukBackLink({ text: text, href: href }) }}
+{% endmacro %}
+
 {% macro textbox(id, label, helpText = false) %}
 <div class="form-group">
   <label class="form-label-bold" for="{{id}}">{{label}}</label>
@@ -116,10 +121,6 @@
 
 {% macro h1(text) %}
 <h1 class="govuk-heading-xl">{{text}}</h1>
-{% endmacro %}
-
-{% macro backLink(label,url) %}
-<a class="link-back" href="{{url}}">{{label}}</a>
 {% endmacro %}
 
 {% macro selectBox(id,label,name,options) %}
