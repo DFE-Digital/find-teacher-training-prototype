@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Iterate course titles' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -44,6 +39,4 @@
   {{ macros.screenshot('Search results', 'search-results', '/public/images/history/tweaked-course-titles/thumbnails/01-search-results.png', '/public/images/history/tweaked-course-titles/01-search-results.png', '') }}
 
   {{ macros.screenshot('Course', 'course', '/public/images/history/tweaked-course-titles/thumbnails/02-course.png', '/public/images/history/tweaked-course-titles/02-course.png', '') }}
-
-
 {% endblock %}

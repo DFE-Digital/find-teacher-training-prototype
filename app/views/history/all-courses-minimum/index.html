@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Just the UCAS data' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">

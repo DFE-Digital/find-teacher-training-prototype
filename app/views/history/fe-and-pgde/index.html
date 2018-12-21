@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'PGDE and further education courses' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -78,5 +73,4 @@
   {{ macros.screenshot('Further education results', 'further-education-results', '/public/images/history/live-launch/thumbnails/05-further-education-results.png', '/public/images/history/live-launch/05-further-education-results.png', '') }}
 
   {{ macros.screenshot('Full course page (PGDE)', 'full-course-page-pgde', '/public/images/history/live-launch/thumbnails/13-full-course-page-pgde.png', '/public/images/history/live-launch/13-full-course-page-pgde.png', '') }}
-
 {% endblock %}

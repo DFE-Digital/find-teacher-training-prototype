@@ -1,14 +1,8 @@
-
 {% extends "layout.html" %}
 {% block pageTitle %}User research 3 May 2018{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">User research 3 May 2018</h1>
 
   <p class="lede">In this round we tested the <a href="/history/private-beta-launch">private beta as launched</a>, with one change.</p>
@@ -20,6 +14,4 @@
 
     <p>Users who did not interact with the radius found and compared more results. While users who expressed a desire to see results within a closer area were seen to switch to 5 miles.</p>
   ') }}
-
-
 {% endblock %}

@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = "Folded courses research 8 June 2018" %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -75,6 +70,4 @@
   {{ macros.screenshot('Third course', 'third-course', '/public/images/history/course-options-user-research-june-8/thumbnails/06-third-course.png', '/public/images/history/course-options-user-research-june-8/06-third-course.png', '') }}
 
   {{ macros.screenshot('Fourth course', 'fourth-course', '/public/images/history/course-options-user-research-june-8/thumbnails/07-fourth-course.png', '/public/images/history/course-options-user-research-june-8/07-fourth-course.png', '') }}
-
-
 {% endblock %}

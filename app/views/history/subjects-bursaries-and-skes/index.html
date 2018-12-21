@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Subjects, bursaries and SKE courses' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -65,6 +60,4 @@
   {{ macros.screenshot('Salary filter', 'salary-filter', '/public/images/history/subjects-bursaries-and-skes/thumbnails/05-salary-filter.png', '/public/images/history/subjects-bursaries-and-skes/05-salary-filter.png', '') }}
 
   {{ macros.screenshot('Full course page', 'full-course-page', '/public/images/history/subjects-bursaries-and-skes/thumbnails/06-full-course-page.png', '/public/images/history/subjects-bursaries-and-skes/06-full-course-page.png', '') }}
-
-
 {% endblock %}

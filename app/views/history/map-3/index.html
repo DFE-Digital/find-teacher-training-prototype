@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Results on a map – Text on labels' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -98,6 +93,4 @@
 {{ macros.screenshot('Result open on mobile', 'result-open-on-mobile', '/public/images/history/map-3/thumbnails/09-result-open-on-mobile.png', '/public/images/history/map-3/09-result-open-on-mobile.png', '') }}
 
 {{ macros.screenshot('Results in Brighton on mobile', 'results-in-brighton-on-mobile', '/public/images/history/map-3/thumbnails/10-results-in-brighton-on-mobile.png', '/public/images/history/map-3/10-results-in-brighton-on-mobile.png', '') }}
-
-
 {% endblock %}

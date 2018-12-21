@@ -1,14 +1,8 @@
-
 {% extends "layout.html" %}
 {% block pageTitle %}Alpha version 2{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">Alpha version 2</h1>
 
   <a href="https://search-and-compare-alpha.herokuapp.com/v02/">Version 2 prototype</a>
@@ -43,6 +37,4 @@
   {{ macros.screenshot('Modules', 'modules', '/public/images/history/alpha-version-2/thumbnails/08-modules.png', '/public/images/history/alpha-version-2/08-modules.png', '') }}
 
   {{ macros.screenshot('Compare results', 'compare-results', '/public/images/history/alpha-version-2/thumbnails/09-compare-results.png', '/public/images/history/alpha-version-2/09-compare-results.png', '') }}
-
-
 {% endblock %}

@@ -1,14 +1,9 @@
 {% extends "layout.html" %}
 {% set title = 'Static failover service' %}
 {% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="govuk-grid-row">
@@ -39,6 +34,4 @@
 {{ macros.screenshot('Pick a subject', 'pick-a-subject', '/public/images/history/static-service/thumbnails/04-pick-a-subject.png', '/public/images/history/static-service/04-pick-a-subject.png', '') }}
 
 {{ macros.screenshot('Results without filters', 'results-without-filters', '/public/images/history/static-service/thumbnails/05-results-without-filters.png', '/public/images/history/static-service/05-results-without-filters.png', '') }}
-
-
 {% endblock %}

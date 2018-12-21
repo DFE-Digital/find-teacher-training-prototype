@@ -1,6 +1,8 @@
-{% extends "layout.html" %} {% block pageTitle %} Course listing variants
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+{% block pageTitle %}Course listing variants{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
+{% block content %}
 <style>
   .listing-example-container {
     margin-bottom: 60px;
@@ -16,12 +18,6 @@
   }
 </style>
 
-
-  <div class="breadcrumbs dont-print">
-    <ol>
-      <li><a href="/history">Design history</a></li>
-    </ol>
-  </div>
   {{macros.h1("Course listing variants")}}
 
   <p>Some notes:</p>
@@ -473,5 +469,4 @@
       </div>
     </div>
   </div>
-
 {% endblock %}
