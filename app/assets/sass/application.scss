@@ -13,7 +13,7 @@ $govuk-global-styles: true;
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
-.heading-medium .heading-secondary {
+.govuk-heading-m .heading-secondary {
   font-weight: normal;
   color: govuk-colour("grey-1");
   @include govuk-font(19);
@@ -109,7 +109,7 @@ $govuk-global-styles: true;
   border-top: 10px solid govuk-colour("blue");
   padding-top: 5px;
 
-  .heading-medium {
+  .govuk-heading-m {
     margin-top: 0.3em;
     margin-bottom: 0.5em;
   }
@@ -510,8 +510,8 @@ dl.aligned dd {
 .info-window {
   @include govuk-font(16);
 
-  .heading-medium,
-  .heading-small {
+  .govuk-heading-m,
+  .govuk-heading-s {
     margin-top: 5px;
   }
 }

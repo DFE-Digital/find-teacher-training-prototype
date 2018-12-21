@@ -53,14 +53,14 @@
 <main id="content" role="main">
   {{ macros.betaBanner()}}
   <a class="link-back" href="/results">Back to search results</a>
-  <h1 class="heading-xlarge">
+  <h1 class="govuk-heading-xl">
     {{ title }}
   </h1>
 
   {{ data['latLong'] }}
 
   <div id="results">
-    <h1 class="heading-large remove-top-margin">
+    <h1 class="govuk-heading-l remove-top-margin">
       Teacher training courses
       {% if data['formattedAddress'] or data['postcode-town-or-city'] %}
         near {{ data['formattedAddress'] or data['postcode-town-or-city'] }}
@@ -74,7 +74,7 @@
     <div>
     {% for course in results %}
       <div id="{{ course.slug }}">
-        <h2 class="heading-medium">
+        <h2 class="govuk-heading-m">
           <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
         </h2>
         <dl class="aligned">

@@ -9,7 +9,7 @@
       <li><a href="/history">Design history</a></li>
     </ol>
   </div>
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="grid-row">
     <div class="column-two-thirds">
@@ -31,13 +31,13 @@
         <li>masked over bad data by de-duping locations for a provider by postcode (eg Main site and contact address having the same postcode but slightly different addresses, meaning slightly different geocode points, usually about 100m from each other)</li>
       </ul>
 
-      <h2 class="heading-large">Labels as markers</h2>
+      <h2 class="govuk-heading-l">Labels as markers</h2>
 
       <p>We observed users struggling to move around a set of pins – ‘which one did I open?’, ‘how do I find that result again?’. By adding text labels there’s a hint at what the pin means and it’s easier to find a pin or a specific provider.</p>
 
       <p>When there are many pins showing these labels can get cluttered and the map is hard to use. When this happens we shorten the label to only the provider code. It’s not as usable or as obvious, but pins are still distinct and identifiable. We need to see how well these codes test with users.</p>
 
-      <h2 class="heading-large">Bad data</h2>
+      <h2 class="govuk-heading-l">Bad data</h2>
 
       <p>The address data we have is bad and produces some strange results on a map.</p>
 
@@ -45,7 +45,7 @@
 
       <p>Our geocoded points might be more accurate if we take into account the name of a training location as well as its address. Though providers do different things with this field.</p>
 
-      <h3 class="heading-medium">Main sites</h3>
+      <h3 class="govuk-heading-m">Main sites</h3>
 
       <p>UCAS mandates that the first address is called ‘Main site’, sometimes this has an address, sometimes it doesn’t – it’s often the same as the contact address. But because they are entered by hand, the addresses often vary slightly – leading to slightly different geocoded points, meaning separate pin markers. We’ve deduplicated this by merging locations with the same postcode. But where one or more addresses have no postcode the problem remains.</p>
 
@@ -53,7 +53,7 @@
 
       <p>Ideally the geocoded points would be the same, because the addresses are the same.</p>
 
-      <h3 class="heading-medium">Location types</h3>
+      <h3 class="govuk-heading-m">Location types</h3>
 
       <p>For school direct courses the training locations are usually the schools you can apply to train in, eg your host school. In this case the variety of locations for a school direct provider is illustrated well.</p>
 
