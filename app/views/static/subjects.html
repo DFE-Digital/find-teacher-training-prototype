@@ -12,13 +12,13 @@
   {{macros.betaBanner()}}
   {{ macros.backLink(backLink.text, backLink.href) }}
 
-  <h1 class="heading-xlarge">{{ title }}</h1>
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
 
   <div class="grid-row">
     <div class="column-two-thirds">
       <p>Select the subject you want to teach.</p>
 
-      <h2 class="heading-medium">Get financial support</h2>
+      <h2 class="govuk-heading-m">Get financial support</h2>
       <p>Most courses charge a fee. You can get financial support to help with the costs of your course. The financial support options available to you will depend on the subject you choose.</p>
 
       <p>Find out more about <a href="https://getintoteaching.education.gov.uk/funding-and-salary/overview/postgraduate-loans">postgraduate loans</a>, <a href="https://getintoteaching.education.gov.uk/funding-and-salary/overview">bursaries and scholarships</a> and <a href="https://getintoteaching.education.gov.uk/funding-and-salary/overview/funding-by-subject">funding by subject</a> on Get into Teaching.</p>
@@ -33,13 +33,13 @@
             <div class="accordion-section accordion-section--expanded">
 
               <div class="accordion-section-header">
-                <h2 class="heading-medium">{{ subjectGroup.group }}</h2>
+                <h2 class="govuk-heading-m">{{ subjectGroup.group }}</h2>
               </div>
               <div class="accordion-section-body">
                 <ul class="list">
                   {% for s in subjectGroup.subjects %}
                     <li style="margin-bottom: 10px">
-                      <a href="#" class="heading-small">{{ s.name }}</a>
+                      <a href="#" class="govuk-heading-s">{{ s.name }}</a>
                     </li>
                   {% endfor %}
                 </ul>

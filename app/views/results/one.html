@@ -20,7 +20,7 @@
         {% for course in courses %}
           {% if loop.index == 1 %}
             <div class="results">
-              <h2 class="heading-medium">
+              <h2 class="govuk-heading-m">
                 <a href="/course">{{ course.name }}</a>
               </h2>
               <div class="grid-row results-data-large">
@@ -54,7 +54,7 @@
           {% endif %}
         {% endfor %}
 
-        <h2 class="heading-medium">Suggested searches</h2>
+        <h2 class="govuk-heading-m">Suggested searches</h2>
         <p>For business studies there are:</p>
         <ul class="list list-bullet">
           <li><a href="#">8 courses within 10 miles of {{ data['postcode-town-or-city'] or 'SW13' }}</a></li>

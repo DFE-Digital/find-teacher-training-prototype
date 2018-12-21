@@ -13,7 +13,7 @@
   {{macros.betaBanner()}}
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="heading-xlarge">{{ title }}</h1>
+      <h1 class="govuk-heading-xl">{{ title }}</h1>
     </div>
   </div>
   <div>
@@ -26,7 +26,7 @@
         {{macros.resultsHeader(count + ' courses')}}
 
         {% for course in results %}
-          <h2 class="heading-medium">
+          <h2 class="govuk-heading-m">
             <a href="/course/{{ course.slug }}">{{ course.name }} with {{ course.provider }}</a>
           </h2>
           <dl class="aligned">
