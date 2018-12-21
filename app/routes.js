@@ -1,9 +1,9 @@
-var express = require('express')
-var router = express.Router()
-var geolib = require('geolib')
-var geocoder = require('google-geocoder')
-var geo = geocoder({ key: process.env.GOOGLE_API_KEY })
-var fs = require('fs')
+const express = require('express')
+const router = express.Router()
+const geolib = require('geolib')
+const geocoder = require('google-geocoder')
+const geo = geocoder({ key: process.env.GOOGLE_API_KEY })
+const fs = require('fs')
 
 // geo.find('223 Edenbridge Dr, Toronto', function(err, res){
 //   console.log(err);
