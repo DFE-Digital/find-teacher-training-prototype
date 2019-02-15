@@ -79,7 +79,11 @@
               name="{{ name }}"
               value="{{ field.name }}"
               {% if field.more %}data-aria-controls="radio-{{ name }}-part-{{ i }}-extra"{% endif %}
-              {{ checked(name, field.name) }}
+              {% if field.selected %}
+                checked
+              {% else %}
+                {{ checked(name, field.name) }}
+              {% endif %}
             >
             <label
               class="govuk-label govuk-radios__label{% if field.text %} govuk-label--s{% endif %}"
