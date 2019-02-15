@@ -73,6 +73,26 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
   });
 })
 
+router.get('/apply/:providerCode/:courseCode', function (req, res) {
+  var course;
+
+  fs.readFile(`lib/courses/course_${req.params.providerCode}_${req.params.courseCode}.json`, (err, data) => {
+    if (err) throw err;
+    course = JSON.parse(data);
+    res.render('apply', { course: course });
+  });
+})
+
+router.get('/apply-ucas/:providerCode/:courseCode', function (req, res) {
+  var course;
+
+  fs.readFile(`lib/courses/course_${req.params.providerCode}_${req.params.courseCode}.json`, (err, data) => {
+    if (err) throw err;
+    course = JSON.parse(data);
+    res.render('apply-ucas', { course: course });
+  });
+})
+
 router.get('/results/filters/subjects', function (req, res) {
   var isMap = req.query.map;
   var backLink = { text: 'Back to results', href: isMap ? '/results?map=yes' : '/results'}
