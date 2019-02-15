@@ -62,7 +62,7 @@ fs.readdir(directory, (err, files) => {
 
   var templateStart = `{% extends "layout.html" %}
 {% set title = '${title}' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
 {% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}

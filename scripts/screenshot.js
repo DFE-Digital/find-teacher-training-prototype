@@ -87,7 +87,7 @@ title = title.charAt(0).toUpperCase() + title.slice(1)
 
 var templateStart = `{% extends "layout.html" %}
 {% set title = '${title}' %}
-{% block page_title %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }}{% endblock %}
 {% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
 
 {% block content %}
