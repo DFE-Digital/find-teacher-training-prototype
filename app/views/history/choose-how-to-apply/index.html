@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% set title = 'Choose how to apply' %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block breadcrumbs %}{{ macros.designHistoryBreadcrumbs() }}{% endblock %}
+
+{% block content %}
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
+
+  {% set contents = [
+    { text: 'User journey', id: 'user-journey' },
+    { text: 'Choose how to apply', id: 'choose-how-to-apply' },
+    { text: 'Choose how to apply (UCAS selected)', id: 'choose-how-to-apply-ucas-selected' },
+    { text: 'Apply on UCAS', id: 'apply-on-ucas' },
+    { text: 'UCAS login page', id: 'ucas-apply-page' }
+  ] %}
+  {{ macros.screenshotContents(contents) }}
+
+  {{ macros.screenshot('User journey', 'user-journey', '/public/images/history/choose-how-to-apply/apply-flow.svg', '/public/images/history/choose-how-to-apply/apply-flow.svg', '
+    <p>
+      <a href="https://docs.google.com/drawings/d/1kSIYsL1JaMADJkDT1gavtsasHTCOhZRbHMY9M4Oc9nE/edit?usp=sharing">Google drawing</a>
+    </p>
+  ') }}
+
+  {{ macros.screenshot('Choose how to apply', 'choose-how-to-apply', '/public/images/history/choose-how-to-apply/thumbnails/01-choose-how-to-apply.png', '/public/images/history/choose-how-to-apply/01-choose-how-to-apply.png', '') }}
+
+  {{ macros.screenshot('Choose how to apply (UCAS selected)', 'choose-how-to-apply-ucas-selected', '/public/images/history/choose-how-to-apply/thumbnails/01-choose-how-to-apply-ucas-selected.png', '/public/images/history/choose-how-to-apply/01-choose-how-to-apply-ucas-selected.png', '') }}
+
+  {{ macros.screenshot('Apply on UCAS', 'apply-on-ucas', '/public/images/history/choose-how-to-apply/thumbnails/02-apply-on-ucas.png', '/public/images/history/choose-how-to-apply/02-apply-on-ucas.png', '') }}
+
+  {{ macros.screenshot('UCAS login page', 'ucas-apply-page', '/public/images/history/choose-how-to-apply/thumbnails/03-ucas-apply-page.png', '/public/images/history/choose-how-to-apply/03-ucas-apply-page.png', '') }}
+{% endblock %}
