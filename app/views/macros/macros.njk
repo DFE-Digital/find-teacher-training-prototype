@@ -86,7 +86,7 @@
               for="radio-{{ name }}-part-{{ i }}"
               {% if field.text %}aria-describedby="radio-{{ name }}-part-{{ i }}-hint"{% endif %}
             >
-              {{ field.name }}
+              {{ field.name | safe }}
             </label>
             {% if field.text %}
               <span
