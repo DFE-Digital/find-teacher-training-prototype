@@ -62,7 +62,7 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
   var providerCode = req.params.providerCode;
   var courseCode = req.params.courseCode;
 
-  getCourse(req, providerCode, courseCode, function(course) {
+  getFullCourse(req, providerCode, courseCode, function(course) {
     res.render('course', { course: course });
   });
 })
@@ -70,28 +70,42 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
 router.get('/apply/:providerCode/:courseCode', function (req, res) {
   var providerCode = req.params.providerCode;
   var courseCode = req.params.courseCode;
-  var d = req.session.data;
-  var key = `${providerCode}-${courseCode}`;
-  d[key] = req.path;
-  d['seen-apply-with-choice'] = true;
+  var data = req.session.data;
 
-  getCourse(req, providerCode, courseCode, function(course) {
-    res.render('apply', { course: course });
-  });
+  data[`${providerCode}-${courseCode}`] = req.path;
+  data['seen-apply-with-choice'] = true;
+
+  var course = getCourse(req, providerCode, courseCode);
+  res.render('apply', { course: course });
+})
+
+router.post('/apply/:providerCode/:courseCode', function (req, res) {
+  var providerCode = req.params.providerCode;
+  var courseCode = req.params.courseCode;
+
+  var applyChoice = req.body['who-apply'];
+
+  if (applyChoice == 'Apply on the UCAS website') {
+    res.redirect('/public/images/history/choose-how-to-apply/03-ucas-apply-page.png');
+  }
+
+  res.redirect(`/apply/${providerCode}/${courseCode}/start`);
+})
+
+router.post('/apply', function (req, res) {
+
 })
 
 router.get('/apply-ucas/:providerCode/:courseCode', function (req, res) {
-  var course;
   var providerCode = req.params.providerCode;
   var courseCode = req.params.courseCode;
-  var d = req.session.data;
-  var key = `${providerCode}-${courseCode}`;
-  d[key] = req.path;
-  d['seen-apply-without-choice'] = true;
+  var data = req.session.data;
 
-  getCourse(req, providerCode, courseCode, function(course) {
-    res.render('apply-ucas', { course: course });
-  });
+  data[`${providerCode}-${courseCode}`] = req.path;
+  data['seen-apply-without-choice'] = true;
+
+  var course = getCourse(req, providerCode, courseCode);
+  res.render('apply-ucas', { course: course });
 })
 
 router.get('/results/filters/subjects', function (req, res) {
@@ -313,7 +327,15 @@ function groupBy(list, keyGetter) {
     return map;
 }
 
-function getCourse(req, providerCode, courseCode, callback) {
+function getCourse(req, providerCode, courseCode) {
+  var data = req.session.data;
+
+  return data['courses'].find(function(c) {
+    return c.providerCode == providerCode && c.programmeCode == courseCode
+  });
+}
+
+function getFullCourse(req, providerCode, courseCode, callback) {
   var course;
   var data = req.session.data;
 
