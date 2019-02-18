@@ -96,6 +96,11 @@ router.post('/apply', function (req, res) {
 
 })
 
+router.get('/apply/:providerCode/:courseCode/:view', function (req, res) {
+  var course = getCourse(req, req.params.providerCode, req.params.courseCode);
+  res.render(`apply/${req.params.view}`, { course: course });
+})
+
 router.get('/apply-ucas/:providerCode/:courseCode', function (req, res) {
   var providerCode = req.params.providerCode;
   var courseCode = req.params.courseCode;
