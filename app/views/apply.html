@@ -25,7 +25,7 @@
   {% endset %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <form action="/apply/{{ course.providerCode }}/{{ course.programmeCode }}" class="govuk-grid-column-two-thirds" method="post">
       <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS or by using the new service,&nbsp;Apply for postgraduate teacher training.</p>
 
       <h2 class="govuk-heading-l">Choose how to apply</h2>
@@ -50,6 +50,6 @@
       <div class="govuk-form-group">
         <input type="submit" class="govuk-button govuk-button--start" value="Apply">
       </div>
-    </div>
+    </form>
   </div>
 {% endblock %}
