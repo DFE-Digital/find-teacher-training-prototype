@@ -11,13 +11,8 @@ const fs = require('fs')
 // });
 
 // Route index page
-router.get('/', function (req, res) {
-  res.render('index')
-})
-
-// Route index page
-router.post('/', function (req, res) {
-  res.render('index')
+router.all('/', function (req, res) {
+  res.redirect('/start/location');
 })
 
 router.post('/start/location', function (req, res) {
