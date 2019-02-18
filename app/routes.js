@@ -82,11 +82,10 @@ router.get('/apply/:providerCode/:courseCode', function (req, res) {
 router.post('/apply/:providerCode/:courseCode', function (req, res) {
   var providerCode = req.params.providerCode;
   var courseCode = req.params.courseCode;
-
   var applyChoice = req.body['who-apply'];
 
   if (applyChoice == 'Apply on the UCAS website') {
-    res.redirect('/public/images/history/choose-how-to-apply/03-ucas-apply-page.png');
+    res.redirect('https://2019.teachertraining.apply.ucas.com/apply/student/login.do');
   }
 
   res.redirect(`/apply/${providerCode}/${courseCode}/start`);

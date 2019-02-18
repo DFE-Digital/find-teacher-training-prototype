@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% set title %}Apply for postgraduate teacher training{% endset %}
+{% block pageTitle %}{{ title }}{% endblock %}
+{% block backLink %}{{ macros.backLink('/apply/' + course.providerCode + '/' + course.programmeCode, 'Back') }}{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+      <!-- <p>Thank you for choosing to apply for teacher training through the Department for Education’s new application service.</p> -->
+
+      <p>The service is being trialled with a small number of training providers, including the one you have selected.</p>
+
+      <p>Once you’ve created an account, you can use the service to:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>create your teacher training profile</li>
+        <li>apply to training providers who have opted in to the trial</li>
+        <li>get help completing your application form</li>
+        <li>give feedback to help us improve the service</li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
