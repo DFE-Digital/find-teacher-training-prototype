@@ -226,7 +226,7 @@ if (useCookieSessionStore === 'true') {
 // Automatically store all data users enter
 if (useAutoStoreData === 'true') {
   app.use(utils.autoStoreData)
-  utils.addCheckedFunction(nunjucksAppEnv)
+    utils.addCheckedFunction(nunjucksAppEnv)
   if (useDocumentation) {
     utils.addCheckedFunction(nunjucksDocumentationEnv)
   }
@@ -237,27 +237,27 @@ if (useAutoStoreData === 'true') {
 
 app.use(function (req, res, next) {
   nunjucksAppEnv.addGlobal('value', function (name) {
-     if (req.session.data === undefined) {
-       return ''
-     }
+    if (req.session.data === undefined) {
+      return ''
+    }
 
-     var value = req.session.data[name]
-     if (value === undefined) {
-       return ''
-     }
+    var value = req.session.data[name]
+    if (value === undefined) {
+      return ''
+    }
 
-     return value;
-   })
+    return value;
+  })
 
-   nunjucksAppEnv.addGlobal('markdown', function(text) {
-     if (text === undefined) {
-       return ''
-     }
+  nunjucksAppEnv.addGlobal('markdown', function(text) {
+    if (text === undefined) {
+      return ''
+    }
 
-     t = text.replace(/\\r/g, "\n").replace(/\\t/g, " ")
+    t = text.replace(/\\r/g, "\n").replace(/\\t/g, " ")
 
-     return '<div class="markdown">' + marked(t) + '</div>';
-   })
+    return '<div class="markdown">' + marked(t) + '</div>';
+  })
 
   next()
 });
