@@ -56,8 +56,7 @@ prototype_data['subjects'] = data.map { |c| c['subjects'].map {|s| s.downcase.ca
 
 prototype_data['groupedSubjects'] = {
   "Primary": [
-    "Primary",
-    "Early years"
+    "Primary"
   ],
   "Secondary": [
     "Art and design",
