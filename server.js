@@ -259,6 +259,31 @@ app.use(function (req, res, next) {
     return '<div class="markdown">' + marked(t) + '</div>';
   })
 
+  nunjucksAppEnv.addGlobal('applyLink', function(providerCode, programmeCode) {
+    var data = req.session.data;
+    var key = `${providerCode}-${programmeCode}`;
+    var applyWithChoice = `/apply/${providerCode}/${programmeCode}`;
+    var applyWithoutChoice = `/apply-ucas/${providerCode}/${programmeCode}`;
+
+    // Keep each course consistent
+    if (data[key]) {
+      return data[key];
+    }
+
+    // If they've seen a course without a choice, force them to see one with
+    if (data['seen-apply-without-choice']) {
+      return applyWithChoice;
+    }
+
+    // If they've seen a course with a choice, force them to see one without
+    if (data['seen-apply-with-choice']) {
+      return applyWithoutChoice;
+    }
+
+    // Randomise whether course is in Apply beta or not (50/50)
+    return Math.random() >= 0.5 ? applyWithChoice : applyWithoutChoice;
+  })
+
   next()
 });
 

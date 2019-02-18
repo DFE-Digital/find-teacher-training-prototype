@@ -75,21 +75,37 @@ router.get('/course/:providerCode/:courseCode', function (req, res) {
 
 router.get('/apply/:providerCode/:courseCode', function (req, res) {
   var course;
+  var providerCode = req.params.providerCode;
+  var courseCode = req.params.courseCode;
+  var d = req.session.data;
+  var key = `${providerCode}-${courseCode}`;
+  d[key] = req.path;
+  d['seen-apply-with-choice'] = true;
 
-  fs.readFile(`lib/courses/course_${req.params.providerCode}_${req.params.courseCode}.json`, (err, data) => {
+  fs.readFile(`lib/courses/course_${providerCode}_${courseCode}.json`, (err, data) => {
     if (err) throw err;
     course = JSON.parse(data);
-    res.render('apply', { course: course });
+    res.render('apply', {
+      course: course
+    });
   });
 })
 
 router.get('/apply-ucas/:providerCode/:courseCode', function (req, res) {
   var course;
+  var providerCode = req.params.providerCode;
+  var courseCode = req.params.courseCode;
+  var d = req.session.data;
+  var key = `${providerCode}-${courseCode}`;
+  d[key] = req.path;
+  d['seen-apply-without-choice'] = true;
 
-  fs.readFile(`lib/courses/course_${req.params.providerCode}_${req.params.courseCode}.json`, (err, data) => {
+  fs.readFile(`lib/courses/course_${providerCode}_${courseCode}.json`, (err, data) => {
     if (err) throw err;
     course = JSON.parse(data);
-    res.render('apply-ucas', { course: course });
+    res.render('apply-ucas', {
+      course: course
+    });
   });
 })
 

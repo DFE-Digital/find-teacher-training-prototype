@@ -180,28 +180,10 @@
       </h2>
 
       <p class="govuk-!-margin-bottom-0">
-        <a href="https://2019.teachertraining.apply.ucas.com/apply/student/login.do" class="govuk-button govuk-button--start">Apply on the UCAS website</a>
+        <a href="{{ applyLink(course.providerCode, course.programmeCode) }}" class="govuk-button govuk-button">Apply for this course</a>
       </p>
-
-      <p>Visit the Get into Teaching website for <a href="https://getintoteaching.education.gov.uk/how-to-apply/apply">guidance on applying for teacher training</a>.</p>
 
       <h3 class="govuk-heading-m">Before you apply</h3>
-
-      <p>You’ll need to register with UCAS before you can apply.</p>
-
-      <p>
-        When you apply you’ll need these codes for the Choices section of your application form:
-      </p>
-
-      <div class="govuk-inset-text">
-        <ul class="govuk-list">
-          <li style="margin-bottom: 20px">Training provider code:<br /><strong class="govuk-!-display-block govuk-!-font-size-36 govuk-!-font-weight-bold">{{ course.providerCode }}</strong></li>
-          <li>Training programme code:<br /><strong class="govuk-!-display-block govuk-!-font-size-36 govuk-!-font-weight-bold">{{ course.programmeCode }}</strong></li>
-          <!-- <li>training location or campus code: leave empty</li> -->
-        </ul>
-      </div>
-
-      <h3 class="govuk-heading-m">Choose a training location</h3>
       <p>You’ll also need to choose a training location and give the relevant training location code.</p>
 
         <div id="map" class="add-double-bottom-margin" style="height: 500px"></div>

@@ -37,6 +37,8 @@ def to_slug(string)
 end
 
 prototype_data = {
+  "seen-apply-with-choice": false,
+  "seen-apply-without-choice": false,
   "study-type": ["Full time (12 months)", "Part time (18-24 months)"],
   "salary": "All courses (with or without a salary)",
   "qualification": ["PGCE with QTS (Postgraduate certificate in education with qualified teacher status)", "QTS (Qualified teacher status)"],

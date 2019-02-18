@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% set title %}Apply for this course{% endset %}
 {% block pageTitle %}{{ title }}{% endblock %}
-{% block backLink %}{{ macros.backLink('/course/', 'Back') }}{% endblock %}
+{% block backLink %}{{ macros.backLink('/course/' + course.providerCode + '/' + course.programmeCode, 'Back') }}{% endblock %}
 
 {% block content %}
 
