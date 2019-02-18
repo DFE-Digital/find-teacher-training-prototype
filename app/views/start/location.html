@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block pageTitle %}Find courses by location or by training provider{% endblock %}
+{% block pageTitle %}Find courses by location{% endblock %}
 
 {% block content %}
   <h1 class="govuk-heading-xl">
@@ -43,7 +43,7 @@
         ]
       %}
 
-      {{ macros.radioGroup('location', fields) }}
+      {{ postcodeFields | safe }}
     </div>
 
     {% if filtering %}
