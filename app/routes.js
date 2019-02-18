@@ -59,17 +59,15 @@ function handleLocationSearch(location, req, res, successRedirect, options = {})
 
 // Route index page
 router.get('/course/:providerCode/:courseCode', function (req, res) {
-  var course;
+  var providerCode = req.params.providerCode;
+  var courseCode = req.params.courseCode;
 
-  fs.readFile(`lib/courses/course_${req.params.providerCode}_${req.params.courseCode}.json`, (err, data) => {
-    if (err) throw err;
-    course = JSON.parse(data);
+  getCourse(req, providerCode, courseCode, function(course) {
     res.render('course', { course: course });
   });
 })
 
 router.get('/apply/:providerCode/:courseCode', function (req, res) {
-  var course;
   var providerCode = req.params.providerCode;
   var courseCode = req.params.courseCode;
   var d = req.session.data;
@@ -77,12 +75,8 @@ router.get('/apply/:providerCode/:courseCode', function (req, res) {
   d[key] = req.path;
   d['seen-apply-with-choice'] = true;
 
-  fs.readFile(`lib/courses/course_${providerCode}_${courseCode}.json`, (err, data) => {
-    if (err) throw err;
-    course = JSON.parse(data);
-    res.render('apply', {
-      course: course
-    });
+  getCourse(req, providerCode, courseCode, function(course) {
+    res.render('apply', { course: course });
   });
 })
 
@@ -95,12 +89,8 @@ router.get('/apply-ucas/:providerCode/:courseCode', function (req, res) {
   d[key] = req.path;
   d['seen-apply-without-choice'] = true;
 
-  fs.readFile(`lib/courses/course_${providerCode}_${courseCode}.json`, (err, data) => {
-    if (err) throw err;
-    course = JSON.parse(data);
-    res.render('apply-ucas', {
-      course: course
-    });
+  getCourse(req, providerCode, courseCode, function(course) {
+    res.render('apply-ucas', { course: course });
   });
 })
 
@@ -321,6 +311,23 @@ function groupBy(list, keyGetter) {
         }
     });
     return map;
+}
+
+function getCourse(req, providerCode, courseCode, callback) {
+  var course;
+  var data = req.session.data;
+
+  if (data[`${providerCode}-${courseCode}-course`]) {
+    callback(data[`${providerCode}-${courseCode}-course`]);
+    return;
+  }
+
+  fs.readFile(`lib/courses/course_${providerCode}_${courseCode}.json`, (err, file) => {
+    if (err) throw err;
+    course = JSON.parse(file);
+    data[`${providerCode}-${courseCode}-course`] = course;
+    callback(course);
+  });
 }
 
 module.exports = router
