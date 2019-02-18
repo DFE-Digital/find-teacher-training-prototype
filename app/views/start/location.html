@@ -1,11 +1,6 @@
 {% extends "layout.html" %}
 {% block pageTitle %}Find courses by location or by training provider{% endblock %}
 
-{% if not backLink %}
-  {% set backLink = { text: 'Back', href: '/'} %}
-{% endif %}
-{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
-
 {% block content %}
   <h1 class="govuk-heading-xl">
     Find courses by location or<br /> by training provider
