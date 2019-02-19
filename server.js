@@ -281,7 +281,10 @@ app.use(function (req, res, next) {
     }
 
     // Randomise whether course is in Apply beta or not (50/50)
-    return Math.random() >= 0.5 ? applyWithChoice : applyWithoutChoice;
+    // return Math.random() >= 0.5 ? applyWithChoice : applyWithoutChoice;
+
+    // Always show a course with a choice first
+    return applyWithChoice;
   })
 
   next()
