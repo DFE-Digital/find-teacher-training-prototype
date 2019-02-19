@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block pageTitle %}Email: Thank you for submitting your teacher training application{% endblock %}
+
+{% block content %}
+  <h1 class="govuk-heading-l">You’ve just received this email</h1>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds fake-email">
+      <h1 class="govuk-heading-m">
+        Thank you for submitting your teacher training application
+      </h1>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <!-- Dear [name] -->
+
+      <p>You have successfully submitted an application to study [Course name (X100)] with [Training Provider].</p>
+
+      <p>Your training provider will respond to your application within [X] working days via email. If they decide to progress your application, they will communicate with you directly to organise an interview date and give you all the information you need.</p>
+
+      <p>You can apply to as many different training providers as you like. If you’re ready to apply to another training provider, go to <a href="/">Find postgraduate teacher training</a> to research your options.</p>
+
+      <p>To withdraw this application, visit the ‘<a href="#">Your applications</a>’ page.</p>
+
+      <p>To get help or give us feedback about this service, email <a href="#">becomingateacher@digital.education.gov.uk</a>.</p>
+
+      <p>The Department for Education Apply for postgraduate teacher training team</p>
+    </div>
+  </div>
+
+
+
+{% endblock %}
