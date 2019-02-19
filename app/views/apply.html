@@ -26,7 +26,7 @@
 
   <div class="govuk-grid-row">
     <form action="/apply/{{ course.providerCode }}/{{ course.programmeCode }}" class="govuk-grid-column-two-thirds" method="post">
-      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS or by using the new service,&nbsp;Apply for postgraduate teacher training.</p>
+      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS or by using Apply for postgraduate teacher training, a new service being trialled by the Department for Education.</p>
 
       <h2 class="govuk-heading-l">Choose how to apply</h2>
       {% set fields = [
@@ -40,7 +40,7 @@
           },
           {
             name: 'Try out the new service',
-            text: '<p>This service is limited to just a few courses.</p>'
+            text: '<p>Your feedback will help us improve.</p>'
           }
         ]
       %}
