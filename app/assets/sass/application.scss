@@ -18,6 +18,13 @@ blockquote {
   margin: 0;
 }
 
+.fake-email {
+  margin-left: 15px;
+  margin-bottom: 60px;
+  border: 5px solid $govuk-border-colour;
+  padding: 45px;
+}
+
 .govuk-heading-m .heading-secondary {
   font-weight: normal;
   color: govuk-colour("grey-1");
