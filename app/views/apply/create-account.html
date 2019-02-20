@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% set title %}Create an account{% endset %}
 {% block pageTitle %}{{ title }}{% endblock %}
-{% block backLink %}{{ macros.backLink('/apply/' + course.providerCode + '/' + course.programmeCode + '/start', 'Back') }}{% endblock %}
+{% block backLink %}{{ macros.backLink('/apply/' + course.providerCode + '/' + course.programmeCode, 'Back') }}{% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">

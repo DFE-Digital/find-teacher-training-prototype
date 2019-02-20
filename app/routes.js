@@ -96,7 +96,7 @@ router.post('/apply/:providerCode/:courseCode', function (req, res) {
     res.redirect('https://2019.teachertraining.apply.ucas.com/apply/student/login.do');
   }
 
-  res.redirect(`/apply/${providerCode}/${courseCode}/start`);
+  res.redirect(`/apply/${providerCode}/${courseCode}/create-account`);
 })
 
 router.post('/apply', function (req, res) {
