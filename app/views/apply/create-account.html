@@ -90,15 +90,14 @@ classes: "govuk-fieldset__legend--m"
             value: data[register_email]
             }) }}
 ​
-          {{ govukInput({
-            label: {
-              text: "Create a password"
-            },
-            id: "candidate_password",
-            classes: "govuk-input--width-20",
-            name: "candidate_password",
-            value: data[candidate_password]
-            }) }}
+<div class="govuk-form-group">
+<label class="govuk-label" for="candidate_password">
+Create a password
+</label>
+
+
+<input class="govuk-input govuk-input--width-20" id="candidate_password" name="candidate_password" type="password">
+</div>
 ​
       {% endcall %}
     {{ govukButton({ text: "Create an account" }) }}
