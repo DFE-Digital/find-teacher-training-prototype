@@ -47,6 +47,23 @@
 
       {{ macros.radioGroup('who-apply', fields) }}
 
+      {% set more %}
+      <p>You can use the new service to:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>create your teacher training profile</li>
+        <li>apply to training providers who have opted in to the trial</li>
+        <li>get help completing your application form</li>
+        <li>give feedback to help us improve the service</li>
+      </ul>
+
+      <p>For providers who haven’t opted in to the trial, you will need to apply on the UCAS website.</p>
+      {% endset %}
+
+      {{ govukDetails({
+        summaryText: "Learn more before you choose",
+        html: more
+      }) }}
+
       <div class="govuk-form-group">
         <input type="submit" class="govuk-button govuk-button--start" value="Apply">
       </div>
