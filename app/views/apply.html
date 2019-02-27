@@ -32,15 +32,15 @@
       <h2 class="govuk-heading-l">Choose how to apply</h2>
       {% set fields = [
           {
-            name: 'Apply for this course, plus other courses through UCAS',
-            text: '<p>Use UCAS if you’re ready to apply to multiple providers, and want to keep all your applications in one place.</p>',
+            name: 'Apply through UCAS',
+            text: '<p>Use UCAS if you’re applying to multiple providers, and want to keep all your applications in one place.</p>',
             more: moreText
           },
           {
             or: true
           },
           {
-            name: 'Apply to just this course (you can apply to more later) using the new GOV.UK service',
+            name: 'Apply through the GOV.UK service',
             text: '<p>It’s quicker to use but limited to just a few training providers.</p><p>For providers who haven’t opted in to the trial, you will need to apply on the UCAS website. Using the new service doesn’t stop you applying on UCAS for these other courses.</p>'
           }
         ]
@@ -59,7 +59,7 @@
       {% endset %}
 
       <div class="govuk-form-group">
-        <input type="submit" class="govuk-button govuk-button--start" value="Apply">
+        <input type="submit" class="govuk-button govuk-button--start" value="Continue">
       </div>
     </form>
   </div>
