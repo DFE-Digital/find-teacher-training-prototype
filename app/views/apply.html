@@ -11,6 +11,7 @@
   </h1>
 
   {% set moreText %}
+    <p>You’ll need to register with UCAS before you can apply.</p>
     <p>
       When you apply you’ll need these codes for the Choices section of your application form:
     </p>
@@ -26,22 +27,21 @@
 
   <div class="govuk-grid-row">
     <form action="/apply/{{ course.providerCode }}/{{ course.programmeCode }}" class="govuk-grid-column-two-thirds" method="post">
-      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS or by using Apply for postgraduate teacher training, a new service being trialled by the Department for Education.</p>
+      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS, or by using a new GOV.UK service. The GOV.UK service will eventually replace UCAS, but for now, it’s limited to just a few providers.</p>
 
       <h2 class="govuk-heading-l">Choose how to apply</h2>
       {% set fields = [
           {
-            name: 'Apply on the UCAS website',
-            text: '<p>You’ll need to register with UCAS before you can apply.</p>',
+            name: 'Apply for this course, plus other courses through UCAS',
+            text: '<p>Use UCAS if you’re ready to apply to multiple providers, and want to keep all your applications in one place.</p>',
             more: moreText
           },
           {
             or: true
           },
           {
-            name: 'Try out the new GOV.UK service',
-            text: '<p>It’s easier to use but limited to just a few training providers.</p>',
-            more: '<p>For providers who haven’t opted in to the trial, you will need to apply on the UCAS website. Using the new service doesn’t stop you applying on UCAS for these other courses.</p>'
+            name: 'Apply to just this course (you can apply to more later) using the new GOV.UK service',
+            text: '<p>It’s quicker to use but limited to just a few training providers.</p><p>For providers who haven’t opted in to the trial, you will need to apply on the UCAS website. Using the new service doesn’t stop you applying on UCAS for these other courses.</p>'
           }
         ]
       %}
@@ -57,11 +57,6 @@
         <li>give feedback to help us improve the service</li>
       </ul>
       {% endset %}
-
-      {{ govukDetails({
-        summaryText: "Learn more before you choose",
-        html: more
-      }) }}
 
       <div class="govuk-form-group">
         <input type="submit" class="govuk-button govuk-button--start" value="Apply">
