@@ -99,8 +99,15 @@ router.post('/apply/:providerCode/:courseCode', function (req, res) {
   res.redirect(`/apply/${providerCode}/${courseCode}/start`);
 })
 
-router.get('/apply-v2/:providerCode/:courseCode/start', function(req, res){
-  res.render('apply-v2/start');
+router.get('/apply-v2/:providerCode/:courseCode/start-dfe', function(req, res){
+  res.render('apply-v2/start-dfe');
+});
+
+router.get('/apply-v2/:providerCode/:courseCode/start-ucas', function(req, res) {
+  var providerCode = req.params.providerCode;
+  var courseCode = req.params.courseCode;
+
+  res.render('apply-v2/start-ucas', { providerCode: providerCode, courseCode: courseCode });
 });
 
 router.get('/apply-v2/:providerCode/:courseCode', function (req, res) {
@@ -121,10 +128,10 @@ router.post('/apply-v2/:providerCode/:courseCode', function (req, res) {
   var applyChoice = req.body['who-apply'];
 
   if (applyChoice == 'I want to apply for several courses' || applyChoice == 'I have already started my UCAS application this year') {
-    res.redirect('https://2019.teachertraining.apply.ucas.com/apply/student/login.do');
+    res.redirect(`/apply-v2/${providerCode}/${courseCode}/start-ucas`);
   }
 
-  res.redirect(`/apply-v2/${providerCode}/${courseCode}/start`);
+  res.redirect(`/apply-v2/${providerCode}/${courseCode}/start-dfe`);
 })
 
 router.post('/apply', function (req, res) {
