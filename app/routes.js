@@ -100,14 +100,19 @@ router.post('/apply/:providerCode/:courseCode', function (req, res) {
 })
 
 router.get('/apply-v2/:providerCode/:courseCode/start-dfe', function(req, res){
-  res.render('apply-v2/start-dfe');
+  var providerCode = req.params.providerCode;
+  var courseCode = req.params.courseCode;
+  var course = getCourse(req, providerCode, courseCode);
+
+  res.render('apply-v2/start-dfe', { course: course });
 });
 
 router.get('/apply-v2/:providerCode/:courseCode/start-ucas', function(req, res) {
   var providerCode = req.params.providerCode;
   var courseCode = req.params.courseCode;
+  var course = getCourse(req, providerCode, courseCode);
 
-  res.render('apply-v2/start-ucas', { providerCode: providerCode, courseCode: courseCode });
+  res.render('apply-v2/start-ucas', { course: course });
 });
 
 router.get('/apply-v2/:providerCode/:courseCode', function (req, res) {
