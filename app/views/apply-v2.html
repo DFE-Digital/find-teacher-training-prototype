@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set title %}Choose how to  apply{% endset %}
+{% set title %}Apply for this course{% endset %}
 {% block pageTitle %}{{ title }}{% endblock %}
 {% block backLink %}{{ macros.backLink('/course/' + course.providerCode + '/' + course.programmeCode, 'Back') }}{% endblock %}
 
@@ -25,21 +25,20 @@
   {% endset %}
 
   <div class="govuk-grid-row">
-    <form action="/apply/{{ course.providerCode }}/{{ course.programmeCode }}" class="govuk-grid-column-two-thirds" method="post">
-      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS, or by using a new GOV.UK service. The GOV.UK service will eventually replace UCAS.</p>
+    <form action="/apply-v2/{{ course.providerCode }}/{{ course.programmeCode }}" class="govuk-grid-column-two-thirds" method="post">
+      <p class="govuk-!-margin-bottom-6">To give you the best application experience, we need to know a bit more.</p>
 
       {% set fields = [
           {
-            name: 'Apply through UCAS',
-            text: '<p>Use UCAS if:</p><ul class="govuk-list govuk-list--bullet"><li>you are planning on applying to multiple courses</li><li>you have already started your UCAS application this year</li><li>you are looking for an Apply 2 choice for UCAS</li></ul>',
+            name: 'I want to apply for several courses',
             more: moreText
           },
           {
-            or: true
+            name: 'I have already started my UCAS application this year',
+            more: moreText
           },
           {
-            name: 'Apply for this course through the GOV.UK service',
-            text: '<p>It’s limited to just a few training providers.</p>'
+            name: 'I only want to apply for this course'
           }
         ]
       %}
