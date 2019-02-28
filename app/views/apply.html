@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set title %}Apply for this course{% endset %}
+{% set title %}Choose how to  apply{% endset %}
 {% block pageTitle %}{{ title }}{% endblock %}
 {% block backLink %}{{ macros.backLink('/course/' + course.providerCode + '/' + course.programmeCode, 'Back') }}{% endblock %}
 
@@ -26,13 +26,13 @@
 
   <div class="govuk-grid-row">
     <form action="/apply/{{ course.providerCode }}/{{ course.programmeCode }}" class="govuk-grid-column-two-thirds" method="post">
-      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS, or by using a new GOV.UK service. The GOV.UK service will eventually replace UCAS, but for now, it’s limited to just a few providers.</p>
+      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS, or by using a new GOV.UK service. The GOV.UK service will eventually replace UCAS.</p>
 
-      <h2 class="govuk-heading-l">Choose how to apply</h2>
       {% set fields = [
           {
             name: 'Apply through UCAS',
-            text: '<p>Use UCAS if you’re applying to multiple providers, or have previously applied for teacher training on the UCAS service.</p>',
+            text: '<ul class="govuk-list govuk-list--bullet"><li>you’re planning on applying to multiple courses</li><li>you’re already started your UCAS application this year</li><li>you’re looking for an Apply 2 choice for UCAS
+or for this course</li></ul>',
             more: moreText
           },
           {
@@ -58,7 +58,7 @@
       {% endset %}
 
       <div class="govuk-form-group">
-        <input type="submit" class="govuk-button govuk-button--start" value="Continue">
+        <input type="submit" class="govuk-button" value="Continue">
       </div>
     </form>
   </div>
