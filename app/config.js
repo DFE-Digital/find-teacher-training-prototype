@@ -7,7 +7,7 @@ module.exports = {
   serviceName: 'Find postgraduate teacher training',
 
   // Default port that prototype runs on
-  port: '3000',
+  port: '3010',
 
   // Enable or disable password protection on production
   useAuth: 'false',
