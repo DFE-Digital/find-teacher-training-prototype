@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set title %}Apply for this course{% endset %}
+{% set title %}Choose how to  apply{% endset %}
 {% block pageTitle %}{{ title }}{% endblock %}
 {% block backLink %}{{ macros.backLink('/course/' + course.providerCode + '/' + course.programmeCode, 'Back') }}{% endblock %}
 
@@ -26,21 +26,20 @@
 
   <div class="govuk-grid-row">
     <form action="/apply/{{ course.providerCode }}/{{ course.programmeCode }}" class="govuk-grid-column-two-thirds" method="post">
-      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS, or by using a new GOV.UK service. The GOV.UK service will eventually replace UCAS, but for now, it’s limited to just a few providers.</p>
+      <p class="govuk-!-margin-bottom-6">You can apply for this course through UCAS, or by using a new GOV.UK service. The GOV.UK service will eventually replace UCAS.</p>
 
-      <h2 class="govuk-heading-l">Choose how to apply</h2>
       {% set fields = [
           {
             name: 'Apply through UCAS',
-            text: '<p>Use UCAS if you’re applying to multiple providers, or have previously applied for teacher training on the UCAS service.</p>',
+            text: '<p>Use UCAS if:</p><ul class="govuk-list govuk-list--bullet"><li>you are planning on applying to multiple courses</li><li>you have already started your UCAS application this year</li><li>you are looking for an Apply 2 choice for UCAS</li></ul>',
             more: moreText
           },
           {
             or: true
           },
           {
-            name: 'Apply through the GOV.UK service',
-            text: '<p>It’s quicker to use but limited to just a few training providers.</p><p>For providers who haven’t opted in to the trial, you will need to apply through UCAS website. Using the new service doesn’t stop you applying on UCAS for these other courses.</p>'
+            name: 'Apply for this course through the GOV.UK service',
+            text: '<p>It’s limited to just a few training providers.</p><p>For providers who haven’t opted in to the trial, you will need to apply through UCAS. Using the new service doesn’t stop you applying on UCAS for these other courses.</p>'
           }
         ]
       %}
@@ -58,7 +57,7 @@
       {% endset %}
 
       <div class="govuk-form-group">
-        <input type="submit" class="govuk-button govuk-button--start" value="Continue">
+        <input type="submit" class="govuk-button" value="Continue">
       </div>
     </form>
   </div>
