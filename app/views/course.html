@@ -191,17 +191,20 @@
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th class="govuk-table__header" style="width: 40%">Name</th>
-            <th class="govuk-table__header" style="width: 50%">Address</th>
-            <th class="govuk-table__header">Code</th>
+            <th class="govuk-table__header" style="width: 70%">Location</th>
+            <th class="govuk-table__header">Vacancies</th>
+            <th class="govuk-table__header">UCAS&nbsp;code</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
           {% for school in course.schools %}
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">{{ school.name }}</td>
-            <td class="govuk-table__cell">{{ school.address }}</td>
-            <td class="govuk-table__cell">{{ school.code }}</td>
+            <td class="govuk-table__cell">
+              <span class="govuk-!-font-weight-bold">{{ school.name }}</span><br />
+              {{ school.address }}
+            </td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">{{ school.code }}{% if school.code == '-' %} (dash){% endif %}</td>
           </tr>
           {% endfor %}
         </tbody>
@@ -281,6 +284,7 @@
             var html = `
                 <div class="info-window">
                   <h2 class="govuk-heading-m">${school.name} (${school.code || '-'})</h2>
+                  <p class="govuk-tag">No vacancies</p>
                   <p>${ school.address }</p>
                 </div>
               `;
