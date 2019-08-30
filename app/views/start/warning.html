@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% set title = 'Find postgraduate teacher training' %}
+{% block pageTitle %}{{ title }}{% endblock %}
+
+{% block content %}
+  <h1 class="govuk-heading-xl govuk-!-margin-top-4">
+    {{ title }}
+  </h1>
+
+  <h2 class="govuk-heading-m">Courses starting in September 2020</h2>
+  <p>Courses that start in September 2020 will be listed from 1 October 2019.</p>
+  <p>Applications will open on 8 October 2019.</p>
+  <p>Return in October to see these courses.</p>
+
+  <h2 class="govuk-heading-m">Courses starting in the 2019/20 academic year</h2>
+  <p>There are still vacancies for some courses, but you need to apply soon.</p>
+  <p>Continue to find courses that still have vacancies.</p>
+
+  <hr class="govuk-section-break govuk-section-break--m">
+
+  {{ govukButton({
+      text: 'Find courses for 2019 to 2020',
+      href: '/start/location'
+  }) }}
+{% endblock %}
