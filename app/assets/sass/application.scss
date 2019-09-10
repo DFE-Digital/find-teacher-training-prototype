@@ -457,3 +457,10 @@ dl.aligned dd {
   @extend .govuk-list;
   @extend .govuk-list--bullet;
 }
+
+// Adjust text alignment in tables
+// Required since govuk-frontend 3.0.0
+.app-table--vertical-align-middle .govuk-table__header,
+.app-table--vertical-align-middle .govuk-table__cell {
+  vertical-align: middle;
+}
