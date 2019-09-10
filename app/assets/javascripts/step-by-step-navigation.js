@@ -80,7 +80,7 @@ window.GOVUK.getCurrentLocation = function () {
       }
 
       function addShowHideAllButton () {
-        $element.prepend('<div class="app-step-nav__controls"><button aria-expanded="false" class="app-step-nav__button app-step-nav__button--controls js-step-controls-button">' + actions.showAllText + '</button></div>')
+        $element.prepend('<div class="app-step-nav__controls"><button aria-expanded="false" class="app-step-nav__button app-step-nav__button--controls js-step-controls-button" data-module="govuk-button">' + actions.showAllText + '</button></div>')
       }
 
       function addShowHideToggle () {
@@ -158,7 +158,7 @@ window.GOVUK.getCurrentLocation = function () {
           $title.wrapInner(
             '<button ' +
             'class="app-step-nav__button app-step-nav__button--title js-step-title-button" ' +
-            'aria-expanded="false" aria-controls="' + contentId + '">' +
+            'aria-expanded="false" aria-controls="' + contentId + '" data-module="govuk-button">' +
             '</button>'
           )
         })
