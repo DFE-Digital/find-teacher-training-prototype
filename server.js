@@ -11,6 +11,9 @@ const sessionInCookie = require('client-sessions')
 const sessionInMemory = require('express-session')
 const cookieParser = require('cookie-parser')
 
+// Custom dependencies
+const marked = require('marked')
+
 // Run before other code to make sure variables from .env are available
 dotenv.config()
 
@@ -205,6 +208,61 @@ if (useAutoStoreData === 'true') {
     utils.addCheckedFunction(nunjucksV6Env)
   }
 }
+
+app.use(function (req, res, next) {
+  nunjucksAppEnv.addGlobal('value', function (name) {
+    if (req.session.data === undefined) {
+      return ''
+    }
+
+    var value = req.session.data[name]
+    if (value === undefined) {
+      return ''
+    }
+
+    return value
+  })
+
+  nunjucksAppEnv.addGlobal('markdown', function (text) {
+    if (text === undefined) {
+      return ''
+    }
+
+    var t = text.replace(/\\r/g, '\n').replace(/\\t/g, ' ')
+
+    return '<div class="markdown">' + marked(t) + '</div>'
+  })
+
+  nunjucksAppEnv.addGlobal('applyLink', function (providerCode, programmeCode) {
+    var data = req.session.data
+    var key = `${providerCode}-${programmeCode}`
+    var applyWithChoice = `/apply/${providerCode}/${programmeCode}`
+    var applyWithoutChoice = `/apply-ucas/${providerCode}/${programmeCode}`
+
+    // Keep each course consistent
+    if (data[key]) {
+      return data[key]
+    }
+
+    // If they've seen a course without a choice, force them to see one with
+    if (data['seen-apply-without-choice']) {
+      return applyWithChoice
+    }
+
+    // If they've seen a course with a choice, force them to see one without
+    if (data['seen-apply-with-choice']) {
+      return applyWithoutChoice
+    }
+
+    // Randomise whether course is in Apply beta or not (50/50)
+    // return Math.random() >= 0.5 ? applyWithChoice : applyWithoutChoice;
+
+    // Always show a course with a choice first
+    return applyWithChoice
+  })
+
+  next()
+})
 
 // Clear all data in session if you open /prototype-admin/clear-data
 app.post('/prototype-admin/clear-data', function (req, res) {

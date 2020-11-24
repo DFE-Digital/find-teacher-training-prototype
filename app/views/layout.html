@@ -30,6 +30,8 @@
 {% from "govuk/components/textarea/macro.njk"            import govukTextarea %}
 {% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
 
+{% import 'macros/macros.njk' as macros %}
+
 {% block head %}
   {% include "includes/head.html" %}
 {% endblock %}
@@ -136,7 +138,6 @@
 {% block bodyEnd %}
   </div>
 
-{% block bodyEnd %}
   {% block scripts %}
     {% include "includes/scripts.html" %}
     {% block pageScripts %}{% endblock %}
