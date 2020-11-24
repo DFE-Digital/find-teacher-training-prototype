@@ -2,7 +2,7 @@
 $govuk-global-styles: true;
 
 // Import GOV.UK Frontend
-@import "node_modules/govuk-frontend/all";
+@import "node_modules/govuk-frontend/govuk/all";
 
 // Patterns that aren't in Frontend
 @import "patterns/check-your-answers";
@@ -19,15 +19,15 @@ blockquote {
 }
 
 .fake-email {
-  margin-left: 15px;
-  margin-bottom: 60px;
   border: 5px solid $govuk-border-colour;
+  margin-bottom: 60px;
+  margin-left: 15px;
   padding: 45px;
 }
 
 .govuk-heading-m .heading-secondary {
+  color: govuk-colour("dark-grey");
   font-weight: normal;
-  color: govuk-colour("grey-1");
   @include govuk-font(19);
 }
 
@@ -38,18 +38,18 @@ blockquote {
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
 .govuk-related-items {
-  margin-top: $govuk-gutter;
   border-top: 10px solid govuk-colour("blue");
+  margin-top: $govuk-gutter;
   padding-top: 5px;
 
   .govuk-heading-m {
-    margin-top: 0.3em;
     margin-bottom: 0.5em;
+    margin-top: 0.3em;
   }
 
   li {
-    margin-bottom: 10px;
     list-style-type: none;
+    margin-bottom: 10px;
   }
 }
 .iterationBody{
@@ -64,8 +64,8 @@ blockquote {
 }
 .compare-button{
   float:right;
-  margin-top: -7px;
   margin-right: 10px;
+  margin-top: -7px;
 }
 .course-detail{
   margin-bottom:20px;
@@ -82,18 +82,18 @@ blockquote {
 }
 .sticky-header{
   background: #fff2a6;
-  position: fixed;
+  height: 36px;
   margin: 0;
+  padding-left: 10px;
+  padding-top: 15px;
+  position: fixed;
   top: 0;
   width: 960px;
-  height: 36px;
-  padding-top: 15px;
-  padding-left: 10px;
   z-index: 10000;
 }
 .results-data{
-  margin-bottom: 8px;
   font-size: 14px;
+  margin-bottom: 8px;
 }
 .results-data-large{
   //margin-bottom: 8px;
@@ -115,15 +115,15 @@ blockquote {
   width: 250px;
 }
 .filter-heading {
-  margin-top: 3px;
   margin-bottom: 0;
+  margin-top: 3px;
 }
 
 .filter-category {
-  display: block;
   background-color: #dee0e2;
-  padding: 8px;
+  display: block;
   margin-bottom: 10px;
+  padding: 8px;
 
   &--toggle {
     background-image: url('/public/images/option-select-toggle-sprite.png');
@@ -155,8 +155,8 @@ blockquote {
 
   li {
     border-bottom: 2px solid #dee0e2;
-    padding: 8px 8px 5px;
     margin-bottom: 0;
+    padding: 8px 8px 5px;
 
     &:only-child,
     &:last-child {
@@ -172,40 +172,40 @@ blockquote {
   margin-top: 20px;
 }
 .greyButton{
-  color: #000;
-  margin-top: 20px;
   background: #DEE0E2;
   border: 1px solid #aaa;
+  border-bottom: 2px solid #444;
+  color: #000;
+  margin-top: 20px;
   padding: 10px;
   text-decoration: none;
-  border-bottom: 2px solid #444;
 }
 .marginTop20{
   margin-top: 20px;
 }
 .userDetails{
-  float: right;
   color: #fff;
+  float: right;
 }
 .secondaryButton{
+  background: #2B8CC4;
+  border-bottom: 2px solid #444;
   color: #fff;
   margin-top: 20px;
-  background: #2B8CC4;
   padding: 10px;
   text-decoration: none;
-  border-bottom: 2px solid #444;
 }
 .secondaryButtonContainer a{
   color: #fff;
 }
 
 .addressButton{
+  background: #2B8CC4;
+  border-bottom: 2px solid #444;
   color: #fff;
   margin-top: 20px;
-  background: #2B8CC4;
   padding: 6px 15px 5px 15px;;
   text-decoration: none;
-  border-bottom: 2px solid #444;
 }
 .addressContainer a{
   color: #fff;
@@ -236,14 +236,14 @@ blockquote {
 }
 
 .results-found {
-  padding-bottom: 10px;
   border-bottom: 1px solid  #ccc;
+  padding-bottom: 10px;
 }
 
 .resultsSortingOptions{
+  border-bottom: 1px solid #cccccc;
   margin: 10px 0px 10px 0px;
   padding: 0 0px 10px 0px;
-  border-bottom: 1px solid #cccccc;
 }
 
 .sortSelectBox{
@@ -276,10 +276,10 @@ blockquote {
 }
 
 .courseDetailsMeta dt {
-  width:25%;
   float: left;
-  padding-bottom: 5px;
   margin-right: 0;
+  padding-bottom: 5px;
+  width:25%;
 }
 
 .contactDetails {
@@ -289,8 +289,8 @@ blockquote {
 .contactDetails dd {
   clear: both;
   float: left;
-  padding-right: 10px;
   font-weight: bold;
+  padding-right: 10px;
   width: 100px;
 }
 
@@ -303,14 +303,14 @@ blockquote {
 }
 
 .courseDetailsMeta dd{
-  width: 75%;
   float: right;
   padding-bottom: 5px;
+  width: 75%;
 }
 
 .courseContents {
-  padding-top: 50px;
   clear: both;
+  padding-top: 50px;
 }
 
 .pagination{
@@ -318,8 +318,8 @@ blockquote {
   text-align: right;
 }
 .paginationTitle{
-  text-decoration: none;
   font-size: 1.5em;
+  text-decoration: none;
 }
 
 .resultsHeader span {
@@ -405,16 +405,16 @@ dl.aligned {
 }
 
 dl.aligned dt {
-  width: 30%;
+  clear: both;
   float: left;
   margin: 0;
-  clear: both;
+  width: 30%;
 }
 
 dl.aligned dd {
-  width: 70%;
   float: right;
   margin: 0;
+  width: 70%;
 
   .govuk-details {
     margin-bottom: 0;
@@ -422,26 +422,26 @@ dl.aligned dd {
 }
 
 .multiple-options li {
-  margin-bottom: 5px;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
 }
 
 .form-block--or {
-  margin-left: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 @media (min-width: 641px) {
   .form-block--or {
-    margin-top: -10px;
     margin-bottom: 20px;
+    margin-top: -10px;
   }
 }
 
 .heading-secondary {
-  font-weight: normal;
-  color: govuk-colour("grey-1");
+  color: govuk-colour("dark-grey");
   display: block;
+  font-weight: normal;
 }
 
 .info-window {
@@ -456,4 +456,10 @@ dl.aligned dd {
 .markdown ul {
   @extend .govuk-list;
   @extend .govuk-list--bullet;
+}
+
+// Required since govuk-frontend 3.0.0
+.app-table--vertical-align-middle .govuk-table__header,
+.app-table--vertical-align-middle .govuk-table__cell {
+  vertical-align: middle;
 }
