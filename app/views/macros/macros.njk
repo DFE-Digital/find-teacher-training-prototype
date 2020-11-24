@@ -10,7 +10,7 @@
 {% endmacro %}
 
 {% macro designHistoryBreadcrumbs() %}
-  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+  {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
   <div class="dont-print">
     {{
@@ -45,7 +45,7 @@
 {% endmacro %}
 
 {% macro backLink(href = "/", text = "Back") %}
-  {% from "back-link/macro.njk" import govukBackLink %}
+  {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
   {{ govukBackLink({ text: text, href: href }) }}
 {% endmacro %}
 
@@ -65,7 +65,7 @@
       </span>
     {% endif %}
 
-    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
       {% for field in fields %}
         {% set i = loop.index + index %}
         {% if field.or %}
@@ -125,7 +125,7 @@
         {{ e.text }}
       </span>
     {% endif %}
-    <div class="govuk-checkboxes" data-module="checkboxes">
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
       {% for field in fields %}
         {% set i = loop.index + index %}
         <div class="govuk-checkboxes__item">
@@ -223,7 +223,7 @@
 {% endmacro %}
 
 {% macro helpText(label,text) %}
-<details>
+<details data-module="govuk-details">
   <summary><span class="summary">{{label}}</span></summary>
   <div class="govuk-inset-text">
     <p>
