@@ -15,14 +15,6 @@ router.all('/', function (req, res) {
   res.redirect('/start/location')
 })
 
-router.all('/history', function (req, res) {
-  res.redirect('https://bat-design-history.herokuapp.com/find-teacher-training')
-})
-
-router.all('/history/:path', function (req, res) {
-  res.redirect(`https://bat-design-history.herokuapp.com/find-teacher-training/${req.params.path}`)
-})
-
 router.post('/start/location', function (req, res) {
   if (req.session.data.location === 'School, university or other training provider') {
     res.render('start/location', { error: 'Searching by training provider isn’t available in this prototype.' })
