@@ -66,66 +66,15 @@
 {% if useAutoStoreData %}
   {% block footer %}
     {{ govukFooter({
-      navigation: [
-        {
-          title: "Links",
-          columns: 1,
-          items: [
-            {
-              text: "Apply page with choice",
-              href: "/apply/2BV/2XVC"
-            },
-            {
-              text: "Apply page without choice",
-              href: "/apply-ucas/2BV/2XVC"
-            },
-            {
-              text: "Create an account",
-              href: "/apply/2BV/2XVC/create-account"
-            },
-            {
-              text: "UCAS Apply screenshots",
-              href: "https://bat-design-history.herokuapp.com/apply-teacher-training/ucas-apply-application-form#11-welcome-to-ucas-teacher-training"
-            },
-            {
-              text: "DfE Apply screenshot",
-              href: "https://bat-design-history.herokuapp.com/public/images/apply-teacher-training/apply-august-2018/your-application.png"
-            },
-            {
-              text: "Application complete",
-              href: "/apply/2BV/2XVC/complete"
-            }
-          ]
+      meta: {
+        items: [{
+          href: "https://govuk-prototype-kit.herokuapp.com/",
+          text: "GOV.UK Prototype Kit " + releaseVersion
         },
         {
-          title: "Emails",
-          items: [
-            {
-              href: "/email/apply-sign-up",
-              text: "Sign up email"
-            },
-            {
-              href: "/email/submitted",
-              text: "Application submitted"
-            },
-            {
-              href: "/email/rejection",
-              text: "Application rejected"
-            }
-          ]
-        }
-      ],
-      meta: {
-        items: [
-          {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
-          },
-          {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data"
-          }
-        ]
+          href: "/prototype-admin/clear-data",
+          text: "Clear data"
+        }]
       }
     }) }}
   {% endblock %}
