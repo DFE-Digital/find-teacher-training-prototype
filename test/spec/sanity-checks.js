@@ -1,9 +1,9 @@
 /* eslint-env mocha */
-var request = require('supertest')
-var app = require('../../server.js')
-var path = require('path')
-var fs = require('fs')
-var assert = require('assert')
+const request = require('supertest')
+const app = require('../../server.js')
+const path = require('path')
+const fs = require('fs')
+const assert = require('assert')
 
 /**
  * Basic sanity checks on the dev server

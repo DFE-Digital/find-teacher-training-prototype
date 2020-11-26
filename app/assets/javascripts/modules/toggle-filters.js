@@ -1,21 +1,23 @@
+/* global $ */
+
 ;(function (global) {
   'use strict'
 
-  var GOVUK = global.GOVUK || {}
+  const GOVUK = global.GOVUK || {}
   GOVUK.Modules = GOVUK.Modules || {}
 
   GOVUK.Modules.ToggleFilters = function () {
     this.start = function (element) {
-      element.on('click', toggle);
+      element.on('click', toggle)
 
       if (element.is(':visible')) {
-        $('#filter-sidebar').hide();
+        $('#filter-sidebar').hide()
       }
 
-      function toggle(evt) {
-        evt.preventDefault();
-        element.toggleClass('filter-category--toggle-open');
-        $('#filter-sidebar').toggle();
+      function toggle (evt) {
+        evt.preventDefault()
+        element.toggleClass('filter-category--toggle-open')
+        $('#filter-sidebar').toggle()
       }
     }
   }
