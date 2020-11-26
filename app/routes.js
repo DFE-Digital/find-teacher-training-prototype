@@ -317,7 +317,7 @@ router.get('/results', function (req, res) {
 
     results.forEach(function (course) {
       const latLong = { latitude: course.providerAddress.latitude, longitude: course.providerAddress.longitude }
-      const d = geolib.getDistanceSimple(savedLatLong, latLong)
+      const d = geolib.getDistance(savedLatLong, latLong)
       course.distance = ((d / 1000) * 0.621371).toFixed(0)
     })
 
