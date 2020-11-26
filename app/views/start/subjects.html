@@ -31,14 +31,17 @@
     <div class="govuk-grid-column-two-thirds">
       <form action="/results">
         {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
-        <div id="accordion" class="accordion add-double-bottom-margin">
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
           {% for subjectGroup in subjectGroups %}
-            <div class="accordion-section">
-
-              <div class="accordion-section-header">
-                <h2 class="govuk-heading-m">{{ subjectGroup.group }}</h2>
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
+                    {{ subjectGroup.group }}
+                  </span>
+                </h2>
               </div>
-              <div class="accordion-section-body">
+              <div class="govuk-accordion__section-content">
                 <div class="form-group">
                   {{ macros.checkboxGroup('selectedSubjects', subjectGroup.subjects, false, loop.index * 100, true) }}
                 </div>

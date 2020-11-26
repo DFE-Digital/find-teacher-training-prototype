@@ -24,8 +24,8 @@ router.all('/history/:path', function (req, res) {
 })
 
 router.post('/start/location', function (req, res) {
-  if (req.session.data['location'] == 'School, university or other training provider') {
-    res.render('start/location', {error: 'Searching by training provider isn’t available in this prototype.'});
+  if (req.session.data.location == 'School, university or other training provider') {
+    res.render('start/location', { error: 'Searching by training provider isn’t available in this prototype.' })
     return;
   }
 
@@ -403,5 +403,7 @@ function getFullCourse(req, providerCode, courseCode, callback) {
     callback(course);
   });
 }
+
+// Add your routes here - above the module.exports line
 
 module.exports = router
