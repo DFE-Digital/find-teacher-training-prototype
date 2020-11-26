@@ -9,7 +9,7 @@
   {% if error %}
   <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-module="govuk-error-summary">
     <h2 class="govuk-heading-m error-summary-heading remove-bottom-margin" id="error-summary-heading-example-1">
-      {{ error }}
+      {{ error.error_message }}
     </h2>
   </div>
   {% endif %}
@@ -18,11 +18,11 @@
     {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
     <div class="form-group">
       {% set postcodeFields %}
-        {{ macros.textbox("postcode-town-or-city", "Postcode, town or city")}}
+        {{ macros.textbox("postcode-town-or-city", "Postcode, town or city") }}
       {% endset %}
 
       {% set trainingProviderFields %}
-        {{ macros.textbox("providerNameInput","School, university or other training provider") }}
+        {{ macros.textbox("providerNameInput", "School, university or other training provider") }}
       {% endset %}
 
       {% set fields = [
