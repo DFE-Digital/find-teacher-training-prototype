@@ -1,0 +1,94 @@
+{
+  "locationType": "School",
+  "accrediting": "King's College London (University of London",
+  "provider": "Catholic Teaching Alliance (South East London)",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "134/2HDH",
+  "providerCode": "134",
+  "programmeCode": "2HDH",
+  "schools": [
+    {
+      "name": "De La Salle School and Language College",
+      "address": "Ghyllgrove, Basildon, Essex, SS14 2LA",
+      "code": "D"
+    },
+    {
+      "name": "St Ursula's Convent School",
+      "address": "70 Croom's Hill, Greenwich, London, SE10 8HN",
+      "code": "U"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Ghyllgrove, Basildon, Essex, SS14 2LA",
+      "geocode": true,
+      "formatted_address": "Ghyllgrove, Basildon SS14 2LA, UK",
+      "latitude": 51.5762778,
+      "longitude": 0.4631347999999999,
+      "post_code": "SS14 2LA",
+      "city": "Essex",
+      "route": "Ghyllgrove",
+      "postal_town": "Basildon"
+    },
+    {
+      "address": "70 Croom's Hill, Greenwich, London, SE10 8HN",
+      "geocode": true,
+      "formatted_address": "Greenwich Park, London SE10 8XJ, UK",
+      "latitude": 51.4769095,
+      "longitude": 0.0014643,
+      "post_code": "SE10 8XJ",
+      "city": "Greater London",
+      "route": null,
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Tuition fees:\\r\nTuition fee loans are available for those who meet the Government’s criteria for this scheme. Further information is available at [GOV.UK](https://www.gov.uk/student-finance/new-fulltime-students)\\r\n\\r\nGovernment Training Bursaries:\\r\nPlease note training bursaries are only available to students who have been classified as Home/EU for fee purposes.\\r\n",
+    "AboutCourse": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. \\r\n\\r\nThis course aims to prepare students to:\\r\n* become effective secondary school teachers\\r\n* become knowledgeable subject specialists who can progress to take on responsibilities in curriculum development\\r\n* become good classroom managers\\r\n* become successful form tutors and collaborative colleagues.\\r\n\\r\nThe course encourages learning through critical reflection, making connections between the theory and practice of teaching, and continuing to self-evaluate and improve throughout a teaching career.\\r\nWe work to enable students to teach pupils to think, and to interpret pupils' understanding, building their subsequent teaching on this.\\r\n\\r\nProgramme description\\r\nWe adopt a variety of teaching and learning strategies during the year. Our aim is to use the sessions not only to give practical and theoretical ideas on the teaching of English but to model ways in which you might teach English in the classroom.\\r\n\\r\nSessions include:\\r\n* opportunities to discuss and debate in small groups\\r\n* interactive whole class teaching\\r\n* trialling materials for use in schools\\r\n* using drama, media and technology resources.\\r\n* lectures\\r\n* opportunities for students to develop their presentation skills.\\r\n\\r\nWe also make full use of the university's unique location on the river Thames by providing opportunities throughout the year to visit places like the Globe, Tate Modern and the Poetry Library.\\r\n\\r\n[School Direct English](https://www.kcl.ac.uk/study/assets/pdf/cma/postgraduate-taught/english-school-direct-route-pgce.pdf)\\r\n\\r\n[School Direct at King's College London](https://www.kcl.ac.uk/sspp/departments/education/study/schooldirect/index.aspx)",
+    "CourseLength": "OneYear",
+    "Qualifications": "A variety of degree subjects, at 2.1 level, will be acceptable:\\r\n* Single honours English or joint honours (with English as half)\\r\n* Academic theatre studies degrees (but candidates have to make up the gaps in subject knowledge during the course of the year)\\r\n* Communications, media or linguistic degrees, depending on what the degree entailed (eg any substantial amount of textual examination).\\r\n*Those candidates whose first degree is not in English will need to demonstrate significant literature subject knowledge within their application.\\r\n\\r\nGrade C/4 in GCSE English and Maths. Qualifications classified as equivalent by UK NARIC will be accepted.\\r\n\\r\n",
+    "FeeInternational": 19320.0,
+    "InterviewProcess": "The King’s process includes:\\r\na group discussion, a written task and an individual interview.\\r\n\\r\nWriting\\r\nIn your writing we will be looking for:\\r\n*  ability to express yourself clearly;\\r\n*  accurate grammar and spelling.\\r\n\\r\n",
+    "OtherRequirements": "You should provide:\\r\n* a reference which identifies your academic strengths and personal qualities required for teaching\\r\n* a reference with no reservations about suitability e.g. relating to academic achievement, effort, health, commitment, consistency, group working skills, communication skills\\r\n\\r\nPolice Clearance\\r\nCandidates offered a place will be asked to complete an enhanced check with the DBS to ensure they do not have a criminal background which might prevent them from working as a teacher.  Trainees who have lived or worked outside of the UK in the last five years are required to provide a certificate of good conduct from abroad.\\r\n",
+    "PersonalQualities": "* Ability to engage interest and communicate your own enthusiasm for English\\r\n* Commitment to working with young people\\r\n* Ability to explain ideas clearly and to think on your feet\\r\n* Evidence of good interpersonal skills\\r\n* Awareness of current educational issues\\r\n\\r\nPotential for Teaching \\r\nPrevious experience of teaching or voluntary work in a school is desirable.\\r\nSpend at least one day observing your subject being taught in a  secondary school and reference this in your application.\\r\n\\r\nDemonstrate an awareness of what good teaching entails (or why some teaching you experienced was bad) and indicate a desire to teach.\\r\n\\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "All School Direct trainees start at their chosen school during the first week of the autumn term before attending university sessions the following week. School term dates will be confirmed once your have accepted an offer.\\r\n\\r\nAround half of the 38 schools within the Catholic Teaching Alliance are able to offer training placements. Those who are able to support the main placement are listed for each respective course. \\r\n\\r\nCandidates tend to apply to schools that are located close to where they live and we are happy to arrange tours and an observation day in your preferred school prior to application. \\r\n\\r\nAt the point of application please select your first choice of school.  Once your application has passed our vetting process you will be invited to interview at KCL and if successful at this stage this will be followed by an interview at the school.\\r\n\\r\nWe offer an ABA placement route with King's College London. This involves one long placement with a 6-week placement at another school within the CTA in the spring term before you return to your original school for the remainder of the course. \\r\n\\r\nAt the start of the academic year we will contact all registered trainees to confirm the area where you are living and to ask about the type of school that you would like to be placed in for your second placement. Where possible, we will try to accommodate your request and placements are arranged with a maximum commuting distance of 1 hour 15 minutes based upon the address provided. Travel time is usually significantly less than this.\\r\n\\r\nWe are able to offer contrasting placements in single-sex or mixed schools and in schools with sixth forms where your main placement school is 11-16.  Where you have completed a placement in a single-sex school your second placement will be in a mixed school or a school with students of the opposite sex.\\r\n\\r\nShould you have any questions relating to the placement structure, please do not hesitate to email c.barclay@catholicteachingalliance.org.uk for more information.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Catholic Teaching Alliance (CTA) is a strong and growing alliance of 38 schools. It is a cross-phase partnership from primary, through to secondary and sixth form colleges. Our partner schools are based throughout South-East London and Kent covering Southwark, Lewisham, Bromley, Bexleyheath and Chatham. This diversity in type of school and location gives a richness to our shared work. Our shared vision is Growing Teachers, Growing Learners, Growing Schools. \\r\n\\r\nOur schools have a long history of Initial Teacher Education and have offered School Direct places since the initiative began. We have selected several universities that match our ethos. By carefully selecting the right universities to work with we are able to offer you an excellent start to your career in education. \\r\n\\r\nWe offer both Primary Salaried and Tuition Fee School Direct places and are able to provide training in a range of secondary subjects. Some subjects are available with a choice of provider. \\r\n\\r\nWe run an extensive CPD programme for trainees and most secure an NQT position within the group of schools. We also provide flexibility as your career progresses, with opportunities to move between schools.\\r\n\\r\nWe would encourage applicants to contact us to arrange a school tour prior to application and we are happy to answer any questions that you may have. Please contact the CTA Co-ordinator, [Clare Barclay](c.barclay@catholicteachingalliance.org.uk) for more information or visit our website [here](https://catholicteachingalliance.org.uk/) to find out more about our schools and the career opportunities that we are able to offer. \\r\n",
+    "TrainWithDisability": "All School Direct trainees must meet the Secretary of State's requirements for physical and mental health,  but few health problems past or present preclude applicants from teaching. \\r\n\\r\nThe activities that a teacher must be able to perform are set out in the [Education (Health Standards) (England) Regulations 2003](http://www.legislation.gov.uk/uksi/2003/3139/pdfs/uksi_20033139_en.pdf). \\r\n\\r\nWe welcome applications from people with additional needs and disabilities.  Successful applicants will be asked to complete a fitness questionnaire prior to commencing the programme. \\r\n\\r\nWithin our group of 38 schools, we are able to provide support for a range of disabilities and other needs and are usually able to arrange appropriate school placements and additional support as required. We have trained applicants with dyslexia, physical, hearing and visual impairments, as well as students with mental health issues. If you have any questions about health, disability, or the support provided or wish to discuss your own requirements further, please contact the CTA Co-ordinator, Clare Barclay, c.barclay@catholicteachingalliance.org.uk. \\r\n\\r\nFor further information on the support provided by our university partners please see the links below.\\r\n\\r\nGoldsmiths University\\r\n[Disability Service](https://www.gold.ac.uk/students/disability-support/support-when-applying/)\\r\n\\r\nKing's College London\\r\n[Disability Access:](http://www.kcl.ac.uk/campuslife/services/disability/index.aspx)\\r\n\\r\nSt Mary's University\\r\n[Student Wellbeing Service](https://www.stmarys.ac.uk/student-support/wellbeing/about.aspx)\\r\n\\r\nUniversity College London\\r\nSchool Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team. You can find more information [here](https://www.ucl.ac.uk/students/disability-support)\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Goldsmiths, University of London have been training teachers since 1904 and are renowned as a leader in the field of educational research and teacher training. Goldsmiths work in close collaboration with a range of partner schools across London, in both teacher training and research. Goldsmiths programmes have a strong emphasis on active learning, creativity, inclusion and languages and graduates benefit from excellent employment opportunities. They have internationally recognised professors in their Educational Studies Department, including Michael Rosen. Goldsmiths campus is set in vibrant New Cross, with excellent London Overground, National Rail and bus links into central London.  [Goldsmiths School Direct](https://www.gold.ac.uk/educational-studies/schooldirect/)",
+        "UcasInstitutionCode": "G56"
+      },
+      {
+        "Description": "Experience: King’s has been training teachers for over 120 years and has developed a reputation for excellence in its training methods. The PGCE academics are qualified teachers themselves and are highly experienced in teacher training.\\r\n\\r\nReputation: King’s has developed a reputation for excellence in both training methods and the standards of new teachers we train. At the most recent Ofsted inspection King’s was graded 'Outstanding'.\\r\n\\r\nLocation: Based in the heart of London, King’s is surrounded by landmarks and cultural institutions that we incorporate into our training. Transport links are extensive as the campus is only minutes from Waterloo station.\\r\n\\r\n[KCL](https://www.kcl.ac.uk/sspp/departments/education/study/schooldirect/Index.aspx)",
+        "UcasInstitutionCode": "K60"
+      },
+      {
+        "Description": "Established in 1850 as a Catholic teacher training college, St Mary’s has a long-standing reputation for academic excellence and the granting of university title is an exciting milestone in its history. With an original intake of just six students, St Mary’s has now grown to around 6,000 undergraduate and postgraduate students across the four academic Schools. St Mary’s prepares its students for flourishing lives, successful careers and social commitment through excellent, research-enriched teaching in a strong community of mutual respect based on our Catholic ethos and identity.\\r\n\\r\n[School Direct at St Mary’s University](http://www.stmarys.ac.uk/education-theology-and-leadership/school-direct-information-for-trainees.htm)\\r\n",
+        "UcasInstitutionCode": "S64"
+      },
+      {
+        "Description": "UCL Institute of Education is the world’s leading centre for research and teaching in education and related social sciences. You can view UCL’s online teacher training prospectus is here:-\\r\n[UCL](https://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes)",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "C10"
+      }
+    ]
+  },
+  "has_inst": true
+}

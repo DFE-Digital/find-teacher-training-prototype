@@ -1,0 +1,68 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Cumbria",
+  "provider": "Catholic Teaching Alliance [North]",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1GB/28ZX",
+  "providerCode": "1GB",
+  "programmeCode": "28ZX",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St Anthony's Drive, Fulwood, Preston, PR2 3SQ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St Anthony's Drive, Fulwood, Preston, PR2 3SQ",
+      "geocode": true,
+      "formatted_address": "St Anthony's Dr, Fulwood, Preston PR2 3GQ, UK",
+      "latitude": 53.7796331,
+      "longitude": -2.7247575,
+      "post_code": "PR2 3GQ",
+      "city": "Fulwood",
+      "route": "Saint Anthony's Drive",
+      "postal_town": "Preston"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1GB",
+    "addr_1": "Catholic Teaching Alliance (North)",
+    "addr_2": "St Anthony's Drive",
+    "addr_3": "Fulwood",
+    "addr_4": "Preston",
+    "postcode": "PR2 3SQ ",
+    "url": "http://www.catholic-teaching-alliance.org",
+    "geocode": true,
+    "formatted_address": "St Anthony's Dr, Fulwood, Preston PR2 3SQ, UK",
+    "latitude": 53.78014169999999,
+    "longitude": -2.7254255,
+    "post_code": "PR2 3SQ",
+    "city": "Fulwood",
+    "route": "Saint Anthony's Drive",
+    "postal_town": "Preston"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Do you have a passion for physical education and sport? Why not put it to good use and inspire secondary school pupils to overcome a lack of fitness and improve their physical performance in fun and creative ways?\\r\nCouple your zest for sport with our highly-rated PGCE Secondary Education in PE and become a physical education teacher. You will learn the National Curriculum framework and explore a range of aesthetic, artistic, body management and body conditioning activities, as well as a diverse range of team and individual games to develop young people’s sporting techniques.\\r\nAnd, our tutors will support you to plan, resource and deliver engaging lessons to all secondary pupils, regardless of their age or ability.\\r\nPlus, our course has QTS (Qualified Teacher Status) built in, so you can apply for a position as a secondary school teacher the minute you graduate.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "‘Aspirational training to achieve inspirational teachers with pupils’ learning and well-being at the heart of our partnership’\\r\n\\r\nThe Catholic Teaching Alliance [North] is underpinned by a shared passion to train and develop outstanding and inspirational teachers who are highly employable and dedicated professionals. We aim to deliver the Catholic school leaders of tomorrow. The Catholic Teaching Alliance [North] is a partnership between primary, secondary and post 16 establishments. We offer outstanding training opportunities and produce outstanding NQTs ready to enter the teaching profession. We are a cross phase alliance of 70 schools based mainly in the Dioceses of Lancaster, Liverpool and Salford. The lead school is Our Lady’s Catholic High School in Preston. The school achieved ‘Outstanding’ in all categories from Ofsted in 2012 and became a National Teaching School in 2014.\\r\nSchool Direct placements across the partnership ensure that trainees work alongside outstanding practitioners within high performing schools. We use the best qualified staff with existing expertise to deliver a quality assured training programme to support trainees, based upon the Teachers’ Standards. Working in collaboration with the University of Cumbria we deliver a prestigious training programme consisting of weekly school training days, Pedagogy for Learning days held at the University campus in Lancaster, a weekly professional mentor programme and day to day school mentor support. By using the best qualified and experienced leaders for the delivery and training of bespoke elements of the PGCE, we are confident in ensuring quality training at all levels.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The Postgraduate Certificate (PgCE) in Secondary Education Programme\\r\noffers training in a range of secondary subjects.\\r\nThis full time course enables students to focus on their specialist\\r\nsubject whilst, at the same time, helping them to understand and participate in the wider aspects of school. As it is a Postgraduate Certificate in Education, it entails work at Masters Level (level 7). This recognises the high levels achieved by students on this Programme and rewards this with 60 Masters-level credits. All subject 'Pedagogy for Learning' days are based at the Lancaster campus. ",
+        "UcasInstitutionCode": "C99"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "Teach East",
+  "provider": "Teach East",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "T11/2ZK7",
+  "providerCode": "T11",
+  "programmeCode": "2ZK7",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Arthur Mellows Village Coll, Helpston Road, Glinton, Peterborough, PE6 7JX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Arthur Mellows Village Coll, Helpston Road, Glinton, Peterborough, PE6 7JX",
+      "geocode": true,
+      "formatted_address": "Helpston Rd, Peterborough PE6 7JX, United Kingdom",
+      "latitude": 52.6372602,
+      "longitude": -0.3026875000000001,
+      "post_code": "PE6 7JX",
+      "city": null,
+      "route": null,
+      "postal_town": "Peterborough"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "T11",
+    "addr_1": "Teach East SCITT",
+    "addr_2": "Arthur Mellows Village College",
+    "addr_3": "Helpston Road, Glinton",
+    "addr_4": "Peterborough",
+    "postcode": "PE6 7JX ",
+    "url": "http://www.teacheast.co.uk",
+    "geocode": true,
+    "formatted_address": "Helpston Rd, Peterborough PE6 7JX, United Kingdom",
+    "latitude": 52.6372602,
+    "longitude": -0.3026875000000001,
+    "post_code": "PE6 7JX",
+    "city": null,
+    "route": null,
+    "postal_town": "Peterborough"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 7000.0,
+    "FeeDetails": "An additional £2000 is payable for a PGCert (Postgraduate Certificate in Education) if you choose to take this alongside QTS (Qualified Teacher Status)",
+    "AboutCourse": "Our programme will equip you with the knowledge, skills and understanding to work in the classroom, inspiring and empowering young people to achieve their full potential and become life-long learners. \\r\n\\r\nA typical week will mean that you spend 4 days on placement within a local school, with one day a week in the purpose built learning centre, or within another local school, for training provided by Teach East. You will be motivated by your fully trained Teach East mentors, who will inspire and guide you to become an excellent practitioner ready to seek employment within a local school. \\r\n\\r\nPlacements will offer a range of: Ofsted grades; high attainment; challenging contexts; provision for children with learning difficulties; children whom do not have English as their first language; significant cultural and ethnic diversity. This will be across two contrasting schools. \\r\n\\r\nTrainees will have access to Masters Credits, through accessing the PGCert qualification from the University of Hull. This will support your academic and professional reflection and the theoretical underpinning of educational practice. \\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree\\r\nA minimum degree classification 2:2 is preferable, however in exceptional circumstances a Third Class degree may be considered.  \\r\n\\r\nGCSE\\r\nGCSE grade C / grade 4 or above (or equivalent) in Maths, English and Science\\r\n\\r\nOther Qualifcations\\r\nYou have to pass the professional skills tests in numeracy and literacy before you begin your teacher training.",
+    "FeeInternational": 7000.0,
+    "InterviewProcess": "All applications will be shortlisted and successful candidates will be invited for interview. The interview will take place in one of Peterborough's schools. \\r\n\\r\nCandidates will be asked to complete a number of tasks throughout the day and spend time with both students and staff. ",
+    "OtherRequirements": "If you are offered a place on the Teach East training programme a DBS check will be applied for. www.gov.uk/disclosure-barring-service-check/overview \\r\n\\r\nYou will be required to complete a health and safety questionnaire prior to starting the course. \\r\n\\r\nApplicants who have studied outside of the UK must check their qualification with NARIC (National Academic Recognition Information Centre) prior to making an application. \\r\n\\r\nQualifications need to be the equivalent level to UK GCSE's, A Levels and undergraduate degrees. www.naric.org.uk ",
+    "PersonalQualities": "We are looking for confident people with a passion for learning. \\r\nAlong with your academic qualifications you will need to be highly motivated, a team player and have great organisational skills. Interpersonal skills are vital and we want to work with those who want to make a difference to children's lives. \\r\n\\r\nWe would expect all candidates to have researched teaching roles thoroughly, school experience is desired but not essential.\\r\n\\r\nYou need to be clear about what you can bring to the profession and why you think teaching is for you. ",
+    "HowSchoolPlacementsWork": "Teach East has a partnership of over 30 secondary and primary school across the city of Peterborough. Trainees will have a main placement school for the majority of their training year. There will be a contrasting placement for half a term during the year. Trainees will also spend time in a PRU (Pupil Referral Unit) and a special needs school.\\r\n\\r\nWithin the duration of the training programme, trainees will teach in both Key Stage 1 and 2 so that you are fully prepared to teach across the primary age range. This will be across two contrasting schools\\r\n\\r\nEvery trainee is assigned a mentor to guide them through the teacher training year, offering support, guidance and advice as appropriate. One hour per week is set aside to meeting this mentor, recording key events and setting meaningful targets for the work ahead, based on identified strengths and areas for development.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Teach East is a School Centred Initial Teacher Training programme based in Peterborough. We offer a route into teaching that prepares you for a career in education as most of your time will be spent in schools.\\r\n \\r\nTeach East is run by a team of dedicated senior leaders, all of whom still teach and lead in the city on a day to day basis. With the support of staff from a wide and diverse range of schools within the city, we have constructed a course that allows trainees to learn in high quality settings, watching and working with some of the best practitioners in Peterborough.\\r\n\\r\nWe are proud of our 100% employment rates at the end of the training year, for which we provide excellent guidance and support for finding the right school for each trainee. \\r\n\\r\n\\r\n",
+    "TrainWithDisability": "Providing all the eligibility criteria is met for teacher training Teach East will ensure that people are treated solely on the basis of their abilities and potential, regardless of race, colour, nationality, ethnic origin, religious or political belief or affiliation, trade union membership, age, gender, gender reassignment, marital status,sexual orientation, disability, socio-economic background, or any other inappropriate distinction.\\r\n\\r\nAll disabilities should be declared on your UCAS application form and Teach East will work with all individuals to ensure their needs and requirements are met",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

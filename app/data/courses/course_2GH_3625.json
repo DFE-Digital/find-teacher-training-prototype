@@ -1,0 +1,234 @@
+{
+  "locationType": "School",
+  "accrediting": "The South Downs SCITT",
+  "provider": "The South Downs School Direct Partnership",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2GH/3625",
+  "providerCode": "2GH",
+  "programmeCode": "3625",
+  "schools": [
+    {
+      "name": "St John the Baptist CofE Primary School",
+      "address": "School Hill, Findon, Worthing, West Sussex, BN14 0TR",
+      "code": "B"
+    },
+    {
+      "name": "Clapham and Patching CofE Primary School",
+      "address": "The Street, Worthing, West Sussex, BN13 3UU",
+      "code": "C"
+    },
+    {
+      "name": "East Preston Infant School",
+      "address": "Lashmar Road, East Preston, West Sussex, BN16 1EZ",
+      "code": "E"
+    },
+    {
+      "name": "Holmbush Primary Academy",
+      "address": "41 Hawkins Crescent, Shoreham-by-Sea, BN43 6TN",
+      "code": "H"
+    },
+    {
+      "name": "East Preston Junior School",
+      "address": "Lashmar Road, East Preston, West Sussex, BN16 1EZ",
+      "code": "J"
+    },
+    {
+      "name": "Palatine School",
+      "address": "Palatine Road, Worthing, West Sussex, BN12 6JP",
+      "code": "L"
+    },
+    {
+      "name": "St Margaret's CofE Primary School",
+      "address": "Arundel Road, Angmering, West Sussex, BN16 4LP",
+      "code": "M"
+    },
+    {
+      "name": "River Beach Primary School",
+      "address": "York Road, Littlehampton, West Sussex, BN17 6EW",
+      "code": "R"
+    },
+    {
+      "name": "Summerlea Community Primary School",
+      "address": "Windsor Close, Rustington, Littlehampton, West Sussex, BN16 3TJ",
+      "code": "U"
+    },
+    {
+      "name": "Vale School",
+      "address": "Vale Avenue, Worthing, West Sussex, BN14 0DB",
+      "code": "V"
+    },
+    {
+      "name": "St Wilfrid's Catholic Primary School",
+      "address": "Arundel Road, Angmering, Littlehampton, West Sussex, BN16 4LA",
+      "code": "W"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "School Hill, Findon, Worthing, West Sussex, BN14 0TR",
+      "geocode": true,
+      "formatted_address": "School Hill, Findon, Worthing BN14 0TR, UK",
+      "latitude": 50.8688038,
+      "longitude": -0.4084102,
+      "post_code": "BN14 0TR",
+      "city": "Findon",
+      "route": "School Hill",
+      "postal_town": "Worthing"
+    },
+    {
+      "address": "The Street, Worthing, West Sussex, BN13 3UU",
+      "geocode": true,
+      "formatted_address": "The St, Clapham, Worthing BN13 3UY, UK",
+      "latitude": 50.8464754,
+      "longitude": -0.4475009,
+      "post_code": "BN13 3UY",
+      "city": "Clapham",
+      "route": "The Street",
+      "postal_town": "Worthing"
+    },
+    {
+      "address": "Lashmar Road, East Preston, West Sussex, BN16 1EZ",
+      "geocode": true,
+      "formatted_address": "Lashmar Rd, East Preston, Littlehampton BN16 1EZ, UK",
+      "latitude": 50.8129064,
+      "longitude": -0.4801607000000001,
+      "post_code": "BN16 1EZ",
+      "city": "East Preston",
+      "route": "Lashmar Road",
+      "postal_town": "Littlehampton"
+    },
+    {
+      "address": "41 Hawkins Crescent, Shoreham-by-Sea, BN43 6TN",
+      "geocode": true,
+      "formatted_address": "41 Hawkins Cres, Shoreham-by-Sea BN43 6TN, UK",
+      "latitude": 50.8447274,
+      "longitude": -0.2457415,
+      "post_code": "BN43 6TN",
+      "city": "West Sussex",
+      "route": "Hawkins Crescent",
+      "postal_town": "Shoreham-by-Sea"
+    },
+    {
+      "address": "Lashmar Road, East Preston, West Sussex, BN16 1EZ",
+      "geocode": true,
+      "formatted_address": "Lashmar Rd, East Preston, Littlehampton BN16 1EZ, UK",
+      "latitude": 50.8129064,
+      "longitude": -0.4801607000000001,
+      "post_code": "BN16 1EZ",
+      "city": "East Preston",
+      "route": "Lashmar Road",
+      "postal_town": "Littlehampton"
+    },
+    {
+      "address": "Palatine Road, Worthing, West Sussex, BN12 6JP",
+      "geocode": true,
+      "formatted_address": "Palatine Rd, Worthing BN12 6JP, UK",
+      "latitude": 50.8241148,
+      "longitude": -0.4138852,
+      "post_code": "BN12 6JP",
+      "city": "West Sussex",
+      "route": "Palatine Road",
+      "postal_town": "Worthing"
+    },
+    {
+      "address": "Arundel Road, Angmering, West Sussex, BN16 4LP",
+      "geocode": true,
+      "formatted_address": "Arundel Rd, Angmering, Littlehampton BN16 4LA, UK",
+      "latitude": 50.8367564,
+      "longitude": -0.4852629,
+      "post_code": "BN16 4LA",
+      "city": "Angmering",
+      "route": "Arundel Road",
+      "postal_town": "Littlehampton"
+    },
+    {
+      "address": "York Road, Littlehampton, West Sussex, BN17 6EW",
+      "geocode": true,
+      "formatted_address": "York Rd, Littlehampton BN17 6EW, UK",
+      "latitude": 50.8123566,
+      "longitude": -0.5413770999999999,
+      "post_code": "BN17 6EW",
+      "city": "West Sussex",
+      "route": "York Road",
+      "postal_town": "Littlehampton"
+    },
+    {
+      "address": "Windsor Close, Rustington, Littlehampton, West Sussex, BN16 3TJ",
+      "geocode": true,
+      "formatted_address": "Windsor Cl, Rustington, Littlehampton BN16 3TJ, UK",
+      "latitude": 50.8192829,
+      "longitude": -0.5138403,
+      "post_code": "BN16 3TJ",
+      "city": "Rustington",
+      "route": "Windsor Close",
+      "postal_town": "Littlehampton"
+    },
+    {
+      "address": "Vale Avenue, Worthing, West Sussex, BN14 0DB",
+      "geocode": true,
+      "formatted_address": "Vale Ave, Worthing BN14 0BY, UK",
+      "latitude": 50.8492426,
+      "longitude": -0.4015956,
+      "post_code": "BN14 0BY",
+      "city": "West Sussex",
+      "route": "Vale Avenue",
+      "postal_town": "Worthing"
+    },
+    {
+      "address": "Arundel Road, Angmering, Littlehampton, West Sussex, BN16 4LA",
+      "geocode": true,
+      "formatted_address": "Arundel Rd, Angmering, Littlehampton BN16 4LA, UK",
+      "latitude": 50.8341037,
+      "longitude": -0.4855399,
+      "post_code": "BN16 4LA",
+      "city": "Angmering",
+      "route": "Arundel Road",
+      "postal_town": "Littlehampton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2GH",
+    "addr_1": "The Boulevard",
+    "addr_2": null,
+    "addr_3": "Worthing",
+    "addr_4": "West Sussex",
+    "postcode": "BN13 1JX",
+    "url": "http://thesouthdownsscitt.co.uk/",
+    "geocode": true,
+    "formatted_address": "The Blvd, Worthing BN13 1JZ, UK",
+    "latitude": 50.8236499,
+    "longitude": -0.410889,
+    "post_code": "BN13 1JZ",
+    "city": "West Sussex",
+    "route": "The Boulevard",
+    "postal_town": "Worthing"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Aim of Programme:\\r\nProvide trainees with an education of high quality at post-graduate level within an environment of school-based research and enquiry.\\r\nDeepen trainee teachers’ knowledge and understanding of their field of study and secondary/primary education and the relationship between the two.\\r\nImprove the skills of trainees and enable them to meet the Teachers’ Standards.\\r\nEnhance trainee teachers’ ability to analyse critically and apply theories, research and personal values which underpin professional practice.\\r\nCreate opportunities for trainee teachers to begin to define their own positions with respect to their own developing professional and philosophical frameworks.\\r\nDevelop trainee teachers’ ability to evaluate and analyse their academic and professional progress in order to understand that teaching is a process of lifelong professional learning, including developing transferable skills as appropriate for employment in education.\\r\n\\r\nProgramme Content:\\r\n\\r\nSchool Experience: typically 4 days a week.\\r\n\\r\nSCITT Experience:  SCITT Training Days will be at Durrington High School on Fridays.  These will include Professional Studies and Subject Study.\\r\nSome secondary trainees will be based at The Angmering School on Friday afternoons for Subject Study.\\r\n\\r\nPGCE (Post Graduate Certificate in Education):\\r\nAll trainees will undertake the academic award of Post Graduate Certificate in Education (M Level).  The University of Chichester moderates and awards for the PGCE.\\r\n\\r\n\\r\nSchool Partnership:\\r\nThe school will deliver some of the professional and subject study in accordance with the programme requirements and documentation and jointly assesses the trainee against the Teachers’ Standards.\\r\nThe SCITT will deliver aspects of training and provides academic support with the preparation and assessment of the three PGCE assignments, tutor visits, quality assurance and assessment against the Teachers’ Standards.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Standard equivalent to a grade 4 in the GCSE examinations in English and Mathematics, and Primary trainees will have achieved a standard equivalent to a grade 4 in the GCSE examination in a Science subject.\\r\nFirst Degree of a United Kingdom University, Higher Education Institution or an acceptable equivalent at 2.2 or above.  For Secondary, if the degree is not in the subject that applicants wish to teach then they must hold an A Level in that subject and the offer will be subject to completion of a Subject Knowledge Enhancement programme prior to starting their training. ",
+    "InterviewProcess": "During the interview candidates are introduced to the SCITT programme and to the school.  They complete a written task, a presentation, a subject knowledge task, a teaching activity and a formal interview.  You have the opportunity to meet SCITT colleagues and ask questions about the course.",
+    "PersonalQualities": "Resilience; \\r\nAn ability to listen to and act on feedback; \\r\nAn effective communicator; \\r\nA true passion for teaching and your subject;\\r\nA genuine interest in how children learn; \\r\nHigh expectations for yourself and for our students. \\r\n",
+    "HowSchoolPlacementsWork": "School Based Experience:\\r\nAll trainees are expected to work in school for the entire academic year – September 2018 through to July 2019. \\r\n\\r\nFor the recommendation of QTS, all trainees will be formally assessed in 2 consecutive Key Stages:\\r\nPrimary (5-11) Key Stage 1 and Key Stage 2\\r\nSecondary (11-16) Key Stage 3 and Key Stage 4\\r\n\\r\nThe time in school will include the following:\\r\nMajority of time in First School with 6 weeks in Second School\\r\n3-5 days in Early Years (Primary)\\r\n3-5 days in Key Stage 3 (Primary)\\r\n3-5 days Special School experience\\r\n3-5 days Primary (Secondary)\\r\n3-5 days KS5 (Secondary) \\r\n\\r\nAll of our partnership schools are based in West Sussex and have good transport links.  This means our trainees typically travel less than 30 minutes to reach their placement school.  We organise placement 1 and 2 for you."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Durrington High School is the Lead School for Primary and Secondary School Direct through The South Downs SCITT.  The South Downs SCITT provides QTS (Qualified Teacher Status) and works in collaboration with The University of Chichester which awards the PGCE (Post Graduate Certificate in Education).  There is a strong partnership with local schools in order to provide the very best training. You will have access to the facilities at the SCITT, Research School, your placement schools and the University library. You will typically have a day each week working with other trainees to reflect and develop your practice and four days each week training on the job working with the young people in our locality. We provide a high quality cross phase and bespoke training programme which is full time for one year and commences in September. Upon successful completion of your training you will be awarded Qualified Teacher Status, along with a Post Graduate Certificate of Education (PGCE). You will teach across two consecutive age ranges/phases and experience teaching in at least two contrasting schools as well as completing training in SEND. You will be guided to complete an action research project as part of your training. ",
+    "TrainWithDisability": "We will discuss how we can support each applicant individually.  Our schools all have appropriate facilities to accommodate candidates with  physical impairments.  We have specialist teachers in some of our schools that are expert in working with physical and hearing impairments and can support with making reasonable adjustments to our training.  Candidates with dyslexia can access extra time for assignments.  ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The South Downs SCITT is based at Durrington High School (The Boulevard, Worthing, West Sussex, BN13 1JX).  The SCITT is part of the Durrington Multi Academy Trust (DMAT).  DMAT has a Primary, Secondary and Research School as part of the Trust and works with local schools to offer training.\\r\n\\r\nThe SCITT offers places for Primary and Secondary.  At Secondary we offer Art, Drama, Biology, Chemistry, Computing, English, French, History, Geography, German, Mathematics, PE, Physics and Spanish.",
+        "UcasInstitutionCode": "2AZ"
+      }
+    ]
+  },
+  "has_inst": true
+}

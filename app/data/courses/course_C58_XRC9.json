@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Chichester",
+  "subjects": [
+    "Languages",
+    "Primary"
+  ],
+  "name": "Primary (Modern Foreign Languages, 5-11)",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "C58/XRC9",
+  "providerCode": "C58",
+  "programmeCode": "XRC9",
+  "schools": [
+    {
+      "name": "Bognor Regis Campus",
+      "address": "Upper Bognor Road, Bognor Regis, West Sussex, PO21 1HR",
+      "code": "B"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Upper Bognor Road, Bognor Regis, West Sussex, PO21 1HR",
+      "geocode": true,
+      "formatted_address": "Upper Bognor Rd, Bognor Regis PO21 1HR, UK",
+      "latitude": 50.7881893,
+      "longitude": -0.6658381999999999,
+      "post_code": "PO21 1HR",
+      "city": "West Sussex",
+      "route": "Upper Bognor Road",
+      "postal_town": "Bognor Regis"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "C58",
+    "addr_1": "Bishop Otter Campus",
+    "addr_2": "College Lane",
+    "addr_3": "Chichester",
+    "addr_4": "West Sussex",
+    "postcode": "PO19 6PE",
+    "url": "http://www.chi.ac.uk",
+    "geocode": true,
+    "formatted_address": "College Lane, Chichester PO19 6PE, United Kingdom",
+    "latitude": 50.84493000000001,
+    "longitude": -0.775787,
+    "post_code": "PO19 6PE",
+    "city": null,
+    "route": null,
+    "postal_town": "Chichester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This primary teacher education course is designed for graduates who are committed to becoming primary school teachers. It trains you to teach the three to seven age range.\\r\n\\r\nAs a trainee, you will learn how to teach the entire primary curriculum as well as choosing a particular route. The Early Years route is designed for graduates who are interested in teaching children aged three to seven, but this will not restrict you to working with this age group.\\r\n\\r\nEast London offers multicultural, multilingual and vibrant schools in which to learn, but your training at UEL will qualify you to teach anywhere in England or Wales.\\r\n\\r\nUEL’s PGCE team is made up of experienced practitioners who have worked in a range of primary and Early Years settings across London as classroom teachers, curriculum co-ordinators, advisory teachers and school leaders.",
+    "CourseLength": "OneYear",
+    "Qualifications": "*A minimum 2:2 degree or higher (although we will consider lower classifications from candidates with relevant alternative experiences);\\r\n\\r\n*GCSE English Grade C/ Level 4 (or higher) or the equivalent of;\\r\n\\r\n*GCSE Maths Grade C/ Level 4 (or higher) or the equivalent of;\\r\n\\r\n*GCSE Science Grade C/ Level 4 (or higher) or the equivalent of.",
+    "InterviewProcess": "The entire interview process lasts about three hours. During the interview you will be asked to talk about a current educational issue.  Please ensure you have done some research into current educational issues in advance of the interview.  You could, for example, read recent editions of the Times Educational Supplement. \\r\n\\r\nOur aim is to find out as much as we can about your attributes, skills, knowledge and understanding in order to shape training opportunities for you, should you be offered a place on the programme. \\r\n\\r\nYour responses to these tasks and activities will be considered alongside all the other evidence to assess your suitability for the Primary PGCE programme.\\r\n\\r\nDuring the individual interview you will be given the chance to talk with a tutor about the programme and any other issues that are relevant.",
+    "PersonalQualities": "Good interpersonal skills with young people and/or adults;\\r\n\\r\n*Evidence of ability to respond to a challenge and overcome setbacks;\\r\n\\r\n*Resilience and commitment;\\r\n\\r\n*Evidence of knowledge of wider education issues and the ability to express and justify opinions and to consider those of others.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "We work within a very large partnership of schools across London and also Essex, Hertfordshire, Kent and Surrey. We do not wish to disadvantage our trainees by asking them to travel a long distance to their placement schools. Generally, we look at one hour door to door as being the maximum travel time expected.  You will experience three, eight week placements in three complementary schools. You will be supported in these schools by a school based mentor as well as your UEL tutor. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are recognised as one of the leading institutions in the country for teacher training, we have a long and distinguished record of training teachers dating back to 1839.\\r\n\\r\n  - We offer high-quality training and experience that will prepare you to become a confident and effective teacher\\r\n  -  Much of your training will be practical, school-based experiences\\r\n   - You’re supported throughout your school-based learning by experienced mentor teachers and university tutors\\r\n   - You’ll gain a respected professional qualification in a career of major importance\\r\n  -  You’ll learn how to use research to improve your teaching skills\\r\n  -  Our courses have varied content, including: lectures, seminars, presentations, group tasks, mini-research projects and assessments\\r\n  -  You’ll develop a range of communication, interpersonal and problem-solving skills that will be invaluable in a teaching career and beyond\\r\n -   Political and public policy announcements are built into the curriculum, so you will be up to date on contemporary teaching issues.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

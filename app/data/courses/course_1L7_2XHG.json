@@ -1,0 +1,94 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Derby",
+  "provider": "The Northworthy Alliance",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1L7/2XHG",
+  "providerCode": "1L7",
+  "programmeCode": "2XHG",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Thoresby Road, Long Eaton, Nottingham, NG10 3NP",
+      "code": "-"
+    },
+    {
+      "name": "Lees Brook School",
+      "address": "Morley Road, Derby, DE21 4QX",
+      "code": "L"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Thoresby Road, Long Eaton, Nottingham, NG10 3NP",
+      "geocode": true,
+      "formatted_address": "Thoresby Rd, Long Eaton, Nottingham NG10 3NP, UK",
+      "latitude": 52.8924617,
+      "longitude": -1.2870754,
+      "post_code": "NG10 3NP",
+      "city": "Long Eaton",
+      "route": "Thoresby Road",
+      "postal_town": "Nottingham"
+    },
+    {
+      "address": "Morley Road, Derby, DE21 4QX",
+      "geocode": true,
+      "formatted_address": "Morley Rd, Derby DE21 4QX, UK",
+      "latitude": 52.9347009,
+      "longitude": -1.4246111,
+      "post_code": "DE21 4QX",
+      "city": null,
+      "route": "Morley Road",
+      "postal_town": "Derby"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1L7",
+    "addr_1": "Thoresby Road",
+    "addr_2": "Long Eaton",
+    "addr_3": null,
+    "addr_4": "Nottingham",
+    "postcode": "NG10 3NP",
+    "url": "http://www.northworthytrust.org.uk/alliance",
+    "geocode": true,
+    "formatted_address": "Thoresby Rd, Long Eaton, Nottingham NG10 3NP, UK",
+    "latitude": 52.8924617,
+    "longitude": -1.2870754,
+    "post_code": "NG10 3NP",
+    "city": "Long Eaton",
+    "route": "Thoresby Road",
+    "postal_town": "Nottingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Studying for a postgraduate degree is a good investment in your future, but you need to carefully consider how you’re going to pay for your course and your living costs.\\r\nMost students will be able to apply for loans and depending on where you live and your circumstances, bursaries and scholarships might also be available.\\r\n\\r\nOur postgraduate degrees are competitively priced and all the essential equipment and activities are included.\\r\nThey vary slightly from course to course depending on what facilities and resources are required. For example, online courses tend to be slightly cheaper because they use fewer facilities.\\r\n\\r\nThe most up-to-date fees will be listed on the course page – search for your course on our website and look for the section on fees.\\r\n\\r\nThe fees are slightly different depending on whether you normally live in the UK/EU or outside of the EU.\\r\n",
+    "AboutCourse": "From the beginning of the academic year, you will be a full member of the History department in your school and engage in all areas of school and department life.\\r\n\\r\nYou will be based in your school 4 days a week where you will gradually build up your teaching time, observe examples of best practice, participate in tutor group activities and wider professional development.  You will have a dedicated mentor who will meet with you formally once a week to discuss your progress and help you succeed.\\r\n\\r\nYour Wednesdays will be dedicated to your professional development with sessions delivered at both the University of Derby and at our hub base at The Long Eaton School.\\r\n\\r\nThe university sessions will predominantly focus on the Masters level modules and assessment for the PGCE element.  The hub sessions have a strong focus on classroom based teaching and learning with lots of practical ideas for you to take away and use.\\r\n\\r\nYou will also have subject based sessions with other trainees in your subject area within the alliance.  These are led by an experienced practicing classroom teacher to explore the best teaching and learning approaches in History.",
+    "CourseLength": "OneYear",
+    "Qualifications": "The qualifications you will need for this course are:\\r\n\\r\n* Degree in a relevant subject (by July 2019)\\r\n* GCSE English and Maths, grade C (new Grade 4 or equivalent)\\r\n\\r\nYou will also need to pass the QTS Skills Tests.",
+    "FinancialSupport": "To pay for your tuition fees and living costs, you may be able to take out a student loan. These loans don’t usually need to be paid back until you have graduated and are earning a good salary.\\r\n\\r\nSometimes, bursaries and scholarships are also available - it depends on your circumstances and which country you usually live in. These don’t need to be paid back.\\r\n\\r\nPlease visit our website for more information or call our helpline on 01332 592000. \\r\n",
+    "InterviewProcess": "We have a thorough interview process to ensure that we are matching potential trainees to the right schools and departments. \\r\n\\r\nOur interviews involve:\\r\n\\r\n* tour of the school\\r\n* a short teaching task\\r\n* numeracy and literacy tests (if QTS Skills tests have not already been passed) \\r\n* and a formal interview with a 5 minute presentation\\r\n\\r\nFull details are provided prior to the interview.\\r\n\\r\nGetting to know trainees background and prior experience has ensured that our placements are successful with 100% retention and completion rates.\\r\n",
+    "OtherRequirements": "School Experience would be desirable.\\r\n\\r\nYou will need to pass an enhanced DBS check prior to starting the course.  This will be completed after an offer of a place has been accepted.",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject and have a desire to share that with young people of all abilities in the secondary age range.\\r\n\\r\nTeaching is a very rewarding but demanding job and as such we are looking for trainees who are resilient, committed, reflective and prepared to embrace all aspects of school life.",
+    "HowSchoolPlacementsWork": "All trainees are allocated a main placement school which they are based in during the Autumn and Summer term.  During the Spring term trainees have a second placement school where they develop their skills in an alternative context.  There are also opportunities during this term to pursue areas of personal interest such as SEND, Overseas visits, Primary and Alternative Provision.\\r\n\\r\nThroughout your placement, you will have a dedicated mentor who will support you and work closely with our Alliance team.\\r\n\\r\nInformation regarding all of our placement schools is available on our website: [Alliance Schools](http://www.northworthytrust.org.uk/teacher-training/alliance-schools)\\r\n\\r\nWe will consider specific requests made by you but may not be able to guarantee your first choice of placement school.  Reasonable consideration will be given for travel and personal circumstances."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Northworthy Alliance is a fantastic place to work and train with an excellent reputation for teacher training. We provide bespoke school based training in partnership with the University of Derby. Our Alliance has a straightforward, but powerful vision – ‘Nurture, Challenge, Aspire'.\\r\n\\r\nWe have a strong record in training teachers; last year 94% of our trainees completed the year as ‘good’ or ‘outstanding’ teachers and all gained employment to start in September. Many of our trainees have secured employment in the local area, with 59% undertaking their NQT year at an Alliance school (2018/19).\\r\n\\r\nYou would spend most of the programme in a main placement school, where you gradually take on classes, supported by an experienced mentor and the school coordinator. You are also allocated a Subject Specialist Expert, who leads sessions on the best approaches to teaching your subject. The weekly training day alternates between the university and alliance hub base at Long Eaton; the perfect blend of academic rigour and practical classroom practice.\\r\n\\r\nWe offer a range of school placement experiences across our alliance in Derby City and South Derbyshire. The schools vary in size and student profile, enabling us to match you with the right school. We also offer contrasting and enhanced placements, so that you have a rounded experience, such as teaching in alternative provision, primary, SEN schools and even overseas!\\r\n\\r\nFor more information, please visit our website [Northworthy Trust Teacher Training](http://www.northworthytrust.org.uk/teacher-training)\\r\n ",
+    "TrainWithDisability": "Accessibility varies from site to site, please contact us directly if you would like to discuss your requirements and how we can meet them.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our School Direct course is delivered in partnership with the University of Derby.  For more information, please visit the University of Derby Website:\\r\n\\r\n[Secondary School Direct](https://www.derby.ac.uk/postgraduate/teacher-training-courses/pgce-secondary-school-direct/)\\r\n[Primary School Direct](https://www.derby.ac.uk/postgraduate/teacher-training-courses/pgce-primary-school-direct/)\\r\n",
+        "UcasInstitutionCode": "D39"
+      }
+    ]
+  },
+  "has_inst": true
+}

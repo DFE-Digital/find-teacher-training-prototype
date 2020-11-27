@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Winchester",
+  "provider": "Rural Schools Alliance",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Chemistry",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "2EN/326N",
+  "providerCode": "2EN",
+  "programmeCode": "326N",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "New Road, Swanmore, Southampton, SO32 2RB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "New Road, Swanmore, Southampton, SO32 2RB",
+      "geocode": true,
+      "formatted_address": "Swanmore, Southampton SO32 2RB, UK",
+      "latitude": 50.9400196,
+      "longitude": -1.1884957,
+      "post_code": "SO32 2RB",
+      "city": "Swanmore",
+      "route": null,
+      "postal_town": "Southampton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2EN",
+    "addr_1": "New Road",
+    "addr_2": "Swanmore",
+    "addr_3": null,
+    "addr_4": "Southampton",
+    "postcode": "SO32 2RB",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "New Rd, Southampton SO32, UK",
+    "latitude": 50.93949809999999,
+    "longitude": -1.1876984,
+    "post_code": "SO32",
+    "city": "Hampshire",
+    "route": "New Road",
+    "postal_town": "Southampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This secondary Chemistry training programme is being offered at one campus within a partnership of six schools.\\r\n\\r\nTrainees who follow this School Direct Training Programme are based in a host school but are not directly employed by that institution.  Course fees are paid by the trainee and funding may be available through tuition fee loans, bursaries or scholarships.\\r\n\\r\nThe training programme is designed to support academic-based assignments and practical teaching experience.  It will consist of: subject-specific sessions taught throughout the year at both the university and partnership schools; training within a host school; classroom teaching in two contrasting schools and lesson observations.  \\r\n\\r\nSuccessful completion of the course leads to Qualified Teacher Status, a Postgraduate Certificate in Education and students are also able to accrue credits towards a Master’s Level Degree.\\r\n\\r\nThe Rural Schools Alliance also offers salaried places for Chemistry without a tuition fee charge.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "All applicants must hold an undergraduate degree with a minimum 2:2 classification or equivalent. 50% of your degree should be either in the subject that you will specialise in, or in a closely related subject area. The suitability of a degree will be at the discretion of the Alliance.\\r\n\\r\nYou must have GCSE Mathematics and English at grade C, or above, before the course begins. Specific equivalency tests may be accepted in lieu of English and Mathematics, or other evidence of attainment may be also be considered. Such decisions will be at the discretion of the Alliance.\\r\n",
+    "InterviewProcess": "All shortlisted applicants are interviewed prior to the formal offer of a training place with the Rural Schools Alliance.\\r\n\\r\nInterviews for a placement with the Rural Schools Alliance may include any combination of the following:\\r\n- A tour of the school to meet pupils and staff\\r\n- Small group or whole class teaching\\r\n- A group discussion with an educational focus\\r\n- A written task to show that you are able to write English clearly without errors of spelling, grammar or punctuation\\r\n- A subject-specific verbal presentation\\r\n- A formal interview (the panel will normally contain the Director of the Rural Schools Alliance, a Professional Mentor, a Subject Leader and a representative from the University of Winchester)\\r\n",
+    "OtherRequirements": "Disclosure and Barring Service (DBS) check.\\r\nHealth Declaration Form\\r\n",
+    "HowSchoolPlacementsWork": "The Rural Schools Alliance is a partnership of six rural secondary schools all based within Hampshire. Training is divided into 4 parts: Core Training Days, University Days, Placement 1 and Placement 2.\\r\n\\r\nCore Training Days - At the start of the programme, you will experience an intensive, immersive induction into the world of teaching and learning with Core Training Days. Both by developing your existing knowledge, and introducing you to practical concepts and applications in the classroom, you will be encouraged to establish and develop solid foundations in readiness for your school placements.\\r\n\\r\nUniversity Days - University days provide a valuable opportunity to study and learn your craft – both subject specific and pedagogy – through collaboration with trainees within and beyond the Alliance.\\r\n\\r\nPlacement 1 - You will begin with collaborative work and observation, and teaching will range from 25% to 50% by the end of the first placement, combining collaborative and solo training.\\r\n\\r\nPlacement 2 - During this placement, collaborative and solo teaching will increase to up to 60% by the end of your placement. This placement generally takes place during the first half of the Spring term.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Rural Schools Alliance is a Teaching School Partnership comprising six Hampshire secondary Schools, all Ofsted rated \"Good\" schools who have been recognised for our drive and determination to deliver high quality comprehensive education, whilst observing, celebrating and actively promoting traditional values.\\r\n\\r\nOur partnership covers vasts belts of rural communities across the county of Hampshire, whilst remaining accessible to the key urban areas of Andover, Fareham, Waterlooville, Winchester, Southampton and Portsmouth.\\r\n\\r\nWe offer two pathways into School Direct – Salaried and Tuition Fee.  All student teachers are initially registered for the Professional Graduate Certificate in Education (PGCE). This is a course of 120 credits at Level 6. In December, student teachers may apply to be registered on the Postgraduate Certificate In Education (PGCE-M) where up to 60 M-level credits can be gained from subsequent work. Therefore the PGCE-M will result in 60 credits at Level 6 and 60 at Level M.  All students completing the School Direct course will also gain NQT (Newly Qualified Teacher) status.\\r\n\\r\nEducation should be fun, awe-inspiring, life-changing and life-enhancing: it should be borrowed and nurtured by a generation to pass on boldly and proudly to the next.\\r\n\\r\nThis is the ethos that underpins the Rural Schools.",
+    "TrainWithDisability": "We are committed to supporting pupils and staff with specific needs and are committed to creating a community that recognises and celebrates difference within a culture of respect and cooperation.   We are a wheelchair friendly site.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Winchester delivers and designs the initial teacher training provision (ITT). The University of Winchester is an Ofsted rated ‘Outstanding ’ University for its ITT provision, ranked in the top 10 of Universities in England, in a recent National Student Survey.",
+        "UcasInstitutionCode": "W76"
+      }
+    ]
+  },
+  "has_inst": true
+}

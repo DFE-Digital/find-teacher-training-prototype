@@ -1,0 +1,61 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The University of Warwick",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Science: Chemistry",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "W20/F1X1",
+  "providerCode": "W20",
+  "programmeCode": "F1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "W20",
+    "addr_1": "Westwood Campus",
+    "addr_2": "University of Warwick",
+    "addr_3": "Kirby Corner Road",
+    "addr_4": "Coventry",
+    "postcode": "CV4 8EE ",
+    "url": "http://www2.warwick.ac.uk/fac/soc/cte/thinking-about-being-a-teacher/",
+    "geocode": true,
+    "formatted_address": "Coventry CV4 7AL, UK",
+    "latitude": 52.3792525,
+    "longitude": -1.5614704,
+    "post_code": "CV4 7AL",
+    "city": null,
+    "route": null,
+    "postal_town": "Coventry"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Science course is consistently graded as good in Ofsted inspections, and will lead to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYou will be taught by staff with national and international reputations as experts in the field of science education. They are a diverse and incredibly experienced community of academics with extensive school teaching and academic experience.\\r\n\\r\nTake part in activities designed to help you to plan your teaching effectively and imaginatively. Discover how to evaluate your skills, particularly in terms of the quality of learning achieved by pupils.\\r\n\\r\nYour teaching is through a series of practical seminars and workshops in purpose-built science laboratorieswhere interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\nobservation of other teachers\\r\n\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n*gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Ofsted have rated us an \"Outstanding\" provider of teacher training.\\r\nThe University of Warwick has been training teachers for over 50 years and part of the Russell Group, whose members represent outstanding teaching and learning experience.\\r\nWe work in partnership with over 300 schools in eight different Local Education Authorities to deliver the highest quality training.\\r\nYou will be taught using the most current technology enhanced learning tools and techniques.\\r\n86% of our trainees rate the course as good or outstanding.\\r\nYou will be taught and supported by highly experienced tutors, class teachers and school mentors who have national reputations for the quality of their training.\\r\n98% of our trainees complete our courses with 94% being awarded good or outstanding. \\r\nOur employment rate into teaching is 95% . \\r\nUpon completing this course you gain 90 credits at master's level. This allows you to fast-track to stage two of a master's degree, quickly progressing your professional development.\\r\nAs alumni, our Professional Development team will support you to develop your skills through a range of CPD programmes to support your career progression.\\r\nOur courses attract a diverse range of age groups and backgrounds, creating a welcoming, inclusive and supportive community, that everyone can feel a part of.\\r\n\\r\n'I got the first job I applied for, I was told a few months after starting that the reputation from the University of Warwick alone had been enough to secure the job (luckily they were also impressed by my teaching!)' - Sophie, PGCE Alumni. ",
+    "TrainWithDisability": "[How will Warwick support you](https://warwick.ac.uk/fac/soc/cte/start-teaching/how-will-warwick-support-you/) \\r\n\\r\n[Support available to those with additional needs](https://warwick.ac.uk/fac/soc/cte/start-teaching/expectationsofateacher/#Disabilities) \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

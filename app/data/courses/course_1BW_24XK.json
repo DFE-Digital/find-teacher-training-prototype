@@ -1,0 +1,142 @@
+{
+  "locationType": "School",
+  "accrediting": "Roehampton University",
+  "provider": "Dunraven Training Partnership",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "1BW/24XK",
+  "providerCode": "1BW",
+  "programmeCode": "24XK",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Dunraven School, 94-98 Leigham Court Road, Streatham, London, SW16 2QB",
+      "code": "-"
+    },
+    {
+      "name": "Crown Lane Primary School and Children's Centre",
+      "address": "Crown Lane, Streatham, London, SW163HX",
+      "code": "B"
+    },
+    {
+      "name": "St Andrew's Catholic Primary School",
+      "address": "Polworth Road, Streatham, SW16 2ET",
+      "code": "D"
+    },
+    {
+      "name": "Corpus Christi Catholic Primary School",
+      "address": "Trent Road, SW2 5BL",
+      "code": "G"
+    },
+    {
+      "name": "Julian's Primary School",
+      "address": "16 Wolfington Road, West Norwood, SE27 OJF",
+      "code": "W"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Dunraven School, 94-98 Leigham Court Road, Streatham, London, SW16 2QB",
+      "geocode": true,
+      "formatted_address": "94/98 Leigham Ct Rd, London SW16 2QB, UK",
+      "latitude": 51.432948,
+      "longitude": -0.119755,
+      "post_code": "SW16 2QB",
+      "city": "Greater London",
+      "route": "Leigham Court Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Crown Lane, Streatham, London, SW163HX",
+      "geocode": true,
+      "formatted_address": "London SW16 3HX, UK",
+      "latitude": 51.4234003,
+      "longitude": -0.109368,
+      "post_code": "SW16 3HX",
+      "city": "Greater London",
+      "route": null,
+      "postal_town": "London"
+    },
+    {
+      "address": "Polworth Road, Streatham, SW16 2ET",
+      "geocode": true,
+      "formatted_address": "Polworth Rd, London SW16 2ET, UK",
+      "latitude": 51.4248363,
+      "longitude": -0.1268943,
+      "post_code": "SW16 2ET",
+      "city": "Greater London",
+      "route": "Polworth Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Trent Road, SW2 5BL",
+      "geocode": true,
+      "formatted_address": "Trent Rd, Brixton, London SW2 5BJ, UK",
+      "latitude": 51.4559466,
+      "longitude": -0.121024,
+      "post_code": "SW2 5BJ",
+      "city": "Greater London",
+      "route": "Trent Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "16 Wolfington Road, West Norwood, SE27 OJF",
+      "geocode": true,
+      "formatted_address": "16 Wolfington Rd, West Norwood, London SE27 0JF, UK",
+      "latitude": 51.4310134,
+      "longitude": -0.1056398,
+      "post_code": "SE27 0JF",
+      "city": "Greater London",
+      "route": "Wolfington Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1BW",
+    "addr_1": "Dunraven School",
+    "addr_2": "94-98 Leigham Court Road",
+    "addr_3": "Streatham",
+    "addr_4": "London",
+    "postcode": "SW16 2QB",
+    "url": "http://www.dunraven.org.uk",
+    "geocode": true,
+    "formatted_address": "94/98 Leigham Ct Rd, London SW16 2QB, UK",
+    "latitude": 51.432948,
+    "longitude": -0.119755,
+    "post_code": "SW16 2QB",
+    "city": "Greater London",
+    "route": "Leigham Court Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "In addition to Primary General ages 3-11 we also offer Primary General ages 3-11 with maths. \\r\n\\r\nThe focus is on classroom delivery and the development of the knowledge, skills and understanding of classroom practice needed to ensure that pupils make progress in their learning over time. Trainees are supported by a school mentor and a university tutor. The mentor is an experienced and successful teacher, skilled in classroom observation and giving feedback. Trainees have full support in developing their behaviour management skills. They also have access to an extensive programme of in-school training and professional development delivered by expert practitioners in the Partnership to enrich their experience. \\r\n\\r\n\\r\nThere are three written assignments set by the university towards the PGCE element of the qualification. Trainees are based in school throughout the year, except when they have sessions at the university to attend, usually on Thursdays and Fridays. Towards the end of the year trainees are in school full time, with salaried trainees ending at the end of the school term and tuition fee funded trainees ending when their university training is complete in late June. School Direct trainees are expected to become fully involved in the life of the school to enhance their knowledge and understanding of the profession.\\r\n\\r\nBy the end of the year trainees' experience should have enabled them to reach the required standard for a Post Graduate Certificate in Education (PGCE) with a recommendation for Qualified Teacher Status (QTS), and an enhanced likelihood of employment either in the Partnership or elsewhere. The qualification also carries 60 Master's level credits that may be used towards a Master's degree. \\r\n\\r\nhttps://www.corpuschristischool.co.uk/\\r\nhttps://www.crownlane.lambeth.sch.uk/\\r\nhttps://www.juliansprimary.org.uk/\\r\nwww.roehampton.ac.uk/teacher-training/\\r\nhttps://www.dunraven.org.uk/281/school-direct-teacher-training-partnership \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\n*A degree classification of a 2.2 or above and a real aptitude for teaching. \\r\n* Grade C or above in GCSE English, Mathematics and Science, or recognised equivalent, by the time the programme begins. \\r\n* Applicants will be required to produce original certificates at interview. \\r\n* Evidence of a pass in the literacy and numeracy Professional Skills Tests before enrolment. \\r\n* For salaried positions candidates need to demonstrate their knowledge, skills and experience in a CV showing their full employment history.\\r\n \\r\n\\r\n",
+    "InterviewProcess": "Applicants are welcome to contact us via the address below to send a CV in advance of applying via UCAS, or to ask any questions about out our schools, our training programmes or the application process. \\r\n\\r\nApplicants who have applied via UCAS, meet the entry requirements and demonstrate the skills needed  for school based teacher training in our partnership will be invited to an interview including a short classroom based activity, an interview with representatives from our \\r\nApplicants are required to produce photographic ID, original examination certificates and to complete a request for information regarding health and suitability for teaching.\\r\n\\r\nFind out more about our training programmes and how to apply, including recruitment information events via the following link.\\r\n\\r\n(schooldirect@dunraven.org.uk)\\r\n",
+    "OtherRequirements": "Overseas qualifications must be checked for UK equivalence by NARIC. Offers are subject to a Disclosure and Barring Service (DBS) enhanced disclosure list check. \\r\n\\r\nTrainees must meet the Secretary of State's requirements for mental and physical health. \\r\n\\r\n\\r\nA recruitment event will be held at the school on 17 October 2017. If you are interested in finding out more about School Direct and wha",
+    "PersonalQualities": "We are looking for applicants who are passionate about teaching and have the potential to become outstanding teachers. Applicants need to show evidence of time management skills, commitment and personal resilience needed to undertake school based teacher training. Ability to work effectively with young people  and understand the urban state school environment is essential. Confident self-presentation, good communication skills and the ability to inspire and enthuse young people are also important.",
+    "HowSchoolPlacementsWork": "Although the classroom is the main focus of trainees' professional development, this is underpinned and enriched by training at Roehampton and an extensive programme of in-school training provided by the partnership. \\r\nInduction in the first half of the autumn term enables trainees to familiarise themselves with the school, and begin teaching with a timetable  which reflects their experience and increases gradually as their classroom skills and confidence develop. There is a seven week second placement in the second half of the autumn term, to give experience of planning, teaching and assessing in a different environment. This placement is formally assessed by mentors and university tutors and targets are set. The second longer formally assessed placement takes place from March to June.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Dunraven's Teaching School, the Sharing Excellence Partnership, offers school based teacher training of the highest standard with our primary and secondary school partners and accrediting providers, University of Roehampton and e-Qualitas. Dunraven has a well established reputation for effective staff development and long-standing programmes for developing teachers, including traditional ITT routes, Teach First, and School Direct. We offer support and professional guidance in making a transition from support roles in school into teacher training and employment.\\r\nWe promote 'Excellence for All' by recruiting and training high calibre teachers for local schools.\\r\nAll our trainees have gone on to successful employment, mostly within our Partnership. The majority of our School Direct trainees have been formally assessed as 'Outstanding' by the time they complete their training.\\r\nDunraven is part of the South Lambeth Schools' Partnership working with ten local primary schools and SL6, a post-16 collaboration with local secondary schools, which provides a wide range of training and development opportunities for our trainees. A significant building programme means the school now has purpose-built facilities.\\r\nOur School Direct training partnership is a strong local network of Lambeth primary and secondary schools. It includes Julian's, Crown Lane, Van Gogh, Goldfinch, Corpus Christi and St Andrew's Catholic Primary Schools. Secondary partners are the The Elm Green School, Trinity Academy and City Heights Academy. Dunraven School, all-through from 4-18, offers training experiences in both primary and secondary phases.\\r\n\\r\n[Sharing Excellence Partnership] (https://www.dunraven.org.uk/281/school-direct-teacher-training-partnership)",
+    "TrainWithDisability": "All our training programmes are bespoke and tailored to meet individual needs, reflecting applicants' skills and experience and any health or disability requirements. Where possible we adapt our training provision to support trainees with disabilities and other needs. \\r\n\\r\nWe recognise that teaching is a rewarding but demanding career and that there are times when even the best trainees will face challenges. Feedback from previous trainees suggests high levels of satisfaction with the support we offer them, carefully co-ordinated between school, training provider and accrediting provider. We aim to promote trainee well-being and resilience to enable them to make a long-term commitment to the teaching profession.\\r\n\\r\nThe University of Roehampton offers an extensive range of student support services. There is a strong tutorial support system in the School of Education and on school placement. \\r\n\\r\n[University of Roehampton] (https://www.roehampton.ac.uk/why-roehampton/)",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University is a leading provider of teacher training in the UK with 175 years' history, working with over 350 schools. We offer  high quality training  in partnership with them, in preparation for a career with a competitive starting salary. Employment prospects are excellent: 99% of graduates are in work or further study six months after leaving. University buildings are on a beautiful parkland campus in south-west London. The School of Education is ranked third in London for its research, reflecting world-class expertise.\\r\nTrainees report high levels of satisfaction with their training experience on our training programmes.\\r\n",
+        "UcasInstitutionCode": "R48"
+      },
+      {
+        "Description": "In partnership with e-Qualitas we offer flexible training that is well structured  and personalised to meet individual needs and give trainees the best opportunity to become outstanding teachers.\\r\n\\r\nModules.\\r\n1.Lesson planning. \\r\n2. Behaviour. \\r\n3. Assessment.\\r\n4.Meeting needs of different pupils. \\r\n5.Barriers to learning.\\r\n6.Effective subject teaching. \\r\n \\r\nThe programme leads to QTS and trainees can opt into a PGCE with Leeds Beckett University for £1,800. \\r\n\\r\nThe tuition fee funded route fee is £6,000 + VAT, plus £2,000 which is a disbursement to be paid to the school for your training. \\r\n\\r\n The maximum student loan is £6,000 for teacher training with e-Qualitas. ",
+        "UcasInstitutionCode": "E69"
+      }
+    ]
+  },
+  "has_inst": true
+}

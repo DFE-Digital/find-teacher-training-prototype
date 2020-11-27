@@ -1,0 +1,63 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Forest Independent Primary Collegiate SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "General Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "F82/2DLG",
+  "providerCode": "F82",
+  "programmeCode": "2DLG",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "F82",
+    "addr_1": "Limes Farm School Site",
+    "addr_2": "Limes Avenue",
+    "addr_3": "Chigwell",
+    "addr_4": "Essex",
+    "postcode": "IG7 5LP ",
+    "url": "http://www.fipc.ac.uk",
+    "geocode": true,
+    "formatted_address": "Limes Ave, Chigwell IG7 5LP, UK",
+    "latitude": 51.6084669,
+    "longitude": 0.0865551,
+    "post_code": "IG7 5LP",
+    "city": "Essex",
+    "route": "Limes Avenue",
+    "postal_town": "Chigwell"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "The PGCE course has a fee of £9000, you can apply for a student loan to cover this (repayments are taken from your salary directly through your PAYE once you are earning £25,000). The Student Loan Company also offer maintenance/support loans. www.slc.co.uk",
+    "AboutCourse": "Forest Independent Primary Collegiate is a teacher training provider based in Chigwell and we accredit the School Direct programme for Spiral Partnership, Mayespark, Churchfields, Gearies and Hazelwood Primary Schools, we are what is known as a SCITT (School Centred Initial Teacher Training). We run both the School Direct courses and the PGCE course in primary education.\\r\n\\r\nThis course runs from September to July and, unlike the School Direct route, has three mainstream school placements and a two week placement in a special needs school. In total you would spend 22 weeks in school and 15 weeks here in the college becoming fully versed in subject knowledge and educational theory which encourages theory to practice.  You will have an allocated mentor in each school to support you through your placements.\\r\n\\r\nWe also offer the PGCE to unsalaried School Direct trainees. This is when you work in one school and have a four week contrast placement during the year as well as participating in the training with other trainees on the PGCE course. \\r\n\\r\nOn successful completion of the course you will receive your QTS and a PGCE award and, unlike the QTS alone, the PGCE is recognised worldwide.\\r\n\\r\nThe PGCE course has a fee of £9000 and you can apply for a student loan to cover this (repayments are taken from your salary directly through your PAYE once you are earning £25,000). The Student Loan Company also offer maintenance/support loans. www.slc.co.uk\\r\n\\r\nOur website is www.fipc.ac.uk ",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE English grade C or above or grades 4-9.\\r\nGCSE mathematics grade C or above or grades 4-9.\\r\nGCSE science grade C or above or grades 4-9.\\r\nA first degree.",
+    "FeeInternational": 9000.0,
+    "FinancialSupport": "Unfortunately the government do not offer any bursaries for primary teacher training.",
+    "InterviewProcess": "Once we receive your application you will be contacted and an interview date arranged. The interview will consist of two written audits, English and maths, designed to establish levels of competency in these subjects equivalent to that of an able Year 6 pupil followed by a formal interview.",
+    "HowSchoolPlacementsWork": "When selecting your placement schools your travel time is taken into consideration and whether or not you will be using public transport. We also try to make sure you have your preferred key stage. Our partnership schools are based in the Redbridge, Essex, Havering and Hertfordshire.\\r\nYou will have four school placements, spending 22 days in your first placement, 30 days in your second placement, 10 days in a special needs school and then 43 days in your last placement. When in school you will follow the school's timetable.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Forest Independent Primary Collegiate is a teacher training provider based in Chigwell and we accredit the School Direct programme for Spiral Partnership, Mayespark, Churchfields, Gearies and Hazelwood Primary Schools, we are what is known as a SCITT (School Centred Initial Teacher Training). We run both the School Direct courses and the PGCE course in primary education.\\r\n\\r\nThe PGCE course runs from September to July and, unlike the School Direct route, has three mainstream school placements and a two week placement in a special needs school. In total you would spend 22 weeks in school and 15 weeks here in the college becoming fully versed in subject knowledge and educational theory which encourages theory to practice.  All our schools have trained mentors to support you.\\r\n\\r\nWe also offer the PGCE to unsalaried School Direct trainees. This is when you work in one school and have a four week contrast placement during the year as well as participating in the training with other trainees on the PGCE course. \\r\n\\r\nOn successful completion of the course you will receive your QTS and a PGCE award and, unlike the QTS alone, the PGCE is recognised worldwide.\\r\n\\r\nThe PGCE course has a fee of £9000 and you can apply for a student loan to cover this (repayments are taken from your salary directly through your PAYE once you are earning £25,000). The Student Loan Company also offer maintenance/support loans. www.slc.co.uk\\r\n\\r\nOur website is www.fipc.ac.uk ",
+    "TrainWithDisability": "Please speak to The Forest Independent Primary Collegiate if you have any particular needs you feel that you require in order to complete the course and we will discuss your options. 020 8501 2089.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

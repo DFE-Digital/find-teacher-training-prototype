@@ -1,0 +1,61 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Southampton",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Science (Physics)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "S27/F3X1",
+  "providerCode": "S27",
+  "programmeCode": "F3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S27",
+    "addr_1": "Highfield",
+    "addr_2": null,
+    "addr_3": "Southampton",
+    "addr_4": null,
+    "postcode": "SO17 1BJ",
+    "url": "http://www.southampton.ac.uk/education/postgraduate/itt.page",
+    "geocode": true,
+    "formatted_address": "Highfield, Southampton SO17 3RU, UK",
+    "latitude": 50.93261099999999,
+    "longitude": -1.390369,
+    "post_code": "SO17 3RU",
+    "city": "Highfield",
+    "route": null,
+    "postal_town": "Southampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Science course is consistently graded as good in Ofsted inspections, and will lead to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYou will be taught by staff with national and international reputations as experts in the field of science education. They are a diverse and incredibly experienced community of academics with extensive school teaching and academic experience.\\r\n\\r\nTake part in activities designed to help you to plan your teaching effectively and imaginatively. Discover how to evaluate your skills, particularly in terms of the quality of learning achieved by pupils.\\r\n\\r\nYour teaching is through a series of practical seminars and workshops in purpose-built science laboratorieswhere interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n* gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our Initial Teacher Education department is a dynamic and thriving community of professional educators and researchers. In AY2017-2018 Southampton Education School was ranked 2nd in the Guardian University League Table.\\r\n\\r\nWhy come to Southampton?\\r\n\\r\n* Our Tutors. In every forum the dedication and commitment of our Tutors is praised. Trainee Teachers rate them extremely highly, External Examiners praise the time and effort that Tutors devote to Trainees and Ofsted recognises the ‘high quality mentoring and support’ offered. \\r\n* Our quality of teaching and our diverse partnerships and placements. Our Tutors are all Teachers. We thrive through continuous professional development – and very much enjoy implementing new research or theories in partnership with Trainee Teachers and the Schools that we work with. Our Partner Schools are key to our success, and the Mentors that we work are experienced, dedicated and enthusiastic. \\r\n* Our commitment to Health and Wellbeing. The health and wellbeing of our Trainee Teachers, and the students that they teach, is central to producing outstanding teachers and happy students who can make progress and succeed.\\r\n* Our scope to personalise and individualise your learning on your Programme. Every Trainee Teacher is unique, and we want each and every trainee to be the very best teacher that they can be. We achieve this by personalising our programmes to suit you.\\r\n* Our commitment to ‘Student Voice’. We actively encourage trainees to work with us to make our courses even better. \\r\n* Employability. Almost 100% of our Trainee Teachers get jobs. \\r\n",
+    "TrainWithDisability": "At Southampton we welcome applications from candidates with disabilities and other needs. SEND is a very important element of our training throughout the PGCE, and trainees who have personal experiences of SEND are of real benefit to our programmes, as they bring a wealth of experience.\\r\n\\r\nHow are Trainee Teachers with disabilities and other needs supported?\\r\n\\r\n* Trainees with dyslexia meet together at the start of the course for an informal session, led by a tutor with significant SEND experience. This group is then enabled to support one another throughout the course, with individual, personalised, input from the tutor as required.\\r\n* Trainees with Physical Disabilities are always accommodated as appropriate and a wide variety of modifications are available.  For example, a student with a hearing impairment may be supported by our enabling services, as well as by their Personal Academic Tutor with services such as remote transcription available - we work with individuals to ensure that their needs are met both when in University and when teaching in schools.\\r\n* We recognise that teaching can be stressful. The University offers a variety of services for Trainees who may be suffering from anxiety or depression, for example trainees can access talking therapies via the University Enabling Services. Trainees are also encouraged to make full use of their Personal Academic Tutor.\\r\n* The course team are able to personalise many aspects of the programme, to accommodate need on an individual basis, to enable successful completion of the course.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

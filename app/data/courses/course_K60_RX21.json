@@ -1,0 +1,74 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "King’s College London (University of London)",
+  "subjects": [
+    "French",
+    "German",
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages (German with French)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "K60/RX21",
+  "providerCode": "K60",
+  "programmeCode": "RX21",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Franklin-Wilkins Building, Waterloo Bridge Wing, Waterloo Road, London, SE1 9NN",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Franklin-Wilkins Building, Waterloo Bridge Wing, Waterloo Road, London, SE1 9NN",
+      "geocode": true,
+      "formatted_address": "Waterloo Rd, South Bank, London SE1, UK",
+      "latitude": 51.502334,
+      "longitude": -0.1100842,
+      "post_code": "SE1",
+      "city": "Greater London",
+      "route": "Waterloo Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "K60",
+    "addr_1": "King's Admissions Office",
+    "addr_2": "James Clerk Maxwell Building",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "SE1 8WA ",
+    "url": "http://www.kcl.ac.uk",
+    "geocode": true,
+    "formatted_address": "57 Waterloo Rd, Lambeth, London SE1 8WA, UK",
+    "latitude": 51.50486650000001,
+    "longitude": -0.1126887,
+    "post_code": "SE1 8WA",
+    "city": "Greater London",
+    "route": "Waterloo Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Experience: King’s has been training teachers for over 120 years and has developed a reputation for excellence in its training methods. The PGCE academics are qualified teachers themselves and are highly experienced in teacher training.\\r\n\\r\nReputation: King’s has developed a reputation for excellence in both training methods and the standards of new teachers we train. At the most recent Ofsted inspection King’s was graded 'Outstanding'.\\r\n\\r\nLocation: Based in the heart of London, King’s is surrounded by landmarks and cultural institutions that we incorporate into our training. Transport links are extensive as the campus is only minutes from Waterloo station.\\r\n\\r\nStudent satisfaction: Trainees value the effectiveness of their training in preparing them for their teaching career. 92% of graduates rated the quality of our training as very good or good in the 2018 student survey.\\r\n\\r\nEmployment prospects: 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. Many schools actively contact us to try and recruit our trainees during the academic year.\\r\n",
+    "TrainWithDisability": "All PGCE trainee teachers must meet the Secretary of State's requirements for physical and mental health, but few health problems past or present preclude applicants from teaching. \\r\n\\r\nWe always welcome applications from people with disabilities. Candidates offered a place must complete a pre-commencement health declaration form. If this reveals a need, King's provides appropriate school placements, support and monitoring for the trainee during the course. If you have any questions about health, disability, or the support provided, please do not hesitate to contact us.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

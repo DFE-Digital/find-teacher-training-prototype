@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Sunderland",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "S84/F3X1",
+  "providerCode": "S84",
+  "programmeCode": "F3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "The Student Gateway, Edinburgh Building, Chester Road, Sunderland, SR1 3SD",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The Student Gateway, Edinburgh Building, Chester Road, Sunderland, SR1 3SD",
+      "geocode": true,
+      "formatted_address": "Sunderland SR1 3SD, UK",
+      "latitude": 54.9044941,
+      "longitude": -1.391347,
+      "post_code": "SR1 3SD",
+      "city": "Tyne and Wear",
+      "route": null,
+      "postal_town": "Sunderland"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S84",
+    "addr_1": "Edinburgh Building",
+    "addr_2": "City Campus",
+    "addr_3": "Chester Road",
+    "addr_4": "Sunderland",
+    "postcode": "SR1 3SD ",
+    "url": "http://www.sunderland.ac.uk",
+    "geocode": true,
+    "formatted_address": "Edinburgh Building, Chester Road, Sunderland SR1 3SD, United Kingdom",
+    "latitude": 54.90448989999999,
+    "longitude": -1.3919524,
+    "post_code": "SR1 3SD",
+    "city": null,
+    "route": null,
+    "postal_town": "Sunderland"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Science course is consistently graded as good in Ofsted inspections, and will lead to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYou will be taught by staff with national and international reputations as experts in the field of science education. They are a diverse and incredibly experienced community of academics with extensive school teaching and academic experience.\\r\n\\r\nTake part in activities designed to help you to plan your teaching effectively and imaginatively. Discover how to evaluate your skills, particularly in terms of the quality of learning achieved by pupils.\\r\n\\r\nYour teaching is through a series of practical seminars and workshops in purpose-built science laboratorieswhere interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n* gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The University of Sunderland is an ambitious university with a global reach. We have 20,000 students at our four campuses worldwide – two in Sunderland on the north east coast, one in London and our newest in Hong Kong. \\r\n\\r\nThe University has been awarded Silver in the Teaching Excellence Framework which demonstrates our high-quality teaching, learning and outcomes for our students.\\r\n\\r\nAccording to our most recent Ofsted report, some key strengths of our provisions are strong communication and positive relationships between the University and its partner schools, and the commitment of trainers in partnership schools to the all-round development of the trainees. Our comprehensive courses will give you the skills needed to make a real difference in educating the next generation, as well as thrive on a personal level with a rewarding career. \\r\n\\r\n\\r\n",
+    "TrainWithDisability": "We celebrate and value the diversity of all students and staff, working to ensure that all are welcome in our community and do not face discrimination or encounter barriers with regard to their disability.\\r\n\\r\nPlease contact the Disability Support Team for disability-related queries:\\r\n\\r\nEmail: disability.support@sunderland.ac.uk\\r\nTel: 0191 515 2952",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

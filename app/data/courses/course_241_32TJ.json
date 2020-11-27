@@ -1,0 +1,63 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Warwick",
+  "provider": "Kenilworth Partnership",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "241/32TJ",
+  "providerCode": "241",
+  "programmeCode": "32TJ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Leyes Lane, Kenilworth, CV8 2DA",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Leyes Lane, Kenilworth, CV8 2DA",
+      "geocode": true,
+      "formatted_address": "Leyes Ln, Kenilworth CV8 2DA, UK",
+      "latitude": 52.3466315,
+      "longitude": -1.5606203,
+      "post_code": "CV8 2DA",
+      "city": "Warwickshire",
+      "route": "Leyes Lane",
+      "postal_town": "Kenilworth"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Course fees of £9,250 are payable to the University of Warwick (£19,100 for International students). Tuition fee loans are available to EU and UK candidates. ",
+    "AboutCourse": "School Direct is a school-led initial teacher training (ITT) program; it provides fantastic experience if you want to train and learn “on the job”. You’ll be part of a teaching team from the very start, receiving intensive support from experienced teachers and mentors. \\r\n\\r\nAt the Kenilworth Alliance we offer a very bespoke training experience, allowing mentors the opportunity to develop your skills at a rate perfectly suited to your ability and confidence. The course begins with lesson observations before progressing to team teaching and working with smaller focus groups. Your teaching timetable increases gradually throughout the year in discussion with Subject and Professional Mentors and is fully supported throughout by qualified practitioners. \\r\n\\r\nAs part of your training, you will have the opportunity to track both a Teaching Assistant and a pupil which enables you to experience school life from varying perspectives. You will experience a five-day placement in a primary school setting and one day in a special school. We will also arrange a six-week complementary placement in one of our partner schools so that you can further develop your insight into contrasting teaching environments.\\r\n\\r\nIn addition to your school-based training, you will spend one day per week at University of Warwick where you will access an outstanding academic program of study which will support you in understanding the theory behind your teaching practice.\\r\n\\r\nThe benefits of this course program includes:\\r\n\\r\n•\\tAward of Qualified Teacher Status (QTS) and a Postgraduate \\r\n        Certificate in Education (PGCE) from the “Outstanding” (Ofsted) \\r\n        University of Warwick.\\r\n•\\tStrong mentor support\\r\n•\\tExcellent employment rates\\r\n•\\tAccess to a comprehensive in-school training program\\r\n•\\tRewarding career\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "To be eligible for the course you will need the following:\\r\n\\r\n•\\tGCSE: A – C English and Maths\\r\n•\\tDegree: Min 2:2, preferred 2:1 or above\\r\n•\\tEligible to work in the UK\\r\n•\\tNothing to preclude you from completing Disclosure & Barring Service \\r\n        (DBS) check\\r\n\\r\n",
+    "FeeInternational": 19100.0,
+    "FinancialSupport": "We provide a laptop and school based resources to support you with your studies.",
+    "InterviewProcess": "Applications received are considered by the appointed host school. Should you be invited to interview you should anticipate being asked to prepare a short subject-related lesson. This will be observed by the schools Professional Mentor and Head of Department who will also conduct an interview.\\r\n\\r\nAs part of the interview process you will be asked to complete an English writing test which is a requirement of University of Warwick.\\r\n",
+    "OtherRequirements": "•\\tExperience in a school environment or working with young people, will \\r\n        strengthen your application although this is not essential at application.\\r\n\\r\n•\\tYou will be required to complete Numeracy and Literacy Professional \\r\n        Skills tests. Further information regarding these tests can be found at:\\r\n               https://getintoteaching.education.gov.uk/how-to-apply/passing-the-skills-tests\\r\n•\\tYou must also be successful in completing a Disclosure & Barring \\r\n        Service (DBS) check.\\r\n",
+    "PersonalQualities": "Additional qualities that we look for include:\\r\n\\r\n•\\tPassion for learning and an interest in/knowledge of education\\r\n•\\tExcellent communication skills (both written and verbal)\\r\n•\\tAbility to stay calm and deal with stressful situations\\r\n•\\tDrive to succeed and resilience in the face of difficulty\\r\n•\\tBeing part of a team and working collaboratively\\r\n•\\tReflective practitioner who responds to feedback\\r\n•\\tICT competent and confident\\r\n•\\tInterests outside of education\\r\n",
+    "HowSchoolPlacementsWork": "The program includes a requirement for you to complete five days experience in a primary school setting. This enables you to experience KS2 pupils and understand their needs in readiness for transition to KS3. We are happy for you to arrange this placement with a school of your choice although we do suggest that the five days are completed during the first half term of your course, before timetable commitments begin to increase.\\r\n\\r\nYour (secondary) complementary placement will start immediately after the Christmas break and run until February half term. This will be arranged on your behalf is most likely to be in one of our alliance schools. We try, as far as possible, to take into account your transport considerations, but also to provide a contrasting environment to that of your host school.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Kenilworth School and Sixth Form is the lead school in the Kenilworth Alliance. Judged outstanding in all categories (Ofsted 2013) we are proud of our World Class distinction and are recognised nationally and internationally for innovative and high quality education.\\r\n\\r\nWe co-ordinate School Direct training throughout our network of partner schools. Trainees benefit from the opportunity to develop relationships with host school in advance of their training and will experience a complementary placement which will be arranged on their behalf in a second partner school.\\r\n\\r\nFor further information about our partnership please visit:\\r\n\\r\nhttp://www.ksn.org.uk/school-direct\\r\n",
+    "TrainWithDisability": "Kenilworth School & Sixth Form and the University of Warwick welcome candidates with disabilities and under the Disability Discrimination Act those candidates who disclose their disability have the right to have reasonable adjustments made to enable them to train to teach.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Kenilworth Alliance work in partnership with the University of Warwick to provide outstanding ITT provision (Ofsted 2015) supporting both PGCE Core and School Direct teacher training. Successful candidates will complete their Post Graduate Certificate of Education (PGCE) with the University of Warwick, allowing them to achieve Qualified Teacher Status (QTS) as well as gaining 90 CATs points towards their Masters.",
+        "UcasInstitutionCode": "W20"
+      }
+    ]
+  },
+  "has_inst": true
+}

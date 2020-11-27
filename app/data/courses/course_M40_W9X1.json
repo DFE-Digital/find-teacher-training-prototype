@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The Manchester Metropolitan University",
+  "subjects": [
+    "Design and technology",
+    "Secondary"
+  ],
+  "name": "Design and Technology (Resistent Materials)",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "M40/W9X1",
+  "providerCode": "M40",
+  "programmeCode": "W9X1",
+  "schools": [
+    {
+      "name": "Faculty of Education (Manchester)",
+      "address": "Birley Fields, Hulme, Manchester",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Birley Fields, Hulme, Manchester",
+      "geocode": true,
+      "formatted_address": "Birley Fields Campus, 53 Bonsall St, Manchester M15 6GX, UK",
+      "latitude": 53.4667373,
+      "longitude": -2.2464233,
+      "post_code": "M15 6GX",
+      "city": "Greater Manchester",
+      "route": "Bonsall Street",
+      "postal_town": "Manchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "M40",
+    "addr_1": "All Saints Building",
+    "addr_2": "All Saints",
+    "addr_3": "Manchester",
+    "addr_4": "Greater Manchester",
+    "postcode": "M15 6BH ",
+    "url": "http://www.mmu.ac.uk",
+    "geocode": true,
+    "formatted_address": "All Saints Building, All Saints, Manchester M15 6BH, United Kingdom",
+    "latitude": 53.471068,
+    "longitude": -2.238619,
+    "post_code": "M15 6BH",
+    "city": null,
+    "route": null,
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "- Train for a rewarding career in secondary design and technology teaching.\\r\n- Undertake 120 days of school-based training in two different school settings.\\r\n- Participate in practical work in our well-equipped facilities to help you learn creative and innovative teaching methods.\\r\n- Attain a masters-level PGCE, or a PCE alongside Qualified Teacher status (QTS).\\r\n\\r\nThis course will help you to grow academically and professionally and has, as its primary aim, the development and supply of competent teachers who are capable of securing employment in an education setting. You graduate as an experienced and employable design and technology teacher, ready to inspire young people.\\r\n\\r\nThis course provides an advanced academic qualification alongside the real-world experience in school settings. Along with honing your subject skills, you'll learn crucial teaching techniques including behaviour management and student support. There are 120 days of school-based training that allow you to become used to the realities of teaching before graduation. You are assessed through supportive, collaborative means, helping you to grow and improve.\\r\n\\r\nYou learn through\\r\n\\r\n- 120 days of school based training across at least two settings\\r\n- classes in our well-equipped facilities\\r\n- seminars and lectures\\r\n- workshops\\r\n- school-based experiences\\r\n- independent study\\r\n- group work\\r\n- practical work\\r\n- written assessments and feedback",
+    "CourseLength": "OneYear",
+    "FeeInternational": 13500.0,
+    "InterviewProcess": "If you are shortlisted, we will invite you to a selection event, and you should bring a passport or photo driving license with you. You can bring other forms of photo ID for the selection event, but if you do, you will still need to present valid identity documents required by the Disclosure and Barring Service (DBS) at your pre-course day.\\r\n\\r\nThe selection event is a process which assesses if you're suitable for a place on the course. It's a chance to show us your knowledge about the subject and your enthusiasm for the career. Being invited to a selection event doesn't mean you're guaranteed a place on the course - the point of the day is to help us come to a mutual decision. We need to decide whether to make you an offer and you need to decide whether you like the course and the university.\\r\n\\r\nWe aim to make the interview process as rigorous and informative as possible. It's very much a two-way process, where you can evaluate what we offer while we find out more about you. In order to help us explore your thinking and subject knowledge, and for you to decide if this is the right course for you, we have a number of activities we usually use as part of the interview process.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "This course ensures that you'll have the real-life experience you need to enter teaching. You'll spend 120 days across two or more sites, with school-based mentors and campus-based tutors monitoring your progress and providing support. Upon graduating, some of our students go into full-time employment at their placement school.\\r\n\\r\nYou will take responsibility for your own development against the statutory requirements for QTS and will record your progress in a Professional Development Portfolio (PDP). This collaborative process involves you, university-based tutors and school-based mentors. As you complete the course you will review your progress, plan for your entry to the teaching profession and for your ongoing development as a Newly Qualified Teacher (NQT)."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At Manchester Met, you won’t just develop the practical and organisational skills you’ll need to teach a subject in the classroom. You’ll explore how children learn and factors that can affect the way we learn, from our environment to our teachers.\\r\n\\r\nYou will look at the latest educational research, identifying how research might help you in the classroom, perhaps when you’re dealing with children’s behaviour or you’re investigating if there’s a new way to teach a topic.\\r\n\\r\nWe offer University-led and School-led routes into teaching both Primary and Secondary education.\\r\n\\r\nBoth routes lead to Qualified Teacher Status (QTS) and include 60 masters level credits (a full-time masters degree typically consists of 180 credits, and you can usually put your 60 credits towards your masters).\\r\n\\r\nWe work with over 500 primary schools and over 400 secondary schools across the North West region. This means you could experience placements in inner city or rural settings, mixed or single gender, faith schools, selective or comprehensive schools. This variety helps you to experience different situations and develop your practical skills as a teacher in different settings.\\r\n\\r\nYou can also choose from over 20 secondary subject specialisms. Maybe you’re excited to share your love of Shakespeare or perhaps you can’t wait to hear your year 7 class share their first words in Mandarin. Or, you’re already thinking of all of the incredible science experiments you’ll show your class. \\r\n\\r\nYou will learn in a diverse community of students, replicating the environment you will experience in schools.\\r\n",
+    "TrainWithDisability": "A member of staff from Disability Service is often available at MMU Open days and Visit Days to offer advice on disability related issues. However, you can always phone or email us if you have any specific queries. \\r\n\\r\nManchester Metropolitan University is committed to providing equal opportunities in education for all students and will take reasonable steps to meet both the general need for access and the specific needs of individuals with additional support needs. The University works with disabled students to ensure they are not disadvantaged as a result of their disability.\\r\n\\r\nBefore accepting a place, disabled applicants should explore how the university might be able to meet any additional study support or accommodation needs they may have. This should be done at the earliest opportunity by contacting the Disability Service on 0161 247 3491 or (disability.service@mmu.ac.uk)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

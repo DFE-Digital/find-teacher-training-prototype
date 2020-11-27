@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Winchester",
+  "provider": "The Arnewood School Academy",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1ZM/2GVD",
+  "providerCode": "1ZM",
+  "programmeCode": "2GVD",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Gore Road, New Milton, BH25 6RS",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Gore Road, New Milton, BH25 6RS",
+      "geocode": true,
+      "formatted_address": "Gore Rd, New Milton BH25 6RS, UK",
+      "latitude": 50.7505977,
+      "longitude": -1.6637753,
+      "post_code": "BH25 6RS",
+      "city": "Hampshire",
+      "route": "Gore Road",
+      "postal_town": "New Milton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1ZM",
+    "addr_1": "Gore Road",
+    "addr_2": null,
+    "addr_3": "New Milton",
+    "addr_4": null,
+    "postcode": "BH25 6RS",
+    "url": "http://www.arnewood.hants.sch.uk",
+    "geocode": true,
+    "formatted_address": "Gore Rd, New Milton BH25 6SJ, UK",
+    "latitude": 50.7517084,
+    "longitude": -1.6703959,
+    "post_code": "BH25 6SJ",
+    "city": null,
+    "route": "Gore Road",
+    "postal_town": "New Milton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "The tuition fees for September 2019 entry are £9,250 for UK, EU and Islands (Channel Islands and Isle of Man) students, however the tuition fee for students outside the EU are yet to be confirmed for 2019 entry. Please contact studentsandmoney@winchester.ac.uk in the autumn for confirmation of the fee.",
+    "AboutCourse": "The course prepares you to teach across the age ranges 5-11 and is structured around six modules - a combination of taught modules based at the University and placement modules based in schools or educational settings.\\r\nYou will undertake studies in all elements of primary education; extend your knowledge of learning and teaching, of the breadth and scope of the curriculum and the professional skills associated with high-quality teaching. You will then apply these areas of understanding and skill to classroom practice throughout the year, including during two assessed placements in schools or educational settings.\\r\n\\r\nUpon successful completion of the course you will be awarded a PGCE with recommendations for the award of Qualified Teacher Status (QTS).\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "The minimum requirements you will be expected to meet are as follows: an honours degree, usually a 2:2 or above; GCSE English language, mathematics and a science at grade C or 4 or above; and passes in the Department for Education (DfE) skills tests in Literacy and Numeracy. Equivalencies to academic qualifications are considered on an individual basis, so if you hold qualifications from a number of years ago or from outside the UK, please contact us for confirmation of their suitability.",
+    "InterviewProcess": "If you already meet or are expected to meet our entry requirements, and have demonstrated your passion and commitment to teaching in your application, you will be invited to attend an interview. The interview is your chance to demonstrate your potential to become a successful teacher. The interview day consists of a written task, group presentation and individual interview and further information about the format of the day will be sent to you via email in advance of the interview date. The interview will take place in one of our placement school and is an opportunity to find out more about the course and placements we offer. ",
+    "OtherRequirements": "If you accept an offer of a place you will be required to complete a Disclosure and Barring Service (DBS) criminal records check and Prohibition Order check. If you have spent time overseas in the last 5 years you may also be required to obtain criminal records checks from each of the countries you visited. You will also be required to complete an occupational health check to confirm that you are fit to teach. The University of Winchester will send you more information about when and how you need to complete each of these checks if you accept our offer.",
+    "PersonalQualities": "We will look for evidence of a commitment to the teaching profession, an understanding of professional requirements, and an awareness of current educational issues in an application. Prior experience in a school is not required, however prospective students may find experience in a school useful for obtaining insights into the primary education classroom. Experience in a school or similar setting may also provide reassurance to prospective students that teaching is the right choice for their career.",
+    "HowSchoolPlacementsWork": "Teaching placements will be in one of our feeder school and where your main placement is will be determined by the key stage you are interested in specialising in. Our main two school’s we work with are New Milton Juniors and Hordle CE Primary School. School placements offer an excellent opportunity to really feel like part of the teaching team and to gain expert guidance from experienced and dedicated colleagues. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Arnewood School offers the opportunity to train to teach with the support of experienced mentors and subject specialist in the heart of the New forest. \\r\n\\r\nAs a small provider, we are able to offer a highly personalised experience that can be adapted to suit a variety of needs. Working in partnership with other local teaching alliances we are able to also offer a broad and  high quality provision of pedagogical training.\\r\n For the primary route we work with our feeder schools who are passionate about teacher training and education to support trainees as they enter the profession. \\r\n\\r\nThe school is committed to professional development with a keen focus on the development of teaching and learning across all subject areas. \\r\n\\r\nWe offer both primary and secondary training opportunities. For both routes we work with The  University of Winchester, which is recognised by OfSted as an ‘Outstanding’ provider of teacher education at both primary and secondary level and has a long history of training teachers. \\r\n\\r\n",
+    "TrainWithDisability": "Your wellbeing is a top priority and we will do all we can to give you the chance to flourish and maximise your potential. In partnership with the University of Winchester there is a dedicated student support team to help with any questions or challenges you might experience during your studies. We work with you to support your wellbeing and mental health, provide confidential advice and offer workshops to boost your academic skills. If you have a disability or learning difference, we encourage you to get in touch before you apply so we can discuss tailored support for your individual needs.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "For the secondary route we work within the Bournemouth, Poole and Dorset Teacher Training Partnership to offer trainees a varied and balanced experience to prepare them for becoming excellent practitioners. This allows our trainees to experience a diversity of school placements including upper schools, selective schools and special educational school settings. The partnership delivers high quality central training and subject specific tutors to support your development as a teacher. \\r\n\\r\nFor the primary route we work with Halterworth Teaching school to give trainees a high level of central training and support. ",
+        "UcasInstitutionCode": "B52"
+      },
+      {
+        "Description": "We are accredited by The University of Winchester, which is recognised by OfSted as an ‘Outstanding’ provider of teacher education at both primary and secondary level and has a long history of training teachers. The university offers a stimulating and supportive learning environment that challenges and inspires, in a beautiful, historic cathedral city, within easy distance of Bournemouth, Christchurch and the New forest.",
+        "UcasInstitutionCode": "W76"
+      }
+    ]
+  },
+  "has_inst": true
+}

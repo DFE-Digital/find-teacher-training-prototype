@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Sheffield Hallam University",
+  "provider": "Outwood Institute of Education - South",
+  "subjects": [
+    "Design and technology",
+    "Secondary"
+  ],
+  "name": "Design and Technology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1GV/2VWH",
+  "providerCode": "1GV",
+  "programmeCode": "2VWH",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Outwood Grange Academy, Potovens Lane, Outwood, Wakefield, WF1 2PF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Outwood Grange Academy, Potovens Lane, Outwood, Wakefield, WF1 2PF",
+      "geocode": true,
+      "formatted_address": "Potovens Ln, Wakefield WF1 2PF, UK",
+      "latitude": 53.70898589999999,
+      "longitude": -1.5129206,
+      "post_code": "WF1 2PF",
+      "city": "West Yorkshire",
+      "route": "Potovens Lane",
+      "postal_town": "Wakefield"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1GV",
+    "addr_1": "Outwood Institute of Education",
+    "addr_2": "Tenter Balk Lane",
+    "addr_3": "Doncaster",
+    "addr_4": null,
+    "postcode": "DN6 7RQ ",
+    "url": "http://oie.outwood.com",
+    "geocode": true,
+    "formatted_address": "Adwick le Street, Doncaster DN6 7EQ, UK",
+    "latitude": 53.56695569999999,
+    "longitude": -1.1966032,
+    "post_code": "DN6 7EQ",
+    "city": "Adwick le Street",
+    "route": null,
+    "postal_town": "Doncaster"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Outwood Institute of Education offers a School Direct programme that strives to develop, support and celebrate excellent trainee teachers who are well-prepared for the profession. On completion of this programme, our trainee teachers will be awarded PGCE with QTS and 60 Master’s credits in Education from Sheffield Hallam University. \\r\n\\r\nOur School Direct programme allows trainees to work alongside innovative, ambitious and child-focused teachers who are passionate about raising standards and transforming lives.\\r\n\\r\nWe have a strong partnership with Sheffield Hallam University who are a national centre of education and are recognised for their excellence and innovation in teaching and learning. This partnership creates a collaborative model of training. The training will take place at our conference centre in Doncaster, Sheffield Hallam University and in the two placement schools. \\r\n\\r\nIf you would like to visit one of our academies for a career experience placement before or during your application process, please contact oie@outwood.com and we will organise this for you.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\n* A UK honours degree preferably at classification 2:2 or above or a recognised equivalent qualification \\r\n* GCSE grade C or Grade 4 in English Language, mathematics and science or equivalent qualifications \\r\n* QTS skills tests in numeracy and literacy \\r\n",
+    "InterviewProcess": "Applicants who meet our entry requirements will be invited to one of our academies to complete our selection process. This will usually take half a day and consists of a written task, time spent supporting students in a lesson and an interview with representatives from the chosen university and Outwood Grange Academies Trust. Please note that you will not be required to teach as part of the interview process.",
+    "OtherRequirements": "\\r\n* Completion of a declaration of criminal convictions and health check forms\\r\n",
+    "PersonalQualities": "Outwood Institute of Education is seeking applicants with the following qualities:\\r\n\\r\n* A genuine desire to put children first and a commitment to improving the life chances of young people\\r\n* An ability to engage with students in a personable and professional manner\\r\n* Resilience, flexibility and a passion to succeed in the teaching profession\\r\n",
+    "HowSchoolPlacementsWork": "During the programme, our trainees complete two placements in our alliance schools and academies. The first placement starts in September and ends in December whilst the second placement starts in January and ends in June. The location of these placements is decided by the trainee teacher’s home location and the capacity of the school or academy. Each trainee teacher will be assigned a trained mentor to support and celebrate their progress as they enter the teaching profession. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "‘As a multi-academy trust we want to be known for placing students first: raising standards and transforming lives.’ \\r\n\\r\nMartyn Oliver, CEO, Outwood Grange Academies Trust\\r\n\\r\nThe programme is led by Outwood Grange Academies Trust which is recognised nationally as a high performing chain of schools in the North of England. Our family of schools currently comprises of thirty-one academies who work together to ensure that all children, irrespective of their starting point, receive an excellent education. \\r\n",
+    "TrainWithDisability": "We offer disabled access across our family of schools and invite all applicants to discuss their individual needs with us so that we can place you in the most appropriate schools and academies for your training year.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We are proud to be working in partnership with Sheffield Hallam University to deliver teacher education. This programme was rated ‘Outstanding’ by Ofsted in November 2017.",
+        "UcasInstitutionCode": "S21"
+      }
+    ]
+  },
+  "has_inst": true
+}

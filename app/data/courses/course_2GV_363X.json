@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Edge Hill University",
+  "provider": "Eatock Primary",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2GV/363X",
+  "providerCode": "2GV",
+  "programmeCode": "363X",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St George's Avenue, Westhoughton, Bolton, Lancashire, BL5 2ER",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St George's Avenue, Westhoughton, Bolton, Lancashire, BL5 2ER",
+      "geocode": true,
+      "formatted_address": "St George's Ave, Westhoughton, Bolton BL5 2ER, UK",
+      "latitude": 53.53849779999999,
+      "longitude": -2.5263583,
+      "post_code": "BL5 2ER",
+      "city": "Westhoughton",
+      "route": "Saint George's Avenue",
+      "postal_town": "Bolton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2GV",
+    "addr_1": "St George's Avenue",
+    "addr_2": "Westhoughton",
+    "addr_3": "Bolton",
+    "addr_4": "Lancashire",
+    "postcode": "BL5 2ER ",
+    "url": "http://www.eatock.bolton.sch.uk",
+    "geocode": true,
+    "formatted_address": "St George's Ave, Westhoughton, Bolton BL5 2EZ, UK",
+    "latitude": 53.5391392,
+    "longitude": -2.5232389,
+    "post_code": "BL5 2EZ",
+    "city": "Westhoughton",
+    "route": "Saint George's Avenue",
+    "postal_town": "Bolton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The Eatock Primary Cluster School Direct programme will be delivered by good and outstanding practitioners in a highly supportive and aspirational environment. The programme is aimed at developing your skills, knowledge and understanding required for teaching within the classrooms of tomorrow. \\r\n\\r\nThe majority of training will be delivered by the Eatock Cluster School Partners and Edge Hill University. The programme supports trainees to develop innovative and creative approaches to teaching in a supportive environment. Trainees will be provided with classroom based experiences which will enable them to reflect on pedagogy in practice. \\r\nEdge Hill University’s teaching and learning experience is of the highest quality, with a curriculum that is inspiring, relevant and informed by the outcomes of up to date research. As part of your School Direct experience, you will have access to state of the art facilities at Edge Hill University’s Ormskirk campus and regular interaction with fellow PGCE trainees.\\r\n\\r\nWhy join the Eatock Primary Cluster?\\r\n\\r\nWe offer our Initial Teacher Training (ITT) trainees an outstanding School Direct programme which includes the following: \\r\n* School led professional learning.\\r\n\\r\n* High quality training provided by Eatock and other primary schools within the Eatock Primary Cluster.\\r\n\\r\n* A high quality teacher training programme and support from Edge Hill University.\\r\n\\r\n* Individual support and mentoring by good and outstanding practitioners within their own school. \\r\n\\r\n* First-hand experience of Learning Outside the Classroom and how to use it to enhance teaching and learning. \\r\n\\r\n* PCGE Primary Education with QTS Qualification (60 credits) – Working with both Eatock Primary Cluster and Edge Hill University you will work towards your QTS qualification. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "* Qualifications - GCSEs at grade C or above (or equivalent qualification) in English Language and Mathematics prior to application. We also require GCSE at grade C (or equivalent qualification) in Combined Science / Physics / Chemistry / Biology and two additional National Curriculum subjects (as taught in Key Stages 1 and 2).\\r\n* Degree - A first or second class Honours degree from a UK university.\\r\n* Personal and presentational qualities - including a good standard of written English\\r\n",
+    "InterviewProcess": "Eatock Primary School is the lead school in the partnership and will be coordinating the recruitment process. This will involve a full day within one of our Partner schools and will include:\\r\n•\\t20 minute observed teaching activity \\r\n•\\tAn interactive school tour\\r\n•\\tAn interview\\r\n•\\tA written task\\r\nPrior to your interview day, you will be informed of the content of the activity and the age group you will be teaching. Our Interview team will consist of Senior leaders from the Eatock Primary Cluster schools and Edge Hill University staff.\\r\nThe rigorous and thorough process is aimed at recruiting trainees of the highest calibre.\\r\n",
+    "OtherRequirements": "* All students will have a Enhanced DBS check before undertaking the course. \\r\n\\r\n* School Experience - A commitment to, and understanding of, primary education, normally founded on at least 10 days of experience in primary classrooms in the two years prior to your application\\r\n\\r\n",
+    "PersonalQualities": "* At Eatock we are looking for students who have previous experience of working with primary aged children. \\r\n\\r\n* We are looking for students who can demonstrate: commitment, resilience, good communication skills, a commitment to teaching and a desire to be the best classroom practitioner they can be. You must also be well organised and enthusiastic. ",
+    "HowSchoolPlacementsWork": "All schools within the Eatock Cluster work closely to ensure that each student experiences what it is like working in a school on a day to day basis. Students are welcomed into classrooms and encouraged to get involved with the life of the school. \\r\n\\r\nDuring the course you will undertake two long term placements (November - February and April - June). As well as these placements you will attend ten enhancement days at Eatock and in some of our partner schools. \\r\n\\r\nAll schools within are cluster are based in Wigan and Bolton. \\r\n\\r\nWe have single and two-form entry schools. \\r\n\\r\nAll placements will take place in Primary Schools and will be based in classes from Year 1 upwards. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "* Eatock is currently ranked in the top 2% of schools nationally for children's progress from entering school to leaving in Year 6. \\r\n\\r\n* We are also rated as 'Outstanding' in every area of our most recent Ofsted inspection.\\r\n\\r\n* Eatock holds the Gold award for 'Learning outside the Classroom' and this is an area we are particularly keen for our School Direct students to experience. \\r\n\\r\n* We are a one form entry primary school with a nursery. \\r\n\\r\n* For the past two years 100% of our School Direct students have gained employment on the completion of their studies. \\r\n\\r\n* Eatock has a very experienced  staff team and a designated School Direct Lead to work with students throughout the twelves months of the School Direct course. \\r\n\\r\n* Within the Eatock Cluster there are schools offering the opportunity to teach in a wide variety of settings in the Bolton and Wigan Boroughs. \\r\n\\r\n* Eatock is a Centre of Excellence for the Inclusion Quality Mark. \\r\n\\r\n* Eatock has four Specialists in Education employed at school who work with students during Enhancement days and on their placements. \\r\n\\r\n\\r\n* Visit Eatock's website (http://www.eatock.bolton.sch.uk/)\\r\n",
+    "TrainWithDisability": "* Eatock is a all-inclusive school and welcomes applications from students with disabilities. \\r\n\\r\n*Eatock is currently working towards the 'Dyslexia Award'. \\r\n\\r\n* Eatock is a purpose built all-inclusive school with wheelchair access all around the school premises. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Edge Hill University is based on an attractive, award-winning 160-acre campus in Lancashire, close to Liverpool and Manchester. \\r\n\\r\nThe institution’s significant success in achieving its mission is recognised by a range of awards and high rankings for teaching, student experience, accommodation and more. Edge Hill is ranked as Gold in the Teaching Excellence Framework (TEF), the government’s evaluation of excellence in teaching quality, learning environment and student outcomes. The University is also one of the select few to have held the coveted UK University of the Year title, awarded by Times Higher Education (2014/15).",
+        "UcasInstitutionCode": "E42"
+      }
+    ]
+  },
+  "has_inst": true
+}

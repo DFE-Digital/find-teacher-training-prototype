@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "King's College London (University of London",
+  "provider": "Tonbridge Grammar School",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "1LX/2Y9Z",
+  "providerCode": "1LX",
+  "programmeCode": "2Y9Z",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Deakin Leas, Tonbridge, TN9 2JR",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Deakin Leas, Tonbridge, TN9 2JR",
+      "geocode": true,
+      "formatted_address": "Deakin Leas, Tonbridge TN9 2JR, UK",
+      "latitude": 51.1835912,
+      "longitude": 0.2730175,
+      "post_code": "TN9 2JR",
+      "city": "Kent",
+      "route": "Deakin Leas",
+      "postal_town": "Tonbridge"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1LX",
+    "addr_1": "Tonbridge Grammar School",
+    "addr_2": "Deakin Leas",
+    "addr_3": null,
+    "addr_4": "Tonbridge",
+    "postcode": "TN9 2JR ",
+    "url": "https://www.tgs.kent.sch.uk/wanttobeateacher/",
+    "geocode": true,
+    "formatted_address": "Deakin Leas, Tonbridge TN9 2JR, UK",
+    "latitude": 51.1837732,
+    "longitude": 0.2736904000000001,
+    "post_code": "TN9 2JR",
+    "city": "Kent",
+    "route": "Deakin Leas",
+    "postal_town": "Tonbridge"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "n/a",
+    "AboutCourse": "Located in the heart of London, School Direct PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. \\r\n\\r\nThe special features of the PGCE science programmes at King’s are:\\r\n\\r\n - Separate groups for each of the four science specialisms: Biology, Chemistry, Physics and Physics with Mathematics. These focus on how to teach your specialist subject to the age range 11-18.\\r\n - Sessions designed to help you teach science topics which are outside your science subject specialism. These are designed to help you contribute to science programmes at Key Stage 3 and 4.\\r\n - 'Science Pedagogy' sessions where you work in mixed groups of science students on topics like scientific enquiry, formative assessment, use of discussion in science lessons and cognitive acceleration through science education. These classes are often taught by people who are at the forefront of research about innovative teaching strategies. The Science Education research group at King's is the largest in the UK and has a strong national and international reputation. This allows us to feed new ideas into the PGCE programme and creates a dynamic and forward-looking course. \\r\n - The course is set in the context of a friendly department with a strong commitment to our students.\\r\n\\r\nTraining at Tonbridge Grammar School provides outstanding opportunities to develop your science subject knowledge and pedagogy in an exciting and creative environment.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "A UK honours degree or international equivalent, preferably 2:1 honours or above, in Science relevant to the subject specialism chosen for the PGCE.\\r\nAll applicants must possess a grade C/ grade 4 in GCSE English and Maths (or equivalent).\\r\n",
+    "FeeInternational": 19320.0,
+    "FinancialSupport": "n/a",
+    "InterviewProcess": "Stage 1: School based process: Interview and lesson taster delivery. We offer school experience opportunities to help prepare the candidate for this, and to develop their skills in the classroom.\\r\n\\r\nStage 2: Kings: The selection process will  involve an interview, a group task and a short piece of writing.\\r\n\\r\nInterview/ group task\\r\nIn interview and group task we will be looking for:\\r\n\\r\n - evidence that you have a commitment to working with young people;\\r\n - ability to explain clearly and to think on your feet;\\r\n - evidence of good interpersonal skills;\\r\n - knowledge of school level science in each of biology, chemistry and physics;\\r\n - familiarity with the realities of teaching science in secondary schools;\\r\n - awareness of current educational issues;\\r\n - commitment to equal opportunities;\\r\n - ability to work well in a group dynamic.\\r\n\\r\nIn your writing we will be looking for:\\r\n\\r\n - ability to express yourself clearly;\\r\n - accurate grammar and spelling\\r\n",
+    "OtherRequirements": "All applicants for teacher training programmes must pass the Department for Education’s Literacy and Numeracy Skills Tests prior to commencing their teacher training course.\\r\n\\r\nThe Department for Education requires the Disclosure and Barring Service (formerly the Criminal Records Bureau) to vet the background of persons working in their schools. Candidates offered a place on a PGCE course will be asked to complete an enhanced check with the DBS to ensure they do not have a criminal background which might prevent them from working as a teacher. This must be completed before you register on the programme.\\r\n",
+    "PersonalQualities": "We are looking for:\\r\n\\r\n - commitment to teaching;\\r\n - good communication skills (both oral and written);\\r\n - good interpersonal skills;\\r\n - good knowledge of science in the specialist science chosen and potential to teach this up to A level;\\r\n-  a good knowledge of science in most of the areas of the National Curriculum for Science and potential to develop competence to contribute to a science programme up to age 16 (Key Stage 4);\\r\n - an ability to explain science clearly;\\r\n - potential to manage young people effectively;\\r\n - awareness of current educational issues;\\r\n - commitment to equal opportunities.\\r\n",
+    "HowSchoolPlacementsWork": "You will have two different school placements during the course. You will be based in Tonbridge Kent within easy reach of London.\\r\nWe work with a large number of schools around West Kent through membership of Teaching School Alliances and we select school placements carefully, taking into account the teachers who act as mentors and the subjects they offer. \\r\n\\r\nWe try to ensure that all trainees have a reasonable journey to school and to ensure that you have a balanced teaching experience including the full secondary age (11-18) and ability range.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "School Direct is a route into teaching which moves the focus of study from a university to a school. With School Direct, you are selected by us from day one and we make a commitment not only to your training but to your subsequent employment.\\r\n\\r\nWe are a high achieving selective grammar school with academy status, educating girls between the ages of 11 and 16 and girls and boys in the Sixth Form. We prepare students for GCSEs and the International Baccalaureate. In addition to an extensive curriculum, there is an extensive range of extracurricular activities. [SCHOOL VISION](https://www.tgs.kent.sch.uk/school-vision/)\\r\n\\r\nWe work in partnership with King's College London to provide a tailored programme of training. \\r\n\\r\nDo have a look at our other ITT places with the Kaizen Alliance - under Weald of Kent Grammar School.\\r\n\\r\nAdditionally as a lead school we are able to provide the following :\\r\n\\r\n* Popular school experience placements prior to the starting of the course.\\r\n* Focused school-based Professional Studies.\\r\n* Subject Knowledge knowledge development in a high performing school \\r\n* The opportunity to gain 70 Masters Credits.\\r\n* Training opportunities across our ITT contact schools and the Kaizen Teaching School Alliance.\\r\n* School Placements in differing contexts across our network of schools and Pupil Referral Unit.\\r\n* An SEN experience.\\r\n* Support to secure a teaching position on completion of the course.\\r\n",
+    "TrainWithDisability": "To comply with equality legislation, we ensure that interview procedures promote equality of opportunity and avoid discrimination. It is a two stage process with KCL.\\r\n\\r\nApplicants with disabilities are under no obligation to disclose their disabilities. We, together with KCL will ensure that our provision does not place applicants with declared disabilities at a disadvantage. We will consider making anticipatory adjustments to promote positively equality of access for disabled applicants, including access to benefits, facilities and services. \\r\n\\r\nWe will support candidates with disabilities and other needs within our Equality Policy and we have well developed staff well-being programmes.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We have worked with KCL for a number of years. You will do your PGCE taught elements in Central London.  [KING'S INFO](https://www.kcl.ac.uk/sspp/departments/education/study/schooldirect/Information-for-Trainees.aspx)",
+        "UcasInstitutionCode": "K60"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Goldsmiths, University of London",
+  "provider": "John Donne Primary School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "1DS/28CN",
+  "providerCode": "1DS",
+  "programmeCode": "28CN",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Woods Road, London, SE15 2SW",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Woods Road, London, SE15 2SW",
+      "geocode": true,
+      "formatted_address": "Wood's Rd, London SE15 2SW, UK",
+      "latitude": 51.47274280000001,
+      "longitude": -0.0611774,
+      "post_code": "SE15 2SW",
+      "city": "Greater London",
+      "route": "Wood's Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1DS",
+    "addr_1": "John Donne Primary School",
+    "addr_2": "Woods Road",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "SE15 2SW",
+    "url": "http://www.johndonne.southwark.sch.uk",
+    "geocode": true,
+    "formatted_address": "Wood's Rd, London SE15 2SW, UK",
+    "latitude": 51.4727429,
+    "longitude": -0.0611774,
+    "post_code": "SE15 2SW",
+    "city": "Greater London",
+    "route": "Wood's Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "The John Donne School Direct programme is a school-based model of teacher training where trainees are employed by a school within the partnership for an academic year.  Trainees are released for approximately 40 days to complete academic study at Goldsmiths College.  There is also the opportunity to work at another contrasting school within the partnership for a 5 week placement.\\r\n\\r\nThe programme covers all the National Curriculum subjects, and in each curriculum area, you will have the opportunity to develop understanding of the teaching and learning process, and to learn about effective classroom practice. \\r\n\\r\nIn addition to the work in classrooms and the academic studies, trainees will benefit from a professional studies programme.  It is designed to provide school-focussed learning with a particular spotlight on practical issues for trainees in their everyday practice.  Trainees will have the opportunity to visit a variety of other schools in the partnership, to learn about different approaches to teaching and learning, and some chances to reflect on their learning and progress on the School Direct programme.\\r\n\\r\nTrainees will be provided with a variety of support across their training year including both a school and university based mentor who will work with the trainee to develop a bespoke developmental plan to improve teaching practice.\\r\n\\r\nThis programme offers a PGCE with QTS and is assessed through observations of classroom competency, evidence to show the ability to meet the Department for Education Professional Standards as well as a series of academic assignments.\\r\n\\r\nThe school-based mode of teacher training offered through the John Donne Partnership is a dynamic programme of practical learning and academic study which allows trainees to develop their skills and prepares them for their teaching career. \\r\n\\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "Trainees are paid on the Unqualified teacher scale and will start at point 1.",
+    "Qualifications": "Candidates will need the following qualifications to apply for School Direct through the John Donne partnership:\\r\n\\r\n* A degree at 2:1 or higher\\r\n* Grade C or higher for GCSE Maths, English and Science\\r\n",
+    "InterviewProcess": "Successfully shortlisted candidates will be invited to an interview day which will comprise the following activities:\\r\n\\r\n* An interview with a selection of senior staff from the partnership schools\\r\n* A 20 minute teaching task with a small group of children\\r\n* A written task, reflecting on the teaching task\\r\n* A phonics check\\r\n* A maths check\\r\n* A group discussion around an educational quote",
+    "OtherRequirements": "All candidates will need to have at least 2 years work experience post degree.  This work experience can be in any field but some work with children would be preferred.",
+    "PersonalQualities": "We are looking for candidates who are motivated and enthusiastic about working with children.  They should have at least some experience of working with children but this does not necessarily need to be in the education sector.",
+    "HowSchoolPlacementsWork": "Trainees will be employed at one school within the partnership for the duration of their training.  They will work in a classroom alongside an experienced teacher and will gradually build up their teaching responsibility across the year.\\r\n\\r\nAll trainees will undertake a 5 week alternate placements at another school within the partnership. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We offer outstanding teacher training in creative and innovative schools. You will have access to expert teachers from whom you can learn the art of teaching. You will also learn the very latest in theory and research on which our teaching rests. On completion you will be well equipped to teach in schools in London and across the world. \\r\nYou will join Goldsmiths, University of London's Primary programme, with full access to university services and facilities, benefitting from the expertise and the research profile of our Primary team. You will focus on either Foundation Stage/Key Stage 1, Key Stage 1/Key stage 2 or Key Stage 2. You are supported professionally by a system of school and personal tutoring and will spend 120 days in two different placement schools within this School Direct cluster. \\r\n\\r\nWe are proud that our School Direct salaried programme leads to the award of the Postgraduate Certificate in Education (PGCE), with 60 Master's credits and QTS. \\r\n\\r\nThe programme covers all the National Curriculum subjects and deals in detail with the three core areas of English, Mathematics and Science. In each curriculum area, opportunities are provided to enable you to develop understanding of the teaching and learning process, and to learn about effective classroom practice. The 3-7 age range programme includes additional sessions relevant to teaching in the Foundation Stage. Cross curricular themes, skills and dimensions are a vital part of the programme, and thematic integrated patterns of work are encouraged throughout your school experience and college-based work.",
+    "TrainWithDisability": "Goldsmiths has a dedicated Disability Team, which is part of Student Services. The team is responsible for the co-ordination of support for current and prospective disabled students. The University is committed to supporting students, and will make reasonable adjustments to allow you to concentrate on your academic studies and support your independence. The campus is accessible to students with limited mobility.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Goldsmiths have a strong and longstanding partnership with a range of schools in London and south-east England and work closely with them to plan and implement our PGCE (Primary) programme.\\r\n\\r\nIn 2015 98% of student who were recommended for QTS with Goldsmiths were employed in schools. This figure is higher than the national average. Almost nine out of ten Goldsmiths graduates obtained teaching posts in London schools and about two thirds are employed within partnership schools.\\r\n\\r\nGoldsmiths offer personalised support and enrichment activities for all students, as these are strong factors in helping them achieve their goals",
+        "UcasInstitutionCode": "G56"
+      }
+    ]
+  },
+  "has_inst": true
+}

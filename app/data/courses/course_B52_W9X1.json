@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Bournemouth Poole & Dorset Secondary Training Partnership",
+  "subjects": [
+    "Design and technology",
+    "Secondary"
+  ],
+  "name": "Design and Technology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "B52/W9X1",
+  "providerCode": "B52",
+  "programmeCode": "W9X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "geocode": true,
+      "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+      "latitude": 50.73322599999999,
+      "longitude": -1.782691,
+      "post_code": "BH23 1JF",
+      "city": "Dorset",
+      "route": "Sopers Lane",
+      "postal_town": "Christchurch"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "B52",
+    "addr_1": "BPD Secondary Training Partnership",
+    "addr_2": "Twynham School",
+    "addr_3": "Sopers Lane",
+    "addr_4": "Christchurch",
+    "postcode": "BH23 1JF",
+    "url": "http://www.bpdscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+    "latitude": 50.73322599999999,
+    "longitude": -1.782691,
+    "post_code": "BH23 1JF",
+    "city": "Dorset",
+    "route": "Sopers Lane",
+    "postal_town": "Christchurch"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "- Train for a rewarding career in secondary design and technology teaching.\\r\n- Undertake 120 days of school-based training in two different school settings.\\r\n- Participate in practical work in our well-equipped facilities to help you learn creative and innovative teaching methods.\\r\n- Attain a masters-level PGCE, or a PCE alongside Qualified Teacher status (QTS).\\r\n\\r\nThis course will help you to grow academically and professionally and has, as its primary aim, the development and supply of competent teachers who are capable of securing employment in an education setting. You graduate as an experienced and employable design and technology teacher, ready to inspire young people.\\r\n\\r\nThis course provides an advanced academic qualification alongside the real-world experience in school settings. Along with honing your subject skills, you'll learn crucial teaching techniques including behaviour management and student support. There are 120 days of school-based training that allow you to become used to the realities of teaching before graduation. You are assessed through supportive, collaborative means, helping you to grow and improve.\\r\n\\r\nYou learn through\\r\n\\r\n- 120 days of school based training across at least two settings\\r\n- classes in our well-equipped facilities\\r\n- seminars and lectures\\r\n- workshops\\r\n- school-based experiences\\r\n- independent study\\r\n- group work\\r\n- practical work\\r\n- written assessments and feedback",
+    "CourseLength": "OneYear",
+    "FeeInternational": 13500.0,
+    "InterviewProcess": "If you are shortlisted, we will invite you to a selection event, and you should bring a passport or photo driving license with you. You can bring other forms of photo ID for the selection event, but if you do, you will still need to present valid identity documents required by the Disclosure and Barring Service (DBS) at your pre-course day.\\r\n\\r\nThe selection event is a process which assesses if you're suitable for a place on the course. It's a chance to show us your knowledge about the subject and your enthusiasm for the career. Being invited to a selection event doesn't mean you're guaranteed a place on the course - the point of the day is to help us come to a mutual decision. We need to decide whether to make you an offer and you need to decide whether you like the course and the university.\\r\n\\r\nWe aim to make the interview process as rigorous and informative as possible. It's very much a two-way process, where you can evaluate what we offer while we find out more about you. In order to help us explore your thinking and subject knowledge, and for you to decide if this is the right course for you, we have a number of activities we usually use as part of the interview process.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "This course ensures that you'll have the real-life experience you need to enter teaching. You'll spend 120 days across two or more sites, with school-based mentors and campus-based tutors monitoring your progress and providing support. Upon graduating, some of our students go into full-time employment at their placement school.\\r\n\\r\nYou will take responsibility for your own development against the statutory requirements for QTS and will record your progress in a Professional Development Portfolio (PDP). This collaborative process involves you, university-based tutors and school-based mentors. As you complete the course you will review your progress, plan for your entry to the teaching profession and for your ongoing development as a Newly Qualified Teacher (NQT)."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Bournemouth Poole & Dorset Teacher Training Partnership is a consortium of 16 secondary schools working in close partnership. Our partnership schools extend from Swanage in the west to Lymington on the edge of the New Forest in the east. The Lead School for the Partnership is Twynham School, located in the historic harbour town of Christchurch, an OFSTED  'Outstanding' school and national Teaching School.  The Partnership offers a full-time one-year course running from September-July. Successful completion of this course brings with it the award of QTS (Qualified Teacher Status) with a PGCE (Post-Graduate Certificate in Education) validated by the University of Winchester \\r\n\\r\nA distinctive feature of the BPD course is the focus on carefully staged and appropriately supervised practical classroom experience within two secondary schools, which is further supported by academic and professional study via central training. All partner schools have experience of Initial Teacher Training and a good record of pupil progress and achievement. \\r\n\\r\nCurrently the BPD Partnership offers SCITT training in the following subject areas: English, Mathematics, Biology, Chemistry, Physics, MFL, Design & Technology, Geography, Computer Science, Music, Physical Education, Art & Design, Religious Education, History & Dance/Performance. \\r\n\\r\nIf you are looking for a training course which is grounded in practical classroom experience then the school-centred route is ideal for you.\\r\nOur trainees have a very high success rate in completion and moving onto employment,  with the majority of those gaining employment working in the local area where many gain rapid promotion.\\r\n\\r\n {Check out our website](www.bpdscitt.org.uk)",
+    "TrainWithDisability": "There is access for people with disabilities, although not all schools offering placements are able to cater for people with disabilities in all subjects due to the architecture and layout of school departments. Please contact the Partnership Office if you wish to discuss this aspect further. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

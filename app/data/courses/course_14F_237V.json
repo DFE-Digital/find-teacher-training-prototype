@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Camden Primary Partnership TSA",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "14F/237V",
+  "providerCode": "14F",
+  "programmeCode": "237V",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Lupton Street, London, NW5 2JA",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Lupton Street, London, NW5 2JA",
+      "geocode": true,
+      "formatted_address": "Lupton St, London NW5 2HT, UK",
+      "latitude": 51.5546143,
+      "longitude": -0.1386623,
+      "post_code": "NW5 2HT",
+      "city": "Greater London",
+      "route": "Lupton Street",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "14F",
+    "addr_1": "Eleanor Palmer Primary School",
+    "addr_2": "Lupton Street",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "NW5 2JA ",
+    "url": "http://www.eleanorpalmer.camden.sch.uk",
+    "geocode": true,
+    "formatted_address": "Lupton St, London NW5 2JA, UK",
+    "latitude": 51.55463349999999,
+    "longitude": -0.1386946,
+    "post_code": "NW5 2JA",
+    "city": "Greater London",
+    "route": "Lupton Street",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Contact UCL's IOE for more information on fees.",
+    "AboutCourse": "You will join the highly regarded primary PGCE at Institute of Education and have full access to the University's facilities.\\r\n\\r\nThe primary PGCE is a highly popular course that develops effective, confident teachers whose classroom practice is informed by an advanced knowledge of educational theory, and who will continue to learn and reflect throughout their careers.\\r\n\\r\nAs part of the programme you will be assigned a university tutor who will support your development as a teacher through tutorials, visits to school and guidance with assignments.\\r\n\\r\nSuccessfully completing all aspects of the course will gain you the award of Postgraduate Certificate in Education (PGCE) which also carries 60 M level credits that may be used towards a subsequent masters degree.  The course also leads to the award of QTS (Qualified Teacher Status).",
+    "CourseLength": "OneYear",
+    "Qualifications": "You will be a graduate with a good degree.Please note that for our 2018 intake, 90% of successful candidates had a 2:1 or a 1st. In exceptional circumstances we may consider an applicant with a 2:2. We are sorry but we cannot accept 3rd class degrees at present.",
+    "InterviewProcess": "Eleanor Palmer School is the lead school in our Teaching School Alliance and we will be co-ordinating the recruitment process. We think it's really important that we meet you (and you meet us!) before we short-list. Therefore you should contactVicky Green  as soon as possible by email vicky@eleanorpalmer.camden.sch.uk or phone 020 7485 2155. It is very important that you contact Vicky as soon as possible for a discussion and to book your place on one of our open days so that she can meet you and show you around our school and discuss the programme with you at any convenient time.  \\r\n\\r\nIf your initial application meets our criteria, you will be invited to attend Eleanor Palmer Primary School for an assessment day which will involve an  assessed group exercise with some of our pupils, a short presentation and an interview with a panel of interviewers including a senior teacher from one of our partnership schools and a representative of the Institute of Education.",
+    "PersonalQualities": "As a trainee teacher on our programme, we expect candidates to have:\\r\n\\r\n* commitment to our approach to learning;\\r\n* a desire to approach curriculum planning in a creative and imaginative way;\\r\n* very high standards for children and themselves;\\r\n* commitment to inclusion;\\r\n* genuine interest in educational thinking and debate;\\r\n* ability and willingness to continuously reflect, improve and learn from mistakes;\\r\n* high interpersonal and communication skills;\\r\n* ability to sustain optimism, energy and a positive outlook under pressure and challenge;\\r\n* capacity for hard work; and \\r\n* a sense of humour!",
+    "HowSchoolPlacementsWork": "You will be placed in one of our partner schools for the first two terms of your training.  After this autumn / spring experience we identify each individual's strengths and areas for development so that we place you in a partnership school for the summer term which is best suited to meet your targets. \\r\n\\r\nCrucially, our students also get together on Thursday afternoons (each time in a different school from within the partnership) and spend time observing lessons, benefiting from additional training and reflecting on practice. This creates a really strong peer group which students find incredibly supportive and valuable. It also adds an important third dimension to your teacher training experience (in addition to UCL/IOE study and the placements). \\r\n\\r\nOur current Partner Schools are Brecknock Primary School , Christopher Hatton Primary School, Gospel Oak Primary School, Fleet Primary School, Holy Trinity and St Silas C of E Primary School NW1, Kentish Town C of E Primary School, Netley Primary School, Primrose Hill Primary School, Rhyl Primary School, Thomas Coram Centre and Torriano \\r\nPrimary School.\\r\n\\r\nIn short we offer:\\r\n\\r\n* Access to teaching practices in outstanding schools in an outstanding borough;\\r\n* Schools that have strong and long standing links with the UCL IOE;\\r\n* The opportunity to ‘front-load’ the training year with the chance to observe outstanding practice;\\r\n* Experience in genuinely comprehensive schools where you would gain experience of both very challenging pupils and also some exceptionally high achievers;\\r\n* School-based tutorials as a group led by experienced members of the school leadership team;\\r\n* Learning in schools that share a strong commitment to child centred hands on learning rooted in an exciting topic based approach;\\r\n* The chance to train amongst highly committed, positive  professional staff;\\r\n* The opportunity to become part of a school community thus gaining understanding of the richness and complexities of primary teaching.\\r\nStrong programme leadership by Eleanor Palmer Deputy Head, Sally Hill and from the UCL IOE. Sally liaises with mentors and classteachers from our across our partner schools to ensure that all students have a very well-supported ITT experience."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We offer:\\r\n\\r\n* Access to teaching practices in excellent schools within an excellent borough\\r\n* Partnership with an outstanding HEI (Ofsted 2013)\\r\n* Schools that have strong and long-standing links with the UCL Institute of Education (IOE)\\r\n* Lots of opportunities for cross-phase observation and experience of different settings and teaching styles across our partner schools\\r\n* Experienced course leaders and mentors\\r\n* Placements in genuinely comprehensive schools, gaining experience of both very challenging and very high achieving pupils\\r\n* School-based tutorials as a group led by experienced members of the Leadership Team\\r\n* Leaning in schools that share a strong commitment to child centred hands on learning rooted in an exciting topic based approach\\r\n* The chance to train among highly committed, positive professional staff\\r\n* The opportunity to become part of a school community thus gaining understanding of the richness and complexities of primary teaching\\r\n* Strong programme leadership by Eleanor Palmer senior leaders and our course tutor at the UCL IOE\\r\n* Throughout the year strong liaison between mentors and class teachers from across our partner schools to ensure that all students have a very well supported ITT experience\\r\n",
+    "TrainWithDisability": "We will always make reasonable adjustments for candidates with differing abilities, including attempting to second them to schools able to offer an appropriate environment for their accessibility needs.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our Teacher Training Programme (School Direct non-salaried route) is run in conjunction with the Institute of Education (IOE) and leads to a PGCE Qualification. Our students attend exactly the same lectures as all the other PGCE students at UCL IOE but also get together each week (usually Thursday afternoons) for specific, additional school-based INSET sessions in one of our partner schools, all excellent, all in Camden, a lead London borough. Our students also know that we take great care in organising their school placements within our group of outstanding Camden schools.",
+        "UcasInstitutionCode": "U80"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,251 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The Hampshire LEARN SCITT Partnership",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "1X9/2WD8",
+  "providerCode": "1X9",
+  "programmeCode": "2WD8",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Thornden School, Winchester Road, Chandlers Ford, Hampshire, SO53 2DW",
+      "code": "-"
+    },
+    {
+      "name": "Testbourne Community School",
+      "address": "Micheldever Road, Whitchurch, Hampshire, RG28 7JF",
+      "code": "6"
+    },
+    {
+      "name": "Crofton School",
+      "address": "Marks Road, Stubbington, Fareham, Hampshire, PO14 2AT",
+      "code": "7"
+    },
+    {
+      "name": "The Mountbatten School - A Language and Sports College",
+      "address": "Whitenap Lane, Romsey, Hampshire, SO51 5SY",
+      "code": "A"
+    },
+    {
+      "name": "Aldworth School",
+      "address": "Western Way, Basingstoke, Hampshire, RG22 6HA",
+      "code": "B"
+    },
+    {
+      "name": "Swanmore College of Technology",
+      "address": "New Road, Swanmore, Southampton, SO32 2RB",
+      "code": "C"
+    },
+    {
+      "name": "Perins School - A Community Sports College",
+      "address": "Pound Hill, Alresford, Hampshire, SO24 9BS",
+      "code": "D"
+    },
+    {
+      "name": "Robert May's School",
+      "address": "West Street, Odiham, Hook, RG29 1NA",
+      "code": "E"
+    },
+    {
+      "name": "The Romsey School",
+      "address": "Greatbridge, Romsey, Hampshire, SO51 8ZB",
+      "code": "F"
+    },
+    {
+      "name": "Crestwood College for Business and Enterprise",
+      "address": "Shakespeare Road, Eastleigh, Hampshire, SO50 4FZ",
+      "code": "G"
+    },
+    {
+      "name": "John Hanson Community School",
+      "address": "Floral Way, Andover, Hampshire, SP10 3PB",
+      "code": "J"
+    },
+    {
+      "name": "Brighton Hill Community School",
+      "address": "Brighton Way, Basingstoke, Hampshire, RG22 4HS",
+      "code": "M"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Thornden School, Winchester Road, Chandlers Ford, Hampshire, SO53 2DW",
+      "geocode": true,
+      "formatted_address": "Winchester Rd, Chandler's Ford, Eastleigh SO53 2DW, UK",
+      "latitude": 50.9944946,
+      "longitude": -1.3630079,
+      "post_code": "SO53 2DW",
+      "city": "Chandler's Ford",
+      "route": "Winchester Road",
+      "postal_town": "Eastleigh"
+    },
+    {
+      "address": "Micheldever Road, Whitchurch, Hampshire, RG28 7JF",
+      "geocode": true,
+      "formatted_address": "Micheldever Rd, Whitchurch RG28 7JF, UK",
+      "latitude": 51.2259342,
+      "longitude": -1.3355585,
+      "post_code": "RG28 7JF",
+      "city": "Hampshire",
+      "route": "Micheldever Road",
+      "postal_town": "Whitchurch"
+    },
+    {
+      "address": "Marks Road, Stubbington, Fareham, Hampshire, PO14 2AT",
+      "geocode": true,
+      "formatted_address": "Fareham PO14 2AT, UK",
+      "latitude": 50.82276,
+      "longitude": -1.2047548,
+      "post_code": "PO14 2AT",
+      "city": "Hampshire",
+      "route": null,
+      "postal_town": "Fareham"
+    },
+    {
+      "address": "Whitenap Lane, Romsey, Hampshire, SO51 5SY",
+      "geocode": true,
+      "formatted_address": "Whitenap Ln, Romsey SO51 5SY, UK",
+      "latitude": 50.9844265,
+      "longitude": -1.4700714,
+      "post_code": "SO51 5SY",
+      "city": "Hampshire",
+      "route": "Whitenap Lane",
+      "postal_town": "Romsey"
+    },
+    {
+      "address": "Western Way, Basingstoke, Hampshire, RG22 6HA",
+      "geocode": true,
+      "formatted_address": "Western Way, Basingstoke RG22 6HA, UK",
+      "latitude": 51.2538113,
+      "longitude": -1.1136694,
+      "post_code": "RG22 6HA",
+      "city": "Hampshire",
+      "route": "Western Way",
+      "postal_town": "Basingstoke"
+    },
+    {
+      "address": "New Road, Swanmore, Southampton, SO32 2RB",
+      "geocode": true,
+      "formatted_address": "Swanmore, Southampton SO32 2RB, UK",
+      "latitude": 50.9400196,
+      "longitude": -1.1884957,
+      "post_code": "SO32 2RB",
+      "city": "Swanmore",
+      "route": null,
+      "postal_town": "Southampton"
+    },
+    {
+      "address": "Pound Hill, Alresford, Hampshire, SO24 9BS",
+      "geocode": true,
+      "formatted_address": "Pound Hill, Alresford SO24 9BS, UK",
+      "latitude": 51.0897644,
+      "longitude": -1.1655736,
+      "post_code": "SO24 9BS",
+      "city": "Hampshire",
+      "route": "Pound Hill",
+      "postal_town": "Alresford"
+    },
+    {
+      "address": "West Street, Odiham, Hook, RG29 1NA",
+      "geocode": true,
+      "formatted_address": "Hook RG29 1NA, UK",
+      "latitude": 51.2531197,
+      "longitude": -0.9526260999999999,
+      "post_code": "RG29 1NA",
+      "city": "Hampshire",
+      "route": null,
+      "postal_town": "Hook"
+    },
+    {
+      "address": "Greatbridge, Romsey, Hampshire, SO51 8ZB",
+      "geocode": true,
+      "formatted_address": "Greatbridge Rd, Romsey SO51 0AD, UK",
+      "latitude": 50.9999033,
+      "longitude": -1.4981101,
+      "post_code": "SO51 0AD",
+      "city": "Hampshire",
+      "route": "Greatbridge Road",
+      "postal_town": "Romsey"
+    },
+    {
+      "address": "Shakespeare Road, Eastleigh, Hampshire, SO50 4FZ",
+      "geocode": true,
+      "formatted_address": "Shakespeare Rd, Eastleigh SO50 4FS, UK",
+      "latitude": 50.97704539999999,
+      "longitude": -1.3567601,
+      "post_code": "SO50 4FS",
+      "city": "Hampshire",
+      "route": "Shakespeare Road",
+      "postal_town": "Eastleigh"
+    },
+    {
+      "address": "Floral Way, Andover, Hampshire, SP10 3PB",
+      "geocode": true,
+      "formatted_address": "Floral Way, Andover SP10 3QD, UK",
+      "latitude": 51.2043603,
+      "longitude": -1.5036579,
+      "post_code": "SP10 3QD",
+      "city": "Hampshire",
+      "route": "Floral Way",
+      "postal_town": "Andover"
+    },
+    {
+      "address": "Brighton Way, Basingstoke, Hampshire, RG22 4HS",
+      "geocode": true,
+      "formatted_address": "Brighton Way, Basingstoke RG22 4EH, UK",
+      "latitude": 51.2467945,
+      "longitude": -1.1131979,
+      "post_code": "RG22 4EH",
+      "city": "Hampshire",
+      "route": "Brighton Way",
+      "postal_town": "Basingstoke"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1X9",
+    "addr_1": "LEARN Alliance",
+    "addr_2": "Thornden School, Winchester Road",
+    "addr_3": "Chandlers Ford",
+    "addr_4": "Hampshire",
+    "postcode": "SO53 2DW",
+    "url": "http://www.learnalliance.org.uk",
+    "geocode": true,
+    "formatted_address": "Winchester Rd, Chandler's Ford, Eastleigh SO53 2DW, UK",
+    "latitude": 50.994409,
+    "longitude": -1.3631275,
+    "post_code": "SO53 2DW",
+    "city": "Chandler's Ford",
+    "route": "Winchester Road",
+    "postal_town": "Eastleigh"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "For 2019/20 our tuition fees will be £9,000 for non-salaried trainees. Salaried trainees do not pay tuition fees.",
+    "AboutCourse": "From the very start of your training, you will be part of the teaching team in your school. Your programme will include training days across a number of schools in the Hampshire LEARN SCITT Partnership, training in your own school, subject specialist days led by outstanding practitioners and personalised training. \\r\n\\r\nMost of the training is delivered by practitioners in some of the best primary and secondary schools in Hampshire.  You will be assigned to one of the schools in our alliance for most of your training (your ‘home’ school) and you will have a second school placement, typically six weeks, which will give your opportunities to extend your practice in a different setting.  We prepare our trainees to teach the 5-11 age range on our Primary programme and the 11-16 age range on our Secondary programme.  For some secondary trainees, there will be opportunity to teach in the 11-18 age range.  All our partnership schools have comprehensive intakes and you will be working with young people of all abilities.  \\r\n\\r\nStaff from the University of Winchester will prepare you for the four academic assignments, the successful completion of which is required for the award of a PGCE and you will have access to the University Library for your academic research. Each Friday will be dedicated to training in one of our partnership schools.  On those days, there will be opportunities for discussion, both formal and informal with practitioners and with your peers.  You will benefit from being part of a highly supportive, professional network.\\r\n\\r\nYou will be assigned two members of staff in your ‘home’ and second placement schools, one from your subject area (or class teacher for Primary) and one who has responsibility for all the trainees in that school.   From the beginning you will be treated like a member of staff and you will attend staff meetings and professional development days.  \\r\n\\r\nEach year, we offer some salaried places.  Successful applicants will have a contract with their home school and will earn a salary during the training.  In return for the salary, you will be expected to teach some classes on your own from the start of the school year.  For this reason, salaried places are best suited to those who have some experience of working in a school in either a support role or as an unqualified teacher.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should have, or expect to be awarded an honours degree (minimum class 2:2) by a British University (or an equivalent qualification). For secondary school teaching, at least 50% of your degree content should be in the subject in which you will specialise. An exception is the option for extended training for Maths and Science teaching.\\r\n\\r\nYou will also need GCSE (or equivalent) grade A*-C / grade 9-4 certificates in mathematics and English to teach at secondary level.  To teach at primary level you will also require GCSE (or equivalent) grade A*-C / grade 9-4 in a science subject.",
+    "InterviewProcess": "Candidates invited to interview will participate in the following process:\\r\n-\\tAn interview with a panel typically comprised of the Director of the Hampshire LEARN SCITT Partnership and a subject specialist\\r\n-\\tA subject knowledge task to assess the candidate's subject knowledge against the requirements of the school curriculum (for Secondary applicants)\\r\n-\\tA literacy task\\r\n-\\tA teaching task (to a small group of pupils)\\r\n-\\tA presentation on a current educational topic\\r\n\\r\nThroughout this process, the emphasis is placed on generating a pleasant, informal and welcoming atmosphere in which candidates are able to gain as much information about the programme as they require in order to accept a place if it is offered subsequently.\\r\n\\r\nApplicants for salaried places will have a second round of interviews at the school(s) offering those places.  This will involve an interview with school leaders and a teaching task which will typically be a full lesson to a whole class.  \\r\n\\r\nApplicants will be sent interview details in advance so they have plenty of time for preparation.  Decisions about the offer of places are made very soon after the interviews and the outcomes communicated through UCAS. Unsuccessful candidates are offered feedback on their performance.\\r\n",
+    "OtherRequirements": "With your application, we will need to receive satisfactory references, generally from academic referees. Mature applicants who are changing careers may use professional referees.\\r\n\\r\nYou must pass the Numeracy and Literacy skills tests before the start of the programme.\\r\n\\r\nSuccessful applicants will be subject to a Disclosure and Barring Service (DBS) check at their own expense.  Trainees are also obliged to complete the SCITT’s Health Declaration form.\\r\n\\r\nIf English is your second language you will need to demonstrate at interview the correct and fluent use of standard English, both spoken and written, which is a requirement for Qualified Teacher Status",
+    "PersonalQualities": "We warmly welcome applicants from all backgrounds for whom becoming a highly effective teacher is their career aim.\\r\n\\r\nIn applications and during the interview process, we look for the following:  \\r\n-\\tA desire to teach and enthuse young people\\r\n-\\tAn awareness of the challenges of teaching\\r\n-\\tAn awareness of the challenges of the training programme\\r\n-\\tCommitment\\r\n-\\tStrong subject -based academic background\\r\n-\\tGood communication skills\\r\n-\\tAn ability to engage young people in learning\\r\n-\\tAn awareness of current educational issues\\r\n-\\tFamiliarity with the curriculum for the relevant key stages\\r\n-\\tAdaptability, resilience and professionalism",
+    "HowSchoolPlacementsWork": "Across our alliance, we work with some of the best primary and secondary schools in Hampshire. All our partner schools are committed to providing outstanding initial teacher training and typically, they offer places in subjects in which they are needing to recruit. Although there is no guarantee of a job in your home school, each year at least 85% of our trainees gain full time teaching posts in one of these schools.  \\r\n\\r\nAll safer recruitment procedures are followed by the Hampshire LEARN SCITT Partnership.  All the schools in our partnership are committed to safeguarding and promoting the welfare of children and young people and they expect all staff and trainees to share responsibility for this.\\r\n\\r\nWhen selecting a school for an applicant, the SCITT Director looks very carefully at travel time because we want our trainees to spend their time developing their practice rather than travelling.  The average distance our trainees travel to their schools is 6 miles.\\r\n\\r\nWe prepare our trainees to teach the 5-11 age range on our Primary programme and the 11-16 age range on our Secondary programme.  For some secondary trainees, there will be the opportunity to teach in the 11-18 age range and you will be asked at interview if this interests you.  Trainees start the programme in their “home” school, then have a placement in a second school in the first half of the Spring Term before returning to their “home school” until the programme finishes at the end of June.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Hampshire LEARN SCITT Partnership was judged Outstanding by Ofsted in November 2016: “This is an outstanding provision.  At every level and in every way, highly effective leaders have created a teacher training programme which regularly produces extremely proficient teachers who ‘hit the ground running’ when they begin their careers as NQTs.”\\r\n\\r\nIf you complete the course successfully, you will be awarded Qualified Teacher Status (QTS) and a Postgraduate Certificate in Education (PGCE) at Masters level.\\r\n\\r\nFor the preparation and award of the PGCE, we are in partnership with the University of Winchester which was also graded Outstanding for initial teacher training by Ofsted in 2017. \\r\n\\r\nWe are training to employ teachers for Hampshire as well as nationally.  Each year, 100% of our trainees gain full-time teaching posts, typically about 85% in our partner schools.  Our partner schools are skilled in identifying future leaders and some of our trainees gain promotion in the first two years of their teaching.\\r\n\\r\nWe are linked with the LEARN Teaching School Alliance and if you choose to start your career in one of the LEARN Alliance partner schools, we can support you at every step of the way.  As a Teaching School Alliance, we have training programmes for newly qualified teachers (NQTs), recently qualified teachers (RQTs) and aspiring middle leaders, senior leaders and headteachers.\\r\n",
+    "TrainWithDisability": "Our partner schools are all committed to equal opportunities.  One of the strengths identified in our Ofsted report is“the focused care and support provided for any trainees facing personal challenges which enable them to complete the programme successfully.”  The report goes on to comment, “Leaders also ensure that any trainee or NQT finding themselves in need of care or support is provided with it quickly. This contributes to the extremely high completion rates. It also means that trainees are fiercely proud of and affectionate towards the programme. \\r\n\\r\nAs school sites differ, those applicants with physical disabilities should contact the SCITT Administrator for details of the partner schools best suited to their needs.  All our partner schools have the expertise to support applicants with learning disabilities. A tutor from the University of Winchester offers support with the academic assignments.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

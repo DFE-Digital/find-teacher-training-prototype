@@ -1,0 +1,73 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of East London",
+  "subjects": [
+    "English",
+    "Primary"
+  ],
+  "name": "Primary with English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "E28/XQ1H",
+  "providerCode": "E28",
+  "programmeCode": "XQ1H",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Student Admissions Office, 4-6 University way, London, E16 2RD",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Student Admissions Office, 4-6 University way, London, E16 2RD",
+      "geocode": true,
+      "formatted_address": "4, East Building, 6 University Way, London E16, UK",
+      "latitude": 51.5075163,
+      "longitude": 0.0648165,
+      "post_code": "E16",
+      "city": "Greater London",
+      "route": "University Way",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E28",
+    "addr_1": "Docklands Campus",
+    "addr_2": "4-6 University Way",
+    "addr_3": "Newham",
+    "addr_4": "London",
+    "postcode": "E16 2RD ",
+    "url": "http://www.uel.ac.uk",
+    "geocode": true,
+    "formatted_address": "University Way, London E16 2RD, UK",
+    "latitude": 51.5076024,
+    "longitude": 0.0650809,
+    "post_code": "E16 2RD",
+    "city": "Greater London",
+    "route": "University Way",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Fees are for 2018/19 academic year and subject to change. \\r\n\\r\nAdditional costs incurred during your PGCE training year\\r\nTravel\\r\nTrainees are required to pay for their travel to and from their placement schools either using private and public transport. You will need to be prepared for the possibility of extra travelling time to and from your schools – possibly over an hour by car or significantly longer by public transport, although we make every reasonable effort to minimise your journey times.\\r\n\\r\nBooks\\r\nBooks are recommended but there is no requirement to purchase specific texts and you have access to the University of Warwick library.\\r\n\\r\nMaterials\\r\nYou will need writing materials. Ideally, you will need a laptop or tablet: you will certainly need access to some type of PC.\\r\n\\r\nFees\\r\nIf you are a nationality other than 'British' selected on your application you may be classed as having overseas fees status unless proven otherwise. Please contact our International Office for advice on your fees status before you apply.\\r\n",
+    "AboutCourse": "Delivered by an Ofsted rated 'Outstanding' provider of teacher training, this one year postgraduate course will recommend you, on completion, for Qualified Teacher Status (QTS) with full PGCE, to teach children aged 5-11 in primary, infant, junior or first and middle schools. We work closely with over 300 partnership schools to prepare you fully for the practical demands of teaching, including teaching across the primary curriculum. \\r\n\\r\nSubject Specialism\\r\nThe course offers specialisms in English, Mathematics, Science, Physical Education, Special Educational Needs and Creative Arts. \\r\n\\r\nOutstanding Training\\r\nYou'll be taught and supported by highly experienced tutors, class teachers and school mentors who have a national reputation for the quality of their training. \\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching/primary)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree\\r\nHave graduated, or be about to graduate, from a UK Higher Educational Institute or equivalent, with a 2:2 or above honours degree. Preference is given to candidates with a 2:1 or above honours degree in a relevant subject. \\r\n\\r\nGCSE\\r\nHold at least a Grade C or above in GCSE English Language, Mathematics and Science. Other qualifications may be approved as equivalent. \\r\n\\r\n[Further Information about Entry Requirements](https://warwick.ac.uk/fac/soc/cte/start-teaching/primary#requirements)\\r\n",
+    "OtherRequirements": "[School Experience](https://warwick.ac.uk/fac/soc/cte/start-teaching/school-experience)\\r\nHave had some experience in schools focusing on mainstream Key Stage 1 and Key Stage 2 classrooms, so that you are familiar with the atmosphere and demands across Primary. \\r\n\\r\nSkills Test\\r\nPass the Professional Skills Tests in numeracy and literacy. We suggest you register for the Skills Tests as soon as you have made your application to us. \\r\n\\r\nFitness to Teach\\r\nIn order to comply with the Department for Education, all applicants must satisfy to the University their physical and mental suitability to undertake teacher training. \\r\n",
+    "PersonalQualities": "Through your motivation, enthusiasm and passion for a subject, you can make a difference to students. Teaching is full of challenges and extraordinary rewards and the best teachers nurture creativity, discovery and character development in students.\\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching)\\r\n",
+    "HowSchoolPlacementsWork": "In partnership with our schools, we ensure you have access to the best and most inspiring, practising teachers and mentors. You will have opportunities to observe the best classroom practice and your individual needs will be met through mentoring on each of your placements. \\r\n\\r\n[Further Information](https://warwick.ac.uk/fac/soc/cte/start-teaching/primary#inspiring)"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The University of East London is a highly experienced and successful initial teacher training (ITT) and education provider. Courses are taught and supported by exceptional and dynamic staff. All of whom foster creativity, collaboration, innovation and student engagement at the heart of what they offer. We also value the link between the academic and the practice, and this will form a significant part of the ITT programme you undertake.\\r\n\\r\nThis year, UEL has achieved its best ever student satisfaction score and we officially have  the happiest students of any modern university in London, according to recent NSS league tables. To complement this, our end of programme survey outcomes in July 2018, suggest that over 95% of our teacher trainees rate the quality of their training through UEL as good or higher. Employability is also excellent with most subjects, phases and routes achieving 95-100% employment each year. \\r\n\\r\nUEL is an inclusive university and our teacher training programmes are highly diverse and multicultural. We are very proud of our trainee teachers, new and old, and what they have gone on to achieve in our schools. We are especially proud of the community we serve and how we take people from the local community who then go back into this community to teach - over 70% of our trainees find jobs within our partner schools each year. \\r\n\\r\nWe look forward to welcoming you to UEL and the Cass School of Education and Communities.",
+    "TrainWithDisability": "Applications from students with disabilities or other specific needs are welcomed. Initial teacher training programmes are based at our Stratford campus, which is fully accessible to all. UEL operates a very clear inclusivity policy. As a large provider of ITT, we have access to various support mechanisms for students who need this or would benefit from this additional support.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

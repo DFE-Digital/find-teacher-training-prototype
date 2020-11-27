@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Leeds Trinity University",
+  "provider": "Dixons Teacher Training",
+  "subjects": [
+    "Geography",
+    "Secondary"
+  ],
+  "name": "Geography",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "1EP/29BQ",
+  "providerCode": "1EP",
+  "programmeCode": "29BQ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Ripley Street, Bradford, BD5 7RR",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Ripley Street, Bradford, BD5 7RR",
+      "geocode": true,
+      "formatted_address": "Ripley St, Bradford BD5 7TX, UK",
+      "latitude": 53.7812725,
+      "longitude": -1.7582489,
+      "post_code": "BD5 7TX",
+      "city": "West Yorkshire",
+      "route": "Ripley Street",
+      "postal_town": "Bradford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1EP",
+    "addr_1": "Dixons City Academy",
+    "addr_2": "Ripley Street",
+    "addr_3": null,
+    "addr_4": "Bradford",
+    "postcode": "BD5 7RR ",
+    "url": "http://traintoteach.dixonsacademies.com",
+    "geocode": true,
+    "formatted_address": "Ripley St, Bradford BD5 7RR, UK",
+    "latitude": 53.78055999999999,
+    "longitude": -1.75719,
+    "post_code": "BD5 7RR",
+    "city": "West Yorkshire",
+    "route": "Ripley Street",
+    "postal_town": "Bradford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The Dixons School Direct Programme is almost entirely school based, you will be in classrooms working as a professional from the first week of the course. You will receive mentoring, coaching, co-planning and training sessions with a focus on what it takes to be a great teacher in our diverse communities. Leeds Trinity University will support our course by providing theory sessions while subject specialists will provide a bespoke programme to enable you to develop your knowledge and skills in your subject area.\\r\n\\r\nAll our trainees comment on the excellent organisation and professional approach of the staff running the course. They also identified the high level of personal support they each received during the year.\\r\n\\r\nThroughout the year you will be assessed against The Teachers' Standards through lesson observations, assignments and reflections on your impact on student progress. At the end of the training year you will achieve a PGCE (Post Graduate Certificate of Education) and QTS (Qualified Teacher Status).\\r\n\\r\nIf you gain employment in one of our Dixons schools you will receive continued professional development throughout your teaching career with us through the Dixons Teaching School.\\r\n \\r\nFor exceptional Trainees we can guarantee an NQT (Newly Qualified Teacher) position in one of our Dixons schools for 2020-21. This applies only for the EBacc subjects of English, Maths, Science, History, Geography and MFL.\\r\n\\r\n \\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "We are looking for:\\r\n\\r\n* A strong belief in the potential of every child, regardless of background\\r\n* Excellent academic qualifications including:\\r\n* 2:2 or above in a relevant Degree\\r\n* Solid and relevant A levels  \\r\n* Solid GCSEs including A*/A-C in English & Maths \\r\n* A passion for teaching and your subject \\r\n* The ability to reflect on feedback and use this to improve \\r\n* High amounts of resilience (as the programme will be challenging, but equally, with high amounts of support)\\r\n\\r\nIt also helps if you've had:\\r\n* Previous School Experience (or trained others/worked with young people)\\r\n",
+    "FeeInternational": 11750.0,
+    "InterviewProcess": "\\r\nIf shortlisted, you will be asked to: \\r\n\\r\n* teach a 20 minute ‘lesson’ to 6-10 KS3 students (KS5 students for Business Studies and Social Sciences) on a topic of your choice\\r\n* undertake a Subject Knowledge Test (the assessment is designed to initially assess your subject knowledge and your written communication) \\r\n* have a formal interview where you will be asked to reflect on your 'lesson', deliver a short presentation on a given topic and answer questions to ascertain your suitability for our course\\r\n\\r\nYou will also have a tour of the school and the opportunity to talk to students from Dixons City Academy.\\r\n\\r\n",
+    "PersonalQualities": "We are looking for people who have a strong and passionate desire to inspire and transform the lives of young people.\\r\n\\r\nYou must have a passion for teaching, have the required academic qualifications and have potentially had recent experience of a school environment (or have worked with young people in another context).\\r\n\\r\nYou must also be confident, willing to learn, resilient and have good interpersonal skills. In return we offer a professional environment providing rigorous training that will give you an excellent foundation for your future career enabling you to become the best teacher you can be.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Trainees will teach in two different and contrasting Dixons schools during the School Direct programme. Placements will be selected to meet the personal needs of individual trainees. Trainees will also have the opportunity to experience the other Dixons schools (including the new schools in Leeds) to enable them to fully immerse themselves in our unique Dixons ethos and culture."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Dixons Academies Bradford is a growing group of diverse and innovative Primary and Secondary schools in Bradford and Leeds. An integral part of the Dixons group is our Teaching School, which focuses on training, development and research. Our lead Teacher Training school, Dixons City Academy, has over 20 years experience in Teacher Training. It was recently included as one of four examples of best practice in the North of England for closing the gap for disadvantaged students. \\r\n\\r\nOur mission is to lead educational improvement in the region through high performing academies which value diversity and maximise student achievement.  One of our schools, Dixons Trinity Academy, was the first free school to be awarded 'Outstanding' status by Ofsted. We ensure that Dixons students have high aspirations and our collective ambition brings about success. Students learn together in well-ordered and happy communities, from all cultures and backgrounds across the cities. \\r\n\\r\nWe offer state of the art Teacher Training at Dixons drawing on current educational research. All of our Schools Direct trainees who have successfully completed the course have entered teaching and over 95% have obtained permanent teaching positions. Over the last two years all of our trainees were awarded outstanding or good status at the end of the course, with many securing NQT positions in our Dixons Schools.\\r\n\\r\nDixons Teacher Training is making a difference for the young people of Bradford and you could join us in this exciting opportunity.",
+    "TrainWithDisability": "We make suitable provision for disabled trainees, students and visitors on request. Lifts and ramps are currently used to access Dixons City Academy and to access all floors. Please contact us for further or specific information.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We have been in partnership with Leeds Trinity University for a number of years, we work alongside them to deliver expert Teacher Training for our Secondary subjects.\\r\n\\r\n",
+        "UcasInstitutionCode": "L24"
+      }
+    ]
+  },
+  "has_inst": true
+}

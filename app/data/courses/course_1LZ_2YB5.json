@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Kingston University",
+  "provider": "Latchmere Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1LZ/2YB5",
+  "providerCode": "1LZ",
+  "programmeCode": "2YB5",
+  "schools": [
+    {
+      "name": "Latchmere School",
+      "address": "Latchmere Road, KT2 5TT",
+      "code": "K"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Latchmere Road, KT2 5TT",
+      "geocode": true,
+      "formatted_address": "Latchmere Rd, Kingston upon Thames KT2 5TT, UK",
+      "latitude": 51.4222323,
+      "longitude": -0.2966321,
+      "post_code": "KT2 5TT",
+      "city": "Greater London",
+      "route": "Latchmere Road",
+      "postal_town": "Kingston upon Thames"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1LZ",
+    "addr_1": "Latchmere School",
+    "addr_2": "Latchmere Road",
+    "addr_3": null,
+    "addr_4": "Kingston upon Thames",
+    "postcode": "KT2 5TT ",
+    "url": "http://www.latchmereschool.org",
+    "geocode": true,
+    "formatted_address": "Latchmere Rd, Kingston upon Thames KT2 5TT, UK",
+    "latitude": 51.4225922,
+    "longitude": -0.294416,
+    "post_code": "KT2 5TT",
+    "city": "Greater London",
+    "route": "Latchmere Road",
+    "postal_town": "Kingston upon Thames"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "This course follows the full PGCE programme at Kingston University. You will be enrolled at Kingston University and all information about the course and assignments will be through them.",
+    "CourseLength": "OneYear",
+    "Qualifications": "The qualifications required are:\\r\n\\r\nAn honours degree 2:2 or above\\r\nGCSEs in Maths, English and Science\\r\nPassing the professional skills tests in English and Maths",
+    "InterviewProcess": "You will be interviewed at Latchmere. You will sit an English and Maths test which is the standard procedure for the University. You do not need to revise for these. Then there will be a reading task with children and we are looking for how you engage with children, what questions you may ask and what learning is taking place. Then there will be a panel interview.",
+    "OtherRequirements": "All trainees will require a criminal record check and will complete a health questionnaire.",
+    "PersonalQualities": "We are looking for trainees who are passionate about improving the outcomes for young people. A school is a busy workplace so you need to be flexible, adaptable, resourceful and resilient.",
+    "HowSchoolPlacementsWork": "Latchmere will organise both placements so we guarantee that you will be placed in Kingston schools. One of the placements will be at Latchmere itself.\\r\n\\r\nThe first placement is after October half term until Christmas and the second placement is from March to the end of June."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Latchmere is an outstanding school and our passion is teaching and learning. As a Teaching School, we are committed to providing a high quality route into teaching through the School Direct programme. This programme enables you to train on the job whilst receiving pedagogical input through training sessions based at Latchmere or the University. We draw on the latest theories in education and on the expertise across our alliance. We support you from the interview to preparation to start, beginning the programme, the placements and the award of QTS. Each trainee is visited every half term to engage in professional dialogue on a 1:1 basis alongside an observation and each trainee has a mentor at their base school who provides weekly support. We hold a 100% employment record over the last 3 years. Of our programme this year, a trainee said, 'Outstanding support from everyone involved with my training. I never felt I couldn't do it because of the support provided. I would recommend school direct as a brilliant way to get into teaching, especially through Latchmere.'",
+    "TrainWithDisability": "We are an equal opportunities employer. We recruit, train and promote people because of their ability, the needs of the post and other relevant criteria. We treat all employees who apply to us equally. When an applicant has a disability and they meet the essential criteria of the post, they are automatically shortlisted for interview. This positive action helps ensure young people with disabilities get their fair share of jobs. We regularly review our practices and procedures to make sure our equal opportunities policy is working.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our higher education partner is Kingston University and we have worked collaboratively with them for the last five years. The University ensures that our programme and the interview process is compliant.",
+        "UcasInstitutionCode": "K84"
+      }
+    ]
+  },
+  "has_inst": true
+}

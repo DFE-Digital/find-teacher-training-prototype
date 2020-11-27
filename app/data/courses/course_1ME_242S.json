@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Liverpool John Moores University",
+  "provider": "South Deeside (Pensby) Schools Federation",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1ME/242S",
+  "providerCode": "1ME",
+  "programmeCode": "242S",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Greenbank Drive, Pensby, Wirral, CH61 5UE",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Greenbank Drive, Pensby, Wirral, CH61 5UE",
+      "geocode": true,
+      "formatted_address": "Greenbank Dr, Birkenhead, Wirral CH61 5UE, UK",
+      "latitude": 53.341644,
+      "longitude": -3.0967353,
+      "post_code": "CH61 5UE",
+      "city": "Birkenhead",
+      "route": "Greenbank Drive",
+      "postal_town": "Wirral"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1ME",
+    "addr_1": "Greenbank Drive",
+    "addr_2": "Pensby",
+    "addr_3": null,
+    "addr_4": "Wirral",
+    "postcode": "CH61 5UE",
+    "url": "http://www.pensbyprimaryschool.org",
+    "geocode": true,
+    "formatted_address": "Greenbank Dr, Birkenhead, Wirral CH61 5UE, UK",
+    "latitude": 53.34160019999999,
+    "longitude": -3.0963316,
+    "post_code": "CH61 5UE",
+    "city": "Birkenhead",
+    "route": "Greenbank Drive",
+    "postal_town": "Wirral"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "The fees for the course are set by Liverpool John Moores University. ",
+    "AboutCourse": "The School Direct course begins with an Induction week which takes place at Liverpool John Moores University during August.\\r\nThe school based training takes place within a Federation of six very strong and successful primary schools with a proven track record of achievement in all areas. \\r\nThe training programme will prepare you to teach across the primary curriculum and covers all areas of the curriculum and associated school processes. Together, the Federation and the University will deliver exciting, engaging, meaningful training that will help you develop the professional knowledge and skills to become an effective primary classroom practitioner. \\r\nEach trainee is assigned a mentor from within their 'home' school who will guide them through the training programme. \\r\nYou will be in your 'home' school from day one and this will enable you to experience school throughout the academic year. You will be regarded as a member of the teaching team and will attend staff meetings and development days. Being in a school setting means that you can experience the whole spectrum of tasks and processes within a school, such as taking a school assembly, organising class trips, working with other specialist staff etc. Most importantly it will enable you to fully understand how we safeguard our children and prepare them for the next stage of their education. \\r\nThe LJMU taught programme focuses predominantly on developing your subject knowledge and subject pedagogy. Sessions are led by subject experts and are designed to equip students with the knowledge, understanding and skills needed to become confident teachers. In addition, lead lectures and seminars develop student teachers’ confidence in a range of relevant issues; classroom and behaviour management; meeting individual needs and inclusion; planning and assessment etc. There is a strong emphasis on social justice issues in education and on mental health and well-being. Sessions are largely workshop-based and participatory so that theoretical, research-informed teaching is explicitly linked to its practical implications for the classroom.\\r\nThe course, in partnership with Liverpool John Moores University (LJMU), offers a Post Graduate Certificate with Qualified Teaching Status with 60 credits at masters level. \\r\nThe workload of the course requires good organisational skills. Working with your school mentor and supported by the university staff, will enable you to tackle and achieve what you need to do. We want our trainees to succeed so together we form a strong team, to work towards that goal. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "We are looking for applicants who are graduates, preferably with a 1st class or 2.1 degree. We will consider applicants with a 2.2 degree if they can show they have some meaningful and recent school experience (within the last 2 years), or experience with primary aged children in other settings. This could be through volunteering at a primary school, working with a sports team, working in a club or group for primary aged children e.g. Cubs/Guides.\\r\nYou will also need a 'C' grade or above in GCSE English, Maths and Science.\\r\nYour degree can be in any field. \\r\n\\r\n",
+    "FeeInternational": 14000.0,
+    "InterviewProcess": "The interview process takes place over one school day.\\r\nYou will be asked to attend one of the schools in the Federation for the morning. On arrival you will be briefed by a senior member of the staff team on expectations. You will spend the morning in a class, where you will interact with children and the staff. At break time you will have other opportunities to meet staff. At some point in the morning, you will be asked to work with a small group of children in a directed task. \\r\nIn the afternoon you will be asked to attend  Pensby Primary School. \\r\nOn arrival you will meet with a senior member of staff and be asked to show your qualifications and identification. There will be an opportunity to talk to School Direct candidates training in the school. You will write a reflection on your experiences that morning. The final stage is an interview. This lasts about 25 minutes and there is an opportunity for you to ask questions. The panel usually consists of 2 members of staff from one of the Federation schools, who are very experienced with the school direct training programme and interview process. The afternoon process is usually complete by 3.30pm. \\r\nWe aim to inform you of the outcome of the day later that afternoon. Feedback is always offered to help support you. \\r\n\\r\n",
+    "OtherRequirements": "All the schools in our Federation are rigorous and determined to safeguard our children.\\r\nYou will undergo an enhanced DBS check. You will be subject to and be expected to adhere to our schools safegarding procedures at all times, including our staff code of conduct. \\r\nThe safey and well being of the children is paramount. ",
+    "PersonalQualities": "All schools need people who are dedicated to the children. Our staff must be passionate and enthusiastic about teaching. We want candidates to be eager, who are keen to learn and who can reflect and plan. You must have excellent organisational skills, be punctual and willing to give your own time to the school and it's pupils.You must be able to reflect on your own practice, accept guidance and accept constructive criticism. Above all you need to be able to guide and drive your own learning, use your initiative and be proactive. \\r\n\\r\n",
+    "HowSchoolPlacementsWork": "The six schools in our Federation have a long and established working relationship. \\r\nGeographically they are very close together, within a 5 mile radius of each other. This enables joint working and collaboration to take place regularly and easily. \\r\nAll the schools offer Early years, Key stage 1 and Key Stage 2 departments. Pensby has a Nursery. This means the age ranges you may teach are 4 to 11 or 3 to 11. \\r\nThe course offers 2 school placements. The main placement, which starts in the autumn term, will be in your 'home' school. In the first half of the spring term, you will move to another Federation school for your second placement, before returning to your home school to complete the school year. \\r\nIn the autumn term, you spend one day a week at Liverpool John Moores University for training. The remaining four days are spent in your 'home' school. In the spring term, you still attend training at the University but this decreases and more full weeks are spent in school. In the summer term you are spending most weeks in the school setting. \\r\nSchool based training also happens throughout the year. This will take place in the six Federation schools and gives you an opportunity to experience all the schools within our group. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The South Deeside (Pensby) Schools Federation is situated within Wirral. Our schools have a strong, successful Federation - Heswall Primary School, Barnston Primary School, Thingwall Primary School, Irby Primary School, Gayton Primary School and Pensby Primary School. We work very closely with Stanley Special Primary School and this gives our  trainees excellent opportunities to experience Special Educational Needs. \\r\nOur schools deliver primary education with some schools offering Nursery places, so covering all key stages of primary education. \\r\nSchool training is held within your 'home' school and we provide additional training delivered by our staff who are experienced and skilled in their field. Together, the Federation and the University deliver exciting, engaging, meaningful training that enables the development of the professional knowledge and skills required to become an effective primary practitioner. \\r\nEach trainee is assigned a mentor within their 'home' school. Our mentors are highly experienced. Working closely with the mentors, gives the best opportunity to reflect on your experiences and performance and guide the setting of targets for the next stage of your professional development. \\r\nOur Federation has been training the teachers of the future , through School Direct, for several years. Our success rates and student satisfaction rates are very high (LJMU data). Our schools all have:\\r\n*Positive working environments within supportive cultures, \\r\n*Long lasting history of successful partnerships with Higher Education Institutes, \\r\n*Wonderful children with exceptional behaviour who are eager to learn, \\r\n*A wide range of subject specialisms, \\r\n*Opportunities to work with leading teachers, within highly successful schools, ",
+    "TrainWithDisability": "We seek to support candidates  with disabilities and other needs in partnership with LJMU. \\r\nOur schools have a variety of environments and we allocate a home school to meet needs. E.G. trainees who have young dependents would be placed in a home school closest to their family, or trainees with specific disabilities will be placed in a school setting that can support those needs.\\r\nOur schools all offer access to a range of medical support, including mental health services.\\r\nLJMU is committed to Equality of Opportunity. Their Disability Advice Team will help you access the support you need. The best time to contact the Disability Advice Team is before you start your course. By contacting the team before you begin and disclosing your disability, you'll be able to receive support from when you arrive. Email: disability@ljmu.ac.uk Tel: 0151 231 3164/3165. \\r\nAll trainees are encouraged to disclose any specific learning need that they experience, in order to make any adjustments, both at LJMU and within our Federation. As part of the enrolment process to Teacher Training Programmes all students are required to complete a Health Questionnaire and some may be asked to attend a screening appointment with LJMU’s Occupational Health Unit. This is designed to ensure that arrangements are in place, from the outset, to support any students who may need additional support or reasonable adjustments to be made.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our Federation Schools choose to work with Liverpool John Moores (LJMU). Our experience is that the working partnership is extremely strong, respectful, positive and relevant to our trainees. LJMU listens to the requirements of the trainees and schools and will strive to meet these. We are invited to be represented and contribute to review and development of the training and this creates a strong partnership that benefits everyone.  LJMU, has a long established reputation for providing high quality Teacher Training, taught at the IMMarsh campus. LJMU are responsible for the PGCE/PGDE Academic Award and your recommendation for Qualified Teacher Status. ",
+        "UcasInstitutionCode": "L51"
+      }
+    ]
+  },
+  "has_inst": true
+}

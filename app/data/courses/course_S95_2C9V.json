@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Stourport SCITT",
+  "subjects": [
+    "French",
+    "German",
+    "Languages",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "S95/2C9V",
+  "providerCode": "S95",
+  "programmeCode": "2C9V",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Minster Road, Stourport-on-Severn, Worcestershire, DY13 8AX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Minster Road, Stourport-on-Severn, Worcestershire, DY13 8AX",
+      "geocode": true,
+      "formatted_address": "Minster Rd, Stourport-on-Severn DY13 8AX, UK",
+      "latitude": 52.3492653,
+      "longitude": -2.2740569,
+      "post_code": "DY13 8AX",
+      "city": "Worcestershire",
+      "route": "Minster Road",
+      "postal_town": "Stourport-on-Severn"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S95",
+    "addr_1": "Minster Road",
+    "addr_2": null,
+    "addr_3": "Stourport-on-Severn",
+    "addr_4": "Worcestershire",
+    "postcode": "DY13 8AX",
+    "url": "http://www.stourportscitt.com",
+    "geocode": true,
+    "formatted_address": "Minster Rd, United Kingdom",
+    "latitude": 52.3517364,
+    "longitude": -2.2727826,
+    "post_code": null,
+    "city": "Worcestershire",
+    "route": "Minster Road"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The Stourport SCITT (School Centred Initial Teacher Training) is committed to providing the best school based training experience in the area. The final qualification is for QTS, with a PGCE accredited through Birmingham City University, they come to us, you do not have to go to them! There is extensive subject knowledge support and a strong connection with placement schools, in order to ensure a 'joined up' approach to the course, trainee wellbeing and support.\\r\n\\r\nThe secondary languages course is for prospective teachers of Spanish, French and German. Each successful applicant should be able to teach in their main chosen language and a second language e.g. Spanish and French; German and French; French and Spanish. Native fluency in the second language is desirable and applicants will be given a full opportunity to demonstrate fluency and competency in their chosen languages at the interview and selection stage. Excellent support for trainees is offered by outstanding teachers and an SLE in languages (Specialist Leader of Education). \\r\n\\r\nTrainees will be based at the SCITT Training Rooms for training and will be offered places at two different secondary schools within the local area during the course. Please contact us direct on 01299 872950 (option 3), email jhomer@saet.co.uk or check out our website on www.stourportscitt.com. We will be pleased to answer any questions you may have regarding the course, the support or the final qualification.",
+    "CourseLength": "OneYear",
+    "Qualifications": "The minimum academic requirements for this Modern Foreign Languages course are:\\r\n\\r\n* English GCSE (or equivalent) at grade 4 or above\\r\n* Mathematics GCSE (or equivalent) at grade 4 or above\\r\n* Post 16 qualifications with a strong interest in languages\\r\n* Relevant degree at classification 2:2 or above\\r\n",
+    "InterviewProcess": "If your application is successful you will be called to interview very quickly.  Your interview will normally take place in a school setting appropriate to the age range you wish to teach. You will attend only one interview session, and this will take either a full morning or afternoon. You will be formally interviewed by one of the SCITT team and a subject specialist. In your formal interview we will discuss your application in further detail and your motivation for teaching.  \\r\n\\r\nWe are looking for applicants with a clear passion for both teaching and their subject; strong candidates will also show that they are at ease with pupils.  As part of this process you will also teach a short episode (30 to 40 minutes) in your subject area to a class.  We are not looking for the 'finished article' at this stage but you should aim to show your enthusiasm for your subject and positive relationships with students. Once the lesson has finished you will have the opportunity to write a reflection on your lesson. We will also ask you to sit a recent external examination paper in your subject.\\r\n\\r\nOnce the interview process is complete we meet as a panel to discuss all elements of the process. We would then make a decision and inform candidates within three working days of interview.\\r\n",
+    "OtherRequirements": "We will conduct a Data Barring Service (DBS) check for each applicant, at no cost.",
+    "PersonalQualities": "We are looking for professional individuals with a genuine passion for teaching children and becoming part of the next generation of teachers. You will need some school experience but, if you need assistance with organising this, we are more than happy to help.",
+    "HowSchoolPlacementsWork": "As we are very much ‘school centred’ you will spend a large proportion of the year in schools, so you will be immersed in school life from day one. We work with many schools across Worcestershire, Herefordshire and Shropshire.  These are from a range of settings; from urban schools to more rural locations.  We place trainees sensitively and would not normally expect you to have to travel for more than 30 minutes from home to get to your placement school.  \\r\n\\r\nYou will teach students within secondary age ranges, pertinent to your subject area. The school placements are with two contrasting schools to maximise your teaching experience. Placement one is at the very beginning of the Autumn term, giving you an invaluable insight in to the start of the school year and the expectations surrounding this important time for children.  \\r\n\\r\nYour development will be supported by five intensive training blocks, delivered by experts and practicing teachers to ensure that you have excellent, current pedagogy.  You will be given a mentor in each of your placements whom you will meet each week to discuss your progress.  You will also be thoroughly immersed in the pastoral role of a teacher; you will be assigned to support a tutor group to gain an excellent understanding of the critical work a tutor does to monitor academic progress as well as caring for students’ welfare.\\r\n\\r\nYou will also gain first-hand experience of how your placement school delivers spiritual, moral, social and cultural education, as well as sex and relationships education. Your placement school will also offer you experience in the extra-curricular provision offered to students. Past trainees have supported school trips, sporting events, drama productions and many other enrichment activities.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Welcome to the Stourport School Centred Initial Teacher Training (SCITT) programme.\\r\n\\r\nYou have chosen to be part of the next generation of teachers, shaping the future of our young people.  Teaching and learning is our core business, which is why we are a high performing, outstanding school with an Ofsted grade one in all categories. \\r\nBeing a SCITT is very important to us.  We apply cutting edge approaches to teaching and learning - rather like being a teaching hospital.  Not only do we constantly explore new ideas and techniques for making learning exciting, engaging and fun, but we also train you to be the teachers of tomorrow.  The teachers in our schools are trained as mentors - guiding, supporting and assessing trainee colleagues as they move towards achieving Qualified Teacher Status.  We work with a number of local secondary and primary schools to provide an experience like no other.\\r\n \\r\nWhy train to be a teacher with Stourport SCITT?\\r\n\\r\n- Comprehensive training and support programme\\r\n- 100% employment rate\\r\n- Receive a tax free bursary for many subjects\\r\n- Work hand in hand with   local schools across Worcestershire, Herefordshire and Shropshire\\r\n",
+    "TrainWithDisability": "We are a wholly inclusive training provider. We have worked with and supported trainee teachers with a range of needs and disabilities. We pride ourselves on meeting individual needs with a bespoke support package and mentoring guidance. Each trainee will be assessed on a individual basis. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

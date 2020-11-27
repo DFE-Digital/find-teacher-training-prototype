@@ -1,0 +1,73 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of East London",
+  "subjects": [
+    "French",
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages (French)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "E28/R1X1",
+  "providerCode": "E28",
+  "programmeCode": "R1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Student Admissions Office, 4-6 University way, London, E16 2RD",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Student Admissions Office, 4-6 University way, London, E16 2RD",
+      "geocode": true,
+      "formatted_address": "4, East Building, 6 University Way, London E16, UK",
+      "latitude": 51.5075163,
+      "longitude": 0.0648165,
+      "post_code": "E16",
+      "city": "Greater London",
+      "route": "University Way",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E28",
+    "addr_1": "Docklands Campus",
+    "addr_2": "4-6 University Way",
+    "addr_3": "Newham",
+    "addr_4": "London",
+    "postcode": "E16 2RD ",
+    "url": "http://www.uel.ac.uk",
+    "geocode": true,
+    "formatted_address": "University Way, London E16 2RD, UK",
+    "latitude": 51.5076024,
+    "longitude": 0.0650809,
+    "post_code": "E16 2RD",
+    "city": "Greater London",
+    "route": "University Way",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The University of East London is a highly experienced and successful initial teacher training (ITT) and education provider. Courses are taught and supported by exceptional and dynamic staff. All of whom foster creativity, collaboration, innovation and student engagement at the heart of what they offer. We also value the link between the academic and the practice, and this will form a significant part of the ITT programme you undertake.\\r\n\\r\nThis year, UEL has achieved its best ever student satisfaction score and we officially have  the happiest students of any modern university in London, according to recent NSS league tables. To complement this, our end of programme survey outcomes in July 2018, suggest that over 95% of our teacher trainees rate the quality of their training through UEL as good or higher. Employability is also excellent with most subjects, phases and routes achieving 95-100% employment each year. \\r\n\\r\nUEL is an inclusive university and our teacher training programmes are highly diverse and multicultural. We are very proud of our trainee teachers, new and old, and what they have gone on to achieve in our schools. We are especially proud of the community we serve and how we take people from the local community who then go back into this community to teach - over 70% of our trainees find jobs within our partner schools each year. \\r\n\\r\nWe look forward to welcoming you to UEL and the Cass School of Education and Communities.",
+    "TrainWithDisability": "Applications from students with disabilities or other specific needs are welcomed. Initial teacher training programmes are based at our Stratford campus, which is fully accessible to all. UEL operates a very clear inclusivity policy. As a large provider of ITT, we have access to various support mechanisms for students who need this or would benefit from this additional support.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

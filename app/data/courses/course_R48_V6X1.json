@@ -1,0 +1,76 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Roehampton University",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "R48/V6X1",
+  "providerCode": "R48",
+  "programmeCode": "V6X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Roehampton University, Roehampton Lane, London, SW15 5PU",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Roehampton University, Roehampton Lane, London, SW15 5PU",
+      "geocode": true,
+      "formatted_address": "Roehampton Ln, London SW15 5PU, UK",
+      "latitude": 51.4579866,
+      "longitude": -0.2432869,
+      "post_code": "SW15 5PU",
+      "city": "Greater London",
+      "route": "Roehampton Lane",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "R48",
+    "addr_1": "Roehampton Lane",
+    "addr_2": "London",
+    "addr_3": null,
+    "addr_4": null,
+    "postcode": "SW15 5PU",
+    "url": "http://www.roehampton.ac.uk",
+    "geocode": true,
+    "formatted_address": "Roehampton Ln, London SW15 5LS, UK",
+    "latitude": 51.4554361,
+    "longitude": -0.2431242,
+    "post_code": "SW15 5LS",
+    "city": "Greater London",
+    "route": "Roehampton Lane",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "These are the course fees for 2018/19, may be subject to change for 2019/20",
+    "AboutCourse": "Our one-year Postgraduate Certificate in Education (PGCE) prepares you to teach the religious education secondary school curriculum.\\r\n\\r\nYou will consider the purpose of religious education in schools, exploring topics from the purpose of life to morality.\\r\n\\r\nYou will look at creative ways to teach your classes about religious education, such as through drama, art, and class trips.\\r\n\\r\nTypically, you will visit places of worship from the six major religions and engage in dialogue with people from other faiths and cultural backgrounds. It’s a fantastic opportunity for you to discover places across Greater Manchester for your own class trips, once you’re a qualified teacher.\\r\n\\r\nWhen you’re at Manchester Met, you’ll mainly study with your PGCE Religious Education group. You’ll consider how to plan lessons, reflect on your planning, learn how research can develop your teaching practice, and look at ways to develop your teacher persona. \\r\n\\r\nYou will also reflect on topics that sit across the curriculum in schools, such as pastoral care, Personal, Social, Health and Economic Education (PSHE), and Citizenship. This helps you to develop subject knowledge that you can use in your future teaching career.\\r\n\\r\nYou won’t simply learn teaching methods with us on-campus though – you’ll teach classes in schools too. \\r\n\\r\nYou will spend at least 120 days on placements in schools, gradually  increasing your involvement to become  the class teacher.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "2:2 UK Honours degree (or international equivalent), which must support the National Curriculum subject knowledge requirements \\r\n\\r\nFor exceptional candidates, particularly those with substantial relevant work experience in schools/relevant occupations, we consider applications from those with a 3rd class degree.\\r\n\\r\nGCSEs grade C/4 or above in English Language and Mathematics (equivalency tests may be offered). We do not accept the following qualifications as equivalent to GCSE: Adult Numeracy or Literacy, Functional Skills or Key Skills\\r\n\\r\nAll PGCE applicants must pass Professional Skills Tests in Numeracy and Literacy. Check the Department of Education website at (www.education.gov.uk/ get-into-teaching) for the latest updates. \\r\n\\r\n",
+    "FeeInternational": 15550.0,
+    "FinancialSupport": "Please see (https://www2.mmu.ac.uk/study/postgraduate/fees/pgce-funding/) for information on financial support available",
+    "InterviewProcess": "Part of the process of applying to study a PGCE course with us is for you to join us at Brooks building for an interview where we can get to know you better and you can demonstrate the skills you have that will make you a great teacher. When you are offered an interview, we will send you a detailed information pack containing everything you need to know in order to prepare effectively for your interview, but here is what you can expect.\\r\n\\r\nIf you have applied to study one of our PGCE Secondary courses, you will have a welcome presentation from our Admissions Tutor to start with, followed by a subject-based interview that usually lasts around 30 minutes.  This will be with the subject tutor and a representative from one of our partnership schools.\\r\n",
+    "OtherRequirements": "A Disclosure and Barring Service Check and DfE Fitness to Teach test are also required. \\r\n\\r\nSubject to a satisfactory declaration in relation to the Childcare Disqualification Regulation Act 2009 \\r\n",
+    "PersonalQualities": "Successful candidates will demonstrate a good understanding of teaching and learning within a secondary school setting. Candidates may wish to evidence their understanding by drawing on related examples or experiences, such as time spent in schools or other learning settings. ",
+    "HowSchoolPlacementsWork": "We try to organise a range of school experiences for you across your two core placements. This helps you to develop your practical teaching skills and explore the types of schools you could work in when you graduate.\\r\n\\r\nWe have partnerships with primary and secondary schools across the North West region. As a trainee teacher, you’ll be expected to travel up to 90 minutes to your placement school.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at Roehampton is one of the principal providers of teacher training in the UK, with partnerships with over 350 schools. We have a rich history of over 175 years providing teacher training education through our four Colleges. \\r\n\\r\nAs a student in our School, you will enjoy high quality teaching, which will equip you for a successful career with a competitive starting salary. Your employment prospects will be excellent: 99% of our teacher training graduates are in work or further study six months after leaving us (Destinations of Leavers of Higher Education 2013/14). \\r\n\\r\nWe are based on a beautiful parkland campus in south-west London, close to Putney and Hammersmith, and just 30 minutes from the West End. Our School is ranked third in London for the quality of our research in the field of education (Research Excellence Framework 2014), reflecting the work-class expertise of our staff.\\r\n\\r\nFor more information about the university, please see here.\\r\n\\r\n(https://www.roehampton.ac.uk/why-roehampton/)",
+    "TrainWithDisability": "The University of Roehampton welcomes students with disabilities and offers flexible support services tailored to your needs. Our Disability and Dyslexia Services are on the main campus, Digby Stuart, along with our Access Centre: Access@SW15.\\r\n\\r\nFor new students, we strongly recommend that you get in touch to let us know about your specific disability and support needs. Any information provided will be kept strictly confidential and will only be used to support you with your studies. \\r\n\\r\nWe recommend to inform us of your specific learning difference (SpLDs) such as Dyslexia, Dyspraxia, Dyscalculia and Attention Deficit Hyperactivity Disorder (ADHD).\\r\n\\r\nFor more information please see our disability services website here.\\r\n\\r\n(https://www.roehampton.ac.uk/disability-services/)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

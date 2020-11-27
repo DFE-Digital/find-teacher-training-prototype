@@ -1,0 +1,171 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Cumbria",
+  "provider": "Blackpool Multi Academy Trust",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1XH/2TTQ",
+  "providerCode": "1XH",
+  "programmeCode": "2TTQ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "158 Whitegate Drive, Blackpool, Lancashire, FY3 9HF",
+      "code": "-"
+    },
+    {
+      "name": "Park Community Academy",
+      "address": "158 Whitegate Drive, Blackpool, fy39hf",
+      "code": "1"
+    },
+    {
+      "name": "Devonshire Primary Academy",
+      "address": "Devonshire Rd, Blackpool, fy38ft",
+      "code": "2"
+    },
+    {
+      "name": "Anchorsholme Academy",
+      "address": "East Pines Drive,, Thornton-Cleveleys, Lancs, FY5 3RX",
+      "code": "3"
+    },
+    {
+      "name": "Revoe Learning Academy",
+      "address": "Grasmere Road,, Blackpool, FY15HP",
+      "code": "5"
+    },
+    {
+      "name": "Thames Primary Academy",
+      "address": "Severn Ave, Blackpool, FY4 1EE",
+      "code": "9"
+    },
+    {
+      "name": "St Nicholas C of E Primary School",
+      "address": "School Road, Blackpool, FY4 5DS",
+      "code": "A"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "158 Whitegate Drive, Blackpool, Lancashire, FY3 9HF",
+      "geocode": true,
+      "formatted_address": "158 Whitegate Dr, Blackpool FY3 9HF, UK",
+      "latitude": 53.8119694,
+      "longitude": -3.0331116,
+      "post_code": "FY3 9HF",
+      "city": "Blackpool",
+      "route": "Whitegate Drive",
+      "postal_town": "Blackpool"
+    },
+    {
+      "address": "158 Whitegate Drive, Blackpool, fy39hf",
+      "geocode": true,
+      "formatted_address": "158 Whitegate Dr, Blackpool FY3 9HF, UK",
+      "latitude": 53.8119694,
+      "longitude": -3.0331116,
+      "post_code": "FY3 9HF",
+      "city": "Blackpool",
+      "route": "Whitegate Drive",
+      "postal_town": "Blackpool"
+    },
+    {
+      "address": "Devonshire Rd, Blackpool, fy38ft",
+      "geocode": true,
+      "formatted_address": "Blackpool, UK",
+      "latitude": 53.8175053,
+      "longitude": -3.0356748,
+      "post_code": null,
+      "city": "Blackpool",
+      "route": null
+    },
+    {
+      "address": "East Pines Drive,, Thornton-Cleveleys, Lancs, FY5 3RX",
+      "geocode": true,
+      "formatted_address": "Eastpines Dr, Blackpool, Thornton-Cleveleys FY5 3RZ, UK",
+      "latitude": 53.8692311,
+      "longitude": -3.0299399,
+      "post_code": "FY5 3RZ",
+      "city": "Blackpool",
+      "route": "Eastpines Drive",
+      "postal_town": "Thornton-Cleveleys"
+    },
+    {
+      "address": "Grasmere Road,, Blackpool, FY15HP",
+      "geocode": true,
+      "formatted_address": "Grasmere Rd, Blackpool FY1 5HP, UK",
+      "latitude": 53.807012,
+      "longitude": -3.0418865,
+      "post_code": "FY1 5HP",
+      "city": "Blackpool",
+      "route": "Grasmere Road",
+      "postal_town": "Blackpool"
+    },
+    {
+      "address": "Severn Ave, Blackpool, FY4 1EE",
+      "geocode": true,
+      "formatted_address": "Severn Rd, Blackpool FY4 1EE, UK",
+      "latitude": 53.7922118,
+      "longitude": -3.050374,
+      "post_code": "FY4 1EE",
+      "city": "Blackpool",
+      "route": "Severn Road",
+      "postal_town": "Blackpool"
+    },
+    {
+      "address": "School Road, Blackpool, FY4 5DS",
+      "geocode": true,
+      "formatted_address": "School Rd, Blackpool FY4 5DS, UK",
+      "latitude": 53.7784382,
+      "longitude": -3.0146062,
+      "post_code": "FY4 5DS",
+      "city": "Blackpool",
+      "route": "School Road",
+      "postal_town": "Blackpool"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1XH",
+    "addr_1": "158 Whitegate Drive",
+    "addr_2": null,
+    "addr_3": "Blackpool",
+    "addr_4": "Lancashire",
+    "postcode": "FY3 9HF ",
+    "url": "http://parkschool.schudio.com/",
+    "geocode": true,
+    "formatted_address": "158 Whitegate Dr, Blackpool FY3 9HF, UK",
+    "latitude": 53.8119694,
+    "longitude": -3.0331116,
+    "post_code": "FY3 9HF",
+    "city": "Blackpool",
+    "route": "Whitegate Drive",
+    "postal_town": "Blackpool"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Fees for this course are set at £9250.",
+    "AboutCourse": "The Programme\\r\n\\r\nThe Blackpool Teaching School Alliance offers 2 School Direct courses both leading to a Post Graduate Certificate in Education with QTS.\\r\n●\\tPrimary\\r\n●\\tPrimary with SEND\\r\nOur School Direct programmes are so successful because they immerse you into life in a Primary or Special School. This is a full time course where you will become part of the staff team, observing, supporting and team teaching alongside highly skilled practitioners. You experience first-hand the wider professional responsibilities of a teacher as you become involved in after school clubs, CPD events and a range of whole school events. Students will spend 3 days per week in their host schools when not on placement.\\r\n\\r\nAlongside this you will receive 1 day per week of high quality training around pedagogy and practice delivered by practicing teachers. \\r\n\\r\nA further 1 day per week will be spent studying the PGCE module element of the programme at level 7 , which is delivered by the University of Cumbria within an alliance school based in Blackpool.\\r\n\\r\nOpportunities for trainees to work or study collaboratively will be a focus of our training programme. Our programme also provides opportunities to attend relevant conferences and CPD events as well as team building activities across the year. \\r\n\\r\nStudents will be allocated to a host school for the year and will then complete assessed placements in different mainstream schools. Students will have a mentor in their host school and also when on placement. Further support is also available through the University Partnership Lead and the Programme Partnership  Lead.\\r\n\\r\nAlongside placements students will be supported to complete 2 formative and 2 summative assignments at level 7. \\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\nEntry Requirements\\r\nGraduates should have a minimum 2:2 degree but preferably a 2:1 or higher. They also need GCSE grade C or above in English, Maths and Science.\\r\nStudents will also be required to successfully complete the skills tests in Literacy and Numeracy.",
+    "FeeInternational": 9250.0,
+    "InterviewProcess": "Selection Process\\r\nBlackpool Teaching School Alliance works in conjunction with the University of Cumbria to select suitable candidates to take through to our interview process. This will include initial safeguarding checks and whether candidates meet minimum entry requirements. \\r\nInterview Process\\r\nIf selected for interview you will be invited to attend for an interview at one of the School Direct Alliance schools. The interview will consist of a written element, a mini teach and a formal interview. \\r\n",
+    "PersonalQualities": "What are we looking for?\\r\nWe are looking for candidates who have a passion for teaching, someone who enjoys a challenge and who puts children and their needs first.Ideally you should have some experience of working with children or young people in either a paid or voluntary capacity.",
+    "HowSchoolPlacementsWork": "Placements\\r\nThere are 3 formal assessed placements as part of the programme. \\r\n-4 weeks placement in the autumn term( Beginning) \\r\n-5 week placement in the spring term(Developing)\\r\n-10 week placement in the summer term(Extending) \\r\nYou will be required to teach in 2 different age phases and in a minimum of 2 different school settings. \\r\n\\r\nStudents undertaking our Primary Programme will be hosted in a mainstream school and undertake a minimum of 2 placements within mainstream schools. However a popular  feature of our Primary programme is the opportunity to undertake an assessed placement and/or an experiential placement in a special school setting whilst being hosted in a mainstream setting. \\r\nHost and placement schools are allocated following a discussion around where a student lives, ability to travel and specific needs which might impact on the placement. All placements are sources by the BTSA. Students are not expected to find their own placements.\\r\nStudents are supported through their placements by a mentor. There are a number of observations carried out followed by reflective feedback and evaluation. All students work with their mentor to set targets against the teaching standards throughout their placement."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The BTSA deliver inclusive school based training via our School Direct Programme. \\r\n\\r\nBlackpool is a special yet challenging place to teach. Our vision is to train the next generation of outstanding Blackpool teachers to give the children of Blackpool the best possible start in life. \\r\n\\r\nWe are looking for candidates who have a passion for teaching, enjoys a challenge and puts children and their needs first. \\r\n\\r\nWe offer 2  courses both leading to a PGCE with QTS\\r\n\\r\nPrimary\\r\n\\r\nPrimary with SEND\\r\n\\r\nOur  programmes immerse you into life in  school. You  become part of the  team, observing, supporting and team teaching alongside highly skilled practitioners. You experience first-hand the wider professional responsibilities of a teacher as you become involved in a range of whole school events.\\r\n\\r\nAlongside this you  receive high quality training around pedagogy and practice delivered by practicing teachers and study the PGCE L7 modules  delivered by the University of Cumbria. \\r\n\\r\n\\r\nThere are 3  placements as part of the programme. You will be required to teach in 2 different age phases and in a minimum of 2 different school settings.\\r\n\\r\nStudents undertaking the Primary with SEND programme will be hosted in an SEND setting and can undertake up to 2  placements in a Special School with the additional placement in mainstream.\\r\n\\r\nStudents undertaking our Primary Programme will be hosted in a mainstream school and undertake a minimum of 2 placements within mainstream schools with the opportunity to undertake an assessed placement and/or an experiential placement in a special school. \\r\n\\r\n \\r\n\\r\n\\r\n\\r\n \\r\n\\r\n\\r\n\\r\n \\r\n\\r\n\\r\n\\r\n \\r\n\\r\n                                                 \\r\n\\r\n          \\r\n\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "All students receive the appropriate level of support according to their needs. We are a fully inclusive programme and all locations are fully accessible. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "This programme is being run in conjunction with the University of Cumbria.\\r\nFor more details visit \\r\nhttp://www.cumbria.ac.uk/about/partnerships/Student Facilities\\r\n\\r\nAs this is a School Direct Programme, additional student facilities e.g. library access and Student Support Services, will be provided by The University of Cumbria.",
+        "UcasInstitutionCode": "C99"
+      }
+    ]
+  },
+  "has_inst": true
+}

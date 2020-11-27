@@ -1,0 +1,70 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Goldsmiths, University of London",
+  "subjects": [
+    "Design and technology",
+    "Secondary"
+  ],
+  "name": "Design and Technology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "G56/W9X1",
+  "providerCode": "G56",
+  "programmeCode": "W9X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Goldsmiths College, University of London, New Cross, London, SE14 6NW",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Goldsmiths College, University of London, New Cross, London, SE14 6NW",
+      "geocode": true,
+      "formatted_address": "8 Lewisham Way, New Cross, London SE14 6NW, UK",
+      "latitude": 51.47427099999999,
+      "longitude": -0.035408,
+      "post_code": "SE14 6NW",
+      "city": "Greater London",
+      "route": "Lewisham Way",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "G56",
+    "addr_1": "New Cross",
+    "addr_2": null,
+    "addr_3": "Lewisham",
+    "addr_4": "London",
+    "postcode": "SE14 6NW",
+    "url": "http://www.gold.ac.uk",
+    "geocode": true,
+    "formatted_address": "New Cross, London SE14 5NH, UK",
+    "latitude": 51.471022,
+    "longitude": -0.040245,
+    "post_code": "SE14 5NH",
+    "city": "Greater London",
+    "route": null,
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "- Train for a rewarding career in secondary design and technology teaching.\\r\n- Undertake 120 days of school-based training in two different school settings.\\r\n- Participate in practical work in our well-equipped facilities to help you learn creative and innovative teaching methods.\\r\n- Attain a masters-level PGCE, or a PCE alongside Qualified Teacher status (QTS).\\r\n\\r\nThis course will help you to grow academically and professionally and has, as its primary aim, the development and supply of competent teachers who are capable of securing employment in an education setting. You graduate as an experienced and employable design and technology teacher, ready to inspire young people.\\r\n\\r\nThis course provides an advanced academic qualification alongside the real-world experience in school settings. Along with honing your subject skills, you'll learn crucial teaching techniques including behaviour management and student support. There are 120 days of school-based training that allow you to become used to the realities of teaching before graduation. You are assessed through supportive, collaborative means, helping you to grow and improve.\\r\n\\r\nYou learn through\\r\n\\r\n- 120 days of school based training across at least two settings\\r\n- classes in our well-equipped facilities\\r\n- seminars and lectures\\r\n- workshops\\r\n- school-based experiences\\r\n- independent study\\r\n- group work\\r\n- practical work\\r\n- written assessments and feedback",
+    "CourseLength": "OneYear",
+    "FeeInternational": 13500.0,
+    "InterviewProcess": "If you are shortlisted, we will invite you to a selection event, and you should bring a passport or photo driving license with you. You can bring other forms of photo ID for the selection event, but if you do, you will still need to present valid identity documents required by the Disclosure and Barring Service (DBS) at your pre-course day.\\r\n\\r\nThe selection event is a process which assesses if you're suitable for a place on the course. It's a chance to show us your knowledge about the subject and your enthusiasm for the career. Being invited to a selection event doesn't mean you're guaranteed a place on the course - the point of the day is to help us come to a mutual decision. We need to decide whether to make you an offer and you need to decide whether you like the course and the university.\\r\n\\r\nWe aim to make the interview process as rigorous and informative as possible. It's very much a two-way process, where you can evaluate what we offer while we find out more about you. In order to help us explore your thinking and subject knowledge, and for you to decide if this is the right course for you, we have a number of activities we usually use as part of the interview process.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "This course ensures that you'll have the real-life experience you need to enter teaching. You'll spend 120 days across two or more sites, with school-based mentors and campus-based tutors monitoring your progress and providing support. Upon graduating, some of our students go into full-time employment at their placement school.\\r\n\\r\nYou will take responsibility for your own development against the statutory requirements for QTS and will record your progress in a Professional Development Portfolio (PDP). This collaborative process involves you, university-based tutors and school-based mentors. As you complete the course you will review your progress, plan for your entry to the teaching profession and for your ongoing development as a Newly Qualified Teacher (NQT)."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithDisability": "The Disability Service can help you to arrange any reasonable adjustments, equipment or support you need to study effectively at Goldsmiths. See the Disability Service web pages for more information.\\r\n[Disability Service](https://www.gold.ac.uk/students/disability-support/)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

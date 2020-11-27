@@ -1,0 +1,74 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Worcester",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "W80/2M2S",
+  "providerCode": "W80",
+  "programmeCode": "2M2S",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "geocode": true,
+      "formatted_address": "Worcester WR2 6AJ, UK",
+      "latitude": 52.1975549,
+      "longitude": -2.2430422,
+      "post_code": "WR2 6AJ",
+      "city": "Worcestershire",
+      "route": null,
+      "postal_town": "Worcester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "W80",
+    "addr_1": "Henwick Grove",
+    "addr_2": "Worcester",
+    "addr_3": "Worcestershire",
+    "addr_4": null,
+    "postcode": "WR2 6AJ ",
+    "url": "http://www.worcester.ac.uk",
+    "geocode": true,
+    "formatted_address": "Henwick Grove, Worcester WR1 3JE, UK",
+    "latitude": 52.201139,
+    "longitude": -2.237474,
+    "post_code": "WR1 3JE",
+    "city": "Worcestershire",
+    "route": null,
+    "postal_town": "Worcester"
+  },
+  "options": [
+    "QTS, full time or part time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Every course has day-to-day costs for essential books, stationery, printing and photocopying.\\r\n\\r\nTravel costs for placements vary depending on the location of schools and your mode of transport, sometimes these may be reclaimed depending on your individual circumstances.\\r\n\\r\nWe organise occasional visits to increase subject knowledge. Travel costs are at your own expense but we do encourage car sharing. In addition there is sometimes a fee but this is not normally more than £20 in total.\\r\n\\r\nIn addition, we encourage you to join subject specific associations. The cost is typically between £25 to £50 for which you benefit from their support, guidance and resources. ",
+    "AboutCourse": "This is the ideal time to train to become a confident, effective and reflective RE teacher because of religion's influence on individuals, culture and society. \\r\n\\r\nYou will: \\r\n\\r\n* Equip young people with the skills and knowledge needed to help them explore life's deepest questions, as they develop their independence and work out how to live a good life \\r\n* Be taught by an enthusiastic, experienced and inspiring tutor who will individually support each trainee \\r\n* Work in an RE department supported by teachers who are passionate about RE and teaching \\r\n* Experience the collaborative spirit of the course; share your emerging ideas; and work together to develop strategies and resources \\r\n\\r\nTraining at Worcester will: \\r\n\\r\n* Challenge you to consider not only how to teach religious education, but also why it should be taught and what we should be teaching to inspire and motivate young people in an ever-changing world \\r\n* Equip you with a range of religious education activities, resources and teaching ideas that you can use in the classroom \\r\n* Introduce you to current research and pedagogical methods in RE \\r\n* Keep you updated on current issues within religious education \\r\n* Introduce you to the local religious community \\r\n\\r\nThe Religious Education course is well received by trainees and employment prospects are excellent both locally and further afield. \\r\n\\r\nVisit our website to find out more: [https://www.worcester.ac.uk/courses/pgce-secondary-religious-education.html](https://www.worcester.ac.uk/courses/pgce-secondary-religious-education.html) \\r\n\\r\nAge range:\\r\nYou will be trained to teach 11-16 with post 16 enhancement. \\r\n\\r\nCareer opportunities:\\r\nAn integral part of the course is to support you in gaining a post as a teacher. Each year around 50% of our trainees gain employment in our partnership schools. Newly Qualified Teachers have one of the highest employment rates of all graduates and are very much in demand. Employment rates over the past 5 years have consistently been 95%+. At the end of the course we will support you in your transition from the PGCE year into your first teaching post, and beyond. \\r\n\\r\nAssessment:\\r\nYou will be assessed on the basis of course work including written assignments, a resource task and an oral presentation of a small research project, as well as on your teaching practice. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree or equivalent:\\r\nHonours degree (2:2 or above) from a United Kingdom higher education institution or equivalent qualification, in a relevant subject. Please email [secondary@worc.ac.uk](secondary@worc.ac.uk) if you are unsure of the relevance of your degree. \\r\n\\r\nApplicants with a 3rd class degree will be considered on an individual basis. \\r\n\\r\nGCSEs:\\r\nGrade C/level 4 at GCSE in English Language and Mathematics (or equivalent) passed at the time of entry. \\r\n\\r\nUniversity of Worcester equivalency tests are available. Please contact [admissions@worc.ac.uk](admissions@worc.ac.uk) for further information. ",
+    "InterviewProcess": "The selection process:\\r\nTrainees are recruited through a rigorous selection process. The team consider the personal statement and reference to decide whether to offer an interview. \\r\n\\r\nAt interview, you will be asked to complete: \\r\n* A timed written task \\r\n* A short presentation (details sent out with the interview invite) \\r\n* A group task \\r\n* An interview with two people usually a university tutor and a mentor from school \\r\n\\r\nReferences:\\r\nFor your application, you will need two references which are submitted online.",
+    "OtherRequirements": "Professional Skills Tests:\\r\nAll teacher training applicants need to have passed the Numeracy and Literacy skills tests before the start of the course. \\r\n\\r\nHealth and Physical Capacity to Teach:\\r\nThe DfE requires all trainees to satisfactorily complete a medical questionnaire to demonstrate their fitness to teach. People with disabilities or chronic illnesses may have the capacity to teach, just as those without disabilities or medical conditions may be unsuitable to teach. \\r\n\\r\nDBS:\\r\nAll entrants to ITT programmes will be subject to appropriate pre-selection checks, including disclosure and Barring Service (DBS), criminal records checks and children's barred list information. ",
+    "PersonalQualities": "We are looking for trainees who are: \\r\n\\r\n* skilled and inspirational subject specialists\\r\n* confident and reflective practitioners\\r\n* effective communicators who can work in partnership\\r\n* informed intellectuals who promote a love of learning\\r\n* resilient professionals able to demonstrate high standards of personal conduct\\r\n\\r\nSchool experience is desirable, but not essential prior to an interview. At interview we will discuss relevant prior school experience or opportunities you have had to work with school-aged children. At this point that we will discuss with you whether additional school experience would support you in deciding that teaching is right for them. ",
+    "HowSchoolPlacementsWork": "We work very closely with our partner schools, to provide you with high quality teacher training to prepare you for your first teaching job and beyond. Our partner schools provide a range of settings from rural to inner city. Most schools are within a 30 mile radius of the University. You will practise teaching in at least two contrasting schools. \\r\n\\r\nThe course is designed with periods in University to give you the opportunity to reflect on your future development. Former trainees have made positive comments on the balance between theory and practice, carefully structured sessions, tutors' commitment to supporting trainees and trainees supporting each other and sharing good practice. \\r\n\\r\nIn each school you will be supported by a Professional Mentor, as well as your Subject Mentor. Their job is to see that you get as much out of your teaching placements as possible, and provide you with support and guidance. At interview you may meet teachers from our partnership schools as they take part in the selection process alongside University tutors. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at the University of Worcester has a long-standing reputation for training excellent, highly employable teachers. You will be supported by a dynamic team of tutors who have been outstanding school teachers and are now regarded as education experts with national profiles in a wide range of secondary subjects. \\r\n\\r\nOur courses provide unique opportunities. Trainee teachers may if they wish add depth to their qualifications by involvement in additional enhancement programmes in key areas, such as Special Educational Needs and Disabilities; working with learners who have English as an Additional Language; developing expertise in Citizenship; developing skills in a second STEM subject; preparing to be Education Leaders, or developing skills in Technology Enhanced Learning. These popular enhancements to your training build your confidence as well as greatly enhancing your employability. \\r\n\\r\nYou will benefit from our excellent partnerships with secondary schools across the West Midlands, where our highly-trained mentors pay close attention to your individual development within a friendly and professional context. We also offer pre-training Subject Knowledge Enhancement courses in a range of subjects (Biology, Chemistry, Computer Science, Design and Technology (Food & Textiles), English, French, Geography, Mathematics, Physics) for those who need them and our PGCE offers Master's-level credits as well as Qualified Teacher Status. ",
+    "TrainWithDisability": "The University of Worcester offers a wide range of support and advice to disabled students and also to parents, staff and those external agencies supporting disabled students.\\r\n\\r\nOur Disability and Dyslexia Service offers support, advice and guidance to students who have a disability, medical condition or Specific Learning Difficulty (SpLD). This support lasts throughout a student’s studies at the University of Worcester. We also work with and offer support and advice to University staff on how to meet the needs of disabled students.\\r\n \\r\n* Supporting disabled students with general enquiries\\r\n* Implementing special arrangements for lectures, exams and field trips. This might include notes in advance or special arrangements in exams.\\r\n* Where appropriate, we can arrange note takers, academic support tutors, library assistance, interpreters and transcribers.\\r\n* Help with applying for the Disabled Students Allowance (DSA) which is there to fund these types of support in higher education.\\r\n* Limited loans of equipment\\r\n* Confidential advice and support for students and staff\\r\n* Training and awareness raising workshops\\r\n* Assistive technology ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The Manchester Metropolitan University",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "M40/C1X1",
+  "providerCode": "M40",
+  "programmeCode": "C1X1",
+  "schools": [
+    {
+      "name": "Faculty of Education (Manchester)",
+      "address": "Birley Fields, Hulme, Manchester",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Birley Fields, Hulme, Manchester",
+      "geocode": true,
+      "formatted_address": "Birley Fields Campus, 53 Bonsall St, Manchester M15 6GX, UK",
+      "latitude": 53.4667373,
+      "longitude": -2.2464233,
+      "post_code": "M15 6GX",
+      "city": "Greater Manchester",
+      "route": "Bonsall Street",
+      "postal_town": "Manchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "M40",
+    "addr_1": "All Saints Building",
+    "addr_2": "All Saints",
+    "addr_3": "Manchester",
+    "addr_4": "Greater Manchester",
+    "postcode": "M15 6BH ",
+    "url": "http://www.mmu.ac.uk",
+    "geocode": true,
+    "formatted_address": "All Saints Building, All Saints, Manchester M15 6BH, United Kingdom",
+    "latitude": 53.471068,
+    "longitude": -2.238619,
+    "post_code": "M15 6BH",
+    "city": null,
+    "route": null,
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Science course is consistently graded as good in Ofsted inspections, and will lead to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYou will be taught by staff with national and international reputations as experts in the field of science education. They are a diverse and incredibly experienced community of academics with extensive school teaching and academic experience.\\r\n\\r\nTake part in activities designed to help you to plan your teaching effectively and imaginatively. Discover how to evaluate your skills, particularly in terms of the quality of learning achieved by pupils.\\r\n\\r\nYour teaching is through a series of practical seminars and workshops in purpose-built science laboratorieswhere interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\nobservation of other teachers\\r\n\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n* gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At Manchester Met, you won’t just develop the practical and organisational skills you’ll need to teach a subject in the classroom. You’ll explore how children learn and factors that can affect the way we learn, from our environment to our teachers.\\r\n\\r\nYou will look at the latest educational research, identifying how research might help you in the classroom, perhaps when you’re dealing with children’s behaviour or you’re investigating if there’s a new way to teach a topic.\\r\n\\r\nWe offer University-led and School-led routes into teaching both Primary and Secondary education.\\r\n\\r\nBoth routes lead to Qualified Teacher Status (QTS) and include 60 masters level credits (a full-time masters degree typically consists of 180 credits, and you can usually put your 60 credits towards your masters).\\r\n\\r\nWe work with over 500 primary schools and over 400 secondary schools across the North West region. This means you could experience placements in inner city or rural settings, mixed or single gender, faith schools, selective or comprehensive schools. This variety helps you to experience different situations and develop your practical skills as a teacher in different settings.\\r\n\\r\nYou can also choose from over 20 secondary subject specialisms. Maybe you’re excited to share your love of Shakespeare or perhaps you can’t wait to hear your year 7 class share their first words in Mandarin. Or, you’re already thinking of all of the incredible science experiments you’ll show your class. \\r\n\\r\nYou will learn in a diverse community of students, replicating the environment you will experience in schools.\\r\n",
+    "TrainWithDisability": "A member of staff from Disability Service is often available at MMU Open days and Visit Days to offer advice on disability related issues. However, you can always phone or email us if you have any specific queries. \\r\n\\r\nManchester Metropolitan University is committed to providing equal opportunities in education for all students and will take reasonable steps to meet both the general need for access and the specific needs of individuals with additional support needs. The University works with disabled students to ensure they are not disadvantaged as a result of their disability.\\r\n\\r\nBefore accepting a place, disabled applicants should explore how the university might be able to meet any additional study support or accommodation needs they may have. This should be done at the earliest opportunity by contacting the Disability Service on 0161 247 3491 or (disability.service@mmu.ac.uk)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

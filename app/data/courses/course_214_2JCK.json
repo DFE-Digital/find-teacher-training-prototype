@@ -1,0 +1,96 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Hertfordshire",
+  "provider": "Harrow First",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Salary",
+  "slug": "214/2JCK",
+  "providerCode": "214",
+  "programmeCode": "2JCK",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Shaldon Road, Edgware, London, HA8 6AN",
+      "code": "-"
+    },
+    {
+      "name": "The Misbourne School",
+      "address": "Misbourne Drive, Great Missenden, Buckinghamshire, HP16 0BN",
+      "code": "B"
+    },
+    {
+      "name": "Park High School",
+      "address": "Thistlecroft Gardens, Stanmore, HA7 1PL",
+      "code": "P"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Shaldon Road, Edgware, London, HA8 6AN",
+      "geocode": true,
+      "formatted_address": "Shaldon Rd, Edgware HA8 6AN, UK",
+      "latitude": 51.5997559,
+      "longitude": -0.2875058,
+      "post_code": "HA8 6AN",
+      "city": "Greater London",
+      "route": "Shaldon Road",
+      "postal_town": "Edgware"
+    },
+    {
+      "address": "Misbourne Drive, Great Missenden, Buckinghamshire, HP16 0BN",
+      "geocode": true,
+      "formatted_address": "Misbourne Dr, Great Missenden HP16 0BL, UK",
+      "latitude": 51.6999268,
+      "longitude": -0.7045262999999999,
+      "post_code": "HP16 0BL",
+      "city": "Buckinghamshire",
+      "route": "Misbourne Drive",
+      "postal_town": "Great Missenden"
+    },
+    {
+      "address": "Thistlecroft Gardens, Stanmore, HA7 1PL",
+      "geocode": true,
+      "formatted_address": "Thistlecroft Gardens, Stanmore HA7 1PL, UK",
+      "latitude": 51.60091449999999,
+      "longitude": -0.303095,
+      "post_code": "HA7 1PL",
+      "city": "Greater London",
+      "route": "Thistlecroft Gardens",
+      "postal_town": "Stanmore"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "The Canons Park Teaching School Alliance work in collaboration with the University of Hertfordshire to offer Harrow First, a salaried School Direct training programme for a limited number of top graduates who wish to teach. Trainees spend four days in school and one day at the University of Hertfordshire each week during term time.\\r\n\\r\nAll courses are run in Harrow and allow teachers to develop their leadership skills whilst training to teach.  Harrow First is a challenging programme which will take a fresh approach to training teachers via the School Direct (salaried route).  Successful applicants will undergo training during July and August with a view to teaching from 10 hours per week in a school from September, supported in the classroom by a Higher Level Teaching Assistant (HLTA).  Training will continue through the year, both in school and at the University of Hertfordshire.  The course leads to the award of Qualified Teacher Status (QTS) plus 30 MA credits.  There will be opportunities to complete further MA modules in subsequent years in order to achieve the MA in Education.  \\r\n\\r\nThere are three assessment point throughout the year and trainees are assessed through a combination of lesson observations and an evidence bundle include lesson plans and evaluations. Trainees will benefit from a variety of support: from the University of Hertfordshire, from their mentor in school, from the Higher Level Teaching Assistant, from a Professional Mentor in school and from a Specialist Leader in Education who will ensure the coherence of the course.  Colleagues in all these roles are well trained and experienced.  We are committed to training creative, innovative and reflective practitioners who see themselves as future leaders.  ",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "This is a salaried programme and all training fees and costs are covered by the Canons Park Teaching School Alliance. We pay on the unqualified teachers’ pay scales (for Outer London). There are no other fees or costs for the trainees.",
+    "Qualifications": "You should have:\\r\n\\r\n* 1st or 2nd class honours degree in Mathematics or a related subject, or a joint degree with Mathematics as the major component (i.e. at least two years of Mathematics studies at undergraduate level).  \\r\n* GCSE Grade C or above in Mathematics and English \\r\n* A level in Mathematics at minimum B grade\\r\n* Candidates without these qualifications may be accepted if they have acquired knowledge through other routes (e.g. work experience; a subject knowledge enhancement course).  \\r\n* Overseas qualifications should be checked by UK NARIC before making an application.  \\r\n* Skills tests in literacy and numeracy\\r\n",
+    "InterviewProcess": "Once your application is submitted shortlisted candidates will be invited for interview at one of the schools in the alliance. The interview process will involve four parts and will include the following: \\r\n\\r\n* Interview\\r\n* Lesson Observation – the topic will be provided prior to interview\\r\n* Literacy task\\r\n* Document check\\r\n\\r\nThe interview process will include the opportunity to talk to staff and pupils and is a rigorous and thorough process, designed to allow you to demonstrate a range of qualities and competences.  We seek to get the best match of applicant to the limited places available.  \\r\n\\r\n",
+    "OtherRequirements": "We particularly welcome applicants who have worked with young people in a variety of settings.  We expect you to have spent at least five days shadowing in a school or schools; and to have observed lessons in a secondary school before your interview.  You will be required to provide written evidence of this if invited for an interview.  Three years’ work experience (PhD study is acceptable) is required to meet the eligibility requirements of the School Direct (salaried) programme.  ",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about learning and have a desire to share this with children and young people of all abilities. This will be demonstrated by meaningful experience of working with children and young people. This does not need to be paid work but might be helping with a sports team, drama group or youth club.  During the last two years we expect you to have carried out at least five days classroom experience, or you may have worked in a school.  ",
+    "HowSchoolPlacementsWork": "You main placement school will be one of the schools in the Canons Park Teaching School Alliance. All schools are located in North-West London with good transport links to Central London. You will be teaching either 11 – 16 or 11 – 18 depending on the subject and placement. All trainees will have one main placement school where they will complete the majority of their training. They will train at a second school for a short six week placement in the Spring Term."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Canons Park Teaching School Alliance is looking for exceptional graduates to join us on Harrow First – a unique and challenging route into teaching. Two different training programmes are available, Harrow First, a full-time training programme, and Harrow Options a flexible training programme.  Applicants will be passionate about education, have an excellent academic background and a deep commitment to working with young people to improve their life chances.  We  create an environment in which staff, pupils and trainee teachers alike feel valued and supported.  All schools involved in Harrow First have extensive experience of training teachers. \\r\n\\r\nTrainee teachers recruited onto the Harrow First programme will be well supported and challenged to become creative, innovative and reflective practitioners.  In addition there will be a strong focus on leadership development throughout the programme including opportunities to work in teams and take on various responsibilities.\\r\n\\r\nHarrow is located in North-West London with good transport links to Central London.  The two secondary schools in the Teaching School Alliance were both rated outstanding by Ofsted in their most recent inspections.  Successful applicants will have school based training in two schools.\\r\n\\r\nPupils across the partnership are happy, friendly and well-behaved and are at the heart of everything we do. Our staff are our most valuable resource and we have a proven track record in training and professional development.  Our teachers are excellent practitioners with exemplary behaviour management skills and are eager to share their skills, knowledge and practice with the next generation of teachers. \\r\n",
+    "TrainWithDisability": "The University of Hertfordshire has full disabled access and is committed to admitting and supporting students with disabilities.  Please refer to the website for details – www.herts.ac.uk  \\r\n\\r\nThe individual host schools have differing disabled access provisions, so if in doubt please contact the host school directly. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "H36"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "2B5"
+      }
+    ]
+  },
+  "has_inst": true
+}

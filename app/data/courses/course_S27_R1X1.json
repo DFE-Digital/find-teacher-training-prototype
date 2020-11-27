@@ -1,0 +1,63 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Southampton",
+  "subjects": [
+    "French",
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages (French)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "S27/R1X1",
+  "providerCode": "S27",
+  "programmeCode": "R1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S27",
+    "addr_1": "Highfield",
+    "addr_2": null,
+    "addr_3": "Southampton",
+    "addr_4": null,
+    "postcode": "SO17 1BJ",
+    "url": "http://www.southampton.ac.uk/education/postgraduate/itt.page",
+    "geocode": true,
+    "formatted_address": "Highfield, Southampton SO17 3RU, UK",
+    "latitude": 50.93261099999999,
+    "longitude": -1.390369,
+    "post_code": "SO17 3RU",
+    "city": "Highfield",
+    "route": null,
+    "postal_town": "Southampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our Initial Teacher Education department is a dynamic and thriving community of professional educators and researchers. In AY2017-2018 Southampton Education School was ranked 2nd in the Guardian University League Table.\\r\n\\r\nWhy come to Southampton?\\r\n\\r\n* Our Tutors. In every forum the dedication and commitment of our Tutors is praised. Trainee Teachers rate them extremely highly, External Examiners praise the time and effort that Tutors devote to Trainees and Ofsted recognises the ‘high quality mentoring and support’ offered. \\r\n* Our quality of teaching and our diverse partnerships and placements. Our Tutors are all Teachers. We thrive through continuous professional development – and very much enjoy implementing new research or theories in partnership with Trainee Teachers and the Schools that we work with. Our Partner Schools are key to our success, and the Mentors that we work are experienced, dedicated and enthusiastic. \\r\n* Our commitment to Health and Wellbeing. The health and wellbeing of our Trainee Teachers, and the students that they teach, is central to producing outstanding teachers and happy students who can make progress and succeed.\\r\n* Our scope to personalise and individualise your learning on your Programme. Every Trainee Teacher is unique, and we want each and every trainee to be the very best teacher that they can be. We achieve this by personalising our programmes to suit you.\\r\n* Our commitment to ‘Student Voice’. We actively encourage trainees to work with us to make our courses even better. \\r\n* Employability. Almost 100% of our Trainee Teachers get jobs. \\r\n",
+    "TrainWithDisability": "At Southampton we welcome applications from candidates with disabilities and other needs. SEND is a very important element of our training throughout the PGCE, and trainees who have personal experiences of SEND are of real benefit to our programmes, as they bring a wealth of experience.\\r\n\\r\nHow are Trainee Teachers with disabilities and other needs supported?\\r\n\\r\n* Trainees with dyslexia meet together at the start of the course for an informal session, led by a tutor with significant SEND experience. This group is then enabled to support one another throughout the course, with individual, personalised, input from the tutor as required.\\r\n* Trainees with Physical Disabilities are always accommodated as appropriate and a wide variety of modifications are available.  For example, a student with a hearing impairment may be supported by our enabling services, as well as by their Personal Academic Tutor with services such as remote transcription available - we work with individuals to ensure that their needs are met both when in University and when teaching in schools.\\r\n* We recognise that teaching can be stressful. The University offers a variety of services for Trainees who may be suffering from anxiety or depression, for example trainees can access talking therapies via the University Enabling Services. Trainees are also encouraged to make full use of their Personal Academic Tutor.\\r\n* The course team are able to personalise many aspects of the programme, to accommodate need on an individual basis, to enable successful completion of the course.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

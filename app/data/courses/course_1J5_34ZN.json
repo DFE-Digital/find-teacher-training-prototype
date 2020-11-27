@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Sussex",
+  "provider": "Eastbourne Area School Direct Alliance",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1J5/34ZN",
+  "providerCode": "1J5",
+  "programmeCode": "34ZN",
+  "schools": [
+    {
+      "name": "St John's School, Seaford",
+      "address": "Firle Road, Seaford, BN25 2HU",
+      "code": "5"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Firle Road, Seaford, BN25 2HU",
+      "geocode": true,
+      "formatted_address": "Firle Rd, Seaford BN25 2HU, UK",
+      "latitude": 50.7845016,
+      "longitude": 0.1021025,
+      "post_code": "BN25 2HU",
+      "city": "East Sussex",
+      "route": "Firle Road",
+      "postal_town": "Seaford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1J5",
+    "addr_1": "Broad Road",
+    "addr_2": "Lower Willingdon",
+    "addr_3": null,
+    "addr_4": "Eastbourne",
+    "postcode": "BN20 9QX",
+    "url": "http://www.willingdonschool.org.uk",
+    "geocode": true,
+    "formatted_address": "Broad Rd, Eastbourne BN20 9QS, UK",
+    "latitude": 50.8114363,
+    "longitude": 0.2418378,
+    "post_code": "BN20 9QS",
+    "city": "East Sussex",
+    "route": "Broad Road",
+    "postal_town": "Eastbourne"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "This course is run at St John's School, Seaford and trains candidates in KS3 & 4.\\r\nCandidates will be on a 50% timetable with 4 days in school and 1 day at Sussex University.\\r\nCandidates will be regularly watched by their mentor to ensure that they are succeeding on the course.\\r\nThere will be a second, contrasting placement at a school which is mutually agreed.",
+    "CourseLength": "September to June",
+    "Qualifications": "Candidates must have 5 or more GCSEs  in Grades A* to C (or equivalent), including Mathematics and English, and preferably a higher level honours degree in English.",
+    "InterviewProcess": "Candidates will be required to teach a small group of students for approximately 20 minutes, to judge their aptitude to teach. This will be followed by a formal interview.",
+    "OtherRequirements": "Successful completion of Skills tests\\r\nSatisfactorily pass DBS and Health checks",
+    "PersonalQualities": "We are looking for trainee teachers who are enthusiastic about their subject and who have a love of learning. They need to be a team player, committed to achieving the highest standards of teaching and learning so that all students can achieve their full potential.",
+    "HowSchoolPlacementsWork": "The age range of students is 11 to 16 years\\r\nThere will be an opportunity to gain experience of KS5\\r\nThe candidate will have a total of two placements\\r\nThe second placement is approx 6 weeks"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Eastbourne Area School Direct Alliance recruits ITT students for most of the schools in Eastbourne and the surrounding areas. We offer Primary places for Key Stage 1 and 2. We also offer Secondary places for most subjects in a variety of high achieving schools. As part of your training you will get experience of KS3, 4 and 5. In addition we represent Special Needs schools who require Primary and Secondary teachers. All the schools in the consortium are experienced at training teachers and we have been very successful in aiding our School Direct candidates to obtain jobs when they have completed their training.",
+    "TrainWithDisability": "All of our sites meet the requirements for disabled access and we would work with any candidate to ensure they can succeed in their training without any impediment.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "B72"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "S90"
+      }
+    ]
+  },
+  "has_inst": true
+}

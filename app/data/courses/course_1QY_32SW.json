@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Hertfordshire",
+  "provider": "Hitchin Boys’ School",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1QY/32SW",
+  "providerCode": "1QY",
+  "programmeCode": "32SW",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Grammar School Walk, Hitchin, SG5 1JB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Grammar School Walk, Hitchin, SG5 1JB",
+      "geocode": true,
+      "formatted_address": "Grammar School Walk, Hitchin SG5, UK",
+      "latitude": 51.9499256,
+      "longitude": -0.2792064,
+      "post_code": "SG5",
+      "city": "Hertfordshire",
+      "route": "Grammar School Walk",
+      "postal_town": "Hitchin"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1QY",
+    "addr_1": "Grammar School Walk",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": "Hitchin",
+    "postcode": "SG5 1JB ",
+    "url": "http://www.hbs.herts.sch.uk",
+    "geocode": true,
+    "formatted_address": "Grammar School Walk, Hitchin SG5, UK",
+    "latitude": 51.9499256,
+    "longitude": -0.2792064,
+    "post_code": "SG5",
+    "city": "Hertfordshire",
+    "route": "Grammar School Walk",
+    "postal_town": "Hitchin"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 0.0,
+    "FeeDetails": "Contact the University of Herts for details.",
+    "AboutCourse": "Trainees spend 4 days a week in school and 1 day a week at University.",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE in Maths and English at Grade C or above plus a relevant degree at 2:2 or above.",
+    "FeeInternational": 0.0,
+    "HowSchoolPlacementsWork": "Trainees will be based at their Host School for most of the year, undertaking a second 6 week placement, usually in the Spring Term. Teaching is likely to encompass all age ranges from 11-18."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Hitchin Boys' School is the Lead School for the North Herts Consortium of Schools for School Direct, comprising Hitchin Girls' School, Fearnhill School, The Priory School, The Highfield School, Knights Templar School and The Meridian School. Vacancies advertised by Hitchin Boys' School may be for placements at any of the schools in our consortium as links between the schools are very strong.\\r\n\\r\nWe are committed to recruiting applicants regardless of sex, race, gender, ethnicity, sexual orientation or disability.\\r\n",
+    "TrainWithDisability": "We are committed to making all possible reasonable adjustments in order to offer training placements to trainees with disabilities. Please contact individual schools within the consortium for details of specific support which could be offered.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "H36"
+      }
+    ]
+  },
+  "has_inst": true
+}

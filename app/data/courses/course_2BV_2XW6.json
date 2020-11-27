@@ -1,0 +1,182 @@
+{
+  "locationType": "School",
+  "accrediting": "St Mary's University, Twickenham",
+  "provider": "West London Teaching School Alliance (Secondary)",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "2BV/2XW6",
+  "providerCode": "2BV",
+  "programmeCode": "2XW6",
+  "schools": [
+    {
+      "name": "Sacred Heart High School",
+      "address": "212 Hammersmith Road, London, W6 7DG",
+      "code": "1"
+    },
+    {
+      "name": "Fulham College Boys' School SW6 6SN",
+      "address": "Kingswood Road, London, SW6 6SN",
+      "code": "4"
+    },
+    {
+      "name": "Drayton Manor High School",
+      "address": "Drayton Bridge Road, London, W7 1EU",
+      "code": "D"
+    },
+    {
+      "name": "The Fulham Boys' School",
+      "address": "Mund Street, Gibbs Green, London, W14 9LY",
+      "code": "F"
+    },
+    {
+      "name": "Hammersmith Academy W12 9JD",
+      "address": "25 Cathnor Road, Hammersmith, London, W12 9JD",
+      "code": "H"
+    },
+    {
+      "name": "Lady Margaret School SW6 4UN",
+      "address": "Parsons Green, London, SW6 4UN",
+      "code": "L"
+    },
+    {
+      "name": "St Mark's Roman Catholic School",
+      "address": "106 Bath Road, Hounslow, TW3 3EJ",
+      "code": "M"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "212 Hammersmith Road, London, W6 7DG",
+      "geocode": true,
+      "formatted_address": "212 Hammersmith Rd, Hammersmith, London W6 7DG, UK",
+      "latitude": 51.4935679,
+      "longitude": -0.2233548,
+      "post_code": "W6 7DG",
+      "city": "Greater London",
+      "route": "Hammersmith Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Kingswood Road, London, SW6 6SN",
+      "geocode": true,
+      "formatted_address": "Kingswood Rd, London SW2 4JL, UK",
+      "latitude": 51.44971109999999,
+      "longitude": -0.1284424,
+      "post_code": "SW2 4JL",
+      "city": "Greater London",
+      "route": "Kingswood Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Drayton Bridge Road, London, W7 1EU",
+      "geocode": true,
+      "formatted_address": "Drayton Bridge Rd, London W7 1EX, UK",
+      "latitude": 51.5154229,
+      "longitude": -0.3351914,
+      "post_code": "W7 1EX",
+      "city": "Greater London",
+      "route": "Drayton Bridge Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Mund Street, Gibbs Green, London, W14 9LY",
+      "geocode": true,
+      "formatted_address": "Gibbs Green Cl & Mund St, Hammersmith, London W14, UK",
+      "latitude": 51.489024,
+      "longitude": -0.2035729,
+      "post_code": "W14",
+      "city": "Greater London",
+      "route": null,
+      "postal_town": "London"
+    },
+    {
+      "address": "25 Cathnor Road, Hammersmith, London, W12 9JD",
+      "geocode": true,
+      "formatted_address": "25 Cathnor Rd, Shepherd's Bush, London W12 9JD, UK",
+      "latitude": 51.5020667,
+      "longitude": -0.2361741,
+      "post_code": "W12 9JD",
+      "city": "Greater London",
+      "route": "Cathnor Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Parsons Green, London, SW6 4UN",
+      "geocode": true,
+      "formatted_address": "Parsons Green, Fulham, London SW6 4UJ, UK",
+      "latitude": 51.4739373,
+      "longitude": -0.1998538,
+      "post_code": "SW6 4UJ",
+      "city": "Greater London",
+      "route": "Parsons Green",
+      "postal_town": "London"
+    },
+    {
+      "address": "106 Bath Road, Hounslow, TW3 3EJ",
+      "geocode": true,
+      "formatted_address": "St Marks Rc School, 106 Bath Rd, Hounslow TW3 3EJ, UK",
+      "latitude": 51.4684234,
+      "longitude": -0.3744157,
+      "post_code": "TW3 3EJ",
+      "city": "Greater London",
+      "route": "Bath Road",
+      "postal_town": "Hounslow"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2BV",
+    "addr_1": "212 Hammersmith Road",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "W6 7DG  ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "212 Hammersmith Rd, Hammersmith, London W6 7DG, UK",
+    "latitude": 51.4935679,
+    "longitude": -0.2233548,
+    "post_code": "W6 7DG",
+    "city": "Greater London",
+    "route": "Hammersmith Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "QUALIFICATION OUTCOME\\r\n \\r\nThis course 2XW6 leads to PGCE (M) QTS.  Further clarity on the significance of different teacher training qualifications can be found [here](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/different-qualification-outcomes/).\\r\n\\r\nSPECIAL FEATURES\\r\nThis course is run by the West London Teaching School Alliance (WLTSA) as Provider (in partnership with (and accredited by) St Mary’s University, Twickenham.  \\r\n\\r\nWLTSA enables you to choose your host school at application.  Later, if there is a vacancy in your host school and they want to retain you, you can be employed fairly seamlessly for the following year without the post being advertised.  By becoming a WLTSA trainee, all our other secondary schools could also employ you this way and we operate a pool.\\r\n\\r\nOur aim is to produce exceptional teachers who can then remain in alliance schools, continuing to further their career with the benefit of our on-going CPD.\\r\n\\r\nTHE TRAINING\\r\n\\r\nMost schools need you to be able to teach at least one of the three sciences to A-Level, and to be willing and able to teach all three Sciences at Key Stage 3 and ideally to GCSE.  We can help you learn to do so. \\r\n\\r\nYou would attend all the same university sessions with those who had applied through the university; have full access to university facilities and mentors; and the university still awards your PGCE.  WLTSA selects a second contrasting school for your ‘away’ placement.  \\r\n\\r\nAs a guide: [2018-19 block timetable](http://www.wltsa.org.uk/initial-teacher-training/st-m-unsal-sec-pgce-block-timetable-18-19/). \\r\n\\r\nLectures would include teaching, assessing, classroom management and child protection.  Subject seminars are led by your university tutor. \\r\n\\r\nAt school, through an initial programme of observations, you will become familiar with the workings of the school and department (pupil groups, pastoral systems, staffing, curriculum, resources, facilities, methods of teaching, lesson planning, and assessment).  \\r\n\\r\nYou will be treated like a member of staff and with your school mentors, you will feel supported as you become ready to teach. Our mentors are excellent experienced teachers who undertake rigorous training to develop their mentoring skills.  \\r\n\\r\nThroughout your time in both schools, your university tutor visits you to monitor your progress and discuss your development with you and your school mentors.\\r\n\\r\nYou will have the opportunity to teach across KS3/KS4. You will also have the opportunity to support KS5 in either your host or second placement school. At KS3, you will cover the key areas of Biology, Chemistry, and Physics (such as cell biology, atoms, elements and chemical reactions, energy and forces).  \\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "* A scientific honours degree (2.2 or above) ideally in Physics.   \\r\n\\r\n* We normally also expect two Sciences at A-Level standard.\\r\n\\r\n* Five GCSEs at least at Grade C (or grade 5 for GCSEs sat in 2017 onwards) or the equivalent) including English Language and Mathematics.   \\r\n\\r\n*A ‘pass’ in the [DfE Literacy and Numeracy Skills Tests](https://getintoteaching.education.gov.uk/how-to-apply/passing-the-skills-tests)\\r\n\\r\nWhere appropriate, please read our important guidance [Overseas Qualifications & GCSE Equivalency Tests](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/overseas-qualifications-gcse-equivalencies/).     \\r\n\\r\nIf we consider it appropriate, we can make an offer subject to you undertaking a specific free subject knowledge enhancement course provided by the university.\\r\n",
+    "FinancialSupport": "In addition to bursaries and loans, while not provided directly by WLTSA, please be aware that as a full time student you would be eligible for cheaper travel in London using a student oyster card and in many boroughs you can get a reduction on your council tax payments.",
+    "InterviewProcess": "TWO STAGE INTERVIEW\\r\n\\r\nOn receipt of your UCAS application this will be considered by the named host school, in collaboration with the WLTSA centrally and the university.  This process is administered by the WLTSA Teaching School office.\\r\n\\r\nIf shortlisted for interview we will ask the university to invite you to an initial interview and we will email you to confirm the interview date (see [here](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/interview-dates/) and arrangements for the second interview which is held in the host school that you identified in your course choice on UCAS, normally approx. 3-4 days after the university interview.\\r\n\\r\nThe university interviews are normally a full day, allowing time within this for their registry team to verify various identification documents and qualification certificates.  In addition to their panel interview, you may be required to undertake group tasks with other candidates and some subject knowledge testing.\\r\n\\r\nAssuming you pass at the university (which is common) the school interview would then be held (normally across a morning).  This would include a tour of the school; WLTSA literacy/numeracy tests; a classroom exercise and panel interview. \\r\n \\r\nThe WLTSA literacy and numeracy tests are quite separate to the DfE Skills tests referred to in the entry requirements below. Usually candidates have not taken the DfE skills tests when they come to interview and our own (very short) tests are used to help us identify those who may need to do more practice papers ahead of the skills tests and those who are unlikely to pass them.\\r\n\\r\n ",
+    "OtherRequirements": "We require energetic and committed applicants with excellent subject knowledge in Science. \\r\n\\r\nA realistic understanding of the role of a teacher and some current issues facing the profession is also important.   It can help to spend a couple of days observing relevant lessons in a state secondary school to strengthen your application but this observation is not a strict requirement in itself.  [Top tips for getting some observational experience](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/school-experience/).\\r\n\\r\nOffers are conditional on satisfactory outcome of a Disclosure & Barring Service check (£52) and an occupational health check (£20) both administered through the university after an offer is accepted.   \\r\n",
+    "PersonalQualities": "We want you to have passion and enthusiasm.  We need trainees who can engage and inspire students to a love of learning, who are:   \\r\n*committed to championing their students;\\r\n*open to learn about children’s physical/social/emotional/cognitive needs and how these can affect behaviour;\\r\n*in good health with the ability to cope with stress.  Teaching is incredibly rewarding, but it also requires an element of resilience!\\r\n*professional and committed to equal opportunities;\\r\n*able to communicate well in written/spoken English, with at least basic computer skills and commitment to developing these.\\r\n*have a sense of humour and an ability to laugh at yourself.     \\r\n",
+    "HowSchoolPlacementsWork": "With WLTSA you select the main host school at application.  We then later arrange your second placement at another contrasting WLTSA school to provide greater depth to your training experience. \\r\n\\r\nCHOOSING YOUR SCHOOL\\r\n\\r\nThe characters and location of our schools are varied.  When deciding on your preferred host school, we need you to consider where you might eventually like to work and how accessible it is to where you live.\\r\n\\r\nThe schools seeking trainees on this particular course are listed below. \\r\n   \\r\n* Drayton Manor High School, W7\\r\n* Fulham Boys’ School, W14\\r\n* Fulham Cross Girls’ School, SW6\\r\n* Hammersmith Academy, W12\\r\n* Lady Margaret School, SW6\\r\n* Sacred Heart High School, W6\\r\n* St Benedict’s School, W5\\r\n* St Marks Catholic School, TW3\\r\n* The Rise School TW13\\r\n\\r\nYou can read descriptions of each of these schools in our overall [WLTSA Secondary School Summary Descriptions](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/wltsa-secondary-school-summary-descriptions/).    Our [Map of WLTSA Schools](http://www.wltsa.org.uk/map-of-all-wltsa-schools/) may also be helpful.\\r\n\\r\nPlease be aware that we have other [WLTSA secondary courses](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/secondary-course-vacancies-2019-20-cohort/) at other schools.  \\r\nYou can make three choices overall when you apply.\\r\n\\r\n THE TECHNICAL BIT!\\r\n\\r\nYou don’t have to restrict yourself to one school within a course, but each school would count as one application and you get three choices overall in Round 1.  Please also be aware that we have so many partner schools that we have been forced to split artificially on UCAS into three provider names.  See [How to apply & how to choose more than one school on a course.](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/how-to-apply-how-to-choose-more-than-1-school-on-a-course/)\\r\n\\r\nBE STRATEGIC WHEN YOU APPLY\\r\n\\r\nYou can always ring us up to ask how many applications (if any) are being considered by different schools at the point that you are about to apply.  We also keep our website up to date so that you can see which schools have already shortlisted and are interviewing. \\r\n\\r\nWe commonly interview individually whenever a good application is received. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "WHO ARE WE? \\r\n\\r\nWe are a large alliance of 60 schools: nurseries, primaries, special needs, secondaries, sixth forms; faith and non-faith, maintained schools, independent schools and free schools.   We have formal partnership arrangements with three universities.\\r\n\\r\nMost of our schools are in Hammersmith & Fulham and Kensington & Chelsea, but we also have schools in Westminster; Richmond; Ealing, Hounslow, Hillingdon and Southwark. \\r\n\\r\nThe central Teaching School Office for WLTSA is based at Sacred Heart High School, in Hammersmith. \\r\n\\r\nOUR APPROACH TO TRAINEE RECRUITMENT\\r\n \\r\nWe pride ourselves in the support that we provide potential applicants and in the speed of our shortlisting. We have a detailed website which is a good place to start.  We also hold fortnightly [information sessions](http://www.wltsa.org.uk/initial-teacher-training/secondary-courses/recruitment-events-open-days/) to explain the qualifications;  routes into teaching; finance; and how to secure a place!  \\r\n\\r\n ‘That’s the first time that I have ever properly understood it all. Brilliant!’  Applicant 2018.\\r\n\\r\nThe Teaching School Office is staffed full time with experts to talk to on the phone. \\r\n\\r\nYou choose the schools when you apply. If you perform well but fail to get a place at your preferred school, we continue to work with you, recommending you to other WLTSA schools of your choice rather than rejecting you.\\r\n\\r\nWe place significant emphasis on getting a good fit between trainee and school because we are all keenly focused on recruitment for qualified teachers in our alliance schools the following year.\\r\n\\r\n[Further opportunities to develop your career with WLTSA](http://www.wltsa.org.uk/initial-teacher-training/career-path1/)\\r\n",
+    "TrainWithDisability": "WLTSA and all our partner universities are committed to supporting students with disabilities. Please contact us as early as possible in your application process so that your needs are met and support can be arranged.\\r\n\\r\nYou can also find support and information from the university accrediting the course that you hope to apply for:\\r\n\\r\nST MARY'S UNIVERSITY offers advice and support to their students who have requirements as a result of a disability, specific learning difficulty (e.g. dyslexia), medical condition or temporary disability, such as injury.  St Mary’s Dyslexia and Disability Co-ordinator (DDC) works closely with the other members of the Student Services team, supporting students in their time at university assisting them to be proactive in their studies as an independent learner.  [http://www.smuc.ac.uk/student-support/dyslexia-and-disability/](http://www.smuc.ac.uk/student-support/dyslexia-and-disability/)\\r\n\\r\nUNIVERSITY OF ROEHAMPTON: [http://www.roehampton.ac.uk/Disabilities/Support/](http://www.roehampton.ac.uk/Disabilities/Support/)\\r\n\\r\nUCL: School Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team. You can find more information here:- \\r\n[https://www.ucl.ac.uk/students/disability-support](https://www.ucl.ac.uk/students/disability-support)\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "This WLTSA course is accredited by University of Roehampton, who have been at the forefront of teacher education for over 100 years.  Many members of staff are at the cutting edge of research in teacher education, which has a positive impact on the quality of our provision; tutors have extensive teaching experience in schools with many having served as consultants or as Ofsted inspectors.\\r\n\\r\nThe university experience is enhanced by its beautiful campus - unique in being both close to central London and set in parkland with grand, historic buildings and lakes side by side with newly built modern facilities.\\r\n",
+        "UcasInstitutionCode": "R48"
+      },
+      {
+        "Description": "This WLTSA course is accredited by St Mary's University, Twickenham. \\r\n\\r\nIn 2000, St Mary’s celebrated 150 years in Education. With just under 4,000 students training to teach on primary and secondary, they are now London’s second largest teacher training course provider and in 2011, St Mary’s was deemed to be ‘outstanding’ by OfSTED during inspection. \\r\n\\r\nCourse tutors at St Mary’s are all skilful teachers themselves, with many years of experience in schools and higher education.  Schools in the Alliance have excellent relationships with the university.\\r\n",
+        "UcasInstitutionCode": "S64"
+      },
+      {
+        "Description": "This WLTSA course is accredited by UCL (Institute of Education) which has been providing first-class teacher training, in partnership with schools and colleges for over 100 years.  UCL (IOE) graduates are highly sought after in schools and colleges throughout London and the UK. \\r\nIts central location in historic Bloomsbury means that you will be studying in the heart of London. The London Underground station at Russell Square is minutes from the main building and King’s Cross, St Pancras and Euston stations are also close by.\\r\n\\r\nYou can view UCL’s online teacher training prospectus is here: \\r\n[https://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes](https://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes)\\r\n",
+        "UcasInstitutionCode": "U80"
+      }
+    ]
+  },
+  "has_inst": true
+}

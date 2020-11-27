@@ -1,0 +1,197 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Leicester",
+  "provider": "Groby and Partners School Direct",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1A4/2PGZ",
+  "providerCode": "1A4",
+  "programmeCode": "2PGZ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Ratby Road, Groby, Leicester, LE6 0FP",
+      "code": "-"
+    },
+    {
+      "name": "Bosworth Academy",
+      "address": "Leicester Lane, Desford, Leicestershire, LE9 9JL",
+      "code": "B"
+    },
+    {
+      "name": "Groby Community College",
+      "address": "Ratby Road, Groby, Leicester, LE6 0GE",
+      "code": "G"
+    },
+    {
+      "name": "Lutterworth College",
+      "address": "Bitteswell lane, Lutterworth, Leics, LE17 4EW",
+      "code": "L"
+    },
+    {
+      "name": "Saint Martins Catholic Voluntary Academy",
+      "address": "Stoke Golding, Nuneaton, Warwickshire, CV13 6HT",
+      "code": "M"
+    },
+    {
+      "name": "South Charnwood High School",
+      "address": "Broad Lane, Markfield, Leicestershire, LE67 9TB",
+      "code": "S"
+    },
+    {
+      "name": "Brookvale High School",
+      "address": "Ratby Road, Groby, Leicester, LE6 0GE",
+      "code": "V"
+    },
+    {
+      "name": "Winstanley Community School",
+      "address": "Kings Way North, Braunstone Town, Leicester, LE3 3BD",
+      "code": "W"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Ratby Road, Groby, Leicester, LE6 0FP",
+      "geocode": true,
+      "formatted_address": "Ratby Rd, Groby, Leicester LE6 0FP, UK",
+      "latitude": 52.6557363,
+      "longitude": -1.2341836,
+      "post_code": "LE6 0FP",
+      "city": "Groby",
+      "route": "Ratby Road",
+      "postal_town": "Leicester"
+    },
+    {
+      "address": "Leicester Lane, Desford, Leicestershire, LE9 9JL",
+      "geocode": true,
+      "formatted_address": "Leicester Ln, Desford, Leicester LE9 9JL, UK",
+      "latitude": 52.6250576,
+      "longitude": -1.2808248,
+      "post_code": "LE9 9JL",
+      "city": "Desford",
+      "route": "Leicester Lane",
+      "postal_town": "Leicester"
+    },
+    {
+      "address": "Ratby Road, Groby, Leicester, LE6 0GE",
+      "geocode": true,
+      "formatted_address": "Ratby Rd, Groby, Leicester LE6 0GE, UK",
+      "latitude": 52.6581481,
+      "longitude": -1.2316613,
+      "post_code": "LE6 0GE",
+      "city": "Groby",
+      "route": "Ratby Road",
+      "postal_town": "Leicester"
+    },
+    {
+      "address": "Bitteswell lane, Lutterworth, Leics, LE17 4EW",
+      "geocode": true,
+      "formatted_address": "Bitteswell Rd, Lutterworth LE17 4EL, UK",
+      "latitude": 52.46030649999999,
+      "longitude": -1.2049436,
+      "post_code": "LE17 4EL",
+      "city": "Leicestershire",
+      "route": "Bitteswell Road",
+      "postal_town": "Lutterworth"
+    },
+    {
+      "address": "Stoke Golding, Nuneaton, Warwickshire, CV13 6HT",
+      "geocode": true,
+      "formatted_address": "Stoke Golding, Nuneaton CV13 6HT, UK",
+      "latitude": 52.5723011,
+      "longitude": -1.4006206,
+      "post_code": "CV13 6HT",
+      "city": "Stoke Golding",
+      "route": null,
+      "postal_town": "Nuneaton"
+    },
+    {
+      "address": "Broad Lane, Markfield, Leicestershire, LE67 9TB",
+      "geocode": true,
+      "formatted_address": "Broad Ln, Markfield LE67 9TB, UK",
+      "latitude": 52.6833529,
+      "longitude": -1.300783,
+      "post_code": "LE67 9TB",
+      "city": "Leicestershire",
+      "route": "Broad Lane",
+      "postal_town": "Markfield"
+    },
+    {
+      "address": "Ratby Road, Groby, Leicester, LE6 0GE",
+      "geocode": true,
+      "formatted_address": "Ratby Rd, Groby, Leicester LE6 0GE, UK",
+      "latitude": 52.6581481,
+      "longitude": -1.2316613,
+      "post_code": "LE6 0GE",
+      "city": "Groby",
+      "route": "Ratby Road",
+      "postal_town": "Leicester"
+    },
+    {
+      "address": "Kings Way North, Braunstone Town, Leicester, LE3 3BD",
+      "geocode": true,
+      "formatted_address": "Kingsway, Braunstone Town, Leicester LE3, UK",
+      "latitude": 52.6086232,
+      "longitude": -1.1790604,
+      "post_code": "LE3",
+      "city": "Braunstone Town",
+      "route": "Kingsway",
+      "postal_town": "Leicester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1A4",
+    "addr_1": "Brookvale Groby Learning Campus",
+    "addr_2": "Ratby Road",
+    "addr_3": "Groby",
+    "addr_4": "Leicester",
+    "postcode": "LE6 0FP ",
+    "url": "http://www.brookvalegroby.com/school-direct/",
+    "geocode": true,
+    "formatted_address": "Ratby Rd, Groby, Leicester LE6 0FP, UK",
+    "latitude": 52.6572791,
+    "longitude": -1.2339769,
+    "post_code": "LE6 0FP",
+    "city": "Groby",
+    "route": "Ratby Road",
+    "postal_town": "Leicester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeDetails": "Please see the University of Leicester website\\r\nwww.le.ac.uk",
+    "AboutCourse": "The Groby and Partners School Direct PGCE, in partnership with the University of Leicester, is divided into two halves, Phase A and Phase B, each with clearly delineated priorities to guide towards successful completion. The partnership offers experience of teaching Key Stages 3,4,and 5\\r\nthe course is a combination of subject knowledge days and  school placements. Professional Study Programme days are delivered across our partnership of schools and led by teachers who are leading practitioners and specialists in their field. This is unique to Groby and Partners School Direct. A pack of materials incorporating designated tasks and recommended reading enables student teachers to make the most of these experiences and prepare them for their first teaching placement. Placement A consists of 8 weeks in school before Christmas.\\r\nStudents spend a week in a Primary school immediately after Christmas before a similar format is repeated in the second half of the year - Placement B. Our course also includes two visits to other schools outside the partnership, to explore Diversity and Inclusion in practice and SEND. Trainees will also work on a subject project and other activities during Placement B. In total 23 weeks in school out of a total of 36, working with experienced teachers who will be skilled and trained mentors, subject specialists, passionate about sharing their knowledge and expertise to help you as a trainee to become an outstanding teacher.\\r\nSuccessful completion of the course leads to either:\\r\n*PGCE and 60 credits at Masters Level awarded by the University and Qualified Teacher Status (QTS) awarded by NCTL OR\\r\n*PGCE and QTS.\\r\nTrainees must:\\r\n*Follow the course satisfactorily by attendance, participation and completion of set work.\\r\n*Reach pass standard both in written assignments and in practical teaching - there are three subject related assignments in total.\\r\n*Demonstrate that they have met all three of the Assessment Areas and teachers Standards laid down by NCTL including passing the QTS skills tests in numeracy and literacy.\\r\n\\r\nGroby and Partners School Direct trainees have always been successful in securing teaching posts, with many of them gaining employment in partner schools. A good number of our former trainees now have posts of responsibility in schools and work as subject leaders, senior managers and Headteachers.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE - no specific GCSE requirements other than the minimum required by NCTL: a Grade C/4 or above or equivalent in English and Mathematics.\\r\n\\r\nDegree - applicants for all Science subjects should normally have a minimum of a second class honours degree. This should be in a subject closely related to the subject specialism you wish to pursue. As a guideline, the main subject should have comprised at least 50% of the degree course and/or have been successfully studied at GCE Advanced level or in a further degree. ",
+    "InterviewProcess": "Groby and Partners School Direct applicants are only required to attend a school based assessment day.\\r\nApplicants can be assured of a warm welcome to Brookvale Groby Learning campus and the interview day will include a variety of tasks from the following:\\r\n*Lesson observation and feedback\\r\n*Designing and developing a task for a group of about four students\\r\n*A short presentation on your experience in schools to date\\r\n*A task examining the qualities of a good teacher\\r\n*A subject knowledge task\\r\nThese activities are followed by a formal interview panel comprising of senior staff from partner schools and subject leads.\\r\n\\r\nWhen we receive applications, we are initially looking for evidence across a range of areas such as:\\r\n*suitable academic qualifications\\r\n*Experience (paid or voluntary) in schools or educational related settings, or in wider working with children of young people\\r\n*A personal statement which shows an ability to reflect on this experience\\r\n*An awareness of contemporary issues in education and the subject applied for\\r\n*Any particular outstanding skills/experience including subject specific skills\\r\n*Two references that substantiate performance to date and indicate potential (if you are an undergraduate, one of your referees should be able to comment on your predicated degree class)\\r\n\\r\nSuccessful teaching depends on a commitment to on-going professional development. We look for self-motivated candidates who are able to engage in informed discussion of key contemporary issues in education. Applicants should be able to show that they are able to take responsibility for developing their own professional skills and understanding.\\r\n\\r\n",
+    "OtherRequirements": "Teaching is an intellectually demanding career that requires an ability to analyse and reflect upon experiences. This is likely to be demonstrated in our selection process by applicants expanding on their previous experiences in school settings and displaying a capacity to structure thoughts; to raise and answer related questions both in discussion and in writing.\\r\nPrevious experience in a school setting would therefore be desirable. \\r\nAll candidates will be expected to go through an Enhanced DBS Check.  ",
+    "PersonalQualities": "Developing positive relationships, the ability to listen, be sensitive, work collaboratively and to respond to the needs of others is crucial and our selection process pays particular attention to these qualities.\\r\n\\r\nTrainees should be able to express their ideas confidently, both orally and in writing and make effective use of technology to support learning.\\r\n\\r\nWe are looking to recruit individuals who understand the position of trust which teaching puts them in by demonstrating a professional regard for the schools you will work in and for promoting fundamental British values, positive values and attitudes.",
+    "HowSchoolPlacementsWork": "Groby and Partners School direct is a small cluster of seven schools in the west of Leicestershire. Judged mostly good or outstanding by Ofsted, each trainee will experience teaching practice across 11-19 education.\\r\n\\r\nStudents have two placements in contrasting schools within the partnership and access to 11-19 age range and key stages. The placements are discussed with the trainee and based on partners' capacity and the availability of experienced staff to act as mentors.\\r\n\\r\nPhase A comprises of 8 weeks of school based experience. Every trainee maintains a Professional Development Record. This is where you will log evidence of your progress. Students will also be expected to write entries in a Reflective Journal to record and reflect on key moments and critical incidents in their professional development. After Christmas and a week spent in a primary school, Phase B begins and a substantial period of teaching experience. Phase B continues with a subject project, other activities and finally a reduced teaching load and a last week at University before the welcome summer break!\\r\nIn school, your subject teaching will be closely monitored and supported by a mentor in the faculty. A senior member of staff, the Initial Teacher Training (ITT) co-ordinator, holds overall responsibility in school for the training of trainee teachers, including tutorials and the provision of opportunities for professional development and whole school concerns - such as the importance and use of technology in the classroom to facilitate learning and reduce workload.\\r\nIn total student teachers will have spent 23 out of the 36 weeks in schools on placements and with Groby and partners and additional 14 days in our partnership and other schools as part of the Professional Study Day programme. Working with teachers who understand what trainees need to know in order to become exceptional Newly Qualified Teachers (NQT's).\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Groby and Partners School Direct is a unique partnership of schools in the western side of Leicestershire with access to 11-19 provision. We offer a range of experiences where you will develop your potential as a teacher. \\r\nOur vision is: \\r\n*To develop outstanding teachers of the future and guide them on a career path within our partnership schools. \\r\n*To enhance trainees' professional development through the delivery of our Professional Study Programme. \\r\n*To provide our trainees with outstanding support and development in a positive and caring environment. \\r\nWe offer you: \\r\n*The opportunity to participate in a coordinated series of professional experiences led by good and outstanding teachers \\r\n* An expectation that successful graduates of this programme will be considered for employment in our partnership of schools \\r\n*The maximum possible amount of time working with students and developing the skills to become an outstanding teacher. \\r\n*The earliest possible opportunity to get into classrooms and make a difference to students. \\r\nOur partnership of schools allows us to be small enough to care and know each trainee really well so that we can identify needs and target support. Our goal is to create life-long educators who are passionate about the profession and committed to young people. The unique characteristic of the Groby and Partners course is that we deliver all the 14 Professional Study Days linked to the University of Leicester PGCE course within our group of schools. The Study Days are taught by teachers who are leading practitioners and specialists in their field. \\r\n",
+    "TrainWithDisability": "Wheelchair access is available.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University Of Leicester School Of Education has a long and successful history of teacher training and a strong reputation for producing graduate teachers prized by schools.\\r\nThe University is located in the heart of Leicester, within five minutes’ walk of both the railway station and the main University of Leicester Campus with its student support services and award-winning library.\\r\nOur proactive, close and collaborative relationship with the University of Leicester ensures that training to teach via Groby and Partners School Direct route provides the solid foundations to teach across the 11-19 age range and in different contexts.\\r\n",
+        "UcasInstitutionCode": "L34"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "L33"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "L79"
+      }
+    ]
+  },
+  "has_inst": true
+}

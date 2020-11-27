@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Yorkshire Wolds Teacher Training",
+  "subjects": [
+    "Languages",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages (Spanish)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "2EV/37GW",
+  "providerCode": "2EV",
+  "programmeCode": "37GW",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Eastdale Road, Melton, East Riding of Yorkshire, HU14 3HS",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Eastdale Road, Melton, East Riding of Yorkshire, HU14 3HS",
+      "geocode": true,
+      "formatted_address": "Melton, North Ferriby HU14 3HS, UK",
+      "latitude": 53.727503,
+      "longitude": -0.532644,
+      "post_code": "HU14 3HS",
+      "city": "Melton",
+      "route": null,
+      "postal_town": "North Ferriby"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2EV",
+    "addr_1": "South Hunsley School",
+    "addr_2": "Eastdale Road",
+    "addr_3": "Melton",
+    "addr_4": "East Riding of Yorkshire",
+    "postcode": "HU14 3HS",
+    "url": "http://www.ywtt.org.uk",
+    "geocode": true,
+    "formatted_address": "E Dale Rd, Melton, North Ferriby HU14 3HS, UK",
+    "latitude": 53.7273698,
+    "longitude": -0.5360448999999999,
+    "post_code": "HU14 3HS",
+    "city": "Melton",
+    "route": "East Dale Road",
+    "postal_town": "North Ferriby"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Yorkshire Wolds Teacher Training gives you a fantastic start to your teaching career, giving you the opportunity to train in some of the best classrooms in Hull and the East Riding of Yorkshire and gain a PGCE awarded by the University of Hull. Our innovative programme blends evidence based research and educational theory with immersive practice in the classroom. The course starts with a week of specialist training delivered by Specialist Leaders in Education, external experts and excellent teachers, in our bespoke training facilities at South Hunsley School, an outstanding school in the East Riding of Yorkshire. From the second week to the end of the course, our trainees spend four days per week in school being supported and challenged by the best mentors and host teachers. Professional studies sessions are designed to give trainees a deep understanding of the essential elements of classroom practice which will underpin their development. Mentors and host teachers support trainees as they develop these skills in the classroom, conducting weekly mentor meetings in which trainees are guided in setting their own enquiry questions. Weekly enquiry planning sessions give trainees time to work on their enquiry questions, utilising the resources and staff expertise available at the training base. The programme is designed to respond to the needs of each individual trainee with bespoke subject sessions led by excellent classroom teachers who are also accredited Specialist Leaders in Education. Subject immersion days support the development of subject specific pedagogy, with taught sessions focusing on specific aspects of teaching. Trainees then have the opportunity to see the techniques discussed in practice, with expert teachers demonstrating these aspects within their lessons. Yorkshire Wolds subject leads support trainees with the development of subject knowledge throughout the programme. A subject knowledge audit underpins this, with subject leads advising on the next steps in subject knowledge enhancement, delivering bespoke sessions and reviewing progress at regular intervals. All trainees are assigned a Yorkshire Wolds tutor who will undertake small group tutorial sessions and one to one interviews throughout the training programme. These sessions celebrate progress and support trainees overcome the challenges they may face. There are six review points during the training year with the final assessment taking place in the summer term. In 2017-18 all Yorkshire Wolds trainees were graded as good or better at the end of the course, with almost 50% graded outstanding.",
+    "CourseLength": "OneYear",
+    "Qualifications": "You will need at least a grade 4 / C grade (or equivalent) in GCSE Mathematics and English Language for secondary courses, with the addition of at least a grade 4 / C grade in a science subject at GCSE for primary courses. \\r\nEquivalency testing is available if you do not hold these qualifications, or have overseas qualifications, but please contact us before applying if this applies to you. \\r\nYou should be a graduate (or about to graduate this year), with a first, 2:1 or 2:2 degree in a subject relevant to the one that you wish to teach\\r\n",
+    "InterviewProcess": "The Director of Yorkshire Wolds Teacher Training and the appropriate Yorkshire Wolds Subject Lead conduct interviews often with a subject mentor from one of our partnership schools. ",
+    "OtherRequirements": "If your degree is not directly related to the subject you wish to teach, SKE courses are an excellent way to develop your subject knowledge prior to the start of the initial teacher training course.\\r\nWe actively encourage career changers to consider a career in teaching, so any other experience especially related to your subject or through working with young people is beneficial. \\r\nAdmission is dependent upon satisfactory medical assessment, assessing your capacity to train to teach. \\r\nCandidates will be subject to appropriate pre-selection checks, which will include full Disclosure and Barring Service (DBS) checks\\r\n",
+    "PersonalQualities": "In your application and throughout the selection process, we are looking for people with a genuine passion and enthusiasm for teaching and their subject.  Individuals who wish to inspire the next generation, engender a love for learning and support the children in their care to make excellent progress academically and in other areas.",
+    "HowSchoolPlacementsWork": "Yorkshire Wolds Teacher Training works in partnership with a range of schools across the East Riding of Yorkshire and Hull. Trainees are given the opportunity to place possible placement schools in order of preference, with all of the 2018-19 cohort of trainees being given their first preference school for one of their placements. Trainees have ten secondary and ten primary schools from which to make their preferences. The programme is designed to help trainees develop a deep understanding of the similarities and differences between schools having placements in three different schools; the initial orientation placement which occurs in the second week of the course, followed by a diversity and main placement which are longer in length. The course also includes diversity days at other educational institutions, allowing trainees to broaden their knowledge of the whole education system.  All secondary trainees on the 11-16 programme have the opportunity to experience the 16-18 phase on one of their placements."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Yorkshire Wolds Teacher Training offers an exciting and innovative teacher training programme based in bespoke training facilities at South Hunsley School, an outstanding 11-18 school in the East Riding of Yorkshire. Yorkshire Wolds teacher training is privileged to work with a partnership of over twenty schools, giving trainees the opportunity to work with exceptional teachers in a variety of educational settings across the region. Our programme is designed to prepare trainees to become highly effective teachers, with a love of learning, who will continue to develop their skills throughout their career, through exposure to excellent practice, observation, mentoring, coaching, practice, reflection and sharing with peers. Yorkshire Wolds Teacher Training offers a bespoke training package, where excellent practitioners from across the partnership support the development of our trainees through the professional studies and the school based aspects of the programme. Trainees receive a high level of support throughout the programme to help them develop effective teacher wellbeing strategies as well as application support and interview practice, which result in an excellent employment record. Yorkshire Wolds Teacher Training works closely with Wolds Teaching School Alliance, ensuring our trainees gain the best possible start to their teaching career and access to continued professional development opportunities beyond the initial training year. Last year 100% of our trainees were graded good or better at the end of the training course, with almost 50% being graded outstanding. Please join us on our “Get into Teaching” days to find out more, see https://www.ywtt.org.uk for further details.",
+    "TrainWithDisability": "Yorkshire Wolds Teacher Training is committed to delivering high quality teacher training that meets the diverse needs of its trainee population, ensuring that no individual or group is disadvantaged. All Yorkshire Wolds trainees are allocated a tutor who will work with each individual throughout the programme, celebrating progress, devising bespoke programmes to respond to individual needs and helping them overcome the challenges they may face.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

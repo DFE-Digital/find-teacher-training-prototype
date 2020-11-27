@@ -1,0 +1,60 @@
+{
+  "locationType": "School",
+  "accrediting": "University of East London",
+  "provider": "Sir John Cass Foundation and Redcoat Church of England Secondary School",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Salary",
+  "slug": "132/22J8",
+  "providerCode": "132",
+  "programmeCode": "22J8",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Sir John Cass, Stepney Way, Stepney, London, E1 0RH",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Sir John Cass, Stepney Way, Stepney, London, E1 0RH",
+      "geocode": true,
+      "formatted_address": "Stepney Way, London E1 0RH, UK",
+      "latitude": 51.51597,
+      "longitude": -0.0429155,
+      "post_code": "E1 0RH",
+      "city": "Greater London",
+      "route": "Stepney Way",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "You will spend one day a week at University, developing your subject knowledge along with other trainees, but most of the time you will be developing your skills and knowledge at St Paul's Academy. 3 hours of Professional Studies training a week, led by our experienced Senior School Professional Tutor and specialist staff such as our Literacy, EAL, SEN and G&T co-ordinators covering topics such as lesson planning, marking and assessment, pastoral issues, classroom management and different teaching and learning strategies. Weekly meetings with an experienced subject mentor focusing on developing your subject knowledge and skills and review of targets is an important part of your training. \\r\nWorking alongside experienced teachers, observing lessons, discussing approaches and participating through supporting students, teaching starters or plenaries and then taking responsibility for whole lessons will build up your timetable so you are eventually teaching across the full 11-19 age and ability range during the course of the year.\\r\nWeekly lesson observations and feedback on how to improve, from mentors and other experienced colleagues will enable you to progress as a teacher.\\r\nGuidance on building up a Portfolio of Evidence to support the Teachers' Standards will be taught to you at university and weekly professional study sessions. You will also develop the knowledge, skills and understanding to become a reflective practitioner.\\r\nYou will also become fully involved in the life of the department and school, attached to a Tutor Group and have opportunities to participate in extra-curricular activities and CPD. A six week placement 2 at a partner school will provide a contrasting teaching experience. Assessment will consist of judgements throughout the year, made jointly by school mentors and university tutors.  Progress will be monitored and assessed through the weekly progress meetings, half termly reviews and end of term reports.  \\r\nYou will receive QTS qualification at the end of the year and possibly an additional PGCE qualification with credits towards a Masters qualification, if you are a salaried trainee. All tuition fee candidates will receive QTS and PGCE accreditation. \\r\nThe partnership has always had a 100% pass rate of trainee teachers, all judged good or outstanding.   \\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "This partnership receives a salary grant from the DFE of £17,600 which the employing school \"tops up\" to at least point 1 on the unqualified teacher scale and pays the university tuition fees.  \\r\n\\r\nIf you wish to also gain a PGCE qualification in addition to QTS you will need to pay the additional fees to UEL.  ",
+    "Qualifications": "We are looking for candidates with a minimum degree qualification of 2:2 or above, ideally in the subject they wish to train to teach in. Graduates will also have obtained a Grade 'C' or ‘4’ above in GCSE English and Mathematics and some work experience for salaried places is helpful. You should demonstrate enthusiasm, resilience, interpersonal skills, the capacity for hard work and willingness to listen, learn, reflect and work professionally with other colleagues. Some form of school experience/ observation is helpful which can be arranged within the school upon request.",
+    "InterviewProcess": "You will need to select Sir John Cass as a Lead School, Contact Jane Barnes, Senior School Professional Tutor on 020 7791 4965 if you would like to organise a preliminary visit or discussion which we welcome. \\r\n\\r\nThe selection process will include a tour of the school, time with the relevant departments, time to prepare a lesson, observation of a lesson taught to a group of students, written tasks and the marking of students’ work. A formal interview with Head of Department, School Professional Tutor and Head Teacher will then follow. Candidates will also need to pass skills tests, present evidence of all qualifications, complete a medical clearance and DBS application.  \\r\n\\r\nA formal interview with University of East London (HE provider) staff with a focus on subject knowledge will take place after a successful school interview. School staff will not be available during half terms and holiday dates; please check the school website for these.\\r\n",
+    "OtherRequirements": "You are required to have completed a DBS check and medical clearance prior to the start of your training.  Subject knowledge enhancement courses (which are free) are available if you wish to further improve your subject specialism.  Help can also be provided for the skills test if required.  Once a place has been offered you are welcome to come and work within departments to familiarise yourself with the school and colleagues you will be working with. ",
+    "PersonalQualities": "Desirable qualities that we are looking for in applicants, include; enthusiasm, resilience, interpersonal and communication skills, capacity for hard work and willingness to listen, learn, accept constructive feedback, reflect and work professionally with other colleagues. Some form of school experience /observation is helpful which can be arranged within the school upon request.  Subject Knowledge Enhancement courses are available to help boost subject knowledge if required and the school can also help you to prepare for the skills tests.  \\r\n\\r\nCareer changers are welcome as they bring a variety of skills and experiences outside of education.  ",
+    "HowSchoolPlacementsWork": "Our partner schools include; St Paul’s Academy in Greenwich, Highams Park School in Waltham Forest, London Academy of Excellence in Stratford, Leytonstone School in Leyton, Sarah Bonnell in Newham, Lambeth Academy in Lambeth, St Paul's Way in Tower Hamlets, Stoke Newington in Hackney, Parliament Hill in Islington, Davenant Foundation in Essex, and schools in Barking and Dagenham. \\r\nOur partner schools are equally successful and provide a contrasting school experience, for example St Paul’s Academy in Greenwich: this is an outstanding Catholic school and a ‘good’ school as judged by Ofsted, with ‘outstanding’ behaviour and safety of pupils. The school has excellent sporting and learning facilities with a strong emphasis on implementing new approaches to teaching and learning.\\r\nSir John Cass is in the heart of the vibrant East End of London with excellent train, tube and bus links and many cultural and social attractions.  We have excellent facilities, including swimming pool, fitness gym, drama studio theatre, recording studio and the latest technology throughout the school.\\r\nYou will spend a minimum of 6 weeks at one of these placement 2 schools.  Your teaching will focus mainly on KS3 and KS4 with some post 16 experience where relevant.  During the course of the training year you will also go to a primary school placement for up to 2 days which you or the school can organise. All of these schools are accessible by public transport. \\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "SJCR as a Lead School in Tower Hamlets recruits, selects and trains its own prospective teachers working with its partner schools in London and Essex. \\r\n\\r\nOver 50 of our current teaching staff gained QTS with us, and are still with us, many in senior positions. Please see our school website in the ‘learn to teach’ section to hear what former and current trainees have to say. We offer salaried, tuition fee and apprenticeship routes. \\r\n\\r\nWe were founded by the city businessman, Sir John Cass in 1710. Every year on the anniversary of his birth, students go to the City of London to take part in an historical ceremony held in his memory, and wear a red feather a symbol of the quill pen with which Sir John signed his will. \\r\nWe are a Church of England School with a strong religious ethos, but also a neighbourhood school with a multi-faith intake. \\r\nWe are rated 'Outstanding' by Ofsted and by the SIAMs church school inspection. \\r\n\\r\nWe are in the top 1% of highest achieving school in the country with excellent examination results at GCSE and A Level. \\r\nWe have a Sixth Form College of over 400 students where the majority of Year 13 students progress to University, including Russell Group Universities.\\r\n",
+    "TrainWithDisability": "We are able to accommodate trainees with limited mobility as we have a lift in the main building and sixth form college, but our corridors do get very busy at lesson change over.  We can also support trainees with dyslexia.  This past year we have successfully supported trainees with limited mobility and dyslexia.  ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We have a long standing, highly successful partnership with the University of East London and many years of successfully training teachers to gain QTS through the former Graduate Teacher Programme and PGCE as well as the current School Direct programme. \\r\n\\r\nOver 50 of our current staff trained through this route with the University of East London.  Most of our subject mentors have been former trainees at UEL.  ",
+        "UcasInstitutionCode": "E28"
+      }
+    ]
+  },
+  "has_inst": true
+}

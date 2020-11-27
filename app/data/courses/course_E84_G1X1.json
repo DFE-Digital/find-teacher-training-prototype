@@ -1,0 +1,72 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Exeter",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "E84/G1X1",
+  "providerCode": "E84",
+  "programmeCode": "G1X1",
+  "schools": [
+    {
+      "name": "University of Exeter (Exeter Campuses)",
+      "address": "PGCE Admissions Office, Northcote House, The Queen's Drive, Exeter, DEVON, EX4 4QJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "PGCE Admissions Office, Northcote House, The Queen's Drive, Exeter, DEVON, EX4 4QJ",
+      "geocode": true,
+      "formatted_address": "Northcote House, Exeter EX4 4QB, UK",
+      "latitude": 50.7355102,
+      "longitude": -3.5353456,
+      "post_code": "EX4 4QB",
+      "city": "Devon",
+      "route": null,
+      "postal_town": "Exeter"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E84",
+    "addr_1": "Northcote House",
+    "addr_2": "The Queen's Drive",
+    "addr_3": "Exeter",
+    "addr_4": "Devon",
+    "postcode": "EX4 4QJ ",
+    "url": "http://www.exeter.ac.uk",
+    "geocode": true,
+    "formatted_address": "The Queen's Dr, Exeter EX4 4QJ, UK",
+    "latitude": 50.7353218,
+    "longitude": -3.5350734,
+    "post_code": "EX4 4QJ",
+    "city": "Devon",
+    "route": "The Queen's Drive",
+    "postal_town": "Exeter"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are leaders in Initial Teacher Education, consistently graded as outstanding in all areas by [Ofsted](https://files.api.beta.ofsted.gov.uk/v1/file/2739445) and ranked 3rd amongst university providers of teacher training in the most recent Good Teacher Training Guide (2017).\\r\n\\r\nOur latest Department for Education statistics (from the 2016 –17 cohort) show that 91% of our PGCE trainees who achieved Qualified Teacher Status secured a teaching post within six months of completion. Of the trainees who completed the course in 2017-18, over 70% were rated as outstanding. \\r\n\\r\nWe have strong partnerships with over 250 schools in the south west where you will spend two-thirds of your training year, putting into practice what you have learnt on the taught course. Our PGCE is uniquely characterised by innovative research-led teaching informed by professional practice and academic excellence. All our tutors have real-world experience as teachers, senior managers or OFSTED inspectors. They lead and innovate, developing the latest ideas in teacher education, leading research, writing textbooks, leading subject networks and advising government.\\r\n\\r\nWe provide unrivalled opportunities for trainees to achieve through our highly original PGCE teaching model ‘The Exeter Model’, praised by OFSTED and cited as an example of best practice. By learning on campus for most of the first term, you access the tools to rapidly build professional knowledge to underpin your work in school placements.\\r\n\\r\nOur unique approach gives you opportunities to become part of a community of trainees and teachers who are passionate about education and will support you during your course and beyond.\\r\n",
+    "TrainWithDisability": "The University of Exeter provides comprehensive student services that include AccessAbility and Wellbeing teams, Student Learning Skills Service, Student Advice Unit, Counselling Service, Students’ Union Advisors, Student Health Centre, Family Centre and the Chaplaincy.\\r\n\\r\nFor further details on the wealth of support available to you please go to [Student Support Services](http://www.exeter.ac.uk/newstudents/supportandservices/yourhealthandwelfare/#a4)\\r\n\\r\nPGCE trainees can access the support of a Wellbeing Services Welfare Caseworker to discuss concerns, talk through options for support or understand more about how the University Wellbeing Services may be able to help.\\r\n\\r\nAlongside the support described above, every PGCE trainee is assessed by an Occupational Health provider as part of the admissions process to ensure they are fit to teach in a school setting. If the Occupational Health provider recommends any adjustments, the University’s Partnership Office will ensure you are placed in schools where these adjustments can be made, providing they are logistically possible and reasonable.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

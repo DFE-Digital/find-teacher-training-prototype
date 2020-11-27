@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "Bath Spa University",
+  "provider": "Excalibur TSA",
+  "subjects": [
+    "Drama",
+    "Secondary"
+  ],
+  "name": "Drama",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2BO/34SQ",
+  "providerCode": "2BO",
+  "programmeCode": "34SQ",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St John's Marlborough, Granham Hill, Marlborough, Wiltshire, SN8 4AX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St John's Marlborough, Granham Hill, Marlborough, Wiltshire, SN8 4AX",
+      "geocode": true,
+      "formatted_address": "Granham Hill, Marlborough SN8 4AX, UK",
+      "latitude": 51.4100025,
+      "longitude": -1.7352811,
+      "post_code": "SN8 4AX",
+      "city": "Wiltshire",
+      "route": "Granham Hill",
+      "postal_town": "Marlborough"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2BO",
+    "addr_1": "St John's Marlborough",
+    "addr_2": "Granham Hill",
+    "addr_3": "Marlborough",
+    "addr_4": "Wiltshire",
+    "postcode": "SN8 4AX ",
+    "url": "http://excalibur.org.uk/",
+    "geocode": true,
+    "formatted_address": "Granham Hill, Marlborough SN8 4AX, UK",
+    "latitude": 51.4100025,
+    "longitude": -1.7352811,
+    "post_code": "SN8 4AX",
+    "city": "Wiltshire",
+    "route": "Granham Hill",
+    "postal_town": "Marlborough"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Our ten-month Secondary School Direct programme is a blend of school-based teaching practice, in-school Professional studies, and University study sessions. The programme is carefully designed in conjunction with Bath Spa University to support you to work with the 11-16 age range, and also offering, where possible, the opportunity to experience A Level teaching.\\r\n\\r\nOur students are placed in two secondary schools during the year, and also spend a week in a primary school. In each placement school you will be supported by a professional tutor and a subject mentor, as well as a university-based tutor. During your placements you will spend one afternoon each week at St John's Marlborough for Professional Studies sessions, in addition to scheduled Professional Studies days throughout the year. You will also spend two blocks of time at Bath Spa university, in September/October and again in January/February.\\r\n\\r\nWe are proud of our School Direct training programme and offer a range of benefits including:\\r\n\\r\n* A bespoke 14 day Professional Studies programme \\r\n* Weekly meetings with other trainees and your Professional Tutor, focusing on key topics\\r\n* 3 Excalibur Days where primary and secondary trainees meet in each other’s settings to explore current issues in teaching, including wellbeing, EAL, AEN & Mental Health\\r\n* The benefit of the expertise of a Professional Tutor in your school as well as a University Subject Tutor\\r\n* An excellent training base, situated at St John’s Marlborough, and give you access to our CPD programmes; keynote speakers, subject training, presentations on hot topics.\\r\n* Highly experienced and friendly subject mentors\\r\n* A ready-made, friendly support group with other Excalibur trainees, and an opportunity to meet the group at a school-based induction event prior to starting the course in September\\r\n* Confidence that we will work hard to match you to placement schools that will be convenient for you and your family commitments\\r\n* Knowing where your placement schools will be before the course starts\\r\n* Excellent prospects: 100% of our 2017/18 cohort successfully completed the course, and 100% have teaching jobs lined up for September.\\r\n\\r\nWe receive extremely positive feedback from our students. Comments include:-\\r\n\\r\n* \"The support network is great and I know I will always have someone I can approach if I need help\"\\r\n* \"The information we have been given is very well structured\"\\r\n* \"My questions and concerns were answered before I had even thought to ask\"",
+    "CourseLength": "OneYear",
+    "Qualifications": "Minimum academic requirements to apply for a PGCE are:\\r\n* 2.ii degree or above\\r\n* GCSE or equivalent qualifications in English and Mathematics at grade C or above.\\r\n* GCSE or equivalent qualification in the subject to be taught is desirable.\\r\n* A Level or equivalent qualification in the subject to be taught is desirable. \\r\n\\r\nSome experience of working with children/young people and the ability to work as part of a team would be beneficial. While you do not have to have any experience in schools, we strongly recommend you have experience of teaching before applying, for your own benefit.\\r\n",
+    "InterviewProcess": "We carefully consider all the applications we receive, in conjunction with the Admissions team at Bath Spa University. If you are invited to interview we will notify you by email and on UCAS. You will normally need to allow up to 3 hours in school, normally at St John's Marlborough, for your interview.\\r\n\\r\nThe interview process includes a short observed teaching task with a group of students, usually from Year 7 or 8, a written task, and a formal interview. You will be told in advance about the content of the teaching task and the age group you will be teaching, as well as any other relevant information to enable you to demonstrate your skills and qualities.\\r\nYou will need to bring your original exam certificates with you to be checked, as well as some personal identification. This would be checked and passed to Bath Spa University only if we intend to offer you a place on the course.\\r\n\\r\nFollowing your interview we will aim to notify you of the outcome on UCAS within 2 working days. Offers may be conditional on passing skills tests, completing a degree, or on completing a Subject Knowledge Enhancement course.\\r\n\\r\nIf you are offered a place and choose to accept it, we will then contact you with further information about the course.",
+    "OtherRequirements": "Successful applicants:\\r\n* will be required to pass their Skills Tests in Numeracy and Literacy.\\r\n* may receive offers conditional on completing a Subject Knowledge Enhancement course (where your degree does not closely match your chosen subject, or where there is a significant gap between completing your degree and commencing the PGCE).\\r\n* will be required to complete a Health Questionnaire, ensuring trainees have the health and physical capacity to teach and will not put children and young people at risk of harm. \\r\n* will be subject to Disclosure and Barring Service (DBS) barred list and criminal records check. \\r\n",
+    "PersonalQualities": "Our aim is to train you to embrace the professional qualities and attributes necessary to be an outstanding teacher, and to maximise the outcomes of the children and young people you teach.\\r\n\\r\nBecoming a teacher is very much about being a team member and this will be reflected over the tenure of your programme. You will need to work effectively on joint projects, work collaboratively as a member of a team, and going forward in your career, accept leadership roles. You will need excellent communication skills and the ability to remain professional at all times, without exception. ",
+    "HowSchoolPlacementsWork": "We aim to match placements to our students' individual needs. Many of our students have family or childcare commitments and we aim to place them in schools that mean travelling time will be kept to a minimum.\\r\n\\r\nYou will have two placements. The longest, your Home Placement, will usually be at St John's Marlborough, and the shorter, Complementary Placement, will be at one of our partner schools.\\r\nIn each school you will have a designated mentor and you will be in regular contact with Excalibur Teaching School, through weekly professional studies sessions at St John’s Marlborough.\\r\n\\r\nDuring your placements you will watch experienced teachers in action, teach classes from initially taking the register, completing a short section of the lesson and gradually moving on to taking the whole class for full blocks of lessons, experience wider school life, have an experienced personal mentor to guide you."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Excalibur Teaching School Alliance offers School Direct Teacher Training through a partnership of Primary and Secondary schools in Bristol, West Berkshire & Wiltshire. We are based in Wiltshire, at St John’s Marlborough, an outstanding academy within Excalibur Academies Trust, and work in collaboration with Bath Spa University to develop and deliver cutting-edge teacher training programmes.\\r\n\\r\nOur flexible approach to teacher training enables us to meet your needs and interests in both rural and urban locations across a range of secondary schools, with primary placements available in the Marlborough area.\\r\n\\r\nOur schools are situated in excellent geographical locations, close to the M4 and with access to the thriving cities of Bristol, Reading and Swindon. This enables us to offer a unique blend of town and rural educational experiences. We offer Primary and Secondary ITT placements as well as the opportunity to experience Key Stage 2/3 cross-phase teaching.\\r\n\\r\nWe are passionate about the development and training of new teachers within our educational settings. You will be able to learn first-hand from our team of outstanding and experienced teachers and ITT mentors who will support you on your journey to PGCE and QTS status.",
+    "TrainWithDisability": "Excalibur Teaching School Alliance is committed to supporting trainees with disabilities. Contact us if you would like to make any adjustments during your application, interview process and training programme.\\r\n\\r\nTrainees will be recruited on the basis of their ability, qualifications and suitability for the position in which they have applied. All applicants will be considered equally and consistently.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Bath Spa University offers training that ensures our students’ future success as teachers. Trainees are taught to recognise their professional responsibilities, as well as the impact they will have on the lives of children and young people. Because of this expectation, PGCE students become Bath Spa Teachers (BSTs), with the expectation that you will embrace the professional qualities and attributes necessary for a successful outcome.\\r\nThe Bath Spa Institute for Education has been awarded a Grade 1 judgement representing an outstanding provision for its primary and secondary teacher education programmes and the highest grade that can be given.\\r\n",
+        "UcasInstitutionCode": "B20"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "B78"
+      }
+    ]
+  },
+  "has_inst": true
+}

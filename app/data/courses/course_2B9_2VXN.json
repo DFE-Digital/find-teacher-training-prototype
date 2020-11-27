@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Red Kite Teacher Training",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary (3-7)",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2B9/2VXN",
+  "providerCode": "2B9",
+  "programmeCode": "2VXN",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Harrogate Grammar School, Arthurs Avenue, Harrogate, HG2 0DZ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Harrogate Grammar School, Arthurs Avenue, Harrogate, HG2 0DZ",
+      "geocode": true,
+      "formatted_address": "Arthurs Ave, Harrogate HG2 0DZ, UK",
+      "latitude": 53.9833431,
+      "longitude": -1.5474056,
+      "post_code": "HG2 0DZ",
+      "city": "North Yorkshire",
+      "route": "Arthurs Avenue",
+      "postal_town": "Harrogate"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2B9",
+    "addr_1": "Harrogate Grammar School",
+    "addr_2": "Arthurs Avenue",
+    "addr_3": "Harrogate",
+    "addr_4": "North Yorkshire",
+    "postcode": "HG2 0DZ ",
+    "url": "http://www.redkitealliance.co.uk/teacher_training",
+    "geocode": true,
+    "formatted_address": "Arthurs Ave, Harrogate HG2 0DZ, UK",
+    "latitude": 53.9833431,
+    "longitude": -1.5474056,
+    "post_code": "HG2 0DZ",
+    "city": "North Yorkshire",
+    "route": "Arthurs Avenue",
+    "postal_town": "Harrogate"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "The fee to train with Red Kite is £9000.\\r\n\\r\n",
+    "AboutCourse": "About the course Trainees are taught the knowledge and skills to meet the Teachers’ Standards by working with outstanding practising teachers. Our active sessions model effective teaching so Trainees learn how not just the theory.\\r\n\\r\nOur high level of collaboration between our schools supports communication, transition between placements and networking for job opportunities. Trainees tell us that our bespoke training and very high levels of support help them to make rapid progress and to develop confidence in their teaching at an early stage.\\r\n\\r\nTrainees spend approximately 130 days in schools, dependent on their chosen course. Most of their time is spent in contrasting main placement schools and a variety of mini placements during which they learn about national priority areas and benefit from seeing leading practice in action of Red Kite schools and experience can inform employment choices.\\r\n\\r\nOur cohesive course enables Trainees to work “smartly” e.g. 3 or 4 academic assignments draw on practical work in schools, all handed in straight after school holidays and al finished by Easter so they can focus on teaching. The emphasis in portfolio building is on slim but informative evidence and paper work is kept to a minimum to allow Trainees to focus on teaching and pupil progress.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "•\\tApplicants should be qualified to degree level, 2:2 or above (or in their final year of University with a predicated 2:2 or above). \\r\n•\\tSecondary applicants your degree should be relevant to the subject you want to teach. We consider related A-Level qualifications where your degree is not directly related for our Maths and Physics courses. \\r\nAll disciplines will be considered for Primary applications.\\r\n•\\tAll applicants are required to have a GCSE/O'level/iGCSE* at grade C/4 or above in Maths and English.\\r\n•\\tPrimary applicants also need a GCSE/O'level/iGCSE* at grade C/4 or above in Science. \\r\n\\r\n\\r\n*or international equivalent\\r\n",
+    "FinancialSupport": "Many Trainees choose to apply for student finance is order to pay their fees with a tuition fee loan.\\r\n\\r\nThose who are eligible for a bursary can choose to use their bursary to pay in monthly instalments of £900 from October to July. \\r\n\\r\nYou can also self-finance using our monthly payment schedule\\r\n",
+    "InterviewProcess": "Our interviews are all held in Red Kite partnership schools. You will be interviewed by a panel School Leaders and RKTT course directors.\\r\n\\r\nThe interview will consist of all or some of the following:\\r\n•\\tActivity with pupils\\r\n•\\tFormal interview\\r\n•\\tWritten English test – piece of writing to assess written fluency and spelling, punctuation and grammar\\r\n•\\tSubject knowledge audit (phonics for primary)\\r\n•\\tPrimary only – Maths test (KS2 equivalent)\\r\n•\\tOpportunity to meet current trainees\\r\n•\\tOpportunity to meet course leaders and ask questions about the training\\r\n\\r\nYou will only be asked to attend one selection day and candidates are informed of the outcome within 48 hours. \\r\n\\r\n",
+    "OtherRequirements": "Experience of being in a school and/or working with young people is preferred and will be beneficial during the application process. You can contact us to arrange school experience.\\r\n\\r\nAdmission is dependent upon satisfactory medical examination: relevant forms are issued to trainees accepted for the course \\r\n\\r\nCandidates who are offered a place on the course are required to complete a declaration regarding any criminal convictions. \\r\n\\r\nCandidates are required to obtain clearance from the Disclosure and Barring Service (DBS) regarding their suitability for work involving children. Successful candidates will be given instructions about obtaining this when they are offered a place.",
+    "PersonalQualities": "•\\tAre passionate about making a difference to the lives and development of young people\\r\n•\\tAre independent, resilient and adaptable\\r\n•\\tAre friendly and approachable, with the ability to engage young people\\r\n•\\tAre enthusiastic about their subject(s) and are continuing to develop their subject knowledge\\r\n•\\tAre creative and imaginative\\r\n•\\tHave good organisational skills and excellent time management skills\\r\n•\\tAre reflective and strive to improve their own practice\\r\n•\\tHave high standards of spoken and written English\\r\n•\\tDemonstrate a professional attitude\\r\n•\\tHave made a considered and informed decision to train to teach\\r\n",
+    "HowSchoolPlacementsWork": "Our school placements take place in schools across Leeds, Harrogate and South Craven, we currently have almost 60 primary and secondary partner schools. When allocating main placements we take into account Trainee preferences, transport and location.\\r\n\\r\nBoth primary and secondary placements start on the first day of the Autumn Term. \\r\n\\r\nOur Primary course placement begins at your home school where you will gradually build up the amount of time that you teach. In January you move to your second placement school and experience a contrasting environment.\\r\n\\r\nIn March you will return to your home school to teach a different class.\\r\n\\r\nYou will also take part in 5 mini placements, which will give you a unique opportunity to broaden your experience in a range of schools and contexts.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Red Kite Teacher Training is a partnership of around 40 Primary, Secondary and Special schools based in and around Leeds, Harrogate and Skipton. \\r\n\\r\nWe tailor our Initial Teacher Training to individual needs so even though our Trainees are in the classroom from day one, you will only be teaching when you and your Mentor feel you are ready to do so. This approach gives our Trainees the best possible start to their teaching career. By being part of your placement school from day one you will be viewed as a colleague rather than a student during your placements.\\r\n\\r\nWe offer School Centred Initial Teacher Training (SCITT) courses across our partners schools as well as School Direct (SD) courses. The SCITT and SD Trainees follow exactly the same course. Choosing School Direct gives you a little more choice about location in which you wish to train. \\r\n \\r\nOur Primary SD course would be of interest for anyone looking for a course in Leeds. We offer placements within 15 Red Kite Alliance schools all based in Leeds. Our primary SCITT course offers placements in Leeds, Harrogate or Craven areas.\\r\n\\r\nOur secondary SD course offers you the opportunity to have at least one placement in Leeds, Harrogate or South Craven.\\r\n\\r\nOur courses lead to Qualified Teacher Status (QTS) recommended by Red Kite and a PGCE (worth 60 masters credits) awarded by the University of Leeds. All our Trainees have access to student facilities and support at the University of Leeds.",
+    "TrainWithDisability": "Red Kite Teacher Training is committed to equal opportunities for staff, trainees and prospective Trainees in its admissions, in all aspects of teaching and assessment and in its provision of trainee services. \\r\n\\r\nIf you have a disability or special need please contact us at your earliest opportunity so we can discuss your requirements and ensure we allocate appropriate placement schools or make arrangements where necessary. \\r\n\\r\nEvery year we train a number of Trainees with special needs such as dyslexia and we have strategies in place to support these Trainees alongside a SEND and Wellness Lead who will offer additional support when required. \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

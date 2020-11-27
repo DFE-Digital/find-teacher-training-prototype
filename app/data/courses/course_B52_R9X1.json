@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Bournemouth Poole & Dorset Secondary Training Partnership",
+  "subjects": [
+    "French",
+    "German",
+    "Languages",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "B52/R9X1",
+  "providerCode": "B52",
+  "programmeCode": "R9X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Twynham School, Sopers Lane, Christchurch, Dorset, BH23 1JF",
+      "geocode": true,
+      "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+      "latitude": 50.73322599999999,
+      "longitude": -1.782691,
+      "post_code": "BH23 1JF",
+      "city": "Dorset",
+      "route": "Sopers Lane",
+      "postal_town": "Christchurch"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "B52",
+    "addr_1": "BPD Secondary Training Partnership",
+    "addr_2": "Twynham School",
+    "addr_3": "Sopers Lane",
+    "addr_4": "Christchurch",
+    "postcode": "BH23 1JF",
+    "url": "http://www.bpdscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Sopers Ln, Christchurch BH23 1JF, UK",
+    "latitude": 50.73322599999999,
+    "longitude": -1.782691,
+    "post_code": "BH23 1JF",
+    "city": "Dorset",
+    "route": "Sopers Lane",
+    "postal_town": "Christchurch"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The programme is designed for those intending to teach French, German or Spanish as their subject specialism; all students must be able to offer French as at least their second language. The aim is to give you an understanding of the way modern foreign languages are taught in schools, including the use of the target language as the principal means of classroom communication. \\r\n\\r\n\\r\nYou will be encouraged to try out a wide range of approaches to teaching, as well as strategies for organising the classroom for effective learning. University sessions include a large amount of practically based activities to help you develop your skills. You will have the opportunity to acquire an understanding of the demands of the National Curriculum orders for modern foreign languages. The work in schools will be closely linked with the university-based sessions so that you will have the opportunity to use a range of up-to-date language resources, including ICT, to set up active and engaging learning activities. \\r\n\\r\nFor more information please visit our website here. \\r\n(https://www.roehampton.ac.uk/postgraduate-courses/pgce-secondary/pgce-secondary-modern-foreign-languages-specialism/)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants should have a degree with French, German or Spanish as a major component. The ability to offer a second language is essential. We welcome applications from native speakers who have a degree in another subject.\\r\n\\r\nStudents must have achieved at least a grade C or above in both Mathematics and English Language GCSEs (or approved equivalents), applicants without one or both of these GCSEs (or approved equivalents) will be considered for interview. If you do not currently hold a GCSE grade C or above in Mathematics and English Language, we accept the equivalency tests offered by Equivalency Testing.\\r\n",
+    "InterviewProcess": "On the interview day you will be registered by a member of the admissions team. There will then be a course talk and an introduction to the subject tutors. There will be a group interview, this is a discussion based on what you have learned from your observations in school and teaching in general. \\r\n\\r\nFollowing the group task will be individual interviews with the subject tutor lasting 20-45 minutes you will have an opportunity to ask questions about the course during the interview. You may be asked to discuss a portfolio where relevant, or to give a presentation. \\r\n\\r\nThere will also be a written task, where you will be asked to write a short piece on the role of your subject within the national curriculum. This is to check your Spelling, Punctuation and Grammar, and to see what your response would be to writing at Master’s level.\\r\n\\r\nThese interview elements are not intimidating, but carefully planned to give you the best possible opportunity to show your potential for teaching and working with young people in school. A teacher from one of our partner schools may take part in the interview.",
+    "OtherRequirements": "Pre entry Professional Skills Test All students starting an Initial Teacher Training (ITT) course from September 2013 are required to pass the Professional Skills tests in literacy and numeracy before the start of the programme (www.education.gov.uk). ",
+    "HowSchoolPlacementsWork": "During school placements, students benefit from working alongside experienced teachers of art and design. Students have opportunities to observe excellent teaching before experimenting with approaches to teaching and learning across the secondary age range, during which time they are supervised and supported by teachers and tutors. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Bournemouth Poole & Dorset Teacher Training Partnership is a consortium of 16 secondary schools working in close partnership. Our partnership schools extend from Swanage in the west to Lymington on the edge of the New Forest in the east. The Lead School for the Partnership is Twynham School, located in the historic harbour town of Christchurch, an OFSTED  'Outstanding' school and national Teaching School.  The Partnership offers a full-time one-year course running from September-July. Successful completion of this course brings with it the award of QTS (Qualified Teacher Status) with a PGCE (Post-Graduate Certificate in Education) validated by the University of Winchester \\r\n\\r\nA distinctive feature of the BPD course is the focus on carefully staged and appropriately supervised practical classroom experience within two secondary schools, which is further supported by academic and professional study via central training. All partner schools have experience of Initial Teacher Training and a good record of pupil progress and achievement. \\r\n\\r\nCurrently the BPD Partnership offers SCITT training in the following subject areas: English, Mathematics, Biology, Chemistry, Physics, MFL, Design & Technology, Geography, Computer Science, Music, Physical Education, Art & Design, Religious Education, History & Dance/Performance. \\r\n\\r\nIf you are looking for a training course which is grounded in practical classroom experience then the school-centred route is ideal for you.\\r\nOur trainees have a very high success rate in completion and moving onto employment,  with the majority of those gaining employment working in the local area where many gain rapid promotion.\\r\n\\r\n {Check out our website](www.bpdscitt.org.uk)",
+    "TrainWithDisability": "There is access for people with disabilities, although not all schools offering placements are able to cater for people with disabilities in all subjects due to the architecture and layout of school departments. Please contact the Partnership Office if you wish to discuss this aspect further. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

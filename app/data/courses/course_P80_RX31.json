@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Portsmouth",
+  "subjects": [
+    "French",
+    "Italian",
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages (French and Italian)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "P80/RX31",
+  "providerCode": "P80",
+  "programmeCode": "RX31",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St Georges Building, 141 High Street, Portsmouth, Hants, PO1 2HY",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St Georges Building, 141 High Street, Portsmouth, Hants, PO1 2HY",
+      "geocode": true,
+      "formatted_address": "141 High St, Portsmouth PO1 2HY, UK",
+      "latitude": 50.792441,
+      "longitude": -1.1000846,
+      "post_code": "PO1 2HY",
+      "city": "Portsmouth",
+      "route": "High Street",
+      "postal_town": "Portsmouth"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "P80",
+    "addr_1": "University House",
+    "addr_2": "Winston Churchill Avenue",
+    "addr_3": "Portsmouth",
+    "addr_4": null,
+    "postcode": "PO1 2UP ",
+    "url": "http://www.port.ac.uk",
+    "geocode": true,
+    "formatted_address": "University House, Portsmouth PO1 2UP, UK",
+    "latitude": 50.7951373,
+    "longitude": -1.0936478,
+    "post_code": "PO1 2UP",
+    "city": "Portsmouth",
+    "route": null,
+    "postal_town": "Portsmouth"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in Modern Foreign Languages (MFL) is a one-year, full-time course for graduates who wish to train as secondary school language teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). \\r\n\\r\nModern Foreign Languages is a foundation subject of the secondary curriculum at Key Stage 3 and an entitlement at Key Stage 4. On the PGCE course you will learn not only about issues related to MFL teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe MFL course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*lesson planning\\r\n*classroom management\\r\n*research into the pedagogy and psychology of learning MFL\\r\n*special needs and inclusion\\r\n*assessment\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "A good honours degree or equivalent in a relevant subject, with a minimum of 50% content in an appropriate modern foreign language. Alternatively, native speakers require excellent communication skills in English. A second language to A level (or equivalent standard) in French, German or Spanish. Applicants offering only one foreign language are able to complete a short intensive Enhancement Course in French in order to achieve sufficient competence to teach a second language accurately and confidently at secondary level to at least Key Stage 3. GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "If you're looking for a rewarding career where you can make a positive difference to other people's lives, teaching is a great choice – and on our PGCE courses, you'll gain you the skills and confidence you need to become an outstanding secondary school teacher.\\r\n\\r\nOn this 1-year course, you'll be supported by our tutors and school-based mentors as you learn to plan and deliver lessons with strong subject knowledge, confidence and imagination, while reflecting on what it means to teach.\\r\n\\r\nOur teacher training programmes have been given an outstanding review from Ofsted and we've got excellent links with many schools in the region – so when you finish your course, you'll graduate with excellent career prospects, and eligibility for Qualified Teacher Status (QTS) too.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

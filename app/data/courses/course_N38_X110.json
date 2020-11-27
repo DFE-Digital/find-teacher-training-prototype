@@ -1,0 +1,75 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Northampton",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary (3 to 7 years)",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "N38/X110",
+  "providerCode": "N38",
+  "programmeCode": "X110",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Boughton Green Road, NORTHAMPTON, NN2 7AL",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Boughton Green Road, NORTHAMPTON, NN2 7AL",
+      "geocode": true,
+      "formatted_address": "Boughton Green Rd, Northampton NN2 7SP, UK",
+      "latitude": 52.2709989,
+      "longitude": -0.8900870999999999,
+      "post_code": "NN2 7SP",
+      "city": "Northamptonshire",
+      "route": "Boughton Green Road",
+      "postal_town": "Northampton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "N38",
+    "addr_1": "Park Campus",
+    "addr_2": "Boughton Green Road",
+    "addr_3": "Northampton",
+    "addr_4": "Northamptonshire",
+    "postcode": "NN2 7AL ",
+    "url": "http://www.northampton.ac.uk",
+    "geocode": true,
+    "formatted_address": "Park Campus, Boughton Green Rd, Northampton NN2 7AL, UK",
+    "latitude": 52.2735352,
+    "longitude": -0.8826008,
+    "post_code": "NN2 7AL",
+    "city": "Northamptonshire",
+    "route": "Boughton Green Road",
+    "postal_town": "Northampton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Studying for a postgraduate degree is a good investment in your future, but you need to carefully consider how you’re going to pay for your course and your living costs.\\r\n\\r\nMost students will be able to apply for loans and depending on where you live and your circumstances, bursaries and scholarships might also be available.\\r\n\\r\nOur postgraduate degrees are competitively priced and all the essential equipment and activities are included.\\r\n\\r\nThey vary slightly from course to course depending on what facilities and resources are required. For example, online courses tend to be slightly cheaper because they use fewer facilities.\\r\n\\r\nThe most up-to-date fees will be listed on the course page – search for your course on our website and look for the section on fees.\\r\n\\r\nThe fees are slightly different depending on whether you normally live in the UK/EU or outside of the EU.",
+    "AboutCourse": "If you’re a graduate keen to embark on an exciting and rewarding future in primary teaching, this course is for you.\\r\n\\r\nStudy a course ranked as ‘outstanding’ by Ofsted – the highest possible accolade, and gain substantial practical experience on teaching placements in our partnership schools across the region.\\r\n\\r\nOur PGCE Primary leads to the recommendation for Qualified Teacher Status (QTS) and prepares you for a fulfilling career where you can make a real difference to children’s lives. You will be fully equipped for the practical demands of the role, including teaching all the National Curriculum subjects. \\r\n\\r\nYou can tailor your studies to match your own interests and career plans. Depending on your preference and any prior experience, you can choose to specialise in teaching Early Years (3–7 year olds).",
+    "CourseLength": "OneYear",
+    "Qualifications": "You must have a good UK Honours degree (preferably 2:1) or equivalent, plus grade C or above in GCSE Mathematics, English Language and a Science. You need to have already gained the required GCSE grades when you apply. There are currently a range of equivalences which can be accepted - please contact our Admissions team if you need clarification.",
+    "FeeInternational": 12500.0,
+    "FinancialSupport": "To pay for your tuition fees and living costs, you may be able to take out a student loan. These loans don’t usually need to be paid back until you have graduated and are earning a good salary.\\r\n\\r\nSometimes, bursaries and scholarships are also available - it depends on your circumstances and which country you usually live in. These don’t need to be paid back.\\r\n\\r\nPlease visit our website for more information. ",
+    "InterviewProcess": "Your interview experience is an exciting opportunity for you to demonstrate your passion for the course you are applying for.\\r\n\\r\nYour invitation is subject to NCTL places still being available under government policy for 2018 entry. \\r\n\\r\nAs a result we may retain your appointment to consider you for 2019 entry instead or another related programme where possible. Otherwise, your appointment will be cancelled accordingly as soon as NCTL inform universities and this could be without prior notice.\\r\n\\r\nThe selection process will last approximately half a day and will include:\\r\n\\r\n- identification and documentation check\\r\n- a course presentation by academic staff\\r\n- a group introduction \\r\n- a group lateral thinking activity \\r\n- an individual micro teach \\r\n- a short writing activity\\r\n- a one to one interview",
+    "OtherRequirements": "You must have successfully gained a Disclosure and Barring Service (DBS) check, which is required at the point of accepting a place at the University.\\r\n\\r\nYou must also have successfully completed the National College for Teaching and Leadership’s Skills Tests in literacy and numeracy before 2 September 2018 in order to secure a place on the course. You must have registered for the tests before we can interview you. We offer Skills Test preparation days to help you to gain the knowledge to successfully complete the tests.",
+    "PersonalQualities": "Demand for places on the course is very high, so you must also:\\r\n\\r\n- be able to communicate clearly and in spoken and written English, with a good understanding of correct grammar\\r\n- meet the Secretary of State's requirements for physical and mental fitness to teach\\r\n- achieve clearance from the Disclosure and Barring Service at the start of the course. You must not have previously been excluded from teaching or working with children\\r\n- meet all the Department for Education entry requirements for Initial Teacher Education courses including suitability and fitness to teach checks",
+    "HowSchoolPlacementsWork": "Hands-on teaching experience in schools is a key part of our PGCE Primary. For a total of 24 weeks, you will undertake two main teaching placements – and a number of shorter enhanced placements – in different settings, supported throughout by our trained school mentors and link tutors.\\r\n\\r\nAs one of the major Initial Teacher Education providers in the East Midlands, we have longstanding partnerships with more than 400 schools across the region – a relationship which Ofsted described as ‘excellent’. All placements are organised for you by our Partnership Office. \\r\n\\r\nWith the support of your mentor and link tutor, you will undertake two assessed school experiences as well as shorter placements, adding up to 24 weeks in total.\\r\n\\r\nFor 'Professional Practice: Becoming a Teacher' you will observe experienced practitioners in the classroom, teach alongside your mentor and begin to take responsibility for the class as a whole. \\r\nYou will put into practice the skills of planning, delivery and assessment that you cover in your University-based training. You will also gain the wider professional skills demanded of a teacher such as dealing with parents, contributing to after-school activities and planning school trips.\\r\n\\r\nFor 'Professional Practice: Aiming for Excellence' you will be placed at a different school or setting, with the opportunity to work with children from another age group. \\r\nAt first, you will be given time to observe other teachers and get to know your class. You can then expect to progress more quickly to taking fuller responsibility for the class. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Faculty of Education and Humanities has over forty years of successful experience in initial teacher training, education and research. We are passionate about inspiring change which transforms the lives of children and young people both in the UK and internationally.\\r\n\\r\nInitial teacher training (ITT) programmes received an Ofsted grade of 'Good' in November 2014. The Ofsted report comments on the strongly cohesive training programmes between the University and partner schools. Individual students are very well supported during their training and into their teaching posts. Trainees are well prepared to teach the primary/early years curriculum through the use of interactive face to face technology enhanced learning events as well as on line packages. These all address national ITT content criteria as well as focusing on behaviour management strategies.  There is a high level of employment for newly qualified teachers which demonstrates the value placed on the trainees in the Partnership of over 150 diverse schools and settings.\\r\n\\r\nAll students have access to purpose-built teaching and learning resources on the new Waterside Campus allowing them to develop their professional abilities. Facilities include fully equipped rooms; teaching and learning involves using technology, high quality teaching resources, workshops and group work relevant to the variety of educational settings in which students will be working.\\r\n\\r\n",
+    "TrainWithDisability": "The University of Northampton offers support for applicants with a declared need. Individual meetings are held with trainees throughout the year with the Head of Initial Teacher Training and Programme Leader to discuss needs and signpost support. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

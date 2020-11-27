@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Canterbury Christ Church University",
+  "provider": "East Kent Learning Alliance",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education - Canterbury High School",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2DG/34Y3",
+  "providerCode": "2DG",
+  "programmeCode": "34Y3",
+  "schools": [
+    {
+      "name": "Canterbury High School",
+      "address": "Knight Avenue, Canterbury, Kent, CT2 8QA",
+      "code": "3"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Knight Avenue, Canterbury, Kent, CT2 8QA",
+      "geocode": true,
+      "formatted_address": "Knight Ave, Canterbury CT2 8PY, UK",
+      "latitude": 51.2793103,
+      "longitude": 1.0624868,
+      "post_code": "CT2 8PY",
+      "city": "Kent",
+      "route": "Knight Avenue",
+      "postal_town": "Canterbury"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2DG",
+    "addr_1": "Canterbury Road",
+    "addr_2": "Birchington",
+    "addr_3": "Kent",
+    "addr_4": "(Thanet, HerneBay, Whitstable Deal)",
+    "postcode": null,
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Canterbury Rd, Birchington CT7 9UB, UK",
+    "latitude": 51.37168279999999,
+    "longitude": 1.30348,
+    "post_code": "CT7 9UB",
+    "city": "Kent",
+    "route": "Canterbury Road",
+    "postal_town": "Birchington"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 5960.0,
+    "FeeDetails": "Fees for QTS are £5,960\\r\nThese fees are paid by the school if you are a salaried trainee.\\r\nIf you are an unsalaried trainee you are responsible for the all fees. You may be eligible for a bursary and student loan to support you with this\\r\n\\r\nIn addition you can complete a PGCE with the School Direct route.\\r\nThe fees for this are  £9,250.\\r\nIf you are a salaried trainee you are responsible for paying the difference between the QTS and the PGCE fees\\r\nIf you are an unsalaried trainee you are responsible for all the fees. You may be eligible for a bursary and student loan to support you with this\\r\n\\r\nFor information: http://www.ekla.org.uk/itt/school-direct-funding\\r\n\\r\n\\r\n",
+    "AboutCourse": "The key feature of our course is that the majority of the year is spent on school placement working alongside experienced colleagues in schools.\\r\n\\r\nThere are two routes to choose from:\\r\n\\r\nSchool Direct Salaried:\\r\nThis is an employment-based route for graduates with at least three years’ work experience. Colleagues will earn a salary while they train and the school will pay their QTS fees.\\r\n\\r\nSchool Direct non -salaried:\\r\nThis is not an employment route. Trainees will pay their own fees, but may be eligible for a bursary.\\r\n\\r\nPlease note which route is available at each school when applying and ensure that you apply for the correct route that is suitable to you as not all schools offer both routes\\r\n\\r\nKey components:\\r\n\\r\n- You will have a school based mentor, who you will meet with weekly\\r\n\\r\n- You will be provided with a teaching timetable within ITT requirements \\r\n\\r\n- You will plan and evaluate all taught lessons, initially with the support of your mentor\\r\n\\r\n- You will be formally observed, it is recommended at least once per week\\r\n\\r\n- You will observe other staff, it is recommended at least once per week\\r\n\\r\n- You will compile a portfolio of evidence over the course of the year to show that you have met the teaching standards to achieve QTS\\r\n\\r\n- You will attend all CCCU training days and EKLA professional studies sessions\\r\n\\r\n- You will have access to a comprehensive school based CPD programme\\r\n\\r\n- You will complete contrasting school experience placements \\r\n\\r\nAssessment:\\r\n\\r\nOn completion of the Training programme you will be awarded Qualified Teacher Status (QTS)\\r\nThere is an additional opportunity to complete a PGCE. Please discuss this option at interview and please note that the additional funding will be your responsibility\\r\n\\r\nQTS Pathway \\r\n\\r\nThroughout the course you will be assessed by your mentors and tutors who will grade you at key points to help you understand how well you are meeting the standards for QTS. At the end of the course you will have a final assessment. This will take the form of a review meeting to formally assess whether you have met the standards for QTS.\\r\n\\r\nSchool Direct PGCE Pathway\\r\n\\r\nIn addition to the above QTS assessment process trainees who have opted for the School Direct PGCE Pathway will be required to submit three 4,000 word equivalent assignments, spread across the year, which will be assessed at Masters Level.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree: You must have a degree of a minimum award of 2:2, with honours. Your degree must be completed before commencement of your training place\\r\n\\r\nGCSEs: You must have a minimum grade C in English and Mathematics. If you want to teach primary you must also have at least a grade C in a Science. \\r\n\\r\nEquivalency tests are accepted.\\r\n\\r\nNARIC equivalency certificates are required for any degree or school qualifications gained outside the United Kingdom\\r\n\\r\nTo apply for the salaried route you must have at least 3 years full time work experience. \\r\n\\r\nFor more details: www.ekla.org.uk/itt/school-direct-eligibility\\r\n",
+    "InterviewProcess": "You will be interviewed by the EKLA school (s) that you name in your application.\\r\n\\r\nExamples of the activities included at interview are:\\r\n\\r\n* A tour of the school\\r\n* Teaching a 30 minute activity\\r\n* A formal interview (2-3 panel members)\\r\n* A CCCU Literacy and Numeracy test\\r\n\\r\nIn order to be short-listed for interview an applicant must have:\\r\n\\r\n*  A degree of a minimum award of 2:2, with honours. Your \\r\n     degree must be completed before commencement of your training \\r\n     place\\r\n\\r\n*  A minimum grade C in English and Mathematics. If you \\r\n     want to teach primary you must also have at least a grade C in a \\r\n     Science. \\r\n\\r\n * Equivalency tests are accepted.\\r\n\\r\n* NARIC equivalency certificates are required for any degree or school \\r\n   qualifications gained outside the United Kingdom\\r\n\\r\n* To have passed the government's skills tests in literacy and numeracy \\r\n    before commencing the course\\r\n\\r\nPersonal Qualities that we are looking for:\\r\n\\r\n- A commitment to working with young people\\r\n\\r\n- Good communication skills\\r\n\\r\n- A fascination with the learning process\\r\n\\r\n- A love of their subject\\r\n\\r\n- The ability to motivate and enthuse young people\\r\n\\r\n- Experience of working with young people, particularly in a school \\r\n  environment, strengthens an application\\r\n\\r\n- A desire to make a difference\\r\n\\r\nPlease visit our website for more details:\\r\n\\r\nhttp://www.ekla.org.uk/itt/school-direct-eligibility\\r\n\\r\n\\r\n",
+    "OtherRequirements": "Subject Knowledge Enhancement course – To be completed by all secondary Maths, Physics, Chemistry, Computer Science and MFL candidates who do not have a degree in the subject they want to teach \\r\n\\r\nWork experience: Being able to evidence experience of working with young people, particularly in a school environment, strengthens an application.  We would therefore recommend that you visit a range of schools. This is not a requirement but a recommendation to help prepare you\\r\n\\r\nCLEARANCE FROM THE CRIMINAL RECORDS BUREAU (CRB)\\r\n\\r\nTo have passed the government's skills tests in literacy and numeracy before commencing the course\\r\n\\r\nhttp://www.ekla.org.uk/itt/school-direct-eligibility\\r\n",
+    "PersonalQualities": "EKLA ARE LOOKING FOR GRADUATES WITH:\\r\n\\r\nA commitment to working with young people\\r\n\\r\nGood communication skills\\r\n\\r\nA fascination with the learning process\\r\n\\r\nA love of their subject\\r\n\\r\nThe ability to motivate and enthuse young people\\r\n\\r\nExperience of working with young people, particularly in a school environment, strengthens an application\\r\n\\r\nA desire to make a difference\\r\n",
+    "HowSchoolPlacementsWork": "Your school will be selected by you at the time of submitting your application as each of our schools and subjects has its own code that you will enter onto the application form.\\r\n\\r\nWhilst you will spend the majority of your time in the base school that you apply to you are required to complete some school placements:\\r\n\\r\n* Second school experience – a minimum of 20 days, in a block. To be undertaken in term 3. \\r\n\\r\n* Adjacent age range experience – a minimum of 15 days, of which 10 should be undertaken in a block\\r\n\\r\n* Prior and post age phase experience – a minimum of 5 days, does not need to be a block.\\r\n\\r\nYou school based mentor will help you organise these placements and EKLA and CCCU will also offer support throughout the year\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The East Kent Learning Alliance is a partnership of secondary and primary schools, that engage with schools and accredited providers to recruit high quality trainees to provide a rich training programme. EKLA is committed to helping improve the lives of the young people that it serves in East Kent and believes that the recruitment and development of the workforce of the future will help us to achieve this aim.\\r\n\\r\nThe advantages of choosing EKLA are:\\r\n\\r\nWe have a strong relationship with our accrediting provider, CCCU\\r\nCollaborative working\\r\n\\r\nJoint Professional Studies delivered by serving practioners\\r\nPotential Employment with a school in the EKLA area\\r\n\\r\nOur primary and secondary EKLA SD coordinators complete QA visits of all our trainees. These visits will QA school provision to ensure consistency and monitor provision for our trainees. This will include additional support for trainee development.\\r\n\\r\nActivities will include:\\r\nInitial meetings to QA school provision in line with training requirements\\r\nJoint observations and debrief with mentors\\r\nMeeting with key stakeholders \\r\nPortfolio review\\r\n",
+    "TrainWithDisability": "Access varies according to our different schools so for more details please contact the individual school directly: \\r\n\\r\nhttp://www.ekla.org.uk/itt/school-direct-places",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We are work in partnership with an accredited body, Canterbury Christ Church University. \\r\n\\r\nEKLA will be offering the following elements of the programme:\\r\n\\r\nProfessional studies based at EKLA partnership schools.\\r\n\\r\nSchool placements in differing contexts across the alliance.\\r\n\\r\nNetworking opportunities with trainees at other schools.\\r\n\\r\nFor more information visit: \\r\n\\r\nhttp://www.ekla.org.uk/itt/school-direct\\r\nwww.canterbury.ac.uk/study-here/courses/postgraduate/school-direct-18-19.aspx\\r\n",
+        "UcasInstitutionCode": "C10"
+      }
+    ]
+  },
+  "has_inst": true
+}

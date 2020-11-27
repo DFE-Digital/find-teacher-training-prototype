@@ -1,0 +1,204 @@
+{
+  "locationType": "School",
+  "accrediting": "The Grand Union Training Partnership",
+  "provider": "The Grand Union Training Partnership (Sponne School)",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1PJ/236N",
+  "providerCode": "1PJ",
+  "programmeCode": "236N",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Sponne School, Brackley Road, Towcester, NN12 6DJ",
+      "code": "-"
+    },
+    {
+      "name": "Campion School Campus",
+      "address": "Kislingbury Road, Bugbrooke, Northamptonshire, NN7 3QG",
+      "code": "C"
+    },
+    {
+      "name": "Caroline Chisholm Campus",
+      "address": "Wooldale Road, Wootton Fields, Northamptonshire, NN4 6TP",
+      "code": "D"
+    },
+    {
+      "name": "Elizabeth Woodville Campus",
+      "address": "Stratford Road, Deanshanger, Milton Keynes, MK19 6HN",
+      "code": "E"
+    },
+    {
+      "name": "Magdalen Campus",
+      "address": "Waynflete Avenue, Brackley, Northamptonshire, NN13 6FB",
+      "code": "F"
+    },
+    {
+      "name": "Guilsborough Campus",
+      "address": "West Haddon Road, Guilsborough, Northamptonshire, NN6 8QE",
+      "code": "G"
+    },
+    {
+      "name": "Moulton Campus",
+      "address": "Pound Lane, Moulton, Northamptonshire, NN3 7SD",
+      "code": "H"
+    },
+    {
+      "name": "Hazeley Campus",
+      "address": "Emperor Drive, Hazeley, Milton Keynes, MK8 0PT",
+      "code": "I"
+    },
+    {
+      "name": "Shenley Brook End Campus",
+      "address": "Wallbank Grove, Shenley Brook End, Milton Keynes, MK5 7ZT",
+      "code": "J"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Sponne School, Brackley Road, Towcester, NN12 6DJ",
+      "geocode": true,
+      "formatted_address": "Brackley Rd, Towcester NN12 6DJ, UK",
+      "latitude": 52.1321314,
+      "longitude": -0.9936887,
+      "post_code": "NN12 6DJ",
+      "city": "Northamptonshire",
+      "route": "Brackley Road",
+      "postal_town": "Towcester"
+    },
+    {
+      "address": "Kislingbury Road, Bugbrooke, Northamptonshire, NN7 3QG",
+      "geocode": true,
+      "formatted_address": "Kislingbury Rd, Bugbrooke, Northampton NN7 3QG, UK",
+      "latitude": 52.2132301,
+      "longitude": -1.0068512,
+      "post_code": "NN7 3QG",
+      "city": "Bugbrooke",
+      "route": "Kislingbury Road",
+      "postal_town": "Northampton"
+    },
+    {
+      "address": "Wooldale Road, Wootton Fields, Northamptonshire, NN4 6TP",
+      "geocode": true,
+      "formatted_address": "Wooldale Rd, Northampton NN4 0TG, UK",
+      "latitude": 52.20062309999999,
+      "longitude": -0.8746777,
+      "post_code": "NN4 0TG",
+      "city": "Northamptonshire",
+      "route": "Wooldale Road",
+      "postal_town": "Northampton"
+    },
+    {
+      "address": "Stratford Road, Deanshanger, Milton Keynes, MK19 6HN",
+      "geocode": true,
+      "formatted_address": "Stratford Rd, Deanshanger, Milton Keynes MK19 6HN, UK",
+      "latitude": 52.0505254,
+      "longitude": -0.8793964,
+      "post_code": "MK19 6HN",
+      "city": "Deanshanger",
+      "route": "Stratford Road",
+      "postal_town": "Milton Keynes"
+    },
+    {
+      "address": "Waynflete Avenue, Brackley, Northamptonshire, NN13 6FB",
+      "geocode": true,
+      "formatted_address": "Waynflete Ave, Brackley NN13 6AG, UK",
+      "latitude": 52.0297779,
+      "longitude": -1.1511447,
+      "post_code": "NN13 6AG",
+      "city": "Northamptonshire",
+      "route": "Waynflete Avenue",
+      "postal_town": "Brackley"
+    },
+    {
+      "address": "West Haddon Road, Guilsborough, Northamptonshire, NN6 8QE",
+      "geocode": true,
+      "formatted_address": "W Haddon Rd, Guilsborough, Northampton NN6 8QL, UK",
+      "latitude": 52.35421580000001,
+      "longitude": -1.0174614,
+      "post_code": "NN6 8QL",
+      "city": "Guilsborough",
+      "route": "West Haddon Road",
+      "postal_town": "Northampton"
+    },
+    {
+      "address": "Pound Lane, Moulton, Northamptonshire, NN3 7SD",
+      "geocode": true,
+      "formatted_address": "Pound Ln, Moulton, Northampton NN3 7PL, UK",
+      "latitude": 52.28855309999999,
+      "longitude": -0.8565856,
+      "post_code": "NN3 7PL",
+      "city": "Moulton",
+      "route": "Pound Lane",
+      "postal_town": "Northampton"
+    },
+    {
+      "address": "Emperor Drive, Hazeley, Milton Keynes, MK8 0PT",
+      "geocode": true,
+      "formatted_address": "Emperor Drive, Milton Keynes, Hazeley MK8 0PT, UK",
+      "latitude": 52.0194674,
+      "longitude": -0.8116337,
+      "post_code": "MK8 0PT",
+      "city": "Milton Keynes",
+      "route": "Emperor Drive",
+      "postal_town": "Hazeley"
+    },
+    {
+      "address": "Wallbank Grove, Shenley Brook End, Milton Keynes, MK5 7ZT",
+      "geocode": true,
+      "formatted_address": "Shenley Brook End, Milton Keynes MK5 7ZT, UK",
+      "latitude": 52.0073139,
+      "longitude": -0.7898748,
+      "post_code": "MK5 7ZT",
+      "city": "Shenley Brook End",
+      "route": null,
+      "postal_town": "Milton Keynes"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1PJ",
+    "addr_1": "Brackley Road",
+    "addr_2": "Towcester",
+    "addr_3": "Northampton",
+    "addr_4": "Northants",
+    "postcode": "NN12 6DJ",
+    "url": "http://www.gutp.co.uk",
+    "geocode": true,
+    "formatted_address": "Brackley Rd, Towcester NN12 6DH, UK",
+    "latitude": 52.1310412,
+    "longitude": -0.9968157,
+    "post_code": "NN12 6DH",
+    "city": "Northamptonshire",
+    "route": "Brackley Road",
+    "postal_town": "Towcester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our course ensures that our Associate Teachers are able to teach ages 11-18 across Key Stages 3, 4 and 5. \\r\n\\r\n- As a school centred scheme we are able to ensure that Associate Teachers are involved in the classroom right from the start of the course, observing experienced teachers teach and then gradually developing their confidence and ability to take an increasing responsibility for the planning and delivery of lessons. \\r\n- Associate Teachers form close working relationships with their mentors and with other colleagues in the departments in which they are placed. \\r\n- The views of the Associate Teachers are valued: they give regular Quality Assurance feedback so that concerns and suggestions can be responded to and acted upon. \\r\n\\r\nHow this course is organised:\\r\n\\r\n- A typical week would involve: general professional studies sessions at the lead school; a meeting with a subject mentor and a subject-specific training session provided by one of the subject mentors. \\r\n- During the two block teaching practices regular meetings with mentors and subject-specific training sessions continue though the other sessions mentioned above are discontinued. \\r\n\\r\nWhat is taught on this course:\\r\n\\r\n- Subject knowledge \\r\n- Teaching methodology \\r\n- ICT skills \\r\n- General professional studies topics such as how children learn, education in a multi-ethnic society etc. \\r\n- What it is to be fully involved in all aspects of the life of the host school. \\r\n\\r\nAssessment is by a variety of methods: \\r\n\\r\n- A portfolio of evidence built up over the full course \\r\n- A standards log to measure your progress against the NCTL standards as in Qualifying to Teach \\r\n- A number of presentations and three longer assignments which aim to develop powers of observation and reflection, the ability to relate published data to your own classroom research and, finally, the ability to experiment with different teaching styles and methodologies. \\r\n\\r\nStudy facilities and support:\\r\n\\r\n- The scheme supports Associate Teachers with relevant ICT equipment. \\r\n- A small professional library is kept at the lead school and course members have access to specialised material at the University of Leicester.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Minimum degree required: Lower Second\\r\n\\r\nA relevant degree\\r\n\\r\nGCSEs Grade C or 4 or above in English and Maths\\r\n",
+    "FinancialSupport": "Please refer to Department of Education website for up-to-date information relating to Initial Teacher Training funding.",
+    "InterviewProcess": "Applicants who are invited to interview would normally spend a day in one of the Partnership schools. During this time they would be given a tour of the school and spend time talking to staff and pupils in classes. They would be interviewed by one of the Directors of the scheme and by a subject mentor. During the interview they would be asked, depending on their subject, may give a short presentation/speak in their foreign language/complete a subject specific test/deliver a short practical. \\r\n\\r\nIn addition, all candidates are asked to complete a generic, short written task.\\r\n",
+    "PersonalQualities": "Associate Teachers are selected from a wide age range with a good balance of people in their 20s, 30s and 40s. Some will be straight from university; others may have had considerable experience of another career. A majority of our Associate Teachers come from within a 25 mile radius of the Partnership schools. \\r\n\\r\nSuccessful candidates are able to show:\\r\n\\r\n- A commitment to teaching which may be demonstrated by evidence of previous work with young people. \\r\n\\r\n- An ability to communicate effectively with pupils and with adults. \\r\n\\r\n- A genuine interest in sharing enthusiasm for their subject\\r\n",
+    "HowSchoolPlacementsWork": "Arrangements for teaching placements:\\r\n- Associate teachers spend the first week of the course observing in a primary school (this is organised by the trainee at a school of their choice) \\r\n- From the second week of the course Associate Teachers are based in one of the Partnership schools except for the ten weeks of their main block practice when they will be placed in one of the other schools in the Partnership. \\r\n\\r\nWe value the experiences that our Associate Teachers bring with them and we try to be flexible in meeting their particular needs when placing them in their host schools.\\r\n\\r\nIn order to find the most suitable placement for each trainee, we look at the distance they would have to travel from home to school, the age ranges they will be teaching and the availability of the most appropriate School Based Tutor.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Grand Union Training Partnership is a school-centred initial teacher training (SCITT) consortium centred on a number of 11-18 comprehensive schools situated in villages and small towns West of Northampton and in Milton Keynes. \\r\n\\r\nWe provide Secondary PGCE courses in Business Studies, English, History, Modern Foreign Languages, Physical Education, Maths, Geography, Computer Science, Physics, Chemistry and Biology. \\r\n\\r\nWe aim to give trainees, whom we refer to as Associate Teachers, as much practical experience of working in the Partnership schools as possible. Each Associate Teacher's work and programme of study is supervised by a Mentor (School Based Tutor) who will take a close interest in their development as a subject teacher and colleague. This part of the course is complemented by general professional studies. \\r\n\\r\nOur overall aim is to produce reflective professionals confident in applying for and starting their first jobs as secondary school teachers. Over half of our Associate Teachers take up their first teaching posts in the scheme's Partnership schools.\\r\n",
+    "TrainWithDisability": "In addition to supporting our Associate Teachers in any way we can, we are committed to providing additional support where possible and necessary.\\r\n\\r\nPrior to the start of our course, we ask all Associate Teachers to consider whether or not they have a disability within the statutory definition.  It is important that we gather this information because The GUTP is committed to ensuring that all of our Associate Teachers are treated fairly and that we do not inadvertently make decisions or have processes that may treat any one less well on the basis of any disability. We also wish to offer appropriate support to all our trainees, whatever their circumstances.  All information given to us is treated with sensitivity and held in confidence.  ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The Grand Union Training Partnership is an experienced school-centred initial teacher training consortium with nearly 20 years’ experience training secondary school teachers. More recently they started to offer the same high quality of training the primary sector. \\r\n\\r\nThe Scheme is very conscious of its role in training local people for employment in their home area.\\r\n\\r\nTheir overall aim is to produce reflective professionals confident in applying for, and starting, their first jobs as school teachers. Traditionally, over half of their Associate Teachers take up their first teaching posts in the Scheme's Partnership Schools.\\r\n",
+        "UcasInstitutionCode": "G60"
+      }
+    ]
+  },
+  "has_inst": true
+}

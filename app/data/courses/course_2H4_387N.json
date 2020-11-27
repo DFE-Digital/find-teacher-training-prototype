@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Endeavour Learning SCITT",
+  "provider": "Bridgewater High School",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "2H4/387N",
+  "providerCode": "2H4",
+  "programmeCode": "387N",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Broomfields Road, Appleton, Warrington, WA4 3AE",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Broomfields Road, Appleton, Warrington, WA4 3AE",
+      "geocode": true,
+      "formatted_address": "Broomfields Rd, Appleton, Warrington WA4 3AE, UK",
+      "latitude": 53.3635973,
+      "longitude": -2.5753718,
+      "post_code": "WA4 3AE",
+      "city": "Appleton",
+      "route": "Broomfields Road",
+      "postal_town": "Warrington"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2H4",
+    "addr_1": "Broomfields Road",
+    "addr_2": "Appleton",
+    "addr_3": "Warrington",
+    "addr_4": "Cheshire",
+    "postcode": "WA4 3AE ",
+    "url": "http://bridgewaterhigh.org",
+    "geocode": true,
+    "formatted_address": "Broomfields Rd, Appleton, Warrington WA4 3AE, UK",
+    "latitude": 53.3635422,
+    "longitude": -2.5760225,
+    "post_code": "WA4 3AE",
+    "city": "Appleton",
+    "route": "Broomfields Road",
+    "postal_town": "Warrington"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The course consists of 35 weeks of school centred training from the beginning of September to the end of June in two contrasting schools. Four days a week will be spent in classrooms under the guidance of a Curriculum Mentor who will support and train you to be a highly effective teacher.  They will model exemplary practice in planning teaching and assessment to prepare you to be the best teacher you can be.You will also be supported  by an Academic Mentor in school who will support your subject knowledge, a Professional Mentor in School to oversee the programme and  a University Mentor to support your PGCE studies.\\r\n\\r\nYou will be assessed through observations with your school mentors and feedback will be through regular weekly meetings leading to Qualified Teacher Status (QTS) at the end of the year.\\r\n\\r\nYou will also study for a PGCE completing 2 assignments under the guidance of Liverpool John Moores University. You will attend LJMU for one Induction Day and then complete 5 days of further PGCE studies at Endeavour Learning Trust (our SCITT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "We normally require a 2(ii) degree or above in a relevant subject together with an A level grade B or above  (or standard equivalent) in your chosen teaching subject. Candidates without a degree in the subject, who can demonstrate that their degree  has  significant modules of the subject, may also be considered. Likewise, candidates who have worked in the subject area may also be considered.  GCSE grade C/4 in English Language and Mathematics are also required. In addition, you will be required to pass the Professional Skills Tests in English and Maths.",
+    "InterviewProcess": "If your application is successful you will be invited for interview. There will be a short unseen written task to review your grammar, spelling and punctuation and your ability to articulate your points clearly. \\r\n\\r\nWe will also ask you to deliver a 20 minutes session to a class of KS3 pupils on a pre-prepared topic related to the subject you wish to teach. This will be observed by some members of the interview panel and will establish your confidence, enthusiasm and communication skills. We will be looking at your personal, interpersonal  and communication skills throughout the interview process.\\r\n\\r\nFinally, there will be a formal interview which will draw on the tasks performed during your time spent with us. This will be an opportunity for us to talk further  and to discuss your subject knowledge, reflection on any experience you have had in a secondary school, your knowledge of current secondary education issues and your commitment to a career in teaching amongst other things. ",
+    "OtherRequirements": "Before starting their training, all trainees will be required to undergo an enhanced criminal record check (DBS) and an on-line health check. All candidates will also have to produce GCSE, A level and Degree certificates in support of their application.",
+    "PersonalQualities": "We are looking for high calibre students with a passion for teaching. You must have excellent communication skills and the ability to engage with young people. You must be flexible, independent,  resilient and have the ability to show initiative.",
+    "HowSchoolPlacementsWork": "During your training you will complete  placements at two contrasting  secondary schools. These placements will be within TCAT schools, all of which are within a 5 mile radius in Warrington. These schools are selected to suit your particular training needs and interests to give you the best possible support for your learning.\\r\n\\r\nAt the end of your first school placement, if you have  successfully  met all teaching standards, there will  be an opportunity to request  a placement at Priestley Sixth Form College which will allow you to include an extended  period working with KS5  students\\r\n\\r\nYou will also complete  2 weeks of enrichment visits when you will gain experience of our TCAT Primary Schools, our Designated Provisions and Priestley Sixth Form College as well as gaining an insight into EAL."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Bridgewater Teaching School is responsible for the design and delivery for TCAT's ITT programme based at Bridgewater High School. Our course leads to QTS and PGCE.\\r\n\\r\nTCAT is an innovative Multi Academy Trust comprising of 4 Secondary Schools, a Sixth Form College and 2 Primary Schools. Bridgewater is situated in Appleton in South Warrington equidistant from Liverpool and Manchester and all our Partner Schools are within a 5 mile radius. Whilst completing your training, you will complete two Secondary placements and we will endeavour to place you within our family of TCAT schools.\\r\n\\r\nWe will provide inspiring and high quality training. You will be supported by our enthusiastic and dedicated staff who will provide  you with the support to fulfil your potential.  We offer bespoke placements for those wishing to pursue particular areas of development such as Inclusion, and STEM so that you are able to enrich and expand your experience beyond your two placement schools. During your training, you will have the opportunity to work with students from a diverse range of social backgrounds from SEND to the most able. \\r\n\\r\nWe want you to fulfil your  potential to become a highly effective teacher and to inspire the next generation to achieve the very best for themselves and for their communities. Look on our website for details of how to apply (www.bridgewaterhigh.com) or email us directly for more details (teachingschool@bridgewaterhigh.com).",
+    "TrainWithDisability": "Bridgewater High School is an inclusive school for  both pupils and members of staff. \\r\n\\r\nWe have lifts available to provide access to most teaching areas of the school. Certain areas of the school are set up to facilitate current members of staff with hearing difficulties and further areas can be created as required. Bridgewater High School is a split site school and transport is provided for all staff to change sites. Staff with and without mobility issues use this facility. \\r\n\\r\nAt Bridgewater every member of staff is treated as an individual and we would try to accommodate every applicant that applied to train with us.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": " QTS is awarded by  Endeavour Learning Trust, an outstanding provider of Teacher Training and the PGCE is awarded by Liverpool John Moores University. Our trainees have full access to the University resources to support work on their assignments.",
+        "UcasInstitutionCode": "M70"
+      }
+    ]
+  },
+  "has_inst": true
+}

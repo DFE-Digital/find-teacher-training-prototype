@@ -1,0 +1,69 @@
+{
+  "locationType": "School",
+  "accrediting": "University of East London",
+  "provider": "West Thornton Primary School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "16A/389C",
+  "providerCode": "16A",
+  "programmeCode": "389C",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Rosecourt Road, Croydon, CR0 3BS",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Rosecourt Road, Croydon, CR0 3BS",
+      "geocode": true,
+      "formatted_address": "Rosecourt Rd, Croydon CR0 3BS, UK",
+      "latitude": 51.3877529,
+      "longitude": -0.1233257,
+      "post_code": "CR0 3BS",
+      "city": "Greater London",
+      "route": "Rosecourt Road",
+      "postal_town": "Croydon"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "16A",
+    "addr_1": "West Thornton Primary Academy",
+    "addr_2": "Rosecourt Road",
+    "addr_3": null,
+    "addr_4": "Croydon",
+    "postcode": "CR0 3BS ",
+    "url": "http://www.thesynaptictrust.org",
+    "geocode": true,
+    "formatted_address": "Rosecourt Rd, Croydon CR0 3BS, UK",
+    "latitude": 51.3871208,
+    "longitude": -0.1218124,
+    "post_code": "CR0 3BS",
+    "city": "Greater London",
+    "route": "Rosecourt Road",
+    "postal_town": "Croydon"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "By joining us on one of our training programmes you will be receiving exceptional training, leadership and support from outstanding professionals. Within school you will have a class mentor (class teacher) who will support you daily with your training, a UEL tutor who will oversee your training provision and a WTTA link tutor who will quality assure the delivery of the program.   You will be based in school four days a week and attend training at UEL a day per week. As a trainee you will be treated like a member of staff and will be introduced as a teacher to the children. The school will expect you to commit yourself fully and to immerse yourself in the life of the school by attending meetings, training events and becoming a member of the team. \\r\n\\r\nDuring your training year you will need to evidence the Teachers’ Standards. Your link tutors will give you regular feedback about the quality of your evidence, as will your class mentor. Each week, at your mentor tutorial meeting, trainees will be asked to show evidence that demonstrates the impact of their teaching on pupil progress. \\r\nDuring weekly face to face training sessions, you will experience a blend of subject knowledge development training and training showing you the different teaching styles and approaches (pedagogies) that you will need to be an effective teacher. We will cover all elements of the National Curriculum and Early Years Foundation Stage Curriculum.  \\r\n\\r\nYou will attend parents evenings, help to write reports, help to plan and lead a school trip, attend pupil progress meetings and see the children in your class develop, flourish and grow under your direction – it is an amazing feeling! \\r\n\\r\nIn the first term, you will be based in your ‘main’ class where you will work with your mentor until Christmas.  You will start off by teaching small groups, which will then lead to the whole class. You will be supported every step of the way and given expert guidance. After Christmas, you will go on your second school placement, where you will go to a school which is contrasting to yours, for 4- 6 weeks.  Following this you will return to your 'main' class. \\r\n\\r\nYou will be observed teaching by your mentor and you will have a weekly mentor tutorial meeting, so you will have feedback and support, knowing exactly how to become and outstanding teacher!",
+    "InterviewProcess": "Applications will be screened against entry requirements and suitable candidates will be shortlisted to attend an interview.  We will provide you with full information regarding the interview process if your application is successful. All interviews will be held in a school and you will be expected to teach a group of children, complete a maths task, writing task and group presentation.\\r\nThe interview panel consists of senior staff and a UEL representative.  If you are successful at the first stage of interview you will go on to  be invited to a needs analysis interview at UEL, Stratford campus. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "West Thornton Primary Academy is an outstanding setting in which to take your first steps into your teaching career.  We are a forward thinking, dynamic environment where we encourage all learners to aspire.  Our vision is one of opportunity for all in an environment which embraces learning and equips children with the skills to succeed at life in the 21st century.\\r\nWest Thornton became a designated National Teaching School in 2014 and as such leads the West Thornton Teaching Alliance.  \\r\nOur partnership of schools currently participating in the School Direct programme, is made up of a range of urban schools accommodating children from ages 3-11.  We provide an opportunity to experience the diverse contrasting range of teaching and training experiences.\\r\nIn 2012 Ofsted  judged WTPA to be outstanding in all areas. In recent years ALL of our School Direct trainees who completed their training  have been offered posts within our partnership schools.  All of the trainees at West Thornton Teaching Alliance have finished the course classed as 'good' or 'outstanding'.   If you train with us you will have amazing opportunities to network, share ideas and collaborate with some of the world's most innovative, forward thinking educational organisations.  We are unique to other local providers as we organise a special school experience for our trainees, as we believe that all trainees need a well-rounded and real experience of how to support children with additional needs.  \\r\nFor more information please visit our website where you can learn all about us.\\r\n(http://thesynaptictrust.org/our-schools/west-thornton-primary-academy/about-us)\\r\n(http://westthorntonta.org.uk/)",
+    "TrainWithDisability": "Our sites are wheelchair accessible.  Reasonable adjustments can be made to accommodate individual needs as per our access policy.  Training materials are available in dyslexia-friendly font and presentation materials can be made available prior to training by request.  Extensions to assignment deadlines may also be requested.\\r\nAll employees are given a medical screening and support is put in place to meet individual needs. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Eat London is one of London's leading centres for teacher training offering highly successful courses for the primary, secondary, further education and training sectors.  UEL train approximately 600 teachers every year and have earned an excellent reputation working in partnership with schools in London preparing teachers to work in multi-ethnic and multilingual urban schools.\\r\nThe programme teams are comprised of experienced practitioners who have worked in a range of settings across London and the UK as classroom teachers, curriculum coordinators, advisory teachers and school leaders. You'll become part of a diverse group of trainee teachers.",
+        "UcasInstitutionCode": "E28"
+      }
+    ]
+  },
+  "has_inst": true
+}

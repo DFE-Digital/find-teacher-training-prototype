@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "Leeds Trinity University",
+  "provider": "The Windmill PGCE Cluster",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary (Early Years)",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "15Y/2L8P",
+  "providerCode": "15Y",
+  "programmeCode": "2L8P",
+  "schools": [
+    {
+      "name": "Leeds Trinity University",
+      "address": "Brownberrie Lane, Horsforth, Leeds, Ls18 5HD",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Brownberrie Lane, Horsforth, Leeds, Ls18 5HD",
+      "geocode": true,
+      "formatted_address": "Brownberrie Ln, Horsforth, Leeds LS18 5HD, UK",
+      "latitude": 53.8497683,
+      "longitude": -1.6472872,
+      "post_code": "LS18 5HD",
+      "city": "Horsforth",
+      "route": "Brownberrie Lane",
+      "postal_town": "Leeds"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "15Y",
+    "addr_1": "Windmill Primary School",
+    "addr_2": "Windmill Road",
+    "addr_3": "Belle Isle",
+    "addr_4": "Leeds",
+    "postcode": "LS10 3HQ",
+    "url": "http://www.musicfederation.co.uk",
+    "geocode": true,
+    "formatted_address": "Windmill Rd, Leeds LS10 3HQ, UK",
+    "latitude": 53.7618144,
+    "longitude": -1.528839,
+    "post_code": "LS10 3HQ",
+    "city": "West Yorkshire",
+    "route": "Windmill Road",
+    "postal_town": "Leeds"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The Windmill Cluster offers high quality PGCE training through School Direct (unsalaried) across the 3-7 age range, with experienced and dedicated School Mentors and tutors ready to guide and support you through your training.Trainees are fully supported by a group of experienced tutors during both their University and school based training. During the University based training all National Curriculum subjects are covered and trainees receive at least 3 hours a week of English, Maths and Science teaching. The focus of University teaching is on both subject knowledge and pedagogy. A key part of the University based training is the Educational Professional Studies module which is linked to school based tasks.\\r\n\\r\nIn addition to University based training, trainees will also access Cluster based training where more practical aspects of professional development are delivered by highly trained cluster staff that are doing the job every day.\\r\n All our cluster schools have their own areas of specialism and expertise and cluster based training is tailored towards this, ensuring trainees get the best possible training opportunity in a practical setting with real children!\\r\n\\r\nTrainees will have three placements in two schools within the Windmill cluster; in October, December and March. As our Cluster is very diverse in terms of geographical location within the city of Leeds, percentage of children with SEN and with English as an Additional language for example, we aim to provide trainees with two contrasting placements to give a wide experience.\\r\n\\r\nEvery school has a Lead Mentor who is there to support and guide you through your placement and your day to day training will be supported by a School Mentor who is trained in mentoring, classroom observation and feedback skills.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should be a graduate with a classification of 2:2 or above. You will need a grade C or above in GCSE (or equivalent) English, Maths and Science and should also have significant experience in a state sector Primary School",
+    "InterviewProcess": "The Windmill Cluster will jointly co-ordinate the recruitment process with the Leeds Trinity University. Recruitment  will consist of an interview and  task involving children at one of our cluster schools.",
+    "PersonalQualities": "The Windmill Cluster is looking for dynamic and motivated trainees with a passion for working with children, who aim to deliver excellence in teaching and learning. The PGCE course is very demanding so we are looking for people who are not afraid of hard work and can give 100%!!",
+    "HowSchoolPlacementsWork": "The Windmill Cluster is a group of six schools, which includes five Primary schools and a Junior School, all located within the city of Leeds.\\r\n\\r\nThe lead school is Windmill Primary which operates as part of Low Road and Windmill Music Federation. The other schools in the cluster are:\\r\nLow Road Primary School\\r\nBlenheim Primary School\\r\nHunslet St Marys Church of England Primary School\\r\nRawdon Littlemoor Primary School\\r\nYeadon Westfield Junior School\\r\n\\r\nOur Cluster covers a wide geographical area throughout Leeds which enables us to offer trainees diverse placements and school experiences\\r\nTrainees will have three placements in two schools within the Windmill Cluster; in October, December and March. As our Cluster is very diverse in terms of geographical location within the city of Leeds, percentage of children with SEN and with English as an Additional Language for example, we aim to provide trainees with two contrasting placements to give a wide experience.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Windmill Cluster offers two Primary PGCE training courses: 3 to 7 years and 5 to 11 years, working in partnership with Leeds Trinity University. Trainees spend the majority of the course in school. \\r\n\\r\nThe lead school is Windmill Primary which operates as part of Low Road and Windmill Music Federation. Windmill is a large two form entry primary in Belle Isle in the South of Leeds with a large Children's Centre and a partnership with Broomfield South SILC for children with autism on site. The school has a high percentage of children with special educational needs and the school has a warm, welcoming and inclusive ethos. Windmill operates as part of the Low Road and Windmill Music Federation and works in conjunction with Opera North. All children from year 1 play a stringed instrument and access 4 hours of music tuition a week.\\r\nThe other schools in the cluster are:\\r\n\\r\nBlenheim Primary School:\\r\n\\r\nA multi-cultural community school in the heart of the city centre. \\r\n\\r\nHunslet St Marys Church of England Primary School:\\r\nA church Aided primary school situated  in the south  of Leeds. \\r\n\\r\nRawdon Littlemoor Primary School:\\r\n\\r\nA two form entry primary school situated on the outskirts of Leeds with a hearing impairment specialism\\r\n\\r\nYeadon Westfield Junior School:\\r\nA two form entry Junior school situated on the outskirts of Leeds\\r\n\\r\n\\r\nThe Windmill Cluster is a popular, successful cluster. In 2017-18 all of our trainees were awarded their PGCE with a grade of 'Good' or better.\\r\n\\r\n",
+    "TrainWithDisability": "The Windmill PGCE cluster aims to be fully inclusive. All six cluster schools have disabled access and we are committed to recruiting trainees from a wide and diverse background. \\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": " The Windmill PGCE Cluster works in close partnership with Leeds Trinity University. Trainees are fully supported by a group of experienced tutors during both their University and school based training. \\r\n\\r\nLeeds Trinity University is situated in Horsforth, North Leeds approximately 6 miles from Leeds city centre and is accessible from Leeds bus and train stations\\r\n",
+        "UcasInstitutionCode": "L24"
+      }
+    ]
+  },
+  "has_inst": true
+}

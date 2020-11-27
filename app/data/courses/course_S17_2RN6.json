@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "SCITT in East London Schools (SCITTELS)",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "S17/2RN6",
+  "providerCode": "S17",
+  "programmeCode": "2RN6",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "SCITTELS, Colegrave Primary School, Henniker Road, Stratford, E15 1JY",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "SCITTELS, Colegrave Primary School, Henniker Road, Stratford, E15 1JY",
+      "geocode": true,
+      "formatted_address": "Henniker Road, Stratford, London E15 1JY, United Kingdom",
+      "latitude": 51.548543,
+      "longitude": 0.001612,
+      "post_code": "E15 1JY",
+      "city": null,
+      "route": null,
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S17",
+    "addr_1": "SCITTELS",
+    "addr_2": "Colegrave Primary School",
+    "addr_3": "Henniker Road",
+    "addr_4": "London",
+    "postcode": "E15 1JY ",
+    "url": "http://www.scittels.co.uk",
+    "geocode": true,
+    "formatted_address": "Henniker Road, Stratford, London E15 1JY, United Kingdom",
+    "latitude": 51.548543,
+    "longitude": 0.001612,
+    "post_code": "E15 1JY",
+    "city": null,
+    "route": null,
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The PGCE programme is a full time, one year programme taught over three terms. It starts at the beginning of September, and follows school term dates. We provide training in the following consecutive age ranges : \\r\nFoundation Stage(3-5 years) \\r\nKey Stage 1(5-7 years) \\r\nLower Key Stage 2 (7-9 years) \\r\nUpper Key Stage 2 (9-11 years) \\r\n\\r\nThe PGCE programme leads to Qualified Teacher Status (QTS) and the academic award of a Post Graduate Certificate in Education (PGCE), comprising of 60 M Level credits. The programme is currently validated by the Goldsmiths University. \\r\n\\r\nTrainees on the programme complete two assignments which are assessed at level 7 (M level) in addition to school-based tasks, which are assessed against the Teachers' Standards (DfE 2012). \\r\n\\r\nDistinctive features of this course:\\r\n\\r\nWe have a strong commitment to Equal Opportunities and all of the schools within our partnership promote this with the utmost importance. Inclusion is a key feature and strength of our programmes and we are committed to training teachers who will value and build on the linguistic, religious and cultural diversity that children in East London communities bring to school and who in turn, will prepare all children for life in a diverse society. \\r\n\\r\n(*) \\r\nSmall scale action research project - trainees choose an area of inclusion that they are interested in (in previous years this has included gender, the use of pupil premium, the role of TAs) to research through a critical evaluation of literature and practical research in the classroom. \\r\n\\r\n(*) We have a balance of centre-based training in theory and practice with extended school placements where trainees can put this learning into practice \\r\n\\r\n(*) Focus on preparing trainees for teaching children with diverse needs (for example pupils with English as an Additional Language or SEN; higher attaining pupils, vulnerable or Looked After Children) \\r\n\\r\n(*) Our trainees reflect the diversity of the local school communities \\r\n\\r\n(*) We have high expectations of our trainees - both academically and in their classroom practice \\r\n\\r\n(*) We have a great commitment to equal opportunities, including raising attainment for all and closing the gap \\r\n\\r\n(*) A particular focus on teaching reading (including systematic synthetic phonics); early maths; assessment; PE; the use of new technologies and Modern Foreign Languages ",
+    "CourseLength": "OneYear",
+    "Qualifications": "First degree (2.2 or above) from a recognised UK higher education institution (or equivalent overseas qualification) \\r\n\\r\nGCSE Grade C/4 or higher (or equivalent) in English, Mathematics and Science  \\r\n\\r\nPlease note, we are willing to accept those with pending results, but the results of pending qualifications and all other outstanding conditions should usually be met by 1st May 2019. \\r\n",
+    "OtherRequirements": "Have passed the professional skills tests (you may apply before you have passed the skills tests but we would expect you to book them as soon as possible, and to have passed them by the deadline set as part of your offer) \\r\n\\r\nAt least two weeks recent school experience of working with children in educational settings in the Foundation Stage, Key Stage 1 or Key Stage 2. ",
+    "PersonalQualities": "- The ability to communicate clearly and accurately in Standard English (both written and orally) \\r\n\\r\n- A commitment to teach and a motivation to learn (you need to demonstrate that you are a quick learner and can meet the professional demands of the programme) \\r\n\\r\n- Well developed personal qualities and skills such as self-organisation, resilience and the ability to reflect \\r\n\\r\n- A commitment to equal opportunities \\r\n\\r\n- Evidence that you can meet the academic demands of the programme (Your first reference would usually be provided by a tutor from the university where you completed your first degree or further qualification) \\r\n",
+    "HowSchoolPlacementsWork": "Placements for this route will be in either Early Years and Key Stage 1; Key Stage 1 and 2 or Upper and Lower Key Stage 2 (you are given the option to choose your preference). \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "SCITTELS (School Centred Initial Teacher Training in East London Schools) has twice been graded Outstanding by Ofsted, who described us as providing 'the best possible training'. This is a view shared by current and ex-trainees, employers and partnership schools. \\r\n\\r\nWe pride ourselves in developing strong relationships with individual trainees and schools. This means we are able to provide personalised training that meets the individual needs of each of our trainees. Each trainee is assigned a Tutor who monitors their progress and well-being throughout the programme and is available to answer any queries through the year. \\r\n\\r\nThe SCITTELS programme prepares trainees for teaching in diverse, urban environments. While the training programme covers all aspects of a teacher's role, inclusion and behaviour management are particular strengths. The skills you learn on the SCITTELS PGCE will prepare you for teaching whether you choose to stay in East London or move elsewhere. \\r\n\\r\nThe SCITTELS PGCE is a one year, full-time course. Trainees can choose whether to specialise in Early Years and Key Stage one (ages 3-7) or Key Stages one and two (ages 5-11). It is assessed against 'M' level criteria leading to Qualified Teacher Status and 60 credits at Master's Level. Our PGCE is validated by the Goldsmiths University. \\r\n\\r\nWe provide a range of employment support to ensure trainees are best-placed to gain their first teaching job. Many PGCE trainees are offered employment at one of their placement schools and almost all secure full-time employment after completing the programme. \\r\n",
+    "TrainWithDisability": "The SCITT in East London schools welcomes applications from trainees with disabilities. Colegrave School, where the SCITT is primarily based, is equipped with disabled access and facilities. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

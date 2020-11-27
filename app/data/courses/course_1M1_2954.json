@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Liverpool John Moores University",
+  "provider": "Teacher Training @ Knutsford",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1M1/2954",
+  "providerCode": "1M1",
+  "programmeCode": "2954",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Bexton Road, Knutsford, WA16 0EA",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bexton Road, Knutsford, WA16 0EA",
+      "geocode": true,
+      "formatted_address": "Bexton Rd, Knutsford WA16 0DS, UK",
+      "latitude": 53.3002288,
+      "longitude": -2.3802145,
+      "post_code": "WA16 0DS",
+      "city": "Cheshire East",
+      "route": "Bexton Road",
+      "postal_town": "Knutsford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1M1",
+    "addr_1": "Bexton Road",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": "Knutsford",
+    "postcode": "WA16 0EA",
+    "url": "http://www.knutsfordacademy.org.uk/sd-14/",
+    "geocode": true,
+    "formatted_address": "Bexton Rd, Knutsford WA16 0DS, UK",
+    "latitude": 53.3000687,
+    "longitude": -2.3804459,
+    "post_code": "WA16 0DS",
+    "city": "Cheshire East",
+    "route": "Bexton Road",
+    "postal_town": "Knutsford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Our PGCE programme begins in late August with Enrolment week at LJMU and finishes late June, the following year. The programme comprises of four days class contact, along with one professional training day each week. Trainees are based at their home school from Monday to Thursday and follow a Professional Studies Programme on Fridays. The Professional Studies programme is delivered predominantly at the Knutsford Academy site, supported by online learning and University based sessions. The programme covers all the knowledge and understanding that trainees need, to prepare for a successful career in teaching. Practising School Leaders give an insight into day to day life at school, with key note talks on safeguarding, managing data, managing behaviour, making successful job applications, and supporting Vulnerable Students. LJMU colleagues provide lectures on key educational theories and pedagogical research, plus they provide context for assignments. There is a strong emphasis on social justice issues in education and on mental health and well-being. Sessions are largely workshop-based and participatory so that theoretical, research-informed teaching is explicitly linked to its practical implications for the classroom.\\r\nThe placement model is broken down into three phases, as outlined below. Teaching expectations and timetable commitments increase as the year progresses: Phase 1 - Observation and beginning teaching and learning. Phase 2 - Consolidating and developing teaching and learning. Phase 3 - Extending teaching and learning leading to Qualifying to Teach\\r\nThe Postgraduate Certificate is assessed through two modules. The course team and partnership schools have worked together to ensure that the PGCE Award is both relevant and manageable. The Award of QTS is integral to one of the academic Modules. Trainees also submit one academic essay, in two parts, which focuses on reflecting on aspects of your practice.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should hold, or be expected to achieve, a first degree (or recognised equivalent) in a Sports related discipline, normally with significant content in your chosen subject area. The degree classification should be at 2:1 or above.\\r\nYou should also have GCSE Maths and English Language at grade C or above and an A level in your chosen subject at grade C or above.\\r\n",
+    "FeeInternational": 14000.0,
+    "InterviewProcess": "Candidates who are short-listed will be invited for interview at Knutsford Academy. Your interview panel will comprise of representatives from both the University and the lead school, including subject specialists.\\r\nInterviews activities include; 1. Introduction to the training programme. 2. Group discussion of general issues in education and what it means to be a teacher. 3. Individual interview\\r\nYou will be judged on your ability to communicate clearly and on your engagement with the interview panel.\\r\nAs part of the subject specific criteria, you will be asked to complete a written task. All teachers need to be able to write English clearly without errors of spelling, grammar or punctuation because it is part of their job to teach pupils to do this. This task will help identify any difficulties you may need to address, before joining the programme.\\r\nAn individual interview will explore subject specific issues, as well as your reasons for teaching. It will explore your attitudes to young people and your understanding of what teaching entails.\\r\n",
+    "HowSchoolPlacementsWork": "TT@K will arrange and provide a quality placement experience for all candidates in two schools. You will spend the majority of your time in your home school placement, plus 6 weeks after Christmas in an alternate placement.\\r\nWe partner a range of schools across Cheshire and Manchester and are continually increasing these. They currently include:\\r\nBurnage Academy for Boys, Burnage\\r\nHartford High School, Northwich\\r\nLeftwich High School, Northwich\\r\nKnutsford Academy, Knutsford\\r\nMarple Hall School, Marple\\r\nTytherington High School, Macclesfield\\r\nSt Cuthberts Catholic High, St Helens\\r\nEaton Bank, Congleton\\r\nWerneth School, Stockport\\r\nRudheath High, Northwich\\r\nOur partner primary schools include:\\r\nEgerton Primary, Knutsford\\r\nGawsworth Primary, Macclesfield\\r\nMablins Lane County Primary, Crewe\\r\nOffley Primary, Sandbach\\r\nStyal Primary, Styal, Wilmslow\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Teacher Training @ Knutsford (TT@K) is a School Direct Teacher Training programme developed in partnership between Knutsford Multi Academy Trust and Liverpool John Moores University. \\r\n\\r\nKnutsford Academy is the Lead School for this programme and we are now looking to recruit trainee teachers who have the potential to be outstanding in the classroom. Our training programme develops inspirational teachers with an in-depth knowledge and understanding of delivering excellence in teaching and learning. Your award is a Postgraduate Certificate in Education (PGCE) with QTS. \\r\n\\r\nWe provide ongoing support to all of our trainees, along with guidance and advice to enable you to become an outstanding professional. Support comes from a wide variety of different professionals based at Knutsford Academy, our partnership schools, external organisations and Liverpool John Moores University.\\r\n\\r\nFor more information, please contact us: TT@knutsfordacademy.org.uk\\r\n",
+    "TrainWithDisability": "At Knutsford Multi Academy Trust we are committed to working together to provide an inspirational and exciting learning environment where everybody can develop an enthusiasm for life-long learning. We believe that staff and pupils alike should feel happy, safe and valued, so that they gain a respectful and caring attitude towards each other and the environment. We are also committed to providing an environment that enables full curriculum access, plus one that values and includes all students, staff, parents and visitors regardless of their education, physical, sensory, social, spiritual, emotional and cultural needs. We are committed to taking positive action in the spirit of the Equality Act 2010 with regard to disability and to developing a culture of inclusion, support and awareness within the school. \\r\n\\r\nFurthermore, LJMU offer excellent support to all students with a disability or specific learning difficulty (SpLD) e.g. dyslexia. This is provided through the University’s Inclusive Services team, who have highly experienced staff members.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "A major advantage of studying with TT@K is the support that Liverpool John Moores University provides to all of our trainees. \\r\n\\r\nThe University can offer advice through its Student Services team on finance queries such as access to hardship loans, Careers Guidance, help finding somewhere to live, or a confidential one-on-one with a qualified counsellor. In addition, there is an impressive Library Service available to ensure that all students get the best out of the extensive information resources and excellent learning facilities.\\r\n\\r\n",
+        "UcasInstitutionCode": "L51"
+      }
+    ]
+  },
+  "has_inst": true
+}

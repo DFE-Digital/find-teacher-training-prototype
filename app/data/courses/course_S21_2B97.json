@@ -1,0 +1,61 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Sheffield Hallam University",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "S21/2B97",
+  "providerCode": "S21",
+  "programmeCode": "2B97",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S21",
+    "addr_1": "City Campus",
+    "addr_2": "Pond Street",
+    "addr_3": "Sheffield",
+    "addr_4": null,
+    "postcode": "S1 1WB  ",
+    "url": "http://www.shu.ac.uk",
+    "geocode": true,
+    "formatted_address": "City Campus, Howard St, Sheffield S1 1WB, UK",
+    "latitude": 53.37958769999999,
+    "longitude": -1.4651842,
+    "post_code": "S1 1WB",
+    "city": "South Yorkshire",
+    "route": "Howard Street",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "- Learn history-specific pedagogy and skills through university sessions and practical teaching work.\\r\n- Develop generic teaching skills such as behaviour management, use of data and supporting students with special educational needs and disabilities.\\r\n- Spend at least 120 days undertaking school-based experience in two different school settings.\\r\n\\r\nBecome a qualified teacher for secondary school and post-16 colleges, specialising in history. Benefit from a flexible framework, supporting your academic and professional development through a range of school-based training and university-based sessions in order to achieve Qualified Teacher Status (QTS).\\r\n\\r\nYou are introduced to history-specific skills through university sessions and school-based work. You are expected to consolidate your development, both in university and in schools, by researching appropriate material and accessing wider resources.\\r\n\\r\nYou learn through\\r\n\\r\n- seminars\\r\n- workshops\\r\n- lectures\\r\n- group work\\r\n- directed tasks\\r\n- school-based experiences\\r\n- independent study\\r\n- discussions\\r\n- group work\\r\n- practical work\\r\n- written assessments",
+    "CourseLength": "OneYear",
+    "FeeInternational": 13500.0,
+    "InterviewProcess": "If you are shortlisted, we will invite you to a selection event, and you should bring a passport or photo driving license with you. You can bring other forms of photo ID for the selection event, but if you do, you will still need to present valid identity documents required by the Disclosure and Barring Service (DBS) at your pre-course day.\\r\n\\r\nThe selection event is a process which assesses if you're suitable for a place on the course. It's a chance to show us your knowledge about the subject and your enthusiasm for the career. Being invited to a selection event doesn't mean you're guaranteed a place on the course - the point of the day is to help us come to a mutual decision. We need to decide whether to make you an offer and you need to decide whether you like the course and the university.\\r\n\\r\nWe aim to make the interview process as rigorous and informative as possible. It's very much a two-way process, where you can evaluate what we offer while we find out more about you. In order to help us explore your thinking and subject knowledge, and for you to decide if this is the right course for you, we have a number of activities we usually use as part of the interview process.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Currently the requirement is for trainees to gain at least 120 days of school-based experience in two different school settings. On school-based training you use a range of methods and approaches in order to develop your skills including observation, collaborative planning and actual practice in the classroom through team and solo-teaching. We moderate progress against the Teachers' Standards with school visits."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Sheffield Hallam University is one of the UK's largest universities, based in the heart of Sheffield, one of the UK’s biggest student cities.\\r\n\\r\nSheffield is the fifth biggest city in the UK with over 60,000 students, it has a mix of culture and green spaces. \\r\n\\r\nWe have invested over £100 million in new buildings and facilities over the last five years, providing innovative, flexible and sustainable spaces to enhance student experience.\\r\n\\r\nWe pride ourselves on the applied nature of our courses. We offer one of the largest and most diverse\\r\nrange of placements in the region. We’ve built up a network of over 600 partner schools, colleges and other educational establishments, and we work together to our mutual advantage.\\r\n\\t\\r\nYou will study at our centre of education that is recognised for excellence and innovation in teaching and learning. Our academics, researchers and partners in schools work together to ensure you become a committed and professional graduate, with the opportunity to return to us throughout your career to further your professional development.\\r\n\\t\\r\nWe received an overall student satisfaction rating of 86% in the 2018 National Student Survey. This result places us in the top 30 universities in the country for student satisfaction. We also received a Silver rating in the 2017 Teaching Excellence Framework. \\r\n",
+    "TrainWithDisability": "If you have a disability, including long term medical conditions, specific learning difficulties (such as dyslexia, dyspraxia and A(D)HD) and mental health conditions, you can access additional support for your academic studies whilst at Sheffield Hallam.\\r\n\\r\nStudents can receive support for a wide variety of conditions. There is extensive support available, including\\r\n\\r\n•\\tLearning contracts- reasonable adjustments to your course such as extensions or extra time in exams\\r\n\\r\n•\\tSupport workers - like a mentor to help with organisation, or a personal assistant to help with mobility\\r\n\\r\n•\\tEquipment/Assistive Technology and software - such as digital recorders or text to speech software\\r\n\\r\nWe have an on-site assessment Centre, the Sheffield Regional Assessment Centre, where a range of disability specialists can carry out Study Needs Assessments.\\r\n\\r\nWe run daily drop in sessions - come and talk to us, no appointment needed. You can also register for support online.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

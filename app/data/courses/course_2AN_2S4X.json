@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Chester",
+  "provider": "St Peter’s CofE Primary School, SY4 5BX",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2AN/2S4X",
+  "providerCode": "2AN",
+  "programmeCode": "2S4X",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Shrubbery Gardens, Wem, Shrewsbury, SY4 5BX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Shrubbery Gardens, Wem, Shrewsbury, SY4 5BX",
+      "geocode": true,
+      "formatted_address": "Shrubbery Gardens, Wem, Shrewsbury SY4 5BZ, UK",
+      "latitude": 52.8587426,
+      "longitude": -2.7202744,
+      "post_code": "SY4 5BZ",
+      "city": "Wem",
+      "route": "Shrubbery Gardens",
+      "postal_town": "Shrewsbury"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2AN",
+    "addr_1": "Shrubbery Gardens",
+    "addr_2": "Wem",
+    "addr_3": "Shrewsbury",
+    "addr_4": "Shropshire",
+    "postcode": "SY4 5BX ",
+    "url": "http://www.northshropshireteachingschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Shrubbery Gardens, Wem, Shrewsbury SY4 5BZ, UK",
+    "latitude": 52.8587742,
+    "longitude": -2.7200298,
+    "post_code": "SY4 5BZ",
+    "city": "Wem",
+    "route": "Shrubbery Gardens",
+    "postal_town": "Shrewsbury"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Trainees will complete a total of 180 days of training.  60 days will be academic study and 120 days will be based in the classroom, observing and building up to whole class teaching as soon as possible.\\r\n\\r\nThe benefit of School Direct as opposed to the conventional PGCE, is that the School Direct programme is based around school embedded learning with trainees spending a minimum of two days per week in classrooms from the second week of the programme resulting in more confident, independent and effective teachers.\\r\n\\r\nTrainees will be trained as part of a supportive group and modules will be delivered across the year to all North Shropshire Teaching School Alliance trainees.  There will be a range of modules including Meeting Children's Needs - within and beyond the classroom, Pedagogical Excellence, The Creative and Effective Curriculum, Reflective Practice. \\r\n\\r\nUniversity staff will deliver the PGCE elements of the course at The University Centre, Shrewsbury and local practitioners will lead tuition is the subject specific areas.  A typical week may include one day's university training, two days school-led training (some of which will include personal study) and two days classroom practice implementing theory into practice.  This flexible structure with its blend of academic and practitioner expertise ensures that theory is embedded into practice at the earliest possible opportunity.",
+    "CourseLength": "OneYear",
+    "Qualifications": "All applicants should have a Grade C or above in English, Maths and Science before they apply to the course. (or equivalent)  Applicants should have at least 5 GCSE grades at C or above.\\r\n\\r\n2:1 degree or higher classification.\\r\n\\r\nAll applicants must pass the DfE skills tests before commencing training.  These need to be completed at a registered centre and can be passed before interview or as a condition of your offer of a place.\\r\n",
+    "FinancialSupport": "You will be eligible to apply for any grants, bursaries or loans that may be available.",
+    "InterviewProcess": "We are looking for candidates who have an empathy and understanding of the demands of teaching in a primary classroom.  You should enjoy working with children and want to get involved with the life of the school beyond the classroom. Confidence in front of a classroom of children is essential which is why we would encourage all applicants to find some voluntary observation experience before applying.  As part of the interview process you will be required to teach part of a lesson so we can gauge your clarity of explanations as well as how you engage with our young people.\\r\n\\r\nWe will receive your application via UCAS and this will be reviewed by senior colleagues from the North Shropshire Teaching School Alliance and our University partner.  We will look at your experience and qualification relevancy and will invite you to interview if your application meets our criteria.  If you are unsuccessful at this stage, you will be notified via UCAS.\\r\nIf successful, you will be invited to interview at school which will involve a mini-teach activity, literacy test and a formal interview.  The programme will be sent to you in advance and you will have 7 days to respond to the invitation.  \\r\nIf an offer of a place is made, it will either be unconditional or conditional based upon successful completion of your degree, if you are still at university, or on the basis of passing your skills tests or gaining more experience observing in a primary school   ",
+    "OtherRequirements": "We are looking for applicants who are able to commit the time needed to the training programme which will include academic assignments and study.  We would like candidates who want to be involved in the wider pastoral and extra-curricular life of our schools and who can give the time to this during their training year.  Trainees own transport would be advantageous so you can easily access your school placements as you may be placed up to 45 minutes travelling distance from home.\\r\n\\r\nA full DBS check will be undertaken\\r\n",
+    "PersonalQualities": "We are looking for candidates who have an empathy and understanding of the demands of teaching in the primary classroom.  You should enjoy working with young people and see teaching as a wider professional duty.  As part of the interview process you will be required to teach part of a lesson so we can gauge your clarity of explanations as well as how you engage with our young people.\\r\nWe are looking for the highest quality graduates who may well bring further work-related experience from previous careers which can help to strengthen the application.\\r\n",
+    "HowSchoolPlacementsWork": "On appointment, trainees will be placed with a School Direct host school and be provided with an experienced professional tutor and a university based tutor as well as an alliance based team to support you throughout your PGCE programme.\\r\n\\r\nThere are a series of three school block placements across which trainees will experience outstanding teaching in Early Years, Key Stage 1 and Key Stage 2 within a variety of contexts in a range of good or outstanding schools within the North Shropshire Teaching School Alliance:-\\r\n\\r\nBeginning Placement - 4 weeks in November/December\\r\nDeveloping Placement - 5 weeks in January/February\\r\nExtending Placement - 8 weeks in April/May/June\\r\n\\r\nPlease note that your school placements could be at any of our partner schools.  You will need to take into consideration travel time and distances that may be involved though we will take personal circumstances into consideration when placing trainees"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The North Shropshire Teaching School Alliance is a partnership of successful and outstanding schools across Shrewsbury and North Shropshire.  St Peter's CE Primary School, Wem is the lead Teaching School for the Primary School Direct programme and Woodfield Infant School, Shrewsbury is the lead school for the Early Years programme, delivering local high quality training in partnership with other successful Shropshire primary phase schools.\\r\n\\r\nOur unique selling point is that we are able to provide high quality teacher training, locally delivered within Shropshire by outstanding practitioners and university staff with placements in successful and outstanding local schools.  Local high quality training for local teachers.\\r\n\\r\nOut commitment is to deliver an outstanding, locally delivered school-centred PGCE programme based in local schools.  trainees and graduates studying with us will be exposed to the highest quality teaching and learning strategies; our aim is to nurture and develop the beliefs, values and self-motivation that trainees will need throughout their careers, thus making them more appealing to future employers.\\r\n\\r\nThe high quality local delivery aspect ensures local trainees no longer need to travel long distances to an alternative Higher Education provider.",
+    "TrainWithDisability": "St Peter's CE Primary School and Woodfield Infant School, the lead schools in the alliance, have disabled access to all parts of their sites and buildings.  This is the case for some of our partner schools, but not all and applicants may want to bear this in mind when applying to us.\\r\nThe disability and inclusion team at the University of Chester provides confidential information, advice and guidance to disabled students.  This includes students with specific learning differences, long-standing health conditions, mental health difficulties, Autistic Spectrum Disorder and sensory impairment.  Staff will support students in identifying the most appropriate solutions to potential barriers to learning\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work alongside the University of Chester to deliver the PGCE elements of the programme.  The University Centre Shrewsbury is currently working alongside the University of Chester, so this strand of the course will be delivered at the University of Shrewsbury building in Shrewsbury.  The University of Chester has been training teachers for over 175 years, but, whilst it is one of the oldest higher education institutes in the country, it is also one of the most forward-thinking successful and innovative universities receiving an Ofsted outstanding grading in 2016 and has a reputation for the quality of its training.",
+        "UcasInstitutionCode": "C55"
+      }
+    ]
+  },
+  "has_inst": true
+}

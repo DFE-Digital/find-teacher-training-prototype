@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Bath Spa University",
+  "provider": "West Wilts Alliance",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Chemistry",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "2FY/36SS",
+  "providerCode": "2FY",
+  "programmeCode": "36SS",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Woodcock Road, Warminster, Wiltshire, BA12 9DR",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Woodcock Road, Warminster, Wiltshire, BA12 9DR",
+      "geocode": true,
+      "formatted_address": "Woodcock Rd, Warminster BA12 9DR, UK",
+      "latitude": 51.2029175,
+      "longitude": -2.1642226,
+      "post_code": "BA12 9DR",
+      "city": "Wiltshire",
+      "route": "Woodcock Road",
+      "postal_town": "Warminster"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2FY",
+    "addr_1": "West Wilts Alliance",
+    "addr_2": "Woodcock Road",
+    "addr_3": "Warminster",
+    "addr_4": "Wiltshire",
+    "postcode": "BA12 9DR",
+    "url": "http://www.westwiltsalliance.org.uk",
+    "geocode": true,
+    "formatted_address": "Woodcock Rd, Warminster BA12 9DQ, UK",
+    "latitude": 51.2028057,
+    "longitude": -2.1635493,
+    "post_code": "BA12 9DQ",
+    "city": "Wiltshire",
+    "route": "Woodcock Road",
+    "postal_town": "Warminster"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Successful applicants will work within the West Wilts Alliance schools.\\r\nSchools involved are:\\r\n\\r\nThe Clarendon Academy, Trowbridge.  11-18, nor 1043\\r\nThe John of Gaunt School, Trowbridge. 11-18, nor 1263\\r\nKingdown School, Warminster. 11-18, nor 1552\\r\nLavington School, Market Lavington, 11-16, nor 700\\r\nMelksham Oak Community School, Melksham. 11-18, nor 1175\\r\nSt. Augustine's Catholic College, Trowbridge. 11-18, nor 966\\r\nSt. Laurence School, Bradford on Avon. 11-18, nor 1359\\r\n\\r\nTrainees will follow a school based PGCE programme enabling them to work alongside skilled and experienced teachers.\\r\nThroughout providing trainees with the opportunity to develop the rigour, professional knowledge, understanding and skills necessary to be outstanding practitioners.\\r\n Training input will be delivered by staff within WWA and Bath Spa University and will involve school based and Alliance based input as well as time spent at the University focussing on aspects of professional studies.\\r\nTrainees will have full access to Bath Spa University facilities and resources.\\r\nAs well as working with other trainees at Bath Spa University we envisage our trainees working alongside students from other Higher Education Institutions e.g.  Bristol University.\\r\nAll trainees will receive the highest quality support from staff within our schools, the West Wilts Alliance Director and Bath Spa University.\\r\nThere are three assignments at Masters Level set and marked by Bath Spa University.\\r\nThe School Direct programme will begin on the first day of term in September 2018 and run throughout the academic year finishing on 21st June 2019.\\r\nAll trainees will be welcomed as full members of the staff team and will be expected to engage in all aspects of school life including professional development days, monitoring and evaluation activities, extra- curricular activities and community events.\\r\nTrainees will be assigned a subject mentor in school as well as being supervised by a professional mentor. There will also be support and visits from University tutors\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should be an honours graduate.\\r\nYou should hold a grade C or above in GCSE English and Mathematics.\\r\n\\r\n\\r\nIf you are successful at interview in order to have your School Direct place confirmed you will need to have passed the Professional Skills tests in Literacy and Numeracy\\r\n",
+    "InterviewProcess": "You should be an honours graduate who can demonstrate a real aptitude for teaching with enthusiasm to continue your professional development.\\r\nYou should hold a grade C or above in GCSE English and Mathematics.\\r\nWe want to appoint excellent trainees who are enthusiastic and passionate about teaching and who have the ability and drive to become outstanding practitioners. To be a successful applicant we would expect you to have had some meaningful experience of students of secondary age either via experience in a secondary school or by volunteering with clubs or groups.\\r\nYou will obviously need a strong understanding and knowledge of the subject you want to teach before you start your training and if your degree subject does not link closely to your chosen teaching subject you are advised to take a Subject Knowledge Enhancement course before your teacher training commences.\\r\n\\r\nAt our selection day we are looking for applicants who fulfil the entry requirements and can make relationships and relate to young people\\r\n\\r\nThe WWA Alliance Director coordinates the recruitment process in association with Bath Spa University. Interviews are a day in length and will involve working with students, a subject specific activity, the opportunity to talk to staff, students and other applicants and a formal interview. The process will be rigorous but designed to help applicants perform at their best.\\r\n",
+    "OtherRequirements": "You will obviously need a strong understanding and knowledge of the subject you want to teach before you start your training and if your degree subject does not link closely to your chosen teaching subject you are advised to take a Subject Knowledge Enhancement course before your teacher training commences.",
+    "PersonalQualities": "We want to appoint excellent trainees who are enthusiastic and passionate about teaching and who have the ability and drive to become outstanding practitioners. To be a successful applicant we would expect you to have had some meaningful experience of students of secondary age either via experience in a secondary school or by volunteering with clubs or groups.",
+    "HowSchoolPlacementsWork": "The WWA Alliance Director works with colleagues in all 7 schools to decide where trainees will be placed. Each trainee will have two placements each of three terms in length. Teaching age range will be 11-16 with some experience offered 16-18.\\r\nTrainees also spend at least one day in all 7 schools as part of our Professional Studies programme."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "West Wilts Alliance (WWA) is working with Bath Spa University to provide a unique experience for School Direct trainees. Based in an extremely beautiful and rural part of the country, the area is entrenched with history and idyllic villages as well as being very close to the Georgian city of Bath. Trainees will thoroughly enjoy living and working in West Wiltshire.\\r\n\\r\nThe West Wilts Alliance is a ground breaking and innovative company that has brought together secondary schools and Wiltshire College to improve the educational provision for all young people in the area. Seven of our Secondary schools are involved with the School Direct Programme and their diversity of expertise and denomination will mean that trainees will be able to experience a variety of different educational organisations all within a 7 mile radius.\\r\n\\r\nAll schools have an extremely successful track record in Initial Teacher Education having trained teachers through PGCE and GTP routes. We recognise the enthusiasm and new ideas that trainees can bring to our school communities and are committed to developing them into the outstanding teachers of tomorrow.\\r\n\\r\n",
+    "TrainWithDisability": "We have excellent support for trainees with disabilities and other needs and have been asked to support extra trainees in the past. We have supported two trainees who developed mental health issues recently, one of whom managed to complete their qualification. We also have experience of supporting trainees with Dyslexia and Autism",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "B20"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Cumbria",
+  "provider": "Yarlside Teaching School Alliance School Direct",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2GM/35HL",
+  "providerCode": "2GM",
+  "programmeCode": "35HL",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Red Oak Avenue, Barrow-in-Furness, Cumbria, LA13 0LH",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Red Oak Avenue, Barrow-in-Furness, Cumbria, LA13 0LH",
+      "geocode": true,
+      "formatted_address": "Red Oak Ave, Roose, Barrow-in-Furness LA13 0RN, UK",
+      "latitude": 54.1213389,
+      "longitude": -3.1876895,
+      "post_code": "LA13 0RN",
+      "city": "Roose",
+      "route": "Red Oak Avenue",
+      "postal_town": "Barrow-in-Furness"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2GM",
+    "addr_1": "Yarlside Teaching School",
+    "addr_2": "Redoak Avenue",
+    "addr_3": "Barrow-in-Furness",
+    "addr_4": "Cumbria",
+    "postcode": "LA13 0LH",
+    "url": "http://www.yarlsideteachingschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Red Oak Ave, Roose, Barrow-in-Furness LA13 0LH, UK",
+    "latitude": 54.1216351,
+    "longitude": -3.1875575,
+    "post_code": "LA13 0LH",
+    "city": "Roose",
+    "route": "Red Oak Avenue",
+    "postal_town": "Barrow-in-Furness"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Course Dates\\r\nPGCE course runs throughout the academic year. \\r\n\\r\nModule Content\\r\nYou study five modules in total, all learning will integrate theory and practical application. \\r\n\\r\n* Raising Achievement of Children is a level 7 module (masters level) which enables student teachers to understand the diverse needs of children and factors which contribute to these needs. Also provides strategies and knowledge of services to facilitate the ability to meet these needs within a mainstream setting. \\r\n\\r\n* High Quality Learning and Teaching is a level 7 module, which enables student teachers to develop independent strategies for planning and teaching effective learning opportunities, informed by their analysis and synthesis of a variety of theoretical frameworks, evidenced in research and literature. \\r\n\\r\n* Leading and Managing Change is a module at level 6 which enables trainee teachers to consistently develop as they reflect and manage the changing educational environment. \\r\n\\r\n* Pedagogy and Practice in Key Stage 1 and 2 is designed to provide student teachers with the opportunities to develop the enthusiasm, confidence, skills and key knowledge to be effective primary school teachers.  Aligned to the Teacher's Standards. \\r\n\\r\n* The Cumbria Teacher of Reading is an online resource to support developing your approach to the teaching of reading.  \\r\n\\r\nPlacements\\r\nYou will have three assessed placement blocks. \\r\n1.  Beginning Placement 4 weeks in the autumn term \\r\n2. Developing Placement 5 weeks in the new year/ winter term \\r\n3. Extending Placement 9 weeks in the spring & summer term \\r\n\\r\nThese will occur in at least two different schools and in two different key stages to meet the requirements of gaining QTS. You may be placed in any of our partner schools within the Barrow and Furness area. \\r\n\\r\nYou will have 2 days per week of School Embedded Learning (when not on assessed placement) you will be in school but not teaching. A valuable opportunity to learn from being in a classroom environment and to make connections between your experience and your taught module content. \\r\n\\r\nYou will also have an enrichment week (linked to the High Quality Learning and Teaching module) in the spring. \\r\n\\r\nAssessment and Assignments\\r\nAs you will be studying a PGCE, you will have academic assignments at Masters level which require you to read, research and reflect on your learning and experiences within the training year. \\r\n\\r\nYou will be supported throughout with access to a personal tutor, the course leader and a University tutor too. \\r\n",
+    "CourseLength": "Academic Year",
+    "Qualifications": "You are required to hold a UK first degree, or its equivalent with a minimum of 2:2 honours.\\r\n\\r\nGCSE Qualifications – a minimum of three GCSEs at minimum grade C or above to include English language, mathematics and science (including biology, chemistry or physics). All successful applicants must have met this requirement by 31 July 2019.\\r\n\\r\nSuccessful candidates will need to pass the literacy and numeracy Skills Tests and have DBS and fitness to teach clearance by 1st July 2019. ",
+    "InterviewProcess": "Interviews will be held in one of our Strategic Partner schools, in either a Primary or Early Years setting (depending on the age range selected in your application).  During the interview there will be a range of activities including:\\r\n\\r\n* Check of ID, qualifications, certificates etc.\\r\n* Outline of course programme\\r\n* Individual Interview\\r\n* Small group teaching activity (20 minutes)\\r\n* Literacy written task\\r\n* Pre-reading task (emailed in advance)\\r\n* School experience audit\\r\n* Subject knowledge audit\\r\n* Q & A opportunity\\r\n\\r\nWe will offer successful applicants a conditional place, the conditions of which must be met prior to starting the course. All candidates will need to have passed a Disclosure and Barring (DBS) check, have Fitness to Teach clearance, passed both the Literacy and numeracy Skills Tests and have confirmed all their qualifications prior to the course starting in September.",
+    "OtherRequirements": "School Experience –  We recommend a minimum of ten days Nursery/Primary school experience within the last two years; five days in both Early Years and KS1 for Early Years trainees or five days in both KS1 and KS2 for General Primary trainees.  \\r\n\\r\nThis is no longer a compulsory entry requirement, however, we feel the experience gained from this hugely benefits applicants in preparing for their interviews\\r\n\\r\nSuccessful candidates will need to pass the literacy and numeracy Skills Tests and have DBS and fitness to teach clearance by 1st July 2019. ",
+    "PersonalQualities": "We are looking for people who possess a genuine desire to enrich the lives of young people and have the potential to inspire them. \\r\n\\r\nSome of the attributes we will be looking for: \\r\n\\r\n* Enthusiastic and approachable with a passion for education \\r\n* Enjoys working with young people and shares our commitment to excellence \\r\n* Excellent role model for young people \\r\n* Passionate and enthusiastic with an interest in teaching all subjects \\r\n* Creative \\r\n* Hard working \\r\n* Professional \\r\n* Very good interpersonal and communication skills \\r\n* Good organisation and time management skills \\r\n* Ambitious and with leadership potential ",
+    "HowSchoolPlacementsWork": "Placements\\r\nYou will have three assessed placement blocks. \\r\n1.  Beginning Placement 4 weeks in the autumn term \\r\n2. Developing Placement 5 weeks in the new year/ winter term \\r\n3. Extending Placement 9 weeks in the spring & summer term \\r\n\\r\nThese will occur in at least two different schools in order for you to have a range of deep learning experiences. They will also take place in two different key stages to meet the requirements of gaining QTS. You may be placed in any of our partner schools within the Barrow and Furness area. \\r\n\\r\nYou will have 2 days per week of School Embedded Learning (when not on assessed placement) during which you will be in school but not teaching. This will give you a valuable opportunity to learn from being in a classroom environment and to make connections between your experience and your taught module content. \\r\n\\r\nYou will also have an enrichment week (linked to the High Quality Learning and Teaching module) in the spring. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Yarlside Teaching School Alliance (YTSA) are proud to be working with the University of Cumbria (UoC) to offer a School Direct Programme which offers a superb route into our rich and rewarding profession. If you study with us, you will be working towards a PGCE course at Masters Level which will lead to qualified teacher status (QTS). \\r\n\\r\nYou will train in a range of 'good' and 'outstanding' schools close to the beautiful Lake District who are very experienced at delivering high quality teacher training and have a range of contrasting contexts. You will train alongside excellent teachers and with a range of experienced staff from  fourteen of our strategic partner schools comprising early years and primary.  Working together to train the next generation of outstanding teachers always striving for excellence.\\r\n\\r\nWe are passionate about developing outstanding teachers and will make available the highest quality initial teacher training to ensure that the best standards of teaching and learning are achieved.  Working together in partnership, we will help you to realise your potential in a creative and supportive environment. \\r\n\\r\nAs the course structure of our School Direct PGCE and the UoC's campus based PGCE are the same (in terms of placement dates, assignment deadlines etc.) this means you will experience a seamless blend of provision from YTSA and the UoC. \\r\n\\r\nYou will be welcomed as a member of staff from day one of the course and we will stay in touch with you between your interview day and start day. \\r\n",
+    "TrainWithDisability": "We have a commitment to equality of opportunity for all, and welcome candidates from diverse ethnic backgrounds regardless of age, gender, disability, religious or social contexts.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "C99"
+      }
+    ]
+  },
+  "has_inst": true
+}

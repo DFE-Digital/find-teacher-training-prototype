@@ -1,0 +1,62 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Bristol",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "B78/G1X1",
+  "providerCode": "B78",
+  "programmeCode": "G1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "B78",
+    "addr_1": "PGCE Programme",
+    "addr_2": "35 Berkeley Square",
+    "addr_3": null,
+    "addr_4": "Bristol",
+    "postcode": "BS8 1JA ",
+    "url": "http://www.bristol.ac.uk/education/students/ite/",
+    "geocode": true,
+    "formatted_address": "35 Berkeley Square, Bristol BS8 1JA, UK",
+    "latitude": 51.4551014,
+    "longitude": -2.6048463,
+    "post_code": "BS8 1JA",
+    "city": "City of Bristol",
+    "route": "Berkeley Square",
+    "postal_town": "Bristol"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our Partnership offers subject-specialist training in 8 secondary subjects. We are currently rated ‘Outstanding’ by Ofsted and our programme was ranked in the Top 5 of the Good Teacher Training Guide 2017. As a designated 11-19 provider you are guaranteed training and direct experience of A level/BTEC teaching as part of your programme. We also offer comprehensive training in generic elements such as behaviour management, pastoral care and working with pupils with SEND.\\r\n\\r\nThroughout the year, you will be supported by a subject specialist university tutor, as well as dedicated mentors in Partnership schools. The support that we offer is highly praised by our student teachers, and in the last two years, 99% of student teachers rated the quality of their training with us as either good or very good.\\r\n\\r\nYou are also able to take advantage of being part of a research-intensive university which offers the opportunity to benefit from cutting edge research in areas such as neuroscience and education. As part of the University’s Green Apple Project, we encourage our student teachers to focus on ‘sustainable education’ for the future.\\r\n\\r\nTypically, over 50% of those qualifying with us choose to remain in the Bristol area and have successfully secured teaching posts within our partnership schools by the end of the PGCE year. Many of our student teachers progress quickly in their careers, taking on roles such as subject leader and head of year. A number have gone beyond this, joining senior leadership teams.",
+    "TrainWithDisability": "We welcome applications from candidates with disabilities and other needs and, within the context of University of Bristol support structures, we make reasonable adjustments to ensure that the programme is accessible to all. When a specific need is declared, offer holders are assessed by the University’s Occupational Health department and recommended to liaise with our Disability Service to ensure a Learning Support Plan can be put in place.\\r\n\\r\nMany lectures are audio-recorded and are made available via our VLE. When possible, lecture slides and handouts are made available to the whole cohort at least 24 hours in advance of the session. All University buildings are accessible including ramp/lift access. In cases where student teachers are required to move around the University campus to attend lectures, provision is made to support them, as appropriate. The University works closely with placement schools to ensure that needs are met whilst on teaching practice. For example, a student teacher with hearing disabilities was placed in a school that could provide carpeted classrooms.\\r\n\\r\nThe University has a comprehensive support structure to support students with a wide range of medical conditions, including mental health. This includes support from the Personal Tutor, the Senior Tutor and Programme Director, Professional Services staff as well asdepartment-based Student Welfare Advisors. If appropriate, student teachers can be referred to the University’s specialist Counselling Service or Occupational Health team. Further information on student wellbeing can be found here: \\r\n[Student health and wellbeing](http://www.bristol.ac.uk/students/wellbeing/)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

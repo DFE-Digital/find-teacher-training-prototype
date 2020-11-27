@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "Gloucestershire Initial Teacher Education Partnership (GITEP",
+  "provider": "Balcarras School",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Chemistry",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "14B/2CML",
+  "providerCode": "14B",
+  "programmeCode": "2CML",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "East End Road, Charlton Kings, Cheltenham, GL53 8QF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "East End Road, Charlton Kings, Cheltenham, GL53 8QF",
+      "geocode": true,
+      "formatted_address": "E End Rd, Charlton Kings, Cheltenham GL53 8QF, UK",
+      "latitude": 51.8822777,
+      "longitude": -2.0438778,
+      "post_code": "GL53 8QF",
+      "city": "Charlton Kings",
+      "route": "East End Road",
+      "postal_town": "Cheltenham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "14B",
+    "addr_1": "East End Road",
+    "addr_2": "Charlton Kings",
+    "addr_3": null,
+    "addr_4": "Cheltenham",
+    "postcode": "GL53 8QF",
+    "url": "http://www.balcarras.gloucs.sch.uk/",
+    "geocode": true,
+    "formatted_address": "E End Rd, Charlton Kings, Cheltenham GL53 8QA, UK",
+    "latitude": 51.8823208,
+    "longitude": -2.0427362,
+    "post_code": "GL53 8QA",
+    "city": "Charlton Kings",
+    "route": "East End Road",
+    "postal_town": "Cheltenham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "As a trainee teacher you will be taught about the best ways to teach your subject including the specific pedagogy of your subject and how to plan a lesson in order to meet your objectives so that the pupils make progress. You will also be taught the wider professional aspects of being a teacher such as; safeguarding of pupils, tutoring, behaviour management, SEND, how to make the most of your teaching assistant, how to use data to check the progress of your pupils, marking for progress and about applying for jobs.\\r\nOnce the placement starts you will be in school Monday to Friday but every Thursday afternoon will be spent at the subject pathway session. This is where you will spend with your subject leader and the other trainees learning to teach the same subject. You may need to travel to another school for this session as subject leaders are all teachers within the county and the sessions may be held at their school.\\r\nThe assessment for the course is via a few different aspects. There are 3 written assignment that are completed over the year. The first has to be done by the beginning of January, the second by the end of March and the third by mid-June. The first assignment focuses on SEND, the second on curriculum practice and the last one on curriculum research for your subject. You will be given plenty of advice and guidance to ensure you can complete them for the deadlines. Your teaching will also be assessed by you subject mentor and training manager as they come in to observe your lessons. You will also need to complete a teaching file, which will demonstrate the progress that you and you classes have made.\\r\nThe teaching load does increase over the year in the different placements, please see the information on how placements work. In parent 1 you are expected to teach 9-11 hours per week, in the twin this increases to 11-13 hours per week and in parent 2 the teaching expected is 13-15 hours per week. Initially in parent 1 placement you might be team teaching with the class teacher or starting with smaller activities but then you would be moving on to plan and deliver the entire lesson. You will be guided through this process and given the support necessary to ensure  success at each stage of this process.",
+    "CourseLength": "TwoYears",
+    "Qualifications": " A 2:1 in chemistry or chemical engineering or related subject at degree level",
+    "InterviewProcess": "The interview process at Balcarras is:\\r\n* Meet our head teacher, Mr Dominic Burke,  on arrival\\r\n* You will be given a tour of the school by pupils\\r\n*You are expected to teach a 15 minute lesson on a particular aspect of your subject – which you would be given at least a week before the interview – this would be observed by one of our 3 training managers and someone from the relevant department    \\r\n* One interview–with a training manager, the head of the relevant department and the course leader for School Direct in order to ascertain your commitment and motivation to want to teach\\r\n* There are a number of written tasks; a short literacy and numeracy test and a task to check your subject knowledge.\\r\n\\r\nThis is a rigorous process but we want to choose the best candidates to train at Balcarras. We want prospective teachers who are enthusiastic and passionate about their subject, committed to a career in teaching and ready to face the challenges of the training year.\\r\nThere will of course be opportunity to ask questions regarding the course during the interview process.\\r\n",
+    "HowSchoolPlacementsWork": "The training year is split into 3 placements; parent 1 , twin and parent 2. For school direct trainees at Balcarras they will spend the parent 1 and parent 2 placement at Balcarras. The twin placement will be at a different school. The twin placement is organised and determined by GITEP, as they will oversee where all the trainees are placed in Gloucestershire. To enable the placement we do take into account where the trainee lives, whether they drive and any other commitments and constraints they have for example having childcare or elderly parents. The average distance a trainee will have to travel from home to school would be about 30 minutes.\\r\nThe parent placement starts in the first week of term as the term starts for the school and finishes in mid-December. The twin placement is about 9 weeks from early January until mid-March and then parent 2 placement starts after about one week’s break and finishes before the end of June. Before and between placements there will be professional studies where the entire cohort of trainees meets together for further central training.\\r\nYou would be teaching an 11-18 age range. This means in each placement you would have a range of year group and abilities of pupils. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Balcarras is an outstanding 11-18 mixed comprehensive school on the out skirts of Cheltenham. We pride ourselves that this is a school where every individual is valued and feels safe, where all students are inspired not only to do their best but to expand their horizons, and where everyone involved in school life feels a great sense of pride and enjoyment at being part of this community. We are a Teaching School which enables an exciting and vibrant commitment to continued professional development and an emphasis on the importance of good teacher training. We are also a maths hub school and run the GLOW Maths Hub. Three of the GITEP subject are teachers at the school in maths, history and PE. We have been working as a School Direct provider since 2012, where we were one of the pilot schools for the School Direct programme. We have successfully enabled training of 30 teachers across a range of subjects.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The GITEP course had an Ofsted inspection in 2015 and was graded as Outstanding. Balcarras school was involved in the inspection. Inspectors noted in the report that “a key strength of the partnership is the sustained commitment to outstanding teacher training led by partnership school leaders and managers”. The outstanding quality of teaching inspectors saw from trainees and newly qualified teachers showed “skilled management of students’ behaviour by trainees and NQTs, underpinned by captivating lessons that engage and motivate students.” Inspectors also found that “trainees and NQTs really enjoy teaching”. ",
+        "UcasInstitutionCode": "G48"
+      }
+    ]
+  },
+  "has_inst": true
+}

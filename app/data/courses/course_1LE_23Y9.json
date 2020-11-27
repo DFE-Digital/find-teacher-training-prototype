@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Gloucestershire",
+  "provider": "The Mead National Teaching School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1LE/23Y9",
+  "providerCode": "1LE",
+  "programmeCode": "23Y9",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Hackett Place, Hilperton, Trowbridge, BA14 7GN",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hackett Place, Hilperton, Trowbridge, BA14 7GN",
+      "geocode": true,
+      "formatted_address": "Hackett Pl, Hilperton, Trowbridge BA14 7GN, UK",
+      "latitude": 51.3247785,
+      "longitude": -2.1821466,
+      "post_code": "BA14 7GN",
+      "city": "Hilperton",
+      "route": "Hackett Place",
+      "postal_town": "Trowbridge"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1LE",
+    "addr_1": "Hackett Place",
+    "addr_2": "Hilperton",
+    "addr_3": null,
+    "addr_4": "Trowbridge",
+    "postcode": "BA14 7GN",
+    "url": "http://www.themeadteachingschool.org.uk",
+    "geocode": true,
+    "formatted_address": "Hackett Pl, Hilperton, Trowbridge BA14 7GW, UK",
+    "latitude": 51.324656,
+    "longitude": -2.1825226,
+    "post_code": "BA14 7GW",
+    "city": "Hilperton",
+    "route": "Hackett Place",
+    "postal_town": "Trowbridge"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeDetails": "This is a fee paying route, and is subject to the University of Gloucester's course fees.\\r\n\\r\nYou can read about them here: http://www.glos.ac.uk/life/finance/pages/fees.aspx",
+    "AboutCourse": "We call members of our School Direct Programme 'Graduate Teachers' (GTs) and they work within The Mead Academy Trust and our partner schools.  GTs follow a school-based training programme and work alongside outstanding practitioners. This develops the rigour, professional knowledge, understanding and skills necessary to create inspirational, creative, purposeful teachers, within a highly supportive environment.\\r\n\\r\nHigh quality training is delivered by outstanding teachers within The Mead Academy Trust, partnership schools and The University of Gloucester. Input within The Mead includes a range of specialist pedagogical workshops, seminars and practice-based opportunities. \\r\n\\r\nGTs have full access to The University of Gloucester, an outstanding provider of teacher education, and its excellent facilities.\\r\nAll GTs receive the highest quality support throughout their School Direct experience from both The Mead and the University, including academic and pastoral support. The vast majority of training takes place in Trowbridge and Melksham, and is facilitated by University and school staff. GTs attend the University's Cheltenham campus for a maximum of 8 days throughout the year. Access to your own transport, or willing use of public transport, is essential!\\r\n\\r\nEach GT is assigned a mentor who provides the highest quality coaching, mentoring and support.\\r\n\\r\nOur GTs receive five dedicated days of SEND input, which ensures they are able to support the teaching and learning of children with additional needs. We also provide specialist music input. These enhanced modules provide pedagogical and practical input, supporting the development of a high level of knowledge, skills and understanding.\\r\n\\r\nThe programme begins on the first day of the school term and ends on the last day of the academic year. All GTs are welcomed as full members of staff and encouraged to immerse themselves in all aspects of school life, including development days, monitoring and evaluation, extra-curricular activities, residentials, and community events.\\r\n\\r\nHere are some of the things our past GTs said their experiences:\\r\n'The Mead have provided a brilliant induction and everyone I've met has been so friendly and helpful. It's a very welcoming Trust! Overall a comfortable introduction to my teacher training with elements of stretch but no panic! One of the sessions I found most helpful was looking at the videos of teachers and analysing their teaching methods, questioning, behaviour management. This was really inspiring and very helpful in showing us how to observe and learn from our mentors'.\\r\n\\r\nThis fee-paying route is subject to the University's course fees (http://www.glos.ac.uk/life/finance/pages/fees.aspx).",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSEs: You must hold Grade A-C in English, Maths and Science when you apply for a place. We will not invite you to an assessment day if you do not have these qualifications when you apply.\\r\n\\r\nIf you hold equivalency qualifications you should contact UCAS to check that these are acceptable before applying.\\r\n\\r\nDegree: You should be an Honours graduate with a 1st or a 2:1 degree. We will consider applicants who have a 2:2 who demonstrate a real aptitude for teaching, and are keen to continue their own professional development journey.\\r\n",
+    "InterviewProcess": "UCAS Applications: Application forms are carefully checked for spelling, grammar, and style of writing. It's a cliche but it's true - first impressions count. Make sure yours is a good one. You should complete the form with professionalism and attention to detail.\\r\n\\r\nYour personal statement and references should show us what you're like as a person.\\r\n\\r\nIf we like your application, we will invite you to an assessment day at our Hilperton site. This will consist of two elements - working with children and an interview panel. You will have time to tour the school, visit our classrooms and talk to staff and children.\\r\n\\r\nWorking with children: You will receive an 'inspiration' before the assessment day, which may be a picture, a poem, or something else. You will need to prepare a 20-minute activity for a group of 6-8 children and will be observed by one of our senior leaders.\\r\n\\r\nAfterwards, you'll have the opportunity to reflect on this session and consider what went well and what you might do differently in future.\\r\n\\r\nInterview panel: We will give you the opportunity to talk with members of our Senior Leadership Team in a formal interview setting. This is your chance to share with us in more detail the type of person you are, and the kind of teacher you aspire to be. The panel will naturally have questions for you, and you will also have the chance to ask them questions.",
+    "OtherRequirements": "Professional skills test: You will have to pass this to be able to take up a place. Apply for your test as soon as you can, as it is mandatory and waiting lists grow quickly.\\r\n\\r\nDisclosure & Barring Scheme: You will be subject to an enhanced DBS check before you can begin your course.\\r\n\\r\nExperience: You need to have had meaningful experience of working with primary school children - e.g. voluntary work with a children's group, or you may have already worked in a school. Crucially, you need to demonstrate how this experience has inspired you to become a teacher.\\r\n",
+    "PersonalQualities": "Our Graduate Teachers (GTs) are: \\r\n\\r\n* Passionate and enthusiastic\\r\n* Motivated to become dedicated teachers\\r\n* Eager to learn from our experienced staff\\r\n* Able to respond positively to advice/mentoring\\r\n\\r\nYou need to be:\\r\n\\r\n* Confident with staff/parents/children\\r\n* Able to build good relationships\\r\n* Highly organised\\r\n* Professional from day one\\r\n* Able to demonstrate your motivation/ability to teach\\r\n\\r\nYou need to have meaningful experience of working with children and be able to demonstrate how this inspired you to teach.\\r\n\\r\nSome GTs join us from University, others are pursuing a second career and we welcome applicants from all backgrounds.\\r\n",
+    "HowSchoolPlacementsWork": "Our Graduate Teachers (GTs) complete two or three placements during their School Direct year and are placed in at least one Mead Academy Trust school: \\r\nTerms 1 & 2: Placement 1 - Host school within The Mead Academy Trust \\r\nTerms 3 & 4: Placement 2 (Main Placement) - Alternative placement school within The Mead Academy Trust or a partner school (with a Key Stage switch) \\r\nTerms 5 & 6: Placement 3 (Enhancement Placement) - Placement school within The Mead Academy Trust\\r\n\\r\nTeachers from all Trust schools join together for staff meetings, planning, and social events, which ensures best practice and knowledge is shared across all of our schools.\\r\n\\r\nOur GTs are an integral part of these activities and benefit from the wealth of experience working across three schools brings.\\r\n\\r\nAdditionally, GTs may have the chance to spend two terms in one of our partner schools across Trowbridge and the surrounding area, providing the opportunity to experience teaching outside the Trust.\\r\n\\r\nWe will work hard to place GTs in a school that fits their needs and preferences. Find out more about our partner schools here: https://www.themeadteachingschool.org.uk/alliance-member-schools/ \\r\n\\r\nWe fully recognise the vibrancy, enthusiasm and drive GTs offer our school communities and our teachers are eager to share their knowledge and practice with the next generation. \\r\n\\r\nAccommodation: The School Direct partnership does not provide any accommodation for GTs. However, there is a good range of rental accommodation available at reasonable prices.\\r\n\\r\nChildcare facilities: A range of childcare providers are available locally, including a nursery at all three schools. Our nurseries accept 2 and 3 year old funding, but you will need to apply for a place as you would any setting. Find more information about our nurseries on our individual school websites, and Wiltshire Council offers an online directory of providers: http://services.wiltshire.gov.uk/ChildCareOnline/index.php\\r\n\\r\nDisability access: Applicants who would benefit from disabled access should let us know on application so we can ensure placements are made at appropriate schools. Please contact us at teachingschool@themead.wilts.sch.uk to discuss specific access issues further.\\r\n\\r\nPublic transport: Trowbridge, Melksham and the surrounding area is well served by mainline rail/bus services.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Mead Teaching School is part of The Mead Academy Trust, and is an inspirational and innovative learning and teaching environment. We were designated a Teaching School in September 2011, and have an extremely successful track record in Initial Teacher Training. \\r\n\\r\nOur Trust is a family of three schools, The Mead and Castle Mead Schools, Trowbridge and River Mead School in Melksham. All three have their own nurseries. Castle Mead and River Mead also have Resource Bases for children with complex needs.\\r\n\\r\nThe Mead is an outstanding school based across two sites. Ofsted inspections in 2011 and 2014 highlighted: 'The school's learning environment, indoors and outdoors is amazing. It provides a wealth of high quality learning experiences... Teachers are extremely well trained. They have excellent subject knowledge and plan exciting activities for all groups of pupils. Pupils love coming to school.' \\r\n\\r\nCastle Mead is a two form entry school.  In 2017, Ofsted said that 'The school's curriculum is exciting, interesting and relevant. Trips, visitors and projects 'bring learning to life'. They engage and inspire pupils to learn well.'\\r\n\\r\nRiver Mead is a smaller than average primary and nursery school. Its recent Ofsted inspection stated that 'Leaders aspire for every pupil to be a successful learner. Staff share this aspiration. Pupils talk positively about school and are eager to learn. Relationships between staff and pupils in the school are strong. This enables pupils to build trust and feel safe and secure.'\\r\n",
+    "TrainWithDisability": "Applicants who would benefit from any environmental adjustments should let us know on application so we can ensure any necessary arrangements are made for interview and any subsequent placements.\\r\n\\r\nPlease contact Kyra Ings at teachingschool@themead.wilts.sch.uk to discuss any specific access issues further.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "G50"
+      }
+    ]
+  },
+  "has_inst": true
+}

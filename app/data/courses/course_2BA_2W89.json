@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Sacred Heart Newcastle SCITT",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "2BA/2W89",
+  "providerCode": "2BA",
+  "programmeCode": "2W89",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Fenham Hall Drive, Fenham, Newcastle Upon Tyne, NE4 9YH",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Fenham Hall Drive, Fenham, Newcastle Upon Tyne, NE4 9YH",
+      "geocode": true,
+      "formatted_address": "Fenham Hall Dr, Newcastle upon Tyne NE4 9UU, UK",
+      "latitude": 54.9839935,
+      "longitude": -1.6523101,
+      "post_code": "NE4 9UU",
+      "city": "Tyne and Wear",
+      "route": "Fenham Hall Drive",
+      "postal_town": "Newcastle upon Tyne"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2BA",
+    "addr_1": "Fenham Hall Drive",
+    "addr_2": "Fenham",
+    "addr_3": "Newcastle Upon Tyne",
+    "addr_4": null,
+    "postcode": "NE4 9YH ",
+    "url": "http://www.newcastlescitt.co.uk/",
+    "geocode": true,
+    "formatted_address": "Fenham Hall Dr, Newcastle upon Tyne NE4 9UU, UK",
+    "latitude": 54.9839935,
+    "longitude": -1.6523101,
+    "post_code": "NE4 9UU",
+    "city": "Tyne and Wear",
+    "route": "Fenham Hall Drive",
+    "postal_town": "Newcastle upon Tyne"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Overview:\\r\n\\r\nThis course will provide you with over 40 days of professional training together with 30 weeks of in-school work experience. Your time will be split across two contrasting school experiences.\\r\n\\r\nHow you'll be assessed:\\r\n\\r\nYou will be assessed both inside the classroom as a practitioner and from associated written tasks such as reflective journals and mentor records.\\r\n\\r\nWorkload:\\r\n\\r\nYou will attend school as if an employee, typically 8.30 to 4.30pm each day. You will submit two evidence files to demonstrate that you have met the Teachers' Standards at the end of the course (June).\\r\n\\r\nLocation: \\r\n\\r\nTraining is at Sacred Heart Catholic High School, other schools in the area provide additional inputs and you will also need to travel to your allotted host and second school placement over the course of the year. In addition, as part of your ePGCE you will attend 10 days at Newcastle University campus.",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE Maths grade C or above\\r\nGCSE English grade C or above\\r\nGCSE Science grade C or above (Required for Primary only)\\r\n\\r\nDegree preferably a 1st, 2:1  or 2:2 classification, in which the majority of the content covered is relevant to the subject applicants wish to teach\\r\n\\r\nDegree lower than a 2:2 please contact us directly",
+    "FeeInternational": 10000.0,
+    "InterviewProcess": "Typically an interview will be at Sacred Heart SCITT for Secondary and Primary applicants. Although on occasion you may be asked to attend an interview at one of our partner schools. \\r\n\\r\nYou will be interviewed by a senior member of the SCITT team, together with a senior leader from the Primary or Secondary phase (as appropriate).\\r\n\\r\nInterviews always include: \\r\nA panel interview\\r\nPreparing a lesson or activity in advance\\r\nA written task\\r\nAn interaction task with students\\r\n",
+    "OtherRequirements": "You will need to complete:\\r\n\\r\nThe Professional Skills Tests (Mandatory) \\r\nA Criminal Records Check\\r\nProduce all academic certificates if successful (GCSE, A level & Degree)\\r\n\\r\n\\r\n",
+    "PersonalQualities": "We are looking for individuals who have a genuine passion for teaching. In particular we are keen to meet people who can demonstrate a track record in academic excellence and high quality communication skills. \\r\n\\r\nTeaching is a high challenge - high reward profession, and as such, successful candidates must have the drive and ambition to go the extra mile.",
+    "HowSchoolPlacementsWork": "September to December - you will be placed in your 'host' school. This will be either Sacred Heart or one of our partner school within the SCITT with a proven track record of developing high quality ITTs. Our partner schools are located in Newcastle, Gateshead and the nearby towns within Durham and Northumberland. Our partnership has over 30 schools.\\r\n\\r\nJanuary to March - You will move to a contrasting 'second school placement'. Returning to your host school for the remainder of the year.\\r\n\\r\nPRIMARY: You will teach students in the age range of 5-11\\r\nSECONDARY: You will teach students in the age range of 11-16 (unless following a 14-19 curriculum subject)"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Sacred Heart Newcastle SCITT is a partnership of over 20 Primary and Secondary schools. Our schools are located in Newcastle, Gateshead and nearby towns of County Durham and Northumberland. We are passionate about recruiting, developing and employing the very best graduates into the profession. We offer a unique, bespoke training programme which blends the best of both worlds; on the job experience and high-quality academic study. \\r\nTrain with us and you’ll be based in a school that cares about your future. From day 1 you’ll be treated like a member of staff, whilst also having the benefits of university life through our integrated ePGCE programme with Newcastle University. In choosing to train with us, you will be joining an organisation of expert practitioners with a track record of supporting and producing the very best teachers. \\r\nAs a Sacred Heart Newcastle SCITT trainee you will have a tailored training programme based on your past experience and needs. Our in-school Mentors and Professional Tutors will always be on hand to offer advice and monitor your progress. We see the success and employment of our trainees as key to improving the life chances for all students in the region.\\r\n",
+    "TrainWithDisability": "Sacred Heart SCITT welcomes applications from candidates with disabilities and other needs. Following a successful application process, we would discuss a bespoke support programme with a potential trainee. All our schools in the partnership have access arrangements for people with disability. \\r\n\\r\nAdvice to potential applicants: Teaching is a very rewarding but challenging career (especially in the early years). If you are currently under a medical professional, we recommend that you consult them for advice ahead of applying. Our experience shows that trainees who are open about their needs and therefore supported from day 1, are far more likely to be successful. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

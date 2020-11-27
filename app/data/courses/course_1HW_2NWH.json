@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Reading",
+  "provider": "Forest Learning Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "1HW/2NWH",
+  "providerCode": "1HW",
+  "programmeCode": "2NWH",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Albion Road, Sandhurst, GU47 9BP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Albion Road, Sandhurst, GU47 9BP",
+      "geocode": true,
+      "formatted_address": "Albion Rd, Sandhurst GU47 9BP, UK",
+      "latitude": 51.3472731,
+      "longitude": -0.7977753999999999,
+      "post_code": "GU47 9BP",
+      "city": "Bracknell Forest",
+      "route": "Albion Road",
+      "postal_town": "Sandhurst"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1HW",
+    "addr_1": "Forest Learning Alliance",
+    "addr_2": "Uplands Primary School",
+    "addr_3": "Albion Road, Sandhurst",
+    "addr_4": "Bracknell Forest, Berkshire",
+    "postcode": "GU47 9BP",
+    "url": "http://www.forestlearningalliance.org.uk",
+    "geocode": true,
+    "formatted_address": "Albion Rd, Sandhurst GU47 9BP, UK",
+    "latitude": 51.34794609999999,
+    "longitude": -0.7987065,
+    "post_code": "GU47 9BP",
+    "city": "Bracknell Forest",
+    "route": "Albion Road",
+    "postal_town": "Sandhurst"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "School Direct (salaried) is an employment-based route for high quality graduates, typically with at least three years’ experience of transferable work history. You’ll earn a salary while you train towards your Qualified Teacher Status (QTS)  and won’t need to pay any tuition fees.  We work closely with the University of Reading as our accredited provider.\\r\n\\r\nStudents who opt for a School Direct (salaried) training programme are employed as an unqualified teacher while they learn on the job. If you decide to apply for a School Direct (salaried) training programme, one of your references must be from an employer. If you’re self-employed and unable to provide a reference from a former employer, your referee should be someone who knows you from work, who can comment on your work and suitability for teaching.",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "You’ll be paid and taxed as an unqualified teacher. The salary awarded will differ between schools; you should check the salary with the school before you apply for the salaried route. \\r\n\\r\nYour tuition fees are paid for you. \\r\n",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK).  You will also need to have achieved Grade 4 (or C) or above in GCSE Mathematics, English Language and a Science subject (or equivalent qualifications).\\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.\\r\n",
+    "InterviewProcess": "Successful applicants will be offered an interview at one of our  schools where they will:\\r\n\\r\n- be interviewed by a Headteacher and a school representative\\r\n- be observed working with a group of children\\r\n- complete an oral presentation on a topic of their choice\\r\n\\r\nFollowing success at interview, a School Direct placement will be offered within one of our partner schools.",
+    "PersonalQualities": "Applicants will\\r\n-Demonstrate and promote positive values, attitudes and behaviour;\\r\n- Are aware of their professional responsibilities;\\r\n- Can work with others to promote the learning and welfare of young people;\\r\n- Can adopt a reflective and critical stance towards their own practice, policy initiatives and listen to and act upon advice;\\r\n- Take responsibility for their own professional development;\\r\n",
+    "HowSchoolPlacementsWork": "All School Direct trainee teachers will be spend the majority of their training in one school, either Primary or Secondary, with regular training sessions, either at the Lead School, Uplands Primary, one of the partnership schools or at the University of Reading. The individual placement schools have taken responsibility for deciding individual trainees teaching commitment but the partnership agreement in place ensures that all trainee teachers gain the same range of experience, whatever the school.\\r\nIn addition to their main placement school all trainee teachers will undertake a second placement in the spring term for five weeks.\\r\nAll trainee teachers will gain experience across a range of key stages and contexts and this experience will be tailored to meet the needs of individual trainee teachers to ensure that all gain the range of expertise needed to become an effective professional. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": " Uplands Primary School is the lead school for Forest Learning Alliance, working with Primary, and Special Schools within our local area to provide School Direct fee funded and salaried placements  across Bracknell Forest, Wokingham and beyond. We work in partnership with the University of Reading, who have an exceptional reputation in teacher training. As an alliance, we provide high quality provision to ensure a well-rounded training programme, with a clear emphasis on mentorship throughout.\\r\n\\r\nWho are we looking for?\\r\nFor both salaried and training places we are looking for inspirational people who have a proven track record of good communication skills, the ability to use their initiative and work under pressure in a demanding environment. \\r\n\\r\nSchool Direct (salaried) is aimed at graduate career changers who have three or more years’ work experience. This year successful applicants have proven, at the point of application and also at interview, they have the necessary skills and understanding of the role of the teacher to be able to train as teachers whilst working in a school environment.\\r\n\\r\nSchool Direct (fee paying) route is also a school based route into initial teacher training but applicants often do not have as much experience of working in schools, leading classes and taking responsibility for teaching on a regular basis.",
+    "TrainWithDisability": "We aim to make any reasonable adjustment for any applicant with a disability or any other specific need. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Reading’s Institute of Education is an established provider of high-quality training and research. They are ranked 8th in the UK for Education (The Guardian University League Table 2019) and have been consistently in the top 10 for over a decade.\\r\nCommitted to developing caring, reflective, professional teachers, they have well-established partnerships with over 300 schools in Berkshire and the surrounding area. \\r\nOfsted report that “Head teachers are eager to appoint trainees, because they are well prepared and have the necessary high standards of practice required to begin their teaching career” ITE inspection report, September 2016.\\r\n",
+        "UcasInstitutionCode": "R12"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,60 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The University of Reading",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "R12/Q3X1",
+  "providerCode": "R12",
+  "programmeCode": "Q3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "R12",
+    "addr_1": "Admissions Office",
+    "addr_2": "Miller Building",
+    "addr_3": "Whiteknights",
+    "addr_4": "Reading",
+    "postcode": "RG6 6AB ",
+    "url": "http://www.reading.ac.uk",
+    "geocode": true,
+    "formatted_address": "Miller Building, Earley, Reading RG6, UK",
+    "latitude": 51.4393572,
+    "longitude": -0.9469907999999999,
+    "post_code": "RG6",
+    "city": "Earley",
+    "route": null,
+    "postal_town": "Reading"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in English is a one-year, full-time course for graduates who wish to train as secondary school English teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). \\r\n\\r\nEnglish is a core subject of the secondary curriculum at Key Stage 3 and 4. English is an engaging and constantly evolving subject in the school curriculum. On the PGCE course you will learn not only about issues related to English teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe English course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*lesson planning\\r\n*classroom management\\r\n*special needs and inclusion\\r\n*assessment\\r\n*creative learning\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "An honours degree in a relevant subject, with approximately 50% English content and a classification of at least 2:1.  GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our Institute of Education is an established provider of high-quality training and research in education. In the latest national assessment, 80% of our research outputs were rated world leading or internationally excellent, positively impacting educational policy and practice. The University has also been ranked in the top 150 in the world for Education. * \\r\n\\r\nWe offer a BA in education Studies, MA in education studies and a range of teacher training courses in primary, secondary and early years.  At the Institute of Education we have the research, the expertise and the passion to help others grow into engaged and active citizens; individuals with resilience and the confidence to tackle challenges.  \\r\n\\r\nThe Institute of Education is a community and the impact of our research and the breadth of our experience feeds directly into everything we do and the world around us. Our networks and the impact of our work are both local and global. Locally, we have well-established partnerships with over 300 schools, who we work closely with to train the next generation of outstanding teachers. Globally, our research, consultancy and other projects extend to countries as varied as China, Jamaica, the USA and Singapore. For more on our programmes visit: (https://www.reading.ac.uk/education/) \\r\n\\r\n*QS World Rankings by subject 2018\\r\n \\r\n",
+    "TrainWithDisability": "The University of Reading welcomes disabled students and has a dedicated Disability Advisory Service. The service offers advice and guidance to students with any disability, mental health condition, or specific learning difficulty (SpLD).\\r\n\\r\nIf you are unsure whether you wish to disclose your disability on your application, you can discuss the implications of a disclosure in complete confidence, with one of our disability advisers.\\r\n\\r\nWe offer support, advice and guidance with:\\r\n\\r\n- physical disabilities e.g. mobility\\r\n- sensory disabilities e.g. visual impairments\\r\n- mental health difficulties e.g. anxiety\\r\n- medical conditions e.g. Irritable Bowel Syndrome, diabetes, autism/Asperger Syndrome\\r\n- SpLDs e.g. dyslexia, dyspraxia \\r\n\\r\nThe Disability Advisory Service may be able to assist in study related support in the following ways:\\r\n- assessing the impact of your disability  on your studies and recommend any reasonable adjustments required\\r\n- provide information on funding for study support, including the Disabled Students Allowance.\\r\n- Liaise with your Department including Senior Tutors and Disability Representative on reasonable adjustments, including extensions to deadlines and alternative modes of assessment where appropriate.\\r\n- Flag students (with permission) in order that tutors are made aware of individual requirements.\\r\n- The Disability Advisory Service can provide assistance on arranging non- medical helpers e.g. one to one support arrangements such as mentors and specialist study skills.\\r\n- Liaising with the exams office re special exam arrangements\\r\n- Referral and signposting to other services\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

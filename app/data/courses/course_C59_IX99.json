@@ -1,0 +1,59 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Chiltern Training Group",
+  "subjects": [
+    "Computing",
+    "Secondary"
+  ],
+  "name": "Computer Science",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "C59/IX99",
+  "providerCode": "C59",
+  "programmeCode": "IX99",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "C59",
+    "addr_1": "Challney High School",
+    "addr_2": "Stoneygate Road",
+    "addr_3": "Luton",
+    "addr_4": "Bedfordshire",
+    "postcode": "LU4 9TJ ",
+    "url": "http://www.ctg.ac.uk",
+    "geocode": true,
+    "formatted_address": "Stoneygate Rd, Luton LU4 9TJ, UK",
+    "latitude": 51.8945612,
+    "longitude": -0.4670377,
+    "post_code": "LU4 9TJ",
+    "city": "Luton",
+    "route": "Stoneygate Road",
+    "postal_town": "Luton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in Computer Science is a one-year, full-time course for graduates who wish to train as secondary school computer science teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). The most appropriate route for you can be discussed with the course leader. \\r\n\\r\nOn the PGCE course you will learn not only about issues related to Computer Science teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe Computer Science course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*Subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*Lesson planning\\r\n*Classroom management\\r\n*Research into the pedagogy of computer science.\\r\n*Special needs and inclusion\\r\n*Assessment\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "A good honours degree or equivalent in a relevant subject, ideally with approximately 50% Computer Science content or other relevant experience. GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. If in doubt about your qualifications or suitability for the course please contact the course leader for advice. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Chiltern Training Group (CTG) is an outstanding provider (Ofsted, 2014) of school centred initial teacher training based in Luton.   CTG has a long heritage of training teachers and we have been at the forefront of school centred initial teacher training for over 25 years.  We are part of the Chiltern Teaching School Alliance.\\r\n\\r\nWe offer a full range of training from primary aged 3 to secondary aged 18. We believe the best place to train teachers is in schools.  We have access to an incredible range of different settings: lower and primary schools in rural settings,  primary multi-ethnic urban schools, middle schools, special schools, upper and secondary high schools as well as a dedicated sixth form college.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

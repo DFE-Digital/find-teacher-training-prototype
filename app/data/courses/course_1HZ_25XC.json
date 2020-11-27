@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Cumbria",
+  "provider": "Kirkbie Kendal School",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1HZ/25XC",
+  "providerCode": "1HZ",
+  "programmeCode": "25XC",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Lound Road, Kendal, LA9 7EQ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Lound Road, Kendal, LA9 7EQ",
+      "geocode": true,
+      "formatted_address": "Lound Rd, Kendal LA9 7DZ, UK",
+      "latitude": 54.3175574,
+      "longitude": -2.7416706,
+      "post_code": "LA9 7DZ",
+      "city": "Cumbria",
+      "route": "Lound Road",
+      "postal_town": "Kendal"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1HZ",
+    "addr_1": "Kirkbie Kendal",
+    "addr_2": "Lound Road",
+    "addr_3": null,
+    "addr_4": "Kendal",
+    "postcode": "LA9 7EQ ",
+    "url": "http://www.kirkbiekendal.cumbria.sch.uk/",
+    "geocode": true,
+    "formatted_address": "Lound Rd, Kendal LA9 7EQ, UK",
+    "latitude": 54.31754489999999,
+    "longitude": -2.7410441,
+    "post_code": "LA9 7EQ",
+    "city": "Cumbria",
+    "route": "Lound Road",
+    "postal_town": "Kendal"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "There is an additional cost to trainees for the Outdoor Adventurous Activities Residential held at Tower Wood on Lake Windermere every December.\\r\n\\r\nThis is heavily subsidized by the school and the current cohort is paying £80 for the 3 day programme.  This cost includes all instruction, kit, board and lodging.  ",
+    "AboutCourse": "Trainees will study and achieve a PGCE and QTS awarded by UoC.  This provides 60 credits at Master’s level 7.  The PGCE is assessed by two written assignments during the year, allowing you to critically reflect on your teaching experiences.    Our course is entirely school-based; trainees being immersed in the school environment from day one.  This helps them prepare quickly and confidently for their school placements.  The first placement (in the autumn term) consists of 40 days, followed by the second (in the spring and summer terms) consisting of 80 days. \\r\nFrom September 2018, some of our trainees that hold good A-level grades (C and above) in EBaac subjects, have the opportunity to experience teaching additional lessons to PE, in their chosen EBaac subject.  This will hopefully boost 'marketability' and prepare them for the increasing number of 'PE with.......' posts being advertised.  This opportunity is discussed at interview with relevant applicants.    \\r\nOur trainees receive free student membership of the Association for Physical Education (AfPE) for the duration of their course, providing access to resources, insurance and other members’ benefits.\\r\nIn addition to teaching pupils alongside your peers, you will also have the opportunity to work more directly with many of KKS’s pupils; e.g. year 11 GCSE PE revision conference being delivered by our trainees.\\r\n We also hold a heavily subsidised outdoor residential experience at Tower Wood on Lake Windermere at the end of the autumn term, allowing you to experience, in a peer-supportive environment, some of the challenges your future pupils will face. The risk assessment and teachers’ roles and responsibilities on such residential trips are also more meaningfully and contextually considered.\\r\nWe also develop your subject knowledge and teaching pedagogy during our twelve Subject Knowledge days in a range of PE activities, e.g. in 2018-19 badminton, gymnastics, tennis, athletics, swimming, dance, rugby union and hockey are just some of the activity areas to be covered. You may also gain additional governing body coaching or teaching awards e.g. the RFU RUSS award, as part of these days.\\r\nThe course also offers trainees the opportunity to experience activities taught as part of the school’s PE curriculum that are not widely available e.g. Key Stage 3 pupils are taught judo at Kendal Dojo.\\r\nTrainees also get to experience specialist PE teaching within a local school that works with KS1-5 Special Educational Needs and Disability pupils, many with Profound and Multiple Learning Difficulties.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should be a graduate with an honours degree that contains a minimum 50% physical education or sports science/coaching pathway. Applicants should have a strong academic and sporting profile. Due to the highly competitive nature of becoming a secondary school PE teacher you will therefore need to have at least a 2:2 (and preferably a 2:1) to apply. \\r\nYou will need at least a grade C in GCSE English and GCSE Mathematics (grade 4+ on new numerical scale) or equivalency, and have passed the Professional Skills Tests in Literacy and Numeracy, before the course commences in September 2019.\\r\n",
+    "InterviewProcess": "Kirkbie Kendal School will lead the selection process and co-ordinate with the University of Cumbria. We each have an equal say in determining who our places are offered to. \\r\nBased on the information within your online application (academic qualifications, sporting ability, commitment shown to teaching and coaching), a limited number of applicants will be invited to attend an interview day. The day will include a tour of the school and PE facilities, the opportunity to talk informally to course staff and current PGCE PE students, teach an observed mini-lesson to a small Key Stage 3 class (details will be provided in advance) and have a face to face interview. It is a rigorous process designed to make sure that the course is suitable for you and that you are suitable for the course.  You will also have to complete a written task on an educational issue (details will be provided in advance).\\r\n",
+    "OtherRequirements": "Ideally a meaningful experience of working with young people of secondary school age. This does not have to have been paid work, but it will be essential that applicants have had experience of coaching sports teams etc. It is desirable that applicants have reached at least regional level of competition in one sport and have gained recognised governing body awards in a range of National Curriculum activity areas. \\r\nWe strongly recommend that you will have obtained a minimum of 5 days’ secondary school experience observing lessons in PE, as you will be expected to reflect on these experiences during interview. \\r\n",
+    "PersonalQualities": "We are looking for trainee teachers who are enthusiastic and passionate about teaching high quality PE. You must also have an 'open' mind and be willing to critically consider and explore alternative approaches to teaching and learning in PE. Teaching jobs in PE attract large numbers of applications, we are therefore looking to train future teachers who have shown commitment to teaching Physical Education to the highest level. ",
+    "HowSchoolPlacementsWork": "We work closely with both our trainees and partnership schools to ensure that each trainee’s placement school is considered carefully.  The trainee’s previous experience of school life and their developmental needs from both the subject knowledge and pedagogical aspects are individually tailored to find the best placement fit.  Trainees are based in two contrasting schools (as much as placement offers allow), to give them the maximum exposure to different school sizes, rural compared with town/city variations and contrasting pupil demographics and teaching strategies.  These two schools will allow experience of teaching across the full 11 to 18 curriculum.  An example of placement provision for a trainee may include a large teaching school e.g. Ripley St. Thomas C of E Academy in Lancaster, and a small rural comprehensive e.g. The Lakes School in Cumbria.  \\r\nCurrently we work with about 20 partnership schools in our alliance, covering a wide geographical area ranging from North Cumbria to North Lancashire.            \\r\nYou will be expected to pay for your own travel whilst you are training but we will make every effort to keep these costs as low as possible by considering your two placement schools carefully, given the above requirements.  Since the course started in September 2011, no trainee has ever had a total travel time across the two placements of over one hour. Please note however, this cannot be guaranteed as it depends on placement offers received from our partnership schools and what is best for each individual trainee.\\r\n\\r\nTrainees will spend 40 days in your first placement school and 80 in your second placement school.  Our trainees will also be expected to work the holiday pattern of their placement schools.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Since September 2011, Kirkbie Kendal School (KKS) and University of Cumbria (UoC) have worked in partnership to provide a unique school-based PGCE course. The School holds an 'outstanding' grade Physical Education (PE) subject inspection from Ofsted (Nov 2011).  The course contains both KKS School Direct (SD) trainees and UoC 'core' trainees that are taught together as one cohort based at KKS.  Our cohort (typically 12-14 trainees), is small enough to allow us to know each trainee’s individual strengths and developmental needs.  \\r\nOutcomes for trainees are exceptionally high: \\r\n97% of trainees have completed the course and achieved both their Post Graduate Certificate in Education (PGCE) and Qualified Teacher Status (QTS) since the course commenced in 2011. \\r\n98.5% of these have been graded as either outstanding or good (e.g. in 2014-15, eleven of the thirteen trainees were graded as outstanding, the other two as good). \\r\nKKS is part of a teaching school alliance, the South Lakes Federation (leading school Queen Elizabeth School).  We work in partnership and place our trainees with these and many other schools from a wider geographical area; from North Cumbria to North Lancashire. \\r\nAll of our partnership schools aim to maximize the potential and training opportunities for our trainee teachers on placement. \\r\nKKS is located in the market town of Kendal. Situated at the Gateway to the Lake District, it is only six miles from junction 36 of the M6 Motorway. Oxenholme Lake District main line west coast station is only a mile from the school’s campus.  \\r\n",
+    "TrainWithDisability": "The school works closely with the university's SEN/D and occupational health teams to support candidates who may have disabilities or other learning needs.\\r\n\\r\nIn the past, this has included supporting a trainee with a hearing impairment by adapting the teaching pedagogy employed and carefully selecting the most appropriate teaching placement schools.\\r\n\\r\nIt should be noted however, that due to the physical infrastructure of the lead school, it is not possible to have trainees in wheelchairs on the course.    ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "C99"
+      }
+    ]
+  },
+  "has_inst": true
+}

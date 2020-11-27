@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Newman University",
+  "provider": "Greet Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "1S4/2BRR",
+  "providerCode": "1S4",
+  "programmeCode": "2BRR",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Greet Primary School, Percy Road, Sparkhill, Birmingham, B11 3ND",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Greet Primary School, Percy Road, Sparkhill, Birmingham, B11 3ND",
+      "geocode": true,
+      "formatted_address": "Percy Rd, Birmingham B11 3ND, UK",
+      "latitude": 52.45451000000001,
+      "longitude": -1.8578973,
+      "post_code": "B11 3ND",
+      "city": "West Midlands",
+      "route": "Percy Road",
+      "postal_town": "Birmingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1S4",
+    "addr_1": "Greet Primary School",
+    "addr_2": "Percy Road",
+    "addr_3": "Sparkhill",
+    "addr_4": "Birmingham",
+    "postcode": "B11 3ND ",
+    "url": "http://www.greettsa.org",
+    "geocode": true,
+    "formatted_address": "Percy Rd, Birmingham B11 3ND, UK",
+    "latitude": 52.45451000000001,
+    "longitude": -1.8578973,
+    "post_code": "B11 3ND",
+    "city": "West Midlands",
+    "route": "Percy Road",
+    "postal_town": "Birmingham"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "The School Direct PGCE Training Programme leads to the internationally-recognised Postgraduate Certificate of Education (PGCE) with Qualified Teacher Status (QTS) qualification, which will provide 60 credits contributing to Masters level and will prepare successful candidates to teach pupils from ages three to eleven.  It is a full-time course, so you will either be in school, at University or in Alliance-based training for the whole academic year.\\r\n\\r\nThroughout the training year, you will be formally supported in school by a designated class teacher and a school-based tutor, as well as by your University partnership tutor.  You will also have access to a strong network of support within your Home and Development Schools, from the University and across the Teaching School Alliance. \\r\n\\r\nIn addition to practical, supported training experiences in your Home and Development Schools, you will be involved in a programme of whole-group training provided by a range of University specialists and expert practitioners from Alliance schools. Training takes place at the University of Birmingham and in schools across the Teaching School Alliance.  The programme of training at the University takes place in week-long ‘blocks’ throughout the year and includes Professional Studies, English, Maths, Science and E-Safety.  Further information about the course can be found on the University of Birmingham website at (https://www.birmingham.ac.uk/postgraduate/courses/taught/edu/school-direct.aspx#CourseDetailsTab). Information on how to find the University’s campus in Edgbaston can be found at (http://www.birmingham.ac.uk/contact/directions/index.aspx)\\r\n This is complemented by a programme of training delivered by Teaching School Alliance teachers and leaders, covering all the foundation subjects and further professional skills, an early years visit and two immersive focus weeks, all based in Alliance schools.  All of this will prepare you thoroughly with the skills and knowledge you need to teach across the Primary age range.  \\r\n\\r\nAssessment of the School Direct PGCE Training Programme combines course assignments and professional practice in school. \\r\n\\r\nFollowing successful completion of the 60 (level 7) credit PGCE (QTS) year, students may then opt to progress onto the Postgraduate Diploma in Teaching Studies and then the MA in Teaching Studies with the University of Birmingham.\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "Salaried trainees are employed by their Home School and are not required to pay fees to the University.  Salaried trainees will usually be paid at the minimum of the unqualified teacher's pay scale. In exceptional circumstances, a school may decide to pay a trainee higher on the unqualified teacher's pay scale - this decision is at the school's discretion. ",
+    "Qualifications": "GCSE (or equivalent) Grade C/4 or above in English, Maths and Science.\\r\nRelevant Honours Degree awarded at 2:1 or above (in exceptional circumstances, applications from candidates awarded a 2:2 will be considered).\\r\n",
+    "InterviewProcess": "We work in partnership with our accrediting provider, the University of Birmingham, to co-ordinate the recruitment process.  Shortlisted candidates will be invited to attend a day of tasks in a Teaching School Alliance partner school - the selection process is a rigorous one, designed to assess your suitability to teach.\\r\n\\r\nThe Interview Process for shortlisted candidates\\r\nOver the course of the day, you will be asked to undertake a number of activities. You will be told in advance of the interview which school you should go to, and the year group you will be with for the classroom-based task.  The interview process includes:\\r\n- A classroom-based task – teach a half hour literacy lesson to a class of children.  \\r\n- General Literacy and Numeracy tests.\\r\n- A formal interview with Senior Leaders from Teaching School Alliance partner schools.\\r\n\\r\nWe aim to make decisions and let you know the outcome of your interview as soon as possible after the interview day.\\r\n\\r\nInterview Dates\\r\nInterviews will begin in late November 2018 and continue until all places have been filled or the course closes.\\r\n",
+    "OtherRequirements": "If you are successful, you will be required to undertake an enhanced Disclosure and Barring Service (DBS - criminal records) check, fitness to teach questionnaire and other checks on your right to work.  You will also need to pass the English and Maths professional skills texts before starting the course.",
+    "PersonalQualities": "We are looking for\\r\n- High calibre graduates with enthusiasm for reducing inequalities and improving the life chances of inner-city Birmingham children.\\r\n- Bright and articulate trainees who have a thirst for learning, who strive to achieve their best and have a passion for making a positive impact on the lives of others.\\r\n- Proactive and positive trainees who are flexible in responding to challenges, with the interpersonal skills to enable you to work effectively in a team\\r\n",
+    "HowSchoolPlacementsWork": "The Greet Teaching School Alliance (http://greettsa.org) is an Alliance of over 40 Primary Schools, based in the inner-city of Birmingham, covering areas including Sparkhill, Sparkbrook, Balsall Heath, Small Heath, Bordesley Green, Washwood Heath, Handsworth, Soho and Perry Barr.\\r\n \\r\nSchool experience placements are offered in schools across the Teaching School Alliance.  Over the course of the year you will have placements in two schools, one teaching in Key Stage 1 and the other teaching in Key Stage 2.  For the majority of your assessed teaching experience, you will be based in a Home School from within the Teaching School Alliance.  In addition, you will also undertake an assessed placement in a second, Development School, two 'Focus weeks' exploring specific aspects of primary teaching, and an excellent practice visit to an Early Years setting, all in schools from within the Teaching School Alliance. \\r\n\\r\nFinal decisions on school placements will be made through negotiation with successful candidates and schools offering training placements.\\r\n\\r\nThis is a full-time programme – our trainees are either in school, at University or in Alliance-based training for the whole academic year.  You will be in your Home School from the very start of the academic year, so will benefit from the staff training provided and be welcomed by colleagues and children as a member of staff.  In addition, you will have the opportunity to meet your class at the start of term and to see how the class teacher sets up the classroom and establishes their expectations from the very beginning.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Very experienced in School Direct, we have been involved with the programme since its introduction.  We offer a bespoke School Direct PGCE teacher training programme, continually developed and refined in response to feedback from our alumni. As a trainee, you will benefit from a high quality programme of support and training, delivered by University specialists and expert practitioners from good and outstanding schools, designed to equip you with the skills, knowledge and practice to become an excellent teacher in one of our schools.  \\r\n\\r\nOur School Direct PGCE programme carries with it an expectation of employment in a school across the Teaching School Alliance on successful completion of the course, thus offering the potential for further professional development and career enhancement opportunities, including access to our highly-regarded Alliance NQT programme. We have an excellent track record of employment, viewing the School Direct training year as the start of your career in Greet Teaching School Alliance, so our Headteachers and school staff are committed to investing considerable time and support to ensure that the programme gives you the best possible grounding and start to your career in primary teaching. \\r\n\\r\nWe will work collaboratively with our accrediting provider, University of Birmingham, over the year to ensure that our School Direct programme is as effective as possible in meeting your needs. The strong partnership between the Teaching School Alliance and the University leads to a training programme with the school and you, the trainee, at its heart.  Further information can be found at (http://greettsa.org/train-to-teach/school-direct)\\r\n",
+    "TrainWithDisability": "Greet Teaching School Alliance and the University of Birmingham strive to be inclusive learning communities.  Schools are committed to equal opportunities and you can access a range of support from the University Student Support. \\r\n\\r\nInformation about disability access for postgraduate students at the University of Birmingham can be found at (http://www.birmingham.ac.uk/students/support/disability/index.aspx)\\r\n\\r\nInformation about student support for postgraduate students at the University of Birmingham can be found at (http://www.birmingham.ac.uk/students/support/index.aspx)\\r\n\\r\nIf you have a disability, in order for us to ensure you get the most from your training, it is important that you tell us about your disability as early as possible – on your UCAS application form – so that we can identify any support that you might need and discuss your support needs before you start your training year with us. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The School of Education at the University of Birmingham has a long tradition of delivering ITE courses. Its teaching has been graded as 'outstanding' for the third consecutive time by Ofsted inspectors which reaffirms the University’s status as one of the UK’s leading institutions for excellence in teacher training. \\r\n\\r\nThe University of Birmingham partnership has worked to co-develop the programmes for School Direct and Apprenticeships. The quality of both the programmes and the newly qualified teachers that enter the profession as a result of it are critical to all partners involved. ",
+        "UcasInstitutionCode": "B32"
+      }
+    ]
+  },
+  "has_inst": true
+}

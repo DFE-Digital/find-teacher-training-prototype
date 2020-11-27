@@ -1,0 +1,89 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Suffolk and Norfolk Primary SCITT",
+  "subjects": [
+    "Mathematics",
+    "Primary"
+  ],
+  "name": "Primary General (with mathematics)",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "S13/33MT",
+  "providerCode": "S13",
+  "programmeCode": "33MT",
+  "schools": [
+    {
+      "name": "Keswick Hall",
+      "address": "SCITT Training Room (9D), Keswick Hall, Norwich, Norfolk, NR4 6TJ",
+      "code": "K"
+    },
+    {
+      "name": "The SCITT Centre",
+      "address": "University of Suffolk, Ipswich, Suffolk, IP4 1QJ",
+      "code": "S"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "SCITT Training Room (9D), Keswick Hall, Norwich, Norfolk, NR4 6TJ",
+      "geocode": true,
+      "formatted_address": "Keswick Hall, Norwich NR4 6TJ, UK",
+      "latitude": 52.5903827,
+      "longitude": 1.2579745,
+      "post_code": "NR4 6TJ",
+      "city": "Norfolk",
+      "route": null,
+      "postal_town": "Norwich"
+    },
+    {
+      "address": "University of Suffolk, Ipswich, Suffolk, IP4 1QJ",
+      "geocode": true,
+      "formatted_address": "Long St, Ipswich IP3 8AH, UK",
+      "latitude": 52.05328069999999,
+      "longitude": 1.1647612,
+      "post_code": "IP3 8AH",
+      "city": "Suffolk",
+      "route": "Long Street",
+      "postal_town": "Ipswich"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S13",
+    "addr_1": "Suffolk and Norfolk Primary SCITT",
+    "addr_2": "The SCITT Centre",
+    "addr_3": "University of Suffolk",
+    "addr_4": "Ipswich",
+    "postcode": "IP4 1QJ ",
+    "url": "http://www.suffolkandnorfolkscitt.co.uk/",
+    "geocode": true,
+    "formatted_address": "SCITT Centre, University of Suffolk, Neptune Quay, Ipswich IP4 1QJ, United Kingdom",
+    "latitude": 52.0532317,
+    "longitude": 1.1664789,
+    "post_code": "IP4 1QJ",
+    "city": null,
+    "route": "Neptune Quay",
+    "postal_town": "Ipswich"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "We provide a unique opportunity across Norfolk and Suffolk for trainees to immerse themselves in a diverse range of teaching and training experiences which by the final term are highly personalised.\\r\nThe training comprises of 3 placements in 2 contrasting schools over the course of the year combined with 66 days in centre training. \\r\nThe centre based training is provided by expert trainers, many of whom are still serving teachers. It covers all National Curriculum subjects and key aspects of primary education such as behaviour management, SEND and assessment. Trainees also have sessions focused on the two assignments and one presentation which contribute to their PGCE qualification (including 60 credits at M Level).\\r\nAll trainees have a personal tutor who is committed to supporting each trainee over their training year.  This includes weekly email contact, visits to observe teaching and end of term progress interviews. Ofsted 2013 commented on the ‘very high-quality pastoral and academic support for trainees which results in outstanding outcomes’. \\r\n\\r\nFor those with an A Level in mathematics of grade B or above, we can offer the specialism of Primary General with Mathematics. This currently attracts a bursary. Trainees who qualify for this specialism will be offered:\\r\no\\tadditional specialised maths sessions\\r\no\\tsupport from tutors and teachers to extend maths knowledge and expertise\\r\no\\topportunities to complete practitioner research in an area of maths teaching\\r\no\\tpreparation for subject leadership of mathematics after their NQT year.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSEs\\r\nGCSE English, Mathematic and Science Grade C/4 or above (or equivalent) \\r\nLevel 2 Adult Numeracy and Literacy are not accepted as equivalents.\\r\nDegree\\r\nA UK first degree (or equivalent). Honours Degree, normally 2.2 or better (or equiv. 360 CAT points) \\r\nIf your qualifications were not gained in the UK, you can visit the National Academic Register Centre (NARIC) website to find out whether your qualifications are equivalent to UK GCSEs and degrees. Please note that the responsibility is on you to prove that your qualifications are equivalent and you must include a NARIC statement with your application verifying this. ",
+    "InterviewProcess": "The Primary Tuition SCITT team will be co-ordinating the recruitment process with their partnership school head teachers. You will lead a 10-minute teaching activity in a partnership school. If this this is successful, you will be invited to attend a task day.\\r\nAt the task day you will undertake some short written tests and some interpersonal tasks. This will be followed by an interview.",
+    "OtherRequirements": "A satisfactory enhanced DBS check before commencing training. Suffolk and Norfolk SCITT will arrange this.\\r\nIf an applicant has lived overseas for more than six months in the past five years in line with safer recruitment practice they will be required to provide a certificate of good conduct from that country.\\r\nApplicants must pass the professional skills tests for literacy and numeracy before the start of the course.",
+    "PersonalQualities": "We are looking for committed, resilient individuals who are ready to undertake an exciting but rigorous training year. We are interested in people who are passionate and enthusiastic about children's learning and have a desire to promote the best outcomes for children of all abilities. You need to be open to constructive feedback and see it as a tool to help you to achieve your potential by the end of the year.  You must be organised and self-motivated as although there is lots of support, you also need to be focused on the commitment involved within this training year.  ",
+    "HowSchoolPlacementsWork": "Our partnership of over 150 schools is well-established and we have clear and strong working relationships with a range of primary schools across Suffolk and Norfolk and into Cambridgeshire. We go to great lengths through quality assurance and our local knowledge to ensure that all placements are of a high standard. Trainees are supported by school mentors who are enthusiastic, committed and well-trained individuals. \\r\nTrainees spend approximately 26 weeks on school placement. Most of this is in the main placement school in the autumn and summer terms, with at least 6 weeks in the spring term in a contrasting school.\\r\nThe distance to school placements will vary. These take into account the trainee’s home address, whether they have their own transport and the placement that the school is able to offer. Our policy is to endeavour to keep journey times to school to a maximum of 50 minutes each way."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Do you want to get into schools early and start to practice teaching as soon as possible?\\r\nDo you want to be part of a very supportive cohort of trainees who receive personal support from committed, experienced and enthusiastic tutors? \\r\nSuffolk and Norfolk Primary SCITT Tuition has an excellent reputation for providing high quality training and support for all trainees. In 2018, 71% of trainees graduated with a grade of ‘outstanding’. The programme has been rated by Ofsted as 'outstanding' in the last two consecutive inspections. We feature on the Ofsted website as a good practice example and our SCITT programme has been listed regularly in the top twenty teacher training providers (‘Good Teacher Training Guide’ published by Buckingham University).  The programme offers excellent employment prospects -  96% of our trainees gained teaching posts this year.  The course offers a PGCE with 60 Masters Level credits as well as QTS. Our geographical location means that you have the choice to train in either Norfolk or Suffolk with training bases in Norwich and Ipswich.\\r\nThe one-year PGCE programme, starts in school from the second week of term so that trainees have practical experience from the start of the course. \\r\n",
+    "TrainWithDisability": "Suffolk and Norfolk SCITT supports all trainees based on their individual needs. Recently this has included those with dyslexia, physical, hearing and visual impairments and mental health conditions. Plans are developed with trainees to ensure that they can fully access in centre training, operate effectively on school placement and complete written assignments.\\r\nSuffolk & Norfolk Primary SCITT has full disabled access as do all the schools in the partnership. However, applicants who would benefit from disabled access should let us know on their application so that they can be considered for placements at the most appropriate schools. \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

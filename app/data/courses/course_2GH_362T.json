@@ -1,0 +1,108 @@
+{
+  "locationType": "School",
+  "accrediting": "The South Downs SCITT",
+  "provider": "The South Downs School Direct Partnership",
+  "subjects": [
+    "Languages",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages (Spanish)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "2GH/362T",
+  "providerCode": "2GH",
+  "programmeCode": "362T",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "The Boulevard, Worthing, West Sussex, BN13 1JX",
+      "code": "-"
+    },
+    {
+      "name": "The Angmering School",
+      "address": "Station Road, Angmering, Littlehampton, West Sussex, BN16 4HH",
+      "code": "A"
+    },
+    {
+      "name": "The Littlehampton Academy",
+      "address": "Fitzalan Road, Littlehampton, West Sussex, BN17 6FE",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The Boulevard, Worthing, West Sussex, BN13 1JX",
+      "geocode": true,
+      "formatted_address": "The Blvd, Worthing BN13 1JX, UK",
+      "latitude": 50.8236499,
+      "longitude": -0.410889,
+      "post_code": "BN13 1JX",
+      "city": "West Sussex",
+      "route": "The Boulevard",
+      "postal_town": "Worthing"
+    },
+    {
+      "address": "Station Road, Angmering, Littlehampton, West Sussex, BN16 4HH",
+      "geocode": true,
+      "formatted_address": "Station Rd, Littlehampton BN16 3GD, UK",
+      "latitude": 50.8186002,
+      "longitude": -0.4894469,
+      "post_code": "BN16 3GD",
+      "city": "West Sussex",
+      "route": "Station Road",
+      "postal_town": "Littlehampton"
+    },
+    {
+      "address": "Fitzalan Road, Littlehampton, West Sussex, BN17 6FE",
+      "geocode": true,
+      "formatted_address": "Fitzalan Rd, Littlehampton BN17 5JL, UK",
+      "latitude": 50.8078516,
+      "longitude": -0.5369807999999999,
+      "post_code": "BN17 5JL",
+      "city": "West Sussex",
+      "route": "Fitzalan Road",
+      "postal_town": "Littlehampton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2GH",
+    "addr_1": "The Boulevard",
+    "addr_2": null,
+    "addr_3": "Worthing",
+    "addr_4": "West Sussex",
+    "postcode": "BN13 1JX",
+    "url": "http://thesouthdownsscitt.co.uk/",
+    "geocode": true,
+    "formatted_address": "The Blvd, Worthing BN13 1JZ, UK",
+    "latitude": 50.8236499,
+    "longitude": -0.410889,
+    "post_code": "BN13 1JZ",
+    "city": "West Sussex",
+    "route": "The Boulevard",
+    "postal_town": "Worthing"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Aim of Programme:\\r\nProvide trainees with an education of high quality at post-graduate level within an environment of school-based research and enquiry.\\r\nDeepen trainee teachers’ knowledge and understanding of their field of study and secondary/primary education and the relationship between the two.\\r\nImprove the skills of trainees and enable them to meet the Teachers’ Standards.\\r\nEnhance trainee teachers’ ability to analyse critically and apply theories, research and personal values which underpin professional practice.\\r\nCreate opportunities for trainee teachers to begin to define their own positions with respect to their own developing professional and philosophical frameworks.\\r\nDevelop trainee teachers’ ability to evaluate and analyse their academic and professional progress in order to understand that teaching is a process of lifelong professional learning, including developing transferable skills as appropriate for employment in education.\\r\n\\r\nProgramme Content:\\r\n\\r\nSchool Experience: typically 4 days a week.\\r\n\\r\nSCITT Experience:  SCITT Training Days will be at Durrington High School on Fridays.  These will include Professional Studies and Subject Study.\\r\nSome secondary trainees will be based at The Angmering School on Friday afternoons for Subject Study.\\r\n\\r\nPGCE (Post Graduate Certificate in Education):\\r\nAll trainees will undertake the academic award of Post Graduate Certificate in Education (M Level).  The University of Chichester moderates and awards for the PGCE.\\r\n\\r\n\\r\nSchool Partnership:\\r\nThe school will deliver some of the professional and subject study in accordance with the programme requirements and documentation and jointly assesses the trainee against the Teachers’ Standards.\\r\nThe SCITT will deliver aspects of training and provides academic support with the preparation and assessment of the three PGCE assignments, tutor visits, quality assurance and assessment against the Teachers’ Standards.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Standard equivalent to a grade 4 in the GCSE examinations in English and Mathematics. First Degree of a United Kingdom University, Higher Education Institution or an acceptable equivalent at 2.2 or above.  For Secondary, if the degree is not in the subject that applicants wish to teach then they must hold an A Level in that subject and the offer will be subject to completion of a Subject Knowledge Enhancement programme prior to starting their training.\\r\nYou will need to be able to teach two of French, German and Spanish.\\r\nOne language to GCSE and one to KS3. \\r\n",
+    "InterviewProcess": "During the interview candidates are introduced to the SCITT programme and to the school.  They complete a written task, a presentation, a subject knowledge task, a teaching activity and a formal interview.  You have the opportunity to meet SCITT colleagues and ask questions about the course.",
+    "PersonalQualities": "Resilience; \\r\nAn ability to listen to and act on feedback; \\r\nAn effective communicator; \\r\nA true passion for teaching and your subject;\\r\nA genuine interest in how children learn; \\r\nHigh expectations for yourself and for our students. \\r\n",
+    "HowSchoolPlacementsWork": "School Based Experience:\\r\nAll trainees are expected to work in school for the entire academic year – September 2018 through to July 2019. \\r\n\\r\nFor the recommendation of QTS, all trainees will be formally assessed in 2 consecutive Key Stages:\\r\nPrimary (5-11) Key Stage 1 and Key Stage 2\\r\nSecondary (11-16) Key Stage 3 and Key Stage 4\\r\n\\r\nThe time in school will include the following:\\r\nMajority of time in First School with 6 weeks in Second School\\r\n3-5 days in Early Years (Primary)\\r\n3-5 days in Key Stage 3 (Primary)\\r\n3-5 days Special School experience\\r\n3-5 days Primary (Secondary)\\r\n3-5 days KS5 (Secondary) \\r\n\\r\nAll of our partnership schools are based in West Sussex and have good transport links.  This means our trainees typically travel less than 30 minutes to reach their placement school.  We organise placement 1 and 2 for you."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Durrington High School is the Lead School for Primary and Secondary School Direct through The South Downs SCITT.  The South Downs SCITT provides QTS (Qualified Teacher Status) and works in collaboration with The University of Chichester which awards the PGCE (Post Graduate Certificate in Education).  There is a strong partnership with local schools in order to provide the very best training. You will have access to the facilities at the SCITT, Research School, your placement schools and the University library. You will typically have a day each week working with other trainees to reflect and develop your practice and four days each week training on the job working with the young people in our locality. We provide a high quality cross phase and bespoke training programme which is full time for one year and commences in September. Upon successful completion of your training you will be awarded Qualified Teacher Status, along with a Post Graduate Certificate of Education (PGCE). You will teach across two consecutive age ranges/phases and experience teaching in at least two contrasting schools as well as completing training in SEND. You will be guided to complete an action research project as part of your training. ",
+    "TrainWithDisability": "We will discuss how we can support each applicant individually.  Our schools all have appropriate facilities to accommodate candidates with  physical impairments.  We have specialist teachers in some of our schools that are expert in working with physical and hearing impairments and can support with making reasonable adjustments to our training.  Candidates with dyslexia can access extra time for assignments.  ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The South Downs SCITT is based at Durrington High School (The Boulevard, Worthing, West Sussex, BN13 1JX).  The SCITT is part of the Durrington Multi Academy Trust (DMAT).  DMAT has a Primary, Secondary and Research School as part of the Trust and works with local schools to offer training.\\r\n\\r\nThe SCITT offers places for Primary and Secondary.  At Secondary we offer Art, Drama, Biology, Chemistry, Computing, English, French, History, Geography, German, Mathematics, PE, Physics and Spanish.",
+        "UcasInstitutionCode": "2AZ"
+      }
+    ]
+  },
+  "has_inst": true
+}

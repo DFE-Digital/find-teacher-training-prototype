@@ -1,0 +1,86 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Reading",
+  "provider": "Burnham Teaching Partnership",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1MT/2GLB",
+  "providerCode": "1MT",
+  "programmeCode": "2GLB",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Hogfair Lane, Burnham, Slough, SL17HG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hogfair Lane, Burnham, Slough, SL17HG",
+      "geocode": true,
+      "formatted_address": "Hogfair Ln, Burnham, Slough SL1 7HG, UK",
+      "latitude": 51.5324405,
+      "longitude": -0.6539222,
+      "post_code": "SL1 7HG",
+      "city": "Burnham",
+      "route": "Hogfair Lane",
+      "postal_town": "Slough"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1MT",
+    "addr_1": "Burnham Grammar School",
+    "addr_2": "Hogfair lane",
+    "addr_3": "Burnham",
+    "addr_4": "Slough",
+    "postcode": "SL17HG  ",
+    "url": "http://www.burnhamgrammar.org.uk",
+    "geocode": true,
+    "formatted_address": "Hogfair Ln, Burnham, Slough SL1 7HG, UK",
+    "latitude": 51.532395,
+    "longitude": -0.6520342,
+    "post_code": "SL1 7HG",
+    "city": "Burnham",
+    "route": "Hogfair Lane",
+    "postal_town": "Slough"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Your training will lead to a recommendation for the award of Qualified Teacher Status (QTS) by the Department for Education (DFE).The PGCE includes 60 credits at Master level, the equivalent of one third of an MA that you can add to subsequently.\\r\nThe course content has been developed in collaboration between the University and Partnership Schools so that you can explore issues raised in the University through your work with pupils in school. \\r\nThe University based programme comprises two main aspects: Professional Studies and Subject Studies.\\r\nProfessional Studies develops insights into general aspects of education essential for entrants to the teaching profession. \\r\nSubject Studies enables you to study the teaching of your chosen subject. It includes: the nature of the subject in secondary school; it's place in the National Curriculum; what and how it's taught; how it is assessed; providing for young people with different backgrounds and abilities; teaching to the examination specification; and using ICT effectively.\\r\nSchool experience is integrated into all aspects of the course, and you will work in schools throughout the year. Your work in school takes a variety of forms including observing experienced teachers, team teaching, working with small groups, taking responsibility for the learning of whole classes and getting involved in all aspects of school life. You will be well supported in school by a range of experienced and well-trained people including a subject and a professional mentor and University based tutors. \\r\nYou will be assigned a mentor in your training school who will support you on a daily basis.\\r\nYou will also be assigned a tutor from the university who will visit you once every half term. Your tutor will monitor your achievements, evaluate your progress and work with your mentor to ensure that the training programme is appropriate for your own individual needs. \\r\nYou will be assessed against the eight Teacher's Standards, based on the evidence of your teaching, your wider contribution to school life and your ability to reflect on and evaluate these experiences. Assessment will be carried out in school and moderated by your University tutor.\\r\nPGCE students will write three assignments. These are designed to deepen your reflection on your school experience in the light of educational research, and to develop your ability to research your own practice. As well as being assessed in their own right, the assignments will contribute evidence towards your assessments against the Teacher's Standards.\\r\n \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE\\r\nYou must have at least a C grade (or equivalent) for GCSE Maths and English.\\r\nDegree\\r\nYou must have a 1st, 2:1, or 2:2 honours degree in a subject that is closely related to the subject they intend to teach.\\r\n\\r\nA Subject Knowledge Enhancement (SKE) course can be considered for Maths, Chemistry,Biology, Physics, English, Geography, Computer Science, German, Spanish and French where appropriate.\\r\n\\r\nAll candidates must have passed the QTS Skills Test in numeracy and literacy before starting the course.\\r\nAll applicants are expected to have gained some experience in a state secondary school prior to interview\\r\n",
+    "FeeInternational": 15270.0,
+    "FinancialSupport": "http://www.reading.ac.uk/ready-to-study/study/fees-and-funding/fees-and-funding-ug.aspx",
+    "InterviewProcess": "The interview process will involve a number of activities including:\\r\nIndividual work\\r\nGroup discussions\\r\nIndividual presentations\\r\nWritten assessment\\r\nThese activities will enable you to talk about your experiences, show what you know about teaching in Secondary schools and will demonstrate your potential to be an excellent secondary school teacher. We are not looking for the finished product, but for people who are enthusiastic and eager to learn and who have the potential to become outstanding teachers. Tutors from the University of Reading may also be present at the interviews\\r\n",
+    "OtherRequirements": "Enhanced DBS Check\\r\nMedical Check\\r\nRight to Work/Study in the UK\\r\nPhoto ID\\r\n",
+    "PersonalQualities": "We are looking to recruit candidates who have the potential to become outstanding teachers. Some of the personal qualities we are looking for are: \\r\nA friendly and approachable nature \\r\nGood interpersonal skills \\r\nOrganisation and time management skills\\r\nA passion for your subject to deliver a first class education\\r\nAn ability to communicate with enthusiasm and relate to young people in the classroom \\r\nA positive outlook and resilient nature \\r\nA creative and innovative approach \\r\nAn ability to reflect on experiences of working with children and young people in schools or other settings\\r\nKnowledge of the school curriculum\\r\n",
+    "HowSchoolPlacementsWork": "During the training year you will have two placements. You will have a main placement school where you will be for the majority of the school year, and in addition there will be a second smaller placement of approximately 6 weeks.\\r\nYour placement schools are selected through discussion with yourself and the partner schools to ensure that you are placed in the right training environment.\\r\nThese schools will be a short distance from one another as all of our partner schools are within a 25 minute drive of each other. \\r\nOur Secondary schools will enable you to teach KS3, KS4 and KS5 students and comprise of comprehensive and grammar as well as single sex and mixed school settings.\\r\nWe have a total of 14 partner schools and this includes 5 Secondary schools. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Burnham Teaching Partnership is comprised of grammar, secondary and primary schools in the Burnham locality. Burnham Grammar School leads this partnership of schools. Our schools offer a welcoming, supportive and rewarding place to train.  We offer a comprehensive training package for our trainees and the opportunity to work in a truly diverse range of schools. We offer a wealth of experience and are committed to providing a tailor made training experience.\\r\nOur partnership of schools, are all situated within a few miles of each other and provide a diversity of educational experiences. We will provide you with a subject specific mentor, with whom you will have allocated meetings on a weekly basis to discuss your progress. You will also be allocated to a pastoral mentor, with whom you can develop your pastoral care in preparation for your role as a form tutor. In addition to this we have a comprehensive training programme for all of our trainees and NQTs, this consists of a weekly training session presented by a variety of our teaching staff, whereby they deliver specific training in their particular area of expertise. We encourage you to share your individual interests and skills in our comprehensive range of extra-curricular activities and will provide opportunities for you to be involved with educational visits.\\r\nBurnham Grammar School works collaboratively with it's university  partners  to ensure that it's trainees receive the best of what School-based and University-based training has to offer.  \\r\nFor more information about visit our website https://www.burnhamteachingpartnership.org/\\r\n",
+    "TrainWithDisability": "The Burnham Teaching Partnership and our affiliated universities welcomes all students.\\r\nWe encourage applications from the right candidates regardless of age, disability, gender identity, sexual orientation, religion, belief or race.\\r\nhttp://www.reading.ac.uk/disability/campusaccess/do-campusaccess.aspx\\r\nhttps://unihub.mdx.ac.uk/support/disability-and-dyslexia\\r\nhttps://www.roehampton.ac.uk/disability-services/",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Reading has a long and highly successful experience of ITT and particularly of working with schools on school-based training programmes. Initial Teacher Training courses at the University of Reading are based upon the belief that education is about active and meaningful learning through which teachers become analytical, creative and receptive to new ideas. The University works closely with it's Partnership schools, planning and delivering training programmes in collaboration: teaching is practice - as well as research-led. Schools are supported in recruiting the highest-calibre trainees who become excellent teachers at the end of their training. http://www.reading.ac.uk/",
+        "UcasInstitutionCode": "R12"
+      },
+      {
+        "Description": "The Burnham Teaching Partnership works with Middlesex University to provide School Direct Teacher Training.  Middlesex University has been training teachers for over 50 years and has now embraced this government initiative to support school-led teacher training.   Our training programmes are designed to appeal to innovative and imaginative people of any age or ethnicity who have an expertise which they wish to share with young people and our partnership offers new teachers the best possible start to a career in education. \\r\nKey strengths are:\\r\n•\\thighly competent and experienced tutors \\r\n•\\thigh quality pastoral care for trainees\\r\n\\r\n",
+        "UcasInstitutionCode": "M80"
+      },
+      {
+        "Description": "The University of Roehampton has been at the forefront of higher education for over 175 years and has a long-established, international reputation as one of the principal providers of teacher education in the UK. The academic staff are at the cutting edge of research in teacher education, which has a positive impact on the quality of provision for all of our students; and all tutors have extensive teaching experience in schools.  99% of our teacher training graduates are in work or further study six months after leaving us (Destinations of Leavers of Higher Education 2013/2014)\\r\n",
+        "UcasInstitutionCode": "R48"
+      }
+    ]
+  },
+  "has_inst": true
+}

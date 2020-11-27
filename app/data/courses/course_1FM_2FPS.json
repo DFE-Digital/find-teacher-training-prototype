@@ -1,0 +1,84 @@
+{
+  "locationType": "School",
+  "accrediting": "Roehampton University",
+  "provider": "Kingston School Direct",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1FM/2FPS",
+  "providerCode": "1FM",
+  "programmeCode": "2FPS",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Coombe Girls' School, Clarence Avenue, New Malden, Kingston-Upon-Thames, KT3 3TU",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Coombe Girls' School, Clarence Avenue, New Malden, Kingston-Upon-Thames, KT3 3TU",
+      "geocode": true,
+      "formatted_address": "Clarence Ave, New Malden KT3 3TU, UK",
+      "latitude": 51.4099484,
+      "longitude": -0.2635318,
+      "post_code": "KT3 3TU",
+      "city": "Greater London",
+      "route": "Clarence Avenue",
+      "postal_town": "New Malden"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1FM",
+    "addr_1": "Coombe Girls' School",
+    "addr_2": "Clarence Avenue",
+    "addr_3": "New Malden",
+    "addr_4": "Kingston-Upon-Thames",
+    "postcode": "KT3 3TU ",
+    "url": "http://www.coombegirlsschool.org",
+    "geocode": true,
+    "formatted_address": "Clarence Ave, New Malden KT3 3TU, UK",
+    "latitude": 51.4099484,
+    "longitude": -0.2635318,
+    "post_code": "KT3 3TU",
+    "city": "Greater London",
+    "route": "Clarence Avenue",
+    "postal_town": "New Malden"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE in religious education at Roehampton University is designed to be an innovative and dynamic introduction to the rich variety of possibilities for teaching in schools today. The programme has an active approach to learning. You are encouraged to develop your knowledge and understanding of the major religious traditions, other religious traditions and contemporary secular philosophies. \\r\n\\r\nTeaching is by specialists from the traditions but a central feature of the programme is the use of visits to faith communities. We have good relations with communities representing the Buddhist, Christian, Hindu, Jewish, Muslim and Sikh faiths. London is, of course, particularly rich in its religious and cultural diversity. \\r\n\\r\nYou will also be expected to look critically at the difficult philosophical issues raised by religion and to develop your thinking about the place and significance of religion today. Thus, there is a strong emphasis not only on what we can learn about religions, but what we can learn from religion, even if we do not share a particular religious world view. In schools, this will mean examining practical strategies for enabling religion to contribute to pupils' spiritual, moral, social and cultural development. \\r\n\\r\nReligious Education Subject Studies will take place throughout the year on Wednesdays - at university, in a partner institution or site of educational interest.  On some Wednesdays you will focus on Professional Studies (more generic aspects of teaching and learning) with student teachers from other specialisms.  This will take the form of lectures, seminars, workshops or research. \\r\n\\r\nFor further information [click here](https://www.roehampton.ac.uk/postgraduate-courses/pgce-secondary/pgce-secondary-religious-education-specialism/)\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Roehampton University requires a minimum of a 2:2 honours degree, with GCSEs in English Language and Maths at Grade C or Grade 5, or above.   For equivalency testing, we will accept tests from [equivalencytesting.com](http://www.equivalencytesting.com/)\\r\n\\r\nYou should have a good first degree in religious studies, theology, philosophy or a closely related discipline.  You may be asked to acquire an additional breadth and depth of religious knowledge (including philosophy and ethics) and you should be prepared to develop your knowledge of the major world religions, philosophy of religion and ethics. \\r\n\\r\nFor full details of entry requirements [click here](https://www.roehampton.ac.uk/applying/pgce-secondary-entry-requirements/)",
+    "InterviewProcess": "We operate a one stage process on our Roehampton programmes.\\r\n\\r\nCoombe Girls' School, as the lead school in the partnership, will co-ordinate the recruitment process. The University of Roehampton will carry out all the necessary academic eligibility checks. \\r\n\\r\nFollowing successful shortlisting, you will be invited for an assessment day in school, up to twenty five working days after we receive your application. This may include an individual interview, a presentation task, leading part of a lesson, a subject knowledge assessment and a written task. This will also be an opportunity for you to learn about the training programme and partnership, see the school and talk to some staff and pupils. The process will be rigorous and will enable us to assess your potential for the teaching profession and to identify strengths and weaknesses for you to begin to address. \\r\n\\r\nIf you are successful at the school interview, our university partner will carry out a paper scrutiny of your application and may invite you to an interview day to clarify certain points and give you an opportunity to learn more about the PGCE course, the tutors and the facilities at the university. ",
+    "OtherRequirements": "You will ideally have some experience of working with young people, perhaps through volunteer work, young clubs, sports teams or charities. \\r\n\\r\nWe strongly recommend that you gain some experience in a classroom prior to interview.\\r\n\\r\nAll places on the PGCE are subject to satisfactory health and criminal convictions assessments. Applicants will be required to complete an enhanced Criminal Records Bureau Disclosure and Barring Service (DBS) check.  We expect you to share our commitment to safeguarding and promoting the welfare of children, young people and vulnerable adults.",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate and enthusiastic about their subject, with a real desire and ability to communicate this with young people of all abilities, needs and backgrounds at secondary level. \\r\n\\r\nYou should be a professional with a commitment to teaching as your chosen career and a willingness to take responsibility for your own learning, and the ability to work well within a team. \\r\n\\r\nWe expect you to be confident in the use of information and communications technology, and willing to extend your abilities in the use and application of technology in your teaching. ",
+    "HowSchoolPlacementsWork": "Once you have been accepted onto the programme, your placement schools will be allocated from the pool of schools offering your subject.  \\r\nThis process is not normally finalised until late June, by when our schools will have fixed their staffing for September.\\r\n\\r\nYou will have two consecutive school placements (the A-B model).  The first lasts three months and the second lasts five months, meaning you will gain a deep understanding of both schools, their challenges, approaches and contexts.  We aim to give you two contrasting settings, in order for you to experience this variety.  Schools will give you a balance of year groups and abilities and, where possible, arrange for you to teach KS5, but this is not always manageable in both placement schools.\\r\n\\r\nPlacement one runs from late September to mid-December and placement two runs from January to the start of June.  During this placement time, you spend four days a week in school (not Wednesdays).  \\r\n\\r\nYou may express a preference of school, which we will consider when drawing up the placements - but we cannot guarantee it.  We aim to keep your travel time to a maximum of one hour, although in most cases travel time is much less.\\r\n\\r\nFrom the beginning you will be treated as a member of staff, welcomed into your subject department and invited to attend staff meetings, development days, staff social activities and relevant educational trips.\\r\n\\r\nEach trainee will have a dedicated mentor in their placement school, who will guide you and work alongside you to identify needs and provide personalised support as you develop. Our mentors are outstanding teachers who are required to undertake a rigorous training programme to develop their coaching, effective classroom observation and feedback skills. They will work with you to develop rigour, professional knowledge, understanding and skills in order to deliver creative, purposeful and challenging teaching and learning. \\r\n\\r\nYou will gradually build up your contact time with students as you develop your confidence, teaching skills and time management. \\r\n\\r\nYou will be assigned to a tutor group, in order to regularly shadow a tutor and support all-important pastoral work. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our partnership aims to create a caring and vibrant environment, where trainee teachers can develop their teaching expertise, knowledge and skills while feeling valued and supported by expert professionals and inspirational leaders.  Our teachers are excellent practitioners, committed to sharing their skills, knowledge and practice with the next generation of teachers. \\r\n\\r\nCoombe Girls' School is a nationally designated Teaching School judged 'outstanding' by Ofsted outstanding in every category at its last inspection.\\r\n\\r\nSchools involved in our programme have included:\\r\nChessington Community College, Coombe Boys' School, Coombe Girls' School, Hinchley Wood School, King's College School (Wimbledon - independent), Raynes Park High School, Richard Challoner School, Rutlish High School, Southborough High School, The Holy Cross School, The Kingston Academy, The Tiffin School, The Tiffin Girls' School and Tolworth Girls' School. \\r\n\\r\nAnd in our primary programme:\\r\nBurlington Juniors, Christ Church Primary (New Malden), Coombe Hill Infants, Coombe Hill Juniors, Ellingham Primary, Green Lane Primary, King's Oak Primary, Knollmead Primary, Robin Hood Primary, Sacred Heart Primary (Teddington) and St Mary's and St Peter's Primary (Teddington).\\r\n\\r\nThe unique strength to the secondary partnership lies in the diversity of provision, offering our student teachers an enriching, contrasting experience.  The partnership includes co-educational schools, single sex, selective and non-selective and one independent.  Our secondary programmes provide opportunities to develop post-16 teaching practice. \\r\n\\r\nOur schools enjoy a highly valued reputation locally, many oversubscribed due to the competitive, high-performing profile of our borough.  Student behaviour is generally excellent and results show that many students consistently out-perform their national peers.",
+    "TrainWithDisability": "All school direct students have full access to the student services in our university provider partners.  This includes support services for students with a range of physical and mental health needs.  Their campuses have full disability access.\\r\n\\r\nStudents may also access well-being and counselling services and support services for specific learning needs, including dyslexia and dyspraxia, through academic achievement advisers.\\r\n\\r\nThe Institute of Education has a nursery available (run by University College London).  However, for student teachers we recommend you look into childcare options near your place of residence or host teaching school.  \\r\n\\r\nOur partner universities also offer accommodation for student teachers, although it may be better to find accommodation near placement schools. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as 'outstanding' in every criterion across Primary and Secondary Education.\\r\n\\r\nUCL IOE has been providing first-class teacher training, in partnership with schools and colleges for over 100 years.  UCL IOE graduates are highly sought after in schools and colleges throughout London and the UK. Its central location in historic Bloomsbury means that it is in the heart of London.  Close by are stations at Russell Square, King's Cross, St Pancras and Euston.",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "The Roehampton University School of Education is one of the principal providers of teacher training in the UK, with partnerships of over 350 schools and a rich history of over 175 years.\\r\n\\r\nStudents enjoy high quality teaching and excellent employment prospects: 99% of teacher training graduates are in work or study six months after leaving (Destinations of Leavers of Higher Education 2013/14). \\r\n\\r\nThe beautiful parkland campus in south-west London is only 30 minutes from the West End. The School is ranked third in London for the quality of our research in the field of education (Research Excellence Framework 2014).\\r\n",
+        "UcasInstitutionCode": "R48"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "G56"
+      }
+    ]
+  },
+  "has_inst": true
+}

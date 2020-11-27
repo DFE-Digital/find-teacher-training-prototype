@@ -1,0 +1,135 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Wolverhampton",
+  "provider": "Telford Partnership",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2GO/36GY",
+  "providerCode": "2GO",
+  "programmeCode": "36GY",
+  "schools": [
+    {
+      "name": "Grange Park Primary School",
+      "address": "Grange Avenue, Stirchley, TF3 1FA",
+      "code": "A"
+    },
+    {
+      "name": "Ladygrove Primary School",
+      "address": "Old Office Road, Dawley, TF4 2LF",
+      "code": "C"
+    },
+    {
+      "name": "St Georges Primary School",
+      "address": "London Road, Telford, Shropshire, TF2 9LJ",
+      "code": "D"
+    },
+    {
+      "name": "Randlay Primary School",
+      "address": "Randlay, Telford, TF4 2LR",
+      "code": "E"
+    },
+    {
+      "name": "Hollinswood Primary school",
+      "address": "Dale Acre Way, Hollinswood, Telford, TF3 2EP",
+      "code": "H"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Grange Avenue, Stirchley, TF3 1FA",
+      "geocode": true,
+      "formatted_address": "Stirchley, Telford TF3 1FA, UK",
+      "latitude": 52.6558315,
+      "longitude": -2.4348622,
+      "post_code": "TF3 1FA",
+      "city": "Stirchley",
+      "route": null,
+      "postal_town": "Telford"
+    },
+    {
+      "address": "Old Office Road, Dawley, TF4 2LF",
+      "geocode": true,
+      "formatted_address": "Old Office Rd, Dawley, Telford TF4 2LS, UK",
+      "latitude": 52.67014709999999,
+      "longitude": -2.4713624,
+      "post_code": "TF4 2LS",
+      "city": "Dawley",
+      "route": "Old Office Road",
+      "postal_town": "Telford"
+    },
+    {
+      "address": "London Road, Telford, Shropshire, TF2 9LJ",
+      "geocode": true,
+      "formatted_address": "St George's, Telford TF2 9LJ, UK",
+      "latitude": 52.69214419999999,
+      "longitude": -2.4364512,
+      "post_code": "TF2 9LJ",
+      "city": "Saint George's",
+      "route": null,
+      "postal_town": "Telford"
+    },
+    {
+      "address": "Randlay, Telford, TF4 2LR",
+      "geocode": true,
+      "formatted_address": "Randlay Ave, Stirchley, Telford TF3 1UW, UK",
+      "latitude": 52.6634022,
+      "longitude": -2.4392947,
+      "post_code": "TF3 1UW",
+      "city": "Stirchley",
+      "route": "Randlay Avenue",
+      "postal_town": "Telford"
+    },
+    {
+      "address": "Dale Acre Way, Hollinswood, Telford, TF3 2EP",
+      "geocode": true,
+      "formatted_address": "Dale Acre Way, Telford TF3 2EN, UK",
+      "latitude": 52.6729907,
+      "longitude": -2.4366372,
+      "post_code": "TF3 2EN",
+      "city": "Shropshire",
+      "route": "Dale Acre Way",
+      "postal_town": "Telford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2GO",
+    "addr_1": "Grange Park Primary School",
+    "addr_2": "Grange Avenue",
+    "addr_3": "Telford",
+    "addr_4": "Shropshire",
+    "postcode": "TF3 1FA ",
+    "url": "http://www.grangeparkprimaryschool.co.uk/web",
+    "geocode": true,
+    "formatted_address": "Grange Ave, Stirchley, Telford TF3 1FA, UK",
+    "latitude": 52.655375,
+    "longitude": -2.434867,
+    "post_code": "TF3 1FA",
+    "city": "Stirchley",
+    "route": "Grange Avenue",
+    "postal_town": "Telford"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Trainee teachers undertaking the PGCE / SDT route will be expected to complete 2 successful placements in 2 different partnership schools and in 2 different Key Stages. They will also be required to complete a Record of Professional Development to evidence meeting standards. \\r\nPlacement one starts in Oct and finishes in Dec  with preparation days the week before the placement commences.  During placement 1 the trainee teachers should teach 50% of a full timetable - this could be whole class, groups and 1:1.  They should also be team teaching and planning, leading group work and assessing pupil progress. They will also need to observe practice in the Foundation stage, Key Stage one and Two  which should include observing and teaching phonics. \\r\n\\r\nDuring January and February the students will have enhancement opportunities they will have the opportunity to spend 2 weeks in an alternative setting eg , special school,  undertake immersion days across a variety of settings eg : school with a lot of EAL pupils. They will also undertake one week in a Nursery or Secondary school . \\r\n\\r\nPlacement Two commences in March again with preparation days and finishes at the end of June. Trainee teachers will build up to teaching 70 % of a full timetable as  well as all the other experiences as in Placement one. \\r\n\\r\nThe Telford Partnership works very closely with Wolverhampton University and all schools work closely together to ensure trainee teachers are well supported and they get the most out of their training. All schools in the Partnership have a lead teacher and mentors again who work closely together across the partnership. We meet regularly to look at what we can offer trainees and also give trainees some say in which schools they may like to train with, this is for Primary PGCE, Secondary placements are subject specific. ",
+    "CourseLength": "OneYear",
+    "InterviewProcess": "All trainee teachers, as part of our selection procedures, will take part in a rigorous selection process designed to assess their suitability to teach. This includes an interview, audit of subject knowledge, Fitness to teach and enhanced DBS checks.\\r\n\\r\nAs part of the Primary selection process within the Telford Partnership we ask our candidates to choose a Year group to read/ share a story with  and then we go on a short learning walk across the school, this is followed by  a short session looking at qualifications and fitness to teach with our link University tutor and this is followed by a joint interview with Partnership staff and the University tutor. \\r\n\\r\nAll Primary selection sessions take place in a primary school setting. \\r\n\\r\nSecondary selection involves a similar process and is run by each Secondary school and link subject tutors from Wolverhampton University.  ",
+    "HowSchoolPlacementsWork": "See section about the course for some information. \\r\n\\r\nThe Telford Partnership has 5 Primary schools and 3 Secondary schools. We take 5 Primary students each year as a minimum so we place one student in each primary school for each placement. Secondary schools take students in subject areas (see UCAS offer). \\r\n\\r\nSchools are all in Telford and no further than 10 minutes from the Town Centre road, train and bus routes are good. \\r\n\\r\n Students once through the selection process have the opportunity to visit all schools in the partnership and talk to staff and then can ask for a specific Primary school if they feel this is a fit for them. We try hard to work with students to accommodate preferences if they have any. Again Secondary placements are subject specific.\\r\n\\r\nWe also offer regular catch up meetings for students to get together at one school  with Lead teachers, University tutors  and mentors before the placements begin and during placements. We feel this is very important part of our Partnership offer. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Telford Partnership offers an outstanding academic and ‘hands on’ school based experience in a variety of settings working in teams that are friendly and supportive. We are a partnership of 5 Primary and 3 Secondary schools all in Telford and we work very closely together \\r\nAs part of School Direct we give an innovative opportunity to access high quality school based initial teacher training with an outstanding ITT partner— University of Wolverhampton\\r\nWe warmly welcome you to our bespoke School Direct PGCE programme for 2018/19. We are looking forward to working together to develop you into a passionate teacher. The Telford Partnership offers trainee teachers the opportunity to work and learn in range of schools\\r\n\\r\n“We are looking to recruit people who we believe can make a real difference to children’s learning. We are looking for candidates that will fit naturally into our schools—that share the same ethos and values”\\r\n",
+    "TrainWithDisability": "As a Partnership we are committed to inclusion for all and have experienced staff who ensure all needs can be supported. All schools in the Partnership have policies and procedures in place to support trainees with all disabilities or needs and all environments are accessible for all.  We do regular and specific risk assessments when needed and seek advice if needed as well. \\r\n\\r\nWe have worked previously with a student on work experience who had cerebral Palsy she used the lift in school, we provided her with space in the classrooms where she was comfortable to work and ensured where support was needed it was available.  Her placement was very successful. \\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Wolverhampton University have been training Education professionals for over 100 years. Teaching training is a significant aspect of our core business and accounts for just under 50% of all activity within the Institute. They provide a provide a sustainable Professional Development model that enhances teacher effectiveness. \\r\n\\r\nThe University works with over 400 schools, private providers and colleagues in genuine partnership. ",
+        "UcasInstitutionCode": "W75"
+      }
+    ]
+  },
+  "has_inst": true
+}

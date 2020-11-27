@@ -1,0 +1,79 @@
+{
+  "locationType": "School",
+  "accrediting": "King's College London (University of London",
+  "provider": "Tonbridge Grammar School",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1LX/378C",
+  "providerCode": "1LX",
+  "programmeCode": "378C",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Deakin Leas, Tonbridge, TN9 2JR",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Deakin Leas, Tonbridge, TN9 2JR",
+      "geocode": true,
+      "formatted_address": "Deakin Leas, Tonbridge TN9 2JR, UK",
+      "latitude": 51.1835912,
+      "longitude": 0.2730175,
+      "post_code": "TN9 2JR",
+      "city": "Kent",
+      "route": "Deakin Leas",
+      "postal_town": "Tonbridge"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1LX",
+    "addr_1": "Tonbridge Grammar School",
+    "addr_2": "Deakin Leas",
+    "addr_3": null,
+    "addr_4": "Tonbridge",
+    "postcode": "TN9 2JR ",
+    "url": "https://www.tgs.kent.sch.uk/wanttobeateacher/",
+    "geocode": true,
+    "formatted_address": "Deakin Leas, Tonbridge TN9 2JR, UK",
+    "latitude": 51.1837732,
+    "longitude": 0.2736904000000001,
+    "post_code": "TN9 2JR",
+    "city": "Kent",
+    "route": "Deakin Leas",
+    "postal_town": "Tonbridge"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "n/a",
+    "AboutCourse": "The PGCE RE course offers opportunities to investigate the different religious and non-religious worldviews that are taught in schools, but we still assume that you will come onto the course with significant subject knowledge. This is why we require degree level evidence of such knowledge.\\r\n\\r\nThe course is designed to train you to become a skilful and reflective classroom practitioner. To this end we focus equipping you to meet the professional standards required to attain Qualified Teacher Status and these provide the framework for the course. There are two strands to our course: one focuses on RE subject-specific work, the other encompasses an exploration of generic issues related to professional practice and educational policy.\\r\n\\r\nThe RE strand is met through subject-specific sessions, in which we explore, debate, and clarify the aims in religious education. We focus on how to translate these aims into effective classroom practice, exploring practically how to devise lesson plans, how to choose or create engaging and appropriate resources, and how to ensure that our planning is shaped by an accurate and responsive understanding of the nature and needs of our pupils. In this way we seek to enable our pupils to become religiously literate.\\r\n\\r\nThe other strand is met through our 'Policy and Professional Practice' programme, through which we explore and debate the aims, purposes and provision of education in the UK today. This programme is formed of a weekly lecture, followed by seminars in cross-curricular groups, in which you are encouraged to discuss and reflect upon these issues, in light of insights gained from your school placements.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants should have one of the following degrees at 2:1 level or above: \\r\n - a degree in Theology or Religious Studies or Philosophy\\r\n - a joint degree in Theology or Religious Studies and one other subject \\r\n - a degree in a related subject in which Theology or Religious Studies constitutes roughly 40% of the content of the degree \\r\n - a higher degree containing a range of Theological or Religious Studies components such as a Masters or a PhD.\\r\n",
+    "FeeInternational": 19320.0,
+    "FinancialSupport": "n/a",
+    "InterviewProcess": "STAGE 1: School-based interview and delivery of short lesson taster. We offer school experience visits upon application to support candidates,\\r\n\\r\nSTAGE 2: Kings College London - The selection process normally involves an interview, a short presentation by the candidate, a discussion and a short piece of writing.\\r\n\\r\nWe select our trainees when we have evidence of the following qualities:\\r\n\\r\n-  a conceptual understanding of the content of religious education or philosophical thinking\\r\n-  an ability to think and reason clearly\\r\n-  an ability to interact effectively with pupils\\r\n-  an ability to interact with colleagues\\r\n-  an ability to present ideas clearly and at an appropriate level\\r\n-  an ability to recognise own shortcomings\\r\n-  a strong desire to continue to learn\\r\n-  flexibility of mind and the potential necessary to improve\\r\n-  successful experience with children or clear potential for this\\r\n-  clarity and accuracy of written and spoken English\\r\n-  a successful study record\\r\n-  perseverance and stamina\\r\n-  a passion for Religious Education\\r\n",
+    "OtherRequirements": "All applicants for teacher training programmes must pass the Department for Education’s Literacy and Numeracy Skills Tests prior to commencing their teacher training course.\\r\n\\r\nThe Department for Education requires the Disclosure and Barring Service (formerly the Criminal Records Bureau) to vet the background of persons working in their schools. Candidates offered a place on a PGCE course will be asked to complete an enhanced check with the DBS to ensure they do not have a criminal background which might prevent them from working as a teacher. This must be completed before you register on the programme.\\r\n",
+    "PersonalQualities": "- an ability to think and reason clearly\\r\n - an ability to interact effectively with pupils\\r\n - an ability to interact with colleagues\\r\n - an ability to present ideas clearly and at an appropriate level\\r\n - an ability to recognise own shortcomings\\r\n - a strong desire to continue to learn\\r\n - flexibility of mind and the potential necessary to improve\\r\n - successful experience with children or clear potential for this\\r\n - clarity and accuracy of written and spoken English\\r\n - evidence of conceptual understanding\\r\n - a successful study record\\r\n - perseverance and stamina\\r\n - a passion for Religious Education\\r\n",
+    "HowSchoolPlacementsWork": "You will have two different school placements during the course. You will be based in Tonbridge Kent within easy reach of London.\\r\nWe work with a large number of schools around West Kent through membership of Teaching School Alliances and we select school placements carefully, taking into account the teachers who act as mentors and the subjects they offer. \\r\n\\r\nWe try to ensure that all trainees have a reasonable journey to school and to ensure that you have a balanced teaching experience including the full secondary age (11-18) and ability range."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "School Direct is a route into teaching which moves the focus of study from a university to a school. With School Direct, you are selected by us from day one and we make a commitment not only to your training but to your subsequent employment.\\r\n\\r\nWe are a high achieving selective grammar school with academy status, educating girls between the ages of 11 and 16 and girls and boys in the Sixth Form. We prepare students for GCSEs and the International Baccalaureate. In addition to an extensive curriculum, there is an extensive range of extracurricular activities. [SCHOOL VISION](https://www.tgs.kent.sch.uk/school-vision/)\\r\n\\r\nWe work in partnership with King's College London to provide a tailored programme of training. \\r\n\\r\nDo have a look at our other ITT places with the Kaizen Alliance - under Weald of Kent Grammar School.\\r\n\\r\nAdditionally as a lead school we are able to provide the following :\\r\n\\r\n* Popular school experience placements prior to the starting of the course.\\r\n* Focused school-based Professional Studies.\\r\n* Subject Knowledge knowledge development in a high performing school \\r\n* The opportunity to gain 70 Masters Credits.\\r\n* Training opportunities across our ITT contact schools and the Kaizen Teaching School Alliance.\\r\n* School Placements in differing contexts across our network of schools and Pupil Referral Unit.\\r\n* An SEN experience.\\r\n* Support to secure a teaching position on completion of the course.\\r\n",
+    "TrainWithDisability": "To comply with equality legislation, we ensure that interview procedures promote equality of opportunity and avoid discrimination. It is a two stage process with KCL.\\r\n\\r\nApplicants with disabilities are under no obligation to disclose their disabilities. We, together with KCL will ensure that our provision does not place applicants with declared disabilities at a disadvantage. We will consider making anticipatory adjustments to promote positively equality of access for disabled applicants, including access to benefits, facilities and services. \\r\n\\r\nWe will support candidates with disabilities and other needs within our Equality Policy and we have well developed staff well-being programmes.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We have worked with KCL for a number of years. You will do your PGCE taught elements in Central London.  [KING'S INFO](https://www.kcl.ac.uk/sspp/departments/education/study/schooldirect/Information-for-Trainees.aspx)",
+        "UcasInstitutionCode": "K60"
+      }
+    ]
+  },
+  "has_inst": true
+}

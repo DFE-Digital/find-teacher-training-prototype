@@ -1,0 +1,59 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Winchester",
+  "provider": "Ambitions Teaching School",
+  "subjects": [
+    "Art and design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "135/366P",
+  "providerCode": "135",
+  "programmeCode": "366P",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Petersfield Road, Bournemouth, BH7 6QP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Petersfield Road, Bournemouth, BH7 6QP",
+      "geocode": true,
+      "formatted_address": "Bournemouth BH7 6QP, UK",
+      "latitude": 50.7404637,
+      "longitude": -1.8239192,
+      "post_code": "BH7 6QP",
+      "city": "Bournemouth",
+      "route": null,
+      "postal_town": "Bournemouth"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "The course prepares you to teach across the age ranges 11-16 and is structured around six modules - a combination of taught modules based at the University and placement modules based in schools or educational settings.\\r\n\\r\nYou will undertake studies in all elements of secondary education; extend your knowledge of learning and teaching, of the breadth and scope of the curriculum and the professional skills associated with high-quality teaching. You will then apply these areas of understanding and skill to classroom practice throughout the year, including during two assessed placements in schools or educational settings.\\r\n\\r\nUpon successful completion of the course you will be awarded a PGCE with recommendations for the award of Qualified Teacher Status (QTS).\\r\n\\r\nAnyone already in education will tell you that teaching is one of the toughest jobs out there. It's also one of the most rewarding. To make sure you’re a successful and confident teacher in the 21st-century, we have devised a vibrant programme informed by research and constantly reviewed to ensure students are equipped with the most up-to-date developments in primary education.\\r\n\\r\nOur passion is to provide you with a university experience that immerses you in the theory and practice of teaching. You will love studying at our beautiful campus where your lecturers know you by name, helping you to develop the confidence you need to be an outstanding teacher and make a real difference in the world.\\r\n",
+    "InterviewProcess": "If you already meet or are expected to meet our entry requirements, and have demonstrated your passion and commitment to teaching in your application, you will be invited to attend an interview. \\r\n\\r\nThe interview is your chance to demonstrate your potential to become a successful teacher. The interview day consists of a written task, short (30mins) lesson to a group of pupils and individual interview. \\r\nFurther information about the format of the day will be sent to you via email in advance of the interview date. \\r\n\\r\nThe interview is also your chance to find out more about the University, the course and the schools that we use for placements. ",
+    "HowSchoolPlacementsWork": "Teaching placements are in Bournemouth and Poole. Trainees stay in 1 school for the majority of the year "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Ambitions Teaching School Alliance is a diverse, vibrant learning community of schools which include mainstream primary and secondary in addition to specialist provision for primary and secondary children that have social and emotional difficulties. Our schools are all based in Bournemouth and Poole. \\r\n\\r\nWe offer a school based School Direct training opportunity to achieve QTS and PGCE in partnership with the University of Winchester. This is an exciting opportunity to train with a dynamic and forward thinking Trust, where you will be a valued member of a dedicated and professional team of excellent teachers and support staff. \\r\n\\r\nYou will be supported by either a class tutor  / professional mentor within the school setting, alongside your professional tutor at the University. \\r\n\\r\nWe have had a 100% pass rate since our School Direct programme began and offer our own bespoke training package in addition to the University sessions. \\r\n\\r\nIn addition, we also support all our trainees with gaining employment for their NQT year once they have achieved QTS. \\r\n\\r\nAnyone who is interested in applying to train with us is welcome to make an appointment to visit, tour any of our schools and discuss your individual needs. ",
+    "TrainWithDisability": "Your wellbeing is a top priority and we will do all we can to give you the chance to flourish and maximise your potential. In partnership with the University of Winchester there is a dedicated student support team to help with any questions or challenges you might experience during your studies. We work with you to support your wellbeing and mental health, provide confidential advice and offer workshops to boost your academic skills. If you have a disability or learning difference, we encourage you to get in touch before you apply so we can discuss tailored support for your individual needs.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The  University of Winchester is recognised by Ofsted as an ‘Outstanding’ provider of teacher education at both primary and secondary level and has a long history of training teachers. Our passion is to provide you with a university experience that helps you reach your full potential and make a real difference in the world. We can offer you a stimulating and supportive learning environment that challenges and inspires, in a beautiful, historic cathedral city, located an hour from London by train. \\r\n\\r\n",
+        "UcasInstitutionCode": "W76"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "E84"
+      }
+    ]
+  },
+  "has_inst": true
+}
