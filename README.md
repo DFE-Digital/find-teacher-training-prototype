@@ -1,41 +1,36 @@
-# Find postgraduate teacher training courses – prototype
-Also known as “search and compare”
+# Find postgraduate teacher training (prototype)
 
-Prototype:<br /> https://search-and-compare-prototype.herokuapp.com/
+This prototype is based on the [GOV.UK prototype kit](https://github.com/alphagov/govuk-prototype-kit)
 
-Design history:<br />
-https://search-and-compare-prototype.herokuapp.com/history
+## Requirements
 
-Private beta designs and history (see branch [`beta`](https://github.com/DFE-Digital/search-and-compare-prototype/tree/beta)):<br />
-https://search-and-compare-beta.herokuapp.com/
+* Node.js - version 10.x.x
 
-Alpha designs and history (see branch [`alpha`](https://github.com/DFE-Digital/search-and-compare-prototype/tree/alpha)):<br />
-https://search-and-compare-alpha.herokuapp.com/
+## Installation
 
-Private design documentation in Confluence:<br />
-https://dfedigital.atlassian.net/wiki/spaces/BaT/pages/138379265/Search+designs
+* Clone this repository to a folder on your computer
+* Open Terminal
+* In Terminal, change the path to the repository
+* Type `npm install` to install the dependencies
 
-## Live service
+## Working locally
 
-The live service lives at:<br />
-* http://find-postgraduate-teacher-training.education.gov.uk/
-* https://github.com/DFE-Digital/search-and-compare-ui
+* In Terminal, change the path to the repository
+* Type `npm start`  and start the application
 
-Sometimes the original repository is branched and hosted on Heroku to provide a prototype as close to what’s released as possible for accurate user research and experimentation.
+## Updating prototype data
 
-These branches are hosted at:<br />
-https://search-and-compare-ui.herokuapp.com/
+* In Terminal, change the path to the `generate-data` directory
+* Type `bundle install` to install the Ruby dependencies
+* Type `./generate.rb`. This will generate a new `courses.json` file in the `/app/data` directory
 
-* [Increased search radius to 20 miles](https://github.com/DFE-Digital/search-and-compare-ui/tree/research-2-may)
-* [Prototyped no results and disclaimer banner](https://github.com/DFE-Digital/search-and-compare-ui/tree/copy-sweep-cut)
+Before a new set of courses can be generated, the following files need to be present in the `generate-data` directory:
 
-## Update prototype data
+* **`courses-clean.json`**: Download [courses-clean.zip](https://github.com/DFE-Digital/search-and-compare-data/blob/master/courses-clean.zip) from the search-and-compare-data repo and add the extracted file
+* **`course-enrichment.csv`**
+* **`institution-enrichment.csv`**
 
-* Copy `courses-clean.json` from [courses-clean.zip](https://github.com/DFE-Digital/search-and-compare-data/blob/master/courses-clean.zip) in the search-and-compare-data repo to this repo (it’s in .gitignore already)
-* Run the ruby script: `./generate.rb`, which generates a new `prototype_data.json` file
-* Commit the changes to master, which auto-deploys to Heroku
-
-## Upgrade the prototype kit
+## Upgrading the prototype kit
 
 Based on https://govuk-prototype-kit.herokuapp.com/docs/updating-the-kit
 
