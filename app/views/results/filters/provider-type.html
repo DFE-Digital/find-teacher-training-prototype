@@ -7,26 +7,30 @@
       <h1 class="govuk-heading-xl">{{ title }}</h1>
 
       <form action="/results">
-        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
-        <div class="form-group">
-          {% set fields = [
-              {
-                name: 'Universities',
-                text: '<div style="clear: left"></div><p>Universities work with a very large number of partner schools. You’ll typically spend 60 days at a university doing academic training and 120 days at 2 of their partner schools.</p><p>The university will work with you to find schools close to you where possible.</p>'
-              },
-              {
-                name: 'SCITTs (School centred initial teacher training)',
-                text: '<div style="clear: left"></div><p>SCITTs have a medium to large number of partner schools they work with. </p>'
-              },
-              {
-                name: 'School Direct',
-                text: '<div style="clear: left"></div><p>Apply to an alliance of schools and choose which school you want to be based in.</p><p>Some School Direct providers offer courses that pay a salary.</p>'
-              }
-            ]
-          %}
+        {% set fields = [
+            {
+              name: 'Universities',
+              text: '<div style="clear: left"></div><p>Universities work with a very large number of partner schools. You’ll typically spend 60 days at a university doing academic training and 120 days at 2 of their partner schools.</p><p>The university will work with you to find schools close to you where possible.</p>'
+            },
+            {
+              name: 'SCITTs (School centred initial teacher training)',
+              text: '<div style="clear: left"></div><p>SCITTs have a medium to large number of partner schools they work with. </p>'
+            },
+            {
+              name: 'School Direct',
+              text: '<div style="clear: left"></div><p>Apply to an alliance of schools and choose which school you want to be based in.</p><p>Some School Direct providers offer courses that pay a salary.</p>'
+            }
+          ]
+        %}
 
-          {{ macros.checkboxGroup('qualification', fields) }}
-        </div>
+        {{ macros.checkboxGroup('qualification', fields) }}
+
+        {{ govukInput({
+          id: "map",
+          name: "map",
+          type: "hidden",
+          value: "yes"
+        }) if isMap }}
 
         {{ govukButton({
           text: "Find courses"

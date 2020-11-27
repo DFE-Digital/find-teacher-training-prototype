@@ -268,11 +268,6 @@ router.get('/results', function (req, res) {
   })
 })
 
-router.get('/results/filters/funding', function (req, res) {
-  const backLink = { text: 'Back to results', href: '/results' }
-  res.render('start/funding', { backLink: backLink, filtering: true })
-})
-
 function groupBy (list, keyGetter) {
   const map = new Map()
   list.forEach((item) => {
