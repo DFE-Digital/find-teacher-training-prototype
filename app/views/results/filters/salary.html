@@ -36,7 +36,9 @@
           {{ macros.radioGroup('salary', fields) }}
         </div>
 
-        {{ macros.submit("Find courses") }}
+        {{ govukButton({
+          text: "Find courses"
+        }) }}
       </form>
     </div>
   </div>

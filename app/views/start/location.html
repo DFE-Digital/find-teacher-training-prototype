@@ -9,54 +9,48 @@
 {% endblock %}
 
 {% block content %}
-  <h1 class="govuk-heading-xl">
-    Find courses by location or<br /> by training provider
-  </h1>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ govukErrorSummary({
+        titleText: "There is a problem",
+        errorList: [{
+          text: error.error_message,
+          href: "#postcode-town-or-city"
+        }]
+      }) if error }}
 
-  {% if error %}
-  <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-module="govuk-error-summary">
-    <h2 class="govuk-heading-m error-summary-heading govuk-!-margin-bottom-0" id="error-summary-heading-example-1">
-      {{ error.error_message }}
-    </h2>
-  </div>
-  {% endif %}
+      <h1 class="govuk-heading-xl">{{ title }} </h1>
 
-  <form action="{% if filtering %}/results/filters/location{% else %}/start/location{% endif %}" method="post" class="form">
-    {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
-    <div class="form-group">
-      {% set postcodeFields %}
-        {{ macros.textbox("postcode-town-or-city", "Postcode, town or city") }}
-      {% endset %}
+      <form action="{% if filtering %}/results/filters/location{% else %}/start/location{% endif %}" method="post" class="form">
+        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
+        <div class="form-group">
+          {% set postcodeFields %}
+            {{ macros.textbox("postcode-town-or-city", "Postcode, town or city") }}
+          {% endset %}
 
-      {% set trainingProviderFields %}
-        {{ macros.textbox("providerNameInput", "School, university or other training provider") }}
-      {% endset %}
+          {% set trainingProviderFields %}
+            {{ macros.textbox("providerNameInput", "School, university or other training provider") }}
+          {% endset %}
 
-      {% set fields = [
-          {
-            name: 'By postcode, town or city',
+          {% set fields = [{
+            name: "By postcode, town or city",
             more: postcodeFields
-          },
-          {
-            name: 'Across England'
-          },
-          {
+          }, {
+            name: "Across England"
+          }, {
             or: true
-          },
-          {
-            name: 'School, university or other training provider',
+          }, {
+            name: "By school, university or other training provider",
             more: trainingProviderFields
-          }
-        ]
-      %}
+          }] %}
 
-      {{ postcodeFields | safe }}
+          {{ macros.radioGroup('location', fields) }}
+        </div>
+
+        {{ govukButton({
+          text: "Find courses" if filtering else "Continue"
+        }) }}
+      </form>
     </div>
-
-    {% if filtering %}
-      {{ macros.submit("Find courses") }}
-    {% else %}
-      {{ macros.submit("Continue") }}
-    {% endif %}
-  </form>
+  </div>
 {% endblock %}
