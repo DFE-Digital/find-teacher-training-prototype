@@ -53,12 +53,6 @@
   </div>
 {% endmacro %}
 
-{% macro part(data) %}
-  {% if (data) %}
-    <p>{{ data }}</p>
-  {% endif %}
-{% endmacro %}
-
 {% macro checkboxGroup(name, fields, errors = false, index = 0, allBold = false) %}
   {% set e = false %}
   <div class="govuk-form-group {% if e %} govuk-form-group--error{% endif %}">
@@ -122,10 +116,6 @@
     {% endif %}
     <input class="govuk-input {{ size or 'govuk-input--width-20' }}" name="{{id}}" type="text" id="{{id}}" value="{{ v or value(id) }}">
   </div>
-{% endmacro %}
-
-{% macro h1(text) %}
-<h1 class="govuk-heading-xl">{{text}}</h1>
 {% endmacro %}
 
 {% macro submit(label) %}
