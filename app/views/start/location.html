@@ -1,6 +1,13 @@
 {% extends "layout.html" %}
 {% set title = "Find courses by location or by training provider" %}
 
+{% block backLink %}
+  {{ govukBackLink({
+    text: backLink.text,
+    href: backLink.href
+  }) if backLink }}
+{% endblock %}
+
 {% block content %}
   <h1 class="govuk-heading-xl">
     Find courses by location or<br /> by training provider

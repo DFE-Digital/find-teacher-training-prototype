@@ -1,10 +1,12 @@
 {% extends "layout.html" %}
 {% set title = "Find courses by subject" %}
 
-{% if not backLink %}
-  {% set backLink = { text: 'Back', href: '/start/location'} %}
-{% endif %}
-{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
+{% block backLink %}
+  {{ govukBackLink({
+    text: backLink.text or "Back to location",
+    href: backLink.href or "/start/location"
+  }) }}
+{% endblock %}
 
 {% block content %}
   <h1 class="govuk-heading-xl">{{ title }}</h1>
