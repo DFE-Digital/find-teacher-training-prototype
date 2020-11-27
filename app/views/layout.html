@@ -37,7 +37,11 @@
 {% endblock %}
 
 {% block pageTitle %}
-  GOV.UK
+  {% if serviceName %}
+    {% if title %}{{ title }} - {% endif %}{{ serviceName }} - GOV.UK
+  {% else %}
+    {% if title %}{{ title }} - {% endif %}GOV.UK
+  {% endif %}
 {% endblock %}
 
 {% block header %}
