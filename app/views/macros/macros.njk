@@ -1,60 +1,7 @@
-{% macro screenshotContents(contents) %}
-<div class="govuk-!-margin-top-4 govuk-!-margin-bottom-9">
-  <h2 class="govuk-heading-m">Screenshots</h2>
-  <ul class="govuk-list">
-    {% for c in contents %}
-      <li><a href="#{{ c.id }}">{{ c.text }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-{% endmacro %}
-
-{% macro designHistoryBreadcrumbs() %}
-  {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
-
-  <div class="dont-print">
-    {{
-      govukBreadcrumbs({
-        items: [
-          {
-            href: "/history",
-            text: "Design history"
-          }
-        ]
-      })
-    }}
-  </div>
-{% endmacro %}
-
-{% macro screenshot(title, id, thumbnail, full, text = '', headingClass = 'govuk-heading-l', headingLevel = 'h2') %}
-<div class="design-history-item govuk-!-margin-bottom-9">
-  <{{headingLevel}} class="{{headingClass}}" id="{{ id }}">{{ title }}</{{headingLevel}}>
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds design-history-screenshot">
-      <div class="govuk-!-margin-bottom-6">
-        <a href="{{ full }}">
-          <img src="{{ thumbnail }}" width="630" alt="Screenshot of {{ title }}" />
-        </a>
-      </div>
-      <div class="design-history-text">
-        {{ text | safe }}
-      </div>
-    </div>
-  </div>
-</div>
-{% endmacro %}
-
 {% macro backLink(href = "/", text = "Back") %}
   {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
   {{ govukBackLink({ text: text, href: href }) }}
 {% endmacro %}
-
-{#
-  field:
-    name:
-    text:
-    more:
-#}
 
 {% macro radioGroup(name, fields, errors = false, index = 0) %}
   {% set e = false %}
