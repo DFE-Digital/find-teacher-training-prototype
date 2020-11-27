@@ -21,7 +21,7 @@
       </div>
 
       <div class="govuk-grid-column-two-thirds">
-        {{macros.resultsHeader(count + ' courses')}}
+        {{ macros.resultsHeader(count + ' courses') }}
 
         {% for course in results %}
           <div style="padding-top: 20px; border-bottom: 1px solid #bfc1c3">
@@ -31,33 +31,29 @@
                 <span style="text-decoration: underline">{{ course.name }} ({{ course.programmeCode }})</span>
               </a>
             </h2>
-            <dl class="aligned">
-              <dt>Course:</dt>
+            <dl class="govuk-list--description">
+              <dt class="govuk-list--description__label">Course</dt>
               <dd>{{ course.options }}</dd>
               {% if data['location'] != 'Across England' %}
-                <dt>Distance:</dt>
+                <dt>Distance</dt>
                 <dd>{{ course.distance }} miles</dd>
                 <!-- <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd> -->
               {% endif %}
-              <dt>
+              <dt class="govuk-list--description__label">
                 <!--{% if course.addresses.length > 1 %}
-                  Nearest {{ course.locationType | lower }}:
+                  Nearest {{ course.locationType | lower }}
                 {% else %}
-                  {{ course.locationType }} address:
+                  {{ course.locationType }} address
                 {% endif %}-->
-                Address:
-              </dt>
+                Address
+              </dt class="govuk-list--description__label">
               <dd>
                 {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}{% if course.providerAddress.postal_town %}, {% endif %} {{ course.providerAddress.post_code }}
               </dd>
-              <dt>
-                Financial support:
-              </dt>
-              <dd>
-                {{ course.financial_support }}
-              </dd>
+              <dt class="govuk-list--description__label">Financial support</dt>
+              <dd>{{ course.financial_support }}</dd>
               {% if course.accrediting %}
-               <dt>Accredited provider:</dt>
+               <dt class="govuk-list--description__label">Accredited provider</dt>
                <dd>{{ course.accrediting }}</dd>
               {% endif %}
             </dl>
@@ -66,5 +62,4 @@
       </div>
     </div>
   </div>
-
 {% endblock %}
