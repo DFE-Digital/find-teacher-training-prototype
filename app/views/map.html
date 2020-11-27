@@ -94,7 +94,7 @@
   {{ data['latLong'] }}
 
   <div id="results">
-    <h1 class="govuk-heading-l remove-top-margin">
+    <h1 class="govuk-heading-l govuk-!-margin-top-0">
       Teacher training courses
       {% if data['formattedAddress'] or data['postcode-town-or-city'] %}
         near {{ data['formattedAddress'] or data['postcode-town-or-city'] }}
@@ -161,7 +161,7 @@
              <p>Accredited provider:<br />{{ course.accrediting }}</p>
             {% endif %}
 
-            <p class="remove-bottom-margin">Financial support: <br /> {{ course.financial_support }} </p>
+            <p class="govuk-!-margin-bottom-0">Financial support: <br /> {{ course.financial_support }} </p>
           </div>
         </div>
       </div> -->
@@ -187,7 +187,7 @@
              <p>Accredited provider:<br />{{ address.course.accrediting }}</p>
             {% endif %}
 
-            <p class="remove-bottom-margin">Financial support: <br /> {{ address.course.financial_support }} </p>
+            <p class="govuk-!-margin-bottom-0">Financial support: <br /> {{ address.course.financial_support }} </p>
           </div>
         </div>
       </div>
@@ -209,7 +209,7 @@
                <p>Accredited provider:<br />{{ provider[1][0].accrediting }}</p>
               {% endif %}
 
-              <p class="remove-bottom-margin">Financial support: <br /> {{ provider[1][0].financial_support }} </p>
+              <p class="govuk-!-margin-bottom-0">Financial support: <br /> {{ provider[1][0].financial_support }} </p>
             </div>
           </div>
         </div>

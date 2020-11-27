@@ -17,102 +17,16 @@ $govuk-assets-path: '/govuk/assets/';
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
-blockquote {
-  margin: 0;
-}
-
-.fake-email {
-  border: 5px solid $govuk-border-colour;
-  margin-bottom: 60px;
-  margin-left: 15px;
-  padding: 45px;
-}
-
 .govuk-heading-m .heading-secondary {
   color: govuk-colour("dark-grey");
   font-weight: normal;
   @include govuk-font(19);
 }
 
-// Related items
-// (These styles will be moved to GOV.UK elements, duplicating here for now.)
-.govuk-related-items {
-  border-top: 10px solid govuk-colour("blue");
-  margin-top: $govuk-gutter;
-  padding-top: 5px;
-
-  .govuk-heading-m {
-    margin-bottom: 0.5em;
-    margin-top: 0.3em;
-  }
-
-  li {
-    list-style-type: none;
-    margin-bottom: 10px;
-  }
-}
-.iterationBody{
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.course-detail h4{
-  margin-top: 0px;
-}
-.course-detail h3{
-  margin-top: 0px;
-}
-.compare-button{
-  float:right;
-  margin-right: 10px;
-  margin-top: -7px;
-}
-.course-detail{
-  margin-bottom:20px;
-}
-.column-one-third ul{
-  margin: 0px;
-}
-.compare-text{
-  float: left;
-}
-.compare-link{
-  float: right;
-  padding-right: 20px;
-}
-.sticky-header{
-  background: #fff2a6;
-  height: 36px;
-  margin: 0;
-  padding-left: 10px;
-  padding-top: 15px;
-  position: fixed;
-  top: 0;
-  width: 960px;
-  z-index: 10000;
-}
-.results-data{
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-.results-data-large{
-  //margin-bottom: 8px;
-}
-.results-link{
-  float:right;
-}
 .filter-link {
   margin-bottom: 0;
 }
-.results{
-  margin-bottom: 20px;
-}
-.fixed-height-200{
-  height:100px;
-  overflow-y: scroll;
-}
-.filter-input {
-  width: 250px;
-}
+
 .filter-heading {
   margin-bottom: 0;
   margin-top: 3px;
@@ -132,18 +46,13 @@ blockquote {
     @include govuk-media-query($from: tablet) {
       display: none;
     }
-
-    // &:hover,
-    // &:active,
-    // &:focus {
-    //   background-color:
-    // }
   }
 
   &--toggle-open {
     background-position: right 10px;
   }
 }
+
 .filters {
   background-color: #ffffff;
   margin: 10px 0;
@@ -164,239 +73,36 @@ blockquote {
   }
 }
 
-.compare .grid-row .column-one-quarter{
-  margin-bottom: 5px;
-}
-.sidebar-section{
-  margin-top: 20px;
-}
-.greyButton{
-  background: #DEE0E2;
-  border: 1px solid #aaa;
-  border-bottom: 2px solid #444;
-  color: #000;
-  margin-top: 20px;
-  padding: 10px;
-  text-decoration: none;
-}
-.marginTop20{
-  margin-top: 20px;
-}
-.userDetails{
-  color: #fff;
-  float: right;
-}
-.secondaryButton{
-  background: #2B8CC4;
-  border-bottom: 2px solid #444;
-  color: #fff;
-  margin-top: 20px;
-  padding: 10px;
-  text-decoration: none;
-}
-.secondaryButtonContainer a{
-  color: #fff;
+.results {
+  margin-bottom: 20px;
 }
 
-.addressButton{
-  background: #2B8CC4;
-  border-bottom: 2px solid #444;
-  color: #fff;
-  margin-top: 20px;
-  padding: 6px 15px 5px 15px;;
-  text-decoration: none;
-}
-.addressContainer a{
-  color: #fff;
-}
-.qualification{
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-.topSeparator{
-  border-top: 1px solid #ccc;
-}
-
-.postcodeTextbox{
-  width:200px;
-}
-.bursarySubjectInfo{
-  float: left;
-  margin-left: 12px;
-}
-.subject{
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-}
-
-.results .grid-row{
+.results .grid-row {
   padding-bottom: 5px;
 }
 
-.results-found {
-  border-bottom: 1px solid  #ccc;
-  padding-bottom: 10px;
-}
-
-.resultsSortingOptions{
+.resultsSortingOptions {
   border-bottom: 1px solid #cccccc;
   margin: 10px 0px 10px 0px;
   padding: 0 0px 10px 0px;
-}
-
-.sortSelectBox{
-  width:200px;
-}
-
-.sortLabel{
-  display: inline;
-}
-
-.courseDetailsMeta{
-
-}
-
-.altTable th{
-  padding: 10px;
-}
-
-.altTable td{
-  padding: 10px;
-}
-
-.altTable thead{
-  background: #cccccc;
-}
-
-.contactLabel{
-  font-weight: bold;
-  padding-right: 10px;
-}
-
-.courseDetailsMeta dt {
-  float: left;
-  margin-right: 0;
-  padding-bottom: 5px;
-  width:25%;
-}
-
-.contactDetails {
-  overflow: hidden;
-}
-
-.contactDetails dd {
-  clear: both;
-  float: left;
-  font-weight: bold;
-  padding-right: 10px;
-  width: 100px;
-}
-
-.contactDetails dt{
-  float: left;
-}
-
-.courseDetailsMeta dt {
-  clear: both;
-}
-
-.courseDetailsMeta dd{
-  float: right;
-  padding-bottom: 5px;
-  width: 75%;
-}
-
-.courseContents {
-  clear: both;
-  padding-top: 50px;
-}
-
-.pagination{
-  float: right;
-  text-align: right;
-}
-.paginationTitle{
-  font-size: 1.5em;
-  text-decoration: none;
 }
 
 .resultsHeader span {
   float: right;
 }
 
-.results-header-empty {
-  border-bottom: 1px solid $govuk-border-colour;
-  margin-bottom: $govuk-gutter;
-  min-height: 48px;
+.results-data {
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
-.pagination-controls{
-float: right;
+.sortSelectBox {
+  width: 200px;
 }
 
-.pagination-items{
-float: left;
+.sortLabel {
+  display: inline;
 }
-
-.pagination-items li{
-float: left;
-margin-right: 10px;
-}
-
-.pagination-summary{
-
-}
-
-.multiple-choice{
-  margin-bottom: 30px;
-}
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
-
-.remove-bottom-margin {
-  margin-bottom: 0 !important;
-}
-
-.remove-top-margin {
-  margin-top: 0 !important;
-}
-
-.add-heading-bottom-margin {
-  margin-bottom: 20px !important;
-}
-
-.add-bottom-margin {
-  margin-bottom: $govuk-gutter / 2;
-}
-
-.add-double-bottom-margin {
-  margin-bottom: $govuk-gutter;
-}
-
-.add-top-margin {
-  margin-top: $govuk-gutter / 2;
-}
-
-.add-margin-for-label {
-  margin-top: 25px;
-}
-
-
-dt, dd {
-    display: inline;
-    line-height: 30px;
-}
-
-dt {
-    margin-right: 0.25em;
-}
-// dt::after {
-//     content: ':';
-// }
-// dd::after {
-//     display: block;
-//     content: '';
-// }
 
 dl.aligned {
   overflow: hidden;
@@ -417,23 +123,6 @@ dl.aligned dd {
 
   .govuk-details {
     margin-bottom: 0;
-  }
-}
-
-.multiple-options li {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 5px;
-}
-
-.form-block--or {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-@media (min-width: 641px) {
-  .form-block--or {
-    margin-bottom: 20px;
-    margin-top: -10px;
   }
 }
 
