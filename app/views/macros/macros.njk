@@ -99,12 +99,12 @@
   </div>
 {% endmacro %}
 
-{% macro textbox(id, label, helpText = false, size = '', prefix = false, errors = false, v = false) %}
+{% macro textbox(id, label, helpText = false, size = "", prefix = false, errors = false, v = false) %}
   {% set e = false %}
   <div class="govuk-form-group {% if e %} govuk-form-group--error{% endif %}">
-    <label class="govuk-label" for="{{id}}">{{label | safe}}</label>
+    <label class="govuk-label" for="{{ id }}">{{ label | safe }}</label>
     {% if helpText %}
-      <span class="govuk-hint">{{helpText | safe}}</span>
+      <span class="govuk-hint">{{ helpText | safe }}</span>
     {% endif %}
     {% if e %}
       <span class="govuk-error-message">
@@ -114,16 +114,12 @@
     {% if prefix %}
       <span class="govuk-prefix-input">{{ prefix }}</span>
     {% endif %}
-    <input class="govuk-input {{ size or 'govuk-input--width-20' }}" name="{{id}}" type="text" id="{{id}}" value="{{ v or value(id) }}">
+    <input class="govuk-input {{ size or 'govuk-input--width-20' }}" name="{{ id }}" type="text" id="{{ id }}" value="{{ v or value(id) }}">
   </div>
 {% endmacro %}
 
-{% macro submit(label) %}
-<input type="submit" class="govuk-button" value="{{label}}">
-{% endmacro %}
-
 <!-- Header on top of the results showing number of courses, New search and sorting order -->
-{% macro resultsHeader(countString = '40 courses', mapView = false) %}
+{% macro resultsHeader(countString = "40 courses", mapView = false) %}
   {% if (not mapView) %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
@@ -139,7 +135,7 @@
   <div class="search-results-header">
     <div class="govuk-grid-row">
     {% if value("location") == "Across England" %}
-      <div class="govuk-grid-column-half">
+      <div class="govuk-grid-column-one-half">
         <p class="govuk-body govuk-!-margin-bottom-0">Sorted by training provider</p>
       </div>
     {% elseif (not mapView) %}
@@ -164,9 +160,7 @@
 <details data-module="govuk-details">
   <summary><span class="summary">{{label}}</span></summary>
   <div class="govuk-inset-text">
-    <p>
-      {{text}}
-    </p>
+    <p>{{text}}</p>
   </div>
 </details>
 {% endmacro %}

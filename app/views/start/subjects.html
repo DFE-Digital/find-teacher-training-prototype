@@ -9,10 +9,10 @@
 {% endblock %}
 
 {% block content %}
-  <h1 class="govuk-heading-xl">{{ title }}</h1>
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">{{ title }}</h1>
+
       <p>Select the subjects you want to teach.</p>
 
       <!-- <p>You can train to teach a subject even if you don’t have a degree in it, or if you haven’t used your degree knowledge recently. For some subjects you can take a subject knowledge enhancement (SKE) course.</p>
@@ -68,7 +68,9 @@
           }) }}
         </div> -->
 
-        {{ macros.submit("Find courses") }}
+        {{ govukButton({
+          text: "Find courses"
+        }) }}
       </form>
     </div>
   </div>

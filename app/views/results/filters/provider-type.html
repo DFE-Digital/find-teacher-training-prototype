@@ -28,7 +28,9 @@
           {{ macros.checkboxGroup('qualification', fields) }}
         </div>
 
-        {{ macros.submit("Find courses") }}
+        {{ govukButton({
+          text: "Find courses"
+        }) }}
       </form>
     </div>
   </div>

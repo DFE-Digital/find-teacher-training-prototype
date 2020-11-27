@@ -27,9 +27,9 @@
 
         <p>You can <a href="https://www.gov.uk/student-finance">find out more about student finance and the eligibility requirements</a>.</p>
 
-        <div style="padding-top: 30px">
-          {{ macros.submit("Find courses") }}
-        </div>
+        {{ govukButton({
+          text: "Find courses"
+        }) }}
       </form>
 
       <h2 class="govuk-heading-m">Other financial support</h2>
