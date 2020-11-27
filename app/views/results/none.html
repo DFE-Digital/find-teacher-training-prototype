@@ -3,38 +3,28 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      {{macros.h1("Business studies teacher training courses")}}
-    </div>
-  </div>
-  <div>
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-third">
-        {% include "results/filter-sidebar.html" %}
-      </div>
-
-      <div class="govuk-grid-column-two-thirds">
-        <div>
-          <h2 class="govuk-heading-l" style="margin-top: 0">
-            There are no courses matching your&nbsp;search
-          </h2>
-
-          <p>
-            You can <a href="/start/location">try another search</a>, for example by changing subject or location.
-          </p>
-
-          <h3 class="govuk-heading-m">Suggested searches</h3>
-          <p>For business studies there are:</p>
-          <ul class="govuk-list govuk-list--bullet">
-            <li><a href="#">8 courses within 10 miles of {{ data['postcode-town-or-city'] or 'SW13' }}</a></li>
-            <li><a href="#">2 courses with salaries available in England</a></li>
-          </ul>
-
-          <p>
-            You can <a href="#">search for courses in other subjects</a> on the UCAS website.
-          </p>
-        </div>
-      </div>
+      {{ macros.h1("Business studies teacher training courses") }}
     </div>
   </div>
 
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      {% include "results/filter-sidebar.html" %}
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l govuk-!-margin-top-0">There are no courses matching your&nbsp;search</h2>
+
+      <p>You can <a href="/start/location">try another search</a>, for example by changing subject or location.</p>
+
+      <h3 class="govuk-heading-m">Suggested searches</h3>
+      <p>For business studies there are:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="#">8 courses within 10 miles of {{ data['postcode-town-or-city'] or 'SW13' }}</a></li>
+        <li><a href="#">2 courses with salaries available in England</a></li>
+      </ul>
+
+      <p>You can <a href="#">search for courses in other subjects</a> on the UCAS website.</p>
+    </div>
+  </div>
 {% endblock %}

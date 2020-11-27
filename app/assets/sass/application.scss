@@ -8,6 +8,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "lib/extensions/extensions";
 
 // Patterns that aren't in Frontend
+@import "patterns/definition-list";
 @import "patterns/step-by-step-header";
 @import "patterns/step-by-step-nav";
 @import "patterns/step-by-step-related";
@@ -102,28 +103,6 @@ $govuk-assets-path: '/govuk/assets/';
 
 .sortLabel {
   display: inline;
-}
-
-dl.aligned {
-  overflow: hidden;
-  @include govuk-font(19);
-}
-
-dl.aligned dt {
-  clear: both;
-  float: left;
-  margin: 0;
-  width: 30%;
-}
-
-dl.aligned dd {
-  float: right;
-  margin: 0;
-  width: 70%;
-
-  .govuk-details {
-    margin-bottom: 0;
-  }
 }
 
 .heading-secondary {
