@@ -11,41 +11,50 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      {{ govukErrorSummary({
-        titleText: "There is a problem",
-        errorList: [{
-          text: error.error_message,
-          href: "#postcode-town-or-city"
-        }]
-      }) if error }}
+      <form action="{{ "/results/filters/location" if filtering else "/start/location" }}" method="post" class="form">
+        {{ govukErrorSummary({
+          titleText: "There is a problem",
+          errorList: [{
+            text: error.error_message,
+            href: "#postcode-town-or-city"
+          }]
+        }) if error }}
 
-      <h1 class="govuk-heading-xl">{{ title }} </h1>
-
-      <form action="{% if filtering %}/results/filters/location{% else %}/start/location{% endif %}" method="post" class="form">
-        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
-        <div class="form-group">
-          {% set postcodeFields %}
-            {{ macros.textbox("postcode-town-or-city", "Postcode, town or city") }}
-          {% endset %}
-
-          {% set trainingProviderFields %}
-            {{ macros.textbox("providerNameInput", "School, university or other training provider") }}
-          {% endset %}
-
-          {% set fields = [{
-            name: "By postcode, town or city",
-            more: postcodeFields
+        {{ govukRadios({
+          name: "location",
+          fieldset: {
+            legend: {
+              text: title,
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--xl"
+            }
+          },
+          items: [{
+            value: "By postcode, town or city",
+            text: "By postcode, town or city",
+            conditional: {
+              html: macros.textbox("postcode-town-or-city", "Postcode, town or city")
+            }
           }, {
-            name: "Across England"
+            value: "Across England",
+            text: "Across England"
           }, {
-            or: true
+            divider: "or"
           }, {
-            name: "By school, university or other training provider",
-            more: trainingProviderFields
-          }] %}
+            value: "By school, university or other training provider",
+            text: "By school, university or other training provider",
+            conditional: {
+              html: macros.textbox("providerNameInput", "School, university or other training provider")
+            }
+          }]
+        }) }}
 
-          {{ macros.radioGroup('location', fields) }}
-        </div>
+        {{ govukInput({
+          id: "map",
+          name: "map",
+          type: "hidden",
+          value: "yes"
+        }) if isMap }}
 
         {{ govukButton({
           text: "Find courses" if filtering else "Continue"

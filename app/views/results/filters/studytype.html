@@ -14,22 +14,26 @@
       <h1 class="govuk-heading-xl">Study type</h1>
 
       <form action="/results">
-        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
-        <div class="form-group">
-          {% set fields = [
-              {
-                name: 'Full time (12 months)',
-                text: 'You’ll usually spend 5 days a week on a full-time course'
-              },
-              {
-                name: 'Part time (18-24 months)',
-                text: 'You’ll usually spend 3 days a week on a part-time course'
-              }
-            ]
-          %}
+        {% set fields = [
+            {
+              name: 'Full time (12 months)',
+              text: 'You’ll usually spend 5 days a week on a full-time course'
+            },
+            {
+              name: 'Part time (18-24 months)',
+              text: 'You’ll usually spend 3 days a week on a part-time course'
+            }
+          ]
+        %}
 
-          {{ macros.checkboxGroup('studyType', fields) }}
-        </div>
+        {{ macros.checkboxGroup('studyType', fields) }}
+
+        {{ govukInput({
+          id: "map",
+          name: "map",
+          type: "hidden",
+          value: "yes"
+        }) if isMap }}
 
         {{ govukButton({
           text: "Find courses"

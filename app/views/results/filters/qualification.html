@@ -14,29 +14,33 @@
       <h1 class="govuk-heading-xl">Which qualifications do you want?</h1>
 
       <form action="/results">
-        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
-        <div class="form-group">
-          {% set fields = [
-              {
-                name: 'QTS only',
-                text: '<div style="clear: left"></div><p>QTS (qualified teacher status) allows you to teach in state schools in England.
-      If you want to teach in the rest of the UK or internationally, consider a ‘PGCE (or PGDE) with QTS’ qualification instead.</p>'
-              },
-              {
-                name: 'PGCE (or PGDE) with QTS',
-                text: '<div style="clear: left"></div><p>A PGCE (postgraduate certificate in education) with QTS (qualified teacher status) allows you to
-      teach in England, Scotland, Wales and Northern Ireland. This qualification is also recognised internationally.
-      </p><p>Many PGCE courses include credits that count towards a Master’s degree. A PGDE (postgraduate diploma in education) is equivalent to a PGCE but awards more Master’s credits.</p>'
-              },
-              {
-                name: 'Further education (PGCE or PGDE without QTS)',
-                text: '<div style="clear: left"></div><p>To teach further education you don’t need QTS. Instead you can study for a PGCE or PGDE without QTS.</p>'
-              }
-            ]
-          %}
+        {% set fields = [
+            {
+              name: 'QTS only',
+              text: '<div style="clear: left"></div><p>QTS (qualified teacher status) allows you to teach in state schools in England.
+    If you want to teach in the rest of the UK or internationally, consider a ‘PGCE (or PGDE) with QTS’ qualification instead.</p>'
+            },
+            {
+              name: 'PGCE (or PGDE) with QTS',
+              text: '<div style="clear: left"></div><p>A PGCE (postgraduate certificate in education) with QTS (qualified teacher status) allows you to
+    teach in England, Scotland, Wales and Northern Ireland. This qualification is also recognised internationally.
+    </p><p>Many PGCE courses include credits that count towards a Master’s degree. A PGDE (postgraduate diploma in education) is equivalent to a PGCE but awards more Master’s credits.</p>'
+            },
+            {
+              name: 'Further education (PGCE or PGDE without QTS)',
+              text: '<div style="clear: left"></div><p>To teach further education you don’t need QTS. Instead you can study for a PGCE or PGDE without QTS.</p>'
+            }
+          ]
+        %}
 
-          {{ macros.checkboxGroup('qualification', fields) }}
-        </div>
+        {{ macros.checkboxGroup('qualification', fields) }}
+
+        {{ govukInput({
+          id: "map",
+          name: "map",
+          type: "hidden",
+          value: "yes"
+        }) if isMap }}
 
         {{ govukButton({
           text: "Find courses"
