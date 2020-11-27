@@ -1,0 +1,60 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The University of Warwick",
+  "subjects": [
+    "Early years",
+    "Primary"
+  ],
+  "name": "Early Years Education",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "W20/X121",
+  "providerCode": "W20",
+  "programmeCode": "X121",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "W20",
+    "addr_1": "Westwood Campus",
+    "addr_2": "University of Warwick",
+    "addr_3": "Kirby Corner Road",
+    "addr_4": "Coventry",
+    "postcode": "CV4 8EE ",
+    "url": "http://www2.warwick.ac.uk/fac/soc/cte/thinking-about-being-a-teacher/",
+    "geocode": true,
+    "formatted_address": "Coventry CV4 7AL, UK",
+    "latitude": 52.3792525,
+    "longitude": -1.5614704,
+    "post_code": "CV4 7AL",
+    "city": null,
+    "route": null,
+    "postal_town": "Coventry"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Our Post Graduate Certificate Education (PGCE) Primary - the Early Years pathway leads to the award of Qualified Teacher Status (QTS) giving you the experience, the opportunity and the knowledge to work in both Early Years Foundation Stage (EYFS) settings and Infant/Primary school settings.\\r\n\\r\nThe EYFS is a unique phase of education which involves learning through play and first hand experiences both inside and outdoors. This phase leads into Key Stage 1, when children really start to engage with learning to read, applying their mathematical knowledge and making sense of how the world works.\\r\n\\r\nChoose the Early Years pathway if you are interested in early learning and early child development. In choosing this pathway you will experience both the EYFS and Key Stage 1 phases and therefore be highly skilled in two curricula. If you are interested in the rewards and challenges of being an Early Years expert teacher choose this pathway.\\r\n\\r\nTutors are internationally or nationally renowned and their research regularly has a direct impact on school curricula and learning techniques, both in the UK and abroad. As experts in their field, their research also directly informs the focus and content of your course.\\r\n\\r\nLearning takes place through a series of lectures,, practical seminars and workshops, where interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) .  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics, English Language and a Science subject (or equivalent qualifications). \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nYou will have plenty of opportunities throughout your PGCE to apply your developing skills to real-life settings. We have strong partnerships with over 300 local schools and are renowned for our relationships with these partner schools.\\r\n\\r\nIt is a testament to the strength of our partnerships and the regard in which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Ofsted have rated us an \"Outstanding\" provider of teacher training.\\r\nThe University of Warwick has been training teachers for over 50 years and part of the Russell Group, whose members represent outstanding teaching and learning experience.\\r\nWe work in partnership with over 300 schools in eight different Local Education Authorities to deliver the highest quality training.\\r\nYou will be taught using the most current technology enhanced learning tools and techniques.\\r\n86% of our trainees rate the course as good or outstanding.\\r\nYou will be taught and supported by highly experienced tutors, class teachers and school mentors who have national reputations for the quality of their training.\\r\n98% of our trainees complete our courses with 94% being awarded good or outstanding. \\r\nOur employment rate into teaching is 95% . \\r\nUpon completing this course you gain 90 credits at master's level. This allows you to fast-track to stage two of a master's degree, quickly progressing your professional development.\\r\nAs alumni, our Professional Development team will support you to develop your skills through a range of CPD programmes to support your career progression.\\r\nOur courses attract a diverse range of age groups and backgrounds, creating a welcoming, inclusive and supportive community, that everyone can feel a part of.\\r\n\\r\n'I got the first job I applied for, I was told a few months after starting that the reputation from the University of Warwick alone had been enough to secure the job (luckily they were also impressed by my teaching!)' - Sophie, PGCE Alumni. ",
+    "TrainWithDisability": "[How will Warwick support you](https://warwick.ac.uk/fac/soc/cte/start-teaching/how-will-warwick-support-you/) \\r\n\\r\n[Support available to those with additional needs](https://warwick.ac.uk/fac/soc/cte/start-teaching/expectationsofateacher/#Disabilities) \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

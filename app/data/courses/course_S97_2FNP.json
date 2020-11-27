@@ -1,0 +1,171 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The Sheffield SCITT",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "S97/2FNP",
+  "providerCode": "S97",
+  "programmeCode": "2FNP",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Notre Dame High School, Fulwood Road, Sheffield, South Yorkshire, S10 3BT",
+      "code": "-"
+    },
+    {
+      "name": "All Saints Catholic High School",
+      "address": "Granville Rd, Sheffield, S2 2RJ",
+      "code": "K"
+    },
+    {
+      "name": "High Storrs School",
+      "address": "High Storrs Rd, Sheffield, S11 7LH",
+      "code": "M"
+    },
+    {
+      "name": "UTC Sheffield",
+      "address": "111 Matilda Street, Sheffield, S1 4QF",
+      "code": "O"
+    },
+    {
+      "name": "Sheffield Park Academy",
+      "address": "Beaumont Rd, Sheffield, S2 1SN",
+      "code": "P"
+    },
+    {
+      "name": "Bradfield School",
+      "address": "Kirk Edge Rd, Sheffield, S35 0AE",
+      "code": "Q"
+    },
+    {
+      "name": "Stocksbridge High School",
+      "address": "Shay House Ln, Stocksbridge, S36 1FD",
+      "code": "R"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Notre Dame High School, Fulwood Road, Sheffield, South Yorkshire, S10 3BT",
+      "geocode": true,
+      "formatted_address": "Fulwood Rd, Sheffield S10 3BT, UK",
+      "latitude": 53.3727646,
+      "longitude": -1.517207,
+      "post_code": "S10 3BT",
+      "city": "South Yorkshire",
+      "route": "Fulwood Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Granville Rd, Sheffield, S2 2RJ",
+      "geocode": true,
+      "formatted_address": "Granville Rd, Sheffield S2 2RJ, UK",
+      "latitude": 53.37404069999999,
+      "longitude": -1.4583878,
+      "post_code": "S2 2RJ",
+      "city": "South Yorkshire",
+      "route": "Granville Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "High Storrs Rd, Sheffield, S11 7LH",
+      "geocode": true,
+      "formatted_address": "High Storrs Rd, Sheffield S11 7LE, UK",
+      "latitude": 53.35780459999999,
+      "longitude": -1.5215874,
+      "post_code": "S11 7LE",
+      "city": "South Yorkshire",
+      "route": "High Storrs Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "111 Matilda Street, Sheffield, S1 4QF",
+      "geocode": true,
+      "formatted_address": "Sydney Works, 111 Matilda St, Sheffield S1 4QF, UK",
+      "latitude": 53.375364,
+      "longitude": -1.4678451,
+      "post_code": "S1 4QF",
+      "city": "South Yorkshire",
+      "route": "Matilda Street",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Beaumont Rd, Sheffield, S2 1SN",
+      "geocode": true,
+      "formatted_address": "Sheffield S2 1SN, UK",
+      "latitude": 53.37452390000001,
+      "longitude": -1.4180113,
+      "post_code": "S2 1SN",
+      "city": "South Yorkshire",
+      "route": null,
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Kirk Edge Rd, Sheffield, S35 0AE",
+      "geocode": true,
+      "formatted_address": "Kirk Edge Rd, Worrall, Sheffield S35 0AE, UK",
+      "latitude": 53.4245178,
+      "longitude": -1.5677191,
+      "post_code": "S35 0AE",
+      "city": "Worrall",
+      "route": "Kirk Edge Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Shay House Ln, Stocksbridge, S36 1FD",
+      "geocode": true,
+      "formatted_address": "Shay House Ln, Stocksbridge, Sheffield S36 1FD, UK",
+      "latitude": 53.4780721,
+      "longitude": -1.5969553,
+      "post_code": "S36 1FD",
+      "city": "Stocksbridge",
+      "route": "Shay House Lane",
+      "postal_town": "Sheffield"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S97",
+    "addr_1": "Notre Dame High School",
+    "addr_2": "Fulwood Road",
+    "addr_3": "Sheffield",
+    "addr_4": "South Yorkshire",
+    "postcode": "S10 3BT ",
+    "url": "http://www.sheffieldSCITT.org.uk",
+    "geocode": true,
+    "formatted_address": "Fulwood Rd, Sheffield S10 3BT, UK",
+    "latitude": 53.3727646,
+    "longitude": -1.517207,
+    "post_code": "S10 3BT",
+    "city": "South Yorkshire",
+    "route": "Fulwood Road",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "There are  Student Loans available to pay the fees. \\r\n\\r\nIf you decide to pay privately then the payment schedule is\\r\n\\r\n* Term 1 : £2,500\\r\n* Term 2 : £2,500\\r\n* Term 3 : £4,000\\r\n\\r\nWith each amount being due on the first day of each term.\\r\n\\r\nYou will have to pay the cost of the Enhanced Criminal Record Check in advance of starting the course. \\r\n\\r\n",
+    "AboutCourse": "The Sheffield SCITT is committed to providing quality first teacher training. We continually develop and review our programme of study to make it current and relevant. We are a QTS provider but we also offer a PGCert through the Sheffield University. If you study for QTS plus PGCert - you will also spend approx. 10 days over the year at the University of Sheffield. \\r\nThis course will entail 4 days in school. During time in school you will be guided by an experienced mentor. One day per week you will join other teacher trainees. You will be trained on aspects such as how to walk and talk like a teacher, plan lessons effectively, behaviour management and how to really stretch and challenge students. You will spend September to December in your ‘Home School’. From December to Easter you will have the opportunity to experience life in a contrasting secondary school. From Easter to the end of the programme you will return to your initial school. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "In order to be considered for the Sheffield SCITT. You would need \\r\n\\r\n* A relevant degree - if you do not have a relevant degree you will need to have an A level in the subject you want to teach.\\r\n* GCSE grade C or 4 in Maths and English. \\r\n\\r\nIf you have any questions about qualifications – please contact [admin@sheffieldscitt.org.uk]  and we can offer support.",
+    "FinancialSupport": "We are not able to offer any monetary financial support to trainees.  However,\\r\n\\r\n* We will support you with the Student Finance Application process. \\r\n* We will keep you informed as to whether you are eligible for a government funded Train to Teach Bursary. \\r\n* We will also make you aware of any national scholarships that may be available for the subject you are training to teach. \\r\n ",
+    "InterviewProcess": "The interview process for the SCITT involves a formal interview, questions from a subject specialist and a 15 minute teaching activity. We also ask you to sit mock numeracy and literacy papers to help us identify if you will need support to pass your skills tests. We also ask you to reflect on your teaching activity.",
+    "OtherRequirements": "You will need to pass an Enhanced Criminal Record Check. \\r\nIdeally you will have some experience working with children in a school or another organisation e.g. nursery, playgroups, scouts etc.\\r\n",
+    "PersonalQualities": "We are looking for the next generation of outstanding teachers and future school leaders. They will be passionate about children and education but also care about our schools and the communities they serve and the special ethos each of those schools have.\\r\n\\r\nThey will have experience of working with young people - ideally some of this will be school based giving them a good awareness of how schools operate and teachers work.  Whatever their experience our applicants need to demonstrate how they have engaged, communicated with and inspired the young people they have worked with. ",
+    "HowSchoolPlacementsWork": "You will spend most of the training year in your Home School and these schools are central to the selection process and our school based interview system. You can express a preference for your Home School based on location, preference for the type of school or a personal connection to a community you want to serve but we cannot guarantee to meet everyone's preference.\\r\n\\r\nThere is also a short alternative placement in a contrasting alliance school in the middle of the training year and a brief experience in the phase (primary or secondary) you are not training to teach in. It would be sensible for trainees to base themselves within commutable distance of their Home School so these are finalised with you before the summer holidays to allow you to arrange your accommodation. We make every attempt to make sure the alternative placement school is in an accessible location but it may involve a few weeks of travelling further to get that all important contrasting experience in the right school for you.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Sheffield SCITT is owned and run by Notre Dame High School, Sheffield. Notre Dame has been judged ‘Outstanding in all areas’ by OFSTED and The Sheffield SCITT was recently judged ‘Good’ by OFSTED for the quality of its teacher training.\\r\nOur partnership schools all see The Sheffield SCITT as the best way to find and develop their own future teachers. The Sheffield SCITT aims to supply most of the Newly Qualified Teacher needs of our partnership of schools. Whilst we cannot guarantee jobs for all trainees at the end of the course, the vast majority of trainees secure jobs within our partnership. \\r\nWe remain small enough to know every trainee as an individual and give every partner school a voice in the running of the SCITT, but large enough to offer our trainees a diverse and bespoke experience of a different schools within the partnership - including Academies, Maintained Community Schools, Church Schools, those in multicultural inner cities, secondary schools with large sixth forms and primary schools with early years centres.\\r\nOur course includes the opportunity to earn up to 60 Masters credits. The first 30 credits are studied during the training year and you have the option of choosing to earn a further 30 credits at no additional cost during your first year of teaching. The Masters credits are currently offered through Sheffield University and there is a further option to cash in the 60 Masters credits for a Postgraduate Certificate in Initial Teacher Training. \\r\n",
+    "TrainWithDisability": "Our aim is to meet the unique needs of every trainee, specifically by taking reasonable steps to ensure that disabled trainees and applicants are not put at a substantial disadvantage by comparison with trainees and applicants who are not disabled.\\r\n\\r\nWe cannot do this unless we know you have a disability. We encourage all our applicants to discuss their requirements with us at interview. While disabled access to our schools is good we can only place trainees at the most suitable school to meet their needs if we know what those needs are.\\r\n \\r\nIn addition to one to one support from your mentors and subject leaders we currently offer all our trainees access to free basic membership of the Westfield Health Foresight scheme which provides various benefits. \\r\nThe Sheffield SCITT has a ‘Reasonable Adjustments Policy and Procedure’ which underpins this approach and is available on request by emailing admin@sheffieldscitt.org.uk \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

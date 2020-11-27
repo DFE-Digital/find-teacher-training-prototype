@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Staffordshire University",
+  "provider": "Ashton Teacher Training Partnership",
+  "subjects": [
+    "Religious education",
+    "Secondary"
+  ],
+  "name": "Religious Education",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "29O/2S3R",
+  "providerCode": "29O",
+  "programmeCode": "2S3R",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Darnton Rd, Ashton-under-Lyne, OL6 9RL",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Darnton Rd, Ashton-under-Lyne, OL6 9RL",
+      "geocode": true,
+      "formatted_address": "Darnton Rd, Ashton-under-Lyne SK15 1NH, UK",
+      "latitude": 53.4924736,
+      "longitude": -2.0750169,
+      "post_code": "SK15 1NH",
+      "city": "Greater Manchester",
+      "route": "Darnton Road",
+      "postal_town": "Ashton-under-Lyne"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "29O",
+    "addr_1": "Ashton Sixth Form College",
+    "addr_2": "Darnton Road",
+    "addr_3": "Ashton-under-Lyne",
+    "addr_4": null,
+    "postcode": "OL6 9RL ",
+    "url": "http://www.asfc.ac.uk",
+    "geocode": true,
+    "formatted_address": "Darnton Rd, Ashton-under-Lyne OL6 9RL, UK",
+    "latitude": 53.4915466,
+    "longitude": -2.0760181,
+    "post_code": "OL6 9RL",
+    "city": "Greater Manchester",
+    "route": "Darnton Road",
+    "postal_town": "Ashton-under-Lyne"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "School Direct is a school-led training programme that gives you the chance to learn 'on the job' in a school. \\r\nYou will work as part of the teaching team from day one, learning from experienced, practising colleagues and immediately putting new skills into practice. \\r\nAshton Sixth Form College works with Staffordshire University delivering School Direct Teacher Training across Tameside, Derbyshire and Manchester. All of our student complete the course with a PGCE (with up to 60 master’s credits) and recommendation for QTS.\\r\nThe programme will also include a small number of observational days in settings with older and younger children. \\r\nThe course requires considerable time commitment, this includes all class contact, as well as independent study and preparation. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\n*  UK Honours Degree in the subject that you wish to teach (please check with us about your degree suitability if you are unsure). This must be at 2:2 or above\\r\n\\r\n*  A GCSE grade A*- C or 4-9 in Maths and English\\r\n\\r\n*  You will need to demonstrate a good understanding of the education system gained from work or placement in schools or experience of working with secondary school aged pupils\\r\n\\r\n*  You must be ICT literate\\r\n\\r\n\\r\n\\t",
+    "InterviewProcess": "Following a successful application through UCAS Teacher Training, you will be invited to phase one of the interview process which is a formal college based interview which will include:  \\r\n* Panel interview with representatives from a partner school and the Teacher Training Team\\r\n\\r\n* 10 minute presentation related to the course you have applied for\\r\n\\r\n* Spelling, punctuation and grammar test\\r\n\\r\n* Written task related to the course you have applied for\\r\n\\r\nIf you are successful at phase one of the interview process, you will be invited to a phase two interview at a school within our partnership where you will be observed by a member of the teaching staff interacting with children and staff. You must be successful with both parts to be offered a place on this course.\\r\n",
+    "OtherRequirements": "* You will be required to successfully complete a Disclosure and Barring Service (DBS) application and be certified fit to teach  \\r\n                                                                                                                                                           * Complete a health check to confirm that you are fit to teach  \\r\n                                                                                                                                                          *  Experience of working with secondary age students in a school setting would be beneficial preparation for interview\\r\n                                                                                                                                                           * We recommend you submit a well considered personal statement on the UCAS application form as this is a key part of the short listing process     \\r\n                                                                                                                                                             *  Demonstrate your ability and capacity to write at an appropriate level for your programme\\r\n",
+    "PersonalQualities": "We are looking for applicants who are passionate about teaching, and the subject that they wish to teach.",
+    "HowSchoolPlacementsWork": "Placements are carefully chosen for each student by our team. We always try to consider the location of the school, your personal circumstances and current experience level. \\r\nWe have placements available  in Secondary schools throughout Tameside, Manchester and Derbyshire. \\r\nIn each placement you will be allocated a mentor within the school, this is usually the class teacher, who will support you with your teacher training. We also provide all training and documentation to the schools so they know what to expect from ypu and how our timetable works. \\r\nYou will begin by observing other teachers and then by the end of placement 2, you should be teaching up to 80% of a teacher’s workload. You will be given a structured week by week plan to help develop your skills and knowledge. \\r\n\\r\nPlacements run from September to January for Placement 1, and then February to June for Placement 2. You will be in the classroom for four days per week, then come into college one or two days for academic lectures, usually a Friday. \\r\n\\r\nIf you are currently employed in the education sector and wish to arrange your own placement at the school you are working in, we are happy to discuss this with the school and can provide them with the training and support they need.  \\r\nYou will be observed teaching at least three times over the course of both placements so please bear this in mind when considering arranging your own placement. Should you wish to do this please contact a member of the team to discuss the location and other general school information. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our award-winning campus covers over 6 acres in the Tameside borough of Greater Manchester. \\r\nWith great links to public transport - a short journey from both Ashton and Stalybridge Train Station, Ashton tram stop and Ashton Bus Station - the college is ideally located in the area. \\r\nThe most recent National Student Survey (NSS) states that ‘100% of our students are satisfied with the quality of the courses’.\\r\n",
+    "TrainWithDisability": "Our experienced and professional Inclusive Learning Team provide specialist support if you have specific learning needs. The breadth of support is extensive, from learning difficulties to accessibility, and so much more. Every student’s needs are different and Inclusive Learning ensure that support is there for anyone who may need it.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Ashton Sixth Form has run degrees and teacher training in partnership with Staffordshire University for over 10 years and has achieved excellent outcomes for trainee teachers and degree students. \\r\nThe collaboration between Staffordshire University and Ashton Sixth Form College enables you to study on a Staffordshire University course in your home town.\\r\n\\r\n",
+        "UcasInstitutionCode": "S72"
+      }
+    ]
+  },
+  "has_inst": true
+}

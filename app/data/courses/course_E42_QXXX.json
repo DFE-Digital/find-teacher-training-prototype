@@ -1,0 +1,65 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Edge Hill University",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "E42/QXXX",
+  "providerCode": "E42",
+  "programmeCode": "QXXX",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "E42",
+    "addr_1": "Edge Hill University",
+    "addr_2": "St Helens Road",
+    "addr_3": "Ormskirk",
+    "addr_4": "Lancashire",
+    "postcode": "L39 4QP ",
+    "url": "http://www.edgehill.ac.uk/postgraduate/pgce",
+    "geocode": true,
+    "formatted_address": "Edge HIll University, Ormskirk, UK",
+    "latitude": 53.5576393,
+    "longitude": -2.8692166,
+    "post_code": null,
+    "city": "Lancashire",
+    "route": null,
+    "postal_town": "Ormskirk"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Tuition fees for the 2019/20 academic year are yet to be confirmed.\\r\n\\r\nAs an indication of what you might pay, the fee for students who started in September 2018 was:\\r\n•\\t£9,250\\r\n\\r\nPGCE students can apply for loans from Student Finance England and may be entitled to a tax-free bursary -https://getintoteaching.education.gov.uk/funding-and-salary/overview\\r\n\\r\nFind out more about scholarships and funding on our website - https://le.ac.uk/study/postgraduates/fees-funding/scholarships-discounts\\r\n\\r\n",
+    "AboutCourse": "The PGCE English (M) and (H) level courses aim to prepare you to meet QTS Standards fully and to learn to teach the 11 - 19 English/Media curriculum with confidence, authority and enthusiasm. The course will ensure that, as a creative teacher, you can facilitate your own students' development as fully literate young adults who can understand, engage with and create a multiplicity of texts both within and beyond the classroom.\\r\n\\r\nYou will have taught sessions and in-school mentoring from some of the best practitioners in the field and learn how to become an effective practitioner yourself. The programme will cover all areas of the National Curriculum for English and also address preparation for public examinations across the 16 -19 age range and KS3 school-based assessments. \\r\n\\r\nThe course has a number of distinctive features. You will gain experience of writing poetry and composing a writing portfolio of a wide range of other texts in collaboration with others. You will take part in practical drama workshops and learn about teaching many aspects of Media and Film Studies. \\r\n\\r\nWe want you to:\\r\n•reflect critically on the English/Media curriculum and be inspired by the dynamic nature of your subject;\\r\n\\r\n•learn from examples of best practice and become effective practitioners yourselves;\\r\n\\r\n•be well supported by both university and school tutors and support each other in the development of subject knowledge and classroom expertise;\\r\n\\r\n•set high expectations for yourselves and your students;\\r\n\\r\n•develop an understanding of your professional roles within a department and whole school team; and\\r\n\\r\n•view the PGCE course as the beginning of your CPD. \\r\n\\r\nApplications are welcome from students with good/very good qualifications in their English qualifications at GCSE and AS/A level (or equivalent) and at honours degree level. Those students with joint or combined honours degrees in which English is a major subject are also welcome to apply. \\r\n\\r\nStudents with degrees in a range of academic backgrounds including American Studies, Classical Studies, History and Law have also made successful applications previously.  In all cases applicants are required to have an A level English Language or Literature or Lang/Lit qualification (or equivalent) and should be able to demonstrate a genuine interest in and enthusiasm for English at interview. \\r\n\\r\nApplicants without English as a major subject would be expected to undertake essential background reading before the start of the course and may need to undertake a Subject Knowledge Enhancement course prior to starting.  ",
+    "CourseLength": "OneYear",
+    "Qualifications": "•\\t2:1 degree for English, Geography, History or Social Science\\r\n•\\t2:2 degree for Mathematics, MFL, Sciences or RE\\r\n(We may, under exceptional circumstances, accept a Third if there are \\r\nother very strong recommending features in your application.)\\r\n\\r\n•\\tGCSE Grade 4 (old grade C) or above in English Language and Maths (equivalency test available if needed)\\r\n\\r\n•\\tA-levels (or equivalent) in relevant subjects\\r\n\\r\n•\\tAlthough not essential, you may find it useful to have recent experience working with children and/or observing teaching in a school setting.\\r\n\\r\n•\\tA pass in the Professional Skills Tests in literacy and numeracy\\r\n",
+    "FeeInternational": 15405.0,
+    "InterviewProcess": "If invited for interview, you will meet members of the course team who will give an overview of the course and answer any questions you may have. \\r\n\\r\nYou will participate in a group task with candidates from a range of subjects and give a brief presentation as part of a small group. \\r\n\\r\nSubject tutors will introduce a written subject task that you will complete during the day and you will have an individual interview with a subject tutor. The interview is not a daunting process but rather a discussion about your suitability and preparation for going into teaching. During the interview, you will explore any additional preparation needed to help put you in the best possible position to engage successfully with the course from the start.",
+    "OtherRequirements": "Admission to the course is subject to a satisfactory medical report. The University will provide more information about this should you be offered a place.\\r\n\\r\nAll offers are subject to a satisfactory enhanced DBS disclosure. We will provide instructions regarding the DBS application process once you have accepted an offer of a place on the course.\\r\n\\r\nEnglish Language Requirements - you must have a GCSE Grade 4 (old grade C) in English Language. \\r\n\\r\n\\r\nWe offer an equivalency test in English and/or Mathematics for any successful applicant who does not hold this qualification or an equivalent one.  \\r\n",
+    "PersonalQualities": "We strongly encourage all prospective students to spend time observing, and possibly  assisting, learners and teachers in secondary English classrooms in order to familiarise themselves with current developments.  We welcome applicants who have creative writing, drama, performance and media production skills which they wish to develop further for use in the classroom.  \\r\n\\r\nThe Secondary PGCE is a challenging course, and we are looking for applicants with a wide range of skills, knowledge, experiences and an aptitude for teaching.  These skills also include the ability to form relationships,  good communication skills, a commitment to learning and teaching and reflective qualities. \\r\n\\r\n",
+    "HowSchoolPlacementsWork": "You will undertake two secondary teaching placements in our Partnership Schools. Leicester is ideally placed to offer the opportunity to work in both inner city and rural environments, with learners from a wide range of ethnic backgrounds. We try to place students in contrasting schools to ensure you have a rich and varied experience in your initial training year and that you have the opportunity to teach across the 11-18 age range.\\r\n\\r\nThe placements are referred to as 'Phase A' and 'Phase B' placements.\\r\nPhase A.  In planning your placements, your subject tutor will try to balance the distance you are asked to travel with your individual needs and our knowledge of our wide range of school partners. \\r\n\\r\nPhase A\\r\nAfter induction you will spend about 8 weeks in your Phase A placement school.  You will build on existing experience and develop new skills with support from the school's Coordinator for Initial Teacher Education and a subject mentor who will oversee your professional development during the placement and liaise closely with your university tutor who will also support you. \\r\n\\r\nPhase B\\r\nDuring your second placement you will spend about 14 weeks in a different school, also supported by a mentor, ITE Coordinator and university tutor.  "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Edge Hill University is based on an attractive, award-winning 160-acre campus in Lancashire, close to Liverpool and Manchester. The institution has been providing higher education since 1885, with a mission to create opportunity from knowledge.\\r\n\\r\nThe institution’s significant success in achieving its mission is recognised by a range of awards and high rankings for teaching, student experience, accommodation and more. Edge Hill is ranked as Gold in the Teaching Excellence Framework (TEF), the government’s evaluation of excellence in teaching quality, learning environment and student outcomes. The University is also one of the select few to have held the coveted UK University of the Year title, awarded by Times Higher Education (2014/15).\\r\n\\r\nEdge Hill University has been at the forefront of initial teacher training for 130 years. Our PGCEs enable graduates to train to teach in early years, primary, secondary or further education.\\r\n\\r\nYou can study a broad-based early years or primary PGCE, specialise in primary mathematics or primary physical education, choose from a variety of dedicated routes in secondary subject areas, or prepare for a career in further education or the lifelong learning sector.\\r\n\\r\nIf you’re looking to join a PGCE in secondary education but lack the required subject knowledge, we may have a suitable subject knowledge enhancement course for you.\\r\n\\r\nWhichever age range or specialism you choose, your programme will combine expert tuition with significant time in schools and other settings, enabling you to gain extensive practical experience and become increasingly confident in the classroom.",
+    "TrainWithDisability": "The Inclusion Team provide information, guidance and support to applicants and students who have disclosed any of the following: Autism Spectrum Conditions (ASC), Mental Health, Sensory Impairment, Mobility difficulties or a medical condition e.g. Epilepsy, Diabetes, Heart Condition, Asthma and we work closely with academic and support staff across the University.\\r\n\\r\nLearning Services provides support to students with a specific learning difficulty – SpLD, such as Dyslexia.\\r\n\\r\nWe encourage disabled applicants to make contact with us early in the application process to enable us to plan for support you may need right from start of your university course. We provide a friendly and professional service and applicants and students can discuss individual requirements in complete confidence. Our highly experienced team are here to advise you about:\\r\n\\r\n Impact of disability/health condition and potential impact on study\\r\n\\r\nSupport available including 1-1 sessions, group support and study skills sessions\\r\n\\r\nThe benefits of a Student Support Plan\\r\n\\r\nDisabled Students Allowance (DSA) and eligibility\\r\n\\r\nReasonable adjustments to support your study\\r\n\\r\nExam modifications and alternative assessments\\r\n\\r\nRights and Responsibilities\\r\n\\r\nSupport whilst on placement (e.g. access and transport)\\r\n\\r\nDisclosure and Confidentiality\\r\n\\r\nRights and Responsibilities\\r\n\\r\nPEEPs and Emergency Action Plans\\r\n\\r\nOne of our priorities is to ensure safe environment for all students. If you have Epilepsy, Diabetes, Asthma or another serious health condition which may require First Aid, we strongly recommend that you complete one of our Emergency Action Plans. We can discuss this with you when you come to see us.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

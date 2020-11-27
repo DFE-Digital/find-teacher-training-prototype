@@ -1,0 +1,60 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Sheffield Hallam University",
+  "subjects": [
+    "Early years",
+    "Primary"
+  ],
+  "name": "Early Years and Primary Education (3-7)",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "S21/X121",
+  "providerCode": "S21",
+  "programmeCode": "X121",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S21",
+    "addr_1": "City Campus",
+    "addr_2": "Pond Street",
+    "addr_3": "Sheffield",
+    "addr_4": null,
+    "postcode": "S1 1WB  ",
+    "url": "http://www.shu.ac.uk",
+    "geocode": true,
+    "formatted_address": "City Campus, Howard St, Sheffield S1 1WB, UK",
+    "latitude": 53.37958769999999,
+    "longitude": -1.4651842,
+    "post_code": "S1 1WB",
+    "city": "South Yorkshire",
+    "route": "Howard Street",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Our Post Graduate Certificate Education (PGCE) Primary - the Early Years pathway leads to the award of Qualified Teacher Status (QTS) giving you the experience, the opportunity and the knowledge to work in both Early Years Foundation Stage (EYFS) settings and Infant/Primary school settings.\\r\n\\r\nThe EYFS is a unique phase of education which involves learning through play and first hand experiences both inside and outdoors. This phase leads into Key Stage 1, when children really start to engage with learning to read, applying their mathematical knowledge and making sense of how the world works.\\r\n\\r\nChoose the Early Years pathway if you are interested in early learning and early child development. In choosing this pathway you will experience both the EYFS and Key Stage 1 phases and therefore be highly skilled in two curricula. If you are interested in the rewards and challenges of being an Early Years expert teacher choose this pathway.\\r\n\\r\nTutors are internationally or nationally renowned and their research regularly has a direct impact on school curricula and learning techniques, both in the UK and abroad. As experts in their field, their research also directly informs the focus and content of your course.\\r\n\\r\nLearning takes place through a series of lectures,, practical seminars and workshops, where interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) .  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics, English Language and a Science subject (or equivalent qualifications). \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nYou will have plenty of opportunities throughout your PGCE to apply your developing skills to real-life settings. We have strong partnerships with over 300 local schools and are renowned for our relationships with these partner schools.\\r\n\\r\nIt is a testament to the strength of our partnerships and the regard in which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Sheffield Hallam University is one of the UK's largest universities, based in the heart of Sheffield, one of the UK’s biggest student cities.\\r\n\\r\nSheffield is the fifth biggest city in the UK with over 60,000 students, it has a mix of culture and green spaces. \\r\n\\r\nWe have invested over £100 million in new buildings and facilities over the last five years, providing innovative, flexible and sustainable spaces to enhance student experience.\\r\n\\r\nWe pride ourselves on the applied nature of our courses. We offer one of the largest and most diverse\\r\nrange of placements in the region. We’ve built up a network of over 600 partner schools, colleges and other educational establishments, and we work together to our mutual advantage.\\r\n\\t\\r\nYou will study at our centre of education that is recognised for excellence and innovation in teaching and learning. Our academics, researchers and partners in schools work together to ensure you become a committed and professional graduate, with the opportunity to return to us throughout your career to further your professional development.\\r\n\\t\\r\nWe received an overall student satisfaction rating of 86% in the 2018 National Student Survey. This result places us in the top 30 universities in the country for student satisfaction. We also received a Silver rating in the 2017 Teaching Excellence Framework. \\r\n",
+    "TrainWithDisability": "If you have a disability, including long term medical conditions, specific learning difficulties (such as dyslexia, dyspraxia and A(D)HD) and mental health conditions, you can access additional support for your academic studies whilst at Sheffield Hallam.\\r\n\\r\nStudents can receive support for a wide variety of conditions. There is extensive support available, including\\r\n\\r\n•\\tLearning contracts- reasonable adjustments to your course such as extensions or extra time in exams\\r\n\\r\n•\\tSupport workers - like a mentor to help with organisation, or a personal assistant to help with mobility\\r\n\\r\n•\\tEquipment/Assistive Technology and software - such as digital recorders or text to speech software\\r\n\\r\nWe have an on-site assessment Centre, the Sheffield Regional Assessment Centre, where a range of disability specialists can carry out Study Needs Assessments.\\r\n\\r\nWe run daily drop in sessions - come and talk to us, no appointment needed. You can also register for support online.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

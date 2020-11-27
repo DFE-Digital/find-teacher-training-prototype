@@ -1,0 +1,63 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Edge Hill University",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "E42/2PPM",
+  "providerCode": "E42",
+  "programmeCode": "2PPM",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "E42",
+    "addr_1": "Edge Hill University",
+    "addr_2": "St Helens Road",
+    "addr_3": "Ormskirk",
+    "addr_4": "Lancashire",
+    "postcode": "L39 4QP ",
+    "url": "http://www.edgehill.ac.uk/postgraduate/pgce",
+    "geocode": true,
+    "formatted_address": "Edge HIll University, Ormskirk, UK",
+    "latitude": 53.5576393,
+    "longitude": -2.8692166,
+    "post_code": null,
+    "city": "Lancashire",
+    "route": null,
+    "postal_town": "Ormskirk"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Subject to eligibility, UK and EU students can apply for a Tuition Fee Loan from the Government to cover the full cost of tuition fees. UK and EU students may also be eligible to apply for additional funding to help with living costs.\\r\n\\r\nFinancial support arrangements for eligible UK and EU students joining this programme in academic year 2019/20 are still to be announced by the Government. \\r\n\\r\nFor more details visit edgehill.ac.uk/study/fees-and-funding\\r\n\\r\nFinancial support information for international students can be found at edgehill.ac.uk/international/fees.",
+    "AboutCourse": "Train to enthuse and inspire children aged 5-11 with creative teaching.\\r\n\\r\nChoose a research specialism from a variety of subjects.\\r\n\\r\nJoin an innovative, school-led programme and learn from specialist tutors and expert practitioners at the cutting edge of developments in education.\\r\n\\r\nBenefit from high quality training through our excellent partnerships with schools and experience a variety of Key Stage 1 and Key Stage 2 classes.\\r\n\\r\nDevelop your own interests and receive individual support.\\r\n\\r\nSuccessful completion of the programme leads to recommendation for Qualified Teacher Status.\\r\n\\r\nOur PGCE Primary Education with QTS programme is a school-based partnership, combining on-campus study with training in placement schools and settings.\\r\n\\r\nThe PGCE will train you to teach across the 5-11 age range in Key Stages 1 and 2 and achieve the Teachers’ Standards. You will receive a high quality training experience and learn the latest approaches and strategies necessary to fully prepare you for your first year as a Newly Qualified Teacher (NQT).\\r\n\\r\nDuring the programme you will study a breadth of subjects, including all of the National Curriculum subjects. Through a focus on evidence-based research, you will investigate further one of the following:\\r\n\\r\n    Computing/Technology Enhanced Learning\\r\n    Creative Arts\\r\n    English\\r\n    Humanities\\r\n    Mathematics\\r\n    Modern Languages\\r\n    Physical Education\\r\n    Science\\r\n    Special Educational Needs/Disabilities\\r\n    Learning Outside The Classroom\\r\n\\r\nThis PGCE consists of three main elements.\\r\n\\r\nAcademic and Professional Development – gaining knowledge of how children learn and how their needs differ, you will develop the core skills of planning, assessment, teaching and classroom management. You will also gain an understanding of the education system, consider the wider professional role of a teacher, and learn how to reflect upon and take responsibility for your professional development.\\r\n\\r\nCurriculum Subject Knowledge – working with expert tutors, you will acquire essential subject knowledge for the Primary National Curriculum. Exploring a range of teaching methods, including the use of ‘new’ technologies, you will be guided in how to provide children with stimulating, imaginative and effective learning experiences.\\r\n\\r\nSpecialism – you will identify a specific focus of personal interest relevant to current issues, initiatives and discussions within your chosen specialism. You will conduct a literature review and develop proposals for school improvement.\\r\n\\r\nWe strongly recommend an early application as there is high demand for places.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Before the programme commences, you must have:\\r\n\\r\nA first or second class Honours degree from a UK university (or equivalent qualification);\\r\n\\r\nGCSE at Grade C or Grade 4 (or equivalent qualification) in English Language and Mathematics;\\r\n\\r\nGCSE at Grade C or Grade 4 (or equivalent qualification) in Combined Science / Physics / Chemistry / Biology.\\r\n\\r\nYou are required to undertake Professional Skills Tests in Literacy and Numeracy prior to entry to this programme. Successful completion of the Professional Skills Tests will form part of the conditions of any offer of a place. Further details can be found at edgehill.ac.uk/skillstests",
+    "FeeInternational": 13000.0,
+    "FinancialSupport": "Edge Hill University offers a range of scholarships with a competitive application process for prospective full-time PGCE students. These scholarships aren’t linked to academic success and celebrate determination, talent and achievement beyond your coursework, for instance in creativity, enterprise, ICT, performance, sport or volunteering.\\r\n\\r\nTo find out more about scholarships, to assess your eligibility, and to meet some of our dedicated scholarship winners, visit edgehill.ac.uk/scholarships",
+    "OtherRequirements": "If you accept a formal offer from Edge Hill University you will be required to meet the Department for Education’s standards for physical and mental fitness to teach and clearance to work with children. \\r\n\\r\nFurther information, including a Declaration of Health questionnaire and details of how to apply for a Disclosure and Barring Service (DBS) Enhanced Disclosure will be sent to you after you have firmly accepted an offer. ",
+    "PersonalQualities": "When you apply, you are expected to have:\\r\n\\r\nA commitment to, and understanding of, primary education, demonstrating the personal attributes, values and motivation required to train as a teacher\\r\n\\r\nSuitable presentational qualities, including a good standard of written English."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Edge Hill University is based on an attractive, award-winning 160-acre campus in Lancashire, close to Liverpool and Manchester. The institution has been providing higher education since 1885, with a mission to create opportunity from knowledge.\\r\n\\r\nThe institution’s significant success in achieving its mission is recognised by a range of awards and high rankings for teaching, student experience, accommodation and more. Edge Hill is ranked as Gold in the Teaching Excellence Framework (TEF), the government’s evaluation of excellence in teaching quality, learning environment and student outcomes. The University is also one of the select few to have held the coveted UK University of the Year title, awarded by Times Higher Education (2014/15).\\r\n\\r\nEdge Hill University has been at the forefront of initial teacher training for 130 years. Our PGCEs enable graduates to train to teach in early years, primary, secondary or further education.\\r\n\\r\nYou can study a broad-based early years or primary PGCE, specialise in primary mathematics or primary physical education, choose from a variety of dedicated routes in secondary subject areas, or prepare for a career in further education or the lifelong learning sector.\\r\n\\r\nIf you’re looking to join a PGCE in secondary education but lack the required subject knowledge, we may have a suitable subject knowledge enhancement course for you.\\r\n\\r\nWhichever age range or specialism you choose, your programme will combine expert tuition with significant time in schools and other settings, enabling you to gain extensive practical experience and become increasingly confident in the classroom.",
+    "TrainWithDisability": "The Inclusion Team provide information, guidance and support to applicants and students who have disclosed any of the following: Autism Spectrum Conditions (ASC), Mental Health, Sensory Impairment, Mobility difficulties or a medical condition e.g. Epilepsy, Diabetes, Heart Condition, Asthma and we work closely with academic and support staff across the University.\\r\n\\r\nLearning Services provides support to students with a specific learning difficulty – SpLD, such as Dyslexia.\\r\n\\r\nWe encourage disabled applicants to make contact with us early in the application process to enable us to plan for support you may need right from start of your university course. We provide a friendly and professional service and applicants and students can discuss individual requirements in complete confidence. Our highly experienced team are here to advise you about:\\r\n\\r\n Impact of disability/health condition and potential impact on study\\r\n\\r\nSupport available including 1-1 sessions, group support and study skills sessions\\r\n\\r\nThe benefits of a Student Support Plan\\r\n\\r\nDisabled Students Allowance (DSA) and eligibility\\r\n\\r\nReasonable adjustments to support your study\\r\n\\r\nExam modifications and alternative assessments\\r\n\\r\nRights and Responsibilities\\r\n\\r\nSupport whilst on placement (e.g. access and transport)\\r\n\\r\nDisclosure and Confidentiality\\r\n\\r\nRights and Responsibilities\\r\n\\r\nPEEPs and Emergency Action Plans\\r\n\\r\nOne of our priorities is to ensure safe environment for all students. If you have Epilepsy, Diabetes, Asthma or another serious health condition which may require First Aid, we strongly recommend that you complete one of our Emergency Action Plans. We can discuss this with you when you come to see us.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

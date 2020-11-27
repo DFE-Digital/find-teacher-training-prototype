@@ -1,0 +1,87 @@
+{
+  "locationType": "School",
+  "accrediting": "Roehampton University",
+  "provider": "Wandle Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "13V/2PM3",
+  "providerCode": "13V",
+  "programmeCode": "2PM3",
+  "schools": [
+    {
+      "name": "Chesterton Teaching School",
+      "address": "Dagnall Street, Battersea, London, SW11 5DT",
+      "code": "C"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Dagnall Street, Battersea, London, SW11 5DT",
+      "geocode": true,
+      "formatted_address": "Dagnall St, London SW11 5DN, UK",
+      "latitude": 51.4730128,
+      "longitude": -0.1576902,
+      "post_code": "SW11 5DN",
+      "city": "Greater London",
+      "route": "Dagnall Street",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "13V",
+    "addr_1": "Chesterton Teaching School",
+    "addr_2": "Dagnall Street",
+    "addr_3": "Battersea",
+    "addr_4": "London",
+    "postcode": "SW11 5DT",
+    "url": "http://www.chesterton.wandsworth.sch.uk",
+    "geocode": true,
+    "formatted_address": "Dagnall St, London SW11 5DT, UK",
+    "latitude": 51.47341410000001,
+    "longitude": -0.1567853,
+    "post_code": "SW11 5DT",
+    "city": "Greater London",
+    "route": "Dagnall Street",
+    "postal_town": "London"
+  },
+  "options": [
+    "PGCE with QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "\\r\nThe Primary General (salaried) is a PGCE course offered in conjunction with Roehampton University. This course leads to QTS and PGCE. \\r\nThe salaried School Direct training programme is open to high quality graduates with three or more years' professional experience. It provides an employment-based avenue into teaching, where the student is employed by the school as an unqualified teacher and their salary and training is subsidised by the Teaching Agency. ",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "You’ll be paid and taxed as an unqualified teacher. The salary awarded will differ between schools; you should check the salary with the school before you apply for either salaried routes.\\r\nThe employing school cannot pay you less than  an unqualified teacher on point 1 of the scale, £20.909.\\r\nWandle TSA meet the costs of the Roehampton training fee.",
+    "Qualifications": "Essential requirements for those applying for salaried places: \\r\n- 2.1 Honours UK degree preferred or an approved non-UK degree qualification. 2.2 degree considered when an applicant has a Masters degree or can demonstrate substantial (two years minimum) recent (within the last 18 months) Primary school experience within a UK state/mainstream Primary school. \\r\n- 5 GCSEs at grade C or above, including Maths, English and Science \\r\n  work experience \\r\n- Evidence at application of  a high standard of written standard English. \\r\n- Successful completion of Skills Tests in Maths and English. ",
+    "InterviewProcess": "Candidates who are shortlisted are invited to a selection day at the lead Primary school. Candidates should allow a full day for this and we expect candidates to dress in a professional manner.  Candidates will be asked to lead a mixed ability group  learning activity, complete a written task, deliver a presentation on a given theme and an interview.\\r\nSuccessful candidates  will be offered a one year contract as an unqualified teacher  by the hosting school. This means you will be a member of staff at that school whilst you complete your training. Candidates then have ten days to accept or reject the offer. Candidates will also be required to complete the Skills Tests in Maths and English before starting their course. We normally expect candidates to complete the Skills Tests within six weeks of being offered and accepting a place. \\r\nYou will also have to be certified as meeting the national requirements for physical and mental fitness to teach. Roehampton University will ask you to complete a health questionnaire for scrutiny by their occupational health provider. Candidates are responsible for the cost of obtaining occupational health clearance, which is approximately £45. \\r\nYou will also be required to apply for an Enhanced Disclosure certificate from the DBS as a condition of entry. \\r\n",
+    "OtherRequirements": "Enhanced DBS\\r\n",
+    "PersonalQualities": "The Wandle Teaching School Alliance wishes to recruit high quality graduates committed to developing themselves as outstanding teachers. We are looking for candidates who have high expectations for their students. You should be a good communicator, enjoy challenge and have a love of learning. You will need to be resilient, flexible and hard working. We expect you to have excellent subject knowledge and the ability to build a strong rapport with students of all abilities. It also helps to have a sense of humour and, most importantly of all, to like and respect children. ",
+    "HowSchoolPlacementsWork": "The School Direct Salaried  route leads to a PGCE with 60 Masters credits on successful completion. There will be three assignments across the year, each leading to 20 Masters level credits. You will spend at least 120 days in school over the year long programme, and will also attend classes at Roehampton. Your main placement will be in the school that you have applied to and been appointed as an unqualified member of staff and there will also be a shorter placement in another school which will add breadth to the experience.\\r\n\\r\nYou will be visited in school by a university tutor, and you will have a mentor in school. The training at  Wandle TSA and Roehampton will enable you to reflect upon your practice within the broad context of educational theory so that you will feel equipped to teach in any school."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Train to become a teacher with the Wandle Teaching School Alliance ( WTSA) and benefit from a tailored programme of personal development and support from outstanding, experienced professionals. Our aim is to always keep you at the centre of everything we do. Our programmes are high challenge and high support as we believe in preparing you to become the best possible teacher you can be.\\r\nOur Alliance of over forty members, based in south and south west London, offers a unique opportunity to train within a wide range of schools, Primary, Secondary and Special.\\r\nTraining with us will enable you to gain an in-depth experience of all aspects of teaching and learning within a secure and caring environment.\\r\nWe offer additional workshops throughout the year to develop your professional learning and practice to the highest level, for example, you will be able to take part in the Child Exploitation and Online Protection training, leading to the CEOPS certificate.\\r\nWe are a dynamic and collaborative learning community and we look forward to you starting your teaching career with us.",
+    "TrainWithDisability": "Wandle TSA aims to create an environment that enables anyone to participate fully in the mainstream of school life.\\r\nWe address disability, as defined by the Equality Act 2010:\\r\n•\\tmobility and sensory impairments\\r\n•\\tmental health issues\\r\n•\\tspecific learning difficulties (SpLD), including the autistic spectrum and Aspergers Syndrome\\r\n•\\tmedical conditions which may have an impact on day-to-day activities\\r\nAll our partner universities have well established student support services. Wandle TSA  proactively  works with our partner’s student services in meeting the needs of our PGCE students.  A wide range of support services is available to students through the universities with reference to all of the above.\\r\nWe encourage you to make contact with us as early in the application process as possible so as we can work with the university in identifying services appropriate to your individual needs. In the first instance you should contact the Director of the Teaching School, Mr Denys Wallace on dwallace5.212@lgflmail.org .\\r\nOur aim is to ensure that there as few barriers as possible to prevent you studying successfully. We therefore work closely with the university tutorial teams to customise programmes as necessary.\\r\nThe universities will provide ICT enabling support and our schools will help you understand, use and customise the accessibility options built-in to your devices\\r\nAlliance schools provide access for students with mobility impairments and have dedicated car parking allocated for the duration of school placements. Specific mobility issues for the individual schools will be addressed in collaboration with you.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "\\r\n\\r\nGoldsmiths, University of London have been training teachers since 1904 and  are  renowned  as   leaders in   educational  research  and teacher  training.  Wandle TSA works in close  collaboration  with   Goldsmiths, in  both  teacher  training  and  research.  We particularly value Goldsmiths  programmes  as they have  a  strong  emphasis  on  active  learning, creativity and  inclusion. Our  graduates  benefit  from  excellent employment  opportunities.  Goldsmiths have  internationally  recognised  professors in  their   Educational   Studies   department,   including   Michael   Rosen. Goldsmiths  campus  is  set  in  vibrant  New  Cross,  with  excellent  London Overground, National Rail and bus links into central London and to  Wandle TSA schools.",
+        "UcasInstitutionCode": "G56"
+      },
+      {
+        "Description": "UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as “outstanding” in every criterion across Primary and Secondary Education. Wandle TSA has a long established collaboration with the IOE  and is recognised as one of their principal partners in teacher training. We have excellent transport links from our schools to the IOE in central London and students enjoy a well thought out challenging ,highly supportive PGCE programme.  We have employed many of our PGCE students from this programme and several are now in middle and senior leadership positions in our schools.\\r\n\\r\n",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "Wandle TSA has collaborated with St Mary's University in  training PE teachers for several years. St Mary's provides an excellent campus with highly experienced staff .Their course is rigorous and demanding but with high support from St Mary's and Wandle TSA tutors . We value their emphasis on developing creative practitioners who can teach across the whole ability range. In your placements in Wandle TSA schools you will have support and guidance from highly experienced staff and Ernest Bevin, one of our partner schools , is a Sports College, which provides PE students with a unique training opportunity.",
+        "UcasInstitutionCode": "S64"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "R48"
+      }
+    ]
+  },
+  "has_inst": true
+}

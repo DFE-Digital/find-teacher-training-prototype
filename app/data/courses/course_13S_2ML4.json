@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "Surrey South Farnham SCITT",
+  "provider": "Surrey South Farnham SCITT (School Direct)",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "13S/2ML4",
+  "providerCode": "13S",
+  "programmeCode": "2ML4",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Menin Way, Farnham, GU9 8DY",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Menin Way, Farnham, GU9 8DY",
+      "geocode": true,
+      "formatted_address": "Menin Way, Farnham GU9 8DY, UK",
+      "latitude": 51.2095804,
+      "longitude": -0.786122,
+      "post_code": "GU9 8DY",
+      "city": "Surrey",
+      "route": "Menin Way",
+      "postal_town": "Farnham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "13S",
+    "addr_1": "Menin Way",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": "Farnham",
+    "postcode": "GU9 8DY ",
+    "url": "http://www.ssfscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Menin Way, Farnham GU9 8DY, UK",
+    "latitude": 51.20986509999999,
+    "longitude": -0.7857273,
+    "post_code": "GU9 8DY",
+    "city": "Surrey",
+    "route": "Menin Way",
+    "postal_town": "Farnham"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "Surrey South Farnham SCITT is an innovative, leading, OFSTED outstanding, well established and highly respected provider of Primary Initial Teacher Training working across all areas in Surrey and bordering counties.  We have a reputation for being amongst the best school-led teacher training providers in the country (Good Teacher Training Guide 2015 and 2017).\\r\n\\r\nOur School Direct Primary General Salaried programme is an employment based programme that leads to the award of QTS (Qualified Teacher Status).  A grant is provided by the government to subsidise an unqualified teachers' salary and to cover training costs.  Trainees are employed by a host school and will have the opportunity for a six week experience in a contrasting school and enhancement opportunities within the partnership of schools. \\r\n\\r\nTrainees are in school for four days each week and this includes some school based training time to observe experienced colleagues or undertake course requirements.  There is a gradual increase of teaching commitments working up to three to four days a week by July 2020.  One day each week is spent off site with your local cohort at professional studies training.\\r\n\\r\nSSF provides a diverse and engaging programme of weekly [professional studies training](http://www.ssfscitt.org.uk/page/?title=Weekly+Professional+Studies&pid=16), covering the range of primary curriculum subjects, SEND, behaviour management, EAL and others. Training is led by a team of local and national experts and outstanding primary practitioners. Each year the training has a 100% good or very good rating, but is constantly reviewed and updated to keep pace with the changing primary school landscape and national priorities.\\r\n\\r\nWe recognise that location is an important factor for you so we run training in geographical cohorts and build local support networks (2019 hubs are Farnham, Reigate and Cobham).  \\r\n\\r\nConsideration of trainee workload underpins programme design and structure.  Personalised training plans ensure a steady pace and deadlines are carefully scheduled and do not overlap. Every trainee is allocated a school mentor and external support tutor to ensure that training is tailored to individual needs.\\r\n\\r\nAssessment is continuous and will include observations of your teaching, school based tasks and the ability to articulate your practice. ",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "Minimum unqualified teachers' pay-scale point 1.",
+    "Qualifications": "To apply for a place on our this programme there are entry requirements that must be met prior to commencement in September 2019:\\r\n\\r\n* a standard equivalent to grade 4 (C) or above in the GCSE examinations in English, mathematics and science\\r\n* a first degree of a United Kingdom higher education institution or equivalent overseas qualification\\r\n* [professional skills tests](http://www.ssfscitt.org.uk/page/?title=Professional+Skills+Tests+%28Numeracy+%26amp%3B+Literacy%29&pid=34) in literacy and numeracy \\r\n",
+    "InterviewProcess": "Once we have received your application through UCAS we will check that you meet eligibility criteria.  Your personal statement will be read by the Director of ITT (who contributes to UCAS advice for applicants in the UCAS blog section on their website).\\r\n\\r\nWe will shortlist and invite successful applicants for an interview (we hold interviews each week).  This will be held at the lead school, South Farnham School (GU9 8DY).  It is important to note that partnership schools are located across the county and within bordering areas.  Weekly professional studies training takes place at venues across Surrey to ensure ease of travel and to create local support networks for our trainees.\\r\n\\r\nThe interview will consist of:\\r\n\\r\n* a panel interview with a partnership school head-teacher and a member of the SSF SCITT team\\r\n* a short presentation (five minutes) on your commitment and ability to become an outstanding primary school teacher\\r\n* core subject tests to assess your competency in Mathematics and English (these are not the skills tests. These give us a greater insight into your training needs and enable us to offer subject knowledge enhancement)\\r\n* an opportunity to ask questions and explore your personal training needs, placement school and programme options\\r\n\\r\nIf successful at interview and an employing school is found, we will make you an offer through UCAS.  Conditions will include professional skills tests passes in literacy and numeracy, the continued support of an employing school, qualification and pre-employment checks.\\r\n",
+    "OtherRequirements": "All ITT providers are asked to ensure that all entrants take part in a rigorous process designed to assess their suitability to train to teach.  This includes:\\r\n\\r\n* Health and physical capacity to teach\\r\n* Disclosure and Barring Service (DBS) check\\r\n",
+    "PersonalQualities": "We are looking for people with the desire and passion to challenge and inspire children. Excellent communication and inter-personal skills, resilience and determination are essential qualities.",
+    "HowSchoolPlacementsWork": "Trainees are based in various schools across Surrey and the surrounding areas and new schools join us each year. We make every effort to place trainees based upon where they live, accessibility and to ensure that the placement is appropriate to their needs. Please [click here](http://www.ssfscitt.org.uk/page/?title=Where+we+Train&pid=10) to view an interactive map of our current partnership schools.  \\r\n\\r\n\\r\nThe majority of successful applications are supported by a school and existing relationships are in place.  Whilst this is not a requirement of our selection procedures we would strongly advise candidates to seek potential links with local schools.\\r\n\\r\nThere are opportunities to experience two schools, visit a special educational needs school and to look at secondary, early years and EAL provision (pupils with English as an additional language)\\r\n\\r\nWe always welcome the opportunity to speak to head-teachers and senior leaders about becoming involved, particularly where a potential candidate is being supported by a school not currently in the partnership.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Surrey South Farnham SCITT is an innovative, leading, OFSTED outstanding, well established and highly respected provider of Primary Initial Teacher Training working across all areas in Surrey and bordering counties.  \\r\n\\r\nThere are many reasons why we are the first choice for so many trainees and schools and we have a reputation for being amongst the best school-led teacher training providers in the country (Good Teacher Training Guide 2015 and 2017).  Our CEO Sir Andrew Carter OBE has led a national review of teacher training and we feature as a case study in the National Mentor Standards.  Our Director of ITT is a trustee at the National Association of School Based Teacher Training.\\r\n\\r\nOur trainees are highly sought after and we deliver upon an expectation of employment every year. All trainees completed their training at a good or outstanding level last year (60% at the highest level) and their feedback consistently rates the programme as being outstanding. We are Surrey’s largest school-led, primary provider and are praised for our personalised approach to every trainee.\\r\n\\r\nSchool-led training enables you to learn in a school environment and treated as a member of the school team from day one. You will be surrounded by experienced colleagues and guided through a gradual integration into teaching a class of children. The programme will be tailored to meet your needs and you will be supported by a Mentor and Support Tutor. Weekly professional studies sessions are led by a team of national experts and primary educationalists.\\r\n",
+    "TrainWithDisability": "We pride ourselves in being an equal opportunities provider that encourages and welcomes applicants from under-represented groups, accepting trainees onto our programmes by merit alone.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Surrey South Farnham SCITT was recognised by DfE as an outstanding provider of Initial Teacher Training through the award of a Multiple Year Allocation (MYA).  This provides longer term stability and planning opportunities for our partnership with a guaranteed number of training places for a three year period.",
+        "UcasInstitutionCode": "S92"
+      }
+    ]
+  },
+  "has_inst": true
+}

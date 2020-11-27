@@ -191,8 +191,8 @@ router.get('/results', function (req, res) {
   })
 
   // Find by type
-  if (req.session.data['study-type'].length === 1) {
-    const type = req.session.data['study-type'].join(' ').includes('Part') ? 'part time' : 'full time'
+  if (req.session.data['studyType'].length === 1) {
+    const type = req.session.data['studyType'].join(' ').includes('Part') ? 'part time' : 'full time'
 
     results = results.filter(function (course) {
       return course.options.some(o => o.includes(type))
@@ -304,7 +304,7 @@ function getFullCourse (req, providerCode, courseCode, callback) {
     return
   }
 
-  fs.readFile(`lib/courses/course_${providerCode}_${courseCode}.json`, (err, file) => {
+  fs.readFile(`app/data/courses/course_${providerCode}_${courseCode}.json`, (err, file) => {
     if (err) throw err
     course = JSON.parse(file)
     data[`${providerCode}-${courseCode}-course`] = course

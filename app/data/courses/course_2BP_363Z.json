@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Bradford Birth to 19 SCITT",
+  "provider": "Bingley Grammar School Schools Direct",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "2BP/363Z",
+  "providerCode": "2BP",
+  "programmeCode": "363Z",
+  "schools": [
+    {
+      "name": "Bingley Grammar School",
+      "address": "Keighley Road, Bingley, West Yorkshire, BD16 2rs",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Keighley Road, Bingley, West Yorkshire, BD16 2rs",
+      "geocode": true,
+      "formatted_address": "Keighley Rd, Bingley BD16 2RS, UK",
+      "latitude": 53.8559569,
+      "longitude": -1.8450717,
+      "post_code": "BD16 2RS",
+      "city": "West Yorkshire",
+      "route": "Keighley Road",
+      "postal_town": "Bingley"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2BP",
+    "addr_1": "Bingley Grammar School",
+    "addr_2": "Keighley Road",
+    "addr_3": "Bingley",
+    "addr_4": "West Yorkshire",
+    "postcode": "BD16 2RS",
+    "url": "http://www.bingleygrammar.org/",
+    "geocode": true,
+    "formatted_address": "Keighley Rd, Bingley BD16 2RS, UK",
+    "latitude": 53.8559904,
+    "longitude": -1.8461186,
+    "post_code": "BD16 2RS",
+    "city": "West Yorkshire",
+    "route": "Keighley Road",
+    "postal_town": "Bingley"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The course is designed to help you fulfil a wider teaching role (including that of pastoral care) within your chosen educational context. Throughout the course, we place particular emphasis on providing equal opportunities for all students working in a diverse, multi-ethnic society.\\r\nThis course will provide you with a PGCE at Masters level and Qualified Teacher Status (QTS). Working closely with Bradford specialist staff, both in placement schools, you will gain the knowledge, skills and understanding needed to be a newly qualified teacher.\\r\nStructure \\r\nA strength of the course is the way in which theory and practice are related as a result of extensive time spent working with children in at least two placement schools.\\r\nAt least 120 days are school-based with support provided by experienced school mentors.\\r\nLearning methods \\r\nThe course builds upon the subject knowledge and independent study skills which, as a graduate, you will have already acquired. Our school based sessions are also concerned with the professional skills which all teachers need. Course tutors work closely with managers, mentors and teachers in our school to provide you with advice and support for the progressive development of your teaching expertise.\\r\nTeaching methods \\r\nA large proportion of your teaching and training will be in our school, delivered by both highly experienced, inspiring school teachers and leaders. School based sessions consist of lectures, seminars tutorials, micro-teaching environments and observations of teaching in school and, where relevant, workshop or lab work.   This is very much a practical course, where you learn by doing.\\r\nAssessment \\r\nAssessment is carried out across both placements against the Teaching Standards.  Based largely in our school, you will have one other main assessed school placement. We offer our trainees a Key Stage 5 (A- level) enhancement.  You will also have the opportunity to get experience of a primary school, alternative provision or special school.\\r\n \\r\nYou will work alongside experienced teachers and mentors, who will provide advice and support. You will be introduced to your new role in stages, beginning with observation and work with individual pupils, then with small groups, eventually leading to your work with full classes.\\r\n\\r\nSchool Placement\\r\nYou will work alongside experienced teachers and mentors, who will provide advice and support. You will be introduced to your new role in stages, beginning with observation and work with individual pupils, then with small groups, eventually leading to your work with full classes.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE\\r\nYou will need to have at least a GCSE Grade C/4 in Maths and English or equivalent.\\r\nDegree\\r\nYou will need to have at least a 2:2 Honours degree. We typically ask that for secondary teacher training at least half the content of your degree first degree is directly relevant to the subject in which you are training to teach. If not, but you have significant work experience relevant to your subject area or a relevant further degree, you will still be eligible to apply.\\r\nWe require candidates to have passed their skills tests before starting on the programme. \\r\n",
+    "InterviewProcess": "All our trainees who are shortlisted for interview will be invited into our school. If you are asked for interview, we will provide more details about tasks you will be asked to complete.\\r\n\\r\nAll our interviews have the same elements:\\r\n1. A classroom based exercise, where you will be observed interacting with children or young people.\\r\n2. Written tasks which are designed to assess your written communication skills; your capacity to access higher level study; and for secondary applicants, subject knowledge.\\r\n3. Face to face interview with a panel of School Leaders.\\r\nDBS\\r\nIf you are successful at interview stage, you will be made an offer of a training place subject to satisfactory enhanced DBS clearance. For more information, see the guidance on line at;\\r\nhttps://www.gov.uk/disclosure-barring-service-check\\r\n",
+    "OtherRequirements": "We want to make sure that you have made the right choice in training to be a teacher. You will, by the time of interview, have had at least ten days paid or voluntary work experience. Your experience doesn't necessarily need to be in a single block of time or to be with the age phase you want to train in. \\r\nIf you are successful at interview stage, you will be made an offer of a training place subject to satisfactory enhanced DBS clearance. \\r\n",
+    "PersonalQualities": "We don't have a fixed picture of what kind of a person we are looking for. Teaching is a creative, dynamic profession which has space for innovative thinking, for people who can break free from what's expected. Our school is clear that we want trainees to have a rapport with children, a passion for their subject, and to have the ambition to become excellent teachers. You will have a relentlessly positive outlook, show initiative and be good team player, ready to work hard in a challenging but wonderfully rewarding profession.\\r\n",
+    "HowSchoolPlacementsWork": "You will work alongside experienced teachers and mentors, who will provide advice and support. You will be introduced to your new role in stages, beginning with observation and work with individual pupils, then with small groups, eventually leading to your work with full classes.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithDisability": "We believe that teachers with disabilities, make an important contribution to schools both in the classroom and in shaping the wider culture and ethos of the schools they work in.\\r\nWe adhere to The Equality Act 2010 and Special Educational Needs and Disability Act 2001, which require teacher training providers to ensure they are not discriminating against applicants with disabilities or special educational needs (SEN).\\r\nAll our partner Schools value diversity and the unique contribution that all their staff and trainees bring. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Bradford Birth to 19 SCITT aims to train the next generation of outstanding Bradford teachers. Our school is committed to providing the highest standard of education for the young people in the Bradford District. We are keen to recruit student teachers who share the same commitment. If you share our vision for education, we want to hear from you. We will provide training of the highest quality, delivered by outstanding practitioners through a bespoke training package, which will make the most of your knowledge and skills. After a year's successful training, you will achieve Qualified Teacher Status (QTS). \\r\n\\r\n",
+        "UcasInstitutionCode": "259"
+      }
+    ]
+  },
+  "has_inst": true
+}

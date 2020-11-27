@@ -1,0 +1,68 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "North Wiltshire SCITT",
+  "subjects": [
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "24U/2QX5",
+  "providerCode": "24U",
+  "programmeCode": "2QX5",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Lime Kiln, Royal Wootton Bassett, Wiltshire, SN4 7HF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Lime Kiln, Royal Wootton Bassett, Wiltshire, SN4 7HF",
+      "geocode": true,
+      "formatted_address": "Lime Kiln, Royal Wootton Bassett, Swindon SN4 7HF, UK",
+      "latitude": 51.5468222,
+      "longitude": -1.899207,
+      "post_code": "SN4 7HF",
+      "city": "Royal Wootton Bassett",
+      "route": "Lime Kiln",
+      "postal_town": "Swindon"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "24U",
+    "addr_1": "North Wiltshire SCITT, TE Centre",
+    "addr_2": "RWB Academy, Lime Kiln",
+    "addr_3": "Royal Wootton Bassett",
+    "addr_4": "Wiltshire",
+    "postcode": "SN4 7HG ",
+    "url": "http://www.nwscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Lime Kiln, Royal Wootton Bassett SN4 7HG, UK",
+    "latitude": 51.548056,
+    "longitude": -1.902523,
+    "post_code": "SN4 7HG",
+    "city": "Wiltshire",
+    "route": "Lime Kiln",
+    "postal_town": "Royal Wootton Bassett"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "Qualifications": " MFL candidates will be required to train across two languages and we would expect all MFL applicants to  hold a degree in the language they wish to teach as well as holding an A level at Grade C or above in a second curriculum language.  ",
+    "OtherRequirements": "You  need to have passed the Professional Skills Tests prior to starting the course.  You are encouraged to register for and pass the Skills Tests as soon as possible and you can apply to take these once you have applied for a course via UCAS.  \\r\n\\r\nYou will be required to complete a satisfactory medical report to show you meet the standards for 'Fitness to Teach'.\\r\n\\r\nYou must complete an Enhanced Disclosure from the Disclosure and Barring Service (DBS).  In addition you will be required to disclose any previous criminal record to the North Wiltshire SCITT, including spent and unspent convictions.  \\r\n\\r\n",
+    "PersonalQualities": "In addition to the formal entry requirements, it is an expectation that some form of school experience has been undertaken.  Although we do not require it, 2 weeks is advisable before starting your training.\\r\n\\r\nOur successful applicants should be able to show that they are flexible and show initiative.  We want inspirational trainees who are commited to education.  You'll need to be a confident communicator with a sense of humour and perspective.  A strong subject knowledge and good use of time is useful.  You'll need to remain calm and focused under pressure and join in as a team player. \\r\n\\r\n\\r\n\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "North Wiltshire SCITT is an Outstanding Provider, awarded by Ofsted in 2017.  Our vision is to produce outstanding teachers who will ensure their students, whatever their starting point, thrive in all aspects of education. Our trainee teachers will value developing the whole person equally to the achievement of academic success.\\r\nThe North Wiltshire SCITT provides Initial Teaching Training (ITT) for the North Wiltshire area and beyond.  We are based at the Teacher Education Centre next to Royal Wootton Bassett Academy.  We offer ITT programmes leading to Qualified Teacher Status (QTS) and Post Graduate Certificate in Education (PGCE) which includes 60 masters credits, in both the Primary and Secondary fields of education.  We recommend for QTS qualification and our accrediting Higher Education Institute for PGCE qualification is Bath Spa University.\\r\nWe aim to deliver high quality initial teacher training using North Wiltshire SCITT partnership schools and expertise within our Teaching School Alliance.  Training is delivered by current, outstanding practitioners.   Each trainee will be challenged to become the best classroom practitioner they can possibly be.  Trainees should aim to become confident, competent and reflective practitioners who are capable of delivering consistently good or outstanding lessons.  In turn, they should want to produce the very best learning opportunities for all their students.  Guidance and support is available throughout the programme for all our trainees and we support individual needs where appropriate.\\r\n",
+    "TrainWithDisability": "We are an inclusive organisation. All potential applicants are considered on an equal basis. \\r\n\\r\nWe will ensure that all candidates applying and securing a place to train with us will be provided, wherever possible, with the means to do so, by implementing reasonable adjustments as required which may include:\\r\n\\r\n-Ensuring access to training venues and schools\\r\n-Providing additional time where required e.g. for PGCE assignments\\r\n-Providing larger print and/or coloured paper\\r\n-Additional support from School-based mentor / Teaching and Learning tutor\\r\n-Ensuring all placement schools and venues are aware of any allergies and intolerances\\r\n-Ensuring that candidates with hearing and/or sight impairments are seated appropriately to facilitate access to presentation content and instructions.\\r\n\\r\nPlease make us aware of any disabilities or other needs. We can assure you that all information will be treated in complete confidence.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

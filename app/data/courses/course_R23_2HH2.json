@@ -1,0 +1,186 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Ripley TSA SCITT",
+  "subjects": [
+    "Music",
+    "Secondary"
+  ],
+  "name": "Music",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "R23/2HH2",
+  "providerCode": "R23",
+  "programmeCode": "2HH2",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Ripley St Thomas, Ashton Road, Lancaster, Lancashire, LA1 4RS",
+      "code": "-"
+    },
+    {
+      "name": "Canon Slade School",
+      "address": "Bradshaw Brow, Bolton, Lancashire, BL2 3BP",
+      "code": "C"
+    },
+    {
+      "name": "Dowdales School",
+      "address": "Dalton-in-Furness, Cumbria, LA15 8AH",
+      "code": "D"
+    },
+    {
+      "name": "Furness Academy",
+      "address": "Park Drive, Barrow-in-Furness, Cumbria, LA13 9BB",
+      "code": "F"
+    },
+    {
+      "name": "Lancaster Royal Grammar School",
+      "address": "East Road, Lancaster, LA1 3EF",
+      "code": "G"
+    },
+    {
+      "name": "Lancaster Girls Grammar School",
+      "address": "Regent Street, Lancaster",
+      "code": "L"
+    },
+    {
+      "name": "Morecambe Community High School",
+      "address": "Dallam Avenue, Morecambe, Lancashire, LA4 5BG",
+      "code": "M"
+    },
+    {
+      "name": "Ashton Community Science College",
+      "address": "Aldwych Drive, Preston, PR2 1SL",
+      "code": "S"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Ripley St Thomas, Ashton Road, Lancaster, Lancashire, LA1 4RS",
+      "geocode": true,
+      "formatted_address": "Ashton Rd, Lancaster LA1 4RS, UK",
+      "latitude": 54.0393704,
+      "longitude": -2.8019428,
+      "post_code": "LA1 4RS",
+      "city": "Lancashire",
+      "route": "Ashton Road",
+      "postal_town": "Lancaster"
+    },
+    {
+      "address": "Bradshaw Brow, Bolton, Lancashire, BL2 3BP",
+      "geocode": true,
+      "formatted_address": "Bradshaw Brow, Bolton BL2 3DD, UK",
+      "latitude": 53.6026499,
+      "longitude": -2.4066643,
+      "post_code": "BL2 3DD",
+      "city": "Greater Manchester",
+      "route": "Bradshaw Brow",
+      "postal_town": "Bolton"
+    },
+    {
+      "address": "Dalton-in-Furness, Cumbria, LA15 8AH",
+      "geocode": true,
+      "formatted_address": "Dalton-in-Furness LA15 8AH, UK",
+      "latitude": 54.1591712,
+      "longitude": -3.1843347,
+      "post_code": "LA15 8AH",
+      "city": "Cumbria",
+      "route": null,
+      "postal_town": "Dalton-in-Furness"
+    },
+    {
+      "address": "Park Drive, Barrow-in-Furness, Cumbria, LA13 9BB",
+      "geocode": true,
+      "formatted_address": "Park Dr, Barrow-in-Furness LA13 9BB, UK",
+      "latitude": 54.1187626,
+      "longitude": -3.2157031,
+      "post_code": "LA13 9BB",
+      "city": "Cumbria",
+      "route": "Park Drive",
+      "postal_town": "Barrow-in-Furness"
+    },
+    {
+      "address": "East Road, Lancaster, LA1 3EF",
+      "geocode": true,
+      "formatted_address": "East Rd, Lancaster LA1 3EE, UK",
+      "latitude": 54.0469668,
+      "longitude": -2.7904318,
+      "post_code": "LA1 3EE",
+      "city": "Lancashire",
+      "route": "East Road",
+      "postal_town": "Lancaster"
+    },
+    {
+      "address": "Regent Street, Lancaster",
+      "geocode": true,
+      "formatted_address": "Regent St, Lancaster LA1 1SQ, UK",
+      "latitude": 54.0442772,
+      "longitude": -2.8039316,
+      "post_code": "LA1 1SQ",
+      "city": "Lancashire",
+      "route": "Regent Street",
+      "postal_town": "Lancaster"
+    },
+    {
+      "address": "Dallam Avenue, Morecambe, Lancashire, LA4 5BG",
+      "geocode": true,
+      "formatted_address": "Dallam Ave, Morecambe LA4 5BG, UK",
+      "latitude": 54.0761532,
+      "longitude": -2.8501742,
+      "post_code": "LA4 5BG",
+      "city": "Lancashire",
+      "route": "Dallam Avenue",
+      "postal_town": "Morecambe"
+    },
+    {
+      "address": "Aldwych Drive, Preston, PR2 1SL",
+      "geocode": true,
+      "formatted_address": "Aldwych Dr, Preston PR2 1SL, UK",
+      "latitude": 53.7699255,
+      "longitude": -2.7464206,
+      "post_code": "PR2 1SL",
+      "city": "Lancashire",
+      "route": "Aldwych Drive",
+      "postal_town": "Preston"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "R23",
+    "addr_1": "Ripley St Thomas",
+    "addr_2": "Ashton Road",
+    "addr_3": "Lancaster",
+    "addr_4": "Lancashire",
+    "postcode": "LA1 4RS ",
+    "url": "http://www.ripleyitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Ashton Rd, Lancaster LA1 4RS, UK",
+    "latitude": 54.0393704,
+    "longitude": -2.8019428,
+    "post_code": "LA1 4RS",
+    "city": "Lancashire",
+    "route": "Ashton Road",
+    "postal_town": "Lancaster"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "£9000 PGCE and QTS\\r\n£7500 QTS only",
+    "AboutCourse": "Our SCITT curriculum begins early in September and involves teaching practice in school each week from Monday to Thursday, with Friday as a conference day. The Friday conferences will be hosted and delivered by outstanding classroom practitioners who currently teach in our partner schools. Curriculum conferences will be held in several of our school venues according to the best expertise available for each topic.\\r\n\\r\nIn addition, there will be subject pedagogy days during the year where trainees will focus on teaching Music specifically. These will be delivered by a Lead Subject Mentor for Music, a Specialist Leader of Education who has been appointed due to their successful track record in subject leadership. The days incorporate learning walks and lesson experience alongside input from the Lead Subject Mentor and directed tasks for you to consolidate your learning. The Music department at Ripley was awarded Best School Music Department in 2017 in the Music Teacher Awards for Excellence, so you will be learning from the best!\\r\n\\r\nYou will audit your subject knowledge for the topics you will need to teach at KS3 and 4. Lead Subject Mentors will guide you towards great resources for this and you will be encouraged to join a professional subject association. A shared drive enables you to share resources with each other and school mentors. \\r\n\\r\nLeeds Beckett University provide the PGCE for our SCITT and this is all online. The modules perfectly compliment the training we deliver and you will gain 60 Master's level credits (https://courses.leedsbeckett.ac.uk/PGCE_distancelearning/)\\r\n\\r\nOur programme documentation has been described by Ofsted: \"Documentation is very well designed and contributes significantly to trainees' success on the course\" \\r\n\\r\nAssessment of trainees for QTS is based on all of the following:\\r\n-\\tRegular observations of lessons with feedback and target setting\\r\n-\\tGrading against each of the Teacher Standards at the end of each placement\\r\n-\\tFormative feedback about progress against the Teacher Standards throughout the placements\\r\n-\\tAssessment of a Best Evidence Portfolio at the end of the programme.\\r\n\\r\nWe have been highly praised by Ofsted for our approach to trainee workload, keeping our requirements concise yet effective.",
+    "CourseLength": "OneYear",
+    "Qualifications": "UK Bachelors degree or equivalent\\r\nGCSE Maths and English at grade C/4 or above\\r\n\\r\nIdeally your degree would be a class 2:2 or above and you will have a high level of achievement in musical performance skills.",
+    "InterviewProcess": "Applicants who meet the entry requirements will be invited to interview at Ripley St Thomas CE Academy in Lancaster. The interview process takes half a day and includes a written task, subject knowledge audit, short teaching task and panel interview. \\r\n\\r\nYou will be interviewed by the Programme Leader, mentors from across our partner schools and a teacher from your subject. Pupils will be involved in the teaching task. \\r\n\\r\nWe are looking for the potential to be an excellent trainee, someone who is ready to start training in a school setting from early September. We are also looking for potential employees in our schools.",
+    "OtherRequirements": "Applicants who are successful at interview will need the following before they can start the programme:\\r\n-\\tDBS and barred list check\\r\n-\\tMedical check\\r\n-\\tProfessional skills tests literacy and numeracy\\r\n\\r\nIt is important that you have a good awareness of what the role of a teacher involves so that you can be sure it is the right career choice for you. We offer school experience for people at all stages of this career decision, including after interview, in order to support you with this.\\r\n\\r\nWe welcome applicants of all ages, from university graduation to mature career changers.\\r\n",
+    "PersonalQualities": "We are looking for people who are keen to learn in a school setting and this model suits trainees who are able to learn as they go along and incorporate their own experience into this learning process. Successful applicants will have an understanding of the professionalism and resilience needed to become a teacher and to be reflective learners. A real commitment to a career in teaching, a love of their subject and positive attitude towards young people are essential qualities.\\r\n",
+    "HowSchoolPlacementsWork": "You will complete placements in two partner schools. The first placement will begin early in September, an excellent time to see how rules and routines are established at the start of the academic year. You will start with focused lesson observations across the whole school before you join your subject department and begin to plan teach parts of lessons. After a few weeks you will be planning and delivering whole lessons, building up to approximately 7 hours per week by Christmas. \\r\n\\r\nThe second placement begins after Christmas in a different school which will give you a contrasting experience and broaden your professional development. Again, you will gradually increase your teaching timetable and for the last few weeks will be full time in school, teaching up to 12 hours per week at that point in May and June.\\r\n\\r\nPlacements are selected for you on the basis of high quality mentoring, strong subject departments, contrasting schools and reasonable commuting distance. We work with around 15 schools in Lancashire. \\r\n\\r\nOn both placements you will teach the full 11-16 age range in your subject. \\r\nThere may also be opportunities to spend some time in other partner schools and settings as training needs arise. There will be additional opportunities to experience primary education and sixth form education on the programme. \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "\\r\nRipley TSA SCITT is an Outstanding provider of ITT (Ofsted 2017) based in the historic city of Lancaster, a beautiful location close to Morecambe Bay and the South Lakes. We have a long history of initial teacher training at the lead school, Ripley St Thomas CE Academy, and a very committed partnership of schools.\\r\n\\r\nOur highly innovative curriculum is designed and delivered by our schools in order to train the type of teachers that schools want to employ. Our vision is to develop outstanding teaching and learning which is relevant to schools today and therefore linked to enhanced employment prospects. Our trainees are highly valued and well supported at all stages of their training by expert practitioners and outstanding mentors. \\r\n\\r\nOfsted have graded our programme Outstanding in every category:\\r\n\\r\n\"The highly integrated structure and content of the programme produces confident teachers who are very well equipped to contribute immediately to their employing schools\"\\r\n\\r\n\"The pastoral care of trainees is exemplary. The personalised support that they receive has a significant impact on the outstanding progress that they make. This high-quality support continues throughout their NQT year\"\\r\n\\r\nMany of our trainees go on to work in our partner schools where they make excellent progress, often with rapid promotion into leadership roles. ",
+    "TrainWithDisability": "Ripley TSA SCITT is committed to equality of opportunity and meeting the needs of all trainees on the programme. Our programme operates in line with the legislation applicable to the DfE ITT Criteria.\\r\n\\r\nPeople with disabilities are offered facilities at interviews to enable them to demonstrate their suitability for the programme. \\r\nPeople who are or become disabled while on the programme are given positive help to enable them to continue their training. Additional resources are made available and funded by Ripley TSA SCITT in providing such support.\\r\nVenues and resources for training take account of the needs of all participants.\\r\nWellbeing is an important part of our programme for all trainees and our curriculum addresses mental health, resilience, workload and individual needs.\\r\nPersonal support for trainees is Outstanding on our programme (Ofsted 2017)\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,70 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Cornwall School Centred Initial Teacher Training (Cornwall SCITT)",
+  "subjects": [
+    "Music",
+    "Secondary"
+  ],
+  "name": "Music",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "C79/W3X1",
+  "providerCode": "C79",
+  "programmeCode": "W3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Truro College, College Road, Truro, Cornwall, TR1 3XX",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Truro College, College Road, Truro, Cornwall, TR1 3XX",
+      "geocode": true,
+      "formatted_address": "College Road, Truro TR1 3XX, United Kingdom",
+      "latitude": 50.26305139999999,
+      "longitude": -5.1006011,
+      "post_code": "TR1 3XX",
+      "city": null,
+      "route": null,
+      "postal_town": "Truro"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "C79",
+    "addr_1": "Truro College",
+    "addr_2": "College Road",
+    "addr_3": "Truro",
+    "addr_4": "Cornwall",
+    "postcode": "TR1 3XX ",
+    "url": "http://www.cornwallscitt.org",
+    "geocode": true,
+    "formatted_address": "College Road, Truro TR1 3XX, United Kingdom",
+    "latitude": 50.26305139999999,
+    "longitude": -5.1006011,
+    "post_code": "TR1 3XX",
+    "city": null,
+    "route": null,
+    "postal_town": "Truro"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "This Post Graduate Certificate Education (PGCE) Secondary Music course leads to the award of Qualified Teacher Status (QTS), qualifying you to teach the 11-18 age group in secondary schools in England and Wales.\\r\n\\r\nYour tutors are a diverse and incredibly experienced community of academics. You will be taught by staff with national and international reputations as experts in the field of music in education, and together you examine a range of pedagogical approaches to music teaching, including workshop-led and informal approaches to learning\\r\n\\r\nYou will learn through a series of practical seminars and workshops in our purpose-built music and music technology studios with extensive resources of music, instruments and equipment.\\r\n\\r\nTeaching is through a series of lectures, practical seminars and workshops, where interactive and discussion-based techniques will encourage you to engage, reflect and challenge. Sessions may include:\\r\n\\r\n* participating in workshop style sessions with your peers\\r\n* attending presentations by subject experts\\r\n* working on tasks in groups\\r\n* having individual tutorials\\r\n* visits to schools or other education settings\\r\n* visits to theatres, museums, galleries or sites of educational interest\\r\n* writing assignments on aspects of subject teaching and Professional Studies\\r\n\\r\nThese learning activities will help you to develop a toolkit of knowledge and skills, ensuring you are well prepared to tackle challenges and opportunities throughout your training and your career.\\r\n\\r\nAlongside the University tutors, you will be taught and guided by a team of committed and experienced University-trained school mentors.",
+    "CourseLength": "OneYear",
+    "Qualifications": "We would normally expect you to have a 1st, 2:1 or 2:2 honours degree (or equivalent from a university outside the UK) in a subject that is related to the subject that you intend to teach.  You will also need to have achieved  Grade 4 (or C) or above in GCSE Mathematics and English Language or equivalent qualifications. \\r\n\\r\nYou will also be required to pass the QTS skills tests in numeracy and literacy.",
+    "FeeInternational": 16045.0,
+    "HowSchoolPlacementsWork": "Placements enable you to develop the skills and knowledge valued and desired by employers - you will build your confidence in the classroom and gain practical teaching experience. Placements also provide you with the opportunity to connect with potential employers and build your professional network.\\r\n\\r\nAt Secondary level we have strong relationships with around 80 schools in the local and surrounding area. It is a testament to the strength of these partnerships and the regard with which our graduates are held, that most schools in Berkshire employ at least one graduate of the Institute of Education.\\r\n\\r\nOn your Secondary PGCE course you are required to carry out three placements in two different age groups - ensuring you receive a broad range of experiences. Two placements must be undertaken in a school setting but the third can be taken in a different setting - allowing you to sample teaching in an alternative environment.\\r\n\\r\nWe offer our students an unusually flexible and broad range of settings and educational environments - you will have the opportunity to gain experience in special needs schools, Pupil Referral Units, independent schools, museums, and charities.\\r\n\\r\nYou will have plenty of opportunities throughout your course to apply your developing skills in real settings. In schools, you will be involved in:\\r\n\\r\n* observation of other teachers\\r\n* planning and teaching parts of lessons/small groups\\r\n* planning and teaching lessons and sequences of lessons\\r\n* reflecting on and evaluating your teaching\\r\n* receiving feedback on your teaching\\r\n* gaining experience of the range of responsibilities of classroom teachers."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Cornwall SCITT is an outstanding provider of teacher training for Primary and Secondary teaching routes.\\r\n\\r\nWe are deeply committed to ensuring the very best outcome for our student teachers and for the young people of Cornwall. Our training programmes reflect the unique needs of young people at all stages of their educational development, and value the importance of bespoke training to ensure that our graduates possess the knowledge and skills to successfully embark on a career in education. For this reason our Primary Course is based at Heartlands, near Redruth, and our Secondary Course is based at Truro College. \\r\n\\r\nOfsted has graded both primary and secondary courses as Outstanding in all categories in their most recent inspections. Embedded in our approach is a strong relationship with local schools; our reputation for providing outstanding training endorses our graduates to local employers. We are supported by specialists working within our partnership schools to ensure that our training reflects current best practice and continues to be innovative.\\r\n\\r\n[Visit the Cornwall SCITT Website] (https://www.cornwallscitt.org/)",
+    "TrainWithDisability": "Cornwall SCITT is founded on the principles of equality and inclusion. Our management team, academic tutors, subject leaders and school-based mentors strive to ensure the best possible outcomes for all student teachers. Prior to the start of the course all student teachers undertake a fitness to teach check.\\r\n\\r\nFor those with additional learning needs, every student teacher receives bespoke support from a dedicated academic tutor who can provide support with assignment writing. Truro College offer additional support through the learning resources centre. \\r\n\\r\nWe carefully select placement schools for those with physical needs to optimise any reasonable adjustments that may be required. Mentors and subject leaders provide support to those with visual and hearing difficulties to develop impairment-friendly strategies within the classroom.\\r\n\\r\nOur personalised approach to learning allows those with mental health needs to develop their practice with support from the central management team. We offer in an empathetic dialogue to provide an appropriate balance of support and challenge throughout the programme.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

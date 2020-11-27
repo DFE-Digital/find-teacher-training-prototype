@@ -1,0 +1,79 @@
+{
+  "locationType": "School",
+  "accrediting": "Canterbury Christ Church University",
+  "provider": "Medway Teaching School Alliance (MTSA)",
+  "subjects": [
+    "Art and design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1FN/253B",
+  "providerCode": "1FN",
+  "programmeCode": "253B",
+  "schools": [
+    {
+      "name": "Sir Joseph Williamson's Mathematical School",
+      "address": "Maidstone Road, Rochester, Kent, ME1 3EL",
+      "code": "I"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Maidstone Road, Rochester, Kent, ME1 3EL",
+      "geocode": true,
+      "formatted_address": "Maidstone Rd, Rochester ME1 3EL, UK",
+      "latitude": 51.37005389999999,
+      "longitude": 0.4995372,
+      "post_code": "ME1 3EL",
+      "city": null,
+      "route": "Maidstone Road",
+      "postal_town": "Rochester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1FN",
+    "addr_1": "SJWMS",
+    "addr_2": "Maidstone Road",
+    "addr_3": null,
+    "addr_4": "Rochester",
+    "postcode": "ME1 3EL ",
+    "url": "http://www.mtsa.co.uk",
+    "geocode": true,
+    "formatted_address": "Maidstone Rd, Rochester ME1 3EL, UK",
+    "latitude": 51.3699436,
+    "longitude": 0.4988640999999999,
+    "post_code": "ME1 3EL",
+    "city": "Medway",
+    "route": "Maidstone Road",
+    "postal_town": "Rochester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 5960.0,
+    "FeeDetails": "Based on 2018/19 figures the course fees for completing a QTS accreditation with us are £5960.  For an unsalaried post this will need to be self funded, whereas a salaried position will see this cost paid by the host school.  Some subjects do attract bursaries and scholarships.  In all cases an additional £3290 can be paid by the candidate in order to register for accreditation in a Post Graduate Certificate of Education (PGCE).",
+    "AboutCourse": "MTSA works closely with CCCU to deliver training that combines strong theoretical knowledge and understanding of learning, teaching, pedagogy and child development with substantial experience of the school environment and practice of teaching in the classroom.\\r\n\\r\nYou will be trained in a highly supportive and aspirational environment and will develop the rigour, professional and subject knowledge, understanding and skills necessary for engaging children and young people in creative, purposeful and challenging learning.\\r\n\\r\nDuring your course you will undertake placements in two contrasting schools within the Alliance.  Through these placements you will gain experience in working within differing settings and with children of differing abilities,needs and socio-economic backgrounds.  This will ensure you have a broad experience and understanding of education within the geographical location of Medway.  You will also have access to Post 16 learners during at least one of your two placements.  As a result of the outstanding Special Schools within our Alliance, we are able to offer every trainee at least a short placement in a special school environment.\\r\n\\r\nYou will also have full access to CCCU's facilities and support.  You will be assigned a mentor within each placement who will support your development and be involved in target setting and grading as well as being a point of contact for you.\\r\n\\r\nAs a Teaching School Alliance we develop and deliver an exciting programme of CPD, including conferences, research projects and seminars, guest speakers, collaborative workshops, all of which trainees are able to access.  \\r\n\\r\nFrom the outset you will be treated as a member of staff within your placement school and be offered the opportunities afforded to the teaching staff, such as staff meetings and INSET opportunities.",
+    "CourseLength": "OneYear",
+    "Qualifications": "To join a School Direct programme you must be a graduate, preferably with a First Class or Upper Second Class degree (2:1).  We are willing to consider applicants with a 2:2 who can demonstrate a true aptitude for teaching and have previous experience to draw upon.\\r\n\\r\nSecondary candidates in adddition to their degree should have the minimum requirement of GCSE 4/C grade or above in English and Maths.  Primary candidates should have the minimum requirement of GCSE 4/C grade or above in English, Maths and Science.",
+    "FeeInternational": 5960.0,
+    "FinancialSupport": "N/A",
+    "InterviewProcess": "The MTSA co-ordinate the recruitment/interview process on behalf of all the schools within the Alliance.  Interviews are conducted with representatives from our partner schools.  \\r\n\\r\nThe interview process will involve attendance at a half day selection event during which you will take part in a variety of activities, including a literacy and numeracy test, interviews on key focus areas, leading a student activity, a subject knowledge interview (for secondary candidates) and other activities.\\r\n\\r\nIt is a rigorous and thorough process, designed to get the best match of applicant to the places available and to assess the key skills, knowledge and attributes needed to be a successful teacher.  During the interview process there will be an opportunity to talk to students and staff from a range of MTSA schools.",
+    "OtherRequirements": "The university will complete a DBS check before commencement of the programme.  \\r\n\\r\nIt will enhance your application if you have experienced some time within an education sector.",
+    "PersonalQualities": "The MTSA works for the shared ambition that every child in Medway enjoys an outstanding education.  We are committed to the four key values of integrity, celebration, opportunity and a shared drive and ambition.",
+    "HowSchoolPlacementsWork": "Trainee Teachers will be based in a placement school for the whole of the academic year, with opportunity to complete a contrasting placement in the Spring for 4-6 weeks.  You will also be given opportunity to experience excellent teaching and learning across the full range of Key Stages and in range of types of school."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The MTSA are looking for ambitious and inspiration trainee teachers who are passionate and enthusiastic about learning.  We will offer a challenging, creative and rigorous training programme led by a team of experienced teachers and school leaders.  \\r\n\\r\nFor 2017/18 we achieved 100% pass rate, with 73% achieving Grade 1 (outstanding teacher) and 27% Grade 2.  63% of these trainees secured NQT jobs within Medway Schools and 30% within Kent Schools.\\r\n\\r\nMTSA is a forward thinking group of 80+ schools who are committed to developing excellent teachers.  We are experienced providers of initial teacher training, having been at the forefront of School Direct since its inception, as well as hosting extensive PGCE placements.  The schools within the Alliance span the early years, primary, secondary, post-16 and special needs sectors.  This wide diversity enables MTSA to offer a rich experience for all trainees who share in the expertise of experienced teachers working in a range of settings and contexts.  Our staff are inspirational, knowledgeable and have a proven track record in developing, challenging and supporting trainee teachers.  Together we are excited by the creativity and enjoyment of teaching and the impact that quality teaching has on the progress and achievement of young people.",
+    "TrainWithDisability": "As our core values are built around our conviction that every one deserves to be given access to outstanding professional development to enable them to model and lead quality teaching, we work alongside candidates with disabilities and other needs.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "MTSA works closely with Canterbury Christ Church University (CCCU), who ensure the training offered in schools is supported by a strong theoretical underpinning and rigorous quality assurance.",
+        "UcasInstitutionCode": "C10"
+      }
+    ]
+  },
+  "has_inst": true
+}

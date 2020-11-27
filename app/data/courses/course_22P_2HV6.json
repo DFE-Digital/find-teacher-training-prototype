@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "North West SHARES SCITT",
+  "provider": "Yarrow Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "22P/2HV6",
+  "providerCode": "22P",
+  "programmeCode": "2HV6",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Carr Lane, Chorley, Lancashire, PR7 3JU",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Carr Lane, Chorley, Lancashire, PR7 3JU",
+      "geocode": true,
+      "formatted_address": "Carr Ln, Chorley PR7 3JU, UK",
+      "latitude": 53.6416054,
+      "longitude": -2.6199905,
+      "post_code": "PR7 3JU",
+      "city": "Lancashire",
+      "route": "Carr Lane",
+      "postal_town": "Chorley"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "22P",
+    "addr_1": "St George's CE Primary School",
+    "addr_2": "Carr Lane",
+    "addr_3": "Chorley",
+    "addr_4": "Lancashire",
+    "postcode": "PR7 3JU ",
+    "url": "http://www.yarrowteachingschoolalliance.co.uk",
+    "geocode": true,
+    "formatted_address": "Carr Ln, Chorley PR7 3JU, UK",
+    "latitude": 53.6418431,
+    "longitude": -2.6205015,
+    "post_code": "PR7 3JU",
+    "city": "Lancashire",
+    "route": "Carr Lane",
+    "postal_town": "Chorley"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Fees for the course are £9 000. The Teaching School is happy to give advice about Student Finance and DfE  Bursaries and to help with the application process. ",
+    "AboutCourse": "‘Classroom ready. Classroom confident’. This is our ambition for successful applicants. Every element of our course is designed with this in mind. As a Teaching School, we are proud of our profession and want to ensure that its future is in the best of hands. \\r\n\\r\nWe know the best place to train is in a school and so trainees spend four days a week in class supported by a Class Mentor and Link Tutor. Each trainee completes two placements (Key Stage 1 and Key Stage 2) - all in Yarrow Teaching School Alliance member schools. \\r\n\\r\nOne day a week is spent engaged in theory based training. Our philosophy is that regular training is more effective than blocking seminars. Attending a weekly training session means that trainees can get straight back into class and put what they have learned into practice.\\r\n\\r\nTraining sessions, held either in Skelmersdale (where our accreditors are based) or in Chorley,  are led by a team of expert practitioners, all of whom currently practise in their field. The training is designed to develop professional knowledge of national statutory curricula and current national priorities as well as enhancing understanding of theoretical principles of teaching and pedagogy.\\r\n\\r\nAssessment takes the form of weekly teaching observations each with a defined focus. Targets are set following each observation for trainees to work and build on. To successfully achieve Qualified Teacher Status, trainees must demonstrate that they have met all Teacher Standards. \\r\n\\r\nTo further enhance trainee’s experiences, time is spent in schools where, for many of the pupils, English is their second language. Again, this is organised by the Teaching School as is a Key Stage 3 experience designed to promote understanding of the challenges facing children as they transition to high school. \\r\n\\r\nAs a post-graduate, trainees have already proved themselves academically and so the focus over the year is very much on teaching with no formal written assignments other than the paperwork demanded of the profession. \\r\n\\r\nTrainees are expected to keep an up-to-date planning file with their planning, evaluations and lesson observations in it. In addition, a Teachers’ Standards Portfolio is to be kept and maintained containing evidence that each of the Teacher Standards has been met. Full guidance on how to do this is given as part of the induction process and in subsequent training sessions and Link Tutors make this a focus whenever they visit in school. \\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "A first degree 2:2 or above (in any subject) from a UK University\\r\n\\r\nGCSE Grade C (or above) in English Language, Mathematics and Science* at the point of application (*please note that we consider either dual award Science or single award Biology, Chemistry or Physics. Science related qualifications such as Human Biology or Environmental Science are not considered equivalent).  \\r\n\\r\nGCSE Grade C (or above) in 2 further Primary National Curriculum Subjects",
+    "InterviewProcess": "Quite simply, we are looking for ambitious trainees who can demonstrate their commitment and desire to become outstanding teachers of the future and who understand the impact a teacher has on the lives of the children they teach. It is a pre-requisite that, as well as having the required academic qualifications, candidates should have the determination, enthusiasm and strength of character necessary to successfully make the transition from trainee to fully qualified, highly skilled classroom professional. In return, we promise to offer you the best professional training available. \\r\n\\r\nHow we select\\r\n\\r\nCharged with the training of teachers of the future, our selection and recruitment process is rigorous and robust. The process is led by experienced Headteachers and senior leaders of schools within Yarrow Teaching School Alliance. \\r\n\\r\nThe selection process involves a thorough scrutiny of application forms to check that applicants meet the academic entry requirements and have the professional entry requirements. We will read through  personal statement to establish that the applicant demonstrates a clear understanding of teaching, learning, national statutory frameworks as well as having a clear desire to become an outstanding teacher.\\r\n\\r\nShortlisted candidates are then invited to interview where they will be expected to demonstrate their skills and competencies in a range of situations which will include:\\r\n\\r\nTeaching a class \\r\nPupil Panel Interview \\r\nIndividual interview with a panel comprising Teaching School Leaders and Headteachers from across the Yarrow Teaching School Alliance\\r\nA literacy and numeracy test  \\r\n",
+    "OtherRequirements": "Some experience in a relevant setting (a nursery or a primary school, for example) is desirable but not essential. ",
+    "PersonalQualities": " We are looking for applicants who:\\r\n\\r\ncan inspire, motivate and challenge\\r\n\\r\ncan make each member of a thirty-strong class of children feel special \\r\n\\r\nhave drive, commitment and enthusiasm \\r\n\\r\nhave a desire to make a real difference  ",
+    "HowSchoolPlacementsWork": "Over the course of the year, trainees undertake two substantial placements in school. From September to the end of January, trainees are placed in a Key Stage 2 setting and from February to the end of June, they undertake a Key Stage 1 placement. Over the course of each placement, trainees have the support of the class teacher on a day to day basis with additional input and support from a ‘Link Tutor’ who will visit regularly. \\r\n\\r\nAll placements are secured by the Teaching School on behalf of Associate Teachers and all take place in Yarrow Teaching School Alliance member schools. All member schools share our belief that school-based ITT training is the best route into the profession and so trainees can be assured of a warm welcome and plentiful support. \\r\n\\r\nWe are proud that as an Alliance of some thirty schools based in and around Chorley, we are able to offer trainees a fully rounded experience. The range and breadth of establishments within the Yarrow Teaching School Alliance ensures that all our trainees gain real insight into the provision of education from ages 3 – 16. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our vision is, first and foremost, to provide school-led ITT of the highest quality and we believe there is no better training ground for future teachers than in the classroom working alongside experienced professionals.\\r\n\\r\nThe Yarrow Teaching School Alliance is led by the Teaching School, St George’s CE Primary School, Chorley – an outstanding primary school located at the heart of the community. We have a range of schools within the Alliance – large and small, urban and rural, faith and community, a school with a Children’s Centre and schools with nurseries so ensuring a range and breadth of experience for our trainees. Importantly, we have a secondary school as a member of the Alliance so KS2 trainees can gain experience shadowing colleagues in KS3, within their specialist subject. It is our belief that if teachers are to be effective, and to offer challenge to pupils, they need to know what is coming next in their education. For teachers in  key stage 2, that means understanding the demands of year 7. \\r\n\\r\nIn training with Yarrow Teaching School Alliance, your classroom based training would take place in schools within the Alliance where you would gain a wealth of practical experience. To complement this, you would access weekly theory based training delivered by expert practitioners.\\r\n\\r\nOver the course of the year, our trainees gain the skills and experience needed to become fully qualified and highly effective teachers able to take up a post in either Key Stage 1 or Key Stage 2.\\r\n",
+    "TrainWithDisability": "The Yarrow Teaching School Alliance is committed to treating all applicants fairly and with respect, irrespective of their actual or assumed background, disability or any other protected characteristic. \\r\n\\r\nApplicants with a disability or need such as dyslexia, a medical condition or individual need which they believe could affect their performance during the selection process should notify the Yarrow Teaching School Alliance at the point of application in order that the selection panel can make adjustments to enable them to perform at their best. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The Yarrow Teaching School Alliance has a close relationship with its chosen accreditor, NWSHARES SCITT, and together we work to create a training programme that is rigorous and robust and prepares teachers for the demands of the classroom. With NWSHARES SCITT, we deliver weekly theory based training to underpin your practical experience. These sessions take place either in Skelmersdale (where our accreditors are based) or in Chorley. \\r\n",
+        "UcasInstitutionCode": "N83"
+      }
+    ]
+  },
+  "has_inst": true
+}

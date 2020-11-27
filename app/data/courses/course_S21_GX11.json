@@ -1,0 +1,65 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Sheffield Hallam University",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "S21/GX11",
+  "providerCode": "S21",
+  "programmeCode": "GX11",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S21",
+    "addr_1": "City Campus",
+    "addr_2": "Pond Street",
+    "addr_3": "Sheffield",
+    "addr_4": null,
+    "postcode": "S1 1WB  ",
+    "url": "http://www.shu.ac.uk",
+    "geocode": true,
+    "formatted_address": "City Campus, Howard St, Sheffield S1 1WB, UK",
+    "latitude": 53.37958769999999,
+    "longitude": -1.4651842,
+    "post_code": "S1 1WB",
+    "city": "South Yorkshire",
+    "route": "Howard Street",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Tuition fees for the 2019/20 academic year are yet to be confirmed.\\r\n\\r\nAs an indication of what you might pay, the fee for students who started in September 2018 was:\\r\n•\\t£9,250\\r\n\\r\nPGCE students can apply for loans from Student Finance England and may be entitled to a tax-free bursary -https://getintoteaching.education.gov.uk/funding-and-salary/overview\\r\n\\r\nFind out more about scholarships and funding on our website - https://le.ac.uk/study/postgraduates/fees-funding/scholarships-discounts\\r\n\\r\n",
+    "AboutCourse": "\\r\nMathematics is a core subject within the secondary curriculum. It encompasses the study of number, algebra, shape, measures and data-handling. These are all important elements of the Mathematics curriculum and here at Leicester we strive to ensure that you become an effective practitioner of Mathematics education with the ability to excite and engage pupils in all areas.\\r\n\\r\nYou will learn from some of the best practitioners in the field and, with their support, learn how to become an effective practitioner yourself. The programme will cover all areas of the National Curriculum for Mathematics, and will also address national testing, extra curricular learning opportunities and your own professional development.\\r\n\\r\nThe Institute of Mathematics and its Applications (IMA) is offering Teacher Training Scholarships to Mathematics graduates who enter teacher training. There are also tax-free bursaries available. For more information, please visit the Get into Teaching website.\\r\n\\r\nPCGE Secondary Mathematics aims to:\\r\n•Broaden and deepen your knowledge and understanding of Mathematics for teaching purposes; \\r\n\\r\n•Develop your understanding and insight into the ways in which Mathematics is learned and potential difficulties; \\r\n\\r\n•Provide an informed and critical view of National Curriculum requirements; \\r\n\\r\n•Provide up-to-date knowledge and experience of curriculum materials, developments in assessment and examinations, and the potential of ICT;  \\r\n\\r\n•Provide a broad range of teaching and learning methods to cater for a full range of abilities; and\\r\n\\r\n•Develop your skills in planning, communication, assessment, recording and evaluation\\r\n\\r\nThe Mathematics subject specialism will cover a variety of areas including:\\r\n•The mathematics curriculum; \\r\n\\r\n•Lesson planning; \\r\n\\r\n•Subject knowledge: approaches to teaching and learning, including common misconceptions; \\r\n\\r\n•Teaching mathematics using technology; \\r\n\\r\n•Assessment of and for learning; \\r\n\\r\n•Theories of learning and teaching; \\r\n\\r\n•Communicating mathematically; \\r\n\\r\n•Differentiating to enable all pupils to reach their potential; \\r\n\\r\n•Teaching Functional Maths and Problem Solving; and \\r\n\\r\n•Maths outside the classroom.\\r\n\\r\nContinuous assessment is used throughout the course and there are no examinations.\\r\n \\r\nApplications are welcome from applicants with good qualifications in their mathematics qualifications at GCSE and AS/A level (or equivalent) and at honours degree level. \\r\n\\r\nThose applicants with joint or combined honours degrees in which Mathematics is a major subject are also welcome to apply. \\r\n\\r\nApplicants with degrees in a range of academic backgrounds including engineering, economics and physics have previously made successful applications.\\r\n\\r\nApplicants without mathematics as a substantial part of their degree may, in some circumstances, be able to undertake a Subject Knowledge Enhancement course in lieu of the honours level mathematics. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "•\\t2:1 degree for English, Geography, History or Social Science\\r\n•\\t2:2 degree for Mathematics, MFL, Sciences or RE\\r\n(We may, under exceptional circumstances, accept a Third if there are \\r\nother very strong recommending features in your application.)\\r\n\\r\n•\\tGCSE Grade 4 (old grade C) or above in English Language and Maths (English equivalency test available if needed)\\r\n\\r\n•\\tA-levels (or equivalent) in relevant subjects\\r\n\\r\n•\\tAlthough not essential, you may find it useful to have recent experience working with children and/or observing teaching in a school setting.\\r\n\\r\n•\\tA pass in the Professional Skills Tests in literacy and numeracy\\r\n",
+    "FeeInternational": 15405.0,
+    "InterviewProcess": "If invited for interview, you will meet members of the course team who will give an overview of the course and answer any questions you may have. \\r\n\\r\nYou will participate in a group task with candidates from a range of subjects and give a brief presentation as part of a small group. \\r\n\\r\nSubject tutors will introduce a written subject task that you will complete during the day and you will have an individual interview with a subject tutor. The interview is not a daunting process but rather a discussion about your suitability and preparation for going into teaching. During the interview, you will explore any additional preparation needed to help put you in the best possible position to engage successfully with the course from the start.",
+    "OtherRequirements": "Admission to the course is subject to a satisfactory medical report. The University will provide more information about this should you be offered a place.\\r\n\\r\nAll offers are subject to a satisfactory enhanced DBS disclosure. We will provide instructions regarding the DBS application process once you have accepted an offer of a place on the course.\\r\n\\r\nEnglish Language Requirements - you must have a GCSE Grade 4 (old grade C) in English Language. \\r\n\\r\nWe offer an equivalency test in English for any successful applicant who does not hold this qualification or an equivalent one.  \\r\n",
+    "PersonalQualities": "In all cases applicants should be able to demonstrate a genuine interest in and enthusiasm for mathematics at interview.\\r\n\\r\nThe Secondary PGCE is a challenging course, and we are looking for applicants with a wide range of skills, knowledge, experiences and an aptitude for teaching.  These skills also include the ability to form relationships,  good communication skills, a commitment to learning and teaching and reflective qualities. \\r\n\\r\n",
+    "HowSchoolPlacementsWork": "You will undertake two secondary teaching placements in our Partnership Schools. Leicester is ideally placed to offer the opportunity to work in both inner city and rural environments, with learners from a wide range of ethnic backgrounds. We try to place students in contrasting schools to ensure you have a rich and varied experience in your initial training year and that you have the opportunity to teach across the 11-18 age range.\\r\n\\r\nThe placements are referred to as 'Phase A' and 'Phase B' placements.\\r\nPhase A.  In planning your placements, your subject tutor will try to balance the distance you are asked to travel with your individual needs and our knowledge of our wide range of school partners. \\r\n\\r\nPhase A\\r\nAfter induction you will spend about 8 weeks in your Phase A placement school.  You will build on existing experience and develop new skills with support from the school's Coordinator for Initial Teacher Education and a subject mentor who will oversee your professional development during the placement and liaise closely with your university tutor who will also support you. \\r\n\\r\nPhase B\\r\nDuring your second placement you will spend about 14 weeks in a different school, also supported by a mentor, ITE Coordinator and university tutor.  "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Sheffield Hallam University is one of the UK's largest universities, based in the heart of Sheffield, one of the UK’s biggest student cities.\\r\n\\r\nSheffield is the fifth biggest city in the UK with over 60,000 students, it has a mix of culture and green spaces. \\r\n\\r\nWe have invested over £100 million in new buildings and facilities over the last five years, providing innovative, flexible and sustainable spaces to enhance student experience.\\r\n\\r\nWe pride ourselves on the applied nature of our courses. We offer one of the largest and most diverse\\r\nrange of placements in the region. We’ve built up a network of over 600 partner schools, colleges and other educational establishments, and we work together to our mutual advantage.\\r\n\\t\\r\nYou will study at our centre of education that is recognised for excellence and innovation in teaching and learning. Our academics, researchers and partners in schools work together to ensure you become a committed and professional graduate, with the opportunity to return to us throughout your career to further your professional development.\\r\n\\t\\r\nWe received an overall student satisfaction rating of 86% in the 2018 National Student Survey. This result places us in the top 30 universities in the country for student satisfaction. We also received a Silver rating in the 2017 Teaching Excellence Framework. \\r\n",
+    "TrainWithDisability": "If you have a disability, including long term medical conditions, specific learning difficulties (such as dyslexia, dyspraxia and A(D)HD) and mental health conditions, you can access additional support for your academic studies whilst at Sheffield Hallam.\\r\n\\r\nStudents can receive support for a wide variety of conditions. There is extensive support available, including\\r\n\\r\n•\\tLearning contracts- reasonable adjustments to your course such as extensions or extra time in exams\\r\n\\r\n•\\tSupport workers - like a mentor to help with organisation, or a personal assistant to help with mobility\\r\n\\r\n•\\tEquipment/Assistive Technology and software - such as digital recorders or text to speech software\\r\n\\r\nWe have an on-site assessment Centre, the Sheffield Regional Assessment Centre, where a range of disability specialists can carry out Study Needs Assessments.\\r\n\\r\nWe run daily drop in sessions - come and talk to us, no appointment needed. You can also register for support online.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

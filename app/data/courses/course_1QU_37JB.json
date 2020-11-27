@@ -1,0 +1,182 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Endeavour TSA",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "1QU/37JB",
+  "providerCode": "1QU",
+  "programmeCode": "37JB",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Tidemill Academy, 11 Giffin Street, London, SE8 4RJ",
+      "code": "-"
+    },
+    {
+      "name": "Aerodrome Primary Academy",
+      "address": "Aerodrome Primary Academy, Goodwin Road, Croydon, CR0 4EJ",
+      "code": "2"
+    },
+    {
+      "name": "The Robert Fitzroy Academy",
+      "address": "80 Brampton Rd, Croydon, CR0 6JN",
+      "code": "4"
+    },
+    {
+      "name": "The Woodside Academy",
+      "address": "Forest Site, Wood Street, Walthanstow, London, E17 3JX",
+      "code": "7"
+    },
+    {
+      "name": "Tymberwood Academy",
+      "address": "Cerne Road, Gravesend, Kent, DA12 4BN",
+      "code": "B"
+    },
+    {
+      "name": "St Marks",
+      "address": "Albert Road, London, SE25 4JD",
+      "code": "C"
+    },
+    {
+      "name": "Southwark Park Primary",
+      "address": "383 Southwark Park Road, SE16 2JH",
+      "code": "F"
+    },
+    {
+      "name": "Copperfield Academy",
+      "address": "Dover Road, DA11 0RB",
+      "code": "G"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Tidemill Academy, 11 Giffin Street, London, SE8 4RJ",
+      "geocode": true,
+      "formatted_address": "11 Giffin St, Deptford, London SE8 4RJ, UK",
+      "latitude": 51.47794889999999,
+      "longitude": -0.0250551,
+      "post_code": "SE8 4RJ",
+      "city": "Greater London",
+      "route": "Giffin Street",
+      "postal_town": "London"
+    },
+    {
+      "address": "Aerodrome Primary Academy, Goodwin Road, Croydon, CR0 4EJ",
+      "geocode": true,
+      "formatted_address": "Goodwin Rd, Croydon CR0 4EJ, UK",
+      "latitude": 51.3614551,
+      "longitude": -0.1096464,
+      "post_code": "CR0 4EJ",
+      "city": "Greater London",
+      "route": "Goodwin Road",
+      "postal_town": "Croydon"
+    },
+    {
+      "address": "80 Brampton Rd, Croydon, CR0 6JN",
+      "geocode": true,
+      "formatted_address": "80 Brampton Rd, Croydon CR0, UK",
+      "latitude": 51.38712599999999,
+      "longitude": -0.0819702,
+      "post_code": "CR0",
+      "city": "Greater London",
+      "route": "Brampton Road",
+      "postal_town": "Croydon"
+    },
+    {
+      "address": "Forest Site, Wood Street, Walthanstow, London, E17 3JX",
+      "geocode": true,
+      "formatted_address": "Wood St, Walthamstow, London E17 3NT, UK",
+      "latitude": 51.5896166,
+      "longitude": -0.0042587,
+      "post_code": "E17 3NT",
+      "city": "Greater London",
+      "route": "Wood Street",
+      "postal_town": "London"
+    },
+    {
+      "address": "Cerne Road, Gravesend, Kent, DA12 4BN",
+      "geocode": true,
+      "formatted_address": "Cerne Rd, Gravesend DA12 4BN, UK",
+      "latitude": 51.4229366,
+      "longitude": 0.3920629,
+      "post_code": "DA12 4BN",
+      "city": "Kent",
+      "route": "Cerne Road",
+      "postal_town": "Gravesend"
+    },
+    {
+      "address": "Albert Road, London, SE25 4JD",
+      "geocode": true,
+      "formatted_address": "Albert Rd, London SE25 4JD, UK",
+      "latitude": 51.399169,
+      "longitude": -0.0709909,
+      "post_code": "SE25 4JD",
+      "city": "Greater London",
+      "route": "Albert Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "383 Southwark Park Road, SE16 2JH",
+      "geocode": true,
+      "formatted_address": "383 Southwark Park Rd, London SE16 2JH, UK",
+      "latitude": 51.4942668,
+      "longitude": -0.0579793,
+      "post_code": "SE16 2JH",
+      "city": "Greater London",
+      "route": "Southwark Park Road",
+      "postal_town": "London"
+    },
+    {
+      "address": "Dover Road, DA11 0RB",
+      "geocode": false
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1QU",
+    "addr_1": "Tidemill Academy",
+    "addr_2": "11 Giffin Street",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "SE8 4RJ ",
+    "url": "http://www.endeavourtsa.org",
+    "geocode": true,
+    "formatted_address": "11 Giffin St, Deptford, London SE8 4RJ, UK",
+    "latitude": 51.47794889999999,
+    "longitude": -0.0250551,
+    "post_code": "SE8 4RJ",
+    "city": "Greater London",
+    "route": "Giffin Street",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "School Direct is a school-led initial teacher training pathway that offers practical, ‘on-the-job’ training and teacher education. The programme aims to create highly qualified, highly skilled teachers, who are an integral part of a school community. \\r\n\\r\nYou will be placed in a school from the start of your training but you don’t need to worry about being thrown in at the deep-end – you won’t be teaching classes until you are ready! You will be supported by an outstanding and well-trained classroom mentor and a member of the school’s Senior Leadership Team, in partnership with an experienced professional tutor from one of our University partners. Alongside our committed ETSA training team, you will be supported every step of your journey to reach the professional standards of teaching and gain Qualified Teacher Status. Your timetable and teaching responsibility will increase as you gain in confidence and skill. \\r\n\\r\nYour training will be delivered by expert teachers within the school and complemented by attendance at the UCL, Institution of Education (UCL IoE) or University of Derby. You will develop your understanding of pedagogy, teaching practice and curriculum knowledge. By being part of our cohort of ETSA trainees, you will also develop a strong professional support network who understand and share the teacher training experience alongside you.\\r\n\\r\nAs well as your main training placement, you will complete a contrasting placement in different key stage which will allow you to fill gaps in your experience; this will afford you the opportunity to work with different students, within different structures and with a wider range of colleagues.\\r\n\\r\nWe offer both the School Direct Salaried and School Direct Unsalaried routes. You can choose from two different pathways: age 3-7 (Foundation Stage and KS1) or age 5-11 (KS1 and KS2).\\r\n\\r\nYou do not have to be supernumerary and you can have up to 80% of a teaching timetable by the end of the training year. You will attend the UCL IOE or The University of Derby (as applicable) for between 15-21 days of training. The majority of your training will be delivered by the Endeavour Teaching School Alliance partnership.\\r\n\\r\nETSA School Direct Salaried trainees will be paid on the Unqualified Teacher pay scale. Pay varies depending on your placement school’s location. \\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "ETSA School Direct Salaried trainees will be paid on the Unqualified Teacher pay scale. Pay varies depending on your placement school’s location. \\r\n\\r\nScale\\r\nEngland and Wales (excluding London and fringe)\\t\\r\nMin\\t£ 16,626\\r\nMax\\t£26,295\\r\n\\r\nInner London\\t\\r\nMin       £20,909\\r\nMax      £30,573\\r\n\\r\nOuter London\\t\\r\nMin      £  19,749\\r\nMax      £29,422\\r\n\\r\nFringe London\\r\nMin\\t£   17,718\\r\nMax\\t£27,384\\r\n\\r\nAdditional rewards\\r\n\\r\nIn addition to the basic salary you’ll earn, there are other great benefits available including:\\r\n\\r\n•\\tholidays – you’ll get more days than many people in other professions, though teachers work for 195 days per year in school, and tend to do some work during their holidays\\r\n\\r\n•\\ta generous pension – when you’re employed as a teacher you’ll automatically be a member of the Teachers’ Pension Scheme\\r\n\\r\n•\\tspecial educational needs (SEN) allowance – if you work as a qualified teacher with pupils with SEN, you could be eligible for an SEN allowance of no less than £2,106 and no more than £4,158 per annum\\r\n\\r\n•\\tteaching and learning responsibility (TLR) payments – additional money if you take on more responsibilities ranging from £2,667 to £13,027 depending on the type of duties.\\r\n\\r\n\\r\n",
+    "Qualifications": "All candidates must hold a UK degree (or equivalent)  with at least a 2:2 in a relevant subject. You must also have 3 years’ work experience (this does not have to be education related).\\r\n\\r\n If you are currently studying towards an undergraduate degree, you must have completed the course prior to commence a School Direct training programme.\\r\n\\r\nAll qualifications gained outside of the UK will be checked to ensure they meet the relevant equivalency standards.  \\r\n\\r\nAll applicants must have the right to work in the UK to be eligible for School Direct training with the Endeavour Teaching School Alliance.",
+    "InterviewProcess": "During the interview process we would observe you interacting with a group of children, conduct additional numeracy, literacy and ICT tasks and conduct a formal interview where we would ask you to present to us about why you wish to be a teacher. We aim for our interview process to be as relaxing as possible so that you can feel comfortable and show us your true potential. \\r\n\\r\nThe Professional Skills test is required; this is a core skills tests in numeracy and literacy and are to be completed before you begin the training course. ",
+    "HowSchoolPlacementsWork": "This route is aimed at high calibre career changers. You will be employed by your main placement school, start on the first day of the autumn term and be paid a salary while you train. School Direct Salaried trainees are not eligible to apply for a bursary or for student loans. Successful completion of the course leads to recommendation for Qualified Teacher Status (QTS). There is also the option of joining the PGCE pathway, should you wish to pay top-up fees. You must be a degree holder, with at least a 2:2 in a relevant subject. You must also have 3 years’ work experience (this does not have to be education related)."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Endeavour Teaching School Alliance (ETSA) is a vibrant partnership of schools who are passionate about nurturing talented individuals to become outstanding Primary School teachers. \\r\n\\r\nOur diverse and expanding alliance currently has 16 schools across London and the West Midlands. Our teacher training is in partnership with two outstanding Universities: UCL Institute of Education and The University of Derby.\\r\n\\r\nOur partnership is led by Tidemill Academy, a National Teaching School since 2013.  We have a reputation for professional development at all levels; our programmes have been described as 'inspiring' and our commitment to our staff, including our trainees, is shared by all schools in the partnership. \\r\n\\r\nOur trainees are successful; over the last 5 years, 100% of our School Direct trainees were graded good or outstanding at the end of the course. We provide comprehensive training to our School Direct mentors to enable you to get the best possible support. This is complemented by the practical training you will receive from us, led by outstanding classroom teachers and experts in their field. Previous trainees have 'loved' our 'on the job training' and the 'strong relationships' they built with our team.  \\r\n\\r\nNo matter which partner school in the Endeavour Teaching School Alliance you apply to, you will join a team that will help you develop the confidence to experiment with teaching strategies and the skills and  needed to become a successful teacher. From the very beginning, you will be a valued member of our staff and part of our school community. \\r\n\\r\n",
+    "TrainWithDisability": "We have a strong commitment to equality and inclusion and we seek to offer a first class education to all students, including students with disabilities. All of our sites are wheelchair accessible and we undertake all reasonable adjustments necessary to ensure inclusion of all disabilities.\\r\n\\r\nWe are committed to our Equality Policy in respect of serving students and employing staff. Within this policy we will endeavour to ensure that disabled students and staff receive the same standards of service as others. We will not tolerate discrimination on the grounds of disability.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL is a global leader in teacher education. Their programmes are recognised by Ofsted as \"outstanding\"  across Primary and Secondary Education\\r\n\\r\nAll UCL School Direct students have access to UCL support services and facilities\\r\n\\r\n\\r\nPrimary School Direct Salaried route:\\r\n(insert link)\\r\n\\r\nPrimary School Direct (PGCE) route:\\r\n(insert link)\\r\n\\r\n\\r\n\\r\n",
+        "UcasInstitutionCode": "U80"
+      },
+      {
+        "Description": "The University of Derby vision is to 'develop first class professionals who will inspire and lead education in the twenty first century.' Their Primary provision is judged as outstanding.\\r\n\\r\nPrimary School Direct (PGCE) route:\\r\n(insert link)\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+        "UcasInstitutionCode": "D39"
+      }
+    ]
+  },
+  "has_inst": true
+}

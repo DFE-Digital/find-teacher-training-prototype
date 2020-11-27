@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "UCL, University College London (University of London",
+  "provider": "Brent Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "25Z/2PNG",
+  "providerCode": "25Z",
+  "programmeCode": "2PNG",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Spencer Road, Wembley, Middlesex, HA0 3SF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Spencer Road, Wembley, Middlesex, HA0 3SF",
+      "geocode": true,
+      "formatted_address": "Spencer Rd, Wembley HA0 3SF, UK",
+      "latitude": 51.5691735,
+      "longitude": -0.3125293,
+      "post_code": "HA0 3SF",
+      "city": "Greater London",
+      "route": "Spencer Road",
+      "postal_town": "Wembley"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "25Z",
+    "addr_1": "Spencer Road",
+    "addr_2": null,
+    "addr_3": "Wembley",
+    "addr_4": "Middlesex",
+    "postcode": "HA0 3SF ",
+    "url": "http://www.btsa.london",
+    "geocode": true,
+    "formatted_address": "Spencer Rd, Wembley HA0 3SF, UK",
+    "latitude": 51.5693045,
+    "longitude": -0.3116673,
+    "post_code": "HA0 3SF",
+    "city": "Greater London",
+    "route": "Spencer Road",
+    "postal_town": "Wembley"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This School Direct Primary  (Key stage 1 & 2)  PGCE programme will prepare students in line with the requirements of the Teachers’ Standards (2012) for the award of QTS. \\r\n\\r\nYou will attend university training days at UCL Institute of Education alongside students recruited via other routes. You will carry out academic assignments leading to the award of masters level credits.\\r\n\\r\nOur School Direct Primary PGCE develops effective, confident teachers whose classroom practice is informed by an advanced knowledge of educational theory, and who will continue to learn and reflect throughout their careers. We will help students to acquire the skills and expertise to support children’s learning, prepare them to teach in an inclusive urban environment, provide professional development in all national curriculum subjects and ensure that students show a concern for professional values and demonstrate the positive attitudes and behaviour expected from pupils.\\r\n\\r\nStudents undertake two Master’s-level (level 7) modules as part of the PGCE, with a total of 60 Master’s credits on successful completion.\\r\n\\r\nThe programme consists of three core modules, two at Master’s-level (level 7) and one at Undergraduate-level (level 6) and three school placements.\\r\n\\r\nThe programme is delivered via a combination of lectures, workshops, tutorials and self-study. Students will be supported though a virtual learning environment and will participate in school placements. \\r\nAssessment is through assignments, presentations, audits, feedback and tutorials. A final assessment is based on a range of evidence including observations of teaching, assignments, subject knowledge development, professional conduct and responses to self-study.\\r\n\\r\nFor further information\\r\nhttp://www.ucl.ac.uk/ioe/courses/teacher-training/primary-pgce",
+    "CourseLength": "OneYear",
+    "Qualifications": "UCL requires a minimum of a 2:2 honours degree and GCSEs in English Language and Maths plus Science at grade C/5 or above. UCL does not accept ‘additional’ or ‘applied’ GCSE subjects. For equivalency testing UCL will only accept tests from www.equivalencytesting.com” \\r\n\\r\nA levels:No specific subjects required.\\r\n\\r\nApplicants must pass the Literacy and Numeracy Professional Skills Tests before training begins. ",
+    "FeeInternational": 17110.0,
+    "FinancialSupport": "Funding information is available on the following web page:\\r\nhttps://getintoteaching.education.gov.uk/funding-and-salary\\r\n\\r\n",
+    "InterviewProcess": "The BTSA will coordinate the selection process. All applications will be checked to see if the applicant meets the entry criteria. Those who are shortlisted will be invited for an interview, which will involve a range of  activities to assess suitability for teaching. \\r\n\\r\n\\r\n",
+    "OtherRequirements": "All applicants will be expected to have gained some experience in a classroom, ideally prior to interview. \\r\n\\r\nTeacher Training providers have a responsibility to ensure that trainees have the health and physical capacity to teach and will not put children at risk of harm. All applicants will be required to successfully complete Occupational Health and Disclosure Barring Service (DBS) Enhanced Disclosure checks.\\r\n\\r\nIf you have lived, worked or travelled in another country for three months or longer in the last ten years, you will need to obtain a Certificate of Good Conduct from the relevant country/countries.\\r\n",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who demonstrate their passion and enthusiasm for teaching and have a desire to share this with young people. \\r\n\\r\nYou should be highly motivated, able to adapt and have the resilience to work well under pressure. Ideal candidates will be organised and demonstrate good inter-personal skills.\\r\n\\r\nTrainees should have the ability to reflect critically on their own practice and progress.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "As a BTSA School Direct trainee you will spend a total of 110 days on school placements applying the educational theories learned and developing your teaching practice, at two selected schools within the Brent Teaching School Alliance. This is complimented with an additional placement of 10 days in an alternative setting, where you will gain a vast range of experiences beyond mainstream education.\\r\n\\r\nDuring your time in school your teaching practice will be supported by an experience Class Mentor and Professional Coordinator Mentor.  The Professional Practice module is assessed through these placements, associated tasks and a portfolio. \\r\n\\r\nYour tutor from the UCL Institute of Education will visit you in school on a regular basis and liaise with your school mentor regarding your training and development. Your Institute tutor will carry out your final assessment in school against the national Teachers’ Standards.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "If you want an interesting career where you can really make a difference to the lives of young people, train to be a teacher with the Brent Teaching School Alliance.\\r\n\\r\nThe Brent Teaching School Alliance (BTSA) is a strong partnership of primary and secondary schools working with the UCL Institute of Education to provide high quality teacher training among our mainly 'outstanding' establishments. Our vision is to train and develop the next generation of outstanding teachers. \\r\n\\r\nWe have been successful providers of initial teacher training for many years. The consortium of schools involved have a high level of expertise and strong commitment to delivering excellent quality training. We enable our student teachers to realise their full potential. A high percentage of our students gain full employment within their placement school or within the Alliance, once qualified. \\r\n\\r\nYou will be trained in a highly supportive and aspirational environment and will develop the rigour, professional knowledge, understanding and skills necessary for the delivery of creative, purposeful and challenging teaching and learning. Our teachers are excellent practitioners with exemplary behaviour management strategies and are eager to share their skills, knowledge and practice with the next generation of teachers. \\r\n\\r\nThe Brent Teaching School Alliance can provide a broad range of experiences and developmental opportunities within a multi-culturally diverse population, which enriches the experience of teaching within this unique community.\\r\n",
+    "TrainWithDisability": "The BTSA is fully inclusive. \\r\nApplicants who would benefit from disabled access should let us know on their application form so that they can be considered for placements at the appropriate schools. \\r\n\\r\nTrainees with a disability or other needs will be offered additional  support with reasonable adjustments made to accommodate their individual circumstances.  \\r\n\\r\nSchool Direct students are entitled to support from the UCL Student Support and Wellbeing (SSW) team. You can find more information here:- \\r\nhttps://www.ucl.ac.uk/students/disability-support\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "UCL Institute of Education (IOE) is a global leader in teacher education.  Their programmes are recognised by Ofsted as “outstanding” in very criterion across Primary and Secondary Education.”\\r\n\\r\nAll UCL School Direct students have full access to UCL student support services and facilities\\r\n\\r\n\\r\nhttps://www.ucl.ac.uk/prospective-students/graduate/teacher-training-programmes\\r\n",
+        "UcasInstitutionCode": "U80"
+      }
+    ]
+  },
+  "has_inst": true
+}

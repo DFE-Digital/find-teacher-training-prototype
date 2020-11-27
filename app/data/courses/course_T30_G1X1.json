@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Titan Partnership Ltd",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "T30/G1X1",
+  "providerCode": "T30",
+  "programmeCode": "G1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St George's Community Hub, Great Hampton Row, Birmingham, B19 3JG",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St George's Community Hub, Great Hampton Row, Birmingham, B19 3JG",
+      "geocode": true,
+      "formatted_address": "Great Hampton Row, Birmingham B19 3JG, UK",
+      "latitude": 52.4904307,
+      "longitude": -1.9053447,
+      "post_code": "B19 3JG",
+      "city": "West Midlands",
+      "route": "Great Hampton Row",
+      "postal_town": "Birmingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "T30",
+    "addr_1": "Titan Teacher Training",
+    "addr_2": "75 Harborne Road",
+    "addr_3": "Birmingham",
+    "addr_4": "West Midlands",
+    "postcode": "B19 3JG ",
+    "url": "http://www.titanteachertraining.co.uk",
+    "geocode": true,
+    "formatted_address": "75 Harborne Rd, Birmingham B15 3DH, UK",
+    "latitude": 52.4708263,
+    "longitude": -1.9245948,
+    "post_code": "B15 3DH",
+    "city": "West Midlands",
+    "route": "Harborne Road",
+    "postal_town": "Birmingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Titan Teacher Training has successfully trained teachers for over 20 years. We work in partnership with Primary and Secondary schools across Birmingham's inner city to deliver outstanding and supportive school based Teacher Training.\\r\n\\r\nOur course offers Qualified Teacher Status (QTS) and a Post Graduate Certificate in Education (PGCE) with Master's credits.  The PGCE qualification is validated by Birmingham City University. To support your academic work you have access to the university's facilities and services.\\r\n\\r\nYou will have the chance to train in a variety of settings: comprehensive, selective and single sex. You will also be able to follow specialist training pathways in SEND, STEM and alternative provision.  \\r\n\\r\nTitan is a small but highly successful provider. Our size enables us to deliver personalised training in a very supportive environment.\\r\n\\r\nAs a trainee you will attend cross-phased taught sessions designed to complement your school placements as well as bespoke subject specific sessions.\\r\n\\r\n100% of our 2017/18 cohort secured employment. Many of our trainees choose to remain within our partnership schools and we offer a comprehensive programme to support you through your NQT year.\\r\n\\r\nAs a trainee you will also have access to events & activities from our wider partnership network of over 50 educational institutions across Birmingham\\r\n\\r\nWe look forward to supporting you into teaching! \\r\n\\r\nMore information can be found on our [website](https://www.titanteachertraining.co.uk/)",
+    "TrainWithDisability": "Titan is an inclusive provider. We will support you during your training year and make any reasonable adjustments to ensure we meet your specific needs.\\r\n ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The Solent SCITT",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Science with Physics",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "S56/2CLX",
+  "providerCode": "S56",
+  "programmeCode": "2CLX",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Park Community School, Middle Park Way, Havant, PO9 4BU",
+      "code": "P"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Park Community School, Middle Park Way, Havant, PO9 4BU",
+      "geocode": true,
+      "formatted_address": "Middle Park Way, Havant PO9 4BU, UK",
+      "latitude": 50.87005,
+      "longitude": -1.001233,
+      "post_code": "PO9 4BU",
+      "city": "Hampshire",
+      "route": "Middle Park Way",
+      "postal_town": "Havant"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S56",
+    "addr_1": "c/o Park Community School",
+    "addr_2": "Middle Park Way",
+    "addr_3": "Havant",
+    "addr_4": "Hampshire",
+    "postcode": "PO9 4BU ",
+    "url": "http://www.thesolentscitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Middle Park Way, Havant PO9 4BU, UK",
+    "latitude": 50.87005,
+    "longitude": -1.001233,
+    "post_code": "PO9 4BU",
+    "city": "Hampshire",
+    "route": "Middle Park Way",
+    "postal_town": "Havant"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Fees for The Solent SCITT programme to obtain Qualified Teacher Status and a PGCE qualification are £9,000 or Qualified Teacher Status only is £8,000.",
+    "AboutCourse": "Physics helps us to understand the workings of the universe, from the solar system to splitting the atom. It links key ideas of energy, forces and particles. Can you make working out frequency of waves a fathomable problem? \\r\n\\r\nFollowing a four-day induction in the final week of August, you are part of the school team from day one, beginning your main school placement in September in line with the academic year. \\r\n\\r\nA shorter six-week placement in January enables you to sample a different school setting before returning to your main school. Our practical ‘hands on’ training means you will spend  a substantial amount of time in school  \\r\n\\r\nAn experienced school mentor will be assigned to provide support and guide your teaching development. Subject specific sessions to enhance your knowledge are run by Subject Experts and take place for half a day fortnightly.\\r\n\\r\nSubject Experts are current outstanding practitioners who will tailor a programme around your needs and provide up to date advice on subject specific teaching and learning.  \\r\n\\r\nAlongside Qualified Teacher Status (QTS) there is the option to add a PGCE qualification validated by the University of Portsmouth. This would involve two sessions at the University with the rest of the content delivered in school. \\r\n\\r\nAssessment will take place in the following ways:\\r\n* Lesson Observations\\r\n* Evidence in your Teachers' Standards Portfolio\\r\n* Professional conduct throughout the course\\r\n* Reports completed by your mentor for each school experience\\r\n* Effective completion of TL PD and Subject training\\r\n* If applicable - Assignments to meet PGCE requirements\\r\n\\r\nYou can expect a challenging but enjoyable year in which you will learn a lot, meet new people and develop as a person and professional. \\r\n\\r\nWell-being is important to us so we organise a variety of activities and provide expert advice on managing stress, workload and effective use of time. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "In line with Initial Teacher Training (ITT) entry criteria, applicants must have achieved the following before training induction:\\r\n\\r\n* a degree of a UK university, higher education institution or an acceptable equivalent at 2.2 or above before training begins\\r\n\\r\n* a standard equivalent to a grade 4/Grade 'C' in the GCSE examinations in English and Mathematics. We accept relevant equivalency tests.\\r\n\\r\nApplicants with a non-UK degree and qualifications achieved a will be required to demonstrate equivalence with UK standards through [NARIC] (https://www.naric.org.uk/naric/)\\r\n\\r\nFor more information on entry requirements, please visit [The Solent] SCITT website (https://www.thesolentscitt.co.uk/)\\r\n\\r\n\\r\n\\r\n",
+    "FeeInternational": 9000.0,
+    "InterviewProcess": "The interview will be with two members of the SCITT team and/or subject specialists. We aim to interview within 7 working days if possible and will email out a detailed overview of the interview process.\\r\n\\r\nThe interview comprises of:\\r\n\\r\n* A microteach of up to 5 minutes in an area of the subject you have chosen to teach\\r\n* A GCSE examination paper of the subject you have chosen to teach to demonstrate subject knowledge\\r\n* Completion of a professional task to demonstrate an understanding of school life and the responsibilities of a teacher\\r\n\\r\nCandidates are asked to bring original GCSE and Degree Certificates with them for the interview along with three forms of ID.\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "OtherRequirements": "You will be required to have passed the Professional Skills Tests  (http://sta.education.gov.uk/) in both English and Mathematics before the start of the course.\\r\n\\r\nWe encourage all applicants to take the tests as early as possible to avoid the disappointment of gaining a place and not being able to start.\\r\n\\r\nYou must also undertake an Enhanced Disclosure and Barring Service check (DBS) and an Occupational Health Assessment to assess fitness for teaching.\\r\n",
+    "PersonalQualities": "We are looking for people with enthusiasm and a passion for teaching and making a difference to young people.",
+    "HowSchoolPlacementsWork": "We offer a unique combination of five school experiences, including Key Stage 2, 5 and Special School experiences, as part of our varied programme.\\r\n\\r\nAspiring teachers begin with a main secondary school placement in September and are part of the school staff from the start of the year which is hugely advantageous.   \\r\n\\r\nA second six-week placement in a contrasting school takes place in January before returning to the main school placement until the course ends in late June. Primary, Sixth Form and Special School visits are incorporated within the programme enabling a chance to look at different Education sectors.\\r\n\\r\nWhen arranging school placements, we consider the travel distance for candidates and use our experience to find a best-fit option.\\r\n\\r\nOur partnerships schools are committed to teacher training and all have employed previous trainees on successful completion of the course.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Calling upon years of school expertise and current teaching practitioners, The Solent SCITT offer a practical school-centred route where you can learn on the job from real teachers in real classrooms. \\r\n\\r\nClassroom theory is important but in the same way a surgeon needs significant ‘hands on’ practical training to hone their craft, so do teachers.   \\r\n\\r\nWe offer primary and secondary teacher training in a range of subjects and the opportunity to gain Qualified Teacher Status (QTS) with a PGCE option. We welcome graduates, career changers, Teaching Assistants and Cover Supervisors of all ages and backgrounds.\\r\n\\r\nGraded ‘Good’ by Ofsted in 2015, we have a proven track record of high-quality training delivered and designed by expert teachers.  \\r\n\\r\nIt is important to us that SCITT trainees gain employment and to date 100% of primary and secondary trainees seeking employment have secured a job on completion of the course. \\r\n\\r\nFeedback tells us that SCITT candidates stand out among their peers due to their superior school experience and we prepare candidates with mock interviews. \\r\n\\r\nWe have a personalised approach to training with candidates assigned a SCITT team member alongside their school mentor and Subject Expert providing an effective three-pronged support framework.   \\r\n\\r\nWell-being is important to us so we organise a variety of activities and provide expert advice on managing stress, workload and effective use of time. \\r\n\\r\nTraining with The Solent SCITT comes with additional perks such as free gym membership at Park Community School and full-time use of a laptop with the latest software.\\r\n\\r\n",
+    "TrainWithDisability": "We welcome all applications and will make reasonable adjustments for students with disabilities. If you have a disability, please provide full details on your teacher training application so we can help in any way we can and find a suitable placement to meet your needs.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The Shire Foundation",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "S25/2HL2",
+  "providerCode": "S25",
+  "programmeCode": "2HL2",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Hillborough Junior School, Hillborough Road, Luton, Beds, LU1 5EZ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hillborough Junior School, Hillborough Road, Luton, Beds, LU1 5EZ",
+      "geocode": true,
+      "formatted_address": "Hillborough Rd, Luton LU1 5EZ, UK",
+      "latitude": 51.8725642,
+      "longitude": -0.4251481,
+      "post_code": "LU1 5EZ",
+      "city": "Bedford",
+      "route": "Hillborough Road",
+      "postal_town": "Luton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S25",
+    "addr_1": "The Shire Foundation",
+    "addr_2": "c/o Hillborough Junior School",
+    "addr_3": "Hillborough Road, Luton",
+    "addr_4": "Bedfordshire",
+    "postcode": "LU1 5EZ ",
+    "url": "http://www.theshirefoundationscitt.org/",
+    "geocode": true,
+    "formatted_address": "Hillborough Rd, Luton LU1 5EZ, UK",
+    "latitude": 51.8725642,
+    "longitude": -0.4251481,
+    "post_code": "LU1 5EZ",
+    "city": "Bedford",
+    "route": "Hillborough Road",
+    "postal_town": "Luton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "\\r\nThis is a one year, full time Post Graduate Certificate in Education course (PGCE), validated by the University of Buckingham. Training covers the primary age range 3-11. On meeting all of the Teachers' Standards you will be awarded Qualified Teacher Status (QTS). On successful completion of the academic course work you will be awarded 60 credits at Masters level. \\r\n\\r\nWe also offer the opportunity for suitably qualified candidates to follow a specialism option in either mathematics or science. \\r\n\\r\nTrainees complete 24 weeks of training within a school setting, undertaking teaching practices in two consecutive age phases and also school-based training. \\r\n\\r\nThe remainder of the training year consists of centre-based training in the core and foundation curriculum areas and professional studies. This training is based largely at Hillborough Junior School in Luton. Sessions also take place in other settings, including partnership schools and a special school. In addition you will have the opportunity to focus on the areas of special educational needs, developing reading and computing across the curriculum through directed placements. \\r\n\\r\nCentre-based tutors and the training managers are on-hand to offer guidance and support. Our Learning Platform provides a channel of communication as well as a range of support materials. Being based at our lead school allows trainees opportunities to work with teachers and pupils as an integral part of their centre-based training. All centre-based training takes place during the school day (9:15am - 4pm)\\r\n\\r\nShire has always been a school-centred provider, managed by head teachers, with training provided by outstanding current primary practitioners. This ensures that training is up-to-date and is relevant to current practice within schools. \\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree\\r\nApplicants should have an Honours classification of 2:2 or above, or equivalent. \\r\n\\r\nGCSE\\r\nAll trainees must have GCSE Grade C/4 or above in English Language, Maths and Science (or equivalent). Shire will consider applicants who have one of these qualifications pending, but they must all be in place by the date of enrolment of the programme. Recognised equivalency tests are accepted. \\r\n\\r\nOverseas Qualifications\\r\nOverseas equivalent qualifications are accepted if they have been certified through NARIC. Shire will not call any candidate to interview until these qualifications have been verified. \\r\n\\r\n\\r\n\\r\n",
+    "InterviewProcess": "The interview day takes place within one of our partnership schools and comprises of: \\r\n\\r\n1.  Planning and delivering a short teaching session with a group of children;\\r\nYou will be assessed on your ability to engage the children; manage behaviour and make effective use of the text to enable learning to take place. \\r\n\\r\n2. Written report; \\r\nFollowing this taught session you will be asked to write a short reflective report on the learning that has taken place. There will be a 30 minute time limit for this task. You will also be graded on your standard of written English. \\r\n\\r\n3. Presentation; \\r\nAfter you will be asked to make a presentation to the interview panel and other candidates, on a current educational issue.  It must be no longer than 10 minutes in length. PowerPoint facilities will be available. \\r\n\\r\n4. Interview; \\r\nAfter the presentation there will be the formal interview with 2 panel members in which you will be asked a series of questions relating to your suitability for the PGCE route. You will be assessed on the quality and relevance of your responses to the questions. \\r\n\\r\n5. English Test; \\r\nWhilst the interviews are taking place the other candidates will complete an English and mathematics test paper. \\r\n\\r\n",
+    "OtherRequirements": "Professional Skills Tests\\r\nLiteracy and Numeracy professional skills tests must be passed within 12 weeks from the date of interview.\\r\n\\r\nSchool Experience\\r\nIt is highly beneficial if candidates have at least 10 days experience of a school setting (voluntary or employed) prior to application .  However this aspect is judged on an individual basis.\\r\n\\r\nDisclosure and Barring Service/Medical\\r\nWe are committed to safeguarding the welfare of children. All applicants who are offered a training place will be required to undertake a Disclosure and Barring Check and a medical check prior to the start of their employment in school. \\r\n",
+    "PersonalQualities": "Command of the English language\\r\nTrainees must demonstrate an ability to communicate clearly and grammatically in spoken and written English.",
+    "HowSchoolPlacementsWork": "The Shire Foundation takes responsibility for organising placements for trainees on this route.  We work predominantly with schools located within Luton, but are willing to work with other schools within a 30 mile radius of our lead school.\\r\n\\r\nTrainees complete assessed teaching practices within 2 schools and within 2 consecutive age phases.  These can be selected from EYFS (nursery school or a reception class), KS1, Lower Key Stage 2 (Years 3 and 4) or Upper Key Stage 2 (Years 5 and 6).  Trainees also complete a Taster Week in another age phase and also a 4-day placement within a special school setting.\\r\n\\r\nYou will complete a 25 day teaching practice in your base school during the autumn term, and six weeks in both the spring and summer terms.  Occasional visits to your schools will also be completed throughout the year, starting in early September.  \\r\n\\r\nThe course is personalised to take account of any previous experience in school, but in general the expectation is that you will start in the autumn term by teaching groups of children, building up to 50% whole class teaching in the final week of the Autumn Practice.  You will also teach 50% of the lessons in the consecutive age phase by the end of the spring practice.  In the summer term, you will build your teaching up to 80% of the timetable.\\r\n\\r\nYou will be allocated a mentor within both your teaching practice schools, who will oversee your training and development over the course of the training year.  They will meet with you for at least an hour on a weekly basis, as well as observing your teaching, in collaboration with other members of the school staff. At the end of each term you will be assessed against the Teachers' Standards through the submission of an evidence portfolio and a final assessment interview will take place in July.\\r\n\\r\nShire will also nominate a Visiting Tutor who will support and monitor your progress.  They will spend a day each term visiting you within your teaching practice schools.\\r\n\\r\n\\r\n\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Shire Foundation is a well established (since 1994), school-centred teacher training provider working with primary, nursery and special schools, mainly within the Luton area. \\r\n\\r\nOfsted (March 2013) judged the provision as Good with many Outstanding features. Our training in mathematics and behaviour management was in particular cited as Outstanding.  Trainee course evaluations demonstrate a very high level of satisfaction.  In 2017-18, all trainees on the provider led PGCE course rated the overall quality of their training as at least Good, with 66% rating it as Outstanding.\\r\n\\r\nOur lead school, Hillborough Junior School has been judged to be Outstanding by Ofsted, and is the lead school for the Luton First Teaching School Alliance.  This partnership has built up an excellent reputation in teacher training in the local area, and trainees consistently rate the quality of the course and support as very high. We have  a consistently excellent NQT employment rate (100% in recent years), with a high percentage of trainees securing a teaching job within one of their placement schools.\\r\n\\r\nShire utilises a range of outstanding current primary practitioners to lead training sessions.\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "Accommodation at the Hillborough Junior School base and the partner schools has appropriate disability access. \\r\n\\r\nEach year we work successfully with trainees with disabilities and other needs.  Our personalised approach to training ensures that support and provision is tailored to each trainee's particular needs, in order to facilitate success during all aspects of the training year.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

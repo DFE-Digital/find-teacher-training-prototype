@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Hertfordshire",
+  "provider": "Chauncy School Training Partnership",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1RK/36XW",
+  "providerCode": "1RK",
+  "programmeCode": "36XW",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Chauncy School, Park Road, Ware, Herts., SG12 0DP",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Chauncy School, Park Road, Ware, Herts., SG12 0DP",
+      "geocode": true,
+      "formatted_address": "Park Rd, Ware SG12 0DP, UK",
+      "latitude": 51.8147578,
+      "longitude": -0.0449656,
+      "post_code": "SG12 0DP",
+      "city": "Hertfordshire",
+      "route": "Park Road",
+      "postal_town": "Ware"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1RK",
+    "addr_1": "Chauncy School",
+    "addr_2": "Park Road",
+    "addr_3": "Ware",
+    "addr_4": "Herts.",
+    "postcode": "SG12 0DP",
+    "url": "http://www.thechauncyschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Park Rd, Ware SG12 0DP, UK",
+    "latitude": 51.8147578,
+    "longitude": -0.0449656,
+    "post_code": "SG12 0DP",
+    "city": "Hertfordshire",
+    "route": "Park Road",
+    "postal_town": "Ware"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Why train at Chauncy School? Chauncy is an OUTSTANDING school. Ofsted say it. The staff who work here say it. The children and their parents say it. Indeed, Ofsted judged us outstanding in all 5 areas in their inspection dated October 2017. We guarantee that if you spend an hour on tour with our Head Teacher you will want to train here. If you call us and speak to Sue or Craig you can arrange a visit that may lead to further experience and we'll offer advice on the application process. \\r\n\\r\nWe are advertising an unsalaried position for which a training bursary is available. \\r\n\\r\nChauncy School promises a friendly and supportive training environment but you will need to work hard and commit to the positive ethos of the school as it strives for excellence in all areas. Our system of mentoring and tutor support will help you finely tune your teaching skills and in all likelihood, after a year, you will join the growing number of teachers who have trained with us then been given their first job with us. 50% of our current staff trained with us; the majority gaining a promotion to a position of responsibility within 2 years of qualifying. \\r\n\\r\nConsidering applying to Chauncy? Why not give us a call and arrange a School Experience to get to know us and talk to us face to face about the School Direct programme. Call 01920 411200 and ask for Sue or Craig.",
+    "CourseLength": "OneYear",
+    "Qualifications": "A Mathematics degree at class 2:2 or above \\r\nIn short-listing applicants, those with 2:1 or above will be considered first. \\r\nMinimum C grade GCSE in English Language \\r\nMinimum C grade GCSE in Mathematics \\r\n \\r\nWe would expect the successful candidate to be well qualified both in terms of A levels and degree. ",
+    "InterviewProcess": "The interview process lasts a day.  During this time you will be asked to teach a 45 minute lesson, complete a written task, present documents such as your qualifications and undergo a formal interview.\\r\n\\r\nThe interview will be will The Head Teacher, a subject specialist and a training specialist.\\r\n\\r\nTypically we only interview people after they have visited the school several times and we have seen their potential to train through observing them in  classroom situations.",
+    "OtherRequirements": "We would expect candidates to have undertaken some experience in an educational setting, ideally with us. Teaching is a challenging and highly skilled profession which does not suit everyone. By seeking an opportunity to visit a school environment, observe lessons, work with students and hopefully undertake some teaching activities, candidates should recognise whether they have the necessary qualities and commitment to seek entry into this profession. ",
+    "PersonalQualities": "Candidate Profile:\\r\nA committed and capable candidate with the drive and enthusiasm to maintain high standards of achievement and interest in maths from students across the ability range.  We would expect the successful candidate to make a full contribution to school life to go the extra mile for students, colleagues and the school, bringing ideas and energy to a dynamic and popular school. Within mathematics, the team regularly work together, sharing ideas and making a contribution to curriculum development. A new trainee would be expected to take a full and active role in the work of the department. ",
+    "HowSchoolPlacementsWork": "You will spend 4 days each week in Chauncy School, Ware with the 5th day being at The University of Hertfordshire (Hatfield)\\r\nThis will be the arrangement for the whole year with one exception.  During one half of the Spring Term, you will be placed at a different school.  This school is typically another school that works with The University of Hertfordshire but the location of this placement varies from year to year."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Chauncy Training Partnership is a collection of schools who, individually, provide the school based training.  Each school has its own character and ethos but all use The University of Hertfordshire as a partner.\\r\nEach individual advertised training course specifies which school acts as the host for the school based training and there is no suggestion that there is any hierarchy of schools.  Chauncy, as Lead School administrates the application process but it is the school to which the training place is linked that carries out short-listing, interviewing and in the case of successful applicants, the bulk of the school based training. \\r\n\\r\nThe Chauncy School Training Partnership advertise training positions on the UCAS website from October but applicants should check periodically from this date as further opportunities may be posted during the academic year.  As Lead School, Chauncy School participates in the School Experience Programme, details of which may be found on The Department for Education's \"Get into teaching\" section.\\r\n",
+    "TrainWithDisability": "The University of Hertfordshire report their support for trainees with disability on their website.  Individual schools within the partnership have different arrangements within their own settings to support trainees with disability.  For further information, please contact the Lead School with any queries you have about disability arrangements and you will be directed to the appropriate source of information.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Hertfordshire is the accrediting provider for The Chauncy School Training Partnership.  University based training is carried out one day each week during term time, for which trainees are released from their host schools.  The programme of university based training is detailed in the course guide published by The University of Hertfordshire.  \\r\n\\r\nThe University of Hertfordshire acts as the awarding body for Qualified Teacher Status (QTS) and PGCE certification as appropriate. ",
+        "UcasInstitutionCode": "H36"
+      }
+    ]
+  },
+  "has_inst": true
+}

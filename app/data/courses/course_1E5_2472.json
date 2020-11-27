@@ -1,0 +1,50 @@
+{
+  "locationType": "School",
+  "accrediting": "Hillingdon SCITT",
+  "provider": "Bishop Ramsey CE School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1E5/2472",
+  "providerCode": "1E5",
+  "programmeCode": "2472",
+  "schools": [
+    {
+      "name": "Hillingdon Primary Schools",
+      "address": "",
+      "code": "3"
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "For trainees applying for PGCE and QTS the fee is £9,000.  \\r\nHowever for trainees applying for QTS only the fee is £7,000.",
+    "AboutCourse": "Trainees will gain the knowledge and understanding of how to teach in a Primary School.   \\r\n\\r\nAll primary trainees will have one day a week Professional Learning which will be held at Bishop Ramsey School, Lead School for Hillingdon SCITT.  \\r\n\\r\nTrainees training to teach in a Primary School will be based in schools 4 days a week where they will predominately teach either Key Stage 1 or 2 during the academic year.  All trainees will train to teach in two different schools where they will  be exposed to the alternative Key Stage that they are in their main host school.  \\r\n\\r\nThe amount of lessons that salaried trainees will be expected to teach will be determined by each school.  Applicants should raise this as a point of discussion during the interview process.\\r\n\\r\nAll trainees will be assessed against the Teacher Standards at calendared intervals throughout the year.\\r\n\\r\nTrainees will also have the opportunity to observe teaching and learning in other educational settings eg. Special Schools and Pupil Referral Unit.\\r\n\\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You should be a graduate, preferably with a 1st or a 2:1, though we are willing to consider applicants who have a 2:2 or below who can demonstrate a real aptitude for teaching. Trainees should have a degree in which the majority of the content should be in the subject that they wish to teach.\\r\n\\r\nTrainees need at least a Grade C or 4 in GCSE English, Maths and Science\\r\n\\r\nIf you have completed your undergraduate degree internationally, we require a NARIC equvivalence.\\r\n",
+    "InterviewProcess": "Bishop Ramsey School, the Lead School for Hillingdon SCITT, co-ordinates the recruitment process. \\r\n\\r\nThe interview process will involve a full day spent at one of the partner schools.  The day will include teaching a lesson or working with a group of students which will be observed by a qualified teacher, a short presentation, literacy and numeracy tests and an interview. There will also be opportunity to talk to some staff and pupils and possibly a tour of the school.\\r\n\\r\nYou will be told in advance about the content of the lesson and the age group you will be teaching and you will be able to prepare for your presentation too. \\r\n\\r\nIt is a rigorous and thorough process, designed to get the best match of applicant to the places available\\r\n",
+    "OtherRequirements": "All successful applicants will be subject to a Criminal Record check and a Health Screening check.",
+    "PersonalQualities": "We are looking for ambitious trainee teachers who are passionate, enthusiastic and have a desire to share that with primary school students of all abilities. ",
+    "HowSchoolPlacementsWork": "\\r\n\\r\nMost of the Partnership Schools are located within a few miles from Junction 1 of the M40. The host schools across Hillingdon all have excellent public transport links including buses and the National Rail network (underground and overground).  Full directions to the schools in the Partnership can be found on their websites. Central London is within easy reach. \\r\n\\r\nBrunel University is located in Uxbridge, North-West London. The nearest underground station is Uxbridge, from which it is about 15 minutes' walk from the Main Site Campus or a short bus ride.  \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "\\r\n\\r\nThe Hillingdon SCITT, located in North-West London, is looking to train exceptional graduates to become teachers, especially those who are passionate about education, have an excellent academic background and a deep commitment to working with children and young people to make a difference in their lives. Trainee teachers recruited onto the Hillingdon SCITT will be well supported and challenged to become creative, innovative and reflective practitioners.  \\r\n\\r\nAll schools involved with Hillingdon SCITT have extensive experience of training teachers and we fully recognise how much vibrancy, enthusiasm and drive they can offer to a school community. We provide a unique opportunity to experience a diverse and contrasting range of teaching and training experiences in at least two schools.  Pupils across the partnership are happy, friendly and well-behaved and are at the heart of everything we do. \\r\n\\r\nOur teachers are excellent practitioners with exemplary behaviour management skills.  They are supportive and eager to share their skills, knowledge and practice with the next generation of teachers.\\r\n\\r\nHillingdon SCITT has successfully trained 2 cohorts of Primary and Secondary teachers.  Both cohorts have completed the course with 100% Good or Outstanding grading towards the Teacher Standards as well as 100% employment rate.\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "The individual host schools have differing disabled access provisions, so if in doubt please contact Hillingdon SCITT for more information.\\r\n\\r\nBrunel University has full disabled access and is committed to admitting and supporting students with disabilities. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our Partnership of Schools is led by Bishop Ramsey School, which is the Lead School for Hillingdon SCITT.  \\r\n\\r\nThe Partnership of Schools is annually growing which currently comprises of a mixture of 15 Primary and 22 Secondary Schools - large and small, urban, faith schools, special schools and a pupil referral unit. \\r\n\\r\nTo gain more information about the Schools in our Partnership refer to Hillingdon SCITT Website\\r\n\\r\n\\r\n",
+        "UcasInstitutionCode": "2B5"
+      }
+    ]
+  },
+  "has_inst": true
+}

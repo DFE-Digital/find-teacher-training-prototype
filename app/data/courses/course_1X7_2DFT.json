@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Compton SCITT",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Chemistry",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "1X7/2DFT",
+  "providerCode": "1X7",
+  "programmeCode": "2DFT",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "The Compton School, Summers Lane, London, N12 OQG",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "The Compton School, Summers Lane, London, N12 OQG",
+      "geocode": true,
+      "formatted_address": "Summers Ln, North Finchley, London N12 0QG, UK",
+      "latitude": 51.6089596,
+      "longitude": -0.1640997,
+      "post_code": "N12 0QG",
+      "city": "Greater London",
+      "route": "Summers Lane",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1X7",
+    "addr_1": "The Compton School",
+    "addr_2": "Summers Lane",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "N12 OQG ",
+    "url": "http://www.thecompton.org.uk/",
+    "geocode": true,
+    "formatted_address": "Summers Ln, North Finchley, London N12 0QG, UK",
+    "latitude": 51.6089596,
+    "longitude": -0.1640997,
+    "post_code": "N12 0QG",
+    "city": "Greater London",
+    "route": "Summers Lane",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our course is entirely school centred providing classroom based, practical training, underpinned by a weekly educational studies programme leading to Qualified Teacher Status (QTS). Trainees may opt in to gaining a Postgraduate Certificate in Education (PGCE). The course is full time over 38 weeks (term time only). Trainees will receive an immersive training programme where they are working alongside outstanding teachers with current and relevant experience.\\r\n\\r\nTrainees receive structured classroom observations, weekly professional studies sessions and a phased introduction to small group teaching, team teaching and then whole class teaching. \\r\n\\r\nWe are very proud that we can now also label our training as Outstanding in all four areas of the Ofsted criteria (2017).\\r\n\\r\nTrainees will be assessed across the academic year against the Teachers' Standards within a supportive and developmental model. Experienced subject mentors facilitate bespoke weekly targets to ensure all Teachers' Standards are met by the end of the course. Each year, 100% of our trainees have achieved a Good or Outstanding Ofsted grading by the end of the course.\\r\n\\r\nThere are 4 assignments set over the training year. These are research based learning tasks embedded in the realities of the modern classroom. Current academic research and reading underpin all professional studies sessions and assignments.\\r\n\\r\nThe Compton SCITT Partnership is committed to the wellbeing of trainee teachers. We are aware that an ITT year will be demanding and therefore have a variety of mechanisms in place including a designated pastoral lead. \"Somehow you’ve struck a happy medium between the checkbox requirements of government legislation and the true humanity that underpins teaching.\" (Outstanding English trainee, 2017).",
+    "CourseLength": "OneYear",
+    "Qualifications": "UK honours degree (2.2 or above) or equivalent overseas degree verified by NARIC. The degree must comprise a minimum 50% of modules in the subject area you wish to train to teach. A standard equivalent to a grade C in the GCSE examinations in English and mathematics.\\r\n\\r\nApplicants who do not have standard GCSE will need to take an equivalence test. \\r\n\\r\nAll entrants will need to have passed the professional skills tests in literacy and numeracy prior to beginning of the programme.",
+    "FeeInternational": 9000.0,
+    "InterviewProcess": "Applicants will be invited for interview on the basis of information provided on their application form. All SCITT trainees will be interviewed at The Compton School. \\r\n\\r\nThe interview will typically involve a half-day at the school. This will include a 20 minute lesson observation and a 15 minute written task. Candidates will be told in advance about the content of the lesson and the age range you will be teaching. \\r\n\\r\nCandidates will be observed teaching by a member of our senior staff and a subject specialist. If successful in the first part of the interview candidates will then be invited to the final panel interview including the Headteacher.\\r\n\\r\nThe interview process is rigorous and thorough, designed to get the best match of applicant to the places available. ",
+    "PersonalQualities": "Applicants must provide evidence of an interest in working with young people, possess high quality communication skills. Speak fluently, clearly and grammatically. Be able to think analytically and possess personal qualities such as warmth, enthusiasm, self-motivation and resilience.",
+    "HowSchoolPlacementsWork": "The course is full time over 38 weeks (term time only). Trainees will receive an immersive training programme where they are working alongside outstanding teachers with current and relevant experience.\\r\n\\r\nTrainees will be placed in one school for the entire academic year with a 6 week second placement at a contrasting partner school arranged by the SCITT Leadership Team. At interview trainees will be informed of potential placement schools. At the end of the recruitment cycle trainees will be placed at one of our local partner schools. \\r\n\\r\nAll partner schools are graded either Good or Outstanding by Ofsted. Partner schools are based locally to The Compton School in North London and are easily accessible by public transport. All partner schools have experienced subject mentors and professional tutors who are committed to high expectations of the SCITT Partnership. Compton SCITT trainees enjoy being part of a vibrant professional community across all partnership schools.\\r\n\\r\nTrainees will be awarded Secondary QTS (11-16) however, all partner schools ensure trainees have the opportunity to teach A-Level classes in preparation for their NQT year.\\r\n\\r\nWeekly professional studies training sessions will be held at The Compton School on a Monday with trainees at their base school from Tuesday-Friday."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Compton SCITT is an Outstanding Initial Teacher Training (ITT) provider (Ofsted 2017). The continuing professional development of staff has been at the heart of our sustained success as an Ofsted graded Outstanding Teaching School (2018). We have an excellent track record in training, retaining and developing staff as outstanding classroom practitioners, middle and senior leaders. The Compton SCITT has been training teachers for 5 years and is well established in producing excellent teachers. 100% of trainees have secured employment and have embarked on a most fantastic and rewarding career.\\r\n\\r\nOur trainee teachers train alongside The Compton SCITT's outstanding staff all year before qualifying as teachers. Senior teachers from The Compton School and across the partnership, who are working on national programmes of education and regularly training teachers from across the UK, deliver first class training in school each week. This ensures our trainee teachers are receiving the best and most current education and theory practice.\\r\n\\r\nOur strap line states that “trainees will receive an immersive training programme where they are working alongside outstanding teachers with current and relevant experience.” \\r\n\\r\nWe believe that our school based route to qualified teacher status will offer you an in-depth opportunity to work in a systematic, sustained way alongside outstanding teachers\\r\n\\r\nAbove all, we are committed to delivering a first class “hands on” training programme that will provide you with the foundations for an outstanding career in teaching\\r\n",
+    "TrainWithDisability": "All candidates regardless of disability are welcome to apply to The Compton SCITT Partnership. Any access or special provisions will be catered for on a case-by-case basis. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

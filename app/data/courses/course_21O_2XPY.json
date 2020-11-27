@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": "Bishop Grosseteste University",
+  "provider": "Phoenix School",
+  "subjects": [
+    "Primary",
+    "Special educational needs"
+  ],
+  "name": "Primary (Special Educational Needs)",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "21O/2XPY",
+  "providerCode": "21O",
+  "programmeCode": "2XPY",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Clayton Site, Orton Goldhay, Peterborough, Cambridgeshire, PE2 5SD",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Clayton Site, Orton Goldhay, Peterborough, Cambridgeshire, PE2 5SD",
+      "geocode": true,
+      "formatted_address": "Clayton, Peterborough PE2 5SB, UK",
+      "latitude": 52.54588159999999,
+      "longitude": -0.2836834,
+      "post_code": "PE2 5SB",
+      "city": "Peterborough",
+      "route": "Clayton",
+      "postal_town": "Peterborough"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "21O",
+    "addr_1": null,
+    "addr_2": "Clayton Site, Orton Goldhay",
+    "addr_3": "Peterborough",
+    "addr_4": "Cambridgeshire",
+    "postcode": "PE2 5SD ",
+    "url": "http://www.phoenix.peterborough.sch.uk/",
+    "geocode": true,
+    "formatted_address": "Clayton, Orton Goldhay, Peterborough PE2 5GP, UK",
+    "latitude": 52.5475942,
+    "longitude": -0.2820305,
+    "post_code": "PE2 5GP",
+    "city": "Orton Goldhay",
+    "route": "Clayton",
+    "postal_town": "Peterborough"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Trainees are placed in their host school from the start of the year and typically spend six weeks in a second school to ensure a breadth of experience. Complementing the programme of training sessions at Bishop Grosseteste University, we draw on the expertise and strengths of outstanding classroom teachers, mentors and leadership team members from across the alliance to support participants through a tailored training programme. Through our partnership of largely Outstanding and Good schools we offer training places in a wide range of subjects and phases which change annually based on school demand – check the UCAS Teacher Training website for latest information on availability.",
+    "Qualifications": "Entry Requirments\\r\nYou will have, or be predicted to obtain, an honours degree at a 2.2 classification or above with 50% of your degree in a related subject. \\r\nIf you are unsure as to the relevance of your degree, please call Admissions(01522 583658) or email admissions@bishopg.ac.uk ",
+    "InterviewProcess": "We will invite you to one of our schools and during the time you are with us you will be asked to complete a number of tasks. You will meet with students and staff to discuss topical issues. The purpose of the day is for us to get to know you and for you to get to know us. Once the interview has taken place the panel will discuss how they can best support you in becoming an outstanding teacher and which one of our schools are best placed to help you achieve.\\r\n",
+    "PersonalQualities": "We are looking for someone who has a love of learning and who wishes to ensure that others do too. \\r\nBesides academic qualifications we are looking for a confident communicator who has a passion for learning. Someone who is well organised and has the ability and desire to become a team player. Your interpersonal skills are important as is your curriculum knowledge. We want to work with people who want to make a difference to individuals' lives. \\r\n",
+    "HowSchoolPlacementsWork": "The full-time course is for one year with a minimum of 120 days in school and 60 days training. School placements are carefully structured to ensure gradual development of your confidence as an effective teacher through building up experiences by working with other trainees, link tutors and teachers.\\r\n\\r\nPlacements begin in the autumn term. The spring and summer term placements follow with you taking the lead within the classroom across core and foundation subjects. You will also undertake an enrichment placement in key stage three and early years. Whilst on placement you will work closely with your School Based Mentor(SBM). Your SBM will observe your practice throughout the week and will also meet with you weekly to enable you to identify targets to further develop your professional practice. You will also attend one afternoon a week at a local training session where senior staff will work with you and help you develop your classroom practice.\\r\nDuring the spring term you will then specialise in special educational needs. You will work closely with professionals from The Phoenix School to provide learning experience for our young people. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Aspiring teachers on our School Direct programme have the opportunity to work and train within an alliance with diversity at its core. Our alliance of schools is dedicated to making a difference to the lives of some of the most disadvantaged young people in the city. \\r\n\\r\nPhoenix School is developing both a local and national reputation for being a centre of excellence within teaching and learning and continues to offer a plethora of training opportunities for all staff.\\r\n\\r\nWe continue to build on our strong culture where Phoenix staff see themselves as educators working in partnership with families and teams of multi professionals.\\r\n\\r\nThe age range is from 2 -19 serving the Peterborough catchment and local neighbouring authorities primary, secondary and sixth-form all on one site, alongside the new 14-19 provision.\\r\n\\r\nPhoenix School has been graded Outstanding by Ofsted on three consecutive inspections. Similarly, BG University has been commended in 2015 as a good provider for all its school-based ITT provision.   If you are ambitious, enthusiastic and passionate about teaching and working with young people, we want to hear from you!\\r\n\\r\nIn what subjects/phases are you offering training places 2016-17?\\r\nThe Phoenix School Direct Programme is recruiting ambitious and committed future teachers to Training Route places in primary we do not anticipate offering Salaried Route places in 2016-17.\\r\n\\r\nWe are delighted to work alongside our partner primary and secondary schools to offer this School Direct programme. Successful applicants may be placed at any of our partner schools.",
+    "TrainWithDisability": "We are committed to providing a friendly and accessible service for students so that they may study effectively and make full use of the opportunities. \\r\nThe following principles guide us: \\r\nWe value diversity and recognise that individuals bring different ideas, opinions, knowledge and culture and that this difference brings great strength. \\r\nWe do not discriminate based on a person's age; disability; family circumstance; gender; political opinion; race, colour, nationality, ethnic or national origin; religion or belief; sexual orientation; socio-economic background, trade union membership or other distinctions. Such forms of discrimination represent a waste of human resources and a denial of opportunity for individual self-fulfilment. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "BGU has a beautiful self-contained campus, especially on a sunny day! Whether you want to relax outside in the sun, treat yourself in the cafés, work out in the gym or even catch a film at our cinema, the BGU campus has plenty to keep you entertained.\\r\n\\r\nBGU  pride themselves on the fact that  students are names and not numbers. The welcoming, family feel on campus will make you feel instantly at home!\\r\nPlease visit /www.bishopg.ac.uk",
+        "UcasInstitutionCode": "B38"
+      }
+    ]
+  },
+  "has_inst": true
+}

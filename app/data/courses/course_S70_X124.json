@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "South Coast  SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Lower Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "S70/X124",
+  "providerCode": "S70",
+  "programmeCode": "X124",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Bransgore Primary, Ringwood Road, Bransgore, Dorset, BH23 JH",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Bransgore Primary, Ringwood Road, Bransgore, Dorset, BH23 JH",
+      "geocode": true,
+      "formatted_address": "Ringwood Rd, Walkford, Bransgore, Christchurch BH23 5RF, UK",
+      "latitude": 50.77257179999999,
+      "longitude": -1.7303357,
+      "post_code": "BH23 5RF",
+      "city": "Walkford",
+      "route": "Ringwood Road",
+      "postal_town": "Christchurch"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S70",
+    "addr_1": "SCITT Learning Centre",
+    "addr_2": "Bransgore Primary,  Ringwood Road",
+    "addr_3": "Bransgore, Christchurch",
+    "addr_4": "Dorset",
+    "postcode": "BH23 8JH",
+    "url": "http://www.scscitt.co.uk",
+    "geocode": true,
+    "formatted_address": "Ringwood Rd, Bransgore, Christchurch BH23 8JH, UK",
+    "latitude": 50.7773289,
+    "longitude": -1.7303104,
+    "post_code": "BH23 8JH",
+    "city": "Bransgore",
+    "route": "Ringwood Road",
+    "postal_town": "Christchurch"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Tuition fees for the 2019/20 academic year are yet to be confirmed.\\r\n\\r\nAs an indication of what you might pay, the fee for students who started in September 2018 was:\\r\n•\\t£9,250\\r\n\\r\nPGCE students can apply for loans from Student Finance England and may be entitled to a tax-free bursary -https://getintoteaching.education.gov.uk/funding-and-salary/overview\\r\n\\r\nFind out more about scholarships and funding on our website - https://le.ac.uk/study/postgraduates/fees-funding/scholarships-discounts\\r\n\\r\n",
+    "AboutCourse": "Our PGCE Primary has been running for over 60 years and schools tell us we are developing the kind of teachers they want to employ. This is reflected in 98% of our students achieving Good or Outstanding teacher grades at the end of their course and 95% of our graduates securing a teaching post by the end of the course.\\r\n\\r\nTutors on the Primary PGCE course all have extensive experience as classroom teachers and are specialists in a wide range of educational areas. These strengths are recognised within the Primary PGCE course, both in the specialist course options offered, and through the expert contributions to all strands of the course.\\r\n\\r\nYou will be required to select a specialism at the beginning of your PGCE. In addition to Maths and Lower Primary, other options may include Inclusion, Science, and English (subject to availability).   If you choose Lower Primary (3-7) you will specialise in Foundation and Key Stage 1, whereas Primary focuses on Key Stage 1 and Key Stage 2\\r\n\\r\n\\r\nThe course comprises of three strands and school placements:\\r\n•\\tCurriculum Studies - Core and Broader Curriculum\\r\n•\\tProfessional Studies\\r\n•\\tAcademic Strand including Specialist Study\\r\n•\\tTeaching Experience in primary schools.  These placements will be in contrasting schools to provide you with a broad range of experience.\\r\n\\r\nTeaching approaches are varied; whole-course lectures, taught sessions in tutor groups, some work in focus schools and individual tutorials. Some of these sessions will be taught in differentiated groups, with specialist Primary and Lower Primary based sessions and small group subject support sessions.\\r\n\\r\nThe PGCE Primary course prepares you to teach across the full range of the Primary Curriculum. We will introduce you to the wider context of teaching, including responding to diversity in schools and the inclusion of Special Needs Education, as well as equipping you with classroom management and planning skills.\\r\n\\r\nBy the end of the course you will meet the required professional standards for Qualified Teachers Status (QTS) and will be awarded a University of Leicester PGCE. Our strong ethos of reflective practice will prepare you well for your future career in teaching.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "2:1 degree or above \\r\n\\r\n•GCSE grade 4 (Old Grade C) or above in English Language, Maths and Science.\\r\n\\r\n•A pass in the Professional Skills Tests in Literacy and Numeracy. \\r\n\\r\n•Although not essential, you may find it useful to have recent experience working with children and/or observing teaching in a school setting, ideally relating to the age range/subject you wish to teach. When writing your application you should try to reflect on your experience and tell us what you learnt.\\r\n\\r\n•Please consult our Education at Leicester website to find detailed explanations of our recruitment and selection processes and criteria.\\r\n",
+    "FeeInternational": 15405.0,
+    "InterviewProcess": "If invited for interview, you will meet members of the Primary PGCE Team who will give an overview of the course and answer any questions you may have. \\r\n\\r\nIf you are applying for a School Direct route, you may have already completed a school-based interview.\\r\n \\r\nYou will participate in a group task with candidates and will lead a brief group discussion on one of the topics you will have been sent prior to the interview. You will also carry out written tasks in English and Maths. \\r\n\\r\nDuring the afternoon you will be interviewed by either a member of the Primary PGCE team or one of our school-based colleagues. The interview is not a daunting process but rather a discussion about your suitability and preparation for going into teaching. \\r\n\\r\nIf you are successful on the selection day, you may be given some targets to work on, prior to starting the course. These will help you to be in the best possible position to engage successfully with the course from the start. \\r\n",
+    "OtherRequirements": "Admission to the course is subject to a satisfactory medical report. The University will provide more information about this should you be offered a place. \\r\n\\r\nAll offers are subject to a satisfactory enhanced DBS disclosure. We will provide instructions regarding the DBS application process once you have accepted an offer of a place on the course. \\r\n\\r\nYou must have a GCSE Grade 4 (Old Grade) C in English Language.\\r\n",
+    "PersonalQualities": "Primary (3-7) is a very demanding course and we are looking for applicants  with a wide range of skills, knowledge, experience and aptitude.  \\r\n\\r\nOur key selection criteria are:\\r\n•\\tAbility to form relationships\\r\n\\r\n•\\tGood communication skills\\r\n\\r\n•\\tCommitment to teaching\\r\n\\r\n•\\tAn awareness of the role of the teacher and the demands of the profession\\r\n\\r\n•\\tReflective qualities\\r\n\\r\n•\\tEmotional resilience\\r\n\\r\n•\\tAwareness of contemporary issues in education",
+    "HowSchoolPlacementsWork": "You will be placed in three Partnership schools. We are proud to work with over 150 primary schools in the state and independent sectors, and in city, suburban and rural settings, as well as special schools.\\r\n\\r\nPrimary students (specialising in the 5-11 age range) are placed in a range of KS1 and KS2 classes, and Lower Primary students (specialising in the 3-7 age range) work in Key Stage 1 and Foundation Stage settings. \\r\n\\r\nIn addition to the three block teaching placements you will also visit different schools as part of a series of 'focus days', studying specific subject and professional topics in an intensive school-based context.\\r\n\\r\nThe school-based time is a vitally important element of the course. You will have the opportunity to observe skilled class teachers working and to discuss the things that underpin day-to-day classroom activities, as well as work alongside experienced teacher-mentors who will support your learning about classroom practice.\\r\n\\r\nTeaching Experience 1\\r\nThis is a six-week paired placement with two students working together in one class. This gives you the opportunity to work with a partner to develop classroom skills in a supportive environment. You will focus on developing observation skills to support your understanding of teaching and learning and to put your learning into practice. During this Autumn Term placement you and your partner will work towards taking an increased responsibility for teaching the class.\\r\n\\r\nTeaching Experience 2\\r\nThis takes place in the Spring Term and lasts for seven weeks. The amount of time spent teaching the class increases over the placement until you have responsibility for up to 80% of the timetable.\\r\n\\r\nTeaching Experience 3\\r\nThis is another seven-week placement in the Summer Term with students working towards taking responsibility for 80% of the teaching timetable.\\r\n\\r\nThroughout each of these placements you will be encouraged to participate fully in the life of the school and to take full advantage of the tasks and activities designed by your tutors to support your development. \\r\n\\r\nIt is expected that through your three placements you will gain experience across the age range that you are training to teach.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "South Coast SCITT was rated Outstanding in all areas by Ofsted in 2017. The overall quality of the training was rated as Outstanding by 100% of course participants for the last five years. At the end of our one year course, trainees achieve Qualified Teacher Status (QTS) and a Post Graduate Certificate in Education (PGCE), validated by the University of Winchester. \\r\n\\r\nTrainees can expect:\\r\n•\\tA well led and managed course with central training led by experts in primary practice\\r\n•\\tSeminars rooted in reliable research and including practical, current hands-on approaches \\r\n•\\tIntegration of theory and practice in order to embed understanding efficiently and effectively \\r\n•\\tA friendly and professional working environment in which mutual support, reflective practice and high expectations are the cultural norm\\r\n•\\tA highly personalised approach with excellent pastoral support \\r\n•\\tIndividualised support in how to gain a teaching post and excellent employment rates – usually 100% each year\\r\n\\r\nOur training model includes two nine week teaching placements and a short placement in a special school setting. In addition, trainees undertake a very unique seven week placement in the lead school, Bransgore Primary School, at the beginning of the course. This is an exciting opportunity to learn from teachers and observe classes in all age ranges from year R to year 6. Trainees take part in and lead a range of curriculum activities in order to practise their emerging teaching skills in a safe, non-assessed environment before undertaking formal school placements.\\r\n",
+    "TrainWithDisability": "Applications are welcomed from all candidates irrespective of race, nationality, ethnic origin, gender, sexual orientation, disability or religious beliefs. \\r\n\\r\nWe have worked with many trainees who have dyslexia, dyspraxia, dyscalculia or other impairments or conditions and treat each person as an individual with their own strengths and areas for development. \\r\n\\r\nApplicants are encouraged to disclose any specific needs they may have at the application stage so that specific arrangements can be made, for example additional time to undertake assessments, additional study skills support or physical arrangements.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

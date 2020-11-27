@@ -1,0 +1,78 @@
+{
+  "locationType": "School",
+  "accrediting": "North East Partnership SCITT (Physical Education",
+  "provider": "North East Partnership SCITT (Physical Education - School Direct)",
+  "subjects": [
+    "Physical education",
+    "Primary"
+  ],
+  "name": "Primary Physical Education Specialist",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "25W/2Q9L",
+  "providerCode": "25W",
+  "programmeCode": "2Q9L",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "John Spence Community HS, Preston Road, North Shields, Tyne & Wear, NE29 9PU",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "John Spence Community HS, Preston Road, North Shields, Tyne & Wear, NE29 9PU",
+      "geocode": true,
+      "formatted_address": "Preston Rd, North Shields NE29 9PU, UK",
+      "latitude": 55.0220564,
+      "longitude": -1.4509305,
+      "post_code": "NE29 9PU",
+      "city": "Tyne and Wear",
+      "route": "Preston Road",
+      "postal_town": "North Shields"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "25W",
+    "addr_1": "John Spence Community HS",
+    "addr_2": "Preston Road",
+    "addr_3": "North Shields",
+    "addr_4": "Tyne & Wear",
+    "postcode": "NE29 9PU",
+    "url": "http://www.johnspence.org.uk/nepscitt",
+    "geocode": true,
+    "formatted_address": "Preston Rd, North Shields NE29 9PU, UK",
+    "latitude": 55.0220564,
+    "longitude": -1.4509305,
+    "post_code": "NE29 9PU",
+    "city": "Tyne and Wear",
+    "route": "Preston Road",
+    "postal_town": "North Shields"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Tuition fees for 2019/20 will be £9,000. You can choose to pay these as a one-off payment or to take out a tuition fee loan from Student Finance England. \\r\n\\r\nFor more information on tuition fee loans, maintenance loans and grants, please visit: Gov.UK and Student Loans Company.  Information about bursaries can be found on the Department for Education website.\\r\n \\r\nYou will be provided with an iPad for the duration of the course. In addition, we will fund you to gain a wide range of additional NGB sports awards, including; football, rugby, netball, tennis, cricket and athletics.  \\r\n",
+    "AboutCourse": "John Spence Community High School is the Lead School and works with Northumbria University and 16 local schools to offer this innovative course which lasts for 40 weeks from September to June.  Plus, there is a 2 week summer school at the end of August and you will support end of year activities in your placement school during the month of July.\\r\n\\r\nYou will be trained to teach PE alongside the core subjects of mathematics, English and science plus ICT across KS1 and KS2. On completion of the course you will be a qualified primary teacher with a PE specialism.   \\r\n\\r\nThe course consists of 4 inter-related modules:\\r\n\\r\n* Professional Placements\\r\n\\r\nYou will gain teaching experience in 2 contrasting schools; a Host School and a Partner School.  You will spend the majority of the year in your Host School teaching KS2 and a 6 week block in your Partner School teaching KS1.   \\r\n\\r\n* Curriculum Studies\\r\n\\r\nIn this module you will develop your subject-specific knowledge in PE, the core subjects and ICT.  You will gain practical and theoretical experience in all areas of the NC for PE, mathematics, English, science and ICT.  These sessions are delivered by outstanding practitioners from partnership schools alongside North Tyneside Local Authority and a Primary PE Consultant.\\r\n\\r\n* Professional Studies\\r\n\\r\n In this module you will develop your knowledge of education through a programme of conference days focusing on topics that are at the forefront of policy and practice. These include; safeguarding and child protection, pastoral care, working with parents, behaviour management, teaching and learning, assessment, inclusion,  pupil premium, equality and diversity, and literacy and numeracy across the curriculum. Time is also allocated to preparing for employment.  These sessions are delivered by middle and senior leaders in partnership schools.\\r\n \\r\n* Curriculum Project\\r\n\\r\nFor this module you will carry out a small scale action research project during your final placement.  You will agree a focus with school staff and your tutor based on an area of interest, a development need in your placement school or current research in primary education.  \\r\n\\r\nPlacement performance is assessed against the Teachers’ Standards for the award of QTS. Two coursework assignments plus your action research project provide further evidence of suitability to enter the teaching profession; two modules are assessed at Masters Level and if successfully completed count as 60 credits.  Successful trainees exit the course with QTS plus a PGCE from Northumbria University.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\n* GCSE grade 4 or equivalent in English, mathematics and science (preferably combined science)\\r\n\\r\n* A 2:1 honours degree or equivalent (in exceptional circumstances we will consider 2:2 degrees) \\r\n\\r\n* Successful completion of the statutory literacy and numeracy skills tests\\r\n\\r\n\\r\n",
+    "FeeInternational": 9000.0,
+    "InterviewProcess": "To apply to for this Primary with a PE Specialism course you must use the UCAS Teacher Training application system:\\r\n\\r\n* Course Code: North East Partnership SCITT  (Physical Education - SD) - 25W 2Q9L\\r\n\\r\nApplications can be submitted from October for a September entry the following academic year. \\r\n\\r\nFor the 2019/20 academic year we hope to recruit 12 primary trainees.  As demand for places is very high you are advised to apply as early as possible.  \\r\n\\r\nThe UCAS system will automatically forward applications to the programme team who will send an email acknowledging receipt. Shortlisted applicants will be invited to an interview day at one of the partnership schools; these days will consist of a group task, a literacy task, a KS2 teaching episode, a KS1 engagement activity and a formal interview. The interview panel will comprise representatives from the partnership schools. \\r\n\\r\nYou will be notified through UCAS of the outcome of your interview.\\r\n",
+    "OtherRequirements": "\\r\n* A broad and balanced PE, sport or dance background\\r\n* The ability to swim 200 metres continuously using two different strokes\\r\n* Work experience in a primary school is desirable but not essential\\r\n* Competence in ICT\\r\n* Have met the government’s requirement for physical and mental fitness and have enhanced DBS clearance\\r\n",
+    "PersonalQualities": "We are looking for individuals who are well qualified with relevant and up to date experience.  They should be enthusiastic, hardworking, resilient, happy to ‘think outside the box’ and have well-developed organisational and communication skills. They must be passionate about a career in teaching, enjoy working with young people and understanding the impact that high quality PE can have on pupil outcomes. ",
+    "HowSchoolPlacementsWork": "We work with 16 schools across Tyne and Wear, Durham and Northumberland.\\r\n\\r\nYou will gain teaching experience in 2 of these schools; a Host School and a Partner School:  \\r\n\\r\n* Your Host School placement starts immediately in September with 2 serial days each week followed by an observation and planning period then a 6 week block between November and December.   You will return after Easter for a further 6 weeks.  Both Host School placements will be in KS2; upper and lower KS2.\\r\n\\r\n* Your Partner School Placement starts in January with 2 serial days each week followed by an observation and planning period then a 6 week block between February and Easter.  This will be a KS1 placement\\r\n\\r\nDuring the year you will progress from observation to collaboration to independence and from a 60% to a 70% per timetable.  Your timetable will be split between PE and the core subjects and ICT.  Time will also be spent observing and supporting in the foundation subjects.  \\r\n\\r\nPlacements are organised using the following criteria: \\r\n\\r\n* Experience across the 4-11 age range\\r\n* Experience in 2 contrasting schools\\r\n* Experience gained prior to starting the course \\r\n* Specialisms that the schools can offer you to develop gaps in your subject knowledge\\r\n* Location of the schools in relation to where you live.  If you have the use of a car/bike or if you will be using public transport will be taken into account. \\r\n\\r\nIn addition, you will visit 2 other schools to gain experience of working with children who have SEND and EAL plus visit an early years setting and a secondary school.  \\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "If you want to be a primary school teacher with a PE specialism, train with the North East Partnership SCITT through John Spence Community High School.\\r\n\\r\n* We are the only provider of this unique course in the North East of England and one of only a few in the country.  \\r\n* The current political climate advocates the development of PE and sport in primary schools and provides funding to schools to develop this area.  \\r\n* Research indicates that there is a need for PE specialists in primary schools.\\r\n* Our trainee outcomes are exceptionally high. In the last 2 years all trainees have completed the course as outstanding or good trainee teachers and 94% have found employment in schools.  \\r\n* You will have the opportunity to gain a range of NGB awards at no extra charge, including; football, rugby, netball, tennis, cricket and athletics.  \\r\n* Training is completely school-led. We work with 16 schools in the North East and a significant number of these, support the programme delivery.  \\r\n* We have exceptionally strong support mechanisms. You will have a PE mentor, a class teacher and a link tutor.  In addition, a cohort of 12 means that you are never working in isolation.\\r\n* You will exit with QTS and a PGCE which includes 60 Masters Credits.\\r\n",
+    "TrainWithDisability": "We are committed to providing an environment in which you are treated fairly and with respect.  We acknowledge the unique contribution that all individuals can make and it is the responsibility of the North East Partnership SCITT, as far as is reasonably practicable, to ensure that no one is treated less favourably in terms of race, colour, ethnic or national origin, gender, sexual orientation, age, religion, disability, trade union activity, marital status, family responsibility or any other inappropriate or irrelevant criteria or distraction. \\r\n\\r\nDisabilities are catered for on a case by case basis.  \\r\n\\r\nWe acknowledge that some of you might find the academic side of the course a little challenging, especially if you have been out of full-time education for a while or suffer from dyslexia and provide a range of support to cater for this.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The North East Partnership SCITT has consistently been graded as outstanding by Ofsted and is consistently identified as one of the top 10 initial teacher training providers in the country in the Good Teacher Training Guide.  In 2015 it was identified as the best provider of post-graduate teacher training in the country.\\r\n\\r\nVisit our website for further details (https://www.nepscitt.co.uk)",
+        "UcasInstitutionCode": "N55"
+      }
+    ]
+  },
+  "has_inst": true
+}

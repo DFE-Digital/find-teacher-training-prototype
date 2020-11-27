@@ -1,0 +1,86 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of York",
+  "provider": "The Pathfinder Teaching School Alliance",
+  "subjects": [
+    "Chemistry",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Chemistry",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "1VU/2FG4",
+  "providerCode": "1VU",
+  "programmeCode": "2FG4",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Archbishop Holgate's School, Hull Road, York, YO10 5ZA",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Archbishop Holgate's School, Hull Road, York, YO10 5ZA",
+      "geocode": true,
+      "formatted_address": "Hull Rd, York YO10 5ZA, UK",
+      "latitude": 53.9524,
+      "longitude": -1.0411,
+      "post_code": "YO10 5ZA",
+      "city": "York",
+      "route": "Hull Road",
+      "postal_town": "York"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1VU",
+    "addr_1": "Archbishop Holgate's School",
+    "addr_2": "Hull Road",
+    "addr_3": null,
+    "addr_4": "York",
+    "postcode": "YO10 5ZA",
+    "url": "http://www.pathfinder-education.co.uk/",
+    "geocode": true,
+    "formatted_address": "Hull Rd, York YO10 5ZA, UK",
+    "latitude": 53.9524,
+    "longitude": -1.0411,
+    "post_code": "YO10 5ZA",
+    "city": "York",
+    "route": "Hull Road",
+    "postal_town": "York"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "This secondary teacher training course leads to a recommendation for Qualified Teacher Status (QTS). It prepares and equips you to teach your subject in secondary schools and post-16 colleges. School and university training is integrated throughout the course and the University of York and the Pathfinder Teaching School Alliance work closely together to identify your individual capabilities and needs and to enable you to make progress in your development as a teacher.\\r\n\\r\nThis PGCE course comprises of 60 credits at Masters level and 60 credits at level 6 plus the recommendation for the award of QTS.\\r\n\\r\nOn the course you  enhance your subject knowledge, understanding and skills, learn how to teach your subject, learn about the wider role of teachers in school, gain knowledge about schools and the education system, apply your skills and knowledge on school placements, gain experience of working alongside other professionals who support the care and development of individual pupils in schools.\\r\n\\r\nWe help you to develop the skills you need to be a successful teacher of pupils of all abilities and backgrounds. While studying with us you build your enthusiasm, confidence, knowledge and ability to teach your subject.\\r\n\\r\nThis course begins in early September and finishes by the end of June in the following year. The Pathfinder Teaching School Alliance will offer places in Chemistry through the unsalaried route.\\r\n\\r\nUniversity of York\\r\n\\r\nPGCE in Chemistry\\r\nThis course prepares you to teach National Curriculum Science and chemistry as a specialist at KS3, KS4 and Advanced level. The University's unique position, as one of the UK's leading centres for curriculum development and research in science education and as home to the National Science Learning Centre (NSLC), means that your programme benefits from best practice in curriculum and professional development, training and research. You will have the opportunity to develop your knowledge and skills of chemistry and science teaching and to be familiar with up to date thinking and research in teaching and learning science.\\r\n\\r\nThe University-based programme involves seminars, practical workshops, discussions and presentations as a preparation for training in schools and as a basis for becoming a science teacher. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "* At least 5 GCSE's at grade C or above including Maths and English\\r\n* A degree classification of at least 2:2 in a subject relevant to the course you want to apply for\\r\n* Please include and other professional qualifications or courses completed such as subject booster courses or coaching awards.\\r\n\\r\n",
+    "FeeInternational": 17370.0,
+    "InterviewProcess": "The pattern of school experience allows trainees to gain deepening insights into teaching and learning, and systematically supports the development of professional knowledge and teaching skills. Over the course of the year trainees will gain experience in two contrasting schools.\\r\n\\r\nUniversity tutors and school teachers work together to manage school experiences, to link these to university-based activities and to direct trainees to appropriate reading.\\r\n\\r\nThe main phases of school experience currently are:\\r\n\\r\n1. An initial primary school placement\\r\n2. A two days per week Autumn term placement, plus a four week miniblock teaching placement\\r\n3. A fourteen week block teaching placement during most of the Spring term and the early part of the Summer term\\r\n4. A period of Professional Enrichment during the Summer term\\r\n",
+    "OtherRequirements": "Although there is no specific time requirement for how many hours should have been completed in a school, applicants must have school experience with the age range they wish to teach. This could be through previous employment as a teaching assistant or learning mentor or through individually organised work experience.\\r\n\\r\n\\r\nParticipation in the PGCE course is an active process. Although there are lectures and presentations, much of the course centres on workshops, seminars, and school and classroom activities. Activities emphasise team work, and require trainees to share the responsibility for their learning. \\r\n\\r\nYou will be required to complete a DBS.",
+    "PersonalQualities": "* Good verbal communication skills\\r\n* Good interpersonal skills\\r\n* The  ability to be reflective\\r\n* Interact well with children\\r\n* To demonstrate resilience\\r\n* Good written communication skills\\r\n* Committed to the well-being and development of children\\r\n\\r\nApplicants must possess the following:\\r\n* Good subject knowledge in the area they wish to teach\\r\n* An understanding of how children learn\\r\n* Familiarity with issues in education\\r\n\\r\nCandidates should be prepared to engage in educational issues beyond their immediate day-to-day activities, and to examine - in a critical but constructive way - the current educational system and practice.\\r\n",
+    "HowSchoolPlacementsWork": "The pattern of school experience allows trainees to gain deepening insights into teaching and learning, and systematically supports the development of professional knowledge and teaching skills.\\r\n\\r\nUniversity tutors and school teachers work together to manage school experiences, to link these to university-based activities and to direct trainees to appropriate reading.\\r\n\\r\nThe main phases of school experience currently are:\\r\n\\r\n1. An initial primary school placement\\r\n2. A two days per week Autumn term placement, plus a four week miniblock teaching placement\\r\n3. A fourteen week block teaching placement during most of the Spring term and the early part of the Summer term\\r\n4. A period of Professional Enrichment during the Summer term\\r\n\\r\nThe pattern of school experience allows trainees to gain deepening insights into teaching and learning, and systematically supports the development of professional knowledge and teaching skills. Over the course of the year trainees will gain experience in two contrasting schools.\\r\n\\r\nUniversity tutors and school teachers work together to manage school experiences, to link these to university-based activities and to direct trainees to appropriate reading.\\r\n\\r\nThe main phases of school experience currently are:\\r\n\\r\n\\r\n1. An initial primary school placement\\r\n2. A two days per week Autumn term placement, plus a four week miniblock teaching placement\\r\n3. A fourteen week block teaching placement during most of the Spring term and the early part of the Summer term\\r\n4. A period of Professional Enrichment during the Summer term\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Pathfinder Teaching School Alliance is based at Archbishop Holgate's School in York. Our alliance works with a range of schools in York, North Yorkshire, the East Riding and Leeds. Our aim is to provide the highest quality initial teacher training programme possible. We have over 18 years' experience of training teachers and pride ourselves on our innovative and forward thinking programme. We have outstanding outcomes and believe we prepare our trainees for the demand and rigour of the teaching profession.\\r\n\\r\nOur mentors are extremely experienced and will ensure you receive the appropriate support and guidance to become a successful teacher.\\r\nAt Archbishop Holgate's School we have a specialist Teaching and Learning Team who will be on hand to offer additional support and advice should you need it.\\r\n\\r\nWe pride ourselves on the Values, Care and Achievement which we provide for both our staff and students and hope you will consider training with us. Visits to the teaching school or inquiries are warmly welcomed.\\r\n\\r\n",
+    "TrainWithDisability": "[University of York:] \\r\nhttps://www.york.ac.uk/students/support/disability\\r\n\\r\n[Sheffield Hallam University:] http://www.shu.ac.uk/services/sls/support/disability\\r\n\\r\n\\r\n[York St John University:]\\r\nhttps://www.yorksj.ac.uk/student-services/disability-advice-team\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The Department of Education welcomes a diverse range of graduate trainees onto the PGCE course. Working in partnership with a wide range of schools in the region, we have developed a high quality PGCE course in which school teachers and university tutors share the responsibility for teacher training. Trainees spend two thirds of the course in schools and have experience in at least three schools.\\r\n\\r\n\\r\nAs well as training to teach their subject, all trainees follow a Whole School Issues course which focuses on teaching, learning and wider school issues.\\r\n\\r\n\\r\n",
+        "UcasInstitutionCode": "Y50"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "S21"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "Y75"
+      }
+    ]
+  },
+  "has_inst": true
+}

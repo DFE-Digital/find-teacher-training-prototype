@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Leeds Beckett University",
+  "provider": "Mills Hill Primary School Schools with Schools Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1Y3/2GPB",
+  "providerCode": "1Y3",
+  "programmeCode": "2GPB",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Baytree Avenue, Chadderton, Oldham, Greater Manchester, OL9 0NH",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Baytree Avenue, Chadderton, Oldham, Greater Manchester, OL9 0NH",
+      "geocode": true,
+      "formatted_address": "Baytree Ave, Chadderton, Oldham OL9 0NH, UK",
+      "latitude": 53.5485653,
+      "longitude": -2.1638459,
+      "post_code": "OL9 0NH",
+      "city": "Chadderton",
+      "route": "Baytree Avenue",
+      "postal_town": "Oldham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1Y3",
+    "addr_1": "Baytree Avenue",
+    "addr_2": "Chadderton",
+    "addr_3": "Oldham",
+    "addr_4": "Greater Manchester",
+    "postcode": "OL9 0NH ",
+    "url": "http://www.millshill.oldham.sch.uk/training-and-development/",
+    "geocode": true,
+    "formatted_address": "Baytree Ave, Chadderton, Oldham OL9 0NH, UK",
+    "latitude": 53.5483417,
+    "longitude": -2.1640581,
+    "post_code": "OL9 0NH",
+    "city": "Chadderton",
+    "route": "Baytree Avenue",
+    "postal_town": "Oldham"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Your tuition fees cover the cost of registration, tuition, academic supervision, assessments and examinations.\\r\nThe following are also included in the cost of your course:\\r\n\\r\n* 24/7 Library and student IT support\\r\n* Free wifi via eduroam\\r\n* Skills workshops and resources\\r\n* Library membership, giving access to more than 500,000 printed, multimedia and digital resources\\r\n* Access to software, including five free copies of Microsoft Office 365 to install on your PC, laptop and MAC, and access to free high-end software via the Leeds Beckett remote app\\r\n* Loan of high-end media equipment to support your studies.",
+    "AboutCourse": "Early Years & KS1 [3-7]\\r\n\\r\n“Education is the most powerful weapon which you can use to change the world”\\r\n[Nelson Mandela]\\r\n\\r\nTrain to be a primary teacher and embark on a career in schools teaching children between three and seven, in Key Stage 1 and the Early Years Foundation Stage.\\r\n\\r\nWe will develop your knowledge and understanding of the Early Years Foundation Stage and the National Curriculum to ensure your teaching fulfils the requirements set out by the Government. With an emphasis on mathematics, English and Science at both Key Stages, you will embrace areas of learning and principles of best practice in early primary education across all subjects.\\r\n\\r\nYou will put your theoretical knowledge into practice. As part of your training, you will complete three teaching placements in the Early Years Foundation Stage and Key Stage 1, developing your teaching skills across different age ranges and helping to prepare you for future employment. Throughout these placements you will gain the specialist knowledge and teaching skills required to meet the needs of pupils in the three to seven age range.\\r\n\\r\nYou will develop children's abilities through playful learning and creative teaching, and you will reflect on how your teaching methods and the opportunities and environments you create can influence outcomes. Your training will include a focus on outdoor play and learning. You will have the opportunity to attend a forest school workshop using our outdoor classroom, where you will learn different techniques to bring learning to life and spark your pupils' imaginations.\\r\n\\r\nAs a primary school teacher, you will work closely with teaching assistants, parents and complex teaching teams to deliver a range of activities. We will give you the skills and confidence to manage these relationships to ensure you can deliver an outstanding learning experience for your class.\\r\n\\r\nOne of your most important tools as a teacher will be your voice. You will learn how to use it effectively when addressing large groups of children and how to look after it.  The course leads to Qualified Teacher Status and qualifies you to teach in the primary (3-11) sector.\\r\n\\r\nFor the vast majority of your course, you will be based in your provider school or schools, learning on the job while being supported by experienced teachers and mentors. You will attend our Headingley Campus one day a week (usually a Friday) for key module seminars.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Minimum Degree Required: Upper Second.\\r\n\\r\nG.C.S.E Grade C minimum [or equivalent] in English, Maths and Science\\r\n\\r\nSuccessful candidates must have passed the literacy and numeracy skills tests prior to starting the course and are advised to secure this as soon as possible.",
+    "FinancialSupport": "http://www.leedsbeckett.ac.uk/postgraduate/financing-your-studies.htm\\r\n",
+    "InterviewProcess": "Mills Hill Primary School - Schools with Schools Teaching School Alliance operates a simple interview process. Candidates who meet our entry requirements will be invited to Mills Hill where they will deliver a short teaching session to around 15 children. This will be to plan a session based around a book for 20 minutes. This will be observed by a member of school staff.\\r\nThere will be brief tests in maths, spelling and writing as well as a formal interview. Decisions are based on the whole process and difficulties with one of the activities will not result in an unsuccessful outcome.\\r\nWe are keen to identify candidates with clear potential to become excellent teachers of the future.\\r\n",
+    "PersonalQualities": " We firmly believe in delivering the best possible outcomes for our children and we are privileged to work with the next generation of teachers in order to shape both the learning and teaching of the future.  \\r\n\\r\nYou will have a commitment to our children and  have had some experience of working with children in schools or similar settings. A positive attitude to lifelong learning and the academic ability to sustain their study are both essential. Teaching requires commitment, hard work and dedication but, as a reward for these efforts, brings great personal satisfaction in a job well done.",
+    "HowSchoolPlacementsWork": "You will complete placements in two of our partner schools, which are all within 15 minutes drive of each other. Each school has an experienced mentor and your development will be overseen by the assistant head of Mills Hill. \\r\nThere are 3 placements in total in two contrasting schools. The main placement is in the Autumn term and later in the year the Summer term while the second placement occurs in a contrasting school in the Spring term\\r\nAdditionally, we provide additional experience in Kingfisher Special School and a nearbye secondary school. \\r\nExact timings vary from year to year but on average, you will spend Thursday and Fridays until October half term in Leeds Beckett, Fridays until Christmas in Leeds and pretty much the rest of the time in one of your allocated schools.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "In partnership with Leeds Beckett University we provide school direct teacher training placements across a small local cluster. Our assistant Head teacher performs the role of cluster co-ordinator. We take great pride in the quality of our trainees and prepare them well for their future career \\r\nMills Hill Primary School is the lead school of a cluster of primary schools in Oldham delivering highly successful initial teacher training.  We are a National Teaching School and part of a National Teaching School Alliance with Kingfisher Special School, Yew Tree Primary School and Burnley Brow Primary School. Both Mills Hill and Kingfisher are National Teaching Schools and  are currently judged to be outstanding.\\r\nThe alliance has been heavily involved in initial teacher training for a number of years and is currently leading provision for 10 trainee teachers across 5 Schools. Since 2012, we have worked with cohorts of around 16 and we have an excellent record in recruiting “our” trainees to our immediate cluster and to schools in the local area. Close to 95% of our trainees have secured jobs within teaching. Mills Hill currently employs 7 graduates of our training programme. \\r\nAll schools within the alliance have experienced senior leaders as mentors. They have a friendly and approachable attitude towards training and supporting trainees through the course. They remain in contact with trainees throughout their placements. The alliance offers enhanced training days to support professional development. All students within the cluster train together for the school based training. \\r\n",
+    "TrainWithDisability": "Direct access to a highly trained senior member of staff enables concerns around disabilities and other needs to be readily addressed.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "L27"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,59 @@
+{
+  "locationType": "School",
+  "accrediting": "Forest Independent Primary Collegiate SCITT",
+  "provider": "Spiral Partnership Trust",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Salary",
+  "slug": "2E7/325L",
+  "providerCode": "2E7",
+  "programmeCode": "325L",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Mandeville Drive, St Albans, AL1 2LE",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Mandeville Drive, St Albans, AL1 2LE",
+      "geocode": true,
+      "formatted_address": "Mandeville Dr, St Albans AL1 2LE, UK",
+      "latitude": 51.7374606,
+      "longitude": -0.339217,
+      "post_code": "AL1 2LE",
+      "city": "Hertfordshire",
+      "route": "Mandeville Drive",
+      "postal_town": "St Albans"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "The ITT programme focuses on the balance between work and study through a bespoke package of school led and college based learning.  This balance of \"learning on the job\" is through formal training, coaching, mentoring and self-directed study.\\r\n\\r\nTrainees will be challenged both academically and professionally to enable them to become the best teachers they can possibly be.  Tutors are highly qualified and experienced across the primary age range and have understanding of the curriculum and modern classroom practice.  The combination of tutors and school based mentors provides extensive professional, academic and pastoral support.  \\r\n\\r\nTrainees are required to attend lectures and school based inset. The training focuses on learning through observation of outstanding practitioners and our trainees work closely with experienced and outstanding teachers to plan for, deliver and assess learning opportunities to ensure pupil progress.  Weekly formal training is provided by a range of experts and practitioners and includes includes the national priority areas of behaviour, SEND and EAL as well as the full  range of curriculum  subjects and educational theory. There is a focus on professional studies throughout, including the teaching standards.  The training is provided by Forest Independent Primary Collegiate (FIPC) and Spiral Partnership; ensuring trainees network within the partnership and beyond.\\r\n\\r\nTrainees will be required to complete a range of tasks and activities during the training to the standards required for accreditation.\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "The salary is unqualified teachers' pay scale point one.  \\r\n\\r\nThe course fees are paid by a Government grant.",
+    "Qualifications": "Grade C or above at GCSE in English, maths & science.\\r\n* A relevant degree (usually 2i or above)\\r\n* Pass the Teacher Skills Tests before training commences",
+    "InterviewProcess": "We encourage candidates to visit our school prior to the selection process which includes:\\r\n\\r\n•\\tThe observation of a lesson, followed by a discussion about the lesson plan.\\r\n•\\tA presentation and activities to explore your thoughts about education\\r\n•\\tDiscussions about learning and the curriculum\\r\n•\\tA formal interview\\r\n",
+    "OtherRequirements": "* An enhanced DBS check\\r\n* A good standard of spoken and written English\\r\n* Substantial experience working or volunteering in a primary school\\r\n* Three years work experience",
+    "PersonalQualities": "We are looking for candidates who have a true vocation to be a teacher, who naturally enjoy working with children, are fascinated by how children learn and have the resilience and determination to deal with the challenges the job brings whilst appreciating the inspiring reward that making a difference to a child's life can bring.",
+    "HowSchoolPlacementsWork": "This one-year primary course is based in one school for the majority of the year with a contrast setting placement. Our partnership of training schools includes schools in St Albans, Hemel Hempstead, Welwyn Garden City and East Herts. Candidates learn the art of teaching in the classroom for four days each week, guided by their mentors.  Each trainee is allocated a professional tutor who visits and supports the trainee on a regular basis. \\r\n\\r\nHost schools are able to offer insights into their successful practices and induct trainees in line with the best of current teaching.  \\r\n\\r\nPart of the course is theory based and there will be formal training each Friday.  \\r\n\\r\nSchool Direct requires a full time commitment of 5 days per week from September to July and trainees are expected to participate fully in the everyday life of the schools in which they train."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We believe that teaching is an exciting, challenging and rewarding profession. Our training programmes is delivered in partnership with Forest Independent Primary Collegiate.  Spiral Trainees join their 'home school' teaching team, working with excellent teachers who support and develop their skills and knowledge as they progress to QTS.  Trainees regularly meet together to train and learn - sharing experiences and developing a network to support them.  At the end of the training year we hope all of our trainees will stay with us and join our schools as Newly Qualified Teachers, well prepared for life in the classroom and looking forward to successful careers as primary teachers.\\r\n \\r\nThis is a challenging programme but our experience shows that it is the best way to prepare for real-life in the classroom. During the year  trainees have a placement in a school which provides a contrasting setting, throughout the year they are supported by their mentor and professional tutor.  Our growing training partnership of 10 primary schools in and around St Albans, Hemel Hempstead, Welwyn and east Herts provide the opportunity to work in different schools during the training year.\\r\n \\r\nWe are looking for candidates who have a true vocation to be a teacher, who naturally enjoy working with children, are fascinated by how children learn and have the resilience and determination to deal with the challenges the job brings whilst appreciating the inspiring reward that making a difference to a child's life can bring.",
+    "TrainWithDisability": "Spiral is proud to be an inclusive provider,meeting the needs of children and adults. We welcome applications from candidates with special educational needs and disabilities. \\r\n\\r\nWe aim to meet the challenge of all declared disabilities and other needs placing candidates in our diverse range of schools, all our locations are all DDE compliant. We are committed to supporting the full inclusion of individuals ensuring their needs are met. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "F82"
+      }
+    ]
+  },
+  "has_inst": true
+}

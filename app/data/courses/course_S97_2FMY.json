@@ -1,0 +1,282 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The Sheffield SCITT",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "General Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "S97/2FMY",
+  "providerCode": "S97",
+  "programmeCode": "2FMY",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Notre Dame High School, Fulwood Road, Sheffield, South Yorkshire, S10 3BT",
+      "code": "-"
+    },
+    {
+      "name": "St Catherine's Catholic Primary School",
+      "address": "Firshill Crescent, Sheffield, S4 7BX",
+      "code": "A"
+    },
+    {
+      "name": "St Marie's Catholic Primary School",
+      "address": "Fulwood Rd, Sheffield, S10 3DQ",
+      "code": "B"
+    },
+    {
+      "name": "St Wilfrid's Catholic Primary School",
+      "address": "Millhouses Lane, Sheffield, S7 2HE",
+      "code": "C"
+    },
+    {
+      "name": "Hunters Bar Infant School",
+      "address": "Sharrow Vale Rd, Sheffield, S11 8ZG",
+      "code": "E"
+    },
+    {
+      "name": "Dobcroft Infant School",
+      "address": "Pingle Rd, Sheffield, S7 2LN",
+      "code": "F"
+    },
+    {
+      "name": "Ecclesall Infant School",
+      "address": "High Storrs Rd, Sheffield, S11 7LG",
+      "code": "G"
+    },
+    {
+      "name": "St Thomas More Catholic Primary School",
+      "address": "Creswick Lane, Grenoside, Sheffield, S35 8NN",
+      "code": "J"
+    },
+    {
+      "name": "Ecclesall Junior School",
+      "address": "Ringinglow Rd, Sheffield, S11 7PQ",
+      "code": "S"
+    },
+    {
+      "name": "Our Lady and St Joseph's Catholic Primary School",
+      "address": "Fitzwilliam St, Rotherham, S63 7HG",
+      "code": "T"
+    },
+    {
+      "name": "St Mary's Primary School, High Green",
+      "address": "Pack Horse La, Sheffield, S35 3HY",
+      "code": "U"
+    },
+    {
+      "name": "Highgate Primary Academy",
+      "address": "Nicholas Lane, Goldthorpe, Rotherham, S63 9AS",
+      "code": "W"
+    },
+    {
+      "name": "St Jospeph's School A Catholic Voluntary Academy",
+      "address": "Bevan Avenue, Rossington, Doncaster, DN11 0NB",
+      "code": "X"
+    },
+    {
+      "name": "Watercliffe Meadow Primary School",
+      "address": "Boynton Road, Sheffield, S5 7HL",
+      "code": "Y"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Notre Dame High School, Fulwood Road, Sheffield, South Yorkshire, S10 3BT",
+      "geocode": true,
+      "formatted_address": "Fulwood Rd, Sheffield S10 3BT, UK",
+      "latitude": 53.3727646,
+      "longitude": -1.517207,
+      "post_code": "S10 3BT",
+      "city": "South Yorkshire",
+      "route": "Fulwood Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Firshill Crescent, Sheffield, S4 7BX",
+      "geocode": true,
+      "formatted_address": "Firshill Cres, Sheffield S4 7BX, UK",
+      "latitude": 53.4033424,
+      "longitude": -1.464522,
+      "post_code": "S4 7BX",
+      "city": "South Yorkshire",
+      "route": "Firshill Crescent",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Fulwood Rd, Sheffield, S10 3DQ",
+      "geocode": true,
+      "formatted_address": "Fulwood Rd, Sheffield S10 3GD, UK",
+      "latitude": 53.3736355,
+      "longitude": -1.5150107,
+      "post_code": "S10 3GD",
+      "city": "South Yorkshire",
+      "route": "Fulwood Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Millhouses Lane, Sheffield, S7 2HE",
+      "geocode": true,
+      "formatted_address": "Millhouses Ln, Sheffield S7 2HE, UK",
+      "latitude": 53.3475905,
+      "longitude": -1.5063062,
+      "post_code": "S7 2HE",
+      "city": "South Yorkshire",
+      "route": "Millhouses Lane",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Sharrow Vale Rd, Sheffield, S11 8ZG",
+      "geocode": true,
+      "formatted_address": "Sharrow Vale Rd, Sheffield S11 8ZP, UK",
+      "latitude": 53.3672951,
+      "longitude": -1.499843,
+      "post_code": "S11 8ZP",
+      "city": "South Yorkshire",
+      "route": "Sharrow Vale Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Pingle Rd, Sheffield, S7 2LN",
+      "geocode": true,
+      "formatted_address": "Pingle Rd, Sheffield S7 2LN, UK",
+      "latitude": 53.3466171,
+      "longitude": -1.5083537,
+      "post_code": "S7 2LN",
+      "city": "South Yorkshire",
+      "route": "Pingle Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "High Storrs Rd, Sheffield, S11 7LG",
+      "geocode": true,
+      "formatted_address": "High Storrs Rd, Sheffield S11 7LE, UK",
+      "latitude": 53.3593559,
+      "longitude": -1.5212967,
+      "post_code": "S11 7LE",
+      "city": "South Yorkshire",
+      "route": "High Storrs Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Creswick Lane, Grenoside, Sheffield, S35 8NN",
+      "geocode": true,
+      "formatted_address": "Creswick Ln, Sheffield S35 8NN, UK",
+      "latitude": 53.4351577,
+      "longitude": -1.4860802,
+      "post_code": "S35 8NN",
+      "city": "South Yorkshire",
+      "route": "Creswick Lane",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Ringinglow Rd, Sheffield, S11 7PQ",
+      "geocode": true,
+      "formatted_address": "Ringinglow Rd, Sheffield S11 7PQ, UK",
+      "latitude": 53.35756240000001,
+      "longitude": -1.5154293,
+      "post_code": "S11 7PQ",
+      "city": null,
+      "route": "Ringinglow Road",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Fitzwilliam St, Rotherham, S63 7HG",
+      "geocode": true,
+      "formatted_address": "Fitzwilliam St, Wath upon Dearne, Rotherham S63 7HG, UK",
+      "latitude": 53.49991319999999,
+      "longitude": -1.3462563,
+      "post_code": "S63 7HG",
+      "city": "Wath upon Dearne",
+      "route": "Fitzwilliam Street",
+      "postal_town": "Rotherham"
+    },
+    {
+      "address": "Pack Horse La, Sheffield, S35 3HY",
+      "geocode": true,
+      "formatted_address": "Pack Horse Ln, Sheffield S35 3HY, UK",
+      "latitude": 53.4742934,
+      "longitude": -1.4847204,
+      "post_code": "S35 3HY",
+      "city": "South Yorkshire",
+      "route": "Pack Horse Lane",
+      "postal_town": "Sheffield"
+    },
+    {
+      "address": "Nicholas Lane, Goldthorpe, Rotherham, S63 9AS",
+      "geocode": true,
+      "formatted_address": "Nicholas Ln, Goldthorpe, Rotherham S63 9AS, UK",
+      "latitude": 53.5336453,
+      "longitude": -1.3153813,
+      "post_code": "S63 9AS",
+      "city": "Goldthorpe",
+      "route": "Nicholas Lane",
+      "postal_town": "Rotherham"
+    },
+    {
+      "address": "Bevan Avenue, Rossington, Doncaster, DN11 0NB",
+      "geocode": true,
+      "formatted_address": "Rossington, Doncaster, UK",
+      "latitude": 53.47670400000001,
+      "longitude": -1.059747,
+      "post_code": null,
+      "city": "Rossington",
+      "route": null,
+      "postal_town": "Doncaster"
+    },
+    {
+      "address": "Boynton Road, Sheffield, S5 7HL",
+      "geocode": true,
+      "formatted_address": "Boynton Rd, Sheffield S5 7HL, UK",
+      "latitude": 53.4106271,
+      "longitude": -1.4748845,
+      "post_code": "S5 7HL",
+      "city": "South Yorkshire",
+      "route": "Boynton Road",
+      "postal_town": "Sheffield"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S97",
+    "addr_1": "Notre Dame High School",
+    "addr_2": "Fulwood Road",
+    "addr_3": "Sheffield",
+    "addr_4": "South Yorkshire",
+    "postcode": "S10 3BT ",
+    "url": "http://www.sheffieldSCITT.org.uk",
+    "geocode": true,
+    "formatted_address": "Fulwood Rd, Sheffield S10 3BT, UK",
+    "latitude": 53.3727646,
+    "longitude": -1.517207,
+    "post_code": "S10 3BT",
+    "city": "South Yorkshire",
+    "route": "Fulwood Road",
+    "postal_town": "Sheffield"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "There are  Student Loans available to pay the fees. \\r\n\\r\nIf you decide to pay privately then the payment schedule is\\r\n\\r\n* Term 1 : £2,500\\r\n* Term 2 : £2,500\\r\n* Term 3 : £4,000\\r\n\\r\nWith each amount being due on the first day of each term.\\r\n\\r\nYou will have to pay the cost of the Enhanced Criminal Record Check in advance of starting the course. \\r\n\\r\n",
+    "AboutCourse": "The Sheffield SCITT is committed to providing quality first teacher training. We continually develop and review our programme of study to make it current and relevant. We are a QTS provider but we also offer a PGCert through the Sheffield University. If you study for QTS plus PGCert - you will also spend approx. 10 days over the year at the University of Sheffield. \\r\nThis course will entail 4 days in school. During time in school you will be guided by an experienced mentor. One day per week you will join other teacher trainees. You will be trained on aspects such as how to walk and talk like a teacher, plan lessons effectively, behaviour management and how to really stretch and challenge students. You will spend September to December in your ‘Home School’. From December to Easter you will have the opportunity to experience life in a contrasting secondary school. From Easter to the end of the programme you will return to your initial school. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "In order to be considered for the Sheffield SCITT. You would need \\r\n\\r\n* A degree \\r\n* GCSE grade C or 4 in Maths, English and Science. \\r\n\\r\nIf you have any questions about qualifications – please contact [admin@sheffieldscitt.org.uk]  and we can offer support.",
+    "FinancialSupport": "We are not able to offer any monetary financial support to trainees.  However,\\r\n\\r\n* We will support you with the Student Finance Application process. \\r\n* We will keep you informed as to whether you are eligible for a government funded Train to Teach Bursary. \\r\n* We will also make you aware of any national scholarships that may be available for the subject you are training to teach. \\r\n ",
+    "InterviewProcess": "The interview process for the SCITT involves a formal interview, questions from a subject specialist and a 15 minute teaching activity. We also ask you to sit mock numeracy and literacy papers to help us identify if you will need support to pass your skills tests. We also ask you to reflect on your teaching activity.",
+    "OtherRequirements": "You will need to pass an Enhanced Criminal Record Check. \\r\nIdeally you will have some experience working with children in a school or another organisation e.g. nursery, playgroups, scouts etc.\\r\n",
+    "PersonalQualities": "We are looking for the next generation of outstanding teachers and future school leaders. They will be passionate about children and education but also care about our schools and the communities they serve and the special ethos each of those schools have.\\r\n\\r\nThey will have experience of working with young people - ideally some of this will be school based giving them a good awareness of how schools operate and teachers work.  Whatever their experience our applicants need to demonstrate how they have engaged, communicated with and inspired the young people they have worked with. ",
+    "HowSchoolPlacementsWork": "You will spend most of the training year in your Home School and these schools are central to the selection process and our school based interview system. You can express a preference for your Home School based on location, preference for the type of school or a personal connection to a community you want to serve but we cannot guarantee to meet everyone's preference.\\r\n\\r\nThere is also a short alternative placement in a contrasting alliance school in the middle of the training year and a brief experience in the phase (primary or secondary) you are not training to teach in. It would be sensible for trainees to base themselves within commutable distance of their Home School so these are finalised with you before the summer holidays to allow you to arrange your accommodation. We make every attempt to make sure the alternative placement school is in an accessible location but it may involve a few weeks of travelling further to get that all important contrasting experience in the right school for you.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Sheffield SCITT is owned and run by Notre Dame High School, Sheffield. Notre Dame has been judged ‘Outstanding in all areas’ by OFSTED and The Sheffield SCITT was recently judged ‘Good’ by OFSTED for the quality of its teacher training.\\r\nOur partnership schools all see The Sheffield SCITT as the best way to find and develop their own future teachers. The Sheffield SCITT aims to supply most of the Newly Qualified Teacher needs of our partnership of schools. Whilst we cannot guarantee jobs for all trainees at the end of the course, the vast majority of trainees secure jobs within our partnership. \\r\nWe remain small enough to know every trainee as an individual and give every partner school a voice in the running of the SCITT, but large enough to offer our trainees a diverse and bespoke experience of a different schools within the partnership - including Academies, Maintained Community Schools, Church Schools, those in multicultural inner cities, secondary schools with large sixth forms and primary schools with early years centres.\\r\nOur course includes the opportunity to earn up to 60 Masters credits. The first 30 credits are studied during the training year and you have the option of choosing to earn a further 30 credits at no additional cost during your first year of teaching. The Masters credits are currently offered through Sheffield University and there is a further option to cash in the 60 Masters credits for a Postgraduate Certificate in Initial Teacher Training. \\r\n",
+    "TrainWithDisability": "Our aim is to meet the unique needs of every trainee, specifically by taking reasonable steps to ensure that disabled trainees and applicants are not put at a substantial disadvantage by comparison with trainees and applicants who are not disabled.\\r\n\\r\nWe cannot do this unless we know you have a disability. We encourage all our applicants to discuss their requirements with us at interview. While disabled access to our schools is good we can only place trainees at the most suitable school to meet their needs if we know what those needs are.\\r\n \\r\nIn addition to one to one support from your mentors and subject leaders we currently offer all our trainees access to free basic membership of the Westfield Health Foresight scheme which provides various benefits. \\r\nThe Sheffield SCITT has a ‘Reasonable Adjustments Policy and Procedure’ which underpins this approach and is available on request by emailing admin@sheffieldscitt.org.uk \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

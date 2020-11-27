@@ -1,0 +1,73 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Oxford University",
+  "subjects": [
+    "French",
+    "Languages",
+    "Secondary",
+    "Spanish"
+  ],
+  "name": "Modern Languages (French with Spanish)",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "O33/RXD1",
+  "providerCode": "O33",
+  "programmeCode": "RXD1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Department of Education, University of Oxford, 15 Norham Gardens, Oxford, OX2 6PY",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Department of Education, University of Oxford, 15 Norham Gardens, Oxford, OX2 6PY",
+      "geocode": true,
+      "formatted_address": "University of Oxford, 15 Norham Gardens, Oxford OX2 6PY, UK",
+      "latitude": 51.7639358,
+      "longitude": -1.2552913,
+      "post_code": "OX2 6PY",
+      "city": "Oxfordshire",
+      "route": "Norham Gardens",
+      "postal_town": "Oxford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "O33",
+    "addr_1": "Department of Education",
+    "addr_2": "15 Norham Gardens",
+    "addr_3": "Oxford",
+    "addr_4": null,
+    "postcode": "OX2 6PY ",
+    "url": "http://www.education.ox.ac.uk/courses/pgce/",
+    "geocode": true,
+    "formatted_address": "University of Oxford, 15 Norham Gardens, Oxford OX2 6PY, UK",
+    "latitude": 51.7639358,
+    "longitude": -1.2552913,
+    "post_code": "OX2 6PY",
+    "city": "Oxfordshire",
+    "route": "Norham Gardens",
+    "postal_town": "Oxford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithDisability": "The University supports over 3,000 students who have declared a disability, including specific learning difficulties (such as dyslexia and dyspraxia), long-term health conditions, mental health difficulties, mobility difficulties, sensory impairments and autism spectrum disorders. \\r\n\\r\nA range of support and reasonable adjustments are available to those with a declared disability or health condition. These include finding college accommodation with en-suite facilities, considering travel times to placements or ease of movement around the school site, more regular tutor support meetings. There is also support with academic writing if you have a Specific Learning Difficulty e.g. dyslexia. \\r\n\\r\nMore information is available from the University’s Disability Advisory Service:\\r\nhttps://www.ox.ac.uk/students/welfare/disability\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

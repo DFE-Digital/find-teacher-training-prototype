@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": "University of St Mark & St John",
+  "provider": "Plymouth Teaching School Alliance",
+  "subjects": [
+    "Physical education",
+    "Secondary"
+  ],
+  "name": "Physical Education",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1T7/289V",
+  "providerCode": "1T7",
+  "programmeCode": "289V",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "2 Torridge Way, Efford, Plymouth, Devon, PL3 6JQ",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "2 Torridge Way, Efford, Plymouth, Devon, PL3 6JQ",
+      "geocode": true,
+      "formatted_address": "2 Torridge Way, Plymouth PL3 6EX, UK",
+      "latitude": 50.38727309999999,
+      "longitude": -4.1096458,
+      "post_code": "PL3 6EX",
+      "city": "Plymouth",
+      "route": "Torridge Way",
+      "postal_town": "Plymouth"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1T7",
+    "addr_1": "PLP CIC Marjon University Room W202",
+    "addr_2": "Derriford Road",
+    "addr_3": "Plymouth",
+    "addr_4": "Devon",
+    "postcode": "PL6 8BH ",
+    "url": "http://www.plymouthteachingschool.co.uk/initial-teacher-education",
+    "geocode": true,
+    "formatted_address": "Derriford Rd, Devon, Plymouth PL6 8BH, UK",
+    "latitude": 50.421124,
+    "longitude": -4.110431,
+    "post_code": "PL6 8BH",
+    "city": "Devon",
+    "route": "Derriford Road",
+    "postal_town": "Plymouth"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9249.0,
+    "AboutCourse": "A one-year programme centred entirely in our Plymouth schools, where you will be part of a school team from day one. \\r\n\\r\nYou will benefit from a full 40-week schedule from the start of term in September 2018 to the end of the Summer Term 2019. Complementing your time learning the job in school you’ll receive training from our Specialist Leaders in Education (SLE) and HEI lecturers, and a contrasting second school experience. SLE Learning Hubs have been developed across the city to support subject and pedagogy specialisms. \\r\nShared training across the Alliance gives complete and contrasting experiences. \\r\n\\r\nTrainees are ready for employment after completing their course and support will continue to be provided in your NQT years from your employer, Plymouth Local Authority and Plymouth Teaching School Alliance. \\r\n\\r\n\\r\nThe training will include: \\r\n\\r\nPlymouth Marjon University Academic Modules and Four Conferences. \\r\n\\r\nPTSA Subject Knowledge Schedule  (Majority of SK sessions are PTSA SLE led)\\r\n\\r\nOracy session for all trainees\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Minimum 2:2 Undergraduate Qualification\\r\n\\r\nMaths and English GCSE Grade A-C\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "PTSA School Direct trainees are placed in a Plymouth.\\r\n\\r\nThe host school placement is the school where you will work for most of the academic year.  \\r\n\\r\nYou will have a Subject Mentor and a PTSA school-based Professional Tutor in school to support you.  \\r\n\\r\nYou will have a second placement in Term 4 (Spring Term 2) to gain teaching experience in a complementary school. \\r\n\\r\nThe HEI provide professional study support and a QA tutor for the PTSA school-based Professional Tutor to link with. \\r\n\\r\nFor all trainees, the PTSA School Direct programme follows the academic year in the Host School.  That is, it will begin on the first day of school in September and finish when the school year ends in July."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Plymouth Teaching School Alliance (PTSA) is an inclusive teaching school serving the schools of Plymouth and the region. The PTSA benefits from a mature ‘blended’ model of delivery alongside Plymouth Local Authority and Plymouth Learning Partnership Community Interest Company (PLP CiC). The two lead schools are High View Primary and Prince Rock Primary (Learning Academies Trust).\\r\n\\r\nIn addition to our inclusive values, we also seek to promote collaboration and evidence-informed practice. These values underpin our work. Evidence of this can be seen in the 50 schools that contribute to our teaching school alliance, our unique approach to CPD, and the wide-variety of collaborative partnerships and programmes that we offer.\\r\n\\r\nWe benefit from working alongside our partners in the Plymouth Local Authority, Plymouth Marjon University and Plymouth University. We also collaborate with our regional teaching school neighbours and access expertise at a national level.\\r\nWe believe in a practitioner-led and school-led system and help facilitate this at all levels. We also strive to have training and support available to all educational professionals regardless of where they are in their career, from trainee teachers to CEOs.\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "P63"
+      }
+    ]
+  },
+  "has_inst": true
+}

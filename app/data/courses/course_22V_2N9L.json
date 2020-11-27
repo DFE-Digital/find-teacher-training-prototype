@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Worcester",
+  "provider": "Hereteach Alliance",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "22V/2N9L",
+  "providerCode": "22V",
+  "programmeCode": "2N9L",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Ford Street, Wigmore, Leominster, Herefordshire, HR6 9UW",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Ford Street, Wigmore, Leominster, Herefordshire, HR6 9UW",
+      "geocode": true,
+      "formatted_address": "Ford St, Wigmore, Leominster HR6 9UW, UK",
+      "latitude": 52.3155532,
+      "longitude": -2.8569038,
+      "post_code": "HR6 9UW",
+      "city": "Wigmore",
+      "route": "Ford Street",
+      "postal_town": "Leominster"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "22V",
+    "addr_1": "Hereteach Alliance",
+    "addr_2": "Wigmore High School, Ford Street",
+    "addr_3": "Wigmore, Leominster",
+    "addr_4": "Herefordshire",
+    "postcode": "HR6 9UW ",
+    "url": "http://www.hereteach.org.uk",
+    "geocode": true,
+    "formatted_address": "1 Ford St, Wigmore, Leominster HR6 9UW, UK",
+    "latitude": 52.3153301,
+    "longitude": -2.8588965,
+    "post_code": "HR6 9UW",
+    "city": "Wigmore",
+    "route": "Ford Street",
+    "postal_town": "Leominster"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Structure of the Course\\r\nThe structure of the course is one which combines both pedagogical knowledge with classroom experience to develop trainees throughout the year. The course has subject specific sessions at the university spread throughout the year, combined with school experience based in 2 school placements.\\r\nThe course combines both academic based assignments and practical teaching experience. The teaching placements are in 2 schools spread over the academic year.\\r\nThe assignments range from professional studies to subject specific and students are able to submit at Masters Level.\\r\n\\r\nAssessment\\r\nThe assessment of the course is through written academic assignments, and also the completion of 2 successful Teaching Placements. You will be assessed on the basis of course work including written assignments, a portfolio and an oral presentation of a small research project, as well as on your teaching practice\\r\nThe course operates under the Postgraduate Regulatory Framework which sets out the full regulations for passing modules, grading of modules, retrieving failed modules, progression from one academic level to the next, requirements for awards, and how the award is classified.\\r\nAll student teachers are initially registered for the Professional Graduate Certificate in Education (PGCE). This is a course of 120 credits at level 6. In December student teachers may apply to be registered on the Post-Graduate Certificate in Education (PGCE (M)) where up to 60 M-level credits can be gained from subsequent work. Thus the PGCE (M) will result in 60 credits at level 6 and 60 at level\\r\nSummative Assessment Assignment 1 (3000 words) The focus is Learning Assignment 2 (3000 words) The focus is on planning a unit of work Assignment 3 (3000 words) The focus is on a whole school policy A portfolio with a reflective final commentary 3,000 words An oral presentation of a school-based research project. Additionally for the M-level award the completion a 1500 word literature review. A successful main school experience as shown by the final school report\\r\nIt is necessary to pass all assessments.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "HowSchoolPlacementsWork": "School Placements\\r\nYou will have 2 Placements throughout the year.\\r\nYour main school will be your first placement covering the autumn and summer term with a second placement in the middle covering the spring term within one of the partner schools. We have 15 partner schools, the majority are Secondary Schools teaching 11-16 but we also have Sixth Form and Special Schools. There may be travelling involved as Herefordshire is a rural county.\\r\n\\r\nProfessional Studies\\r\nThe school element will also consist of a programme of professional studies and subject studies across the partnership, and will be integrated into the University Professional studies programme. These will be overseen by professional mentors who will have the overall responsibility for the management of the provision, ensuring that student teachers have full access to the appropriate age and ability range. Subject mentors are responsible for providing a programme which will involve individual and collaborative teaching and weekly mentor support.\\r\n\\r\nTimetable\\r\nYour timetable will consist of both University based and school based work.\\r\n\\r\nThroughout both placements trainees will have both subject and professional studies sessions in the university.\\r\n\\r\nYour timetable within the school setting will be incremental.\\r\n\\r\nPlacement 1: Starting with collaborative work and observation and with 25% teaching to 50% by the end of the placement combining both collaborative and solo teaching.\\r\n\\r\nPlacement 2: Incremental teaching from collaborative to solo teaching with maximum of 50% solo teaching through to the end of placement 2.\\r\n\\r\nWhat our School Direct programme offers trainees\\r\nProfessional and relevant training in a school context along with the benefits that a Higher Education Institution can offer.\\r\n\\r\nOpportunity to work alongside teachers and colleagues who can offer examples of good and outstanding practice, advice and support during training\\r\n\\r\nOpportunity to develop the knowledge, understanding and skills to become a very effective teacher\\r\n\\r\nThe award of Post Graduate Certificate in Education with QTS\\r\n\\r\nCredits for assignments that demonstrate Masters level study and progression towards a higher degree qualification\\r\n\\r\nAn enhanced training experience through additional pathways and opportunities for specific areas of the curriculum\\r\n\\r\nThe prospect of high employment in our regional schools\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Hereteach Alliance is a partnership of secondary schools, post 16 and Special schools in Herefordshire.  With Wigmore Teaching School as the lead school, our accrediting Higher Education Institute is Worcester University. \\r\n \\r\nOur core partnership schools are Bishop of Hereford’s Bluecoat School, Earl Mortimer College, Fairfield High School, Hereford Sixth Form College,  Kingstone High School, Lady Hawkins’ School and Sixth Form Centre, St Mary's RC High School, The Hereford Academy, Weobley High School, Westfield School (Special School), Whitecross Hereford High School and Specialist Sports College, and Wigmore High School.\\r\n \\r\nOur School Direct Programme offers high quality provision where the trainees recruited will work both collaboratively and independently. Trainees will be supported in and engaged with their school from the beginning of September, developing relevant professional skills and learning from the wealth of experience that exists both within the schools and the University. Uniquely our trainees get experience in post 16 and special school establishments as part of their training.\\r\n \\r\nExpectations are very high and the learning environment is fun, yet challenging and designed to create outstanding teachers.  High quality support will be available at all times to help trainees on their journey towards becoming exceptional classroom practitioners \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "G48"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "W80"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": "The University of Huddersfield",
+  "provider": "The Sanctuary at St Chad’s C E Primary School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1NC/29X3",
+  "providerCode": "1NC",
+  "programmeCode": "29X3",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St Chad's CE Primary School, Rhodes Avenue, Uppermill, Oldham, OL3 6EE",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St Chad's CE Primary School, Rhodes Avenue, Uppermill, Oldham, OL3 6EE",
+      "geocode": true,
+      "formatted_address": "Rhodes Ave, Uppermill, Oldham OL3 6EE, UK",
+      "latitude": 53.55220989999999,
+      "longitude": -1.9982133,
+      "post_code": "OL3 6EE",
+      "city": "Oldham",
+      "route": "Rhodes Avenue",
+      "postal_town": "Oldham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1NC",
+    "addr_1": "St Chad's CE Primary School",
+    "addr_2": "Rhodes Avenue",
+    "addr_3": "Uppermill",
+    "addr_4": "Oldham",
+    "postcode": "OL3 6EE ",
+    "url": "http://www.sanctuarylc.org",
+    "geocode": true,
+    "formatted_address": "Rhodes Ave, Uppermill, Oldham OL3 6EE, UK",
+    "latitude": 53.55220989999999,
+    "longitude": -1.9982133,
+    "post_code": "OL3 6EE",
+    "city": "Oldham",
+    "route": "Rhodes Avenue",
+    "postal_town": "Oldham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The Sanctuary School Direct programme is a collaborative programme offering 120 days experience in schools, 30 core days in an ‘Outstanding’ Teaching School, and a further 30 core days at the University of Huddersfield.  Upon graduating from the programme, you will gain a Postgraduate Certificate in Education (with QTS) and a number of Masters level credits to ensure you will have the best possible start to your teaching career. \\r\n\\r\nOur teaching placements are based in schools across our alliance, in a range of differing contexts and are enhanced by additional enrichment placements and training.\\r\n\\r\nTrainees will have the support of highly trained outstanding school- based professional mentors and a designated contact in our Teaching School, who will design a highly bespoke programme, tailored to meet trainees’ needs. As well as in-school experience, each trainee will attend core-training days in the National Teaching School and receive full access to all of the higher educational facilities the university has to offer.\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You will normally need:\\r\n* GCSE qualifications at grade 4 or above, or grade C if awarded under the previous GCSE grading scheme in English, Maths and Science.\\r\n* Good grades at A-Level (or equivalent) at the time of application.\\r\n* An Honours degree classified as 2:1 or above (strong candidates with a 2:2, who can demonstrate sufficient relevant experience will be considered).\\r\n* Skills tests in Numeracy and Literacy.\\r\n* A declaration of health to ensure that you have the health and physical capacity to teach.\\r\n* Enhanced disclosure from the Disclosure and Barring Service.\\r\n",
+    "InterviewProcess": "We love welcoming visitors to our school and we aim to make our interview process a positive experience for all. We realise that making the right choice of training route and provider is as important to candidates as it is for us to select the very best potential and by including a tour of our school and an opportunity to meet past students, we hope to give applicants a true reflection of our ethos and approach.\\r\n\\r\nInterviews take place each month once the application cycle is open. \\r\nThe first stage of the interview process typically includes:\\r\n*  An applicants’ briefing and tour of the school\\r\n*  A class-based assessment; during this counterpart, you will be asked to facilitate a 20 minute activity with a class of children on a topic of your choice\\r\n* A group task; during this activity you will take part in a group discussion about your values and ethos.\\r\n* A written task; during this activity you will be expected to write a short piece of text to display your written communication skills. \\r\n* An opportunity to meet a past student and discuss their experience\\r\n\\r\nIf you are selected to progress to the second interview stage, this consists of an interview with a panel of trust representatives; during this activity you will be interviewed as to your suitability for the position on the School Direct Programme and will be given the opportunity to ask any further questions you may have about the course. \\r\n",
+    "PersonalQualities": "We are looking for inspirational people who have the ambition to become the school leaders of the future. We want the most committed and aspirational trainees, who will embrace the opportunities we offer and be committed to personal development and life-long learning.\\r\n\\r\nIn addition to the entry requirement above, we also advise that you spend some time gaining experience in a primary school in Key Stage 1 and 2 to give you a greater insight into your career choice and help you decide whether teaching is right for you. Other areas of relevant experience may also support your application.",
+    "HowSchoolPlacementsWork": "We have a number of long-standing school partnerships across Oldham, Tameside and Rochdale and we work extremely closely with our partners to ensure that every student has the very best experience possible.\\r\n\\r\nThe course typically consists of two main placements, in two contrasting settings and age phases, but there are also a number of additional experiences offered, including short placements in specialist SEND settings and those with high-proportions of learners with English as an Additional Language (EAL). "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Sanctuary Learning Centre is a purpose built facility\\r\nbased at the heart of St. Chad’s C E Primary School; \\r\na National Teaching School and Designated OLEVI Centre (DOC), \\r\nwhich is part of the Sola Fide Multi-Academy Trust. \\r\n \\r\nAs a non-profit making enterprise*, The Sanctuary encapsulates \\r\nthe school’s overall philosophical stance as a place for personal \\r\nreflection, challenge and individual growth. The name \\r\n‘The Sanctuary’ has connotations of safety, harmony and \\r\nmindfulness and the tag line 'reflect and learn' is the mantra \\r\nthat runs throughout our work.\\r\n \\r\nAs a National Support School, the Sanctuary utilises the expertise \\r\nof outstanding teachers, Specialist Leaders of Education (SLEs) and National Leader of Education (NLEs), to provide Continuous Professional Development (CPD) and build capacity within other educational establishments; willingly sharing skills, knowledge and expertise in a non-threatening manner, ensuring the utmost degree of confidentiality.\\r\n\\r\nBeing committed to the highest quality of induction for all those entering the teaching profession in Oldham and beyond, The Sanctuary has long been dedicated to supporting the Induction of Newly Qualified Teachers. Consequently, we have developed our own NQT programme, accredited by OLEVI, in-order to support NQTs and their coaches within the authority, ensuring they have a successful induction year and continue to develop their potential as the outstanding teachers of the future. \\r\n\\r\n*Facilitation in The Sanctuary provides a significant opportunity for professional development and as such, facilitators receive no additional payment. All proceeds enable us to build capacity in our own and other educational settings. \\r\n",
+    "TrainWithDisability": "We work in close partnership with the University of Huddersfield to ensure that we accommodate the needs of all learners. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Our chosen Higher Education Institute (HEI) is the University of Huddersfield; a provider with a 60-year history of providing the very best students to schools in the North West.\\r\n\\r\nThe University of Huddersfield is one of the top centres in the country for teacher education and is committed to excellence. The University is relatively small in size, this means that it can provide the highest standard of individualised pastoral support for students; something we feel really passionate about. \\r\n",
+        "UcasInstitutionCode": "H60"
+      }
+    ]
+  },
+  "has_inst": true
+}

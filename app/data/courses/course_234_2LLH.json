@@ -1,0 +1,60 @@
+{
+  "locationType": "School",
+  "accrediting": "London Metropolitan University",
+  "provider": "Princess May Primary School",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "234/2LLH",
+  "providerCode": "234",
+  "programmeCode": "2LLH",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Princess May Road, London, N16 8DF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Princess May Road, London, N16 8DF",
+      "geocode": true,
+      "formatted_address": "Princess May Rd, Stoke Newington, London N16 8DF, UK",
+      "latitude": 51.5529187,
+      "longitude": -0.0772851,
+      "post_code": "N16 8DF",
+      "city": "Greater London",
+      "route": "Princess May Road",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": null,
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "‘The partnership provides good and sometimes outstanding trainees and newly qualified teachers, who enhance the quality of teaching and education for pupils in London.  Trainees benefit from very high quality, specialist centrally-based university training. They make very effective use of educational research to improve their practice and share best practice with their colleagues.’ Ofsted 2016\\r\n\\r\nBy choosing to train as a teacher with Princess May Primary School and London Metropolitan University, you will be joining a powerful partnership of diverse London teachers and schools who work together. \\r\n\\r\nOur training model offers the best of a traditional PGCE route, with excellent initial training at the university, and strong tutor support, combined with the rigour of spending considerable time getting hands on experience within a strong partnership of schools who are committed to training outstanding teachers for London schools. \\r\n\\r\nThe course leading to Qualified Teacher Status, preparing you to teach 5 to 11 year olds (KS1 & KS2). Specialising in teaching at urban, multicultural, multilingual schools, we address issues of language, diversity and equality across the curriculum, with clear links to the unique London context, backed up with a strong basis in educational theory and practice. \\r\n\\r\nThe course is rigorous, with short blocks at University interspersed with 2 extended school placements of 10 and 12 weeks, which offers trainees the chance to reflect on the links between theory and practice and to critically reflect on their own teaching practice. \\r\n\\r\nPractical teaching experience across two placements is assessed in relation to the Standards for Qualified Teacher Status. You will complete a number of formative assignments aimed at developing your knowledge of teaching and learning. These will help make up your Professional Practice portfolio, something which is compiled across the year and details your personal experiences and reflections on your development as a teacher, largely in relation to your practical teaching experience. These formative assignments lead to a synoptic piece of writing focusing on teaching, learning and curriculum development. \\r\n\\r\nIn the last weeks of your teaching practice you will be given time to complete an educational research assignment focusing on broader issues and policies related to primary education. In addition, a great emphasis is placed on formative feedback from your peers within the group, and from colleagues on placement. You will be expected to complete a weekly reflection on our virtual learning environment and contribute to online discussions. \\r\n\\r\nThere are no written examinations. \\r\n\\r\n\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "For PGCE School Direct; The minimum entry requirements are as follows: \\r\n\\r\nUK degree grade 2.2 or equivalent. \\r\nGCSE English grade C/4 or above (or equivalent), \\r\nGCSE Maths grade C/4 or above (or equivalent), \\r\nGCSE Science grade C/4 or above (or equivalent), \\r\nQTS Skills Tests in Literacy and Numeracy , \\r\nValid DBS Disclosure Certificate and Confirmation of Fitness to Teach (LMU Health Check).\\r\nIf you feel your qualifications are slightly lower than our requirements you should contact admin@princessmay.hackney.sch.uk for further advice before applying. \\r\n",
+    "FeeInternational": 12890.0,
+    "InterviewProcess": "The Selection Process \\r\nCandidates whose application form shows that they meet our short-listing criteria will be invited to an Interview Day. These will be run at regular intervals, from October 2018 until the courses are filled. \\r\nCandidates are encouraged to have passed the 2 Skills Tests in Literacy and Numeracy prior to attending interview. \\r\nThe selection process will usually involve: \\r\n1. A range of tasks over the day including classroom and written based activities. \\r\n2. Time with staff/departments \\r\n3. A formal interview \\r\nThe interview will take place at London Metropolitan University.\\r\n",
+    "OtherRequirements": "In addition it is desirable that you: \\r\n1. Have visited a local school and arranged  to observe and gain experience of how teaching and learning is organised in an educational environment. \\r\n2. Have read and can discuss current educational thinking e.g. The Times Educational Supplement at or the Department for Education website",
+    "PersonalQualities": "We are looking for...\\r\n...dynamic, energetic, enthusiastic and innovative trainees! \\r\n\\r\nSchool Direct at London Met: Princess May are looking for inspiring, knowledgeable and ambitious trainee teachers who are passionate and enthusiastic about teaching and have a desire to make a real difference to young peoples' lives and futures. \\r\n\\r\n",
+    "HowSchoolPlacementsWork": "School-based training: the course includes 120 days in two London schools and or early years settings, learning to teach with a mentor (an experienced classroom teacher); starting with structured observation, you will gradually take more responsibility for aspects of pupils learning. This classroom experience is extended with University set tasks and practical research. \\r\nSchool Experience A takes place in the Autumn term and School Experience B starts in the Spring term and continues through to the Summer term."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At Princess May Primary School we are committed to ensuring all of our children have the best possible start to their learning journey. We create a safe, welcoming, nurturing environment which fosters a sense of belonging. We are a highly inclusive school. In September 2017 Princess May Primary School received a School for Success Award from the Mayor of London, Sadiq Khan, which recognises exceptional schools in the capital. Princess May was recognised in the Schools for Success Awards because they have achieved results above the expected rate of progress for significant numbers of pupils, including the disadvantaged and vulnerable pupils.\\r\nPrincess May is proud to be a Lead School for ‘Schools Direct @ London Met’, with a partnership of schools, and we are now recruiting trainee teachers for September 2019. We specialise in providing PGCE’s in Primary with QTS. Princess May has a long standing involvement and commitment to teacher training, in partnership with London Metropolitan University. Our School Direct route leads to Qualified Teacher Status (QTS) and PGCE, which carries 60 Masters Level credits. We offer a  blend of school-based experience and university-led learning which ensures a breadth and depth of experience and exposure to a wide range of teaching practices. Students will be part of a school team from the start, based in an identified class with an experienced teacher. Many of our class teachers started their teaching careers as schools direct students themselves, so they have a wealth of experience to offer.\\r\n",
+    "TrainWithDisability": "As a school we are happy to discuss individual access requirements. Facilities at present include a disabled toilet located on the ground floor. The ground floor of the building is wheel chair accessible from the nursery only.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "London Metropolitan University has a long history of providing high quality Initial Teacher Education from its base in Holloway Road, and is a principal trainer of teachers wishing to work in and around London. Its diverse student body reflects the multicultural contexts in which they teach. The ITE provision it offers has been rated as ‘Good’, by Ofsted. London Metropolitan University have devised the training programmes and will be the provider of the tuition for School Direct students.\\r\nSchools Direct @ London Met is a partnership of schools working together with London Metropolitan University to provide high-quality teacher training places. \\r\n",
+        "UcasInstitutionCode": "L68"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,77 @@
+{
+  "locationType": "School",
+  "accrediting": "Hull SCITT",
+  "provider": "St Mary’s College",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1RU/29G7",
+  "providerCode": "1RU",
+  "programmeCode": "29G7",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St Mary's College, Cranbrook Avenue, Hull, HU6 7TN",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St Mary's College, Cranbrook Avenue, Hull, HU6 7TN",
+      "geocode": true,
+      "formatted_address": "Cranbrook Ave, Hull HU6 9PH, UK",
+      "latitude": 53.7756335,
+      "longitude": -0.3644034,
+      "post_code": "HU6 9PH",
+      "city": "Kingston upon Hull",
+      "route": "Cranbrook Avenue",
+      "postal_town": "Hull"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1RU",
+    "addr_1": "St Mary's College",
+    "addr_2": "Cranbrook Avenue",
+    "addr_3": null,
+    "addr_4": "Hull",
+    "postcode": "HU6 7TN ",
+    "url": "http://www.schooldirecthull.co.uk",
+    "geocode": true,
+    "formatted_address": "Cranbrook Ave, Hull HU6 7TN, UK",
+    "latitude": 53.775278,
+    "longitude": -0.363321,
+    "post_code": "HU6 7TN",
+    "city": "Kingston upon Hull",
+    "route": "Cranbrook Avenue",
+    "postal_town": "Hull"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 8075.0,
+    "FeeDetails": "QTS only programme = £8,075 \\r\nOptional PGCE = £925\\r\n\\r\nTherefore total QTS and PGCE = £9,000 \\r\n\\r\n",
+    "AboutCourse": "This secondary teacher training programme provides an ideal balance of school-based experience with professional and subject-specific training.  The course leads to Qualified Teacher Status (QTS), with the option to complete a Masters Level Post Graduate Certificate in Education (PGCE) with the University of Hull. \\r\n\\r\nYou will be fully integrated into the subject department at your host school where you will learn from an experienced mentor and other host teachers.   You will receive training in how to teach across the 11-16 age range, including techniques for managing classroom behaviour and ensuring pupils of all abilities and needs can learn and make good progress.   You will also have opportunities to teach post-16 lessons and get involved in a range of extra-curricular trips and activities. \\r\n \\r\nYou will not be “thrown in at the deep end”.   Instead the course has a carefully phased approach which allows you to begin by observing lessons and participate in team-teaching before teaching full lessons.  Typically, you would progress to teaching about 6 hours a week by Christmas, 10 hours by Easter and 12 hours by July.   This helps to build your confidence within a manageable timetable so that, by the end of the course, you are able to make a smooth transition to the NQT timetable expected in your first teaching year.     \\r\n\\r\nEach week you will receive high quality one-to-one mentoring from a subject specialist as well as core Professional Studies training delivered by Specialist leaders in Education (SLEs).  There are also regular Subject Knowledge and Pedagogy (SKAP) training sessions, and university-led tuition to support your PGCE assignments.   \\r\n\\r\nAs well as your two main placements, we also arrange visits for you to spend time in a Primary school, Special School and Free School as part of your programme to enable you to gain further experience of the education sector.    \\r\n\\r\nYou are assessed at half termly review points throughout the course by your mentor in conjunction with a SCITT Link Tutor.  These assessments are based on reviewing the progress of the classes you have been teaching as well as your ‘evidence bundle’ of lesson plans, resources and observations etc which is kept electronically on a SharePoint Cloud system.   At each review point, personalised targets will be set to help you progress further towards meeting the Teacher Standards to the highest possible standard.  \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree of a UK higher education institution or equivalent.  \\r\n\\r\nGCSE  grade C (grade 4) or equivalent  in Mathematics and English\\r\n\\r\nProfessional skills tests to be completed prior to course commencement\\r\n\\r\n\\r\n",
+    "InterviewProcess": "All short-listed candidates will first be asked to complete a literacy and numeracy test.  \\r\n\\r\nIf you pass these tests successfully, then you will proceed to the formal interview stage with a panel that consists of representatives from the School Direct partnership. The interview panel will seek to gauge your potential, motivation and suitability for the teacher training programme, and will ask about your previous school experience, subject/curriculum knowledge, as well as your understanding about education and the role of the teacher.  \\r\n\\r\nCandidates are also expected to deliver a mini lesson to some KS3 students as part of the interview.  Further details about this will be included in the interview invitation letter.\\r\n",
+    "OtherRequirements": "A satisfactory DBS check\\r\n\\r\nRecent experience in a Secondary school in the UK which allows candidates to have a clear understanding of the role of a teacher in terms of relevant skills and time commitments required for the profession.\\r\n\\r\nA commitment to safeguarding young people, equal opportunities and raising standards\\r\n",
+    "PersonalQualities": "A proactive mentality: you show initiative, are self-motivated and seek out useful learning experiences and opportunities. \\r\n\\r\nA love for learning:   you reflect upon what you have learnt and constantly strive to improve. \\r\n\\r\nA ‘can do’ attitude:  you are resilient, determined and flexible. \\r\n\\r\nA collaborative worker:  you work well in a team and engage with others to get the best out of situations. \\r\n\\r\nExcellent communication skills, especially communicating with young people\\r\n\\r\nExcellent organisational skills\\r\n\\r\nHumility, empathy and respect\\r\n\\r\nProfessional appearance and manner\\r\n",
+    "HowSchoolPlacementsWork": "You will spend the full academic year in your host school, with a six week second placement in a contrasting secondary school, usually in the second half of the Autumn term.    You will be fully integrated into your host school, so that you feel truly like a member of staff.  You will be given responsibilities for morning registration time, your own personal academic tutees to mentor, and you will be invited to join in all relevant school events and activities.  \\r\n\\r\nYour two placements will be in high-achieving departments in successful schools so that you are guaranteed to be working alongside excellent classroom teachers, curriculum and pastoral leaders and learning from the best practice.   You will have at least one placement in St Mary’s College.   Your other placement could be at The Marvell College which is a new academy and formal partner school of St Mary's College.  It offers its students an outstanding curriculum and enrichment opportunities.  Alternatively, you could be placed at one of our other partner schools, Kelvin Hall School or The Boulevard Academy, both of which are also rated as ‘outstanding’ by Ofsted.  \\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "St Mary’s College is ideally placed to deliver outstanding teacher training.  Nationally, we are a “Top 100” school for Value Added progress, a Department for Education “Teaching School” and one of only two show-case designated “World Class” schools in the UK.  Rated “outstanding” by Ofsted, the school has a long and successful record of providing excellent teacher training and support.  \\r\n\\r\nSt Mary’s College is the lead secondary school for Hull SCITT (School Centred Initial Teacher Training).   We are also part of St Cuthbert’s Catholic Academy Trust, together with seven Catholic primary schools in Hull, so we are able to offer both Early Years and general Primary teacher training opportunities, as well as a full range of Secondary subjects.   \\r\n\\r\nOur schools provide a supportive and caring environment in which to train.   St Mary's College and the other Trust schools have a Catholic ethos, and, whilst we welcome applications from people with any faith background (or none), you will notice that the atmosphere of tolerance, respect, forgiveness and reconciliation provides both staff and students with the ideal conditions for personal, academic and professional development.   \\r\n\\r\nWe also offer excellent facilities.  All four secondary schools in our partnership - St Mary's College, The Marvell College, Kelvin Hall School and The Boulevard Academy - have benefited from multi-million-pound investment and boast state-of-the-art facilities which provide students and staff with excellent learning and working environments and access to the latest technology.\\r\n\\r\nFor further information:  [St Mary’s College School Direct](www.schooldirecthull.co.uk)\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "Hull SCITT (School Centred Initial Teacher Training) is passionately committed to training the best teachers for Hull and beyond.  Working with over 30 primary and secondary schools in the city, the SCITT provides ‘School Centred’ training so that trainees are in school from day one, learning and developing alongside experienced mentors and teachers.  \\r\n\\r\nEmployment rates in recent years have been 100%:\\r\n\\r\n “Head teachers are delighted that Newly Qualified Teachers ‘hit the ground running’ and comment that graduates of the SCITT need little support in their transition to employment because of the breadth of their training” - Ofsted 2017 \\r\n",
+        "UcasInstitutionCode": "25O"
+      }
+    ]
+  },
+  "has_inst": true
+}

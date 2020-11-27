@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of Worcester",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary (5-11 Years)",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "W80/X104",
+  "providerCode": "W80",
+  "programmeCode": "X104",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Henwick Grove, Worcester, WR2 6AJ",
+      "geocode": true,
+      "formatted_address": "Worcester WR2 6AJ, UK",
+      "latitude": 52.1975549,
+      "longitude": -2.2430422,
+      "post_code": "WR2 6AJ",
+      "city": "Worcestershire",
+      "route": null,
+      "postal_town": "Worcester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "W80",
+    "addr_1": "Henwick Grove",
+    "addr_2": "Worcester",
+    "addr_3": "Worcestershire",
+    "addr_4": null,
+    "postcode": "WR2 6AJ ",
+    "url": "http://www.worcester.ac.uk",
+    "geocode": true,
+    "formatted_address": "Henwick Grove, Worcester WR1 3JE, UK",
+    "latitude": 52.201139,
+    "longitude": -2.237474,
+    "post_code": "WR1 3JE",
+    "city": "Worcestershire",
+    "route": null,
+    "postal_town": "Worcester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "The General Primary Course is designed for candidates who want to specialise in teaching children in the 5 to 11 age ranges (Key Stages 1 and 2). It is extremely similar to the Lower Primary Course in terms of general content and time spent in school, but the age ranges taught on placement are different.\\r\n\\r\nThe training comprises taught modules related to Professional Theory and Practice, The Curriculum and Personalising Learning. People who undertake this course will learn about a wide range of facets of primary practice including planning, assessment and pupil progress, behaviour management, working with other professionals and parents and how to effectively teach all primary curriculum subjects.  \\r\n\\r\nOver the course of the whole year there are four assignments to write, each designed to embed understanding of core elements and to support trainees in linking educational research to the most current practice.  Assignment submission dates are always timed during periods when trainees are not undertaking school placements so that trainees have ample time to focus on different elements of their training and tutors are on hand to provide feedback and support.\\r\n\\r\nTrainees undertake two nine week school placements in two different partnership schools, one in a key stage 1 class and one in a key stage 2 class. They will receive the daily support of their school-based mentor whilst on placement, who is the teacher of the class in which they are based. Practical assessment is ongoing with weekly lesson observations leading to an end of placement report. Trainees will also, collect a portfolio of evidence demonstrating how they meet the National 'Teachers' Standards'. \\r\n\\r\nThe majority of the central training is based at the SCITT site - a purpose built 'learning centre' based in the grounds of Bransgore Primary school, near Christchurch. Occasionally training is also based in schools or premises in the Hampshire and Dorset areas. Similarly, our placement schools are based predominantly across Dorset and Hampshire.\\r\n\\r\nThe course has an excellent reputation locally and about a third to a half of each cohort of trainees go on to gain employment in the local area, often in a school in which they were placed during training. South Coast SCITT is noted in the 2017 'Good Teacher Training Guide' as being one of just 9 Primary Providers nationally form which 100% of trainees are successfully in entering the teaching profession.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "All entrants require a grade C or above or 4 or above under the revised system in GCSE examinations in English, Mathematics, and Science.\\r\n\\r\n\\r\nAll entrant must also hold a first degree of a United Kingdom higher education institution or equivalent qualification. A first degree comprises 300 HE credit points of which 60 must be at level 6 of the QCF. Applicants with a foundation degree will need to supplement this qualification with at least 60 credits at level 6 (HE level 3) in order to attain an equivalent single qualification. ",
+    "FeeInternational": 9000.0,
+    "OtherRequirements": "All entrants must successfully pass the professional skills tests in English and Mathematics before the start of the course and will be subject to a criminal records check.",
+    "HowSchoolPlacementsWork": "South Coast SCITT works with a partnership of 30 to 35 schools based across Hampshire and Dorset. Placements are offered by schools which are then selected and matched to each trainee by the SCITT Director. A good, bespoke match is sought between school and trainee, based on proximity to the trainee's home, what kinds of support or challenge they may require from their mentor and their personal characteristics. The two placements undertaken are chosen to be as contrasting as possible and to offer a range of experiences to each trainee. \\r\n\\r\nIn addition to the seven week initial training period during which all trainees are based in Bransgore Primary School, trainees undertake two nine week placements in two different partnership schools. They may or may not be at a school where other trainees are on placement for this period. \\r\n\\r\nTrainees undertaking the General Primary Training Specialism will have one placement in a Key Stage 1 class and one placement in a key stage 2 class. Those undertaking the Lower Primary Specialism will have one placement in a Foundation Stage class and one placement in a key stage 1 class. Despite this, on completion of the course all trainees are free to apply for teaching posts in any year group. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The School of Education at the University of Worcester has a long-standing reputation for training excellent, highly employable teachers. You will be supported by a dynamic team of tutors who have been outstanding school teachers and are now regarded as education experts with national profiles in a wide range of secondary subjects. \\r\n\\r\nOur courses provide unique opportunities. Trainee teachers may if they wish add depth to their qualifications by involvement in additional enhancement programmes in key areas, such as Special Educational Needs and Disabilities; working with learners who have English as an Additional Language; developing expertise in Citizenship; developing skills in a second STEM subject; preparing to be Education Leaders, or developing skills in Technology Enhanced Learning. These popular enhancements to your training build your confidence as well as greatly enhancing your employability. \\r\n\\r\nYou will benefit from our excellent partnerships with secondary schools across the West Midlands, where our highly-trained mentors pay close attention to your individual development within a friendly and professional context. We also offer pre-training Subject Knowledge Enhancement courses in a range of subjects (Biology, Chemistry, Computer Science, Design and Technology (Food & Textiles), English, French, Geography, Mathematics, Physics) for those who need them and our PGCE offers Master's-level credits as well as Qualified Teacher Status. ",
+    "TrainWithDisability": "The University of Worcester offers a wide range of support and advice to disabled students and also to parents, staff and those external agencies supporting disabled students.\\r\n\\r\nOur Disability and Dyslexia Service offers support, advice and guidance to students who have a disability, medical condition or Specific Learning Difficulty (SpLD). This support lasts throughout a student’s studies at the University of Worcester. We also work with and offer support and advice to University staff on how to meet the needs of disabled students.\\r\n \\r\n* Supporting disabled students with general enquiries\\r\n* Implementing special arrangements for lectures, exams and field trips. This might include notes in advance or special arrangements in exams.\\r\n* Where appropriate, we can arrange note takers, academic support tutors, library assistance, interpreters and transcribers.\\r\n* Help with applying for the Disabled Students Allowance (DSA) which is there to fund these types of support in higher education.\\r\n* Limited loans of equipment\\r\n* Confidential advice and support for students and staff\\r\n* Training and awareness raising workshops\\r\n* Assistive technology ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

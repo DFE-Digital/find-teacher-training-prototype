@@ -1,0 +1,81 @@
+{
+  "locationType": "School",
+  "accrediting": "e-Qualitas",
+  "provider": "The Royal Borough Teaching School Alliance",
+  "subjects": [
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics",
+  "financial_support": "Salary",
+  "slug": "15O/36L5",
+  "providerCode": "15O",
+  "programmeCode": "36L5",
+  "schools": [
+    {
+      "name": "Chiswick High School",
+      "address": "Burlington Ln, Chiswick, W4 3UN",
+      "code": "L"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Burlington Ln, Chiswick, W4 3UN",
+      "geocode": true,
+      "formatted_address": "Burlington Ln, Chiswick, London W4 2RR, UK",
+      "latitude": 51.4821469,
+      "longitude": -0.2606683,
+      "post_code": "W4 2RR",
+      "city": "Greater London",
+      "route": "Burlington Lane",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "15O",
+    "addr_1": "Cardinal Vaughan Memorial School",
+    "addr_2": "89 Addison Road",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "W14 8BZ ",
+    "url": "http://www.cvms.co.uk",
+    "geocode": true,
+    "formatted_address": "89 Addison Rd, Kensington, London W14 8BZ, UK",
+    "latitude": 51.5039976,
+    "longitude": -0.2115053,
+    "post_code": "W14 8BZ",
+    "city": "Greater London",
+    "route": "Addison Road",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time with salary"
+  ],
+  "enrichment": {
+    "AboutCourse": "If you are looking for a teacher training course in which you spend most of your time in-school while you study, this course may be for you.\\r\nYou work with experienced teachers, first of all observing and team teaching, then teaching independently. This is complemented by a placement of about 6 weeks' teaching in another school plus various other visits. Your study is based on the distance learning resources on the eQ virtual learning environment (VLE). Training sessions are provided by experienced school staff, and you attend some training days run by eQ (up to about 10 days, mostly held in a venue in central London). You also have a subject-specialist visiting tutor from eQ.\\r\n",
+    "CourseLength": "OneYear",
+    "SalaryDetails": "School Direct (salaried) trainees will be paid in accordance with at least the minimum of the unqualified teachers’ pay range.\\r\n\\r\nThere are no fees attached to the salaried route.\\r\n",
+    "Qualifications": "We give priority to applicants who have grade B in GCSE English and GCSE maths. We do not accept adult literacy and adult numeracy as equivalent to GCSE. If you do not meet the GCSE requirement, you can do an equivalence test. \\r\nApplicants should have a good honours degree. If your degree is not in the subject you are applying to teach, you must explain how you have degree-level expertise in the subject.  If your qualifications are from overseas, they must be checked for UK equivalence by NARIC.\\r\n",
+    "InterviewProcess": "Candidates will normally be interviewed by a member of the Senior Leadership Team and the Head of Department. Interviews are structured into two parts - the first part of the interview will discuss with candidates their motivation for entry into the teaching profession. While the second half of the interview looks at the candidates understanding of the education system in England. As part of the interview candidates may be asked to teach a lesson of about 30 minutes to a class. Candidates may be asked to undertake a written task as part of the interview.",
+    "OtherRequirements": "All offers of places are subject to a Disclosure and Barring Service (DBS) enhanced disclosure with list check. If you are offered a place, you will be asked to provide a signed declaration relating to any police record. Contact The Cardinal Vaughan Memorial School or the e-Qualitas office if you need guidance on whether an offence or conviction may preclude you from teaching.\\r\nAll trainee teachers must also meet the Secretary of State's requirements for physical and mental health. In practice, few health problems preclude applicants from teaching, and so we welcome applications from people with disabilities.\\r\n",
+    "PersonalQualities": "We are looking for applicants who have the potential to become outstanding teachers, and who are able to work independently on their studies while training in a school context. These personal attributes include:\\r\n1. Subject knowledge \\r\n2. Motivation to become the best teacher possible.\\r\n3. Ability to analyse and learn from experience, and to act on feedback.\\r\n4. Creativity and imagination.\\r\n5. Capacity for hard work.\\r\n5. Perseverance.\\r\n6. Good organisational skills.\\r\n7. Empathy and a liking for young people.\\r\n8. Ambition to make a difference by becoming an inspirational teacher.\\r\n",
+    "HowSchoolPlacementsWork": "Candidates as part of the application process:\\r\n* nominate a school to train within \\r\n* the age range they wish to teach \\r\nCandidates will spend the majority of their time within their nominated school but will also undertake, at least, a six week placement in a second school. The second school must be a contrasting school to their main school. \\r\nRBTSA consists of some 30 schools which are a mixture of primary and secondary schools. This allows the Alliance to ensure that we are able to meet the needs of the candidates across a wide range of schools.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "If you are looking for a teacher training course in which you spend most of your time in-school while you study, this course may be for you.\\r\nYou work with experienced teachers, first of all observing and team teaching, then teaching independently. You are will be based in one of the schools within the RBTSA during your training, with a placement of about 6 weeks in a contrasting school.  In 2018, 100% of candidates assessed at the end of the course passed with either a good (19%) or outstanding grade (81%).\\r\n\\r\nA key feature of the programme is the individual support provided to candidates. A recent candidate  noted that \\r\n \"The support provided to the trainees within the school is excellent at every level. This includes - but is by no means limited to - a mentor from the department who meets with you on a weekly basis; my lead school trainer, who oversees the more general assessment and evaluation of progress; and the added support system of the department and HOD, all of whom are always highly approachable.  The programme provides trainees with ample in-class experience; opportunities to observe colleagues of various age groups, abilities and subjects and offers weekly INSET seminars which hone practical skills and help to clarify many aspects of training which may appear less accessible or relatable to ‘real life’ classroom teaching. Every tutor is vastly experienced, supportive, welcoming, and most of all, an outstanding teacher in their own right.\"\\r\n ",
+    "TrainWithDisability": "Schools generally have good disability access to their site. However, candidates should check this with the school prior to your visit and interview, if you are shortlisted.\\r\n\\r\nPlease contact the school, eQ office or St Mary's University for a discussion of your needs if they are not related to mobility, so that we can identify what additional support might be appropriate for you.\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "E69"
+      },
+      {
+        "Description": "",
+        "UcasInstitutionCode": "S64"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Titan Partnership Ltd",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "T30/X100",
+  "providerCode": "T30",
+  "programmeCode": "X100",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "St George's Community Hub, Great Hampton Row, Birmingham, B19 3JG",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "St George's Community Hub, Great Hampton Row, Birmingham, B19 3JG",
+      "geocode": true,
+      "formatted_address": "Great Hampton Row, Birmingham B19 3JG, UK",
+      "latitude": 52.4904307,
+      "longitude": -1.9053447,
+      "post_code": "B19 3JG",
+      "city": "West Midlands",
+      "route": "Great Hampton Row",
+      "postal_town": "Birmingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "T30",
+    "addr_1": "Titan Teacher Training",
+    "addr_2": "75 Harborne Road",
+    "addr_3": "Birmingham",
+    "addr_4": "West Midlands",
+    "postcode": "B19 3JG ",
+    "url": "http://www.titanteachertraining.co.uk",
+    "geocode": true,
+    "formatted_address": "75 Harborne Rd, Birmingham B15 3DH, UK",
+    "latitude": 52.4708263,
+    "longitude": -1.9245948,
+    "post_code": "B15 3DH",
+    "city": "West Midlands",
+    "route": "Harborne Road",
+    "postal_town": "Birmingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Tuition Fees are £9,000 for the year.",
+    "AboutCourse": "“Outstanding training contributes to outstanding outcomes for all trainees” (Ofsted 2016)\\r\n\\r\nDPSCITT offers a one year PGCE Programme with Qualified Teacher Status, preparing you to teach in the 5-11 age range.  Tuition Fees are £9,000.\\r\n\\r\nThis is a highly interactive, relationship based course where learning is through dialogue and reflection on experience linked to educational theory \\r\n\\r\nA Cohort of 40 Trainees forms an enthusiastic, positive learning environment - large enough to bring a broad range of experiences and small enough for everyone to feel known and valued.  You first meet on Induction day and then our 3 day Residential.\\r\n\\r\nOne of our experienced core team will be your Personal Tutor. They are available at central training days for 1:1 discussions, visit you in your school and provide 24/7 support through e-mail and phone.\\r\n\\r\nCentre-Based Training forms 25% of our programme.  This is a cohesive, holistically structured taught course, delivered centrally by outstanding consultants and serving practitioners who are passionate about their subject.  \\r\nWe provide outstanding training in the core subjects of English, Mathematics and Science, the National Curriculum Foundation subjects, Child Development, Behaviour Management, Diversity and Inclusion.  Tutors encourage creative and dynamic approaches to curriculum design.\\r\n\\r\nYou complete 4 Assignments during the year to further develop your subject knowledge for teaching by interaction with children, enabling you to relate theory and practice in Calculation, SEND, Phonics and Creative Curriculum Design.\\r\n\\r\nSchool-based training forms 75% of our programme.  You are welcomed on the first day of term into our Partnership Schools, where you train in both Key Stage 1 and Key Stage 2, working alongside successful practitioners who model excellent practice and support planning.\\r\nA dedicated School-Based tutor and experienced learning coach meets with you every week to guide your training.\\r\nGap tasks link your centre based training to working with children in school, enabling theory and research to be observed in practice across different classrooms.\\r\n\\r\nYou complete Assessed Teaching Practices each term (4 weeks in Autumn, 4 weeks in Spring and 8 weeks in the Summer term) together with an additional 2 week Integrated Project (a creative, cross-curricular sequence that you design yourself and bring all of your passions and interests into).\\r\n\\r\nThere is an opportunity to complete a 12 week placement in a Special School setting in the Spring Term, for those who may wish to teach within a Special School or become a SENCO. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Degree \\r\nCandidates will need to hold a degree of a United Kingdom Higher Education Institution or equivalent qualification. \\r\n\\r\nGCSE \\r\nAt the time of application, candidates must have GCSE Grade C or above (or equivalent) in English, Mathematics and Science. \\r\n",
+    "FinancialSupport": "\\r\nDPSCITT has a small means tested bursary for Trainees on the programme that may experience financial difficulties during the year.  Contact us if you wish to know more.\\r\n",
+    "InterviewProcess": "Applications are accepted through the UCAS system and we encourage applicants to apply as early as possible. \\r\nYou will be asked to supply 2 references. These should be from professional referees which includes your current employer if working, Academic referees if you graduated within the last 3 years, and a school experience reference if applicable.  Please ask your referees to include the following statement in their reference if applicable “I know of no reason why the applicant should not work with children”.\\r\n\\r\nUp to six candidates are invited to an interview day which takes place at one of our Partnership Schools. The selection panel comprises of the Programme Manager, Senior Tutor and Headteachers. \\r\n\\r\nDuring the day, candidates will: \\r\n\\r\n* Share a prepared story to a group of six children followed by an activity, linked to the story, to extend the children's learning \\r\n* Complete a written evaluation of the story session. The written evaluation should identify what went well and how the teaching session could be improved in preparation for the individual interview in the afternoon.\\r\n* Complete a Literacy and Maths paper\\r\n* Take part in a group exercise to show their ability to collaborate and give a one minute presentation based on the outcome of this exercise \\r\n* Candidates are also interviewed individually by the selection panel. \\r\n\\r\nThere are plenty of opportunities to ask questions and understand the nature of the course you are committing to, and to meet current and past Trainees.\\r\n",
+    "OtherRequirements": "Candidates are required to successfully complete the following before starting the programme:\\r\n\\r\n* The Professional Skills Tests in Literacy and Numeracy.\\r\n* A range of Safeguarding Checks regarding your suitability to work with young people, including an Enhanced DBS check \\r\n* A fitness to teach medical declaration.\\r\n",
+    "PersonalQualities": "Can you inspire learning in children? \\r\nDo you have a passion for learning yourself? \\r\nDo you have strong interpersonal skills and a desire to develop your personal and professional attributes in a career that makes a difference? \\r\n\\r\nYou will need to: \\r\n\\r\n* love being in the company of children and enjoy their perspectives \\r\n* have excellent interpersonal skills \\r\n* be positive, creative and professional \\r\n* articulate clear and appropriate reasons for wanting to teach primary aged pupils\\r\n* convey enthusiasm and commitment to learning and teaching \\r\n* demonstrate the skills of reflection and analysis \\r\n",
+    "HowSchoolPlacementsWork": "School Placements form 75% of the programme.   We organise your placements in schools close to your home base, so you do not need to move during the training year.  You gain experience of teaching in both Key Stage 1 and Key Stage 2 and you decide which Key Stage you would like to focus on.  \\r\n\\r\nYou are welcomed from the first day of term into your main placement school and preferred Key Stage, where you spend the Autumn and Summer Terms.  Then in the Spring term you transfer to your second placement school.  \\r\n\\r\nOur structured school-based programme maximises the power of learning through working alongside successful practitioners who model excellent practice and support your personal development.  A dedicated School-Based tutor, who is an experienced learning coach, meets with you every week to guide your training.\\r\n\\r\nYou will receive: \\r\n\\r\n* The regular support of your School-based Tutor and Class Teacher\\r\n* Weekly seminar meetings to review and develop practice and planning\\r\n* Opportunities to observe and work alongside excellent practitioners\\r\n* Professional guidance from the staff in the school\\r\n* Access to the appropriate school's documentation, resources and ICT facilities \\r\n\\r\n\\r\n“Strong professional relationships lie at the heart of the high-quality training offered by the SCITT. Leaders possess a deep understanding of how teachers learn their craft. Their expert skills in training teachers have been honed through years of collaborative practice and rigorous self-evaluation.” (Ofsted 2016)\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Titan Teacher Training has successfully trained teachers for over 20 years. We work in partnership with Primary and Secondary schools across Birmingham's inner city to deliver outstanding and supportive school based Teacher Training.\\r\n\\r\nOur course offers Qualified Teacher Status (QTS) and a Post Graduate Certificate in Education (PGCE) with Master's credits.  The PGCE qualification is validated by Birmingham City University. To support your academic work you have access to the university's facilities and services.\\r\n\\r\nYou will have the chance to train in a variety of settings: comprehensive, selective and single sex. You will also be able to follow specialist training pathways in SEND, STEM and alternative provision.  \\r\n\\r\nTitan is a small but highly successful provider. Our size enables us to deliver personalised training in a very supportive environment.\\r\n\\r\nAs a trainee you will attend cross-phased taught sessions designed to complement your school placements as well as bespoke subject specific sessions.\\r\n\\r\n100% of our 2017/18 cohort secured employment. Many of our trainees choose to remain within our partnership schools and we offer a comprehensive programme to support you through your NQT year.\\r\n\\r\nAs a trainee you will also have access to events & activities from our wider partnership network of over 50 educational institutions across Birmingham\\r\n\\r\nWe look forward to supporting you into teaching! \\r\n\\r\nMore information can be found on our [website](https://www.titanteachertraining.co.uk/)",
+    "TrainWithDisability": "Titan is an inclusive provider. We will support you during your training year and make any reasonable adjustments to ensure we meet your specific needs.\\r\n ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

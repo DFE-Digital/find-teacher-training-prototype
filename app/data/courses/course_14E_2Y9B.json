@@ -1,0 +1,123 @@
+{
+  "locationType": "School",
+  "accrediting": "Newman University",
+  "provider": "St Francis Xavier Teaching School (Primary and Secondary School Direct)",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "14E/2Y9B",
+  "providerCode": "14E",
+  "programmeCode": "2Y9B",
+  "schools": [
+    {
+      "name": "Hagley Catholic High School",
+      "address": "Brake Lane, Hagley, Stourbridge, DY8 2XL",
+      "code": "1"
+    },
+    {
+      "name": "Bishop Milner Catholic College, Dudley",
+      "address": "Burton Road, Dudley, DY1 3BY",
+      "code": "2"
+    },
+    {
+      "name": "Q3 Academy, Great Barr",
+      "address": "Wilderness Lane, Great Barr, Birmingham, B43 7SD",
+      "code": "3"
+    },
+    {
+      "name": "Q3 Academy, Langley",
+      "address": "Moat Road, Oldbury, B68 8ED",
+      "code": "Q"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Brake Lane, Hagley, Stourbridge, DY8 2XL",
+      "geocode": true,
+      "formatted_address": "Brake Ln, Hagley, Stourbridge DY8 2XL, UK",
+      "latitude": 52.4230578,
+      "longitude": -2.1483808,
+      "post_code": "DY8 2XL",
+      "city": "Hagley",
+      "route": "Brake Lane",
+      "postal_town": "Stourbridge"
+    },
+    {
+      "address": "Burton Road, Dudley, DY1 3BY",
+      "geocode": true,
+      "formatted_address": "Dudley DY1 3BY, UK",
+      "latitude": 52.5195277,
+      "longitude": -2.1020269,
+      "post_code": "DY1 3BY",
+      "city": "West Midlands",
+      "route": null,
+      "postal_town": "Dudley"
+    },
+    {
+      "address": "Wilderness Lane, Great Barr, Birmingham, B43 7SD",
+      "geocode": true,
+      "formatted_address": "Wilderness Ln, Birmingham B43 7RT, UK",
+      "latitude": 52.5553543,
+      "longitude": -1.9410376,
+      "post_code": "B43 7RT",
+      "city": "West Midlands",
+      "route": "Wilderness Lane",
+      "postal_town": "Birmingham"
+    },
+    {
+      "address": "Moat Road, Oldbury, B68 8ED",
+      "geocode": true,
+      "formatted_address": "Moat Rd, Oldbury B68 8EB, UK",
+      "latitude": 52.4857984,
+      "longitude": -2.0023411,
+      "post_code": "B68 8EB",
+      "city": "West Midlands",
+      "route": "Moat Road",
+      "postal_town": "Oldbury"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "14E",
+    "addr_1": "St Francis Xavier Catholic Primary",
+    "addr_2": "McKean Road",
+    "addr_3": null,
+    "addr_4": "Oldbury",
+    "postcode": "B69 4BA ",
+    "url": "http://st-francisxavier.sandwell.sch.uk",
+    "geocode": true,
+    "formatted_address": "Mc Kean Rd, Oldbury B69 4BA, UK",
+    "latitude": 52.503842,
+    "longitude": -2.011998,
+    "post_code": "B69 4BA",
+    "city": "West Midlands",
+    "route": "Mc Kean Road",
+    "postal_town": "Oldbury"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "You will join your host school at the start of September and this will be your base for the coming year. As this is a School Direct course the majority of the time is spent in school, with the rest of the time on campus at our Accredited Provider, Newman University. There are two university-based days per week  in 4-week blocks at the beginning of the Autumn and Spring terms. In addition, fortnightly Friday refection and study days in the first term support you with time to consider practice and academic writing. There are occasional days back in University during the year.\\r\n\\r\nYou will receive training in how best to deliver the curriculum for History, which will include subject knowledge, how to build pupils' \\r\nanalytical skills, how to enable students to engage with source material, how to promote learning in the classroom and manage behaviour. Lesson planning is a key element of what you do and you will also learn how to plan and implement student assessments. You will link your theoretical knowledge to what you see happening in school and you will reflect on how this supports your own learning. \\r\n\\r\nCourse Assessment includes practical elements, so you will get regular feedback on your teaching, as well as some formal observations. You will monitor your own progress through an online reflective journal and evidence files. Academic progress is assessed through two Masters level essays. \\r\n\\r\nOur accredited provider has a strong reputation for teacher training: \\r\n'Trainees’ attainment is high, especially through the School Direct route, where around three quarters of trainees were judged outstanding’ \\r\n (Ofsted Report, December 2015). \\r\n\\r\nWe welcome applications from candidates from abroad, although you must demonstrate sufficient spoken and written English proficiency to meet the demands of the course and to communicate with children in class and colleagues in school.\\r\n\\r\nIf you do not have a pure History degree, or simply wish to supplement or update your Subject Knowledge, subject association membership is often useful. Find out more here:\\r\n[Historical Association](https://www.history.org.uk/membership)\\r\n\\r\nCourses are designed to give you opportunity, where possible,to cover a range of historical periods and World and European, as well as British History. We aim to provide you with a range of experiences to support your future employment. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "You will require a good degree in History or applied degrees such as Archaeology, Anthropology, or combined with subjects such as Economics. You should normally have a second class honours degree or above and your chosen subject should normally represent 50% of your degree. \\r\n\\r\nIf you have overseas qualifications, check your qualifications with NARIC first, then contact the Teaching School to discuss equivalencies. \\r\n\\r\nIn addition, you should normally have a good A level in History or the overseas equivalent. \\r\n\\r\n",
+    "OtherRequirements": "You will need to undertake criminal record checks: an Enhanced Disclosure Check is required for entry to Initial Teacher Training. You must be able to provide a current DBS certificate before you start a School Direct course with the St Francis Xavier Teaching School.",
+    "PersonalQualities": "We’re looking for applicants who are willing to learn about History teaching in the secondary curriculum and like sharing their knowledge and experience with others. You will have a flair for engaging and clear explanations and an ability to contextualise History subject knowledge in a manner accessible to students. \\r\n\\r\nYou will also have boundless patience, strong organisational skills and a sense of humour. \\r\n\\r\nIf you have had experience teaching children, or adults, about historical subjects in different environments or in different countries, this School Direct course will help you put your skills into practice in secondary classrooms.",
+    "HowSchoolPlacementsWork": "Our three partner secondary schools are in a range of locations across Sandwell and Worcestershire. You can find out more about the schools here: [School Partners]( http://www.sfx-ts.co.uk/Page/Category/our-school-direct-partners)\\r\n\\r\nAll of our schools are accessible by public transport and we will work with you to select a suitable training setting, based on your circumstances, skills, experience and the school's training capacity. Our trainees have an average commute of 40 minutes. \\r\n\\r\nOn our secondary programmes you will be teaching children from ages 11-16, although we encourage you to gain an understanding of the phase before and after the one you teach. \\r\n\\r\nThe  secondary School Direct training year at a glance:\\r\n\\r\n* Base school for 2 and a half terms\\r\n* Alternative school for 6 weeks\\r\n* A site-specific professional experience programme in school\\r\n* Front-loaded Newman University sessions at the start of the Autumn and Spring terms to develop your subject and professional knowledge \\r\n* Additional University days throughout the year so you can continue to link theory to practice \\r\n* Teaching practice in key stage three and key stage four\\t\\r\n* 5-day placement in Primary and engagement with 6th Form teaching \\r\n* Dedicated  and experienced tutors from University and school who support your training\\r\n* Feedback on your practice from tutors and St Francis Xavier Teaching School teacher training\\r\n\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "St Francis Xavier Teaching School has been delivering training to teachers of all faiths in Sandwell, north of Birmingham, since 2013. We support teachers who want to work in local schools to train in the primary phase, or in a range of secondary subjects. Currently we have 10 primary partners and 4 secondary partners in Sandwell, Birmingham and Worcestershire. Our School Direct programme is supported by our accredited provider, Newman University. Find out more about us here: [SFX](http://www.sfx-ts.co.uk/)\\r\n\\r\nPrimary School Direct training: St Francis Xavier has a strong track record. 19 teachers trained by us are now employed in local schools where they are already making a difference to children’s learning. \\r\n\\r\nSecondary School Direct training: a recent and growing programme for St Francis Xavier. We work closely with our secondary partners to provide tailored training programmes that suit our trainees' needs. \\r\n\\r\nAdvantages of training with St Francis Xavier: \\r\n\\r\n* We are small enough to care for you as an individual; your training is matched to your needs. \\r\n* We are experienced trainers; you train in different schools and you meet regularly with other local School Direct teachers so you can learn from one another.\\r\n* You will be part of a family of schools who welcome enthusiastic, committed and thoughtful teachers. \\r\n* ‘It means the best of both worlds: I still have lectures while obtaining lots of teaching experience’ (English trainee 2017-18, employed by her school).\\r\n\\r\nSpecial features:\\r\n\\r\n* Catholic Certificate in Religious Studies, first year's tuition fees paid  \\r\n",
+    "TrainWithDisability": "Accessibility varies between our school sites. Please contact us if you have any disabilities and we will arrange for you to visit a school before making a decision.The St Francis Xavier Teaching School will make necessary adjustments, however we also believe it's important that you are able to check that a school is suited to your own particular needs. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "N36"
+      }
+    ]
+  },
+  "has_inst": true
+}

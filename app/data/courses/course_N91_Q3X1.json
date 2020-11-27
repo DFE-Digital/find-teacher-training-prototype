@@ -1,0 +1,70 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Nottingham Trent University",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "N91/Q3X1",
+  "providerCode": "N91",
+  "programmeCode": "Q3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Ada Byron King Building, Clifton Campus, Clifton Lane, Nottingham, NG11 8NS",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Ada Byron King Building, Clifton Campus, Clifton Lane, Nottingham, NG11 8NS",
+      "geocode": true,
+      "formatted_address": "Ada Byron King, Clifton, Nottingham NG11 8NS, UK",
+      "latitude": 52.9111874,
+      "longitude": -1.1850051,
+      "post_code": "NG11 8NS",
+      "city": "Clifton",
+      "route": null,
+      "postal_town": "Nottingham"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "N91",
+    "addr_1": "50 Shakespeare Street",
+    "addr_2": null,
+    "addr_3": null,
+    "addr_4": "Nottingham",
+    "postcode": "NG1 4FQ ",
+    "url": "http://www.ntu.ac.uk/education",
+    "geocode": true,
+    "formatted_address": "50 Shakespeare St, Nottingham NG1 4FP, UK",
+    "latitude": 52.9581393,
+    "longitude": -1.1542363,
+    "post_code": "NG1 4FP",
+    "city": "Nottinghamshire",
+    "route": "Shakespeare Street",
+    "postal_town": "Nottingham"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in English is a one-year, full-time course for graduates who wish to train as secondary school English teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). \\r\n\\r\nEnglish is a core subject of the secondary curriculum at Key Stage 3 and 4. English is an engaging and constantly evolving subject in the school curriculum. On the PGCE course you will learn not only about issues related to English teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe English course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*lesson planning\\r\n*classroom management\\r\n*special needs and inclusion\\r\n*assessment\\r\n*creative learning\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "An honours degree in a relevant subject, with approximately 50% English content and a classification of at least 2:1.  GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Nottingham Trent University's (NTU) reputation is long established. We've been training teachers and educational professionals for well over 50 years. Our greatest strength is our extensive links with schools and educational settings. These relationships enable every student to gain experience through placement in a wide variety of educational environments.\\r\n\\r\nWhy choose NTU?\\r\nWorking with schools\\r\nA great strength of our courses is the extensive partnership links that we have with over 600 primary, secondary and post-16 settings across the East Midlands. These relationships enable you to gain a wide experience of teaching in many different educational environments. Experiences vary from city centre to suburban and semi-rural settings, laying a sound foundation for future professional development.\\r\n\\r\nStudent diversity\\r\nWe are committed to promoting a diverse body of teacher trainees. Our students are made up of different backgrounds, nationalities and faiths.\\r\n\\r\nExperienced lecturers and informed courses\\r\nNTU is home to an enthusiastic, expert group of academic staff who are leading researchers and practitioners in the education field. This means that, not only is your course informed by the latest thinking, but also that you will learn from people with a real passion for their subject.",
+    "TrainWithDisability": "You will receive lots of support based around your school placements, with planning sessions, mentors and pastoral support from your tutors and colleagues. You can also tap into a range of services at any time, including: \\r\nFinancial Support Services, Counselling, Disability Support, Support, Mature Student Support and Mental Health Support. ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

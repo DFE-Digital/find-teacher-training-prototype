@@ -1,0 +1,74 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Stockton-on-Tees Teacher Training Partnership",
+  "subjects": [
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Foreign Languages",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "S60/33Y7",
+  "providerCode": "S60",
+  "programmeCode": "33Y7",
+  "schools": [
+    {
+      "name": "The Education Centre at Stockton Sixth Form College",
+      "address": "Stockton Sixth Form College, Block B - SCITT, Bishopton Road West, Stockton-on-Tees, TS19 0QD",
+      "code": "B"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Stockton Sixth Form College, Block B - SCITT, Bishopton Road West, Stockton-on-Tees, TS19 0QD",
+      "geocode": true,
+      "formatted_address": "Bishopton Rd W, Stockton-on-Tees TS19 0QD, UK",
+      "latitude": 54.5705265,
+      "longitude": -1.3421896,
+      "post_code": "TS19 0QD",
+      "city": "Stockton-on-Tees",
+      "route": "Bishopton Road West",
+      "postal_town": "Stockton-on-Tees"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "S60",
+    "addr_1": "Block B - EDC at SSFC",
+    "addr_2": "Bishopton Road West",
+    "addr_3": "Stockton-on-Tees",
+    "addr_4": null,
+    "postcode": "TS19 0QD",
+    "url": "http://www.stocktonscitt.uk/",
+    "geocode": true,
+    "formatted_address": "Bishopton Rd W, Stockton-on-Tees TS19 0QD, UK",
+    "latitude": 54.5705265,
+    "longitude": -1.3421896,
+    "post_code": "TS19 0QD",
+    "city": "Stockton-on-Tees",
+    "route": "Bishopton Road West",
+    "postal_town": "Stockton-on-Tees"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "As the only Ofsted rated ‘Outstanding’ provider in Stockton-on-Tees, we are a SCITT that prides itself on our bespoke programme personalised to meet your individual needs.  We prioritise your subject knowledge development, both in terms of content and pedagogy (how to teach French).  Your MFL training in school is personalised to meet your unique needs and will include a variety of activities. You will be assigned an MFL specialist as your mentor.  You will work closely with your mentor and other MFL colleagues within the school every day.  Time will be spent observing experienced colleagues and learning about the craft of the classroom as well as weekly one to one sessions with mentors, participation in your placement school’s staff training, subject specific advice to support your planning and teaching, colleague and pupil shadowing and much more.\\r\nThe ethos of the programme is experiential learning and as such, over 70% of your time will be spent in school learning from experienced, excellent teachers.   You are assessed on an ongoing basis, through observation of your practice and reflective conversations with your mentor and professional tutor.  We also offer the academic, Masters Level PGCE, accredited through Leeds Beckett University.  The PGCE is fully integrated into our programme, with direct links to MFL educational theory.  You gain access to a vast online library as well as local university libraries.  All PGCE work is undertaken in Stockton.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "Applicants must already hold the following: \\r\n•GCSE English and Maths Grade C, Level 4 minimum (or equivalent)\\r\n•GCSE Science Grade C, Level 4 minimum (or equivalent) for primary applicants\\r\n\\r\nApplicants must have achieved the following by the time the course starts:\\r\n•Honours degree at 2:2 or above.  For secondary, we prefer your degree to have some connection to the subject you want to teach. Where this is not the case, relevant A Level qualifications and experience will be taken into account.\\r\n•Professional Skills Tests in literacy and numeracy \\r\n\\r\nFor non UK qualifications you will need a NARIC statement of comparability. \\r\n",
+    "FeeInternational": 9000.0,
+    "FinancialSupport": "We offer a laptop loan service for use throughout the course.\\r\n\\r\nIf you are responsible for Council Tax we are able to provide you with a letter to confirm your eligibility of discount as a full time student.",
+    "InterviewProcess": "We have robust safeguarding procedures in place, therefore enhanced Disclosure and Barring Checks (DBS) and barred list checks are undertaken to ensure trainees are suitable to train to teach.\\r\nOur recruitment process follows a number of steps:\\r\nStage One: Screening\\r\nApplications are checked to ensure that applicants' qualifications meet the entry requirements.\\r\nStage Two: Scrutiny\\r\nApplications meeting the entry requirements are scrutinised by the Partnership against set criteria.\\r\nStage Three: School Based Interview Process\\r\nCandidates who are invited to participate in stage 3 of the selection process will attend a Partnership school where they will be required to undertake a teaching activity. This will be followed by a formal interview with head teachers or other school leaders and representatives from the Partnership and a written reflection task. The process is designed to assess written English, subject knowledge, ability to engage with young people and assess a trainee’s overall suitability to train to teach.\\r\n\\r\nConditional offers are usually be made within 24 hours from the date of interview and often sooner than this. Offers will be confirmed via UCAS.\\r\n",
+    "OtherRequirements": "Applications are enhanced by evidence of some experience in a school but it is not a condition for application.\\r\n\\r\nSuccessful applicants will be required to undertake an enhanced Disclosure and Barring check, sign a declaration that they have not previously been excluded from teaching or working with children and complete a medical health questionnaire which may be subject to an occupational health referral. This will be arranged by the Partnership.",
+    "HowSchoolPlacementsWork": "We work with 31 schools across the Borough of Stockton, encompassing Billingham, Stockton, Thornaby, Eaglescliffe and Yarm.  Stockton’s educational outcomes are strong.  Training with Stockton SCITT means working in successful schools, with excellent teachers who ensure pupils in Stockton get the best educational deal possible.  Where primary schools have Ofsted judgements, 93.7% of Stockton primary school pupils attend a Good or Outstanding school.  95% of our partner primary schools in Stockton are Ofsted graded Good or Outstanding.  For secondary, for those schools with Ofsted judgements, 92.5% of Stockton secondary school pupils attend a Good or Outstanding school.  92.3% of our partner secondary schools are Ofsted graded Good or Outstanding.\\r\nTrainees are assigned two placement schools across the year.  You have a host (main placement) school that you will work with the majority of the year (autumn and summer terms) and a shorter second school placement in the spring term.  In each school, you have a mentor dedicated to supporting your development.  \\r\nIn school, trainees follow one of three programmes:\\r\n•\\tAge 3-7 primary programme, covering Key Stage One and the Early Years\\r\n•\\tAge 5-11 primary programme, covering Key Stages One and Two\\r\n•\\tAge 11-16 secondary programme, covering Key Stages Three and Four\\r\nIn addition, all trainees will have the opportunity to engage with our ‘Wider Education Week’ visiting special schools and pupil referral units.\\r\nPlacements take the individual circumstances of trainees into account, e.g. geographical location of the school in relation to your home.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "We are the only OFSTED rated ‘Outstanding’ provider in Stockton-on-Tees.  Our unique approach combines focused specialist in-house training in how to teach alongside immersion in the school environment to develop your skills as a teacher. We are one of a very few providers who provide substantial in-house training alongside your placement in school.  We believe that this better equips you to hit the ground running when you begin to teach.    The training takes the form of taught sessions delivered by experienced, expert, outstanding qualified teachers and specialists.   The sessions provide practical strategies and techniques that will support you when you are teaching in school.  There are also many opportunities for you to learn from and teach your fellow trainees through sessions that allow you to share your successes, ideas and challenges with each other and reflect on your school experiences.  You will benefit from a mentor dedicated to supporting your development as well as a professional tutor who will oversee your development throughout the year.\\r\nWe have a reputation for excellence, which is why more trainees than ever are choosing Stockton SCITT.  100% of our trainees who completed the programme in 2018 were graded at least Good with 65% graded as Outstanding.   We have expanded by 35% in the last year alone.  Our employment rate is very strong with over 90% of trainees securing NQT positions every year; over 50% of our trainees go onto secure NQT positions in Stockton, many in the schools where they trained.  \\r\n",
+    "TrainWithDisability": "Our training space is housed in a building that is wheelchair accessible and has disabled parking and toilet facilities.  All of our training takes place on the ground floor.  For trainees with specific needs such as dyslexia or autism, we work with Occupational Health and the trainee to identify their precise needs and ensure that the appropriate support is put in place.   For example, a recent trainee with dyslexia was provided with appropriate software on a loaned laptop, a smartpen, overlays and materials provided on yellow paper.\\r\nMany of our trainees are parents or become parents during the programme.  We work with you to support you to manage the needs of your family alongside your training needs.  For example, in the last year we have offered paternity leave, compassionate leave and temporary flexible training hours to manage a specific issue.\\r\nThe well-being of all our trainees is very important to us.  We continually monitor well-being through a number of mechanisms and individual support is put in place as required.  All individual needs are taken into account when determining the location and nature of your placement schools.  \\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

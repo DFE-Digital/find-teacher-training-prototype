@@ -1,0 +1,322 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Worcester",
+  "provider": "Marlbrook Teaching School Alliance",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1Y2/2TKK",
+  "providerCode": "1Y2",
+  "programmeCode": "2TKK",
+  "schools": [
+    {
+      "name": "Hampton Dene Primary School",
+      "address": "Hampton Dene Primary School, Tupsley, Hereford",
+      "code": "3"
+    },
+    {
+      "name": "Riverside Primary School",
+      "address": "Hereford",
+      "code": "8"
+    },
+    {
+      "name": "Ashfield Park",
+      "address": "",
+      "code": "A"
+    },
+    {
+      "name": "Blackmarston Special School",
+      "address": "Honddu Close, Hereford, HR2 7NX",
+      "code": "B"
+    },
+    {
+      "name": "Bridstow C of E Primary",
+      "address": "Ross on Wye, HR9 6PZ",
+      "code": "C"
+    },
+    {
+      "name": "Eastnor Parochial Primary",
+      "address": "Eastnor, Ledbury, HR8 1RA",
+      "code": "D"
+    },
+    {
+      "name": "Ewyas Harold Primary School",
+      "address": "",
+      "code": "E"
+    },
+    {
+      "name": "Kingsland C of E Primary",
+      "address": "Kingsland, Leominster, HR6 9QN",
+      "code": "F"
+    },
+    {
+      "name": "Ledbury Primary",
+      "address": "Longacres, Ledbury, HR8 2BE",
+      "code": "G"
+    },
+    {
+      "name": "Our Lady's RC Primary",
+      "address": "Boycott Road, Hereford, HR2 7RN",
+      "code": "H"
+    },
+    {
+      "name": "St Francis Xavier's RC Primary",
+      "address": "Venns Lane, Hereford, HR1 1DT",
+      "code": "J"
+    },
+    {
+      "name": "St James' CE Primary",
+      "address": "Vicarage Road, Hereford, HR1 2QN",
+      "code": "K"
+    },
+    {
+      "name": "Little Dewchurch CE Primary School",
+      "address": "",
+      "code": "L"
+    },
+    {
+      "name": "Marlbrook Primary School",
+      "address": "Green Croft, Redhill, Hereford, HR2 7NT",
+      "code": "M"
+    },
+    {
+      "name": "Trinity Primary",
+      "address": "Barricombe Drive, Hereford, HR4 0NU",
+      "code": "N"
+    },
+    {
+      "name": "Weston-under-Penyard CE Primary",
+      "address": "Weston-under-Penyard, Nr Ross on Wye, HR9 6DA",
+      "code": "P"
+    },
+    {
+      "name": "Whitchurch CE Primary",
+      "address": "Whitchurch, Nr Ross on wye, HR9 6DA",
+      "code": "R"
+    },
+    {
+      "name": "Wigmore Primary School",
+      "address": "Ford Street, Wigmore, Nr Leominster, HR6 9UW",
+      "code": "S"
+    },
+    {
+      "name": "Goodrich CE Primary School",
+      "address": "Goodrich, Ross-On -Wye, Herefordshire, HR9 6HY",
+      "code": "X"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hampton Dene Primary School, Tupsley, Hereford",
+      "geocode": true,
+      "formatted_address": "101 Church Rd, Hereford HR1 1RT, UK",
+      "latitude": 52.0547463,
+      "longitude": -2.6865488,
+      "post_code": "HR1 1RT",
+      "city": "Herefordshire",
+      "route": "Church Road",
+      "postal_town": "Hereford"
+    },
+    {
+      "address": "Hereford",
+      "geocode": false
+    },
+    null,
+    {
+      "address": "Honddu Close, Hereford, HR2 7NX",
+      "geocode": true,
+      "formatted_address": "Honddu Cl, Hereford HR2 7NX, UK",
+      "latitude": 52.0414655,
+      "longitude": -2.725652,
+      "post_code": "HR2 7NX",
+      "city": "Herefordshire",
+      "route": "Honddu Close",
+      "postal_town": "Hereford"
+    },
+    {
+      "address": "Ross on Wye, HR9 6PZ",
+      "geocode": true,
+      "formatted_address": "Ross-on-Wye HR9, UK",
+      "latitude": 51.91445,
+      "longitude": -2.582446,
+      "post_code": "HR9",
+      "city": "Ross-on-Wye",
+      "route": null,
+      "postal_town": "Ross-on-Wye"
+    },
+    {
+      "address": "Eastnor, Ledbury, HR8 1RA",
+      "geocode": true,
+      "formatted_address": "School Cottages, Eastnor, Ledbury HR8 1RA, UK",
+      "latitude": 52.0324926,
+      "longitude": -2.3916585,
+      "post_code": "HR8 1RA",
+      "city": "Eastnor",
+      "route": "School Cottages",
+      "postal_town": "Ledbury"
+    },
+    null,
+    {
+      "address": "Kingsland, Leominster, HR6 9QN",
+      "geocode": true,
+      "formatted_address": "Kingsland, Leominster HR6 9QN, UK",
+      "latitude": 52.2484015,
+      "longitude": -2.8125212,
+      "post_code": "HR6 9QN",
+      "city": "Kingsland",
+      "route": null,
+      "postal_town": "Leominster"
+    },
+    {
+      "address": "Longacres, Ledbury, HR8 2BE",
+      "geocode": true,
+      "formatted_address": "Long Acres, Ledbury HR8 2AU, UK",
+      "latitude": 52.0378516,
+      "longitude": -2.4281978,
+      "post_code": "HR8 2AU",
+      "city": "Herefordshire",
+      "route": "Long Acres",
+      "postal_town": "Ledbury"
+    },
+    {
+      "address": "Boycott Road, Hereford, HR2 7RN",
+      "geocode": true,
+      "formatted_address": "Boycott Rd, Hereford HR2 7RN, UK",
+      "latitude": 52.0454606,
+      "longitude": -2.7214059,
+      "post_code": "HR2 7RN",
+      "city": "Herefordshire",
+      "route": "Boycott Road",
+      "postal_town": "Hereford"
+    },
+    {
+      "address": "Venns Lane, Hereford, HR1 1DT",
+      "geocode": true,
+      "formatted_address": "Venns Ln, Hereford HR1 1DT, UK",
+      "latitude": 52.0666507,
+      "longitude": -2.7040219,
+      "post_code": "HR1 1DT",
+      "city": "Herefordshire",
+      "route": "Venns Lane",
+      "postal_town": "Hereford"
+    },
+    {
+      "address": "Vicarage Road, Hereford, HR1 2QN",
+      "geocode": true,
+      "formatted_address": "Vicarage Rd, Hereford HR1 2QN, UK",
+      "latitude": 52.04988119999999,
+      "longitude": -2.7090233,
+      "post_code": "HR1 2QN",
+      "city": "Herefordshire",
+      "route": "Vicarage Road",
+      "postal_town": "Hereford"
+    },
+    null,
+    {
+      "address": "Green Croft, Redhill, Hereford, HR2 7NT",
+      "geocode": true,
+      "formatted_address": "Green Croft, Hereford HR2 7NT, UK",
+      "latitude": 52.03900669999999,
+      "longitude": -2.7245329,
+      "post_code": "HR2 7NT",
+      "city": "Herefordshire",
+      "route": "Green Croft",
+      "postal_town": "Hereford"
+    },
+    {
+      "address": "Barricombe Drive, Hereford, HR4 0NU",
+      "geocode": true,
+      "formatted_address": "Barricombe Dr, Hereford HR4 0NU, UK",
+      "latitude": 52.0672058,
+      "longitude": -2.7416232,
+      "post_code": "HR4 0NU",
+      "city": "Herefordshire",
+      "route": "Barricombe Drive",
+      "postal_town": "Hereford"
+    },
+    {
+      "address": "Weston-under-Penyard, Nr Ross on Wye, HR9 6DA",
+      "geocode": true,
+      "formatted_address": "Whitchurch, Ross-on-Wye HR9 6DA, UK",
+      "latitude": 51.8535755,
+      "longitude": -2.6510945,
+      "post_code": "HR9 6DA",
+      "city": "Whitchurch",
+      "route": null,
+      "postal_town": "Ross-on-Wye"
+    },
+    {
+      "address": "Whitchurch, Nr Ross on wye, HR9 6DA",
+      "geocode": true,
+      "formatted_address": "Whitchurch, Ross-on-Wye HR9 6DA, UK",
+      "latitude": 51.8535755,
+      "longitude": -2.6510945,
+      "post_code": "HR9 6DA",
+      "city": "Whitchurch",
+      "route": null,
+      "postal_town": "Ross-on-Wye"
+    },
+    {
+      "address": "Ford Street, Wigmore, Nr Leominster, HR6 9UW",
+      "geocode": true,
+      "formatted_address": "Ford St, Wigmore, Leominster HR6 9UW, UK",
+      "latitude": 52.3155532,
+      "longitude": -2.8569038,
+      "post_code": "HR6 9UW",
+      "city": "Wigmore",
+      "route": "Ford Street",
+      "postal_town": "Leominster"
+    },
+    {
+      "address": "Goodrich, Ross-On -Wye, Herefordshire, HR9 6HY",
+      "geocode": true,
+      "formatted_address": "Goodrich, Ross-on-Wye HR9 6HY, UK",
+      "latitude": 51.8705451,
+      "longitude": -2.6188048,
+      "post_code": "HR9 6HY",
+      "city": "Goodrich",
+      "route": null,
+      "postal_town": "Ross-on-Wye"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1Y2",
+    "addr_1": "Green Croft",
+    "addr_2": "Redhill",
+    "addr_3": "Hereford",
+    "addr_4": "Herefordshire",
+    "postcode": "HR2 7NT ",
+    "url": "http://www.marlbrookschool.com",
+    "geocode": true,
+    "formatted_address": "Green Croft, Hereford HR2 7NT, UK",
+    "latitude": 52.0392227,
+    "longitude": -2.7241673,
+    "post_code": "HR2 7NT",
+    "city": "Herefordshire",
+    "route": "Green Croft",
+    "postal_town": "Hereford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "CourseLength": "OneYear",
+    "Qualifications": "Entry Requirements\\r\n\\r\n\\r\n* GCSE’s in English, Maths and Science grade C or above.\\r\n    Degree\\r\n\\r\n* An honours graduate having achieved 2:2 honours degree or above.\\r\n\\r\n* Professional Skills Tests\\r\n   These should be passed or a date secured at the time of the interview.\\r\n",
+    "InterviewProcess": "How we select our trainees\\r\nMarlbrook Primary is the lead school and we will be involved in the recruitment process.\\r\nIf successful, the interview will include:\\r\n* A short talk from a Senior member from the school you have applied to \\r\n* Information about the course from a member of staff from the University of Worcester\\r\n* Maths and English tasks\\r\n* A short presentation \\r\n* An individual interview-please bring with you original identification documentation.\\r\nYou will only require one interview and we will let candidates know on the same day if the outcome.\\r\nSuccessful applicants will require DBS clearance and suitable references.\\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "The School Direct training is school-led training, it will last for 1 year and involve 3 placements.  You will select your prefered school when you complete your UCAS application online:\\r\nPlacement 1-prefered Key stage (1 or 2) September until Decemeber.\\r\nPlacement 2-the key stage you have not been in January until March.\\r\nPlacement 3-trainees will go back to placement 1 in the same class.\\r\n\\r\nYou will have opportunity to observe and work with other year groups throughout your practice.  You will receive high quality support from your mentor and outstanding training opportunites throughout your training.\\r\n\\r\nStudents will need to attend the University of Worcester for approximately 27 days a year.  You will experiecne a dynamic taught programme, ensuring depth and breadth across the priamary subjects.  This will include asignments and tasks.  You will be assigned a University tutor that will work closely with your mentor at your school placements."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Why Train With Us?\\r\nLead School\\r\nMarlbrook is an outstanding Teaching school at the heart of its community, with a clear vision for the future.  We currently have 596 pupils on role and we are now on our journey to becoming a three form entry school.  We are collaborated with two local smaller schools, Little Dewchurch C of E Primary School, an outstanding school and Ewyas Harold Primary which is a good school with outstanding features and more recently St Martin’s Primary School.  The outstanding practice has been recognised nationally and the Headteacher (Tracey Kneale CBE) is a designated National Leader of Education and OFSTED inspector and mentor. The school delivers the Outstanding Teacher Programme and The Improving Teacher Programme to teachers locally to improve practice.  The outstanding teachers across our schools are used as models of outstanding practice throughout all training packages delivered. We work closely with the Local Authority to deliver and organise conferences, NQT training, school to school support and moderation across the county for KS1 and KS2.\\r\nAs a lead school we can offer placements at a range of Primary schools in Herefordshire within our partnership.\\r\n",
+    "TrainWithDisability": "At Marlbrook Teaching School we are committed to meeting the needs of candidates with a range of disabilities and other needs.  We have successfully trained (and employed) School Direct students in the past with additional needs.  We would be happy for candidates to contact us if they would like to discuss this at any point during the application process.\\r\n\\r\n\\r\n\\r\n\\r\nDisability Access\\r\nPlease contact Marlbrook Teaching school to discuss your individual needs. \\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We have worked collaboratively with the University of Worcester for many years with great success.  We ensure we communicate regularly to ensure the training provided meets the needs of all our trainee teachers.\\r\nAs a student you will be expected to attend all the fabulous training modules opportunities at the University, this will compliment all the outstanding school based training we can provide throughout the year.\\r\n\\r\nWe are pleased to say that many of our teachers across the collaboration trained at the University ",
+        "UcasInstitutionCode": "W80"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,76 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Brunel University London",
+  "subjects": [
+    "Mathematics",
+    "Physics",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Physics with Mathematics",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "B84/F3GX",
+  "providerCode": "B84",
+  "programmeCode": "F3GX",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Kingston Lane, Uxbridge, Middlesex, UB8 3PH",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Kingston Lane, Uxbridge, Middlesex, UB8 3PH",
+      "geocode": true,
+      "formatted_address": "Kingston Ln, Uxbridge UB8 3PN, UK",
+      "latitude": 51.5320767,
+      "longitude": -0.4665542,
+      "post_code": "UB8 3PN",
+      "city": "Greater London",
+      "route": "Kingston Lane",
+      "postal_town": "Uxbridge"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "B84",
+    "addr_1": "Brunel University",
+    "addr_2": "Kingston Lane",
+    "addr_3": "Uxbridge",
+    "addr_4": "Middlesex",
+    "postcode": "UB8 3PH ",
+    "url": "http://www.brunel.ac.uk",
+    "geocode": true,
+    "formatted_address": "Kingston Ln, London, Uxbridge UB8 3PH, UK",
+    "latitude": 51.5328677,
+    "longitude": -0.471229,
+    "post_code": "UB8 3PH",
+    "city": "London",
+    "route": "Kingston Lane",
+    "postal_town": "Uxbridge"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Tuition fees for the 2019/20 academic year are yet to be confirmed.\\r\n\\r\nAs an indication of what you might pay, the fee for students who started in September 2018 was:\\r\n•\\t£9,250\\r\n\\r\nPGCE students can apply for loans from Student Finance England and may be entitled to a tax-free bursary -https://getintoteaching.education.gov.uk/funding-and-salary/overview\\r\n\\r\nFind out more about scholarships and funding on our website - https://le.ac.uk/study/postgraduates/fees-funding/scholarships-discounts\\r\n\\r\n",
+    "AboutCourse": "The PGCE Secondary Science programme aims to:\\r\n•\\tdevelop your understanding of the role of Science teachers both within the department and in their wider professional responsibilities;\\r\n\\r\n•\\tintroduce you to current theories and practice in Science teaching;\\r\n\\r\n•\\thelp develop your academic and critical thinking skills to support effective Science teaching and learning for all your students;\\r\n\\r\n•\\thelp you set high expectations for yourself and your students; and\\r\n\\r\n•\\thelp you to understand what contribution Science education can make to the wider education of young people.\\r\n\\r\nThe Science course supports the core PGCE Teacher Development Course, through:\\r\n•\\tSpecialist sessions to develop your curriculum subject knowledge;\\r\n\\r\n•\\tExploring effective teaching and learning in Science classrooms;\\r\n\\r\n•\\tConsideration of the role of practical work and your responsibility for safe classroom practice;\\r\n\\r\n•\\tDeveloping reflective practice to support your planning, delivery and evaluation of lessons; and\\r\n\\r\n•\\tDeveloping an understanding of recent curriculum change.\\r\n\\r\nA field course in October supports team building for collaborative work, helps develop subject knowledge across the sciences and a practical understanding of learning outside the classroom.\\r\n\\r\nMixed teams and whole science sessions will include focus on:\\r\n•\\tThe science curriculum\\r\n\\r\n•\\tLesson planning\\r\n\\r\n•\\tBehaviour for learning and classroom management\\r\n\\r\n•\\tAssessment\\r\n\\r\n•\\tLiteracy and numeracy in science\\r\n\\r\n•\\tDifferentiation and inclusion\\r\n\\r\n•\\tEarth science\\r\n\\r\n•\\tICT in science, including data logging\\r\n\\r\n•\\tTeaching controversial issues in Science\\r\n\\r\n•\\tThe Nature of Science\\r\n\\r\n•\\tScience outside the classroom\\r\n\\r\n•\\tSafety issues and risk assessment\\r\n\\r\n•\\tClassroom practice related to learning theories\\r\n\\r\n•\\tDemonstrations and practicals\\r\n\\r\nContinuous assessment is used throughout the course and there are no examinations.\\r\n\\r\nApplications are welcome from students with good/very good qualifications in their science qualifications at GCSE and AS/A level Physics (or equivalent) and Physics or Engineering (or equivalent) at honours degree level. \\r\n\\r\nThose candidates with a Physics degree might wish to consider whether our Physics or Physics with Mathematics specialism might be most appropriate. Although Physics with Mathematics students will spend some time working with our Maths colleagues and will engage in some Mathematics teaching during placements, we expect applicants to be able to make clear links to Biology and Chemistry and be reasonably flexible by teaching across all the main sciences to GCSE level.  \\r\n\\r\nApplicants without Biology or Chemistry at AS/A level would be expected to undertake some background reading before the start of the course. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "•\\t2:1 degree for English, Geography, History or Social Science\\r\n•\\t2:2 degree for Mathematics, MFL, Sciences or RE\\r\n(We may, under exceptional circumstances, accept a Third if there are \\r\nother very strong recommending features in your application.)\\r\n\\r\n•\\tGCSE Grade 4 (old grade C) or above in English Language and Maths (equivalency test available if needed)\\r\n\\r\n•\\tA-levels (or equivalent) in relevant subjects\\r\n\\r\n•\\tAlthough not essential, you may find it useful to have recent experience working with children and/or observing teaching in a school setting.\\r\n\\r\n•\\tA pass in the Professional Skills Tests in literacy and numeracy\\r\n",
+    "FeeInternational": 15405.0,
+    "InterviewProcess": "If invited for interview, you will meet members of the course team who will give an overview of the course and answer any questions you may have. \\r\n\\r\nYou will participate in a group task with candidates from a range of subjects and give a brief presentation as part of a small group. \\r\n\\r\nSubject tutors will introduce a written subject task that you will complete during the day and you will have an individual interview with a subject tutor. The interview is not a daunting process but rather a discussion about your suitability and preparation for going into teaching. During the interview, you will explore any additional preparation needed to help put you in the best possible position to engage successfully with the course from the start.",
+    "OtherRequirements": "Admission to the course is subject to a satisfactory medical report. The University will provide more information about this should you be offered a place.\\r\n\\r\nAll offers are subject to a satisfactory enhanced DBS disclosure. We will provide instructions regarding the DBS application process once you have accepted an offer of a place on the course.\\r\n\\r\nEnglish Language Requirements - you must have a GCSE Grade 4 (old grade C) in English Language. \\r\n\\r\n\\r\nWe offer an equivalency test in English and/or Mathematics for any successful applicant who does not hold this qualification or an equivalent one.  \\r\n",
+    "PersonalQualities": "We are interested in candidates showing enthusiasm for their science and mathematics in a variety of ways, for example, by their reading, leisure pursuits, attendance at local/national Science events. \\r\n\\r\nWe also expect a reasonable level of awareness of major recent and current issues in education and developments in science. \\r\n\\r\nThe Secondary PGCE is a challenging course, and we are looking for applicants with a wide range of skills, knowledge, experiences and an aptitude for teaching.  These skills also include the ability to form relationships,  good communication skills, a commitment to learning and teaching and reflective qualities. \\r\n",
+    "HowSchoolPlacementsWork": "You will undertake two secondary teaching placements in our Partnership Schools. Leicester is ideally placed to offer the opportunity to work in both inner city and rural environments, with learners from a wide range of ethnic backgrounds. We try to place students in contrasting schools to ensure you have a rich and varied experience in your initial training year and that you have the opportunity to teach across the 11-18 age range.\\r\n\\r\nThe placements are referred to as 'Phase A' and 'Phase B' placements.\\r\nPhase A.  In planning your placements, your subject tutor will try to balance the distance you are asked to travel with your individual needs and our knowledge of our wide range of school partners. \\r\n\\r\nPhase A\\r\nAfter induction you will spend about 8 weeks in your Phase A placement school.  You will build on existing experience and develop new skills with support from the school's Coordinator for Initial Teacher Education and a subject mentor who will oversee your professional development during the placement and liaise closely with your university tutor who will also support you. \\r\n\\r\nPhase B\\r\nDuring your second placement you will spend about 14 weeks in a different school, also supported by a mentor, ITE Coordinator and university tutor.  "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Education at Brunel: Ranked 2nd in London (Guardian League Table 2019) and an outstanding provider of Initial Teacher Education (Ofsted, 2015/2016).\\r\n\\r\nEducation at Brunel offers an unrivalled experience for developing education professional or for your education training.  \\r\n\\r\nWe are one of the longest established Education departments in the country and leading research centre for work in supportive education.  We regularly receive high ratings from the UK's leading benchmarks such as Ofsted.  \\r\n\\r\nAll our education courses have been developed in collaboration with partnership schools and the National College for Teaching and Leadership (NCTL).  This ensures the highest possible quality of provision and relevance in national and school-level priorities in Education.  \\r\n\\r\nYou'll learn in lectures, seminars, and workshops and by modelling classroom practice.  You'll also learn through independent learning, investigation and guided discovery; and through observation, self-evaluation and reflection on teaching practice.  We invite guest speakers to contribute to the taught sessions and arrange school visits, for example, to pupil referral units and special schools.  \\r\n\\r\n100% of our PGCE Secondary Education students secured posts in schools within six months of graduation (Destination of Learners from High Education 2015-2016).  \\r\n\\r\nA Brunel PGCE with recommendation for QTS is a recognised symbol of high-quality Initial Teacher Education.  You'll benefit from our partnerships with educational institutions and local schools.  Many of our students go on to work in our partner schools and many more are employed in schools where they undertook a placement.  ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

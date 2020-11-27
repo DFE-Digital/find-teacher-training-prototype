@@ -1,0 +1,65 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Edge Hill University",
+  "subjects": [
+    "Early years",
+    "Primary"
+  ],
+  "name": "Early Years Education",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "E42/X124",
+  "providerCode": "E42",
+  "programmeCode": "X124",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "E42",
+    "addr_1": "Edge Hill University",
+    "addr_2": "St Helens Road",
+    "addr_3": "Ormskirk",
+    "addr_4": "Lancashire",
+    "postcode": "L39 4QP ",
+    "url": "http://www.edgehill.ac.uk/postgraduate/pgce",
+    "geocode": true,
+    "formatted_address": "Edge HIll University, Ormskirk, UK",
+    "latitude": 53.5576393,
+    "longitude": -2.8692166,
+    "post_code": null,
+    "city": "Lancashire",
+    "route": null,
+    "postal_town": "Ormskirk"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Tuition fees for the 2019/20 academic year are yet to be confirmed.\\r\n\\r\nAs an indication of what you might pay, the fee for students who started in September 2018 was:\\r\n•\\t£9,250\\r\n\\r\nPGCE students can apply for loans from Student Finance England and may be entitled to a tax-free bursary -https://getintoteaching.education.gov.uk/funding-and-salary/overview\\r\n\\r\nFind out more about scholarships and funding on our website - https://le.ac.uk/study/postgraduates/fees-funding/scholarships-discounts\\r\n\\r\n",
+    "AboutCourse": "Our PGCE Primary has been running for over 60 years and schools tell us we are developing the kind of teachers they want to employ. This is reflected in 98% of our students achieving Good or Outstanding teacher grades at the end of their course and 95% of our graduates securing a teaching post by the end of the course.\\r\n\\r\nTutors on the Primary PGCE course all have extensive experience as classroom teachers and are specialists in a wide range of educational areas. These strengths are recognised within the Primary PGCE course, both in the specialist course options offered, and through the expert contributions to all strands of the course.\\r\n\\r\nYou will be required to select a specialism at the beginning of your PGCE. In addition to Maths and Lower Primary, other options may include Inclusion, Science, and English (subject to availability).   If you choose Lower Primary (3-7) you will specialise in Foundation and Key Stage 1, whereas Primary focuses on Key Stage 1 and Key Stage 2\\r\n\\r\n\\r\nThe course comprises of three strands and school placements:\\r\n•\\tCurriculum Studies - Core and Broader Curriculum\\r\n•\\tProfessional Studies\\r\n•\\tAcademic Strand including Specialist Study\\r\n•\\tTeaching Experience in primary schools.  These placements will be in contrasting schools to provide you with a broad range of experience.\\r\n\\r\nTeaching approaches are varied; whole-course lectures, taught sessions in tutor groups, some work in focus schools and individual tutorials. Some of these sessions will be taught in differentiated groups, with specialist Primary and Lower Primary based sessions and small group subject support sessions.\\r\n\\r\nThe PGCE Primary course prepares you to teach across the full range of the Primary Curriculum. We will introduce you to the wider context of teaching, including responding to diversity in schools and the inclusion of Special Needs Education, as well as equipping you with classroom management and planning skills.\\r\n\\r\nBy the end of the course you will meet the required professional standards for Qualified Teachers Status (QTS) and will be awarded a University of Leicester PGCE. Our strong ethos of reflective practice will prepare you well for your future career in teaching.\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "2:1 degree or above \\r\n\\r\n•GCSE grade 4 (Old Grade C) or above in English Language, Maths and Science.\\r\n\\r\n•A pass in the Professional Skills Tests in Literacy and Numeracy. \\r\n\\r\n•Although not essential, you may find it useful to have recent experience working with children and/or observing teaching in a school setting, ideally relating to the age range/subject you wish to teach. When writing your application you should try to reflect on your experience and tell us what you learnt.\\r\n\\r\n•Please consult our Education at Leicester website to find detailed explanations of our recruitment and selection processes and criteria.\\r\n",
+    "FeeInternational": 15405.0,
+    "InterviewProcess": "If invited for interview, you will meet members of the Primary PGCE Team who will give an overview of the course and answer any questions you may have. \\r\n\\r\nIf you are applying for a School Direct route, you may have already completed a school-based interview.\\r\n \\r\nYou will participate in a group task with candidates and will lead a brief group discussion on one of the topics you will have been sent prior to the interview. You will also carry out written tasks in English and Maths. \\r\n\\r\nDuring the afternoon you will be interviewed by either a member of the Primary PGCE team or one of our school-based colleagues. The interview is not a daunting process but rather a discussion about your suitability and preparation for going into teaching. \\r\n\\r\nIf you are successful on the selection day, you may be given some targets to work on, prior to starting the course. These will help you to be in the best possible position to engage successfully with the course from the start. \\r\n",
+    "OtherRequirements": "Admission to the course is subject to a satisfactory medical report. The University will provide more information about this should you be offered a place. \\r\n\\r\nAll offers are subject to a satisfactory enhanced DBS disclosure. We will provide instructions regarding the DBS application process once you have accepted an offer of a place on the course. \\r\n\\r\nYou must have a GCSE Grade 4 (Old Grade) C in English Language.\\r\n",
+    "PersonalQualities": "Primary (3-7) is a very demanding course and we are looking for applicants  with a wide range of skills, knowledge, experience and aptitude.  \\r\n\\r\nOur key selection criteria are:\\r\n•\\tAbility to form relationships\\r\n\\r\n•\\tGood communication skills\\r\n\\r\n•\\tCommitment to teaching\\r\n\\r\n•\\tAn awareness of the role of the teacher and the demands of the profession\\r\n\\r\n•\\tReflective qualities\\r\n\\r\n•\\tEmotional resilience\\r\n\\r\n•\\tAwareness of contemporary issues in education",
+    "HowSchoolPlacementsWork": "You will be placed in three Partnership schools. We are proud to work with over 150 primary schools in the state and independent sectors, and in city, suburban and rural settings, as well as special schools.\\r\n\\r\nPrimary students (specialising in the 5-11 age range) are placed in a range of KS1 and KS2 classes, and Lower Primary students (specialising in the 3-7 age range) work in Key Stage 1 and Foundation Stage settings. \\r\n\\r\nIn addition to the three block teaching placements you will also visit different schools as part of a series of 'focus days', studying specific subject and professional topics in an intensive school-based context.\\r\n\\r\nThe school-based time is a vitally important element of the course. You will have the opportunity to observe skilled class teachers working and to discuss the things that underpin day-to-day classroom activities, as well as work alongside experienced teacher-mentors who will support your learning about classroom practice.\\r\n\\r\nTeaching Experience 1\\r\nThis is a six-week paired placement with two students working together in one class. This gives you the opportunity to work with a partner to develop classroom skills in a supportive environment. You will focus on developing observation skills to support your understanding of teaching and learning and to put your learning into practice. During this Autumn Term placement you and your partner will work towards taking an increased responsibility for teaching the class.\\r\n\\r\nTeaching Experience 2\\r\nThis takes place in the Spring Term and lasts for seven weeks. The amount of time spent teaching the class increases over the placement until you have responsibility for up to 80% of the timetable.\\r\n\\r\nTeaching Experience 3\\r\nThis is another seven-week placement in the Summer Term with students working towards taking responsibility for 80% of the teaching timetable.\\r\n\\r\nThroughout each of these placements you will be encouraged to participate fully in the life of the school and to take full advantage of the tasks and activities designed by your tutors to support your development. \\r\n\\r\nIt is expected that through your three placements you will gain experience across the age range that you are training to teach.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Edge Hill University is based on an attractive, award-winning 160-acre campus in Lancashire, close to Liverpool and Manchester. The institution has been providing higher education since 1885, with a mission to create opportunity from knowledge.\\r\n\\r\nThe institution’s significant success in achieving its mission is recognised by a range of awards and high rankings for teaching, student experience, accommodation and more. Edge Hill is ranked as Gold in the Teaching Excellence Framework (TEF), the government’s evaluation of excellence in teaching quality, learning environment and student outcomes. The University is also one of the select few to have held the coveted UK University of the Year title, awarded by Times Higher Education (2014/15).\\r\n\\r\nEdge Hill University has been at the forefront of initial teacher training for 130 years. Our PGCEs enable graduates to train to teach in early years, primary, secondary or further education.\\r\n\\r\nYou can study a broad-based early years or primary PGCE, specialise in primary mathematics or primary physical education, choose from a variety of dedicated routes in secondary subject areas, or prepare for a career in further education or the lifelong learning sector.\\r\n\\r\nIf you’re looking to join a PGCE in secondary education but lack the required subject knowledge, we may have a suitable subject knowledge enhancement course for you.\\r\n\\r\nWhichever age range or specialism you choose, your programme will combine expert tuition with significant time in schools and other settings, enabling you to gain extensive practical experience and become increasingly confident in the classroom.",
+    "TrainWithDisability": "The Inclusion Team provide information, guidance and support to applicants and students who have disclosed any of the following: Autism Spectrum Conditions (ASC), Mental Health, Sensory Impairment, Mobility difficulties or a medical condition e.g. Epilepsy, Diabetes, Heart Condition, Asthma and we work closely with academic and support staff across the University.\\r\n\\r\nLearning Services provides support to students with a specific learning difficulty – SpLD, such as Dyslexia.\\r\n\\r\nWe encourage disabled applicants to make contact with us early in the application process to enable us to plan for support you may need right from start of your university course. We provide a friendly and professional service and applicants and students can discuss individual requirements in complete confidence. Our highly experienced team are here to advise you about:\\r\n\\r\n Impact of disability/health condition and potential impact on study\\r\n\\r\nSupport available including 1-1 sessions, group support and study skills sessions\\r\n\\r\nThe benefits of a Student Support Plan\\r\n\\r\nDisabled Students Allowance (DSA) and eligibility\\r\n\\r\nReasonable adjustments to support your study\\r\n\\r\nExam modifications and alternative assessments\\r\n\\r\nRights and Responsibilities\\r\n\\r\nSupport whilst on placement (e.g. access and transport)\\r\n\\r\nDisclosure and Confidentiality\\r\n\\r\nRights and Responsibilities\\r\n\\r\nPEEPs and Emergency Action Plans\\r\n\\r\nOne of our priorities is to ensure safe environment for all students. If you have Epilepsy, Diabetes, Asthma or another serious health condition which may require First Aid, we strongly recommend that you complete one of our Emergency Action Plans. We can discuss this with you when you come to see us.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

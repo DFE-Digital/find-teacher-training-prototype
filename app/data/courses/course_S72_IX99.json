@@ -1,0 +1,60 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Staffordshire University",
+  "subjects": [
+    "Computing",
+    "Secondary"
+  ],
+  "name": "Computer Science",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "S72/IX99",
+  "providerCode": "S72",
+  "programmeCode": "IX99",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "S72",
+    "addr_1": "College Road",
+    "addr_2": "Stoke-on-Trent",
+    "addr_3": null,
+    "addr_4": null,
+    "postcode": "ST4 2DE ",
+    "url": "http://www.staffs.ac.uk",
+    "geocode": true,
+    "formatted_address": "College Rd, Stoke-on-Trent ST4 2EA, UK",
+    "latitude": 53.0143101,
+    "longitude": -2.1792526,
+    "post_code": "ST4 2EA",
+    "city": "Stoke-on-Trent",
+    "route": "College Road",
+    "postal_town": "Stoke-on-Trent"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in Computer Science is a one-year, full-time course for graduates who wish to train as secondary school computer science teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). The most appropriate route for you can be discussed with the course leader. \\r\n\\r\nOn the PGCE course you will learn not only about issues related to Computer Science teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe Computer Science course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*Subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*Lesson planning\\r\n*Classroom management\\r\n*Research into the pedagogy of computer science.\\r\n*Special needs and inclusion\\r\n*Assessment\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "A good honours degree or equivalent in a relevant subject, ideally with approximately 50% Computer Science content or other relevant experience. GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. If in doubt about your qualifications or suitability for the course please contact the course leader for advice. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The structure of our PGCE courses reflects our vision of excellent teachers as being both excellent thinkers about teaching and outstanding practitioners in the classroom. We believe in developing thoughtful, self-confident teachers who are comfortable questioning everything around them whilst simultaneously having confidence in everything they do.  We focus on school student learning right from the start of the PGCE and this encourages our trainees to develop very quickly as teachers. You will be well supported by subject experts in both school and University and welcomed into a warm and friendly PGCE team who will challenge you to become the best teacher than you can be. \\r\n\\r\nIn our latest Ofsted Inspection (2017), the inspectors found that we:\\r\n* Are passionate about, and committed to, ensuring that pupils in the local area and beyond are taught by highly skilled and knowledgeable teachers so that pupils’ outcomes improve quickly. \\r\n* Have extremely strong relationships between school mentors, trainees and the University based tutors, which is underpinned by effective communication and ongoing support. \\r\n* Help trainees understand how pupils learn, which has a positive impact on pupil progress over time. \\r\n\\r\n\\r\n",
+    "TrainWithDisability": "Staffordshire University's [AccessAbility Services](http://www.staffs.ac.uk/study/disabled/support/) are a team of Disability Support Coordinators, Disability Administrators and Sessional Assessors. The team support and assist anyone with a disability, including specific learning difficulties, mental health needs and with physical and unseen disabilities. The team can advise on Disabled Student Allowances, accessibility issues and a wide range of support and adjustments to meet the individual needs of students. They can also offer a diagnostic service for students who think they may have a specific learning difficulty. Students who have disclosed a disability will receive a welcome from the team and advice on how to access further support. \\r\n\\r\nThe Student Hub in the Science Centre at our Stoke-on-Trent Campus will provide a one-stop location for access to student support and guidance teams. \\r\n\\r\nThere are lots of on campus support options including drop-in clinics as well as  workshops specifically in relation to mental health and wellbeing.\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,60 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The Bedfordshire Schools Training Partnership",
+  "subjects": [
+    "Geography",
+    "Secondary"
+  ],
+  "name": "Geography",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "B31/F8X1",
+  "providerCode": "B31",
+  "programmeCode": "F8X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    null
+  ],
+  "providerAddress": {
+    "inst_code": "B31",
+    "addr_1": "BEST House",
+    "addr_2": "Samuel Whitbread Academy",
+    "addr_3": "Shefford Rd, Clifton",
+    "addr_4": "Beds",
+    "postcode": "SG17 5QS",
+    "url": "http://www.bedsscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Shefford Rd, Clifton, Shefford SG17 5QS, UK",
+    "latitude": 52.036607,
+    "longitude": -0.317712,
+    "post_code": "SG17 5QS",
+    "city": "Clifton",
+    "route": "Shefford Road",
+    "postal_town": "Shefford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in Geography is a one-year, full-time course for graduates who wish to train as secondary school Geography teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). The most appropriate route for you can be discussed with the course leader. \\r\n\\r\nGeography is a foundation subject of the secondary curriculum at Key Stage 3 and an entitlement at Key Stage 4. Geography is an engaging and constantly evolving subject in the school curriculum with opportunities for some exciting fieldwork. On the PGCE course you will learn not only about issues related to Geography teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*lesson planning\\r\n*classroom management\\r\n*research into the pedagogy and psychology of learning Geography\\r\n*special needs and inclusion\\r\n*assessment\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "A good honours degree or equivalent in a relevant subject, with approximately 50% geographical content. A minimum of 2:1 is desirable although applicants with other qualifications or valuable experience will also be considered.  GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Bedfordshire Schools' Training Partnership (Beds SCITT) is a successful long established SCITT offering both Primary and Secondary Initial Teacher Training across Bedford, Luton and rural Central Beds. We work in collaboration with Robert Bloomfield Academy (BEST Teaching School) - appears as Bedfordshire Schools Training Partnership on UCAS - and St Thomas More Catholic School (INSPIRIT Teaching School) offering high quality school based training at over 50 partnership schools. All courses operate over one year and are full time resulting in QTS and academic recognition in the form of a PGCE award (worth 60 Masters Credits) validated by The University of Buckingham.\\r\nTrainees will work with experienced teachers as their mentor and will meet weekly with their subject leader for Subject Application lectures. Professional Studies lectures will also be weekly. These lectures will address the Standards for QTS and Subject Knowledge for Teaching and will involve assessment through assignments.\\r\n\\r\nWhat's in it for you? Why choose us??\\r\nHigh quality school based training alongside qualified teachers; \\r\nExcellent employment prospects and a rewarding career - we employ the vast majority of our trainees in our Partnership schools across Bedfordshire & Hertfordshire;\\r\nA solid framework of support - always someone to talk to; \\r\nPlacement in a school tailored to meet your needs - your situation will always be taken into account.\\r\n",
+    "TrainWithDisability": "We have accommodated many trainees over the years with various disabilities and other needs - Dyslexia is one we often come across. With the help of the various disability assessments provided we always have a clear picture of the needs of every individual at the start of their training and can then tailor our lectures to ensure that we address these needs. Being a relatively small provider this is never a problem and we are always available to discuss any issues moving forward. The Office Manager meets every week with trainees when they attend Professional Studies so there is always an opportunity to check well-being.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Plymouth",
+  "provider": "Torbay Teaching School Alliance SD Partnership",
+  "subjects": [
+    "Primary"
+  ],
+  "name": "Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "1DG/299N",
+  "providerCode": "1DG",
+  "programmeCode": "299N",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Higher Polsham Road, Paignton, TQ3 2SY",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Higher Polsham Road, Paignton, TQ3 2SY",
+      "geocode": true,
+      "formatted_address": "Higher Polsham Rd, Paignton TQ3 2SZ, UK",
+      "latitude": 50.4408183,
+      "longitude": -3.56871,
+      "post_code": "TQ3 2SZ",
+      "city": "Torbay",
+      "route": "Higher Polsham Road",
+      "postal_town": "Paignton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1DG",
+    "addr_1": "Oldway Primary School",
+    "addr_2": "Higher Polsham Road",
+    "addr_3": null,
+    "addr_4": "Paignton",
+    "postcode": "TQ3 2SY ",
+    "url": "http://www.oldwayschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Higher Polsham Rd, Paignton TQ3 2SY, UK",
+    "latitude": 50.4414346,
+    "longitude": -3.5688749,
+    "post_code": "TQ3 2SY",
+    "city": "Torbay",
+    "route": "Higher Polsham Road",
+    "postal_town": "Paignton"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "First and foremost, training is tailored to the trainee teacher.  Each School Direct trainee is assigned to a class in the base school with a teacher-tutor, overseen by an experienced mentor.  Meetings with the mentor are scheduled weekly as trainees are supported in their ongoing development as a teacher.\\r\n\\r\nOn the Torbay Teaching School Alliance School Direct Primary programme, taught modules are delivered in the Training Room at Oldway Primary School or on campus at Plymouth University.  These comprise a wide range of teaching strategies including lectures, seminars, tutorials, directed tasks and practical workshops which complement the developmental experiences of teaching and assessing in the placement schools.  Sessions are delivered by Plymouth University tutors and experienced practitioners and subject leaders from Oldway and other alliance schools.\\r\n\\r\nPrimary trainees study the whole of the National Curriculum with a particular emphasis on the core subjects of English, mathematics and science in Key Stages 1 & 2 as well as developing an awareness of the Early Years Foundation Stage. Taught sessions are carefully integrated with placements in order to allow trainees to apply and develop their teaching skills in a reflective way, drawing on professional learning, academic research and current practice.\\r\n\\r\nIn the Torbay Teaching School Alliance School Direct Primary Programme, trainees are enrolled alongside the whole cohort of other PGCE students at Plymouth University.  Trainees have induction opportunities on campus (as well as induction in the base school) with all that entails in terms of facilities, resources, study support, social and academic opportunities. \\r\n\\r\nTrainees also attend key events arranged by Plymouth University for all PGCE students e.g. conferences, guest speaker seminars etc.  In common with students on other courses, trainees are full members of the university.\\r\n\\r\nMonitoring and assessment\\r\n\\r\nTrainees’ progress is monitored and assessed weekly through lesson observations, reflective diary and weekly meetings with the mentor.  Trainees’ progress towards the Teachers' Standards is also monitored through three assignments which may meet Level 6 criteria or Level 7 criteria which results in Masters credits.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "* GCSE or equivalent is required in English, mathematics and science at Grade C or above.\\r\n\\r\n* A second class honours degree or equivalent, from a recognised university.  Masters and PhDs also count towards entry requirements.  A Masters degree will be considered as a second class upper degree and a PhD as a first. This will also apply to international applicants.  It is not necessary for the degree to be in a National Curriculum subject.\\r\n\\r\n\\r\n* It is a requirement that all Professional Skills Tests (PSTs) are passed before starting any postgraduate ITE programme.\\r\n\\r\n",
+    "InterviewProcess": "Applicants should allow a full morning for interview as there will be a range of tasks including:\\r\nA.\\ta group discussion task on an article and a short video sent to you prior to the interview\\r\nB.\\tan activity that you will lead with a small group of 8 children. You may select any age group from Year 1 to Year 6 and any activity (e.g. a photograph, a book or artifact to share) to last approximately 20 minutes.\\r\nC.\\twritten tasks relating to English and maths and an IT self-audit\\r\nD.\\ta formal interview\\r\n\\r\nThe interview panel normally comprises the TTSA School Direct Lead, the Plymouth University Academic Lead and a Headteacher or ITE Lead representative from one of our partner schools.\\r\n",
+    "OtherRequirements": "School Experience\\r\n\\r\nBoth Plymouth University and Torbay Teaching School Alliance require that you will have spent some time working with children and young people.  In addition, applicants are recommended to spend time in primary schools, observing and noting how classrooms work, how teachers teach and children learn.\\r\n\\r\nApplicants are expected to be able to discuss, at interview, their observations of pupils and classrooms. You will need to give details of your experience within your application.  \\r\n",
+    "PersonalQualities": "For this intensive and challenging programme, we seek to recruit top quality candidates who can show academic capability and teaching potential.  Candidates will be energetic and motivated with a high level of commitment to children and to teaching and learning. They will have excellent organisational skills and the ability to work constructively in a team as well as study independently; they will be committed to becoming a reflective and evaluative practitioner.\\r\n\\r\nCandidates will be eager, questioning professionals who view this programme as the beginning of their professional learning showing their commitment to life-long development as a teacher.\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "Training commences by working alongside the class teacher, initially with small groups of children.  This gradually builds up over the year to working with an entire class and includes a second placement in a contrasting Alliance school within Torbay.  \\r\n\\r\nA unique feature of the Torbay Teaching School Alliance School Direct Programme is the addition of a third short placement in a Torbay Teaching School Alliance special school, where trainees will have enriched opportunities to develop their skills with pupils who have complex special educational needs and/or a disability and especially, to focus on differentiation and on the management of personalised learning in the classroom.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Oldway Primary School is proud to be judged Outstanding by Ofsted, four inspections in a row. As an acclaimed primary school, it is exceedingly well-placed to lead the Torbay Teaching School Alliance School Direct Programme in conjunction with Plymouth University.\\r\n\\r\nOldway has taken the lead in the South West in establishing Torbay Teaching School Alliance which is directly involved in the training and professional development of teachers at all levels: at initial teacher training level, with NQTs, in providing CPD for serving teachers, middle and senior leaders and for head teachers.  \\r\n\\r\nThe fourth cohort of School Direct primary has just finished the year. All trainees have successfully completed the programme, gained QTS and a PGCE and secured teaching posts within alliance schools and beyond for the next academic year.\\r\n\\r\n",
+    "TrainWithDisability": "All schools within the Torbay Teaching School Alliance have full disability access in line with legislation.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "P60"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,69 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "Brunel University London",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "B84/Q3X1",
+  "providerCode": "B84",
+  "programmeCode": "Q3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Kingston Lane, Uxbridge, Middlesex, UB8 3PH",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Kingston Lane, Uxbridge, Middlesex, UB8 3PH",
+      "geocode": true,
+      "formatted_address": "Kingston Ln, Uxbridge UB8 3PN, UK",
+      "latitude": 51.5320767,
+      "longitude": -0.4665542,
+      "post_code": "UB8 3PN",
+      "city": "Greater London",
+      "route": "Kingston Lane",
+      "postal_town": "Uxbridge"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "B84",
+    "addr_1": "Brunel University",
+    "addr_2": "Kingston Lane",
+    "addr_3": "Uxbridge",
+    "addr_4": "Middlesex",
+    "postcode": "UB8 3PH ",
+    "url": "http://www.brunel.ac.uk",
+    "geocode": true,
+    "formatted_address": "Kingston Ln, London, Uxbridge UB8 3PH, UK",
+    "latitude": 51.5328677,
+    "longitude": -0.471229,
+    "post_code": "UB8 3PH",
+    "city": "London",
+    "route": "Kingston Lane",
+    "postal_town": "Uxbridge"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in English is a one-year, full-time course for graduates who wish to train as secondary school English teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). \\r\n\\r\nEnglish is a core subject of the secondary curriculum at Key Stage 3 and 4. English is an engaging and constantly evolving subject in the school curriculum. On the PGCE course you will learn not only about issues related to English teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe English course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*lesson planning\\r\n*classroom management\\r\n*special needs and inclusion\\r\n*assessment\\r\n*creative learning\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "An honours degree in a relevant subject, with approximately 50% English content and a classification of at least 2:1.  GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Education at Brunel: Ranked 2nd in London (Guardian League Table 2019) and an outstanding provider of Initial Teacher Education (Ofsted, 2015/2016).\\r\n\\r\nEducation at Brunel offers an unrivalled experience for developing education professional or for your education training.  \\r\n\\r\nWe are one of the longest established Education departments in the country and leading research centre for work in supportive education.  We regularly receive high ratings from the UK's leading benchmarks such as Ofsted.  \\r\n\\r\nAll our education courses have been developed in collaboration with partnership schools and the National College for Teaching and Leadership (NCTL).  This ensures the highest possible quality of provision and relevance in national and school-level priorities in Education.  \\r\n\\r\nYou'll learn in lectures, seminars, and workshops and by modelling classroom practice.  You'll also learn through independent learning, investigation and guided discovery; and through observation, self-evaluation and reflection on teaching practice.  We invite guest speakers to contribute to the taught sessions and arrange school visits, for example, to pupil referral units and special schools.  \\r\n\\r\n100% of our PGCE Secondary Education students secured posts in schools within six months of graduation (Destination of Learners from High Education 2015-2016).  \\r\n\\r\nA Brunel PGCE with recommendation for QTS is a recognised symbol of high-quality Initial Teacher Education.  You'll benefit from our partnerships with educational institutions and local schools.  Many of our students go on to work in our partner schools and many more are employed in schools where they undertook a placement.  ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

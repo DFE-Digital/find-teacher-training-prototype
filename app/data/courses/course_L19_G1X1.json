@@ -1,0 +1,71 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "The Learning Institute South West",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Mathematics",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "L19/G1X1",
+  "providerCode": "L19",
+  "programmeCode": "G1X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Beacon Place, Station Approach, Victoria, Roche, Cornwall, PL26 8LG",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Beacon Place, Station Approach, Victoria, Roche, Cornwall, PL26 8LG",
+      "geocode": true,
+      "formatted_address": "Station Approach, Victoria, Saint Austell PL26 8LG, UK",
+      "latitude": 50.4185208,
+      "longitude": -4.828988,
+      "post_code": "PL26 8LG",
+      "city": "Victoria",
+      "route": "Station Approach",
+      "postal_town": "Saint Austell"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "L19",
+    "addr_1": "The Learning Institute",
+    "addr_2": "Rm B304",
+    "addr_3": "Beacon Place, Station Approach",
+    "addr_4": "Roche, Cornwall",
+    "postcode": "PL26 8LG",
+    "url": "http://www.learninginstitute.co.uk",
+    "geocode": true,
+    "formatted_address": "Victoria Beacon Place, Station Approach, Victoria, Roche PL26 8LG, UK",
+    "latitude": 50.4182863,
+    "longitude": -4.8271063,
+    "post_code": "PL26 8LG",
+    "city": "Victoria",
+    "route": "Station Approach",
+    "postal_town": "Roche"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "The PGCE Secondary course is a full time, one year Initial Teacher Education qualification introducing you to the requirements for teaching to the 11 – 16 age range. Where appropriate, opportunities to experience post 16 provision will be available. It has been designed to enable trainees to demonstrate evidence of having met the Teachers’ Standards that lead to Qualified Teacher Status. All trainees undertaking the University-led PGCE route into teaching will work towards securing 60 Master’s level credits. This is an integral part of the programme. We strongly believe that innovative and effective teaching and learning is made possible through a teacher’s full engagement with research informed practice and underpinning theories of learning. This is fostered in two modules and developed through School Based Training. Trainees on the PGCE Secondary programme will be well supported in becoming critically reflective teachers capable of inspiring their pupils to learn, achieve and flourish.\\r\n\\r\nAt the University of Hertfordshire, trainees will be supported and taught by specialist tutors with excellent experience, knowledge and research informed expertise. Partnership schools provide opportunities for trainees to learn about pedagogical approaches relevant to their subject specialism and the professional responsibilities of all teachers.\\r\n\\r\nYou will have two School Based Training placements, where, with the support of a teacher mentor and a university subject tutor, you will develop your skills to become an excellent classroom teacher. Training to teach is exciting, rewarding and demanding. By the end of the course you will be well prepared for employment as a Newly Qualified Teacher (NQT).",
+    "CourseLength": "OneYear",
+    "Qualifications": "Honours degree (2.2 or higher), awarded by a UK university or an overseas award recognised as equivalent by NARIC.\\r\n\\r\nUsually we would expect the degree to have a minimum 50% content of the subject in which the applicant is applying. However, applicants whose degree does not meet this requirement should contact us to discuss further.\\r\n\\r\nEnglish Language and mathematics GCSE  grade 4 or above (grade C under the old grading structure).\\r\n\\r\nStudents from non-majority English speaking countries require proof of English language proficiency, equivalent to an overall IELTS Academic score of 6.5 with a minimum of 6.0 in each band. ",
+    "InterviewProcess": "Suitability to train to teach is assessed at interview. \\r\n\\r\nWe are looking to select trainees who:\\r\n\\r\n* have the passion, commitment and enthusiasm to teach in secondary schools\\r\n* are resilient and able to work under pressure\\r\n* have good subject knowledge to train to teach in the area they are interested in\\r\n\\r\nThe day will begin with a talk about the PGCE programme and is followed by you completing a short written task. You will then lead a short lesson in your subject discipline, details will be sent with the letter inviting you to interview. Finally there is an individual interview.\\r\n\\r\n",
+    "OtherRequirements": "You will be required to pass the [Professional Skills tests](http://sta.education.gov.uk/) in literacy and numeracy before starting the course.\\r\n\\r\nYou will be required to complete a Disclosure and Barring Service (DBS) check and a Declaration of Disqualification by Association form. You will also need to respond to targeted and relevant health questions. Guidance will be provided after you have been offered a place.\\r\n\\r\nWe recommend that you undertake observation time in a state secondary school prior to interview but this is not essential. [Activities to support observation in school - either before or after interview - that you may find useful](https://www.herts.ac.uk/__data/assets/pdf_file/0006/164436/Secondary-School-experience-tasks.pdf)\\r\n\\r\n",
+    "PersonalQualities": "Through the application and interview process, you will need to demonstrate your passion for teaching and potential to lead learning. Excellent interpersonal and communication skills are vital in classrooms of today alongside the ability to be organised, adaptable and resilient. As a successful candidate you will be able to provide evidence of empathy, respect and an inclusive attitude. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Learning Institute South West is a well-regarded SCITT with over 10 years of experience in training teachers.  Since starting in 2004, the SCITT has trained over 400 teachers with exceptionally high employment rates. This year over 75% of primary trainees had secured a teaching post prior to graduating. As a part of WeST (Westcountry Schools Trust) and working in close partnership with Southerly Point Co-Operative Multi Academy Trust, The Learning Institute prepares all trainees for a successful career in the modern world of teaching.\\r\nWe are committed to developing the school leaders of the future through our values-led programmes; supporting reflective practice and principled decision-making.\\r\nOur primary and secondary postgraduate teacher training programmes are school based. This is the best way to experience all aspects of school life, learning from outstanding practising teachers. Across the year you will be supported by mentors and our experienced tutor team. ‘Trainees receive excellent support from their schools and visiting tutors. ’External Moderator 2018. School-based learning is supported by regular taught sessions to help you develop your teaching skills with greater depth and understanding.\\r\nOur trainees benefit from a friendly supportive environment. As noted by External Moderators, ’Leaders ensure that the well-being of trainees is a high priority’. As a smaller provider, we are able to treat trainees as individuals and understand that trainees coming into teaching have different background and strengths. \\r\nWith a range of routes into teaching, including SCITT, School Direct and postgraduate apprenticeship, we have a course to suit everyone.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

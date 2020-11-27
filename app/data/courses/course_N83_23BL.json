@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "North West SHARES SCITT",
+  "subjects": [
+    "Early years",
+    "Primary"
+  ],
+  "name": "Early Years and Primary",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "N83/23BL",
+  "providerCode": "N83",
+  "programmeCode": "23BL",
+  "schools": [
+    {
+      "name": "Woodland Community Primary School",
+      "address": "Heathgate, Skelmersdale, Lancashire, WN8 6QH",
+      "code": "/"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Heathgate, Skelmersdale, Lancashire, WN8 6QH",
+      "geocode": true,
+      "formatted_address": "Heathgate, Skelmersdale WN8 6QH, UK",
+      "latitude": 53.55689289999999,
+      "longitude": -2.7677899,
+      "post_code": "WN8 6QH",
+      "city": "Lancashire",
+      "route": "Heathgate",
+      "postal_town": "Skelmersdale"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "N83",
+    "addr_1": "North West SHARES SCITT",
+    "addr_2": "Woodland Primary Teaching School ",
+    "addr_3": "Heathgate, Skelmersdale",
+    "addr_4": "Lancashire",
+    "postcode": "WN8 6QH ",
+    "url": "http://www.northwestscitt.com",
+    "geocode": true,
+    "formatted_address": "SCITT Office and Training Suite, Hillside Primary School, Egerton, Skelmersdale WN8 6DE, UK",
+    "latitude": 53.5456404,
+    "longitude": -2.7605724,
+    "post_code": "WN8 6DE",
+    "city": "Egerton",
+    "route": null,
+    "postal_town": "Skelmersdale"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our NW SCITT Early Years/Primary QTS 3-8 years course, with an early years specialism is designed for teachers who wish to specialise in teaching children as they begin their school life and educational journey. \\r\n\\r\nThe programmes run for a minimum of 37 weeks; you will spend four days per week in school and one day per week attending training seminars.\\r\n\\r\nOur training seminars will enable you to develop your knowledge and understanding of national statutory frameworks including; Primary National Curriculum, Early Years Foundation Stage, Assessment and Keeping Children Safe in Education. Additionally, you will benefit from training linked to; theories of teaching and learning, mental health, outdoor learning, working with children with EAL, SEN/D, parents, Ofsted etc.\\r\n\\r\nOur training ensures that you will have the most up to date knowledge, based on the most recent and relevant research which underpins all of our training, ensuring that you are able to integrate current theory into your classroom on a daily basis. \\r\n\\r\n\\r\nTraining placements are carefully selected to suit your training needs and you will undertake 2 significant and sustained placements in 2 contrasting schools across 2 different key stages as follows:\\r\n\\r\n•\\tEarly Years/Primary programme - KS1 and Foundation Stage. \\r\n\\r\nThese training placements will enable you to develop strong skills and competencies against the Teachers’ Standards at 2 key stages, resulting in you being in high demand as you seek your first teaching post.  \\r\n\\r\nOur training programme does not assess what you ‘write about teaching’, we believe you should be assessed, doing what you do best…… teaching children in the classroom! Your progress will be monitored through:\\r\n\\r\n•\\tRegular assessments of your teaching and learning\\r\n•\\tRegular reviews of how you meet the Teachers’ Standards\\r\n•\\tSummative assessments at the conclusion of each placement. \\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "GCSE – Standard equivalent to grade 4 (C) in English Language, Mathematics and a Science subject. Alternatively, an Equivalency from a recognised HEI for entry to ITT.\\r\n\\r\nNote – Key and Functional skills at Level 2 are not equivalent to GCSEs\\r\n\\r\nDegree – A first degree from a UK Higher Education institution. The first degree can be classification of first, 2:1, 2:2 or a degree comprising of 300 HE credit points of which 60 must be at level 6 of the QCF.\\r\n\\r\nProfessional skills test: Literacy and Numeracy – pass both the professional skills tests prior to commencing the programme.\\r\n",
+    "InterviewProcess": "We intend to recruit the highest calibre of candidates and our interview process is designed to ensure that we establish your suitability and readiness to teach.  \\r\n\\r\nWe are looking for candidates who are well-organised, well prepared and are already knowledgeable about statutory educational provision and who can demonstrate a commitment to successfully completing our School Based Initial Teacher Training Programme. Quite simply, we are looking to recruit our ‘future colleagues and future leaders!’.\\r\n\\r\nCandidates who are selected for interview, will be welcomed into one of our partner schools and will during the course of the day complete the following tasks:\\r\n\\r\n•\\tPresent your portfolio, ‘How have you prepared for training to become a teacher’;\\r\n•\\tPlan and deliver a short lesson with an allocated class;\\r\n•\\tComplete a subject knowledge task based on the Primary National Curriculum;\\r\n•\\tEngage in an individual interview to share your current experiences and aspirations for yourself as a future teacher.\\r\n",
+    "OtherRequirements": "Following successful interview, we will carry out a number of checks to confirm your suitability to teach and potential to meet the Teachers’ Standards by the end of the training programme.\\r\n\\r\nChecks will include:\\r\n-Health and capacity to teach medical confirmation\\r\n-Disclosure and Barring Service checks\\r\n-Police clearance from abroad if lived/worked abroad in the last 5 years for 6 months or more\\r\n-Prohibited Teachers Check (UK)\\r\n-Prohibited to teach in EEA\\r\n",
+    "PersonalQualities": "We are looking for applicants with a genuine interest in working with young children.  You may have experience with children from a range of sources e.g. work, volunteer, placement, governor in school or summer clubs, sports, cubs etc. It is not how many days you have spent with children that matters, it is what you understand about being a teacher that is of interest to us. \\r\n\\r\nIf you have determination, resilience, creativity and a passion for teaching, you possess the personal qualities that make superb teachers and leaders of the future.  Show this at your interview!\\r\n",
+    "HowSchoolPlacementsWork": "Originally established in Skelmersdale, our ITT partnership now extends to Southport, Formby, Liverpool, Ormskirk, West Lancashire and Preston, meaning placements can suit your needs!\\r\n\\r\nWe also provide unique enhancement training opportunities including:\\r\n-\\tTeaching children with English as an Additional Language\\r\n-\\tTeaching children with complex needs\\r\n-\\tTeaching children birth to 3 \\r\n-\\tTeaching children in out of school, residential events.\\r\n\\r\nYour placements will be intentionally diverse, they will challenge your thinking about teaching and learning, however, will enable you to learn from experts in their field, in their classroom for a sustained period of time.  The critical learning for all of our trainees is to understand that your progress can be directly linked to the progress of the children in their class.  If the children are making progress… then you are too! \\r\n\\r\nAn at the glance summary of our training placements:\\r\n-\\tQu. Length of time in each placement? Ans. 17 weeks in each placement.\\r\n\\r\n-\\tQu. How is placement selected? Ans. Based on your training needs, we carefully match you, your school and mentor – trust us!\\r\n\\r\n-\\tQu. How far will I be required to travel? Ans. All of our trainees are placed within our alliance of schools, reducing the burden of travel to you. \\r\n\\r\n-\\tQu. What will my working hours be?  Ans. Training Day 9-4.30. School Day while schools differ, most schools expect as a minimum 8.00-4.30.  You will attend staff meetings and support out of school club provision.\\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "North West SCITT is a leading provider of school-based Initial Teacher Training, with a 100% employment rate over the last 3 years.  Over the course of one intense year we nurture and challenge trainees to develop the skills to become highly effective teachers, ready to take up a teaching post in Foundation Stage, KS1, KS2 or SEN provision. \\r\n\\r\nOur training programme is entirely school based and our trainee teachers spend 37 weeks in school, learning ‘on the job’, working alongside experienced teachers who mentor them through their training period.  \\r\n\\r\nWhat is unique about North West SCITT:\\r\n-\\tYou are treated as a ‘future colleague’ and will be trained through a bespoke Individual Training Plan;\\r\n-\\tOn completing the programme, you will continue to receive support through our NQT Package during your first year as a teacher;\\r\n-\\tWith our eye on ‘future talent’ – our Leadership Ladder will equip you to take on further responsibility and move into school leadership.\\r\n\\r\nWhat Ofsted (2015) says, “Exceptional leadership and management, everyone shares the same ambitious vision, all are absolutely dedicated to developing inspirational teachers and future leaders for local schools.” \\r\n\\r\nWhat our students say, \"My SCITT training experience has been like nothing I have experienced before. I have thoroughly enjoyed my year with the SCITT family. From start to finish I have been fully supported and given the opportunity to shine whilst recognising my development needs – I cannot wait to continue to grow with NW SCITT on their leadership ladder”. \\r\n\\r\n\\r\n",
+    "TrainWithDisability": "It is our aim to make our provision accessible to all applicants and trainee teachers. We comply with equality legislation and promote equality of opportunity and aim to avoid discrimination.  Applicants with a disability are advised to inform us of any special arrangements they may need prior to the interview date in order that we can make suitable arrangements. \\r\n\\r\nDue to our individualised approached to ITT, trainees with a range of disabilities and Specific Learning Difficulties (such as Dyslexia or Dyspraxia) have successfully completed our programme. All schools within our ITT partnership are fully committed to inclusive education for their children and will make reasonable adjustments to enable trainees with disabilities or SpLD to succeed during their training.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

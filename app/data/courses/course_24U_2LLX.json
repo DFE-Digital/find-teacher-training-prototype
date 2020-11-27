@@ -1,0 +1,75 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "North Wiltshire SCITT",
+  "subjects": [
+    "Art and design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "24U/2LLX",
+  "providerCode": "24U",
+  "programmeCode": "2LLX",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Lime Kiln, Royal Wootton Bassett, Wiltshire, SN4 7HF",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Lime Kiln, Royal Wootton Bassett, Wiltshire, SN4 7HF",
+      "geocode": true,
+      "formatted_address": "Lime Kiln, Royal Wootton Bassett, Swindon SN4 7HF, UK",
+      "latitude": 51.5468222,
+      "longitude": -1.899207,
+      "post_code": "SN4 7HF",
+      "city": "Royal Wootton Bassett",
+      "route": "Lime Kiln",
+      "postal_town": "Swindon"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "24U",
+    "addr_1": "North Wiltshire SCITT, TE Centre",
+    "addr_2": "RWB Academy, Lime Kiln",
+    "addr_3": "Royal Wootton Bassett",
+    "addr_4": "Wiltshire",
+    "postcode": "SN4 7HG ",
+    "url": "http://www.nwscitt.org.uk",
+    "geocode": true,
+    "formatted_address": "Lime Kiln, Royal Wootton Bassett SN4 7HG, UK",
+    "latitude": 51.548056,
+    "longitude": -1.902523,
+    "post_code": "SN4 7HG",
+    "city": "Wiltshire",
+    "route": "Lime Kiln",
+    "postal_town": "Royal Wootton Bassett"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "FeeDetails": "Student loans can include a Tuition Fee Loan and a Maintenance Loan/Grant to help with your living costs.\\r\n\\r\nTuition Fee Loans (Student Loans Company) lend you up to £9,250, paid directly to the course provider, and you won’t have to pay it back until after your course, when you’re earning above a certain level.\\r\n\\r\nMaintenance Loans can be applied for at the same time, lending you money at the start of each term.  How much you get depends on your household income, where you study, where you live and how long for. If you’re from a low income household, you might get a Maintenance Grant too (called bursaries in Scotland, or Assembly Learning Grants in Wales).\\r\n\\r\n",
+    "AboutCourse": "The course structure is predominately school based with central and subject training held either at the TEC in Royal Wootton Bassett or within one of our partnership schools.  Trainees are allocated a 'host school' but will also spend time in a second ('complementary') school. Each trainee will be directly supervised by a school based Mentor.  This trained Mentor will organise such matters as school timetables, observe lessons, set targets and provide feedback to the trainee in regular weekly progress meetings. Additionally, each school has a Professional Tutor who maintains overall responsibility for all the trainees in that school.  The Professional Tutor will also be able to support the trainee and will organise additional training opportunities whilst on placement.\\r\n\\r\nThe programme starts at the beginning of the school term and right from the start of the programme our trainees spend time in schools learning about various aspects of education.  After the initial induction period the trainees begin their own teaching practice in the first of two school placements, where they will begin by observing classes and working alongside the class teacher.  Over time this will progress to team-teaching and small group teaching.  Later in this initial placement trainees should be looking to take on responsibility for entire classes and be planning whole lessons or even a sequence of lessons.  As a guide, throughout the academic year trainees can expect to begin by following a 40% teaching timetable, which will gradually increase to around 70% by the end of the year.  By this point trainees should have developed high level teaching skills (planning, teaching and evaluating extending sequences of lessons and assessing students' progress).\\r\n\\r\nTo be awarded Qualified Teacher Status (QTS) trainees must compile a bundle of evidence to demonstrate that they have achieved all of the National Standards for Teachers as set out by the National College for Teaching and Learning.  \\r\n\\r\nFor the Post Graduate Certificate of Education (PGCE) trainees will be required to complete three assignments.  This will also result in 60 credits towards a Masters on successful completion.  It is expected that these studies will include data collection and data analysis, research based on academic literature, reflection and evaluation.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\nThere are certain academic requirements trainees must have achieved before applying for teacher training:-\\r\n\\r\nDegree : A UK degree or an approved equivalent qualification.  For secondary trainees this must be in, or closely related to, your proposed teaching subject.  We would expect that at least 50% of your degree is in the subject you wish to teach.  We typically look for a degree classification of 2:2 or higher.  You must also have Grade C/Level 4 or above in both GCSE English Language and Mathematics or an approved equivalent qualification.",
+    "FinancialSupport": "You may be eligable for a student loan or maintenance grant.  Full details can be found at www.SLC.co.uk.\\r\n\\r\nSubstantial tax-free bursaries of up to £30,000 are available for people with top degrees in certain subjects.  The amount of bursary you will be eligible for depends on the subject you want to teach and your degree class. ",
+    "InterviewProcess": "Interviews will be held at regular intervals starting in November.  This will include a number of activities such as a pupil panel interview, a self-reflection task and a formal interview with senior staff and subject leaders.",
+    "OtherRequirements": "It is wise to have done some school experience prior to starting your training. \\r\n\\r\nYou need to pass the Professional Skills Tests prior to starting the course.  We suggest you register for these as soon as possible and you can apply to take these once you have applied for a course via UCAS.  \\r\n\\r\nYou will be required to complete a satisfactory medical report to show you meet the standards for 'Fitness to Teach'.\\r\n\\r\nYou will be required to undergo a Disclosure and Barring Service (DBS) check to verify your suitability for working with young people.\\r\n\\r\n",
+    "PersonalQualities": "Our successful applicants should be able to show that they are flexible and show initiative and have resilience in their role as a teacher.  We want inspirational trainees who are commited to education.  You'll need to be a confident communicator with a sense of humour and perspective.  A strong subject knowledge and good use of time is useful.  You'll need to remain calm and focused under pressure and join in as a team player.  \\r\n\\r\n\\r\n\\r\n\\r\n",
+    "HowSchoolPlacementsWork": "We have more than 30 secondary and primary partnership schools across Swindon, Wiltshire and beyond that offer placements to our trainees.  When placing our trainees, we look at their subject, location and the requirements of the school.  Where possible we place you within a 30 minute commute.  \\r\n\\r\nIn addition to the two main school placements, trainees will have experience of a primary and special school placement to provide an understanding of alternative phase and context schools."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "North Wiltshire SCITT is an Outstanding Provider, awarded by Ofsted in 2017.  Our vision is to produce outstanding teachers who will ensure their students, whatever their starting point, thrive in all aspects of education. Our trainee teachers will value developing the whole person equally to the achievement of academic success.\\r\nThe North Wiltshire SCITT provides Initial Teaching Training (ITT) for the North Wiltshire area and beyond.  We are based at the Teacher Education Centre next to Royal Wootton Bassett Academy.  We offer ITT programmes leading to Qualified Teacher Status (QTS) and Post Graduate Certificate in Education (PGCE) which includes 60 masters credits, in both the Primary and Secondary fields of education.  We recommend for QTS qualification and our accrediting Higher Education Institute for PGCE qualification is Bath Spa University.\\r\nWe aim to deliver high quality initial teacher training using North Wiltshire SCITT partnership schools and expertise within our Teaching School Alliance.  Training is delivered by current, outstanding practitioners.   Each trainee will be challenged to become the best classroom practitioner they can possibly be.  Trainees should aim to become confident, competent and reflective practitioners who are capable of delivering consistently good or outstanding lessons.  In turn, they should want to produce the very best learning opportunities for all their students.  Guidance and support is available throughout the programme for all our trainees and we support individual needs where appropriate.\\r\n",
+    "TrainWithDisability": "We are an inclusive organisation. All potential applicants are considered on an equal basis. \\r\n\\r\nWe will ensure that all candidates applying and securing a place to train with us will be provided, wherever possible, with the means to do so, by implementing reasonable adjustments as required which may include:\\r\n\\r\n-Ensuring access to training venues and schools\\r\n-Providing additional time where required e.g. for PGCE assignments\\r\n-Providing larger print and/or coloured paper\\r\n-Additional support from School-based mentor / Teaching and Learning tutor\\r\n-Ensuring all placement schools and venues are aware of any allergies and intolerances\\r\n-Ensuring that candidates with hearing and/or sight impairments are seated appropriately to facilitate access to presentation content and instructions.\\r\n\\r\nPlease make us aware of any disabilities or other needs. We can assure you that all information will be treated in complete confidence.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

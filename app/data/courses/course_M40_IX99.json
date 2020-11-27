@@ -1,0 +1,71 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "The Manchester Metropolitan University",
+  "subjects": [
+    "Computing",
+    "Information communication technology",
+    "Secondary"
+  ],
+  "name": "Computing with ICT",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "M40/IX99",
+  "providerCode": "M40",
+  "programmeCode": "IX99",
+  "schools": [
+    {
+      "name": "Faculty of Education (Manchester)",
+      "address": "Birley Fields, Hulme, Manchester",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Birley Fields, Hulme, Manchester",
+      "geocode": true,
+      "formatted_address": "Birley Fields Campus, 53 Bonsall St, Manchester M15 6GX, UK",
+      "latitude": 53.4667373,
+      "longitude": -2.2464233,
+      "post_code": "M15 6GX",
+      "city": "Greater Manchester",
+      "route": "Bonsall Street",
+      "postal_town": "Manchester"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "M40",
+    "addr_1": "All Saints Building",
+    "addr_2": "All Saints",
+    "addr_3": "Manchester",
+    "addr_4": "Greater Manchester",
+    "postcode": "M15 6BH ",
+    "url": "http://www.mmu.ac.uk",
+    "geocode": true,
+    "formatted_address": "All Saints Building, All Saints, Manchester M15 6BH, United Kingdom",
+    "latitude": 53.471068,
+    "longitude": -2.238619,
+    "post_code": "M15 6BH",
+    "city": null,
+    "route": null,
+    "postal_town": "Manchester"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in Computer Science is a one-year, full-time course for graduates who wish to train as secondary school computer science teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). The most appropriate route for you can be discussed with the course leader. \\r\n\\r\nOn the PGCE course you will learn not only about issues related to Computer Science teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe Computer Science course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*Subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*Lesson planning\\r\n*Classroom management\\r\n*Research into the pedagogy of computer science.\\r\n*Special needs and inclusion\\r\n*Assessment\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "A good honours degree or equivalent in a relevant subject, ideally with approximately 50% Computer Science content or other relevant experience. GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. If in doubt about your qualifications or suitability for the course please contact the course leader for advice. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "At Manchester Met, you won’t just develop the practical and organisational skills you’ll need to teach a subject in the classroom. You’ll explore how children learn and factors that can affect the way we learn, from our environment to our teachers.\\r\n\\r\nYou will look at the latest educational research, identifying how research might help you in the classroom, perhaps when you’re dealing with children’s behaviour or you’re investigating if there’s a new way to teach a topic.\\r\n\\r\nWe offer University-led and School-led routes into teaching both Primary and Secondary education.\\r\n\\r\nBoth routes lead to Qualified Teacher Status (QTS) and include 60 masters level credits (a full-time masters degree typically consists of 180 credits, and you can usually put your 60 credits towards your masters).\\r\n\\r\nWe work with over 500 primary schools and over 400 secondary schools across the North West region. This means you could experience placements in inner city or rural settings, mixed or single gender, faith schools, selective or comprehensive schools. This variety helps you to experience different situations and develop your practical skills as a teacher in different settings.\\r\n\\r\nYou can also choose from over 20 secondary subject specialisms. Maybe you’re excited to share your love of Shakespeare or perhaps you can’t wait to hear your year 7 class share their first words in Mandarin. Or, you’re already thinking of all of the incredible science experiments you’ll show your class. \\r\n\\r\nYou will learn in a diverse community of students, replicating the environment you will experience in schools.\\r\n",
+    "TrainWithDisability": "A member of staff from Disability Service is often available at MMU Open days and Visit Days to offer advice on disability related issues. However, you can always phone or email us if you have any specific queries. \\r\n\\r\nManchester Metropolitan University is committed to providing equal opportunities in education for all students and will take reasonable steps to meet both the general need for access and the specific needs of individuals with additional support needs. The University works with disabled students to ensure they are not disadvantaged as a result of their disability.\\r\n\\r\nBefore accepting a place, disabled applicants should explore how the university might be able to meet any additional study support or accommodation needs they may have. This should be done at the earliest opportunity by contacting the Disability Service on 0161 247 3491 or (disability.service@mmu.ac.uk)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

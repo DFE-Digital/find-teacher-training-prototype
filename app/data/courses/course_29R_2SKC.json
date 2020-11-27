@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Bedfordshire",
+  "provider": "Newnham Partnership",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "29R/2SKC",
+  "providerCode": "29R",
+  "programmeCode": "2SKC",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Polhill Ave, Bedford, MK41 9DT",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Polhill Ave, Bedford, MK41 9DT",
+      "geocode": true,
+      "formatted_address": "Polhill Ave, Bedford MK41 9DT, UK",
+      "latitude": 52.1464526,
+      "longitude": -0.4508136,
+      "post_code": "MK41 9DT",
+      "city": "Bedford",
+      "route": "Polhill Avenue",
+      "postal_town": "Bedford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "29R",
+    "addr_1": "Polhill Ave",
+    "addr_2": null,
+    "addr_3": "Bedford",
+    "addr_4": null,
+    "postcode": "MK41 9DT",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Polhill Ave, Bedford MK41 9DS, UK",
+    "latitude": 52.1457433,
+    "longitude": -0.4479779,
+    "post_code": "MK41 9DS",
+    "city": "Bedford",
+    "route": "Polhill Avenue",
+    "postal_town": "Bedford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Castle Newnham works in partnership with the University of Bedfordshire to provide you with a course that has a predominantly professional focus. You will undertake placements in two different schools and spend one week in a primary setting during your training. You will be supported throughout by a skilled, energetic and dedicated Science team and an experienced mentor. \\r\n\\r\nEach Friday is spent at the University of Bedfordshire alongside other PGCE students.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Minimum degree required: Lower Second\\r\n\\r\nApplicants must possess a UK 2:2 Honours degree above or equivalent. At least 50% of the content of the degree must be in the subject in which you are hoping to train. \\r\nAll entrants to have achieved a standard equivalent to a grade 4 (or GCSE A to C) in the GCSE examinations in English and mathematics. \\r\n\\r\nSkills Test\\r\nAll applicants must successfully pass the NCTL pre course skills test prior to starting the course, you do not need to have passed the tests prior to attending an interview. \\r\n\\r\n",
+    "InterviewProcess": "Interviews take place in the morning at Castle Newnham where you will get the chance to meet the Federation Principal; look around the school; observe a Science lesson and meet the staff and pupils. \\r\n\\r\nIn the afternoon, the interviews continue at the University of Bedfordshire.",
+    "OtherRequirements": " It is important that your application is presented in an accurate and professional manner. Your personal statement is your opportunity to provide your reasons for wishing to pursue a career in teaching, to mention any additional skills you may have and to reflect on your experiences. ",
+    "HowSchoolPlacementsWork": "Over the year you will have two different placements. You will spend four days per week in your school placement and Fridays are spent at The University of Bedfordshire with other PGCE trainee teachers.\\r\n\\r\nAt Castle Newnham School, teaching staff work in primary or secondary teams. We are firmly committed to developing the skills of all our staff and we are the lead school in the training partnership (Schools Direct) with the University of Bedfordshire. \\r\nWe hold weekly teaching and learning briefings to which all staff make a contribution to ensure we include evidence, research and debate in our practice.  \\r\n\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Our partnership includes a group of very successful and growing secondary schools and a number of very well established primary schools. Each school has great experience in supporting trainees and new entrants to the profession and each is staffed by dedicated, ambitious and supportive colleagues. Trainees will find themselves well supported and with access to innovative practice and high-quality professional development. \\r\n\\r\nWhy choose the Newnham Partnership? \\r\nOur partnership has been built on ambition - for our pupils and for our staff - and this includes our trainees.  Our schools are expanding and developing and always keen to recruit the very best new teachers to work with our wonderful pupils. \\r\n\\r\nOur trainees strongly recommend the course on the basis of the training they receive, as well as the feeling of being part of a warm and supportive partnership. \\r\n\\r\n\\r\n\\r\n",
+    "TrainWithDisability": "Please visit our website to to read all of our policies.\\r\n\\r\nhttp://www.castlenewnham.school\\r\n\\r\n\\r\n\\r\n",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "",
+        "UcasInstitutionCode": "B22"
+      }
+    ]
+  },
+  "has_inst": true
+}

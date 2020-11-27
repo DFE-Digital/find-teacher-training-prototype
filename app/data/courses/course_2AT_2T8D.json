@@ -1,0 +1,72 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "AA Teamworks West Yorkshire SCITT",
+  "subjects": [
+    "Mathematics",
+    "Secondary"
+  ],
+  "name": "Secondary Maths",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "2AT/2T8D",
+  "providerCode": "2AT",
+  "programmeCode": "2T8D",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "AA Teamworks W Yorks SCITT, School Street, Greetland, Halifax, HX4 8JB",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "AA Teamworks W Yorks SCITT, School Street, Greetland, Halifax, HX4 8JB",
+      "geocode": true,
+      "formatted_address": "School St, Greetland, Halifax HX4 8JB, UK",
+      "latitude": 53.6896047,
+      "longitude": -1.8706233,
+      "post_code": "HX4 8JB",
+      "city": "Greetland",
+      "route": "School Street",
+      "postal_town": "Halifax"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2AT",
+    "addr_1": "AA Teamworks W Yorks SCITT",
+    "addr_2": "School Street",
+    "addr_3": "Greetland",
+    "addr_4": "Halifax",
+    "postcode": "HX4 8JB ",
+    "url": null,
+    "geocode": true,
+    "formatted_address": "Greetland, UK",
+    "latitude": 53.686494,
+    "longitude": -1.866303,
+    "post_code": null,
+    "city": "Greetland",
+    "route": null
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Our secondary courses are designed and taught by a dedicated team of practising teachers. Each is based on developing each trainee with a bespoke plan and experience designed to make you the best teacher you can be. All programmes are an 11-16 programme with a post 16 enhancement. It is taught by practising maths teachers, including specialist leaders of education. You will be placed in two schools for your assessed placement from across our partnership schools in West Yorkshire. The normal pattern of the year is to be in your placement school for four days per week and to attend our training programme one day per week. We have very experienced mentors who are there to guide and support trainees throughout their training year and you will have the opportunity to visit a variety of schools on training days to broaden your experience and understanding. We provide all our trainees with their own laptop during the programme and have a dedicated website for trainee support and resources. All trainees are registered with the University of Huddersfield for a top up award of PGCE. We are looking for candidates with normally either a degree in their subject or related to it or for candidates with a non related degree and an A level in the subject at C or above.",
+    "CourseLength": "OneYear",
+    "Qualifications": "* GCSE grades (or equivalent) at grade C or above in English and maths\\r\n* A subject relevant degree usually at 2:2 or above.  \\r\n* In some cases we would require you to complete a subject knowledge enhancement programme as a condition of acceptance on the course",
+    "InterviewProcess": "Interviews take place throughout the year, they include an interview with a selected panel of staff, a short activity for a group of children and a written test to asses your English and Maths. ",
+    "OtherRequirements": "* You will need to have 10 days of recent school experience \\r\n* You are required to pass a Skills Test, these are can be booked online and completed in a test centre local to you.\\r\n* You will also need to undertake an enhanced DBS check.",
+    "PersonalQualities": "We are first and foremost looking for potential!  This is a training programme so we do not expect you to be the finished article but we are looking for people who are committed to teaching as a career, who are highly motivated, reflective and creative.  ",
+    "HowSchoolPlacementsWork": "Our programme places you in two schools from within the partnership across the year and you will work across two key stages from the following: foundation and key stage 1; key stage 1 and key stage 2; key stage 3 and 4 with post 16 enhancement. Our Secondary partners  are based in Halifax, Bradford & Leeds. Partnering with local schools in the area, we feel fully encompasses the geographical, social and economic diversity of West Yorkshire, offering our alliance breadth and depth. A key strength of our partnership is the diversity of schools; your two placement schools will be contrasting and the range of children and teachers you will work with will come from across the entire alliance ensuring you are trained to teach in all schools from the very start of your career."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Training with AA Teamworks is a great way to kick start your teaching career, starting in a school from the first day, trainees are fully immersed into school life, building up their confidence and school contact time as they go on. We offer both primary and secondary training in a wide range of subjects and work with a collection of schools in the local area. Offering diverse teaching placements, ensures trainees have experience in different types of school environments, preparing them for when they complete the programme and begin their NQT year. AA Teamworks is one of only 23 schools to be awarded research school status by the Education Endowment Fund (EEF) & The Department for Education (DfE) giving our trainees access to the latest evidence based practices before anyone else. Out teaching team are dedicated and experienced educators who work with us to create a personalised learning experience. Alongside the full time programme leader, our trainees have one of our outstanding practitioners acting as a mentor to guide trainees and form their support system. Once training is complete, QTS status and a PGCE is awarded from our accredited provider, The University of Huddersfield. Working with The University of Huddersfield also provides our trainee with full access to all their facilities, plus each student is also provided with a laptop to use throughout the training year. ",
+    "TrainWithDisability": "At AA Teamworks we are fully committed to supporting every student regardless of their needs. Our current training facilities also comply with the current accessibility legislation.  ",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

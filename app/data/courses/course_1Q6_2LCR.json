@@ -1,0 +1,78 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Chester",
+  "provider": "The Priory School A Business And Enterprise College",
+  "subjects": [
+    "Biology",
+    "Science",
+    "Secondary"
+  ],
+  "name": "Biology",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1Q6/2LCR",
+  "providerCode": "1Q6",
+  "programmeCode": "2LCR",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Longden Road, Shrewsbury, SY3 9EE",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Longden Road, Shrewsbury, SY3 9EE",
+      "geocode": true,
+      "formatted_address": "Longden Rd, Shrewsbury SY3 9EE, UK",
+      "latitude": 52.6952033,
+      "longitude": -2.7672878,
+      "post_code": "SY3 9EE",
+      "city": "Shropshire",
+      "route": "Longden Road",
+      "postal_town": "Shrewsbury"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1Q6",
+    "addr_1": "Longden Road",
+    "addr_2": "Shrewsbury",
+    "addr_3": "Shropshire",
+    "addr_4": "West Midlands",
+    "postcode": "SY3 9EE ",
+    "url": "http://www.salopteachingschool.co.uk",
+    "geocode": true,
+    "formatted_address": "Longden Rd, Shrewsbury, UK",
+    "latitude": 52.6928748,
+    "longitude": -2.7701374,
+    "post_code": null,
+    "city": "Shropshire",
+    "route": "Longden Road",
+    "postal_town": "Shrewsbury"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Trainees will complete a total of 180 days of training; 120 days will be in the classroom observing and building up to whole class teaching as soon as possible.  The aim of school direct as opposed to the conventional PGCE is that trainees are more quickly immersed in the practicalities of teaching resulting in a more confident an competent teacher.  This is a school-based PGCE with more time spent in developing classroom practice than a traditional PGCE programme.  Training is delivered across the alliance by practising professionals\\r\n\\r\nThere will be 30 days of professional studies based around wider educational issues such as Behaviour Management, SEND and Assessment.  These will be delivered one day per week on a rotation basis by highly experienced teachers from schools in our partnership.  This ensures you are developing an understanding clearly based on classroom practice and how educational theory sits within this.  In addition there will be subject-based work in your chosen secondary subject.  Some of this will be achieved locally, but there may be a number of days where trainees will have to attend university based sessions.  Please note with your school placements, you could be placed at any school in the alliance with the Shropshire and Telford and Wrekin area.  You will need to take into consideration travel time and distances that may be involved.\\r\n\\r\nThere will be three university based assignments throughout the year.  Access to the university resources and virtual learning will ensure you have access to wider educational texts and journals to support your work.  You can gain up to 60 masters level credits through completion of this course as this is a PGCE not QTS only.  This means your qualification is internationally recognised.\\r\n\\r\nApplicants need to have a 2:2 or a higher classification.  Where this is in an unrelated subject to Biology, the applicant should demonstrate a breadth of practical experience in a related field or job area.  Candidates should have at least one of their A levels in a related Biology subject.",
+    "CourseLength": "OneYear",
+    "Qualifications": "All applicants should have a Grade C or above in English or Maths before they apply to the course. (or equivalent)  Applicants should have at least 5 GCSE grades at C or above, especially in the subject they wish to teach.\\r\n\\r\nApplicants should have at least three A levels.  An A level in the subject they wish to teach will be useful.\\r\n\\r\nA 2:1 degree.\\r\n\\r\nAll applicants must pass the DfE skills tests before commencing training.  These need to be completed at a registered centre and can be passed before interview or as a condition of your place.",
+    "FinancialSupport": "You are eligible to apply for any grants, bursaries or loans that are available to assist with the course fees and living expenses.",
+    "InterviewProcess": "We are looking for candidates who have an empathy and understanding of the demands of teaching in the classroom.  They should enjoy working with young people and see teaching as a wider professional duty.  Confidence in front of a classroom of teenagers is essential and we would encourage all applications to gain some voluntary observation experience before applying.  As part of the interview process you will be required to teach part of a lesson so we can gauge your clarity of explanations as well as how you engage with our young people.\\r\nWe will receive your application via UCAS and this will be reviewed by senior colleagues from the Salop Teaching School Alliance and our University partner.  We will look at your experience and qualification relevancy and will invite you to interview if your application meets our criteria.  If you are unsuccessful at this stage, you will be notified via UCAS.\\r\nIf successful, you will be invited to interview at school will involve a mini-teach activity, subject knowledge and literacy test and a formal interview.  The programme will be sent to you in advance and you will have 7 days to respond to the invitation.  \\r\nIf an offer of a place is made, it will either be unconditional or conditional based upon your successful completion of your degree, if you are still at university, or on the basis of passing your skills tests or gaining more experience observing an a secondary school or completion of a subject knowledge enhancement course\\r\n",
+    "OtherRequirements": "We are looking for applicants who are able to commit the time needed to the training programme which will include academic assignments and study.  We would like candidates who want to be involved in the wider pastoral and extra-curricular life of our schools and who can give the time to this during their training year.  Trainees own transport would be advantageous so you can easily access your school placements as you may be placed up to 45 minutes travelling distance from home.\\r\n\\r\nA full DBS check will be undertaken",
+    "PersonalQualities": "We are looking for candidates who have an empathy and understanding of the demands of teaching in the secondary classroom.  You should enjoy working with young people and see teaching as a wider professional duty.  As part of the interview process you will be required to teach part of a lesson so we can gauge your clarity of explanations as well as how you engage with our young people.\\r\n\\r\nWe are looking for the highest quality graduates who may well bring further work-related experience from previous careers which can help to strengthen the application.",
+    "HowSchoolPlacementsWork": "The first school-based learning will begin in schools from October to January.  There will also be a primary placement where key issues of transition and key stage 2 teaching can be observed.  The second placement will begin in a different school from February to July with the percentage of whole class teaching increasing to 75% of a  full teaching timetable as confidence grows.  Students will have the opportunity to gain experience of Key Stage 5 teaching and learning.\\r\n\\r\nPlease note with your school placements, you could be placed at any school in the alliance within the Shropshire and Telford and Wrekin area.  You will need to take into consideration travel time and distances that may be involved.\\r\n\\r\nIn both placements, you will have a subject-based mentor, a school professional tutor and a university based tutor as well as an alliance based School Direct team to support you throughout your PGCE programme.\\r\n\\r\nYou will be placed in departments who will be able to offer you the best support and guidance and with mentors who are willing to share their wealth of knowledge and experience to support your progression as a teaching practitioner.\\r\n\\r\nSome of our partner schools have sixth forms so you will gain experience of KS5 teaching.  If your placements schools do not have a sixth form, we will ensure that you gain this experience by arranging a short placement in Shrewsbury Sixth Form College.\\r\n\\r\nWe will endeavour to take personal circumstances into consideration when allocating your placement school, but please be aware that you may have to travel up to 45 minutes for your school based learning.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Salop Teaching School Alliance is a Shropshire and Telford and Wrekin based partnership of successful and outstanding schools working in collaboration with both local authorities.\\r\n\\r\nOur vision is to deliver an outstanding school-centred PGCE programme based in local schools.  Trainees and graduates studying with us will be exposed to the highest quality teaching and learning strategies delivered by leading practitioners building on the latest educational research and national developments.\\r\n\\r\nOur unique combinations of secondary schools and sixth form colleges across both local authorities will ensure any trainee will experience teaching in a variety of contexts and key stages, thus making them more appealing to future employers.",
+    "TrainWithDisability": "The Priory School, the lead school in the teaching school alliance, has disabled access to all parts of its site and buildings.  This is the case for some of our partner schools, but not all and applicants may want to bear this in mind when applying to us.\\r\n\\r\nThe disability and inclusion team at the University of Chester provides confidential information, advice and guidance to disabled students.  this includes students with specific learning differences, long-standing health conditions, mental health difficulties, Autistic Spectrum Disorder and sensory impairment.  Staff will support students in identifying the most appropriate solutions to potential barriers to learning",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We work alongside the University of Chester to deliver the subject specific areas of the programme.  The University Centre Shrewsbury is currently working with the University of Chester, so some elements of the course will be delivered at the University of Shrewsbury building in Shrewsbury.  The University of Chester has been training teachers for over 175 years, but, whilst it is one of the oldest higher education institutes in the country, it is also one of the most forward-thinking successful and innovative universities receiving an Ofsted outstanding grading in 2016 and has a reputation for the quality of its training.",
+        "UcasInstitutionCode": "C55"
+      }
+    ]
+  },
+  "has_inst": true
+}

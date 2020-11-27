@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Thamesmead SCITT",
+  "subjects": [
+    "Art and design",
+    "Secondary"
+  ],
+  "name": "Art and Design",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "T26/38GL",
+  "providerCode": "T26",
+  "programmeCode": "38GL",
+  "schools": [
+    {
+      "name": "Thamesmead School",
+      "address": "Manygate Lane, Shepperton, TW17 9EE",
+      "code": "T"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Manygate Lane, Shepperton, TW17 9EE",
+      "geocode": true,
+      "formatted_address": "Manygate Ln, Shepperton TW17 9EE, UK",
+      "latitude": 51.394527,
+      "longitude": -0.4425552,
+      "post_code": "TW17 9EE",
+      "city": "Surrey",
+      "route": "Manygate Lane",
+      "postal_town": "Shepperton"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "T26",
+    "addr_1": "Thamesmead School Centred Initial T",
+    "addr_2": "Manygate Lane",
+    "addr_3": "Shepperton",
+    "addr_4": "Middlesex",
+    "postcode": "TW17 9EE",
+    "url": "http://www.SCITT@thamesmeadschool.com",
+    "geocode": true,
+    "formatted_address": "Manygate Ln, Shepperton TW17 9EE, UK",
+    "latitude": 51.393301,
+    "longitude": -0.441973,
+    "post_code": "TW17 9EE",
+    "city": "Surrey",
+    "route": "Manygate Lane",
+    "postal_town": "Shepperton"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 8000.0,
+    "FeeDetails": "We offer all our trainees the option of undertaking a PGCE; this is in conjunction with the University of Roehampton.\\r\n\\r\nIf you wished to undertake the PGCE element of the course then the course fees will be £9000.",
+    "CourseLength": "OneYear",
+    "Qualifications": "* A degree awarded by a UK HEI (or recognised equivalent) preferably 2:2 or above\\r\n* A least a Grade C/4 in GCSE English and Mathematics (or recognised equivalent)\\r\n* Overseas qualifications must be checked for comparability by the National Academic Recognition Centre [www.naric.org.uk]\\r\n* Candidates without GCSE Engish, Mathematics or Science, if applicable, at Grade C/4 or above must complete an equivalency test",
+    "FinancialSupport": "Training bursaries are intended to provide a financial incentive for high quality graduates to enter and complete initial teacher training.\\r\n\\r\nBursary rates are determined by the DfE and are subject to course subject and degree classification.",
+    "InterviewProcess": "We interview all shortlisted candidates by invitation.  The interview will be conducted by the SCITT Director and a senior colleague from one of our partner schools.\\r\n\\r\nThe interview process is conducted over half a day and comprises the following elements:-\\r\n- 20 minute lesson observation\\r\n- Learner feedback from your lesson\\r\n- Internal literacy and numeracy tests\\r\n- Subject Knowledge audit\\r\n- Interview\\r\n- Overview of the programme\\r\n\\r\nSome of the key things that we will be judging include:\\r\n- The way in which you engage with young people in the classroom\\r\n- Communication skills\\r\n- Passion for your chosen subject\\r\n- Clear understanding of wider educational issues\\r\n- Resilience\\r\n- Awareness of subject knowledge that would need development\\r\n\\r\nWe are looking at your potential as a classroom practitioner.\\r\n",
+    "OtherRequirements": "* Professionals skills tests in numeracy and literacy\\r\n* Disclosure and Barring Service (DBS) Certificate\\r\n* Occupational Health Assessment\\r\n",
+    "PersonalQualities": "You will be required to process and continue to develop a range of inter and intra personal skills to enable you to work effectively within educational settings.  You will need to be an effective team member, you must process excellent communication skills both written and verbal and you must be resilient in order to meet the demands of the course.\\r\n\\r\nYou need to be organised and be able to meet deadlines both as part of the course and as part of your work as a teacher in school.  Most importantly you must demonstrate the highest possible level of professionalism throughout.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Thamesmead SCITT is an ITT provider that is highly regarded by Ofsted and heads up a partnership of schools in Surrey with a network of effective and high committed mentors, coordinators and head teachers.  \\r\n\\r\nDuring the past 15 years we have been in the privileged position of not only educating children, but also being able to train the next generation of high calibre teachers and in doing so have built up an excellent reputation across Surrey.  \\r\n\\r\nOur programme will enable graduates to engage with the academic and pastoral curriculum in their placement school in order to give them a rounded understanding of what it means to work in an educational setting and will also find themselves working in a welcoming and stimulating environment alongside highly experienced teachers.  \\r\n\\r\nOur data shows that our trainees are, year on year, graded as either good or outstanding and that 100% of our trainees gain employment, many of them within our partner schools.  We have a growing number of alumni who have rapidly moved up to positions of leadership within their schools.\\r\n\\r\nEach year we look forward to working with high calibre graduates who are passionate about their subject, who engage with a wide range of young people and who will give their all to become an outstanding teacher.\\r\n\\r\nThamesmead SCITT is committed to providing a trainee teacher, with challenging and meaningful experiences to enable them to develop high level skills, knowledge and understanding that are required to teach young people in the 21st century.\\r\n",
+    "TrainWithDisability": "Thamesmead SCITT welcomes applications from all graduates, including those with disabilities, those from ethnic minority groups and those that can bring a wealth of life experience to the teaching profession as a mature graduate.\\r\n\\r\nAn on-line occupational health check will need to be completed as part of the pre-employment induction process and any recommendations that are provided by occupational health would be reviewed to ensure that candidates have the correct support for their disability/needs.\\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

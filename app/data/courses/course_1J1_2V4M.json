@@ -1,0 +1,85 @@
+{
+  "locationType": "School",
+  "accrediting": "Roehampton University",
+  "provider": "South East Learning Alliance",
+  "subjects": [
+    "Computing",
+    "Secondary"
+  ],
+  "name": "Computing",
+  "financial_support": "Bursary, Scholarship or Student finance if you’re eligible",
+  "slug": "1J1/2V4M",
+  "providerCode": "1J1",
+  "programmeCode": "2V4M",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Honister Heights, Purley, CR8 1EX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Honister Heights, Purley, CR8 1EX",
+      "geocode": true,
+      "formatted_address": "Honister Heights, Purley CR8 1EU, UK",
+      "latitude": 51.3258461,
+      "longitude": -0.0925656,
+      "post_code": "CR8 1EU",
+      "city": "Greater London",
+      "route": "Honister Heights",
+      "postal_town": "Purley"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1J1",
+    "addr_1": "South East Learning Alliance",
+    "addr_2": "RIDDLESDOWN COLLEGIATE",
+    "addr_3": "Honister Heights",
+    "addr_4": "Purley",
+    "postcode": "CR8 1EX ",
+    "url": "http://www.riddlesdown.org",
+    "geocode": true,
+    "formatted_address": "Honister Heights, South Croydon, Purley CR8 1EX, UK",
+    "latitude": 51.3257126,
+    "longitude": -0.08789700000000002,
+    "post_code": "CR8 1EX",
+    "city": "South Croydon",
+    "route": "Honister Heights",
+    "postal_town": "Purley"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "FeeDetails": "Students undertaking certain programmes and courses may be required to pay an additional fee to cover part or all the cost of special equipment, consumables or facilities over and above the tuition fee. Where applicable these mandatory course costs include field trips, travel costs and attendance at performances. We encourage you to check with the relevant course pages when you choose your programme of study so that you are aware of any extra costs you will incur.",
+    "AboutCourse": "The South East Learning Alliance is very proud of of the bespoke and personal training opportunities we offer our students, which we believe is paramount to successfully completing your teacher-training. Our size has added to our ability to provide a full and comprehensive range of support, which ensures a variety of opportunities to work across a plethora of demographics and institutions. Our trainees receive the right support; in the most appropriate setting possible; meaning training is personalised and tailored to meet your needs. \\r\n\\r\n* Trainees spend approximately 70% of their training in schools; across two diverse placements - ensuring our teachers graduate with the confidence to teach in any educational setting\\r\n* The remaining 30% is spent at University; embarking on an academically rigorous study of pedagogy and education, which is assessed through the completion of three written assignments \\r\n* In addition to the written assignments; trainees will also be assessed on their classroom practice; their ability to meet the Teaching Standards; their interactions with students and ability to plan and deliver high quality lessons\\r\n\\r\nThe in-school training students receive is complimented by our partner university, where the learning is subject-specific and helps to fully prepare you for delivery of the National Curriculum. Further details about the individual subject courses and programme of study can be found here: (https://www.roehampton.ac.uk/postgraduate-courses/pgce-secondary/pgce-secondary-computing-specialism/) ",
+    "CourseLength": "OneYear",
+    "Qualifications": "* Hold an undergraduate degree conferred by a UK higher education institution or an equivalent qualification (2:2 degree classification or better).\\r\n* Have achieved at least a grade C in both Mathematics and English Language GCSEs (or approved equivalents).  \\r\n* Pre-entry Professional Skills Test: Trainees starting a Teacher Training course must pass the Professional Skills tests in literacy and numeracy before the start of the programme (www.education.gov.uk). \\r\n* Provide the details of two referees. If candidates have studied within the last 5 years; an academic reference must be provided. The other reference should be a school or employer's reference. ",
+    "FeeInternational": 13520.0,
+    "InterviewProcess": "At interview applicants will be given the opportunity to visit one of our Alliance schools; meeting a variety of colleagues; touring the facilities and gaining a greater understanding of the opportunities on offer as a result of choosing to train within South East Learning Alliance. This provides an excellent opportunity for applicants to better understand the ethos and culture of the school you may be working in partnership with. \\r\n\\r\nYou will be expected to prepare for a formal interview panel; in addition we also ask you to plan and deliver a 30-50-minute lesson; complete a subject-knowledge task and undertake a written-communication task. The interview panel will consist of a subject-specialist from the host-school; a representative from the South East Learning Alliance and often a University representative also. \\r\nWhilst the interview process is both rigorous and robust; we have experienced great success with this practice; ensuring the right candidates progress onto the right courses - leading to excellent rates of retention. ",
+    "OtherRequirements": "* Observation before interview is not a requirement. Many applicants do find observation before interview can be very helpful, however. Candidates should note that school placements will be in local state secondary schools, so observational experience outside of this sector might not provide an adequate understanding of the rewards and challenges presented to teachers in this sector. \\r\n* If you do not currently hold a GCSE grade C or above in Mathematics and English Language, please note that we accept the equivalency tests in both Mathematics and English offered by Equivalency Testing. Please contact them directly via their website (http://www.equivalencytesting.com/)\\r\n",
+    "HowSchoolPlacementsWork": "With our School Direct programme, you get practical, hands-on experience in two contrasting placement schools. The majority of your training will take place in your host-school, where you will be fully supported by a subject-specific Mentor and become a fully established member of the staffing-body. This is in addition to benefiting from the wealth of expertise and experience our partner Universities offer our students, which fully compliments the training received in school. \\r\n\\r\nYou will also benefit from training in an alternative placement school for at least 5 weeks; where the South East Learning Alliance takes great time and care placing the trainees; ensuring the alternative setting fully supports the individual needs of each student, whilst still offering a diverse experience. All of our trainees will have an opportunity to teach across the age range, from 11-18. \\r\n\\r\nThe hands-on practice gained by completing a School Direct programme is complimented with the theoretical and academic rigour of our affiliated Universities. We offer School Direct courses, which run from September – June; full-time and each course results in QTS (e-Qualitas), with many also awarding a PGCE and Master’s-level credits as well (Roehampton/Kings).\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "Thank you for taking an interest in the South East Learning Alliance School Direct training programme. We have run this teacher development programme since September 2014 and it is proving to be an exciting experience for all involved. Our School Direct Alliance is coordinated through Riddlesdown Collegiate in Purley, Surrey, which is a Multi Academy Trust. We are an innovative partnership, which is continually developing its approaches to training and pedagogy. We invest greatly in the professional development of all our staff and those who choose to train alongside us. \\r\n\\r\nThe South East Learning Alliance is a relatively small Alliance, but we pride ourselves on ensuring personal and bespoke training opportunities for all our trainees, which is reflected in the excellent success and retention rates we have achieved over the last four years. Our size has added to our ability to provide a full and comprehensive range of support and ensures a variety of opportunities to work across a wide plethora of demographics and institutions. Ensuring our trainees receive the right support; in the most appropriate setting possible, is at the forefront of our ethos. \\r\n\\r\nThe School Direct package offered by the South East Learning Alliance is one that allows prospective teachers to gain an opportunity to train in a dynamic educational setting located across nine highly different, but successful schools; four comprehensive secondary schools and five primary schools, all of whom are working in partnership to help produce high quality and well-trained teachers of the future. \\r\n",
+    "TrainWithDisability": "We will make every effort to support any disabilities or additional needs candidates may have. However, as we work with over 10 different partner-schools and Universities; we strongly advise you to check directly with the individual school/Higher Education Institute to discuss your needs in greater depth. ",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "The University of Roehampton has been at the forefront of teacher education for over 100 years and has a long-established reputation as one of the principal providers of teacher education in the UK.\\r\n\\r\nAcademic staff are at the cutting edge of research in education, which has a positive impact on the quality of provision for their students. The strengths of the partnership (as detailed by Ofsted) include:\\r\n\\r\n* the partnership’s strong reputation that helps to maintain high employment rates\\r\n* outstanding training in subject teaching \\r\n* the quality of training contributes to trainees’ strong professional skills.",
+        "UcasInstitutionCode": "R48"
+      },
+      {
+        "Description": "e-Qualitas, in affiliation with the South East Learning Alliance; offers a salaried only route into teacher training, where your study is completed through the distance-learning resources on the eQ virtual learning environment (VLE). Training sessions are provided by experienced school staff, and you are invited to attend training days led by eQ at a central London location. You will also benefit from a subject-specialist visiting Tutor from e-Qualitas, who will support you through your training. You will follow a course that leads to QTS. ",
+        "UcasInstitutionCode": "E69"
+      },
+      {
+        "Description": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. ",
+        "UcasInstitutionCode": "K60"
+      }
+    ]
+  },
+  "has_inst": true
+}

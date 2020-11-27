@@ -1,0 +1,70 @@
+{
+  "locationType": "University",
+  "accrediting": null,
+  "provider": "University of East Anglia",
+  "subjects": [
+    "English",
+    "Secondary"
+  ],
+  "name": "English",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "E14/Q3X1",
+  "providerCode": "E14",
+  "programmeCode": "Q3X1",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "University of East Anglia, Norwich, Norfolk, NR4 7TJ",
+      "code": ""
+    }
+  ],
+  "addresses": [
+    {
+      "address": "University of East Anglia, Norwich, Norfolk, NR4 7TJ",
+      "geocode": true,
+      "formatted_address": "Norwich Research Park, Norwich NR4 7TJ, UK",
+      "latitude": 52.6219215,
+      "longitude": 1.2391761,
+      "post_code": "NR4 7TJ",
+      "city": "Norfolk",
+      "route": null,
+      "postal_town": "Norwich"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "E14",
+    "addr_1": "University of East Anglia",
+    "addr_2": "Norwich Research Park",
+    "addr_3": "Norwich",
+    "addr_4": "Norfolk",
+    "postcode": "NR4 7TJ ",
+    "url": "http://www.uea.ac.uk/education/pgce",
+    "geocode": true,
+    "formatted_address": "Norwich Research Park, Norwich NR4 7TJ, UK",
+    "latitude": 52.6219215,
+    "longitude": 1.2391761,
+    "post_code": "NR4 7TJ",
+    "city": "Norfolk",
+    "route": null,
+    "postal_town": "Norwich"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "AboutCourse": "Course introduction\\r\nThe University of Portsmouth's PGCE Initial Teacher Training Secondary in English is a one-year, full-time course for graduates who wish to train as secondary school English teachers. It is run by the University's School of Education and Continuing Studies and offers the choice of following either the Professional Graduate Certificate in Education route (taking all modules at higher education level) or the Postgraduate Certificate in Education (with 60 credits towards a Master's degree). \\r\n\\r\nEnglish is a core subject of the secondary curriculum at Key Stage 3 and 4. English is an engaging and constantly evolving subject in the school curriculum. On the PGCE course you will learn not only about issues related to English teaching, but also about developing an understanding of educational issues pertaining to teaching and learning, classroom interaction, the school curriculum and the school and society. As well as learning to become a competent classroom practitioner, you will learn to make important decisions and recognise the need for reflection and evaluation. \\r\n\\r\nCourse aims\\r\nThe course is designed to enable you to become a capable and confident teacher at secondary level. Abilities to teach the National Curriculum and encourage learning will be developed alongside the skills and understanding required of effective teachers by the Teachers' Standards. \\r\n\\r\nMode of study\\r\nThis is a one-year full-time course (36 weeks). \\r\n\\r\nCourse outline\\r\nThe English course integrates theory with practice and two-thirds of your time will be spent in a school, where you will be working closely with mentors and other school staff. \\r\n\\r\nThroughout the year you will be engaged in considering a range of subjects including: \\r\n\\r\n*subject knowledge enhancement\\r\n*ICT in the classroom\\r\n*lesson planning\\r\n*classroom management\\r\n*special needs and inclusion\\r\n*assessment\\r\n*creative learning\\r\n\\r\nThe University works closely in partnership with a number of schools. Two thirds of your time is spent in schools, where you will receive the support of school-based mentors required of the school's teaching staff. You will spend an increasing amount of time in school as the course progresses, beginning in Term One with three days per week. In Term Two, four days a week will be spent in school and in Term Three, five days a week. The emphasis throughout will be on helping you to gain progressively more confidence and competence in order to attain an increasing level of responsibility in the classroom. ",
+    "CourseLength": "OneYear",
+    "Qualifications": "An honours degree in a relevant subject, with approximately 50% English content and a classification of at least 2:1.  GCSE Mathematics and English language at grade C (Grade 4) or above, or equivalent. ",
+    "OtherRequirements": "All shortlisted applicants are subject to interview. All offers are subject to Enhanced Disclosure and Barring Service (DBS) clearance and Occupational Health clearance. All applicants must pass the National College for Teaching and Leadership's professional skills tests in literacy and numeracy before starting the course.",
+    "HowSchoolPlacementsWork": "School-based work is an important part of our PGCE Programme and all of our partner schools have specially trained mentors who assist students in learning to teach. This mentoring programme is essential in the development of new teachers and will be a valuable asset in your training as you gain hands on experience of practising your new skill in actual classroom environments. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "UEA is a top UK university with an international reputation for excellence in teaching and research. We're ranked among the top 200 universities in the world (Times Higher Education World University Rankings 2018). The 2019 Guardian University Guide ranked UEA 3rd in the UK for Education.\\r\n\\r\nThe School of Education and Lifelong Learning is internationally recognised for the quality of its educational research. Our research has made a difference in schools across the country, influencing approaches to managing classroom behaviour, understanding students' motivation, and creating effective communities for learning.\\r\n\\r\nAll of our PGCE tutors have experience of school teaching and leadership, and all are specialists in particular areas of the curriculum. You'll be well-supported throughout your PGCE, both during your time on placement and on campus.\\r\n\\r\nImagine a career where you inspire, motivate, and unlock the full potential of those around you. Teaching is something that can truly make a difference.",
+    "TrainWithDisability": "UEA operates an equal opportunities policy. Our Wellbeing Service offers a range of interventions including self-help resources, workshops and one-to-one appointments. \\r\n\\r\nIndividual needs are catered for and can be discussed through the interview process. \\r\n\\r\n[Find out more about the information and advice available](https://portal.uea.ac.uk/student-support-service/wellbeing)",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

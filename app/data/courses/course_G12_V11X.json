@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "George Abbot SCITT",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "G12/V11X",
+  "providerCode": "G12",
+  "programmeCode": "V11X",
+  "schools": [
+    {
+      "name": "Main site",
+      "address": "Woodruff Avenue, Burpham, Guildford, GU1 1XX",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Woodruff Avenue, Burpham, Guildford, GU1 1XX",
+      "geocode": true,
+      "formatted_address": "Woodruff Ave, Guildford GU1 1XS, UK",
+      "latitude": 51.2542635,
+      "longitude": -0.546604,
+      "post_code": "GU1 1XS",
+      "city": "Surrey",
+      "route": "Woodruff Avenue",
+      "postal_town": "Guildford"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "G12",
+    "addr_1": "Woodruff Avenue",
+    "addr_2": "Burpham",
+    "addr_3": "Guildford",
+    "addr_4": "Surrey",
+    "postcode": "GU1 1XX ",
+    "url": "http://www.georgeabbottraining.surrey.sch.uk",
+    "geocode": true,
+    "formatted_address": "Woodruff Ave, Guildford GU1 1XS, UK",
+    "latitude": 51.2542635,
+    "longitude": -0.546604,
+    "post_code": "GU1 1XS",
+    "city": "Surrey",
+    "route": "Woodruff Avenue",
+    "postal_town": "Guildford"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "Professional Studies\\r\n\\r\nEvery aspect of the programme is focused upon developing trainees as professionals. Schools are involved in the recruitment and selection of trainees and want to employ the most competent of teachers in their schools. The central training sessions address the key areas of professional practice including: - assessment, lesson planning, behaviour management, Safeguarding Level 1, Data and Progress 8, EAL, Inclusion and Diversity, Literacy, Phonics, Numeracy and Special Educational Needs and Disability; this training continues for trainees in their schools.  Subject specific training is also delivered centrally and continues under the guidance of mentor and PT.  St Mary’s University deliver all elements of the PGCE academic reading and writing.\\r\n\\r\nCurriculum Studies\\r\n\\r\nThe training programme is designed to develop subject knowledge and understanding of the current curriculum issues in the chosen subject or phase of training. \\r\nIn the classroom\\r\nThe programme is designed to develop pedagogical skills. The school- based training begins with observations of experienced practitioners where trainees learn to identify key elements of a successful lesson. Small group teaching, team teaching and co -planning of lessons are integral to build confidence and expertise. With this experience, trainees begin to develop all the skills of an outstanding teacher, independently and confidently planning and teaching. By the end of the training programme they will be teaching 70 -80% of a newly qualified teacher.\\r\n\\r\n The Assessment of Trainees\\r\n\\r\nFor the successful completion of the course, trainees must demonstrate competence against all the QTS standards, and need to have successfully completed the Skills Tests before the course begins. Trainees will be continually assessed through lesson observations. The Professional Tutor will complete a TPR each half-term which documents the progress made in each of the Standards.   This is moderated by the PLT.  Throughout the year, evidence will be collected in lesson observation, training and subject knowledge file and evidence against the standards collated in a final presentation file.  This evidence is also moderated by St Mary’s University.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "We will be looking for a second class Honours Degree as the minimum requirement. A 2:1 or better is preferred in all cases, however a 2:2 will be accepted if the shortlisting panel see potential in the candidate.\\r\nAll entrants will have attained as a minimum a Grade C/4 at GCSE (or equivalent) examinations in English and Mathematics (and Science if applying for the Primary phase course).\\r\n",
+    "InterviewProcess": "The selection procedures which follow aim to ensure that:\\r\nEntry requirements specified in DfE Qualified Teacher Status Standards (2012) are applied carefully, giving due weight to academic equivalencies, experiences and motivation.\\r\n\\r\nEntrants are given a sound understanding of the nature and demands of the course in order to assure successful applicants complete the course and enjoy their new profession in education\\r\nSelection will be based on: - a teaching activity related to the age and phase of the class, completion of a written task and a formal interview. \\r\nDocumentation\\r\nApplicants are asked to bring to the interview the relevant certificates which verify the academic profile described on the application form.  Successful applicants will also be asked to bring appropriate certification and other documentation as requested to verify their identity and for the DBS check, prior to the start of the course. The document check is made by the Administrator and provides an audit for registration purposes at the commencement of the course. All documents must be 'original' and not a photocopy. Copies of critical documents will be stored on file under the new GDPR guidelines.\\r\n",
+    "OtherRequirements": "All entrants will go through an enhanced Disclosures and Barring Service DBS, in order to ascertain that they have no criminal background which might prevent them from working with children. In addition, entrants are required to sign a declaration that they have not previously been excluded from teaching or working with children.\\r\n\\r\nSchool experience is a desirable characteristic but not essential and no applicant would be rejected because of a lack of school experience.  \\r\n",
+    "PersonalQualities": "We are looking for enthusiastic applicants with very good communication skills, the determination to succeed, a commitment to working hard and the ability to work with others. Successful applicants are confident and passionate about teaching and also able to contribute to the wider school ethos and community. Training to teach is both challenging and rewarding. Developing excellent interpersonal skills will enable trainees to support the learning of groups of young people from diverse backgrounds effectively. We are looking for people who strive to improve and who are committed to their own professional development.",
+    "HowSchoolPlacementsWork": "All trainees teach in two schools during their training year. Their second school placement is chosen to provide a different context to their main school experience.  Trainees will have a mentor and PT in this placement.  A Partnership Link Tutor (PLT) is assigned to each trainee; each half term she/he will visit the trainee in school to support, observe and QA the school-based experience to moderate and to ensure consistency of training across the Partnership."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "George Abbot SCITT is a highly respected and well-established provider delivering school-based Initial Teacher Training (ITT) through Teach Surrey.  Teach Surrey represents an alliance of Teaching Schools and their associated partner schools. \\r\n\\r\nWe offer Primary and Secondary teacher training on a full-time basis, all with a core focus on training all teachers to teach all children, and this includes offering trainees the option to specialise in Special Educational Needs (SEN).\\r\n\\r\nWith 17 years’ experience leading ITT, we offer practical training in a variety of schools, with experienced practitioners to mentor you through the course.  We have unrivalled experience in Surrey having trained over 500 teachers, and our provision across the partnership is rated as “Outstanding” by Ofsted, as well as by our past trainees.  \\r\n\\r\nWe are small enough to really get to know our trainees and to be able to tailor our training to meet the needs of everyone on our programme.  We are also proud to say that we have a 100% employment record at the end of our training programmes.\\r\n\\r\nGeorge Abbot SCITT has always led the way in teacher training and we work very closely with the DfE. In 2012, we were the first ITT provider in the UK to pilot the School Direct ITT programme. In 2013, alongside an educational charity, we created an entirely new route into teaching for candidates with PhDs, called Researchers in Schools. We were also selected to pilot a 2 year, part-time school-based training route for shortage subjects in September 2016.",
+    "TrainWithDisability": "George Abbot SCITT has trained teachers with a variety of individual needs.  We are able to adjust our programme accordingly.\\r\n\\r\nShould you be invited to interview, you will be asked to disclose any needs you may have so that we can support you appropriately.\\r\n\\r\nIf you would like to discuss how we could support you during training with your needs, please do get in touch on 01483 888048.",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}

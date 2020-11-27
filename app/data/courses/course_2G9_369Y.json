@@ -1,0 +1,76 @@
+{
+  "locationType": "School",
+  "accrediting": "Durham University",
+  "provider": "Outwood Institute of Education - North",
+  "subjects": [
+    "Languages",
+    "Secondary"
+  ],
+  "name": "Modern Languages",
+  "financial_support": "Student finance if you’re eligible",
+  "slug": "2G9/369Y",
+  "providerCode": "2G9",
+  "programmeCode": "369Y",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Hall Drive, Acklam, Middlesbrough, TS5 7JY",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Hall Drive, Acklam, Middlesbrough, TS5 7JY",
+      "geocode": true,
+      "formatted_address": "Middlesbrough TS5 7JY, UK",
+      "latitude": 54.543368,
+      "longitude": -1.245557,
+      "post_code": "TS5 7JY",
+      "city": "Middlesbrough",
+      "route": null,
+      "postal_town": "Middlesbrough"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "2G9",
+    "addr_1": "Hall Drive",
+    "addr_2": "Acklam",
+    "addr_3": "Middlesbrough",
+    "addr_4": null,
+    "postcode": "TS5 7JY ",
+    "url": "http://oie.outwood.com",
+    "geocode": true,
+    "formatted_address": "Hall Dr, Middlesbrough TS5 7HT, UK",
+    "latitude": 54.5438035,
+    "longitude": -1.2482293,
+    "post_code": "TS5 7HT",
+    "city": "Middlesbrough",
+    "route": "Hall Drive",
+    "postal_town": "Middlesbrough"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "Outwood Institute of Education offers a School Direct programme that strives to develop, support and celebrate excellent trainee teachers who are well-prepared for the profession. On completion of this programme, our trainee teachers will be awarded PGCE with QTS and 90 Master’s credits in Education from Durham University. \\r\n\\r\nOur School Direct programme allows trainees to work alongside innovative, ambitious and child-focused teachers who are passionate about raising standards and transforming lives.\\r\n\\r\nWe have a strong partnership with Durham University who are one of the leading departments for education in the UK as they regularly feature in the top five in national university league tables such as 3rd in the Guardian University Guide 2019. This partnership creates a collaborative model of training. The training will take place at our conference centre in Middlesbrough, Durham University and in the two placement schools. \\r\n\\r\nIf you would like to visit one of our academies for a career experience placement before or during your application process, please contact oie@outwood.com and we will organise this for you.\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "\\r\n* A UK honours degree preferably at classification 2:2 or above or a recognised equivalent qualification \\r\n* GCSE grade C or Grade 4 in English Language, mathematics and science or equivalent qualifications \\r\n* QTS skills tests in numeracy and literacy \\r\n",
+    "InterviewProcess": "Applicants who meet our entry requirements will be invited to one of our academies to complete our selection process. This will usually take half a day and consists of a written task, time spent supporting students in a lesson and an interview with representatives from the chosen university and Outwood Grange Academies Trust. Please note that you will not be required to teach as part of the interview process.",
+    "OtherRequirements": "\\r\n* Completion of a declaration of criminal convictions and health check forms",
+    "PersonalQualities": "Outwood Institute of Education is seeking applicants with the following qualities:\\r\n\\r\n* A genuine desire to put children first and a commitment to improving the life chances of young people\\r\n* An ability to engage with students in a personable and professional manner\\r\n* Resilience, flexibility and a passion to succeed in the teaching profession\\r\n",
+    "HowSchoolPlacementsWork": "During the programme, our trainees complete two placements in our alliance schools and academies. The first placement starts in September and ends in December whilst the second placement starts in January and ends in June. The location of these placements is decided by the trainee teacher’s home location and the capacity of the school or academy. Each trainee teacher will be assigned a trained mentor to support and celebrate their progress as they enter the teaching profession. "
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "‘As a multi-academy trust we want to be known for placing students first: raising standards and transforming lives.’ \\r\n\\r\nMartyn Oliver, CEO, Outwood Grange Academies Trust\\r\n\\r\nThe programme is led by Outwood Grange Academies Trust which is recognised nationally as a high performing chain of schools in the North of England. Our family of schools currently comprises of thirty-one academies who work together to ensure that all children, irrespective of their starting point, receive an excellent education. \\r\n",
+    "TrainWithDisability": "We offer disabled access across our family of schools and invite all applicants to discuss their individual needs with us so that we can place you in the most appropriate schools and academies for your training year.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "We are proud to be working in partnership with Durham University to deliver teacher education and this programme has been rated ‘Outstanding’ by Ofsted.",
+        "UcasInstitutionCode": "D86"
+      }
+    ]
+  },
+  "has_inst": true
+}

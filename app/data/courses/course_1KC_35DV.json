@@ -1,0 +1,80 @@
+{
+  "locationType": "School",
+  "accrediting": "University of Hertfordshire",
+  "provider": "Pan Enfield Alliance",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "1KC/35DV",
+  "providerCode": "1KC",
+  "programmeCode": "35DV",
+  "schools": [
+    {
+      "name": "Highlands School",
+      "address": "148 Worlds End Lane, Enfield, N21 1QQ",
+      "code": "1"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "148 Worlds End Lane, Enfield, N21 1QQ",
+      "geocode": true,
+      "formatted_address": "148 Worlds End Ln, London N21 1QQ, UK",
+      "latitude": 51.6488658,
+      "longitude": -0.109103,
+      "post_code": "N21 1QQ",
+      "city": "Greater London",
+      "route": "Worlds End Lane",
+      "postal_town": "London"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "1KC",
+    "addr_1": "Highlands School",
+    "addr_2": "148 Worlds End Lane",
+    "addr_3": null,
+    "addr_4": "London",
+    "postcode": "N21 1QQ ",
+    "url": "http://www.highlands.enfield.sch.uk/",
+    "geocode": true,
+    "formatted_address": "148 Worlds End Ln, London N21 1QQ, UK",
+    "latitude": 51.64849719999999,
+    "longitude": -0.1088237,
+    "post_code": "N21 1QQ",
+    "city": "Greater London",
+    "route": "Worlds End Lane",
+    "postal_town": "London"
+  },
+  "options": [
+    "QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9250.0,
+    "AboutCourse": "History at the Pan Enfield Alliance has a culture of training colleagues very successfully - with all trainees having found employment immediately after training. Previous trainees have commented on the extent of support they received as well as the practical and pedagogical skills they learnt during their time with us.",
+    "CourseLength": "OneYear",
+    "Qualifications": "Lower second degree or equivalent in the subject (or closely related) you wish to teach.\\r\nLevel 3 (A Level or equivalent) in the subject you wish to teach.\\r\nLevel 2 (GCSE or equivalent) “good” pass in Maths and English (A*-C/9-4). ",
+    "InterviewProcess": "You will be interviewed by a panel - including the Head of Department or Faculty and a member of the Senior Leadership Team. There will also be a test of literacy and a short lesson observation to see how you relate to young people.",
+    "OtherRequirements": "You will also be expected to complete Literacy and Numeracy skills tests by August 31st prior to commencing training and a DBS check. ",
+    "PersonalQualities": "Significant classroom experience is a must. We are looking for confident, knowledgeable and enthusiastic people who will be classroom practitioners currently or in the near future. Preferably, you will currently hold a role within a school which requires you to work directly with children. \\r\nWe prefer candidates who can show evidence of their working with children and who possess the personal attributes which suggest real potential in the classroom: independence, flexibility and charisma. \\r\n",
+    "HowSchoolPlacementsWork": "Students apply to the Pan Enfield Alliance and can request the school in which they wish to train. Most of our previous trainees have lived locally, but due to our reputation, we have trained colleagues from across London. You will be teaching 11-18 year olds and will be within an alliance of 6 schools, in 2 placements and with the opportunity to spend some time in additional schools. Your placements run for the whole training year, with 1 day per week at university."
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "An \"Outstanding\" School in Enfield, Highlands is the lead school of the Pan Enfield Alliance. We have a strong track record of training School Direct colleagues in a diverse range of settings - with secondary schools, primaries, a special school and a tuition centre . Over the last 5 years, over 90% of our trainees have found employment in a school of their choice - with the remaining staying in further education. We are relatively small and tightly focussed, giving our trainees a real sense of community and support.",
+    "TrainWithDisability": "We welcome and are committed to complying with our duties under the Equality Act 2010 and any subsequent legislation.\\r\n\\r\nUnder the Equality Act 2010, there are certain ‘protected characteristics’ that qualify for protection against discrimination.  These are age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex and sexual orientation.\\r\n\\r\nHighlands was built in 2000 and as such all facilities are accessible to staff with additional need. Interventions include lifts, wide corridors, coloured edges to steps, tactile edges on fire exits.  Lifts have tactile buttons. Students who use wheelchairs can move freely around the school.",
+    "AccreditingProviderEnrichments": [
+      {
+        "Description": "With a long history of working in the education and training of teachers and other professionals in the education sector, we are an established and dynamic School committed to developing excellence and confidence in teaching, learning and professional practice for individuals in a variety of contexts.\\r\n\\r\nOur underpinning values are:\\r\nThe importance of scholarship, research and critical reflection.\\r\nRespect and challenge for all learners including ourselves.\\r\nThe significance of personal and professional development.\\r\nA shared commitment to quality.\\r\n\\r\n",
+        "UcasInstitutionCode": "H36"
+      },
+      {
+        "Description": "Located in the heart of London, PGCE courses at King’s are rated Outstanding by Ofsted with excellent tutors on hand to support you through your training. In the last research assessment exercise, the department was rated second in the UK (REF, 2014). You will have the opportunity to work with experienced tutors who are actively engaged in research in their subject and in pedagogy more widely. 96% of 2017 graduates who sought teaching posts were employed within 6 months of qualifying. In our 2018 student survey, 92% of trainees rated the quality of their training as very good or good. \\r\n\\r\n",
+        "UcasInstitutionCode": "K60"
+      }
+    ]
+  },
+  "has_inst": true
+}

@@ -1,0 +1,73 @@
+{
+  "locationType": "School",
+  "accrediting": null,
+  "provider": "Altius Alliance",
+  "subjects": [
+    "History",
+    "Secondary"
+  ],
+  "name": "History",
+  "financial_support": "Bursary or Student finance if you’re eligible",
+  "slug": "24R/2LGD",
+  "providerCode": "24R",
+  "programmeCode": "2LGD",
+  "schools": [
+    {
+      "name": "Main Site",
+      "address": "Cheadle Hulme High School, Woods Lane, Cheadle Hulme, Cheshire, SK8 7JY",
+      "code": "-"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "Cheadle Hulme High School, Woods Lane, Cheadle Hulme, Cheshire, SK8 7JY",
+      "geocode": true,
+      "formatted_address": "Woods Ln, Cheadle Hulme, Cheadle SK8 7JY, UK",
+      "latitude": 53.3650847,
+      "longitude": -2.1874761,
+      "post_code": "SK8 7JY",
+      "city": "Cheadle Hulme",
+      "route": "Woods Lane",
+      "postal_town": "Cheadle"
+    }
+  ],
+  "providerAddress": {
+    "inst_code": "24R",
+    "addr_1": "Cheadle Hulme High School",
+    "addr_2": "Woods Lane",
+    "addr_3": "Cheadle Hulme",
+    "addr_4": "Cheshire",
+    "postcode": "SK8 7JY ",
+    "url": "http://www.altiusalliance.org.uk",
+    "geocode": true,
+    "formatted_address": "Woods Ln, Cheadle Hulme, Cheadle SK8 7JY, UK",
+    "latitude": 53.3650847,
+    "longitude": -2.1874761,
+    "post_code": "SK8 7JY",
+    "city": "Cheadle Hulme",
+    "route": "Woods Lane",
+    "postal_town": "Cheadle"
+  },
+  "options": [
+    "PGCE with QTS, full time"
+  ],
+  "enrichment": {
+    "FeeUkEu": 9000.0,
+    "AboutCourse": "\\r\nThe Altius Alliance will ensure that you are trained, coached and mentored by experienced, highly effective practioners and Specialist Leaders of Education (SLEs) to achieve QTS and a PGCE (SCITT)\\r\nAll trainees undertake at least one of the 3 placements at Cheadle Hulme High School and a further placement at another school within our Alliance.\\r\n\\r\n\\r\nThe History department at Cheadle Hulme High School has a suite of dedicated History classrooms and a central office with dedicated Administration Support\\r\nAt KS3 students are taught by subject specialists and study a range of topics including The Battle of Hastings, Significant Tudors, The History of Manchester, Terrorism in the 20th Century and the assassination of JFK.\\r\nAt GCSE we follow the AQA specification and study Germany, 1890–1945: Democracy and dictatorship, Conflict and tension between East and West, 1945–1972, Britain: Health and the people: c1000 to the present day and Elizabethan England, c1568–1603. \\r\nThe popularity of our subject, in terms of student take up at KS4, has increased year on year. Successful uptake of the subject has seen the department continue to develop students and prepare them for University life.\\r\n\\r\nThe course:\\r\n\\r\nThe course runs from September to the end of June.\\r\nAll of the time is spent in schools (apart from 4 days at university to undertake the Post Graduate Certificate in Education (PGCE) (SCITT).\\r\nThe course comprises:\\r\n•\\tGeneric teacher training\\r\n•\\tHistory pedagogy programme - reflecting the KS3 and KS4 content outlined above\\r\n•\\tSEND with mental health programme\\r\n•\\tThree assessed teaching placements (11-16)\\r\n•\\tEnhancement placements – a SEND school, Post 16 and primary placement (unassessed)\\r\n•\\tEnrichment opportunities \\r\n•\\tPGCE (SCITT) with 60 Masters credits\\r\n\\r\nAssessment:\\r\n\\r\nQTS: This is an evidence based course where trainees are required to maintain and submit files of evidence of meeting the Teachers’ Standards (DfE). These files comprise school experience files, formal lesson observations, pedagogy tasks, specific generic and curriculum-based tasks. \\r\nPGCE (SCITT): Two assignments (5000 words each) at Masters level. \\r\n‘The SCITT has an excellent reputation for producing NQTs who are confident and competent teachers.’ (Ofsted 2017)\\r\n\\r\n",
+    "CourseLength": "OneYear",
+    "Qualifications": "You must already possess, or expect to be awarded, the equivalent of a UK Honours Degree with a minimum 2:2 degree classification. Degree modules must be at least 50% relevant.\\r\n\\r\nGCSE English Language and Maths grade C or 4 achieved at time of application.",
+    "InterviewProcess": "The selection process will involve an initial application (two references are required to support this application) after which applicants may be short listed to attend an Assessment Day.\\r\n\\r\nSuccessful candidates will be invited for interview at Cheadle Hulme High School. During the process, which lasts for approximately 2 hours, you will be welcomed by a representative of the Alliance and given an overview of the programme.  \\r\n\\r\nThe interview process will be conducted in two parts. Candidates will be observed teaching a short segment of a lesson to a group of pupils. The requirements for this and information about the pupils being taught will have been sent with the invitation for interview. This will be followed by an interview with a member of the SCITT team and a subject lead. \\r\n\\r\nCandidates will be informed of the outcome of the interview via UCAS within 2 working days. \\r\n\\r\n \\r\n",
+    "OtherRequirements": "Before trainee teachers start their training, they must have met the following academic condition:\\r\n\\r\n• passed both the numeracy and literacy professional skills tests\\r\n\\r\nas well as the following non-academic conditions:\\r\n\\r\n• been screened by the Disclosure and Barring Service to make sure they are not barred from working with children and vulnerable adults\\r\n• been assessed as having the health and physical capacity to teach so that children and young people in their care would not be at risk of harm\\r\n",
+    "PersonalQualities": "‘Teaching is the most difficult profession of all. The only time a physician comes close to doing what a teacher does is when the doctor faces an emergency room of multiple patients with multiple conditions, all of whom need immediate attention. That’s what a teacher deals with every day in a class of 30.’\\r\nLee Shulman\\r\nAdapted from Educational Leadership, Vol 67 (5), February 2010\\r\n\\r\nYou need a high standard of personal organisation, a willingness to learn, a passion for your subject and, above all, a desire to work with young people to help them achieve their potential. \\r\n",
+    "HowSchoolPlacementsWork": "There are approximately 12 secondary schools in the Alliance across Stockport, Manchester, Tameside and Cheshire.  All formal training takes place at Cheadle Hulme High School and all trainees undertake their first assessed teaching placement (11-16) at this school, from September until Christmas.  \\r\nAfter Christmas trainees move to another school within the Alliance for their second assessed teaching placement (11-16).  As a small provider we endeavour to take account of participants’ locations and personal circumstances when arranging second placements. \\r\nAround Easter time trainees return to their first placement school; although some opt to remain in their second placement school until the end of the course.\\r\nIn summary, there are three assessed teaching placements (11-16) over two schools throughout the course.\\r\nIn addition to these the trainees spend some time in post 16 and primary environments to experience settings either side of the 11-16 age range. These are called enhancement placements and are not assessed.\\r\n"
+  },
+  "has_enrichment": true,
+  "inst": {
+    "TrainWithUs": "The Altius Alliance SCITT provides a school-led route which ‘ensures that trainees have the opportunity to hone their practical teaching skills in an intellectually rigorous context. Training balances conceptual understanding with the practical toolkit trainees need to teach in schools.’ (Ofsted 2017)\\r\nThe SCITT is a partnership of primary and secondary schools across Greater Manchester, Stockport, Cheshire and Tameside. In 2017 the SCITT was judged to be an outstanding provider of Initial Teacher Training by Ofsted. \\r\nThe SCITT is based at Cheadle Hulme High School (11-18), consistently the highest performing state school in Stockport and judged outstanding in all areas by Ofsted in two successive inspections. All formal primary and secondary training takes place here and all secondary trainees undertake their first and final placements at this school. Primary trainees undertake their assessed placements in one of our Alliance primary schools.\\r\nThe Ofsted report lauded the training programme stating that ‘exceptionally well-designed training enables trainees and NQTs to thrive.’ The current and former trainees told the inspectors it had been ‘a privilege’ to train with the SCITT and praised the ‘excellent levels of support provided by leaders and managers.’\\r\nTrainees who successfully complete their training are recommended for qualified teacher status (QTS) 11-16 (secondary) or 5-11 (primary). All gain a postgraduate certificate in education (PGCE), with 60 Masters credits, from our partner Manchester Metropolitan University.\\r\nChoose to train with us if you want ‘a robust and rich school-led programme that demands high expectations alongside offering opportunity and challenge.’ (Ofsted 2017)\\r\n",
+    "TrainWithDisability": "The Altius Alliance is committed to Equal Opportunities for all our applicants. If you have any specific requirements we would be pleased to discuss them with you.\\r\n\\r\nThere are schools within the Altius Alliance which have full disability access. \\r\n",
+    "AccreditingProviderEnrichments": [
+
+    ]
+  },
+  "has_inst": true
+}
