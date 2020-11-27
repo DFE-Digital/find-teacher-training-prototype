@@ -9,69 +9,21 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Patterns that aren't in Frontend
 @import "patterns/definition-list";
+@import "patterns/filters";
 @import "patterns/step-by-step-header";
 @import "patterns/step-by-step-nav";
 @import "patterns/step-by-step-related";
-@import "patterns/task-list";
 @import "patterns/related-items";
+@import "patterns/task-list";
 
 // Components that aren't in Frontend
 @import "components/cookie-banner";
+@import "components/toggle";
 
 .govuk-heading-m .heading-secondary {
   color: govuk-colour("dark-grey");
   font-weight: normal;
   @include govuk-font(19);
-}
-
-.filter-link {
-  margin-bottom: 0;
-}
-
-.filter-heading {
-  margin-bottom: 0;
-  margin-top: 3px;
-}
-
-.filter-category {
-  background-color: #dee0e2;
-  display: block;
-  margin-bottom: 10px;
-  padding: 8px;
-
-  &--toggle {
-    background-image: url('/public/images/option-select-toggle-sprite.png');
-    background-position: right -72px;
-    background-repeat: no-repeat;
-
-    @include govuk-media-query($from: tablet) {
-      display: none;
-    }
-  }
-
-  &--toggle-open {
-    background-position: right 10px;
-  }
-}
-
-.filters {
-  background-color: #ffffff;
-  margin: 10px 0;
-
-  &.list {
-    margin-bottom: 0;
-  }
-
-  li {
-    border-bottom: 2px solid #dee0e2;
-    margin-bottom: 0;
-    padding: 8px 8px 5px;
-
-    &:only-child,
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
 }
 
 .results {

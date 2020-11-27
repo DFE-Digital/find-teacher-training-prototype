@@ -1,111 +1,97 @@
-<div class="filter-category filter-category--toggle" data-module="toggle-filters" tabindex="0" aria-expanded="false">
-  <h4 class="govuk-heading-s filter-heading govuk-!-margin-bottom-0">Filter the results</h4>
-</div>
+<div class="govuk-toggle" data-module="toggle">
+  <button class="govuk-toggle__link js-toggle" aria-expanded="false" aria-controls="searchFilters">
+    Filter the results
+  </button>
 
-<div id="filter-sidebar">
-  <div class="filter-category">
-    <h4 class="govuk-heading-s filter-heading">Location</h4>
-    <ul class="filters govuk-list">
-      <li>
-        {% if data['location'] == 'Across England' %}
-          Across England
-        {% else %}
-          {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
-        {% endif %}
-      </li>
-    </ul>
-    <p class="filter-link">
-      <a href="/results/filters/location{% if isMap %}?map=yes{% endif %}">Change location</a>
-    </p>
-  </div>
-
-  <div class="filter-category ">
-    <h4 class="govuk-heading-s filter-heading">Subject</h4>
-    <ul class="filters govuk-list">
-      {% if data['sen'] %}<li>Only SEN courses</li>{% endif %}
-      {% for subject in data['selectedSubjects'] %}
-        <li>{{ subject }}</li>
-      {% endfor %}
-    </ul>
-    <p class="filter-link">
-      <a href="/results/filters/subjects{% if isMap %}?map=yes{% endif %}">Change subjects</a>
-    </p>
-  </div>
-
-  <!-- <div class="filter-category">
-    <h4 class="govuk-heading-s filter-heading">Special educational needs (SEN)</h4>
-    <ul class="filters govuk-list">
-      <li>Only SEN courses</li>
-    </ul>
-    <p class="filter-link">
-      <a href="#">Change</a>
+  <div class="govuk-toggle__target" id="searchFilters" data-qa="filters">
+    <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Location</h4>
+      <ul class="filter-form__value--list">
+        <li>
+          {% if data['location'] == 'Across England' %}
+            Across England
+          {% else %}
+            {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
+          {% endif %}
+        </li>
+      </ul>
+      <a class="govuk-link" href="/results/filters/location{% if isMap %}?map=yes{% endif %}">Change location</a>
     </div>
-  </div> -->
 
-  <!-- <div class="filter-category">
-    <h4 class="govuk-heading-s filter-heading">Financial support</h4>
-    <ul class="filters govuk-list">
-      {% if data['funding'] == 'Show courses with and without financial support' %}
-        <li>All</li>
-      {% else %}
-        <li>Salaries</li>
-      {% endif %}
-    </ul>
-    <p class="filter-link">
-      <a href="/results/filters/funding">Change financial support options</a>
+    <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Subject</h4>
+      <ul class="filter-form__value--list">
+        {% if data['sen'] %}<li>Only SEN courses</li>{% endif %}
+        {% for subject in data['selectedSubjects'] %}
+          <li>{{ subject }}</li>
+        {% endfor %}
+      </ul>
+      <a class="govuk-link" href="/results/filters/subjects{% if isMap %}?map=yes{% endif %}">Change subjects</a>
     </div>
-  </div> -->
 
-  <div class="filter-category">
-    <h4 class="govuk-heading-s filter-heading">Study type</h4>
-    <ul class="filters govuk-list">
-      {% for type in data['studyType'] %}
-        <li>{{ type }}</li>
-      {% endfor %}
-    </ul>
-    <p class="filter-link">
-      <a href="/results/filters/studytype{% if isMap %}?map=yes{% endif %}">Change study type</a>
-    </p>
-  </div>
+    <!-- <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Special educational needs (SEN)</h4>
+      <ul class="filter-form__value--list">
+        <li>Only SEN courses</li>
+      </ul>
+      <a class="govuk-link" href="#">Change</a>
+    </div> -->
 
-  <div class="filter-category">
-    <h4 class="govuk-heading-s filter-heading">Qualifications</h4>
-    <ul class="filters govuk-list">
-      {% for q in data['qualification'] %}
-        {% if 'Postgraduate' in q %}
-          <li>PGCE with QTS (Postgraduate certificate of education with qualified teacher status)</li>
+    <!-- <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Financial support</h4>
+      <ul class="filter-form__value--list">
+        {% if data['funding'] == 'Show courses with and without financial support' %}
+          <li>All</li>
         {% else %}
-          <li>QTS (Qualified teacher status)</li>
+          <li>Salaries</li>
         {% endif %}
-      {% endfor %}
-    </ul>
-    <p class="filter-link">
-      <a href="#">Change qualifications</a>
-      <!-- <a href="/results/filters/qualification{% if isMap %}?map=yes{% endif %}">Change qualifications</a> -->
-    </p>
-  </div>
+      </ul>
+      <a class="govuk-link" href="/results/filters/funding">Change financial support options</a>
+    </div> -->
 
-  <div class="filter-category ">
-    <h4 class="govuk-heading-s filter-heading">Salary</h4>
-    <ul class="filters govuk-list">
-      {% if data['salary'] == 'All courses (with or without a salary)' %}
-        <li>Courses with and without salary</li>
-      {% else %}
-        <li>Only courses with a salary</li>
-      {% endif %}
-    </ul>
-    <p class="filter-link">
-      <a href="/results/filters/salary{% if isMap %}?map=yes{% endif %}">Change salary option</a>
-    </p>
-  </div>
+    <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Study type</h4>
+      <ul class="filter-form__value--list">
+        {% for type in data['studyType'] %}
+          <li>{{ type }}</li>
+        {% endfor %}
+      </ul>
+      <a class="govuk-link" href="/results/filters/studytype{% if isMap %}?map=yes{% endif %}">Change study type</a>
+    </div>
 
-  <div class="filter-category ">
-    <h4 class="govuk-heading-s filter-heading">Vacancies</h4>
-    <ul class="filters govuk-list">
-      <li>Only courses with vacancies</li>
-    </ul>
-    <p class="filter-link">
-      <a href="#">Change vacancies</a>
-    </p>
+    <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Qualifications</h4>
+      <ul class="filter-form__value--list">
+        {% for q in data['qualification'] %}
+          {% if 'Postgraduate' in q %}
+            <li>PGCE with QTS (Postgraduate certificate of education with qualified teacher status)</li>
+          {% else %}
+            <li>QTS (Qualified teacher status)</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <a class="govuk-link" href="#">Change qualifications</a>
+      <!-- <a class="govuk-link" href="/results/filters/qualification{% if isMap %}?map=yes{% endif %}">Change qualifications</a> -->
+    </div>
+
+    <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Salary</h4>
+      <ul class="filter-form__value--list">
+        {% if data['salary'] == 'All courses (with or without a salary)' %}
+          <li>Courses with and without salary</li>
+        {% else %}
+          <li>Only courses with a salary</li>
+        {% endif %}
+      </ul>
+      <a class="govuk-link" href="/results/filters/salary{% if isMap %}?map=yes{% endif %}">Change salary option</a>
+    </div>
+
+    <div class="filter-form">
+      <h4 class="govuk-heading-s filter-form__title">Vacancies</h4>
+      <ul class="filter-form__value--list">
+        <li>Only courses with vacancies</li>
+      </ul>
+      <a class="govuk-link" href="#">Change vacancies</a>
+    </div>
   </div>
 </div>
