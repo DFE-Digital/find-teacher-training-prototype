@@ -1,7 +1,12 @@
 {% extends "layout.html" %}
 {% set title = "Map" %}
 
-{% block backLink %}{{ macros.backLink('/results', 'Back to search results') }}{% endblock %}
+{% block backLink %}
+  {{ govukBackLink({
+    text: "Back to search results",
+    href: "/results"
+  }) }}
+{% endblock %}
 
 {% block content %}
 
