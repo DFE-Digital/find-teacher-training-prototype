@@ -5,7 +5,7 @@ gem 'geocoder', '~>1.4.9'
 require 'geocoder'
 
 require 'json'
-file = File.read('provider_address_website.json')
+file = File.read('providers.json')
 geocoded_addresses = JSON.parse(file)
 
 Geocoder.configure(
@@ -46,4 +46,4 @@ geocoded_addresses.each do |a|
   end
 end
 
-File.open('provider_address_website.json', 'w') { |file| file.write(JSON.pretty_generate(geocoded_addresses) + "\n") }
+File.open('providers.json', 'w') { |file| file.write(JSON.pretty_generate(geocoded_addresses) + "\n") }

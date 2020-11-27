@@ -20,10 +20,10 @@ def to_sentence(arr)
   end
 end
 
-geo_file = File.read('geocoded_address_data.json')
+geo_file = File.read('../app/data/geocoded-provider-addresses.json')
 geocoded_addresses = JSON.parse(geo_file)
 
-addresses_file = File.read('provider_address_website.json')
+addresses_file = File.read('../app/data/providers.json')
 addresses = JSON.parse(addresses_file)
 
 course_enrichments = CSV.read('course-enrichment.csv', :headers => true)
@@ -36,18 +36,7 @@ def to_slug(string)
   string.downcase.gsub(/[^a-zA-Z0-9]/, '-').gsub(/--*/, '-').gsub(/-$/,'')
 end
 
-prototype_data = {
-  "seen-apply-with-choice": false,
-  "seen-apply-without-choice": false,
-  "study-type": ["Full time (12 months)", "Part time (18-24 months)"],
-  "salary": "All courses (with or without a salary)",
-  "qualification": ["PGCE with QTS (Postgraduate certificate in education with qualified teacher status)", "QTS (Qualified teacher status)"],
-  "selectedSubjects": [],
-  "latLong": {
-    "lat": 52.6033,
-    "lng": -1.4183
-  }
-}
+prototype_data = {}
 
 prototype_data['subjects'] = data.map { |c| c['subjects'].map {|s| s.downcase.capitalize } }.flatten.uniq.sort
 
@@ -254,7 +243,7 @@ prototype_data['courses'] = sample.map do |c|
   end
 
   if (course[:has_inst] && course[:has_enrichment])
-    File.open("lib/courses/course_#{c['providerCode']}_#{c['programmeCode']}.json", 'w') do |file|
+    File.open("../app/data/courses/course_#{c['providerCode']}_#{c['programmeCode']}.json", 'w') do |file|
       file.write(JSON.pretty_generate(course) + "\n")
     end
   end
@@ -271,4 +260,4 @@ prototype_data['courses'].reject! { |c| !(c[:has_enrichment] && c[:has_inst]) }
 prototype_data['courses'].reject! { |c| !c[:providerAddress] || !c[:providerAddress]["latitude"] }
 
 puts "#{prototype_data['courses'].length} courses"
-File.open('lib/prototype_data.json', 'w') { |file| file.write(JSON.pretty_generate(prototype_data) + "\n") }
+File.open('../app/data/courses.json', 'w') { |file| file.write(JSON.pretty_generate(prototype_data) + "\n") }

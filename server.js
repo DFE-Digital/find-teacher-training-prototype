@@ -247,12 +247,12 @@ app.use(function (req, res, next) {
     }
 
     // If they've seen a course without a choice, force them to see one with
-    if (data['seen-apply-without-choice']) {
+    if (data.seenApplyWithoutChoice) {
       return applyWithChoice
     }
 
     // If they've seen a course with a choice, force them to see one without
-    if (data['seen-apply-with-choice']) {
+    if (data.seenApplyWithChoice) {
       return applyWithoutChoice
     }
 
