@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     csv (3.1.9)
-    geocoder (1.4.9)
+    geocoder (1.6.4)
     json5 (0.0.1)
 
 PLATFORMS
@@ -10,8 +10,8 @@ PLATFORMS
 
 DEPENDENCIES
   csv (~> 3.1.9)
-  geocoder (~> 1.4.9)
+  geocoder (~> 1.6.1)
   json5 (~> 0.0.1)
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
