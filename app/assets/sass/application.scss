@@ -10,6 +10,7 @@ $govuk-assets-path: '/govuk/assets/';
 // Patterns that aren't in Frontend
 @import "patterns/definition-list";
 @import "patterns/filters";
+@import "patterns/search-results";
 @import "patterns/step-by-step-header";
 @import "patterns/step-by-step-nav";
 @import "patterns/step-by-step-related";
@@ -24,37 +25,6 @@ $govuk-assets-path: '/govuk/assets/';
   color: govuk-colour("dark-grey");
   font-weight: normal;
   @include govuk-font(19);
-}
-
-.results {
-  margin-bottom: 20px;
-}
-
-.results .grid-row {
-  padding-bottom: 5px;
-}
-
-.resultsSortingOptions {
-  border-bottom: 1px solid #cccccc;
-  margin: 10px 0px 10px 0px;
-  padding: 0 0px 10px 0px;
-}
-
-.resultsHeader span {
-  float: right;
-}
-
-.results-data {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-.sortSelectBox {
-  width: 200px;
-}
-
-.sortLabel {
-  display: inline;
 }
 
 .heading-secondary {
