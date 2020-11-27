@@ -1,10 +1,14 @@
 {% extends "layout.html" %}
 {% set title %}{{ course.name }} with {{ course.provider }}{% endset %}
 
-{% block backLink %}{{ macros.backLink('/results', 'Back to search results') }}{% endblock %}
+{% block backLink %}
+  {{ govukBackLink({
+    text: "Back to search results",
+    href: "/results"
+  }) }}
+{% endblock %}
 
 {% block content %}
-
   <h1 class="govuk-heading-xl">
     <span class="govuk-!-font-size-36">{{ course.provider }}</span><br />
     {{ course.name }} ({{ course.programmeCode }})

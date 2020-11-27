@@ -1,10 +1,12 @@
 {% extends "layout.html" %}
 {% set title = "Pick a location" %}
 
-{% if not backLink %}
-  {% set backLink = { text: 'Back', href: '/'} %}
-{% endif %}
-{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
+{% block backLink %}
+  {{ govukBackLink({
+    text: backLink.text or "Back"
+    href: backLink.href or "/"
+  }) }}
+{% endblock %}
 
 {% block content %}
   <h1 class="govuk-heading-xl">

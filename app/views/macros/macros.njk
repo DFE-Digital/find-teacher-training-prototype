@@ -1,8 +1,3 @@
-{% macro backLink(href = "/", text = "Back") %}
-  {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
-  {{ govukBackLink({ text: text, href: href }) }}
-{% endmacro %}
-
 {% macro radioGroup(name, fields, errors = false, index = 0) %}
   {% set e = false %}
   <div class="govuk-form-group {% if e %} govuk-form-group--error{% endif %}">

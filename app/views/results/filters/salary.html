@@ -1,7 +1,12 @@
 {% extends "layout.html" %}
 {% set title = "Find courses that pay a salary" %}
 
-{% block backLink %}{{ macros.backLink(backLink.href, backLink.text) }}{% endblock %}
+{% block backLink %}
+  {{ govukBackLink({
+    text: backLink.text,
+    href: backLink.href
+  }) }}
+{% endblock %}
 
 {% block content %}
   <h1 class="govuk-heading-xl">{{ title }}</h1>
