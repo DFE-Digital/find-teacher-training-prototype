@@ -11,23 +11,16 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      {{macros.h1("Financial support while you train")}}
-      <p>
-        Business studies courses come with either student finance (a tuition fee loan and maintenance loan, if you’re eligible) or a salary.
-      </p>
+      <h1 class="govuk-heading-xl">Financial support while you train</h1>
+      <p>Business studies courses come with either student finance (a tuition fee loan and maintenance loan, if you’re eligible) or a salary.</p>
 
       <form action="/results" method="get">
         <div class="form-group">
-
-          {% set fields = [
-              {
-                name: 'All courses (with salaries or with student finance)'
-              },
-              {
-                name: 'Only courses that come with a salary'
-              }
-            ]
-          %}
+          {% set fields = [{
+            name: 'All courses (with salaries or with student finance)'
+          }, {
+            name: 'Only courses that come with a salary'
+          }] %}
 
           {{ macros.radioGroup('funding', fields) }}
         </div>
@@ -39,12 +32,8 @@
         </div>
       </form>
 
-      <h2 class="govuk-heading-m">
-          Other financial support
-      </h2>
-      <p>
-          Some other subjects offer different types of financial support for trainee teachers. You can find out more about <a href="https://getintoteaching.education.gov.uk/funding-and-salary/overview/funding-by-subject">financial support for trainee teachers</a> on the Get into Teaching website.
-      </p>
+      <h2 class="govuk-heading-m">Other financial support</h2>
+      <p>Some other subjects offer different types of financial support for trainee teachers. You can find out more about <a href="https://getintoteaching.education.gov.uk/funding-and-salary/overview/funding-by-subject">financial support for trainee teachers</a> on the Get into Teaching website.</p>
     </div>
   </div>
 {% endblock %}

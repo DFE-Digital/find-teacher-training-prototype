@@ -11,7 +11,7 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      {{ macros.h1("Study type") }}
+      <h1 class="govuk-heading-xl">Study type</h1>
 
       <form action="/results">
         {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
