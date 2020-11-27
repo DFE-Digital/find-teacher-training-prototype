@@ -18,8 +18,8 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <dl class="aligned">
-        <dt>Qualification:</dt>
+      <dl class="govuk-list--description govuk-!-margin-bottom-8">
+        <dt class="govuk-list--description__label">Qualification</dt>
         <dd>
           {% if 'PGCE' in course.options[0] %}
             {{ govukDetails({
@@ -35,16 +35,16 @@
             }) }}
           {% endif %}
         </dd>
-        <dt>Course length:</dt>
+        <dt class="govuk-list--description__label">Course length</dt>
         <dd>1 year</dd>
-        <dt>Date you can apply from:</dt>
+        <dt class="govuk-list--description__label">Date you can apply from</dt>
         <dd>9 October 2018</dd>
-        <dt>Date course starts:</dt>
+        <dt class="govuk-list--description__label">Date course starts</dt>
         <dd>October 2019</dd>
-        <dt>Website:</dt>
+        <dt class="govuk-list--description__label">Website</dt>
         <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
         {% if course.accrediting %}
-          <dt>Accredited provider:</dt>
+          <dt>Accredited provider</dt>
           <dd>{{ course.accrediting }}</dd>
         {% endif %}
       </dl>
@@ -166,14 +166,14 @@
 
       <h2 class="govuk-heading-l" id="section-contact">Contact details</h2>
 
-      <dl class="aligned">
-        <dt>Email:</dt>
+      <dl class="govuk-list--description">
+        <dt class="govuk-list--description__label">Email</dt>
         <dd><a href="#">admissions@apply-for-itt-at-pro.com</a></dd>
-        <dt>Telephone:</dt>
+        <dt class="govuk-list--description__label">Telephone</dt>
         <dd>0208 123986</dd>
-        <dt>Website:</dt>
+        <dt class="govuk-list--description__label">Website</dt>
         <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
-        <dt>Address:</dt>
+        <dt class="govuk-list--description__label">Address</dt>
         <dd>
           {{ course.provider }}, {{ course.providerAddress.route }}, {{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
         </dd>
