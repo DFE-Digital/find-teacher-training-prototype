@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
-{% block pageTitle %}Pick a location{% endblock %}
+{% set title = "Pick a location" %}
+
 {% if not backLink %}
   {% set backLink = { text: 'Back', href: '/'} %}
 {% endif %}
