@@ -134,34 +134,40 @@
 
 <!-- Header on top of the results showing number of courses, New search and sorting order -->
 {% macro resultsHeader(countString = '40 courses', mapView = false) %}
-<div class="resultsHeader">
-  <p {% if not mapView %}class="results-found"{% endif %}>
-    {% if not mapView %}
-      {{ countString }} found
-      <span>
-        <a href="/start/location">New search</a>
-      </span>
+  {% if (not mapView) %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <p class="govuk-body search-results__count" data-qa="course-count">{{ countString }} found</p>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <p class="govuk-body search-results__new-search">
+          <a href="/start/location">New search</a>
+        </p>
+      </div>
+    </div>
+  {% endif %}
+  <div class="search-results-header">
+    <div class="govuk-grid-row">
+    {% if value("location") == "Across England" %}
+      <div class="govuk-grid-column-half">
+        <p class="govuk-body govuk-!-margin-bottom-0">Sorted by training provider</p>
+      </div>
+    {% elseif (not mapView) %}
+      <div class="govuk-grid-column-full">
+        <p class="govuk-body govuk-!-margin-bottom-0">Sorted by distance. <a href="/results?map=yes">View on a map</a></p>
+      </div>
     {% endif %}
-  </p>
-  {% if value('location') == 'Across England' %}
-  <p class="resultsSortingOptions">
-    <div class="sortLabel">Sorted by training provider</div>
-  </p>
-  {% elseif (not mapView) %}
-  <p class="resultsSortingOptions">
-    <a href="/results?map=yes">View on a map</a>
-  </p>
-  {% endif %}
-  {% if mapView %}
-  <p>{{ countString }} found within 50 miles</p>
+    </div>
+    {% if mapView %}
+      <p>{{ countString }} found within 50 miles</p>
 
-  <ul class="govuk-list add-top-margin" style="padding-bottom: 20px">
-    <li><a href="/results">View results as a list</a></li>
-    <li><a href="/start/location">New search</a></li>
-    {# <li><a href="/start/location">Filter the results</a></li> #}
-  </ul>
-  {% endif %}
-</div>
+      <ul class="govuk-list">
+        <li><a href="/results">View results as a list</a></li>
+        <li><a href="/start/location">New search</a></li>
+        {# <li><a href="/start/location">Filter the results</a></li> #}
+      </ul>
+    {% endif %}
+  </div>
 {% endmacro %}
 
 {% macro helpText(label,text) %}
