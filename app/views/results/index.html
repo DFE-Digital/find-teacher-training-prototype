@@ -14,52 +14,51 @@
       <h1 class="govuk-heading-xl">{{ title }}</h1>
     </div>
   </div>
-  <div>
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-third">
-        {% include "results/filter-sidebar.html" %}
-      </div>
 
-      <div class="govuk-grid-column-two-thirds">
-        {{ macros.resultsHeader(count + ' courses') }}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      {% include "results/filter-sidebar.html" %}
+    </div>
 
-        {% for course in results %}
-          <div style="padding-top: 20px; border-bottom: 1px solid #bfc1c3">
-            <h2 class="govuk-heading-m">
-              <a href="/course/{{ course.slug }}" style="text-decoration: none">
-                <span class="govuk-!-font-size-19">{{ course.provider }}</span><br />
-                <span style="text-decoration: underline">{{ course.name }} ({{ course.programmeCode }})</span>
-              </a>
-            </h2>
-            <dl class="govuk-list--description">
-              <dt class="govuk-list--description__label">Course</dt>
-              <dd>{{ course.options }}</dd>
-              {% if data['location'] != 'Across England' %}
-                <dt>Distance</dt>
-                <dd>{{ course.distance }} miles</dd>
-                <!-- <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd> -->
-              {% endif %}
-              <dt class="govuk-list--description__label">
-                <!--{% if course.addresses.length > 1 %}
-                  Nearest {{ course.locationType | lower }}
-                {% else %}
-                  {{ course.locationType }} address
-                {% endif %}-->
-                Address
-              </dt class="govuk-list--description__label">
-              <dd>
-                {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}{% if course.providerAddress.postal_town %}, {% endif %} {{ course.providerAddress.post_code }}
-              </dd>
-              <dt class="govuk-list--description__label">Financial support</dt>
-              <dd>{{ course.financial_support }}</dd>
-              {% if course.accrediting %}
-               <dt class="govuk-list--description__label">Accredited provider</dt>
-               <dd>{{ course.accrediting }}</dd>
-              {% endif %}
-            </dl>
-          </div>
-        {% endfor %}
-      </div>
+    <div class="govuk-grid-column-two-thirds">
+      {{ macros.resultsHeader(count + ' courses') }}
+
+      {% for course in results %}
+        <div style="padding-top: 20px; border-bottom: 1px solid #bfc1c3">
+          <h2 class="govuk-heading-m">
+            <a href="/course/{{ course.slug }}" style="text-decoration: none">
+              <span class="govuk-!-font-size-19">{{ course.provider }}</span><br />
+              <span style="text-decoration: underline">{{ course.name }} ({{ course.programmeCode }})</span>
+            </a>
+          </h2>
+          <dl class="govuk-list--description">
+            <dt class="govuk-list--description__label">Course</dt>
+            <dd>{{ course.options }}</dd>
+            {% if data.location != 'Across England' %}
+              <dt>Distance</dt>
+              <dd>{{ course.distance }} miles</dd>
+              <!-- <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd> -->
+            {% endif %}
+            <dt class="govuk-list--description__label">
+              <!--{% if course.addresses.length > 1 %}
+                Nearest {{ course.locationType | lower }}
+              {% else %}
+                {{ course.locationType }} address
+              {% endif %}-->
+              Address
+            </dt class="govuk-list--description__label">
+            <dd>
+              {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}{% if course.providerAddress.postal_town %}, {% endif %} {{ course.providerAddress.post_code }}
+            </dd>
+            <dt class="govuk-list--description__label">Financial support</dt>
+            <dd>{{ course.financial_support }}</dd>
+            {% if course.accrediting %}
+              <dt class="govuk-list--description__label">Accredited provider</dt>
+              <dd>{{ course.accrediting }}</dd>
+            {% endif %}
+          </dl>
+        </div>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}
