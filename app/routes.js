@@ -5,16 +5,7 @@ const geocoder = require('google-geocoder')
 const geo = geocoder({ key: process.env.GOOGLE_API_KEY })
 const fs = require('fs')
 
-// geo.find('223 Edenbridge Dr, Toronto', function(err, res){
-//   console.log(err);
-//   console.log(res[0].location);
-// });
-
 // Route index page
-router.all('/', function (req, res) {
-  res.redirect('/start/location')
-})
-
 router.post('/start/location', function (req, res) {
   if (req.session.data.location === 'School, university or other training provider') {
     res.render('start/location', { error: 'Searching by training provider isn’t available in this prototype.' })

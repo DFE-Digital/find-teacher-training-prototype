@@ -1,64 +1,81 @@
 {% extends "layout.html" %}
 
+{% set title = "Find postgraduate teacher training courses" %}
+{% set showPhaseBanner = false %}
+{% set serviceName = false %}
+
+{% block breadcrumbs %}
+  {{ govukBreadcrumbs({
+    items: [{
+      text: "Home",
+      href: "https://www.gov.uk/"
+    }, {
+      text: "Education and learning",
+      href: "https://www.gov.uk/browse/education"
+    }, {
+      text: "Universities and higher education",
+      href: "https://www.gov.uk/browse/education/universities-higher-education"
+    }]
+  }) }}
+{% endblock %}
+
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl" role="heading">
-        {{ serviceName }}
-      </h1>
-      <p class="lede">
-        Use this service to search and compare postgraduate teacher training courses in England.
-      </p>
+      <h1 class="govuk-heading-xl">{{ title }}</h1>
+      <p class="lede">Find postgraduate teaching courses in England if you want to teach in a state primary or secondary school, or in further education.</p>
 
-      <a class="govuk-button govuk-button--start" href="/start/location" role="button">
-        Start now
-        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-        </svg>
-      </a>
+      {{ govukInsetText({
+        html: "<p>You can find courses in <a rel=\"external\" href=\"https://teachinscotland.scot/become-a-teacher/new-to-teaching/\">Scotland</a>, <a rel=\"external\" href=\"https://www.ucas.com/teaching-in-wales\">Wales</a> and <a rel=\"external\" href=\"https://www.ucas.com/postgraduate/teacher-training/train-teach-northern-ireland\">Northern Ireland</a>.</p>"
+      }) }}
 
-      <h2 class="govuk-heading-m">
-        What you’ll need
-      </h2>
+      {{ govukButton({
+        classes: "govuk-!-margin-bottom-8",
+        text: "Start now",
+        href: "/start/location",
+        isStartButton: true
+      }) }}
 
-      <h3 class="govuk-heading-s">GCSEs</h3>
+      <h2 class="govuk-heading-m">Before you start</h2>
 
-      <p>To apply for a course you’ll need grade 4 (previously grade C) GCSEs in maths and English.</p>
-
-      <p>If you want to teach in a primary school you’ll also need a minimum grade 4 in a science subject.</p>
-
-      <p>If you don’t have these qualifications, you must prove you have the equivalent level of knowledge in these subjects.</p>
-
-      <h3 class="govuk-heading-s">Degree</h3>
-
-      <p>You’ll need a UK degree, or the international equivalent.</p>
-
-      <h3 class="govuk-heading-s">Tests and checks</h3>
-
-      <p>Before you start the course you’ll need to:</p>
-
+      <p class="govuk-body">Check what qualifications you’ll need. You’ll also need to:</p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>pass literacy and numeracy skills tests</li>
-        <li>have a Disclosure and Barring Service (DBS) security check</li>
+        <li>confirm you have the health and physical capacity to start training</li>
+        <li>get a Disclosure and Barring Service (DBS) certificate if you’re teaching students under 18</li>
       </ul>
 
-      <h2 class="govuk-heading-m">
-        Other ways into teaching
-      </h2>
-      <p>
-        Find out more about teaching:
-      </p>
+      <h3 class="govuk-heading-s">Primary and secondary postgraduate teacher training</h3>
+      <p class="govuk-body">You’ll need the following or equivalents:</p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>
-          if you <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training">don’t have a degree</a>
-        </li>
-        <li>
-          if you <a href="https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/specialist-training-options/assessment-only">have a degree and teaching experience already</a>&nbsp;–&nbsp;you might not need to do any more training
-        </li>
-        <li>
-          <a href="https://www.teachfirst.org.uk/">young people from poorer backgrounds</a>, through Teach First
-        </li>
+        <li>a degree</li>
+        <li>grade 4 (C) or above in English and maths GCSEs</li>
+        <li>grade 4 (C) or above in GCSE science if you want to teach primary</li>
       </ul>
+      <p class="govuk-body">If you do not have GCSE grade 4 (C), you’ll need to show that you can meet an equivalent level. The training provider may ask you to take an equivalence test or show other evidence of your ability.</p>
+
+      <h3 class="govuk-heading-s">Further education postgraduate teacher training</h3>
+      <p class="govuk-body">Training providers usually prefer you to have:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a degree</li>
+        <li>a degree, or relevant vocational or technical qualification</li>
+        <li>grade 4 (C) or above in English and maths GCSEs (or equivalent)</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">If you studied overseas</h3>
+      <p class="govuk-body">You can <a href="https://www.naric.org.uk/Qualifications/SOC/Default.aspx">get a statement from the National Recognition Information Centre for the UK (UK NARIC)</a> that shows how your qualifications compare to UK qualifications. Some training providers may ask to see it as part of your application.</p>
+
+      <h3 class="govuk-heading-s">Get advice and support</h3>
+      <p class="govuk-body">You can <a href="https://getintoteaching.education.gov.uk/">register with Get Into Teaching</a>, the Department for Education’s free support and advice service.</p>
+      <p class="govuk-body">A specialist adviser will help you prepare your application and advise you on funding options (including loans and tax-free bursaries and scholarships). You can also book school experience and access teaching events.</p>
+
+      {{ appRelated({
+        classes: "govuk-!-margin-top-8",
+        title: "Explore the topic",
+        items: [{
+          text: "Universities and higher education",
+          href: "https://www.gov.uk/browse/education/universities-higher-education"
+        }]
+      }) }}
     </div>
   </div>
 {% endblock %}
