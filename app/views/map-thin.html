@@ -68,7 +68,10 @@
       {% endif %}
     </h1>
 
-    {{ macros.resultsHeader(count + ' courses', true) }}
+    {{ appResultsHeader({
+      countString: count + " courses",
+      mapView: true
+    }) }}
 
     <div>
     {% for course in results %}
