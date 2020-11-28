@@ -30,7 +30,8 @@
 {% from "govuk/components/textarea/macro.njk"            import govukTextarea %}
 {% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
 
-{% import 'macros/macros.njk' as macros %}
+{% from "components/related/macro.njk"                  import appRelated %}
+{% import "macros/macros.njk" as macros %}
 
 {% block head %}
   {% include "includes/head.html" %}
@@ -59,7 +60,7 @@
       text: "prototype"
     },
     html: 'This is a prototype of a new service. Some parts may not work yet.'
-  }) }}
+  }) if showPhaseBanner }}
 
   {% block breadcrumbs %}{% endblock %}
   {% block backLink %}{% endblock %}
