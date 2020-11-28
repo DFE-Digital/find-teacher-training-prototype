@@ -52,23 +52,17 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Study type</h4>
       <ul class="filter-form__value--list">
-        {% for type in data['studyType'] %}
+        {% for type in data.studyType %}
           <li>{{ type }}</li>
         {% endfor %}
       </ul>
-      <a class="govuk-link" href="/results/filters/studytype{% if isMap %}?map=yes{% endif %}">Change study type</a>
+      <a class="govuk-link" href="/results/filters/study-type{% if isMap %}?map=yes{% endif %}">Change study type</a>
     </div>
 
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Qualifications</h4>
       <ul class="filter-form__value--list">
-        {% for q in data['qualification'] %}
-          {% if 'Postgraduate' in q %}
-            <li>PGCE with QTS (Postgraduate certificate of education with qualified teacher status)</li>
-          {% else %}
-            <li>QTS (Qualified teacher status)</li>
-          {% endif %}
-        {% endfor %}
+        <li>All qualifications</li>
       </ul>
       <a class="govuk-link" href="#">Change qualifications</a>
       <!-- <a class="govuk-link" href="/results/filters/qualification{% if isMap %}?map=yes{% endif %}">Change qualifications</a> -->

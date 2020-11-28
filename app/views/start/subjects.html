@@ -31,7 +31,6 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <form action="/results">
-        {% if isMap %}<input type="hidden" name="map" value="yes" />{% endif %}
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
           {% for subjectGroup in subjectGroups %}
             <div class="govuk-accordion__section">
@@ -43,28 +42,43 @@
                 </h2>
               </div>
               <div class="govuk-accordion__section-content">
-                {{ macros.checkboxGroup('selectedSubjects', subjectGroup.subjects, false, loop.index * 100, true) }}
+                {{ govukCheckboxes({
+                  name: "selectedSubjects",
+                  items: subjectGroup.subjects
+                }) }}
               </div>
             </div>
           {% endfor %}
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
+                  Special educational needs and disability (SEND)
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              {{ govukCheckboxes({
+                name: "selectedSubjects",
+                idPrefix: "selectedSubjects",
+                items: [{
+                  value: "sen",
+                  text: "Show only courses with a SEND specialism",
+                  label: {
+                    classes: "govuk-label--s"
+                  }
+                }]
+              }) }}
+            </div>
+          </div>
         </div>
 
-        <!-- <div class="govuk-!-margin-bottom-6">
-          {% set fields = [
-              {
-                name: 'Show only SEND courses'
-              }
-            ]
-          %}
-
-          {% set detailsHtml %}{{ macros.checkboxGroup('sen', fields) }}{% endset %}
-
-          {{ govukDetails({
-            summaryText: "Do you want to teach Special educational needs and disability (SEND)?",
-            html: detailsHtml,
-            open: data['sen']
-          }) }}
-        </div> -->
+        {{ govukInput({
+          id: "map",
+          name: "map",
+          type: "hidden",
+          value: "yes"
+        }) if isMap }}
 
         {{ govukButton({
           text: "Find courses"
