@@ -31,24 +31,13 @@ router.get('/install/:page', function (req, res) {
   res.render('install_template', { document: html })
 })
 
-// When in 'promo mode', redirect to download the current release zip from
-// GitHub, based on the version number from package.json
-//
-// Otherwise, redirect to the latest release page on GitHub, to avoid just
+// Redirect to the latest release page on GitHub, to avoid just
 // linking to the same version being run by someone referring to the copy of the
 // docs running in their kit
 router.get('/download', function (req, res) {
-  if (req.app.locals.promoMode === 'true') {
-    const version = require('../package.json').version
-
-    res.redirect(
-      `https://github.com/alphagov/govuk-prototype-kit/archive/v${version}.zip`
-    )
-  } else {
-    res.redirect(
-      'https://github.com/alphagov/govuk-prototype-kit/releases/latest'
-    )
-  }
+  res.redirect(
+    'https://github.com/alphagov/govuk-prototype-kit/releases/latest'
+  )
 })
 
 // Examples - examples post here
