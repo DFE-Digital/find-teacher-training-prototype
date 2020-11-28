@@ -20,6 +20,29 @@
           }]
         }) if error }}
 
+        {% set postcodeHtml %}
+          {{ govukInput({
+            label: {
+              text: "Postcode, town or city"
+            },
+            id: "postcode-town-or-city",
+            name: "postcode-town-or-city"
+          }) }}
+        {% endset %}
+
+        {% set providerHtml %}
+          {{ govukInput({
+            label: {
+              text: "School, university or other training provider"
+            },
+            hint: {
+              text: "Enter the name or provider code"
+            },
+            id: "provider",
+            name: "provider"
+          }) }}
+        {% endset %}
+
         {{ govukRadios({
           name: "location",
           fieldset: {
@@ -33,7 +56,7 @@
             value: "By postcode, town or city",
             text: "By postcode, town or city",
             conditional: {
-              html: macros.textbox("postcode-town-or-city", "Postcode, town or city")
+              html: postcodeHtml
             }
           }, {
             value: "Across England",
@@ -44,7 +67,7 @@
             value: "By school, university or other training provider",
             text: "By school, university or other training provider",
             conditional: {
-              html: macros.textbox("providerNameInput", "School, university or other training provider")
+              html: providerHtml
             }
           }]
         }) }}
