@@ -9,97 +9,90 @@
 {% endblock %}
 
 {% block content %}
+  {% set isMap = true %}
 
-{% set isMap = true %}
-
-<style>
-  #map {
-    position: fixed !important;
-    top: 63px;
-    bottom: 0;
-    right: 0;
-    left: 360px;
-    background: #fff;
-    border-left: 1px solid #dee0e2;
-  }
-
-  #results {
-    position: fixed;
-    top: 63px;
-    bottom: 0;
-    left: 0;
-    background: #fff;
-    overflow: scroll;
-    padding: 20px;
-    width: 360px;
-    box-sizing: border-box;
-    z-index: 1;
-  }
-
-  @media (max-width: 600px) {
-    #results {
-      right: 0;
-      top: auto;
-      height: 200px;
+  <style>
+    #map {
+      position: fixed !important;
+      top: 63px;
       bottom: 0;
+      right: 0;
+      left: 360px;
+      background: #fff;
+      border-left: 1px solid #dee0e2;
+    }
+
+    #results {
+      position: fixed;
+      top: 63px;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+      overflow: scroll;
+      padding: 20px;
+      width: 360px;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+      #results {
+        right: 0;
+        top: auto;
+        height: 200px;
+        bottom: 0;
+        width: auto;
+      }
+
+      #results .govuk-heading-l {
+        font-size: 19px;
+      }
+
+      #results .resultsHeader .list li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      #results .list {
+        margin-bottom: 0;
+      }
+
+      #map {
+        left: 0;
+        bottom: 200px;
+        top: 95px;
+      }
+
+      #filter-sidebar {
+        position: fixed;
+        top: 95px;
+        background: #fff;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        overflow: scroll;
+      }
+    }
+
+    .footer-wrapper {
+      display: none;
+    }
+
+    #global-header .header-wrapper {
+      max-width: none !important;
+    }
+
+    #global-header.with-proposition .header-wrapper .header-global {
       width: auto;
     }
 
-    #results .govuk-heading-l {
-      font-size: 19px;
+    #global-header-bar {
+      max-width: none;
     }
-
-    #results .resultsHeader .list li {
-      display: inline;
-      margin-right: 10px;
-    }
-
-    #results .list {
-      margin-bottom: 0;
-    }
-
-    #map {
-      left: 0;
-      bottom: 200px;
-      top: 95px;
-    }
-
-    #filter-sidebar {
-      position: fixed;
-      top: 95px;
-      background: #fff;
-      left: 0;
-      right: 0;
-      padding: 20px;
-      overflow: scroll;
-    }
-  }
-
-  .footer-wrapper {
-    display: none;
-  }
-
-  #global-header .header-wrapper {
-    max-width: none !important;
-  }
-
-  #global-header.with-proposition .header-wrapper .header-global {
-    width: auto;
-  }
-
-  #global-header-bar {
-    max-width: none;
-  }
-</style>
-
-  <h1 class="govuk-heading-xl">
-    {{ title }}
-  </h1>
-
-  {{ data['latLong'] }}
+  </style>
 
   <div id="results">
-    <h1 class="govuk-heading-l govuk-!-margin-top-0">
+    <h1 class="govuk-heading-l">
       Teacher training courses
       {% if data['formattedAddress'] or data['postcode-town-or-city'] %}
         near {{ data['formattedAddress'] or data['postcode-town-or-city'] }}
@@ -108,7 +101,7 @@
       {% endif %}
     </h1>
 
-    {{macros.resultsHeader(count + ' courses', true)}}
+    {{ macros.resultsHeader(count + ' courses', true) }}
 
     {% include "results/filter-sidebar.html" %}
 
