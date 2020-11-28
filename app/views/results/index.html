@@ -14,7 +14,9 @@
     </div>
 
     <div class="govuk-grid-column-two-thirds">
-      {{ macros.resultsHeader(count + " courses") }}
+      {{ appResultsHeader({
+        countString: count + " courses"
+      }) }}
 
       <ul class="govuk-list search-results">
       {% for course in results %}
