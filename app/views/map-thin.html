@@ -9,59 +9,54 @@
 {% endblock %}
 
 {% block content %}
+  {% set isMap = true %}
 
-<style>
-  #map {
-    position: fixed !important;
-    top: 53px;
-    bottom: 0;
-    right: 0;
-    left: 25%;
-    background: #fff;
-  }
-
-  #results {
-    position: fixed;
-    top: 53px;
-    bottom: 0;
-    left: 0;
-    background: #fff;
-    overflow: scroll;
-    padding: 30px;
-    width: 25%;
-    box-sizing: border-box;
-    z-index: 1;
-  }
-
-  @media (max-width: 600px) {
-    #results {
-      right: 0;
-      top: auto;
-      height: 300px;
-      bottom: 0;
-      width: auto;
-    }
-
+  <style>
     #map {
-      left: 0;
-      bottom: 300px;
+      position: fixed !important;
+      top: 53px;
+      bottom: 0;
+      right: 0;
+      left: 25%;
+      background: #fff;
     }
-  }
 
-  .footer-wrapper {
-    display: none;
-  }
+    #results {
+      position: fixed;
+      top: 53px;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+      overflow: scroll;
+      padding: 30px;
+      width: 25%;
+      box-sizing: border-box;
+      z-index: 1;
+    }
 
-  #global-header .header-wrapper {
-    max-width: none !important;
-  }
-</style>
+    @media (max-width: 600px) {
+      #results {
+        right: 0;
+        top: auto;
+        height: 300px;
+        bottom: 0;
+        width: auto;
+      }
 
-  <h1 class="govuk-heading-xl">
-    {{ title }}
-  </h1>
+      #map {
+        left: 0;
+        bottom: 300px;
+      }
+    }
 
-  {{ data['latLong'] }}
+    .footer-wrapper {
+      display: none;
+    }
+
+    #global-header .header-wrapper {
+      max-width: none !important;
+    }
+  </style>
 
   <div id="results">
     <h1 class="govuk-heading-l govuk-!-margin-top-0">
@@ -73,7 +68,7 @@
       {% endif %}
     </h1>
 
-    {{macros.resultsHeader(count + ' courses', true)}}
+    {{ macros.resultsHeader(count + ' courses', true) }}
 
     <div>
     {% for course in results %}

@@ -73,10 +73,6 @@ router.get('/results/filters/subjects', function (req, res) {
   res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink, isMap: isMap })
 })
 
-router.get('/static/subjects', function (req, res) {
-  res.render('static/subjects', { subjectGroups: subjectGroups(req), filtering: true })
-})
-
 router.get('/results/filters/salary', function (req, res) {
   const isMap = req.query.map
   const backLink = { text: 'Back to search results', href: isMap ? '/results?map=yes' : '/results' }
@@ -268,14 +264,6 @@ function groupBy (list, keyGetter) {
   return map
 }
 
-function getCourse (req, providerCode, courseCode) {
-  const data = req.session.data
-
-  return data.courses.find(function (c) {
-    return c.providerCode === providerCode && c.programmeCode === courseCode
-  })
-}
-
 function getFullCourse (req, providerCode, courseCode, callback) {
   let course
   const data = req.session.data
@@ -292,7 +280,5 @@ function getFullCourse (req, providerCode, courseCode, callback) {
     callback(course)
   })
 }
-
-// Add your routes here - above the module.exports line
 
 module.exports = router
