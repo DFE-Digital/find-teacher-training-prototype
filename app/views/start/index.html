@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+{% set title = "Search teacher training courses" %}
+
+{% block backLink %}
+  {{ govukBackLink({
+    text: backLink.text,
+    href: backLink.href
+  }) if backLink }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">{{ title }}</h1>
+
+      <form action="{{ "/results/filters/location" if filtering else "/start/location" }}" method="post" class="form">
+        {{ govukErrorSummary({
+          titleText: "There is a problem",
+          errorList: [{
+            text: error.error_message,
+            href: "#postcode-town-or-city"
+          }]
+        }) if error }}
+
+        {{ govukInput({
+          label: {
+            classes: "govuk-label--m",
+            text: "Location"
+          },
+          hint: {
+            text: "City, town or postcode"
+          },
+          id: "postcode-town-or-city",
+          name: "postcode-town-or-city"
+        }) }}
+
+        {{ govukCheckboxes({
+          name: "location",
+          formGroup: {
+            classes: "govuk-checkboxes--small govuk-!-margin-bottom-2"
+          },
+          fieldset: {
+            legend: {
+              classes: "govuk-fieldset__legend--m",
+              text: "Education phase"
+            }
+          },
+          items: [{
+            value: "Primary",
+            text: "Primary"
+          }, {
+            value: "Secondary",
+            text: "Secondary"
+          }, {
+            value: "Further education",
+            text: "Further education"
+          }]
+        }) }}
+
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
+
+        {{ govukCheckboxes({
+          name: "sen",
+          classes: "govuk-checkboxes--small",
+          fieldset: {
+            legend: {
+              classes: "govuk-visually-hidden",
+              text: "Special educational needs and disability (SEND)"
+            }
+          },
+          items: [{
+            value: "sen",
+            text: "Show only courses with a SEND specialism"
+          }]
+        }) }}
+
+        {% set additionalFiltersHtml %}
+          {{ govukCheckboxes({
+            name: "studyType",
+            formGroup: {
+              classes: "govuk-checkboxes--small"
+            },
+            fieldset: {
+              legend: {
+                text: "Study type",
+                classes: "govuk-fieldset__legend--m"
+              }
+            },
+            items: [{
+              value: "Full time (12 months)",
+              text: "Full time (12 months)"
+            }, {
+              value: "Part time (18-24 months)",
+              text: "Part time (18-24 months)"
+            }]
+          }) }}
+
+          {{ govukRadios({
+            name: "salary",
+            formGroup: {
+              classes: "govuk-radios--small"
+            },
+            fieldset: {
+              legend: {
+                text: "Salary",
+                classes: "govuk-fieldset__legend--m"
+              }
+            },
+            items: [{
+              value: "All courses (with or without a salary)",
+              text: "All courses (with or without a salary)"
+            }, {
+              value: "Only courses that come with a salary",
+              text: "Only courses that come with a salary"
+            }]
+          }) }}
+        {% endset %}
+
+        {{ govukDetails({
+          summaryText: "Add more filters",
+          html: additionalFiltersHtml
+        }) }}
+
+        {{ govukButton({
+          text: "Search"
+        }) }}
+      </form>
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-6">Cities and towns with training courses</h2>
+
+      <div class="govuk-grid-row">
+        <ul class="govuk-grid-column-one-third govuk-list">
+          <li><a href="#">Birmingham</a></li>
+          <li><a href="#">Bradford</a></li>
+          <li><a href="#">Brighton</a></li>
+          <li><a href="#">Bristol</a></li>
+          <li><a href="#">Cambridge</a></li>
+          <li><a href="#">Derby</a></li>
+          <li><a href="#">Hull</a></li>
+        </ul>
+        <ul class="govuk-grid-column-one-third govuk-list">
+          <li><a href="#">Leeds</a></li>
+          <li><a href="#">Leicester</a></li>
+          <li><a href="#">Liverpool</a></li>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Manchester</a></li>
+          <li><a href="#">Newcastle upon Tyne</a></li>
+          <li><a href="#">Northampton</a></li>
+        </ul>
+        <ul class="govuk-grid-column-one-third govuk-list">
+          <li><a href="#">Norwich</a></li>
+          <li><a href="#">Nottingham</a></li>
+          <li><a href="#">Oxford</a></li>
+          <li><a href="#">Reading</a></li>
+          <li><a href="#">Sheffield</a></li>
+          <li><a href="#">Southampton</a></li>
+          <li><a href="#">York</a></li>
+        </ul>
+      </div>
+      <p class="govuk-body"><a href="#">Browse all teacher training courses in England</a></p>
+    </div>
+  </div>
+
+{% endblock %}
