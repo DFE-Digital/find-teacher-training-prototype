@@ -4,7 +4,7 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">{{ title }}</h1>
+      <h1 class="govuk-heading-l">{{ title }}</h1>
     </div>
   </div>
 
@@ -14,14 +14,19 @@
     </div>
 
     <div class="govuk-grid-column-two-thirds">
-      {{ appResultsHeader({
-        countString: count + " courses"
-      }) }}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <p class="govuk-body search-results__count" data-qa="course-count">{{ count }} courses found within your area</p>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <p class="govuk-body search-results__new-search"><a href="/start/location">New search</a></p>
+        </div>
+      </div>
 
       <ul class="govuk-list search-results">
       {% for course in results %}
         <li>
-          <h2 class="govuk-heading-m govuk-!-margin-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
             <a href="/course/{{ course.slug }}" style="text-decoration: none">
               <span class="govuk-!-font-size-19">{{ course.provider }}</span><br />
               <span style="text-decoration: underline">{{ course.name }} ({{ course.programmeCode }})</span>
@@ -30,21 +35,17 @@
           <dl class="govuk-list--description">
             <dt class="govuk-list--description__label">Course</dt>
             <dd>{{ course.options }}</dd>
-            {% if data.location != "Across England" %}
-              <dt>Distance</dt>
-              <dd>{{ course.distance }} miles</dd>
-              <!-- <dd>{{ course.distance }} miles to {% if course.addresses.length > 1 %}nearest {% endif %}{{ course.locationType | lower }}</dd> -->
-            {% endif %}
-            <dt class="govuk-list--description__label">
-              <!--{% if course.addresses.length > 1 %}
-                Nearest {{ course.locationType | lower }}
-              {% else %}
-                {{ course.locationType }} address
-              {% endif %}-->
-              Address
-            </dt class="govuk-list--description__label">
+            <dt class="govuk-list--description__label">Locations</dt>
             <dd>
-              {{ course.providerAddress.route }}{% if course.providerAddress.route %}, {% endif %}{{ course.providerAddress.postal_town }}{% if course.providerAddress.postal_town %}, {% endif %} {{ course.providerAddress.post_code }}
+              <ul class="govuk-list govuk-!-margin-top-0 govuk-!-margin-bottom-0">
+                <li>
+                  <span class="govuk-list--description__hint govuk-!-margin-top-0">Placement schools</span>
+                  Brighton and Hove, Worthing
+
+                  <span class="govuk-list--description__hint govuk-!-padding-top-2">University</span>
+                  Brighton and Hove
+                </li>
+              </ul>
             </dd>
             <dt class="govuk-list--description__label">Financial support</dt>
             <dd>{{ course.financial_support }}</dd>
