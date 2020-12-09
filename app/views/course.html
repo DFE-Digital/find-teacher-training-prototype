@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set title %}{{ course.name }} with {{ course.provider }}{% endset %}
+{% set title %}{{ course.name }} with {{ provider.name }}{% endset %}
 
 {% block backLink %}
   {{ govukBackLink({
@@ -10,16 +10,22 @@
 
 {% block content %}
   <h1 class="govuk-heading-xl">
-    <span class="govuk-!-font-size-36">{{ course.provider }}</span><br />
-    {{ course.name }} ({{ course.programmeCode }})
+    <span class="govuk-!-font-size-36">{{ provider.name }}</span><br />
+    {{ course.name }} ({{ course.code }})
   </h1>
 
-  <p class="govuk-body-l">{{ course.options[0] }}</p>
+  <p class="govuk-body-l">{{ course.summary }}</p>
 
   <dl class="govuk-list--description govuk-!-margin-bottom-8">
+    {% if course.accredited_body_code %}
+      <dt>Accredited body</dt>
+      <dd>{{ provider.name }}</dd>
+    {% endif %}
+    <dt>Financial support</dt>
+    <dd>{{ course.funding_option }}</dd>
     <dt class="govuk-list--description__label">Qualification</dt>
     <dd>
-      {% if 'PGCE' in course.options[0] %}
+      {% if "pgce" in course.qualifications %}
         {{ govukDetails({
           summaryText: "PGCE with QTS",
           text: "<p>A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) allows you to teach in England, Scotland, Wales and Northern Ireland. It’s also recognised internationally.</p>
@@ -34,17 +40,13 @@
       {% endif %}
     </dd>
     <dt class="govuk-list--description__label">Course length</dt>
-    <dd>1 year</dd>
+    <dd>{{ course.length }}</dd>
     <dt class="govuk-list--description__label">Date you can apply from</dt>
-    <dd>9 October 2018</dd>
+    <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
     <dt class="govuk-list--description__label">Date course starts</dt>
-    <dd>October 2019</dd>
+    <dd>{{ course.start_date }}</dd>
     <dt class="govuk-list--description__label">Website</dt>
-    <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
-    {% if course.accrediting %}
-      <dt>Accredited provider</dt>
-      <dd>{{ course.accrediting }}</dd>
-    {% endif %}
+    <dd><a href="{{ provider.website }}">{{ provider.website }}</a></dd>
   </dl>
 
   <div class="govuk-grid-row">
@@ -52,14 +54,14 @@
       <h2 class="govuk-heading-m">Contents</h2>
       <ul class="govuk-list govuk-list--dash govuk-!-margin-bottom-8">
         <li><a href="#section-about">About the course</a></li>
-        {% if course.enrichment['InterviewProcess'] %}
+        {% if course.interview_process %}
           <li><a href="#section-interview">Interview process</a></li>
         {% endif %}
         <li><a href="#section-schools">How school placements work</a></li>
-        {% if course.enrichment['SalaryDetails'] %}
-          <li><a href="#section-salary">Salary</a></li>
-        {% else %}
+        {% if course.has_fees %}
           <li><a href="#section-fees">Fees</a></li>
+        {% else %}
+          <li><a href="#section-salary">Salary</a></li>
         {% endif %}
         <li><a href="#section-financial-support">Financial support</a></li>
         <li><a href="#section-entry">Requirements</a></li>
@@ -67,129 +69,138 @@
         <li><a href="#section-access-needs">Training with disabilities and other needs</a></li>
         <li><a href="#section-contact">Contact details</a></li>
         <li><a href="#section-apply">Apply</a></li>
-        <li><a href="#section-advice">Advice and support</a></li>
+        <li><a href="#section-advice">Support and advice</a></li>
       </ul>
-
-      {% if course.providerAddress.url %}
-      <!-- <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-m">About this course</h3>
-        <div class="govuk-inset-text govuk-!-margin-top-3">
-          <p>
-            Find out more about this course at:<br />
-            <a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a>
-          </p>
-        </div>
-      </section> -->
-      {% endif %}
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="section-about">About the course</h2>
-        {{ markdown(course.enrichment['AboutCourse']) | safe }}
+        {{ course.about_course | markdown | safe }}
       </section>
 
-      {% if course.enrichment['InterviewProcess'] %}
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-interview">Interview process</h2>
-        {{ markdown(course.enrichment['InterviewProcess']) | safe }}
-      </section>
+      {% if course.interview_process %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-interview">Interview process</h2>
+          {{ course.interview_process | markdown | safe }}
+        </section>
       {% endif %}
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="section-schools">How school placements work</h2>
-        {{ markdown(course.enrichment['HowSchoolPlacementsWork']) | safe }}
+        {{ course.how_school_placements_work | markdown | safe }}
       </section>
 
-      <section class="govuk-!-margin-bottom-8">
-      {% if course.enrichment['SalaryDetails'] %}
-        <h2 class="govuk-heading-l" id="section-salary">Salary</h2>
-        {{ markdown(course.enrichment['SalaryDetails']) | safe }}
-      {% else %}
-        <h2 class="govuk-heading-l" id="section-fees">Fees</h2>
-        <p>The course fees for 2018/2019 are as follows:</p>
-        <div class="body-text">
-          <table class="govuk-table app-table--vertical-align-middle">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-visually-hidden">
-                <th>Student type</th>
-                <th>Fees to pay</th>
-              </tr>
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">UK students</td>
-                <td class="govuk-table__cell">£{{ course.enrichment['FeeUkEu'] }}</td>
-              </tr>
-              <tr class="govuk-table_row">
-                <td class="govuk-table__cell">EU students</td>
-                <td class="govuk-table__cell">£{{ course.enrichment['FeeUkEu'] }}</td>
-              </tr>
-            {% if course.enrichment['FeeInternational'] %}
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">International students</td>
-                <td class="govuk-table__cell">£{{ course.enrichment['FeeUkEu'] }}</td>
-              </tr>
+      {% if course.has_fees %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-fees">Fees</h2>
+
+          {% if course.fee_domestic %}
+            <div class="body-text">
+              {% if course.fee_domestic and course.fee_international %}
+                <table class="govuk-table app-table--vertical-align-middle">
+                  <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">The course fees
+                    for <%= course.year_range %> are as follows:
+                  </caption>
+                  <thead class="govuk-table__head">
+                  <tr class="govuk-visually-hidden govuk-table__row">
+                    <th class="govuk-table__header">Student type</th>
+                    <th class="govuk-table__header">Fees to pay</th>
+                  </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">UK students</td>
+                    <td class="govuk-table__cell">£{{ course.fee_domestic.toLocaleString() }}</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">International students</td>
+                    <td class="govuk-table__cell">£{{ course.fee_international.toLocaleString() }}</td>
+                  </tr>
+                  </tbody>
+                </table>
+              {% else %}
+                <p class="govuk-body">
+                  The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic.toLocaleString() }}.
+                </p>
+              {% endif %}
+            </div>
+
+            {% if course.fee_details %}
+              {{ course.fee_details | markdown | safe }}
             {% endif %}
-            </tbody>
-          </table>
-        </div>
+          {% endif %}
+        </section>
+      {% else %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-financial-support">Financial support</h3>
+          {% if course.salaried %}
+            <p class="govuk-body">Financial support isn’t available for this course because it comes with a salary.</p>
+            <p class="govuk-body">If you choose a course without a salary, you may be eligible for financial support while you study, including bursaries, scholarships and loans.</p>
+          {% else %}
+            <p>You may be eligible for <a href="https://www.gov.uk/teacher-training-funding">financial support while you study, including bursaries, scholarships and loans</a>.</p>
+            <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">Financial support if you’re from outside of the UK</a>.</p>
+          {% endif %}
 
-        {{ markdown(course.enrichment['FeeDetails']) | safe }}
+          {% if course.financial_support %}
+            <h3 class="govuk-heading-m">Financial support from the training provider</h3>
+            {{ course.financial_support | markdown | safe }}
+          {% endif %}
+        </section>
       {% endif %}
-      </section>
-
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-financial-support">Financial support</h3>
-        {% if course.enrichment['SalaryDetails'] %}
-          <p>Financial support isn’t available for this course.</p>
-          <p>If you choose a course without a salary, you may be eligible for financial support while you study, including bursaries, scholarships and loans.</p>
-        {% else %}
-          <p>You may be eligible for <a href="https://www.gov.uk/teacher-training-funding">financial support while you study, including bursaries, scholarships and loans</a>.</p>
-          <p><a href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">Financial support if you’re from outside of the UK</a>.</p>
-        {% endif %}
-
-        {% if course.enrichment['FinancialSupport'] %}
-          <h3 class="govuk-heading-m">Financial support from the training provider</h3>
-          {{ markdown(course.enrichment['FinancialSupport']) | safe }}
-        {% endif %}
-      </section>
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="section-entry">Requirements</h2>
 
         <h3 class="govuk-heading-m">Qualifications needed</h3>
-        {{ markdown(course.enrichment['Qualifications']) | safe }}
+        {{ course.required_qualifications | markdown | safe }}
 
-        {% if course.enrichment['PersonalQualities'] %}
+        {% if course.personal_qualities %}
           <h3 class="govuk-heading-m">Personal qualities</h3>
-          {{ markdown(course.enrichment['PersonalQualities']) | safe }}
+          {{ course.personal_qualities | markdown | safe }}
         {% endif %}
 
-        {% if course.enrichment['OtherRequirements'] %}
+        {% if course.other_requirements %}
           <h3 class="govuk-heading-m">Other requirements</h3>
-          {{ markdown(course.enrichment['OtherRequirements']) | safe }}
+          {{ course.other_requirements | markdown | safe }}
         {% endif %}
       </section>
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="section-about-provider">About the training provider</h2>
-        {{ markdown(course.inst['TrainWithUs']) | safe }}
+        {{ provider.train_with_us | markdown | safe }}
       </section>
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="section-access-needs">Training with disabilities and other&nbsp;needs</h2>
-        {{ markdown(course.inst['TrainWithDisability']) | safe }}
+        {{ provider.train_with_disability | markdown | safe }}
       </section>
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="section-contact">Contact details</h2>
         <dl class="govuk-list--description">
-          <dt class="govuk-list--description__label">Email</dt>
-          <dd><a href="#">admissions@apply-for-itt-at-pro.com</a></dd>
+        <dt class="govuk-list--description__label">Email</dt>
+        {% if provider.telephone %}
+          <dd><a href="mailto:{{ provider.email }}">{{ provider.email }}</a></dd>
+        {% else %}
+          {% set email = "enquiries@" + provider.website | replace("http://", "") | replace("https://", "") | replace("/", "") %}
+          <dd><a href="mailto:{{ email }}">{{ email }}</a></dd>
+        {% endif %}
           <dt class="govuk-list--description__label">Telephone</dt>
-          <dd>0208 123986</dd>
+        {% if provider.telephone %}
+          <dd>{{ provider.telephone }}</dd>
+        {% else %}
+          <dd>01234 567890</dd>
+        {% endif %}
+        {% if provider.website %}
           <dt class="govuk-list--description__label">Website</dt>
-          <dd><a href="{{ course.providerAddress.url }}">{{ course.providerAddress.url }}</a></dd>
+          <dd><a href="{{ provider.website }}">{{ provider.website }}</a></dd>
+        {% endif %}
           <dt class="govuk-list--description__label">Address</dt>
           <dd>
-            {{ course.provider }}, {{ course.providerAddress.route }}, {{ course.providerAddress.postal_town }}, {{ course.providerAddress.post_code }}
+            {% if provider.street_address_1 %}{{ provider.street_address_1 }}<br>{% endif %}
+            {% if provider.street_address_2 %}{{ provider.street_address_2 }}<br>{% endif %}
+            {% if provider.city %}{{ provider.city }}<br>{% endif %}
+            {% if provider.county %}{{ provider.county }}<br>{% endif %}
+            {% if provider.postcode %}{{ provider.postcode }}{% endif %}
           </dd>
         </dl>
       </section>
@@ -199,7 +210,7 @@
 
         <p>
           {{ govukButton({
-            href: applyLink(course.providerCode, course.programmeCode),
+            href: applyLink(provider.code, course.code),
             text: "Apply for this course"
           }) }}
         </p>
@@ -207,121 +218,47 @@
         <h3 class="govuk-heading-m">Before you apply</h3>
         <p>You’ll also need to choose a training location and give the relevant training location code.</p>
 
-        <div id="map" class="govuk-!-margin-bottom-6" style="height: 500px"></div>
+        <div id="locations-map" class="govuk-!-margin-bottom-6" style="height: 500px"></div>
+        <script>
+          window.trainingLocations = [
+            {% for location in locations %}
+              {
+                "code": "{{ location.code }}",
+                "name": "{{ location.name }}",
+                "lat": "{{ location.latitude if location.latitude else provider.latitude }}",
+                "lng": "{{ location.longitude if location.longitude else provider.longitude }}",
+                "address": "{{ location.address }}",
+                "vacancies": "{{ "No vacancies" if not location.has_vacancies }}"
+              },
+            {% endfor %}
+          ]
+        </script>
 
         <table class="govuk-table app-table--vertical-align-middle">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th class="govuk-table__header" style="width: 70%">Location</th>
               <th class="govuk-table__header">Vacancies</th>
-              <th class="govuk-table__header">UCAS&nbsp;code</th>
+              <th class="govuk-table__header">Code</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
-            {% for school in course.schools %}
+            {% for location in locations %}
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                <span class="govuk-!-font-weight-bold">{{ school.name }}</span><br />
-                {{ school.address }}
+                <span class="govuk-!-font-weight-bold">{{ location.name }}</span><br />
+                {{ location.address }}
               </td>
-              <td class="govuk-table__cell">Yes</td>
-              <td class="govuk-table__cell">{{ school.code }}{% if school.code == '-' %} (dash){% endif %}</td>
+              <td class="govuk-table__cell">{{ "Yes" if location.has_vacancies else "No" }}</td>
+              <td class="govuk-table__cell">{{ location.code }}{% if location.code == "-" %} (dash){% endif %}</td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
-
-        <script>
-          var course = {{ course | dump | safe }};
-          var map;
-          var bounds;
-
-          var dot = {
-            path: 'M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0',
-            fillColor: 'black',
-            fillOpacity: 1,
-            scale: 0.05,
-            strokeColor: 'black',
-            strokeWeight: 1
-          };
-
-          function initMap() {
-            bounds = new google.maps.LatLngBounds();
-
-            map = new google.maps.Map(document.getElementById('map'), {
-              center: { lat: {{ course.addresses[0].latitude }}, lng: {{ course.addresses[0].longitude }}},
-              zoom: 12,
-              disableDefaultUI: true,
-              zoomControl: true
-            });
-
-            loc = new google.maps.LatLng({{ course.providerAddress.latitude }}, {{ course.providerAddress.longitude }});
-            bounds.extend(loc);
-
-            var customMarker = {
-              url: '/public/images/map-marker.png',
-              scaledSize: new google.maps.Size(20, 32),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(0, 32)
-            };
-
-            // var marker = new google.maps.Marker({
-            //   position: { lat: {{ course.providerAddress.latitude }}, lng: {{ course.providerAddress.longitude }}},
-            //   map: map,
-            //   title: course.provider,
-            //   icon: customMarker
-            // });
-
-            var infoWindow = new google.maps.InfoWindow();
-
-            for (var i = 0, l = course.addresses.length; i < l; i++) {
-              var address = course.addresses[i];
-              console.log(address);
-
-              if (address) {
-                var marker = new google.maps.Marker({
-                  position: { lat: address['latitude'], lng: address['longitude'] },
-                  map: map,
-                  title: address.formatted_address,
-                  icon: customMarker
-                });
-              }
-
-              marker.addListener('click', showLocationWindow.bind(null, address, marker));
-              loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
-              bounds.extend(loc);
-            }
-
-            if (course.addresses.length > 1) {
-              map.fitBounds(bounds);       // auto-zoom
-              map.panToBounds(bounds);     // auto-center
-            }
-
-            function showLocationWindow(address, marker) {
-              var school = course.schools.find(function(school) {
-                return school.address == address.address;
-              });
-
-              var html = `
-                  <div class="info-window">
-                    <h2 class="govuk-heading-m">${school.name} (${school.code || '-'})</h2>
-                    <p class="govuk-tag">No vacancies</p>
-                    <p>${ school.address }</p>
-                  </div>
-                `;
-
-
-              infoWindow.setContent(html);
-              infoWindow.setOptions({ maxWidth: 300 })
-              infoWindow.open(map, marker)
-            }
-          }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initMap"></script>
       </section>
 
       <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-advice">Advice and support</h2>
+        <h2 class="govuk-heading-l" id="section-advice">Support and advice</h2>
 
         <p>For questions about this course you should <a href="#section-contact">contact the training provider</a>.</p>
 
