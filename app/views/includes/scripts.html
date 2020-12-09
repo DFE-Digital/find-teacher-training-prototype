@@ -8,7 +8,8 @@
   <script src="{{ scriptUrl }}"></script>
 {% endfor %}
 
-<script src="/public/javascripts/application.js"></script>
+<script src="/public/javascripts/application.js" type="module"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMEl6fpV97Mo3NnkIqm-eRPhfkvKI5RcQ&callback=initLocationsMap" defer></script>
 
 {% if useAutoStoreData %}
   <script src="/public/javascripts/auto-store-data.js"></script>

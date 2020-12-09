@@ -1,3 +1,12 @@
+const { DateTime } = require('luxon')
+const marked = require('marked')
+
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  smartLists: true,
+  smartypants: true
+})
+
 /* eslint-disable no-extend-native */
 Number.prototype.formatMoney = function (c, d, t) {
   let n = this
@@ -19,36 +28,52 @@ module.exports = function (env) {
    */
   const filters = {}
 
-  /* ------------------------------------------------------------------
-    add your methods to the filters obj below this comment block:
-    @example:
+  /**
+   * Convert str to date
+   * @type {String} str
+   * @type {String} format
+   */
+  filters.date = (string, format = 'yyyy-LL-dd') => {
+    if (string) {
+      const date = (string === 'now') ? DateTime.local() : string
 
-    filters.sayHi = function(name) {
-        return 'Hi ' + name + '!'
+      const datetime = DateTime.fromISO(date, {
+        locale: 'en-GB'
+      }).toFormat(format)
+
+      return datetime
+    }
+  }
+
+  filters.markdown = function (string) {
+    if (string === undefined) {
+      return ''
     }
 
-    Which in your templates would be used as:
+    const text = string.replace(/\\r/g, '\n').replace(/\\t/g, ' ')
+    const html = marked(text)
 
-    {{ 'Paul' | sayHi }} => 'Hi Paul'
+    // Add govuk-* classes
+    let govukHtml = html.replace(/<ul>/g, '<ul class="govuk-list govuk-list--bullet">')
+    govukHtml = govukHtml.replace(/<p>/g, '<p class="govuk-body">')
 
-    Notice the first argument of your filters method is whatever
-    gets 'piped' via '|' to the filter.
+    return govukHtml
+  }
 
-    Filters can take additional arguments, for example:
-
-    filters.sayHi = function(name,tone) {
-      return (tone == 'formal' ? 'Greetings' : 'Hi') + ' ' + name + '!'
+  /**
+   * Convert object to array
+   * @type {Object} obj
+   */
+  filters.toArray = (obj) => {
+    if (obj) {
+      const arr = []
+      for (const [key, value] of Object.entries(obj)) {
+        value.id = key
+        arr.push(value)
+      }
+      return arr
     }
-
-    Which would be used like this:
-
-    {{ 'Joel' | sayHi('formal') }} => 'Greetings Joel!'
-    {{ 'Gemma' | sayHi }} => 'Hi Gemma!'
-
-    For more on filters and how to write them see the Nunjucks
-    documentation.
-
-  ------------------------------------------------------------------ */
+  }
 
   const data = [
     {
@@ -201,8 +226,5 @@ module.exports = function (env) {
     }
   }
 
-  /* ------------------------------------------------------------------
-    keep the following line to return your filters to the app
-  ------------------------------------------------------------------ */
   return filters
 }
