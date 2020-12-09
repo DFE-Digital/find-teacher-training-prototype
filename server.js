@@ -10,9 +10,6 @@ const sessionInCookie = require('client-sessions')
 const sessionInMemory = require('express-session')
 const cookieParser = require('cookie-parser')
 
-// Custom dependencies
-const marked = require('marked')
-
 // Run before other code to make sure variables from .env are available
 dotenv.config()
 
@@ -144,16 +141,6 @@ app.use(function (req, res, next) {
     }
 
     return value
-  })
-
-  nunjucksAppEnv.addGlobal('markdown', function (text) {
-    if (text === undefined) {
-      return ''
-    }
-
-    const t = text.replace(/\\r/g, '\n').replace(/\\t/g, ' ')
-
-    return '<div class="markdown">' + marked(t) + '</div>'
   })
 
   nunjucksAppEnv.addGlobal('applyLink', function (providerCode, programmeCode) {

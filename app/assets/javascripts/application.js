@@ -1,5 +1,7 @@
 /* global GOVUK, $ */
 
+import initLocationsMap from './locations-map.js'
+
 // Warn about using the kit in production
 if (window.console && window.console.info) {
   window.console.info('GOV.UK Prototype Kit - do not use for production')
@@ -8,4 +10,5 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   GOVUK.modules.start()
   window.GOVUKFrontend.initAll()
+  window.initLocationsMap = initLocationsMap
 })

@@ -1,47 +1,17 @@
 // Global styles for <a> and <p> tags
 $govuk-global-styles: true;
 
-// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+// We can’t mount GOV.UK Frontend’s assets at root as it’s done automatically by the extensions framework.
 $govuk-assets-path: '/govuk/assets/';
 
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
 
-// Components that aren't in Frontend
+// Components that aren’t in Frontend
 @import "components/filters";
 @import "components/list";
+@import "components/map";
 @import "components/related";
 @import "components/search-results";
+@import "components/table";
 @import "components/toggle";
-
-.govuk-heading-m .heading-secondary {
-  color: govuk-colour("dark-grey");
-  font-weight: normal;
-  @include govuk-font(19);
-}
-
-.heading-secondary {
-  color: govuk-colour("dark-grey");
-  display: block;
-  font-weight: normal;
-}
-
-.info-window {
-  @include govuk-font(16);
-
-  .govuk-heading-m,
-  .govuk-heading-s {
-    margin-top: 5px;
-  }
-}
-
-.markdown ul {
-  @extend .govuk-list;
-  @extend .govuk-list--bullet;
-}
-
-// Required since govuk-frontend 3.0.0
-.app-table--vertical-align-middle .govuk-table__header,
-.app-table--vertical-align-middle .govuk-table__cell {
-  vertical-align: middle;
-}

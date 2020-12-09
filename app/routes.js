@@ -2,8 +2,8 @@ const express = require('express')
 const router = express.Router()
 const geolib = require('geolib')
 const geocoder = require('google-geocoder')
+const got = require('got')
 const geo = geocoder({ key: process.env.GOOGLE_API_KEY })
-const fs = require('fs')
 
 // Route index page
 router.post('/start/location', function (req, res) {
@@ -29,10 +29,10 @@ router.post('/results/filters/location', function (req, res) {
 
 function handleLocationSearch (location, req, res, successRedirect, options = {}) {
   if (location) {
-    geo.find(location + ', UK', function (err, geoResponse) {
-      if (err) {
-        console.log(err)
-        options.error = err
+    geo.find(location + ', UK', function (error, geoResponse) {
+      if (error) {
+        console.error(error)
+        options.error = error
         res.render('start/location', options)
       } else if (geoResponse.length === 0) {
         options.error = 'Sorry, we couldn’t find that location'
@@ -49,13 +49,72 @@ function handleLocationSearch (location, req, res, successRedirect, options = {}
 }
 
 // Route index page
-router.get('/course/:providerCode/:courseCode', function (req, res) {
-  const providerCode = req.params.providerCode
-  const courseCode = req.params.courseCode
+router.get('/course/:year/:providerCode/:courseCode', async function (req, res) {
+  const { year, providerCode, courseCode } = req.params
 
-  getFullCourse(req, providerCode, courseCode, function (course) {
-    res.render('course', { course: course })
-  })
+  const endpoint = 'https://api.publish-teacher-training-courses.service.gov.uk/api/public/v1'
+
+  let course, locations, provider
+
+  try {
+    const { body } = await got(`${endpoint}/recruitment_cycles/${year}/providers/${providerCode}/courses/${courseCode}`, {
+      responseType: 'json'
+    })
+
+    course = body.data.attributes
+
+    // Course length
+    switch (course.course_length) {
+      case 'OneYear':
+        course.length = '1 year'
+        break
+      case 'TwoYears':
+        course.length = 'Up to 2 years'
+        break
+      default:
+        course.length = course.course_length
+    }
+
+    // Funding
+    course.has_fees = course.funding_type === 'fee'
+    course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
+    course.funding_option = course.salaried ? 'Salary' : 'Student finance if you’re eligible'
+  } catch (error) {
+    console.error(error.response.body)
+  }
+
+  try {
+    const { body } = await got(`${endpoint}/recruitment_cycles/${year}/providers/${providerCode}/courses/${courseCode}/locations`, {
+      responseType: 'json'
+    })
+    locations = body.data.map(location => {
+      const { attributes } = location
+
+      const streetAddress1 = attributes.street_address_1 ? attributes.street_address_1 + ', ' : ''
+      const streetAddress2 = attributes.street_address_2 ? attributes.street_address_2 + ', ' : ''
+      const city = attributes.city ? attributes.city + ', ' : ''
+      const county = attributes.county ? attributes.county + ', ' : ''
+      const postcode = attributes.postcode ? attributes.postcode + ', ' : ''
+      attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
+
+      attributes.has_vacancies = true
+
+      return attributes
+    })
+  } catch (error) {
+    console.error(error.response.body)
+  }
+
+  try {
+    const { body } = await got(`${endpoint}/recruitment_cycles/${year}/providers/${providerCode}`, {
+      responseType: 'json'
+    })
+    provider = body.data.attributes
+  } catch (error) {
+    console.error(error.response.body)
+  }
+
+  res.render('course', { course, locations, provider })
 })
 
 router.get('/results/filters/subjects', function (req, res) {
@@ -253,23 +312,6 @@ function groupBy (list, keyGetter) {
     }
   })
   return map
-}
-
-function getFullCourse (req, providerCode, courseCode, callback) {
-  let course
-  const data = req.session.data
-
-  if (data[`${providerCode}-${courseCode}-course`]) {
-    callback(data[`${providerCode}-${courseCode}-course`])
-    return
-  }
-
-  fs.readFile(`app/data/courses/course_${providerCode}_${courseCode}.json`, (err, file) => {
-    if (err) throw err
-    course = JSON.parse(file)
-    data[`${providerCode}-${courseCode}-course`] = course
-    callback(course)
-  })
 }
 
 module.exports = router
