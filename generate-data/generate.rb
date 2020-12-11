@@ -242,12 +242,6 @@ prototype_data['courses'] = sample.map do |c|
     end
   end
 
-  if (course[:has_inst] && course[:has_enrichment])
-    File.open("../app/data/courses/course_#{c['providerCode']}_#{c['programmeCode']}.json", 'w') do |file|
-      file.write(JSON.pretty_generate(course) + "\n")
-    end
-  end
-
   course.delete(:inst)
   course.delete(:enrichment)
   course.delete(:schools)
