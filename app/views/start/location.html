@@ -72,13 +72,6 @@
           }]
         }) }}
 
-        {{ govukInput({
-          id: "map",
-          name: "map",
-          type: "hidden",
-          value: "yes"
-        }) if isMap }}
-
         {{ govukButton({
           text: "Find courses" if filtering else "Continue"
         }) }}
