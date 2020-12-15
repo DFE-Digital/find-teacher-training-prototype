@@ -1,4 +1,5 @@
 const got = require('got')
+
 const endpoint = process.env.TEACHER_TRAINING_API_URL
 const cycle = process.env.RECRUITMENT_CYCLE
 
