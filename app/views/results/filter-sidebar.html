@@ -22,7 +22,7 @@
       <h4 class="govuk-heading-s filter-form__title">Subjects</h4>
       <ul class="filter-form__value--list">
         {% if data['sen'] %}<li>Only SEN courses</li>{% endif %}
-        {% for subject in data['selectedSubjects'] %}
+        {% for subject in data.selectedSubjects %}
           <li>{{ subject }}</li>
         {% endfor %}
       </ul>
@@ -52,8 +52,8 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Study type</h4>
       <ul class="filter-form__value--list">
-        {% for type in data.studyType %}
-          <li>{{ type }}</li>
+        {% for option in data.options.studyType %}
+          <li>{{ option.text }}</li>
         {% endfor %}
       </ul>
       <a class="govuk-link" href="/results/filters/study-type">Change study type</a>
