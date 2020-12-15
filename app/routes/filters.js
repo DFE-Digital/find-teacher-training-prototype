@@ -1,4 +1,28 @@
+const filters = require('../filters')()
+
 module.exports = router => {
+  // Qualification
+  router.get('/results/filters/qualification', function (req, res) {
+    const { qualificationOptions, selectedQualificationOption } = req.session.data
+
+    const backLink = {
+      text: 'Back to search results',
+      href: '/results'
+    }
+
+    const items = qualificationOptions.map(option => {
+      return {
+        value: option.value,
+        text: option.text,
+        label: { classes: 'govuk-label--s' },
+        hint: { text: filters.markdown(option.hint) },
+        checked: selectedQualificationOption.includes(option.value)
+      }
+    })
+
+    res.render('filters/qualification', { backLink, items })
+  })
+
   // Salary
   router.get('/results/filters/salary', function (req, res) {
     const { salaryOptions, selectedSalaryOption } = req.session.data
