@@ -1,14 +1,14 @@
 const filters = require('../filters')()
 
+const backLink = {
+  text: 'Back to search results',
+  href: '/results'
+}
+
 module.exports = router => {
   // Qualification
   router.get('/results/filters/qualification', function (req, res) {
     const { qualificationOptions, selectedQualificationOption } = req.session.data
-
-    const backLink = {
-      text: 'Back to search results',
-      href: '/results'
-    }
 
     const items = qualificationOptions.map(option => {
       return {
@@ -27,11 +27,6 @@ module.exports = router => {
   router.get('/results/filters/salary', function (req, res) {
     const { salaryOptions, selectedSalaryOption } = req.session.data
 
-    const backLink = {
-      text: 'Back to search results',
-      href: '/results'
-    }
-
     const items = salaryOptions.map(option => {
       return {
         value: option.value,
@@ -43,14 +38,33 @@ module.exports = router => {
     res.render('filters/salary', { backLink, items })
   })
 
+  // Subject
+  router.get('/results/filters/subject', function (req, res) {
+    const { subjectOptions, selectedSubjectOption, levels } = req.session.data
+    const allSubjects = subjectOptions.map(option => option.value)
+    const selectedSubjects = selectedSubjectOption || allSubjects
+
+    console.log('selectedSubjects', selectedSubjects)
+
+    const groups = levels.map(level => {
+      return {
+        text: level.text,
+        items: subjectOptions.filter(subject => subject.type === level.value).map(option => ({
+          value: option.value,
+          text: option.text,
+          label: { classes: 'govuk-label--s' },
+          hint: { text: option.hint },
+          checked: selectedSubjects.includes(option.value)
+        }))
+      }
+    })
+
+    res.render('filters/subject', { backLink, groups })
+  })
+
   // Study type
   router.get('/results/filters/study-type', function (req, res) {
     const { studyTypeOptions, selectedStudyTypeOption } = req.session.data
-
-    const backLink = {
-      text: 'Back to search results',
-      href: '/results'
-    }
 
     const items = studyTypeOptions.map(option => {
       return {
@@ -68,11 +82,6 @@ module.exports = router => {
   // Vacancies
   router.get('/results/filters/vacancy', function (req, res) {
     const { vacancyOptions, selectedVacancyOption } = req.session.data
-
-    const backLink = {
-      text: 'Back to search results',
-      href: '/results'
-    }
 
     const items = vacancyOptions.map(option => {
       return {
