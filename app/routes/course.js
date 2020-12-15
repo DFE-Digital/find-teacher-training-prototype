@@ -8,13 +8,10 @@ module.exports = router => {
     const { providerCode, courseCode } = req.params
 
     try {
-      const { body } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`, {
-        responseType: 'json'
-      })
-
-      const { data, included } = body
+      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json()
 
       const course = data.attributes
+
       let provider = included.find(item => item.type === 'providers')
       provider = provider.attributes
 
