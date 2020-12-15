@@ -1,5 +1,3 @@
-const courses = require('./courses.json')
-
 module.exports = {
   seenApplyWithChoice: false,
   seenApplyWithoutChoice: false,
@@ -25,7 +23,5 @@ module.exports = {
     lat: 52.6033,
     lng: -1.4183
   },
-  selectedSubjects: [],
-  groupedSubjects: courses.groupedSubjects,
-  subjects: courses.subjects
+  selectedSubjects: []
 }
