@@ -33,6 +33,10 @@ module.exports = router => {
     const selectedSalaryOption = req.query.salary || req.session.data.selectedSalaryOption
     req.session.data.selectedSalaryOption = selectedSalaryOption
 
+    // Send
+    const selectedSendOption = (req.query.send === 'include') || (req.session.data.selectedSendOption === 'include')
+    req.session.data.selectedSendOption = selectedSendOption
+
     // Subject
     let selectedSubjectOption = req.query.subject || req.session.data.selectedSubjectOption
     selectedSubjectOption = typeof selectedSubjectOption === 'string' ? Array(selectedSubjectOption) : selectedSubjectOption
@@ -54,7 +58,8 @@ module.exports = router => {
         has_vacancies: selectedVacancyOption,
         subjects: selectedSubjectOption.toString(),
         study_type: selectedStudyTypeOption.toString(),
-        qualification: selectedQualificationOption.toString()
+        qualification: selectedQualificationOption.toString(),
+        send_courses: selectedSendOption
       },
       sort: 'provider.provider_name',
       include: 'recruitment_cycle,provider'
@@ -97,6 +102,7 @@ module.exports = router => {
         resultsCount: results.length,
         selectedQualificationOption,
         selectedSalaryOption,
+        selectedSendOption,
         selectedSubjects,
         selectedStudyTypeOption,
         selectedVacancyOption

@@ -38,23 +38,23 @@ module.exports = router => {
     res.render('filters/salary', { backLink, items })
   })
 
-  // Subject
+  // Subject/SEND
   router.get('/results/filters/subject', function (req, res) {
-    const { subjectOptions, selectedSubjectOption, levels } = req.session.data
+    const { subjectOptions, selectedSendOption, selectedSubjectOption, levels } = req.session.data
     const allSubjects = subjectOptions.map(option => option.value)
     const selectedSubjects = selectedSubjectOption || allSubjects
-
-    console.log('selectedSubjects', selectedSubjects)
 
     const groups = levels.map(level => {
       return {
         text: level.text,
         items: subjectOptions.filter(subject => subject.type === level.value).map(option => ({
           value: option.value,
+          id: option.name ? `subject-${option.name}` : `subject-${option.value}`,
+          name: option.name || 'subject',
           text: option.text,
           label: { classes: 'govuk-label--s' },
           hint: { text: option.hint },
-          checked: selectedSubjects.includes(option.value)
+          checked: option.name === 'send' ? (selectedSendOption === true) : selectedSubjects.includes(option.value)
         }))
       }
     })
