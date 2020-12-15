@@ -19,7 +19,7 @@ module.exports = {
     text: 'Only courses that come with a salary',
     value: 'salary'
   }],
-  studyTypes: [{
+  studyTypeOptions: [{
     text: 'Full time (12 months)',
     hint: 'You’ll usually spend 5 days a week on a full-time course',
     value: 'full_time'
@@ -37,7 +37,7 @@ module.exports = {
   }],
   selectedQualificationOption: ['qts'],
   selectedSalaryOption: 'salary,apprenticeship,fee',
-  selectedStudyTypes: ['full_time', 'part_time'],
+  selectedStudyTypeOption: ['full_time', 'part_time'],
   selectedVacancyOption: 'false',
   latLong: {
     lat: 52.6033,
