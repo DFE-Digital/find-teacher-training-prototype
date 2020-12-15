@@ -21,8 +21,8 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Subjects</h4>
       <ul class="filter-form__value--list">
-        {% if data.sen %}
-          <li>Only SEN courses</li>
+        {% if selectedSendOption %}
+          <li>Only SEND courses</li>
         {% endif %}
         {% set remainingSubjects = selectedSubjects.length - 4 %}
         {% for subject in selectedSubjects | limitTo(4) %}

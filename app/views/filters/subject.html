@@ -10,6 +10,8 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-l">{{ title }}</h1>
 
+      {{ selectedSendOption | dump }}
+
       <form action="/results">
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
           {% for level in groups %}
@@ -29,28 +31,6 @@
               </div>
             </div>
           {% endfor %}
-          <div class="govuk-accordion__section">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
-                  Special educational needs and disability (SEND)
-                </span>
-              </h2>
-            </div>
-            <div class="govuk-accordion__section-content">
-              {{ govukCheckboxes({
-                name: "selectedSubjects",
-                idPrefix: "selectedSubjects",
-                items: [{
-                  value: "sen",
-                  text: "Show only courses with a SEND specialism",
-                  label: {
-                    classes: "govuk-label--s"
-                  }
-                }]
-              }) }}
-            </div>
-          </div>
         </div>
 
         {{ govukButton({
