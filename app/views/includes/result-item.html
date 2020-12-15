@@ -15,4 +15,8 @@
     <dt class="govuk-list--description__label">Accredited provider</dt>
     <dd>{{ course.accrediting }}</dd>
   {% endif %}
+  {% if selectedVacancyOption != "true" %}
+    <dt class="govuk-list--description__label">Vacancies</dt>
+    <dd>{{ "Yes" if result.course.has_vacancies else "No" }}</dd>
+  {% endif %}
 </dl>

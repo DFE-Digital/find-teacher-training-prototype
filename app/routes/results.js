@@ -33,6 +33,10 @@ module.exports = router => {
     const selectedStudyTypes = req.query.studyType || req.session.data.selectedStudyTypes
     req.session.data.selectedStudyTypes = selectedStudyTypes
 
+    // Vacancies
+    const selectedVacancyOption = req.query.vacancy || req.session.data.selectedVacancyOption
+    req.session.data.selectedVacancyOption = selectedVacancyOption
+
     // if (req.session.data.selectedSubjects.some(s => s.match(/primary/i))) {
     //   phase.push('00')
     // }
@@ -42,7 +46,7 @@ module.exports = router => {
       per_page: 20,
       filter: {
         funding_type: selectedSalaryOption,
-        has_vacancies: true,
+        has_vacancies: selectedVacancyOption,
         subjects: '00',
         study_type: selectedStudyTypes.toString(),
         qualification: 'qts'
@@ -74,7 +78,8 @@ module.exports = router => {
       res.render('results', {
         results,
         selectedSalaryOption,
-        selectedStudyTypes
+        selectedStudyTypes,
+        selectedVacancyOption
       })
     } catch (error) {
       console.error(error)
