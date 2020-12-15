@@ -85,9 +85,13 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Vacancies</h4>
       <ul class="filter-form__value--list">
-        <li>Only courses with vacancies</li>
+        {% for option in data.vacancyOptions %}
+          {% if selectedVacancyOption == option.value %}
+            <li>{{ option.text }}</li>
+          {% endif %}
+        {% endfor %}
       </ul>
-      <a class="govuk-link" href="#">Change vacancies</a>
+      <a class="govuk-link" href="/results/filters/vacancy">Change vacancies</a>
     </div>
   </div>
 </div>
