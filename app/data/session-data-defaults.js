@@ -1,6 +1,4 @@
 module.exports = {
-  seenApplyWithChoice: false,
-  seenApplyWithoutChoice: false,
   studyTypes: [{
     text: 'Full time (12 months)',
     hint: 'You’ll usually spend 5 days a week on a full-time course',

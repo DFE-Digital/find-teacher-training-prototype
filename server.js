@@ -144,33 +144,9 @@ app.use(function (req, res, next) {
   })
 
   nunjucksAppEnv.addGlobal('applyLink', function (providerCode, programmeCode) {
-    const data = req.session.data
-    const key = `${providerCode}-${programmeCode}`
     const APPLY_PROTOTYPE_URL = process.env.APPLY_PROTOTYPE_URL || 'https://apply-beta-prototype.herokuapp.com'
 
-    const applyWithChoice = `${APPLY_PROTOTYPE_URL}/apply/${providerCode}/${programmeCode}?dualrunning=true`
-    const applyWithoutChoice = `${APPLY_PROTOTYPE_URL}/apply/${providerCode}/${programmeCode}`
-
-    // Keep each course consistent
-    if (data[key]) {
-      return data[key]
-    }
-
-    // If they've seen a course without a choice, force them to see one with
-    if (data.seenApplyWithoutChoice) {
-      return applyWithChoice
-    }
-
-    // If they've seen a course with a choice, force them to see one without
-    if (data.seenApplyWithChoice) {
-      return applyWithoutChoice
-    }
-
-    // Randomise whether course is in Apply beta or not (50/50)
-    // return Math.random() >= 0.5 ? applyWithChoice : applyWithoutChoice;
-
-    // Always show a course with a choice first
-    return applyWithChoice
+    return `${APPLY_PROTOTYPE_URL}/apply/${providerCode}/${programmeCode}?dualrunning=true`
   })
 
   next()
