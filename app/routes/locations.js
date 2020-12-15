@@ -4,7 +4,7 @@ const endpoint = process.env.TEACHER_TRAINING_API_URL
 const cycle = process.env.RECRUITMENT_CYCLE
 
 module.exports = router => {
-  router.get('/course/:providerCode/:courseCode/locations', async function (req, res) {
+  router.get('/course/:providerCode/:courseCode/locations', async (req, res) => {
     const { providerCode, courseCode } = req.params
 
     try {
