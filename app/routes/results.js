@@ -25,6 +25,10 @@ module.exports = router => {
   router.get('/results', async (req, res) => {
     const page = req.query.page || 1
 
+    // Quaification
+    const selectedQualificationOption = req.query.qualification || req.session.data.selectedQualificationOption
+    req.session.data.selectedQualificationOption = selectedQualificationOption
+
     // Salary
     const selectedSalaryOption = req.query.salary || req.session.data.selectedSalaryOption
     req.session.data.selectedSalaryOption = selectedSalaryOption
@@ -49,7 +53,7 @@ module.exports = router => {
         has_vacancies: selectedVacancyOption,
         subjects: '00',
         study_type: selectedStudyTypes.toString(),
-        qualification: 'qts'
+        qualification: selectedQualificationOption.toString()
       },
       sort: 'provider.provider_name',
       include: 'recruitment_cycle,provider'
@@ -77,6 +81,7 @@ module.exports = router => {
 
       res.render('results', {
         results,
+        selectedQualificationOption,
         selectedSalaryOption,
         selectedStudyTypes,
         selectedVacancyOption
