@@ -33,6 +33,11 @@ module.exports = router => {
     const selectedSalaryOption = req.query.salary || req.session.data.selectedSalaryOption
     req.session.data.selectedSalaryOption = selectedSalaryOption
 
+    // Subject
+    let selectedSubjectOption = req.query.subject || req.session.data.selectedSubjectOption
+    selectedSubjectOption = typeof selectedSubjectOption === 'string' ? Array(selectedSubjectOption) : selectedSubjectOption
+    req.session.data.selectedSubjectOption = selectedSubjectOption
+
     // Study type
     const selectedStudyTypeOption = req.query.studyType || req.session.data.selectedStudyTypeOption
     req.session.data.selectedStudyTypeOption = selectedStudyTypeOption
@@ -41,17 +46,13 @@ module.exports = router => {
     const selectedVacancyOption = req.query.vacancy || req.session.data.selectedVacancyOption
     req.session.data.selectedVacancyOption = selectedVacancyOption
 
-    // if (req.session.data.selectedSubjects.some(s => s.match(/primary/i))) {
-    //   phase.push('00')
-    // }
-
     const searchParams = {
       page,
       per_page: 20,
       filter: {
         funding_type: selectedSalaryOption,
         has_vacancies: selectedVacancyOption,
-        subjects: '00',
+        subjects: selectedSubjectOption.toString(),
         study_type: selectedStudyTypeOption.toString(),
         qualification: selectedQualificationOption.toString()
       },
@@ -79,36 +80,30 @@ module.exports = router => {
         })
       }
 
+      // Show selected subjects in filter sidebar
+      // Takes an array of subject codes and maps it to subject data
+      let selectedSubjects = false
+      if (selectedSubjectOption) {
+        selectedSubjects = selectedSubjectOption.map(option => {
+          const { subjectOptions } = req.session.data
+          const subject = subjectOptions.find(subject => subject.value === option)
+
+          return subject
+        })
+      }
+
       res.render('results', {
         results,
+        resultsCount: results.length,
         selectedQualificationOption,
         selectedSalaryOption,
+        selectedSubjects,
         selectedStudyTypeOption,
         selectedVacancyOption
       })
     } catch (error) {
       console.error(error)
     }
-
-    // // Find by subject
-    // let results = req.session.data.courses.filter(function (course) {
-    //   return course.subjects.some(r => phase.indexOf(r) >= 0) && course.subjects.some(r => subjects.indexOf(r) >= 0)
-    // })
-
-    // // Find by salary
-    // if (req.session.data.salary !== 'All courses (with or without a salary)') {
-    //   results = results.filter(function (course) {
-    //     return course.options.some(o => o.includes('salary'))
-    //   })
-    // }
-
-    // // Find by qualification
-    // if (req.session.data.qualification.length === 1) {
-    //   const qualification = req.session.data.qualification.join(' ').includes('Postgraduate') ? 'PGCE with' : 'QTS'
-    //   results = results.filter(function (course) {
-    //     return course.options.some(o => o.startsWith(qualification))
-    //   })
-    // }
 
     // if (req.session.data.location === 'Across England') {
     //   results.sort(function (c1, c2) {

@@ -6,32 +6,14 @@ marked.setOptions({
   smartLists: true,
   smartypants: true
 })
-
-/* eslint-disable no-extend-native */
-Number.prototype.formatMoney = function (c, d, t) {
-  let n = this
-  c = isNaN(c = Math.abs(c)) ? 2 : c
-  d = d === undefined ? '.' : d
-  t = t === undefined ? ',' : t
-  const s = n < 0 ? '-' : ''
-  const i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c)))
-  const j = (j = i.length) > 3 ? j % 3 : 0 // eslint-disable-line
-  return s + (j ? i.substr(0, j) + t : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : '')
-}
-
 module.exports = function (env) {
-  /**
-   * Instantiate object used to store the methods registered as a
-   * 'filter' (of the same name) within nunjucks. You can override
-   * gov.uk core filters by creating filter methods of the same name.
-   * @type {Object}
-   */
   const filters = {}
 
   /**
-   * Convert str to date
-   * @type {String} str
-   * @type {String} format
+   * Convert string to date
+   *
+   * @param {String} string Date
+   * @param {String} format Date format
    */
   filters.date = (string, format = 'yyyy-LL-dd') => {
     if (string) {
@@ -45,7 +27,12 @@ module.exports = function (env) {
     }
   }
 
-  filters.markdown = function (string) {
+  /**
+   * Convert Markdown string to HTML
+   *
+   * @param {String} string Markdown
+   */
+  filters.markdown = string => {
     if (string === undefined) {
       return ''
     }
@@ -62,12 +49,12 @@ module.exports = function (env) {
 
   /**
    * Convert object to array
-   * @type {Object} obj
+   * @param {Object} object Object to convert
    */
-  filters.toArray = (obj) => {
-    if (obj) {
+  filters.toArray = object => {
+    if (object) {
       const arr = []
-      for (const [key, value] of Object.entries(obj)) {
+      for (const [key, value] of Object.entries(object)) {
         value.id = key
         arr.push(value)
       }
@@ -75,155 +62,54 @@ module.exports = function (env) {
     }
   }
 
-  const data = [
-    {
-      Subject: 'Mathematics',
-      PhD: 20000,
-      first: 20000,
-      Masters: 20000,
-      twoone: 20000,
-      twotwo: 20000
-    },
-    {
-      Subject: 'Primary (general with mathematics)',
-      PhD: 6000,
-      first: 6000,
-      Masters: 6000,
-      twoone: 6000,
-      twotwo: 6000
-    },
-    {
-      Subject: 'Primary mathematics specialist',
-      PhD: 6000,
-      first: 6000,
-      Masters: 6000,
-      twoone: 6000,
-      twotwo: 6000
-    },
-    {
-      Subject: 'Physics',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
-    },
-    {
-      Subject: 'Physics with mathematics',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
-    },
-    {
-      Subject: 'Chemistry',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
-    },
-    {
-      Subject: 'Computing',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
-    },
-    {
-      Subject: 'Geography',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
-    },
-    {
-      Subject: 'Biology',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
-    },
-    {
-      Subject: 'Classics',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
-    },
-    {
-      Subject: 'English',
-      PhD: 15000,
-      first: 15000,
-      Masters: 15000,
-      twoone: 15000,
-      twotwo: 15000
-    },
-    {
-      Subject: 'Design and technology',
-      PhD: 12000,
-      first: 12000,
-      Masters: 9000,
-      twoone: 9000,
-      twotwo: 0
-    },
-    {
-      Subject: 'History',
-      PhD: 9000,
-      first: 9000,
-      Masters: 4000,
-      twoone: 4000,
-      twotwo: 0
-    },
-    {
-      Subject: 'Music',
-      PhD: 9000,
-      first: 9000,
-      Masters: 4000,
-      twoone: 4000,
-      twotwo: 0
-    },
-    {
-      Subject: 'Religious education',
-      PhD: 9000,
-      first: 9000,
-      Masters: 4000,
-      twoone: 4000,
-      twotwo: 0
-    },
-    {
-      Subject: 'Primary mathematics',
-      PhD: 6000,
-      first: 6000,
-      Masters: 6000,
-      twoone: 6000,
-      twotwo: 6000
-    },
-    {
-      Subject: 'Modern foreign languages',
-      PhD: 26000,
-      first: 26000,
-      Masters: 26000,
-      twoone: 26000,
-      twotwo: 26000
+  /**
+   * Create a new array or string containing only a specified number of elements
+   * @see https://gist.github.com/jbmoelker/9693778
+   *
+   * @param {String|Array} input Text or list of items to shorten
+   * @param {Number} limit Either positive offset from start or negative offset from end
+   *
+   * @example <caption>Limit to first 5 characters of string</caption>
+   *   {{ "hello world" | limitTo(5) }}
+   *   // outputs: hello
+   *
+   * @example <caption>Limit to last 5 characters of string</caption>
+   *   {{ "hello world" | limitTo(-5) }}
+   *   // outputs: world
+   *
+   * @example <caption>Limit to first 3 items in array</caption>
+   *   {% set items = ["alpha","beta","charlie","delta","echo"] %}
+   *   {% for item in items | limitTo(3) %} {{ loop.index }}.{{ item }} {% endfor %}
+   *   // outputs: 1.alpha 2.beta  3.charlie
+   *
+   * @example <caption>Limit to last 3 items in array</caption>
+   *   {% set items = ["alpha","beta","charlie","delta","echo"] %}
+   *   {% for item in items | limitTo(-3) %} {{ loop.index }}.{{ item }} {% endfor %}
+   *   // outputs: 1.charlie 2.delta 3.echo
+   */
+  filters.limitTo = (input, limit) => {
+    if (typeof limit !== 'number') {
+      return input
     }
-  ]
 
-  filters.bursaryCost = function (subject, degree) {
-    function matchesSubject (element) {
-      return element.Subject === subject
-    };
-    const matchingSubject = data.find(matchesSubject)
-    if (matchingSubject && matchingSubject[degree]) {
-      return ' £' + (matchingSubject[degree]).formatMoney(0)
-    } else {
-      return ''
+    if (typeof input === 'string') {
+      if (limit >= 0) {
+        return input.substring(0, limit)
+      } else {
+        return input.substr(limit)
+      }
     }
+
+    if (Array.isArray(input)) {
+      limit = Math.min(limit, input.length)
+      if (limit >= 0) {
+        return input.splice(0, limit)
+      } else {
+        return input.splice(input.length + limit, input.length)
+      }
+    }
+
+    return input
   }
 
   return filters
