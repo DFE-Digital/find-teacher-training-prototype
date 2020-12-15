@@ -52,75 +52,6 @@ function handleLocationSearch (location, req, res, successRedirect, options = {}
   }
 }
 
-// Route index page
-router.get('/course/:year/:providerCode/:courseCode', async function (req, res) {
-  const { year, providerCode, courseCode } = req.params
-
-  const endpoint = 'https://api.publish-teacher-training-courses.service.gov.uk/api/public/v1'
-
-  let course, locations, provider
-
-  try {
-    const { body } = await got(`${endpoint}/recruitment_cycles/${year}/providers/${providerCode}/courses/${courseCode}`, {
-      responseType: 'json'
-    })
-
-    course = body.data.attributes
-
-    // Course length
-    switch (course.course_length) {
-      case 'OneYear':
-        course.length = '1 year'
-        break
-      case 'TwoYears':
-        course.length = 'Up to 2 years'
-        break
-      default:
-        course.length = course.course_length
-    }
-
-    // Funding
-    course.has_fees = course.funding_type === 'fee'
-    course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
-    course.funding_option = course.salaried ? 'Salary' : 'Student finance if you’re eligible'
-  } catch (error) {
-    console.error(error.response.body)
-  }
-
-  try {
-    const { body } = await got(`${endpoint}/recruitment_cycles/${year}/providers/${providerCode}/courses/${courseCode}/locations`, {
-      responseType: 'json'
-    })
-    locations = body.data.map(location => {
-      const { attributes } = location
-
-      const streetAddress1 = attributes.street_address_1 ? attributes.street_address_1 + ', ' : ''
-      const streetAddress2 = attributes.street_address_2 ? attributes.street_address_2 + ', ' : ''
-      const city = attributes.city ? attributes.city + ', ' : ''
-      const county = attributes.county ? attributes.county + ', ' : ''
-      const postcode = attributes.postcode ? attributes.postcode + ', ' : ''
-      attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
-
-      attributes.has_vacancies = true
-
-      return attributes
-    })
-  } catch (error) {
-    console.error(error.response.body)
-  }
-
-  try {
-    const { body } = await got(`${endpoint}/recruitment_cycles/${year}/providers/${providerCode}`, {
-      responseType: 'json'
-    })
-    provider = body.data.attributes
-  } catch (error) {
-    console.error(error.response.body)
-  }
-
-  res.render('course', { course, locations, provider })
-})
-
 router.get('/results/filters/subjects', function (req, res) {
   const backLink = { text: 'Back to search results', href: '/results' }
   res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink })
@@ -219,7 +150,6 @@ function subjectGroups (req) {
   return subjectGroups
 }
 
-// Route index page
 router.get('/results', async (req, res) => {
   const page = req.query.page || 1
   const studyType = req.query.studyType || false
@@ -347,5 +277,8 @@ function groupBy (list, keyGetter) {
   })
   return map
 }
+
+require('./routes/course')(router)
+require('./routes/locations')(router)
 
 module.exports = router

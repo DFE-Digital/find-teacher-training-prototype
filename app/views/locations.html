@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% set title = "Locations" %}
+
+{% block backLink %}
+  {{ govukBackLink({
+    text: "Back to course details",
+    href: backLink
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <h1 class="govuk-heading-xl">{{ title }}</h1>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div id="locations-map" class="govuk-!-margin-bottom-6" style="height: 500px"></div>
+      <script>
+        window.trainingLocations = [
+          {% for location in locations %}
+            {
+              "code": "{{ location.code }}",
+              "name": "{{ location.name }}",
+              "lat": "{{ location.latitude if location.latitude else provider.latitude }}",
+              "lng": "{{ location.longitude if location.longitude else provider.longitude }}",
+              "address": "{{ location.address }}",
+              "vacancies": "{{ "No vacancies" if not location.has_vacancies }}"
+            },
+          {% endfor %}
+        ]
+      </script>
+
+      <table class="govuk-table app-table--vertical-align-middle">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" style="width: 70%">Location</th>
+            <th class="govuk-table__header">Vacancies</th>
+            <th class="govuk-table__header">Code</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          {% for location in locations %}
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <span class="govuk-!-font-weight-bold">{{ location.name }}</span><br />
+              {{ location.address }}
+            </td>
+            <td class="govuk-table__cell">{{ "Yes" if location.has_vacancies else "No" }}</td>
+            <td class="govuk-table__cell">{{ location.code }}{% if location.code == "-" %} (dash){% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}
