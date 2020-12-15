@@ -210,6 +210,11 @@ module.exports = {
     text: 'Further education',
     type: 'further_education',
     value: '41'
+  }, {
+    text: 'Show only courses with a SEND specialism',
+    type: 'send',
+    name: 'send',
+    value: 'include'
   }],
   vacancyOptions: [{
     text: 'Only courses with vacancies',
@@ -220,6 +225,7 @@ module.exports = {
   }],
   selectedQualificationOption: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
   selectedSalaryOption: 'salary,apprenticeship,fee',
+  selectedSendOption: 'exclude',
   selectedSubjectOption: ['00'],
   selectedStudyTypeOption: ['full_time', 'part_time'],
   selectedVacancyOption: 'false',
@@ -235,6 +241,9 @@ module.exports = {
   }, {
     text: 'Further education',
     value: 'further_education'
+  }, {
+    text: 'Special educational needs and disability (SEND)',
+    value: 'send'
   }],
   latLong: {
     lat: 52.6033,
