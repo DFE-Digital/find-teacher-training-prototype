@@ -73,11 +73,11 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Salary</h4>
       <ul class="filter-form__value--list">
-        {% if data['salary'] == 'All courses (with or without a salary)' %}
-          <li>Courses with and without salary</li>
-        {% else %}
-          <li>Only courses with a salary</li>
-        {% endif %}
+        {% for option in data.salaryOptions %}
+          {% if selectedSalaryOption == option.value %}
+            <li>{{ option.text }}</li>
+          {% endif %}
+        {% endfor %}
       </ul>
       <a class="govuk-link" href="/results/filters/salary">Change salary option</a>
     </div>
