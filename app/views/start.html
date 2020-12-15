@@ -1,19 +1,12 @@
 {% extends "layout.html" %}
 {% set title = "Search teacher training courses" %}
 
-{% block backLink %}
-  {{ govukBackLink({
-    text: backLink.text,
-    href: backLink.href
-  }) if backLink }}
-{% endblock %}
-
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-l">{{ title }}</h1>
 
-      <form action="{{ "/results/filters/location" if filtering else "/start/location" }}" method="post" class="form">
+      <form action="/results">
         {{ govukErrorSummary({
           titleText: "There is a problem",
           errorList: [{
@@ -35,7 +28,6 @@
         }) }}
 
         {{ govukCheckboxes({
-          name: "location",
           formGroup: {
             classes: "govuk-checkboxes--small govuk-!-margin-bottom-2"
           },
@@ -45,22 +37,13 @@
               text: "Education phase"
             }
           },
-          items: [{
-            value: "Primary",
-            text: "Primary"
-          }, {
-            value: "Secondary",
-            text: "Secondary"
-          }, {
-            value: "Further education",
-            text: "Further education"
-          }]
+          name: "subject",
+          items: subjectItems
         }) }}
 
         <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
 
         {{ govukCheckboxes({
-          name: "sen",
           classes: "govuk-checkboxes--small",
           fieldset: {
             legend: {
@@ -68,15 +51,15 @@
               text: "Special educational needs and disability (SEND)"
             }
           },
+          name: "send",
           items: [{
-            value: "sen",
-            text: "Show only courses with a SEND specialism"
+            value: "include",
+            text: "Only show courses with a SEND specialism"
           }]
         }) }}
 
         {% set additionalFiltersHtml %}
           {{ govukCheckboxes({
-            name: "studyType",
             formGroup: {
               classes: "govuk-checkboxes--small"
             },
@@ -86,17 +69,11 @@
                 classes: "govuk-fieldset__legend--m"
               }
             },
-            items: [{
-              value: "Full time (12 months)",
-              text: "Full time (12 months)"
-            }, {
-              value: "Part time (18-24 months)",
-              text: "Part time (18-24 months)"
-            }]
+            name: "studyType",
+            items: studyTypeItems
           }) }}
 
           {{ govukRadios({
-            name: "salary",
             formGroup: {
               classes: "govuk-radios--small"
             },
@@ -106,13 +83,8 @@
                 classes: "govuk-fieldset__legend--m"
               }
             },
-            items: [{
-              value: "All courses (with or without a salary)",
-              text: "All courses (with or without a salary)"
-            }, {
-              value: "Only courses that come with a salary",
-              text: "Only courses that come with a salary"
-            }]
+            name: "salary",
+            items: salaryItems
           }) }}
         {% endset %}
 

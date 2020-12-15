@@ -211,7 +211,7 @@ module.exports = {
     type: 'further_education',
     value: '41'
   }, {
-    text: 'Show only courses with a SEND specialism',
+    text: 'Only show courses with a SEND specialism',
     type: 'send',
     name: 'send',
     value: 'include'

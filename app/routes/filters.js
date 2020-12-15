@@ -7,7 +7,7 @@ const backLink = {
 
 module.exports = router => {
   // Qualification
-  router.get('/results/filters/qualification', function (req, res) {
+  router.get('/results/filters/qualification', (req, res) => {
     const { qualificationOptions, selectedQualificationOption } = req.session.data
 
     const items = qualificationOptions.map(option => {

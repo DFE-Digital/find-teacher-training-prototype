@@ -4,7 +4,8 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">{{ title }}</h1>
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-2">{{ title }}</h1>
+      <p class="govuk-body-l">{{ resultsCount }} courses found within your area</p>
     </div>
   </div>
 
@@ -15,15 +16,6 @@
 
     <div class="govuk-grid-column-two-thirds">
       {% if results | length > 0 %}
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-            <p class="govuk-body search-results__count" data-qa="course-count">{{ resultsCount }} courses found within your area</p>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <p class="govuk-body search-results__new-search"><a href="/start/location">New search</a></p>
-          </div>
-        </div>
-
         <ul class="govuk-list search-results">
         {% for result in results %}
           <li>
