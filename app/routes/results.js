@@ -38,7 +38,7 @@ module.exports = router => {
       per_page: 20,
       filter: {
         has_vacancies: true,
-        subjects: '01',
+        subjects: '00',
         study_type: selectedStudyType,
         qualification: 'qts'
       },
@@ -49,11 +49,7 @@ module.exports = router => {
     try {
       const queryString = qs.stringify(searchParams)
 
-      const { body } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${queryString}`, {
-        responseType: 'json'
-      })
-
-      const { data, included } = body
+      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${queryString}`).json()
 
       let results = data
 
