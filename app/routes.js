@@ -4,6 +4,10 @@ const geolib = require('geolib')
 const geocoder = require('google-geocoder')
 const got = require('got')
 const geo = geocoder({ key: process.env.GOOGLE_API_KEY })
+const qs = require('qs')
+
+const endpoint = process.env.TEACHER_TRAINING_API_URL
+const recruitmentCycle = process.env.RECRUITMENT_CYCLE
 
 // Route index page
 router.post('/start/location', function (req, res) {
@@ -18,13 +22,13 @@ router.post('/start/location', function (req, res) {
 router.get('/results/filters/location', function (req, res) {
   const isMap = req.query.map
   const backLink = { text: 'Back to search results', href: isMap ? '/results?map=yes' : '/results' }
-  res.render('start/location', { backLink: backLink, filtering: true, isMap: isMap })
+  res.render('start/location', { backLink: backLink, filtering: true })
 })
 
 router.post('/results/filters/location', function (req, res) {
   const isMap = req.body.map
   const backLink = { text: 'Back to search results', href: isMap ? '/results?map=yes' : '/results' }
-  handleLocationSearch(req.body['postcode-town-or-city'], req, res, isMap ? '/results?map=yes' : '/results', { backLink: backLink, filtering: true, isMap: isMap })
+  handleLocationSearch(req.body['postcode-town-or-city'], req, res, isMap ? '/results?map=yes' : '/results', { backLink: backLink, filtering: true })
 })
 
 function handleLocationSearch (location, req, res, successRedirect, options = {}) {
@@ -118,27 +122,36 @@ router.get('/course/:year/:providerCode/:courseCode', async function (req, res) 
 })
 
 router.get('/results/filters/subjects', function (req, res) {
-  const isMap = req.query.map
-  const backLink = { text: 'Back to search results', href: isMap ? '/results?map=yes' : '/results' }
-  res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink, isMap: isMap })
+  const backLink = { text: 'Back to search results', href: '/results' }
+  res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink })
 })
 
 router.get('/results/filters/salary', function (req, res) {
-  const isMap = req.query.map
-  const backLink = { text: 'Back to search results', href: isMap ? '/results?map=yes' : '/results' }
-  res.render('results/filters/salary', { backLink: backLink, isMap: isMap })
+  const backLink = { text: 'Back to search results', href: '/results' }
+  res.render('results/filters/salary', { backLink: backLink })
 })
 
 router.get('/results/filters/qualification', function (req, res) {
-  const isMap = req.query.map
-  const backLink = { text: 'Back to search results', href: isMap ? '/results?map=yes' : '/results' }
-  res.render('results/filters/qualification', { backLink: backLink, isMap: isMap })
+  const backLink = { text: 'Back to search results', href: '/results' }
+  res.render('results/filters/qualification', { backLink: backLink })
 })
 
 router.get('/results/filters/study-type', function (req, res) {
-  const isMap = req.query.map
-  const backLink = { text: 'Back to search results', href: isMap ? '/results?map=yes' : '/results' }
-  res.render('results/filters/study-type', { backLink: backLink, isMap: isMap })
+  const { options } = req.session.data
+  const backLink = { text: 'Back to search results', href: '/results' }
+  const items = options.studyType.map(option => {
+    return {
+      value: option.value,
+      text: option.text,
+      label: {
+        classes: 'govuk-label--s'
+      },
+      hint: {
+        text: option.hint
+      }
+    }
+  })
+  res.render('results/filters/study-type', { backLink, items })
 })
 
 router.get('/start/subjects', function (req, res) {
@@ -207,97 +220,118 @@ function subjectGroups (req) {
 }
 
 // Route index page
-router.get('/results', function (req, res) {
-  let paginated = false
-  const phase = ['Secondary']
-  const subjects = req.session.data.selectedSubjects
-  const map = req.query.map
+router.get('/results', async (req, res) => {
+  const page = req.query.page || 1
+  const studyType = req.query.studyType || false
 
-  if (req.session.data.selectedSubjects.some(s => s.match(/primary/i))) {
-    phase.push('Primary')
-  }
-
-  // Find by subject
-  let results = req.session.data.courses.filter(function (course) {
-    return course.subjects.some(r => phase.indexOf(r) >= 0) && course.subjects.some(r => subjects.indexOf(r) >= 0)
-  })
+  // if (req.session.data.selectedSubjects.some(s => s.match(/primary/i))) {
+  //   phase.push('00')
+  // }
 
   // Find by type
-  if (req.session.data.studyType.length === 1) {
-    const type = req.session.data.studyType.join(' ').includes('Part') ? 'part time' : 'full time'
+  const selectedStudyType = (studyType.length > 1) ? 'full_time_or_part_time' : studyType || false
 
-    results = results.filter(function (course) {
-      return course.options.some(o => o.includes(type))
-    })
+  const searchParams = {
+    page,
+    filter: {
+      has_vacancies: false,
+      subjects: '00,01',
+      study_type: selectedStudyType,
+      qualification: 'qts'
+    },
+    sort: 'provider.provider_name',
+    include: 'recruitment_cycle,provider'
   }
 
-  // Find by salary
-  if (req.session.data.salary !== 'All courses (with or without a salary)') {
-    results = results.filter(function (course) {
-      return course.options.some(o => o.includes('salary'))
-    })
-  }
+  try {
+    const queryString = qs.stringify(searchParams)
 
-  // Find by qualification
-  if (req.session.data.qualification.length === 1) {
-    const qualification = req.session.data.qualification.join(' ').includes('Postgraduate') ? 'PGCE with' : 'QTS'
-    results = results.filter(function (course) {
-      return course.options.some(o => o.startsWith(qualification))
-    })
-  }
-
-  if (req.session.data.location === 'Across England') {
-    results.sort(function (c1, c2) {
-      return c1.provider.toLowerCase().localeCompare(c2.provider.toLowerCase())
-    })
-  } else {
-    // Sort by location
-    const savedLatLong = req.session.data.latLong || { latitude: 51.508530, longitude: -0.076132 }
-
-    results.forEach(function (course) {
-      const latLong = { latitude: course.providerAddress.latitude, longitude: course.providerAddress.longitude }
-      const d = geolib.getDistance(savedLatLong, latLong)
-      course.distance = ((d / 1000) * 0.621371).toFixed(0)
+    const { body } = await got(`${endpoint}/recruitment_cycles/${recruitmentCycle}/courses/?${queryString}`, {
+      responseType: 'json'
     })
 
-    results.sort(function (c1, c2) {
-      return c1.distance - c2.distance
-    })
-  }
+    const { data, included } = body
 
-  results = results.filter(course => course.distance < 50)
+    const providers = included.filter(item => item.type === 'providers')
 
-  const originalCount = results.length
+    const results = data.map(item => {
+      const providerId = item.relationships.provider.data.id
+      const provider = providers.find(provider => provider.id === providerId)
 
-  const perPage = 20
-
-  if (!map) {
-    if (results.length > perPage) {
-      results.length = perPage
-      paginated = true
-    }
-  }
-
-  const addresses = []
-  results.forEach((result) => {
-    result.addresses.forEach((addr) => {
-      const a = JSON.parse(JSON.stringify(addr))
-      if (a) {
-        a.course = result
-        addresses.push(a)
+      return {
+        course: item.attributes,
+        provider: provider.attributes
       }
     })
-  })
 
-  const groupedByTrainingProvider = groupBy(results, course => course.provider)
+    res.render('results/index', { results })
+  } catch (error) {
+    console.error(error)
+  }
 
-  res.render(map ? 'map' : 'results/index', {
-    results: results,
-    groupedByTrainingProvider: [...groupedByTrainingProvider],
-    paginated: paginated,
-    addresses: addresses,
-    count: originalCount
-  })
+  // // Find by subject
+  // let results = req.session.data.courses.filter(function (course) {
+  //   return course.subjects.some(r => phase.indexOf(r) >= 0) && course.subjects.some(r => subjects.indexOf(r) >= 0)
+  // })
+
+  // // Find by salary
+  // if (req.session.data.salary !== 'All courses (with or without a salary)') {
+  //   results = results.filter(function (course) {
+  //     return course.options.some(o => o.includes('salary'))
+  //   })
+  // }
+
+  // // Find by qualification
+  // if (req.session.data.qualification.length === 1) {
+  //   const qualification = req.session.data.qualification.join(' ').includes('Postgraduate') ? 'PGCE with' : 'QTS'
+  //   results = results.filter(function (course) {
+  //     return course.options.some(o => o.startsWith(qualification))
+  //   })
+  // }
+
+  // if (req.session.data.location === 'Across England') {
+  //   results.sort(function (c1, c2) {
+  //     return c1.provider.toLowerCase().localeCompare(c2.provider.toLowerCase())
+  //   })
+  // } else {
+  //   // Sort by location
+  //   const savedLatLong = req.session.data.latLong || { latitude: 51.508530, longitude: -0.076132 }
+
+  //   results.forEach(function (course) {
+  //     const latLong = { latitude: course.providerAddress.latitude, longitude: course.providerAddress.longitude }
+  //     const d = geolib.getDistance(savedLatLong, latLong)
+  //     course.distance = ((d / 1000) * 0.621371).toFixed(0)
+  //   })
+
+  //   results.sort(function (c1, c2) {
+  //     return c1.distance - c2.distance
+  //   })
+  // }
+
+  // results = results.filter(course => course.distance < 50)
+
+  // const originalCount = results.length
+
+  // const addresses = []
+  // results.forEach((result) => {
+  //   result.addresses.forEach((addr) => {
+  //     const a = JSON.parse(JSON.stringify(addr))
+  //     if (a) {
+  //       a.course = result
+  //       addresses.push(a)
+  //     }
+  //   })
+  // })
+
+  // const groupedByTrainingProvider = groupBy(results, course => course.provider)
+
+  // res.render('results/index', {
+  //   results,
+  //   groupedByTrainingProvider: [...groupedByTrainingProvider],
+  //   paginated: paginated,
+  //   addresses: addresses,
+  //   count: originalCount
+  // })
 })
 
 function groupBy (list, keyGetter) {
