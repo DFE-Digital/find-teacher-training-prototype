@@ -2,10 +2,7 @@
 {% set title = "Study type" %}
 
 {% block backLink %}
-  {{ govukBackLink({
-    text: backLink.text,
-    href: backLink.href
-  }) }}
+  {{ govukBackLink(backLink) }}
 {% endblock %}
 
 {% block content %}

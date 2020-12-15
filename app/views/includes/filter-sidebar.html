@@ -52,8 +52,10 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Study type</h4>
       <ul class="filter-form__value--list">
-        {% for option in data.options.studyType %}
-          <li>{{ option.text }}</li>
+        {% for option in data.studyTypes %}
+          {% if selectedStudyTypes.includes(option.value) %}
+            <li>{{ option.text }}</li>
+          {% endif %}
         {% endfor %}
       </ul>
       <a class="govuk-link" href="/results/filters/study-type">Change study type</a>

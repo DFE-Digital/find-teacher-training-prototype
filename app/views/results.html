@@ -27,24 +27,7 @@
         <ul class="govuk-list search-results">
         {% for result in results %}
           <li>
-            <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
-              <a href="/course/{{ result.provider.code }}/{{ result.course.code }}" style="text-decoration: none">
-                <span class="govuk-!-font-size-19">{{ result.provider.name }}</span><br />
-                <span style="text-decoration: underline">{{ result.course.name }} ({{ result.course.code }})</span>
-              </a>
-            </h2>
-            <dl class="govuk-list--description">
-              <dt class="govuk-list--description__label">Course</dt>
-              <dd>{{ result.course.summary }}</dd>
-              <dt class="govuk-list--description__label">Locations</dt>
-              <dd>{{ result.provider.county }}</dd>
-              <dt class="govuk-list--description__label">Financial support</dt>
-              <dd>Student finance if you’re eligible</dd>
-              {% if course.accrediting %}
-                <dt class="govuk-list--description__label">Accredited provider</dt>
-                <dd>{{ course.accrediting }}</dd>
-              {% endif %}
-            </dl>
+            {% include "includes/result-item.html" %}
           </li>
         {% endfor %}
         </ul>
