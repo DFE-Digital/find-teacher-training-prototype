@@ -24,14 +24,12 @@ const groupBy = (list, keyGetter) => {
 module.exports = router => {
   router.get('/results', async (req, res) => {
     const page = req.query.page || 1
-    const studyType = req.query.studyType || false
+    const selectedStudyTypes = req.query.studyType || req.session.data.selectedStudyTypes
+    req.session.data.selectedStudyTypes = selectedStudyTypes
 
     // if (req.session.data.selectedSubjects.some(s => s.match(/primary/i))) {
     //   phase.push('00')
     // }
-
-    // Find by type
-    const selectedStudyType = (studyType.length > 1) ? 'full_time_or_part_time' : studyType || false
 
     const searchParams = {
       page,
@@ -39,7 +37,7 @@ module.exports = router => {
       filter: {
         has_vacancies: true,
         subjects: '00',
-        study_type: selectedStudyType,
+        study_type: selectedStudyTypes.toString(),
         qualification: 'qts'
       },
       sort: 'provider.provider_name',
@@ -67,7 +65,10 @@ module.exports = router => {
         })
       }
 
-      res.render('results', { results })
+      res.render('results', {
+        results,
+        selectedStudyTypes
+      })
     } catch (error) {
       console.error(error)
     }
