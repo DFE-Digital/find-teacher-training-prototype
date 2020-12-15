@@ -49,11 +49,6 @@ router.get('/results/filters/subjects', function (req, res) {
   res.render('start/subjects', { subjectGroups: subjectGroups(req), filtering: true, backLink: backLink })
 })
 
-router.get('/results/filters/salary', function (req, res) {
-  const backLink = { text: 'Back to search results', href: '/results' }
-  res.render('results/filters/salary', { backLink: backLink })
-})
-
 router.get('/results/filters/qualification', function (req, res) {
   const backLink = { text: 'Back to search results', href: '/results' }
   res.render('results/filters/qualification', { backLink: backLink })

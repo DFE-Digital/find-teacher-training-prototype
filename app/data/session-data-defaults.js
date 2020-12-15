@@ -1,4 +1,11 @@
 module.exports = {
+  salaryOptions: [{
+    text: 'Courses with and without salary',
+    value: 'salary,apprenticeship,fee'
+  }, {
+    text: 'Only courses that come with a salary',
+    value: 'salary'
+  }],
   studyTypes: [{
     text: 'Full time (12 months)',
     hint: 'You’ll usually spend 5 days a week on a full-time course',
@@ -8,11 +15,8 @@ module.exports = {
     hint: 'You’ll usually spend 3 days a week on a part-time course',
     value: 'part_time'
   }],
-  selectedStudyTypes: [
-    'full_time',
-    'part_time'
-  ],
-  salary: 'All courses (with or without a salary)',
+  selectedSalaryOption: 'salary,apprenticeship,fee',
+  selectedStudyTypes: ['full_time', 'part_time'],
   qualification: [
     'PGCE with QTS (Postgraduate certificate in education with qualified teacher status)',
     'QTS (Qualified teacher status)'

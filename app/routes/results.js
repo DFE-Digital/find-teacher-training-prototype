@@ -24,6 +24,12 @@ const groupBy = (list, keyGetter) => {
 module.exports = router => {
   router.get('/results', async (req, res) => {
     const page = req.query.page || 1
+
+    // Salary
+    const selectedSalaryOption = req.query.salary || req.session.data.selectedSalaryOption
+    req.session.data.selectedSalaryOption = selectedSalaryOption
+
+    // Study type
     const selectedStudyTypes = req.query.studyType || req.session.data.selectedStudyTypes
     req.session.data.selectedStudyTypes = selectedStudyTypes
 
@@ -35,6 +41,7 @@ module.exports = router => {
       page,
       per_page: 20,
       filter: {
+        funding_type: selectedSalaryOption,
         has_vacancies: true,
         subjects: '00',
         study_type: selectedStudyTypes.toString(),
@@ -46,7 +53,6 @@ module.exports = router => {
 
     try {
       const queryString = qs.stringify(searchParams)
-
       const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${queryString}`).json()
 
       let results = data
@@ -67,6 +73,7 @@ module.exports = router => {
 
       res.render('results', {
         results,
+        selectedSalaryOption,
         selectedStudyTypes
       })
     } catch (error) {

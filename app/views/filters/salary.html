@@ -2,10 +2,7 @@
 {% set title = "Find courses that pay a salary" %}
 
 {% block backLink %}
-  {{ govukBackLink({
-    text: backLink.text,
-    href: backLink.href
-  }) }}
+  {{ govukBackLink(backLink) }}
 {% endblock %}
 
 {% block content %}
@@ -19,13 +16,7 @@
       <form action="/results">
         {{ govukRadios({
           name: "salary",
-          items: [{
-            value: "All courses (with or without a salary)",
-            text: "All courses (with or without a salary)"
-          }, {
-            value: "Only courses that come with a salary",
-            text: "Only courses that come with a salary"
-          }]
+          items: items
         }) }}
 
         {{ govukButton({
