@@ -34,8 +34,8 @@ module.exports = router => {
     req.session.data.selectedSalaryOption = selectedSalaryOption
 
     // Study type
-    const selectedStudyTypes = req.query.studyType || req.session.data.selectedStudyTypes
-    req.session.data.selectedStudyTypes = selectedStudyTypes
+    const selectedStudyTypeOption = req.query.studyType || req.session.data.selectedStudyTypeOption
+    req.session.data.selectedStudyTypeOption = selectedStudyTypeOption
 
     // Vacancies
     const selectedVacancyOption = req.query.vacancy || req.session.data.selectedVacancyOption
@@ -52,7 +52,7 @@ module.exports = router => {
         funding_type: selectedSalaryOption,
         has_vacancies: selectedVacancyOption,
         subjects: '00',
-        study_type: selectedStudyTypes.toString(),
+        study_type: selectedStudyTypeOption.toString(),
         qualification: selectedQualificationOption.toString()
       },
       sort: 'provider.provider_name',
@@ -83,7 +83,7 @@ module.exports = router => {
         results,
         selectedQualificationOption,
         selectedSalaryOption,
-        selectedStudyTypes,
+        selectedStudyTypeOption,
         selectedVacancyOption
       })
     } catch (error) {
