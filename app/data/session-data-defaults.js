@@ -3,10 +3,17 @@ const courses = require('./courses.json')
 module.exports = {
   seenApplyWithChoice: false,
   seenApplyWithoutChoice: false,
-  studyType: [
-    'Full time (12 months)',
-    'Part time (18-24 months)'
-  ],
+  options: {
+    studyType: [{
+      text: 'Full time (12 months)',
+      hint: 'You’ll usually spend 5 days a week on a full-time course',
+      value: 'full_time'
+    }, {
+      text: 'Part time (18-24 months)',
+      hint: 'You’ll usually spend 3 days a week on a part-time course',
+      value: 'part_time'
+    }]
+  },
   salary: 'All courses (with or without a salary)',
   qualification: [
     'PGCE with QTS (Postgraduate certificate in education with qualified teacher status)',
