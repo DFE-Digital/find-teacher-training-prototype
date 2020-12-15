@@ -38,7 +38,9 @@ module.exports = router => {
     req.session.data.selectedSendOption = selectedSendOption
 
     // Subject
-    let selectedSubjectOption = req.query.subject || req.session.data.selectedSubjectOption
+    // Start page ‘Education phase’ options send a string which needs converting to an array
+    const subjectQuery = Array.isArray(req.query.subject) ? req.query.subject : req.query.subject.toString().split(',')
+    let selectedSubjectOption = subjectQuery || req.session.data.selectedSubjectOption
     selectedSubjectOption = typeof selectedSubjectOption === 'string' ? Array(selectedSubjectOption) : selectedSubjectOption
     req.session.data.selectedSubjectOption = selectedSubjectOption
 

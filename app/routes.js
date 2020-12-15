@@ -42,6 +42,7 @@ function handleLocationSearch (location, req, res, successRedirect, options = {}
   }
 }
 
+require('./routes/start')(router)
 require('./routes/results')(router)
 require('./routes/filters')(router)
 require('./routes/course')(router)
