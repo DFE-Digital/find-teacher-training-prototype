@@ -45,20 +45,20 @@ module.exports = router => {
 
   // Study type
   router.get('/results/filters/study-type', function (req, res) {
-    const { studyTypes, selectedStudyTypes } = req.session.data
+    const { studyTypeOptions, selectedStudyTypeOption } = req.session.data
 
     const backLink = {
       text: 'Back to search results',
       href: '/results'
     }
 
-    const items = studyTypes.map(studyType => {
+    const items = studyTypeOptions.map(option => {
       return {
-        value: studyType.value,
-        text: studyType.text,
+        value: option.value,
+        text: option.text,
         label: { classes: 'govuk-label--s' },
-        hint: { text: studyType.hint },
-        checked: selectedStudyTypes.includes(studyType.value)
+        hint: { text: option.hint },
+        checked: selectedStudyTypeOption.includes(option.value)
       }
     })
 
