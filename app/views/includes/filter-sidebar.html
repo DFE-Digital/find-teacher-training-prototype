@@ -29,26 +29,6 @@
       <a class="govuk-link" href="/results/filters/subjects">Change subjects</a>
     </div>
 
-    <!-- <div class="filter-form">
-      <h4 class="govuk-heading-s filter-form__title">Special educational needs (SEN)</h4>
-      <ul class="filter-form__value--list">
-        <li>Only SEN courses</li>
-      </ul>
-      <a class="govuk-link" href="#">Change</a>
-    </div> -->
-
-    <!-- <div class="filter-form">
-      <h4 class="govuk-heading-s filter-form__title">Financial support</h4>
-      <ul class="filter-form__value--list">
-        {% if data['funding'] == 'Show courses with and without financial support' %}
-          <li>All</li>
-        {% else %}
-          <li>Salaries</li>
-        {% endif %}
-      </ul>
-      <a class="govuk-link" href="/results/filters/funding">Change financial support options</a>
-    </div> -->
-
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Study type</h4>
       <ul class="filter-form__value--list">
@@ -64,10 +44,17 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Qualifications</h4>
       <ul class="filter-form__value--list">
-        <li>All qualifications</li>
+        {% if selectedQualificationOption.length == 3 %}
+          <li>All qualifications</li>
+        {% else %}
+          {% for option in data.qualificationOptions %}
+            {% if selectedQualificationOption.includes(option.value) %}
+              <li>{{ option.text }}</li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </ul>
-      <a class="govuk-link" href="#">Change qualifications</a>
-      <!-- <a class="govuk-link" href="/results/filters/qualification">Change qualifications</a> -->
+      <a class="govuk-link" href="/results/filters/qualification">Change qualifications</a>
     </div>
 
     <div class="filter-form">
