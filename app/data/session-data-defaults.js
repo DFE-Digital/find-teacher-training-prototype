@@ -1,13 +1,30 @@
 module.exports = {
   defaults: {
-    lat: 50.8375,
-    lon: -0.1765,
+    latitude: 50.8375,
+    longitude: -0.1765,
     qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
     salary: 'salary,apprenticeship,fee',
     send: 'exclude',
     studyType: ['full_time', 'part_time'],
+    subjects: ['00'],
     vacancy: 'false'
   },
+  levels: [{
+    text: 'Primary',
+    value: 'primary'
+  }, {
+    text: 'Secondary',
+    value: 'secondary'
+  }, {
+    text: 'Secondary: Modern languages',
+    value: 'secondary_language'
+  }, {
+    text: 'Further education',
+    value: 'further_education'
+  }, {
+    text: 'Special educational needs and disability (SEND)',
+    value: 'send'
+  }],
   qualificationOptions: [{
     text: 'QTS only',
     hint: 'QTS (qualified teacher status) allows you to teach in state schools in England and may allow you to teach in other parts of the UK.\n\nIt may also allow you to teach in the [EU and EEA](https://www.gov.uk/eu-eea), though this could change after 2020. If you’re planning to teach overseas, you should always check what’s needed in the country you’d like to teach in.',
@@ -231,22 +248,5 @@ module.exports = {
   }, {
     text: 'Courses with and without vacancies',
     value: 'false'
-  }],
-  selectedSubjectOption: [],
-  levels: [{
-    text: 'Primary',
-    value: 'primary'
-  }, {
-    text: 'Secondary',
-    value: 'secondary'
-  }, {
-    text: 'Secondary: Modern languages',
-    value: 'secondary_language'
-  }, {
-    text: 'Further education',
-    value: 'further_education'
-  }, {
-    text: 'Special educational needs and disability (SEND)',
-    value: 'send'
   }]
 }
