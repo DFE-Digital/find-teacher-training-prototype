@@ -1,31 +1,30 @@
 const got = require('got')
 const qs = require('qs')
-const geolib = require('geolib')
-const geocoder = require('google-geocoder')
+const NodeGeocoder = require('node-geocoder')
 
 const endpoint = process.env.TEACHER_TRAINING_API_URL
 const cycle = process.env.RECRUITMENT_CYCLE
-const geo = geocoder({ key: process.env.GOOGLE_API_KEY })
+const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 
-const groupBy = (list, keyGetter) => {
-  const map = new Map()
-  list.forEach((item) => {
-    const key = keyGetter(item)
-    const collection = map.get(key)
-    if (!collection) {
-      map.set(key, [item])
-    } else {
-      collection.push(item)
-    }
-  })
-  return map
-}
+const geoCoder = NodeGeocoder({
+  provider: 'google',
+  apiKey: process.env.GOOGLE_GEOCODING_API_KEY
+})
 
 module.exports = router => {
   router.get('/results', async (req, res) => {
     const page = req.query.page || 1
+    const radius = 10
+    const { subjectOptions } = req.session.data
 
-    // Quaification
+    // Location
+    let selectedLocation = req.query.location || req.session.data.selectedLocation
+    const geoCodedLocation = await geoCoder.geocode(`${selectedLocation}, UK'`)
+    selectedLocation = geoCodedLocation[0]
+    const { formattedAddress } = selectedLocation
+    req.session.data.selectedLocation = selectedLocation
+
+    // Qualification
     const selectedQualificationOption = req.query.qualification || req.session.data.selectedQualificationOption
     req.session.data.selectedQualificationOption = selectedQualificationOption
 
@@ -38,10 +37,25 @@ module.exports = router => {
     req.session.data.selectedSendOption = selectedSendOption
 
     // Subject
-    // Start page ‘Education phase’ options send a string which needs converting to an array
-    const subjectQuery = Array.isArray(req.query.subject) ? req.query.subject : req.query.subject.toString().split(',')
-    let selectedSubjectOption = subjectQuery || req.session.data.selectedSubjectOption
-    selectedSubjectOption = typeof selectedSubjectOption === 'string' ? Array(selectedSubjectOption) : selectedSubjectOption
+    let selectedSubjectOption = []
+    if (req.query.level) {
+      // Filter by education level
+      // One (string) or many (Array) can be selected – we need an Array
+      const selectedLevelOption = (typeof req.query.level === 'string') ? Array(req.query.level) : req.query.level
+
+      // Map selected levels to array of subjects in that level
+      selectedLevelOption.forEach(level => {
+        selectedSubjectOption.push(subjectOptions.filter(option => option.type.includes(level)).map(item => item.value))
+      })
+
+      selectedSubjectOption = selectedSubjectOption.flat()
+    } else if (req.query.subject) {
+      // Filter by subject
+      selectedSubjectOption = req.query.subject || req.session.data.selectedSubjectOption
+
+      selectedSubjectOption = (typeof req.query.subject === 'string') ? Array(req.query.subject) : req.query.subject
+    }
+
     req.session.data.selectedSubjectOption = selectedSubjectOption
 
     // Study type
@@ -61,7 +75,10 @@ module.exports = router => {
         subjects: selectedSubjectOption.toString(),
         study_type: selectedStudyTypeOption.toString(),
         qualification: selectedQualificationOption.toString(),
-        send_courses: selectedSendOption
+        send_courses: selectedSendOption,
+        latitude: selectedLocation.latitude,
+        longitude: selectedLocation.longitude,
+        radius
       },
       sort: 'provider.provider_name',
       include: 'recruitment_cycle,provider'
@@ -92,7 +109,6 @@ module.exports = router => {
       let selectedSubjects = false
       if (selectedSubjectOption) {
         selectedSubjects = selectedSubjectOption.map(option => {
-          const { subjectOptions } = req.session.data
           const subject = subjectOptions.find(subject => subject.value === option)
 
           return subject
@@ -100,6 +116,10 @@ module.exports = router => {
       }
 
       res.render('results', {
+        googleMapsApiKey,
+        formattedAddress,
+        latLong: [selectedLocation.latitude, selectedLocation.longitude],
+        radius,
         results,
         resultsCount: results.length,
         selectedQualificationOption,

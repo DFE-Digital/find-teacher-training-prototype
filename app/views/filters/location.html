@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% set title = "Find courses by location" %}
+
+{% block backLink %}
+  {{ govukBackLink(backLink) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/results">
+        {{ govukErrorSummary({
+          titleText: "There is a problem",
+          errorList: [{
+            text: error.error_message,
+            href: "#location"
+          }]
+        }) if error }}
+
+        {{ govukInput({
+          label: {
+            classes: "govuk-label--l",
+            isPageHeading: true,
+            text: title
+          },
+          hint: {
+            text: "City, town or postcode"
+          },
+          id: "location",
+          name: "location"
+        }) }}
+
+        {{ govukButton({
+          text: "Find courses" if filtering else "Continue"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

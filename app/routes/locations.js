@@ -8,7 +8,7 @@ module.exports = router => {
     const { providerCode, courseCode } = req.params
 
     try {
-      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=location_status`)
+      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=location_status`).json()
 
       const statuses = included.filter(item => item.type === 'location_statuses')
 
