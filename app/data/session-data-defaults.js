@@ -1,4 +1,10 @@
 module.exports = {
+  defaults: {
+    qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
+    salary: 'salary,apprenticeship,fee',
+    studyType: ['full_time', 'part_time'],
+    vacancy: 'false'
+  },
   qualificationOptions: [{
     text: 'QTS only',
     hint: 'QTS (qualified teacher status) allows you to teach in state schools in England and may allow you to teach in other parts of the UK.\n\nIt may also allow you to teach in the [EU and EEA](https://www.gov.uk/eu-eea), though this could change after 2020. If you’re planning to teach overseas, you should always check what’s needed in the country you’d like to teach in.',
@@ -223,12 +229,8 @@ module.exports = {
     text: 'Courses with and without vacancies',
     value: 'false'
   }],
-  selectedQualificationOption: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
-  selectedSalaryOption: 'salary,apprenticeship,fee',
   selectedSendOption: 'exclude',
   selectedSubjectOption: [],
-  selectedStudyTypeOption: ['full_time', 'part_time'],
-  selectedVacancyOption: 'false',
   levels: [{
     text: 'Primary',
     value: 'primary'
