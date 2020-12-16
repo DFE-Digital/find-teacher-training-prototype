@@ -19,19 +19,7 @@
           </li>
         {% endfor %}
         </ul>
-        {{ appPagination({
-          pages: pagination.pages,
-          previous: {
-            page: pagination.previous,
-            text: "Previous page",
-            href: "?page=" + pagination.previous
-          } if pagination.previous,
-          next: {
-            page: pagination.next,
-            text: "Next page",
-            href: "?page=" + pagination.next
-          } if pagination.next
-        }) }}
+        {{ appPagination(pagination) }}
       {% else %}
         <h2 class="govuk-heading-m">There are no courses matching your&nbsp;search</h2>
         <p class="govuk-body">You can <a href="/start/">try another search</a>, for example by changing subject or location.</p>
