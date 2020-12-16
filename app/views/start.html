@@ -11,7 +11,7 @@
           titleText: "There is a problem",
           errorList: [{
             text: error.error_message,
-            href: "#postcode-town-or-city"
+            href: "#location"
           }]
         }) if error }}
 
@@ -23,8 +23,8 @@
           hint: {
             text: "City, town or postcode"
           },
-          id: "postcode-town-or-city",
-          name: "postcode-town-or-city"
+          id: "location",
+          name: "location"
         }) }}
 
         {{ govukCheckboxes({
@@ -37,8 +37,8 @@
               text: "Education phase"
             }
           },
-          name: "subject",
-          items: subjectItems
+          name: "level",
+          items: levelItems
         }) }}
 
         <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">

@@ -2,20 +2,19 @@ module.exports = router => {
   router.get('/start', (req, res) => {
     const {
       salaryOptions,
-      subjectOptions,
       studyTypeOptions,
       selectedSalaryOption,
       selectedStudyTypeOption
     } = req.session.data
 
-    const subjectItems = [{
-      value: subjectOptions.filter(subject => subject.type === 'primary').map(option => option.value),
+    const levelItems = [{
+      value: 'primary',
       text: 'Primary'
     }, {
-      value: subjectOptions.filter(subject => (subject.type === 'secondary') || (subject.type === 'secondary_language')).map(option => option.value),
+      value: 'secondary',
       text: 'Secondary'
     }, {
-      value: subjectOptions.filter(subject => subject.type === 'further_education').map(option => option.value),
+      value: 'further_education',
       text: 'Further education'
     }]
 
@@ -36,8 +35,8 @@ module.exports = router => {
     })
 
     res.render('start', {
+      levelItems,
       salaryItems,
-      subjectItems,
       studyTypeItems
     })
   })

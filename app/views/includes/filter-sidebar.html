@@ -11,7 +11,9 @@
           {% if data['location'] == 'Across England' %}
             Across England
           {% else %}
-            {{ data['formattedAddress'] or data['postcode-town-or-city'] or 'Across England' }}
+            {% set locationName = formattedAddress or data['postcode-town-or-city'] %}
+            <img src="https://maps.googleapis.com/maps/api/staticmap?key={{ googleMapsApiKey }}&amp;center={{ latLong }}&amp;zoom=10&amp;size=300x200&amp;scale=2&amp;markers={{ latLong }}" alt="Map showing {{ radius }} miles of {{ locationName }}" class="filter-form__map">
+            {{ locationName }}
           {% endif %}
         </li>
       </ul>

@@ -226,7 +226,7 @@ module.exports = {
   selectedQualificationOption: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
   selectedSalaryOption: 'salary,apprenticeship,fee',
   selectedSendOption: 'exclude',
-  selectedSubjectOption: ['00'],
+  selectedSubjectOption: [],
   selectedStudyTypeOption: ['full_time', 'part_time'],
   selectedVacancyOption: 'false',
   levels: [{
@@ -245,8 +245,8 @@ module.exports = {
     text: 'Special educational needs and disability (SEND)',
     value: 'send'
   }],
-  latLong: {
-    lat: 52.6033,
-    lng: -1.4183
+  selectedLocation: {
+    latitude: 50.8767,
+    longitude: -0.1267
   }
 }
