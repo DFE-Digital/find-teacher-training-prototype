@@ -6,7 +6,8 @@ marked.setOptions({
   smartLists: true,
   smartypants: true
 })
-module.exports = function (env) {
+
+module.exports = (env) => {
   const filters = {}
 
   /**

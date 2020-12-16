@@ -14,6 +14,8 @@
     {{ course.name }} ({{ course.code }})
   </h1>
 
+  <pre>{{ course | dump(2) }}</pre>
+
   <p class="govuk-body-l">{{ course.summary }}</p>
 
   <dl class="govuk-list--description govuk-!-margin-bottom-8">
@@ -107,8 +109,8 @@
             <div class="body-text">
               {% if course.fee_domestic and course.fee_international %}
                 <table class="govuk-table app-table--vertical-align-middle">
-                  <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">The course fees
-                    for <%= course.year_range %> are as follows:
+                  <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">
+                    The course fees for {{ course.year_range }} are as follows:
                   </caption>
                   <thead class="govuk-table__head">
                   <tr class="govuk-visually-hidden govuk-table__row">
@@ -199,7 +201,7 @@
         {% if provider.telephone %}
           <dd><a href="mailto:{{ provider.email }}">{{ provider.email }}</a></dd>
         {% else %}
-          {% set email = "enquiries@" + provider.website | replace("http://", "") | replace("https://", "") | replace("/", "") %}
+          {% set email = "enquiries@" + provider.website | replace("http://", "") | replace("https://", "") | replace("/", "") | replace("www.", "") %}
           <dd><a href="mailto:{{ email }}">{{ email }}</a></dd>
         {% endif %}
           <dt class="govuk-list--description__label">Telephone</dt>
