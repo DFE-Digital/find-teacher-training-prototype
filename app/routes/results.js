@@ -11,11 +11,16 @@ const geoCoder = NodeGeocoder({
   apiKey: process.env.GOOGLE_GEOCODING_API_KEY
 })
 
+const toArray = item => {
+  return (typeof item === 'string') ? Array(item) : item
+}
+
 module.exports = router => {
   router.get('/results', async (req, res) => {
     const page = Number(req.query.page) || 1
     const perPage = 20
     const radius = 10
+    const { defaults } = req.session.data
 
     // Location
     let selectedLocation = req.query.location || req.session.data.selectedLocation
@@ -24,17 +29,15 @@ module.exports = router => {
     const { formattedAddress } = selectedLocation
     req.session.data.selectedLocation = selectedLocation
 
-    console.log('selectedLocation', selectedLocation)
-
     const areaName = selectedLocation.administrativeLevels.level2long
 
     // Qualification
-    const selectedQualificationOption = req.query.qualification || req.session.data.selectedQualificationOption
-    req.session.data.selectedQualificationOption = selectedQualificationOption
+    const qualification = toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
+    req.session.data.qualification = qualification
 
     // Salary
-    const selectedSalaryOption = req.query.salary || req.session.data.selectedSalaryOption
-    req.session.data.selectedSalaryOption = selectedSalaryOption
+    const salary = req.session.data.salary || req.query.salary || defaults.salary
+    req.session.data.salary = salary
 
     // Send
     const selectedSendOption = (req.query.send === 'include') || (req.session.data.selectedSendOption === 'include')
@@ -65,23 +68,23 @@ module.exports = router => {
     req.session.data.selectedSubjectOption = selectedSubjectOption
 
     // Study type
-    const selectedStudyTypeOption = req.query.studyType || req.session.data.selectedStudyTypeOption
-    req.session.data.selectedStudyTypeOption = selectedStudyTypeOption
+    const studyType = toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
+    req.session.data.studyType = studyType
 
     // Vacancies
-    const selectedVacancyOption = req.query.vacancy || req.session.data.selectedVacancyOption
-    req.session.data.selectedVacancyOption = selectedVacancyOption
+    const vacancy = req.query.vacancy || req.session.data.vacancy || defaults.vacancy
+    req.session.data.vacancy = vacancy
 
     const searchParams = page => {
       const query = {
         page,
         per_page: perPage,
         filter: {
-          funding_type: selectedSalaryOption,
-          has_vacancies: selectedVacancyOption,
+          funding_type: salary,
+          has_vacancies: vacancy,
           subjects: selectedSubjectOption.toString(),
-          study_type: selectedStudyTypeOption.toString(),
-          qualification: selectedQualificationOption.toString(),
+          study_type: studyType.toString(),
+          qualification: qualification.toString(),
           send_courses: selectedSendOption,
           latitude: selectedLocation.latitude,
           longitude: selectedLocation.longitude,
@@ -185,12 +188,12 @@ module.exports = router => {
         radius,
         results,
         resultsCount,
-        selectedQualificationOption,
-        selectedSalaryOption,
+        qualification,
+        salary,
         selectedSendOption,
         selectedSubjects,
-        selectedStudyTypeOption,
-        selectedVacancyOption
+        studyType,
+        vacancy
       })
     } catch (error) {
       console.error(error)
