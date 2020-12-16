@@ -97,21 +97,47 @@ module.exports = router => {
     try {
       const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${searchParams(page)}`).json()
 
-      let results = data
+      let courses = data
 
-      if (results.length > 0) {
-        const providers = included.filter(item => item.type === 'providers')
+      if (courses.length > 0) {
+        const providers = included.filter(include => include.type === 'providers')
 
-        results = data.map(item => {
-          const providerId = item.relationships.provider.data.id
+        courses = data.map(course => {
+          const providerId = course.relationships.provider.data.id
           const provider = providers.find(provider => provider.id === providerId)
 
           return {
-            course: item.attributes,
+            course: course.attributes,
             provider: provider.attributes
           }
         })
       }
+
+      const getProviderGeo = async result => {
+        const { provider } = result
+        const { latitude, longitude } = provider
+        const geocodedLocation = await geoCoder.reverse({
+          lat: latitude,
+          lon: longitude
+        })
+
+        const geo = geocodedLocation[0]
+
+        // Replace location data retrived from API with geocoded data
+        provider.city = geo.city
+        provider.area = geo.administrativeLevels.level2long
+
+        return {
+          course: result.course,
+          provider
+        }
+      }
+
+      const getResults = async () => {
+        return Promise.all(courses.map(result => getProviderGeo(result)))
+      }
+
+      const results = await getResults()
 
       // Show selected subjects in filter sidebar
       // Takes an array of subject codes and maps it to subject data
@@ -169,49 +195,5 @@ module.exports = router => {
     } catch (error) {
       console.error(error)
     }
-
-    // if (req.session.data.location === 'Across England') {
-    //   results.sort(function (c1, c2) {
-    //     return c1.provider.toLowerCase().localeCompare(c2.provider.toLowerCase())
-    //   })
-    // } else {
-    //   // Sort by location
-    //   const savedLatLong = req.session.data.latLong || { latitude: 51.508530, longitude: -0.076132 }
-
-    //   results.forEach(function (course) {
-    //     const latLong = { latitude: course.providerAddress.latitude, longitude: course.providerAddress.longitude }
-    //     const d = geolib.getDistance(savedLatLong, latLong)
-    //     course.distance = ((d / 1000) * 0.621371).toFixed(0)
-    //   })
-
-    //   results.sort(function (c1, c2) {
-    //     return c1.distance - c2.distance
-    //   })
-    // }
-
-    // results = results.filter(course => course.distance < 50)
-
-    // const originalCount = results.length
-
-    // const addresses = []
-    // results.forEach((result) => {
-    //   result.addresses.forEach((addr) => {
-    //     const a = JSON.parse(JSON.stringify(addr))
-    //     if (a) {
-    //       a.course = result
-    //       addresses.push(a)
-    //     }
-    //   })
-    // })
-
-    // const groupedByTrainingProvider = groupBy(results, course => course.provider)
-
-    // res.render('results/index', {
-    //   results,
-    //   groupedByTrainingProvider: [...groupedByTrainingProvider],
-    //   paginated: paginated,
-    //   addresses: addresses,
-    //   count: originalCount
-    // })
   })
 }
