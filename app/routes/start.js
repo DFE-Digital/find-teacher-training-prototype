@@ -1,5 +1,5 @@
 module.exports = router => {
-  router.get('/start', (req, res) => {
+  router.get('/', (req, res) => {
     const {
       salaryOptions,
       studyTypeOptions,
@@ -34,7 +34,7 @@ module.exports = router => {
       }
     })
 
-    res.render('start', {
+    res.render('index', {
       levelItems,
       salaryItems,
       studyTypeItems

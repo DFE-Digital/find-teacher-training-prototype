@@ -1,81 +1,136 @@
 {% extends "layout.html" %}
-
-{% set title = "Find postgraduate teacher training courses" %}
-{% set showPhaseBanner = false %}
-{% set serviceName = false %}
-
-{% block breadcrumbs %}
-  {{ govukBreadcrumbs({
-    items: [{
-      text: "Home",
-      href: "https://www.gov.uk/"
-    }, {
-      text: "Education and learning",
-      href: "https://www.gov.uk/browse/education"
-    }, {
-      text: "Universities and higher education",
-      href: "https://www.gov.uk/browse/education/universities-higher-education"
-    }]
-  }) }}
-{% endblock %}
+{% set title = "Search teacher training courses" %}
 
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">{{ title }}</h1>
-      <p class="lede">Find postgraduate teaching courses in England if you want to teach in a state primary or secondary school, or in further education.</p>
+      <h1 class="govuk-heading-l">{{ title }}</h1>
 
-      {{ govukInsetText({
-        html: "<p>You can find courses in <a rel=\"external\" href=\"https://teachinscotland.scot/become-a-teacher/new-to-teaching/\">Scotland</a>, <a rel=\"external\" href=\"https://www.ucas.com/teaching-in-wales\">Wales</a> and <a rel=\"external\" href=\"https://www.ucas.com/postgraduate/teacher-training/train-teach-northern-ireland\">Northern Ireland</a>.</p>"
-      }) }}
+      <form action="/results">
+        {{ govukErrorSummary({
+          titleText: "There is a problem",
+          errorList: [{
+            text: error.error_message,
+            href: "#location"
+          }]
+        }) if error }}
 
-      {{ govukButton({
-        classes: "govuk-!-margin-bottom-8",
-        text: "Start now",
-        href: "/start",
-        isStartButton: true
-      }) }}
+        {{ govukInput({
+          label: {
+            classes: "govuk-label--m",
+            text: "Location"
+          },
+          hint: {
+            text: "City, town or postcode"
+          },
+          id: "location",
+          name: "location"
+        }) }}
 
-      <h2 class="govuk-heading-m">Before you start</h2>
+        {{ govukCheckboxes({
+          formGroup: {
+            classes: "govuk-checkboxes--small govuk-!-margin-bottom-2"
+          },
+          fieldset: {
+            legend: {
+              classes: "govuk-fieldset__legend--m",
+              text: "Education phase"
+            }
+          },
+          name: "level",
+          items: levelItems
+        }) }}
 
-      <p class="govuk-body">Check what qualifications you’ll need. You’ll also need to:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>confirm you have the health and physical capacity to start training</li>
-        <li>get a Disclosure and Barring Service (DBS) certificate if you’re teaching students under 18</li>
-      </ul>
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
 
-      <h3 class="govuk-heading-s">Primary and secondary postgraduate teacher training</h3>
-      <p class="govuk-body">You’ll need the following or equivalents:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>a degree</li>
-        <li>grade 4 (C) or above in English and maths GCSEs</li>
-        <li>grade 4 (C) or above in GCSE science if you want to teach primary</li>
-      </ul>
-      <p class="govuk-body">If you do not have GCSE grade 4 (C), you’ll need to show that you can meet an equivalent level. The training provider may ask you to take an equivalence test or show other evidence of your ability.</p>
+        {{ govukCheckboxes({
+          classes: "govuk-checkboxes--small",
+          fieldset: {
+            legend: {
+              classes: "govuk-visually-hidden",
+              text: "Special educational needs and disability (SEND)"
+            }
+          },
+          name: "send",
+          items: [{
+            value: "include",
+            text: "Only show courses with a SEND specialism"
+          }]
+        }) }}
 
-      <h3 class="govuk-heading-s">Further education postgraduate teacher training</h3>
-      <p class="govuk-body">Training providers usually prefer you to have:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>a degree</li>
-        <li>a degree, or relevant vocational or technical qualification</li>
-        <li>grade 4 (C) or above in English and maths GCSEs (or equivalent)</li>
-      </ul>
+        {% set additionalFiltersHtml %}
+          {{ govukCheckboxes({
+            formGroup: {
+              classes: "govuk-checkboxes--small"
+            },
+            fieldset: {
+              legend: {
+                text: "Study type",
+                classes: "govuk-fieldset__legend--m"
+              }
+            },
+            name: "studyType",
+            items: studyTypeItems
+          }) }}
 
-      <h3 class="govuk-heading-s">If you studied overseas</h3>
-      <p class="govuk-body">You can <a href="https://www.naric.org.uk/Qualifications/SOC/Default.aspx">get a statement from the National Recognition Information Centre for the UK (UK NARIC)</a> that shows how your qualifications compare to UK qualifications. Some training providers may ask to see it as part of your application.</p>
+          {{ govukRadios({
+            formGroup: {
+              classes: "govuk-radios--small"
+            },
+            fieldset: {
+              legend: {
+                text: "Salary",
+                classes: "govuk-fieldset__legend--m"
+              }
+            },
+            name: "salary",
+            items: salaryItems
+          }) }}
+        {% endset %}
 
-      <h3 class="govuk-heading-s">Get advice and support</h3>
-      <p class="govuk-body">You can <a href="https://getintoteaching.education.gov.uk/">register with Get Into Teaching</a>, the Department for Education’s free support and advice service.</p>
-      <p class="govuk-body">A specialist adviser will help you prepare your application and advise you on funding options (including loans and tax-free bursaries and scholarships). You can also book school experience and access teaching events.</p>
+        {{ govukDetails({
+          summaryText: "Add more filters",
+          html: additionalFiltersHtml
+        }) }}
 
-      {{ appRelated({
-        classes: "govuk-!-margin-top-8",
-        title: "Explore the topic",
-        items: [{
-          text: "Universities and higher education",
-          href: "https://www.gov.uk/browse/education/universities-higher-education"
-        }]
-      }) }}
+        {{ govukButton({
+          text: "Search"
+        }) }}
+      </form>
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-6">Cities and towns with training courses</h2>
+
+      <div class="govuk-grid-row">
+        <ul class="govuk-grid-column-one-third govuk-list">
+          <li><a href="#">Birmingham</a></li>
+          <li><a href="#">Bradford</a></li>
+          <li><a href="#">Brighton</a></li>
+          <li><a href="#">Bristol</a></li>
+          <li><a href="#">Cambridge</a></li>
+          <li><a href="#">Derby</a></li>
+          <li><a href="#">Hull</a></li>
+        </ul>
+        <ul class="govuk-grid-column-one-third govuk-list">
+          <li><a href="#">Leeds</a></li>
+          <li><a href="#">Leicester</a></li>
+          <li><a href="#">Liverpool</a></li>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Manchester</a></li>
+          <li><a href="#">Newcastle upon Tyne</a></li>
+          <li><a href="#">Northampton</a></li>
+        </ul>
+        <ul class="govuk-grid-column-one-third govuk-list">
+          <li><a href="#">Norwich</a></li>
+          <li><a href="#">Nottingham</a></li>
+          <li><a href="#">Oxford</a></li>
+          <li><a href="#">Reading</a></li>
+          <li><a href="#">Sheffield</a></li>
+          <li><a href="#">Southampton</a></li>
+          <li><a href="#">York</a></li>
+        </ul>
+      </div>
+      <p class="govuk-body"><a href="#">Browse all teacher training courses in England</a></p>
     </div>
   </div>
+
 {% endblock %}
