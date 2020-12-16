@@ -1,6 +1,7 @@
 const got = require('got')
 const qs = require('qs')
 const NodeGeocoder = require('node-geocoder')
+const { Client } = require('@ideal-postcodes/core-node')
 
 const endpoint = process.env.TEACHER_TRAINING_API_URL
 const cycle = process.env.RECRUITMENT_CYCLE
@@ -9,6 +10,10 @@ const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 const geoCoder = NodeGeocoder({
   provider: 'google',
   apiKey: process.env.GOOGLE_GEOCODING_API_KEY
+})
+
+const postcodeClient = new Client({
+  api_key: process.env.IDEAL_POSTCODES_API_KEY
 })
 
 module.exports = router => {
@@ -23,6 +28,19 @@ module.exports = router => {
     selectedLocation = geoCodedLocation[0]
     const { formattedAddress } = selectedLocation
     req.session.data.selectedLocation = selectedLocation
+
+    console.log('selectedLocation', selectedLocation)
+
+    let areaName
+    if (selectedLocation.zipcode) {
+      // Derive area name from given postcode
+      areaName = await postcodeClient.lookupPostcode({ postcode: selectedLocation.zipcode })
+      areaName = areaName[0].district
+      console.log('areaName from postcode', areaName[0].district)
+    } else {
+      // Derive area name from lat/long
+      areaName = selectedLocation.extra.neighborhood || selectedLocation.administrativeLevels.level2long
+    }
 
     // Qualification
     const selectedQualificationOption = req.query.qualification || req.session.data.selectedQualificationOption
@@ -127,6 +145,7 @@ module.exports = router => {
       }
 
       res.render('results', {
+        areaName,
         googleMapsApiKey,
         formattedAddress,
         latLong: [selectedLocation.latitude, selectedLocation.longitude],
