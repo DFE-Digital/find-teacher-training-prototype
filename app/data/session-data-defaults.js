@@ -1,7 +1,10 @@
 module.exports = {
   defaults: {
+    lat: 50.8375,
+    lon: -0.1765,
     qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
     salary: 'salary,apprenticeship,fee',
+    send: 'exclude',
     studyType: ['full_time', 'part_time'],
     vacancy: 'false'
   },
@@ -229,7 +232,6 @@ module.exports = {
     text: 'Courses with and without vacancies',
     value: 'false'
   }],
-  selectedSendOption: 'exclude',
   selectedSubjectOption: [],
   levels: [{
     text: 'Primary',
@@ -246,9 +248,5 @@ module.exports = {
   }, {
     text: 'Special educational needs and disability (SEND)',
     value: 'send'
-  }],
-  selectedLocation: {
-    latitude: 50.8767,
-    longitude: -0.1267
-  }
+  }]
 }

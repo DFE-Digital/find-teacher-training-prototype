@@ -18,7 +18,7 @@
     <div class="filter-form">
       <h4 class="govuk-heading-s filter-form__title">Subjects</h4>
       <ul class="filter-form__value--list">
-        {% if selectedSendOption %}
+        {% if send %}
           <li>Only SEND courses</li>
         {% endif %}
         {% set remainingSubjects = selectedSubjects.length - 4 %}

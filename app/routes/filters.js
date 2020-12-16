@@ -8,9 +8,7 @@ const backLink = {
 module.exports = router => {
   // Location
   router.get('/results/filters/location', (req, res) => {
-    const { selectedLocation } = req.session.data
-
-    res.render('filters/location', { backLink, selectedLocation })
+    res.render('filters/location', { backLink })
   })
 
   // Qualification
@@ -47,9 +45,12 @@ module.exports = router => {
 
   // Subject/SEND
   router.get('/results/filters/subject', function (req, res) {
-    const { subjectOptions, selectedSendOption, selectedSubjectOption, levels } = req.session.data
+    console.log('SUBJECT saved location', req.session.data.location)
+    console.log('---------------')
+
+    const { subjectOptions, send, subjects, levels } = req.session.data
     const allSubjects = subjectOptions.map(option => option.value)
-    const selectedSubjects = selectedSubjectOption || allSubjects
+    const selectedSubjects = subjects || allSubjects
 
     const groups = levels.map(level => {
       return {
@@ -61,12 +62,12 @@ module.exports = router => {
           text: option.text,
           label: { classes: 'govuk-label--s' },
           hint: { text: option.hint },
-          checked: option.name === 'send' ? (selectedSendOption === true) : selectedSubjects.includes(option.value)
+          checked: option.name === 'send' ? (send === true) : selectedSubjects.includes(option.value)
         }))
       }
     })
 
-    res.render('filters/subject', { backLink, groups })
+    res.render('filters/subject', { backLink, groups, send })
   })
 
   // Study type
