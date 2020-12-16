@@ -53,18 +53,24 @@
     <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-m">Contents</h2>
       <ul class="govuk-list govuk-list--dash govuk-!-margin-bottom-8">
-        <li><a href="#section-about">About the course</a></li>
+        {% if course.about_course %}
+          <li><a href="#section-about">About the course</a></li>
+        {% endif %}
         {% if course.interview_process %}
           <li><a href="#section-interview">Interview process</a></li>
         {% endif %}
-        <li><a href="#section-schools">How school placements work</a></li>
+        {% if course.how_school_placements_work %}
+          <li><a href="#section-schools">How school placements work</a></li>
+        {% endif %}
         {% if course.has_fees %}
           <li><a href="#section-fees">Fees</a></li>
         {% else %}
           <li><a href="#section-salary">Salary</a></li>
         {% endif %}
         <li><a href="#section-financial-support">Financial support</a></li>
-        <li><a href="#section-entry">Requirements</a></li>
+        {% if course.required_qualifications or course.personal_qualities or course.other_requirements %}
+          <li><a href="#section-entry">Requirements</a></li>
+        {% endif %}
         <li><a href="#section-about-provider">About the training provider</a></li>
         <li><a href="#section-access-needs">Training with disabilities and other needs</a></li>
         <li><a href="#section-contact">Contact details</a></li>
@@ -72,10 +78,12 @@
         <li><a href="#section-advice">Support and advice</a></li>
       </ul>
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-about">About the course</h2>
-        {{ course.about_course | markdown | safe }}
-      </section>
+      {% if course.about_course %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-about">About the course</h2>
+          {{ course.about_course | markdown | safe }}
+        </section>
+      {% endif %}
 
       {% if course.interview_process %}
         <section class="govuk-!-margin-bottom-8">
@@ -84,10 +92,12 @@
         </section>
       {% endif %}
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-schools">How school placements work</h2>
-        {{ course.how_school_placements_work | markdown | safe }}
-      </section>
+      {% if course.how_school_placements_work %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-schools">How school placements work</h2>
+          {{ course.how_school_placements_work | markdown | safe }}
+        </section>
+      {% endif %}
 
       {% if course.has_fees %}
         <section class="govuk-!-margin-bottom-8">
@@ -147,32 +157,40 @@
         </section>
       {% endif %}
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-entry">Requirements</h2>
+      {% if course.required_qualifications or course.personal_qualities or course.other_requirements %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-entry">Requirements</h2>
 
-        <h3 class="govuk-heading-m">Qualifications needed</h3>
-        {{ course.required_qualifications | markdown | safe }}
+          {% if course.required_qualifications %}
+            <h3 class="govuk-heading-m">Qualifications needed</h3>
+            {{ course.required_qualifications | markdown | safe }}
+          {% endif %}
 
-        {% if course.personal_qualities %}
-          <h3 class="govuk-heading-m">Personal qualities</h3>
-          {{ course.personal_qualities | markdown | safe }}
-        {% endif %}
+          {% if course.personal_qualities %}
+            <h3 class="govuk-heading-m">Personal qualities</h3>
+            {{ course.personal_qualities | markdown | safe }}
+          {% endif %}
 
-        {% if course.other_requirements %}
-          <h3 class="govuk-heading-m">Other requirements</h3>
-          {{ course.other_requirements | markdown | safe }}
-        {% endif %}
-      </section>
+          {% if course.other_requirements %}
+            <h3 class="govuk-heading-m">Other requirements</h3>
+            {{ course.other_requirements | markdown | safe }}
+          {% endif %}
+        </section>
+      {% endif %}
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-about-provider">About the training provider</h2>
-        {{ provider.train_with_us | markdown | safe }}
-      </section>
+      {% if course.train_with_us %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-about-provider">About the training provider</h2>
+          {{ provider.train_with_us | markdown | safe }}
+        </section>
+      {% endif %}
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="section-access-needs">Training with disabilities and other&nbsp;needs</h2>
-        {{ provider.train_with_disability | markdown | safe }}
-      </section>
+      {% if course.train_with_disability %}
+        <section class="govuk-!-margin-bottom-8">
+          <h2 class="govuk-heading-l" id="section-access-needs">Training with disabilities and other&nbsp;needs</h2>
+          {{ provider.train_with_disability | markdown | safe }}
+        </section>
+      {% endif %}
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="section-contact">Contact details</h2>
@@ -215,9 +233,7 @@
           }) }}
         </p>
 
-        <h3 class="govuk-heading-m">Before you apply</h3>
-        <p>You’ll also need to choose a training location and give the relevant training location code.</p>
-
+        <h3 class="govuk-heading-m">Locations</h3>
         <p class="govuk-body"><a href="/course/{{ provider.code }}/{{ course.code }}/locations">View locations for this course</a></p>
       </section>
 
