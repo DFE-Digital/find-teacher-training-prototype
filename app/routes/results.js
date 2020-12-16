@@ -16,20 +16,34 @@ const toArray = item => {
 }
 
 module.exports = router => {
+  router.post('/results', async (req, res) => {
+    const { location } = req.session.data
+
+    // Convert free text location to lat/lon
+    const geoCodedLocation = await geoCoder.geocode(`${location}, UK`)
+    const geo = geoCodedLocation[0]
+
+    req.session.data.lat = geo.latitude
+    req.session.data.lng = geo.longitude
+
+    res.redirect('/results')
+  })
+
   router.get('/results', async (req, res) => {
     const page = Number(req.query.page) || 1
     const perPage = 20
     const radius = 10
-    const { defaults } = req.session.data
+    const { defaults, subjectOptions } = req.session.data
 
     // Location
-    let selectedLocation = req.query.location || req.session.data.selectedLocation
-    const geoCodedLocation = await geoCoder.geocode(`${selectedLocation}, UK'`)
-    selectedLocation = geoCodedLocation[0]
-    const { formattedAddress } = selectedLocation
-    req.session.data.selectedLocation = selectedLocation
+    const lat = req.session.data.lat || req.query.lat || defaults.lat
+    const lon = req.session.data.lon || req.query.lon || defaults.lon
+    req.session.data.lat = lat
+    req.session.data.lon = lon
 
-    const areaName = selectedLocation.administrativeLevels.level2long
+    const geoCodedLocation = await geoCoder.reverse({ lat, lon })
+    const geo = geoCodedLocation[0]
+    const areaName = geo.administrativeLevels.level2long || geo.city
 
     // Qualification
     const qualification = toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -40,32 +54,28 @@ module.exports = router => {
     req.session.data.salary = salary
 
     // Send
-    const selectedSendOption = (req.query.send === 'include') || (req.session.data.selectedSendOption === 'include')
-    req.session.data.selectedSendOption = selectedSendOption
+    const send = (req.session.data.send === 'include') || (req.query.send === 'include') || (defaults.send === 'include')
+    req.session.data.send = send
 
     // Subject
-    const { subjectOptions } = req.session.data
-
-    let selectedSubjectOption = []
+    let subjects = []
     if (req.query.level) {
       // Filter by education level
       // One (string) or many (Array) can be selected – we need an Array
-      const selectedLevelOption = (typeof req.query.level === 'string') ? Array(req.query.level) : req.query.level
+      const selectedLevelOption = toArray(req.query.level)
 
       // Map selected levels to array of subjects in that level
       selectedLevelOption.forEach(level => {
-        selectedSubjectOption.push(subjectOptions.filter(option => option.type.includes(level)).map(item => item.value))
+        subjects.push(subjectOptions.filter(option => option.type.includes(level)).map(item => item.value))
       })
 
-      selectedSubjectOption = selectedSubjectOption.flat()
-    } else if (req.query.subject) {
+      subjects = subjects.flat()
+    } else if (req.query.subjects) {
       // Filter by subject
-      selectedSubjectOption = req.query.subject || req.session.data.selectedSubjectOption
-
-      selectedSubjectOption = (typeof req.query.subject === 'string') ? Array(req.query.subject) : req.query.subject
+      subjects = toArray(req.session.data.subjects || req.query.subjects)
     }
 
-    req.session.data.selectedSubjectOption = selectedSubjectOption
+    req.session.data.subjects = subjects
 
     // Study type
     const studyType = toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
@@ -75,30 +85,27 @@ module.exports = router => {
     const vacancy = req.query.vacancy || req.session.data.vacancy || defaults.vacancy
     req.session.data.vacancy = vacancy
 
-    const searchParams = page => {
-      const query = {
-        page,
-        per_page: perPage,
-        filter: {
-          funding_type: salary,
-          has_vacancies: vacancy,
-          subjects: selectedSubjectOption.toString(),
-          study_type: studyType.toString(),
-          qualification: qualification.toString(),
-          send_courses: selectedSendOption,
-          latitude: selectedLocation.latitude,
-          longitude: selectedLocation.longitude,
-          radius
-        },
-        sort: 'provider.provider_name',
-        include: 'recruitment_cycle,provider'
-      }
-
-      return qs.stringify(query)
+    const apiQuery = {
+      page,
+      per_page: perPage,
+      filter: {
+        funding_type: salary,
+        latitude: lat,
+        longitude: lon,
+        has_vacancies: vacancy,
+        qualification: qualification.toString(),
+        radius,
+        send_courses: send,
+        study_type: studyType.toString(),
+        subjects: subjects.toString(),
+      },
+      sort: 'provider.provider_name',
+      include: 'recruitment_cycle,provider'
     }
 
     try {
-      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${searchParams(page)}`).json()
+      const queryString = qs.stringify(apiQuery)
+      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${queryString}`).json()
 
       let courses = data
 
@@ -145,8 +152,8 @@ module.exports = router => {
       // Show selected subjects in filter sidebar
       // Takes an array of subject codes and maps it to subject data
       let selectedSubjects = false
-      if (selectedSubjectOption) {
-        selectedSubjects = selectedSubjectOption.map(option => {
+      if (subjects) {
+        selectedSubjects = subjects.map(option => {
           const subject = subjectOptions.find(subject => subject.value === option)
 
           return subject
@@ -161,18 +168,33 @@ module.exports = router => {
       const prevPage = page < pageCount ? (page - 1) : false
       const nextPage = page > 0 ? (page + 1) : false
 
+      const searchQuery = page => {
+        const query = {
+          lat,
+          lon,
+          page,
+          salary,
+          send,
+          studyType,
+          subjects,
+          vacancy
+        }
+
+        return qs.stringify(query)
+      }
+
       const pagination = {
         pages: pageCount,
         next: nextPage
           ? {
-              href: `?${searchParams(nextPage)}`,
+              href: `?${searchQuery(nextPage)}`,
               page: nextPage,
               text: 'Next page'
             }
           : false,
         previous: prevPage
           ? {
-              href: `?${searchParams(prevPage)}`,
+              href: `?${searchQuery(prevPage)}`,
               page: prevPage,
               text: 'Previous page'
             }
@@ -182,15 +204,14 @@ module.exports = router => {
       res.render('results', {
         areaName,
         googleMapsApiKey,
-        formattedAddress,
-        latLong: [selectedLocation.latitude, selectedLocation.longitude],
+        latLong: [lat, lon],
         pagination,
         radius,
         results,
         resultsCount,
         qualification,
         salary,
-        selectedSendOption,
+        send,
         selectedSubjects,
         studyType,
         vacancy

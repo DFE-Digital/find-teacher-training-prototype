@@ -6,7 +6,7 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-l">{{ title }}</h1>
 
-      <form action="/results">
+      <form action="/results" method="post">
         {{ govukErrorSummary({
           titleText: "There is a problem",
           errorList: [{
