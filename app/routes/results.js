@@ -13,9 +13,9 @@ const geoCoder = NodeGeocoder({
 
 module.exports = router => {
   router.get('/results', async (req, res) => {
-    const page = req.query.page || 1
+    const page = Number(req.query.page) || 1
+    const perPage = 20
     const radius = 10
-    const { subjectOptions } = req.session.data
 
     // Location
     let selectedLocation = req.query.location || req.session.data.selectedLocation
@@ -37,6 +37,8 @@ module.exports = router => {
     req.session.data.selectedSendOption = selectedSendOption
 
     // Subject
+    const { subjectOptions } = req.session.data
+
     let selectedSubjectOption = []
     if (req.query.level) {
       // Filter by education level
@@ -68,7 +70,7 @@ module.exports = router => {
 
     const searchParams = {
       page,
-      per_page: 20,
+      per_page: perPage,
       filter: {
         funding_type: selectedSalaryOption,
         has_vacancies: selectedVacancyOption,
@@ -115,13 +117,23 @@ module.exports = router => {
         })
       }
 
+      const resultsCount = 300 // TODO: Get real total
+      const pageCount = resultsCount / perPage
+
+      const pagination = {
+        pages: pageCount,
+        next: page > 0 ? (page + 1) : false, // TODO: Get real next page
+        previous: page < 20 ? (page - 1) : false // TODO: Get real previous page
+      }
+
       res.render('results', {
         googleMapsApiKey,
         formattedAddress,
         latLong: [selectedLocation.latitude, selectedLocation.longitude],
+        pagination,
         radius,
         results,
-        resultsCount: results.length,
+        resultsCount,
         selectedQualificationOption,
         selectedSalaryOption,
         selectedSendOption,
