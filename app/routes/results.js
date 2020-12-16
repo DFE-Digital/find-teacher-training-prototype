@@ -1,7 +1,6 @@
 const got = require('got')
 const qs = require('qs')
 const NodeGeocoder = require('node-geocoder')
-const { Client } = require('@ideal-postcodes/core-node')
 
 const endpoint = process.env.TEACHER_TRAINING_API_URL
 const cycle = process.env.RECRUITMENT_CYCLE
@@ -10,10 +9,6 @@ const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 const geoCoder = NodeGeocoder({
   provider: 'google',
   apiKey: process.env.GOOGLE_GEOCODING_API_KEY
-})
-
-const postcodeClient = new Client({
-  api_key: process.env.IDEAL_POSTCODES_API_KEY
 })
 
 module.exports = router => {
@@ -31,16 +26,7 @@ module.exports = router => {
 
     console.log('selectedLocation', selectedLocation)
 
-    let areaName
-    if (selectedLocation.zipcode) {
-      // Derive area name from given postcode
-      areaName = await postcodeClient.lookupPostcode({ postcode: selectedLocation.zipcode })
-      areaName = areaName[0].district
-      console.log('areaName from postcode', areaName[0].district)
-    } else {
-      // Derive area name from lat/long
-      areaName = selectedLocation.extra.neighborhood || selectedLocation.administrativeLevels.level2long
-    }
+    const areaName = selectedLocation.administrativeLevels.level2long
 
     // Qualification
     const selectedQualificationOption = req.query.qualification || req.session.data.selectedQualificationOption
@@ -86,27 +72,30 @@ module.exports = router => {
     const selectedVacancyOption = req.query.vacancy || req.session.data.selectedVacancyOption
     req.session.data.selectedVacancyOption = selectedVacancyOption
 
-    const searchParams = {
-      page,
-      per_page: perPage,
-      filter: {
-        funding_type: selectedSalaryOption,
-        has_vacancies: selectedVacancyOption,
-        subjects: selectedSubjectOption.toString(),
-        study_type: selectedStudyTypeOption.toString(),
-        qualification: selectedQualificationOption.toString(),
-        send_courses: selectedSendOption,
-        latitude: selectedLocation.latitude,
-        longitude: selectedLocation.longitude,
-        radius
-      },
-      sort: 'provider.provider_name',
-      include: 'recruitment_cycle,provider'
+    const searchParams = page => {
+      const query = {
+        page,
+        per_page: perPage,
+        filter: {
+          funding_type: selectedSalaryOption,
+          has_vacancies: selectedVacancyOption,
+          subjects: selectedSubjectOption.toString(),
+          study_type: selectedStudyTypeOption.toString(),
+          qualification: selectedQualificationOption.toString(),
+          send_courses: selectedSendOption,
+          latitude: selectedLocation.latitude,
+          longitude: selectedLocation.longitude,
+          radius
+        },
+        sort: 'provider.provider_name',
+        include: 'recruitment_cycle,provider'
+      }
+
+      return qs.stringify(query)
     }
 
     try {
-      const queryString = qs.stringify(searchParams)
-      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${queryString}`).json()
+      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${searchParams(page)}`).json()
 
       let results = data
 
@@ -135,13 +124,30 @@ module.exports = router => {
         })
       }
 
-      const resultsCount = 300 // TODO: Get real total
+      // Pagination
+      // TODO: Get pagination data from API response
+      // https://github.com/DFE-Digital/teacher-training-api/pull/1690
+      const resultsCount = 300
       const pageCount = resultsCount / perPage
+      const prevPage = page < pageCount ? (page - 1) : false
+      const nextPage = page > 0 ? (page + 1) : false
 
       const pagination = {
         pages: pageCount,
-        next: page > 0 ? (page + 1) : false, // TODO: Get real next page
-        previous: page < 20 ? (page - 1) : false // TODO: Get real previous page
+        next: nextPage
+          ? {
+              href: `?${searchParams(nextPage)}`,
+              page: nextPage,
+              text: 'Next page'
+            }
+          : false,
+        previous: prevPage
+          ? {
+              href: `?${searchParams(prevPage)}`,
+              page: prevPage,
+              text: 'Previous page'
+            }
+          : false
       }
 
       res.render('results', {
