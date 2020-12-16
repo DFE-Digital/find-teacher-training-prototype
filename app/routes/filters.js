@@ -6,6 +6,11 @@ const backLink = {
 }
 
 module.exports = router => {
+  // Location
+  router.get('/results/filters/location', (req, res) => {
+    res.render('filters/location', { backLink })
+  })
+
   // Qualification
   router.get('/results/filters/qualification', (req, res) => {
     const { qualificationOptions, selectedQualificationOption } = req.session.data
