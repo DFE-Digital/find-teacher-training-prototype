@@ -1,4 +1,5 @@
 const filters = require('../filters')()
+const utils = require('../utils')()
 
 const backLink = {
   text: 'Back to search results',
@@ -44,28 +45,9 @@ module.exports = router => {
   })
 
   // Subject/SEND
-  router.get('/results/filters/subject', function (req, res) {
-    console.log('SUBJECT saved location', req.session.data.location)
-    console.log('---------------')
-
-    const { subjectOptions, send, subjects, levels } = req.session.data
-    const allSubjects = subjectOptions.map(option => option.value)
-    const selectedSubjects = subjects || allSubjects
-
-    const groups = levels.map(level => {
-      return {
-        text: level.text,
-        items: subjectOptions.filter(subject => subject.type === level.value).map(option => ({
-          value: option.value,
-          id: option.name ? `subject-${option.name}` : `subject-${option.value}`,
-          name: option.name || 'subject',
-          text: option.text,
-          label: { classes: 'govuk-label--s' },
-          hint: { text: option.hint },
-          checked: option.name === 'send' ? (send === true) : selectedSubjects.includes(option.value)
-        }))
-      }
-    })
+  router.get('/results/filters/subject', async (req, res) => {
+    const { levels, send, subjectOptions } = req.session.data
+    const groups = utils.getSubjectGroups(levels, send, subjectOptions)
 
     res.render('filters/subject', { backLink, groups, send })
   })

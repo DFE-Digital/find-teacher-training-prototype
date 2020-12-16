@@ -32,6 +32,9 @@ module.exports = router => {
       course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
       course.funding_option = course.salaried ? 'Salary' : 'Student finance if you’re eligible'
 
+      // Year range
+      course.year_range = `${cycle} to ${Number(cycle) + 1}`
+
       res.render('course', { course, provider })
     } catch (error) {
       console.error(error.response.body)

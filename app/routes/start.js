@@ -1,3 +1,5 @@
+const utils = require('../utils')()
+
 module.exports = router => {
   router.get('/', (req, res) => {
     const {
@@ -40,5 +42,21 @@ module.exports = router => {
       salaryItems,
       studyTypeItems
     })
+  })
+
+  router.get('/subject', async (req, res) => {
+    const { levels, send, subjectOptions } = req.session.data
+    const groups = utils.getSubjectGroups(levels, send, subjectOptions)
+
+    const { latitude, longitude } = await utils.geocode(req.query.location)
+    req.session.data.latitude = latitude
+    req.session.data.longitude = longitude
+
+    const backLink = {
+      text: 'Back to location',
+      href: '/'
+    }
+
+    res.render('filters/subject', { backLink, groups, send })
   })
 }

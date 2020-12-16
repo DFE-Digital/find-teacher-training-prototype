@@ -1,30 +1,19 @@
 const got = require('got')
 const qs = require('qs')
-const NodeGeocoder = require('node-geocoder')
+const utils = require('../utils')()
 
 const endpoint = process.env.TEACHER_TRAINING_API_URL
 const cycle = process.env.RECRUITMENT_CYCLE
 const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 
-const geoCoder = NodeGeocoder({
-  provider: 'google',
-  apiKey: process.env.GOOGLE_GEOCODING_API_KEY
-})
-
-const toArray = item => {
-  return (typeof item === 'string') ? Array(item) : item
-}
-
 module.exports = router => {
   router.post('/results', async (req, res) => {
+    // Convert free text location to latitude/lon
     const { location } = req.session.data
+    const { latitude, longitude } = await utils.geocode(location)
 
-    // Convert free text location to lat/lon
-    const geoCodedLocation = await geoCoder.geocode(`${location}, UK`)
-    const geo = geoCodedLocation[0]
-
-    req.session.data.lat = geo.latitude
-    req.session.data.lng = geo.longitude
+    req.session.data.latitude = latitude
+    req.session.data.longitude = longitude
 
     res.redirect('/results')
   })
@@ -34,19 +23,19 @@ module.exports = router => {
     const perPage = 20
     const radius = 10
     const { defaults, subjectOptions } = req.session.data
+    let request
 
     // Location
-    const lat = req.session.data.lat || req.query.lat || defaults.lat
-    const lon = req.session.data.lon || req.query.lon || defaults.lon
-    req.session.data.lat = lat
-    req.session.data.lon = lon
+    const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
+    const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
+    req.session.data.latitude = latitude
+    req.session.data.longitude = longitude
 
-    const geoCodedLocation = await geoCoder.reverse({ lat, lon })
-    const geo = geoCodedLocation[0]
+    const geo = await utils.reverseGeocode(latitude, longitude)
     const areaName = geo.administrativeLevels.level2long || geo.city
 
     // Qualification
-    const qualification = toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
+    const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
     req.session.data.qualification = qualification
 
     // Salary
@@ -58,63 +47,56 @@ module.exports = router => {
     req.session.data.send = send
 
     // Subject
-    let subjects = []
-    if (req.query.level) {
-      // Filter by education level
-      // One (string) or many (Array) can be selected – we need an Array
-      const selectedLevelOption = toArray(req.query.level)
-
-      // Map selected levels to array of subjects in that level
-      selectedLevelOption.forEach(level => {
-        subjects.push(subjectOptions.filter(option => option.type.includes(level)).map(item => item.value))
-      })
-
-      subjects = subjects.flat()
-    } else if (req.query.subjects) {
-      // Filter by subject
-      subjects = toArray(req.session.data.subjects || req.query.subjects)
-    }
-
+    const subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
     req.session.data.subjects = subjects
 
     // Study type
-    const studyType = toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
+    const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
     req.session.data.studyType = studyType
 
     // Vacancies
     const vacancy = req.query.vacancy || req.session.data.vacancy || defaults.vacancy
     req.session.data.vacancy = vacancy
 
-    const apiQuery = {
+    const apiQueryParams = {
       page,
       per_page: perPage,
       filter: {
         funding_type: salary,
-        latitude: lat,
-        longitude: lon,
+        latitude,
+        longitude,
         has_vacancies: vacancy,
         qualification: qualification.toString(),
         radius,
         send_courses: send,
         study_type: studyType.toString(),
-        subjects: subjects.toString(),
+        subjects: subjects.toString()
       },
       sort: 'provider.provider_name',
-      include: 'recruitment_cycle,provider'
+      include: 'recruitment_cycle,provider,accredited_body'
     }
 
     try {
-      const queryString = qs.stringify(apiQuery)
-      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/courses/?${queryString}`).json()
+      const apiQuery = qs.stringify(apiQueryParams)
+      request = `${endpoint}/recruitment_cycles/${cycle}/courses/?${apiQuery}`
+      const { data, included } = await got(request, {
+        responseType: 'json',
+        resolveBodyOnly: true
+      })
 
       let courses = data
-
       if (courses.length > 0) {
         const providers = included.filter(include => include.type === 'providers')
 
         courses = data.map(course => {
           const providerId = course.relationships.provider.data.id
           const provider = providers.find(provider => provider.id === providerId)
+
+          if (course.relationships.accredited_body.data) {
+            const accreditedBodyId = course.relationships.accredited_body.data.id
+            const accreditedBody = providers.find(provider => provider.id === accreditedBodyId)
+            course.attributes.accredited_body = accreditedBody.attributes.name
+          }
 
           return {
             course: course.attributes,
@@ -126,16 +108,11 @@ module.exports = router => {
       const getProviderGeo = async result => {
         const { provider } = result
         const { latitude, longitude } = provider
-        const geocodedLocation = await geoCoder.reverse({
-          lat: latitude,
-          lon: longitude
-        })
-
-        const geo = geocodedLocation[0]
+        const geo = await utils.reverseGeocode(latitude, longitude)
 
         // Replace location data retrived from API with geocoded data
-        provider.city = geo.city
-        provider.area = geo.administrativeLevels.level2long
+        provider.area = geo.administrativeLevels.level2long || geo.city
+        provider.address = `${provider.name}, ${geo.streetName}, ${geo.city}`
 
         return {
           course: result.course,
@@ -150,15 +127,8 @@ module.exports = router => {
       const results = await getResults()
 
       // Show selected subjects in filter sidebar
-      // Takes an array of subject codes and maps it to subject data
-      let selectedSubjects = false
-      if (subjects) {
-        selectedSubjects = subjects.map(option => {
-          const subject = subjectOptions.find(subject => subject.value === option)
-
-          return subject
-        })
-      }
+      // Maps array of subject codes to subject data
+      const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
 
       // Pagination
       // TODO: Get pagination data from API response
@@ -170,8 +140,8 @@ module.exports = router => {
 
       const searchQuery = page => {
         const query = {
-          lat,
-          lon,
+          latitude,
+          longitude,
           page,
           salary,
           send,
@@ -204,7 +174,7 @@ module.exports = router => {
       res.render('results', {
         areaName,
         googleMapsApiKey,
-        latLong: [lat, lon],
+        latLong: [latitude, longitude],
         pagination,
         radius,
         results,
@@ -217,7 +187,9 @@ module.exports = router => {
         vacancy
       })
     } catch (error) {
-      console.error(error)
+      if (error.response) {
+        console.error(error.response.body.errors[0].detail, request)
+      }
     }
   })
 }
