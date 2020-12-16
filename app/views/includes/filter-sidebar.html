@@ -12,8 +12,8 @@
             Across England
           {% else %}
             {% set locationName = formattedAddress or data['postcode-town-or-city'] %}
+            <p class="govuk-body govuk-!-margin-bottom-2">{{ locationName }}</p>
             <img src="https://maps.googleapis.com/maps/api/staticmap?key={{ googleMapsApiKey }}&amp;center={{ latLong }}&amp;zoom=10&amp;size=300x200&amp;scale=2&amp;markers={{ latLong }}" alt="Map showing {{ radius }} miles of {{ locationName }}" class="filter-form__map">
-            {{ locationName }}
           {% endif %}
         </li>
       </ul>
@@ -32,6 +32,9 @@
         {% endfor %}
         {% if remainingSubjects > 0 %}
           <li>and {{ remainingSubjects }} more…</li>
+        {% endif %}
+        {% if selectedSubjects.length < 1 %}
+          <li>All subjects</li>
         {% endif %}
       </ul>
       <a class="govuk-link" href="/results/filters/subject">Change subjects</a>

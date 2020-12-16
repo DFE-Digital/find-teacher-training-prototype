@@ -8,7 +8,9 @@ const backLink = {
 module.exports = router => {
   // Location
   router.get('/results/filters/location', (req, res) => {
-    res.render('filters/location', { backLink })
+    const { selectedLocation } = req.session.data
+
+    res.render('filters/location', { backLink, selectedLocation })
   })
 
   // Qualification
