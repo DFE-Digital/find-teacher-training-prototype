@@ -18,18 +18,6 @@ This prototype is based on the [GOV.UK prototype kit](https://github.com/alphago
 * In Terminal, change the path to the repository
 * Type `npm start`  and start the application
 
-## Updating prototype data
-
-* In Terminal, change the path to the `generate-data` directory
-* Type `bundle install` to install the Ruby dependencies
-* Type `./generate.rb`. This will generate a new `courses.json` file in the `/app/data` directory
-
-Before a new set of courses can be generated, the following files need to be present in the `generate-data` directory:
-
-* **`courses-clean.json`**: Download [courses-clean.zip](https://github.com/DFE-Digital/search-and-compare-data/blob/master/courses-clean.zip) from the search-and-compare-data repo and add the extracted file
-* **`course-enrichment.csv`**
-* **`institution-enrichment.csv`**
-
 ## Upgrading the prototype kit
 
 Based on https://govuk-prototype-kit.herokuapp.com/docs/updating-the-kit
