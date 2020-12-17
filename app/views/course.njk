@@ -2,7 +2,7 @@
 
 {% set title %}{{ course.name }} with {{ provider.name }}{% endset %}
 
-{% block backLink %}
+{% block pageNavigation %}
   {{ govukBackLink({
     text: "Back to search results",
     href: "/results"
@@ -229,13 +229,10 @@
 
         <p>
           {{ govukButton({
-            href: applyLink(provider.code, course.code),
+            href: "/apply/" + provider.code + "/" + course.code,
             text: "Apply for this course"
           }) }}
         </p>
-
-        <h3 class="govuk-heading-m">Locations</h3>
-        <p class="govuk-body"><a href="/course/{{ provider.code }}/{{ course.code }}/locations">View locations for this course</a></p>
       </section>
 
       <section class="govuk-!-margin-bottom-8">
