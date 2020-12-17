@@ -79,7 +79,7 @@ module.exports = router => {
     try {
       const apiQuery = qs.stringify(apiQueryParams)
       request = `${endpoint}/recruitment_cycles/${cycle}/courses/?${apiQuery}`
-      const { data, included } = await got(request, {
+      const { data, links, included } = await got(request, {
         responseType: 'json',
         resolveBodyOnly: true
       })
@@ -135,12 +135,11 @@ module.exports = router => {
       const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
 
       // Pagination
-      // TODO: Get pagination data from API response
-      // https://github.com/DFE-Digital/teacher-training-api/pull/1690
-      const resultsCount = 300
-      const pageCount = resultsCount / perPage
-      const prevPage = page < pageCount ? (page - 1) : false
-      const nextPage = page > 0 ? (page + 1) : false
+      const pageCount = links.last.match(/page=(\d*)/)[1]
+      // TODO: Get true results count from API response
+      const resultsCount = perPage * pageCount
+      const prevPage = links.prev ? (page - 1) : false
+      const nextPage = links.next ? (page + 1) : false
 
       const searchQuery = page => {
         const query = {
