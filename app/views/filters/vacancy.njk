@@ -1,5 +1,6 @@
-{% extends "layout.html" %}
-{% set title = "Study type" %}
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Find courses by vacancies" %}
 
 {% block backLink %}
   {{ govukBackLink(backLink) }}
@@ -9,7 +10,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <form action="/results">
-        {{ govukCheckboxes({
+        {{ govukRadios({
           fieldset: {
             legend: {
               classes: "govuk-fieldset__legend--l",
@@ -17,7 +18,7 @@
               text: title
             }
           },
-          name: "studyType",
+          name: "vacancy",
           items: items
         }) }}
 
