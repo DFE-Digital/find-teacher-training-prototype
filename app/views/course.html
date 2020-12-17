@@ -14,8 +14,6 @@
     {{ course.name }} ({{ course.code }})
   </h1>
 
-  <pre>{{ course | dump(2) }}</pre>
-
   <p class="govuk-body-l">{{ course.summary }}</p>
 
   <dl class="govuk-list--description govuk-!-margin-bottom-8">
@@ -250,6 +248,11 @@
         <h3 class="govuk-heading-m">Website support</h3>
         <p>If you have feedback or have had a problem using Find postgraduate teacher training you can <a href="#">contact us by email</a>.
       </section>
+
+      {{ govukDetails({
+        summaryText: "API response",
+        html: "<pre>" + course | dump(2) + "</pre>" | safe
+      }) }}
     </div>
   </div>
 {% endblock %}

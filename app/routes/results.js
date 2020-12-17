@@ -88,7 +88,11 @@ module.exports = router => {
       if (courses.length > 0) {
         const providers = included.filter(include => include.type === 'providers')
 
-        courses = data.map(course => {
+        // Only show running and findable courses
+        // TODO: Implement filter in API call (feature request)
+        courses = courses.filter(course => course.attributes.running && course.attributes.findable)
+
+        courses = courses.map(course => {
           const providerId = course.relationships.provider.data.id
           const provider = providers.find(provider => provider.id === providerId)
 
