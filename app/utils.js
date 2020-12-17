@@ -14,7 +14,7 @@ module.exports = () => {
       items: subjectOptions.filter(subject => subject.type === level.value).map(option => ({
         value: option.value,
         id: option.name ? `subject-${option.name}` : `subject-${option.value}`,
-        name: option.name || 'subject',
+        name: option.name || 'subjects',
         text: option.text,
         hint: { text: option.hint },
         checked: option.name === 'send' ? (send === true) : subjectOptions.includes(option.value)
