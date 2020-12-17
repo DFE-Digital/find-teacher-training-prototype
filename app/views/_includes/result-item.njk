@@ -19,7 +19,7 @@
     <dd>{{ result.course.accredited_body }}</dd>
   {% endif %}
   <dt class="govuk-list--description__label">Financial support</dt>
-  <dd>Student finance if you’re eligible</dd>
+  <dd>{{ "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible" }}</dd>
   {% if vacancy != "true" %}
     <dt class="govuk-list--description__label">Vacancies</dt>
     <dd>{{ "Yes" if result.course.has_vacancies else "No" }}</dd>
