@@ -30,11 +30,11 @@
 {% from "govuk/components/textarea/macro.njk"            import govukTextarea %}
 {% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
 
-{% from "components/pagination/macro.njk"                import appPagination %}
-{% from "components/related/macro.njk"                   import appRelated %}
+{% from "_components/pagination/macro.njk"                import appPagination %}
+{% from "_components/related/macro.njk"                   import appRelated %}
 
 {% block head %}
-  {% include "includes/head.html" %}
+  {% include "_includes/head.njk" %}
 {% endblock %}
 
 {% block pageTitle %}
@@ -93,7 +93,7 @@
   </div>
 
   {% block scripts %}
-    {% include "includes/scripts.html" %}
+    {% include "_includes/scripts.njk" %}
     {% block pageScripts %}{% endblock %}
   {% endblock %}
   <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
