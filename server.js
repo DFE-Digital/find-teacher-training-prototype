@@ -143,12 +143,6 @@ app.use(function (req, res, next) {
     return value
   })
 
-  nunjucksAppEnv.addGlobal('applyLink', function (providerCode, programmeCode) {
-    const APPLY_PROTOTYPE_URL = process.env.APPLY_PROTOTYPE_URL || 'https://apply-beta-prototype.herokuapp.com'
-
-    return `${APPLY_PROTOTYPE_URL}/apply/${providerCode}/${programmeCode}?dualrunning=true`
-  })
-
   next()
 })
 
