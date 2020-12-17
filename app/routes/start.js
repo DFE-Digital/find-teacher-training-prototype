@@ -59,4 +59,8 @@ module.exports = router => {
 
     res.render('filters/subject', { backLink, groups, send })
   })
+
+  router.get('/start', async (req, res) => {
+    res.render('start')
+  })
 }
