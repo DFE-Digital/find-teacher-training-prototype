@@ -32,7 +32,8 @@ module.exports = router => {
     req.session.data.longitude = longitude
 
     const geo = await utils.reverseGeocode(latitude, longitude)
-    const areaName = geo.administrativeLevels.level2long || geo.city
+    // const area = await utils.mapit(latitude, longitude)
+    const areaName = geo.city
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -115,7 +116,7 @@ module.exports = router => {
         const geo = await utils.reverseGeocode(latitude, longitude)
 
         // Replace location data retrived from API with geocoded data
-        provider.area = geo.administrativeLevels.level2long || geo.city
+        provider.area = geo.city
         provider.address = `${provider.name}, ${geo.streetName}, ${geo.city}`
 
         return {

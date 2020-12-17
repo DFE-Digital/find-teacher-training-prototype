@@ -1,8 +1,11 @@
+const got = require('got')
 const NodeGeocoder = require('node-geocoder')
 
 const geocoder = NodeGeocoder({
-  provider: 'google',
-  apiKey: process.env.GOOGLE_GEOCODING_API_KEY
+  provider: 'here',
+  apiKey: process.env.HERE_GEOCODING_API_KEY,
+  country: 'United Kingdom',
+  state: 'England'
 })
 
 module.exports = () => {
@@ -24,7 +27,7 @@ module.exports = () => {
 
   utils.geocode = async string => {
     try {
-      const geoCodedLocation = await geocoder.geocode(`${string}, UK`)
+      const geoCodedLocation = await geocoder.geocode(string)
       const geo = geoCodedLocation[0]
 
       return {
@@ -33,6 +36,18 @@ module.exports = () => {
       }
     } catch (error) {
       console.error('Geocoding error', error)
+    }
+  }
+
+  utils.mapit = async (lat, lon, type = 'TTW') => {
+    try {
+      const data = await got(`https://mapit.mysociety.org/point/4326/${lon},${lat}?api_key=${process.env.MAPIT_API_KEY}&type=${type}`).json()
+
+      const area = data[Object.keys(data)[0]]
+
+      return area
+    } catch (error) {
+      console.error('MapIt error', error)
     }
   }
 

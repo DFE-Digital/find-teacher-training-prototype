@@ -10,7 +10,7 @@
   <dt class="govuk-list--description__label">Locations</dt>
   <dd>
     <span class="govuk-list--description__hint">Placements</span>
-    {{ result.provider.area }}
+    {{ areaName + ", " if areaName != result.provider.area }}{{ result.provider.area }}
     <span class="govuk-list--description__hint govuk-!-padding-top-2">University</span>
     {{ result.provider.area }}
   </dd>
