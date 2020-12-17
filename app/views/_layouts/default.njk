@@ -62,9 +62,7 @@
     html: "This is a prototype of a new service. Some parts may not work yet."
   }) }}
 
-  {% block breadcrumbs %}{% endblock %}
-  {% block backLink %}{% endblock %}
-  {% block afterPhaseBanner %}{% endblock %}
+  {% block pageNavigation %}{% endblock %}
 {% endblock %}
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
