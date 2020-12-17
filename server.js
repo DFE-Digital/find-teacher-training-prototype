@@ -129,23 +129,6 @@ if (useAutoStoreData === 'true') {
   utils.addCheckedFunction(nunjucksAppEnv)
 }
 
-app.use(function (req, res, next) {
-  nunjucksAppEnv.addGlobal('value', function (name) {
-    if (req.session.data === undefined) {
-      return ''
-    }
-
-    const value = req.session.data[name]
-    if (value === undefined) {
-      return ''
-    }
-
-    return value
-  })
-
-  next()
-})
-
 // Clear all data in session if you open /prototype-admin/clear-data
 app.post('/prototype-admin/clear-data', function (req, res) {
   req.session.data = {}
