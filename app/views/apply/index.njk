@@ -1,0 +1,76 @@
+{% extends "_layouts/default.njk" %}
+
+{% set serviceName = "Apply for teacher training" %}
+{% if course %}
+  {% set parent = course.name + " (" + course.code + ")" %}
+  {% set title = "Apply for this course" %}
+{% else %}
+  {% set title = serviceName %}
+{% endif %}
+
+{% block pageNavigation %}
+  {{ govukBackLink(backLink) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/apply/{{ provider.code }}/{{ course.code }}/route" method="post">
+        <h1 class="govuk-heading-l">
+          <span class="govuk-caption-l">{{ parent }}</span>
+          {{ title }}
+        </h1>
+
+        <p class="govuk-body">The course you’ve chosen is available through a new GOV.UK service called {{ serviceName }}.</p>
+        <p class="govuk-body">This will eventually replace UCAS as the way candidates apply for all teacher training. However, for now, the service is limited to certain providers.</p>
+        <p class="govuk-body"><a href="/apply/{{ provider.code }}/{{ course.code }}/providers">See a list of available training providers and courses</a></p>
+
+        {{ govukRadios({
+          idPrefix: "route",
+          name: "route",
+          fieldset: {
+            classes: "govuk-!-margin-top-6",
+            legend: {
+              text: "Do you want to apply using a new GOV.UK service?",
+              classes: "govuk-fieldset__legend--m"
+            }
+          },
+          items: [{
+            value: "dfe",
+            text: "Yes, I want to apply using the new service",
+            label: {
+              classes: "govuk-label--s govuk-!-margin-bottom-2"
+            },
+            hint: {
+              html: "
+                <p class=\"govuk-body govuk-!-margin-bottom-2\">Choose this option if:</p>
+                <ul class=\"govuk-list govuk-list--bullet\">
+                  <li>all your chosen providers are available on the new service</li>
+                  <li>you want to try a streamlined service with personalised support</li>
+                </ul>"
+            }
+          }, {
+            value: "ucas",
+            text: "No, I want to apply with UCAS",
+            label: {
+              classes: "govuk-label--s govuk-!-margin-bottom-2"
+            },
+            hint: {
+              html: "
+                <p class=\"govuk-body govuk-!-margin-bottom-2\">Choose this option if:</p>
+                <ul class=\"govuk-list govuk-list--bullet\">
+                  <li>some of your chosen providers are not available on " +  serviceName + " and you don’t want to use 2 different services.</li>
+                  <li>you’ve already started applying with UCAS</li>
+                </ul>"
+            }
+          }]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue",
+          classes: "govuk-!-margin-bottom-5"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

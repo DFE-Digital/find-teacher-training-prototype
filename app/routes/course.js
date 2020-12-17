@@ -37,7 +37,7 @@ module.exports = router => {
 
       res.render('course', { course, provider })
     } catch (error) {
-      console.error(error.response.body)
+      res.render('404')
     }
   })
 }
