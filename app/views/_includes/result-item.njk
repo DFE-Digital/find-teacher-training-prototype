@@ -11,8 +11,10 @@
   <dd>
     <span class="govuk-list--description__hint">Placements</span>
     {{ areaName + ", " if areaName != result.provider.area }}{{ result.provider.area }}
-    <span class="govuk-list--description__hint govuk-!-padding-top-2">University</span>
-    {{ result.provider.area }}
+    {% if result.provider.provider_type == "university" %}
+      <span class="govuk-list--description__hint govuk-!-padding-top-2">University</span>
+      {{ result.provider.area }}
+    {% endif %}
   </dd>
   {% if result.course.accredited_body %}
     <dt class="govuk-list--description__label">Accredited body</dt>
