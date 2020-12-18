@@ -2,6 +2,7 @@ module.exports = {
   flags: {
     filterSidebar: true
   },
+  cycle: 2021,
   defaults: {
     latitude: 50.8375,
     longitude: -0.1765,
