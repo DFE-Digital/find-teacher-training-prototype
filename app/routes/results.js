@@ -214,6 +214,8 @@ module.exports = router => {
           code: body.errors[0].title,
           content: body.errors[0].detail
         })
+      } else {
+        console.error(error)
       }
     }
   })
