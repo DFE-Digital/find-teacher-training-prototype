@@ -2,31 +2,28 @@
   @include govuk-font($size: 19);
   @include govuk-responsive-margin(4, "bottom");
   background-color: darken(govuk-colour("light-grey"), 5%);
-  padding: 8px;
+  padding: govuk-spacing(2);
 
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: govuk-spacing(2);
   }
 
   &__value {
     background-color: govuk-colour("white");
-    margin-bottom: 8px;
-    padding: 8px;
-    padding-bottom: 5px;
+    margin-bottom: govuk-spacing(2);
+    padding: govuk-spacing(2);
+    padding-bottom: govuk-spacing(1);
   }
 
   &__value--list {
     @extend %govuk-list;
-    margin-bottom: 8px;
+    margin-bottom: govuk-spacing(2);
 
     li {
       background-color: govuk-colour("white");
       border-bottom: 2px solid darken(govuk-colour("light-grey"), 5%);
       margin: 0;
-      padding: 8px;
-      // New transport baseline is slightly higher, compensate with smaller padding
-      // to centre correctly
-      padding-bottom: 5px;
+      padding: govuk-spacing(2);
 
       &:last-child {
         border: none;
@@ -40,11 +37,11 @@
 
   .govuk-input {
     background: govuk-colour("white");
-    margin-bottom: 8px;
+    margin-bottom: govuk-spacing(2);
   }
 
   .govuk-button {
-    margin-bottom: 3px;
+    margin-bottom: govuk-spacing(1);
   }
 
   .govuk-list li:last-child {

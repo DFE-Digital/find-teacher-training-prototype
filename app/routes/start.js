@@ -45,19 +45,21 @@ module.exports = router => {
   })
 
   router.get('/subject', async (req, res) => {
-    const { levels, send, subjectOptions } = req.session.data
-    const groups = utils.getSubjectGroups(levels, send, subjectOptions)
+    const { location, send, subjects } = req.session.data
 
-    const { latitude, longitude } = await utils.geocode(req.query.location)
-    req.session.data.latitude = latitude
-    req.session.data.longitude = longitude
-
-    const backLink = {
-      text: 'Back to location',
-      href: '/'
+    if (location) {
+      const { latitude, longitude } = await utils.geocode(location)
+      req.session.data.latitude = latitude
+      req.session.data.longitude = longitude
     }
 
-    res.render('filters/subject', { backLink, groups, send })
+    res.render('filters/subject', {
+      backLink: {
+        text: 'Back to location',
+        href: '/'
+      },
+      items: utils.subjectGroupItems(send, subjects)
+    })
   })
 
   router.get('/start', async (req, res) => {

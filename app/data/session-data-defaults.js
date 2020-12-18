@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    filterSidebar: true
+  },
   defaults: {
     latitude: 50.8375,
     longitude: -0.1765,
@@ -9,7 +12,7 @@ module.exports = {
     subjects: ['00'],
     vacancy: 'false'
   },
-  levels: [{
+  subjectGroups: [{
     text: 'Primary',
     value: 'primary'
   }, {

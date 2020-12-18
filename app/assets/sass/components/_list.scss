@@ -1,9 +1,9 @@
-%govuk-list--description {
+%app-list--description {
   @include govuk-clearfix;
   margin-top: 0;
 }
 
-%govuk-list--description > dt {
+%app-list--description > dt {
   @include govuk-font($size: 19, $weight: bold);
   vertical-align: top;
 
@@ -15,7 +15,7 @@
   }
 }
 
-%govuk-list--description > dd {
+%app-list--description > dd {
   @include govuk-font($size: 19, $weight: normal);
   margin: 0 0 govuk-spacing(2) 0;
   vertical-align: top;
@@ -36,8 +36,8 @@
   }
 }
 
-.govuk-list--description {
-  @extend %govuk-list--description;
+.app-list--description {
+  @extend %app-list--description;
 
   &__label:after {
     display: inline-block;
@@ -51,8 +51,7 @@
   }
 }
 
-.govuk-list--dash {
-  margin-bottom: govuk-spacing(8);
+.app-list--dash {
   padding-left: govuk-spacing(3);
 
   li {
