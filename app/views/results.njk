@@ -2,13 +2,25 @@
 
 {% set title = "Teacher training courses" %}
 
+{% block pageNavigation %}
+  {{ govukBackLink({
+    text: "Back to subjects",
+    href: "/subject"
+  }) if data.flags.filterSidebar }}
+{% endblock %}
+
 {% block content %}
   <h1 class="govuk-heading-l govuk-!-margin-bottom-2">{{ title }}</h1>
+
   <p class="govuk-body-l">{{ resultsCount }} courses with training locations in the {{ areaName }} area</p>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-      {% include "_includes/filter-sidebar.njk" %}
+      {% if data.flags.filterSidebar %}
+        {% include "_includes/filter-form.njk" %}
+      {% else %}
+        {% include "_includes/filter-sidebar.njk" %}
+      {% endif %}
     </div>
 
     <div class="govuk-grid-column-two-thirds">

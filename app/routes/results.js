@@ -37,10 +37,16 @@ module.exports = router => {
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
+    const qualificationItems = utils.qualificationItems(qualification).map(item => {
+      item.hint = false
+      item.label.classes = false
+      return item
+    })
     req.session.data.qualification = qualification
 
     // Salary
     const salary = req.session.data.salary || req.query.salary || defaults.salary
+    const salaryItems = utils.salaryItems(salary)
     req.session.data.salary = salary
 
     // Send
@@ -53,10 +59,15 @@ module.exports = router => {
 
     // Study type
     const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
+    const studyTypeItems = utils.studyTypeItems(studyType).map(item => {
+      item.hint = false
+      return item
+    })
     req.session.data.studyType = studyType
 
     // Vacancies
     const vacancy = req.query.vacancy || req.session.data.vacancy || defaults.vacancy
+    const vacancyItems = utils.vacancyItems(vacancy)
     req.session.data.vacancy = vacancy
 
     const apiQueryParams = {
@@ -184,11 +195,15 @@ module.exports = router => {
         results,
         resultsCount,
         qualification,
+        qualificationItems,
         salary,
+        salaryItems,
         send,
         selectedSubjects,
         studyType,
-        vacancy
+        studyTypeItems,
+        vacancy,
+        vacancyItems
       })
     } catch (error) {
       if (error.response) {

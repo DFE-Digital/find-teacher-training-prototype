@@ -1,0 +1,21 @@
+.app-filter {
+  border: 1px solid $govuk-border-colour;
+  padding: govuk-spacing(3);
+
+  .govuk-checkboxes__label,
+  .govuk-radios__label {
+    @include govuk-font(16)
+  }
+
+  .govuk-form-group {
+    border-bottom: 1px solid $govuk-border-colour;
+    margin-bottom: govuk-spacing(3);
+    padding-bottom: govuk-spacing(3);
+  }
+
+  .govuk-form-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
