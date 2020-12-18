@@ -1,14 +1,12 @@
 const got = require('got')
 
-const endpoint = process.env.TEACHER_TRAINING_API_URL
-
 module.exports = router => {
   router.get('/apply/:providerCode/:courseCode', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { cycle } = req.session.data
+    const { apiEndpoint, cycle } = req.session.data
 
     try {
-      const { data } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}`).json()
+      const { data } = await got(`${apiEndpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}`).json()
 
       res.render('apply/index', {
         backLink: {
