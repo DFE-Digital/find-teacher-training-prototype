@@ -1,14 +1,12 @@
 const got = require('got')
 
-const endpoint = process.env.TEACHER_TRAINING_API_URL
-
 module.exports = router => {
   router.get('/course/:providerCode/:courseCode', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { cycle } = req.session.data
+    const { apiEndpoint, cycle } = req.session.data
 
     try {
-      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json()
+      const { data, included } = await got(`${apiEndpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json()
 
       const course = data.attributes
 

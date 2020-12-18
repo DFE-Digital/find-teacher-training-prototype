@@ -2,7 +2,6 @@ const got = require('got')
 const qs = require('qs')
 const utils = require('../utils')()
 
-const endpoint = process.env.TEACHER_TRAINING_API_URL
 const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 
 module.exports = router => {
@@ -21,7 +20,7 @@ module.exports = router => {
     const page = Number(req.query.page) || 1
     const perPage = 20
     const radius = 10
-    const { defaults, cycle, subjectOptions } = req.session.data
+    const { apiEndpoint, cycle, defaults, subjectOptions } = req.session.data
     let request
 
     // Location
@@ -90,7 +89,7 @@ module.exports = router => {
 
     try {
       const apiQuery = qs.stringify(apiQueryParams)
-      request = `${endpoint}/recruitment_cycles/${cycle}/courses/?${apiQuery}`
+      request = `${apiEndpoint}/recruitment_cycles/${cycle}/courses/?${apiQuery}`
       const { data, links, included } = await got(request, {
         responseType: 'json',
         resolveBodyOnly: true
