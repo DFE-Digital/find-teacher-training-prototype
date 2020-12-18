@@ -6,8 +6,7 @@ const filters = require('./filters')()
 const geocoder = NodeGeocoder({
   provider: 'here',
   apiKey: process.env.HERE_GEOCODING_API_KEY,
-  country: 'United Kingdom',
-  state: 'England'
+  country: 'United Kingdom'
 })
 
 module.exports = () => {
