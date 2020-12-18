@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Teacher training courses" %}
+{% set title = "Teacher training courses in " + areaName %}
 
 {% block pageNavigation %}
   {{ govukBackLink({
@@ -12,7 +12,11 @@
 {% block content %}
   <h1 class="govuk-heading-l govuk-!-margin-bottom-2">{{ title }}</h1>
 
-  <p class="govuk-body-l">{{ resultsCount }} courses with training locations in the {{ areaName }} area</p>
+  {% if results | length > 0 %}
+    <p class="govuk-body-l">{{ resultsCount }} courses with training locations in the {{ areaName }} area</p>
+  {% else %}
+    <p class="govuk-body-l">There are no courses matching your search</p>
+  {% endif %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
@@ -34,8 +38,18 @@
         </ul>
         {{ appPagination(pagination) }}
       {% else %}
-        <h2 class="govuk-heading-m">There are no courses matching your&nbsp;search</h2>
-        <p class="govuk-body">You can <a href="/start/">try another search</a>, for example by changing subject or location.</p>
+        {% if state != "England" %}
+          <h2 class="govuk-heading-m">This service is for courses in England</h2>
+          {% if state == "Scotland" %}
+            <p class="govuk-body"><a class="govuk-link" href="https://teachinscotland.scot/">Learn more about teacher training in Scotland</a></p>
+          {% elif state == "Wales" %}
+            <p class="govuk-body"><a class="govuk-link" href="https://www.discoverteaching.wales/routes-into-teaching/">Learn more about teacher training in Wales</a></p>
+          {% elif state == "Northern Ireland" %}
+            <p class="govuk-body"><a class="govuk-link" href="https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland">Learn more about teacher training in Northern Ireland</a></p>
+          {% endif %}
+        {% else %}
+          <p class="govuk-body">You can <a class="govuk-link" href="/start/">try another search</a>, for example by changing subject or location.</p>
+        {% endif %}
       {% endif %}
     </div>
   </div>

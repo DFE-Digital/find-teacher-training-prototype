@@ -34,6 +34,7 @@ module.exports = router => {
     const geo = await utils.reverseGeocode(latitude, longitude)
     // const area = await utils.mapit(latitude, longitude)
     const areaName = geo.city
+    const { state } = geo
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -200,6 +201,7 @@ module.exports = router => {
         salaryItems,
         send,
         selectedSubjects,
+        state,
         studyType,
         studyTypeItems,
         vacancy,
