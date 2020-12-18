@@ -1,5 +1,7 @@
 const got = require('got')
 const NodeGeocoder = require('node-geocoder')
+const data = require('./data/session-data-defaults')
+const filters = require('./filters')()
 
 const geocoder = NodeGeocoder({
   provider: 'here',
@@ -10,20 +12,6 @@ const geocoder = NodeGeocoder({
 
 module.exports = () => {
   const utils = {}
-
-  utils.getSubjectGroups = (levels, send, subjectOptions = []) => {
-    return levels.map(level => ({
-      text: level.text,
-      items: subjectOptions.filter(subject => subject.type === level.value).map(option => ({
-        value: option.value,
-        id: option.name ? `subject-${option.name}` : `subject-${option.value}`,
-        name: option.name || 'subjects',
-        text: option.text,
-        hint: { text: option.hint },
-        checked: option.name === 'send' ? (send === true) : subjectOptions.includes(option.value)
-      }))
-    }))
-  }
 
   utils.geocode = async string => {
     try {
@@ -62,6 +50,55 @@ module.exports = () => {
 
   utils.toArray = item => {
     return (typeof item === 'string') ? Array(item) : item
+  }
+
+  utils.qualificationItems = qualification => {
+    return data.qualificationOptions.map(option => ({
+      value: option.value,
+      text: option.text,
+      label: { classes: 'govuk-label--s' },
+      hint: { text: filters.markdown(option.hint) },
+      checked: qualification ? qualification.includes(option.value) : false
+    }))
+  }
+
+  utils.salaryItems = salary => {
+    return data.salaryOptions.map(option => ({
+      value: option.value,
+      text: option.text,
+      checked: salary === option.value
+    }))
+  }
+
+  utils.studyTypeItems = studyType => {
+    return data.studyTypeOptions.map(option => ({
+      value: option.value,
+      text: option.text,
+      hint: { text: option.hint },
+      checked: studyType ? studyType.includes(option.value) : false
+    }))
+  }
+
+  utils.subjectGroupItems = (send, subjects = []) => {
+    return data.subjectGroups.map(group => ({
+      text: group.text,
+      items: data.subjectOptions.filter(option => option.type === group.value).map(option => ({
+        value: option.value,
+        id: option.name ? `subject-${option.name}` : `subject-${option.value}`,
+        name: option.name || 'subjects',
+        text: option.text,
+        hint: { text: option.hint },
+        checked: option.name === 'send' ? (send === true) : subjects.includes(option.value)
+      }))
+    }))
+  }
+
+  utils.vacancyItems = vacancy => {
+    return data.vacancyOptions.map(option => ({
+      value: option.value,
+      text: option.text,
+      checked: vacancy === option.value
+    }))
   }
 
   return utils

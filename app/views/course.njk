@@ -17,14 +17,14 @@
 
   <p class="govuk-body-l">{{ course.summary }}</p>
 
-  <dl class="govuk-list--description govuk-!-margin-bottom-8">
+  <dl class="app-list--description govuk-!-margin-bottom-8">
     {% if course.accredited_body_code %}
       <dt>Accredited body</dt>
       <dd>{{ provider.name }}</dd>
     {% endif %}
     <dt>Financial support</dt>
     <dd>{{ course.funding_option }}</dd>
-    <dt class="govuk-list--description__label">Qualification</dt>
+    <dt class="app-list--description__label">Qualification</dt>
     <dd>
       {% if "pgce" in course.qualifications %}
         {{ govukDetails({
@@ -38,40 +38,42 @@
         }) }}
       {% endif %}
     </dd>
-    <dt class="govuk-list--description__label">Course length</dt>
+    <dt class="app-list--description__label">Course length</dt>
     <dd>{{ course.length }}</dd>
-    <dt class="govuk-list--description__label">Date you can apply from</dt>
+    <dt class="app-list--description__label">Date you can apply from</dt>
     <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
-    <dt class="govuk-list--description__label">Date course starts</dt>
+    <dt class="app-list--description__label">Date course starts</dt>
     <dd>{{ course.start_date }}</dd>
-    <dt class="govuk-list--description__label">Website</dt>
+    <dt class="app-list--description__label">Website</dt>
     <dd><a href="{{ provider.website }}">{{ provider.website }}</a></dd>
   </dl>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h2 class="govuk-heading-m">Contents</h2>
-      <ul class="govuk-list govuk-list--dash govuk-!-margin-bottom-8">
-        <li><a href="#about">About the course</a></li>
-        <li><a href="#about-the-provider">About the training provider</a></li>
-        {% if course.required_qualifications or course.personal_qualities or course.other_requirements %}
-          <li><a href="#entry-requirements">Entry requirements</a></li>
-        {% endif %}
-        {% if course.has_fees %}
-          <li><a href="#fees">Fees</a></li>
-        {% endif %}
-        {% if course.salaried %}
-          <li><a href="#salary">Salary</a></li>
-        {% endif %}
-        <li><a href="#financial-support">Financial support</a></li>
-        <li><a href="#apply">Apply</a></li>
-        {% if course.interview_process %}
-          <li><a href="#interview">Interview process</a></li>
-        {% endif %}
-        <li><a href="#access-needs">Training with disabilities and other needs</a></li>
-        <li><a href="#contact">Contact details</a></li>
-        <li><a href="#advice">Support and advice</a></li>
-      </ul>
+      <section class="govuk-!-margin-bottom-8">
+        <h2 class="govuk-heading-m">Contents</h2>
+        <ul class="govuk-list app-list--dash">
+          <li><a href="#about">About the course</a></li>
+          <li><a href="#about-the-provider">About the training provider</a></li>
+          {% if course.required_qualifications or course.personal_qualities or course.other_requirements %}
+            <li><a href="#entry-requirements">Entry requirements</a></li>
+          {% endif %}
+          {% if course.has_fees %}
+            <li><a href="#fees">Fees</a></li>
+          {% endif %}
+          {% if course.salaried %}
+            <li><a href="#salary">Salary</a></li>
+          {% endif %}
+          <li><a href="#financial-support">Financial support</a></li>
+          <li><a href="#apply">Apply</a></li>
+          {% if course.interview_process %}
+            <li><a href="#interview">Interview process</a></li>
+          {% endif %}
+          <li><a href="#access-needs">Training with disabilities and other needs</a></li>
+          <li><a href="#contact">Contact details</a></li>
+          <li><a href="#advice">Support and advice</a></li>
+        </ul>
+      </section>
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="about">About the course</h2>
@@ -222,25 +224,25 @@
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="contact">Contact details</h2>
-        <dl class="govuk-list--description">
-        <dt class="govuk-list--description__label">Email</dt>
+        <dl class="app-list--description">
+        <dt class="app-list--description__label">Email</dt>
         {% if provider.telephone %}
           <dd><a href="mailto:{{ provider.email }}">{{ provider.email }}</a></dd>
         {% else %}
           {% set email = "enquiries@" + provider.website | replace("http://", "") | replace("https://", "") | replace("/", "") | replace("www.", "") %}
           <dd><a href="mailto:{{ email }}">{{ email }}</a></dd>
         {% endif %}
-          <dt class="govuk-list--description__label">Telephone</dt>
+          <dt class="app-list--description__label">Telephone</dt>
         {% if provider.telephone %}
           <dd>{{ provider.telephone }}</dd>
         {% else %}
           <dd>01234 567890</dd>
         {% endif %}
         {% if provider.website %}
-          <dt class="govuk-list--description__label">Website</dt>
+          <dt class="app-list--description__label">Website</dt>
           <dd><a href="{{ provider.website }}">{{ provider.website }}</a></dd>
         {% endif %}
-          <dt class="govuk-list--description__label">Address</dt>
+          <dt class="app-list--description__label">Address</dt>
           <dd>
             {% if provider.street_address_1 %}{{ provider.street_address_1 }}<br>{% endif %}
             {% if provider.street_address_2 %}{{ provider.street_address_2 }}<br>{% endif %}

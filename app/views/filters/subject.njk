@@ -14,19 +14,19 @@
 
       <form action="/results">
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-          {% for level in groups %}
+          {% for item in items %}
             <div class="govuk-accordion__section">
               <div class="govuk-accordion__section-header">
                 <h2 class="govuk-accordion__section-heading">
                   <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
-                    {{ level.text }}
+                    {{ item.text }}
                   </span>
                 </h2>
               </div>
               <div class="govuk-accordion__section-content">
                 {{ govukCheckboxes({
                   name: "subjects",
-                  items: level.items
+                  items: item.items
                 }) }}
               </div>
             </div>
