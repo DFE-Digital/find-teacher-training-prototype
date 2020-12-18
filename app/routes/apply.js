@@ -1,14 +1,12 @@
 const got = require('got')
 
-const endpoint = process.env.TEACHER_TRAINING_API_URL
-
 module.exports = router => {
   router.get('/apply/:providerCode/:courseCode', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { cycle } = req.session.data
+    const { apiEndpoint, cycle } = req.session.data
 
     try {
-      const { data } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}`).json()
+      const { data } = await got(`${apiEndpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}`).json()
 
       res.render('apply/index', {
         backLink: {
@@ -37,11 +35,11 @@ module.exports = router => {
 
   router.get('/apply/:providerCode/:courseCode/locations', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { cycle } = req.session.data
+    const { apiEndpoint, cycle } = req.session.data
     const { map } = req.query
 
     try {
-      const { data, included } = await got(`${endpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json()
+      const { data, included } = await got(`${apiEndpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json()
 
       const course = included.filter(item => item.type === 'courses')[0].attributes
       const provider = included.filter(item => item.type === 'providers')[0].attributes

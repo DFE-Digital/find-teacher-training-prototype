@@ -2,6 +2,7 @@ module.exports = {
   flags: {
     filterSidebar: true
   },
+  apiEndpoint: 'https://api.publish-teacher-training-courses.service.gov.uk/api/public/v1',
   cycle: 2021,
   defaults: {
     latitude: 50.8375,
