@@ -210,7 +210,7 @@ module.exports = router => {
         const { body } = error.response
         res.status(body.errors[0].status)
         res.render('error', {
-          code: body.errors[0].title,
+          title: body.errors[0].title,
           content: body.errors[0].detail
         })
       } else {
