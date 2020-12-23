@@ -1,10 +1,15 @@
 .app-filter {
-  border: 1px solid $govuk-border-colour;
+  background-color: govuk-colour("light-grey");
+  // border: 1px solid $govuk-border-colour;
   padding: govuk-spacing(3);
 
   .govuk-checkboxes__label,
   .govuk-radios__label {
-    @include govuk-font(16)
+    @include govuk-font(16);
+
+    &::before {
+      background-color: govuk-colour("white");
+    }
   }
 
   .govuk-form-group {
