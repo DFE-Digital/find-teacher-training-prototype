@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Find teacher training courses near you" %}
+{% set title = "Find teacher training courses" %}
 
 {% block content %}
   <div class="govuk-grid-row">
@@ -16,7 +16,7 @@
 
         <h1 class="govuk-heading-l">{{ title }}</h1>
 
-        <h2 class="govuk-heading-m">Choose a city or town with courses</h2>
+        <h2 class="govuk-heading-m">Choose a city or town</h2>
         <div class="govuk-grid-row">
           <ul class="govuk-grid-column-one-third govuk-list">
             <li><a href="/subject?location=Birmingham">Birmingham</a></li>
@@ -56,7 +56,7 @@
             text: "Search courses near a location"
           },
           hint: {
-            text: "Enter a location or postcode"
+            text: "Enter a place name or postcode"
           },
           id: "location",
           name: "location"
