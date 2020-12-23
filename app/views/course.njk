@@ -54,24 +54,19 @@
         <h2 class="govuk-heading-m">Contents</h2>
         <ul class="govuk-list app-list--dash">
           <li><a href="#about">About the course</a></li>
+          <li><a href="#entry-requirements">Entry requirements</a></li>
           <li><a href="#about-the-provider">About the training provider</a></li>
-          {% if course.required_qualifications or course.personal_qualities or course.other_requirements %}
-            <li><a href="#entry-requirements">Entry requirements</a></li>
-          {% endif %}
-          {% if course.has_fees %}
-            <li><a href="#fees">Fees</a></li>
-          {% endif %}
           {% if course.salaried %}
             <li><a href="#salary">Salary</a></li>
           {% endif %}
-          <li><a href="#financial-support">Financial support</a></li>
-          <li><a href="#apply">Apply</a></li>
+          <li><a href="#fees-and-financial-support">Fees and financial support</a></li>
           {% if course.interview_process %}
             <li><a href="#interview">Interview process</a></li>
           {% endif %}
           <li><a href="#access-needs">Training with disabilities and other needs</a></li>
           <li><a href="#contact">Contact details</a></li>
           <li><a href="#advice">Support and advice</a></li>
+          <li><a href="#apply">Apply</a></li>
         </ul>
       </section>
 
@@ -84,15 +79,37 @@
 
           {{ appAdvice({
             title: "Where you will train",
-            html: ("Something about placements given provider type is `" + provider.provider_type + "`.") | markdown
-          }) if provider.provider_type != "university" }}
-
-          {{ appAdvice({
+            html: "Most of your time will be spent in the classroom with experienced teachers.\n\nYou’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to.\n\nYou might also spend time on a university campus for training days." | markdown
+          } if provider.provider_type != "university" else {
             title: "Where you will train",
-            html: "You’ll be placed in schools for most of your course.\n\nYou can’t pick which schools you want to be in, but your university will try to place you in schools you can commute to.\n\nUniversities usually work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities." | markdown
-          }) if provider.provider_type == "university" }}
+            html: "You’ll be placed in schools for most of your course.\n\nYou can’t pick which schools you want to be in, but your university will try to place you in schools you can commute to.\n\nUniversities can work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities." | markdown
+          }) }}
 
           {{ course.how_school_placements_work | markdown | safe }}
+        {% endif %}
+      </section>
+
+      <section class="govuk-!-margin-bottom-8">
+        <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
+
+        {{ appAdvice({
+          title: "Refeshing your subject knowledge",
+          html: "If you’ve got the right qualities to teach but need to build up or refresh your subject knowledge, you might be asked to complete a [subject knowledge enhancement (SKE) course](https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses).\n\nYou'll find out if you need to complete an SKE course after the interview stage." | markdown
+        }) }}
+
+        {% if course.required_qualifications %}
+          <h3 class="govuk-heading-m" id="required-qualifications">Qualifications needed</h3>
+          {{ course.required_qualifications | markdown | safe }}
+        {% endif %}
+
+        {% if course.personal_qualities %}
+          <h3 class="govuk-heading-m" id="personal-qualities">Personal qualities</h3>
+          {{ course.personal_qualities | markdown | safe }}
+        {% endif %}
+
+        {% if course.other_requirements %}
+          <h3 class="govuk-heading-m" id="other-requirements">Other requirements</h3>
+          {{ course.other_requirements | markdown | safe }}
         {% endif %}
       </section>
 
@@ -106,72 +123,6 @@
         {% endif %}
       </section>
 
-      {% if course.required_qualifications or course.personal_qualities or course.other_requirements %}
-        <section class="govuk-!-margin-bottom-8">
-          <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
-
-          {{ appAdvice({
-            title: "Refeshing your subject knowledge",
-            html: "If you’ve got the right qualities to teach but need to build up or refresh your subject knowledge, you might be asked to complete a [subject knowledge enhancement (SKE) course](https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses)." | markdown
-          }) }}
-
-          {% if course.required_qualifications %}
-            <h3 class="govuk-heading-m" id="required-qualifications">Qualifications needed</h3>
-            {{ course.required_qualifications | markdown | safe }}
-          {% endif %}
-
-          {% if course.personal_qualities %}
-            <h3 class="govuk-heading-m" id="personal-qualities">Personal qualities</h3>
-            {{ course.personal_qualities | markdown | safe }}
-          {% endif %}
-
-          {% if course.other_requirements %}
-            <h3 class="govuk-heading-m" id="other-requirements">Other requirements</h3>
-            {{ course.other_requirements | markdown | safe }}
-          {% endif %}
-        </section>
-      {% endif %}
-
-      {% if course.has_fees %}
-        <section class="govuk-!-margin-bottom-8">
-          <h2 class="govuk-heading-l" id="fees">Fees</h2>
-
-          {% if course.fee_domestic %}
-            <div class="body-text">
-              {% if course.fee_domestic and course.fee_international %}
-                <table class="govuk-table app-table--vertical-align-middle">
-                  <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">
-                    The course fees for {{ course.year_range }} are as follows:
-                  </caption>
-                  <thead class="govuk-table__head">
-                  <tr class="govuk-visually-hidden govuk-table__row">
-                    <th class="govuk-table__header">Student type</th>
-                    <th class="govuk-table__header">Fees to pay</th>
-                  </tr>
-                  </thead>
-                  <tbody class="govuk-table__body">
-                  <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">UK students</td>
-                    <td class="govuk-table__cell">£{{ course.fee_domestic.toLocaleString() }}</td>
-                  </tr>
-                  <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">International students</td>
-                    <td class="govuk-table__cell">£{{ course.fee_international.toLocaleString() }}</td>
-                  </tr>
-                  </tbody>
-                </table>
-              {% else %}
-                <p class="govuk-body">The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic.toLocaleString() }}.</p>
-              {% endif %}
-            </div>
-
-            {% if course.fee_details %}
-              {{ course.fee_details | markdown | safe }}
-            {% endif %}
-          {% endif %}
-        </section>
-      {% endif %}
-
       {% if course.salaried %}
         <section class="govuk-!-margin-bottom-8">
           <h2 class="govuk-heading-l" id="salary">Salary</h3>
@@ -181,31 +132,61 @@
       {% endif %}
 
       <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="financial-support">Financial support</h3>
+        <h2 class="govuk-heading-l" id="fees-and-financial-support">Fees and financial support</h3>
+
+        {% if course.has_fees %}
+          {% if course.fee_domestic %}
+            {% if course.fee_domestic and course.fee_international %}
+              <table class="govuk-table app-table--vertical-align-middle">
+                <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">
+                  The course fees for {{ course.year_range }} are as follows:
+                </caption>
+                <thead class="govuk-table__head">
+                <tr class="govuk-visually-hidden govuk-table__row">
+                  <th class="govuk-table__header">Student type</th>
+                  <th class="govuk-table__header">Fees to pay</th>
+                </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">UK students</td>
+                  <td class="govuk-table__cell">£{{ (course.fee_domestic | int).toLocaleString() }}</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">International students</td>
+                  <td class="govuk-table__cell">£{{ (course.fee_international | int).toLocaleString() }}</td>
+                </tr>
+                </tbody>
+              </table>
+            {% else %}
+              <p class="govuk-body">The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic.toLocaleString() }}.</p>
+            {% endif %}
+
+            {% if course.fee_details %}
+              {{ course.fee_details | markdown | safe }}
+            {% endif %}
+          {% endif %}
+        {% endif %}
 
         {% if course.salaried %}
-          <p class="govuk-body">Financial support isn’t available for this course because it comes with a salary.</p>
-          <p class="govuk-body">If you choose a course without a salary, you may be eligible for financial support while you study, including bursaries, scholarships and loans.</p>
+          {% set financialSupportHtml %}{% include "_includes/course/salaried.md" %}{% endset %}
+        {% elif course.bursary_only %}
+          {% set financialSupportHtml %}{% include "_includes/course/bursary.md" %}{% endset %}
+        {% elif course.has_scholarship_and_bursary %}
+          {% set financialSupportHtml %}{% include "_includes/course/bursary_and_scholarship.md" %}{% endset %}
         {% else %}
-          <p class="govuk-body">You may also be eligible for a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/funding-my-teacher-training/tuition-fee-and-maintenance-loans">loan while you study</a> – note that you’ll have to apply for <a class="govuk-link" href="https://www.gov.uk/student-finance">undergraduate student finance</a>.</p>
-          <p class="govuk-body">Find out about financial support if you’re from <a class="govuk-link" href="https://getintoteaching.education.gov.uk/explore-my-options/overseas-graduates">outside the UK</a>.</p>
+          {% set financialSupportHtml %}{% include "_includes/course/loan.md" %}{% endset %}
         {% endif %}
+
+        {{ appAdvice({
+          title: "Financial support",
+          html: financialSupportHtml | trim | markdown
+        }) }}
 
         {% if course.financial_support %}
           <h3 class="govuk-heading-m" id="financial-support-from-the-provider">Financial support from the training provider</h3>
           {{ course.financial_support | markdown | safe }}
         {% endif %}
-      </section>
-
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="apply">Apply</h2>
-        <p>
-          {{ govukButton({
-            href: "/apply/" + provider.code + "/" + course.code,
-            text: "Apply for this course",
-            isStartButton: true
-          }) }}
-        </p>
       </section>
 
       {% if course.interview_process %}
@@ -225,23 +206,12 @@
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="contact">Contact details</h2>
         <dl class="app-list--description">
-        <dt class="app-list--description__label">Email</dt>
-        {% if provider.telephone %}
-          <dd><a href="mailto:{{ provider.email }}">{{ provider.email }}</a></dd>
-        {% else %}
-          {% set email = "enquiries@" + provider.website | replace("http://", "") | replace("https://", "") | replace("/", "") | replace("www.", "") %}
-          <dd><a href="mailto:{{ email }}">{{ email }}</a></dd>
-        {% endif %}
+          <dt class="app-list--description__label">Email</dt>
+          <dd>{{ provider.email | urlize }}</dd>
           <dt class="app-list--description__label">Telephone</dt>
-        {% if provider.telephone %}
           <dd>{{ provider.telephone }}</dd>
-        {% else %}
-          <dd>01234 567890</dd>
-        {% endif %}
-        {% if provider.website %}
           <dt class="app-list--description__label">Website</dt>
-          <dd><a href="{{ provider.website }}">{{ provider.website }}</a></dd>
-        {% endif %}
+          <dd>{{ provider.website | urlize }}</dd>
           <dt class="app-list--description__label">Address</dt>
           <dd>
             {% if provider.street_address_1 %}{{ provider.street_address_1 }}<br>{% endif %}
@@ -262,6 +232,15 @@
 
         <h3 class="govuk-heading-m">Is there something wrong with this page?</h3>
         <p class="govuk-body">If there is something wrong with this course listing, <a class="govuk-link" href="mailto:becomingateacher@digital.education.gov.uk?subject=Edit {{ course.name }} ({{ provider.code }}/{{ course.code }})">contact us by email</a>.</p>      </section>
+      </section>
+
+      <section id="apply">
+        {{ govukButton({
+          href: "/apply/" + provider.code + "/" + course.code,
+          text: "Apply for this course",
+          isStartButton: true
+        }) }}
+      </section>
     </div>
   </div>
   {{ course | log }}

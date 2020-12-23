@@ -9,7 +9,7 @@
   <dd>{{ result.course.summary }}</dd>
   <dt class="app-list--description__label">Locations</dt>
   <dd>
-    <span class="app-list--description__hint">Placements</span>
+    <span class="app-list--description__hint">School placements</span>
     {{ areaName + ", " if areaName != result.provider.area }}{{ result.provider.area }}
     {% if result.provider.provider_type == "university" %}
       <span class="app-list--description__hint govuk-!-padding-top-2">University</span>
