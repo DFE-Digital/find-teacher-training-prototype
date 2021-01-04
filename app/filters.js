@@ -33,9 +33,13 @@ module.exports = (env) => {
    *
    * @param {String} string Markdown
    */
-  filters.markdown = string => {
+  filters.markdown = (string, value) => {
     if (string === undefined) {
       return ''
+    }
+
+    if (value === 'inline') {
+      return marked.parseInline(string)
     }
 
     const text = string.replace(/\\r/g, '\n').replace(/\\t/g, ' ')
