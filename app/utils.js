@@ -51,12 +51,12 @@ module.exports = () => {
     return (typeof item === 'string') ? Array(item) : item
   }
 
-  utils.qualificationItems = qualification => {
+  utils.qualificationItems = (qualification, options = {}) => {
     return data.qualificationOptions.map(option => ({
       value: option.value,
       text: option.text,
       label: { classes: 'govuk-label--s' },
-      hint: { text: filters.markdown(option.hint) },
+      hint: { text: options.showHintText ? filters.markdown(option.hint): false },
       checked: qualification ? qualification.includes(option.value) : false
     }))
   }
@@ -69,16 +69,16 @@ module.exports = () => {
     }))
   }
 
-  utils.studyTypeItems = studyType => {
+  utils.studyTypeItems = (studyType, options = {}) => {
     return data.studyTypeOptions.map(option => ({
       value: option.value,
       text: option.text,
-      hint: { text: option.hint },
+      hint: { text: options.showHintText ? option.hint : false },
       checked: studyType ? studyType.includes(option.value) : false
     }))
   }
 
-  utils.subjectGroupItems = (send, subjects = []) => {
+  utils.subjectGroupItems = (subjects = [], options = {}) => {
     return data.subjectGroups.map(group => ({
       text: group.text,
       items: data.subjectOptions.filter(option => option.type === group.value).map(option => ({
@@ -86,8 +86,8 @@ module.exports = () => {
         id: option.name ? `subject-${option.name}` : `subject-${option.value}`,
         name: option.name || 'subjects',
         text: option.text,
-        hint: { text: option.hint },
-        checked: option.name === 'send' ? (send === true) : subjects.includes(option.value)
+        hint: { text: options.showHintText ? option.hint : false },
+        checked: option.name === 'send' ? (options.send === true) : subjects.includes(option.value)
       }))
     }))
   }

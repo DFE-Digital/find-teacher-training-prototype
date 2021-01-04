@@ -58,7 +58,10 @@ module.exports = router => {
         text: 'Back to location',
         href: '/'
       },
-      items: utils.subjectGroupItems(send, subjects)
+      items: utils.subjectGroupItems(subjects, {
+        send,
+        showHintText: true
+      })
     })
   })
 

@@ -12,6 +12,9 @@
       }) }}
 
       {{ govukInput({
+        formGroup: {
+          classes: "app-filter__group"
+        },
         classes: "govuk-checkboxes--small",
         label: {
           classes: "govuk-label--s",
@@ -21,7 +24,37 @@
         value: areaName
       }) }}
 
+      {# govukCheckboxes({
+        classes: "govuk-checkboxes--small",
+        fieldset: {
+          legend: {
+            classes: "govuk-fieldset__legend--s",
+            text: "Subject"
+          }
+        },
+        name: "subjects",
+        items: subjectItems
+      }) #}
+
+      <div class="app-filter__group">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Subjects</h2>
+        <p class="govuk-body-s govuk-!-margin-bottom-2">{{ selectedSubjects | length }} selected</p>
+
+        <div class="app-filter__scroll">
+          {% for item in subjectItems %}
+            {{ govukCheckboxes({
+              classes: "govuk-checkboxes--small",
+              name: "subjects",
+              items: item.items
+            }) }}
+          {% endfor %}
+        </div>
+      </div>
+
       {{ govukCheckboxes({
+        formGroup: {
+          classes: "app-filter__group"
+        },
         classes: "govuk-checkboxes--small",
         fieldset: {
           legend: {
@@ -34,6 +67,9 @@
       }) }}
 
       {{ govukCheckboxes({
+        formGroup: {
+          classes: "app-filter__group"
+        },
         classes: "govuk-checkboxes--small",
         fieldset: {
           legend: {
@@ -46,6 +82,9 @@
       }) }}
 
       {{ govukRadios({
+        formGroup: {
+          classes: "app-filter__group"
+        },
         classes: "govuk-radios--small",
         fieldset: {
           legend: {
@@ -58,6 +97,9 @@
       }) }}
 
       {{ govukRadios({
+        formGroup: {
+          classes: "app-filter__group"
+        },
         classes: "govuk-radios--small",
         fieldset: {
           legend: {
