@@ -1,6 +1,6 @@
 <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
   <a href="/course/{{ result.provider.code }}/{{ result.course.code }}" style="text-decoration: none">
-    <span class="govuk-!-font-size-19">{{ result.provider.name }}</span><br />
+    <span class="govuk-!-font-size-19">{{ result.provider.name | markdown("inline") }}</span><br />
     <span style="text-decoration: underline">{{ result.course.name }} ({{ result.course.code }})</span>
   </a>
 </h2>
