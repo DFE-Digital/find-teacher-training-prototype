@@ -128,7 +128,7 @@ module.exports = {
     type: 'secondary',
     value: '12'
   }, {
-    text: 'Design and technology – also includes food, product design, textiles, and systems and control',
+    text: 'Design and technology',
     type: 'secondary',
     value: 'DT'
   }, {

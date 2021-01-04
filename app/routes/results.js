@@ -54,13 +54,16 @@ module.exports = router => {
 
     // Subject
     const subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
+    const subjectItems = utils.subjectGroupItems(subjects, {
+      send,
+      showHintText: false
+    })
     req.session.data.subjects = subjects
 
     // Study type
     const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
-    const studyTypeItems = utils.studyTypeItems(studyType).map(item => {
-      item.hint = false
-      return item
+    const studyTypeItems = utils.studyTypeItems(studyType, {
+      showHintText: false
     })
     req.session.data.studyType = studyType
 
@@ -202,6 +205,7 @@ module.exports = router => {
         state,
         studyType,
         studyTypeItems,
+        subjectItems,
         vacancy,
         vacancyItems
       })

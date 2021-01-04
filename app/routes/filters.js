@@ -40,7 +40,10 @@ module.exports = router => {
     const { send, subjects } = req.session.data
     res.render('filters/subject', {
       backLink,
-      items: utils.subjectGroupItems(send, subjects)
+      items: utils.subjectGroupItems(subjects, {
+        send,
+        showHintText: true
+      })
     })
   })
 

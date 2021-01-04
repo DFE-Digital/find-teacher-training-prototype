@@ -2,13 +2,6 @@
 
 {% set title = "Teacher training courses in " + areaName %}
 
-{% block pageNavigation %}
-  {{ govukBackLink({
-    text: "Back to subjects",
-    href: "/subject"
-  }) if data.flags.filterSidebar }}
-{% endblock %}
-
 {% block content %}
   <h1 class="govuk-heading-l govuk-!-margin-bottom-2">{{ title }}</h1>
 
