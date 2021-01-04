@@ -23,7 +23,6 @@ describe('The Prototype Kit', () => {
   it('should generate assets into the /public folder', () => {
     assert.doesNotThrow(function () {
       fs.accessSync(path.resolve(__dirname, '../../public/javascripts/application.js'))
-      fs.accessSync(path.resolve(__dirname, '../../public/images/unbranded.ico'))
       fs.accessSync(path.resolve(__dirname, '../../public/stylesheets/application.css'))
     })
   })
