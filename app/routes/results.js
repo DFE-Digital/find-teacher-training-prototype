@@ -92,42 +92,66 @@ module.exports = router => {
 
         // Only show running and findable courses
         // https://github.com/DFE-Digital/teacher-training-api/issues/1694
-        courses = courses.filter(course => course.attributes.running && course.attributes.findable)
+        courses = courses.filter(courseResource => courseResource.attributes.running && courseResource.attributes.findable)
 
-        courses = courses.map(course => {
-          const providerId = course.relationships.provider.data.id
-          const provider = providers.find(provider => provider.id === providerId)
+        courses = courses.map(async courseResource => {
+          const course = courseResource.attributes
+          const courseRalationships = courseResource.relationships
 
-          if (course.relationships.accredited_body.data) {
-            const accreditedBodyId = course.relationships.accredited_body.data.id
-            const accreditedBody = providers.find(provider => provider.id === accreditedBodyId)
-            course.attributes.accredited_body = accreditedBody.attributes.name
+          // Get course provider
+          const providerId = courseRalationships.provider.data.id
+          const providerResource = providers.find(providerResource => providerResource.id === providerId)
+          const provider = providerResource.attributes
+
+          // Get course accredited body
+          if (courseRalationships.accredited_body.data) {
+            const accreditedBodyId = courseRalationships.accredited_body.data.id
+            const accreditedBody = providers.find(providerResource => providerResource.id === accreditedBodyId)
+            course.accredited_body = accreditedBody.attributes.name
           }
 
+          // Get course locations
+          const LocationListResponse = await teacherTrainingModel.getCourseLocations(provider.code, course.code)
+
+          // Get catchment areas that locations lie within
+          const areas = []
+          if (LocationListResponse.data) {
+            console.log('LocationListResponse.data type is', typeof LocationListResponse.data)
+            for await (const locationResource of LocationListResponse.data) {
+              const { latitude, longitude } = locationResource.attributes
+              const point = await locationModel.getPoint(latitude, longitude)
+              areas.push(point.name)
+            }
+          }
+
+          // Remove duplicate catchment areas
+          const locations = [...new Set(areas)]
+
           return {
-            course: course.attributes,
-            provider: provider.attributes
+            course,
+            provider,
+            locations
           }
         })
       }
 
-      const getProviderGeo = async result => {
-        const { provider } = result
-        const { latitude, longitude } = provider
-        const geo = await utils.reverseGeocode(latitude, longitude)
+      // const getProviderGeo = async result => {
+      //   const { provider } = result
+      //   const { latitude, longitude } = provider
+      //   const geo = await utils.reverseGeocode(latitude, longitude)
 
-        // Replace location data retrived from API with geocoded data
-        provider.area = geo.city
-        provider.address = `${provider.name}, ${geo.streetName}, ${geo.city}`
+      //   // Replace location data retrived from API with geocoded data
+      //   provider.area = geo.city
+      //   provider.address = `${provider.name}, ${geo.streetName}, ${geo.city}`
 
-        return {
-          course: result.course,
-          provider
-        }
-      }
+      //   return {
+      //     course: result.course,
+      //     provider
+      //   }
+      // }
 
       const getResults = async () => {
-        return Promise.all(courses.map(result => getProviderGeo(result)))
+        return Promise.all(courses)
       }
 
       const results = await getResults()

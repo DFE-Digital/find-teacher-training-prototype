@@ -7,11 +7,10 @@ module.exports = router => {
 
     try {
       const courseResource = await teacherTrainingModel.getCourse(providerCode, courseCode)
-
       const course = courseResource.data.attributes
 
-      let provider = courseResource.included.find(item => item.type === 'providers')
-      provider = provider.attributes
+      const providerResource = courseResource.included.find(item => item.type === 'providers')
+      const provider = providerResource.attributes
 
       // Email and website address
       // https://github.com/DFE-Digital/teacher-training-api/issues/1686

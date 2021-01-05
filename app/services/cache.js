@@ -17,6 +17,7 @@ class CacheService {
     }
 
     return apiRequest().then((result) => {
+      console.log(`Fetching ${key} from API`)
       this.cache.set(key, result)
       return result
     })
