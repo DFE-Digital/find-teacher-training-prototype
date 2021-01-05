@@ -1,18 +1,17 @@
-const got = require('got')
+const teacherTrainingModel = require('../models/teacher-training')
 
 module.exports = router => {
   router.get('/apply/:providerCode/:courseCode', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { apiEndpoint, cycle } = req.session.data
 
     try {
-      const { data } = await got(`${apiEndpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}`).json()
+      const courseResource = await teacherTrainingModel.getCourse(providerCode, courseCode)
 
       res.render('apply/index', {
         backLink: {
           href: `/course/${providerCode}/${courseCode}`
         },
-        course: data.attributes,
+        course: courseResource.data.attributes,
         provider: {
           code: providerCode
         }
@@ -35,17 +34,16 @@ module.exports = router => {
 
   router.get('/apply/:providerCode/:courseCode/locations', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { apiEndpoint, cycle } = req.session.data
     const { map } = req.query
 
     try {
-      const { data, included } = await got(`${apiEndpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json()
+      const LocationListResponse = await teacherTrainingModel.getCourseLocations(providerCode, courseCode)
 
-      const course = included.filter(item => item.type === 'courses')[0].attributes
-      const provider = included.filter(item => item.type === 'providers')[0].attributes
+      const course = LocationListResponse.included.filter(item => item.type === 'courses')[0].attributes
+      const provider = LocationListResponse.included.filter(item => item.type === 'providers')[0].attributes
 
-      const statuses = included.filter(item => item.type === 'location_statuses')
-      const locations = data.map(location => {
+      const statuses = LocationListResponse.included.filter(item => item.type === 'location_statuses')
+      const locations = LocationListResponse.data.map(location => {
         const { attributes } = location
 
         // Vacancy status

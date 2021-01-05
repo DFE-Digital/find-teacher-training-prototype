@@ -35,6 +35,7 @@
     "keypather": "^3.0.0",
     "luxon": "^1.25.0",
     "marked": "^1.2.7",
+    "node-cache": "^5.1.2",
     "node-geocoder": "^3.27.0",
     "nunjucks": "^3.2.1",
     "portscanner": "^2.1.1",
