@@ -7,15 +7,8 @@
 <dl class="app-list--description">
   <dt class="app-list--description__label">Course</dt>
   <dd>{{ result.course.summary }}</dd>
-  <dt class="app-list--description__label">Locations</dt>
-  <dd>
-    <span class="app-list--description__hint">School placements</span>
-    {{ areaName + ", " if areaName != result.provider.area }}{{ result.provider.area }}
-    {% if result.provider.provider_type == "university" %}
-      <span class="app-list--description__hint govuk-!-padding-top-2">University</span>
-      {{ result.provider.area }}
-    {% endif %}
-  </dd>
+  <dt class="app-list--description__label">School placements</dt>
+  <dd>{{ areaName + ", " if areaName != result.provider.area }}{{ result.provider.area }}</dd>
   {% if result.course.accredited_body %}
     <dt class="app-list--description__label">Accredited body</dt>
     <dd>{{ result.course.accredited_body }}</dd>
