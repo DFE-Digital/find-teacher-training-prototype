@@ -14,9 +14,11 @@ module.exports = router => {
       provider = provider.attributes
 
       // Email and website address
-      provider.website = provider.website ? `http://${provider.website.replace(/^https?:\/\//, '')}` : false
-      provider.domain = new URL(provider.website).hostname
-      provider.email = provider.email ? provider.email : `enquiries@${provider.domain}`
+      if (provider.website) {
+        provider.website = `http://${provider.website.replace(/^https?:\/\//, '')}`
+        provider.domain = new URL(provider.website).hostname
+        provider.email = provider.email ? provider.email : `enquiries@${provider.domain}`
+      }
       provider.telephone = provider.telephone ? provider.telephone : '01234 567890'
 
       // Length
@@ -45,6 +47,7 @@ module.exports = router => {
 
       res.render('course', { course, provider })
     } catch (error) {
+      console.log(error.stack)
       res.render('error', {
         title: error.name,
         content: error.message

@@ -55,7 +55,9 @@
         <ul class="govuk-list app-list--dash">
           <li><a href="#about">About the course</a></li>
           <li><a href="#entry-requirements">Entry requirements</a></li>
-          <li><a href="#about-the-provider">About the training provider</a></li>
+          {% if course.train_with_us or course.accredited_body_code %}
+            <li><a href="#about-the-provider">About the training provider</a></li>
+          {% endif %}
           {% if course.salaried %}
             <li><a href="#salary">Salary</a></li>
           {% endif %}
@@ -113,15 +115,19 @@
         {% endif %}
       </section>
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="about-the-provider">About the training provider</h2>
-        {{ provider.train_with_us | markdown | safe }}
+      {% if course.train_with_us or course.accredited_body_code %}
+        <section class="govuk-!-margin-bottom-8">
+          {% if course.train_with_us %}
+            <h2 class="govuk-heading-l" id="about-the-provider">About the training provider</h2>
+            {{ provider.train_with_us | markdown | safe }}
+          {% endif %}
 
-        {% if course.about_accredited_body %}
-          <h3 class="govuk-heading-m" id="about-the-accredited-body">About the accredited body</h3>
-          {{ course.about_accredited_body | markdown | safe }}
-        {% endif %}
-      </section>
+          {% if course.accredited_body_code %}
+            <h3 class="govuk-heading-m" id="about-the-accredited-body">About the accredited body</h3>
+            {{ course.about_accredited_body | markdown | safe }}
+          {% endif %}
+        </section>
+      {% endif %}
 
       {% if course.salaried %}
         <section class="govuk-!-margin-bottom-8">
@@ -207,12 +213,16 @@
         <h2 class="govuk-heading-l" id="contact">Contact details</h2>
         <dl class="app-list--description">
           <dt class="app-list--description__label">Email</dt>
-          <dd>{{ provider.email | urlize }}</dd>
-          <dt class="app-list--description__label">Telephone</dt>
+          {% if provider.email %}
+            <dd>{{ provider.email | urlize }}</dd>
+            <dt class="app-list--description__label">Telephone</dt>
+          {% endif %}
           <dd>{{ provider.telephone }}</dd>
           <dt class="app-list--description__label">Website</dt>
-          <dd>{{ provider.website | urlize }}</dd>
-          <dt class="app-list--description__label">Address</dt>
+          {% if provider.website %}
+            <dd>{{ provider.website | urlize }}</dd>
+            <dt class="app-list--description__label">Address</dt>
+          {% endif %}
           <dd>
             {% if provider.street_address_1 %}{{ provider.street_address_1 }}<br>{% endif %}
             {% if provider.street_address_2 %}{{ provider.street_address_2 }}<br>{% endif %}
