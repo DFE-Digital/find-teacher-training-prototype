@@ -1,19 +1,20 @@
-const got = require('got')
+const teacherTrainingModel = require('../models/teacher-training')
 
 module.exports = router => {
   router.get('/course/:providerCode/:courseCode', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { apiEndpoint, cycle } = req.session.data
+    const { cycle } = req.session.data
 
     try {
-      const { data, included } = await got(`${apiEndpoint}/recruitment_cycles/${cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json()
+      const courseResource = await teacherTrainingModel.getCourse(providerCode, courseCode)
 
-      const course = data.attributes
+      const course = courseResource.data.attributes
 
-      let provider = included.find(item => item.type === 'providers')
+      let provider = courseResource.included.find(item => item.type === 'providers')
       provider = provider.attributes
 
       // Email and website address
+      // https://github.com/DFE-Digital/teacher-training-api/issues/1686
       if (provider.website) {
         provider.website = `http://${provider.website.replace(/^https?:\/\//, '')}`
         provider.domain = new URL(provider.website).hostname
@@ -47,7 +48,6 @@ module.exports = router => {
 
       res.render('course', { course, provider })
     } catch (error) {
-      console.log(error.stack)
       res.render('error', {
         title: error.name,
         content: error.message

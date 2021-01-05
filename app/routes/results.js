@@ -1,5 +1,7 @@
-const got = require('got')
 const qs = require('qs')
+
+const teacherTrainingModel = require('../models/teacher-training')
+const locationModel = require('../models/location')
 const utils = require('../utils')()
 
 const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
@@ -20,8 +22,7 @@ module.exports = router => {
     const page = Number(req.query.page) || 1
     const perPage = 20
     const radius = 10
-    const { apiEndpoint, cycle, defaults, subjectOptions } = req.session.data
-    let request
+    const { defaults, subjectOptions } = req.session.data
 
     // Location
     const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
@@ -29,10 +30,9 @@ module.exports = router => {
     req.session.data.latitude = latitude
     req.session.data.longitude = longitude
 
-    const geo = await utils.reverseGeocode(latitude, longitude)
-    // const area = await utils.mapit(latitude, longitude)
-    const areaName = geo.city
-    const { state } = geo
+    // Location meta
+    const location = await locationModel.getPoint(latitude, longitude)
+    location.query = req.session.data.location
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -72,10 +72,8 @@ module.exports = router => {
     const vacancyItems = utils.vacancyItems(vacancy)
     req.session.data.vacancy = vacancy
 
-    const apiQueryParams = {
-      page,
-      per_page: perPage,
-      filter: {
+    try {
+      const CourseListResponse = await teacherTrainingModel.getCourses(page, perPage, {
         funding_type: salary,
         latitude,
         longitude,
@@ -85,25 +83,15 @@ module.exports = router => {
         send_courses: send,
         study_type: studyType.toString(),
         subjects: subjects.toString()
-      },
-      sort: 'provider.provider_name',
-      include: 'recruitment_cycle,provider,accredited_body'
-    }
-
-    try {
-      const apiQuery = qs.stringify(apiQueryParams)
-      request = `${apiEndpoint}/recruitment_cycles/${cycle}/courses/?${apiQuery}`
-      const { data, links, included } = await got(request, {
-        responseType: 'json',
-        resolveBodyOnly: true
       })
+      const { data, links, included } = CourseListResponse
 
       let courses = data
       if (courses.length > 0) {
         const providers = included.filter(include => include.type === 'providers')
 
         // Only show running and findable courses
-        // TODO: Implement filter in API call (feature request)
+        // https://github.com/DFE-Digital/teacher-training-api/issues/1694
         courses = courses.filter(course => course.attributes.running && course.attributes.findable)
 
         courses = courses.map(course => {
@@ -189,9 +177,9 @@ module.exports = router => {
       }
 
       res.render('results', {
-        areaName,
         googleMapsApiKey,
         latLong: [latitude, longitude],
+        location,
         pagination,
         radius,
         results,
@@ -202,7 +190,6 @@ module.exports = router => {
         salaryItems,
         send,
         selectedSubjects,
-        state,
         studyType,
         studyTypeItems,
         subjectItems,

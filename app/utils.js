@@ -26,18 +26,6 @@ module.exports = () => {
     }
   }
 
-  utils.mapit = async (lat, lon, type = 'TTW') => {
-    try {
-      const data = await got(`https://mapit.mysociety.org/point/4326/${lon},${lat}?api_key=${process.env.MAPIT_API_KEY}&type=${type}`).json()
-
-      const area = data[Object.keys(data)[0]]
-
-      return area
-    } catch (error) {
-      console.error('MapIt error', error)
-    }
-  }
-
   utils.reverseGeocode = async (lat, lon) => {
     try {
       const geoCodedLocation = await geocoder.reverse({ lat, lon })
@@ -56,7 +44,7 @@ module.exports = () => {
       value: option.value,
       text: option.text,
       label: { classes: 'govuk-label--s' },
-      hint: { text: options.showHintText ? filters.markdown(option.hint): false },
+      hint: { text: options.showHintText ? filters.markdown(option.hint) : false },
       checked: qualification ? qualification.includes(option.value) : false
     }))
   }
