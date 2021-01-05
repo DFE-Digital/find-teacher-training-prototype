@@ -117,12 +117,12 @@
 
       {% if course.train_with_us or course.accredited_body_code %}
         <section class="govuk-!-margin-bottom-8">
-          {% if course.train_with_us %}
+          {% if provider.train_with_us %}
             <h2 class="govuk-heading-l" id="about-the-provider">About the training provider</h2>
             {{ provider.train_with_us | markdown | safe }}
           {% endif %}
 
-          {% if course.accredited_body_code %}
+          {% if course.about_accredited_body %}
             <h3 class="govuk-heading-m" id="about-the-accredited-body">About the accredited body</h3>
             {{ course.about_accredited_body | markdown | safe }}
           {% endif %}
@@ -168,9 +168,7 @@
               <p class="govuk-body">The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic.toLocaleString() }}.</p>
             {% endif %}
 
-            {% if course.fee_details %}
-              {{ course.fee_details | markdown | safe }}
-            {% endif %}
+            {{ course.fee_details | markdown | safe }}
           {% endif %}
         {% endif %}
 
