@@ -15,37 +15,12 @@
         }) if error }}
 
         <h1 class="govuk-heading-l">{{ title }}</h1>
-
         <h2 class="govuk-heading-m">Choose a city or town</h2>
-        <div class="govuk-grid-row">
-          <ul class="govuk-grid-column-one-third govuk-list">
-            <li><a href="/subject?location=Birmingham">Birmingham</a></li>
-            <li><a href="/subject?location=Bradford">Bradford</a></li>
-            <li><a href="/subject?location=Brighton%20%38%20Hove">Brighton &#38; Hove</a></li>
-            <li><a href="/subject?location=Bristol">Bristol</a></li>
-            <li><a href="/subject?location=Cambridge">Cambridge</a></li>
-            <li><a href="/subject?location=Derby">Derby</a></li>
-            <li><a href="/subject?location=Hull">Hull</a></li>
-          </ul>
-          <ul class="govuk-grid-column-one-third govuk-list">
-            <li><a href="/subject?location=Leeds">Leeds</a></li>
-            <li><a href="/subject?location=Leicester">Leicester</a></li>
-            <li><a href="/subject?location=Liverpool">Liverpool</a></li>
-            <li><a href="/subject?location=London">London</a></li>
-            <li><a href="/subject?location=Manchester">Manchester</a></li>
-            <li><a href="/subject?location=Newcastle%20upon%20Tyne">Newcastle upon Tyne</a></li>
-            <li><a href="/subject?location=Northampton">Northampton</a></li>
-          </ul>
-          <ul class="govuk-grid-column-one-third govuk-list">
-            <li><a href="/subject?location=Norwich">Norwich</a></li>
-            <li><a href="/subject?location=Nottingham">Nottingham</a></li>
-            <li><a href="/subject?location=Oxford">Oxford</a></li>
-            <li><a href="/subject?location=Reading">Reading</a></li>
-            <li><a href="/subject?location=Sheffield">Sheffield</a></li>
-            <li><a href="/subject?location=Southampton">Southampton</a></li>
-            <li><a href="/subject?location=York">York</a></li>
-          </ul>
-        </div>
+        <ul class="govuk-grid-row govuk-list">
+        {% for area in data.areas | selectattr("showOnHomepage") %}
+          <li class="govuk-grid-column-one-third govuk-!-margin-bottom-1"><a href="/subject?location={{ area.shortName or area.name }}">{{ area.shortName or area.name }}</a></li>
+        {% endfor %}
+        </ul>
 
         <p class="govuk-hint">or</p>
 
