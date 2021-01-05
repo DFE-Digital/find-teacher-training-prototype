@@ -34,7 +34,7 @@ module.exports = (env) => {
    * @param {String} string Markdown
    */
   filters.markdown = (string, value) => {
-    if (string === undefined) {
+    if (!string) {
       return ''
     }
 
