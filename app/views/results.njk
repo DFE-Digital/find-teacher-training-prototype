@@ -1,15 +1,9 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Teacher training courses in " + location.name %}
+{% set title = "Teacher training courses" %}
 
 {% block content %}
-  <h1 class="govuk-heading-l govuk-!-margin-bottom-2">{{ title }}</h1>
-
-  {% if results | length > 0 %}
-    <p class="govuk-body-l">{{ resultsCount }} courses with training locations in the {{ location.name }} area</p>
-  {% else %}
-    <p class="govuk-body-l">There are no courses matching your search</p>
-  {% endif %}
+  <h1 class="govuk-heading-l">{{ title }}</h1>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
@@ -22,6 +16,8 @@
 
     <div class="govuk-grid-column-two-thirds">
       {% if results | length > 0 %}
+        <p class="govuk-body">{{ resultsCount }} courses with training locations in the {{ area.name }} travel area</p>
+
         <ul class="govuk-list search-results">
         {% for result in results %}
           <li>
@@ -31,16 +27,18 @@
         </ul>
         {{ appPagination(pagination) }}
       {% else %}
-        {% if location.country_name != "England" %}
+        {% if area.country_name != "England" %}
           <h2 class="govuk-heading-m">This service is for courses in England</h2>
-          {% if location.country_name == "Scotland" %}
+          {% if area.country_name == "Scotland" %}
             <p class="govuk-body"><a class="govuk-link" href="https://teachinscotland.scot/">Learn more about teacher training in Scotland</a></p>
-          {% elif location.country_name == "Wales" %}
+          {% elif area.country_name == "Wales" %}
             <p class="govuk-body"><a class="govuk-link" href="https://www.discoverteaching.wales/routes-into-teaching/">Learn more about teacher training in Wales</a></p>
-          {% elif location.country_name == "Northern Ireland" %}
+          {% elif area.country_name == "Northern Ireland" %}
             <p class="govuk-body"><a class="govuk-link" href="https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland">Learn more about teacher training in Northern Ireland</a></p>
           {% endif %}
         {% else %}
+          <p class="govuk-body">There are no courses matching your search</p>
+
           <p class="govuk-body">You can <a class="govuk-link" href="/start/">try another search</a>, for example by changing subject or location.</p>
         {% endif %}
       {% endif %}
