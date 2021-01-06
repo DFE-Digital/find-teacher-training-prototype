@@ -8,7 +8,7 @@
       <h4 class="govuk-heading-s filter-form__title">Location</h4>
       <ul class="filter-form__value--list">
         <li>
-          <p class="govuk-body govuk-!-margin-bottom-2">{{ area.name }}</p>
+          <p class="govuk-body govuk-!-margin-bottom-2">{{ location or area.name }}</p>
           <img src="https://maps.googleapis.com/maps/api/staticmap?key={{ googleMapsApiKey }}&amp;center={{ latLong }}&amp;zoom=10&amp;size=300x200&amp;scale=2&amp;markers={{ latLong }}" alt="Map showing {{ radius }} miles of {{ locationName }}" class="filter-form__map">
         </li>
       </ul>
