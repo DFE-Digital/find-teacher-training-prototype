@@ -1,4 +1,3 @@
-const got = require('got')
 const NodeGeocoder = require('node-geocoder')
 const data = require('./data/session-data-defaults')
 const filters = require('./filters')()
