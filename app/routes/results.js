@@ -25,14 +25,14 @@ module.exports = router => {
     const { defaults, subjectOptions } = req.session.data
 
     // Location
+    const location = req.session.data.location
     const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
     const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
     req.session.data.latitude = latitude
     req.session.data.longitude = longitude
 
-    // Location meta
-    const location = await locationModel.getPoint(latitude, longitude)
-    location.query = req.session.data.location
+    // Area metadata
+    const area = await locationModel.getPoint(latitude, longitude)
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -186,6 +186,7 @@ module.exports = router => {
       }
 
       res.render('results', {
+        area,
         googleMapsApiKey,
         latLong: [latitude, longitude],
         location,
