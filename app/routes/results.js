@@ -119,7 +119,9 @@ module.exports = router => {
             for await (const locationResource of LocationListResponse.data) {
               const { latitude, longitude } = locationResource.attributes
               const point = await locationModel.getPoint(latitude, longitude)
-              areas.push(point.name)
+              if (point) {
+                areas.push(point.name)
+              }
             }
           }
 
