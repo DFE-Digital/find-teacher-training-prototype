@@ -12,12 +12,10 @@ class CacheService {
   get (key, apiRequest) {
     const value = this.cache.get(key)
     if (value) {
-      console.log(`Fetching ${key} from cache`)
       return Promise.resolve(value)
     }
 
     return apiRequest().then((result) => {
-      console.log(`Fetching ${key} from API`)
       this.cache.set(key, result)
       return result
     })

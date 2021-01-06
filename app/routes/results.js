@@ -116,7 +116,6 @@ module.exports = router => {
           // Get catchment areas that locations lie within
           const areas = []
           if (LocationListResponse.data) {
-            console.log('LocationListResponse.data type is', typeof LocationListResponse.data)
             for await (const locationResource of LocationListResponse.data) {
               const { latitude, longitude } = locationResource.attributes
               const point = await locationModel.getPoint(latitude, longitude)
@@ -125,7 +124,8 @@ module.exports = router => {
           }
 
           // Remove duplicate catchment areas
-          const locations = [...new Set(areas)]
+          let locations = await Promise.all(areas)
+          locations = [...new Set(areas)]
 
           return {
             course,
@@ -134,21 +134,6 @@ module.exports = router => {
           }
         })
       }
-
-      // const getProviderGeo = async result => {
-      //   const { provider } = result
-      //   const { latitude, longitude } = provider
-      //   const geo = await utils.reverseGeocode(latitude, longitude)
-
-      //   // Replace location data retrived from API with geocoded data
-      //   provider.area = geo.city
-      //   provider.address = `${provider.name}, ${geo.streetName}, ${geo.city}`
-
-      //   return {
-      //     course: result.course,
-      //     provider
-      //   }
-      // }
 
       const getResults = async () => {
         return Promise.all(courses)
