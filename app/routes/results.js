@@ -49,22 +49,18 @@ module.exports = router => {
     req.session.data.salary = salary
 
     // Send
-    const send = (req.session.data.send === 'include') || (req.query.send === 'include') || (defaults.send === 'include')
+    const send = (req.session.data.send && req.session.data.send[0] === 'include') || (req.query.send && req.query.send[0] === 'include') || (defaults.send[0] === 'include')
+    const sendItems = utils.sendItems(send)
     req.session.data.send = send
 
     // Subject
     const subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
-    const subjectItems = utils.subjectGroupItems(subjects, {
-      send,
-      showHintText: false
-    })
+    const subjectItems = utils.subjectItems(subjects, { showHintText: false })
     req.session.data.subjects = subjects
 
     // Study type
     const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
-    const studyTypeItems = utils.studyTypeItems(studyType, {
-      showHintText: false
-    })
+    const studyTypeItems = utils.studyTypeItems(studyType, { showHintText: false })
     req.session.data.studyType = studyType
 
     // Vacancies
@@ -202,6 +198,7 @@ module.exports = router => {
         salary,
         salaryItems,
         send,
+        sendItems,
         selectedSubjects,
         studyType,
         studyTypeItems,

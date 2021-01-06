@@ -47,6 +47,21 @@
         fieldset: {
           legend: {
             classes: "govuk-fieldset__legend--s",
+            text: "Special educational needs"
+          }
+        },
+        name: "send",
+        items: sendItems
+      }) }}
+
+      {{ govukCheckboxes({
+        formGroup: {
+          classes: "app-filter__group"
+        },
+        classes: "govuk-checkboxes--small",
+        fieldset: {
+          legend: {
+            classes: "govuk-fieldset__legend--s",
             text: "Study type"
           }
         },

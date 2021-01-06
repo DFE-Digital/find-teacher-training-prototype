@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Find courses by subject" %}
+{% set title = "Select the subjects you want to teach" %}
 
 {% block pageNavigation %}
   {{ govukBackLink(backLink) }}
@@ -10,33 +10,46 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-l">{{ title }}</h1>
-      <p class="govuk-body">Select the subjects you want to teach.</p>
 
       <form action="/results">
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-          {% for item in items %}
+          {% for subject in subjectItems %}
             <div class="govuk-accordion__section">
               <div class="govuk-accordion__section-header">
                 <h2 class="govuk-accordion__section-heading">
                   <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
-                    {{ item.text }}
+                    {{ subject.text }}
                   </span>
                 </h2>
               </div>
               <div class="govuk-accordion__section-content">
-                {% if item.text == "Primary" %}
+                {% if subject.text == "Primary" %}
                   <p class="govuk-body">You can select primary courses with a specialist subject. You will focus on that subject with a view to leading and supporting other primary teachers.</p>
                   <p class="govuk-body">You will still teach all subjects across the primary national curriculum.</p>
                 {% endif %}
                 {{ govukCheckboxes({
                   name: "subjects",
-                  items: item.items
+                  items: subject.items
                 }) }}
               </div>
             </div>
           {% endfor %}
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
+                  Special educational needs and disability (SEND)
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              {{ govukCheckboxes({
+                name: "send",
+                items: sendItems
+              }) }}
+            </div>
+          </div>
         </div>
-
         {{ govukButton({
           text: "Find courses"
         }) }}

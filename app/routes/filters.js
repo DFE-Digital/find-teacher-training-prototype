@@ -37,13 +37,12 @@ module.exports = router => {
 
   // Subject/SEND
   router.get('/results/filters/subject', async (req, res) => {
-    const { send, subjects } = req.session.data
     res.render('filters/subject', {
       backLink,
-      items: utils.subjectGroupItems(subjects, {
-        send,
+      subjectItems: utils.subjectItems(req.session.data.subjects, {
         showHintText: true
-      })
+      }),
+      sendItems: utils.sendItems(req.session.data.send)
     })
   })
 

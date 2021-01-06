@@ -9,27 +9,11 @@ module.exports = {
     longitude: -0.1765,
     qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
     salary: 'salary,apprenticeship,fee',
-    send: 'exclude',
+    send: ['exclude'],
     studyType: ['full_time', 'part_time'],
     subjects: ['00'],
     vacancy: 'false'
   },
-  subjectGroups: [{
-    text: 'Primary',
-    value: 'primary'
-  }, {
-    text: 'Secondary',
-    value: 'secondary'
-  }, {
-    text: 'Secondary: Modern languages',
-    value: 'secondary_language'
-  }, {
-    text: 'Further education',
-    value: 'further_education'
-  }, {
-    text: 'Special educational needs and disability (SEND)',
-    value: 'send'
-  }],
   qualificationOptions: [{
     text: 'QTS only',
     hint: 'Qualified teacher status (QTS) allows you to teach in state schools in England and may allow you to teach in other parts of the UK.\n\nIt may also allow you to teach in the [EU and EEA](https://www.gov.uk/eu-eea), though this could change after 2020.\n\nIf you’re planning to teach overseas, you should always check what’s needed in the country you’d like to teach in.',
@@ -47,7 +31,7 @@ module.exports = {
     text: 'Courses with and without salary',
     value: 'salary,apprenticeship,fee'
   }, {
-    text: 'Only courses that come with a salary',
+    text: 'Only show courses that come with a salary',
     value: 'salary'
   }],
   studyTypeOptions: [{
@@ -58,6 +42,24 @@ module.exports = {
     text: 'Part time (18-24 months)',
     hint: 'You’ll usually spend 3 days a week on a part-time course',
     value: 'part_time'
+  }],
+  sendOptions: [{
+    text: 'Only show courses with a SEND specialism',
+    name: 'send',
+    value: ['include']
+  }],
+  subjectGroups: [{
+    text: 'Primary',
+    value: 'primary'
+  }, {
+    text: 'Secondary',
+    value: 'secondary'
+  }, {
+    text: 'Secondary: Modern languages',
+    value: 'secondary_language'
+  }, {
+    text: 'Further education',
+    value: 'further_education'
   }],
   subjectOptions: [{
     text: 'Primary',
@@ -241,14 +243,9 @@ module.exports = {
     text: 'Further education',
     type: 'further_education',
     value: '41'
-  }, {
-    text: 'Only show courses with a SEND specialism',
-    type: 'send',
-    name: 'send',
-    value: 'include'
   }],
   vacancyOptions: [{
-    text: 'Only courses with vacancies',
+    text: 'Only show courses with vacancies',
     value: 'true'
   }, {
     text: 'Courses with and without vacancies',

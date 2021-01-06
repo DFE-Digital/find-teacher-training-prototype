@@ -65,16 +65,25 @@ module.exports = () => {
     }))
   }
 
-  utils.subjectGroupItems = (subjects = [], options = {}) => {
+  utils.sendItems = send => {
+    return data.sendOptions.map(option => ({
+      name: 'send',
+      value: option.value,
+      text: option.text,
+      checked: send === true
+    }))
+  }
+
+  utils.subjectItems = (subjects = [], options = {}) => {
     return data.subjectGroups.map(group => ({
       text: group.text,
+      name: 'subjects',
       items: data.subjectOptions.filter(option => option.type === group.value).map(option => ({
         value: option.value,
-        id: option.name ? `subject-${option.name}` : `subject-${option.value}`,
-        name: option.name || 'subjects',
+        id: `subject-${option.value}`,
         text: option.text,
         hint: { text: options.showHintText ? option.hint : false },
-        checked: option.name === 'send' ? (options.send === true) : subjects.includes(option.value)
+        checked: subjects.includes(option.value)
       }))
     }))
   }
