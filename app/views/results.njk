@@ -16,7 +16,7 @@
 
     <div class="govuk-grid-column-two-thirds">
       {% if results | length > 0 %}
-        <p class="govuk-body">{{ resultsCount }} courses with training locations in the {{ area.name }} travel area</p>
+        <p class="govuk-body"><strong>{{ resultsCount }} courses</strong> with training locations in the {{ area.name }} travel area</p>
 
         <ul class="govuk-list search-results">
         {% for result in results %}
