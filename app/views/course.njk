@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title %}{{ course.name }} with {{ provider.name }}{% endset %}
+{% set title %}{{ course.name }} with {{ course.provider.name }}{% endset %}
 
 {% block pageNavigation %}
   {{ govukBackLink({
@@ -11,7 +11,7 @@
 
 {% block content %}
   <h1 class="govuk-heading-xl">
-    <span class="govuk-!-font-size-36">{{ provider.name }}</span><br />
+    <span class="govuk-!-font-size-36">{{ course.provider.name }}</span><br />
     {{ course.name }} ({{ course.code }})
   </h1>
 
@@ -20,23 +20,19 @@
   <dl class="app-list--description govuk-!-margin-bottom-8">
     {% if course.accredited_body_code %}
       <dt>Accredited body</dt>
-      <dd>{{ provider.name }}</dd>
+      <dd>{{ course.provider.name }}</dd>
     {% endif %}
     <dt>Financial support</dt>
     <dd>{{ course.funding_option }}</dd>
     <dt class="app-list--description__label">Qualification</dt>
     <dd>
-      {% if "pgce" in course.qualifications %}
-        {{ govukDetails({
-          summaryText: "PGCE with QTS",
-          html: data.qualificationOptions[1].hint | markdown | safe
-        }) }}
-      {% else %}
-        {{ govukDetails({
-          summaryText: "QTS",
-          html: data.qualificationOptions[0].hint | markdown | safe
-        }) }}
-      {% endif %}
+      {{ govukDetails({
+        summaryText: "PGCE with QTS",
+        html: data.qualificationOptions[1].hint | markdown | safe
+      } if "pgce" in course.qualifications else {
+        summaryText: "QTS",
+        html: data.qualificationOptions[0].hint | markdown | safe
+      }) }}
     </dd>
     <dt class="app-list--description__label">Course length</dt>
     <dd>{{ course.length }}</dd>
@@ -44,8 +40,10 @@
     <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
     <dt class="app-list--description__label">Date course starts</dt>
     <dd>{{ course.start_date }}</dd>
-    <dt class="app-list--description__label">Website</dt>
-    <dd><a href="{{ provider.website }}">{{ provider.website }}</a></dd>
+    {% if course.provider.website %}
+      <dt class="app-list--description__label">Website</dt>
+      <dd><a href="{{ course.provider.website }}">{{ course.provider.website }}</a></dd>
+    {% endif %}
   </dl>
 
   <div class="govuk-grid-row">
@@ -82,7 +80,7 @@
           {{ appAdvice({
             title: "Where you will train",
             html: "Most of your time will be spent in the classroom with experienced teachers.\n\nYou’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to." | markdown
-          } if provider.provider_type != "university" else {
+          } if course.provider.provider_type != "university" else {
             title: "Where you will train",
             html: "You’ll be placed in schools for most of your course.\n\nYou can’t pick which schools you want to be in, but your university will try to place you in schools you can commute to.\n\nUniversities can work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities." | markdown
           }) }}
@@ -117,9 +115,9 @@
 
       {% if course.train_with_us or course.accredited_body_code %}
         <section class="govuk-!-margin-bottom-8">
-          {% if provider.train_with_us %}
+          {% if course.provider.train_with_us %}
             <h2 class="govuk-heading-l" id="about-the-provider">About the training provider</h2>
-            {{ provider.train_with_us | markdown | safe }}
+            {{ course.provider.train_with_us | markdown | safe }}
           {% endif %}
 
           {% if course.about_accredited_body %}
@@ -200,10 +198,10 @@
         </section>
       {% endif %}
 
-      {% if provider.train_with_disability %}
+      {% if course.provider.train_with_disability %}
         <section class="govuk-!-margin-bottom-8">
           <h2 class="govuk-heading-l" id="access-needs">Training with disabilities and other&nbsp;needs</h2>
-          {{ provider.train_with_disability | markdown | safe }}
+          {{ course.provider.train_with_disability | markdown | safe }}
         </section>
       {% endif %}
 
@@ -211,22 +209,22 @@
         <h2 class="govuk-heading-l" id="contact">Contact details</h2>
         <dl class="app-list--description">
           <dt class="app-list--description__label">Email</dt>
-          {% if provider.email %}
-            <dd>{{ provider.email | urlize }}</dd>
+          {% if course.provider.email %}
+            <dd>{{ course.provider.email | urlize }}</dd>
             <dt class="app-list--description__label">Telephone</dt>
           {% endif %}
-          <dd>{{ provider.telephone }}</dd>
+          <dd>{{ course.provider.telephone }}</dd>
           <dt class="app-list--description__label">Website</dt>
-          {% if provider.website %}
-            <dd>{{ provider.website | urlize }}</dd>
+          {% if course.provider.website %}
+            <dd>{{ course.provider.website | urlize }}</dd>
             <dt class="app-list--description__label">Address</dt>
           {% endif %}
           <dd>
-            {% if provider.street_address_1 %}{{ provider.street_address_1 }}<br>{% endif %}
-            {% if provider.street_address_2 %}{{ provider.street_address_2 }}<br>{% endif %}
-            {% if provider.city %}{{ provider.city }}<br>{% endif %}
-            {% if provider.county %}{{ provider.county }}<br>{% endif %}
-            {% if provider.postcode %}{{ provider.postcode }}{% endif %}
+            {% if course.provider.street_address_1 %}{{ course.provider.street_address_1 }}<br>{% endif %}
+            {% if course.provider.street_address_2 %}{{ course.provider.street_address_2 }}<br>{% endif %}
+            {% if course.provider.city %}{{ course.provider.city }}<br>{% endif %}
+            {% if course.provider.county %}{{ course.provider.county }}<br>{% endif %}
+            {% if course.provider.postcode %}{{ course.provider.postcode }}{% endif %}
           </dd>
         </dl>
       </section>
@@ -244,7 +242,7 @@
 
       <section id="apply">
         {{ govukButton({
-          href: "/apply/" + provider.code + "/" + course.code,
+          href: "/apply/" + course.provider.code + "/" + course.code,
           text: "Apply for this course",
           isStartButton: true
         }) }}
