@@ -16,17 +16,18 @@ const teacherTrainingModel = {
       sort: 'provider.provider_name'
     }
 
-    const key = `courses_${page}-${perPage}-${JSON.stringify(query)}`
-    return cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
+    const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
+    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
+    return courseListResponse
   },
 
   async getCourse (providerCode, courseCode) {
     try {
-      const key = `course_${data.cycle}-${providerCode}-${courseCode}`
-      const courseResource = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json())
-      const providerResource = courseResource.included.find(item => item.type === 'providers')
+      const key = `courseSingleResponse_${data.cycle}-${providerCode}-${courseCode}`
+      const courseSingleResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json())
+      const providerResource = courseSingleResponse.included.find(item => item.type === 'providers')
 
-      const course = courseResource.data.attributes
+      const course = courseSingleResponse.data.attributes
       const provider = providerResource.attributes
 
       // Email and website address
@@ -70,8 +71,9 @@ const teacherTrainingModel = {
   },
 
   async getCourseLocations (providerCode, courseCode) {
-    const key = `course_${data.cycle}-${providerCode}-${courseCode}`
-    return cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json())
+    const key = `locationListResponse_${data.cycle}-${providerCode}-${courseCode}`
+    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json())
+    return locationListResponse
   }
 }
 
