@@ -10,10 +10,11 @@ module.exports = router => {
   router.post('/results', async (req, res) => {
     // Convert free text location to latitude/lon
     const { location } = req.session.data
-    const { latitude, longitude } = await utils.geocode(location)
-
-    req.session.data.latitude = latitude
-    req.session.data.longitude = longitude
+    if (location) {
+      const { latitude, longitude } = await utils.geocode(location)
+      req.session.data.latitude = latitude
+      req.session.data.longitude = longitude
+    }
 
     res.redirect('/results')
   })
@@ -23,6 +24,7 @@ module.exports = router => {
     const perPage = 20
     const radius = 10
     const { defaults, subjectOptions } = req.session.data
+    const { providerCode } = req.query || req.session.data
 
     // Location
     const location = req.session.data.location
@@ -55,12 +57,18 @@ module.exports = router => {
 
     // Subject
     const subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
-    const subjectItems = utils.subjectItems(subjects, { showHintText: false })
+    const subjectItems = utils.subjectItems(subjects, {
+      showHintText: false,
+      checkAll: providerCode && subjects.length === 0
+    })
     req.session.data.subjects = subjects
+    // req.session.data.checkAllSubjects = providerCode && subjects.length === 0
 
     // Study type
     const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
-    const studyTypeItems = utils.studyTypeItems(studyType, { showHintText: false })
+    const studyTypeItems = utils.studyTypeItems(studyType, {
+      showHintText: false
+    })
     req.session.data.studyType = studyType
 
     // Vacancies
@@ -68,18 +76,26 @@ module.exports = router => {
     const vacancyItems = utils.vacancyItems(vacancy)
     req.session.data.vacancy = vacancy
 
+    // API query params
+    const filter = {
+      funding_type: salary,
+      latitude,
+      longitude,
+      has_vacancies: vacancy,
+      qualification: qualification.toString(),
+      radius,
+      send_courses: send,
+      study_type: studyType.toString(),
+      subjects: subjects.toString()
+    }
+
     try {
-      const CourseListResponse = await teacherTrainingModel.getCourses(page, perPage, {
-        funding_type: salary,
-        latitude,
-        longitude,
-        has_vacancies: vacancy,
-        qualification: qualification.toString(),
-        radius,
-        send_courses: send,
-        study_type: studyType.toString(),
-        subjects: subjects.toString()
-      })
+      let CourseListResponse
+      if (providerCode) {
+        CourseListResponse = await teacherTrainingModel.getProviderCourses(page, perPage, filter, providerCode)
+      } else {
+        CourseListResponse = await teacherTrainingModel.getCourses(page, perPage, filter)
+      }
       const { data, links, included } = CourseListResponse
 
       let courses = data
@@ -184,6 +200,14 @@ module.exports = router => {
           : false
       }
 
+      let provider
+      if (providerCode) {
+        provider = {
+          code: providerCode,
+          name: results[0].provider.name
+        }
+      }
+
       res.render('results', {
         area,
         googleMapsApiKey,
@@ -193,6 +217,7 @@ module.exports = router => {
         radius,
         results,
         resultsCount,
+        provider,
         qualification,
         qualificationItems,
         salary,

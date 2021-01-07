@@ -83,7 +83,7 @@ module.exports = () => {
         id: `subject-${option.value}`,
         text: option.text,
         hint: { text: options.showHintText ? option.hint : false },
-        checked: subjects.includes(option.value)
+        checked: subjects.includes(option.value) || options.checkAll === true
       }))
     }))
   }
