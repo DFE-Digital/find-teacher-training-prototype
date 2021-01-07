@@ -114,7 +114,7 @@ module.exports = router => {
           const LocationListResponse = await teacherTrainingModel.getCourseLocations(provider.code, course.code)
 
           // Get catchment areas that locations lie within
-          const areas = []
+          const areas = [area.name]
           if (LocationListResponse.data) {
             for await (const locationResource of LocationListResponse.data) {
               const { latitude, longitude } = locationResource.attributes
