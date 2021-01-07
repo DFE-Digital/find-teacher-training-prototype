@@ -45,7 +45,7 @@ module.exports = router => {
   })
 
   router.get('/subject', async (req, res) => {
-    const { location, send, subjects } = req.session.data
+    const { location, subjects } = req.session.data
 
     if (location) {
       const { latitude, longitude } = await utils.geocode(location)
