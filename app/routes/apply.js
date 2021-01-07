@@ -1,38 +1,39 @@
 const teacherTrainingModel = require('../models/teacher-training')
 
 module.exports = router => {
-  router.get('/apply/:providerCode/:courseCode', async (req, res) => {
+  router.get('/course/:providerCode/:courseCode/apply', async (req, res) => {
     const { providerCode, courseCode } = req.params
 
     try {
-      const courseResource = await teacherTrainingModel.getCourse(providerCode, courseCode)
+      const course = await teacherTrainingModel.getCourse(providerCode, courseCode)
 
       res.render('apply/index', {
         backLink: {
           href: `/course/${providerCode}/${courseCode}`
         },
-        course: courseResource.data.attributes,
+        course,
         provider: {
           code: providerCode
         }
       })
     } catch (error) {
+      console.log('error', error)
       res.render('apply/404')
     }
   })
 
-  router.post('/apply/:providerCode/:courseCode/route', async (req, res) => {
+  router.post('/course/:providerCode/:courseCode/apply-route', async (req, res) => {
     const { providerCode, courseCode } = req.params
     const { route } = req.session.data
 
     if (route === 'ucas') {
-      res.redirect(`/apply/${providerCode}/${courseCode}/locations`)
+      res.redirect(`/course/${providerCode}/${courseCode}/apply/ucas`)
     } else {
       res.redirect(`https://www.apply-for-teacher-training.service.gov.uk/candidate/account?providerCode=${providerCode}&courseCode=${courseCode}`)
     }
   })
 
-  router.get('/apply/:providerCode/:courseCode/locations', async (req, res) => {
+  router.get('/course/:providerCode/:courseCode/apply/ucas', async (req, res) => {
     const { providerCode, courseCode } = req.params
     const { map } = req.query
 
@@ -76,7 +77,7 @@ module.exports = router => {
     }
   })
 
-  router.get('/apply/:providerCode/:courseCode/providers', async (req, res) => {
+  router.get('/course/:providerCode/:courseCode/providers', async (req, res) => {
     const { providerCode, courseCode } = req.params
 
     res.render('apply/providers', {
