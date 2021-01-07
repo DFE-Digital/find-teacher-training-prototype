@@ -9,5 +9,3 @@ public
 node_modules/*
 .tmuxp.*
 package-lock.json
-courses-clean.json
-*-enrichment.csv
