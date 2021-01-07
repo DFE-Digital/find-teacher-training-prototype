@@ -65,7 +65,7 @@ module.exports = router => {
 
       res.render('apply/locations', {
         backLink: {
-          href: `/apply/${providerCode}/${courseCode}`
+          href: `/course/${providerCode}/${courseCode}/apply`
         },
         course,
         provider,
