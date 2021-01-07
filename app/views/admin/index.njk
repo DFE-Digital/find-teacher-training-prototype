@@ -1,0 +1,15 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Prototype admin" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">{{ title }}</h1>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/admin/clear-data">Clear data</a></li>
+        <li><a href="/admin/feature-flags">View feature flags</a></li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

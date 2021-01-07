@@ -1,0 +1,33 @@
+{% extends "_layouts/default.njk" %}
+
+{% set parent = "Prototype admin" %}
+{% set title = "Feature flags" %}
+
+{% block pageNavigation %}
+  {{ govukBackLink({
+    href: "/admin"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">{{ title }}</h1>
+      {% set rows = [] %}
+      {% for flag, value in data.flags %}
+        {% set result = rows.push({
+          key: {
+            classes: "govuk-!-width-three-quarters",
+            html: "<code>" + flag + "</code>"
+          },
+          value: {
+            html: "<code>" + value + "</code>"
+          }
+        }) %}
+      {% endfor %}
+      {{ govukSummaryList({
+        rows: rows
+      }) }}
+    </div>
+  </div>
+{% endblock %}
