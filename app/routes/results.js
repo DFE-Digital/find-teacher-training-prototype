@@ -127,6 +127,7 @@ module.exports = router => {
 
           // Remove duplicate catchment areas
           let locations = await Promise.all(areas)
+          locations = areas.sort()
           locations = [...new Set(areas)]
 
           return {
