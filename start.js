@@ -3,34 +3,7 @@ const path = require('path')
 const fs = require('fs')
 
 checkFiles()
-
-// Local dependencies
-const usageData = require('./lib/usage_data')
-
-// Get usageDataConfig from file, if exists
-const usageDataConfig = usageData.getUsageDataConfig()
-
-if (usageDataConfig.collectUsageData === undefined) {
-  // No recorded answer, so ask for permission
-  const promptPromise = usageData.askForUsageDataPermission()
-  promptPromise.then(function (permissionGranted) {
-    usageDataConfig.collectUsageData = permissionGranted
-    usageData.setUsageDataConfig(usageDataConfig)
-
-    if (permissionGranted) {
-      usageData.startTracking(usageDataConfig)
-    }
-
-    runGulp()
-  })
-} else if (usageDataConfig.collectUsageData === true) {
-  // Opted in
-  usageData.startTracking(usageDataConfig)
-  runGulp()
-} else {
-  // Opted out
-  runGulp()
-}
+runGulp()
 
 // Warn if node_modules folder doesn't exist
 function checkFiles () {
