@@ -21,6 +21,20 @@ const teacherTrainingModel = {
     return courseListResponse
   },
 
+  async getProviderCourses (page, perPage, filter, providerCode) {
+    const query = {
+      filter,
+      include: 'provider,accredited_body',
+      page,
+      per_page: perPage,
+      sort: 'provider.provider_name'
+    }
+
+    const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
+    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/?${qs.stringify(query)}`).json())
+    return courseListResponse
+  },
+
   async getCourse (providerCode, courseCode) {
     try {
       const key = `courseSingleResponse_${data.cycle}-${providerCode}-${courseCode}`

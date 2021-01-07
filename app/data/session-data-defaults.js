@@ -11,7 +11,7 @@ module.exports = {
     salary: 'salary,apprenticeship,fee',
     send: ['exclude'],
     studyType: ['full_time', 'part_time'],
-    subjects: ['00'],
+    subjects: [],
     vacancy: 'false'
   },
   qualificationOptions: [{
