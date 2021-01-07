@@ -26,7 +26,7 @@
 {% endset %}
 
 {% block pageNavigation %}
-  {{ govukBackLink(backLink) }}
+  {{ govukBackLink(backLink) if backLink }}
 {% endblock %}
 
 {% block content %}

@@ -15,7 +15,7 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <form action="/apply/{{ provider.code }}/{{ course.code }}/route" method="post">
+      <form action="/course/{{ provider.code }}/{{ course.code }}/apply-route" method="post">
         <h1 class="govuk-heading-l">
           <span class="govuk-caption-l">{{ parent }}</span>
           {{ title }}
@@ -23,7 +23,7 @@
 
         <p class="govuk-body">The course you’ve chosen is available through a new GOV.UK service called {{ serviceName }}.</p>
         <p class="govuk-body">This will eventually replace UCAS as the way candidates apply for all teacher training. However, for now, the service is limited to certain providers.</p>
-        <p class="govuk-body"><a href="/apply/{{ provider.code }}/{{ course.code }}/providers">See a list of available training providers and courses</a></p>
+        <p class="govuk-body"><a href="/providers?referrer=/course/{{ provider.code }}/{{ course.code }}/apply">See a list of available training providers and courses</a></p>
 
         {{ govukRadios({
           idPrefix: "route",
