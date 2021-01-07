@@ -1,0 +1,28 @@
+{% extends "_layouts/default.njk" %}
+
+{% set parent = "Prototype admin" %}
+{% set title = "Clear data?" %}
+
+{% block pageNavigation %}
+  {{ govukBackLink({
+    href: "/admin"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">{{ title }}</h1>
+        {{ govukWarningText({
+          text: "This will clear all of the data entered in this session",
+          iconFallbackText: "Warning"
+        }) }}
+
+        {{ govukButton({
+          text: "Clear the data"
+        }) }}
+      </div>
+    </div>
+  </form>
+{% endblock %}
