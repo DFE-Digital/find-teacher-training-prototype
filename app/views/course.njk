@@ -52,6 +52,7 @@
         <h2 class="govuk-heading-m">Contents</h2>
         <ul class="govuk-list app-list--dash">
           <li><a href="#about">About the course</a></li>
+          <li><a href="#school-placements">School placements</a></li>
           <li><a href="#entry-requirements">Entry requirements</a></li>
           {% if course.train_with_us or course.accredited_body_code %}
             <li><a href="#about-the-provider">About the training provider</a></li>
@@ -73,20 +74,20 @@
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="about">About the course</h2>
         {{ course.about_course | markdown | safe }}
+      </section>
 
-        {% if course.how_school_placements_work %}
-          <h3 class="govuk-heading-m" id="school-placements">School placements</h3>
+      <section class="govuk-!-margin-bottom-8">
+        <h2 class="govuk-heading-l" id="school-placements">School placements</h2>
 
-          {{ appAdvice({
-            title: "Where you will train",
-            html: "Most of your time will be spent in the classroom with experienced teachers.\n\nYou’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to." | markdown
-          } if course.provider.provider_type != "university" else {
-            title: "Where you will train",
-            html: "You’ll be placed in schools for most of your course.\n\nYou can’t pick which schools you want to be in, but your university will try to place you in schools you can commute to.\n\nUniversities can work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities." | markdown
-          }) }}
+        {{ appAdvice({
+          title: "Where you will train",
+          html: "Most of your time will be spent in the classroom with experienced teachers.\n\nYou’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to." | markdown
+        } if course.provider.provider_type != "university" else {
+          title: "Where you will train",
+          html: "You’ll be placed in schools for most of your course.\n\nYou can’t pick which schools you want to be in, but your university will try to place you in schools you can commute to.\n\nUniversities can work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities." | markdown
+        }) }}
 
-          {{ course.how_school_placements_work | markdown | safe }}
-        {% endif %}
+        {{ course.how_school_placements_work | markdown | safe }}
       </section>
 
       <section class="govuk-!-margin-bottom-8">
