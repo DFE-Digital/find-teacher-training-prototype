@@ -139,6 +139,21 @@
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="fees-and-financial-support">Fees and financial support</h3>
 
+        {% if course.salaried %}
+          {% set financialSupportHtml %}{% include "_includes/course/salaried.md" %}{% endset %}
+        {% elif course.bursary_only %}
+          {% set financialSupportHtml %}{% include "_includes/course/bursary.md" %}{% endset %}
+        {% elif course.has_scholarship_and_bursary %}
+          {% set financialSupportHtml %}{% include "_includes/course/bursary_and_scholarship.md" %}{% endset %}
+        {% else %}
+          {% set financialSupportHtml %}{% include "_includes/course/loan.md" %}{% endset %}
+        {% endif %}
+
+        {{ appAdvice({
+          title: "Financial support",
+          html: financialSupportHtml | trim | markdown
+        }) }}
+
         {% if course.has_fees %}
           {% if course.fee_domestic %}
             {% if course.fee_domestic and course.fee_international %}
@@ -170,21 +185,6 @@
             {{ course.fee_details | markdown | safe }}
           {% endif %}
         {% endif %}
-
-        {% if course.salaried %}
-          {% set financialSupportHtml %}{% include "_includes/course/salaried.md" %}{% endset %}
-        {% elif course.bursary_only %}
-          {% set financialSupportHtml %}{% include "_includes/course/bursary.md" %}{% endset %}
-        {% elif course.has_scholarship_and_bursary %}
-          {% set financialSupportHtml %}{% include "_includes/course/bursary_and_scholarship.md" %}{% endset %}
-        {% else %}
-          {% set financialSupportHtml %}{% include "_includes/course/loan.md" %}{% endset %}
-        {% endif %}
-
-        {{ appAdvice({
-          title: "Financial support",
-          html: financialSupportHtml | trim | markdown
-        }) }}
 
         {% if course.financial_support %}
           <h3 class="govuk-heading-m" id="financial-support-from-the-provider">Financial support from the training provider</h3>
