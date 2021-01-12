@@ -38,6 +38,20 @@ module.exports = () => {
     return (typeof item === 'string') ? Array(item) : item
   }
 
+  utils.londonBoroughItems = (londonBorough, options = {}) => {
+    let { londonBoroughOptions } = data
+
+    if (options.regionFilter) {
+      londonBoroughOptions = londonBoroughOptions.filter(borough => borough.region === options.regionFilter)
+    }
+
+    return londonBoroughOptions.map(option => ({
+      value: option.value,
+      text: option.text,
+      checked: londonBorough ? londonBorough.includes(option.value) : false
+    }))
+  }
+
   utils.qualificationItems = (qualification, options = {}) => {
     return data.qualificationOptions.map(option => ({
       value: option.value,

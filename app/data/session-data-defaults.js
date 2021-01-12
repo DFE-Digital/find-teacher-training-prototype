@@ -7,6 +7,7 @@ module.exports = {
   defaults: {
     latitude: 50.8375,
     longitude: -0.1765,
+    londonBorough: [],
     qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
     salary: 'salary,apprenticeship,fee',
     send: ['exclude'],
@@ -14,6 +15,155 @@ module.exports = {
     subjects: [],
     vacancy: 'true'
   },
+  londonSubRegions: [{
+    text: 'Central London',
+    value: 'central'
+  }, {
+    text: 'East London',
+    value: 'east'
+  }, {
+    text: 'North London',
+    value: 'north'
+  }, {
+    text: 'South London',
+    value: 'south'
+  }, {
+    text: 'West London',
+    value: 'west'
+  }],
+  londonBoroughOptions: [{
+    text: 'Barking and Dagenham',
+    value: 'BDG',
+    region: 'east'
+  }, {
+    text: 'Barnet',
+    value: 'BNE',
+    region: 'north'
+  }, {
+    text: 'Bexley',
+    value: 'BEX',
+    region: 'east'
+  }, {
+    text: 'Brent',
+    value: 'BEN',
+    region: 'west'
+  }, {
+    text: 'Bromley',
+    value: 'BRY',
+    region: 'south'
+  }, {
+    text: 'Camden',
+    value: 'CMD',
+    region: 'central'
+  }, {
+    text: 'City of London',
+    value: 'LND',
+    region: 'central'
+  }, {
+    text: 'Croydon',
+    value: 'CRY',
+    region: 'south'
+  }, {
+    text: 'Ealing',
+    value: 'EAL',
+    region: 'west'
+  }, {
+    text: 'Enfield',
+    value: 'ENF',
+    region: 'north'
+  }, {
+    text: 'Greenwich',
+    value: 'GRE',
+    region: 'east'
+  }, {
+    text: 'Hackney',
+    value: 'HCK',
+    region: 'east'
+  }, {
+    text: 'Hammersmith and Fulham',
+    value: 'HMF',
+    region: 'west'
+  }, {
+    text: 'Haringey',
+    value: 'HRY',
+    region: 'north'
+  }, {
+    text: 'Harrow',
+    value: 'HRW',
+    region: 'west'
+  }, {
+    text: 'Havering',
+    value: 'HAV',
+    region: 'east'
+  }, {
+    text: 'Hillingdon',
+    value: 'HIL',
+    region: 'west'
+  }, {
+    text: 'Hounslow',
+    value: 'HNS',
+    region: 'west'
+  }, {
+    text: 'Islington',
+    value: 'ISL',
+    region: 'central'
+  }, {
+    text: 'Kensington and Chelsea',
+    value: 'KEC',
+    region: 'central'
+  }, {
+    text: 'Kingston upon Thames',
+    value: 'KTT',
+    region: 'south'
+  }, {
+    text: 'Lambeth',
+    value: 'LBH',
+    region: 'central'
+  }, {
+    text: 'Lewisham',
+    value: 'LEW',
+    region: 'east'
+  }, {
+    text: 'Merton',
+    value: 'MRT',
+    region: 'south'
+  }, {
+    text: 'Newham',
+    value: 'NWM',
+    region: 'east'
+  }, {
+    text: 'Redbridge',
+    value: 'RDB',
+    region: 'east'
+  }, {
+    text: 'Richmond upon Thames',
+    value: 'RIC',
+    region: 'west'
+  }, {
+    text: 'Southwark',
+    value: 'SWK',
+    region: 'central'
+  }, {
+    text: 'Sutton',
+    value: 'STN',
+    region: 'south'
+  }, {
+    text: 'Tower Hamlets',
+    value: 'TWH',
+    region: 'east'
+  }, {
+    text: 'Waltham Forest',
+    value: 'WFT',
+    region: 'east'
+  }, {
+    text: 'Wandsworth',
+    value: 'WND',
+    region: 'south'
+  }, {
+    text: 'Westminster',
+    value: 'WSM',
+    region: 'central'
+  }],
   qualificationOptions: [{
     text: 'QTS only',
     hint: 'Qualified teacher status (QTS) allows you to teach in state schools in England and may allow you to teach in other parts of the UK.\n\nIt may also allow you to teach in the [EU and EEA](https://www.gov.uk/eu-eea), though this could change after 2020.\n\nIf you’re planning to teach overseas, you should always check what’s needed in the country you’d like to teach in.',

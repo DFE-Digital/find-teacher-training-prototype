@@ -8,15 +8,17 @@ const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 
 module.exports = router => {
   router.post('/results', async (req, res) => {
-    // Convert free text location to latitude/lon
-    const { location } = req.session.data
-    if (location) {
-      const { latitude, longitude } = await utils.geocode(location)
-      req.session.data.latitude = latitude
-      req.session.data.longitude = longitude
-    }
+    // Convert free text location to latitude/longitude
+    const { latitude, longitude } = await utils.geocode(req.session.data.location)
+    req.session.data.latitude = latitude
+    req.session.data.longitude = longitude
 
-    res.redirect('/results')
+    // Get area name from latitude/longitude
+    const area = await locationModel.getPoint(latitude, longitude)
+    req.session.data.londonBorough = area.codes['local-authority-eng']
+
+    // Redirect to London search filter if in London TTW area
+    res.redirect(area.type === 'LBO' ? '/results/filters/london' : '/results')
   })
 
   router.get('/results', async (req, res) => {
@@ -35,6 +37,11 @@ module.exports = router => {
 
     // Area metadata
     const area = await locationModel.getPoint(latitude, longitude)
+
+    // London boroughs
+    const londonBorough = utils.toArray(req.session.data.londonBorough || req.query.londonBorough || defaults.londonBorough)
+    const londonBoroughItems = utils.londonBoroughItems(londonBorough).filter(item => item.checked === true)
+    req.session.data.londonBorough = londonBorough
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -139,8 +146,8 @@ module.exports = router => {
 
           // Remove duplicate catchment areas
           let locations = await Promise.all(areas)
-          locations = areas.sort()
-          locations = [...new Set(areas)]
+          locations = areas.map(area => area.replace(/\s(City|Borough)\sCouncil|Corporation/, '')).sort()
+          locations = [...new Set(locations)]
 
           return {
             course,
@@ -151,7 +158,12 @@ module.exports = router => {
       }
 
       const getResults = async () => {
-        return Promise.all(courses)
+        const results = await Promise.all(courses)
+        const selectedTravelAreas = [area.name]
+        const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
+        const selectedAreas = selectedTravelAreas.concat(selectedLondonBoroughs)
+
+        return results.filter(result => result.locations.some(location => selectedAreas.includes(location)))
       }
 
       const results = await getResults()
@@ -213,6 +225,7 @@ module.exports = router => {
         googleMapsApiKey,
         latLong: [latitude, longitude],
         location,
+        londonBoroughItems,
         pagination,
         radius,
         results,

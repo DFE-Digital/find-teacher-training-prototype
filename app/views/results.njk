@@ -26,7 +26,13 @@
         {% if provider %}
           <p class="govuk-body"><strong>{{ resultsCount }} courses</strong></p>
         {% else %}
-          <p class="govuk-body"><strong>{{ resultsCount }} courses</strong> with training locations in the {{ area.name }} travel area</p>
+          {% if location == "London" and londonBoroughItems.length > 0 %}
+            <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London borough{{ "s" if londonBoroughItems.length > 1 }} of {{ londonBoroughItems | join(", ", "text") }}. <a href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
+          {% elif location == "London" and londonBoroughItems.length == 0 %}
+            <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London travel area. <a href="/results/filters/london">Select London boroughs</a></p>
+          {% else %}
+            <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the {{ area.name }} travel area</p>
+          {% endif %}
         {% endif %}
 
         <ul class="govuk-list search-results">
