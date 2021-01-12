@@ -12,7 +12,7 @@ module.exports = {
     send: ['exclude'],
     studyType: ['full_time', 'part_time'],
     subjects: [],
-    vacancy: 'false'
+    vacancy: 'true'
   },
   qualificationOptions: [{
     text: 'QTS only',
