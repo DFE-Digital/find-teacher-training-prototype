@@ -1,0 +1,68 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Where in London do you want to train?" %}
+
+{% block pageNavigation %}
+  {{ govukBackLink(backLink) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">{{ title }}</h1>
+
+      <form action="/london?next={{ next }}" method="post">
+        {% set checkedItems = items.all | selectattr("checked") %}
+        {% set uncheckedItems = items.all | rejectattr("checked") %}
+        {% if checkedItems.length > 0 %}
+          {{ govukCheckboxes({
+            fieldset: {
+              legend: {
+                classes: "govuk-fieldset__legend--m",
+                text: "Selected London boroughs"
+              }
+            },
+            name: "londonBorough",
+            items: items.all | selectattr("checked")
+          }) }}
+
+          {% for region in data.londonSubRegions %}
+            {{ govukCheckboxes({
+              fieldset: {
+                legend: {
+                  classes: "govuk-fieldset__legend--m",
+                  text: region.text
+                }
+              },
+              name: "londonBorough",
+              items: items[region.value] | rejectattr("checked")
+            }) }}
+          {% endfor %}
+        {% else %}
+          {% for region in data.londonSubRegions %}
+            {{ govukCheckboxes({
+              fieldset: {
+                legend: {
+                  classes: "govuk-fieldset__legend--m",
+                  text: region.text
+                }
+              },
+              name: "londonBorough",
+              items: items[region.value]
+            }) }}
+          {% endfor %}
+        {% endif %}
+
+        {{ govukInput({
+          type: "hidden",
+          name: "location",
+          value: "London"
+        }) }}
+
+        {{ govukButton({
+          text: "Continue" if startFlow else "Find courses"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

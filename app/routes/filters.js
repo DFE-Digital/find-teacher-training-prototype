@@ -11,6 +11,22 @@ module.exports = router => {
     res.render('filters/location', { backLink })
   })
 
+  // London
+  router.get('/results/filters/london', (req, res) => {
+    res.render('filters/london', {
+      backLink,
+      next: '/results',
+      items: {
+        all: utils.londonBoroughItems(req.session.data.londonBorough),
+        central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central' }),
+        east: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'east' }),
+        north: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'north' }),
+        south: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'south' }),
+        west: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'west' })
+      }
+    })
+  })
+
   // Qualification
   router.get('/results/filters/qualification', (req, res) => {
     res.render('filters/qualification', {
