@@ -81,10 +81,10 @@
 
         {{ appAdvice({
           title: "Where you will train",
-          html: "Most of your time will be spent in the classroom with experienced teachers.\n\nYou’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to." | markdown
+          html: ("This course has placement schools in " + (placementAreas | formatList) + ". Most of your time will be spent in the classroom with experienced teachers.\n\nYou’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to.") | markdown
         } if course.provider.provider_type != "university" else {
           title: "Where you will train",
-          html: "You’ll be placed in schools for most of your course.\n\nYou can’t pick which schools you want to be in, but your university will try to place you in schools you can commute to.\n\nUniversities can work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities." | markdown
+          html: ("You’ll be placed in schools for most of your course. This university is based in " + (placementAreas | formatList) + ", and your school placements will be within commuting distance.\n\nYou can’t pick which schools you want to be in, but your university will try to take your journey time into consideration.\n\nUniversities can work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities.") | markdown
         }) }}
 
         {{ course.how_school_placements_work | markdown | safe }}

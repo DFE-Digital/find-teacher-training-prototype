@@ -1,6 +1,8 @@
 const NodeGeocoder = require('node-geocoder')
 const data = require('./data/session-data-defaults')
 const filters = require('./filters')()
+const locationModel = require('../app/models/location')
+const teacherTrainingModel = require('../app/models/teacher-training')
 
 const geocoder = NodeGeocoder({
   provider: 'here',
@@ -108,6 +110,29 @@ module.exports = () => {
       text: option.text,
       checked: vacancy === option.value
     }))
+  }
+
+  utils.getPlacementAreas = async (providerCode, courseCode) => {
+    const LocationListResponse = await teacherTrainingModel.getCourseLocations(providerCode, courseCode)
+
+    // Get catchment areas that locations lie within
+    const areas = []
+    if (LocationListResponse.data) {
+      for await (const locationResource of LocationListResponse.data) {
+        const { latitude, longitude } = locationResource.attributes
+        const point = await locationModel.getPoint(latitude, longitude)
+        if (point) {
+          areas.push(point.name)
+        }
+      }
+    }
+
+    // Remove duplicate catchment areas
+    let locations = await Promise.all(areas)
+    locations = areas.map(area => area.replace(/\s(City|Borough)\sCouncil|Corporation/, '')).sort()
+    locations = [...new Set(locations)]
+
+    return locations
   }
 
   return utils
