@@ -7,9 +7,9 @@
 <dl class="app-list--description">
   <dt class="app-list--description__label">Course</dt>
   <dd>{{ result.course.summary }}</dd>
-  {% if result.locations %}
+  {% if result.placementAreas %}
     <dt class="app-list--description__label">School placements</dt>
-    <dd>{{ result.locations | join(", ") }}</dd>
+    <dd>{{ result.placementAreas | formatList }}</dd>
   {% endif %}
   {% if result.course.accredited_body %}
     <dt class="app-list--description__label">Accredited body</dt>

@@ -129,30 +129,13 @@ module.exports = router => {
             course.accredited_body = accreditedBody.attributes.name
           }
 
-          // Get course locations
-          const LocationListResponse = await teacherTrainingModel.getCourseLocations(provider.code, course.code)
-
-          // Get catchment areas that locations lie within
-          const areas = [area.name]
-          if (LocationListResponse.data) {
-            for await (const locationResource of LocationListResponse.data) {
-              const { latitude, longitude } = locationResource.attributes
-              const point = await locationModel.getPoint(latitude, longitude)
-              if (point) {
-                areas.push(point.name)
-              }
-            }
-          }
-
-          // Remove duplicate catchment areas
-          let locations = await Promise.all(areas)
-          locations = areas.map(area => area.replace(/\s(City|Borough)\sCouncil|Corporation/, '')).sort()
-          locations = [...new Set(locations)]
+          // Get travel areas that school placements lie within
+          const placementAreas = await utils.getPlacementAreas(provider.code, course.code)
 
           return {
             course,
             provider,
-            locations
+            placementAreas
           }
         })
       }
@@ -163,7 +146,7 @@ module.exports = router => {
         const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
         const selectedAreas = selectedTravelAreas.concat(selectedLondonBoroughs)
 
-        return results.filter(result => result.locations.some(location => selectedAreas.includes(location)))
+        return results.filter(result => result.placementAreas.some(location => selectedAreas.includes(location)))
       }
 
       const results = await getResults()
