@@ -43,15 +43,6 @@ const teacherTrainingModel = {
 
       const course = courseSingleResponse.data.attributes
       const provider = providerResource.attributes
-
-      // Email and website address
-      // https://github.com/DFE-Digital/teacher-training-api/issues/1686
-      if (provider.website) {
-        provider.website = `http://${provider.website.replace(/^https?:\/\//, '')}`
-        provider.domain = new URL(provider.website).hostname
-        provider.email = provider.email ? provider.email : `enquiries@${provider.domain}`
-      }
-      provider.telephone = provider.telephone ? provider.telephone : '01234 567890'
       course.provider = provider
 
       // Length
