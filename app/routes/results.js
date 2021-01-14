@@ -85,6 +85,7 @@ module.exports = router => {
 
     // API query params
     const filter = {
+      findable: true,
       funding_type: salary,
       latitude,
       longitude,
@@ -108,10 +109,6 @@ module.exports = router => {
       let courses = data
       if (courses.length > 0) {
         const providers = included.filter(include => include.type === 'providers')
-
-        // Only show running and findable courses
-        // https://github.com/DFE-Digital/teacher-training-api/issues/1694
-        courses = courses.filter(courseResource => courseResource.attributes.running && courseResource.attributes.findable)
 
         courses = courses.map(async courseResource => {
           const course = courseResource.attributes
