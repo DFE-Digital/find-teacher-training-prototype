@@ -76,7 +76,7 @@ module.exports = router => {
     req.session.data.studyType = studyType
 
     // Vacancies
-    const vacancy = req.query.vacancy || req.session.data.vacancy || defaults.vacancy
+    const vacancy = (req.session.data.vacancy && req.session.data.vacancy[0] === 'include') || (req.query.vacancy && req.query.vacancy[0] === 'include') || (defaults.vacancy[0] === 'include')
     const vacancyItems = utils.vacancyItems(vacancy)
     req.session.data.vacancy = vacancy
 
