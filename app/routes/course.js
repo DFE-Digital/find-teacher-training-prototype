@@ -9,7 +9,9 @@ module.exports = router => {
       const course = await teacherTrainingModel.getCourse(providerCode, courseCode)
 
       // Get travel areas that school placements lie within
-      const placementAreas = await utils.getPlacementAreas(providerCode, courseCode)
+      // Fake it by adding current travel area being to list of placements
+      const fakedPlacementArea = req.session.data.area ? req.session.data.area.name : false
+      const placementAreas = await utils.getPlacementAreas(providerCode, courseCode, fakedPlacementArea)
 
       res.render('course', { course, placementAreas })
     } catch (error) {
