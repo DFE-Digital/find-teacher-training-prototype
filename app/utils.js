@@ -1,8 +1,8 @@
 const NodeGeocoder = require('node-geocoder')
 const data = require('./data/session-data-defaults')
 const filters = require('./filters')()
-const locationModel = require('../app/models/location')
-const teacherTrainingModel = require('../app/models/teacher-training')
+const locationService = require('../app/services/location')
+const teacherTrainingService = require('../app/services/teacher-training')
 
 const geocoder = NodeGeocoder({
   provider: 'here',
@@ -45,13 +45,13 @@ module.exports = () => {
       sessionData.longitude = longitude
 
       // Get area name from latitude/longitude
-      const area = await locationModel.getPoint(latitude, longitude)
+      const area = await locationService.getPoint(latitude, longitude)
       sessionData.area = area
       sessionData.londonBorough = area.type === 'LBO' ? area.codes['local-authority-eng'] : false
 
       return 'area'
     } else {
-      const providers = await teacherTrainingModel.getProviderSuggestions(query)
+      const providers = await teacherTrainingService.getProviderSuggestions(query)
       if (providers) {
         sessionData.provider = providers.data[0].attributes
         return 'provider'
@@ -144,14 +144,14 @@ module.exports = () => {
   }
 
   utils.getPlacementAreas = async (providerCode, courseCode, fakedPlacementArea) => {
-    const LocationListResponse = await teacherTrainingModel.getCourseLocations(providerCode, courseCode)
+    const LocationListResponse = await teacherTrainingService.getCourseLocations(providerCode, courseCode)
 
     // Get catchment areas that locations lie within
     const areas = fakedPlacementArea ? new Array(fakedPlacementArea) : []
     if (LocationListResponse.data) {
       for await (const locationResource of LocationListResponse.data) {
         const { latitude, longitude } = locationResource.attributes
-        const point = await locationModel.getPoint(latitude, longitude)
+        const point = await locationService.getPoint(latitude, longitude)
         if (point) {
           areas.push(point.name)
         }

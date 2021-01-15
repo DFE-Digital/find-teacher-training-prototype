@@ -9,7 +9,7 @@ function _roundUp (num, precision) {
   return Math.ceil(num * precision) / precision
 }
 
-const locationModel = {
+const locationService = {
   async getPoint (latitude, longitude, type = 'TTW') {
     // Round up lat/long to reduce calls to MapIt API
     latitude = _roundUp(latitude, 3)
@@ -30,4 +30,4 @@ const locationModel = {
   }
 }
 
-module.exports = locationModel
+module.exports = locationService

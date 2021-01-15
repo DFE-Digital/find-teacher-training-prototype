@@ -6,7 +6,7 @@ const data = require('../data/session-data-defaults')
 const ttl = 60 * 60 * 24 * 30 // cache for 30 days
 const cache = new CacheService(ttl) // Create a new cache service instance
 
-const teacherTrainingModel = {
+const teacherTrainingService = {
   async getCourses (page, perPage, filter) {
     const query = {
       filter,
@@ -88,4 +88,4 @@ const teacherTrainingModel = {
   }
 }
 
-module.exports = teacherTrainingModel
+module.exports = teacherTrainingService

@@ -1,11 +1,11 @@
-const teacherTrainingModel = require('../models/teacher-training')
+const teacherTrainingService = require('../services/teacher-training')
 
 module.exports = router => {
   router.get('/course/:providerCode/:courseCode/apply', async (req, res) => {
     const { providerCode, courseCode } = req.params
 
     try {
-      const course = await teacherTrainingModel.getCourse(providerCode, courseCode)
+      const course = await teacherTrainingService.getCourse(providerCode, courseCode)
 
       res.render('apply/index', {
         backLink: {
@@ -37,7 +37,7 @@ module.exports = router => {
     const { map } = req.query
 
     try {
-      const LocationListResponse = await teacherTrainingModel.getCourseLocations(providerCode, courseCode)
+      const LocationListResponse = await teacherTrainingService.getCourseLocations(providerCode, courseCode)
 
       const course = LocationListResponse.included.filter(item => item.type === 'courses')[0].attributes
       const provider = LocationListResponse.included.filter(item => item.type === 'providers')[0].attributes
