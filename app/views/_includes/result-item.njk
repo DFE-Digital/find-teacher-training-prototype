@@ -17,7 +17,7 @@
   {% endif %}
   <dt class="app-list--description__label">Financial support</dt>
   <dd>{{ "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible" }}</dd>
-  {% if vacancy != "true" %}
+  {% if not vacancy %}
     <dt class="app-list--description__label">Vacancies</dt>
     <dd>{{ "Yes" if result.course.has_vacancies else "No" }}</dd>
   {% endif %}

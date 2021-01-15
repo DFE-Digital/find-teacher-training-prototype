@@ -13,7 +13,7 @@ module.exports = {
     send: ['exclude'],
     studyType: ['full_time', 'part_time'],
     subjects: [],
-    vacancy: 'true'
+    vacancy: ['exclude']
   },
   londonSubRegions: [{
     text: 'Central London',
@@ -396,10 +396,7 @@ module.exports = {
   }],
   vacancyOptions: [{
     text: 'Only show courses with vacancies',
-    value: 'true'
-  }, {
-    text: 'Courses with and without vacancies',
-    value: 'false'
+    value: ['include']
   }],
   areas: [{
     name: 'Andover',

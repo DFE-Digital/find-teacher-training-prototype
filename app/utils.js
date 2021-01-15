@@ -110,7 +110,6 @@ module.exports = () => {
 
   utils.sendItems = send => {
     return data.sendOptions.map(option => ({
-      name: 'send',
       value: option.value,
       text: option.text,
       checked: send === true
@@ -135,7 +134,7 @@ module.exports = () => {
     return data.vacancyOptions.map(option => ({
       value: option.value,
       text: option.text,
-      checked: vacancy === option.value
+      checked: vacancy === true
     }))
   }
 
