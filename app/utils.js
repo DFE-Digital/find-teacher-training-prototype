@@ -36,11 +36,8 @@ module.exports = () => {
       return 'england'
     }
 
-    // Convert free text location to latitude/longitude
     const location = await utils.geocode(query)
     if (location) {
-      console.log('Search query deemed to be for a location')
-
       // Get latitude/longitude
       const { latitude, longitude } = location
       sessionData.radius = 10
@@ -56,7 +53,6 @@ module.exports = () => {
     } else {
       const providers = await teacherTrainingModel.getProviderSuggestions(query)
       if (providers) {
-        console.log('Search query deemed to be for a provider')
         sessionData.provider = providers.data[0].attributes
         return 'provider'
       }

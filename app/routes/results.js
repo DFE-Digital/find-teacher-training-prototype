@@ -31,7 +31,6 @@ module.exports = router => {
     // London boroughs
     const londonBorough = utils.toArray(req.session.data.londonBorough || req.query.londonBorough || defaults.londonBorough)
     const londonBoroughItems = utils.londonBoroughItems(londonBorough).filter(item => item.checked === true)
-    // req.session.data.londonBorough = londonBorough
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -40,38 +39,35 @@ module.exports = router => {
       item.label.classes = false
       return item
     })
-    req.session.data.qualification = qualification
 
     // Salary
     const salary = req.session.data.salary || req.query.salary || defaults.salary
     const salaryItems = utils.salaryItems(salary)
-    req.session.data.salary = salary
 
     // Send
     const send = (req.session.data.send && req.session.data.send[0] === 'include') || (req.query.send && req.query.send[0] === 'include') || (defaults.send[0] === 'include')
     const sendItems = utils.sendItems(send)
-    req.session.data.send = send
 
     // Subject
     const subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
     const subjectItems = utils.subjectItems(subjects, {
       showHintText: false,
-      checkAll: provider && subjects.length === 0
+      checkAll: (provider || !radius) && subjects.length === 0
     })
-    req.session.data.subjects = subjects
-    req.session.data.checkAllSubjects = provider && subjects.length === 0
+
+    // Show selected subjects in filter sidebar
+    // Maps array of subject codes to subject data
+    const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
 
     // Study type
     const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
     const studyTypeItems = utils.studyTypeItems(studyType, {
       showHintText: false
     })
-    req.session.data.studyType = studyType
 
     // Vacancies
     const vacancy = (req.session.data.vacancy && req.session.data.vacancy[0] === 'include') || (req.query.vacancy && req.query.vacancy[0] === 'include') || (defaults.vacancy[0] === 'include')
     const vacancyItems = utils.vacancyItems(vacancy)
-    req.session.data.vacancy = vacancy
 
     // API query params
     const filter = {
@@ -142,10 +138,6 @@ module.exports = router => {
       }
 
       const results = await getResults()
-
-      // Show selected subjects in filter sidebar
-      // Maps array of subject codes to subject data
-      const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
 
       // Pagination
       const pageCount = links.last.match(/page=(\d*)/)[1]
