@@ -13,9 +13,13 @@ module.exports = router => {
 
   router.get('/results', async (req, res) => {
     const { area, defaults, provider, subjectOptions } = req.session.data
+
+    // Pagination
     const page = Number(req.query.page) || 1
     const perPage = 20
-    const radius = 10
+
+    // Search radius
+    const radius = req.session.data.radius
 
     // Search query
     const q = req.session.data.q || req.query.q
@@ -23,13 +27,11 @@ module.exports = router => {
     // Location
     const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
     const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
-    req.session.data.latitude = latitude
-    req.session.data.longitude = longitude
 
     // London boroughs
     const londonBorough = utils.toArray(req.session.data.londonBorough || req.query.londonBorough || defaults.londonBorough)
     const londonBoroughItems = utils.londonBoroughItems(londonBorough).filter(item => item.checked === true)
-    req.session.data.londonBorough = londonBorough
+    // req.session.data.londonBorough = londonBorough
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -87,9 +89,11 @@ module.exports = router => {
       if (provider) {
         CourseListResponse = await teacherTrainingModel.getProviderCourses(page, perPage, filter, provider.code)
       } else {
-        filter.latitude = latitude
-        filter.longitude = longitude
-        filter.radius = radius
+        if (radius) {
+          filter.latitude = latitude
+          filter.longitude = longitude
+          filter.radius = radius
+        }
         CourseListResponse = await teacherTrainingModel.getCourses(page, perPage, filter)
       }
       const { data, links, meta, included } = CourseListResponse
@@ -189,13 +193,13 @@ module.exports = router => {
         londonBorough,
         londonBoroughItems,
         pagination,
-        radius,
-        results,
-        resultsCount,
         provider,
         q,
         qualification,
         qualificationItems,
+        radius,
+        results,
+        resultsCount,
         salary,
         salaryItems,
         send,

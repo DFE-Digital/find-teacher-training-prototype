@@ -28,6 +28,14 @@ module.exports = () => {
   }
 
   utils.processQuery = async (query, sessionData) => {
+    if (query === 'England') {
+      sessionData.radius = false
+      sessionData.latitude = false
+      sessionData.longitude = false
+
+      return 'england'
+    }
+
     // Convert free text location to latitude/longitude
     const location = await utils.geocode(query)
     if (location) {
@@ -35,6 +43,7 @@ module.exports = () => {
 
       // Get latitude/longitude
       const { latitude, longitude } = location
+      sessionData.radius = 10
       sessionData.latitude = latitude
       sessionData.longitude = longitude
 

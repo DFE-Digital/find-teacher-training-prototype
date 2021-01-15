@@ -8,6 +8,8 @@
       <span class="govuk-caption-l">{{ title }}</span>
       {{ provider.name }}
     </h1>
+  {% elif not radius %}
+    <h1 class="govuk-heading-l">{{ title }} across England</h1>
   {% else %}
     <h1 class="govuk-heading-l">{{ title }}</h1>
   {% endif %}
@@ -23,8 +25,8 @@
 
     <div class="govuk-grid-column-two-thirds">
       {% if results | length > 0 %}
-        {% if provider %}
-          <p class="govuk-body"><strong>{{ resultsCount }} courses</strong></p>
+        {% if provider or not radius %}
+          <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong></p>
         {% else %}
           {% if londonBorough and londonBoroughItems.length > 0 %}
             <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London borough{{ "s" if londonBoroughItems.length > 1 }} of {{ londonBoroughItems | join(", ", "text") }}. <a href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
