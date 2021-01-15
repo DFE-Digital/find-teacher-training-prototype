@@ -8,17 +8,12 @@ const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 
 module.exports = router => {
   router.post('/results', async (req, res) => {
-    // Convert free text location to latitude/longitude
-    const { latitude, longitude } = await utils.geocode(req.session.data.location)
-    req.session.data.latitude = latitude
-    req.session.data.longitude = longitude
-
-    // Get area name from latitude/longitude
-    const area = await locationModel.getPoint(latitude, longitude)
-    req.session.data.londonBorough = area.codes['local-authority-eng']
-
-    // Redirect to London search filter if in London TTW area
-    res.redirect(area.type === 'LBO' ? '/results/filters/london' : '/results')
+    const queryType = await utils.processQuery(req.session.data)
+    if (queryType === 'area') {
+      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/results')
+    } else {
+      res.redirect(queryType === 'provider' ? '/results' : '/results')
+    }
   })
 
   router.get('/results', async (req, res) => {
@@ -26,10 +21,12 @@ module.exports = router => {
     const perPage = 20
     const radius = 10
     const { defaults, subjectOptions } = req.session.data
-    const { providerCode } = req.query || req.session.data
+    const { provider } = req.session.data
+
+    // Search query
+    const q = req.session.data.q || req.query.q
 
     // Location
-    const location = req.session.data.location
     const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
     const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
     req.session.data.latitude = latitude
@@ -66,10 +63,10 @@ module.exports = router => {
     const subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
     const subjectItems = utils.subjectItems(subjects, {
       showHintText: false,
-      checkAll: providerCode && subjects.length === 0
+      checkAll: provider && subjects.length === 0
     })
     req.session.data.subjects = subjects
-    // req.session.data.checkAllSubjects = providerCode && subjects.length === 0
+    req.session.data.checkAllSubjects = provider && subjects.length === 0
 
     // Study type
     const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
@@ -87,11 +84,8 @@ module.exports = router => {
     const filter = {
       findable: true,
       funding_type: salary,
-      latitude,
-      longitude,
       has_vacancies: vacancy,
       qualification: qualification.toString(),
-      radius,
       send_courses: send,
       study_type: studyType.toString(),
       subjects: subjects.toString()
@@ -99,9 +93,12 @@ module.exports = router => {
 
     try {
       let CourseListResponse
-      if (providerCode) {
-        CourseListResponse = await teacherTrainingModel.getProviderCourses(page, perPage, filter, providerCode)
+      if (provider) {
+        CourseListResponse = await teacherTrainingModel.getProviderCourses(page, perPage, filter, provider.code)
       } else {
+        filter.latitude = latitude
+        filter.longitude = longitude
+        filter.radius = radius
         CourseListResponse = await teacherTrainingModel.getCourses(page, perPage, filter)
       }
       const { data, links, included } = CourseListResponse
@@ -138,6 +135,11 @@ module.exports = router => {
       }
 
       const getResults = async () => {
+        if (provider) {
+          const results = await Promise.all(courses)
+          return results
+        }
+
         const results = await Promise.all(courses)
         const selectedTravelAreas = [area.name]
         const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
@@ -192,25 +194,17 @@ module.exports = router => {
           : false
       }
 
-      let provider
-      if (providerCode) {
-        provider = {
-          code: providerCode,
-          name: results[0].provider.name
-        }
-      }
-
       res.render('results', {
         area,
         googleMapsApiKey,
         latLong: [latitude, longitude],
-        location,
         londonBoroughItems,
         pagination,
         radius,
         results,
         resultsCount,
         provider,
+        q,
         qualification,
         qualificationItems,
         salary,
@@ -225,6 +219,7 @@ module.exports = router => {
         vacancyItems
       })
     } catch (error) {
+      console.error(error)
       if (error.response) {
         const { body } = error.response
         res.status(body.errors[0].status)

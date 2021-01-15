@@ -22,11 +22,13 @@
             {% if area.name == "London" %}
               <a href="/london">{{ area.name }}</a>
             {% else %}
-              <a href="/subject?location={{ area.shortName or area.name }}">{{ area.shortName or area.name }}</a>
+              <a href="/subject?q={{ area.shortName or area.name }}">{{ area.shortName or area.name }}</a>
             {% endif %}
           </li>
         {% endfor %}
         </ul>
+
+        <p><a href="#">All courses in England</a></p>
 
         <p class="govuk-hint">or</p>
 
@@ -34,10 +36,10 @@
           classes: "govuk-!-width-three-quarters",
           label: {
             classes: "govuk-label--m",
-            text: "Enter a place name or postcode"
+            text: "Enter a place name, postcode or training provider"
           },
-          id: "location",
-          name: "location"
+          id: "q",
+          name: "q"
         }) }}
 
         {{ govukButton({

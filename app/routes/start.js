@@ -1,4 +1,5 @@
 const locationModel = require('../models/location')
+const teacherTrainingModel = require('../models/teacher-training')
 const utils = require('../utils')()
 
 module.exports = router => {
@@ -46,24 +47,20 @@ module.exports = router => {
   })
 
   router.post('/search', async (req, res) => {
-    // Convert free text location to latitude/longitude
-    const { latitude, longitude } = await utils.geocode(req.session.data.location)
-    req.session.data.latitude = latitude
-    req.session.data.longitude = longitude
-
-    // Get area name from latitude/longitude
-    const area = await locationModel.getPoint(latitude, longitude)
-    req.session.data.londonBorough = area.codes['local-authority-eng']
-
-    // Redirect to London search filter if in London TTW area
-    res.redirect(area.type === 'LBO' ? '/london' : '/subject')
+    const queryType = await utils.processQuery(req.session.data)
+    if (queryType === 'area') {
+      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/subject')
+    } else {
+      res.redirect(queryType === 'provider' ? '/results' : '/subject')
+    }
   })
 
   router.get('/subject', async (req, res) => {
-    const { location, londonBorough, subjects } = req.session.data
+    const { q } = req.query
+    const { londonBorough, subjects } = req.session.data
 
-    if (location) {
-      const { latitude, longitude } = await utils.geocode(location)
+    if (q) {
+      const { latitude, longitude } = await utils.geocode(q)
       req.session.data.latitude = latitude
       req.session.data.longitude = longitude
     }
@@ -80,7 +77,8 @@ module.exports = router => {
               href: '/'
             },
       subjectItems: utils.subjectItems(subjects, {
-        showHintText: true
+        showHintText: true,
+        checkAll: false
       }),
       sendItems: utils.sendItems(req.session.data.send)
     })

@@ -23,7 +23,34 @@ module.exports = () => {
         longitude: geo.longitude
       }
     } catch (error) {
-      console.error('Geocoding error', error)
+      return false
+    }
+  }
+
+  utils.processQuery = async sessionData => {
+    // Convert free text location to latitude/longitude
+    const location = await utils.geocode(sessionData.q)
+    if (location) {
+      console.log('Search query deemed to be for a location')
+
+      // Get latitude/longitude
+      const { latitude, longitude } = location
+      sessionData.latitude = latitude
+      sessionData.longitude = longitude
+
+      // Get area name from latitude/longitude
+      const area = await locationModel.getPoint(latitude, longitude)
+      sessionData.area = area
+      sessionData.londonBorough = area.codes['local-authority-eng']
+
+      return 'area'
+    } else {
+      const providers = await teacherTrainingModel.getProviderSuggestions(sessionData.q)
+      if (providers) {
+        console.log('Search query deemed to be for a provider')
+        sessionData.provider = providers.data[0].attributes
+        return 'provider'
+      }
     }
   }
 
