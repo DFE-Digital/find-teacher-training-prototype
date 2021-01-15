@@ -101,7 +101,7 @@ module.exports = router => {
         filter.radius = radius
         CourseListResponse = await teacherTrainingModel.getCourses(page, perPage, filter)
       }
-      const { data, links, included } = CourseListResponse
+      const { data, links, meta, included } = CourseListResponse
 
       let courses = data
       if (courses.length > 0) {
@@ -135,17 +135,15 @@ module.exports = router => {
       }
 
       const getResults = async () => {
-        if (provider) {
-          const results = await Promise.all(courses)
-          return results
-        }
-
         const results = await Promise.all(courses)
-        const selectedTravelAreas = [area.name]
-        const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
-        const selectedAreas = selectedTravelAreas.concat(selectedLondonBoroughs)
+        return results
 
-        return results.filter(result => result.placementAreas.some(location => selectedAreas.includes(location)))
+        // DISABLED: Filter results by those with placements in selected search area
+        // const results = await Promise.all(courses)
+        // const selectedTravelAreas = [area.name]
+        // const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
+        // const selectedAreas = selectedTravelAreas.concat(selectedLondonBoroughs)
+        // return results.filter(result => result.placementAreas.some(location => selectedAreas.includes(location)))
       }
 
       const results = await getResults()
@@ -156,8 +154,7 @@ module.exports = router => {
 
       // Pagination
       const pageCount = links.last.match(/page=(\d*)/)[1]
-      // TODO: Get true results count from API response
-      const resultsCount = perPage * pageCount
+      const resultsCount = meta.count
       const prevPage = links.prev ? (page - 1) : false
       const nextPage = links.next ? (page + 1) : false
 
