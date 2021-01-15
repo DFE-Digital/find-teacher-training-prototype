@@ -143,11 +143,11 @@ module.exports = () => {
     }))
   }
 
-  utils.getPlacementAreas = async (providerCode, courseCode) => {
+  utils.getPlacementAreas = async (providerCode, courseCode, fakedPlacementArea) => {
     const LocationListResponse = await teacherTrainingModel.getCourseLocations(providerCode, courseCode)
 
     // Get catchment areas that locations lie within
-    const areas = []
+    const areas = fakedPlacementArea ? new Array(fakedPlacementArea) : []
     if (LocationListResponse.data) {
       for await (const locationResource of LocationListResponse.data) {
         const { latitude, longitude } = locationResource.attributes

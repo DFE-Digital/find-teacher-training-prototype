@@ -115,7 +115,10 @@ module.exports = router => {
           }
 
           // Get travel areas that school placements lie within
-          const placementAreas = await utils.getPlacementAreas(provider.code, course.code)
+          // Fake it by adding current london borough/travel area being to list of placements
+          const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
+          const fakedPlacementArea = selectedLondonBoroughs[0] || area.name
+          const placementAreas = await utils.getPlacementAreas(provider.code, course.code, fakedPlacementArea)
 
           return {
             course,
@@ -125,19 +128,8 @@ module.exports = router => {
         })
       }
 
-      const getResults = async () => {
-        const results = await Promise.all(courses)
-        return results
-
-        // DISABLED: Filter results by those with placements in selected search area
-        // const results = await Promise.all(courses)
-        // const selectedTravelAreas = [area.name]
-        // const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
-        // const selectedAreas = selectedTravelAreas.concat(selectedLondonBoroughs)
-        // return results.filter(result => result.placementAreas.some(location => selectedAreas.includes(location)))
-      }
-
-      const results = await getResults()
+      // Results
+      const results = await Promise.all(courses)
 
       // Pagination
       const pageCount = links.last.match(/page=(\d*)/)[1]
