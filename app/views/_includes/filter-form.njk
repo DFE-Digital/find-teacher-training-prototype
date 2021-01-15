@@ -11,33 +11,15 @@
         text: "Apply filters"
       }) }}
 
-      {% if provider %}
-        <div class="app-filter__group">
-          {{ govukInput({
-            formGroup: {
-              classes: "govuk-!-margin-bottom-2"
-            },
-            classes: "govuk-checkboxes--small",
-            label: {
-              classes: "govuk-label--s",
-              text: "Provider name"
-            },
-            name: "providerCode",
-            value: provider.code
-          }) if provider }}
-          <p class="govuk-body-s govuk-!-margin-bottom-0"><a class="govuk-link" href="/">Search by location</a></p>
-        </div>
-      {% else %}
-        {{ govukInput({
-          classes: "govuk-checkboxes--small",
-          label: {
-            classes: "govuk-label--s",
-            text: "Location"
-          },
-          name: "location",
-          value: location or area.name
-        }) }}
-      {% endif %}
+      {{ govukInput({
+        classes: "govuk-checkboxes--small",
+        label: {
+          classes: "govuk-label--s",
+          text: "Location or training provider"
+        },
+        name: "q",
+        value: q or area.name
+      }) }}
 
       <div class="app-filter__group">
         <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Subjects</h2>

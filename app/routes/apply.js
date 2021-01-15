@@ -17,7 +17,6 @@ module.exports = router => {
         }
       })
     } catch (error) {
-      console.log('error', error)
       res.render('apply/404')
     }
   })

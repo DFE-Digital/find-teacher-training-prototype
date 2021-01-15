@@ -79,6 +79,12 @@ const teacherTrainingModel = {
     const key = `locationListResponse_${data.cycle}-${providerCode}-${courseCode}`
     const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json())
     return locationListResponse
+  },
+
+  async getProviderSuggestions (query) {
+    const key = `providerSuggestionListResponse_${query}`
+    const providerSuggestionListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/provider_suggestions?query=${query}`).json())
+    return providerSuggestionListResponse
   }
 }
 
