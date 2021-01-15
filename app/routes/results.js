@@ -1,6 +1,6 @@
 const qs = require('qs')
 
-const teacherTrainingModel = require('../models/teacher-training')
+const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
 const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
@@ -83,14 +83,14 @@ module.exports = router => {
     try {
       let CourseListResponse
       if (provider) {
-        CourseListResponse = await teacherTrainingModel.getProviderCourses(page, perPage, filter, provider.code)
+        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
       } else {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
           filter.radius = radius
         }
-        CourseListResponse = await teacherTrainingModel.getCourses(page, perPage, filter)
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
       }
       const { data, links, meta, included } = CourseListResponse
 

@@ -1,4 +1,4 @@
-const teacherTrainingModel = require('../models/teacher-training')
+const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
 module.exports = router => {
@@ -6,7 +6,7 @@ module.exports = router => {
     const { providerCode, courseCode } = req.params
 
     try {
-      const course = await teacherTrainingModel.getCourse(providerCode, courseCode)
+      const course = await teacherTrainingService.getCourse(providerCode, courseCode)
 
       // Get travel areas that school placements lie within
       // Fake it by adding current travel area being to list of placements
