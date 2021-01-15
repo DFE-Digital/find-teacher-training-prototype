@@ -27,9 +27,9 @@ module.exports = () => {
     }
   }
 
-  utils.processQuery = async sessionData => {
+  utils.processQuery = async (query, sessionData) => {
     // Convert free text location to latitude/longitude
-    const location = await utils.geocode(sessionData.q)
+    const location = await utils.geocode(query)
     if (location) {
       console.log('Search query deemed to be for a location')
 
@@ -41,11 +41,11 @@ module.exports = () => {
       // Get area name from latitude/longitude
       const area = await locationModel.getPoint(latitude, longitude)
       sessionData.area = area
-      sessionData.londonBorough = area.codes['local-authority-eng']
+      sessionData.londonBorough = area.type === 'LBO' ? area.codes['local-authority-eng'] : false
 
       return 'area'
     } else {
-      const providers = await teacherTrainingModel.getProviderSuggestions(sessionData.q)
+      const providers = await teacherTrainingModel.getProviderSuggestions(query)
       if (providers) {
         console.log('Search query deemed to be for a provider')
         sessionData.provider = providers.data[0].attributes
@@ -77,7 +77,7 @@ module.exports = () => {
     return londonBoroughOptions.map(option => ({
       value: option.value,
       text: option.text,
-      checked: londonBorough ? londonBorough.includes(option.value) : false
+      checked: londonBorough ? londonBorough.includes(option.value) && options.checked !== false : false
     }))
   }
 

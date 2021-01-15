@@ -15,7 +15,7 @@ module.exports = router => {
   router.get('/results/filters/london', (req, res) => {
     res.render('filters/london', {
       backLink,
-      next: '/results',
+      filtering: true,
       items: {
         all: utils.londonBoroughItems(req.session.data.londonBorough),
         central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central' }),
@@ -23,7 +23,8 @@ module.exports = router => {
         north: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'north' }),
         south: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'south' }),
         west: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'west' })
-      }
+      },
+      next: '/results'
     })
   })
 
