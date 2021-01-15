@@ -48,6 +48,9 @@ module.exports = (env) => {
     // Add govuk-* classes
     let govukHtml = html.replace(/<ul>/g, '<ul class="govuk-list govuk-list--bullet">')
     govukHtml = govukHtml.replace(/<p>/g, '<p class="govuk-body">')
+    govukHtml = govukHtml.replace(/<h2/g, '<h2 class="govuk-heading-l"')
+    govukHtml = govukHtml.replace(/<h3/g, '<h3 class="govuk-heading-m"')
+    govukHtml = govukHtml.replace(/<h4/g, '<h4 class="govuk-heading-s"')
 
     return govukHtml
   }
