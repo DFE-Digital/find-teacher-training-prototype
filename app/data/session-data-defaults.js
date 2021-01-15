@@ -5,9 +5,9 @@ module.exports = {
   apiEndpoint: 'https://api.publish-teacher-training-courses.service.gov.uk/api/public/v1',
   cycle: 2021,
   defaults: {
-    latitude: 50.8375,
-    longitude: -0.1765,
-    londonBorough: [],
+    latitude: false,
+    longitude: false,
+    londonBorough: false,
     qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
     salary: 'salary,apprenticeship,fee',
     send: ['exclude'],

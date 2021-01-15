@@ -12,9 +12,11 @@
       <h1 class="govuk-heading-l">{{ title }}</h1>
 
       <form action="/london?next={{ next }}" method="post">
-        {% set checkedItems = items.all | selectattr("checked") %}
-        {% set uncheckedItems = items.all | rejectattr("checked") %}
-        {% if checkedItems.length > 0 %}
+        {% if filtering %}
+          {% set checkedItems = items.all | selectattr("checked") %}
+          {% set uncheckedItems = items.all | rejectattr("checked") %}
+        {% endif %}
+        {% if filtering and checkedItems.length > 0 %}
           {{ govukCheckboxes({
             fieldset: {
               legend: {

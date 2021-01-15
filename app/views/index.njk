@@ -19,16 +19,12 @@
         <ul class="govuk-grid-row govuk-list">
         {% for area in data.areas | selectattr("showOnHomepage") %}
           <li class="govuk-grid-column-one-third govuk-!-margin-bottom-1">
-            {% if area.name == "London" %}
-              <a href="/london">{{ area.name }}</a>
-            {% else %}
-              <a href="/subject?q={{ area.shortName or area.name }}">{{ area.shortName or area.name }}</a>
-            {% endif %}
+            <a href="/search?q={{ area.shortName or area.name }}">{{ area.shortName or area.name }}</a>
           </li>
         {% endfor %}
         </ul>
 
-        <p><a href="#">All courses in England</a></p>
+        <p><a href="/search">All courses in England</a></p>
 
         <p class="govuk-hint">or</p>
 

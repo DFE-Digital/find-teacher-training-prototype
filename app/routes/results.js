@@ -1,27 +1,21 @@
 const qs = require('qs')
 
 const teacherTrainingModel = require('../models/teacher-training')
-const locationModel = require('../models/location')
 const utils = require('../utils')()
 
 const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 
 module.exports = router => {
   router.post('/results', async (req, res) => {
-    const queryType = await utils.processQuery(req.session.data)
-    if (queryType === 'area') {
-      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/results')
-    } else {
-      res.redirect(queryType === 'provider' ? '/results' : '/results')
-    }
+    await utils.processQuery(req.session.data.q, req.session.data)
+    res.redirect(req.session.data.londonBorough ? '/results/filters/london' : '/results')
   })
 
   router.get('/results', async (req, res) => {
+    const { area, defaults, provider, subjectOptions } = req.session.data
     const page = Number(req.query.page) || 1
     const perPage = 20
     const radius = 10
-    const { defaults, subjectOptions } = req.session.data
-    const { provider } = req.session.data
 
     // Search query
     const q = req.session.data.q || req.query.q
@@ -31,9 +25,6 @@ module.exports = router => {
     const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
     req.session.data.latitude = latitude
     req.session.data.longitude = longitude
-
-    // Area metadata
-    const area = await locationModel.getPoint(latitude, longitude)
 
     // London boroughs
     const londonBorough = utils.toArray(req.session.data.londonBorough || req.query.londonBorough || defaults.londonBorough)
@@ -195,6 +186,7 @@ module.exports = router => {
         area,
         googleMapsApiKey,
         latLong: [latitude, longitude],
+        londonBorough,
         londonBoroughItems,
         pagination,
         radius,
@@ -216,17 +208,10 @@ module.exports = router => {
         vacancyItems
       })
     } catch (error) {
-      console.error(error)
-      if (error.response) {
-        const { body } = error.response
-        res.status(body.errors[0].status)
-        res.render('error', {
-          title: body.errors[0].title,
-          content: body.errors[0].detail
-        })
-      } else {
-        console.error(error)
-      }
+      res.render('error', {
+        title: error.name,
+        content: error
+      })
     }
   })
 }

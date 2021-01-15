@@ -1,5 +1,3 @@
-const locationModel = require('../models/location')
-const teacherTrainingModel = require('../models/teacher-training')
 const utils = require('../utils')()
 
 module.exports = router => {
@@ -46,8 +44,9 @@ module.exports = router => {
     })
   })
 
-  router.post('/search', async (req, res) => {
-    const queryType = await utils.processQuery(req.session.data)
+  router.all('/search', async (req, res) => {
+    const qurey = req.session.data.q || req.query.q
+    const queryType = await utils.processQuery(qurey, req.session.data)
     if (queryType === 'area') {
       res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/subject')
     } else {
@@ -56,18 +55,10 @@ module.exports = router => {
   })
 
   router.get('/subject', async (req, res) => {
-    const { q } = req.query
-    const { londonBorough, subjects } = req.session.data
-
-    if (q) {
-      const { latitude, longitude } = await utils.geocode(q)
-      req.session.data.latitude = latitude
-      req.session.data.longitude = longitude
-    }
-
+    const q = req.session.data.q || req.query.q
     res.render('filters/subject', {
       backLink:
-        londonBorough
+        req.session.data.londonBorough
           ? {
               text: 'Back to London boroughs',
               href: '/london'
@@ -76,7 +67,8 @@ module.exports = router => {
               text: 'Back to location',
               href: '/'
             },
-      subjectItems: utils.subjectItems(subjects, {
+      q,
+      subjectItems: utils.subjectItems(req.session.data.subjects, {
         showHintText: true,
         checkAll: false
       }),
@@ -90,16 +82,14 @@ module.exports = router => {
         text: 'Back to location',
         href: '/'
       },
-      next: '/subject',
       items: {
-        all: utils.londonBoroughItems(req.session.data.londonBorough),
-        central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central' }),
+        central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central', checked: false }),
         east: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'east' }),
         north: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'north' }),
         south: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'south' }),
         west: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'west' })
       },
-      startFlow: true
+      next: '/subject'
     })
   })
 
