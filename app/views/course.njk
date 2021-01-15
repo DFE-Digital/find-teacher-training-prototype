@@ -93,9 +93,10 @@
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
 
+        {% set qualificationsAdviceHtml %}{% include "_includes/course/qualifications.md" %}{% endset %}
         {{ appAdvice({
-          title: "Refeshing your subject knowledge",
-          html: "If you’ve got the right qualities to teach but need to build up or refresh your subject knowledge, you might be asked to complete a [subject knowledge enhancement (SKE) course](https://getintoteaching.education.gov.uk/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses).\n\nYou'll find out if you need to complete an SKE course after the interview stage." | markdown
+          title: "Qualifications",
+          html: qualificationsAdviceHtml | trim | markdown
         }) }}
 
         {% if course.required_qualifications %}
