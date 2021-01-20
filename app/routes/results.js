@@ -116,8 +116,11 @@ module.exports = router => {
 
           // Get travel areas that school placements lie within
           // Fake it by adding current london borough/travel area being to list of placements
-          const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
-          const fakedPlacementArea = selectedLondonBoroughs[0] || area.name
+          let fakedPlacementArea
+          if (area) {
+            const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
+            fakedPlacementArea = selectedLondonBoroughs[0] || area.name
+          }
           const placementAreas = await utils.getPlacementAreas(provider.code, course.code, fakedPlacementArea)
 
           return {
@@ -133,7 +136,9 @@ module.exports = router => {
 
       // Pagination
       const pageCount = links.last.match(/page=(\d*)/)[1]
-      const resultsCount = meta.count
+      // Provider courses response doesn’t return number of results
+      // https://github.com/DFE-Digital/teacher-training-api/issues/1733
+      const resultsCount = meta ? meta.count : results.length
       const prevPage = links.prev ? (page - 1) : false
       const nextPage = links.next ? (page + 1) : false
 
@@ -196,6 +201,7 @@ module.exports = router => {
         vacancyItems
       })
     } catch (error) {
+      console.log(error.stack)
       res.render('error', {
         title: error.name,
         content: error
