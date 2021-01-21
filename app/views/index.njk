@@ -8,9 +8,9 @@
       <form action="/search" method="post">
         <h1 class="govuk-heading-l">{{ title }}</h1>
         <h2 class="govuk-heading-m">Choose a city or town</h2>
-        <ul class="govuk-grid-row govuk-list">
+        <ul class="govuk-list app-list--locations">
         {% for area in data.areas | selectattr("showOnHomepage") %}
-          <li class="govuk-grid-column-one-third govuk-!-margin-bottom-1">
+          <li class="govuk-!-margin-bottom-1">
             <a href="/search?q={{ area.shortName or area.name }}">{{ area.shortName or area.name }}</a>
           </li>
         {% endfor %}
