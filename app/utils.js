@@ -100,7 +100,7 @@ module.exports = () => {
     return data.salaryOptions.map(option => ({
       value: option.value,
       text: option.text,
-      checked: salary === option.value
+      checked: salary === true
     }))
   }
 
