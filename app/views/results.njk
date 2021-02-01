@@ -6,13 +6,7 @@
   <h1 class="govuk-heading-l">
     <span class="govuk-caption-l">{{ title }}</span>
     {% if results | length > 0 %}
-      {% if provider %}
-        {{ resultsCount }} courses found at {{ provider.name }}
-      {% elif not radius %}
-        {{ resultsCount }} courses found across England</h1>
-      {% else %}
-        {{ resultsCount }} courses found in {{ "London" if londonBorough else area.name }}
-      {% endif %}
+      {{ resultsCount }} courses found
     {% else %}
       No courses found matching your search
     {% endif %}
