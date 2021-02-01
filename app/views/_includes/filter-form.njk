@@ -20,8 +20,15 @@
         value: q or area.name or provider.name or "Across England"
       }) }}
 
+      {% if londonBorough and londonBoroughItems.length > 0 %}
+        <div class="app-filter__group">
+          <h2 class="govuk-heading-s govuk-!-margin-bottom-1">London borough{{ "s" if londonBoroughItems.length > 1 }}</h2>
+          <p class="govuk-body-s govuk-!-margin-bottom-0">{{ londonBoroughItems | join(", ", "text") }}. <a href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
+        </div>
+      {% endif %}
+
       <div class="app-filter__group">
-        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Subjects</h2>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Subjects</h3>
         {%- set noSubjectsSelected = selectedSubjects.length == 0 -%}
         <p class="govuk-body-s govuk-!-margin-bottom-2">{{ data.subjectOptions.length if noSubjectsSelected else selectedSubjects.length }} selected</p>
         <div class="app-filter__scroll">
