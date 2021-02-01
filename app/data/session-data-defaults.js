@@ -178,11 +178,8 @@ module.exports = {
     value: 'pgce,pgde'
   }],
   salaryOptions: [{
-    text: 'Courses with and without salary',
-    value: 'salary,apprenticeship,fee'
-  }, {
     text: 'Only show courses that come with a salary',
-    value: 'salary'
+    value: ['include']
   }],
   studyTypeOptions: [{
     text: 'Full time (12 months)',
