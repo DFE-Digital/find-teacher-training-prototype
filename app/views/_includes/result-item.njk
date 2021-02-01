@@ -1,7 +1,7 @@
-<h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+<h2 class="app-search-result__item-title">
   <a href="/course/{{ result.provider.code }}/{{ result.course.code }}" style="text-decoration: none">
-    <span class="govuk-!-font-size-19">{{ result.provider.name | markdown("inline") }}</span><br />
-    <span style="text-decoration: underline">{{ result.course.name }} ({{ result.course.code }})</span>
+    <span class="app-search-result__provider-name">{{ result.provider.name | markdown("inline") }}</span><br />
+    <span class="app-search-result__course-name">{{ result.course.name }} ({{ result.course.code }})</span>
   </a>
 </h2>
 <dl class="app-list--description">
