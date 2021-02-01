@@ -16,11 +16,7 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-      {% if data.flags.filterSidebar %}
-        {% include "_includes/filter-form.njk" %}
-      {% else %}
-        {% include "_includes/filter-sidebar.njk" %}
-      {% endif %}
+      {% include "_includes/filter-form.njk" %}
     </div>
 
     <div class="govuk-grid-column-two-thirds">
