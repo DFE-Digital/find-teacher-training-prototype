@@ -41,7 +41,7 @@ module.exports = router => {
     })
 
     // Salary
-    const salary = req.session.data.salary || req.query.salary || defaults.salary
+    const salary = (req.session.data.salary && req.session.data.salary[0] === 'include') || (req.query.salary && req.query.salary[0] === 'include') || (defaults.salary[0] === 'include')
     const salaryItems = utils.salaryItems(salary)
 
     // Send
@@ -72,7 +72,7 @@ module.exports = router => {
     // API query params
     const filter = {
       findable: true,
-      funding_type: salary,
+      funding_type: salary ? 'salary' : 'salary,apprenticeship,fee',
       has_vacancies: vacancy,
       qualification: qualification.toString(),
       send_courses: send,
