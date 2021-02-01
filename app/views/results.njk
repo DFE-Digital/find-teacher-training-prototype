@@ -25,12 +25,6 @@
 
     <div class="govuk-grid-column-two-thirds">
       {% if results | length > 0 %}
-        {% if londonBorough and londonBoroughItems.length > 0 %}
-          <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London borough{{ "s" if londonBoroughItems.length > 1 }} of {{ londonBoroughItems | join(", ", "text") }}. <a href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
-        {% elif londonBorough and londonBoroughItems.length == 0 %}
-          <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London area. <a href="/results/filters/london">Select London boroughs</a></p>
-        {% endif %}
-
         <ul class="app-search-results">
         {% for result in results %}
           <li class="app-search-results__item">
