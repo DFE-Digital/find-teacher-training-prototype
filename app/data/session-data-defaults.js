@@ -10,7 +10,7 @@ module.exports = {
     send: ['exclude'],
     studyType: ['full_time', 'part_time'],
     subjects: [],
-    vacancy: ['exclude']
+    vacancy: ['include']
   },
   londonSubRegions: [{
     text: 'Central London',
