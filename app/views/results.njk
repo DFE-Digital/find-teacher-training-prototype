@@ -27,9 +27,9 @@
           {% if londonBorough and londonBoroughItems.length > 0 %}
             <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London borough{{ "s" if londonBoroughItems.length > 1 }} of {{ londonBoroughItems | join(", ", "text") }}. <a href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
           {% elif londonBorough and londonBoroughItems.length == 0 %}
-            <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London travel area. <a href="/results/filters/london">Select London boroughs</a></p>
+            <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the London area. <a href="/results/filters/london">Select London boroughs</a></p>
           {% else %}
-            <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the {{ area.name }} travel area</p>
+            <p class="govuk-body"><strong>{{ resultsCount }} courses found</strong> with training locations in the {{ area.name }} area</p>
           {% endif %}
         {% endif %}
 
