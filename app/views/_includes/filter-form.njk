@@ -23,15 +23,18 @@
       {% if londonBorough and londonBoroughItems.length > 0 %}
         <div class="app-filter__group">
           <h2 class="govuk-heading-s govuk-!-margin-bottom-1">London borough{{ "s" if londonBoroughItems.length > 1 }}</h2>
-          <p class="govuk-body-s govuk-!-margin-bottom-0">{{ londonBoroughItems | join(", ", "text") }}. <a href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
+          <p class="govuk-body-s govuk-!-margin-bottom-1">{{ londonBoroughItems | join(", ", "text") }}</p>
+          <p class="govuk-body-s govuk-!-margin-bottom-1"><a href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
         </div>
       {% endif %}
 
       <div class="app-filter__group">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Subjects</h3>
         {%- set noSubjectsSelected = selectedSubjects.length == 0 -%}
-        <p class="govuk-body-s govuk-!-margin-bottom-2">{{ data.subjectOptions.length if noSubjectsSelected else selectedSubjects.length }} selected</p>
-        <div class="app-filter__scroll">
+        <p class="govuk-body-s govuk-!-margin-bottom-1">{{ selectedSubjects | join(", ", "text") }}</p>
+        <p class="govuk-body-s govuk-!-margin-bottom-1"><a href="/subject">Change<span class="govuk-visually-hidden"> subjects</span></a></p>
+
+        <!--div class="app-filter__scroll">
           {% for item in subjectItems %}
             {{ govukCheckboxes({
               classes: "govuk-checkboxes--small",
@@ -39,7 +42,7 @@
               items: item.items
             }) }}
           {% endfor %}
-        </div>
+        </div-->
       </div>
 
       {{ govukCheckboxes({
