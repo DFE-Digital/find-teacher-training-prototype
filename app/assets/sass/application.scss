@@ -2,6 +2,7 @@
 $govuk-global-styles: true;
 
 // We can’t mount GOV.UK Frontend’s assets at root as it’s done automatically by the extensions framework.
+$app-assets-path: '/public/';
 $govuk-assets-path: '/govuk/assets/';
 
 // Get into teaching
@@ -13,10 +14,10 @@ $git-brand-colour: #159964;
 // Components that aren’t in Frontend
 @import "components/advice";
 @import "components/filter";
+@import "components/filter-layout";
 @import "components/list";
 @import "components/map";
 @import "components/pagination";
 @import "components/related";
 @import "components/search-results";
 @import "components/table";
-@import "components/toggle";
