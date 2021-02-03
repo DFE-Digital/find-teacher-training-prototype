@@ -86,13 +86,7 @@
   {% endblock %}
 {% endif %}
 
-{% block bodyStart %}
-  <div data-module="edge">
-{% endblock %}
-
 {% block bodyEnd %}
-  </div>
-
   {% block scripts %}
     {% include "_includes/scripts.njk" %}
     {% block pageScripts %}{% endblock %}
