@@ -34,7 +34,6 @@ module.exports = router => {
 
   router.get('/course/:providerCode/:courseCode/apply/ucas', async (req, res) => {
     const { providerCode, courseCode } = req.params
-    const { map } = req.query
 
     try {
       const LocationListResponse = await teacherTrainingService.getCourseLocations(providerCode, courseCode)
@@ -68,8 +67,7 @@ module.exports = router => {
         },
         course,
         provider,
-        locations,
-        map
+        locations
       })
     } catch (error) {
       console.error(error)
