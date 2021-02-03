@@ -1,7 +1,6 @@
 /* global $ */
 
 import { FilterToggleButton } from './components/filter-toggle-button.js'
-import initLocationsMap from './locations-map.js'
 
 const filterToggleButton = new FilterToggleButton({
   bigModeMediaQuery: '(min-width: 48.063em)',
@@ -28,7 +27,5 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   filterToggleButton.init()
-
   window.GOVUKFrontend.initAll()
-  window.initLocationsMap = initLocationsMap
 })
