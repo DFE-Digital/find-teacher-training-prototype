@@ -121,17 +121,21 @@ module.exports = () => {
     }))
   }
 
+  utils.subjectGroupItems = (subjects = [], options = {}) => {
+    return data.subjectOptions.filter(option => option.type === options.type).map(option => ({
+      value: option.value,
+      id: `subject-${option.value}`,
+      text: option.text,
+      hint: { text: options.showHintText ? option.hint : false },
+      checked: subjects.includes(option.value) || options.checkAll === true
+    }))
+  }
+
   utils.subjectItems = (subjects = [], options = {}) => {
     return data.subjectGroups.map(group => ({
       text: group.text,
       name: 'subjects',
-      items: data.subjectOptions.filter(option => option.type === group.value).map(option => ({
-        value: option.value,
-        id: `subject-${option.value}`,
-        text: option.text,
-        hint: { text: options.showHintText ? option.hint : false },
-        checked: subjects.includes(option.value) || options.checkAll === true
-      }))
+      items: utils.subjectGroupItems(data.subjectOptions, { type: group.value })
     }))
   }
 
