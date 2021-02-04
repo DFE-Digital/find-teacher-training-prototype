@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title %}{{ course.name }} with {{ course.provider.name }}{% endset %}
+{% set title %}{{ course.name }} ({{ course.code }}) with {{ course.provider.name }}{% endset %}
 
 {% block pageNavigation %}
   {{ govukBackLink({
