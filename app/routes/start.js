@@ -4,7 +4,11 @@ module.exports = router => {
   router.all('/search', async (req, res) => {
     const qurey = req.session.data.q || req.query.q
     const queryType = await utils.processQuery(qurey, req.session.data)
-    if (queryType === 'area') {
+    const { filtering } = req.query
+
+    if (queryType === 'area' && filtering) {
+      res.redirect(req.session.data.area.type === 'LBO' ? '/results/filters/london' : '/results/filters/subject')
+    } else if (queryType === 'area') {
       res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/subject')
     } else {
       res.redirect(queryType === 'provider' ? '/results' : '/subject')
@@ -21,7 +25,7 @@ module.exports = router => {
               href: '/london'
             }
           : {
-              text: 'Back to location',
+              text: 'Back',
               href: '/'
             },
       q,
@@ -34,19 +38,27 @@ module.exports = router => {
   })
 
   router.get('/london', async (req, res) => {
+    const q = req.session.data.q
+
+    // If clicked on ‘London’ link, don’t automatically select ‘Westminster’
+    const isFreetextSearch = q !== 'London'
+
     res.render('filters/london', {
       backLink: {
-        text: 'Back to location',
+        text: 'Back',
         href: '/'
       },
+      filtering: isFreetextSearch,
       items: {
-        central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central', checked: false }),
+        all: utils.londonBoroughItems(req.session.data.londonBorough),
+        central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central', checked: isFreetextSearch }),
         east: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'east' }),
         north: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'north' }),
         south: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'south' }),
         west: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'west' })
       },
-      next: '/subject'
+      next: '/subject',
+      startFlow: true
     })
   })
 
@@ -58,5 +70,11 @@ module.exports = router => {
 
   router.get('/start', async (req, res) => {
     res.render('start')
+  })
+
+  router.get('/', async (req, res) => {
+    // Reset data
+    req.session.data = {}
+    res.render('index')
   })
 }
