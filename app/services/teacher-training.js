@@ -39,37 +39,12 @@ const teacherTrainingService = {
     try {
       const key = `courseSingleResponse_${data.cycle}-${providerCode}-${courseCode}`
       const courseSingleResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json())
+
       const providerResource = courseSingleResponse.included.find(item => item.type === 'providers')
-
-      const course = courseSingleResponse.data.attributes
       const provider = providerResource.attributes
-      course.provider = provider
+      courseSingleResponse.data.attributes.provider = provider
 
-      // Length
-      switch (course.course_length) {
-        case 'OneYear':
-          course.length = '1 year'
-          break
-        case 'TwoYears':
-          course.length = 'Up to 2 years'
-          break
-        default:
-          course.length = course.course_length
-      }
-
-      // Funding
-      course.has_fees = course.funding_type === 'fee'
-      course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
-      course.funding_option = course.salaried ? 'Salary' : 'Student finance if you’re eligible'
-      course.has_bursary = course.name.includes('Chemistry') // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L47
-      course.has_scholarship = true // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L59
-      course.bursary_only = course.has_bursary && !course.has_scholarship
-      course.has_scholarship_and_bursary = course.has_bursary && course.has_scholarship
-
-      // Year range
-      course.year_range = `${data.cycle} to ${Number(data.cycle) + 1}`
-
-      return course
+      return courseSingleResponse
     } catch (error) {
       console.error(error)
     }
