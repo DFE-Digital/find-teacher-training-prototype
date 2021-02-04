@@ -553,7 +553,7 @@ module.exports = {
     showOnHomepage: false
   }, {
     name: 'Exeter',
-    showOnHomepage: true
+    showOnHomepage: false
   }, {
     name: 'Falmouth',
     showOnHomepage: false
@@ -626,7 +626,7 @@ module.exports = {
   }, {
     name: 'Lancaster and Morecambe',
     shortName: 'Lancaster',
-    showOnHomepage: true
+    showOnHomepage: false
   }, {
     name: 'Launceston',
     showOnHomepage: false
@@ -659,7 +659,7 @@ module.exports = {
     showOnHomepage: false
   }, {
     name: 'Luton',
-    showOnHomepage: true
+    showOnHomepage: false
   }, {
     name: 'Malton',
     showOnHomepage: false
@@ -696,7 +696,7 @@ module.exports = {
     showOnHomepage: false
   }, {
     name: 'Northampton',
-    showOnHomepage: true
+    showOnHomepage: false
   }, {
     name: 'Norwich',
     showOnHomepage: true
@@ -714,7 +714,7 @@ module.exports = {
     showOnHomepage: false
   }, {
     name: 'Penrith',
-    showOnHomepage: true
+    showOnHomepage: false
   }, {
     name: 'Penzance',
     showOnHomepage: false
@@ -781,7 +781,7 @@ module.exports = {
     showOnHomepage: false
   }, {
     name: 'Stafford',
-    showOnHomepage: true
+    showOnHomepage: false
   }, {
     name: 'Stevenage and Welwyn Garden City',
     showOnHomepage: false
