@@ -55,12 +55,6 @@
           {% endfor %}
         {% endif %}
 
-        {{ govukInput({
-          type: "hidden",
-          name: "location",
-          value: "London"
-        }) }}
-
         {{ govukButton({
           text: "Continue" if startFlow else "Find courses"
         }) }}

@@ -6,11 +6,28 @@ const backLink = {
 }
 
 module.exports = router => {
+  // Area
+  router.get('/results/filters/query', async (req, res) => {
+    const q = req.session.data.q || req.query.q
+    const { filtering } = req.query
+
+    res.render('filters/query', {
+      backLink,
+      filtering: filtering,
+      q
+    })
+  })
+
   // London
   router.get('/results/filters/london', (req, res) => {
+    req.session.data.location = 'London'
+    req.session.data.provider = false
+
+    const isFreetextSearch = req.query.q !== 'London'
+
     res.render('filters/london', {
       backLink,
-      filtering: true,
+      filtering: isFreetextSearch,
       items: {
         all: utils.londonBoroughItems(req.session.data.londonBorough),
         central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central' }),
@@ -23,6 +40,7 @@ module.exports = router => {
     })
   })
 
+  // Subject
   router.get('/results/filters/subject', async (req, res) => {
     const q = req.session.data.q || req.query.q
     res.render('filters/subject', {
