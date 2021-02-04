@@ -5,8 +5,10 @@
   </a>
 </h2>
 <dl class="app-list--description">
-  <dt class="app-list--description__label">Course</dt>
-  <dd>{{ result.course.summary }}</dd>
+  <dt class="app-list--description__label">Qualification</dt>
+  <dd>{{ result.course.qualification }}</dd>
+  <dt class="app-list--description__label">Study type</dt>
+  <dd>{{ result.course.study_mode }}</dd>
   {% if result.placementAreas %}
     <dt class="app-list--description__label">School placements</dt>
     <dd>{{ result.placementAreas | formatList }}</dd>

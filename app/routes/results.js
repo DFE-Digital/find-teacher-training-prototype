@@ -99,7 +99,7 @@ module.exports = router => {
         const providers = included.filter(include => include.type === 'providers')
 
         courses = courses.map(async courseResource => {
-          const course = courseResource.attributes
+          const course = utils.decorateCourse(courseResource.attributes)
           const courseRalationships = courseResource.relationships
 
           // Get course provider

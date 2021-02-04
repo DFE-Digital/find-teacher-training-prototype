@@ -6,7 +6,8 @@ module.exports = router => {
     const { providerCode, courseCode } = req.params
 
     try {
-      const course = await teacherTrainingService.getCourse(providerCode, courseCode)
+      const courseSingleResponse = await teacherTrainingService.getCourse(providerCode, courseCode)
+      const course = utils.decorateCourse(courseSingleResponse.data.attributes)
 
       // Get travel areas that school placements lie within
       // Fake it by adding current travel area being to list of placements
