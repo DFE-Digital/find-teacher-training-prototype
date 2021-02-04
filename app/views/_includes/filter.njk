@@ -11,7 +11,7 @@
     </div>
   {% elif area %}
     <div class="app-filter__group">
-      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Location</h2>
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Area</h2>
       <p class="govuk-body-s govuk-!-margin-bottom-2">{{ "London" if londonBorough else area.name }}</p>
       <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/">Change location or choose a provider</a></p>
     </div>
@@ -31,7 +31,7 @@
     <p class="govuk-body-s govuk-!-margin-bottom-2">{{ selectedSubjects | join(", ", "text") }}</p>
     <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/subject">Change<span class="govuk-visually-hidden"> subjects</span></a></p>
 
-    <!--div class="app-filter__scroll">
+    {#<div class="app-filter__scroll">
       {% for item in subjectItems %}
         {{ govukCheckboxes({
           classes: "govuk-checkboxes--small",
@@ -39,7 +39,7 @@
           items: item.items
         }) }}
       {% endfor %}
-    </div-->
+    </div>#}
   </div>
 
   {{ govukCheckboxes({
