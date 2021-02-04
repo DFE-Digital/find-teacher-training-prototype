@@ -13,6 +13,55 @@ const geocoder = NodeGeocoder({
 module.exports = () => {
   const utils = {}
 
+  utils.decorateCourse = course => {
+    // Length
+    switch (course.course_length) {
+      case 'OneYear':
+        course.length = '1 year'
+        break
+      case 'TwoYears':
+        course.length = 'Up to 2 years'
+        break
+      default:
+        course.length = course.course_length
+    }
+
+    // Study mode
+    switch (course.study_mode) {
+      case 'full_time':
+        course.study_mode = 'Full time'
+        break
+      case 'part_time':
+        course.study_mode = 'Part time'
+        break
+      default:
+        course.study_mode = 'Full time or part time'
+    }
+
+    // Qualification
+    if (course.qualifications.length === 2 && course.qualifications.includes('pgce')) {
+      course.qualification = 'PGCE with QTS'
+    } else if (course.qualifications.length === 2 && course.qualifications.includes('pgde')) {
+      course.qualification = 'PGDE with QTS'
+    } else {
+      course.qualification = course.qualifications[0].toUpperCase()
+    }
+
+    // Funding
+    course.has_fees = course.funding_type === 'fee'
+    course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
+    course.funding_option = course.salaried ? 'Salary' : 'Student finance if you’re eligible'
+    course.has_bursary = course.name.includes('Chemistry') // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L47
+    course.has_scholarship = true // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L59
+    course.bursary_only = course.has_bursary && !course.has_scholarship
+    course.has_scholarship_and_bursary = course.has_bursary && course.has_scholarship
+
+    // Year range
+    course.year_range = `${data.cycle} to ${Number(data.cycle) + 1}`
+
+    return course
+  }
+
   utils.geocode = async string => {
     try {
       const geoCodedLocation = await geocoder.geocode(string)

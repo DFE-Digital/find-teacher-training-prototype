@@ -1,11 +1,13 @@
 const teacherTrainingService = require('../services/teacher-training')
+const utils = require('../utils')()
 
 module.exports = router => {
   router.get('/course/:providerCode/:courseCode/apply', async (req, res) => {
     const { providerCode, courseCode } = req.params
 
     try {
-      const course = await teacherTrainingService.getCourse(providerCode, courseCode)
+      const courseSingleResponse = await teacherTrainingService.getCourse(providerCode, courseCode)
+      const course = utils.decorateCourse(courseSingleResponse.data.attributes)
 
       res.render('apply/index', {
         backLink: {
