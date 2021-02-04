@@ -1,10 +1,10 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Teacher training courses" %}
+{% set title = resultsCount + " courses found" %}
 
 {% block content %}
   <h1 class="govuk-heading-l">
-    <span class="govuk-caption-l">{{ title }}</span>
+    <span class="govuk-caption-l">Teacher training courses</span>
     {% if results | length > 0 %}
       {{ resultsCount }} courses found
     {% else %}
