@@ -19,6 +19,8 @@
 }
 
 .app-filter-layout__content {
-  overflow: hidden;
-  overflow-x: auto;
+  @include govuk-media-query(desktop) {
+    float: right;
+    max-width: calc(#{govuk-grid-width("two-thirds")} - #{govuk-spacing(6)});
+  }
 }
