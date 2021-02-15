@@ -1,3 +1,4 @@
+/* global $ */
 export const FilterToggleButton = class {
   constructor (options) {
     this.options = options
@@ -11,7 +12,6 @@ export const FilterToggleButton = class {
   }
 
   checkMode (mq) {
-    console.log('checking mode')
     if (mq.matches) {
       this.enableBigMode()
     } else {
@@ -26,6 +26,7 @@ export const FilterToggleButton = class {
   }
 
   enableSmallMode () {
+    this.options.filter.container.attr('tabindex', '-1')
     this.hideMenu()
     this.addMenuButton()
     this.addCloseButton()
@@ -95,7 +96,6 @@ export const FilterToggleButton = class {
 
   init () {
     this.setupResponsiveChecks()
-    this.options.filter.container.attr('tabindex', '-1')
     if (this.options.startHidden) {
       this.hideMenu()
     }
