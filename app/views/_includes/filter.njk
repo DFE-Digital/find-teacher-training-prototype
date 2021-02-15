@@ -3,126 +3,118 @@
     <h2 class="govuk-heading-m">Filters</h2>
   </div>
 
-  {% if provider %}
-    <div class="app-filter__group">
-      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Provider</h2>
-      <p class="govuk-body-s govuk-!-margin-bottom-2">{{ provider.name }}</p>
-      <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/query">Change provider or choose a location</a></p>
-    </div>
-  {% else %}
-    <div class="app-filter__group">
-      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Area</h2>
-      {% if area %}
-        <p class="govuk-body-s govuk-!-margin-bottom-2">{{ "London" if londonBorough else area.name }}</p>
-      {% else %}
-        <p class="govuk-body-s govuk-!-margin-bottom-2">England</p>
-      {% endif %}
-      <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/query">Change location or choose a provider</a></p>
-    </div>
-  {% endif %}
+  <div class="app-filter__content">
+    {% if provider %}
+      <div class="app-filter__group">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Provider</h2>
+        <p class="govuk-body-s govuk-!-margin-bottom-2">{{ provider.name }}</p>
+        <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/query">Change provider or choose a location</a></p>
+      </div>
+    {% else %}
+      <div class="app-filter__group">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Area</h2>
+        {% if area %}
+          <p class="govuk-body-s govuk-!-margin-bottom-2">{{ "London" if londonBorough else area.name }}</p>
+        {% else %}
+          <p class="govuk-body-s govuk-!-margin-bottom-2">England</p>
+        {% endif %}
+        <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/query">Change location or choose a provider</a></p>
+      </div>
+    {% endif %}
 
-  {% if londonBorough and londonBoroughItems.length > 0 %}
+    {% if londonBorough and londonBoroughItems.length > 0 %}
+      <div class="app-filter__group">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">London borough{{ "s" if londonBoroughItems.length > 1 }}</h2>
+        <p class="govuk-body-s govuk-!-margin-bottom-2">{{ londonBoroughItems | join(", ", "text") }}</p>
+        <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
+      </div>
+    {% endif %}
+
     <div class="app-filter__group">
-      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">London borough{{ "s" if londonBoroughItems.length > 1 }}</h2>
-      <p class="govuk-body-s govuk-!-margin-bottom-2">{{ londonBoroughItems | join(", ", "text") }}</p>
-      <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/london">Change<span class="govuk-visually-hidden"> London boroughs</span></a></p>
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Subject{{ "s" if selectedSubjects.length > 1 }}</h3>
+      {%- set noSubjectsSelected = selectedSubjects.length == 0 -%}
+      <p class="govuk-body-s govuk-!-margin-bottom-2">{{ selectedSubjects | join(", ", "text") }}</p>
+      <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/subject">Change<span class="govuk-visually-hidden"> subjects</span></a></p>
     </div>
-  {% endif %}
 
-  <div class="app-filter__group">
-    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Subject{{ "s" if selectedSubjects.length > 1 }}</h3>
-    {%- set noSubjectsSelected = selectedSubjects.length == 0 -%}
-    <p class="govuk-body-s govuk-!-margin-bottom-2">{{ selectedSubjects | join(", ", "text") }}</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-2"><a class="govuk-link govuk-link--no-visited-state" href="/results/filters/subject">Change<span class="govuk-visually-hidden"> subjects</span></a></p>
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Special educational needs"
+        }
+      },
+      name: "send",
+      items: sendItems
+    }) }}
 
-    {#<div class="app-filter__scroll">
-      {% for item in subjectItems %}
-        {{ govukCheckboxes({
-          classes: "govuk-checkboxes--small",
-          name: "subjects",
-          items: item.items
-        }) }}
-      {% endfor %}
-    </div>#}
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Vacancies"
+        }
+      },
+      name: "vacancy",
+      items: vacancyItems
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Study type"
+        }
+      },
+      name: "studyType",
+      items: studyTypeItems
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Qualifications"
+        }
+      },
+      name: "qualification",
+      items: qualificationItems
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Salary"
+        }
+      },
+      name: "salary",
+      items: salaryItems
+    }) }}
+
+    {{ govukButton({
+      classes: "govuk-!-margin-bottom-1",
+      text: "Apply filters"
+    }) }}
   </div>
-
-  {{ govukCheckboxes({
-    formGroup: {
-      classes: "app-filter__group"
-    },
-    classes: "govuk-checkboxes--small",
-    fieldset: {
-      legend: {
-        classes: "govuk-fieldset__legend--s",
-        text: "Special educational needs"
-      }
-    },
-    name: "send",
-    items: sendItems
-  }) }}
-
-  {{ govukCheckboxes({
-    formGroup: {
-      classes: "app-filter__group"
-    },
-    classes: "govuk-checkboxes--small",
-    fieldset: {
-      legend: {
-        classes: "govuk-fieldset__legend--s",
-        text: "Vacancies"
-      }
-    },
-    name: "vacancy",
-    items: vacancyItems
-  }) }}
-
-  {{ govukCheckboxes({
-    formGroup: {
-      classes: "app-filter__group"
-    },
-    classes: "govuk-checkboxes--small",
-    fieldset: {
-      legend: {
-        classes: "govuk-fieldset__legend--s",
-        text: "Study type"
-      }
-    },
-    name: "studyType",
-    items: studyTypeItems
-  }) }}
-
-  {{ govukCheckboxes({
-    formGroup: {
-      classes: "app-filter__group"
-    },
-    classes: "govuk-checkboxes--small",
-    fieldset: {
-      legend: {
-        classes: "govuk-fieldset__legend--s",
-        text: "Qualifications"
-      }
-    },
-    name: "qualification",
-    items: qualificationItems
-  }) }}
-
-  {{ govukCheckboxes({
-    formGroup: {
-      classes: "app-filter__group"
-    },
-    classes: "govuk-checkboxes--small",
-    fieldset: {
-      legend: {
-        classes: "govuk-fieldset__legend--s",
-        text: "Salary"
-      }
-    },
-    name: "salary",
-    items: salaryItems
-  }) }}
-
-  {{ govukButton({
-    classes: "govuk-!-margin-bottom-1",
-    text: "Apply filters"
-  }) }}
 </form>
