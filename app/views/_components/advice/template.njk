@@ -1,6 +1,9 @@
 <aside class="app-advice{%- if params.classes %} {{ params.classes }}{% endif %}" role="complementary">
   {% if params.title %}
-    <h3 class="app-advice__title">{{ params.title }}</h3>
+    <h3 class="app-advice__title">
+      <span class="app-advice__caption">Advice from Get Into Teaching</span>
+      {{ params.title }}
+    </h3>
   {% endif %}
   <div class="app-advice__body">
     {% if params.html or params.text %}
