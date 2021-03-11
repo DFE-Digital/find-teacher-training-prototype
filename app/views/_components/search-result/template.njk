@@ -5,22 +5,31 @@
   </a>
 </h2>
 <dl class="app-description-list app-description-list--search-result">
-  <dt class="app-list--description__label">Qualification</dt>
+  <dt class="app-description-list__label">Qualification</dt>
   <dd>{{ params.qualification }}</dd>
-  <dt class="app-list--description__label">Study type</dt>
+  <dt class="app-description-list__label">Study type</dt>
   <dd>{{ params.studyMode }}</dd>
   {% if params.placementAreas %}
-    <dt class="app-list--description__label">School placements</dt>
+    <dt class="app-description-list__label">School placements</dt>
     <dd>{{ params.placementAreas }}</dd>
   {% endif %}
+  {% if params.nearestLocation %}
+    <dt class="app-description-list__label">Nearest location</dt>
+    <dd>
+      {{ params.nearestLocation.distance }} miles from you
+      {% if params.nearestLocation.hint %}
+        <span class="app-description-list__hint">{{ params.nearestLocation.hint }}</span>
+      {% endif %}
+    </dd>
+  {% endif %}
   {% if params.accreditedBody %}
-    <dt class="app-list--description__label">Accredited body</dt>
+    <dt class="app-description-list__label">Accredited body</dt>
     <dd>{{ params.accreditedBody }}</dd>
   {% endif %}
-  <dt class="app-list--description__label">Financial support</dt>
+  <dt class="app-description-list__label">Financial support</dt>
   <dd>{{ params.funding }}</dd>
   {% if params.vacancies %}
-    <dt class="app-list--description__label">Vacancies</dt>
+    <dt class="app-description-list__label">Vacancies</dt>
     <dd>{{ params.vacancies }}</dd>
   {% endif %}
 </dl>

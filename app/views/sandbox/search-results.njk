@@ -1,0 +1,78 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Search result items (interim design)" %}
+
+{% block content %}
+  <h1 class="govuk-heading-l">{{ title }}</h1>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m">School Direct (with many locations)</h2>
+      {{ appSearchResult({
+        href: "/course/1EL/2VP3",
+        providerName: "West London Teaching School Alliance (Primary Roehampton)",
+        courseName: "Primary (2VP3)",
+        qualification: "PGCE with QTS",
+        studyMode: "Full time",
+        placementAreas: "London (Hammersmith and Fulham, Kensington and Chelsea, Richmond upon Thames, Westminster)",
+        nearestLocation: {
+          distance: "6",
+          hint: "Nearest of 11 locations to choose from"
+        },
+        accreditedBody: "Roehampton University",
+        funding: "Student finance if you’re eligible",
+        vacancies: "Yes"
+      }) }}
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-8">School Direct (with one location)</h2>
+      {{ appSearchResult({
+        href: "/course/1P2/U186",
+        providerName: "Ashmole Academy (North London Teaching Alliance)",
+        courseName: "Primary (U186)",
+        qualification: "PGCE with QTS",
+        studyMode: "Full time",
+        placementAreas: "London (Barnet) and surrounding areas",
+        nearestLocation: {
+          distance: "6",
+          hint: "This provider may be able to offer placements closer to you"
+        },
+        accreditedBody: "Middlesex University",
+        funding: "Student finance if you’re eligible",
+        vacancies: "Yes"
+      }) }}
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-8">SCITT (with one location)</h2>
+      {{ appSearchResult({
+        href: "/course/1ZC/2VLJ",
+        providerName: "Pimlico Academy",
+        courseName: "Primary (2VLJ)",
+        qualification: "PGCE with QTS",
+        studyMode: "Full time",
+        placementAreas: "London (Westminster) and surrounding areas",
+        nearestLocation: {
+          distance: "6",
+          hint: "This provider may be able to offer placements closer to you"
+        },
+        accreditedBody: "The Pimlico-London SCITT",
+        funding: "Student finance if you’re eligible",
+        vacancies: "Yes"
+      }) }}
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-8">University (one location)</h2>
+      {{ appSearchResult({
+        href: "/course/R48/2F4W",
+        providerName: "Roehampton University",
+        courseName: "Primary (2F4W)",
+        qualification: "PGCE with QTS",
+        studyMode: "Full time",
+        placementAreas: "London (Wandsworth) and surrounding areas",
+        nearestLocation: {
+          distance: "6",
+          hint: "Distance to university campus. You’ll only spend some of your time here."
+        },
+        funding: "Student finance if you’re eligible",
+        vacancies: "Yes"
+      }) }}
+    </div>
+  </div>
+{% endblock %}
