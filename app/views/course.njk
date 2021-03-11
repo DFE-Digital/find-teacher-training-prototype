@@ -17,7 +17,7 @@
 
   <p class="govuk-body-l">{{ course.summary }}</p>
 
-  <dl class="app-list--description govuk-!-margin-bottom-8">
+  <dl class="app-description-list govuk-!-margin-bottom-8">
     {% if course.accredited_body_code %}
       <dt>Accredited body</dt>
       <dd>{{ course.provider.name }}</dd>
@@ -209,7 +209,7 @@
 
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="contact">Contact this training provider</h2>
-        <dl class="app-list--description">
+        <dl class="app-description-list">
           {% if course.provider.email %}
             <dt class="app-list--description__label">Email</dt>
             <dd>{{ course.provider.email | urlize }}</dd>
