@@ -1,0 +1,26 @@
+<h2 class="app-search-result__item-title">
+  <a href="{{ params.href }}" style="text-decoration: none">
+    <span class="app-search-result__provider-name">{{ params.providerName }}</span><br />
+    <span class="app-search-result__course-name">{{ params.courseName }}</span>
+  </a>
+</h2>
+<dl class="app-description-list app-description-list--search-result">
+  <dt class="app-list--description__label">Qualification</dt>
+  <dd>{{ params.qualification }}</dd>
+  <dt class="app-list--description__label">Study type</dt>
+  <dd>{{ params.studyMode }}</dd>
+  {% if params.placementAreas %}
+    <dt class="app-list--description__label">School placements</dt>
+    <dd>{{ params.placementAreas }}</dd>
+  {% endif %}
+  {% if params.accreditedBody %}
+    <dt class="app-list--description__label">Accredited body</dt>
+    <dd>{{ params.accreditedBody }}</dd>
+  {% endif %}
+  <dt class="app-list--description__label">Financial support</dt>
+  <dd>{{ params.funding }}</dd>
+  {% if params.vacancies %}
+    <dt class="app-list--description__label">Vacancies</dt>
+    <dd>{{ params.vacancies }}</dd>
+  {% endif %}
+</dl>

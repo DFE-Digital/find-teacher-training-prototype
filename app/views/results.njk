@@ -24,7 +24,17 @@
         <ul class="app-search-results">
         {% for result in results %}
           <li class="app-search-results__item">
-            {% include "_includes/result-item.njk" %}
+            {{ appSearchResult({
+              href: "/course/" + result.provider.code + "/" + result.course.code,
+              providerName: result.provider.name | markdown("inline"),
+              courseName: result.course.name + " (" + result.course.code + ")",
+              qualification: result.course.qualification,
+              studyMode: result.course.study_mode,
+              placementAreas: result.placementAreas | formatList,
+              accreditedBody: result.course.accredited_body,
+              funding: "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
+              vacancies: ("Yes" if result.course.has_vacancies else "No") if not vacancy
+            }) }}
           </li>
         {% endfor %}
         </ul>
