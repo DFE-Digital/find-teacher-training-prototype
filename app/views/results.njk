@@ -24,7 +24,20 @@
         <ul class="app-search-results">
         {% for result in results %}
           <li class="app-search-results__item">
-            {% include "_includes/result-item.njk" %}
+            {{ appResultDetail({
+              href: "/course/" + result.provider.code + "/" + result.course.code,
+              providerName: result.provider.name | markdown("inline"),
+              courseName: result.course.name + " (" + result.course.code + ")",
+              placementAreas: result.placementAreas | formatList,
+              schools: result.schools,
+              accreditedBody: result.course.accredited_body,
+              studyMode: result.course.study_mode,
+              qualification: result.course.qualification,
+              funding: "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
+              degree: "2:1 degree or higher (or equivalent)",
+              visa: "Student visas can be sponsored",
+              vacancies: ("Yes" if result.course.has_vacancies else "No") if not vacancy
+            }) }}
           </li>
         {% endfor %}
         </ul>

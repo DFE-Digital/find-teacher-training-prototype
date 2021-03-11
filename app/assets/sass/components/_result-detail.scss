@@ -21,8 +21,11 @@
 }
 
 .app-result-detail__key {
+  font-weight: bold;
+
   @include govuk-media-query($from: tablet) {
     color:  $govuk-secondary-text-colour;
+    font-weight: normal;
     width: 40%;
   }
 }
@@ -30,12 +33,21 @@
 .app-result-detail__key,
 .app-result-detail__value {
   margin: 0; // Reset default user agent styles
+  padding-bottom: govuk-spacing(1);
 
   @include govuk-media-query($from: tablet) {
     display: table-cell;
     padding-top: 0;
     padding-right: govuk-spacing(4);
-    padding-bottom: govuk-spacing(1);
+  }
+
+  .govuk-body {
+    margin-bottom: govuk-spacing(1);
+  }
+
+  .govuk-hint {
+    @include govuk-font($size: 16);
+    margin-bottom: govuk-spacing(1);
   }
 }
 

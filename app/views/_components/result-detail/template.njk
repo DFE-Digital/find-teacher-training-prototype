@@ -1,0 +1,79 @@
+{% from "govuk/components/details/macro.njk" import govukDetails %}
+{% from "govuk/components/table/macro.njk" import govukTable %}
+
+<h2 class="app-search-result__item-title">
+  <a href="{{ params.href }}" style="text-decoration: none">
+    <span class="app-search-result__provider-name">{{ params.providerName }}</span><br />
+    <span class="app-search-result__course-name">{{ params.courseName }}</span>
+  </a>
+</h2>
+<dl class="app-result-detail">
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Nearest placement</dt>
+    <dd class="app-result-detail__value">
+      {% if params.schools | length > 0 %}
+        <p class="govuk-body">6 miles from you</p>
+        <p class="govuk-hint">{{ params.schools[0].name }}, {{ params.schools[0].address }}</p>
+        {% if params.schools | length > 1 %}
+          <p class="govuk-hint">Nearest of {{ params.schools | length }} locations. Next nearest is {{ params.schools[1].distance + 1 }} miles from you.</p>
+        {% endif %}
+      {% else %}
+        6 miles from you
+      {% endif %}
+    </dd>
+  </div>
+  {% if params.placementAreas and showPlacementAreas %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Placements</dt>
+      <dd class="app-result-detail__value">{{ params.placementAreas }}</dd>
+    </div>
+  {% endif %}
+  {% if params.trainingLocation %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Training centre</dt>
+      <dd class="app-result-detail__value">
+        <p class="govuk-body">{{ params.trainingLocation.distance }} miles from you</p>
+        <p class="govuk-hint">{{ params.trainingLocation.address }}</p>
+      </dd>
+    </div>
+  {% endif %}
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Study type</dt>
+    <dd class="app-result-detail__value">{{ params.studyMode }}</dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Qualification</dt>
+    <dd class="app-result-detail__value">
+      {% if params.accreditedBody %}
+        <p class="govuk-body">{{ params.qualification }}</p>
+        <p class="govuk-hint">QTS ratified by {{ params.accreditedBody }}</p>
+      {% else %}
+        {{ params.qualification }}
+      {% endif %}
+    </dd>
+  </div>
+  {% if params.funding %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Financial support</dt>
+      <dd class="app-result-detail__value">{{ params.funding }}</dd>
+    </div>
+  {% endif %}
+  {% if params.degree %}
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Degree required</dt>
+    <dd class="app-result-detail__value">{{ params.degree }}</dd>
+  </div>
+  {% endif %}
+  {% if params.visa %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Visa sponsorship</dt>
+      <dd class="app-result-detail__value">{{ params.visa }}</dd>
+    </div>
+  {% endif %}
+  {% if params.vacancies %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Vacancies</dt>
+      <dd class="app-result-detail__value">{{ params.vacancies }}</dd>
+    </div>
+  {% endif %}
+</dl>
