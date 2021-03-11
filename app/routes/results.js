@@ -123,19 +123,53 @@ module.exports = router => {
             course.accredited_body = accreditedBody.attributes.name
           }
 
+          // Get locations
+          const LocationListResponse = await teacherTrainingService.getCourseLocations(provider.code, course.code)
+          const statuses = LocationListResponse.included.filter(item => item.type === 'location_statuses')
+          const locations = LocationListResponse.data.map(location => {
+            const { attributes } = location
+
+            // Vacancy status
+            const statusId = location.relationships.location_status.data.id
+            const status = statuses.find(status => status.id === statusId)
+            attributes.has_vacancies = status.attributes.has_vacancies
+
+            // Address
+            const streetAddress1 = attributes.street_address_1 ? attributes.street_address_1 + ', ' : ''
+            const streetAddress2 = attributes.street_address_2 ? attributes.street_address_2 + ', ' : ''
+            const city = attributes.city ? attributes.city + ', ' : ''
+            const county = attributes.county ? attributes.county + ', ' : ''
+            const postcode = attributes.postcode
+
+            attributes.name = attributes.name.replace(/'/g, '’')
+            attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
+            attributes.distance = 6
+
+            return attributes
+          })
+
+          const schools = locations.filter(location => location.code !== '-')
+
+          course.trainingLocation = locations.find(location => location.code === '-')
+          if (course.trainingLocation) {
+            course.trainingLocation.distance = 10
+          }
+
           // Get travel areas that school placements lie within
           // Fake it by adding current london borough/travel area being to list of placements
-          let fakedPlacementArea
-          if (area) {
-            const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
-            fakedPlacementArea = selectedLondonBoroughs[0] || area.name
-          }
-          const placementAreas = await utils.getPlacementAreas(provider.code, course.code, fakedPlacementArea)
+          //
+          // let fakedPlacementArea
+          // if (area) {
+          //   const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
+          //   fakedPlacementArea = selectedLondonBoroughs[0] || area.name
+          // }
+          // const placementAreas = await utils.getPlacementAreas(provider.code, course.code, fakedPlacementArea)
 
           return {
             course,
             provider,
-            placementAreas
+            schools
+            // placementAreas
           }
         })
       }

@@ -57,7 +57,7 @@ module.exports = router => {
         const streetAddress2 = attributes.street_address_2 ? attributes.street_address_2 + ', ' : ''
         const city = attributes.city ? attributes.city + ', ' : ''
         const county = attributes.county ? attributes.county + ', ' : ''
-        const postcode = attributes.postcode ? attributes.postcode + ', ' : ''
+        const postcode = attributes.postcode
         attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
 
         return attributes
