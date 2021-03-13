@@ -184,7 +184,10 @@ module.exports = () => {
     return data.subjectGroups.map(group => ({
       text: group.text,
       name: 'subjects',
-      items: utils.subjectGroupItems(data.subjectOptions, { type: group.value })
+      items: utils.subjectGroupItems(subjects, {
+        type: group.value,
+        showHintText: options.showHintText
+      })
     }))
   }
 
