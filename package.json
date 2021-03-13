@@ -31,7 +31,7 @@
     "gulp-nodemon": "^2.5.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^3.0.0",
-    "inquirer": "^7.1.0",
+    "inquirer": "^8.0.0",
     "keypather": "^3.0.0",
     "luxon": "^1.25.0",
     "marked": "^2.0.0",
