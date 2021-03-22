@@ -80,15 +80,51 @@
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="school-placements">School placements</h2>
 
+        {% set whereYouWillTrainHtml %}
+          {% if course.placementPolicy == "hosted" %}
+            <p>You will be placed in different schools during your training. You can select your host school when you apply.</p>
+          {% elif course.placementPolicy == "placed" %}
+            <p>You will be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to.</p>
+          {% endif %}
+
+          {% if course.trainingLocation == "remote" %}
+            <p>You will also spend some of your time in academic lessons. These take place remotely.</p>
+          {% elif course.trainingLocation == "school" %}
+            <p>You will also spend some of your time in academic lessons, which takes place at the school where you are placed.</p>
+          {% elif course.trainingLocation %}
+            <p>You will also spend some of your time in academic lessons. These take place at {{ course.trainingLocation.name }}, {{ course.trainingLocation.address }}.</p>
+          {% endif %}
+        {% endset %}
+
         {{ appAdvice({
           title: "Where you will train",
-          html: ("This course has placement schools in " + (placementAreas | formatList) + ". Most of your time will be spent in the classroom with experienced teachers.\n\nYou’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to.") | markdown
-        } if course.provider.provider_type != "university" else {
-          title: "Where you will train",
-          html: ("You’ll be placed in schools for most of your course. This university is based in " + course.provider.city + ", and your school placements will be within commuting distance.\n\nYou can’t pick which schools you want to be in, but your university will try to take your journey time into consideration.\n\nUniversities can work with over 100 potential placement schools. Most will be within 10 miles of the university, but sometimes they can cover a wider area, especially outside of cities.") | markdown
+          html: whereYouWillTrainHtml
         }) }}
 
         {{ course.how_school_placements_work | markdown | safe }}
+
+        {% if course.placementPolicy == "hosted" %}
+          <h3 class="govuk-heading-m" id="placement-locations">Placement schools</h3>
+          <table class="govuk-table app-table--vertical-align-middle">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">Location</th>
+                <th class="govuk-table__header">Vacancies</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              {% for school in schools %}
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <span class="govuk-!-font-weight-bold">{{ school.name }}</span><br />
+                  {{ school.address }}
+                </td>
+                <td class="govuk-table__cell">{{ "Yes" if school.has_vacancies else "No" }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% endif %}
       </section>
 
       <section class="govuk-!-margin-bottom-8">
@@ -209,7 +245,7 @@
         {% endif %}
 
         {{ appAdvice({
-          title: "Financial support",
+          title: "Financial support from the government",
           html: financialSupportHtml | trim | markdown
         }) }}
 
@@ -319,9 +355,10 @@
         <p class="govuk-body">For support and advice, you can speak to a <a class="govuk-link" href="https://beta-adviser-getintoteaching.education.gov.uk/">Get Into Teaching</a> adviser for free. They’re all experienced teachers who can help you to prepare your application, book school experience, and access exclusive teaching events.</p>
         <p class="govuk-body">You can also call Get Into Teaching free of charge on 0800 389 2501, or speak to an adviser using their <a class="govuk-link" href="https://beta-getintoteaching.education.gov.uk/#talk-to-us">online chat service</a> Monday to Friday, 8.30am to 5pm (except public holidays).</p>
 
-        <h3 class="govuk-heading-m">Is there something wrong with this page?</h3>
-        <p class="govuk-body">If there is something wrong with this course listing, <a class="govuk-link" href="mailto:becomingateacher@digital.education.gov.uk?subject=Edit {{ course.name }} ({{ provider.code }}/{{ course.code }})">contact us by email</a>.</p>      </section>
+        <p class="govuk-body">If there is something wrong with this course listing, <a class="govuk-link" href="mailto:becomingateacher@digital.education.gov.uk?subject=Edit {{ course.name }} ({{ provider.code }}/{{ course.code }})">contact us by email</a>.</p>
       </section>
+
+      <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
 
       <section id="apply">
         {{ govukButton({
