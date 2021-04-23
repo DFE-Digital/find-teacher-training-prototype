@@ -18,6 +18,15 @@ This prototype is based on the [GOV.UK prototype kit](https://github.com/alphago
 * In Terminal, change the path to the repository
 * Type `npm start`  and start the application
 
+### API keys
+
+Create a blank file named `.env` and add the following API keys:
+
+```
+HERE_GEOCODING_API_KEY=
+MAPIT_API_KEY=
+```
+
 ## Upgrading the prototype kit
 
 Based on https://govuk-prototype-kit.herokuapp.com/docs/updating-the-kit
