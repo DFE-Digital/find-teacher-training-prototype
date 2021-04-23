@@ -4,6 +4,10 @@ const filters = require('./filters')()
 const locationService = require('../app/services/location')
 const teacherTrainingService = require('../app/services/teacher-training')
 
+if (!process.env.HERE_GEOCODING_API_KEY) {
+  throw Error("Missing HERE_GEOCODING_API_KEY – add it to your .env file")
+}
+
 const geocoder = NodeGeocoder({
   provider: 'here',
   apiKey: process.env.HERE_GEOCODING_API_KEY,

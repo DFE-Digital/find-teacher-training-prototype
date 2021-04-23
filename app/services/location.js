@@ -11,6 +11,11 @@ function _roundUp (num, precision) {
 
 const locationService = {
   async getPoint (latitude, longitude, type = 'TTW') {
+
+    if (!process.env.MAPIT_API_KEY) {
+      throw Error("Missing MAPIT_API_KEY – add it to your .env file")
+    }
+
     // Round up lat/long to reduce calls to MapIt API
     latitude = _roundUp(latitude, 3)
     longitude = _roundUp(longitude, 3)
