@@ -93,16 +93,73 @@
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
 
-        {% set qualificationsAdviceHtml %}{% include "_includes/course/qualifications.md" %}{% endset %}
-        {{ appAdvice({
-          title: "The qualifications you need",
-          html: qualificationsAdviceHtml | trim | markdown
-        }) }}
+        <h3 class="govuk-heading-m" id="required-qualifications">Qualifications needed</h3>
 
-        {% if course.required_qualifications %}
-          <h3 class="govuk-heading-m" id="required-qualifications">Qualifications needed</h3>
-          {{ course.required_qualifications | markdown | safe }}
+        <p class="govuk-body">
+          {% if course.requirements.degree.minimumClass == "21" %}
+            An undergraduate degree at class 2:1 or above, or equivalent.
+          {% elif course.requirements.degree.minimumClass == "22" %}
+            An undergraduate degree at class 2:2 or above, or equivalent.
+          {% elif course.requirements.degree.minimumClass == "3" %}
+            An undergraduate degree, or equivalent. This should be an honours degree (3rd), or equivalent.
+          {% else %}
+            An undergraduate degree, or equivalent.
+          {% endif %}
+        </p>
+
+        {% if course.requirements.degree.subject %}
+          <p class="govuk-body">
+            {{ course.requirements.degree.subject }}
+          </p>
         {% endif %}
+
+        <p class="govuk-body">GCSE grade 4 (C) or above in English{{", maths and science" if course.name === "Primary" else " and maths" }}, or equivalent.</p>
+
+        {% set englishGcseFlexibility = course.requirements.gcses.english.flexibility %}
+        {% set mathsGcseFlexibility = course.requirements.gcses.maths.flexibility %}
+        {% set scienceGcseFlexibility = course.requirements.gcses.science.flexibility %}
+
+        {% set subjectsMustHave = [] %}
+        {% set subjectsCanBePending = [] %}
+        {% set subjectsPendingOrEquivalencyTests = [] %}
+
+        {% if englishGcseFlexibility === "pending" %}
+          {% set subjectsCanBePending = subjectsCanBePending | push("English") %}
+        {% elif englishGcseFlexibility === "must" %}
+          {% set subjectsMustHave = subjectsMustHave | push("English") %}
+        {% elif englishGcseFlexibility === "equivalency-test-offered" %}
+          {% set subjectsPendingOrEquivalencyTests = subjectsPendingOrEquivalencyTests | push("English") %}
+        {% endif %}
+
+        {% if mathsGcseFlexibility === "pending" %}
+          {% set subjectsCanBePending = subjectsCanBePending | push("maths") %}
+        {% elif mathsGcseFlexibility === "must" %}
+          {% set subjectsMustHave = subjectsMustHave | push("maths") %}
+        {% elif mathsGcseFlexibility === "equivalency-test-offered" %}
+          {% set subjectsPendingOrEquivalencyTests = subjectsPendingOrEquivalencyTests | push("maths") %}
+        {% endif %}
+
+        {% if scienceGcseFlexibility === "pending" %}
+          {% set subjectsCanBePending = subjectsCanBePending | push("science") %}
+        {% elif scienceGcseFlexibility === "must" %}
+          {% set subjectsMustHave = subjectsMustHave | push("science") %}
+        {% elif scienceGcseFlexibility === "equivalency-test-offered" %}
+          {% set subjectsPendingOrEquivalencyTests = subjectsPendingOrEquivalencyTests | push("science") %}
+        {% endif %}
+
+        {% if subjectsMustHave | length > 0 %}
+          <p class="govuk-body">Equivalency tests will not be offered for {{ subjectsMustHave | formatOrList }}.</p>
+        {% endif %}
+
+        {% if subjectsCanBePending | length > 0 %}
+          <p class="govuk-body">Candidates who are currently taking their {{"a" if (subjectsCanBePending | length) === 1 }} {{ subjectsCanBePending | formatOrList }} GCSE{{"s" if (subjectsCanBePending | length) > 1 }} will be considered, but equivalency tests will not be offered.</p>
+        {% endif %}
+
+        {% if subjectsPendingOrEquivalencyTests | length > 0 %}
+          <p class="govuk-body">You can ask to take an equivalency test for {{ subjectsPendingOrEquivalencyTests | formatOrList }}. You will also be considered if you are currently taking {{"a" if (subjectsCanBePending | length) === 1 }} {{ subjectsCanBePending | formatOrList }} GCSE{{"s" if (subjectsPendingOrEquivalencyTests | length) > 1 }}.</p>
+        {% endif %}
+
+        <!--{{ course.required_qualifications | markdown | safe }}-->
 
         {% if course.personal_qualities %}
           <h3 class="govuk-heading-m" id="personal-qualities">Personal qualities</h3>
