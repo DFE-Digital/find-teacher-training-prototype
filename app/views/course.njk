@@ -184,6 +184,8 @@
               <p class="govuk-body">The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic.toLocaleString() }}.</p>
             {% endif %}
 
+            <p class="govuk-body">Some candidates, such as those with settled or pre-settled status under the EU Settlement scheme, may be <a href="https://www.gov.uk/government/publications/student-finance-eligibility-2021-to-2022-academic-year" class="govuk-body">eligible for home fee status and student finance</a>.</p>
+
             {{ course.fee_details | markdown | safe }}
           {% endif %}
         {% endif %}
