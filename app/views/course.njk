@@ -64,6 +64,7 @@
           {% if course.interview_process %}
             <li><a href="#interview">Interview process</a></li>
           {% endif %}
+          <li><a href="#international-students">International students</a></li>
           <li><a href="#access-needs">Training with disabilities and other needs</a></li>
           <li><a href="#contact">Contact details</a></li>
           <li><a href="#advice">Support and advice</a></li>
@@ -183,6 +184,8 @@
               <p class="govuk-body">The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic.toLocaleString() }}.</p>
             {% endif %}
 
+            <p class="govuk-body">Some candidates, such as those with settled or pre-settled status under the EU Settlement scheme, may be <a href="https://www.gov.uk/government/publications/student-finance-eligibility-2021-to-2022-academic-year" class="govuk-body">eligible for home fee status and student finance</a>.</p>
+
             {{ course.fee_details | markdown | safe }}
           {% endif %}
         {% endif %}
@@ -199,6 +202,27 @@
           {{ course.interview_process | markdown | safe }}
         </section>
       {% endif %}
+
+      <section class="govuk-!-margin-bottom-8">
+        <h2 class="govuk-heading-l" id="international-students">International students</h2>
+
+        <p class="govuk-body">
+          {% if course.canSponsorVisa %}
+            {% if course.salaried %}
+              We can <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#visas-and-immigration">sponsor Skilled worker visas</a>, but this is not guaranteed.
+            {% else %}
+              We can <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#visas-and-immigration">sponsor Student visas</a>, but this is not guaranteed.
+            {% endif %}
+          {% else %}
+            We are unable to sponsor a visa.
+            You will need to <a class="govuk-link" href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#visas-and-immigration">get the right visa or status to {{"work" if  course.salaried else "study" }} in the UK</a>.
+          {% endif %}
+        </p>
+
+        <p class="govuk-body">You do not need a visa if you already have settled or pre-settled status under the EU Settlement Scheme, or if you are an Irish citizen.</p>
+        <p class="govuk-body">Candidates with qualifications from non-UK institutions may need to provide evidence of comparability by applying for a <a href="https://www.enic.org.uk" class="govuk-link">UK ENIC statement</a>.</p>
+
+      </section>
 
       {% if course.provider.train_with_disability %}
         <section class="govuk-!-margin-bottom-8">
