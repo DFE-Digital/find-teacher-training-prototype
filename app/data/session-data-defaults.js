@@ -194,7 +194,7 @@ module.exports = {
     }
   ],
   salaryOptions: [{
-    text: 'Only show courses that come with a salary',
+    text: 'Only show courses with a salary',
     value: ['include']
   }],
   studyTypeOptions: [{

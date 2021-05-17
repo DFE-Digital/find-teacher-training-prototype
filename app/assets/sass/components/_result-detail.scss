@@ -1,0 +1,44 @@
+.app-result-detail {
+  @include govuk-font($size: 19);
+  @include govuk-text-colour;
+  @include govuk-responsive-margin(6, "bottom");
+  @include govuk-media-query($from: tablet) {
+    display: table;
+    width: 100%;
+    table-layout: fixed; // Required to allow us to wrap words that overflow.
+  }
+  margin: 0; // Reset default user agent styles
+  @include govuk-responsive-margin(6, "bottom");
+}
+
+.app-result-detail__row {
+  @include govuk-media-query($until: tablet) {
+    margin-bottom: govuk-spacing(1);
+  }
+  @include govuk-media-query($from: tablet) {
+    display: table-row;
+  }
+}
+
+.app-result-detail__key {
+  @include govuk-media-query($from: tablet) {
+    color:  $govuk-secondary-text-colour;
+    width: 40%;
+  }
+}
+
+.app-result-detail__key,
+.app-result-detail__value {
+  margin: 0; // Reset default user agent styles
+
+  @include govuk-media-query($from: tablet) {
+    display: table-cell;
+    padding-top: 0;
+    padding-right: govuk-spacing(4);
+    padding-bottom: govuk-spacing(1);
+  }
+}
+
+.app-result-detail--label {
+  font-weight: bold;
+}
