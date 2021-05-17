@@ -10,7 +10,8 @@ module.exports = {
     send: ['exclude'],
     studyType: ['full_time', 'part_time'],
     subjects: [],
-    vacancy: ['include']
+    vacancy: ['include'],
+    entryRequirement: ['21','22','third','degree']
   },
   londonSubRegions: [{
     text: 'Central London',
@@ -174,6 +175,24 @@ module.exports = {
     hint: 'To teach further education you don’t need QTS. Instead you can study for a PGCE or PGDE without QTS.',
     value: 'pgce,pgde'
   }],
+  entryRequirementOptions: [
+    {
+      text: '2:1 degree or higher',
+      value: '21'
+    },
+    {
+      text: '2:2 degree or higher',
+      value: '22'
+    },
+    {
+      text: 'Third class degree or higher',
+      value: 'third'
+    },
+    {
+      text: 'An undergraduate degree',
+      value: 'degree'
+    }
+  ],
   salaryOptions: [{
     text: 'Only show courses that come with a salary',
     value: ['include']
