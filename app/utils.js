@@ -149,6 +149,16 @@ module.exports = () => {
     }))
   }
 
+  utils.entryRequirementItems = (entryRequirement, options = {}) => {
+    return data.entryRequirementOptions.map(option => ({
+      value: option.value,
+      text: option.text,
+      label: { classes: 'govuk-label--s' },
+      hint: { text: options.showHintText ? filters.markdown(option.hint) : false },
+      checked: entryRequirement ? entryRequirement.includes(option.value) : false
+    }))
+  }
+
   utils.salaryItems = salary => {
     return data.salaryOptions.map(option => ({
       value: option.value,

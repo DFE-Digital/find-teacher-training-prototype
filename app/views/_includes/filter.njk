@@ -1,4 +1,4 @@
-<form class="app-filter" method="post">
+  <form class="app-filter" method="post">
   <div class="app-filter__header">
     <h2 class="govuk-heading-m">Filters</h2>
   </div>
@@ -105,11 +105,47 @@
       fieldset: {
         legend: {
           classes: "govuk-fieldset__legend--s",
+          text: "Degree requirements"
+        }
+      },
+      name: "entryRequirement",
+      items: entryRequirementItems
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
           text: "Salary"
         }
       },
       name: "salary",
       items: salaryItems
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Visa sponsorshop"
+        }
+      },
+      name: "visaSponsorship",
+      items: [
+        {
+          value: "yes",
+          text: "Only show courses where visas can be sponsored",
+          checked: (data['visaSponsorship'][0] == 'yes')
+        }
+      ]
     }) }}
 
     {{ govukButton({
