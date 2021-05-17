@@ -10,6 +10,11 @@ marked.setOptions({
 module.exports = (env) => {
   const filters = {}
 
+  filters.push = (array, item) => {
+    array.push(item)
+    return array
+  }
+
   /**
    * Convert string to date
    *
@@ -57,14 +62,25 @@ module.exports = (env) => {
   }
 
   /**
-   * Convert array to readable list format
+   * Convert array to readable list format using 'and'
    * @param {Array} array Array to convert
-   * @example [A, B, C] => A, B anc C
+   * @example [A, B, C] => A, B and C
    */
   filters.formatList = (array = []) => {
     const lf = new Intl.ListFormat('en')
     return lf.format(array)
   }
+
+  /**
+   * Convert array to readable list format using 'or'
+   * @param {Array} array Array to convert
+   * @example [A, B, C] => A, B or C
+   */
+  filters.formatOrList = (array = []) => {
+    const lf = new Intl.ListFormat('en', { style: 'short', type: 'disjunction' })
+    return lf.format(array)
+  }
+
 
   /**
    * Convert object to array
