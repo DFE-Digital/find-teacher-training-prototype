@@ -105,7 +105,7 @@ module.exports = () => {
       return 'area'
     } else {
       const providers = await teacherTrainingService.getProviderSuggestions(query)
-      if (providers) {
+      if (providers && providers.data && providers.data[0]) {
         sessionData.provider = providers.data[0].attributes
         return 'provider'
       }
