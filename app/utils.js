@@ -5,7 +5,7 @@ const locationService = require('../app/services/location')
 const teacherTrainingService = require('../app/services/teacher-training')
 
 if (!process.env.HERE_GEOCODING_API_KEY) {
-  throw Error("Missing HERE_GEOCODING_API_KEY – add it to your .env file")
+  throw Error('Missing HERE_GEOCODING_API_KEY – add it to your .env file')
 }
 
 const geocoder = NodeGeocoder({
@@ -14,15 +14,14 @@ const geocoder = NodeGeocoder({
   country: 'United Kingdom'
 })
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
+function getRandomInt (max) {
+  return Math.floor(Math.random() * max)
 }
 
 module.exports = () => {
   const utils = {}
 
   utils.decorateCourse = course => {
-
     // Placeholder until API is updated
     course.requirements = {
       degree: {
@@ -37,50 +36,48 @@ module.exports = () => {
     // Adding random degree class requirement
     switch (getRandomInt(5)) {
       case 0:
-        course.requirements.degree.minimumClass = "21"
-        break;
+        course.requirements.degree.minimumClass = '21'
+        break
       case 1:
-        course.requirements.degree.minimumClass = "22"
-        break;
+        course.requirements.degree.minimumClass = '22'
+        break
       case 2:
-        course.requirements.degree.minimumClass = "3"
-        break;
+        course.requirements.degree.minimumClass = '3'
+        break
       default:
         course.requirements.degree.minimumClass = false
-        break;
+        break
     }
 
     // Adding degree subject requirement unless it’s primary
-    if (course.name !== "Primary") {
-      course.requirements.degree.subject = "Your degree subject should be in " + course.name + " or a similar subject. Otherwise you will need to demonstrate subject knowledge in some other way."
+    if (course.name !== 'Primary') {
+      course.requirements.degree.subject = `Your degree subject should be in ${course.name} or a similar subject. Otherwise you will need to demonstrate subject knowledge in some other way.`
     }
 
     // Adding random GCSE flexibility options
     switch (getRandomInt(5)) {
       case 0:
-        course.requirements.gcses.maths.flexibility = "must"
-        course.requirements.gcses.english.flexibility = "must"
-        if (course.name === "Primary") {
-          course.requirements.gcses.science.flexibility = "must"
+        course.requirements.gcses.maths.flexibility = 'must'
+        course.requirements.gcses.english.flexibility = 'must'
+        if (course.name === 'Primary') {
+          course.requirements.gcses.science.flexibility = 'must'
         }
-        break;
+        break
       case 1:
-        course.requirements.gcses.maths.flexibility = "pending"
-        course.requirements.gcses.english.flexibility = "pending"
-        if (course.name === "Primary") {
-          course.requirements.gcses.science.flexibility = "pending"
+        course.requirements.gcses.maths.flexibility = 'pending'
+        course.requirements.gcses.english.flexibility = 'pending'
+        if (course.name === 'Primary') {
+          course.requirements.gcses.science.flexibility = 'pending'
         }
-        break;
+        break
       default:
-        course.requirements.gcses.maths.flexibility = "equivalency-test-offered"
-        course.requirements.gcses.english.flexibility = "equivalency-test-offered"
-        if (course.name === "Primary") {
-          course.requirements.gcses.science.flexibility = "equivalency-test-offered"
+        course.requirements.gcses.maths.flexibility = 'equivalency-test-offered'
+        course.requirements.gcses.english.flexibility = 'equivalency-test-offered'
+        if (course.name === 'Primary') {
+          course.requirements.gcses.science.flexibility = 'equivalency-test-offered'
         }
-        break;
+        break
     }
-
-
 
     // Length
     switch (course.course_length) {

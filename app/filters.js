@@ -81,7 +81,6 @@ module.exports = (env) => {
     return lf.format(array)
   }
 
-
   /**
    * Convert object to array
    * @param {Object} object Object to convert
