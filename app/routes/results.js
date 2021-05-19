@@ -40,6 +40,15 @@ module.exports = router => {
       return item
     })
 
+    // Entry Requirements
+    const entryRequirement = utils.toArray(req.session.data.entryRequirement || req.query.entryRequirement || defaults.entryRequirement)
+
+    const entryRequirementItems = utils.entryRequirementItems(entryRequirement).map(item => {
+      item.hint = false
+      item.label.classes = false
+      return item
+    })
+
     // Salary
     const salary = (req.session.data.salary && req.session.data.salary[0] === 'include') || (req.query.salary && req.query.salary[0] === 'include') || (defaults.salary[0] === 'include')
     const salaryItems = utils.salaryItems(salary)
@@ -198,7 +207,8 @@ module.exports = router => {
         studyTypeItems,
         subjectItems,
         vacancy,
-        vacancyItems
+        vacancyItems,
+        entryRequirementItems
       })
     } catch (error) {
       console.log(error.stack)
