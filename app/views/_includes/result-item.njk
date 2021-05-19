@@ -4,23 +4,42 @@
     <span class="app-search-result__course-name">{{ result.course.name }} ({{ result.course.code }})</span>
   </a>
 </h2>
-<dl class="app-list--description">
-  <dt class="app-list--description__label">Qualification</dt>
-  <dd>{{ result.course.qualification }}</dd>
-  <dt class="app-list--description__label">Study type</dt>
-  <dd>{{ result.course.study_mode }}</dd>
+<dl class="app-result-detail">
   {% if result.placementAreas %}
-    <dt class="app-list--description__label">School placements</dt>
-    <dd>{{ result.placementAreas | formatList }}</dd>
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">School placements</dt>
+      <dd class="app-result-detail__value">{{ result.placementAreas | formatList }}</dd>
+    </div>
   {% endif %}
-  {% if result.course.accredited_body %}
-    <dt class="app-list--description__label">Accredited body</dt>
-    <dd>{{ result.course.accredited_body }}</dd>
-  {% endif %}
-  <dt class="app-list--description__label">Financial support</dt>
-  <dd>{{ "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible" }}</dd>
-  {% if not vacancy %}
-    <dt class="app-list--description__label">Vacancies</dt>
-    <dd>{{ "Yes" if result.course.has_vacancies else "No" }}</dd>
-  {% endif %}
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Study type</dt>
+    <dd class="app-result-detail__value">{{ result.course.study_mode }}</dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Qualification</dt>
+    <dd class="app-result-detail__value">{{ result.course.qualification }}</dd>
+  </div>
+
+  {# {% if result.course.accredited_body %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Accredited body</dt>
+      <dd class="app-result-detail__value">{{ result.course.accredited_body }}</dd>
+    </div>
+  {% endif %} #}
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Financial support</dt>
+    <dd class="app-result-detail__value">{{ "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible" }}</dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Degree required</dt>
+    <dd class="app-result-detail__value">2:1 degree or higher (or equivalent)</dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Visa sponsorship</dt>
+    <dd class="app-result-detail__value">Student visas can be sponsored</dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Vacancies</dt>
+    <dd class="app-result-detail__value">{{ "Yes" if result.course.has_vacancies else "No" }}</dd>
+  </div>
 </dl>
