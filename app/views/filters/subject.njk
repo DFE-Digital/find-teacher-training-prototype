@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Select the subjects you want to teach" %}
+{% set title = "Which Secondary subject do you want to teach?" %}
 
 {% block pageNavigation %}
   {{ govukBackLink(backLink) }}
@@ -12,38 +12,30 @@
       <h1 class="govuk-heading-l">{{ title }}</h1>
 
       <form action="/results">
+        {% set items = [] %}
         {% for subject in subjectItems %}
 
-          {% if subject.text == "Primary" %}
-            {% set hintHtml %}
-              <p class="govuk-body">Trainee primary school teachers learn to teach all subjects across the national curriculum.</p>
-              <p class="govuk-body">You can choose to add a specialist subject to your training. This could be a subject you have qualifications or experience in.</p>
-              <p class="govuk-body">Your training will develop your knowledge of your specialist subject. This is so you can support other teachers to teach that subject.</p>
-            {% endset %}
-            {% set hint = {html: hintHtml} %}
-          {% else %}
-            {% set hint = {} %}
+          {% if subject.text == "Secondary" or subject.text == "Secondary: Modern languages" %}
+            {% for item in subject.items %}
+              {% set items = items | push(item) %}
+            {% endfor %}
           {% endif %}
-
-          {{ govukCheckboxes({
-            fieldset: {
-              legend: {
-                text: subject.text,
-                classes: "govuk-fieldset__legend--m"
-              }
-            },
-            hint: hint,
-            name: "subjects",
-            items: subject.items
-          }) }}
         {% endfor %}
-        <h2 class="govuk-heading-m">
-          Special educational needs and disability (SEND)
-        </h2>
+
         {{ govukCheckboxes({
-          name: "send",
-          items: sendItems
+          fieldset: {
+            legend: {
+              text: subject.text,
+              classes: "govuk-fieldset__legend--m"
+            }
+          },
+          hint: {
+            text: "Select all subjects you are interested in teaching"
+          },
+          name: "subjects",
+          items: (items | sort(attribute="text") )
         }) }}
+
 
         {{ govukButton({
           text: "Find courses"

@@ -3,8 +3,13 @@
 {% set title = resultsCount + " courses found" %}
 
 {% block content %}
+
+<div class="govuk-body">
+  <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses in <b>{% if area %}{{ londonBorough if londonBorough else "London" }}{% else %}England{% endif %}</b>
+  <a href="/" class="govuk-link govuk-!-margin-left-4">Change</a>
+</div>
+
   <h1 class="govuk-heading-l">
-    <span class="govuk-caption-l">Teacher training courses</span>
     {% if results | length > 0 %}
       {{ resultsCount }} courses found
     {% else %}
