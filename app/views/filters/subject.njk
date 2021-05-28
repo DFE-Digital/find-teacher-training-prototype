@@ -12,45 +12,39 @@
       <h1 class="govuk-heading-l">{{ title }}</h1>
 
       <form action="/results">
-        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-          {% for subject in subjectItems %}
-            <div class="govuk-accordion__section">
-              <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading">
-                  <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
-                    {{ subject.text }}
-                  </span>
-                </h2>
-              </div>
-              <div class="govuk-accordion__section-content">
-                {% if subject.text == "Primary" %}
-                  <p class="govuk-body">Trainee primary school teachers learn to teach all subjects across the national curriculum.</p>
-                  <p class="govuk-body">You can choose to add a specialist subject to your training. This could be a subject you have qualifications or experience in.</p>
-                  <p class="govuk-body">Your training will develop your knowledge of your specialist subject. This is so you can support other teachers to teach that subject.</p>
-                {% endif %}
-                {{ govukCheckboxes({
-                  name: "subjects",
-                  items: subject.items
-                }) }}
-              </div>
-            </div>
-          {% endfor %}
-          <div class="govuk-accordion__section">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-default-heading-{{ loop.index }}">
-                  Special educational needs and disability (SEND)
-                </span>
-              </h2>
-            </div>
-            <div class="govuk-accordion__section-content">
-              {{ govukCheckboxes({
-                name: "send",
-                items: sendItems
-              }) }}
-            </div>
-          </div>
-        </div>
+        {% for subject in subjectItems %}
+
+          {% if subject.text == "Primary" %}
+            {% set hintHtml %}
+              <p class="govuk-body">Trainee primary school teachers learn to teach all subjects across the national curriculum.</p>
+              <p class="govuk-body">You can choose to add a specialist subject to your training. This could be a subject you have qualifications or experience in.</p>
+              <p class="govuk-body">Your training will develop your knowledge of your specialist subject. This is so you can support other teachers to teach that subject.</p>
+            {% endset %}
+            {% set hint = {html: hintHtml} %}
+          {% else %}
+            {% set hint = {} %}
+          {% endif %}
+
+          {{ govukCheckboxes({
+            fieldset: {
+              legend: {
+                text: subject.text,
+                classes: "govuk-fieldset__legend--m"
+              }
+            },
+            hint: hint,
+            name: "subjects",
+            items: subject.items
+          }) }}
+        {% endfor %}
+        <h2 class="govuk-heading-m">
+          Special educational needs and disability (SEND)
+        </h2>
+        {{ govukCheckboxes({
+          name: "send",
+          items: sendItems
+        }) }}
+
         {{ govukButton({
           text: "Find courses"
         }) }}
