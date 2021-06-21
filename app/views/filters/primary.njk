@@ -27,11 +27,13 @@
           items: [
             {
               value: "yes",
-              text: "Yes, show me the specialist subjects"
+              text: "Yes, show me the specialist subjects",
+              checked: (data["primarySpecialistSubjects"] == "yes")
             },
             {
               value: "no",
-              text: "No, just show me Primary courses"
+              text: "No, just show me Primary courses",
+              checked: (data["primarySpecialistSubjects"] == "no")
             }
           ]
         }) }}
