@@ -189,7 +189,7 @@ module.exports = {
       value: 'third'
     },
     {
-      text: 'An undergraduate degree',
+      text: 'Any undergraduate degree',
       value: 'degree'
     }
   ],
