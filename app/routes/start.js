@@ -115,7 +115,7 @@ module.exports = router => {
 
   router.get('/', async (req, res) => {
     // Reset data
-    req.session.data = {}
+    // req.session.data = {}
     res.render('index')
   })
 }
