@@ -9,7 +9,7 @@ module.exports = router => {
     if (queryType === 'area' && filtering) {
       res.redirect(req.session.data.area.type === 'LBO' ? '/results/filters/london' : '/results/filters/subject')
     } else if (queryType === 'area') {
-      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/subject')
+      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/age-group')
     } else {
       res.redirect(queryType === 'provider' ? '/results' : '/age-group')
     }
@@ -98,7 +98,7 @@ module.exports = router => {
         south: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'south' }),
         west: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'west' })
       },
-      next: '/subject',
+      next: '/age-group',
       startFlow: true
     })
   })
