@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class="govuk-body">
-  <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses in <b>{% if area %}{{ londonBorough if londonBorough else "London" }}{% else %}England{% endif %}</b>
+  <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses in <b>{% if area %}{{ londonBoroughItems | join("</b>, <b>", "text") if londonBorough else area.name }}{% else %}England{% endif %}</b>
   <a href="/" class="govuk-link govuk-!-margin-left-4">Change</a>
 </div>
 
