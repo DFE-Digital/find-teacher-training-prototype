@@ -189,7 +189,7 @@ module.exports = {
       value: 'third'
     },
     {
-      text: 'An undergraduate degree',
+      text: 'Any undergraduate degree',
       value: 'degree'
     }
   ],
@@ -252,7 +252,13 @@ module.exports = {
     text: 'Primary with science',
     type: 'primary',
     value: '07'
-  }, {
+  },
+  {
+    text: 'Special education needs and disability (SEND)',
+    type: 'primary',
+    value: 'SEND'
+  },
+   {
     text: 'Art and design',
     type: 'secondary',
     value: 'W1'
@@ -402,7 +408,11 @@ module.exports = {
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
     value: '22'
-  }, {
+  },{
+    text: 'Special educational needs and disability (SEND)',
+    type: 'secondary',
+    value: 'SEND'
+  },{
     text: 'Further education',
     type: 'further_education',
     value: '41'

@@ -1,0 +1,47 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Would you like to find Primary courses which include a specialist subject?" %}
+
+{% block pageNavigation %}
+  {{ govukBackLink({href: "/age-group"}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/primary" method="POST">
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+        {{ govukRadios({
+          name: "primarySpecialistSubjects",
+          fieldset: {
+            legend: {
+              text: title,
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          hint: {
+            text: "Primary courses with a specialist subject will develop your knowledge of that subject so that you can support other teachers."
+          },
+          items: [
+            {
+              value: "yes",
+              text: "Yes, show me the specialist subjects",
+              checked: (data["primarySpecialistSubjects"] == "yes")
+            },
+            {
+              value: "no",
+              text: "No, just show me Primary courses",
+              checked: (data["primarySpecialistSubjects"] == "no")
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

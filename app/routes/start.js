@@ -9,11 +9,52 @@ module.exports = router => {
     if (queryType === 'area' && filtering) {
       res.redirect(req.session.data.area.type === 'LBO' ? '/results/filters/london' : '/results/filters/subject')
     } else if (queryType === 'area') {
-      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/subject')
+      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/age-group')
     } else {
-      res.redirect(queryType === 'provider' ? '/results' : '/subject')
+      res.redirect(queryType === 'provider' ? '/results' : '/age-group')
     }
   })
+
+  router.get('/age-group', async (req, res) => {
+    res.render('filters/age-group')
+  })
+
+  router.post('/age-group', async (req, res) => {
+    const ageGroupAnswer = req.body.ageGroup
+
+    if (ageGroupAnswer == "primary") {
+      res.redirect('/primary')
+    } else if (ageGroupAnswer == "secondary") {
+      res.redirect('/subject')
+    } else {
+      res.render('filters/age-group')
+    }
+  })
+
+  router.get('/primary', async (req, res) => {
+    res.render('filters/primary')
+  })
+
+  router.post('/primary', async (req, res) => {
+    const primarySpecialistSubjectsAnswer = req.body.primarySpecialistSubjects
+
+    if (primarySpecialistSubjectsAnswer == "yes") {
+      res.redirect('/primary-specialist-subject')
+    } else if (primarySpecialistSubjectsAnswer == "no") {
+
+      // set subject to "Primary" only
+      req.session.data.subjects = ["00"]
+
+      res.redirect('/results')
+    } else {
+      res.render('filters/primary')
+    }
+  })
+
+  router.get('/primary-specialist-subject', async (req, res) => {
+    res.render('filters/primary-specialist-subject')
+  })
+
 
   router.get('/subject', async (req, res) => {
     const q = req.session.data.q || req.query.q
@@ -57,7 +98,7 @@ module.exports = router => {
         south: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'south' }),
         west: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'west' })
       },
-      next: '/subject',
+      next: '/age-group',
       startFlow: true
     })
   })
@@ -74,7 +115,7 @@ module.exports = router => {
 
   router.get('/', async (req, res) => {
     // Reset data
-    req.session.data = {}
+    // req.session.data = {}
     res.render('index')
   })
 }
