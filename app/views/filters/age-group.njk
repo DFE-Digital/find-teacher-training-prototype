@@ -1,0 +1,45 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Which age group do you want to teach?" %}
+
+{% block pageNavigation %}
+  {{ govukBackLink({href: "/"}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/age-group" method="POST">
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+        {{ govukRadios({
+          idPrefix: "age-group",
+          name: "ageGroup",
+          fieldset: {
+            legend: {
+              text: title,
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          items: [
+            {
+              value: "primary",
+              text: "Primary",
+              checked: (data["ageGroup"] == "primary")
+            },
+            {
+              value: "secondary",
+              text: "Secondary",
+              checked: (data["ageGroup"] == "secondary")
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}
