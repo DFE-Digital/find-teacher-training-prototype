@@ -1,33 +1,80 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Find teacher training courses" %}
+{% set title = "Find courses by location or by training provider" %}
+
+{% block backLink %}
+  {{ govukBackLink({
+    text: backLink.text,
+    href: backLink.href
+  }) if backLink }}
+{% endblock %}
 
 {% block content %}
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters">
+    <div class="govuk-grid-column-two-thirds">
       <form action="/search" method="post">
-        <h1 class="govuk-heading-l">{{ title }}</h1>
-        <h2 class="govuk-heading-m">Choose a city or town</h2>
-        <ul class="govuk-list app-list--locations">
-        {% for area in data.areas | selectattr("showOnHomepage") %}
-          <li class="govuk-!-margin-bottom-1">
-            <a href="/search?q={{ area.shortName or area.name }}">{{ area.shortName or area.name }}</a>
-          </li>
-        {% endfor %}
-        </ul>
+        {{ govukErrorSummary({
+          titleText: "There is a problem",
+          errorList: [{
+            text: error.error_message,
+            href: "#postcode-town-or-city"
+          }]
+        }) if error }}
 
-        <p><a href="/search?q=England">All courses in England</a></p>
+        {% set postcodeHtml %}
+          {{ govukInput({
+            label: {
+              text: "Postcode, town or city"
+            },
+            value: data.locationName,
+            name: "locationName"
+          }) }}
+        {% endset %}
 
-        <p class="govuk-hint">or</p>
+        {% set providerHtml %}
+          {{ govukInput({
+            label: {
+              text: "School, university or other training provider"
+            },
+            hint: {
+              text: "Enter the name or provider code"
+            },
+            value: data.providerName,
+            id: "providerName",
+            name: "providerName"
+          }) }}
+        {% endset %}
 
-        {{ govukInput({
-          classes: "govuk-!-width-three-quarters",
-          label: {
-            classes: "govuk-label--m",
-            text: "Enter a place name, postcode or training provider"
+        {{ govukRadios({
+          name: "initialChoice",
+          fieldset: {
+            legend: {
+              text: title,
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
           },
-          id: "q",
-          name: "q"
+          items: [{
+            value: "location",
+            text: "By city, town or postcode",
+            checked: (data.initialChoice == "location"),
+            conditional: {
+              html: postcodeHtml
+            }
+          }, {
+            value: "england",
+            text: "Across England",
+            checked: (data.initialChoice == "england")
+          }, {
+            divider: "or"
+          }, {
+            value: "provider",
+            text: "By school, university or other training provider",
+            checked: (data.initialChoice == "provider"),
+            conditional: {
+              html: providerHtml
+            }
+          }]
         }) }}
 
         {{ govukButton({
@@ -36,5 +83,4 @@
       </form>
     </div>
   </div>
-
 {% endblock %}
