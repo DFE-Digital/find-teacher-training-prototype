@@ -175,24 +175,19 @@ module.exports = {
     hint: 'To teach further education you don’t need QTS. Instead you can study for a PGCE or PGDE without QTS.',
     value: 'pgce,pgde'
   }],
-  entryRequirementOptions: [
-    {
-      text: '2:1 degree or higher',
-      value: '21'
-    },
-    {
-      text: '2:2 degree or higher',
-      value: '22'
-    },
-    {
-      text: 'Third class degree or higher',
-      value: 'third'
-    },
-    {
-      text: 'Any undergraduate degree',
-      value: 'degree'
-    }
-  ],
+  entryRequirementOptions: [{
+    text: '2:1 degree or higher',
+    value: '21'
+  }, {
+    text: '2:2 degree or higher',
+    value: '22'
+  }, {
+    text: 'Third class degree or higher',
+    value: 'third'
+  }, {
+    text: 'Any undergraduate degree',
+    value: 'degree'
+  }],
   salaryOptions: [{
     text: 'Only show courses with a salary',
     value: ['include']
@@ -239,7 +234,8 @@ module.exports = {
   }, {
     text: 'Primary with mathematics',
     type: 'primary',
-    value: '03'
+    value: '03',
+    hasSke: true
   }, {
     text: 'Primary with modern languages',
     type: 'primary',
@@ -252,13 +248,11 @@ module.exports = {
     text: 'Primary with science',
     type: 'primary',
     value: '07'
-  },
-  {
+  }, {
     text: 'Special education needs and disability (SEND)',
     type: 'primary',
     value: 'SEND'
-  },
-   {
+  }, {
     text: 'Art and design',
     type: 'secondary',
     value: 'W1'
@@ -266,7 +260,8 @@ module.exports = {
     text: 'Biology',
     hint: 'Bursaries of £7,000 available.',
     type: 'secondary',
-    value: 'C1'
+    value: 'C1',
+    hasSke: true
   }, {
     text: 'Business studies',
     type: 'secondary',
@@ -275,7 +270,8 @@ module.exports = {
     text: 'Chemistry',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
     type: 'secondary',
-    value: 'F1'
+    value: 'F1',
+    hasSke: true
   }, {
     text: 'Citizenship',
     type: 'secondary',
@@ -293,7 +289,8 @@ module.exports = {
     text: 'Computing',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
     type: 'secondary',
-    value: '11'
+    value: '11',
+    hasSke: true
   }, {
     text: 'Dance',
     type: 'secondary',
@@ -301,7 +298,8 @@ module.exports = {
   }, {
     text: 'Design and technology',
     type: 'secondary',
-    value: 'DT'
+    value: 'DT',
+    hasSke: true
   }, {
     text: 'Drama',
     type: 'secondary',
@@ -313,7 +311,8 @@ module.exports = {
   }, {
     text: 'English',
     type: 'secondary',
-    value: 'Q3'
+    value: 'Q3',
+    hasSke: true
   }, {
     text: 'Geography',
     type: 'secondary',
@@ -330,7 +329,8 @@ module.exports = {
     text: 'Mathematics',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
     type: 'secondary',
-    value: 'G1'
+    value: 'G1',
+    hasSke: true
   }, {
     text: 'Music',
     type: 'secondary',
@@ -347,7 +347,8 @@ module.exports = {
     text: 'Physics',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
     type: 'secondary',
-    value: 'F3'
+    value: 'F3',
+    hasSke: true
   }, {
     text: 'Psychology',
     type: 'secondary',
@@ -355,7 +356,8 @@ module.exports = {
   }, {
     text: 'Religious education',
     type: 'secondary',
-    value: 'V6'
+    value: 'V6',
+    hasSke: true
   }, {
     text: 'Science',
     type: 'secondary',
@@ -372,47 +374,55 @@ module.exports = {
     text: 'French',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '15'
+    value: '15',
+    hasSke: true
   }, {
     text: 'German',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '17'
+    value: '17',
+    hasSke: true
   }, {
     text: 'Italian',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '18'
+    value: '18',
+    hasSke: true
   }, {
     text: 'Japanese',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '19'
+    value: '19',
+    hasSke: true
   }, {
     text: 'Mandarin',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '20'
+    value: '20',
+    hasSke: true
   }, {
     text: 'Modern languages (other)',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '24'
+    value: '24',
+    hasSke: true
   }, {
     text: 'Russian',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '21'
+    value: '21',
+    hasSke: true
   }, {
     text: 'Spanish',
     hint: 'Bursaries of £10,000 available.',
     type: 'secondary_language',
-    value: '22'
-  },{
+    value: '22',
+    hasSke: true
+  }, {
     text: 'Special educational needs and disability (SEND)',
     type: 'secondary',
     value: 'SEND'
-  },{
+  }, {
     text: 'Further education',
     type: 'further_education',
     value: '41'
