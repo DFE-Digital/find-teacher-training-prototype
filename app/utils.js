@@ -111,6 +111,13 @@ module.exports = () => {
       course.qualification = course.qualifications[0].toUpperCase()
     }
 
+    // SKE
+    const subjectCodesWithSke = data.subjectOptions
+      .filter(subject => subject.hasSke === true)
+      .map(subject => subject.value)
+
+    course.has_ske = subjectCodesWithSke.some(code => course.subject_codes.includes(code))
+
     // Funding
     course.has_fees = course.funding_type === 'fee'
     course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
