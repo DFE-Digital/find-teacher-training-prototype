@@ -46,7 +46,7 @@
         {% endset %}
 
         {{ govukRadios({
-          name: "initialChoice",
+          name: "q",
           fieldset: {
             legend: {
               text: title,
@@ -57,20 +57,20 @@
           items: [{
             value: "location",
             text: "By city, town or postcode",
-            checked: (data.initialChoice == "location"),
+            checked: (data.q == "location"),
             conditional: {
               html: postcodeHtml
             }
           }, {
             value: "england",
             text: "Across England",
-            checked: (data.initialChoice == "england")
+            checked: (data.q == "england")
           }, {
             divider: "or"
           }, {
             value: "provider",
             text: "By school, university or other training provider",
-            checked: (data.initialChoice == "provider"),
+            checked: (data.q == "provider"),
             conditional: {
               html: providerHtml
             }

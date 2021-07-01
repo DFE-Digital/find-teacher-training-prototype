@@ -2,17 +2,11 @@ const utils = require('../utils')()
 
 module.exports = router => {
   router.all('/search', async (req, res) => {
-    const qurey = req.session.data.q || req.query.q
-    const queryType = await utils.processQuery(qurey, req.session.data)
+    const query = req.session.data.q || req.query.q
+    const queryType = await utils.processQuery(query, req.session.data)
     const { filtering } = req.query
 
-    if (queryType === 'area' && filtering) {
-      res.redirect(req.session.data.area.type === 'LBO' ? '/results/filters/london' : '/results/filters/subject')
-    } else if (queryType === 'area') {
-      res.redirect(req.session.data.area.type === 'LBO' ? '/london' : '/age-group')
-    } else {
-      res.redirect(queryType === 'provider' ? '/results' : '/age-group')
-    }
+    res.redirect('/age-group')
   })
 
   router.get('/age-group', async (req, res) => {

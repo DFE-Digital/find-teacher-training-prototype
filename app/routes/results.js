@@ -84,14 +84,15 @@ module.exports = router => {
       funding_type: salary ? 'salary' : 'salary,apprenticeship,fee',
       has_vacancies: vacancy,
       qualification: qualification.toString(),
-      send_courses: send,
       study_type: studyType.toString(),
       subjects: subjects.toString()
     }
 
+    //  TODO:
+    // send_courses: send,
     try {
       let CourseListResponse
-      if (provider) {
+      if (q == "provider") {
         CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
       } else {
         if (radius) {
