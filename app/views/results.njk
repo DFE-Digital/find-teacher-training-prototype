@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="govuk-body govuk-!-margin-bottom-0">
+<p class="govuk-body govuk-!-margin-bottom-0">
   <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses
 
   {% if data.initialChoice == "england" %}
@@ -15,7 +15,7 @@
     from <b>{{ data.providerName }}</b>
   {% endif %}
   <a href="/" class="govuk-link govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
-</div>
+</p>
 
   <h1 class="govuk-heading-l">
     {% if results | length > 0 %}
