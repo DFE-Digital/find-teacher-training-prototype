@@ -58,12 +58,20 @@
       <dd class="app-result-detail__value">{{ params.funding }}</dd>
     </div>
   {% endif %}
-  {% if params.degree %}
   <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Degree required</dt>
-    <dd class="app-result-detail__value">{{ params.degree }}</dd>
+    <dd class="app-result-detail__value">
+      {% if params.degree == "21" %}
+        2:1 degree or higher (or equivalent)
+      {% elif params.degree == "22" %}
+        2:2 degree or higher (or equivalent)
+      {% elif params.degree == "3" %}
+        Third class degree or higher (or equivalent)
+      {% else %}
+        Any undergraduate degree
+      {% endif %}
+    </dd>
   </div>
-  {% endif %}
   {% if params.visa %}
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Visa sponsorship</dt>
