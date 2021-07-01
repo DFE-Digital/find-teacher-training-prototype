@@ -150,22 +150,26 @@ module.exports = () => {
       return 'england'
     }
 
-    const location = await utils.geocode(query)
-    if (location) {
-      // Get latitude/longitude
-      const { latitude, longitude } = location
-      sessionData.radius = 10
-      sessionData.latitude = latitude
-      sessionData.longitude = longitude
+    if (query === 'location') {
+      const location = await utils.geocode(sessionData.locationName)
+      if (location) {
+        // Get latitude/longitude
+        const { latitude, longitude } = location
+        sessionData.radius = 10
+        sessionData.latitude = latitude
+        sessionData.longitude = longitude
 
-      // Get area name from latitude/longitude
-      const area = await locationService.getPoint(latitude, longitude)
-      sessionData.area = area
-      sessionData.londonBorough = area.type === 'LBO' ? area.codes['local-authority-eng'] : false
+        // Get area name from latitude/longitude
+        const area = await locationService.getPoint(latitude, longitude)
+        sessionData.area = area
+        sessionData.londonBorough = area.type === 'LBO' ? area.codes['local-authority-eng'] : false
 
-      return 'area'
-    } else {
-      const providers = await teacherTrainingService.getProviderSuggestions(query)
+        return 'area'
+      }
+    }
+
+    if (query === 'provider') {
+      const providers = await teacherTrainingService.getProviderSuggestions(sessionData.providerName)
       if (providers && providers.data && providers.data[0]) {
         sessionData.provider = providers.data[0].attributes
         return 'provider'
