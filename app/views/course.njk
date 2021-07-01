@@ -130,6 +130,16 @@
       <section class="govuk-!-margin-bottom-8">
         <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
 
+        {% set refreshingSubjectKnowlegdeHtml %}
+          <p class="govuk-body">If you have the right qualities and qualifications to teach but need to improve your subject knowledge, you might be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/improve-your-subject-knowledge">subject knowledge enhancement (SKE) course</a>.</p>
+          <p class="govuk-body">You’ll find out if you need to complete an SKE course after the interview stage.</p>
+        {% endset %}
+
+        {{ appAdvice({
+          title: "Improving your subject knowledge",
+          html: refreshingSubjectKnowlegdeHtml
+        }) if course.has_ske }}
+
         <h3 class="govuk-heading-m" id="required-qualifications">Qualifications needed</h3>
 
         <p class="govuk-body">
