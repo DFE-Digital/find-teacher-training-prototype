@@ -23,12 +23,18 @@
 
         {% set postcodeHtml %}
           {{ govukInput({
+            id: 'location',
             label: {
               text: "Postcode, town or city"
             },
             value: data.locationName,
-            name: "locationName"
+            autocomplete: 'off',
+            name: "locationName",
+            formGroup: {
+              classes: "govuk-!-margin-bottom-0"
+            }
           }) }}
+          <div id="location-autocomplete" class="govuk-body"></div>
         {% endset %}
 
         {% set providerHtml %}

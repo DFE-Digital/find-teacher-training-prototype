@@ -1,4 +1,5 @@
 const utils = require('../utils')()
+const locationSuggestions = require('../services/location-suggestions')
 
 module.exports = router => {
   router.all('/search', async (req, res) => {
@@ -111,5 +112,10 @@ module.exports = router => {
     // Reset data
     // req.session.data = {}
     res.render('index')
+  })
+
+  router.get('/location-suggestions', async (req, res) => {
+    const suggestedLocations = await locationSuggestions.getSuggestions(req.query.query)
+    res.json(suggestedLocations)
   })
 }
