@@ -9,8 +9,8 @@ if (!process.env.HERE_GEOCODING_API_KEY) {
 }
 
 const geocoder = NodeGeocoder({
-  provider: 'here',
-  apiKey: process.env.HERE_GEOCODING_API_KEY,
+  provider: 'google',
+  apiKey: process.env.GCP_API_KEY,
   country: 'United Kingdom'
 })
 
@@ -129,7 +129,7 @@ module.exports = () => {
 
   utils.geocode = async string => {
     try {
-      const geoCodedLocation = await geocoder.geocode(string)
+      const geoCodedLocation = await geocoder.geocode(string + ", UK")
       const geo = geoCodedLocation[0]
 
       return {
