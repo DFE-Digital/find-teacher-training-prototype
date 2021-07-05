@@ -156,16 +156,6 @@ module.exports = router => {
             course.trainingLocation.distance = 10
           }
 
-          // Get travel areas that school placements lie within
-          // Fake it by adding current london borough/travel area being to list of placements
-          //
-          // let fakedPlacementArea
-          // if (area) {
-          //   const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
-          //   fakedPlacementArea = selectedLondonBoroughs[0] || area.name
-          // }
-          // const placementAreas = await utils.getPlacementAreas(provider.code, course.code, fakedPlacementArea)
-
           return {
             course,
             provider,

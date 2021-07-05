@@ -1,7 +1,6 @@
 const NodeGeocoder = require('node-geocoder')
 const data = require('./data/session-data-defaults')
 const filters = require('./filters')()
-const locationService = require('../app/services/location')
 const teacherTrainingService = require('../app/services/teacher-training')
 
 if (!process.env.HERE_GEOCODING_API_KEY) {
@@ -159,11 +158,6 @@ module.exports = () => {
         sessionData.latitude = latitude
         sessionData.longitude = longitude
 
-        // Get area name from latitude/longitude
-        const area = await locationService.getPoint(latitude, longitude)
-        sessionData.area = area
-        sessionData.londonBorough = area.type === 'LBO' ? area.codes['local-authority-eng'] : false
-
         return 'area'
       }
     }
@@ -276,29 +270,6 @@ module.exports = () => {
       text: option.text,
       checked: vacancy === true
     }))
-  }
-
-  utils.getPlacementAreas = async (providerCode, courseCode, fakedPlacementArea) => {
-    const LocationListResponse = await teacherTrainingService.getCourseLocations(providerCode, courseCode)
-
-    // Get catchment areas that locations lie within
-    const areas = fakedPlacementArea ? new Array(fakedPlacementArea) : []
-    if (LocationListResponse.data) {
-      for await (const locationResource of LocationListResponse.data) {
-        const { latitude, longitude } = locationResource.attributes
-        const point = await locationService.getPoint(latitude, longitude)
-        if (point) {
-          areas.push(point.name)
-        }
-      }
-    }
-
-    // Remove duplicate catchment areas
-    let locations = await Promise.all(areas)
-    locations = areas.map(area => area.replace(/\s(City|Borough)\sCouncil|Corporation/, '')).sort()
-    locations = [...new Set(locations)]
-
-    return locations
   }
 
   return utils

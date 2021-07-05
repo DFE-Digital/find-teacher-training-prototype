@@ -32,12 +32,6 @@ module.exports = router => {
         return attributes
       })
 
-      // Get travel areas that school placements lie within
-      // Fake it by adding current travel area being to list of placements
-      //
-      // const fakedPlacementArea = req.session.data.area ? req.session.data.area.name : false
-      // const placementAreas = await utils.getPlacementAreas(providerCode, courseCode, fakedPlacementArea)
-
       // Mock placement schools
       // Assume placement schools are locations with a campus code that isn’t '-'
       const schools = locations.filter(location => location.code !== '-')
