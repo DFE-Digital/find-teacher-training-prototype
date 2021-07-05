@@ -94,7 +94,7 @@ module.exports = router => {
       let CourseListResponse
       if (q == "provider") {
         CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
-      } else {
+      } else if (q == "location") {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
