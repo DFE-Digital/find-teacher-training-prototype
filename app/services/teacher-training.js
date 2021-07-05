@@ -3,7 +3,8 @@ const qs = require('qs')
 const CacheService = require('../services/cache.js')
 const data = require('../data/session-data-defaults')
 
-const ttl = 60 * 60 * 24 * 30 // cache for 30 days
+// const ttl = 60 * 60 * 24 * 30 // cache for 30 days
+const ttl = 0
 const cache = new CacheService(ttl) // Create a new cache service instance
 
 const teacherTrainingService = {
@@ -17,7 +18,9 @@ const teacherTrainingService = {
     }
 
     const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
-    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
+    // const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
+    const courseListResponse = await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json()
+
     return courseListResponse
   },
 

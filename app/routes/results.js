@@ -84,21 +84,34 @@ module.exports = router => {
       funding_type: salary ? 'salary' : 'salary,apprenticeship,fee',
       has_vacancies: vacancy,
       qualification: qualification.toString(),
-      send_courses: send,
       study_type: studyType.toString(),
       subjects: subjects.toString()
     }
 
+    // Current 'SEND' courses are a separate boolean, so this is
+    // a stop-gap whilst we test whether it should become a specialist
+    // subject instead, which would allow filters to return SEND courses
+    // OR Primary with mathematics
+    //
+    // TODO: refactor once we’ve decided how to treat SEND specialist courses
+    if (subjects.includes('SEND') && !subjects.includes('00')) {
+      filter.subjects = (subjects.concat('00').toString())
+      filter.send_courses = true
+    }
+
     try {
       let CourseListResponse
-      if (provider) {
+      if (q == "provider") {
         CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
-      } else {
+      } else if (q == "location") {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
           filter.radius = radius
         }
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      } else {
+        // England-wide search
         CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
       }
       const { data, links, meta, included } = CourseListResponse
@@ -154,16 +167,6 @@ module.exports = router => {
           if (course.trainingLocation) {
             course.trainingLocation.distance = 10
           }
-
-          // Get travel areas that school placements lie within
-          // Fake it by adding current london borough/travel area being to list of placements
-          //
-          // let fakedPlacementArea
-          // if (area) {
-          //   const selectedLondonBoroughs = londonBoroughItems.map(item => item.text)
-          //   fakedPlacementArea = selectedLondonBoroughs[0] || area.name
-          // }
-          // const placementAreas = await utils.getPlacementAreas(provider.code, course.code, fakedPlacementArea)
 
           return {
             course,
