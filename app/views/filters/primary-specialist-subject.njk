@@ -11,38 +11,50 @@
     <div class="govuk-grid-column-two-thirds">
       <form action="/results">
 
+
         {% set items = [
           {
             text: 'English',
-            value: '01'
+            value: '01',
+            checked: (data.subjects and data.subjects.includes('01'))
           },
           {
             text: 'Geography and history',
-            value: '02'
+            value: '02',
+            checked: (data.subjects and data.subjects.includes('02'))
           },
           {
             text: 'Mathematics',
-            value: '03'
+            value: '03',
+            checked: (data.subjects and data.subjects.includes('03'))
           },
           {
             text: 'Modern languages',
-            value: '04'
+            value: '04',
+            checked: (data.subjects and data.subjects.includes('04'))
           },
           {
             text: 'Physical education',
-            value: '06'
+            value: '06',
+            checked: (data.subjects and data.subjects.includes('06'))
           },
           {
             text: 'Science',
-            value: '07'
+            value: '07',
+            checked: (data.subjects and data.subjects.includes('07'))
           },
           {
             text: 'Special education needs and disability (SEND)',
-            value: 'SEND'
+            value: 'SEND',
+            checked: (data.subjects and data.subjects.includes('SEND'))
+          },
+          {
+            divider: '&nbsp;'
           },
           {
             text: 'Also show me Primary courses without a specialist subject',
-            value: '00'
+            value: '00',
+            checked: (data.subjects and data.subjects.includes('00'))
           }
         ] %}
 
