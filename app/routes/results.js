@@ -88,8 +88,17 @@ module.exports = router => {
       subjects: subjects.toString()
     }
 
-    //  TODO:
-    // send_courses: send,
+    // Current 'SEND' courses are a separate boolean, so this is
+    // a stop-gap whilst we test whether it should become a specialist
+    // subject instead, which would allow filters to return SEND courses
+    // OR Primary with mathematics
+    //
+    // TODO: refactor once we’ve decided how to treat SEND specialist courses
+    if (subjects.includes('SEND') && !subjects.includes('00')) {
+      filter.subjects = (subjects.concat('00').toString())
+      filter.send_courses = true
+    }
+
     try {
       let CourseListResponse
       if (q == "provider") {
