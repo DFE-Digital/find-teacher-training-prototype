@@ -101,6 +101,9 @@ module.exports = router => {
           filter.radius = radius
         }
         CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      } else {
+        // England-wide search
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
       }
       const { data, links, meta, included } = CourseListResponse
 
