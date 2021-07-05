@@ -23,8 +23,7 @@ This prototype is based on the [GOV.UK prototype kit](https://github.com/alphago
 Create a blank file named `.env` and add the following API keys:
 
 ```
-HERE_GEOCODING_API_KEY=
-MAPIT_API_KEY=
+GCP_API_KEY=
 ```
 
 ## Upgrading the prototype kit

@@ -4,10 +4,18 @@
 
 {% block content %}
 
-<div class="govuk-body">
-  <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses in <b>{% if area %}{{ londonBoroughItems | join("</b>, <b>", "text") if londonBorough else area.name }}{% else %}England{% endif %}</b>
-  <a href="/" class="govuk-link govuk-!-margin-left-4">Change</a>
-</div>
+<p class="govuk-body govuk-!-margin-bottom-0">
+  <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses
+
+  {% if data.q == "england" %}
+    in <b>England</b>
+  {% elif data.q == "location" %}
+    in <b>{{ data.locationName }}</b>
+  {% elif data.q == "provider" %}
+    from <b>{{ provider.name }}</b>
+  {% endif %}
+  <a href="/" class="govuk-link govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
+</p>
 
   <h1 class="govuk-heading-l">
     {% if results | length > 0 %}
@@ -25,6 +33,47 @@
     </div>
 
     <div class="app-filter-layout__content">
+      {% if data.q == "location" %}
+        <div class="app-search-results-header">
+         <p class="govuk-body">Sorted by distance</p>
+
+         <p class="govuk-body">
+            <a class="govuk-link govuk-link--no-visited-state" href="/">New search</a>
+          </p>
+        </div>
+      {% elif data.q == "england" %}
+        <div class="app-search-results-header">
+          <form class="app-search-results-header__sort" data-qa="sort-form" action="/results" accept-charset="UTF-8" data-remote="true" method="get">
+
+            {{ govukSelect({
+            id: "sortby",
+            name: "sortby",
+            attributes: { onchange: "this.form.submit()" },
+            formGroup: { classes: "govuk-!-margin-bottom-0" },
+            label: {
+              text: "Sorted by",
+              classes: "govuk-!-display-inline-block"
+            },
+            items: [
+              {
+                value: "0",
+                text: "Training provider (A-Z)",
+                selected: (data.sortby == "0")
+              },
+              {
+                value: "1",
+                text: "Training provider (Z-A)",
+                selected: (data.sortby == "1")
+              }
+            ]
+          }) }}
+          </form>
+          <p class="govuk-body">
+            <a class="govuk-link govuk-link--no-visited-state" href="/">New search</a>
+          </p>
+        </div>
+      {% endif %}
+
       {% if results | length > 0 %}
         <ul class="app-search-results">
         {% for result in results %}
@@ -39,7 +88,7 @@
               studyMode: result.course.study_mode,
               qualification: result.course.qualification,
               funding: "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
-              degree: "2:1 degree or higher (or equivalent)",
+              degree: result.course.requirements.degree.minimumClass,
               visa: "Student visas can be sponsored",
               vacancies: ("Yes" if result.course.has_vacancies else "No") if not vacancy
             }) }}
