@@ -3,8 +3,8 @@ const data = require('./data/session-data-defaults')
 const filters = require('./filters')()
 const teacherTrainingService = require('../app/services/teacher-training')
 
-if (!process.env.HERE_GEOCODING_API_KEY) {
-  throw Error('Missing HERE_GEOCODING_API_KEY – add it to your .env file')
+if (!process.env.GCP_API_KEY) {
+  throw Error('Missing GCP_API_KEY – add it to your .env file')
 }
 
 const geocoder = NodeGeocoder({
