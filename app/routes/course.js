@@ -32,6 +32,9 @@ module.exports = router => {
         return attributes
       })
 
+      // Mock course visa sponsorship
+      course.canSponsorVisa = (Math.random(course.code) > 0.5)
+
       // Mock placement schools
       // Assume placement schools are locations with a campus code that isn’t '-'
       const schools = locations.filter(location => location.code !== '-')
