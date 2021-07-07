@@ -9,28 +9,28 @@
 </h2>
 <dl class="app-result-detail">
   <div class="app-result-detail__row">
-    <dt class="app-result-detail__key">Nearest placement</dt>
+  {% if params.schools and params.schools | length > 0 %}
+    <dt class="app-result-detail__key">Nearest location</dt>
     <dd class="app-result-detail__value">
       {% if params.schools | length > 0 %}
-        <p class="govuk-body">6 miles from you</p>
+        <p class="govuk-body">{{ params.schools[0].distance }} miles from you</p>
         <p class="govuk-hint">{{ params.schools[0].name }}, {{ params.schools[0].address }}</p>
         {% if params.schools | length > 1 %}
-          <p class="govuk-hint">Nearest of {{ params.schools | length }} locations. Next nearest is {{ params.schools[1].distance + 1 }} miles from you.</p>
+          <p class="govuk-hint">Nearest of {{ params.schools | length }} locations. Next nearest is {{ params.schools[1].distance }} miles from you.</p>
         {% endif %}
-      {% else %}
-        6 miles from you
       {% endif %}
     </dd>
   </div>
+  {% endif %}
   {% if params.placementAreas and showPlacementAreas %}
     <div class="app-result-detail__row">
-      <dt class="app-result-detail__key">Placements</dt>
+      <dt class="app-result-detail__key">Placement areas</dt>
       <dd class="app-result-detail__value">{{ params.placementAreas }}</dd>
     </div>
   {% endif %}
   {% if params.trainingLocation %}
     <div class="app-result-detail__row">
-      <dt class="app-result-detail__key">Training centre</dt>
+      <dt class="app-result-detail__key">University location</dt>
       <dd class="app-result-detail__value">
         <p class="govuk-body">{{ params.trainingLocation.distance }} miles from you</p>
         <p class="govuk-hint">{{ params.trainingLocation.address }}</p>
