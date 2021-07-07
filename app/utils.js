@@ -41,10 +41,10 @@ module.exports = () => {
         course.requirements.degree.minimumClass = '22'
         break
       case 2:
-        course.requirements.degree.minimumClass = '3'
+        course.requirements.degree.minimumClass = 'third'
         break
       default:
-        course.requirements.degree.minimumClass = false
+        course.requirements.degree.minimumClass = 'degree'
         break
     }
 

@@ -190,6 +190,11 @@ module.exports = router => {
         results = results.filter(result => result.course.canSponsorVisa == true)
       }
 
+      if (req.session.data.entryRequirement) {
+        // Post-process the results to filter courses based on degree requirement
+        results = results.filter(result => req.session.data.entryRequirement.includes(result.course.requirements.degree.minimumClass))
+      }
+
       // Pagination
       const pageCount = links.last.match(/page=(\d*)/)[1]
       // Provider courses response doesn’t return number of results
