@@ -161,6 +161,9 @@ module.exports = router => {
             return attributes
           })
 
+          // Mock course visa sponsorship
+          course.canSponsorVisa = (Math.random(course.code) > 0.5)
+
           const schools = locations.filter(location => location.code !== '-')
 
           course.trainingLocation = locations.find(location => location.code === '-')
@@ -178,7 +181,14 @@ module.exports = router => {
       }
 
       // Results
-      const results = await Promise.all(courses)
+      var results = await Promise.all(courses)
+
+      if (req.session.data.visaSponsorship == 'yes') {
+
+        // Post-process the results to filter out courses where visas can’t be
+        // sponsored.
+        results = results.filter(result => result.course.canSponsorVisa == true)
+      }
 
       // Pagination
       const pageCount = links.last.match(/page=(\d*)/)[1]
