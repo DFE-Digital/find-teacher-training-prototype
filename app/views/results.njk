@@ -45,7 +45,7 @@
         <div class="app-search-results-header">
           <form class="app-search-results-header__sort" data-qa="sort-form" action="/results" accept-charset="UTF-8" data-remote="true" method="get">
 
-            {{ govukSelect({
+          {{ govukSelect({
             id: "sortby",
             name: "sortby",
             attributes: { onchange: "this.form.submit()" },
@@ -54,18 +54,15 @@
               text: "Sorted by",
               classes: "govuk-!-display-inline-block"
             },
-            items: [
-              {
-                value: "0",
-                text: "Training provider (A-Z)",
-                selected: (data.sortby == "0")
-              },
-              {
-                value: "1",
-                text: "Training provider (Z-A)",
-                selected: (data.sortby == "1")
-              }
-            ]
+            items: [{
+              value: "0",
+              text: "Training provider (A-Z)",
+              selected: (data.sortby == "0")
+            }, {
+              value: "1",
+              text: "Training provider (Z-A)",
+              selected: (data.sortby == "1")
+            }]
           }) }}
           </form>
           <p class="govuk-body">
@@ -78,12 +75,19 @@
         <ul class="app-search-results">
         {% for result in results %}
           <li class="app-search-results__item">
+            {% set isLocationSearch = data.q != "england" %}
+            {% set isUniversity = result.provider.provider_type == "university" %}
+            {% set trainingLocation = result.course.trainingLocation %}
+
             {{ appResultDetail({
               href: "/course/" + result.provider.code + "/" + result.course.code,
               providerName: result.provider.name | markdown("inline"),
               courseName: result.course.name + " (" + result.course.code + ")",
-              placementAreas: result.placementAreas | formatList,
-              schools: result.schools,
+              schools: result.schools if not isUniversity and isLocationSearch,
+              trainingLocation: {
+                distance: trainingLocation.distance,
+                address: trainingLocation.address
+              } if trainingLocation and isUniversity and isLocationSearch,
               accreditedBody: result.course.accredited_body,
               studyMode: result.course.study_mode,
               qualification: result.course.qualification,

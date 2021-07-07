@@ -20,16 +20,6 @@
   }
 }
 
-.app-result-detail__key {
-  font-weight: bold;
-
-  @include govuk-media-query($from: tablet) {
-    color:  $govuk-secondary-text-colour;
-    font-weight: normal;
-    width: 40%;
-  }
-}
-
 .app-result-detail__key,
 .app-result-detail__value {
   margin: 0; // Reset default user agent styles
@@ -48,6 +38,16 @@
   .govuk-hint {
     @include govuk-font($size: 16);
     margin-bottom: govuk-spacing(1);
+  }
+}
+
+.app-result-detail__key {
+  font-weight: bold;
+
+  @include govuk-media-query($from: tablet) {
+    color:  $govuk-secondary-text-colour;
+    font-weight: normal;
+    width: 200px;
   }
 }
 

@@ -1,4 +1,5 @@
 const qs = require('qs')
+const geolib = require('geolib')
 
 const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
@@ -101,9 +102,9 @@ module.exports = router => {
 
     try {
       let CourseListResponse
-      if (q == "provider") {
+      if (q === 'provider') {
         CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
-      } else if (q == "location") {
+      } else if (q === 'location') {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
@@ -154,11 +155,27 @@ module.exports = router => {
             const county = attributes.county ? attributes.county + ', ' : ''
             const postcode = attributes.postcode
 
+            // Distance from search location
+            const distanceInMeters = geolib.getDistance({
+              latitude,
+              longitude
+            }, {
+              latitude: attributes.latitude,
+              longitude: attributes.longitude
+            })
+
+            const distanceInMiles = ((distanceInMeters / 1000) * 0.621371).toFixed(0)
+
             attributes.name = attributes.name.replace(/'/g, '’')
             attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
-            attributes.distance = 6
+            attributes.distance = distanceInMiles
 
             return attributes
+          })
+
+          // Sort locations by disance
+          locations.sort((l1, l2) => {
+            return l1.distance - l2.distance
           })
 
           // Mock course visa sponsorship
@@ -167,9 +184,6 @@ module.exports = router => {
           const schools = locations.filter(location => location.code !== '-')
 
           course.trainingLocation = locations.find(location => location.code === '-')
-          if (course.trainingLocation) {
-            course.trainingLocation.distance = 10
-          }
 
           return {
             course,
@@ -181,13 +195,12 @@ module.exports = router => {
       }
 
       // Results
-      var results = await Promise.all(courses)
+      let results = await Promise.all(courses)
 
-      if (req.session.data.visaSponsorship == 'yes') {
-
+      if (req.session.data.visaSponsorship === 'yes') {
         // Post-process the results to filter out courses where visas can’t be
         // sponsored.
-        results = results.filter(result => result.course.canSponsorVisa == true)
+        results = results.filter(result => result.course.canSponsorVisa === true)
       }
 
       if (req.session.data.entryRequirement) {
@@ -199,18 +212,17 @@ module.exports = router => {
       const pageCount = links.last.match(/page=(\d*)/)[1]
       // Provider courses response doesn’t return number of results
       // https://github.com/DFE-Digital/teacher-training-api/issues/1733
-      var resultsCount = meta ? meta.count : results.length
+      let resultsCount = meta ? meta.count : results.length
 
       // Fake the results count based on visa sponsorship
-      if (req.session.data.visaSponsorship == 'yes') {
+      if (req.session.data.visaSponsorship === 'yes') {
         resultsCount = Math.floor(resultsCount / 2)
       }
 
       // Fake the results count based on number of degree requirement checkboxes ticked
-      if (req.session.data.entryRequirement && req.session.data.entryRequirement.length != 4) {
+      if (req.session.data.entryRequirement && req.session.data.entryRequirement.length !== 4) {
         resultsCount = Math.floor(resultsCount * (req.session.data.entryRequirement.length / 4))
       }
-
 
       const prevPage = links.prev ? (page - 1) : false
       const nextPage = links.next ? (page + 1) : false
