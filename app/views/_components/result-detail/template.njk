@@ -72,12 +72,20 @@
       {% endif %}
     </dd>
   </div>
-  {% if params.visa %}
-    <div class="app-result-detail__row">
-      <dt class="app-result-detail__key">Visa sponsorship</dt>
-      <dd class="app-result-detail__value">{{ params.visa }}</dd>
-    </div>
-  {% endif %}
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Visa sponsorship</dt>
+    <dd class="app-result-detail__value">
+      {% if params.canSponsorVisa %}
+        {% if params.funding == "Salary" %}
+          Skilled Worker visas can be sponsored
+        {% else %}
+          Student visas can be sponsored
+        {% endif %}
+      {% else %}
+        Visas cannot be sponsored
+      {% endif %}
+    </dd>
+  </div>
   {% if params.vacancies %}
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Vacancies</dt>
