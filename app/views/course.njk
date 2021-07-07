@@ -46,40 +46,45 @@
     {% endif %}
   </dl>
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-m">Contents</h2>
-        <ul class="govuk-list app-list--dash">
-          <li><a href="#about">About the course</a></li>
-          <li><a href="#school-placements">School placements</a></li>
-          <li><a href="#entry-requirements">Entry requirements</a></li>
-          {% if course.train_with_us or course.accredited_body_code %}
-            <li><a href="#about-the-provider">About the training provider</a></li>
-          {% endif %}
-          {% if course.salaried %}
-            <li><a href="#salary">Salary</a></li>
-          {% endif %}
-          <li><a href="#fees-and-financial-support">Fees and financial support</a></li>
-          {% if course.interview_process %}
-            <li><a href="#interview">Interview process</a></li>
-          {% endif %}
-          <li><a href="#international-students">International students</a></li>
-          <li><a href="#access-needs">Training with disabilities and other needs</a></li>
-          <li><a href="#contact">Contact details</a></li>
-          <li><a href="#advice">Support and advice</a></li>
-          <li><a href="#apply">Apply</a></li>
-        </ul>
-      </section>
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-m">Contents</h2>
+    <ul class="govuk-list app-list--dash">
+      <li><a href="#about">About the course</a></li>
+      <li><a href="#school-placements">School placements</a></li>
+      <li><a href="#entry-requirements">Entry requirements</a></li>
+      {% if course.train_with_us or course.accredited_body_code %}
+        <li><a href="#about-the-provider">About the training provider</a></li>
+      {% endif %}
+      {% if course.salaried %}
+        <li><a href="#salary">Salary</a></li>
+      {% endif %}
+      <li><a href="#fees-and-financial-support">Fees and financial support</a></li>
+      {% if course.interview_process %}
+        <li><a href="#interview">Interview process</a></li>
+      {% endif %}
+      <li><a href="#international-students">International students</a></li>
+      <li><a href="#access-needs">Training with disabilities and other needs</a></li>
+      <li><a href="#contact">Contact details</a></li>
+      <li><a href="#advice">Support and advice</a></li>
+      <li><a href="#apply">Apply</a></li>
+    </ul>
+  </section>
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="about">About the course</h2>
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-l" id="about">About the course</h2>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
         {{ course.about_course | markdown | safe }}
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="school-placements">School placements</h2>
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-l" id="school-placements">School placements</h2>
 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third-from-desktop app-!-float-right">
         {% set whereYouWillTrainHtml %}
           {% if course.placementPolicy == "hosted" %}
             <p>You will be placed in different schools during your training. You can select your host school when you apply.</p>
@@ -100,7 +105,9 @@
           title: "Where you will train",
           html: whereYouWillTrainHtml
         }) }}
+      </div>
 
+      <div class="govuk-grid-column-two-thirds-from-desktop app-!-float-left">
         {{ course.how_school_placements_work | markdown | safe }}
 
         {% if course.placementPolicy == "hosted" %}
@@ -125,11 +132,15 @@
             </tbody>
           </table>
         {% endif %}
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third-from-desktop app-!-float-right">
         {% set refreshingSubjectKnowlegdeHtml %}
           <p class="govuk-body">If you have the right qualities and qualifications to teach but need to improve your subject knowledge, you might be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/improve-your-subject-knowledge">subject knowledge enhancement (SKE) course</a>.</p>
           <p class="govuk-body">You’ll find out if you need to complete an SKE course after the interview stage.</p>
@@ -139,9 +150,10 @@
           title: "Improving your subject knowledge",
           html: refreshingSubjectKnowlegdeHtml
         }) if course.has_ske }}
+      </div>
 
+      <div class="govuk-grid-column-two-thirds-from-desktop app-!-float-left">
         <h3 class="govuk-heading-m" id="required-qualifications">Qualifications needed</h3>
-
         <p class="govuk-body">
           {% if course.requirements.degree.minimumClass == "21" %}
             An undergraduate degree at class 2:1 or above, or equivalent.
@@ -206,8 +218,6 @@
           <p class="govuk-body">You can ask to take an equivalency test for {{ subjectsPendingOrEquivalencyTests | formatOrList }}. You will also be considered if you are currently taking {{"a" if (subjectsCanBePending | length) === 1 }} {{ subjectsCanBePending | formatOrList }} GCSE{{"s" if (subjectsPendingOrEquivalencyTests | length) > 1 }}.</p>
         {% endif %}
 
-        <!--{{ course.required_qualifications | markdown | safe }}-->
-
         {% if course.personal_qualities %}
           <h3 class="govuk-heading-m" id="personal-qualities">Personal qualities</h3>
           {{ course.personal_qualities | markdown | safe }}
@@ -217,33 +227,45 @@
           <h3 class="govuk-heading-m" id="other-requirements">Other requirements</h3>
           {{ course.other_requirements | markdown | safe }}
         {% endif %}
-      </section>
+      </div>
+    </div>
+  </section>
 
-      {% if course.train_with_us or course.accredited_body_code %}
-        <section class="govuk-!-margin-bottom-8">
-          {% if course.provider.train_with_us %}
-            <h2 class="govuk-heading-l" id="about-the-provider">About the training provider</h2>
-            {{ course.provider.train_with_us | markdown | safe }}
-          {% endif %}
+  {% if course.train_with_us or course.accredited_body_code %}
+    <section class="govuk-!-margin-bottom-8">
+      <h2 class="govuk-heading-l" id="about-the-provider">About the training provider</h2>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+          {{ course.provider.train_with_us | markdown | safe }}
 
           {% if course.about_accredited_body %}
             <h3 class="govuk-heading-m" id="about-the-accredited-body">About the accredited body</h3>
             {{ course.about_accredited_body | markdown | safe }}
           {% endif %}
-        </section>
-      {% endif %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
 
-      {% if course.salaried %}
-        <section class="govuk-!-margin-bottom-8">
-          <h2 class="govuk-heading-l" id="salary">Salary</h3>
+  {% if course.salaried %}
+    <section class="govuk-!-margin-bottom-8">
+      <h2 class="govuk-heading-l" id="salary">Salary</h3>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
           <p class="govuk-body">Salary will vary based upon the school that you will be based at, but you will be on the Unqualified Teacher pay scale.</p>
           <p class="govuk-body">You do not need to pay for this course.</p>
-        </section>
-      {% endif %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="fees-and-financial-support">Fees and financial support</h3>
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-l" id="fees-and-financial-support">Fees and financial support</h3>
 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third-from-desktop app-!-float-right">
         {% if course.salaried %}
           {% set financialSupportHtml %}{% include "_includes/course/salaried.md" %}{% endset %}
         {% elif course.bursary_only %}
@@ -258,7 +280,9 @@
           title: "Financial support from the government",
           html: financialSupportHtml | trim | markdown
         }) }}
+      </div>
 
+      <div class="govuk-grid-column-two-thirds-from-desktop app-!-float-left">
         {% if course.has_fees %}
           {% if course.fee_domestic %}
             {% if course.fee_domestic and course.fee_international %}
@@ -297,18 +321,27 @@
           <h3 class="govuk-heading-m" id="financial-support-from-the-provider">Financial support from the training provider</h3>
           {{ course.financial_support | markdown | safe }}
         {% endif %}
-      </section>
+      </div>
+    </div>
+  </section>
 
-      {% if course.interview_process %}
-        <section class="govuk-!-margin-bottom-8">
-          <h2 class="govuk-heading-l" id="interview">Interview process</h2>
+  {% if course.interview_process %}
+    <section class="govuk-!-margin-bottom-8">
+      <h2 class="govuk-heading-l" id="interview">Interview process</h2>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
           {{ course.interview_process | markdown | safe }}
-        </section>
-      {% endif %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="international-students">International students</h2>
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-l" id="international-students">International students</h2>
 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
         <p class="govuk-body">
           {% if course.canSponsorVisa %}
             {% if course.salaried %}
@@ -324,18 +357,27 @@
 
         <p class="govuk-body">You do not need a visa if you already have settled or pre-settled status under the EU Settlement Scheme, or if you are an Irish citizen.</p>
         <p class="govuk-body">Candidates with qualifications from non-UK institutions may need to provide evidence of comparability by applying for a <a href="https://www.enic.org.uk" class="govuk-link">UK ENIC statement</a>.</p>
+      </div>
+    </div>
+  </section>
 
-      </section>
+  {% if course.provider.train_with_disability %}
+    <section class="govuk-!-margin-bottom-8">
+      <h2 class="govuk-heading-l" id="access-needs">Training with disabilities and other&nbsp;needs</h2>
 
-      {% if course.provider.train_with_disability %}
-        <section class="govuk-!-margin-bottom-8">
-          <h2 class="govuk-heading-l" id="access-needs">Training with disabilities and other&nbsp;needs</h2>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
           {{ course.provider.train_with_disability | markdown | safe }}
-        </section>
-      {% endif %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
 
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="contact">Contact this training provider</h2>
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-l" id="contact">Contact this training provider</h2>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
         <dl class="app-description-list">
           {% if course.provider.email %}
             <dt class="app-list--description__label">Email</dt>
@@ -358,26 +400,33 @@
             {% if course.provider.postcode %}{{ course.provider.postcode }}{% endif %}
           </dd>
         </dl>
-      </section>
-
-      <section class="govuk-!-margin-bottom-8">
-        <h2 class="govuk-heading-l" id="advice">Support and advice</h2>
-        <p class="govuk-body">For support and advice, you can speak to a <a class="govuk-link" href="https://beta-adviser-getintoteaching.education.gov.uk/">Get Into Teaching</a> adviser for free. They’re all experienced teachers who can help you to prepare your application, book school experience, and access exclusive teaching events.</p>
-        <p class="govuk-body">You can also call Get Into Teaching free of charge on 0800 389 2501, or speak to an adviser using their <a class="govuk-link" href="https://beta-getintoteaching.education.gov.uk/#talk-to-us">online chat service</a> Monday to Friday, 8.30am to 5pm (except public holidays).</p>
-
-        <p class="govuk-body">If there is something wrong with this course listing, <a class="govuk-link" href="mailto:becomingateacher@digital.education.gov.uk?subject=Edit {{ course.name }} ({{ provider.code }}/{{ course.code }})">contact us by email</a>.</p>
-      </section>
-
-      <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
-
-      <section id="apply">
-        {{ govukButton({
-          href: "/course/" + course.provider.code + "/" + course.code + "/apply",
-          text: "Apply for this course",
-          isStartButton: true
-        }) }}
-      </section>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section class="govuk-!-margin-bottom-8">
+    <h2 class="govuk-heading-l" id="advice">Support and advice</h2>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <p class="govuk-body">For support and advice, you can speak to a <a class="govuk-link" href="https://beta-adviser-getintoteaching.education.gov.uk/">Get Into Teaching</a> adviser for free. They’re all experienced teachers who can help you to prepare your application, book school experience, and access exclusive teaching events.</p>
+        <p class="govuk-body">You can also call Get Into Teaching free of charge on 0800 389 2500, or speak to an adviser using their <a class="govuk-link" href="https://beta-getintoteaching.education.gov.uk/#talk-to-us">online chat service</a> Monday to Friday, 8.30am to 5pm (except public holidays).</p>
+
+        <h3 class="govuk-heading-m">Is there something wrong with this page?</h3>
+        <p class="govuk-body">If there is something wrong with this course listing, <a class="govuk-link" href="mailto:becomingateacher@digital.education.gov.uk?subject=Edit {{ course.name }} ({{ provider.code }}/{{ course.code }})">contact us by email</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l govuk-!-width-two-thirds">
+
+  <section id="apply">
+    {{ govukButton({
+      href: "/course/" + course.provider.code + "/" + course.code + "/apply",
+      text: "Apply for this course",
+      isStartButton: true
+    }) }}
+  </section>
+
   {{ course | log }}
 {% endblock %}
