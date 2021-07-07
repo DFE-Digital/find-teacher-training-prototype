@@ -199,7 +199,19 @@ module.exports = router => {
       const pageCount = links.last.match(/page=(\d*)/)[1]
       // Provider courses response doesn’t return number of results
       // https://github.com/DFE-Digital/teacher-training-api/issues/1733
-      const resultsCount = meta ? meta.count : results.length
+      var resultsCount = meta ? meta.count : results.length
+
+      // Fake the results count based on visa sponsorship
+      if (req.session.data.visaSponsorship == 'yes') {
+        resultsCount = Math.floor(resultsCount / 2)
+      }
+
+      // Fake the results count based on number of degree requirement checkboxes ticked
+      if (req.session.data.entryRequirement && req.session.data.entryRequirement.length != 4) {
+        resultsCount = Math.floor(resultsCount * (req.session.data.entryRequirement.length / 4))
+      }
+
+
       const prevPage = links.prev ? (page - 1) : false
       const nextPage = links.next ? (page + 1) : false
 
