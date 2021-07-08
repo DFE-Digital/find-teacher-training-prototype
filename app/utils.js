@@ -135,7 +135,7 @@ module.exports = () => {
 
   utils.geocode = async string => {
     try {
-      const geoCodedLocation = await geocoder.geocode(string + ", UK")
+      const geoCodedLocation = await geocoder.geocode(`${string}, UK`)
       const geo = geoCodedLocation[0]
 
       return {
