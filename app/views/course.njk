@@ -10,6 +10,8 @@
 {% endblock %}
 
 {% block content %}
+  {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+
   <h1 class="govuk-heading-xl">
     <span class="govuk-heading-l govuk-!-margin-bottom-1">{{ course.provider.name }}</span>
     {{ course.name }} ({{ course.code }})
