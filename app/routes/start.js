@@ -17,9 +17,9 @@ module.exports = router => {
   router.post('/age-group', async (req, res) => {
     const ageGroupAnswer = req.body.ageGroup
 
-    if (ageGroupAnswer == "primary") {
+    if (ageGroupAnswer === 'primary') {
       res.redirect('/primary')
-    } else if (ageGroupAnswer == "secondary") {
+    } else if (ageGroupAnswer === 'secondary') {
       res.redirect('/subject')
     } else {
       res.render('filters/age-group')
@@ -33,12 +33,11 @@ module.exports = router => {
   router.post('/primary', async (req, res) => {
     const primarySpecialistSubjectsAnswer = req.body.primarySpecialistSubjects
 
-    if (primarySpecialistSubjectsAnswer == "yes") {
+    if (primarySpecialistSubjectsAnswer === 'yes') {
       res.redirect('/primary-specialist-subject')
-    } else if (primarySpecialistSubjectsAnswer == "no") {
-
+    } else if (primarySpecialistSubjectsAnswer === 'no') {
       // set subject to "Primary" only
-      req.session.data.subjects = ["00"]
+      req.session.data.subjects = ['00']
 
       res.redirect('/results')
     } else {
@@ -49,7 +48,6 @@ module.exports = router => {
   router.get('/primary-specialist-subject', async (req, res) => {
     res.render('filters/primary-specialist-subject')
   })
-
 
   router.get('/subject', async (req, res) => {
     const q = req.session.data.q || req.query.q
