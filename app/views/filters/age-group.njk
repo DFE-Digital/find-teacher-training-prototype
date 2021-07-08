@@ -32,6 +32,17 @@
               value: "secondary",
               text: "Secondary",
               checked: (data["ageGroup"] == "secondary")
+            },
+            {
+              divider: "or"
+            },
+            {
+              value: "further_education",
+              text: "Further education",
+              hint: {
+                text: "For example, teaching A levels or vocational courses"
+              },
+              checked: (data["ageGroup"] == "further_education")
             }
           ]
         }) }}
