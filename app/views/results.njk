@@ -3,19 +3,20 @@
 {% set title = resultsCount + " courses found" %}
 
 {% block content %}
+  {% include "_includes/nearing-end-of-cycle-banner.njk" %}
 
-<p class="govuk-body govuk-!-margin-bottom-0">
-  <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses
+  <p class="govuk-body govuk-!-margin-bottom-0">
+    <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses
 
-  {% if data.q == "england" %}
-    in <b>England</b>
-  {% elif data.q == "location" %}
-    in <b>{{ data.locationName }}</b>
-  {% elif data.q == "provider" %}
-    from <b>{{ provider.name }}</b>
-  {% endif %}
-  <a href="/" class="govuk-link govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
-</p>
+    {% if data.q == "england" %}
+      in <b>England</b>
+    {% elif data.q == "location" %}
+      in <b>{{ data.locationName }}</b>
+    {% elif data.q == "provider" %}
+      from <b>{{ provider.name }}</b>
+    {% endif %}
+    <a href="/" class="govuk-link govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
+  </p>
 
   <h1 class="govuk-heading-l">
     {% if resultsCount > 0 %}
