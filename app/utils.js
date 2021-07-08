@@ -161,7 +161,7 @@ module.exports = () => {
       if (location) {
         // Get latitude/longitude
         const { latitude, longitude } = location
-        sessionData.radius = 10
+        sessionData.radius = 50
         sessionData.latitude = latitude
         sessionData.longitude = longitude
 
