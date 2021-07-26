@@ -186,7 +186,7 @@ module.exports = {
     text: 'Third class degree or higher',
     value: 'third'
   }, {
-    text: 'Any undergraduate degree',
+    text: 'Any degree grade',
     value: 'degree'
   }],
   salaryOptions: [{
