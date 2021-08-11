@@ -51,11 +51,11 @@
     }) }}
 
 
-    {{ govukCheckboxes({
+    {{ govukRadios({
       formGroup: {
         classes: "app-filter__group"
       },
-      classes: "govuk-checkboxes--small",
+      classes: "govuk-radios--small",
       fieldset: {
         legend: {
           classes: "govuk-fieldset__legend--s",
@@ -63,7 +63,23 @@
         }
       },
       name: "entryRequirement",
-      items: entryRequirementItems
+      items: [
+        {
+          text: 'Show all courses',
+          value: 'all'
+        }, {
+          divider: "or"
+        }, {
+          text: 'Only show courses that will accept a 2:2 degree',
+          value: '22'
+        }, {
+          text: 'Only show courses that will accept a Third class Honours degree',
+          value: 'third'
+        }, {
+          text: 'Only show courses that will accept an Ordinary degree',
+          value: 'degree'
+        }
+      ]
     }) }}
 
     {{ govukCheckboxes({
