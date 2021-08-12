@@ -168,12 +168,15 @@
           {% endif %}
         </p>
 
+
+        {% if course.name !== "Primary"  %}
+          <p class="govuk-body">Your degree subject should be in {{ course.name }} or a similar subject. Otherwise you’ll need to prove your subject knowledge in some other way.</p>
+        {% endif %}
+
         {% if course.requirements.degree.subject %}
           <p class="govuk-body">
             {{ course.requirements.degree.subject }}
           </p>
-        {% elif course.name !== "Primary"  %}
-          <p class="govuk-body">Your degree subject should be in {{ course.name }} or a similar subject. Otherwise you’ll need to demonstrate subject knowledge in some other way.</p>
         {% endif %}
 
         <p class="govuk-body">GCSE grade 4 (C) or above in English{{", maths and science" if course.name === "Primary" else " and maths" }}, or an equivalent qualification.</p>
