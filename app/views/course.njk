@@ -189,9 +189,9 @@
           {% endif %}
 
           {% if course.requirements.gcses.equivalencyTestsAccepted == true %}
-            We accept GCSE equivalency tests in {{ course.requirements.gcses.equivalencyTestSubjects | formatList }}.
+            We will consider candidates who need to take a GCSE equivalency test in {{ course.requirements.gcses.equivalencyTestSubjects | formatOrList }}.
           {% else %}
-            We do not accept GCSE equivalency tests.
+            We will not consider candidates who need to take GCSE equivalency tests.
           {% endif %}
         </p>
 
