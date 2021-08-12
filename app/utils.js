@@ -50,7 +50,7 @@ module.exports = () => {
 
     // Adding degree subject requirement unless it’s primary
     if (course.name !== 'Primary') {
-      course.requirements.degree.subject = `Your degree subject should be in ${course.name} or a similar subject. Otherwise you will need to demonstrate subject knowledge in some other way.`
+      course.requirements.degree.subject = `50% of your degree modules should be in the subject.`
     }
 
     // Randomising whether pending GCSEs are accepted or not.
