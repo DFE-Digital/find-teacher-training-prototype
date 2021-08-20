@@ -250,10 +250,6 @@ module.exports = {
     type: 'primary',
     value: '07'
   }, {
-    text: 'Special education needs and disability (SEND)',
-    type: 'primary',
-    value: 'SEND'
-  }, {
     text: 'Art and design',
     type: 'secondary',
     value: 'W1'
@@ -419,10 +415,6 @@ module.exports = {
     type: 'secondary_language',
     value: '22',
     hasSke: true
-  }, {
-    text: 'Special educational needs and disability (SEND)',
-    type: 'secondary',
-    value: 'SEND'
   }, {
     text: 'Further education',
     type: 'further_education',
