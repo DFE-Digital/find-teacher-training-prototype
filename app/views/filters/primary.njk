@@ -22,18 +22,18 @@
             }
           },
           hint: {
-            text: "Primary courses with a specialist subject will develop your knowledge of that subject so that you can support other teachers."
+            text: "These would develop your knowledge of that subject so that you can support other teachers. You would still learn to teach all subjects."
           },
           items: [
-            {
-              value: "yes",
-              text: "Yes, show me the specialist subjects",
-              checked: (data["primarySpecialistSubjects"] == "yes")
-            },
             {
               value: "no",
               text: "No, just show me Primary courses",
               checked: (data["primarySpecialistSubjects"] == "no")
+            },
+            {
+              value: "yes",
+              text: "Yes, show me the specialist subjects",
+              checked: (data["primarySpecialistSubjects"] == "yes")
             }
           ]
         }) }}
