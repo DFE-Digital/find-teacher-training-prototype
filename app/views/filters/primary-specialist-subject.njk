@@ -1,65 +1,87 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Which specialist subjects are you interested in?" %}
+{% set title = "Primary courses" %}
 
 {% block pageNavigation %}
-  {{ govukBackLink({href: "/primary"}) }}
+  {{ govukBackLink({href: "/age-group"}) }}
 {% endblock %}
 
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+
+      {% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+
+      {% if showError %}
+        {{ govukErrorSummary({
+          titleText: "There is a problem",
+          errorList: [
+            {
+              text: "Select courses you are interested in",
+              href: "#passport-issued-day"
+            }
+          ]
+        }) }}
+      {% endif %}
+
+      <h1 class="govuk-heading-l">{{ title }}</h1>
+      <p class="govuk-body">Trainee primary school teachers learn to teach all subjects across the national curriculum.</p>
+
+      <p class="govuk-body">You can choose to add a specialist subject to your training. This could be a subject you have qualifications or experience in.</p>
+
+      <p class="govuk-body">Your training will develop your knowledge of your specialist subject. This is so you can support other teachers to teach that subject.</p>
       <form action="/results">
 
 
         {% set items = [
           {
-            text: 'English',
+            text: 'Primary',
+            value: '00',
+            checked: (data.subjects and data.subjects.includes('00'))
+          },
+          {
+            text: 'Primary with English',
             value: '01',
             checked: (data.subjects and data.subjects.includes('01'))
           },
           {
-            text: 'Geography and history',
+            text: 'Primary with Geography and history',
             value: '02',
             checked: (data.subjects and data.subjects.includes('02'))
           },
           {
-            text: 'Mathematics',
+            text: 'Primary with Mathematics',
             value: '03',
             checked: (data.subjects and data.subjects.includes('03'))
           },
           {
-            text: 'Modern languages',
+            text: 'Primary with Modern languages',
             value: '04',
             checked: (data.subjects and data.subjects.includes('04'))
           },
           {
-            text: 'Physical education',
+            text: 'Primary with Physical education',
             value: '06',
             checked: (data.subjects and data.subjects.includes('06'))
           },
           {
-            text: 'Science',
+            text: 'Primary with Science',
             value: '07',
             checked: (data.subjects and data.subjects.includes('07'))
-          },
-          {
-            divider: '&nbsp;'
-          },
-          {
-            text: 'Also show me Primary courses without a specialist subject',
-            value: '00',
-            checked: (data.subjects and data.subjects.includes('00'))
           }
         ] %}
-
-
           {{ govukCheckboxes({
             fieldset: {
               legend: {
-                text: title,
-                classes: "govuk-fieldset__legend--l"
+                text: "Which courses are you interested in?",
+                classes: "govuk-fieldset__legend--m"
               }
+            },
+            errorMessage: {
+              text: "Select courses you are interested in"
+            } if showError,
+            hint: {
+              html: hint
             },
             name: "subjects",
             items: items

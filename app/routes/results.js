@@ -65,6 +65,15 @@ module.exports = router => {
       checkAll: (provider || !radius) && subjects.length === 0
     })
 
+    if (subjects.includes('_unchecked')) {
+      if (req.session.data.ageGroup == 'primary') {
+        res.redirect('/primary-specialist-subject?showError=true');
+      } else {
+        res.redirect('/subject?showError=true');
+      }
+      return
+    }
+
     // Show selected subjects in filter sidebar
     // Maps array of subject codes to subject data
     const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
