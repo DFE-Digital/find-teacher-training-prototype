@@ -200,12 +200,12 @@ module.exports = router => {
       if (req.session.data.visaSponsorship === 'yes') {
         // Post-process the results to filter out courses where visas can’t be
         // sponsored.
-        results = results.filter(result => result.course.canSponsorVisa === true)
+        // results = results.filter(result => result.course.canSponsorVisa === true)
       }
 
       if (req.session.data.entryRequirement) {
         // Post-process the results to filter courses based on degree requirement
-        results = results.filter(result => req.session.data.entryRequirement.includes(result.course.requirements.degree.minimumClass))
+        // results = results.filter(result => req.session.data.entryRequirement.includes(result.course.requirements.degree.minimumClass))
       }
 
       // Pagination
