@@ -18,7 +18,7 @@ module.exports = router => {
     const ageGroupAnswer = req.body.ageGroup
 
     if (ageGroupAnswer === 'primary') {
-      res.redirect('/primary')
+      res.redirect('/primary-specialist-subject')
     } else if (ageGroupAnswer === 'secondary') {
       res.redirect('/subject')
     } else {
@@ -46,7 +46,9 @@ module.exports = router => {
   })
 
   router.get('/primary-specialist-subject', async (req, res) => {
-    res.render('filters/primary-specialist-subject')
+    res.render('filters/primary-specialist-subject', {
+      showError: req.query.showError
+    })
   })
 
   router.get('/subject', async (req, res) => {
