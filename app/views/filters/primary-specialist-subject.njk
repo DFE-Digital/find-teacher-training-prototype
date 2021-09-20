@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Primary courses" %}
+{% set title = "Primary courses with subject specialisms" %}
 
 {% block pageNavigation %}
   {{ govukBackLink({href: "/age-group"}) }}
@@ -25,13 +25,11 @@
       {% endif %}
 
       <h1 class="govuk-heading-l">{{ title }}</h1>
-      <p class="govuk-body">Trainee primary school teachers learn to teach all subjects across the national curriculum.</p>
+      <p class="govuk-body">As a trainee primary teacher you’ll learn to teach all subjects across the national curriculum.</p>
 
-      <p class="govuk-body">You can choose to add a specialist subject to your training. This could be a subject you have qualifications or experience in.</p>
+      <p class="govuk-body">Some courses also enable you to develop your knowledge of a particular subject. When you’re a teacher, you could take on a role to influence the way it’s taught in your school - for example, mentoring your teacher colleagues to teach that subject better.</p>
 
-      <p class="govuk-body">Your training will develop your knowledge of your specialist subject. This is so you can support other teachers to teach that subject.</p>
       <form action="/results">
-
 
         {% set items = [
           {
@@ -73,7 +71,7 @@
           {{ govukCheckboxes({
             fieldset: {
               legend: {
-                text: "Which courses are you interested in?",
+                text: "Which courses would you like to find?",
                 classes: "govuk-fieldset__legend--m"
               }
             },
