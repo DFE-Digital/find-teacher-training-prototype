@@ -40,17 +40,4 @@ module.exports = router => {
     })
   })
 
-  // Subject
-  router.get('/results/filters/subject', async (req, res) => {
-    const q = req.session.data.q || req.query.q
-    res.render('filters/subject', {
-      backLink,
-      q,
-      subjectItems: utils.subjectItems(req.session.data.subjects, {
-        showHintText: true,
-        checkAll: false
-      }),
-      sendItems: utils.sendItems(req.session.data.send)
-    })
-  })
 }
