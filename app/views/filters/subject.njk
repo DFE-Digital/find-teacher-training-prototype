@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Which Secondary subjects are you interested in?" %}
+{% set title = "Which secondary subjects are you interested in?" %}
 
 {% block pageNavigation %}
   {{ govukBackLink({href: "/age-group"}) }}
@@ -13,12 +13,15 @@
 
       <form action="/results">
         {% set items = [] %}
-        {% for subject in subjectItems %}
+        {% for subject in data.subjectOptions %}
 
-          {% if subject.text == "Secondary" or subject.text == "Secondary: Modern languages" %}
-            {% for item in subject.items %}
-              {% set items = items | push(item) %}
-            {% endfor %}
+          {% if subject.ageGroup === "secondary" %}
+            {% set items = items | push({
+              text: subject.text,
+              value: subject.value,
+              hint: {text: subject.hint},
+              checked: (data.subjects and data.subjects.includes(subject.value))
+            }) %}
           {% endif %}
         {% endfor %}
 

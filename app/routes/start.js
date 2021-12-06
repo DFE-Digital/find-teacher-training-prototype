@@ -67,10 +67,6 @@ module.exports = router => {
               href: '/'
             },
       q,
-      subjectItems: utils.subjectItems(req.session.data.subjects, {
-        showHintText: true,
-        checkAll: false
-      }),
       sendItems: utils.sendItems(req.session.data.send)
     })
   })

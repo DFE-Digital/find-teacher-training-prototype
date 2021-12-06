@@ -207,217 +207,204 @@ module.exports = {
     name: 'send',
     value: ['include']
   }],
-  subjectGroups: [{
-    text: 'Primary',
-    value: 'primary'
-  }, {
-    text: 'Secondary',
-    value: 'secondary'
-  }, {
-    text: 'Secondary: Modern languages',
-    value: 'secondary_language'
-  }, {
-    text: 'Further education',
-    value: 'further_education'
-  }],
   subjectOptions: [{
     text: 'Primary',
-    type: 'primary',
+    ageGroup: 'primary',
     value: '00'
   }, {
     text: 'Primary with English',
-    type: 'primary',
+    ageGroup: 'primary',
     value: '01'
   }, {
     text: 'Primary with geography and history',
-    type: 'primary',
+    ageGroup: 'primary',
     value: '02'
   }, {
     text: 'Primary with mathematics',
-    type: 'primary',
+    ageGroup: 'primary',
     value: '03',
     hasSke: true
   }, {
     text: 'Primary with modern languages',
-    type: 'primary',
+    ageGroup: 'primary',
     value: '04'
   }, {
     text: 'Primary with physical education',
-    type: 'primary',
+    ageGroup: 'primary',
     value: '06'
   }, {
     text: 'Primary with science',
-    type: 'primary',
+    ageGroup: 'primary',
     value: '07'
   }, {
     text: 'Art and design',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'W1'
   }, {
     text: 'Biology',
     hint: 'Bursaries of £7,000 available.',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'C1',
     hasSke: true
   }, {
     text: 'Business studies',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: '08'
   }, {
     text: 'Chemistry',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'F1',
     hasSke: true
   }, {
     text: 'Citizenship',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: '09'
   }, {
     text: 'Classics',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'Q8'
   }, {
     text: 'Communication and media studies',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'P3'
   }, {
     text: 'Computing',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: '11',
     hasSke: true
   }, {
     text: 'Dance',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: '12'
   }, {
     text: 'Design and technology',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'DT',
     hasSke: true
   }, {
     text: 'Drama',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: '13'
   }, {
     text: 'Economics',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'L1'
   }, {
     text: 'English',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'Q3',
     hasSke: true
   }, {
     text: 'Geography',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'F8'
   }, {
     text: 'Health and social care',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'L5'
   }, {
     text: 'History',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'V1'
   }, {
     text: 'Mathematics',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'G1',
     hasSke: true
   }, {
     text: 'Music',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'W3'
   }, {
     text: 'Philosophy',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'P1'
   }, {
     text: 'Physical education',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'C6'
   }, {
     text: 'Physics',
     hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'F3',
     hasSke: true
   }, {
     text: 'Psychology',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'C8'
   }, {
     text: 'Religious education',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'V6',
     hasSke: true
   }, {
     text: 'Science',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: 'F0'
   }, {
     text: 'Social sciences',
-    type: 'secondary',
+    ageGroup: 'secondary',
     value: '14'
   }, {
     text: 'English as a second or other language',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '16'
   }, {
     text: 'French',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '15',
     hasSke: true
   }, {
     text: 'German',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '17',
     hasSke: true
   }, {
     text: 'Italian',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '18',
     hasSke: true
   }, {
     text: 'Japanese',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '19',
     hasSke: true
   }, {
     text: 'Mandarin',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '20',
     hasSke: true
   }, {
     text: 'Modern languages (other)',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '24',
     hasSke: true
   }, {
     text: 'Russian',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '21',
     hasSke: true
   }, {
     text: 'Spanish',
     hint: 'Bursaries of £10,000 available.',
-    type: 'secondary_language',
+    ageGroup: 'secondary',
     value: '22',
     hasSke: true
   }, {
     text: 'Further education',
-    type: 'further_education',
+    agreGroup: 'furtherEducation',
     value: '41'
   }],
   vacancyOptions: [{

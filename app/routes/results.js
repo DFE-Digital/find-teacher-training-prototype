@@ -75,7 +75,7 @@ module.exports = router => {
       return
     }
 
-    // Show selected subjects in filter sidebar
+    // Show selected subjects at top of page
     // Maps array of subject codes to subject data
     const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
 
