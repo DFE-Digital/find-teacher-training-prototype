@@ -59,11 +59,12 @@ module.exports = router => {
     const sendItems = utils.sendItems(send)
 
     // Subject
-    const subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
-    const subjectItems = utils.subjectItems(subjects, {
-      showHintText: false,
-      checkAll: (provider || !radius) && subjects.length === 0
-    })
+    let subjects
+    if (req.session.data.ageGroup === 'furtherEducation') {
+      subjects = ['41'] // code for FE 'subject' in the API
+    } else {
+      subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
+    }
 
     if (subjects.includes('_unchecked')) {
       if (req.session.data.ageGroup == 'primary') {
@@ -290,7 +291,6 @@ module.exports = router => {
         selectedSubjects,
         studyType,
         studyTypeItems,
-        subjectItems,
         vacancy,
         vacancyItems,
         entryRequirementItems

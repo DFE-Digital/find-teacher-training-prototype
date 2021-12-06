@@ -5,7 +5,12 @@
 {% block content %}
 
   <p class="govuk-body govuk-!-margin-bottom-0">
-    <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b> courses
+    {% if data.ageGroup == "furtherEducation" %}
+      <b>Further education</b>
+    {% else %}
+    <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b>
+    {% endif %}
+    courses
 
     {% if data.q == "england" %}
       in <b>England</b>
