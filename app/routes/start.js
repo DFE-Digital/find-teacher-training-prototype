@@ -56,55 +56,15 @@ module.exports = router => {
   router.get('/subject', async (req, res) => {
     const q = req.session.data.q || req.query.q
     res.render('filters/subject', {
-      backLink:
-        req.session.data.londonBorough
-          ? {
-              text: 'Back to London boroughs',
-              href: '/london'
-            }
-          : {
-              text: 'Back',
-              href: '/'
-            },
+      backLink: {
+        text: 'Back',
+        href: '/'
+      },
       q,
       sendItems: utils.sendItems(req.session.data.send)
     })
   })
 
-  router.get('/london', async (req, res) => {
-    const q = req.session.data.q
-
-    // If clicked on ‘London’ link, don’t automatically select ‘Westminster’
-    const isFreetextSearch = q !== 'London'
-
-    res.render('filters/london', {
-      backLink: {
-        text: 'Back',
-        href: '/'
-      },
-      filtering: isFreetextSearch,
-      items: {
-        all: utils.londonBoroughItems(req.session.data.londonBorough),
-        central: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'central', checked: isFreetextSearch }),
-        east: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'east' }),
-        north: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'north' }),
-        south: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'south' }),
-        west: utils.londonBoroughItems(req.session.data.londonBorough, { regionFilter: 'west' })
-      },
-      next: '/age-group',
-      startFlow: true
-    })
-  })
-
-  router.post('/london', async (req, res) => {
-    const { next } = req.query
-
-    res.redirect(next)
-  })
-
-  router.get('/start', async (req, res) => {
-    res.render('start')
-  })
 
   router.get('/', async (req, res) => {
     // Reset data
@@ -112,8 +72,4 @@ module.exports = router => {
     res.render('index')
   })
 
-  router.get('/location-suggestions', async (req, res) => {
-    const suggestedLocations = await locationSuggestions.getSuggestions(req.query.query)
-    res.json(suggestedLocations)
-  })
 }
