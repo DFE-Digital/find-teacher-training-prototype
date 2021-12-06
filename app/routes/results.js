@@ -9,7 +9,7 @@ const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY
 module.exports = router => {
   router.post('/results', async (req, res) => {
     await utils.processQuery(req.session.data.q, req.session.data)
-    res.redirect(req.session.data.londonBorough ? '/results/filters/london' : '/results')
+    res.redirect('/results')
   })
 
   router.get('/results', async (req, res) => {
@@ -28,10 +28,6 @@ module.exports = router => {
     // Location
     const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
     const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
-
-    // London boroughs
-    const londonBorough = utils.toArray(req.session.data.londonBorough || req.query.londonBorough || defaults.londonBorough)
-    const londonBoroughItems = utils.londonBoroughItems(londonBorough).filter(item => item.checked === true)
 
     // Qualification
     const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
@@ -274,8 +270,6 @@ module.exports = router => {
         area,
         googleMapsApiKey,
         latLong: [latitude, longitude],
-        londonBorough,
-        londonBoroughItems,
         pagination,
         provider,
         q,
