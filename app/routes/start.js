@@ -21,6 +21,8 @@ module.exports = router => {
       res.redirect('/primary-specialist-subject')
     } else if (ageGroupAnswer === 'secondary') {
       res.redirect('/subject')
+    } else if (ageGroupAnswer === 'furtherEducation') {
+      res.redirect('/results')
     } else {
       res.render('filters/age-group')
     }
