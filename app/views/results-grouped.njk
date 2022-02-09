@@ -1,0 +1,220 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = resultsCount + " courses found" %}
+
+{% block content %}
+
+  <p class="govuk-body govuk-!-margin-bottom-0">
+    <b>Primary</b>
+    courses
+    in <b>London</b>
+    <a href="/" class="govuk-link govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
+  </p>
+
+  <h1 class="govuk-heading-l">
+    301 courses from 145 providers found
+  </h1>
+
+  <div class="app-filter-toggle"></div>
+
+  <div class="app-filter-layout">
+    <div class="app-filter-layout__filter">
+      {% include "_includes/filter.njk" %}
+    </div>
+
+    <div class="app-filter-layout__content">
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Academies Enterprise Trust: London</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          School-centred
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "These courses are delivered by a network of schools and focus on training as you teach."
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">6 schools in North London</dd>
+      </dl>
+
+      <div class="govuk-!-padding-left-3">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary (ages 5-7)</a></h3>
+
+        <dl class="app-description-list app-description-list--search-result">
+          <dt class="app-description-list__label">Study type</dt>
+          <dd data-qa="course__study_mode">Full time</dd>
+          <dt class="app-description-list__label">Qualification</dt>
+          <dd data-qa="course__qualification">
+            PGCE with QTS
+          </dd>
+          <dt class="app-description-list__label">Financial support</dt>
+          <dd data-qa="course__funding_options">Student finance if you’re eligible</dd>
+          <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree, or equivalent.</dd>
+          <dt class="app-description-list__label">Visa sponsorship</dt>
+          <dd data-qa="course__visa_sponsorship">Visas cannot be sponsored</dd>
+        </dl>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary (ages 7-11)</a></h3>
+
+        <dl class="app-description-list app-description-list--search-result">
+          <dt class="app-description-list__label">Study type</dt>
+          <dd data-qa="course__study_mode">Full time</dd>
+          <dt class="app-description-list__label">Qualification</dt>
+          <dd data-qa="course__qualification">
+            PGCE with QTS
+          </dd>
+          <dt class="app-description-list__label">Financial support</dt>
+          <dd data-qa="course__funding_options">Student finance if you’re eligible</dd>
+          <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree, or equivalent.</dd>
+          <dt class="app-description-list__label">Visa sponsorship</dt>
+          <dd data-qa="course__visa_sponsorship">Visas cannot be sponsored</dd>
+        </dl>
+      </div>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">London Metropolitan University</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          University led
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "With these courses you spend some of your time in academic learning, but the majority in school placements"
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">20+ schools across London</dd>
+      </dl>
+
+      <div class="govuk-!-padding-left-3">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+
+        <dl class="app-description-list app-description-list--search-result">
+          <dt class="app-description-list__label">Study type</dt>
+          <dd data-qa="course__study_mode">Full time</dd>
+          <dt class="app-description-list__label">Qualification</dt>
+          <dd data-qa="course__qualification">
+            PGCE with QTS
+          </dd>
+          <dt class="app-description-list__label">Financial support</dt>
+          <dd data-qa="course__funding_options">Student finance if you’re eligible</dd>
+          <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+          <dt class="app-description-list__label">Visa sponsorship</dt>
+          <dd data-qa="course__visa_sponsorship">Visas can be sponsored</dd>
+        </dl>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+
+        <dl class="app-description-list app-description-list--search-result">
+          <dt class="app-description-list__label">Study type</dt>
+          <dd data-qa="course__study_mode">Part time</dd>
+          <dt class="app-description-list__label">Qualification</dt>
+          <dd data-qa="course__qualification">
+            PGCE with QTS
+          </dd>
+          <dt class="app-description-list__label">Financial support</dt>
+          <dd data-qa="course__funding_options">Student finance if you’re eligible</dd>
+          <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+          <dt class="app-description-list__label">Visa sponsorship</dt>
+          <dd data-qa="course__visa_sponsorship">Visas can be sponsored</dd>
+        </dl>
+      </div>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Primary Advantage</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          School direct
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "These courses are delivered by a group of schools in partnership with a university or SCITT (an accredited school-centred training provider)."
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">13 schools in West London</dd>
+      </dl>
+
+      <div class="govuk-!-padding-left-3">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+
+        <dl class="app-description-list app-description-list--search-result">
+          <dt class="app-description-list__label">Study type</dt>
+          <dd data-qa="course__study_mode">Full time</dd>
+          <dt class="app-description-list__label">Qualification</dt>
+          <dd data-qa="course__qualification">
+            QTS with optional PGCE
+          </dd>
+          <dt class="app-description-list__label">Financial support</dt>
+          <dd data-qa="course__funding_options">Student finance if you’re eligible</dd>
+          <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+          <dt class="app-description-list__label">Visa sponsorship</dt>
+          <dd data-qa="course__visa_sponsorship">Visas can be sponsored</dd>
+        </dl>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary (SEND)</a></h3>
+
+        <dl class="app-description-list app-description-list--search-result">
+          <dt class="app-description-list__label">Study type</dt>
+          <dd data-qa="course__study_mode">Full time</dd>
+          <dt class="app-description-list__label">Qualification</dt>
+          <dd data-qa="course__qualification">
+            QTS only
+          </dd>
+          <dt class="app-description-list__label">Financial support</dt>
+          <dd data-qa="course__funding_options">Salary</dd>
+          <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+          <dt class="app-description-list__label">Visa sponsorship</dt>
+          <dd data-qa="course__visa_sponsorship">Visas can be sponsored</dd>
+        </dl>
+      </div>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Redriff Primary School</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          School direct
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "These courses are delivered by a group of schools in partnership with a university or SCITT (an accredited school-centred training provider)."
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Location</dt>
+        <dd data-qa="course__study_mode">2 schools in Rotherhithe</dd>
+      </dl>
+
+      <div class="govuk-!-padding-left-3">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+
+        <dl class="app-description-list app-description-list--search-result">
+          <dt class="app-description-list__label">Study type</dt>
+          <dd data-qa="course__study_mode">Full time</dd>
+          <dt class="app-description-list__label">Qualification</dt>
+          <dd data-qa="course__qualification">
+            QTS with optional PGCE
+          </dd>
+          <dt class="app-description-list__label">Financial support</dt>
+          <dd data-qa="course__funding_options">Student finance if you’re eligible</dd>
+          <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+          <dt class="app-description-list__label">Visa sponsorship</dt>
+          <dd data-qa="course__visa_sponsorship">Visas can be sponsored</dd>
+        </dl>
+      </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
