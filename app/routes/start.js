@@ -28,24 +28,24 @@ module.exports = router => {
     }
   })
 
-  router.get('/primary', async (req, res) => {
-    res.render('filters/primary')
-  })
-
-  router.post('/primary', async (req, res) => {
-    const primarySpecialistSubjectsAnswer = req.body.primarySpecialistSubjects
-
-    if (primarySpecialistSubjectsAnswer === 'yes') {
-      res.redirect('/primary-specialist-subject')
-    } else if (primarySpecialistSubjectsAnswer === 'no') {
-      // set subject to "Primary" only
-      req.session.data.subjects = ['00']
-
-      res.redirect('/results')
-    } else {
-      res.render('filters/primary')
-    }
-  })
+//   router.get('/primary', async (req, res) => {
+//     res.render('filters/primary')
+//   })
+//
+//   router.post('/primary', async (req, res) => {
+//     const primarySpecialistSubjectsAnswer = req.body.primarySpecialistSubjects
+//
+//     if (primarySpecialistSubjectsAnswer === 'yes') {
+//       res.redirect('/primary-specialist-subject')
+//     } else if (primarySpecialistSubjectsAnswer === 'no') {
+//       // set subject to "Primary" only
+//       req.session.data.subjects = ['00']
+//
+//       res.redirect('/results')
+//     } else {
+//       res.render('filters/primary')
+//     }
+//   })
 
   router.get('/primary-specialist-subject', async (req, res) => {
     res.render('filters/primary-specialist-subject', {

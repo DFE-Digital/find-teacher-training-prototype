@@ -1,0 +1,112 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Postgraduate teacher training" %}
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Primary teacher training courses</h1>
+
+      <p class="govuk-body-l">Primary school teachers teach ages 5 to 11. They teach a single class all the subjects of the National Curriculum.</p>
+
+      <p class="govuk-body">You can qualify as a primary teacher by doing a 1 or 2 year training course.</p>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <h2 class="govuk-heading-s">Eligibility</h2>
+
+      <p class="govuk-body">You must already have a degree, and meet the minimum standard (C or 4 or above at GCSE) in English, maths and science.</p>
+
+      <p class="govuk-body"><a href="#" class="govuk-link">About the minimum entry requirements</a></p>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <h2 class="govuk-heading-s">Funding</h2>
+
+      <p class="govuk-body">You can get a student loan to cover your course fees.</p>
+
+      <p class="govuk-body">Some courses will pay you a salary instead.</p>
+
+      <p class="govuk-body"><a href="#" class="govuk-link">About funding training courses</a></p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full app-grid-column--blue">
+      <h2 class="govuk-heading-m app-heading--white">Find primary courses near you</h2>
+
+      <div class="app-inline-form">
+        <div class="app-inline-form__input">
+          {{ govukInput({
+            label: {
+              text: "City, area or postcode",
+              classes: "govuk-label--s app-label--white"
+            },
+            classes: '',
+            id: "event-name",
+            name: "event-name"
+          }) }}
+        </div>
+        <div class="app-inline-form__button">
+          {{ govukButton({
+            text: 'Search',
+            classes: 'app-button--white govuk-!-font-weight-bold'
+          })}}
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by city</h2>
+
+          <ul class="govuk-list app-list--s app-list--white">
+            <li><a href="#" class="govuk-link app-link--white">London</a> (102)</li>
+            <li><a href="#" class="govuk-link app-link--white">Birmingham</a> (12)</li>
+            <li><a href="#" class="govuk-link app-link--white">Bradford</a> (8)</li>
+            <li><a href="#" class="govuk-link app-link--white">Liverpool</a> (9)</li>
+            <li><a href="#" class="govuk-link app-link--white">Leeds</a> (19)</li>
+            <li><a href="#" class="govuk-link app-link--white">Manchester</a> (23)</li>
+            <li><a href="#" class="govuk-link app-link--white">Sheffield</a> (19)</li>
+            <li><a href="#" class="govuk-link app-link--white">Bristol</a> (8)</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by region</h2>
+
+          <ul class="govuk-list app-list--s app-list--white">
+            <li><a href="#" class="govuk-link app-link--white">North East</a> (301)</li>
+            <li><a href="#" class="govuk-link app-link--white">North West</a> (203)</li>
+            <li><a href="#" class="govuk-link app-link--white">South East</a> (102)</li>
+            <li><a href="#" class="govuk-link app-link--white">South West</a> (98)</li>
+            <li><a href="#" class="govuk-link app-link--white">West Midlands</a> (221)</li>
+            <li><a href="#" class="govuk-link app-link--white">Yorkshire and the Humber</a> (105)</li>
+            <li><a href="#" class="govuk-link app-link--white">East Midlands</a> (75)</li>
+            <li><a href="#" class="govuk-link app-link--white">East of England</a> (58)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
