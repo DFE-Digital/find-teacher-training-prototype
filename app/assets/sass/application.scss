@@ -50,6 +50,11 @@ $git-brand-colour: #159964;
   padding: 30px 30px 10px 30px;
 }
 
+.app-grid-column--grey {
+  background-color: govuk-colour("light-grey");
+  padding: 30px 30px 10px 30px;
+}
+
 .app-heading--white {
   color: govuk-colour("white");
 }
@@ -92,7 +97,7 @@ $git-brand-colour: #159964;
 }
 
 .app-body--white,
- .app-list--white,
+.app-list--white,
 .app-link--white,
 .app-link--white:visited {
   color: govuk-colour("white");
@@ -101,6 +106,14 @@ $git-brand-colour: #159964;
 .app-list--s li {
   font-size: 16px;
   margin-bottom: 2px;;
+}
+
+.app-two-columns {
+  columns: 2;
+}
+
+.app-four-columns {
+  columns: 4;
 }
 
 // Overrides

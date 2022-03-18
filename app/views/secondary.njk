@@ -1,0 +1,125 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Postgraduate teacher training" %}
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Secondary teacher training courses</h1>
+
+      <p class="govuk-body-l">Secondary school teachers teach ages 11 to 18. They usually teach just 1 or 2 subjects.</p>
+
+      <p class="govuk-body">You can qualify as a secondary teacher by doing a 1 or 2 year training course.</p>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <h2 class="govuk-heading-s">Eligibility</h2>
+
+      <p class="govuk-body">You must already have a degree, usually in the subject you would like to teach, or similar.</p>
+
+      <p class="govuk-body">You must meet the minimum standard (GCSE C or above) in English and maths.</p>
+
+      <p class="govuk-body"><a href="#" class="govuk-link">About the minimum entry requirements</a></p>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <h2 class="govuk-heading-s">Funding</h2>
+
+      <p class="govuk-body">You can get a student loan to cover your course fees.</p>
+
+      <p class="govuk-body">Some courses will pay you a salary instead.</p>
+
+      <p class="govuk-body"><a href="#" class="govuk-link">About funding training courses</a></p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full app-grid-column--blue">
+      <h2 class="govuk-heading-l app-heading--white">Browse secondary courses by subject</h2>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Science, maths, and technology</h2>
+
+          <p class="govuk-body app-body--white">Teachers for these subjects are in demand. You could be eligible for a bursary or scholarship with these courses.</p>
+
+          <ul class="govuk-list app-list--s app-list--white app-two-columns">
+            <li><a href="/" class="govuk-link app-link--white">Biology</a> (201)</li>
+            <li><a href="/" class="govuk-link app-link--white">Chemistry</a> (314)</li>
+            <li><a href="/" class="govuk-link app-link--white">Physics</a> (212)</li>
+            <li><a href="/" class="govuk-link app-link--white">Maths</a> (124)</li>
+            <li><a href="/" class="govuk-link app-link--white">Design and technology</a> (103)</li>
+            <li><a href="/" class="govuk-link app-link--white">Computing</a> (95)</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Languages</h2>
+
+          <p class="govuk-body app-body--white">To be eligible for these courses you need to be able to speak the language fluently. You could be eligible for a bursary with these courses.</p>
+
+          <ul class="govuk-list app-list--s app-list--white app-two-columns">
+            <li><a href="/" class="govuk-link app-link--white">French</a> (301)</li>
+            <li><a href="/" class="govuk-link app-link--white">German</a> (203)</li>
+            <li><a href="/" class="govuk-link app-link--white">Italian</a> (102)</li>
+            <li><a href="/" class="govuk-link app-link--white">Japanese</a> (98)</li>
+            <li><a href="/" class="govuk-link app-link--white">Mandarin</a> (221)</li>
+            <li><a href="/" class="govuk-link app-link--white">Russian</a> (105)</li>
+            <li><a href="/" class="govuk-link app-link--white">Spanish</a> (75)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Other subjects</h2>
+
+          <p class="govuk-body app-body--white">These subjects are not eligible for a bursary.</p>
+
+          <ul class="govuk-list app-list--s app-list--white app-two-columns">
+            <li><a href="/" class="govuk-link app-link--white">Art and design</a> (201)</li>
+            <li><a href="/" class="govuk-link app-link--white">Business studies</a> (314)</li>
+            <li><a href="/" class="govuk-link app-link--white">Citizenship</a> (212)</li>
+            <li><a href="/" class="govuk-link app-link--white">Classics</a> (124)</li>
+            <li><a href="/" class="govuk-link app-link--white">Communication and media studies</a> (103)</li>
+            <li><a href="/" class="govuk-link app-link--white">Dance</a> (95)</li>
+
+            <li><a href="/" class="govuk-link app-link--white">Economics</a> (201)</li>
+            <li><a href="/" class="govuk-link app-link--white">English as a second language</a> (314)</li>
+            <li><a href="/" class="govuk-link app-link--white">Health and social care</a> (212)</li>
+            <li><a href="/" class="govuk-link app-link--white">History</a> (124)</li>
+            <li><a href="/" class="govuk-link app-link--white">Music</a> (103)</li>
+            <li><a href="/" class="govuk-link app-link--white">Physical education</a> (95)</li>
+            <li><a href="/" class="govuk-link app-link--white">Psychology</a> (95)</li>
+            <li><a href="/" class="govuk-link app-link--white">Religious Education</a> (23)</li>
+            <li><a href="/" class="govuk-link app-link--white">Social sciences</a> (23)</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
