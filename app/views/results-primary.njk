@@ -19,8 +19,14 @@
 
 
 {% block content %}
+
+  <p class="govuk-body govuk-!-margin-bottom-0">
+    {{ data.area }}
+    <a href="/primary" class="govuk-link govuk-!-margin-left-4">Change area</a>
+  </p>
+
   <h1 class="govuk-heading-l">
-    101 primary courses in {{ data.area }}
+    101 primary courses from 31 providers
   </h1>
 
   <div class="app-filter-toggle"></div>
@@ -31,8 +37,151 @@
     </div>
 
     <div class="app-filter-layout__content">
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Academies Enterprise Trust: London</h2>
 
-      Results
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          School-centred
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "These courses are delivered by a network of schools and focus on training as you teach."
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">6 schools in North London</dd>
+        <dt class="app-description-list__label">Degree required</dt>
+        <dd data-qa="course__degree_required">An undergraduate degree, or equivalent.</dd>
+
+      </dl>
+
+      <div class="govuk-grid-row govuk-!-padding-left-3">
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary (ages 5-7)</a></h3>
+
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary (ages 7-11)</a></h3>
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">London Metropolitan University</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          University led
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "With these courses you spend some of your time in academic learning, but the majority in school placements"
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">20+ schools across London</dd>
+        <dt class="app-description-list__label">Degree required</dt>
+        <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+      </dl>
+
+      <div class="govuk-grid-row govuk-!-padding-left-3">
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+          <ul class="govuk-list">
+            <li>Part time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-4 govuk-!-padding-left-3"><a href="#" class="govuk-link">View all 4 matching courses from London Metropolitan University</a></p>
+
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Primary Advantage</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          School direct
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "These courses are delivered by a group of schools in partnership with a university or SCITT (an accredited school-centred training provider)."
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">13 schools in West London</dd>
+        <dt class="app-description-list__label">Degree required</dt>
+        <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+      </dl>
+
+      <div class="govuk-grid-row govuk-!-padding-left-3">
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>QTS with optional PGCE</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary (SEND)</a></h3>
+          <ul class="govuk-list">
+            <li>Part time</li>
+            <li>QTS only</li>
+            <li>Salaried</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-3">Redriff Primary School</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          School direct
+          {{ govukDetails({
+  summaryText: "What does this mean?",
+  text: "These courses are delivered by a group of schools in partnership with a university or SCITT (an accredited school-centred training provider)."
+}) }}
+        </dd>
+        <dt class="app-description-list__label">Location</dt>
+        <dd data-qa="course__study_mode">2 schools in Rotherhithe</dd>
+        <dt class="app-description-list__label">Degree required</dt>
+          <dd data-qa="course__degree_required">An undergraduate degree at class 2:2 or above, or equivalent.</dd>
+      </dl>
+
+      <div class="govuk-grid-row govuk-!-padding-left-3">
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Primary</a></h3>
+
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>QTS with optional PGCE</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
