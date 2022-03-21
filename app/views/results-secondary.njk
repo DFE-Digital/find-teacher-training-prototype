@@ -1,0 +1,152 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = resultsCount + " courses found" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/"
+      },
+      {
+        text: "Secondary",
+        href: "/secondary"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    201 courses from 67 providers
+  </h1>
+
+  <div class="app-filter-toggle"></div>
+
+  <div class="app-filter-layout">
+    <div class="app-filter-layout__filter">
+      {% include "_includes/filter-secondary.njk" %}
+    </div>
+
+    <div class="app-filter-layout__content">
+
+      <div class="app-filter-hint">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Showing courses across all of England</h2>
+        <p class="govuk-body  govuk-!-margin-bottom-0">You can filter by region to narrow your search.</p>
+      </div>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Academies Enterprise Trust: London</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          School-centred
+          <br>
+          <span class="govuk-hint">These courses are delivered by a network of schools and focus on training as you teach.</span>
+        </dd>
+        <dt class="app-description-list__label">Ofsted rating</dt>
+        <dd>Good</dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">6 schools in North London</dd>
+      </dl>
+      <div class="govuk-grid-row govuk-!-padding-left-3">
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology</a></h3>
+
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology</a></h3>
+          <ul class="govuk-list">
+            <li>Part time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--m">
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">London Metropolitan University</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          University led
+          <br>
+          <span class="govuk-hint">With these courses you spend some of your time in academic learning, but the majority in school placements"</span>
+        </dd>
+        <dt class="app-description-list__label">Ofsted rating</dt>
+        <dd>Outstanding</dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">20+ schools across London</dd>
+      </dl>
+
+      <div class="govuk-grid-row govuk-!-padding-left-3">
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology</a></h3>
+
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology with Chemistry</a></h3>
+          <ul class="govuk-list">
+            <li>Part time</li>
+            <li>PGCE with QTS</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-4 govuk-!-padding-left-3"><a href="#" class="govuk-link">View all 4 matching courses from London Metropolitan University</a></p>
+
+
+      <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--m">
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">University of Sheffield</h2>
+
+      <dl class="app-description-list app-description-list--search-result">
+        <dt class="app-description-list__label">Provider type</dt>
+        <dd data-qa="course__study_mode">
+          University led
+          <br>
+          <span class="govuk-hint">With these courses you spend some of your time in academic learning, but the majority in school placements"</span>
+        </dd>
+        <dt class="app-description-list__label">Ofsted rating</dt>
+        <dd>Outstanding</dd>
+        <dt class="app-description-list__label">Locations</dt>
+        <dd data-qa="course__study_mode">26 schools in Sheffield and South Yorkshire</dd>
+      </dl>
+
+      <div class="govuk-grid-row govuk-!-padding-left-3">
+        <div class="govuk-grid-column-one-half">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology</a></h3>
+
+          <ul class="govuk-list">
+            <li>Full time</li>
+            <li>QTS with PGCE</li>
+            <li>Student finance if eligible</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+        </div>
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--m">
+
+
+
+    </div>
+  </div>
+{% endblock %}

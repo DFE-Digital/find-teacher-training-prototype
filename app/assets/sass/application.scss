@@ -23,6 +23,7 @@ $git-brand-colour: #159964;
 @import "components/result-detail";
 @import "components/search-results";
 @import "components/table";
+@import "components/checkbox-filter";
 
 
 .app-button--start-smaller {
@@ -124,6 +125,12 @@ $git-brand-colour: #159964;
 
 .app-four-columns {
   columns: 4;
+}
+
+.app-filter-hint {
+  background-color: govuk-colour("light-grey");
+  padding: govuk-spacing(2) govuk-spacing(3);
+  margin-bottom: govuk-spacing(2);
 }
 
 // Overrides

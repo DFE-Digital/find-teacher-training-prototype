@@ -1,0 +1,266 @@
+<form class="app-filter" method="post">
+  <div class="app-filter__header">
+    <h2 class="govuk-heading-m">Filters</h2>
+  </div>
+
+  <div class="app-filter__content">
+
+
+    {{ appCheckboxFilter({
+      classes: 'app-filter__group',
+      legend: {
+        text: "Subjects"
+      },
+      name: "qualification",
+      items: [{
+          text: 'Art and design',
+          checked: true
+        }, {
+          text: 'Biology'
+        }, {
+          text: 'Business studies'
+        }, {
+          text: 'Chemistry'
+        }, {
+          text: 'Citizenship'
+        }, {
+          text: 'Classics'
+        }, {
+          text: 'Communication and media studies'
+        }, {
+          text: 'Computing'
+        }, {
+          text: 'Dance'
+        }, {
+          text: 'Design and technology'
+        }, {
+          text: 'Drama'
+        }, {
+          text: 'Economics'
+        }, {
+          text: 'English'
+        }, {
+          text: 'Geography'
+        }, {
+          text: 'Health and social care'
+        }, {
+          text: 'History'
+        }, {
+          text: 'Mathematics'
+        }, {
+          text: 'Music'
+        }, {
+          text: 'Philosophy'
+        }, {
+          text: 'Physical education'
+        }, {
+          text: 'Physics'
+        }, {
+          text: 'Psychology'
+        }, {
+          text: 'Religious education'
+        },
+        {
+          text: 'Social sciences'
+        },
+        {
+          text: 'English as a second or other language'
+        },
+        {
+          text: 'French'
+        },
+        {
+          text: 'German'
+        },
+        {
+          text: 'Italian'
+        },
+        {
+          text: 'Japanese'
+        },
+        {
+          text: 'Mandarin'
+        },
+        {
+          text: 'Russian'
+        },
+        {
+          text: 'Spanish'
+        }
+      ]
+    }) }}
+
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Region"
+        }
+      },
+      name: "qualification",
+      items: [
+        {
+          text: "North West (31)",
+          checked: true
+        },
+        {
+          text: "North East (64)",
+          checked: true
+        },
+        {
+          text: "Yorkshire &amp; the Humber (34)",
+          checked: true
+        },
+        {
+          text: "West Midlands (55)",
+          checked: true
+        },
+        {
+          text: "East Midlands (12)",
+          checked: true
+        },
+        {
+          text: "East of England (9)",
+          checked: true
+        },
+        {
+          text: "London (87)",
+          checked: true
+        },
+        {
+          text: "South East (21)",
+          checked: true
+        },
+        {
+          text: "South West (9)",
+          checked: true
+        }
+
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Qualification"
+        }
+      },
+      name: "qualification",
+      items: [
+        {
+          text: "Qualified teacher status only (31)",
+          checked: true
+        },
+        {
+          text: "PGCE or PGDE with qualified teacher status (76)",
+          checked: true
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Financial support"
+        }
+      },
+      name: "salary",
+      items: [
+        {
+          text: "Only show salaried courses (12)"
+        }
+      ]
+    }) }}
+
+
+    {{ govukRadios({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-radios--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Degree grade accepted"
+        }
+      },
+      name: "entryRequirement",
+      items: [
+        {
+          text: '2:1 or First (102)',
+          value: 'all',
+          checked: true
+        }, {
+          text: '2:2 (89)',
+          value: '22'
+        }, {
+          text: 'Third (73)',
+          value: 'third'
+        }, {
+          text: 'Pass or ‘Ordinary degree’ (12)',
+          value: 'degree'
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Visa sponsorship"
+        }
+      },
+      name: "visaSponsorship",
+      items: [
+        {
+          value: "yes",
+          text: "Only show courses with visa sponsorship (13)",
+          checked: (data['visaSponsorship'][0] == 'yes')
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+       formGroup: {
+         classes: "app-filter__group"
+       },
+       classes: "govuk-checkboxes--small",
+       fieldset: {
+         legend: {
+           classes: "govuk-fieldset__legend--s",
+           text: "Special educational needs"
+         }
+       },
+       name: "send",
+       items: [{
+        text: 'Only show courses with a SEND specialism (2)',
+        name: 'send'
+      }]
+     }) }}
+
+
+    {{ govukButton({
+      classes: "govuk-!-margin-bottom-1",
+      text: "Apply filters"
+    }) }}
+  </div>
+</form>
