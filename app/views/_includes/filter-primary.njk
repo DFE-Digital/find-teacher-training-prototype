@@ -1,0 +1,223 @@
+<form class="app-filter" method="post">
+  <div class="app-filter__header">
+    <h2 class="govuk-heading-m">Filters</h2>
+  </div>
+
+  <div class="app-filter__content">
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Age groups taught"
+        }
+      },
+      name: "ageGroupsTaught",
+      items: [
+        {
+          text: "3 to 7 year olds (12)",
+          checked: true
+        },
+        {
+          text: "5 to 11 year olds (65)",
+          checked: true
+        },
+        {
+          text: "7 to 11 year olds (54)",
+          checked: true
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Specialist subjects"
+        }
+      },
+      name: "primarySpecialism",
+      items: [
+        {
+          "text": "English (10)",
+          "checked": true
+        },
+        {
+          "text": "Geography and history (1)",
+          "checked": true
+        },
+        {
+          "text": "Mathematics (3)",
+          "checked": true
+        },
+        {
+          "text": "Modern languages (10)",
+          "checked": true
+        },
+        {
+          "text": "Physical education (0)",
+          "checked": true
+        },
+        {
+          "text": "Science (2)",
+          "checked": true
+        },
+        {
+          text: "No specialist subject (98)",
+          "checked": true
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Study type"
+        }
+      },
+      name: "studyType",
+      items: [
+        {
+          text: "1 year full time (97)",
+          checked: true
+        },
+        {
+          text: "2 years part time (4)",
+          checked: true
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Qualification"
+        }
+      },
+      name: "qualification",
+      items: [
+        {
+          text: "Qualified teacher status only (31)",
+          checked: true
+        },
+        {
+          text: "PGCE or PGDE with qualified teacher status (76)",
+          checked: true
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Financial support"
+        }
+      },
+      name: "salary",
+      items: [
+        {
+          text: "Only show salaried courses (12)"
+        }
+      ]
+    }) }}
+
+
+    {{ govukRadios({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-radios--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Degree grade accepted"
+        }
+      },
+      name: "entryRequirement",
+      items: [
+        {
+          text: '2:1 or First (102)',
+          value: 'all',
+          checked: true
+        }, {
+          text: '2:2 (89)',
+          value: '22'
+        }, {
+          text: 'Third (73)',
+          value: 'third'
+        }, {
+          text: 'Pass or ‘Ordinary degree’ (12)',
+          value: 'degree'
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      classes: "govuk-checkboxes--small",
+      fieldset: {
+        legend: {
+          classes: "govuk-fieldset__legend--s",
+          text: "Visa sponsorship"
+        }
+      },
+      name: "visaSponsorship",
+      items: [
+        {
+          value: "yes",
+          text: "Only show courses with visa sponsorship (13)",
+          checked: (data['visaSponsorship'][0] == 'yes')
+        }
+      ]
+    }) }}
+
+    {{ govukCheckboxes({
+       formGroup: {
+         classes: "app-filter__group"
+       },
+       classes: "govuk-checkboxes--small",
+       fieldset: {
+         legend: {
+           classes: "govuk-fieldset__legend--s",
+           text: "Special educational needs"
+         }
+       },
+       name: "send",
+       items: [{
+        text: 'Only show courses with a SEND specialism (2)',
+        name: 'send'
+      }]
+     }) }}
+
+
+    {{ govukButton({
+      classes: "govuk-!-margin-bottom-1",
+      text: "Apply filters"
+    }) }}
+  </div>
+</form>

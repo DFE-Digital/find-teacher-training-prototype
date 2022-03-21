@@ -1,0 +1,38 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = resultsCount + " courses found" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/"
+      },
+      {
+        text: "Primary",
+        href: "/primary"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+  <h1 class="govuk-heading-l">
+    101 primary courses in {{ data.area }}
+  </h1>
+
+  <div class="app-filter-toggle"></div>
+
+  <div class="app-filter-layout">
+    <div class="app-filter-layout__filter">
+      {% include "_includes/filter-primary.njk" %}
+    </div>
+
+    <div class="app-filter-layout__content">
+
+      Results
+    </div>
+  </div>
+{% endblock %}

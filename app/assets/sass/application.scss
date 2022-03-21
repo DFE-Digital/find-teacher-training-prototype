@@ -98,9 +98,19 @@ $git-brand-colour: #159964;
 
 .app-body--white,
 .app-list--white,
-.app-link--white,
-.app-link--white:visited {
+.app-link--white:link,
+.app-link--white:visited,
+.app-link--white:visited:hover {
   color: govuk-colour("white");
+}
+
+.app-link--white:hover {
+  text-decoration-thickness: 2px;
+  text-decoration-skip: none;
+}
+
+.app-link--white:focus {
+  color: govuk-colour("black");
 }
 
 .app-list--s li {
