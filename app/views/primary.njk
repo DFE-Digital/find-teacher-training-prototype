@@ -17,66 +17,18 @@
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">Primary teacher training courses</h1>
 
-      <p class="govuk-body-l">Primary school teachers teach ages 5 to 11. They teach a single class all the subjects of the National Curriculum.</p>
-
-      <p class="govuk-body">You can qualify as a primary teacher by doing a 1 or 2 year training course.</p>
-
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-half">
-      <h2 class="govuk-heading-s">Eligibility</h2>
-
-      <p class="govuk-body">You must already have a degree, in any subject.</p>
-
-      <p class="govuk-body">You must meet the minimum standard (GCSE C or above) in English, maths and science.</p>
-
-      <p class="govuk-body"><a href="#" class="govuk-link">About the minimum entry requirements</a></p>
-
-      <h2 class="govuk-heading-s">Application timetable</h2>
-
-      <p class="govuk-body">Most courses start in September 2022.</p>
-
-      <p class="govuk-body">The deadline for applications is 7 September 2022.</p>
-
-      <p class="govuk-body">Places are offered on a rolling basis, and courses may fill up before the deadline.</p>
-
-    </div>
-
-    <div class="govuk-grid-column-one-half">
-      <h2 class="govuk-heading-s">Funding</h2>
-
-      <p class="govuk-body">You can get a student loan to cover your course fees.</p>
-
-      <p class="govuk-body">Some courses will pay you a salary instead. These courses normally require you to already have some school experience.</p>
-
-      <p class="govuk-body"><a href="#" class="govuk-link">About funding training courses</a></p>
-
-      <h2 class="govuk-heading-s">International candidates</h2>
-
-      <p class="govuk-body">You may not be eligible for a student loan, depending upon your circumstances.</p>
-
-      <p class="govuk-body">Only some courses are able to sponsor visas.</p>
-
-      <p class="govuk-body"><a href="/" class="govuk-link">More information for international candidates</a></p>
-    </div>
-  </div>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full app-grid-column--blue">
-      <h2 class="govuk-heading-m app-heading--white">Find primary courses near you</h2>
+      <h2 class="govuk-heading-xl app-heading--white">Find a primary teacher training course</h2>
 
       <div class="app-inline-form">
         <div class="app-inline-form__input">
           {{ govukInput({
             label: {
               text: "City, area or postcode",
-              classes: "govuk-label--s app-label--white"
+              classes: "govuk-label--m app-label--white"
             },
             classes: '',
             id: "event-name",
@@ -95,9 +47,9 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
 
-          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by city</h2>
+          <h2 class="govuk-heading-m app-heading--white govuk-!-margin-bottom-2">Browse by city</h2>
 
-          <ul class="govuk-list app-list--s app-list--white app-two-columns">
+          <ul class="govuk-list app-list--m app-list--white app-two-columns">
             <li><a href="/results-primary?area=London" class="govuk-link app-link--white">London</a> (102)</li>
             <li><a href="/results-primary?area=Birmingham" class="govuk-link app-link--white">Birmingham</a> (12)</li>
             <li><a href="/results-primary?area=Bradford" class="govuk-link app-link--white">Bradford</a> (8)</li>
@@ -110,9 +62,9 @@
         </div>
         <div class="govuk-grid-column-one-half">
 
-          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by region</h2>
+          <h2 class="govuk-heading-m app-heading--white govuk-!-margin-bottom-2">Browse by region</h2>
 
-          <ul class="govuk-list app-list--s app-list--white app-two-columns">
+          <ul class="govuk-list app-list--m app-list--white app-two-columns">
             <li><a href="/results-primary?area=North+East" class="govuk-link app-link--white">North East</a> (301)</li>
             <li><a href="/results-primary?area=North+West" class="govuk-link app-link--white">North West</a> (203)</li>
             <li><a href="/results-primary?area=South+East" class="govuk-link app-link--white">South East</a> (102)</li>
@@ -127,5 +79,20 @@
     </div>
   </div>
 
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-top-9">
+      <h2 class="govuk-heading-l">Apply early once you find a course</h2>
+
+      <p class="govuk-body">Most courses start in September 2022. Places are offered on a rolling basis, and courses often fill up throughout the year. The deadline for applications is 7 September 2022 but you should apply earlier if you can.</p>
+
+      <p class="govuk-body">See what the application form involves</p>
+
+      <h2 class="govuk-heading-l">Funding and fees</h2>
+
+      <p class="govuk-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+    </div>
+  </div>
 
 {% endblock %}
