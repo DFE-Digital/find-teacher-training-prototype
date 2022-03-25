@@ -4,7 +4,7 @@ This prototype is based on the [GOV.UK prototype kit](https://github.com/alphago
 
 ## Requirements
 
-* Node.js - version 10.x.x
+* Node.js - version 16
 
 ## Installation
 
