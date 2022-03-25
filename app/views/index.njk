@@ -10,15 +10,20 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">Find teacher training courses</h1>
-      <p class="govuk-body-l">Where would you like to teach?</p>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Find postgraduate teacher training courses</h1>
     </div>
   </div>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
-      <h2 class="govuk-heading-m">Primary schools</h2>
-      <p>Ages 5 to 11</p>
+      <h2 class="govuk-heading-l">Primary schools</h2>
+      <p>Train to teach children ages 5 to 11.</p>
+      <p>To be eligible to train, you'll need a degree and the following GCSEs at grade 4 (C) or equivalent:</p>
+      <ul class="govuk-list govuk-list--bullet">
+    <li>maths</li>
+    <li>English</li>
+    <li>science</li>
+  </ul>
 
       {{ govukButton({
         text: "Find primary courses",
@@ -29,8 +34,13 @@
     </div>
 
     <div class="govuk-grid-column-one-half app-grid-column-one-half--border-left">
-      <h2 class="govuk-heading-m">Secondary schools</h2>
-      <p>Ages 11 to 18</p>
+      <h2 class="govuk-heading-l">Secondary schools</h2>
+      <p>Train to teach pupils aged 11 to 18 your favourite subject or subjects.</p>
+      <p>To be eligible to train, you'll need a degree and the following GCSEs at grade 4 (C) or equivalent:</p>
+      <ul class="govuk-list govuk-list--bullet">
+      <li>maths</li>
+      <li>English</li>
+      </ul>
       {{ govukButton({
         text: "Find secondary courses",
         isStartButton: true,
@@ -40,44 +50,31 @@
     </div>
   </div>
 
-  <div class="govuk-grid-row govuk-!-margin-top-4">
-    <div class="govuk-grid-column-one-third">
-      <h2 class="govuk-heading-s">Nurseries</h2>
-      <p>Ages 0 to 5</p>
-      <p class="govuk-body"><a href="/early-years" class="govuk-link">Teaching early years</a></p>
-    </div>
-    <div class="govuk-grid-column-one-third app-grid-column-one-third--border-left">
-      <h2 class="govuk-heading-s">6th forms and colleges</h2>
-      <p>Ages 16 to 18</p>
-      <p class="govuk-body"><a href="/early-years" class="govuk-link">Teaching further education</a></p>
-    </div>
-    <div class="govuk-grid-column-one-third app-grid-column-one-third--border-left">
-      <h2 class="govuk-heading-s">Universities</h2>
-      <p>Ages 18+</p>
-      <p class="govuk-body"><a href="/early-years" class="govuk-link">Teaching in Universities</a></p>
-    </div>
-  </div>
 
   <div class="govuk-grid-row govuk-!-margin-top-3">
-    <div class="govuk-grid-column-full app-grid-column--grey">
-      <h3 class="govuk-heading-s">Can’t decide?</h3>
-      <p class="govuk-body">Our teacher training advisers can help you explore which type of teaching is right for you.</p>
-      <p class="govuk-body"><a href="#" class="govuk-link">Speak to a teacher training adviser</a></p>
+    <div class="govuk-grid-column-two-thirds app-grid-column--grey">
+      <h3 class="govuk-heading-m">Explore which setting suits you best</h3>
+      <p class="govuk-body"><a href="#" class="govuk-link">Talk to a teacher training adviser</a> to get help deciding which setting suits you best.</p>
+      <p class="govuk-body">You can also <a href="#" class="govuk-link">get school experience</a> to try different settings.</p>
+    </div>
+  </div>
+
+      <h2 class="govuk-heading-l govuk-!-margin-top-9">Teach in another setting</h2>
+
+  <div class="govuk-grid-row govuk-!-margin-top-4">
+    <div class="govuk-grid-column-two-thirds">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href="/early-years" class="govuk-link">early years</a>.</p>
+      <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
+      <p>Quis autem vel eum iure reprehenderit <a href="/early-years" class="govuk-link">universities</a> qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
     </div>
   </div>
 
     <div class="govuk-grid-row govuk-!-margin-top-5">
-      <div class="govuk-grid-column-one-half">
-        <h3 class="govuk-heading-s">Already an experienced teacher?</h3>
-        <p class="govuk-body">If you have a degree and are already teaching in a school as an unqualified teacher, you can get qualified teacher status through a 12 week assessment only programme.</p>
-        <p><a href="https://getintoteaching.education.gov.uk/assessment-only-providers" class="govuk-link">Find an assessment only programme</a></p>
-    </div>
-
-    <div class="govuk-grid-row govuk-!-margin-top-5">
-      <div class="govuk-grid-column-one-half">
-        <h3 class="govuk-heading-s">Qualified as a teacher outside of the UK?</h3>
-        <p class="govuk-body">If you have a teaching qualifications from the Europe, Australia, USA, Canada, New Zealand, you may be able to apply directly for qualified teacher status in England.</p>
-        <p><a href="https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk" class="govuk-link">Applying for qualified teacher status</a></p>
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-l">If you're already an experienced teacher</h3>
+        <p class="govuk-body">If you have a degree and are already teaching in a school as an unqualified teacher, find out if you can skip postgraduate training and get QTS through an <a href="https://getintoteaching.education.gov.uk/assessment-only-providers" class="govuk-link"> assessment only programme</a>.</p>
+        <p><a href="/early-years" class="govuk-link">Apply directly for QTS</a> qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
     </div>
   </div>
+
 {% endblock %}
