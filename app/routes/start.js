@@ -72,4 +72,10 @@ module.exports = router => {
     res.render('index')
   })
 
+  router.get('/secondary/:subject', async (req, res) => {
+    res.render('secondary-subject', {
+      subject: req.params.subject
+    })
+  })
+
 }

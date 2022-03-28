@@ -1,0 +1,102 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Postgraduate teacher training" %}
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/"
+      },
+      {
+        text: "Secondary",
+        href: "/secondary"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-top-5">
+      <div class="app-grid-column--blue ">
+        <h2 class="govuk-heading-l app-heading--white">Find {{ subject }} teacher training courses</h2>
+
+        <div class="app-inline-form">
+          <div class="app-inline-form__input">
+            {{ govukInput({
+              label: {
+                text: "City, area or postcode",
+                classes: "govuk-label--s app-label--white"
+              },
+              classes: '',
+              id: "event-name",
+              name: "event-name"
+            }) }}
+          </div>
+          <div class="app-inline-form__button">
+            {{ govukButton({
+              text: 'Search',
+              classes: 'app-button--white govuk-!-font-weight-bold'
+            })}}
+          </div>
+        </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by city</h2>
+
+          <ul class="govuk-list app-list--white app-two-columns">
+            <li><a href="/results-primary?area=London" class="govuk-link app-link--white">London</a> (102)</li>
+            <li><a href="/results-primary?area=Birmingham" class="govuk-link app-link--white">Birmingham</a> (12)</li>
+            <li><a href="/results-primary?area=Bradford" class="govuk-link app-link--white">Bradford</a> (8)</li>
+            <li><a href="/results-primary?area=Liverpool" class="govuk-link app-link--white">Liverpool</a> (9)</li>
+            <li><a href="/results-primary?area=Leeds" class="govuk-link app-link--white">Leeds</a> (19)</li>
+            <li><a href="/results-primary?area=Manchester" class="govuk-link app-link--white">Manchester</a> (23)</li>
+            <li><a href="/results-primary?area=Sheffield" class="govuk-link app-link--white">Sheffield</a> (19)</li>
+            <li><a href="/results-primary?area=Bristol" class="govuk-link app-link--white">Bristol</a> (8)</li>
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half">
+
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by region</h2>
+
+          <ul class="govuk-list app-list--white app-two-columns">
+            <li><a href="/results-primary?area=North+East" class="govuk-link app-link--white">North East</a> (301)</li>
+            <li><a href="/results-primary?area=North+West" class="govuk-link app-link--white">North West</a> (203)</li>
+            <li><a href="/results-primary?area=South+East" class="govuk-link app-link--white">South East</a> (102)</li>
+            <li><a href="/results-primary?area=South+West" class="govuk-link app-link--white">South West</a> (98)</li>
+            <li><a href="/results-primary?area=West+Midlands" class="govuk-link app-link--white">West Midlands</a> (221)</li>
+            <li><a href="/results-primary?area=Yorkshire+and+the+Humber" class="govuk-link app-link--white">Yorkshire &amp; the Humber</a> (105)</li>
+            <li><a href="/results-primary?area=East+Midlands" class="govuk-link app-link--white">East Midlands</a> (75)</li>
+            <li><a href="/results-primary?area=East+of+England" class="govuk-link app-link--white">East of England</a> (58)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-top-9">
+      <h2 class="govuk-heading-l">Apply early once you find your course</h2>
+
+      <p class="govuk-body">You're browsing courses which start in September 2022 or January 2023. Apply no later than 7 September 2022 to to be considered for a place on one of these courses.</p>
+
+      <p class="govuk-body">Places are offered throughout the year and can fill up before September. Apply as soon as you can to have the best chance of getting on the course you want.</p>
+
+      <h3 class="govuk-heading-s">It is not too soon to start your application form</h3>
+
+      <p class="govuk-body">If you have not done so already, <a href="https://www.apply-for-teacher-training.service.gov.uk/candidate/account" class="govuk-link"> create an application account</a> so you can see how the process works. You'll be able to submit your application to up to 3 courses.</p>
+
+    </div>
+  </div>
+
+{% endblock %}
