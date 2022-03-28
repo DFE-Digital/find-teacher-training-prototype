@@ -12,6 +12,10 @@
       {
         text: "Secondary",
         href: "/secondary"
+      },
+      {
+        text: data.subject,
+        href: "/secondary/" + data.subject
       }
     ]
   }) }}
@@ -21,7 +25,7 @@
 {% block content %}
 
   <h1 class="govuk-heading-l">
-    201 courses from 67 providers
+    85 {{ data.subject }} courses in {{ data.area }} from 23 providers
   </h1>
 
   <div class="app-filter-toggle"></div>
@@ -33,10 +37,12 @@
 
     <div class="app-filter-layout__content">
 
-      <div class="app-filter-hint">
-        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Showing courses across all of England</h2>
-        <p class="govuk-body  govuk-!-margin-bottom-0">You can filter by region to narrow your search.</p>
-      </div>
+      {% if not data.subject %}
+        <div class="app-filter-hint">
+          <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Showing courses across all of England</h2>
+          <p class="govuk-body  govuk-!-margin-bottom-0">You can filter by region to narrow your search.</p>
+        </div>
+      {% endif %}
 
       <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Academies Enterprise Trust: London</h2>
 

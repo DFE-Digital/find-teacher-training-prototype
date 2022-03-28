@@ -19,28 +19,29 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full app-grid-column--blue govuk-!-padding-top-5">
-      <h2 class="govuk-heading-l app-heading--white">Teacher training courses for primary teaching</h2>
+    <div class="govuk-grid-column-full">
+      <div class="app-grid-column--blue">
+        <h2 class="govuk-heading-l app-heading--white">Teacher training courses for primary teaching</h2>
 
-      <div class="app-inline-form">
-        <div class="app-inline-form__input">
-          {{ govukInput({
-            label: {
-              text: "City, area or postcode",
-              classes: "govuk-label--s app-label--white"
-            },
-            classes: '',
-            id: "event-name",
-            name: "event-name"
-          }) }}
+        <div class="app-inline-form">
+          <div class="app-inline-form__input">
+            {{ govukInput({
+              label: {
+                text: "City, area or postcode",
+                classes: "govuk-label--s app-label--white"
+              },
+              classes: '',
+              id: "event-name",
+              name: "event-name"
+            }) }}
+          </div>
+          <div class="app-inline-form__button">
+            {{ govukButton({
+              text: 'Search',
+              classes: 'app-button--white govuk-!-font-weight-bold'
+            })}}
+          </div>
         </div>
-        <div class="app-inline-form__button">
-          {{ govukButton({
-            text: 'Search',
-            classes: 'app-button--white govuk-!-font-weight-bold'
-          })}}
-        </div>
-      </div>
 
 
       <div class="govuk-grid-row">
@@ -77,7 +78,7 @@
       </div>
     </div>
   </div>
-
+  </div>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds govuk-!-margin-top-9">
