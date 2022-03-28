@@ -18,17 +18,16 @@
 
 {% block content %}
 
-
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full app-grid-column--blue">
-      <h2 class="govuk-heading-xl app-heading--white">Find primary teacher training courses</h2>
+    <div class="govuk-grid-column-full app-grid-column--blue govuk-!-padding-top-5">
+      <h2 class="govuk-heading-l app-heading--white">Teacher training courses for primary teaching</h2>
 
       <div class="app-inline-form">
         <div class="app-inline-form__input">
           {{ govukInput({
             label: {
               text: "City, area or postcode",
-              classes: "govuk-label--m app-label--white"
+              classes: "govuk-label--s app-label--white"
             },
             classes: '',
             id: "event-name",
@@ -47,9 +46,9 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
 
-          <h2 class="govuk-heading-m app-heading--white govuk-!-margin-bottom-2">Browse by city</h2>
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by city</h2>
 
-          <ul class="govuk-list app-list--m app-list--white app-two-columns">
+          <ul class="govuk-list app-list--white app-two-columns">
             <li><a href="/results-primary?area=London" class="govuk-link app-link--white">London</a> (102)</li>
             <li><a href="/results-primary?area=Birmingham" class="govuk-link app-link--white">Birmingham</a> (12)</li>
             <li><a href="/results-primary?area=Bradford" class="govuk-link app-link--white">Bradford</a> (8)</li>
@@ -62,9 +61,9 @@
         </div>
         <div class="govuk-grid-column-one-half">
 
-          <h2 class="govuk-heading-m app-heading--white govuk-!-margin-bottom-2">Browse by region</h2>
+          <h2 class="govuk-heading-s app-heading--white govuk-!-margin-bottom-2">Browse by region</h2>
 
-          <ul class="govuk-list app-list--m app-list--white app-two-columns">
+          <ul class="govuk-list app-list--white app-two-columns">
             <li><a href="/results-primary?area=North+East" class="govuk-link app-link--white">North East</a> (301)</li>
             <li><a href="/results-primary?area=North+West" class="govuk-link app-link--white">North West</a> (203)</li>
             <li><a href="/results-primary?area=South+East" class="govuk-link app-link--white">South East</a> (102)</li>
