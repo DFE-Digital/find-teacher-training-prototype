@@ -24,8 +24,13 @@
 
 {% block content %}
 
+  <p class="govuk-body govuk-!-margin-bottom-0">
+   <b> {{ data.area }}</b>
+    <a href="/secondary/{{ data.subject}}" class="govuk-link govuk-!-margin-left-4">Change area</a>
+  </p>
+
   <h1 class="govuk-heading-l">
-    85 {{ data.subject }} courses in {{ data.area }} from 23 providers
+    85 {{ data.subject }} courses from 23 providers
   </h1>
 
   <div class="app-filter-toggle"></div>
@@ -58,7 +63,7 @@
         <dt class="app-description-list__label">Locations</dt>
         <dd data-qa="course__study_mode">6 schools in North London</dd>
       </dl>
-      <div class="govuk-grid-row govuk-!-padding-left-3">
+      <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology</a></h3>
 
@@ -95,7 +100,7 @@
         <dd data-qa="course__study_mode">20+ schools across London</dd>
       </dl>
 
-      <div class="govuk-grid-row govuk-!-padding-left-3">
+      <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology</a></h3>
 
@@ -115,7 +120,7 @@
         </div>
       </div>
 
-      <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-4 govuk-!-padding-left-3"><a href="#" class="govuk-link">View all 4 matching courses from London Metropolitan University</a></p>
+      <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-4"><a href="#" class="govuk-link">View all 4 matching courses from London Metropolitan University</a></p>
 
 
       <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--m">
@@ -135,7 +140,7 @@
         <dd data-qa="course__study_mode">26 schools in Sheffield and South Yorkshire</dd>
       </dl>
 
-      <div class="govuk-grid-row govuk-!-padding-left-3">
+      <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="#" class="govuk-link">Biology</a></h3>
 

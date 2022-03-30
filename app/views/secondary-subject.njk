@@ -27,26 +27,29 @@
       <div class="app-grid-column--blue ">
         <h2 class="govuk-heading-l app-heading--white">Find {{ subject }} teacher training courses</h2>
 
-        <div class="app-inline-form">
-          <div class="app-inline-form__input">
-            {{ govukInput({
-              label: {
-                text: "City, area or postcode",
-                classes: "govuk-label--s app-label--white"
-              },
-              classes: '',
-              id: "event-name",
-              name: "event-name"
-            }) }}
+        <form action="/results-secondary" method="get">
+          <div class="app-inline-form">
+            <div class="app-inline-form__input">
+              <input type="hidden" name="subject" value="{{ subject }}">
+              {{ govukInput({
+                label: {
+                  text: "City, area or postcode",
+                  classes: "govuk-label--s app-label--white"
+                },
+                classes: '',
+                id: "area",
+                name: "area"
+              }) }}
+            </div>
+            <div class="app-inline-form__button">
+              {{ govukButton({
+                text: 'Search',
+                classes: 'app-button--white govuk-!-font-weight-bold'
+              })}}
+            </div>
           </div>
-          <div class="app-inline-form__button">
-            {{ govukButton({
-              text: 'Search',
-              classes: 'app-button--white govuk-!-font-weight-bold'
-            })}}
-          </div>
-        </div>
-
+        </form>
+<!--
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
 
@@ -81,6 +84,7 @@
       </div>
     </div>
   </div>
+-->
       </div>
 
 
