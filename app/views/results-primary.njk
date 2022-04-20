@@ -20,15 +20,6 @@
 
 {% block content %}
 
-  <p class="govuk-body govuk-!-margin-bottom-0">
-    <b>{{ data.area }}</b>
-    <a href="/primary" class="govuk-link govuk-!-margin-left-4">Change area</a>
-  </p>
-
-  <h1 class="govuk-heading-l">
-    101 primary courses from 31 providers
-  </h1>
-
   <div class="app-filter-toggle"></div>
 
   <div class="app-filter-layout">
@@ -37,6 +28,16 @@
     </div>
 
     <div class="app-filter-layout__content">
+
+  <p class="govuk-body govuk-!-margin-bottom-0">
+    <b>{{ data.area }}</b>
+    <a href="/primary" class="govuk-link govuk-!-margin-left-4">Change area</a>
+  </p>
+
+        <h1 class="govuk-heading-l">
+    101 primary courses from 31 providers
+  </h1>
+
       <h2 class="govuk-heading-m govuk-!-margin-bottom-4">Academies Enterprise Trust: London</h2>
 
       <dl class="app-description-list app-description-list--search-result">

@@ -24,14 +24,6 @@
 
 {% block content %}
 
-  <p class="govuk-body govuk-!-margin-bottom-0">
-   <b> {{ data.area }}</b>
-    <a href="/secondary/{{ data.subject}}" class="govuk-link govuk-!-margin-left-4">Change area</a>
-  </p>
-
-  <h1 class="govuk-heading-l">
-    85 {{ data.subject }} courses from 23 providers
-  </h1>
 
   <div class="app-filter-toggle"></div>
 
@@ -41,6 +33,16 @@
     </div>
 
     <div class="app-filter-layout__content">
+
+      <p class="govuk-body govuk-!-margin-bottom-0">
+       <b> {{ data.area }}</b>
+        <a href="/secondary/{{ data.subject}}" class="govuk-link govuk-!-margin-left-4">Change area</a>
+      </p>
+
+
+      <h1 class="govuk-heading-l">
+        85 {{ data.subject }} courses from 23 providers
+      </h1>
 
       {% if not data.subject %}
         <div class="app-filter-hint">
