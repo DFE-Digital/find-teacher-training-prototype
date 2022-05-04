@@ -40,6 +40,12 @@ $git-brand-colour: #159964;
 //   padding-left: 20px;
 // }
 
+.app-results-search {
+  background-color: govuk-colour("light-grey");
+  padding: 10px 10px 20px 15px;
+  margin-bottom: 20px;
+}
+
 .app-grid-column--grey {
   background-color: govuk-colour("light-grey");
   padding: 30px 30px 10px 30px;
@@ -95,6 +101,10 @@ $git-brand-colour: #159964;
   padding-top: 40px;
   padding-left: 20px;
   float: left;
+}
+
+.app-inline-form__button--s {
+  padding-top: 30px;
 }
 
 .app-body--white,

@@ -38,6 +38,32 @@
     101 primary courses from 31 providers
   </h1>
 
+    <div class="app-results-search">
+      <div class="app-inline-form">
+        <form action="#" method="get">
+          <div class="app-inline-form__input" style="width: 400px;">
+            {{ govukInput({
+              label: {
+                text: "Filter by provider",
+                classes: ""
+              },
+              id: "search",
+              name: "search",
+              formGroup: {
+                classes: 'govuk-!-margin-bottom-0'
+              }
+            }) }}
+          </div>
+          <div class="app-inline-form__button app-inline-form__button--s">
+            {{ govukButton({
+              text: 'Search',
+              classes: 'govuk-!-font-weight-bold govuk-!-margin-bottom-0'
+            })}}
+          </div>
+        </form>
+      </div>
+    </div>
+
       <h2 class="govuk-heading-m govuk-!-margin-bottom-4">Academies Enterprise Trust: London</h2>
 
       <dl class="app-description-list app-description-list--search-result">
