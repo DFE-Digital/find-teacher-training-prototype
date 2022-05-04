@@ -1,0 +1,64 @@
+.app-facet-tags {
+  background-color: #f3f2f1;
+  padding: 7px;
+  @include govuk-typography-common();
+  margin-bottom: 20px;
+}
+
+.app-facet-tags__facet {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid darkgrey;
+}
+
+.app-facet-tags__facet:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top-width: 0;
+}
+
+.app-facet-tags__wrapper {
+  display: inline-block;
+}
+
+.app-facet-tags__preposition {
+  display: table-cell;
+  padding: 0 5px 0 2px;
+  vertical-align: middle;
+}
+
+.app-facet-tags__wrapper:first-child .app-facet-tags__preposition {
+  font-weight: bold;
+}
+
+.app-facet-tags__tag {
+  display: table-cell;
+  position: relative;
+  border: 1px solid #505a5f;
+  border-radius: 5px;
+  padding: 8px 8px 8px 24px;
+  @include govuk-font($size: 16, $weight: normal);
+}
+
+.app-facet-tags__tag-text {
+  display: inline-block;
+}
+
+.app-facet-tags__remove {
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: .5em;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  color: black;
+  background: none;
+  text-decoration: none;
+}

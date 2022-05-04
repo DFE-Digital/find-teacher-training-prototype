@@ -1,0 +1,15 @@
+<div class="app-facet-tags">
+  {% for facet in params.facets %}
+    <div class="app-facet-tags__facet">
+      {% for item in facet.items %}
+        <div class="app-facet-tags__wrapper">
+          <span class="app-facet-tags__preposition">{{ item.preposition }}</span>
+          <span class="app-facet-tags__tag">
+            <span class="app-facet-tags__tag-text">{{ item.text }}</span>
+            <button class="app-facet-tags__remove">✕</button>
+          </span>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

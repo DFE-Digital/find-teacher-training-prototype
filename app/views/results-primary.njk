@@ -64,6 +64,52 @@
       </div>
     </div>
 
+    {{ appFacetTags({
+      facets: [
+        {
+          "items": [
+            {
+              "text": "3 to 7 year olds",
+              "preposition": "Age group"
+            },
+            {
+              "text": "5 to 11 year olds",
+              "preposition": "or"
+            },
+            {
+              "text": "7 to 11 year olds",
+              "preposition": "or"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "preposition": "Study type",
+              "text": "1 year full time"
+            },
+            {
+              "text": "2 years part time",
+              "preposition": "or"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "preposition": "Qualification",
+              "text": "Qualified teacher status only"
+            },
+            {
+              "text": "PGCE with qualified teacher status",
+              "preposition": "or"
+            }
+          ]
+        }
+
+      ]
+    }) }}
+
       <h2 class="govuk-heading-m govuk-!-margin-bottom-4">Academies Enterprise Trust: London</h2>
 
       <dl class="app-description-list app-description-list--search-result">
