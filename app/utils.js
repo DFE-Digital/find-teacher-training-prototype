@@ -285,5 +285,16 @@ module.exports = () => {
     }))
   }
 
+  utils.addFacetPrepositions = (array, label) => {
+
+    if (array.length > 0) {
+      array[0].preposition = label
+      for (item of array.slice(1)) {
+        item.preposition = "or"
+      }
+    }
+
+  }
+
   return utils
 }

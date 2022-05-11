@@ -44,12 +44,23 @@
         85 {{ data.subject }} courses from 23 providers
       </h1>
 
-      {% if not data.subject %}
-        <div class="app-filter-hint">
-          <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Showing courses across all of England</h2>
-          <p class="govuk-body  govuk-!-margin-bottom-0">You can filter by region to narrow your search.</p>
-        </div>
-      {% endif %}
+    {{ appFacetTags({
+      facets: [
+        {
+          "items": ageGroupFacetItems
+        },
+        {
+          "items": courseLengthFacetItems
+        },
+        {
+          "items": qualificationTypeFacetItems
+        },
+        {
+          "items": otherFacetItems
+        }
+      ]
+    }) }}
+
 
       <h2 class="govuk-heading-m govuk-!-margin-bottom-4">Academies Enterprise Trust: London</h2>
 

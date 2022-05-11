@@ -3,22 +3,27 @@ module.exports = {
   cycle: 2021,
   nearingEndOfCycle: true,
   defaults: {
-    latitude: false,
-    longitude: false,
-    qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
-    salary: 'salary,apprenticeship,fee',
-    send: ['exclude'],
-    studyType: ['full_time', 'part_time'],
-    subjects: [],
-    vacancy: ['include'],
-    entryRequirement: ['21','22','third','degree']
   },
+  ageGroupOptions: [
+    {
+      text: "3 to 7 year olds",
+      value: "3-7"
+    },
+    {
+      text: "5 to 11 year olds",
+      value: "5-11"
+    },
+    {
+      text: "7 to 11 year olds",
+      value: "7-11"
+    }
+  ],
   qualificationOptions: [{
-    text: 'QTS only',
+    text: 'Qualified teacher status only',
     hint: 'Qualified teacher status (QTS) allows you to teach in state schools in England and may allow you to teach in other parts of the UK.\n\nIt may also allow you to teach in the [EU and EEA](https://www.gov.uk/eu-eea), though this could change after 2020.\n\nIf you’re planning to teach overseas, you should always check what’s needed in the country you’d like to teach in.',
     value: 'qts'
   }, {
-    text: 'PGCE (or PGDE) with QTS',
+    text: 'PGCE with qualified teacher status ',
     hint: 'A postgraduate certificate in education (PGCE) is an academic qualification in education. PGCE with QTS allows you to teach in state schools in England and may allow you to teach in other parts of the UK.\n\nIt may also allow you to teach in the [EU and EEA](https://www.gov.uk/eu-eea), though this could change after 2020. If you’re planning to teach overseas, you should always check what’s needed in the country you’d like to teach in.\n\nMany PGCE courses include credits towards a Master’s degree. Some providers offer a PGDE (postgraduate diploma in education) with QTS, which is equivalent to a PGCE. In some cases these offer more Master’s credits than PGCE courses.',
     value: 'pgce_with_qts,pgde_with_qts'
   }, {
@@ -40,16 +45,14 @@ module.exports = {
     value: 'degree'
   }],
   salaryOptions: [{
-    text: 'Only show courses with a salary',
+    text: 'Only show salaried courses',
     value: ['include']
   }],
   studyTypeOptions: [{
-    text: 'Full time (12 months)',
-    hint: 'You’ll usually spend 5 days a week on a full-time course',
+    text: '1 year full time',
     value: 'full_time'
   }, {
-    text: 'Part time (18-24 months)',
-    hint: 'You’ll usually spend 3 days a week on a part-time course',
+    text: '2 years part time',
     value: 'part_time'
   }],
   sendOptions: [{

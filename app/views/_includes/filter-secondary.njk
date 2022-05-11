@@ -1,96 +1,11 @@
-<form class="app-filter" method="post">
+<form class="app-filter" method="get">
   <div class="app-filter__header">
     <h2 class="govuk-heading-m">Filters</h2>
   </div>
 
   <div class="app-filter__content">
 
-<!--
-    {{ appCheckboxFilter({
-      classes: 'app-filter__group',
-      legend: {
-        text: "Subjects"
-      },
-      name: "qualification",
-      items: [{
-          text: 'Art and design'
-        }, {
-          text: 'Biology'
-        }, {
-          text: 'Business studies'
-        }, {
-          text: 'Chemistry'
-        }, {
-          text: 'Citizenship'
-        }, {
-          text: 'Classics'
-        }, {
-          text: 'Communication and media studies'
-        }, {
-          text: 'Computing'
-        }, {
-          text: 'Dance'
-        }, {
-          text: 'Design and technology'
-        }, {
-          text: 'Drama'
-        }, {
-          text: 'Economics'
-        }, {
-          text: 'English'
-        }, {
-          text: 'Geography'
-        }, {
-          text: 'Health and social care'
-        }, {
-          text: 'History'
-        }, {
-          text: 'Mathematics'
-        }, {
-          text: 'Music'
-        }, {
-          text: 'Philosophy'
-        }, {
-          text: 'Physical education'
-        }, {
-          text: 'Physics'
-        }, {
-          text: 'Psychology'
-        }, {
-          text: 'Religious education'
-        },
-        {
-          text: 'Social sciences'
-        },
-        {
-          text: 'English as a second or other language'
-        },
-        {
-          text: 'French'
-        },
-        {
-          text: 'German'
-        },
-        {
-          text: 'Italian'
-        },
-        {
-          text: 'Japanese'
-        },
-        {
-          text: 'Mandarin'
-        },
-        {
-          text: 'Russian'
-        },
-        {
-          text: 'Spanish'
-        }
-      ]
-    }) }}
-
-
-    {{ govukCheckboxes({
+  {{ govukCheckboxes({
       formGroup: {
         classes: "app-filter__group"
       },
@@ -98,51 +13,24 @@
       fieldset: {
         legend: {
           classes: "govuk-fieldset__legend--s",
-          text: "Region"
+          text: "Course length"
         }
       },
-      name: "qualification",
+      name: "studyType",
       items: [
         {
-          text: "North West (31)",
-          checked: true
+          text: "1 year full time (97)",
+          value: 'full_time',
+          checked: (data["studyType"] and data["studyType"].includes('full_time'))
         },
         {
-          text: "North East (64)",
-          checked: true
-        },
-        {
-          text: "Yorkshire &amp; the Humber (34)",
-          checked: true
-        },
-        {
-          text: "West Midlands (55)",
-          checked: true
-        },
-        {
-          text: "East Midlands (12)",
-          checked: true
-        },
-        {
-          text: "East of England (9)",
-          checked: true
-        },
-        {
-          text: "London (87)",
-          checked: true
-        },
-        {
-          text: "South East (21)",
-          checked: true
-        },
-        {
-          text: "South West (9)",
-          checked: true
+          text: "2 years part time (4)",
+          value: 'part_time',
+          checked: (data["studyType"] and data["studyType"].includes('part_time'))
         }
-
       ]
     }) }}
--->
+
     {{ govukCheckboxes({
       formGroup: {
         classes: "app-filter__group"
@@ -158,11 +46,13 @@
       items: [
         {
           text: "Qualified teacher status only (31)",
-          checked: true
+          value: 'qts',
+          checked: (data["qualification"] and data["qualification"].includes('qts'))
         },
         {
           text: "PGCE with qualified teacher status (76)",
-          checked: true
+          value: 'pgce_with_qts,pgde_with_qts',
+          checked: (data["qualification"] and data["qualification"].includes('pgce_with_qts,pgde_with_qts'))
         }
       ]
     }) }}
@@ -181,7 +71,9 @@
       name: "salary",
       items: [
         {
-          text: "Only show salaried courses (12)"
+          text: "Only show salaried courses (12)",
+          value: 'include',
+          checked: (data["salary"] and data["salary"].includes('include'))
         }
       ]
     }) }}
@@ -231,9 +123,9 @@
       name: "visaSponsorship",
       items: [
         {
-          value: "yes",
+          value: "include",
           text: "Only show courses with visa sponsorship (13)",
-          checked: (data['visaSponsorship'][0] == 'yes')
+          checked: (data['visaSponsorship'][0] == 'include')
         }
       ]
     }) }}
@@ -252,7 +144,8 @@
        name: "send",
        items: [{
         text: 'Only show courses with a SEND specialism (2)',
-        name: 'send'
+        value: 'include',
+          checked: (data['send'][0] == 'include')
       }]
      }) }}
 

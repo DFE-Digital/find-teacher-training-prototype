@@ -1,15 +1,26 @@
-<div class="app-facet-tags">
-  {% for facet in params.facets %}
-    <div class="app-facet-tags__facet">
-      {% for item in facet.items %}
-        <div class="app-facet-tags__wrapper">
-          <span class="app-facet-tags__preposition">{{ item.preposition }}</span>
-          <span class="app-facet-tags__tag">
-            <span class="app-facet-tags__tag-text">{{ item.text }}</span>
-            <button class="app-facet-tags__remove">✕</button>
-          </span>
+{% set facetsPresent = false %}
+{% for facet in params.facets %}
+  {% if facet.items | length > 0 %}
+    {% set facetsPresent = true %}
+  {% endif %}
+{% endfor %}
+
+{% if facetsPresent %}
+  <div class="app-facet-tags">
+    {% for facet in params.facets %}
+      {% if facet.items | length > 0 %}
+        <div class="app-facet-tags__facet">
+          {% for item in facet.items %}
+            <div class="app-facet-tags__wrapper">
+              <span class="app-facet-tags__preposition">{{ item.preposition }}</span>
+              <span class="app-facet-tags__tag">
+                <span class="app-facet-tags__tag-text">{{ item.text }}</span>
+                <button class="app-facet-tags__remove">✕</button>
+              </span>
+            </div>
+          {% endfor %}
         </div>
-      {% endfor %}
-    </div>
-  {% endfor %}
-</div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

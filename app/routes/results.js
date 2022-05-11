@@ -12,6 +12,130 @@ module.exports = router => {
     res.redirect('/results')
   })
 
+  router.get('/results-primary', function(req, res) {
+
+    var ageGroupFacetItems = []
+    var courseLengthFacetItems = []
+    var qualificationTypeFacetItems = []
+    var otherFacetItems = []
+
+    if (req.session.data.ageGroupsTaught) {
+      for (ageGroup of req.session.data.ageGroupOptions) {
+        if (req.session.data.ageGroupsTaught.includes(ageGroup.value)) {
+          ageGroupFacetItems.push({
+            text: ageGroup.text
+          })
+        }
+      }
+    }
+
+    if (req.session.data.studyType) {
+      for (studyTypeOption of req.session.data.studyTypeOptions) {
+        console.log(studyTypeOption.value)
+        if (req.session.data.studyType.includes(studyTypeOption.value)) {
+          courseLengthFacetItems.push({
+            text: studyTypeOption.text
+          })
+        }
+      }
+    }
+
+    if (req.session.data.qualification) {
+      for (qualificationOption of req.session.data.qualificationOptions) {
+        if (req.session.data.qualification.includes(qualificationOption.value)) {
+          qualificationTypeFacetItems.push({
+            text: qualificationOption.text
+          })
+        }
+      }
+    }
+
+    if (req.session.data.salary && req.session.data.salary.includes('include')) {
+      otherFacetItems.push({
+        text: req.session.data.salaryOptions[0].text
+      })
+    }
+
+    if (req.session.data.visaSponsorship && req.session.data.visaSponsorship.includes('include')) {
+      otherFacetItems.push({
+        text: 'Only show courses with visa sponsorship'
+      })
+    }
+
+    if (req.session.data.send && req.session.data.send.includes('include')) {
+      otherFacetItems.push({
+        text: 'Only show courses with a SEND specialism'
+      })
+    }
+
+    utils.addFacetPrepositions(ageGroupFacetItems, 'Age group')
+    utils.addFacetPrepositions(courseLengthFacetItems, 'Course length')
+    utils.addFacetPrepositions(qualificationTypeFacetItems, 'Qualification')
+
+    res.render('results-primary', {
+      ageGroupFacetItems,
+      courseLengthFacetItems,
+      qualificationTypeFacetItems,
+      otherFacetItems
+    })
+  })
+
+  router.get('/results-secondary', function(req, res) {
+
+    var courseLengthFacetItems = []
+    var qualificationTypeFacetItems = []
+    var otherFacetItems = []
+
+    if (req.session.data.studyType) {
+      for (studyTypeOption of req.session.data.studyTypeOptions) {
+        console.log(studyTypeOption.value)
+        if (req.session.data.studyType.includes(studyTypeOption.value)) {
+          courseLengthFacetItems.push({
+            text: studyTypeOption.text
+          })
+        }
+      }
+    }
+
+    if (req.session.data.qualification) {
+      for (qualificationOption of req.session.data.qualificationOptions) {
+        if (req.session.data.qualification.includes(qualificationOption.value)) {
+          qualificationTypeFacetItems.push({
+            text: qualificationOption.text
+          })
+        }
+      }
+    }
+
+    if (req.session.data.salary && req.session.data.salary.includes('include')) {
+      otherFacetItems.push({
+        text: req.session.data.salaryOptions[0].text
+      })
+    }
+
+    if (req.session.data.visaSponsorship && req.session.data.visaSponsorship.includes('include')) {
+      otherFacetItems.push({
+        text: 'Only show courses with visa sponsorship'
+      })
+    }
+
+    if (req.session.data.send && req.session.data.send.includes('include')) {
+      otherFacetItems.push({
+        text: 'Only show courses with a SEND specialism'
+      })
+    }
+
+    utils.addFacetPrepositions(courseLengthFacetItems, 'Course length')
+    utils.addFacetPrepositions(qualificationTypeFacetItems, 'Qualification')
+
+    res.render('results-secondary', {
+      courseLengthFacetItems,
+      qualificationTypeFacetItems,
+      otherFacetItems
+    })
+  })
+
+
   router.get('/results', async (req, res) => {
     const { area, defaults, provider, subjectOptions } = req.session.data
 

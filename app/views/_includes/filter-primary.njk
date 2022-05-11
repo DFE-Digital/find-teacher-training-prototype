@@ -1,7 +1,8 @@
-<form class="app-filter" method="post">
+<form class="app-filter" method="get">
   <div class="app-filter__header">
     <h2 class="govuk-heading-m">Filters</h2>
   </div>
+
 
   <div class="app-filter__content">
 
@@ -20,19 +21,22 @@
       items: [
         {
           text: "3 to 7 year olds (12)",
-          checked: true
+          value: "3-7",
+          checked: (data["ageGroupsTaught"] and data["ageGroupsTaught"].includes('3-7'))
         },
         {
           text: "5 to 11 year olds (65)",
-          checked: true
+          value: "5-11",
+          checked: (data["ageGroupsTaught"] and data["ageGroupsTaught"].includes('5-11'))
         },
         {
           text: "7 to 11 year olds (54)",
-          checked: true
+          value: "7-11",
+          checked: (data["ageGroupsTaught"] and data["ageGroupsTaught"].includes('7-11'))
         }
       ]
     }) }}
-
+{#
     {{ govukCheckboxes({
       formGroup: {
         classes: "app-filter__group"
@@ -75,7 +79,7 @@
           "checked": true
         }
       ]
-    }) }}
+    }) }} #}
 
     {{ govukCheckboxes({
       formGroup: {
@@ -85,18 +89,20 @@
       fieldset: {
         legend: {
           classes: "govuk-fieldset__legend--s",
-          text: "Study type"
+          text: "Course length"
         }
       },
       name: "studyType",
       items: [
         {
           text: "1 year full time (97)",
-          checked: true
+          value: 'full_time',
+          checked: (data["studyType"] and data["studyType"].includes('full_time'))
         },
         {
           text: "2 years part time (4)",
-          checked: true
+          value: 'part_time',
+          checked: (data["studyType"] and data["studyType"].includes('part_time'))
         }
       ]
     }) }}
@@ -116,11 +122,13 @@
       items: [
         {
           text: "Qualified teacher status only (31)",
-          checked: true
+          value: 'qts',
+          checked: (data["qualification"] and data["qualification"].includes('qts'))
         },
         {
           text: "PGCE with qualified teacher status (76)",
-          checked: true
+          value: 'pgce_with_qts,pgde_with_qts',
+          checked: (data["qualification"] and data["qualification"].includes('pgce_with_qts,pgde_with_qts'))
         }
       ]
     }) }}
@@ -139,7 +147,9 @@
       name: "salary",
       items: [
         {
-          text: "Only show salaried courses (12)"
+          text: "Only show salaried courses (12)",
+          value: 'include',
+          checked: (data["salary"] and data["salary"].includes('include'))
         }
       ]
     }) }}
@@ -189,9 +199,9 @@
       name: "visaSponsorship",
       items: [
         {
-          value: "yes",
+          value: "include",
           text: "Only show courses with visa sponsorship (13)",
-          checked: (data['visaSponsorship'][0] == 'yes')
+          checked: (data['visaSponsorship'][0] == 'include')
         }
       ]
     }) }}
@@ -210,7 +220,8 @@
        name: "send",
        items: [{
         text: 'Only show courses with a SEND specialism (2)',
-        name: 'send'
+        value: 'include',
+          checked: (data['send'][0] == 'include')
       }]
      }) }}
 
