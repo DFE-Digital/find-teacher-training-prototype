@@ -31,7 +31,6 @@ module.exports = router => {
 
     if (req.session.data.studyType) {
       for (studyTypeOption of req.session.data.studyTypeOptions) {
-        console.log(studyTypeOption.value)
         if (req.session.data.studyType.includes(studyTypeOption.value)) {
           courseLengthFacetItems.push({
             text: studyTypeOption.text
@@ -88,7 +87,6 @@ module.exports = router => {
 
     if (req.session.data.studyType) {
       for (studyTypeOption of req.session.data.studyTypeOptions) {
-        console.log(studyTypeOption.value)
         if (req.session.data.studyType.includes(studyTypeOption.value)) {
           courseLengthFacetItems.push({
             text: studyTypeOption.text
