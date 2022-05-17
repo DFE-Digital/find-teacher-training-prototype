@@ -37,7 +37,7 @@
     "marked": "^4.0.15",
     "node-sass": "^7.0.1",
     "node-cache": "^5.1.2",
-    "node-geocoder": "^3.27.0",
+    "node-geocoder": "^4.0.0",
     "nunjucks": "^3.2.3",
     "portscanner": "^2.2.0",
     "qs": "^6.9.6",
