@@ -1,6 +1,6 @@
 {
-  "name": "govuk-prototype-kit",
-  "description": "Rapidly create HTML prototypes of GOV.UK services",
+  "name": "find-teacher-training-prototype",
+  "description": "Prototype for the ‘Find postgraduate teacher training’ service",
   "version": "9.11.1",
   "private": true,
   "engines": {
