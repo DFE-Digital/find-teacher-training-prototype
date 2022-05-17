@@ -48,7 +48,7 @@ module.exports = (env) => {
     }
 
     const text = string.replace(/\\r/g, '\n').replace(/\\t/g, ' ')
-    const html = marked(text)
+    const html = marked.parse(text)
 
     // Add govuk-* classes
     let govukHtml = html.replace(/<p>/g, '<p class="govuk-body">')
