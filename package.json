@@ -8,8 +8,9 @@
   },
   "scripts": {
     "start": "node start.js",
-    "lint": "standard",
-    "test": "npm run lint && gulp generate-assets && jest"
+    "lint:scripts": "standard",
+    "lint:scripts:fix": "standard --fix",
+    "test": "npm run lint:scripts && gulp generate-assets && jest"
   },
   "dependencies": {
     "acorn": "^8.0.5",
@@ -20,12 +21,12 @@
     "cookie-parser": "^1.4.6",
     "cross-spawn": "^7.0.3",
     "del": "^6.1.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-session": "^1.17.0",
     "fancy-log": "^2.0.0",
     "geolib": "^3.3.3",
-    "got": "^11.8.2",
+    "got": "^12.0.4",
     "govuk-frontend": "^3.13.0",
     "gulp": "^4.0.2",
     "gulp-nodemon": "^2.5.0",
@@ -48,7 +49,7 @@
   },
   "devDependencies": {
     "glob": "^8.0.3",
-    "jest": "^26.6.3",
+    "jest": "^28.1.0",
     "standard": "^17.0.0",
     "supertest": "^6.1.3"
   }
