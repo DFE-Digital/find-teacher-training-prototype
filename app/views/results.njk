@@ -8,7 +8,7 @@
     {% if data.ageGroup == "furtherEducation" %}
       <b>Further education</b>
     {% else %}
-    <b>{{ selectedSubjects | join("</b> and <b>", "text") }}</b>
+    <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
     {% endif %}
     courses
 
