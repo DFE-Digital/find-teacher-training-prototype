@@ -84,8 +84,9 @@ module.exports = () => {
           break
         case 2:
           course.requirements.gcses.equivalencyTestSubjects = ['English', 'maths']
+          break
         default:
-          if (course.name == 'Primary') {
+          if (course.name === 'Primary') {
             course.requirements.gcses.equivalencyTestSubjects = ['English', 'maths', 'science']
           } else {
             course.requirements.gcses.equivalencyTestSubjects = ['English', 'maths']
