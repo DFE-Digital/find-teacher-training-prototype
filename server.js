@@ -2,6 +2,7 @@
 const path = require('path')
 
 // NPM dependencies
+const bodyParser = require('body-parser')
 const dotenv = require('dotenv')
 const express = require('express')
 const nunjucks = require('nunjucks')
@@ -41,7 +42,7 @@ useHttps = useHttps.toLowerCase()
 
 // Force HTTPS on production. Do this before using basicAuth to avoid
 // asking for username/password twice (for `http`, then `https`).
-const isSecure = (env === 'production' && useHttps === 'true')
+const isSecure = ((env === 'staging' || env === 'production') && useHttps === 'true')
 if (isSecure) {
   app.use(utils.forceHttps)
   app.set('trust proxy', 1) // needed for secure cookies on heroku
@@ -56,7 +57,7 @@ const appViews = extensions.getAppViews([
 ])
 
 const nunjucksConfig = {
-  autoescape: false,
+  autoescape: true,
   noCache: true,
   watch: false // We are now setting this to `false` (it's by default false anyway) as having it set to `true` for production was making the tests hang
 }
@@ -78,12 +79,12 @@ app.set('view engine', 'njk')
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/public')))
 
-// Serve govuk-frontend in from node_modules (so not to break pre-extenstions prototype kits)
+// Serve govuk-frontend in from node_modules (so not to break pre-extensions prototype kits)
 app.use('/node_modules/govuk-frontend', express.static(path.join(__dirname, '/node_modules/govuk-frontend')))
 
 // Support for parsing data in POSTs
-app.use(express.json())
-app.use(express.urlencoded({
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
   extended: true
 }))
 
@@ -172,8 +173,9 @@ app.post(/^\/([^.]+)$/, function (req, res) {
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  res.status(404)
-  res.render('404')
+  const err = new Error(`Page not found: ${req.path}`)
+  err.status = 404
+  next(err)
 })
 
 // Display error
