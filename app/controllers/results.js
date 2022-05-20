@@ -55,7 +55,7 @@ exports.results_get = async (req, res) => {
   }
 
   if (subjects.includes('_unchecked')) {
-    if (req.session.data.ageGroup == 'primary') {
+    if (req.session.data.ageGroup === 'primary') {
       res.redirect('/primary-specialist-subject?showError=true')
     } else {
       res.redirect('/subject?showError=true')

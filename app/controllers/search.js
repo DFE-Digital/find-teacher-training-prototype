@@ -1,10 +1,10 @@
 const utils = require('../utils')()
-const locationSuggestions = require('../services/location-suggestions')
+// const locationSuggestions = require('../services/location-suggestions')
 
 exports.search = async (req, res) => {
-  const query = req.session.data.q || req.query.q
-  const queryType = await utils.processQuery(query, req.session.data)
-  const { filtering } = req.query
+  // const query = req.session.data.q || req.query.q
+  // const queryType = await utils.processQuery(query, req.session.data)
+  // const { filtering } = req.query
 
   res.redirect('/age-group')
 }
