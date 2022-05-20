@@ -17,7 +17,7 @@ const teacherTrainingService = {
       sort: 'provider.provider_name'
     }
 
-    const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
+    // const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
     // const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
     const courseListResponse = await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json()
 
