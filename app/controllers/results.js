@@ -56,9 +56,9 @@ exports.results_get = async (req, res) => {
 
   if (subjects.includes('_unchecked')) {
     if (req.session.data.ageGroup == 'primary') {
-      res.redirect('/primary-specialist-subject?showError=true');
+      res.redirect('/primary-specialist-subject?showError=true')
     } else {
-      res.redirect('/subject?showError=true');
+      res.redirect('/subject?showError=true')
     }
     return
   }
@@ -193,7 +193,7 @@ exports.results_get = async (req, res) => {
     }
 
     // Results
-    let results = await Promise.all(courses)
+    const results = await Promise.all(courses)
 
     if (req.session.data.visaSponsorship === 'yes') {
       // Post-process the results to filter out courses where visas can’t be

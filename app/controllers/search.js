@@ -32,7 +32,7 @@ exports.primary_get = async (req, res) => {
 }
 
 exports.primary_post = async (req, res) => {
-  console.log(req.session.data);
+  console.log(req.session.data)
   const primarySpecialistSubjectsAnswer = req.body.primarySpecialistSubjects
 
   if (primarySpecialistSubjectsAnswer === 'yes') {
@@ -46,7 +46,6 @@ exports.primary_post = async (req, res) => {
     res.render('filters/primary')
   }
 }
-
 
 exports.primary_specialist_subject_get = async (req, res) => {
   res.render('filters/primary-specialist-subject', {
