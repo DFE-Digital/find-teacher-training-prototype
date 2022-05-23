@@ -7,6 +7,15 @@ const resultsController = require('./controllers/results')
 const searchController = require('./controllers/search')
 
 /// ------------------------------------------------------------------------ ///
+/// ALL ROUTES
+/// ------------------------------------------------------------------------ ///
+router.all('*', (req, res, next) => {
+  res.locals.referrer = req.query.referrer
+  res.locals.query = req.query
+  next()
+})
+
+/// ------------------------------------------------------------------------ ///
 /// SEARCH ROUTES
 /// ------------------------------------------------------------------------ ///
 
