@@ -2,7 +2,8 @@ const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
 exports.show = async (req, res) => {
-  const { providerCode, courseCode } = req.params
+  const providerCode = req.params.providerCode.toUpperCase()
+  const courseCode = req.params.courseCode.toUpperCase()
 
   try {
     const courseSingleResponse = await teacherTrainingService.getCourse(providerCode, courseCode)
