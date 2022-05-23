@@ -1,0 +1,55 @@
+<section class="govuk-!-margin-bottom-8">
+  <h2 class="govuk-heading-l" id="school-placements">School placements</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third-from-desktop app-!-float-right">
+      {% set whereYouWillTrainHtml %}
+        {% if course.placementPolicy == "hosted" %}
+          <p>You will be placed in different schools during your training. You can select your host school when you apply.</p>
+        {% elif course.placementPolicy == "placed" %}
+          <p>You will be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to.</p>
+        {% endif %}
+
+        {% if course.trainingLocation == "remote" %}
+          <p>You will also spend some of your time in academic lessons. These take place remotely.</p>
+        {% elif course.trainingLocation == "school" %}
+          <p>You will also spend some of your time in academic lessons, which takes place at the school where you are placed.</p>
+        {% elif course.trainingLocation %}
+          <p>You will also spend some of your time in academic lessons. These take place at {{ course.trainingLocation.name }}, {{ course.trainingLocation.address }}.</p>
+        {% endif %}
+      {% endset %}
+
+      {{ appAdvice({
+        title: "Where you will train",
+        html: whereYouWillTrainHtml
+      }) }}
+    </div>
+
+    <div class="govuk-grid-column-two-thirds-from-desktop app-!-float-left">
+      {{ course.how_school_placements_work | markdown | safe }}
+
+      {% if course.placementPolicy == "hosted" %}
+        <h3 class="govuk-heading-m" id="placement-locations">Placement schools</h3>
+        <table class="govuk-table app-table--vertical-align-middle">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Location</th>
+              <th class="govuk-table__header">Vacancies</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            {% for school in schools %}
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <span class="govuk-!-font-weight-bold">{{ school.name }}</span><br />
+                {{ school.address }}
+              </td>
+              <td class="govuk-table__cell">{{ "Yes" if school.has_vacancies else "No" }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% endif %}
+    </div>
+  </div>
+</section>

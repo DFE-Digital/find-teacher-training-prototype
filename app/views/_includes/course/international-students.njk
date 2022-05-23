@@ -1,0 +1,23 @@
+<section class="govuk-!-margin-bottom-8">
+  <h2 class="govuk-heading-l" id="international-students">International students</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-body">
+        {% if course.canSponsorVisa %}
+          {% if course.salaried %}
+            We can <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#visas-and-immigration">sponsor Skilled Worker visas</a>.
+          {% else %}
+            We can <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#visas-and-immigration">sponsor Student visas</a>.
+          {% endif %}
+        {% else %}
+          We’re unable to sponsor visas.
+          You’ll need to <a class="govuk-link" href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#visas-and-immigration">get the right visa or status to {{"work" if  course.salaried else "study" }} in the UK</a>.
+        {% endif %}
+      </p>
+
+      <p class="govuk-body">You do not need a visa if you already have settled or pre-settled status under the EU Settlement Scheme, or if you’re an Irish citizen.</p>
+      <p class="govuk-body">Candidates with qualifications from non-UK institutions may need to provide evidence of comparability by applying for a <a href="https://www.enic.org.uk" class="govuk-link">UK ENIC statement</a>.</p>
+    </div>
+  </div>
+</section>

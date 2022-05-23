@@ -1,0 +1,23 @@
+<section class="govuk-!-margin-bottom-8">
+  <h2 class="govuk-heading-m">Contents</h2>
+  <ul class="govuk-list app-list--dash">
+    <li><a href="#about">About the course</a></li>
+    <li><a href="#school-placements">School placements</a></li>
+    <li><a href="#entry-requirements">Entry requirements</a></li>
+    {% if course.train_with_us or course.accredited_body_code %}
+      <li><a href="#about-the-provider">About the training provider</a></li>
+    {% endif %}
+    {% if course.salaried %}
+      <li><a href="#salary">Salary</a></li>
+    {% endif %}
+    <li><a href="#fees-and-financial-support">Fees and financial support</a></li>
+    {% if course.interview_process %}
+      <li><a href="#interview">Interview process</a></li>
+    {% endif %}
+    <li><a href="#international-students">International students</a></li>
+    <li><a href="#access-needs">Training with disabilities and other needs</a></li>
+    <li><a href="#contact">Contact details</a></li>
+    <li><a href="#advice">Support and advice</a></li>
+    <li><a href="#apply">Apply</a></li>
+  </ul>
+</section>

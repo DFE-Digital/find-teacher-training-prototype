@@ -1,0 +1,14 @@
+<section class="govuk-!-margin-bottom-8">
+  <h2 class="govuk-heading-l" id="about-the-provider">About the training provider</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      {{ course.provider.train_with_us | markdown | safe }}
+
+      {% if course.about_accredited_body %}
+        <h3 class="govuk-heading-m" id="about-the-accredited-body">About the accredited body</h3>
+        {{ course.about_accredited_body | markdown | safe }}
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,69 @@
+<section class="govuk-!-margin-bottom-8">
+  <h2 class="govuk-heading-l" id="entry-requirements">Entry requirements</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third-from-desktop app-!-float-right">
+      {% set refreshingSubjectKnowlegdeHtml %}
+        <p class="govuk-body">If you have the right qualities and qualifications to teach but need to improve your subject knowledge, you might be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/improve-your-subject-knowledge">subject knowledge enhancement (SKE) course</a>.</p>
+        <p class="govuk-body">You’ll find out if you need to complete an SKE course after the interview stage.</p>
+      {% endset %}
+
+      {{ appAdvice({
+        title: "Improving your subject knowledge",
+        html: refreshingSubjectKnowlegdeHtml
+      }) if course.has_ske }}
+    </div>
+
+    <div class="govuk-grid-column-two-thirds-from-desktop app-!-float-left">
+      <h3 class="govuk-heading-m" id="required-qualifications">Qualifications needed</h3>
+      <p class="govuk-body">
+        {% if course.requirements.degree.minimumClass == "21" %}
+          An undergraduate degree at class 2:1 or above, or equivalent.
+        {% elif course.requirements.degree.minimumClass == "22" %}
+          An undergraduate degree at class 2:2 or above, or equivalent.
+        {% elif course.requirements.degree.minimumClass == "third" %}
+          An undergraduate degree, or equivalent. This should be an honours degree (Third or above), or equivalent.
+        {% else %}
+          An undergraduate degree, or equivalent.
+        {% endif %}
+      </p>
+
+
+      {% if course.name !== "Primary"  %}
+        <p class="govuk-body">Your degree subject should be in {{ course.name }} or a similar subject. Otherwise you’ll need to prove your subject knowledge in some other way.</p>
+      {% endif %}
+
+      {% if course.requirements.degree.subject %}
+        <p class="govuk-body">
+          {{ course.requirements.degree.subject }}
+        </p>
+      {% endif %}
+
+      <p class="govuk-body">GCSE grade 4 (C) or above in English{{", maths and science" if course.name === "Primary" else " and maths" }}, or equivalent qualification.</p>
+
+      <p class="govuk-body">
+        {% if course.requirements.gcses.pendingGcsesAccepted == true %}
+          We’ll consider candidates who are currently taking GCSEs.
+        {% else %}
+          We will not consider candidates with pending GCSEs.
+        {% endif %}
+
+        {% if course.requirements.gcses.equivalencyTestsAccepted == true %}
+          We’ll consider candidates who need to take a GCSE equivalency test in {{ course.requirements.gcses.equivalencyTestSubjects | formatOrList }}.
+        {% else %}
+          We will not consider candidates who need to take GCSE equivalency tests.
+        {% endif %}
+      </p>
+
+      {% if course.personal_qualities %}
+        <h3 class="govuk-heading-m" id="personal-qualities">Personal qualities</h3>
+        {{ course.personal_qualities | markdown | safe }}
+      {% endif %}
+
+      {% if course.other_requirements %}
+        <h3 class="govuk-heading-m" id="other-requirements">Other requirements</h3>
+        {{ course.other_requirements | markdown | safe }}
+      {% endif %}
+    </div>
+  </div>
+</section>

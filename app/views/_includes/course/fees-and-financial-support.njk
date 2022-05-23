@@ -1,0 +1,63 @@
+<section class="govuk-!-margin-bottom-8">
+  <h2 class="govuk-heading-l" id="fees-and-financial-support">Fees and financial support</h3>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third-from-desktop app-!-float-right">
+      {% if course.salaried %}
+        {% set financialSupportHtml %}{% include "_includes/course/salaried.md" %}{% endset %}
+      {% elif course.bursary_only %}
+        {% set financialSupportHtml %}{% include "_includes/course/bursary.md" %}{% endset %}
+      {% elif course.has_scholarship_and_bursary %}
+        {% set financialSupportHtml %}{% include "_includes/course/bursary_and_scholarship.md" %}{% endset %}
+      {% else %}
+        {% set financialSupportHtml %}{% include "_includes/course/loan.md" %}{% endset %}
+      {% endif %}
+
+      {{ appAdvice({
+        title: "Financial support from the government",
+        html: financialSupportHtml | trim | markdown
+      }) }}
+    </div>
+
+    <div class="govuk-grid-column-two-thirds-from-desktop app-!-float-left">
+      {% if course.has_fees %}
+        {% if course.fee_domestic %}
+          {% if course.fee_domestic and course.fee_international %}
+            <table class="govuk-table app-table--vertical-align-middle">
+              <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">
+                The course fees for {{ course.year_range }} are as follows:
+              </caption>
+              <thead class="govuk-table__head">
+              <tr class="govuk-visually-hidden govuk-table__row">
+                <th class="govuk-table__header">Student type</th>
+                <th class="govuk-table__header">Fees to pay</th>
+              </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">UK students</td>
+                <td class="govuk-table__cell">£{{ (course.fee_domestic | int).toLocaleString() }}</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">International students</td>
+                <td class="govuk-table__cell">£{{ (course.fee_international | int).toLocaleString() }}</td>
+              </tr>
+              </tbody>
+            </table>
+          {% else %}
+            <p class="govuk-body">The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic.toLocaleString() }}.</p>
+          {% endif %}
+
+          <p class="govuk-body">Some candidates, such as those with settled or pre-settled status under the EU Settlement scheme, may be <a href="https://www.gov.uk/government/publications/student-finance-eligibility-2021-to-2022-academic-year" class="govuk-body">eligible for home fee status and student finance</a>.</p>
+
+          {{ course.fee_details | markdown | safe }}
+        {% endif %}
+      {% endif %}
+
+      {% if course.financial_support %}
+        <h3 class="govuk-heading-m" id="financial-support-from-the-provider">Financial support from the training provider</h3>
+        {{ course.financial_support | markdown | safe }}
+      {% endif %}
+    </div>
+  </div>
+</section>
