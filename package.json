@@ -56,5 +56,12 @@
   },
   "jest": {
     "testRunner": "jest-jasmine2"
+  },
+  "standard": {
+    "ignore": [
+      "app/assets/javascripts/accessible-autocomplete.js",
+      "app/assets/javascripts/application.js",
+      "app/assets/javascripts/jquery-1.11.3.js"
+    ]
   }
 }
