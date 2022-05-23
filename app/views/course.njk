@@ -1,6 +1,8 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title %}{{ course.name }} ({{ course.code }}) with {{ course.provider.name }}{% endset %}
+{% set title %}
+{{ course.name }} ({{ course.code }}) with {{ course.provider.name }}
+{% endset %}
 
 {% block pageNavigation %}
   {{ govukBackLink({
@@ -17,43 +19,43 @@
     {{ course.name }} ({{ course.code }})
   </h1>
 
-  {% include "_includes/course/summary.njk" %}
+  {% include "_includes/courses/summary.njk" %}
 
-  {% include "_includes/course/contents.njk" %}
+  {% include "_includes/courses/contents.njk" %}
 
-  {% include "_includes/course/about-this-course.njk" %}
+  {% include "_includes/courses/about-this-course.njk" %}
 
-  {% include "_includes/course/school-placements.njk" %}
+  {% include "_includes/courses/school-placements.njk" %}
 
-  {% include "_includes/course/entry-requirements.njk" %}
+  {% include "_includes/courses/entry-requirements.njk" %}
 
   {% if course.train_with_us or course.accredited_body_code %}
-    {% include "_includes/course/about-the-training-provider.njk" %}
+    {% include "_includes/courses/about-the-training-provider.njk" %}
   {% endif %}
 
   {% if course.salaried %}
-    {% include "_includes/course/salary.njk" %}
+    {% include "_includes/courses/salary.njk" %}
   {% endif %}
 
-  {% include "_includes/course/fees-and-financial-support.njk" %}
+  {% include "_includes/courses/fees-and-financial-support.njk" %}
 
   {% if course.interview_process %}
-    {% include "_includes/course/interview-process.njk" %}
+    {% include "_includes/courses/interview-process.njk" %}
   {% endif %}
 
-  {% include "_includes/course/international-students.njk" %}
+  {% include "_includes/courses/international-students.njk" %}
 
   {% if course.provider.train_with_disability %}
-    {% include "_includes/course/training-with-disabilities.njk" %}
+    {% include "_includes/courses/training-with-disabilities.njk" %}
   {% endif %}
 
-  {% include "_includes/course/contact-the-training-provider.njk" %}
+  {% include "_includes/courses/contact-the-training-provider.njk" %}
 
-  {% include "_includes/course/support-and-advice.njk" %}
+  {% include "_includes/courses/support-and-advice.njk" %}
 
   <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l govuk-!-width-two-thirds">
 
-  {% include "_includes/course/apply-for-course.njk" %}
+  {% include "_includes/courses/apply-for-course.njk" %}
 
   {{ course | log }}
 {% endblock %}
