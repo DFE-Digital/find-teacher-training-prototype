@@ -29,7 +29,7 @@ $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
 
-export const getPath = (endpoint,query) => {
+export const getPath = (endpoint, query) => {
   return `${endpoint}?query=${query}`;
 }
 
@@ -99,7 +99,6 @@ const initAutocomplete = ({element, input, path, selectNameAndCode}) => {
 };
 
 export default initAutocomplete;
-
 
 document.addEventListener('DOMContentLoaded', function() {
 

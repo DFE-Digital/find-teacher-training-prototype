@@ -50,7 +50,7 @@ module.exports = () => {
 
     // Adding degree subject requirement unless it’s primary
     if (course.name !== 'Primary') {
-      course.requirements.degree.subject = `50% of your degree modules should be in the subject.`
+      course.requirements.degree.subject = '50% of your degree modules should be in the subject.'
     }
 
     // Randomising whether pending GCSEs are accepted or not.
@@ -76,24 +76,24 @@ module.exports = () => {
     if (course.requirements.gcses.equivalencyTestsAccepted) {
       // Randomising which subjects tests accepted for
       switch (getRandomInt(5)) {
-      case 0:
-        course.requirements.gcses.equivalencyTestSubjects = ["maths"]
-        break
-      case 1:
-        course.requirements.gcses.equivalencyTestSubjects = ["English"]
-        break
-      case 2:
-        course.requirements.gcses.equivalencyTestSubjects = ["English", "maths"]
-      default:
-        if (course.name == "Primary") {
-          course.requirements.gcses.equivalencyTestSubjects = ["English", "maths", "science"]
-        } else {
-          course.requirements.gcses.equivalencyTestSubjects = ["English", "maths"]
-        }
-        break
+        case 0:
+          course.requirements.gcses.equivalencyTestSubjects = ['maths']
+          break
+        case 1:
+          course.requirements.gcses.equivalencyTestSubjects = ['English']
+          break
+        case 2:
+          course.requirements.gcses.equivalencyTestSubjects = ['English', 'maths']
+          break
+        default:
+          if (course.name === 'Primary') {
+            course.requirements.gcses.equivalencyTestSubjects = ['English', 'maths', 'science']
+          } else {
+            course.requirements.gcses.equivalencyTestSubjects = ['English', 'maths']
+          }
+          break
       }
     }
-
 
     switch (getRandomInt(5)) {
       case 0:

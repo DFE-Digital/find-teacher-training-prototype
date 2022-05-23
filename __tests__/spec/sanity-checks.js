@@ -105,7 +105,7 @@ describe('The Prototype Kit', () => {
 
   describe(`${gulpConfig.paths.assets}sass/`, () => {
     it.each(sassFiles)('%s renders to CSS without errors', (file) => {
-      return sassRender({ file: file })
+      return sassRender({ file })
     })
   })
 })
