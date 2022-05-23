@@ -4,6 +4,7 @@
   <p class="govuk-body">If you’re applying for the first time since applications opened in October 2020, apply no later than 6pm on 7 September 2021.</p>
   <p class="govuk-body">If your application did not lead to a place and you’re applying again, apply no later than 6pm on 20 September 2021.</p>
 {% endset %}
+
 {{ govukNotificationBanner({
   html: nearingEndOfCycleHtml
 }) if data.nearingEndOfCycle }}
