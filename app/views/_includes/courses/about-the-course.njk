@@ -3,7 +3,17 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
-      {{ course.about_course | markdown | safe }}
+
+      {%- if course.provider.code in ['1K1','1K2','2AL','2AX','2BU','2KL']
+        and course.code in ['3DL8','E989','L277','2X2P','37P3','M472'] %}
+        {% set aboutTheCourseHtml %}
+          {%- include "_includes/courses/content/about-the-course/" + course.provider.code + "/" + course.code + "-" + (query.version | default(1)) + ".md" %}
+        {% endset %}
+        {{ aboutTheCourseHtml | markdown | safe }}
+      {% else %}
+        {{ course.about_course | markdown | safe }}
+      {% endif -%}
+
     </div>
   </div>
 </section>
