@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon')
 const marked = require('marked')
+const numeral = require('numeral')
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -144,6 +145,41 @@ module.exports = (env) => {
     }
 
     return input
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the academic year label
+  example: {{ "September 2022" | getAcademicYearLabel }}
+  outputs: "Academic year 2022 to 2023"
+  ------------------------------------------------------------------ */
+  filters.getAcademicYearLabel = (date) => {
+    let label = ''
+
+    if (date) {
+      const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+
+      const dateParts = date.split(' ')
+
+      let checkMonth = dateParts[0]
+      checkMonth = months.indexOf(checkMonth.toLowerCase()) + 1
+      checkMonth = numeral(checkMonth).format('00')
+
+      const checkYear = dateParts[1]
+
+      let checkDate = checkYear + '-' + checkMonth
+      checkDate = DateTime.fromISO(checkDate)
+
+      const startDate = DateTime.fromISO(checkDate.year + '-08-01T00:00:00')
+      const endDate = DateTime.fromISO((checkDate.year + 1) + '-07-31T23:59:59')
+
+      if (checkDate >= startDate && checkDate <= endDate) {
+        label = checkDate.year + ' to ' + (checkDate.year + 1)
+      } else {
+        label = (checkDate.year - 1) + ' to ' + checkDate.year
+      }
+    }
+
+    return label
   }
 
   return filters
