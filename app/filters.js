@@ -158,20 +158,27 @@ module.exports = (env) => {
     if (date) {
       const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 
+      // the date is a string 'September 2022' so we need to split into useful parts
       const dateParts = date.split(' ')
 
+      // get the month
       let checkMonth = dateParts[0]
+      // convert the month into a number
       checkMonth = months.indexOf(checkMonth.toLowerCase()) + 1
       checkMonth = numeral(checkMonth).format('00')
 
+      // get the year
       const checkYear = dateParts[1]
 
+      // reconstruct the date
       let checkDate = checkYear + '-' + checkMonth
       checkDate = DateTime.fromISO(checkDate)
 
+      // construct the academic year
       const startDate = DateTime.fromISO(checkDate.year + '-08-01T00:00:00')
       const endDate = DateTime.fromISO((checkDate.year + 1) + '-07-31T23:59:59')
 
+      // get the academic year boundaries
       if (checkDate >= startDate && checkDate <= endDate) {
         label = checkDate.year + ' to ' + (checkDate.year + 1)
       } else {
