@@ -92,6 +92,7 @@
               funding: "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
               degree: result.course.requirements.degree.minimumClass,
               canSponsorVisa: result.course.canSponsorVisa,
+              startDate: result.course.start_date,
               vacancies: ("Yes" if result.course.has_vacancies else "No") if not vacancy
             }) }}
           </li>
