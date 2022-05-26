@@ -86,6 +86,12 @@
       {% endif %}
     </dd>
   </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Academic year</dt>
+    <dd class="app-result-detail__value">
+      {{ params.startDate | getAcademicYearLabel }}
+    </dd>
+  </div>
   {% if params.vacancies %}
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Vacancies</dt>
