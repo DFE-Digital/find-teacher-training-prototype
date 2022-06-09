@@ -4,14 +4,13 @@
 
 {% block content %}
 
-  <p class="govuk-body govuk-!-margin-bottom-0">
+  <p class="govuk-body">
     {% if data.ageGroup == "furtherEducation" %}
       <b>Further education</b>
     {% else %}
       <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
     {% endif %}
     courses
-
     {% if data.q == "england" %}
       in <b>England</b>
     {% elif data.q == "location" %}
@@ -19,10 +18,10 @@
     {% elif data.q == "provider" %}
       from <b>{{ provider.name }}</b>
     {% endif %}
-    <a href="/search" class="govuk-link govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
+    <a href="/search" class="govuk-link govuk-link--no-visited-state govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
   </p>
 
-  <h1 class="govuk-heading-l">
+  <h1 class="govuk-heading-xl">
     {% if resultsCount > 0 %}
       {{ resultsCount }} courses found
     {% else %}
@@ -38,36 +37,41 @@
     </div>
 
     <div class="app-filter-layout__content">
+
       <div class="app-promoted-link">
         <a class="govuk-link" href="https://getintoteaching.education.gov.uk/events">Talk to teacher training providers at an event near you</a>.
       </div>
+
       {% if data.q == "location" %}
         <div class="app-search-results-header">
          <p class="govuk-body">Sorted by distance</p>
         </div>
       {% elif data.q == "england" %}
         <div class="app-search-results-header">
-          <form class="app-search-results-header__sort" data-qa="sort-form" action="/results" accept-charset="UTF-8" data-remote="true" method="get">
-
-          {{ govukSelect({
-            id: "sortby",
-            name: "sortBy",
-            attributes: { onchange: "this.form.submit()" },
-            formGroup: { classes: "govuk-!-margin-bottom-0" },
-            label: {
-              text: "Sorted by",
-              classes: "govuk-!-display-inline-block"
-            },
-            items: [{
-              value: "0",
-              text: "Training provider (A-Z)",
-              selected: (data.sortBy == "0")
-            }, {
-              value: "1",
-              text: "Training provider (Z-A)",
-              selected: (data.sortBy == "1")
-            }]
-          }) }}
+          <form class="app-search-results-header__sort" action="/results" method="get" accept-charset="utf-8" novalidate>
+            {{ govukSelect({
+              id: "sortby",
+              name: "sortBy",
+              formGroup: {
+                classes: "govuk-!-margin-bottom-0"
+              },
+              label: {
+                text: "Sorted by",
+                classes: "govuk-!-display-inline-block"
+              },
+              items: [{
+                value: "0",
+                text: "Training provider (A-Z)",
+                selected: (data.sortBy == "0")
+              }, {
+                value: "1",
+                text: "Training provider (Z-A)",
+                selected: (data.sortBy == "1")
+              }],
+              attributes: {
+                onchange: "this.form.submit()"
+              }
+            }) }}
           </form>
         </div>
       {% endif %}
@@ -77,8 +81,8 @@
 
         {% for result in results %}
           <li class="app-search-results__item">
-            {% set isLocationSearch = data.q != "england" %}
-            {% set isUniversity = result.provider.provider_type == "university" %}
+            {% set isLocationSearch = (data.q != "england") %}
+            {% set isUniversity = (result.provider.provider_type == "university") %}
             {% set trainingLocation = result.course.trainingLocation %}
 
             {{ appResultDetail({
@@ -91,7 +95,7 @@
                 address: trainingLocation.address
               } if trainingLocation and isUniversity and isLocationSearch,
               accreditedBody: result.course.accredited_body,
-              studyMode: result.course.study_mode,
+              studyType: result.course.study_mode,
               qualification: result.course.qualification,
               funding: "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
               degree: result.course.requirements.degree.minimumClass,
@@ -115,7 +119,7 @@
             <p class="govuk-body"><a class="govuk-link" href="https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland">Learn more about teacher training in Northern Ireland</a></p>
           {% endif %}
         {% else %}
-          <p class="govuk-body">You can <a class="govuk-link" href="/">try another search</a>, for example by changing subject or location.</p>
+          <p class="govuk-body">You can <a class="govuk-link" href="/search">try another search</a>, for example by changing subject or location.</p>
         {% endif %}
         </div>
       {% endif %}
