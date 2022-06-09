@@ -59,9 +59,10 @@
 {% block beforeContent %}
   {{ govukPhaseBanner({
     tag: {
-      text: "Prototype"
+      text: "Prototype",
+      classes: "app-tag--prototype" if environment != 'production'
     },
-    html: "This is a prototype of a new service. Some parts may not work yet."
+    html: 'Give feedback or report a problem: <a href="mailto:becomingateacher@digital.education.gov.uk">becomingateacher@digital.education.gov.uk</a>'
   }) }}
 
   {% block pageNavigation %}{% endblock %}
