@@ -27,20 +27,20 @@ module.exports = {
     value: 'pgce,pgde'
   }],
   entryRequirementOptions: [{
-    text: '2:1 degree or higher',
+    text: '2:1 or first',
     value: '21'
   }, {
-    text: '2:2 degree or higher',
+    text: '2:2',
     value: '22'
   }, {
-    text: 'Third class degree or higher',
+    text: 'Third',
     value: 'third'
   }, {
-    text: 'Any degree grade',
+    text: 'Pass (ordinary degree)',
     value: 'degree'
   }],
-  salaryOptions: [{
-    text: 'Only show courses with a salary',
+  fundingTypeOptions: [{
+    text: 'Only show courses that come with a salary',
     value: ['include']
   }],
   studyTypeOptions: [{
@@ -55,6 +55,15 @@ module.exports = {
   sendOptions: [{
     text: 'Only show courses with a SEND specialism',
     name: 'send',
+    value: ['include']
+  }],
+  vacancyOptions: [{
+    text: 'Only show courses with vacancies',
+    value: ['include']
+  }],
+  visaSponsorshipOptions: [{
+    text: 'Only show courses with visa sponsorship',
+    name: 'visaSponsorship',
     value: ['include']
   }],
   subjectOptions: [{
@@ -256,9 +265,5 @@ module.exports = {
     text: 'Further education',
     agreGroup: 'furtherEducation',
     value: '41'
-  }],
-  vacancyOptions: [{
-    text: 'Only show courses with vacancies',
-    value: ['include']
   }]
 }
