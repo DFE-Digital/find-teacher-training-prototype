@@ -77,6 +77,10 @@ exports.results_get = async (req, res) => {
   const vacancy = (req.session.data.vacancy && req.session.data.vacancy[0] === 'include') || (req.query.vacancy && req.query.vacancy[0] === 'include') || (defaults.vacancy[0] === 'include')
   const vacancyItems = utils.vacancyItems(vacancy)
 
+  // Academic year
+  const academicYear = req.session.data.academicYear || req.query.academicYear || defaults.academicYear
+  console.log(academicYear);
+
   // API query params
   const filter = {
     findable: true,
@@ -195,6 +199,17 @@ exports.results_get = async (req, res) => {
     // Results
     const results = await Promise.all(courses)
 
+    // sort results by training provider name
+    results.sort((a, b) => {
+      if (req.query.sortBy === '1') {
+        // sorted by Training provider Z-A
+        return b.provider.name.localeCompare(a.provider.name)
+      } else {
+        // sorted by Training provider A-Z
+        return a.provider.name.localeCompare(b.provider.name)
+      }
+    })
+
     if (req.session.data.visaSponsorship === 'yes') {
       // Post-process the results to filter out courses where visas can’t be
       // sponsored.
@@ -204,6 +219,10 @@ exports.results_get = async (req, res) => {
     if (req.session.data.entryRequirement) {
       // Post-process the results to filter courses based on degree requirement
       // results = results.filter(result => req.session.data.entryRequirement.includes(result.course.requirements.degree.minimumClass))
+    }
+
+    if (academicYear) {
+      console.log(academicYear);
     }
 
     // Pagination
