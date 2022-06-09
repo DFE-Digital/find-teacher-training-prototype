@@ -1,12 +1,32 @@
 const utils = require('../utils')()
 // const locationSuggestions = require('../services/location-suggestions')
 
-exports.search = async (req, res) => {
+exports.search_get = async (req, res) => {
   // const query = req.session.data.q || req.query.q
   // const queryType = await utils.processQuery(query, req.session.data)
   // const { filtering } = req.query
 
-  res.redirect('/age-groups')
+  res.render('search/index')
+}
+
+exports.search_post = async (req, res) => {
+  const errors = []
+
+  if (!req.session.data.subjects?.length) {
+    const error = {}
+    error.fieldName = "q"
+    error.href = "#q"
+    error.text = "Select find courses by location or by training provider"
+    errors.push(error)
+  }
+
+  if (errors.length) {
+    res.render('search/index', {
+      showError: (errors.length)
+    })
+  } else {
+    res.redirect('/age-groups')
+  }
 }
 
 exports.age_groups_get = async (req, res) => {
@@ -14,7 +34,7 @@ exports.age_groups_get = async (req, res) => {
 }
 
 exports.age_groups_post = async (req, res) => {
-  const ageGroupAnswer = req.session.data.ageGroup
+  const ageGroup = req.session.data.ageGroup
 
   const errors = []
 
@@ -31,11 +51,11 @@ exports.age_groups_post = async (req, res) => {
       showError: (errors.length)
     })
   } else {
-    if (ageGroupAnswer === 'primary') {
+    if (ageGroup === 'primary') {
       res.redirect('/primary-subjects')
-    } else if (ageGroupAnswer === 'secondary') {
+    } else if (ageGroup === 'secondary') {
       res.redirect('/secondary-subjects')
-    } else if (ageGroupAnswer === 'furtherEducation') {
+    } else if (ageGroup === 'furtherEducation') {
       res.redirect('/results')
     } else {
       res.redirect('/results')

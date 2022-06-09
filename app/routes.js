@@ -11,10 +11,11 @@ const searchController = require('./controllers/search')
 /// ------------------------------------------------------------------------ ///
 
 router.get('/', async (req, res) => {
-  res.render('index')
+  res.render('start')
 })
 
-router.all('/search', searchController.search)
+router.get('/search', searchController.search_get)
+router.post('/search', searchController.search_post)
 
 router.get('/age-groups', searchController.age_groups_get)
 router.post('/age-groups', searchController.age_groups_post)
