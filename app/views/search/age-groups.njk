@@ -1,6 +1,7 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Which age group do you want to teach?" %}
+{% set errorMessage = "Select which age group you want to teach" %}
 
 {% block pageNavigation %}
   {{ govukBackLink({
@@ -12,10 +13,22 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      {% if showError %}
+        {{ govukErrorSummary({
+          titleText: "There is a problem",
+          errorList: [
+            {
+              text: errorMessage,
+              href: "#age-groups"
+            }
+          ]
+        }) }}
+      {% endif %}
+
       <form action="/age-groups" method="post" accept-charset="utf-8" novalidate>
 
         {{ govukRadios({
-          idPrefix: "age-group",
+          idPrefix: "age-groups",
           name: "ageGroup",
           fieldset: {
             legend: {
@@ -24,6 +37,9 @@
               classes: "govuk-fieldset__legend--l"
             }
           },
+          errorMessage: {
+            text: errorMessage
+          } if showError,
           items: [
             {
               value: "primary",
