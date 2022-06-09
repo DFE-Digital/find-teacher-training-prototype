@@ -10,25 +10,41 @@ exports.search = async (req, res) => {
 }
 
 exports.age_groups_get = async (req, res) => {
-  res.render('filters/age-groups')
+  res.render('search/age-groups')
 }
 
 exports.age_groups_post = async (req, res) => {
-  const ageGroupAnswer = req.body.ageGroup
+  const ageGroupAnswer = req.session.data.ageGroup
 
-  if (ageGroupAnswer === 'primary') {
-    res.redirect('/primary-subjects')
-  } else if (ageGroupAnswer === 'secondary') {
-    res.redirect('/secondary-subjects')
-  } else if (ageGroupAnswer === 'furtherEducation') {
-    res.redirect('/results')
+  const errors = []
+
+  if (!req.session.data.ageGroup?.length) {
+    const error = {}
+    error.fieldName = "age-groups"
+    error.href = "#age-groups"
+    error.text = "Select which age group you want to teach"
+    errors.push(error)
+  }
+
+  if (errors.length) {
+    res.render('search/age-groups', {
+      showError: (errors.length)
+    })
   } else {
-    res.render('filters/age-groups')
+    if (ageGroupAnswer === 'primary') {
+      res.redirect('/primary-subjects')
+    } else if (ageGroupAnswer === 'secondary') {
+      res.redirect('/secondary-subjects')
+    } else if (ageGroupAnswer === 'furtherEducation') {
+      res.redirect('/results')
+    } else {
+      res.redirect('/results')
+    }
   }
 }
 
 // exports.primary_get = async (req, res) => {
-//   res.render('filters/primary-subjects')
+//   res.render('search/primary-subjects')
 // }
 //
 // exports.primary_post = async (req, res) => {
@@ -43,12 +59,12 @@ exports.age_groups_post = async (req, res) => {
 //
 //     res.redirect('/results')
 //   } else {
-//     res.render('filters/primary-subjects')
+//     res.render('search/primary-subjects')
 //   }
 // }
 
 exports.primary_subjects_get = async (req, res) => {
-  res.render('filters/primary-subjects', {
+  res.render('search/primary-subjects', {
     // showError: req.query.showError
   })
 }
@@ -58,14 +74,14 @@ exports.primary_subjects_post = async (req, res) => {
 
   if (!req.session.data.subjects?.length) {
     const error = {}
-    error.fieldName = "primary-subject"
-    error.href = "#primary-subject"
+    error.fieldName = "primary-subjects"
+    error.href = "#primary-subjects"
     error.text = "Select a least one primary subject you want to teach"
     errors.push(error)
   }
 
   if (errors.length) {
-    res.render('filters/primary-subjects', {
+    res.render('search/primary-subjects', {
       showError: (errors.length)
     })
   } else {
@@ -75,7 +91,7 @@ exports.primary_subjects_post = async (req, res) => {
 
 exports.secondary_subjects_get = async (req, res) => {
   const q = req.session.data.q || req.query.q
-  res.render('filters/secondary-subjects', {
+  res.render('search/secondary-subjects', {
     // q,
     // sendItems: utils.sendItems(req.session.data.send)
   })
@@ -88,14 +104,14 @@ exports.secondary_subjects_post = async (req, res) => {
 
   if (!req.session.data.subjects?.length) {
     const error = {}
-    error.fieldName = "secondary-subject"
-    error.href = "#secondary-subject"
+    error.fieldName = "secondary-subjects"
+    error.href = "#secondary-subjects"
     error.text = "Select at least one secondary subjects you want to teach"
     errors.push(error)
   }
 
   if (errors.length) {
-    res.render('filters/secondary-subjects', {
+    res.render('search/secondary-subjects', {
       // q,
       // sendItems: utils.sendItems(req.session.data.send),
       showError: (errors.length)
