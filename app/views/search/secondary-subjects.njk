@@ -3,10 +3,15 @@
 {% set title = "Which secondary subjects do you want to teach?" %}
 {% set errorMessage = "Select at least one secondary subject you want to teach" %}
 
+{% block pageTitle %}
+{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
 {% block pageNavigation %}
-  {{ govukBackLink({
-    href: "/age-groups"
-  }) }}
+{{ govukBackLink({
+  text: "Back",
+  href: "/age-groups"
+}) }}
 {% endblock %}
 
 {% block content %}
