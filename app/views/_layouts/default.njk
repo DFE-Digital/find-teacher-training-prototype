@@ -50,16 +50,18 @@
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
-{% endblock %}
 
-{% block beforeContent %}
   {{ govukPhaseBanner({
     tag: {
       text: "Prototype",
       classes: "app-tag--prototype" if environment != 'production'
     },
-    html: 'Give feedback or report a problem: <a href="mailto:becomingateacher@digital.education.gov.uk">becomingateacher@digital.education.gov.uk</a>'
+    html: 'Give feedback or report a problem: <a href="mailto:becomingateacher@digital.education.gov.uk">becomingateacher@digital.education.gov.uk</a>',
+    classes: "govuk-width-container"
   }) }}
+{% endblock %}
+
+{% block beforeContent %}
 
   {% block pageNavigation %}{% endblock %}
 {% endblock %}
