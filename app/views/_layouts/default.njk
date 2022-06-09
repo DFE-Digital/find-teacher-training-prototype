@@ -66,24 +66,22 @@
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
-{% block footer %}
-  {{ govukFooter({
-    meta: {
-      items: [{
-        href: "/admin/clear-data",
-        text: "Clear data"
-      } if useAutoStoreData, {
-        href: "/admin/feature-flags",
-        text: "Feature flags"
-      }]
-    }
-  }) }}
+{% if useAutoStoreData %}
+  {% block footer %}
+    {% include "_includes/footer.njk" %}
+  {% endblock %}
+{% endif %}
+
+{% block bodyStart %}
+  <div data-module="edge">
 {% endblock %}
 
 {% block bodyEnd %}
+  </div>
   {% block scripts %}
+    {{ data | log }}
     {% include "_includes/scripts.njk" %}
     {% block pageScripts %}{% endblock %}
   {% endblock %}
-  <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
+  <!-- GOV.UK Prototype Kit {{ releaseVersion }} -->
 {% endblock %}
