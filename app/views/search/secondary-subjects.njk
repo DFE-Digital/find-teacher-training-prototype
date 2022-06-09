@@ -1,6 +1,7 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Which secondary subjects do you want to teach?" %}
+{% set errorMessage = "Select at least one secondary subject you want to teach" %}
 
 {% block pageNavigation %}
   {{ govukBackLink({
@@ -17,7 +18,7 @@
           titleText: "There is a problem",
           errorList: [
             {
-              text: "Select which courses would you like to find",
+              text: errorMessage,
               href: "#secondary-subjects"
             }
           ]
@@ -52,7 +53,7 @@
             text: "Select all subjects you are interested in teaching"
           },
           errorMessage: {
-            text: "Select at least one secondary subject you want to teach"
+            text: errorMessage
           } if showError,
           items: (items | sort(attribute="text") )
         }) }}

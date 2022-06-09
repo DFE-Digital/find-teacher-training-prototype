@@ -1,6 +1,7 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Primary courses with subject specialisms" %}
+{% set errorMessage = "Select at least one primary subject you want to teach" %}
 
 {% block pageNavigation %}
   {{ govukBackLink({
@@ -17,8 +18,8 @@
           titleText: "There is a problem",
           errorList: [
             {
-              text: "Select which courses would you like to find",
-              href: "#primary-subject-specialisms"
+              text: errorMessage,
+              href: "#primary-subjects"
             }
           ]
         }) }}
@@ -88,7 +89,7 @@
             text: "Select all subjects you are interested in teaching"
           },
           errorMessage: {
-            text: "Select a least one primary subject you want to teach"
+            text: errorMessage
           } if showError,
           items: items
         }) }}
