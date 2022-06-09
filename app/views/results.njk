@@ -8,7 +8,7 @@
     {% if data.ageGroup == "furtherEducation" %}
       <b>Further education</b>
     {% else %}
-    <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
+      <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
     {% endif %}
     courses
 
@@ -38,6 +38,9 @@
     </div>
 
     <div class="app-filter-layout__content">
+      <div class="app-promoted-link">
+        <a class="govuk-link" href="https://getintoteaching.education.gov.uk/events?utm_source=find-postgraduate-teacher-training.service.gov.uk&amp;utm_medium=referral&amp;utm_campaign=find_banner">Talk to teacher training providers at an event near you</a>.
+      </div>
       {% if data.q == "location" %}
         <div class="app-search-results-header">
          <p class="govuk-body">Sorted by distance</p>
@@ -71,6 +74,7 @@
 
       {% if results | length > 0 %}
         <ul class="app-search-results">
+
         {% for result in results %}
           <li class="app-search-results__item">
             {% set isLocationSearch = data.q != "england" %}
