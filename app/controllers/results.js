@@ -56,9 +56,9 @@ exports.results_get = async (req, res) => {
 
   if (subjects.includes('_unchecked')) {
     if (req.session.data.ageGroup === 'primary') {
-      res.redirect('/primary-specialist-subject?showError=true')
+      res.redirect('/primary-subjects?showError=true')
     } else {
-      res.redirect('/subject?showError=true')
+      res.redirect('/secondary-subjects?showError=true')
     }
     return
   }
@@ -277,7 +277,7 @@ exports.results_get = async (req, res) => {
         : false
     }
 
-    res.render('results', {
+    res.render('results/index', {
       area,
       latLong: [latitude, longitude],
       pagination,

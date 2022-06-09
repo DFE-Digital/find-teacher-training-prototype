@@ -12,7 +12,7 @@ exports.search_get = async (req, res) => {
 exports.search_post = async (req, res) => {
   const errors = []
 
-  if (!req.session.data.subjects?.length) {
+  if (!req.session.data.q?.length) {
     const error = {}
     error.fieldName = "q"
     error.href = "#q"
