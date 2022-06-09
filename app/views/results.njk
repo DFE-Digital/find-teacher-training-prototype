@@ -39,7 +39,7 @@
 
     <div class="app-filter-layout__content">
       <div class="app-promoted-link">
-        <a class="govuk-link" href="https://getintoteaching.education.gov.uk/events?utm_source=find-postgraduate-teacher-training.service.gov.uk&amp;utm_medium=referral&amp;utm_campaign=find_banner">Talk to teacher training providers at an event near you</a>.
+        <a class="govuk-link" href="https://getintoteaching.education.gov.uk/events">Talk to teacher training providers at an event near you</a>.
       </div>
       {% if data.q == "location" %}
         <div class="app-search-results-header">
@@ -51,7 +51,7 @@
 
           {{ govukSelect({
             id: "sortby",
-            name: "sortby",
+            name: "sortBy",
             attributes: { onchange: "this.form.submit()" },
             formGroup: { classes: "govuk-!-margin-bottom-0" },
             label: {
@@ -61,11 +61,11 @@
             items: [{
               value: "0",
               text: "Training provider (A-Z)",
-              selected: (data.sortby == "0")
+              selected: (data.sortBy == "0")
             }, {
               value: "1",
               text: "Training provider (Z-A)",
-              selected: (data.sortby == "1")
+              selected: (data.sortBy == "1")
             }]
           }) }}
           </form>
