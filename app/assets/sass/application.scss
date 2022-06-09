@@ -19,6 +19,7 @@ $git-brand-colour: #159964;
 @import "components/filter-layout";
 @import "components/list";
 @import "components/pagination";
+@import "components/promoted-link";
 @import "components/related";
 @import "components/result-detail";
 @import "components/search-results";
@@ -26,3 +27,7 @@ $git-brand-colour: #159964;
 
 // Overrides
 @import "overrides";
+
+.app-tag--prototype {
+  background-color: govuk-colour('red');
+}
