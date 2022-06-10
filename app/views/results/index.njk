@@ -38,43 +38,9 @@
 
     <div class="app-filter-layout__content">
 
-      <div class="app-promoted-link">
-        <a class="govuk-link" href="https://getintoteaching.education.gov.uk/events">Talk to teacher training providers at an event near you</a>.
-      </div>
+      {% include "./_promoted-link.njk" %}
 
-      {% if data.q == "location" %}
-        <div class="app-search-results-header">
-         <p class="govuk-body">Sorted by distance</p>
-        </div>
-      {% elif data.q == "england" %}
-        <div class="app-search-results-header">
-          <form class="app-search-results-header__sort" action="/results" method="get" accept-charset="utf-8" novalidate>
-            {{ govukSelect({
-              id: "sortby",
-              name: "sortBy",
-              formGroup: {
-                classes: "govuk-!-margin-bottom-0"
-              },
-              label: {
-                text: "Sorted by",
-                classes: "govuk-!-display-inline-block"
-              },
-              items: [{
-                value: "0",
-                text: "Training provider (A-Z)",
-                selected: (data.sortBy == "0")
-              }, {
-                value: "1",
-                text: "Training provider (Z-A)",
-                selected: (data.sortBy == "1")
-              }],
-              attributes: {
-                onchange: "this.form.submit()"
-              }
-            }) }}
-          </form>
-        </div>
-      {% endif %}
+      {% include "./_sort-options.njk" %}
 
       {% if results | length > 0 %}
         <ul class="app-search-results">
@@ -97,11 +63,11 @@
               accreditedBody: result.course.accredited_body,
               studyType: result.course.study_mode,
               qualification: result.course.qualification,
-              funding: "Salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
+              funding: "salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
               degree: result.course.requirements.degree.minimumClass,
-              canSponsorVisa: result.course.canSponsorVisa,
+              visaSponsorship: result.course.visaSponsorship,
               startDate: result.course.start_date,
-              vacancies: ("Yes" if result.course.has_vacancies else "No") if not vacancy
+              vacancies: "Yes" if result.course.has_vacancies else "No"
             }) }}
           </li>
         {% endfor %}
