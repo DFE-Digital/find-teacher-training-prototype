@@ -39,7 +39,7 @@
   {% endif %}
   <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Study type</dt>
-    <dd class="app-result-detail__value">{{ params.studyMode }}</dd>
+    <dd class="app-result-detail__value">{{ params.studyType }}</dd>
   </div>
   <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Qualification</dt>
@@ -55,41 +55,47 @@
   {% if params.funding %}
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Financial support</dt>
-      <dd class="app-result-detail__value">{{ params.funding }}</dd>
+      <dd class="app-result-detail__value">{{ params.funding | capitalize }}</dd>
     </div>
   {% endif %}
   <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Degree required</dt>
     <dd class="app-result-detail__value">
       {% if params.degree == "21" %}
-        2:1 degree or higher (or equivalent)
+        An undergraduate degree at class 2:1 or above, or equivalent
       {% elif params.degree == "22" %}
-        2:2 degree or higher (or equivalent)
+        An undergraduate degree at class 2:2 or above, or equivalent
       {% elif params.degree == "third" %}
-        Third class degree or higher (or equivalent)
+        An undergraduate degree, or equivalent. This should be an honours degree (Third or above), or equivalent
       {% else %}
-        Any degree grade
+        An undergraduate degree, or equivalent
       {% endif %}
     </dd>
   </div>
   <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Visa sponsorship</dt>
     <dd class="app-result-detail__value">
-      {% if params.canSponsorVisa %}
-        {% if params.funding == "Salary" %}
+      {% if params.visaSponsorship %}
+        {% if params.visaSponsorship.canSponsorSkilledWorkerVisa %}
           Skilled Worker visas can be sponsored
-        {% else %}
+        {% elif params.visaSponsorship.canSponsorStudentVisa %}
           Student visas can be sponsored
+        {% else %}
+          Visas cannot be sponsored
         {% endif %}
-      {% else %}
-        Visas cannot be sponsored
       {% endif %}
     </dd>
   </div>
-  {% if params.vacancies %}
+  {# <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Academic year</dt>
+    <dd class="app-result-detail__value">
+      {{ params.startDate | getAcademicYearLabel }}
+    </dd>
+  </div> #}
+  {# {% if params.vacancies %}
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Vacancies</dt>
       <dd class="app-result-detail__value">{{ params.vacancies }}</dd>
     </div>
-  {% endif %}
+  {% endif %} #}
 </dl>

@@ -42,6 +42,8 @@
     <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
     <dt class="app-list--description__label">Date course starts</dt>
     <dd>{{ course.start_date }}</dd>
+    <dt class="app-list--description__label">Academic year</dt>
+    <dd>{{ course.start_date | getAcademicYearLabel }}</dd>
     {% if course.provider.website %}
       <dt class="app-list--description__label">Website</dt>
       <dd><a href="{{ course.provider.website }}">{{ course.provider.website }}</a></dd>

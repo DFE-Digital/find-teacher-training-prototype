@@ -27,4 +27,9 @@ $git-brand-colour: #159964;
 @import "components/description-list";
 @import "components/filter";
 @import "components/filter-layout";
+@import "components/promoted-link";
 @import "components/search-results";
+
+.app-tag--prototype {
+  background-color: govuk-colour('red');
+}
