@@ -11,7 +11,8 @@ module.exports = {
     studyType: ['full_time', 'part_time'],
     subjects: [],
     vacancy: ['include'],
-    entryRequirement: ['21', '22', 'third', 'degree']
+    entryRequirement: ['21', '22', 'third', 'degree'],
+    visaSponsorship: ['exclude']
   },
   qualificationOptions: [{
     text: 'QTS only',
