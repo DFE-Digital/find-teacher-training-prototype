@@ -7,9 +7,12 @@ const utils = require('../utils')()
 exports.results_get = async (req, res) => {
   const { area, defaults, provider, subjectOptions } = req.session.data
 
-  // Pagination
   const page = Number(req.query.page) || 1
   const perPage = 20
+
+  // ------------------------------------------------------------------------ //
+  // LOCATION
+  // ------------------------------------------------------------------------ //
 
   // Search radius
   const radius = req.session.data.radius
@@ -21,11 +24,9 @@ exports.results_get = async (req, res) => {
   const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
   const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
 
-  // Funding type - fee paying, salary, apprenticeship
-  const fundingType = (req.session.data.fundingType && req.session.data.fundingType[0] === 'include')
-    || (req.query.fundingType && req.query.fundingType[0] === 'include')
-    || (defaults.fundingType && defaults.fundingType[0] === 'include')
-  const fundingTypeItems = utils.fundingTypeItems(fundingType)
+  // ------------------------------------------------------------------------ //
+  // FILTERS
+  // ------------------------------------------------------------------------ //
 
   // Special educational needs
   const send = (req.session.data.send && req.session.data.send[0] === 'include')
@@ -39,13 +40,13 @@ exports.results_get = async (req, res) => {
     || (defaults.vacancy && defaults.vacancy[0] === 'include')
   const vacancyItems = utils.vacancyItems(vacancy)
 
-  // Study type
+  // Study type - full time or part time
   const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
   const studyTypeItems = utils.studyTypeItems(studyType, {
     showHintText: false
   })
 
-  // Qualifications
+  // Qualifications - PGCE with QTS, PGDE with QTS, QTS, further education (PGCE or PGDE without QTS)
   const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
   const qualificationItems = utils.qualificationItems(qualification).map(item => {
     item.hint = false
@@ -53,7 +54,7 @@ exports.results_get = async (req, res) => {
     return item
   })
 
-  // Entry Requirements
+  // Entry Requirements (aka degree grade) - 2:1 or first, 2:2, third, pass
   const entryRequirement = utils.toArray(req.session.data.entryRequirement || req.query.entryRequirement || defaults.entryRequirement)
   const entryRequirementItems = utils.entryRequirementItems(entryRequirement).map(item => {
     item.hint = false
@@ -61,13 +62,22 @@ exports.results_get = async (req, res) => {
     return item
   })
 
-  // Vacancies
+  // Visa sponsorship
   const visaSponsorship = (req.session.data.visaSponsorship && req.session.data.visaSponsorship[0] === 'include')
     || (req.query.visaSponsorship && req.query.visaSponsorship[0] === 'include')
     || (defaults.visaSponsorship && defaults.visaSponsorship[0] === 'include')
   const visaSponsorshipItems = utils.visaSponsorshipItems(visaSponsorship)
 
-  // Subject
+  // Funding type - fee paying, salary, apprenticeship
+  const fundingType = (req.session.data.fundingType && req.session.data.fundingType[0] === 'include')
+    || (req.query.fundingType && req.query.fundingType[0] === 'include')
+    || (defaults.fundingType && defaults.fundingType[0] === 'include')
+  const fundingTypeItems = utils.fundingTypeItems(fundingType)
+
+  // ------------------------------------------------------------------------ //
+  // ------------------------------------------------------------------------ //
+
+  // Subjects
   let subjects
   if (req.session.data.ageGroup === 'furtherEducation') {
     subjects = ['41'] // code for FE 'subject' in the API
@@ -96,9 +106,11 @@ exports.results_get = async (req, res) => {
   const filter = {
     findable: true,
     funding_type: fundingType ? 'salary' : 'salary,apprenticeship,fee',
+    is_send: send,
     has_vacancies: vacancy,
     qualification: qualification.toString(),
     study_type: studyType.toString(),
+    can_sponsor_visa: visaSponsorship,
     subjects: subjects.toString()
   }
 
@@ -110,7 +122,7 @@ exports.results_get = async (req, res) => {
   // TODO: refactor once we’ve decided how to treat SEND specialist courses
   if (subjects.includes('SEND') && !subjects.includes('00')) {
     filter.subjects = (subjects.concat('00').toString())
-    filter.send_courses = true
+    filter.is_send = true
   }
 
   try {
@@ -187,12 +199,14 @@ exports.results_get = async (req, res) => {
         })
 
         // Sort locations by disance
-        locations.sort((l1, l2) => {
-          return l1.distance - l2.distance
+        locations.sort((a, b) => {
+          return a.distance - b.distance
         })
 
-        // Mock course visa sponsorship
-        course.canSponsorVisa = (Math.random(course.code) > 0.5)
+        // Set course visa sponsorship based on provider
+        course.visaSponsorship = {}
+        course.visaSponsorship.canSponsorSkilledWorkerVisa = provider.can_sponsor_skilled_worker_visa
+        course.visaSponsorship.canSponsorStudentVisa = provider.can_sponsor_student_visa
 
         const schools = locations.filter(location => location.code !== '-')
 
@@ -235,6 +249,10 @@ exports.results_get = async (req, res) => {
     // if (academicYear) {
     //   console.log(academicYear);
     // }
+
+    // ------------------------------------------------------------------------ //
+    // PAGINATION
+    // ------------------------------------------------------------------------ //
 
     // Pagination
     const pageCount = links.last.match(/page=(\d*)/)[1]
@@ -290,6 +308,9 @@ exports.results_get = async (req, res) => {
           }
         : false
     }
+
+    // ------------------------------------------------------------------------ //
+    // ------------------------------------------------------------------------ //
 
     res.render('results/index', {
       area,
