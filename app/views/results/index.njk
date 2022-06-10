@@ -63,11 +63,12 @@
               accreditedBody: result.course.accredited_body,
               studyType: result.course.study_mode,
               qualification: result.course.qualification,
-              funding: "salary" if result.course.funding_type == "salary" else "Student finance if you’re eligible",
-              degree: result.course.requirements.degree.minimumClass,
+              fundingType: result.course.funding_type,
+              degreeGrade: result.course.degree_grade,
               visaSponsorship: result.course.visaSponsorship,
               startDate: result.course.start_date,
-              vacancies: "Yes" if result.course.has_vacancies else "No"
+              vacancies: "Yes" if result.course.has_vacancies else "No",
+              aboutCourse: result.course.about_course
             }) }}
           </li>
         {% endfor %}
