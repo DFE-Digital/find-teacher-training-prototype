@@ -1,7 +1,7 @@
 module.exports = {
   apiEndpoint: 'https://api.publish-teacher-training-courses.service.gov.uk/api/public/v1',
   cycle: 2022,
-  nearingEndOfCycle: true,
+  nearingEndOfCycle: false,
   defaults: {
     latitude: false,
     longitude: false,
