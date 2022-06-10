@@ -40,11 +40,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-  {% if serviceName %}
-    {% if title %}{{ title }} - {% endif %}{{ serviceName }} - GOV.UK
-  {% else %}
-    {% if title %}{{ title }} - {% endif %}GOV.UK
-  {% endif %}
+  {{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
 {% endblock %}
 
 {% block header %}
@@ -54,42 +50,40 @@
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
+
+  {{ govukPhaseBanner({
+    tag: {
+      text: "Prototype",
+      classes: "app-tag--prototype" if environment != 'production'
+    },
+    html: 'Give feedback or report a problem: <a href="mailto:becomingateacher@digital.education.gov.uk">becomingateacher@digital.education.gov.uk</a>',
+    classes: "govuk-width-container"
+  }) }}
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukPhaseBanner({
-    tag: {
-      text: "Prototype"
-    },
-    html: "This is a prototype of a new service. Some parts may not work yet."
-  }) }}
 
   {% block pageNavigation %}{% endblock %}
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
-{% block footer %}
-  {{ govukFooter({
-    meta: {
-      items: [{
-        href: "https://govuk-prototype-kit.herokuapp.com/",
-        text: "GOV.UK Prototype Kit " + releaseVersion
-      }, {
-        href: "/admin/clear-data",
-        text: "Clear data"
-      } if useAutoStoreData, {
-        href: "/admin/feature-flags",
-        text: "Feature flags"
-      }]
-    }
-  }) }}
+{% if useAutoStoreData %}
+  {% block footer %}
+    {% include "_includes/footer.njk" %}
+  {% endblock %}
+{% endif %}
+
+{% block bodyStart %}
+  <div data-module="edge">
 {% endblock %}
 
 {% block bodyEnd %}
+  </div>
   {% block scripts %}
+    {{ data | log }}
     {% include "_includes/scripts.njk" %}
     {% block pageScripts %}{% endblock %}
   {% endblock %}
-  <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
+  <!-- GOV.UK Prototype Kit {{ releaseVersion }} -->
 {% endblock %}

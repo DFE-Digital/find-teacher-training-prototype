@@ -11,20 +11,23 @@ const searchController = require('./controllers/search')
 /// ------------------------------------------------------------------------ ///
 
 router.get('/', async (req, res) => {
-  res.render('index')
+  res.render('start')
 })
 
-router.all('/search', searchController.search)
+router.get('/search', searchController.search_get)
+router.post('/search', searchController.search_post)
 
-router.get('/age-group', searchController.age_group_get)
-router.post('/age-group', searchController.age_group_post)
+router.get('/age-groups', searchController.age_groups_get)
+router.post('/age-groups', searchController.age_groups_post)
 
-router.get('/primary', searchController.primary_get)
-router.post('/primary', searchController.primary_post)
+// router.get('/primary', searchController.primary_get)
+// router.post('/primary', searchController.primary_post)
 
-router.get('/primary-specialist-subject', searchController.primary_specialist_subject_get)
+router.get('/primary-subjects', searchController.primary_subjects_get)
+router.post('/primary-subjects', searchController.primary_subjects_post)
 
-router.get('/subject', searchController.subject_get)
+router.get('/secondary-subjects', searchController.secondary_subjects_get)
+router.post('/secondary-subjects', searchController.secondary_subjects_post)
 
 /// ------------------------------------------------------------------------ ///
 /// RESULTS ROUTES

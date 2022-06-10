@@ -4,17 +4,17 @@
 {% set showPhaseBanner = false %}
 {% set serviceName = false %}
 
-{% block breadcrumbs %}
+{% block pageNavigation %}
   {{ govukBreadcrumbs({
     items: [{
       text: "Home",
-      href: "https://www.gov.uk/"
+      href: "#"
     }, {
       text: "Education and learning",
-      href: "https://www.gov.uk/browse/education"
+      href: "#"
     }, {
       text: "Universities and higher education",
-      href: "https://www.gov.uk/browse/education/universities-higher-education"
+      href: "#"
     }]
   }) }}
 {% endblock %}
@@ -25,14 +25,18 @@
       <h1 class="govuk-heading-xl">{{ title }}</h1>
       <p class="lede">Find postgraduate teaching courses in England if you want to teach in a state primary or secondary school, or in further education.</p>
 
+      {% set insetHtml %}
+      <p class="govuk-body">You can find courses in <a class="govuk-link" rel="external" href="https://teachinscotland.scot/become-a-teacher/new-to-teaching/">Scotland</a>, <a class="govuk-link" rel="external" href="https://www.ucas.com/teaching-in-wales">Wales</a> and <a class="govuk-link" rel="external" href="https://www.ucas.com/postgraduate/teacher-training/train-teach-northern-ireland">Northern Ireland</a>.</p>
+      {% endset %}
+
       {{ govukInsetText({
-        html: "<p>You can find courses in <a rel=\"external\" href=\"https://teachinscotland.scot/become-a-teacher/new-to-teaching/\">Scotland</a>, <a rel=\"external\" href=\"https://www.ucas.com/teaching-in-wales\">Wales</a> and <a rel=\"external\" href=\"https://www.ucas.com/postgraduate/teacher-training/train-teach-northern-ireland\">Northern Ireland</a>.</p>"
+        html: insetHtml
       }) }}
 
       {{ govukButton({
         classes: "govuk-!-margin-bottom-8",
         text: "Start now",
-        href: "/",
+        href: "/search",
         isStartButton: true
       }) }}
 

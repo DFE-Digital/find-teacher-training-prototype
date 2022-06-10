@@ -1,0 +1,159 @@
+<form class="app-filter" method="post">
+  <div class="app-filter__header">
+    <h2 class="govuk-heading-m">Filters</h2>
+  </div>
+
+  <div class="app-filter__content">
+
+    {{ govukCheckboxes({
+      idPrefix: "special-educational-needs",
+      name: "send",
+      fieldset: {
+        legend: {
+          text: "Special educational needs",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: sendItems,
+      classes: "govuk-checkboxes--small"
+    }) }}
+
+    {{ govukCheckboxes({
+      idPrefix: "vacancy",
+      name: "vacancy",
+      fieldset: {
+        legend: {
+          text: "Vacancies",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: vacancyItems,
+      classes: "govuk-checkboxes--small"
+    }) }}
+
+    {{ govukCheckboxes({
+      idPrefix: "study-type",
+      name: "studyType",
+      fieldset: {
+        legend: {
+          text: "Study type",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: studyTypeItems,
+      classes: "govuk-checkboxes--small"
+    }) }}
+
+    {{ govukCheckboxes({
+      idPrefix: "qualification",
+      name: "qualification",
+      fieldset: {
+        legend: {
+          text: "Qualifications",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: qualificationItems,
+      classes: "govuk-checkboxes--small"
+    }) }}
+
+    {{ govukRadios({
+      idPrefix: "entry-requirement",
+      name: "entryRequirement",
+      fieldset: {
+        legend: {
+          text: "Degree grade accepted",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: entryRequirementItems,
+      classes: "govuk-radios--small"
+    }) }}
+
+    {{ govukCheckboxes({
+      idPrefix: "visa-sponsorship",
+      name: "visaSponsorship",
+      fieldset: {
+        legend: {
+          text: "Visa sponsorship",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: visaSponsorshipItems,
+      classes: "govuk-checkboxes--small"
+    }) }}
+
+    {# [
+      {
+        value: "yes",
+        text: "Only show courses with visa sponsorship",
+        checked: (data['visaSponsorship'][0] == 'yes')
+      }
+    ] #}
+
+    {{ govukCheckboxes({
+      idPrefix: "funding-type",
+      name: "fundingType",
+      fieldset: {
+        legend: {
+          text: "Salary",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: fundingTypeItems,
+      classes: "govuk-checkboxes--small"
+    }) }}
+
+   {# {{ govukCheckboxes({
+     formGroup: {
+       classes: "app-filter__group"
+     },
+     classes: "govuk-checkboxes--small",
+     fieldset: {
+       legend: {
+         classes: "govuk-fieldset__legend--s",
+         text: "Academic year"
+       }
+     },
+     name: "academicYear",
+     items: [
+      {
+        text: "2021 to 2022 - current",
+        value: "current",
+        checked: true if (data.academicYear and "current" in data.academicYear) else false
+      }, {
+        text: "2022 to 2023",
+        value: "next",
+        checked: true if (data.academicYear and "next" in data.academicYear) else false
+      }
+     ]
+   }) }} #}
+
+    {{ govukButton({
+      classes: "govuk-!-margin-bottom-1",
+      text: "Apply filters"
+    }) }}
+
+  </div>
+</form>

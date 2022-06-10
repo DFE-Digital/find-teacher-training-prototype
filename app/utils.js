@@ -252,11 +252,11 @@ module.exports = () => {
     }))
   }
 
-  utils.salaryItems = salary => {
-    return data.salaryOptions.map(option => ({
+  utils.fundingTypeItems = (fundingType) => {
+    return data.fundingTypeOptions.map(option => ({
       value: option.value,
       text: option.text,
-      checked: salary === true
+      checked: fundingType === true
     }))
   }
 
@@ -269,7 +269,7 @@ module.exports = () => {
     }))
   }
 
-  utils.sendItems = send => {
+  utils.sendItems = (send) => {
     return data.sendOptions.map(option => ({
       value: option.value,
       text: option.text,
@@ -277,11 +277,19 @@ module.exports = () => {
     }))
   }
 
-  utils.vacancyItems = vacancy => {
+  utils.vacancyItems = (vacancy) => {
     return data.vacancyOptions.map(option => ({
       value: option.value,
       text: option.text,
       checked: vacancy === true
+    }))
+  }
+
+  utils.visaSponsorshipItems = (visaSponsorship) => {
+    return data.visaSponsorshipOptions.map(option => ({
+      value: option.value,
+      text: option.text,
+      checked: visaSponsorship === true
     }))
   }
 
