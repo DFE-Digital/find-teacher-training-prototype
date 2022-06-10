@@ -360,7 +360,7 @@
         <dl class="app-description-list">
           {% if course.provider.email %}
             <dt class="app-list--description__label">Email</dt>
-            <dd>{{ course.provider.email | urlize }}</dd>
+            <dd>{{ course.provider.email | urlize | safe }}</dd>
           {% endif %}
           {% if course.provider.telephone %}
             <dt class="app-list--description__label">Telephone</dt>
@@ -368,7 +368,7 @@
           {% endif %}
           {% if course.provider.website %}
             <dt class="app-list--description__label">Website</dt>
-            <dd>{{ course.provider.website | urlize }}</dd>
+            <dd>{{ course.provider.website | urlize | safe }}</dd>
           {% endif %}
           <dt class="app-list--description__label">Address</dt>
           <dd>

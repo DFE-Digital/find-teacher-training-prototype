@@ -7,6 +7,9 @@
     <span class="app-search-result__course-name">{{ params.courseName }}</span>
   </a>
 </h2>
+
+<p class="govuk-body">{{ params.aboutCourse | truncate(300) }}</p>
+
 <dl class="app-result-detail">
   <div class="app-result-detail__row">
   {% if params.schools and params.schools | length > 0 %}
@@ -52,20 +55,26 @@
       {% endif %}
     </dd>
   </div>
-  {% if params.funding %}
+  {% if params.fundingType %}
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Financial support</dt>
-      <dd class="app-result-detail__value">{{ params.funding | capitalize }}</dd>
+      <dd class="app-result-detail__value">
+        {% if params.fundingType == "salary" %}
+          Salary
+        {% else %}
+          Student finance if you’re eligible
+        {% endif %}
+      </dd>
     </div>
   {% endif %}
   <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Degree required</dt>
     <dd class="app-result-detail__value">
-      {% if params.degree == "21" %}
+      {% if params.degreeGrade == "two_one" %}
         An undergraduate degree at class 2:1 or above, or equivalent
-      {% elif params.degree == "22" %}
+      {% elif params.degreeGrade == "two_two" %}
         An undergraduate degree at class 2:2 or above, or equivalent
-      {% elif params.degree == "third" %}
+      {% elif params.degreeGrade == "third_class" %}
         An undergraduate degree, or equivalent. This should be an honours degree (Third or above), or equivalent
       {% else %}
         An undergraduate degree, or equivalent

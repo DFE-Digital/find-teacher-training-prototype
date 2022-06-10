@@ -33,20 +33,20 @@ module.exports = () => {
     }
 
     // Adding random degree class requirement
-    switch (getRandomInt(5)) {
-      case 0:
-        course.requirements.degree.minimumClass = '21'
-        break
-      case 1:
-        course.requirements.degree.minimumClass = '22'
-        break
-      case 2:
-        course.requirements.degree.minimumClass = 'third'
-        break
-      default:
-        course.requirements.degree.minimumClass = 'degree'
-        break
-    }
+    // switch (getRandomInt(5)) {
+    //   case 0:
+    //     course.requirements.degree.minimumClass = '21'
+    //     break
+    //   case 1:
+    //     course.requirements.degree.minimumClass = '22'
+    //     break
+    //   case 2:
+    //     course.requirements.degree.minimumClass = 'third'
+    //     break
+    //   default:
+    //     course.requirements.degree.minimumClass = 'degree'
+    //     break
+    // }
 
     // Adding degree subject requirement unless it’s primary
     if (course.name !== 'Primary') {
