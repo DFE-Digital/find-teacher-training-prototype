@@ -50,21 +50,33 @@
 
       {% include "./sections/contents.njk" %}
 
-      {% include "./sections/about-course.njk" %}
+      {% if course.about_course %}
+        {% include "./sections/about-course.njk" %}
+      {% endif %}
 
       {% include "./sections/school-placements.njk" %}
 
       {% include "./sections/entry-requirements.njk" %}
 
-      {% include "./sections/about-training-provider.njk" %}
+      {% if course.salaried %}
+        {% include "./sections/salary.njk" %}
+      {% endif %}
 
       {% include "./sections/fees-and-financial-support.njk" %}
 
-      {% include "./sections/interview-process.njk" %}
+      {% if course.provider.train_with_us %}
+        {% include "./sections/about-training-provider.njk" %}
+      {% endif %}
+
+      {% if course.interview_process %}
+        {% include "./sections/interview-process.njk" %}
+      {% endif %}
 
       {% include "./sections/international-candidates.njk" %}
 
-      {% include "./sections/training-with-disabilities.njk" %}
+      {% if course.provider.train_with_disability %}
+        {% include "./sections/training-with-disabilities.njk" %}
+      {% endif %}
 
       {% include "./sections/contact-training-provider.njk" %}
 
