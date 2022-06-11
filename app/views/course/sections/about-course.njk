@@ -1,1 +1,4 @@
-<h2 id="about-course" class="govuk-heading-l">About the course</h2>
+<div class="govuk-!-margin-bottom-8">
+  <h2 id="about-course" class="govuk-heading-l">About the course</h2>
+  {{ course.about_course | markdown | safe }}
+</div>
