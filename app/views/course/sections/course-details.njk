@@ -1,28 +1,90 @@
 <dl class="app-description-list govuk-!-margin-bottom-8">
-  {% if course.accredited_body_code %}
-    <dt>Accredited body</dt>
-    <dd>{{ course.provider.name }}</dd>
+  {% if course.accrediting_provider and (course.accrediting_provider.provider_code != course.provider.provider_code) %}
+    <dt class="app-description-list__label">Accredited body</dt>
+    <dd>{{ course.accrediting_provider.provider_name }}</dd>
   {% endif %}
-  <dt>Financial support</dt>
-  <dd>{{ course.funding_option }}</dd>
-  <dt class="app-list--description__label">Qualification</dt>
-  <dd>
-    {{ govukDetails({
-      summaryText: "PGCE with QTS",
-      html: data.qualificationOptions[1].hint | markdown | safe
-    } if "pgce" in course.qualifications else {
-      summaryText: "QTS",
-      html: data.qualificationOptions[0].hint | markdown | safe
-    }) }}
-  </dd>
-  <dt class="app-list--description__label">Course length</dt>
-  <dd>{{ course.length }}</dd>
-  <dt class="app-list--description__label">Date you can apply from</dt>
-  <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
-  <dt class="app-list--description__label">Date course starts</dt>
-  <dd>{{ course.start_date }}</dd>
-  <dt class="app-list--description__label">Academic year</dt>
-  <dd>{{ course.start_date | getAcademicYearLabel }}</dd>
+  {% if course.funding_option %}
+    <dt class="app-description-list__label">Financial support</dt>
+    <dd>{{ course.funding_option }}</dd>
+  {% endif %}
+  {% if course.qualification %}
+    <dt class="app-list--description__label">Qualification</dt>
+    <dd>
+      {% set qualificationHtml %}
+        {% if course.qualification == "QTS" %}
+          <p class="govuk-body">
+            Qualified teacher status (QTS) allows you to teach in state schools in England and may also allow you to teach in other parts of the UK.
+          </p>
+          <p class="govuk-body">
+            It may also allow you to teach overseas, though you should always check what qualifications are needed in the country you’d like to teach in.
+          </p>
+        {% elif course.qualification == "PGCE with QTS" %}
+          <p class="govuk-body">
+            A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) will allow you to teach in state schools in England and may allow you to teach in other parts of the UK.
+          </p>
+          <p class="govuk-body">
+            It may also allow you to teach overseas, though you should always check what qualifications are needed in the country you’d like to teach in.
+          </p>
+          <p class="govuk-body">
+            Many PGCE courses include credits that count toward a Master’s degree.
+          </p>
+        {% elif course.qualification == "PGDE with QTS" %}
+          <p class="govuk-body">
+            A postgraduate diploma in education (PGDE) with qualified teacher status (QTS) will allow you to teach in state schools in England and may allow you to teach in other parts of the UK.
+          </p>
+          <p class="govuk-body">
+            It may also allow you to teach overseas, though you should always check what qualifications are needed in the country you’d like to teach in.
+          </p>
+          <p class="govuk-body">
+            Many PGDE courses include credits towards a Master’s degree.
+          </p>
+        {% elif course.qualification == "PGCE" %}
+          <p class="govuk-body">
+            A postgraduate certificate in education (PGCE) is an academic qualification in education.
+          </p>
+          <p class="govuk-body">
+            It’s recognised internationally, though you should always check what qualifications are needed in the country you’d like to teach in.
+          </p>
+          <p class="govuk-body">
+            This course does not lead to qualified teacher status (QTS).
+          </p>
+        {% elif course.qualification == "PGDE" %}
+          <p class="govuk-body">
+            A postgraduate diploma in education (PGDE) is equivalent to a postgraduate certificate in education (PGCE).
+          </p>
+          <p class="govuk-body">
+            It’s recognised internationally, though you should always check what qualifications are needed in the country you’d like to teach in.
+          </p>
+          <p class="govuk-body">
+            This course does not lead to qualified teacher status (QTS).
+          </p>
+        {% endif %}
+      {% endset %}
+
+      {{ govukDetails({
+        summaryText: course.qualification,
+        html: qualificationHtml
+      }) }}
+    </dd>
+  {% endif %}
+  {% if course.age_minimum and course.age_maximum %}
+    <dt class="app-list--description__label">Age range</dt>
+    <dd>{{ course.age_minimum }} to {{ course.age_maximum }}</dd>
+  {% endif %}
+  {% if course.length %}
+    <dt class="app-list--description__label">Course length</dt>
+    <dd>{{ course.length }}</dd>
+  {% endif %}
+  {% if course.applications_open_from %}
+    <dt class="app-list--description__label">Date you can apply from</dt>
+    <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
+  {% endif %}
+  {% if course.start_date %}
+    <dt class="app-list--description__label">Date course starts</dt>
+    <dd>{{ course.start_date }}</dd>
+    <dt class="app-list--description__label">Academic year</dt>
+    <dd>{{ course.start_date | getAcademicYearLabel }}</dd>
+  {% endif %}
   {% if course.provider.website %}
     <dt class="app-list--description__label">Website</dt>
     <dd><a href="{{ course.provider.website }}">{{ course.provider.website }}</a></dd>
