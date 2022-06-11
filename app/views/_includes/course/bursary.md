@@ -1,13 +1,13 @@
-You’ll get a bursary of £{{ course.bursary_amount.toLocaleString() }} if you have a degree of 2:2 or above in any subject.
+You’ll get a bursary of £{{ course.bursary_amount.toLocaleString() }} if you have {{ course.bursary_first_line_ending }}.
 
 {% if course.bursary_requirements.length > 1 %}
 {% for requirement in course.bursary_requirements %}
-* {{ requirement }}
+- {{ requirement }}
 {% endfor %}
 {% endif %}
 
-You do not have to apply for a bursary – if you’re eligible, you’ll automatically start receiving it once you begin your course. Find out about [eligibility](https://getintoteaching.education.gov.uk/funding-my-teacher-training/bursaries-and-scholarships-for-teacher-training) and [how you’ll be paid](https://getintoteaching.education.gov.uk/funding-and-salary/overview/how-you-will-be-paid).
+You do not have to apply for a bursary - if you’re eligible, you’ll automatically start receiving it once you begin your course.
 
-You may also be eligible for a [loan while you study](https://getintoteaching.education.gov.uk/funding-my-teacher-training/tuition-fee-and-maintenance-loans) – note that you’ll have to apply for [undergraduate student finance](https://www.gov.uk/student-finance).
+You may be eligible for a [loan while you study](https://getintoteaching.education.gov.uk/funding-my-teacher-training/tuition-fee-and-maintenance-loans).
 
-Find out about financial support if you’re from [outside the UK](https://beta-getintoteaching.education.gov.uk/guidance/financial-support-for-international-applicants).
+Find out about financial support if you’re from [outside the UK](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate).
