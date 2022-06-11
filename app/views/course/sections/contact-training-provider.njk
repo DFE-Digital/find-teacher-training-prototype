@@ -1,28 +1,25 @@
 <div class="govuk-!-margin-bottom-8">
   <h2 id="contact-training-provider" class="govuk-heading-l">Contact this training provider</h2>
-
-  <div class="course-basicinfo">
-    <dl class="app-description-list">
-      {% if course.provider.email %}
-        <dt class="app-list--description__label">Email</dt>
-        <dd>{{ course.provider.email | urlize | safe }}</dd>
-      {% endif %}
-      {% if course.provider.telephone %}
-        <dt class="app-list--description__label">Telephone</dt>
-        <dd>{{ course.provider.telephone }}</dd>
-      {% endif %}
-      {% if course.provider.website %}
-        <dt class="app-list--description__label">Website</dt>
-        <dd>{{ course.provider.website | urlize | safe }}</dd>
-      {% endif %}
-      <dt class="app-list--description__label">Address</dt>
-      <dd>
-        {% if course.provider.street_address_1 %}{{ course.provider.street_address_1 }}<br>{% endif %}
-        {% if course.provider.street_address_2 %}{{ course.provider.street_address_2 }}<br>{% endif %}
-        {% if course.provider.city %}{{ course.provider.city }}<br>{% endif %}
-        {% if course.provider.county %}{{ course.provider.county }}<br>{% endif %}
-        {% if course.provider.postcode %}{{ course.provider.postcode }}{% endif %}
-      </dd>
-    </dl>
-  </div>
+  <dl class="app-description-list">
+    {% if course.provider.email %}
+      <dt class="app-list--description__label">Email</dt>
+      <dd>{{ course.provider.email | urlize | safe }}</dd>
+    {% endif %}
+    {% if course.provider.telephone %}
+      <dt class="app-list--description__label">Telephone</dt>
+      <dd>{{ course.provider.telephone }}</dd>
+    {% endif %}
+    {% if course.provider.website %}
+      <dt class="app-list--description__label">Website</dt>
+      <dd>{{ course.provider.website | urlize | safe }}</dd>
+    {% endif %}
+    <dt class="app-list--description__label">Address</dt>
+    <dd>
+      {% if course.provider.street_address_1 %}{{ course.provider.street_address_1 }}<br>{% endif %}
+      {% if course.provider.street_address_2 %}{{ course.provider.street_address_2 }}<br>{% endif %}
+      {% if course.provider.city %}{{ course.provider.city }}<br>{% endif %}
+      {% if course.provider.county %}{{ course.provider.county }}<br>{% endif %}
+      {% if course.provider.postcode %}{{ course.provider.postcode }}{% endif %}
+    </dd>
+  </dl>
 </div>
