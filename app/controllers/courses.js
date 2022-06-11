@@ -49,7 +49,7 @@ exports.show = async (req, res) => {
 
     course.trainingLocation = trainingLocationOptions[Math.floor(Math.random() * trainingLocationOptions.length)]
 
-    res.render('course', {
+    res.render('course/index', {
       course,
       schools
       // placementAreas
