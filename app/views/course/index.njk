@@ -70,11 +70,13 @@
 
       {% include "./sections/support-and-advice.njk" %}
 
-      {{ govukButton({
-        text: "Apply for this course",
-        href: "#",
-        isStartButton: true
-      }) }}
+      {% if course.has_vacancies %}
+        {{ govukButton({
+          text: "Apply for this course",
+          href: "#",
+          isStartButton: true
+        }) }}
+      {% endif %}
 
     </div>
   </div>
