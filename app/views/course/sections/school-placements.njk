@@ -1,6 +1,8 @@
 <div class="govuk-!-margin-bottom-8">
   <h2 id="school-placements" class="govuk-heading-l">School placements</h2>
+
   <h3 class="govuk-heading-m">Where you will train</h3>
+
   {% if course.program_type == 'higher_education_programme' and course.provider.provider_code != 'B31' %}
     <p class="govuk-body">You’ll be placed in schools for most of your course. Your school placements will be within
       commuting distance.</p>
@@ -12,10 +14,12 @@
     <p class="govuk-body">You’ll be placed in different schools during your training. You can’t pick which schools
       you want to be in, but your course will try to place you in schools you can commute to.</p>
   {% endif %}
+
   {% if course.how_school_placements_work %}
     {{ course.how_school_placements_work | markdown | safe }}
   {% endif %}
-  {% if course.site_statuses.length %}
+
+  {% if schools %}
     <h3 class="govuk-heading-m">Locations</h3>
     <p class="govuk-body">You can select one of the following locations when you apply.</p>
     <table class="govuk-table app-table--vertical-align-middle" data-qa="course__choose_a_training_location">
@@ -28,15 +32,15 @@
       </thead>
 
       <tbody class="govuk-table__body">
-        {% for site_status in course.preview_site_statuses %}
+        {% for school in schools %}
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
-              <strong>{{ site_status.site.location_name }}</strong>
+              <strong>{{ school.name }}</strong>
               <br>
-              {{ site_status.site.decorate.full_address }}
+              {{ school.address }}
             </td>
             <td class="govuk-table__cell">
-              {% if site_status.has_vacancies %}
+              {% if school.has_vacancies %}
                 Yes
               {% else %}
                 No
