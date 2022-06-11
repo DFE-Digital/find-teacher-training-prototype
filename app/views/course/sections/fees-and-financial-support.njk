@@ -3,7 +3,7 @@
 
   {% if course.has_fees %}
 
-    {% if course.fee_uk_eu %}
+    {% if course.fee_domestic %}
       {% if course.fee_international %}
         <table class="govuk-table app-table--vertical-align-middle">
           <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">The course fees
@@ -18,7 +18,7 @@
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">UK students</td>
-              <td class="govuk-table__cell">£{{ course.fee_uk_eu | numeral('0,0') }}</td>
+              <td class="govuk-table__cell">£{{ course.fee_domestic | numeral('0,0') }}</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">International students</td>
@@ -28,7 +28,7 @@
         </table>
       {% else %}
         <p class="govuk-body">
-          The course fees for UK students in {{ course.year_range }} are £{{ course.fee_uk_eu | numeral('0,0') }}.
+          The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic | numeral('0,0') }}.
         </p>
       {% endif %}
 
