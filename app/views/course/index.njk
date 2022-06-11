@@ -82,13 +82,7 @@
 
       {% include "./sections/support-and-advice.njk" %}
 
-      {% if course.has_vacancies %}
-        {{ govukButton({
-          text: "Apply for this course",
-          href: "#",
-          isStartButton: true
-        }) }}
-      {% endif %}
+      {% include "./sections/apply.njk" %}
 
     </div>
   </div>
