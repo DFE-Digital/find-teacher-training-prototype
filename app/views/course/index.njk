@@ -70,6 +70,12 @@
 
       {% include "./sections/support-and-advice.njk" %}
 
+      {{ govukButton({
+        text: "Apply for this course",
+        href: "#",
+        isStartButton: true
+      }) }}
+
     </div>
   </div>
 {% endblock %}
