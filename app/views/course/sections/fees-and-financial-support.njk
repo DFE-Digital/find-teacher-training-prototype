@@ -1,1 +1,143 @@
-<h2 id="fees-and-financial-support" class="govuk-heading-l">Fees and financial support</h2>
+<div class="govuk-!-margin-bottom-8">
+  <h2 id="fees-and-financial-support" class="govuk-heading-l">Fees and financial support</h2>
+
+  {% if course.has_fees %}
+
+    {% if course.fee_uk_eu %}
+      {% if course.fee_international %}
+        <table class="govuk-table app-table--vertical-align-middle">
+          <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">The course fees
+            for {{ course.year_range }} are as follows:
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-visually-hidden govuk-table__row">
+              <th class="govuk-table__header">Student type</th>
+              <th class="govuk-table__header">Fees to pay</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">UK students</td>
+              <td class="govuk-table__cell">£{{ course.fee_uk_eu | numeral('0,0') }}</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">International students</td>
+              <td class="govuk-table__cell">£{{ course.fee_international | numeral('0,0') }}</td>
+            </tr>
+          </tbody>
+        </table>
+      {% else %}
+        <p class="govuk-body">
+          The course fees for UK students in {{ course.year_range }} are £{{ course.fee_uk_eu | numeral('0,0') }}.
+        </p>
+      {% endif %}
+
+      {% if course.fee_details %}
+        {{ course.fee_details | markdown | safe }}
+      {% endif %}
+    {% endif %}
+
+  {% endif %}
+
+  <h3 class="govuk-heading-m">Financial support from the government</h3>
+
+  {% if course.salaried %}
+
+    <p class="govuk-body">
+      Financial support is not available for this course because it comes with a salary.
+    </p>
+
+    <p class="govuk-body">
+      You may be eligible for financial support if you choose a course without a salary. This support includes bursaries, scholarships and loans.
+    </p>
+
+  {% elif course.excluded_from_bursary %}
+
+    <p class="govuk-body">
+      You may be eligible for a student loan. These are normally for undergraduate courses but you can also apply if you do postgraduate teacher training. <a class="govuk-link" href="https://www.gov.uk/student-finance-calculator">Find out how much loan you could get using the student finance calculator</a>.
+    </p>
+
+    <p class="govuk-body">
+      Depending on your immigration status, financial support may not be available. Find out about <a class="govuk-link" href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen">training to teach if you’re a non-UK citizen</a>, including financial support.
+    </p>
+
+  {% elif course.bursary_only %}
+
+    <p class="govuk-body">
+      You’ll get a bursary of £{{ course.bursary_amount | numeral('0,0') }} if you have {{ course.bursary_first_line_ending }}.
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <% if course.bursary_requirements.length > 1 %>
+        <% course.bursary_requirements.each do |requirement| %>
+          <li><%= requirement %></li>
+        <% end %>
+      <% end %>
+    </ul>
+
+    <p class="govuk-body">
+      You do not have to apply for a bursary - if you’re eligible, you’ll automatically start receiving it once you begin your course.
+    </p>
+
+    <p class="govuk-body">
+      You may be eligible for a <a class="govuk-link" href="#">loan while you study</a>.
+    </p>
+
+    <p class="govuk-body">
+      Find out about financial support if you’re from <a class="govuk-link" href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate">outside the UK</a>.
+    </p>
+
+  {% elif course.has_scholarship_and_bursary %}
+
+    <p class="govuk-body">
+      You could be eligible for either:
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li data-qa="course__scholarship_amount">a scholarship of £{{ course.scholarship_amount | numeral('0,0') }}</li>
+      <li data-qa="course__bursary_amount">a bursary of £{{ course.bursary_amount | numeral('0,0') }}</li>
+    </ul>
+
+    {% if course.has_early_career_payments %}
+      <p class="govuk-body">
+        With a scholarship or bursary, you’ll also get early career payments of £2,000 in your second, third and fourth years of teaching (£3,000 in <a class="govuk-link" href="https://www.gov.uk/guidance/mathematics-early-career-payments-guidance-for-teachers-and-schools">some areas of England</a>).
+      </p>
+    {% endif %}
+
+    <p class="govuk-body">
+      To qualify for a scholarship you’ll need a degree of 2:1 or above in {{ course.subject_name }} or a related subject. For a bursary you’ll need a 2:2 or above in any subject.
+    </p>
+
+    <p class="govuk-body">
+      You cannot claim both a bursary and a scholarship - you can only claim one.
+    </p>
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="#">Find out more about bursaries and scholarships</a>. You do not need to apply for a bursary - if you’re eligible, you’ll automatically start receiving it once you begin your course.
+    </p>
+
+    <p class="govuk-body">
+      You may also be eligible for a <a class="govuk-link" href="#">loan while you study</a>.
+    </p>
+
+    <p class="govuk-body">
+      Find out about financial support if you’re from <a class="govuk-link" href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate">outside the UK</a>.
+    </p>
+
+  {% else %}
+
+    <p class="govuk-body">
+      You may be eligible for a student loan. These are normally for undergraduate courses but you can also apply if you do postgraduate teacher training. <a class="govuk-link" href="https://www.gov.uk/student-finance-calculator">Find out how much loan you could get using the student finance calculator</a>.
+    </p>
+
+    <p class="govuk-body">
+      Depending on your immigration status, financial support may not be available. Find out about <a class="govuk-link" href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen">training to teach if you’re a non-UK citizen</a>, including financial support.
+    </p>
+
+  {% endif %}
+
+  {% if course.financial_support.length %}
+    <h3 class="govuk-heading-m">Financial support from the training provider</h3>
+    {{ course.financial_support | markdown | safe }}
+  {% endif %}
+</div>
