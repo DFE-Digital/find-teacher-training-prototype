@@ -32,7 +32,7 @@ exports.show = async (req, res) => {
     })
 
     // Mock course visa sponsorship
-    course.canSponsorVisa = (Math.random(course.code) > 0.5)
+    // course.canSponsorVisa = (Math.random(course.code) > 0.5)
 
     // Mock placement schools
     // Assume placement schools are locations with a campus code that isn’t '-'
@@ -40,7 +40,7 @@ exports.show = async (req, res) => {
 
     // Mock school placement policy
     // Assume provider has chosen to show placement schools if a course has more than 1 school location
-    course.placementPolicy = schools.length > 1 ? 'hosted' : 'placed'
+    // course.placementPolicy = schools.length > 1 ? 'hosted' : 'placed'
 
     // Mock centre-based training location
     // Assume centre-based training location is location with campus code '-'
