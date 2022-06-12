@@ -40,13 +40,13 @@
   {% endif %}
 
   {% if course.salaried %}
-    {% set financialSupport %}{% include "_includes/course/salaried.md" %}{% endset %}
+    {% set financialSupport %}{% include "./fees-and-financial-support/salaried.md" %}{% endset %}
   {% elif course.bursary_only %}
-    {% set financialSupport %}{% include "_includes/course/bursary.md" %}{% endset %}
+    {% set financialSupport %}{% include "./fees-and-financial-support/bursary.md" %}{% endset %}
   {% elif course.has_scholarship_and_bursary %}
-    {% set financialSupport %}{% include "_includes/course/bursary_and_scholarship.md" %}{% endset %}
+    {% set financialSupport %}{% include "./fees-and-financial-support/bursary-and-scholarship.md" %}{% endset %}
   {% else %}
-    {% set financialSupport %}{% include "_includes/course/loan.md" %}{% endset %}
+    {% set financialSupport %}{% include "./fees-and-financial-support/loan.md" %}{% endset %}
   {% endif %}
 
   {{ appAdvice({
