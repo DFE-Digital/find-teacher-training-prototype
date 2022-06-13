@@ -28,7 +28,11 @@ router.all('*', (req, res, next) => {
 /// ------------------------------------------------------------------------ ///
 
 router.get('/', async (req, res) => {
-  res.render('start')
+  if (process.env.SHOW_START_PAGE === 'true') {
+    res.render('start')
+  } else {
+    res.redirect('/search')
+  }
 })
 
 router.get('/search', searchController.search_get)
