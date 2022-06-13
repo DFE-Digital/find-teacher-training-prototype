@@ -1,8 +1,8 @@
 To be a teacher in England you need:
 
-* a degree or an equivalent qualification
-* English and Maths GCSEs at grade 4 (C) or above
-* For primary teaching, a science subject GCSE at grade 4 (C) or above
+- a degree or an equivalent qualification
+- English and Maths GCSEs at grade 4 (C) or above
+- For primary teaching, a science subject GCSE at grade 4 (C) or above
 
 You can find out more about entry requirements, and how it works if you have studied overseas, at [Get Into Teaching](https://beta-getintoteaching.education.gov.uk/steps-to-become-a-teacher).
 

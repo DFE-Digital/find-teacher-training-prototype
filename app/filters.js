@@ -34,6 +34,15 @@ module.exports = (env) => {
     }
   }
 
+  /* ------------------------------------------------------------------
+   numeral filter for use in Nunjucks
+   example: {{ params.number | numeral("0,00.0") }}
+   outputs: 1,000.00
+  ------------------------------------------------------------------ */
+  filters.numeral = (number, format) => {
+    return numeral(number).format(format)
+  }
+
   /**
    * Convert Markdown string to HTML
    *

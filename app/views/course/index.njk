@@ -1,0 +1,89 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = course.name + " (" + course.code + ") with " + course.provider.name %}
+
+{% block pageTitle %}
+{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back to search results",
+  href: "/results"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">
+          {{ course.provider.name }}
+        </span>
+        {{ course.name }} ({{ course.code }})
+      </h1>
+
+      <p class="govuk-body-l">{{ course.summary }}</p>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {% include "./sections/course-details.njk" %}
+
+      {# {% if not course.has_vacancies %}
+        {{ govukWarningText({
+          text: "You cannot apply for this course because it currently has no vacancies. To find courses with vacancies, change your search settings to ‘Only show courses with vacancies’.",
+          iconFallbackText: "Warning"
+        }) }}
+      {% endif %} #}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {% include "./sections/contents.njk" %}
+
+      {% if course.about_course %}
+        {% include "./sections/about-course.njk" %}
+      {% endif %}
+
+      {% include "./sections/school-placements.njk" %}
+
+      {% include "./sections/entry-requirements.njk" %}
+
+      {% if course.salaried %}
+        {% include "./sections/salary.njk" %}
+      {% endif %}
+
+      {% include "./sections/fees-and-financial-support.njk" %}
+
+      {% if course.provider.train_with_us %}
+        {% include "./sections/about-training-provider.njk" %}
+      {% endif %}
+
+      {% if course.interview_process %}
+        {% include "./sections/interview-process.njk" %}
+      {% endif %}
+
+      {% include "./sections/international-candidates.njk" %}
+
+      {% if course.provider.train_with_disability %}
+        {% include "./sections/training-with-disabilities.njk" %}
+      {% endif %}
+
+      {% include "./sections/contact-training-provider.njk" %}
+
+      {% include "./sections/support-and-advice.njk" %}
+
+      {% include "./sections/apply.njk" %}
+
+    </div>
+  </div>
+{% endblock %}
