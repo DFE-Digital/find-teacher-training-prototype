@@ -28,5 +28,7 @@ module.exports = {
   // Enable or disable Browser Sync
   useBrowserSync: 'true',
 
-  showStartPage: 'false'
+  showStartPage: 'false',
+
+  phaseTagText: 'beta'
 }

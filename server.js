@@ -37,6 +37,7 @@ const env = (process.env.NODE_ENV || glitchEnv || 'development').toLowerCase()
 const useAutoStoreData = process.env.USE_AUTO_STORE_DATA || config.useAutoStoreData
 const useCookieSessionStore = process.env.USE_COOKIE_SESSION_STORE || config.useCookieSessionStore
 const showStartPage = process.env.SHOW_START_PAGE || config.showStartPage
+const phaseTagText = process.env.PHASE_TAG_TEXT || config.phaseTagText
 let useHttps = process.env.USE_HTTPS || config.useHttps
 
 useHttps = useHttps.toLowerCase()
@@ -97,6 +98,7 @@ app.locals.cookieText = config.cookieText
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
 app.locals.showStartPage = showStartPage
+app.locals.phaseTagText = phaseTagText
 // extensionConfig sets up variables used to add the scripts and stylesheets to each page.
 app.locals.extensionConfig = extensions.getAppConfig()
 
