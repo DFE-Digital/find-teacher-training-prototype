@@ -39,19 +39,21 @@
 
   {% endif %}
 
-  {% if course.salaried %}
-    {% set financialSupport %}{% include "./fees-and-financial-support/salaried.md" %}{% endset %}
-  {% elif course.bursary_only %}
-    {% set financialSupport %}{% include "./fees-and-financial-support/bursary.md" %}{% endset %}
-  {% elif course.has_scholarship_and_bursary %}
-    {% set financialSupport %}{% include "./fees-and-financial-support/bursary-and-scholarship.md" %}{% endset %}
-  {% else %}
-    {% set financialSupport %}{% include "./fees-and-financial-support/loan.md" %}{% endset %}
-  {% endif %}
+  {% set financialSupportHtml %}
+    {% if course.salaried %}
+      {% include "./fees-and-financial-support/salaried.md" %}
+    {% elif course.bursary_only %}
+      {% include "./fees-and-financial-support/bursary.md" %}
+    {% elif course.has_scholarship_and_bursary %}
+      {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
+    {% else %}
+      {% include "./fees-and-financial-support/loan.md" %}
+    {% endif %}
+  {% endset %}
 
   {{ appAdvice({
     title: "Financial support from the government",
-    html: financialSupport | trim | markdown
+    html: financialSupportHtml | trim | markdown
   }) }}
 
   {% if course.financial_support %}
