@@ -6,7 +6,7 @@ const courseController = require('./controllers/courses')
 const resultsController = require('./controllers/results')
 const searchController = require('./controllers/search')
 
-const checkHasData = (req, res, next) => {
+const checkHasSearchParams = (req, res, next) => {
   if (!req.session.data.subjects) {
     res.redirect('/')
   } else {
@@ -51,8 +51,8 @@ router.post('/secondary-subjects', searchController.secondary_subjects_post)
 /// RESULTS ROUTES
 /// ------------------------------------------------------------------------ ///
 
-router.get('/results', checkHasData, resultsController.results_get)
-router.post('/results', checkHasData, resultsController.results_post)
+router.get('/results', checkHasSearchParams, resultsController.results_get)
+router.post('/results', checkHasSearchParams, resultsController.results_post)
 
 /// ------------------------------------------------------------------------ ///
 /// COURSES ROUTES
