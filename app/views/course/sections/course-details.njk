@@ -1,7 +1,7 @@
 <dl class="app-description-list govuk-!-margin-bottom-8">
-  {% if course.accrediting_provider and (course.accrediting_provider.provider_code != course.provider.provider_code) %}
+  {% if course.accredited_body and (course.accredited_body.provider_code != course.provider.provider_code) %}
     <dt class="app-description-list__label">Accredited body</dt>
-    <dd>{{ course.accrediting_provider.provider_name }}</dd>
+    <dd>{{ course.accredited_body.provider_name }}</dd>
   {% endif %}
   {% if course.funding_option %}
     <dt class="app-description-list__label">Financial support</dt>
@@ -11,21 +11,21 @@
     <dt class="app-list--description__label">Qualification</dt>
     <dd>
       {% set qualificationHtml %}
-        {% if course.qualification == "QTS" %}
-          {% include "./qualifications/qts.md" %}
-        {% elif course.qualification == "PGCE with QTS" %}
+        {% if course.qualifications.length == 2 and "pgce" in course.qualifications %}
           {% include "./qualifications/pgce-with-qts.md" %}
-        {% elif course.qualification == "PGDE with QTS" %}
+        {% elif course.qualifications.length == 2 and "pgde" in course.qualifications %}
           {% include "./qualifications/pgde-with-qts.md" %}
-        {% elif course.qualification == "PGCE" %}
+        {% elif "pgce" in course.qualifications %}
           {% include "./qualifications/pgce.md" %}
-        {% elif course.qualification == "PGDE" %}
+        {% elif "pgde" in course.qualifications %}
           {% include "./qualifications/pgde.md" %}
+        {% elif "qts" in course.qualifications %}
+          {% include "./qualifications/qts.md" %}
         {% endif %}
       {% endset %}
 
       {{ govukDetails({
-        summaryText: course.qualification,
+        summaryText: course.qualifications | getQualificationLabel,
         html: qualificationHtml | trim | markdown
       }) }}
     </dd>
@@ -36,7 +36,7 @@
   {% endif %}
   {% if course.length %}
     <dt class="app-list--description__label">Course length</dt>
-    <dd>{{ course.length }}</dd>
+    <dd>{{ course.course_length | getCourseLengthLabel }}</dd>
   {% endif %}
   {% if course.applications_open_from %}
     <dt class="app-list--description__label">Date you can apply from</dt>
