@@ -7,6 +7,15 @@ const resultsController = require('./controllers/results')
 const searchController = require('./controllers/search')
 
 /// ------------------------------------------------------------------------ ///
+/// ALL ROUTES
+/// ------------------------------------------------------------------------ ///
+router.all('*', (req, res, next) => {
+  res.locals.referrer = req.query.referrer
+  res.locals.query = req.query
+  next()
+})
+
+/// ------------------------------------------------------------------------ ///
 /// SEARCH ROUTES
 /// ------------------------------------------------------------------------ ///
 
@@ -19,9 +28,6 @@ router.post('/search', searchController.search_post)
 
 router.get('/age-groups', searchController.age_groups_get)
 router.post('/age-groups', searchController.age_groups_post)
-
-// router.get('/primary', searchController.primary_get)
-// router.post('/primary', searchController.primary_post)
 
 router.get('/primary-subjects', searchController.primary_subjects_get)
 router.post('/primary-subjects', searchController.primary_subjects_post)
