@@ -198,5 +198,68 @@ module.exports = (env) => {
     return label
   }
 
+  /* ------------------------------------------------------------------
+  utility function to get the course length label
+  example: {{ 'OneYear' | getCourseLengthLabel }}
+  outputs: "One year"
+  ------------------------------------------------------------------ */
+  filters.getCourseLengthLabel = (length) => {
+    let label
+
+    switch (length) {
+      case 'OneYear':
+        label = '1 year'
+        break
+      case 'TwoYears':
+        label = 'Up to 2 years'
+        break
+      default:
+        label = length
+    }
+
+    return label
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the qualification label
+  example: {{ 'pgce_with_qts' | getQualificationLabel }}
+  outputs: "PGCE with QTS"
+  ------------------------------------------------------------------ */
+  filters.getQualificationLabel = (qualification) => {
+    let label
+
+    if (qualification.length === 2 && qualification.includes('pgce')) {
+      label = 'PGCE with QTS'
+    } else if (qualification.length === 2 && qualification.includes('pgde')) {
+      label = 'PGDE with QTS'
+    } else {
+      label = qualification[0].toUpperCase()
+    }
+
+    return label
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the study mode label
+  example: {{ 'both' | getStudyModeLabel }}
+  outputs: "Full time or part time"
+  ------------------------------------------------------------------ */
+  filters.getStudyModeLabel = (studyMode) => {
+    let label
+
+    switch (studyMode) {
+      case 'full_time':
+        label = 'Full time'
+        break
+      case 'part_time':
+        label = 'Part time'
+        break
+      default:
+        label = 'Full time or part time'
+    }
+
+    return label
+  }
+
   return filters
 }
