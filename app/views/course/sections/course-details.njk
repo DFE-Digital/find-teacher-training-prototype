@@ -1,0 +1,55 @@
+<dl class="app-description-list govuk-!-margin-bottom-8">
+  {% if course.accrediting_provider and (course.accrediting_provider.provider_code != course.provider.provider_code) %}
+    <dt class="app-description-list__label">Accredited body</dt>
+    <dd>{{ course.accrediting_provider.provider_name }}</dd>
+  {% endif %}
+  {% if course.funding_option %}
+    <dt class="app-description-list__label">Financial support</dt>
+    <dd>{{ course.funding_option }}</dd>
+  {% endif %}
+  {% if course.qualification %}
+    <dt class="app-list--description__label">Qualification</dt>
+    <dd>
+      {% set qualificationHtml %}
+        {% if course.qualification == "QTS" %}
+          {% include "./qualifications/qts.md" %}
+        {% elif course.qualification == "PGCE with QTS" %}
+          {% include "./qualifications/pgce-with-qts.md" %}
+        {% elif course.qualification == "PGDE with QTS" %}
+          {% include "./qualifications/pgde-with-qts.md" %}
+        {% elif course.qualification == "PGCE" %}
+          {% include "./qualifications/pgce.md" %}
+        {% elif course.qualification == "PGDE" %}
+          {% include "./qualifications/pgde.md" %}
+        {% endif %}
+      {% endset %}
+
+      {{ govukDetails({
+        summaryText: course.qualification,
+        html: qualificationHtml | trim | markdown
+      }) }}
+    </dd>
+  {% endif %}
+  {% if course.age_minimum and course.age_maximum %}
+    <dt class="app-list--description__label">Age range</dt>
+    <dd>{{ course.age_minimum }} to {{ course.age_maximum }}</dd>
+  {% endif %}
+  {% if course.length %}
+    <dt class="app-list--description__label">Course length</dt>
+    <dd>{{ course.length }}</dd>
+  {% endif %}
+  {% if course.applications_open_from %}
+    <dt class="app-list--description__label">Date you can apply from</dt>
+    <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
+  {% endif %}
+  {% if course.start_date %}
+    <dt class="app-list--description__label">Date course starts</dt>
+    <dd>{{ course.start_date }}</dd>
+    <dt class="app-list--description__label">Academic year</dt>
+    <dd>{{ course.start_date | getAcademicYearLabel }}</dd>
+  {% endif %}
+  {% if course.provider.website %}
+    <dt class="app-list--description__label">Website</dt>
+    <dd><a class="govuk-link" href="{{ course.provider.website }}">{{ course.provider.website }}</a></dd>
+  {% endif %}
+</dl>

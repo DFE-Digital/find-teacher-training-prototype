@@ -1,0 +1,6 @@
+<div class="govuk-!-margin-bottom-8">
+  <h2 id="salary" class="govuk-heading-l">Salary</h2>
+  {% if course.salary_details %}
+    {{ course.salary_details | markdown | safe }}
+  {% endif %}
+</div>
