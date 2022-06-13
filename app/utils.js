@@ -32,22 +32,6 @@ module.exports = () => {
       }
     }
 
-    // Adding random degree class requirement
-    // switch (getRandomInt(5)) {
-    //   case 0:
-    //     course.requirements.degree.minimumClass = '21'
-    //     break
-    //   case 1:
-    //     course.requirements.degree.minimumClass = '22'
-    //     break
-    //   case 2:
-    //     course.requirements.degree.minimumClass = 'third'
-    //     break
-    //   default:
-    //     course.requirements.degree.minimumClass = 'degree'
-    //     break
-    // }
-
     // Adding degree subject requirement unless it’s primary
     if (course.name !== 'Primary') {
       course.requirements.degree.subject = '50% of your degree modules should be in the subject.'
@@ -119,30 +103,6 @@ module.exports = () => {
         break
     }
 
-    // Length
-    switch (course.course_length) {
-      case 'OneYear':
-        course.length = '1 year'
-        break
-      case 'TwoYears':
-        course.length = 'Up to 2 years'
-        break
-      default:
-        course.length = course.course_length
-    }
-
-    // Study mode
-    switch (course.study_mode) {
-      case 'full_time':
-        course.study_mode = 'Full time'
-        break
-      case 'part_time':
-        course.study_mode = 'Part time'
-        break
-      default:
-        course.study_mode = 'Full time or part time'
-    }
-
     // Qualification
     if (course.qualifications.length === 2 && course.qualifications.includes('pgce')) {
       course.qualification = 'PGCE with QTS'
@@ -163,8 +123,8 @@ module.exports = () => {
     course.has_fees = course.funding_type === 'fee'
     course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
     course.funding_option = course.salaried ? 'Salary' : 'Student finance if you’re eligible'
-    course.has_bursary = course.name.includes('Chemistry') // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L47
-    course.has_scholarship = true // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L59
+    // course.has_bursary = course.name.includes('Chemistry') // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L47
+    // course.has_scholarship = true // Stub. See https://github.com/DFE-Digital/find-teacher-training/blob/94de46eea7ddeec2daca2e4944b9bf4582d25304/app/decorators/course_decorator.rb#L59
     course.bursary_only = course.has_bursary && !course.has_scholarship
     course.has_scholarship_and_bursary = course.has_bursary && course.has_scholarship
 
