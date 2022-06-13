@@ -103,15 +103,6 @@ module.exports = () => {
         break
     }
 
-    // Qualification
-    if (course.qualifications.length === 2 && course.qualifications.includes('pgce')) {
-      course.qualification = 'PGCE with QTS'
-    } else if (course.qualifications.length === 2 && course.qualifications.includes('pgde')) {
-      course.qualification = 'PGDE with QTS'
-    } else {
-      course.qualification = course.qualifications[0].toUpperCase()
-    }
-
     // SKE
     const subjectCodesWithSke = data.subjectOptions
       .filter(subject => subject.hasSke === true)
