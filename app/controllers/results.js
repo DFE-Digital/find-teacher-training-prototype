@@ -98,10 +98,6 @@ exports.results_get = async (req, res) => {
   // Maps array of subject codes to subject data
   const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
 
-  // Academic year
-  // const academicYear = req.session.data.academicYear || req.query.academicYear || defaults.academicYear
-  // console.log(academicYear);
-
   // API query params
   const filter = {
     findable: true,
@@ -237,21 +233,6 @@ exports.results_get = async (req, res) => {
         return a.provider.name.localeCompare(b.provider.name)
       }
     })
-
-    // if (req.session.data.visaSponsorship === 'yes') {
-    //   // Post-process the results to filter out courses where visas can’t be
-    //   // sponsored.
-    //   // results = results.filter(result => result.course.canSponsorVisa === true)
-    // }
-
-    // if (req.session.data.degreeGrade) {
-    //   // Post-process the results to filter courses based on degree requirement
-    //   // results = results.filter(result => req.session.data.degreeGrade.includes(result.course.requirements.degree.minimumClass))
-    // }
-
-    // if (academicYear) {
-    //   console.log(academicYear);
-    // }
 
     // ------------------------------------------------------------------------ //
     // PAGINATION
