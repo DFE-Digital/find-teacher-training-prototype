@@ -1,7 +1,7 @@
 You could be eligible for either:
 
-- a scholarship of £{{ (course.scholarship_amount | int).toLocaleString() }}
-- a bursary of £{{ (course.bursary_amount | int).toLocaleString() }}
+- a scholarship of £{{ course.scholarship_amount | numeral('0,0') }}
+- a bursary of £{{ course.bursary_amount | numeral('0,0') }}
 
 {% if course.has_early_career_payments %}
 With a scholarship or bursary, you’ll also get early career payments of £2,000 in your second, third and fourth years of teaching (£3,000 in [some areas of England](https://www.gov.uk/guidance/mathematics-early-career-payments-guidance-for-teachers-and-schools)).
