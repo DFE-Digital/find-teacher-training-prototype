@@ -55,8 +55,8 @@ exports.results_get = async (req, res) => {
   })
 
   // Entry Requirements (aka degree grade) - 2:1 or first, 2:2, third, pass
-  const entryRequirement = utils.toArray(req.session.data.entryRequirement || req.query.entryRequirement || defaults.entryRequirement)
-  const entryRequirementItems = utils.entryRequirementItems(entryRequirement).map(item => {
+  const degreeGrade = utils.toArray(req.session.data.degreeGrade || req.query.degreeGrade || defaults.degreeGrade)
+  const degreeGradeItems = utils.degreeGradeItems(degreeGrade).map(item => {
     item.hint = false
     item.label.classes = false
     return item
@@ -106,7 +106,7 @@ exports.results_get = async (req, res) => {
   const filter = {
     findable: true,
     funding_type: fundingType ? 'salary' : 'salary,apprenticeship,fee',
-    degree_grade: entryRequirement.toString(),
+    degree_grade: degreeGrade.toString(),
     send_courses: send,
     has_vacancies: vacancy,
     qualification: qualification.toString(),
@@ -244,9 +244,9 @@ exports.results_get = async (req, res) => {
     //   // results = results.filter(result => result.course.canSponsorVisa === true)
     // }
 
-    // if (req.session.data.entryRequirement) {
+    // if (req.session.data.degreeGrade) {
     //   // Post-process the results to filter courses based on degree requirement
-    //   // results = results.filter(result => req.session.data.entryRequirement.includes(result.course.requirements.degree.minimumClass))
+    //   // results = results.filter(result => req.session.data.degreeGrade.includes(result.course.requirements.degree.minimumClass))
     // }
 
     // if (academicYear) {
@@ -269,8 +269,8 @@ exports.results_get = async (req, res) => {
     }
 
     // Fake the results count based on number of degree requirement checkboxes ticked
-    if (req.session.data.entryRequirement && req.session.data.entryRequirement.length !== 4) {
-      resultsCount = Math.floor(resultsCount * (req.session.data.entryRequirement.length / 4))
+    if (req.session.data.degreeGrade && req.session.data.degreeGrade.length !== 4) {
+      resultsCount = Math.floor(resultsCount * (req.session.data.degreeGrade.length / 4))
     }
 
     const prevPage = links.prev ? (page - 1) : false
@@ -285,7 +285,7 @@ exports.results_get = async (req, res) => {
         vacancy,
         studyType,
         qualification,
-        entryRequirement,
+        degreeGrade,
         visaSponsorship,
         fundingType,
         subjects
@@ -332,8 +332,8 @@ exports.results_get = async (req, res) => {
       vacancyItems,
       studyType,
       studyTypeItems,
-      entryRequirement,
-      entryRequirementItems,
+      degreeGrade,
+      degreeGradeItems,
       visaSponsorship,
       visaSponsorshipItems,
       fundingType,

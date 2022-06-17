@@ -71,7 +71,7 @@
 
     {{ govukRadios({
       idPrefix: "entry-requirement",
-      name: "entryRequirement",
+      name: "degreeGrade",
       fieldset: {
         legend: {
           text: "Degree grade accepted",
@@ -81,7 +81,7 @@
       formGroup: {
         classes: "app-filter__group"
       },
-      items: entryRequirementItems,
+      items: degreeGradeItems,
       classes: "govuk-radios--small"
     }) }}
 
@@ -100,14 +100,6 @@
       items: visaSponsorshipItems,
       classes: "govuk-checkboxes--small"
     }) }}
-
-    {# [
-      {
-        value: "yes",
-        text: "Only show courses with visa sponsorship",
-        checked: (data['visaSponsorship'][0] == 'yes')
-      }
-    ] #}
 
     {{ govukCheckboxes({
       idPrefix: "funding-type",
