@@ -58,7 +58,7 @@
 
       {% include "./sections/entry-requirements.njk" %}
 
-      {% if course.salaried %}
+      {% if course.has_salary %}
         {% include "./sections/salary.njk" %}
       {% endif %}
 

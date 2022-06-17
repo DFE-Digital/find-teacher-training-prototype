@@ -28,7 +28,8 @@ module.exports = () => {
 
     course.has_ske = subjectCodesWithSke.some(code => course.subject_codes.includes(code))
 
-    // Funding
+    // There's a bug in the API where has_bursary and has_scholarship not always
+    // returned. Check for this and set value
     if (course.has_bursary === undefined) {
       if (course.bursary_amount === 'null') {
         course.has_bursary = false
@@ -46,11 +47,11 @@ module.exports = () => {
     }
 
     course.has_fees = course.funding_type === 'fee'
-    course.salaried = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
+    course.has_salary = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
     course.bursary_only = course.has_bursary && !course.has_scholarship
     course.has_scholarship_and_bursary = course.has_bursary && course.has_scholarship
 
-    if (course.salaried) {
+    if (course.has_salary) {
       course.funding_option = 'Salary'
     } else if (course.has_scholarship_and_bursary) {
       course.funding_option = 'Scholarships or bursaries, as well as student finance, are available if you’re eligible'

@@ -4,7 +4,7 @@
   <li><a class="govuk-link" href="#about-course">About the course</a></li>
   <li><a class="govuk-link" href="#school-placements">School placements</a></li>
   <li><a class="govuk-link" href="#entry-requirements">Entry requirements</a></li>
-  {% if course.salaried %}
+  {% if course.has_salary %}
     <li><a class="govuk-link" href="#salary">Salary</a></li>
   {% endif %}
   <li><a class="govuk-link" href="#fees-and-financial-support">Fees and financial support</a></li>
