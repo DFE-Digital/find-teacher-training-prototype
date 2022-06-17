@@ -106,7 +106,8 @@ exports.results_get = async (req, res) => {
   const filter = {
     findable: true,
     funding_type: fundingType ? 'salary' : 'salary,apprenticeship,fee',
-    is_send: send,
+    degree_grade: entryRequirement.toString(),
+    send_courses: send,
     has_vacancies: vacancy,
     qualification: qualification.toString(),
     study_type: studyType.toString(),
@@ -120,10 +121,10 @@ exports.results_get = async (req, res) => {
   // OR Primary with mathematics
   //
   // TODO: refactor once we’ve decided how to treat SEND specialist courses
-  if (subjects.includes('SEND') && !subjects.includes('00')) {
-    filter.subjects = (subjects.concat('00').toString())
-    filter.is_send = true
-  }
+  // if (subjects.includes('SEND') && !subjects.includes('00')) {
+  //   filter.subjects = (subjects.concat('00').toString())
+  //   filter.is_send = true
+  // }
 
   try {
     let CourseListResponse
@@ -180,20 +181,22 @@ exports.results_get = async (req, res) => {
           const county = attributes.county ? attributes.county + ', ' : ''
           const postcode = attributes.postcode
 
-          // Distance from search location
-          const distanceInMeters = geolib.getDistance({
-            latitude,
-            longitude
-          }, {
-            latitude: attributes.latitude,
-            longitude: attributes.longitude
-          })
-
-          const distanceInMiles = ((distanceInMeters / 1000) * 0.621371).toFixed(0)
-
           attributes.name = attributes.name.replace(/'/g, '’')
           attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
-          attributes.distance = distanceInMiles
+
+          // Distance from search location
+          if (q === 'location') {
+            const distanceInMeters = geolib.getDistance({
+              latitude,
+              longitude
+            }, {
+              latitude: attributes.latitude,
+              longitude: attributes.longitude
+            })
+
+            const distanceInMiles = ((distanceInMeters / 1000) * 0.621371).toFixed(0)
+            attributes.distance = distanceInMiles
+          }
 
           return attributes
         })
@@ -338,7 +341,7 @@ exports.results_get = async (req, res) => {
       selectedSubjects,
     })
   } catch (error) {
-    console.log(error.stack)
+    console.error(error.stack)
     res.render('error', {
       title: error.name,
       content: error
