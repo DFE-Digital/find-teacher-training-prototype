@@ -31,7 +31,7 @@ module.exports = () => {
     // There's a bug in the API where has_bursary and has_scholarship not always
     // returned. Check for this and set value
     if (course.has_bursary === undefined) {
-      if (course.bursary_amount === 'null') {
+      if (course.bursary_amount === null) {
         course.has_bursary = false
       } else {
         course.has_bursary = true
@@ -39,7 +39,7 @@ module.exports = () => {
     }
 
     if (course.has_scholarship === undefined) {
-      if (course.scholarship_amount === 'null') {
+      if (course.scholarship_amount === null) {
         course.has_scholarship = false
       } else {
         course.has_scholarship = true

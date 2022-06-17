@@ -42,10 +42,10 @@
   {% set financialSupportHtml %}
     {% if course.has_salary %}
       {% include "./fees-and-financial-support/salaried.md" %}
-    {% elif course.has_bursary_only %}
-      {% include "./fees-and-financial-support/bursary.md" %}
     {% elif course.has_scholarship_and_bursary %}
       {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
+    {% elif course.has_bursary %}
+      {% include "./fees-and-financial-support/bursary.md" %}
     {% else %}
       {% include "./fees-and-financial-support/loan.md" %}
     {% endif %}
