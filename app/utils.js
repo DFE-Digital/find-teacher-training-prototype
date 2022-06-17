@@ -193,13 +193,13 @@ module.exports = () => {
     }))
   }
 
-  utils.entryRequirementItems = (entryRequirement, options = {}) => {
-    return data.entryRequirementOptions.map(option => ({
+  utils.degreeGradeItems = (degreeGrade, options = {}) => {
+    return data.degreeGradeOptions.map(option => ({
       value: option.value,
       text: option.text,
       label: { classes: 'govuk-label--s' },
       hint: { text: options.showHintText ? filters.markdown(option.hint) : false },
-      checked: entryRequirement ? entryRequirement.includes(option.value) : false
+      checked: degreeGrade ? degreeGrade.includes(option.value) : false
     }))
   }
 

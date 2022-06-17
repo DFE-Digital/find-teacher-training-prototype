@@ -11,7 +11,7 @@ module.exports = {
     studyType: ['full_time', 'part_time'],
     subjects: [],
     vacancy: ['include'],
-    entryRequirement: ['two_one', 'two_two', 'third_class', 'not_required'],
+    degreeGrade: ['two_one', 'two_two', 'third_class', 'not_required'],
     visaSponsorship: ['exclude']
   },
   qualificationOptions: [{
@@ -27,7 +27,7 @@ module.exports = {
     hint: 'To teach further education you don’t need QTS. Instead you can study for a PGCE or PGDE without QTS.',
     value: 'pgce,pgde'
   }],
-  entryRequirementOptions: [{
+  degreeGradeOptions: [{
     text: '2:1 or first',
     value: 'two_one'
   }, {
