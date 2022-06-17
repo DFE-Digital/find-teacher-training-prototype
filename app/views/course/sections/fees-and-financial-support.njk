@@ -40,7 +40,7 @@
   {% endif %}
 
   {% set financialSupportHtml %}
-    {% if course.salaried %}
+    {% if course.has_salary %}
       {% include "./fees-and-financial-support/salaried.md" %}
     {% elif course.bursary_only %}
       {% include "./fees-and-financial-support/bursary.md" %}
