@@ -27,7 +27,7 @@
         {{ course.name }} ({{ course.code }})
       </h1>
 
-      <p class="govuk-body-l">{{ course.summary }}</p>
+      <p class="govuk-body-l">{{ course.qualifications | getQualificationLabel }} {{ course.study_mode | getStudyModeLabel | lower }}</p>
 
     </div>
   </div>
@@ -58,7 +58,7 @@
 
       {% include "./sections/entry-requirements.njk" %}
 
-      {% if course.salaried %}
+      {% if course.has_salary %}
         {% include "./sections/salary.njk" %}
       {% endif %}
 

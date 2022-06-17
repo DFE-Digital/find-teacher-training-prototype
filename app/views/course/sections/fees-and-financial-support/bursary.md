@@ -1,4 +1,4 @@
-You’ll get a bursary of £{{ course.bursary_amount.toLocaleString() }} if you have {{ course.bursary_first_line_ending }}.
+You’ll get a bursary of £{{ course.bursary_amount | numeral('0,0') }} if you have {{ course.bursary_first_line_ending }}.
 
 {% if course.bursary_requirements.length > 1 %}
 {% for requirement in course.bursary_requirements %}

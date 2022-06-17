@@ -61,9 +61,9 @@
                 address: trainingLocation.address
               } if trainingLocation and isUniversity and isLocationSearch,
               accreditedBody: result.course.accredited_body,
-              studyType: result.course.study_mode,
-              qualification: result.course.qualification,
-              fundingType: result.course.funding_type,
+              studyType: result.course.study_mode | getStudyModeLabel,
+              qualification: result.course.qualifications | getQualificationLabel,
+              fundingOption: result.course.funding_option,
               degreeGrade: result.course.degree_grade,
               visaSponsorship: result.course.visaSponsorship,
               startDate: result.course.start_date,
