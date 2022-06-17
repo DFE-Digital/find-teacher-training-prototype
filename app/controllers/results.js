@@ -55,8 +55,8 @@ exports.results_get = async (req, res) => {
   })
 
   // Entry Requirements (aka degree grade) - 2:1 or first, 2:2, third, pass
-  const entryRequirement = utils.toArray(req.session.data.entryRequirement || req.query.entryRequirement || defaults.entryRequirement)
-  const entryRequirementItems = utils.entryRequirementItems(entryRequirement).map(item => {
+  const degreeGrade = utils.toArray(req.session.data.degreeGrade || req.query.degreeGrade || defaults.degreeGrade)
+  const degreeGradeItems = utils.degreeGradeItems(degreeGrade).map(item => {
     item.hint = false
     item.label.classes = false
     return item
@@ -98,15 +98,12 @@ exports.results_get = async (req, res) => {
   // Maps array of subject codes to subject data
   const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
 
-  // Academic year
-  // const academicYear = req.session.data.academicYear || req.query.academicYear || defaults.academicYear
-  // console.log(academicYear);
-
   // API query params
   const filter = {
     findable: true,
     funding_type: fundingType ? 'salary' : 'salary,apprenticeship,fee',
-    is_send: send,
+    degree_grade: degreeGrade.toString(),
+    send_courses: send,
     has_vacancies: vacancy,
     qualification: qualification.toString(),
     study_type: studyType.toString(),
@@ -120,10 +117,10 @@ exports.results_get = async (req, res) => {
   // OR Primary with mathematics
   //
   // TODO: refactor once we’ve decided how to treat SEND specialist courses
-  if (subjects.includes('SEND') && !subjects.includes('00')) {
-    filter.subjects = (subjects.concat('00').toString())
-    filter.is_send = true
-  }
+  // if (subjects.includes('SEND') && !subjects.includes('00')) {
+  //   filter.subjects = (subjects.concat('00').toString())
+  //   filter.is_send = true
+  // }
 
   try {
     let CourseListResponse
@@ -180,20 +177,22 @@ exports.results_get = async (req, res) => {
           const county = attributes.county ? attributes.county + ', ' : ''
           const postcode = attributes.postcode
 
-          // Distance from search location
-          const distanceInMeters = geolib.getDistance({
-            latitude,
-            longitude
-          }, {
-            latitude: attributes.latitude,
-            longitude: attributes.longitude
-          })
-
-          const distanceInMiles = ((distanceInMeters / 1000) * 0.621371).toFixed(0)
-
           attributes.name = attributes.name.replace(/'/g, '’')
           attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
-          attributes.distance = distanceInMiles
+
+          // Distance from search location
+          if (q === 'location') {
+            const distanceInMeters = geolib.getDistance({
+              latitude,
+              longitude
+            }, {
+              latitude: attributes.latitude,
+              longitude: attributes.longitude
+            })
+
+            const distanceInMiles = ((distanceInMeters / 1000) * 0.621371).toFixed(0)
+            attributes.distance = distanceInMiles
+          }
 
           return attributes
         })
@@ -235,21 +234,6 @@ exports.results_get = async (req, res) => {
       }
     })
 
-    // if (req.session.data.visaSponsorship === 'yes') {
-    //   // Post-process the results to filter out courses where visas can’t be
-    //   // sponsored.
-    //   // results = results.filter(result => result.course.canSponsorVisa === true)
-    // }
-
-    // if (req.session.data.entryRequirement) {
-    //   // Post-process the results to filter courses based on degree requirement
-    //   // results = results.filter(result => req.session.data.entryRequirement.includes(result.course.requirements.degree.minimumClass))
-    // }
-
-    // if (academicYear) {
-    //   console.log(academicYear);
-    // }
-
     // ------------------------------------------------------------------------ //
     // PAGINATION
     // ------------------------------------------------------------------------ //
@@ -266,8 +250,8 @@ exports.results_get = async (req, res) => {
     }
 
     // Fake the results count based on number of degree requirement checkboxes ticked
-    if (req.session.data.entryRequirement && req.session.data.entryRequirement.length !== 4) {
-      resultsCount = Math.floor(resultsCount * (req.session.data.entryRequirement.length / 4))
+    if (req.session.data.degreeGrade && req.session.data.degreeGrade.length !== 4) {
+      resultsCount = Math.floor(resultsCount * (req.session.data.degreeGrade.length / 4))
     }
 
     const prevPage = links.prev ? (page - 1) : false
@@ -282,7 +266,7 @@ exports.results_get = async (req, res) => {
         vacancy,
         studyType,
         qualification,
-        entryRequirement,
+        degreeGrade,
         visaSponsorship,
         fundingType,
         subjects
@@ -329,8 +313,8 @@ exports.results_get = async (req, res) => {
       vacancyItems,
       studyType,
       studyTypeItems,
-      entryRequirement,
-      entryRequirementItems,
+      degreeGrade,
+      degreeGradeItems,
       visaSponsorship,
       visaSponsorshipItems,
       fundingType,
@@ -338,7 +322,7 @@ exports.results_get = async (req, res) => {
       selectedSubjects,
     })
   } catch (error) {
-    console.log(error.stack)
+    console.error(error.stack)
     res.render('error', {
       title: error.name,
       content: error

@@ -55,15 +55,11 @@
       {% endif %}
     </dd>
   </div>
-  {% if params.fundingType %}
+  {% if params.fundingOption %}
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Financial support</dt>
       <dd class="app-result-detail__value">
-        {% if params.fundingType == "salary" %}
-          Salary
-        {% else %}
-          Student finance if you’re eligible
-        {% endif %}
+        {{ params.fundingOption }}
       </dd>
     </div>
   {% endif %}
