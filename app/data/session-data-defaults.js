@@ -11,7 +11,7 @@ module.exports = {
     studyType: ['full_time', 'part_time'],
     subjects: [],
     vacancy: ['include'],
-    entryRequirement: ['21', '22', 'third', 'degree'],
+    entryRequirement: ['two_one', 'two_two', 'third_class', 'not_required'],
     visaSponsorship: ['exclude']
   },
   qualificationOptions: [{
@@ -29,16 +29,16 @@ module.exports = {
   }],
   entryRequirementOptions: [{
     text: '2:1 or first',
-    value: '21'
+    value: 'two_one'
   }, {
     text: '2:2',
-    value: '22'
+    value: 'two_two'
   }, {
     text: 'Third',
-    value: 'third'
+    value: 'third_class'
   }, {
     text: 'Pass (ordinary degree)',
-    value: 'degree'
+    value: 'not_required'
   }],
   fundingTypeOptions: [{
     text: 'Only show courses that come with a salary',
