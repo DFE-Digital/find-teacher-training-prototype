@@ -48,7 +48,7 @@ module.exports = () => {
 
     course.has_fees = course.funding_type === 'fee'
     course.has_salary = course.funding_type === 'salary' || course.funding_type === 'apprenticeship'
-    course.bursary_only = course.has_bursary && !course.has_scholarship
+    course.has_bursary_only = course.has_bursary && !course.has_scholarship
     course.has_scholarship_and_bursary = course.has_bursary && course.has_scholarship
 
     if (course.has_salary) {
