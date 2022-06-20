@@ -102,7 +102,7 @@ module.exports = {
     value: 'W1'
   }, {
     text: 'Biology',
-    hint: 'Bursaries of £7,000 available.',
+    hint: 'Bursaries of £10,000 available',
     ageGroup: 'secondary',
     value: 'C1',
     hasSke: true
@@ -112,7 +112,7 @@ module.exports = {
     value: '08'
   }, {
     text: 'Chemistry',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: 'F1',
     hasSke: true
@@ -122,7 +122,6 @@ module.exports = {
     value: '09'
   }, {
     text: 'Classics',
-    hint: 'Bursaries of £10,000 available.',
     ageGroup: 'secondary',
     value: 'Q8'
   }, {
@@ -131,7 +130,7 @@ module.exports = {
     value: 'P3'
   }, {
     text: 'Computing',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: '11',
     hasSke: true
@@ -141,6 +140,7 @@ module.exports = {
     value: '12'
   }, {
     text: 'Design and technology',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: 'DT',
     hasSke: true
@@ -159,6 +159,7 @@ module.exports = {
     hasSke: true
   }, {
     text: 'Geography',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: 'F8'
   }, {
@@ -171,7 +172,7 @@ module.exports = {
     value: 'V1'
   }, {
     text: 'Mathematics',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: 'G1',
     hasSke: true
@@ -189,7 +190,7 @@ module.exports = {
     value: 'C6'
   }, {
     text: 'Physics',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: 'F3',
     hasSke: true
@@ -216,49 +217,49 @@ module.exports = {
     value: '16'
   }, {
     text: 'French',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '15',
     hasSke: true
   }, {
     text: 'German',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '17',
     hasSke: true
   }, {
     text: 'Italian',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '18',
     hasSke: true
   }, {
     text: 'Japanese',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '19',
     hasSke: true
   }, {
     text: 'Mandarin',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '20',
     hasSke: true
   }, {
     text: 'Modern languages (other)',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '24',
     hasSke: true
   }, {
     text: 'Russian',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '21',
     hasSke: true
   }, {
     text: 'Spanish',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '22',
     hasSke: true
