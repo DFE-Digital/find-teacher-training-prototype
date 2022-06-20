@@ -34,7 +34,7 @@
     <dt class="app-list--description__label">Age range</dt>
     <dd>{{ course.age_minimum }} to {{ course.age_maximum }}</dd>
   {% endif %}
-  {% if course.length %}
+  {% if course.course_length %}
     <dt class="app-list--description__label">Course length</dt>
     <dd>{{ course.course_length | getCourseLengthLabel }}</dd>
   {% endif %}
