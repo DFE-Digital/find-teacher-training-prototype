@@ -264,7 +264,7 @@ module.exports = {
     hasSke: true
   }, {
     text: 'Further education',
-    agreGroup: 'furtherEducation',
+    ageGroup: 'furtherEducation',
     value: '41'
   }]
 }
