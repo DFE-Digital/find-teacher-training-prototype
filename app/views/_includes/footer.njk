@@ -1,0 +1,20 @@
+{{ govukFooter({
+  meta: {
+    items: [{
+      href: "/admin/clear-data",
+      text: "Clear data"
+    } if useAutoStoreData, {
+      href: "#",
+      text: "Accessibility"
+    }, {
+      href: "#",
+      text: "Cookies"
+    }, {
+      href: "#",
+      text: "Privacy policy"
+    }, {
+      href: "#",
+      text: "Terms and conditions"
+    }]
+  }
+}) }}

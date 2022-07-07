@@ -1,7 +1,7 @@
 module.exports = {
   apiEndpoint: 'https://api.publish-teacher-training-courses.service.gov.uk/api/public/v1',
   cycle: 2022,
-  nearingEndOfCycle: true,
+  nearingEndOfCycle: false,
   defaults: {
     latitude: false,
     longitude: false,
@@ -11,7 +11,8 @@ module.exports = {
     studyType: ['full_time', 'part_time'],
     subjects: [],
     vacancy: ['include'],
-    entryRequirement: ['21', '22', 'third', 'degree']
+    degreeGrade: ['two_one', 'two_two', 'third_class', 'not_required'],
+    visaSponsorship: ['exclude']
   },
   qualificationOptions: [{
     text: 'QTS only',
@@ -26,21 +27,21 @@ module.exports = {
     hint: 'To teach further education you don’t need QTS. Instead you can study for a PGCE or PGDE without QTS.',
     value: 'pgce,pgde'
   }],
-  entryRequirementOptions: [{
-    text: '2:1 degree or higher',
-    value: '21'
+  degreeGradeOptions: [{
+    text: '2:1 or first',
+    value: 'two_one'
   }, {
-    text: '2:2 degree or higher',
-    value: '22'
+    text: '2:2',
+    value: 'two_two'
   }, {
-    text: 'Third class degree or higher',
-    value: 'third'
+    text: 'Third',
+    value: 'third_class'
   }, {
-    text: 'Any degree grade',
-    value: 'degree'
+    text: 'Pass (ordinary degree)',
+    value: 'not_required'
   }],
-  salaryOptions: [{
-    text: 'Only show courses with a salary',
+  fundingTypeOptions: [{
+    text: 'Only show courses that come with a salary',
     value: ['include']
   }],
   studyTypeOptions: [{
@@ -55,6 +56,15 @@ module.exports = {
   sendOptions: [{
     text: 'Only show courses with a SEND specialism',
     name: 'send',
+    value: ['include']
+  }],
+  vacancyOptions: [{
+    text: 'Only show courses with vacancies',
+    value: ['include']
+  }],
+  visaSponsorshipOptions: [{
+    text: 'Only show courses with visa sponsorship',
+    name: 'visaSponsorship',
     value: ['include']
   }],
   subjectOptions: [{
@@ -92,7 +102,7 @@ module.exports = {
     value: 'W1'
   }, {
     text: 'Biology',
-    hint: 'Bursaries of £7,000 available.',
+    hint: 'Bursaries of £10,000 available',
     ageGroup: 'secondary',
     value: 'C1',
     hasSke: true
@@ -102,7 +112,7 @@ module.exports = {
     value: '08'
   }, {
     text: 'Chemistry',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: 'F1',
     hasSke: true
@@ -112,7 +122,6 @@ module.exports = {
     value: '09'
   }, {
     text: 'Classics',
-    hint: 'Bursaries of £10,000 available.',
     ageGroup: 'secondary',
     value: 'Q8'
   }, {
@@ -121,7 +130,7 @@ module.exports = {
     value: 'P3'
   }, {
     text: 'Computing',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: '11',
     hasSke: true
@@ -131,6 +140,7 @@ module.exports = {
     value: '12'
   }, {
     text: 'Design and technology',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: 'DT',
     hasSke: true
@@ -149,6 +159,7 @@ module.exports = {
     hasSke: true
   }, {
     text: 'Geography',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: 'F8'
   }, {
@@ -161,7 +172,7 @@ module.exports = {
     value: 'V1'
   }, {
     text: 'Mathematics',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: 'G1',
     hasSke: true
@@ -179,7 +190,7 @@ module.exports = {
     value: 'C6'
   }, {
     text: 'Physics',
-    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available.',
+    hint: 'Scholarships of £26,000 and bursaries of £24,000 are available',
     ageGroup: 'secondary',
     value: 'F3',
     hasSke: true
@@ -206,59 +217,55 @@ module.exports = {
     value: '16'
   }, {
     text: 'French',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '15',
     hasSke: true
   }, {
     text: 'German',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '17',
     hasSke: true
   }, {
     text: 'Italian',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '18',
     hasSke: true
   }, {
     text: 'Japanese',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '19',
     hasSke: true
   }, {
     text: 'Mandarin',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '20',
     hasSke: true
   }, {
     text: 'Modern languages (other)',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '24',
     hasSke: true
   }, {
     text: 'Russian',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '21',
     hasSke: true
   }, {
     text: 'Spanish',
-    hint: 'Bursaries of £10,000 available.',
+    hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '22',
     hasSke: true
   }, {
     text: 'Further education',
-    agreGroup: 'furtherEducation',
+    ageGroup: 'furtherEducation',
     value: '41'
-  }],
-  vacancyOptions: [{
-    text: 'Only show courses with vacancies',
-    value: ['include']
   }]
 }

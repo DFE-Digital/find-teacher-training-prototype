@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon')
 const marked = require('marked')
+const numeral = require('numeral')
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -31,6 +32,15 @@ module.exports = (env) => {
 
       return datetime
     }
+  }
+
+  /* ------------------------------------------------------------------
+   numeral filter for use in Nunjucks
+   example: {{ params.number | numeral("0,00.0") }}
+   outputs: 1,000.00
+  ------------------------------------------------------------------ */
+  filters.numeral = (number, format) => {
+    return numeral(number).format(format)
   }
 
   /**
@@ -144,6 +154,111 @@ module.exports = (env) => {
     }
 
     return input
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the academic year label
+  example: {{ "September 2022" | getAcademicYearLabel }}
+  outputs: "Academic year 2022 to 2023"
+  ------------------------------------------------------------------ */
+  filters.getAcademicYearLabel = (date) => {
+    let label = ''
+
+    if (date) {
+      const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+
+      // the date is a string 'September 2022' so we need to split into useful parts
+      const dateParts = date.split(' ')
+
+      // get the month
+      let checkMonth = dateParts[0]
+      // convert the month into a number
+      checkMonth = months.indexOf(checkMonth.toLowerCase()) + 1
+      checkMonth = numeral(checkMonth).format('00')
+
+      // get the year
+      const checkYear = dateParts[1]
+
+      // reconstruct the date
+      let checkDate = checkYear + '-' + checkMonth
+      checkDate = DateTime.fromISO(checkDate)
+
+      // construct the academic year
+      const startDate = DateTime.fromISO(checkDate.year + '-08-01T00:00:00')
+      const endDate = DateTime.fromISO((checkDate.year + 1) + '-07-31T23:59:59')
+
+      // get the academic year boundaries
+      if (checkDate >= startDate && checkDate <= endDate) {
+        label = checkDate.year + ' to ' + (checkDate.year + 1)
+      } else {
+        label = (checkDate.year - 1) + ' to ' + checkDate.year
+      }
+    }
+
+    return label
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the course length label
+  example: {{ 'OneYear' | getCourseLengthLabel }}
+  outputs: "One year"
+  ------------------------------------------------------------------ */
+  filters.getCourseLengthLabel = (length) => {
+    let label
+
+    switch (length) {
+      case 'OneYear':
+        label = '1 year'
+        break
+      case 'TwoYears':
+        label = 'Up to 2 years'
+        break
+      default:
+        label = length
+    }
+
+    return label
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the qualification label
+  example: {{ 'pgce_with_qts' | getQualificationLabel }}
+  outputs: "PGCE with QTS"
+  ------------------------------------------------------------------ */
+  filters.getQualificationLabel = (qualification) => {
+    let label
+
+    if (qualification.length === 2 && qualification.includes('pgce')) {
+      label = 'PGCE with QTS'
+    } else if (qualification.length === 2 && qualification.includes('pgde')) {
+      label = 'PGDE with QTS'
+    } else {
+      label = qualification[0].toUpperCase()
+    }
+
+    return label
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the study mode label
+  example: {{ 'both' | getStudyModeLabel }}
+  outputs: "Full time or part time"
+  ------------------------------------------------------------------ */
+  filters.getStudyModeLabel = (studyMode) => {
+    let label
+
+    switch (studyMode) {
+      case 'full_time':
+        label = 'Full time'
+        break
+      case 'part_time':
+        label = 'Part time'
+        break
+      default:
+        label = 'Full time or part time'
+    }
+
+    return label
   }
 
   return filters

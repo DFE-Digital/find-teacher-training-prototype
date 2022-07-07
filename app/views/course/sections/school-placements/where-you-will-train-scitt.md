@@ -1,0 +1,1 @@
+You’ll be placed in different schools during your training. You can’t pick which schools you want to be in, but your course will try to place you in schools you can commute to.

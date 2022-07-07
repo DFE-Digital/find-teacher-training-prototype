@@ -1,0 +1,89 @@
+<div class="govuk-!-margin-bottom-8">
+  <h2 id="entry-requirements" class="govuk-heading-l">Entry requirements</h2>
+  <h3 class="govuk-heading-m">Qualifications needed</h3>
+  <div data-qa="course__required_qualifications">
+    <p class="govuk-body">
+      {% if course.degree_grade == "two_one" %}
+        An undergraduate degree at class 2:1 or above, or equivalent
+      {% elif course.degree_grade == "two_two" %}
+        An undergraduate degree at class 2:2 or above, or equivalent
+      {% elif course.degree_grade == "third_class" %}
+        An undergraduate degree, or equivalent. This should be an honours degree (Third or above), or equivalent
+      {% else %}
+        An undergraduate degree, or equivalent
+      {% endif %}
+    </p>
+
+    {% if course.degree_subject_requirements %}
+      <p class="govuk-body">
+        {{ course.degree_subject_requirements | markdown | safe }}
+      </p>
+    {% endif %}
+
+    {% if course.level == "secondary" %}
+      <p class="govuk-body">
+        Your degree subject should be in {{ course.name }} or a similar subject. Otherwise you’ll need to prove your subject knowledge in some other way.
+      </p>
+    {% endif %}
+
+    {% if course.level == "primary" %}
+      <p class="govuk-body">
+        Grade {{ course.gcse_grade_required }} (C) or above in English, maths and science, or equivalent qualification.
+      </p>
+    {% elif course.level == "secondary" %}
+      <p class="govuk-body">
+        Grade {{ course.gcse_grade_required }} (C) or above in English and maths, or equivalent qualification.
+      </p>
+    {% endif %}
+
+    <p class="govuk-body">
+      {% if course.accept_pending_gcse %}
+        We’ll consider candidates with pending GCSEs.
+      {% else %}
+        We will not consider candidates with pending GCSEs.
+      {% endif %}
+    </p>
+
+    {% set equivalencies = [] %}
+
+    {% if course.accept_english_gcse_equivalency %}
+      {% set equivalencies = equivalencies | push('English') %}
+    {% endif %}
+
+    {% if course.accept_maths_gcse_equivalency %}
+      {% set equivalencies = equivalencies | push('maths') %}
+    {% endif %}
+
+    {% if course.accept_science_gcse_equivalency %}
+      {% set equivalencies = equivalencies | push('science') %}
+    {% endif %}
+
+    <p class="govuk-body">
+      {% if course.accept_gcse_equivalency %}
+        We’ll consider candidates who need to take a GCSE equivalency test in {{ equivalencies | formatList }}.
+      {% else %}
+        We will not consider candidates who need to take a GCSE equivalency test.
+      {% endif %}
+    </p>
+
+    {% if course.additional_gcse_equivalencies %}
+      <p class="govuk-body">
+        {{ course.additional_gcse_equivalencies | markdown | safe }}
+      </p>
+    {% endif %}
+  </div>
+
+  {% if course.personal_qualities %}
+    <h3 class="govuk-heading-m">Personal qualities</h3>
+    <div data-qa="course__personal_qualities">
+      {{ course.personal_qualities | markdown | safe }}
+    </div>
+  {% endif %}
+
+  {% if course.other_requirements %}
+    <h3 class="govuk-heading-m">Other requirements</h3>
+    <div data-qa="course__other_requirements">
+      {{ course.other_requirements | markdown | safe }}
+    </div>
+  {% endif %}
+</div>

@@ -1,35 +1,34 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Find courses by location or by training provider" %}
+{% set errorMessage = "Select find courses by location or by training provider" %}
 
-{% block backLink %}
-  {{ govukBackLink({
-    text: backLink.text,
-    href: backLink.href
-  }) if backLink }}
+{% block pageTitle %}
+{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+
 {% endblock %}
 
 {% block content %}
+
+  {% include "_includes/error-summary.njk" %}
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <form action="/search" method="post">
-        {{ govukErrorSummary({
-          titleText: "There is a problem",
-          errorList: [{
-            text: error.error_message,
-            href: "#postcode-town-or-city"
-          }]
-        }) if error }}
 
-        {% set postcodeHtml %}
+      <form action="/search" method="post" accept-charset="utf-8" novalidate>
+
+        {% set locationHtml %}
           {{ govukInput({
-            id: 'location',
+            id: 'location-name',
+            name: "locationName",
             label: {
               text: "Postcode, town or city"
             },
             value: data.locationName,
             autocomplete: 'off',
-            name: "locationName",
             formGroup: {
               classes: "govuk-!-margin-bottom-0"
             }
@@ -39,15 +38,15 @@
 
         {% set providerHtml %}
           {{ govukInput({
+            id: "provider-name",
+            name: "providerName",
             label: {
               text: "School, university or other training provider"
             },
             hint: {
               text: "Enter the name or provider code"
             },
-            value: data.providerName,
-            id: "providerName",
-            name: "providerName"
+            value: data.providerName
           }) }}
         {% endset %}
 
@@ -60,12 +59,15 @@
               classes: "govuk-fieldset__legend--l"
             }
           },
+          errorMessage: {
+            text: errorMessage
+          } if showError,
           items: [{
             value: "location",
             text: "By city, town or postcode",
             checked: (data.q == "location"),
             conditional: {
-              html: postcodeHtml
+              html: locationHtml
             }
           }, {
             value: "england",
@@ -86,7 +88,9 @@
         {{ govukButton({
           text: "Continue"
         }) }}
+
       </form>
+
     </div>
   </div>
 {% endblock %}
