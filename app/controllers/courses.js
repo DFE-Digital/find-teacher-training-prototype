@@ -2,7 +2,8 @@ const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
 exports.show = async (req, res) => {
-  const { providerCode, courseCode } = req.params
+  const providerCode = req.params.providerCode.toUpperCase()
+  const courseCode = req.params.courseCode.toUpperCase()
 
   try {
     const courseSingleResponse = await teacherTrainingService.getCourse(providerCode, courseCode)
@@ -32,7 +33,7 @@ exports.show = async (req, res) => {
     })
 
     // Mock course visa sponsorship
-    course.canSponsorVisa = (Math.random(course.code) > 0.5)
+    // course.canSponsorVisa = (Math.random(course.code) > 0.5)
 
     // Mock placement schools
     // Assume placement schools are locations with a campus code that isn’t '-'
@@ -40,19 +41,18 @@ exports.show = async (req, res) => {
 
     // Mock school placement policy
     // Assume provider has chosen to show placement schools if a course has more than 1 school location
-    course.placementPolicy = schools.length > 1 ? 'hosted' : 'placed'
+    // course.placementPolicy = schools.length > 1 ? 'hosted' : 'placed'
 
     // Mock centre-based training location
     // Assume centre-based training location is location with campus code '-'
-    const mainTrainingLocation = locations.find(location => location.code === '-')
-    const trainingLocationOptions = ['remote', 'school', mainTrainingLocation]
+    // const mainTrainingLocation = locations.find(location => location.code === '-')
+    // const trainingLocationOptions = ['remote', 'school', mainTrainingLocation]
 
-    course.trainingLocation = trainingLocationOptions[Math.floor(Math.random() * trainingLocationOptions.length)]
+    // course.trainingLocation = trainingLocationOptions[Math.floor(Math.random() * trainingLocationOptions.length)]
 
-    res.render('course', {
+    res.render('course/index', {
       course,
       schools
-      // placementAreas
     })
   } catch (error) {
     res.render('error', {

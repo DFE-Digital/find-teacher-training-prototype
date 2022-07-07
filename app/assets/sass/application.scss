@@ -11,18 +11,25 @@ $git-brand-colour: #159964;
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
 
+// Import local component styles
+@import "app/views/_components/all.scss";
+
+// Styles that aren't in the GOV.UK Frontend or local components
+@import "core/list";
+@import "core/table";
+
+// Utilities
+@import "utilities/hidden";
+@import "utilities/overrides";
+
 // Components that aren’t in Frontend
 @import "components/autocomplete";
-@import "components/advice";
 @import "components/description-list";
 @import "components/filter";
 @import "components/filter-layout";
-@import "components/list";
-@import "components/pagination";
-@import "components/related";
-@import "components/result-detail";
+@import "components/promoted-link";
 @import "components/search-results";
-@import "components/table";
 
-// Overrides
-@import "overrides";
+.app-tag--prototype {
+  background-color: govuk-colour('red');
+}

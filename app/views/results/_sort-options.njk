@@ -1,0 +1,33 @@
+{% if data.q == "location" %}
+  <div class="app-search-results-header">
+   <p class="govuk-body">Sorted by distance</p>
+  </div>
+{% elif data.q == "england" %}
+  <div class="app-search-results-header">
+    <form class="app-search-results-header__sort" action="/results" method="get" accept-charset="utf-8" novalidate>
+      {{ govukSelect({
+        id: "sortby",
+        name: "sortBy",
+        formGroup: {
+          classes: "govuk-!-margin-bottom-0"
+        },
+        label: {
+          text: "Sorted by",
+          classes: "govuk-!-display-inline-block"
+        },
+        items: [{
+          value: "0",
+          text: "Training provider (A-Z)",
+          selected: (data.sortBy == "0")
+        }, {
+          value: "1",
+          text: "Training provider (Z-A)",
+          selected: (data.sortBy == "1")
+        }],
+        attributes: {
+          onchange: "this.form.submit()"
+        }
+      }) }}
+    </form>
+  </div>
+{% endif %}

@@ -1,0 +1,63 @@
+<div class="govuk-!-margin-bottom-8">
+  <h2 id="fees-and-financial-support" class="govuk-heading-l">Fees and financial support</h2>
+
+  {% if course.has_fees %}
+
+    {% if course.fee_domestic %}
+      {% if course.fee_international %}
+        <table class="govuk-table app-table--vertical-align-middle">
+          <caption class="govuk-table__caption govuk-!-font-weight-regular govuk-!-margin-bottom-4">The course fees
+            for {{ course.year_range }} are as follows:
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-visually-hidden govuk-table__row">
+              <th class="govuk-table__header">Student type</th>
+              <th class="govuk-table__header">Fees to pay</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">UK students</td>
+              <td class="govuk-table__cell">£{{ course.fee_domestic | numeral('0,0') }}</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">International students</td>
+              <td class="govuk-table__cell">£{{ course.fee_international | numeral('0,0') }}</td>
+            </tr>
+          </tbody>
+        </table>
+      {% else %}
+        <p class="govuk-body">
+          The course fees for UK students in {{ course.year_range }} are £{{ course.fee_domestic | numeral('0,0') }}.
+        </p>
+      {% endif %}
+
+      {% if course.fee_details %}
+        {{ course.fee_details | markdown | safe }}
+      {% endif %}
+    {% endif %}
+
+  {% endif %}
+
+  {% set financialSupportHtml %}
+    {% if course.has_salary %}
+      {% include "./fees-and-financial-support/salaried.md" %}
+    {% elif course.has_scholarship_and_bursary %}
+      {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
+    {% elif course.has_bursary %}
+      {% include "./fees-and-financial-support/bursary.md" %}
+    {% else %}
+      {% include "./fees-and-financial-support/loan.md" %}
+    {% endif %}
+  {% endset %}
+
+  {{ appAdvice({
+    title: "Financial support from the government",
+    html: financialSupportHtml | trim | markdown
+  }) }}
+
+  {% if course.financial_support %}
+    <h3 class="govuk-heading-m">Financial support from the training provider</h3>
+    {{ course.financial_support | markdown | safe }}
+  {% endif %}
+</div>

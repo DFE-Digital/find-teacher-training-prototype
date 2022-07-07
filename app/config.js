@@ -26,5 +26,9 @@ module.exports = {
   cookieText: 'GOV.UK uses cookies to make the site simpler. <a href="#">Find out more about cookies</a>',
 
   // Enable or disable Browser Sync
-  useBrowserSync: 'true'
+  useBrowserSync: 'true',
+
+  showStartPage: 'false',
+
+  phaseTagText: 'beta'
 }

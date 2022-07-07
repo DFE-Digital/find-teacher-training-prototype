@@ -12,7 +12,11 @@
       {{ params.html | safe if params.html else params.text }}
     {% endif %}
     {% if params.more %}
-      <p class="govuk-body"><a href="{{ params.more.href }}" class="govuk-link">{{ params.more.text }}</a></p>
+      <p class="govuk-body">
+        <a href="{{ params.more.href }}" class="govuk-link">
+          {{ params.more.html | safe if params.more.html else params.more.text }}
+        </a>
+      </p>
     {% endif %}
   </div>
 </aside>

@@ -25,6 +25,7 @@ if (window.console && window.console.info) {
 }
 
 $(document).ready(function () {
+  GOVUK.modules.start()
   filterToggleButton.init()
   window.GOVUKFrontend.initAll()
 })
