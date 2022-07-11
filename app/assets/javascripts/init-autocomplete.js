@@ -1,11 +1,13 @@
-import accessibleAutocomplete from "accessible-autocomplete";
-import debounce from 'lodash.debounce';
+// import accessibleAutocomplete from "accessible-autocomplete";
+// import debounce from 'lodash.debounce';
 
-export const getPath = (endpoint, query) => {
+// export
+const getPath = (endpoint, query) => {
   return `${endpoint}?query=${query}`;
 }
 
-export const request = endpoint => {
+// export
+const request = endpoint => {
   let xhr = null; // Hoist this call so that we can abort previous requests.
 
   return (query, callback) => {
@@ -66,4 +68,4 @@ const initAutocomplete = ({ element, input, path, selectNameAndCode }) => {
   }
 };
 
-export default initAutocomplete;
+// export default initAutocomplete;
