@@ -22,8 +22,8 @@
 
         {% set locationHtml %}
           {{ govukInput({
-            id: 'location-name',
-            name: "locationName",
+            id: 'location',
+            name: "location",
             label: {
               text: "Postcode, town or city"
             },
@@ -38,8 +38,8 @@
 
         {% set providerHtml %}
           {{ govukInput({
-            id: "provider-name",
-            name: "providerName",
+            id: "provider",
+            name: "provider",
             label: {
               text: "School, university or other training provider"
             },
@@ -48,6 +48,7 @@
             },
             value: data.providerName
           }) }}
+          <div id="provider-autocomplete" class="govuk-body"></div>
         {% endset %}
 
         {{ govukRadios({
@@ -93,4 +94,23 @@
 
     </div>
   </div>
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/accessible-autocomplete.js"></script>
+  <script src="/public/javascripts/init-autocomplete.js"></script>
+
+  <script type="text/javascript">
+  initAutocomplete({
+    element: "location-autocomplete",
+    input: "location",
+    path: "/location-suggestions",
+  });
+
+  initAutocomplete({
+    element: "provider-autocomplete",
+    input: "provider",
+    path: "/provider-suggestions",
+  });
+  </script>
 {% endblock %}
