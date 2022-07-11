@@ -1,5 +1,5 @@
+const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
-// const locationSuggestions = require('../services/location-suggestions')
 
 exports.search_get = async (req, res) => {
   // const query = req.session.data.q || req.query.q
@@ -139,4 +139,36 @@ exports.secondary_subjects_post = async (req, res) => {
   } else {
     res.redirect('/results')
   }
+}
+
+exports.location_suggestions_get = async (req, res) => {
+  req.headers['Access-Control-Allow-Origin'] = true
+}
+
+exports.provider_suggestions_get = async (req, res) => {
+  req.headers['Access-Control-Allow-Origin'] = true
+
+  let ProviderSuggestionListResponse
+  ProviderSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.query.query)
+
+  const { data } = ProviderSuggestionListResponse
+
+  let providers = data
+
+  if (providers.length) {
+    providers = providers.map(providerResource => {
+      return providerResource.attributes
+    })
+  }
+
+  // Results
+  const results = await Promise.all(providers)
+
+  results.sort((a, b) => {
+    return a.name.localeCompare(b.name)
+  })
+
+  console.log(results);
+
+  return results
 }
