@@ -11,6 +11,9 @@ exports.search_get = async (req, res) => {
 }
 
 exports.search_post = async (req, res) => {
+  // Search query
+  const q = req.session.data.q || req.query.q
+
   const errors = []
 
   if (!req.session.data.q?.length) {
@@ -26,10 +29,14 @@ exports.search_post = async (req, res) => {
       showError: (errors.length)
     })
   } else {
-    let providerSuggestionListResponse
-    providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
 
-    req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
+    if (q === 'provider') {
+      let providerSuggestionListResponse
+      providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
+      req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
+    } else if (q === 'location') {
+
+    }
 
     res.redirect('/age-groups')
   }
