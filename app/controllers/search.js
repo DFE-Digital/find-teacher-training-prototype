@@ -145,19 +145,19 @@ exports.secondary_subjects_post = async (req, res) => {
 exports.location_suggestions_json = async (req, res) => {
   req.headers['Access-Control-Allow-Origin'] = true
 
-  let LocationSuggestionListResponse
-  LocationSuggestionListResponse = await locationSuggestionsService.getLocationSuggestions(req.query.query)
+  let locationSuggestionListResponse
+  locationSuggestionListResponse = await locationSuggestionsService.getLocationSuggestions(req.query.query)
 
-  res.json(LocationSuggestionListResponse)
+  res.json(locationSuggestionListResponse)
 }
 
 exports.provider_suggestions_json = async (req, res) => {
   req.headers['Access-Control-Allow-Origin'] = true
 
-  let ProviderSuggestionListResponse
-  ProviderSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.query.query)
+  let providerSuggestionListResponse
+  providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.query.query)
 
-  let providers = ProviderSuggestionListResponse.data
+  let providers = providerSuggestionListResponse.data
 
   if (providers.length) {
     providers = providers.map(providerResource => {
@@ -171,6 +171,8 @@ exports.provider_suggestions_json = async (req, res) => {
   results.sort((a, b) => {
     return a.name.localeCompare(b.name)
   })
+
+  console.log(results);
 
   res.json(results)
 }
