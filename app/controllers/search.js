@@ -26,6 +26,11 @@ exports.search_post = async (req, res) => {
       showError: (errors.length)
     })
   } else {
+    let providerSuggestionListResponse
+    providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
+
+    req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
+
     res.redirect('/age-groups')
   }
 }
@@ -171,8 +176,6 @@ exports.provider_suggestions_json = async (req, res) => {
   results.sort((a, b) => {
     return a.name.localeCompare(b.name)
   })
-
-  console.log(results);
 
   res.json(results)
 }
