@@ -1,3 +1,4 @@
+const locationSuggestionsService = require('../services/location-suggestions')
 const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
@@ -141,19 +142,22 @@ exports.secondary_subjects_post = async (req, res) => {
   }
 }
 
-exports.location_suggestions_get = async (req, res) => {
+exports.location_suggestions_json = async (req, res) => {
   req.headers['Access-Control-Allow-Origin'] = true
+
+  let LocationSuggestionListResponse
+  LocationSuggestionListResponse = await locationSuggestionsService.getLocationSuggestions(req.query.query)
+
+  res.json(LocationSuggestionListResponse)
 }
 
-exports.provider_suggestions_get = async (req, res) => {
+exports.provider_suggestions_json = async (req, res) => {
   req.headers['Access-Control-Allow-Origin'] = true
 
   let ProviderSuggestionListResponse
   ProviderSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.query.query)
 
-  const { data } = ProviderSuggestionListResponse
-
-  let providers = data
+  let providers = ProviderSuggestionListResponse.data
 
   if (providers.length) {
     providers = providers.map(providerResource => {
@@ -168,7 +172,5 @@ exports.provider_suggestions_get = async (req, res) => {
     return a.name.localeCompare(b.name)
   })
 
-  console.log(results);
-
-  return results
+  res.json(results)
 }
