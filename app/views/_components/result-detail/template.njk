@@ -39,7 +39,7 @@
           <p class="govuk-body">{{ params.trainingLocation.distance }} miles from you</p>
           <p class="govuk-hint">{{ params.trainingLocation.address }}</p>
         {% else %}
-          <p class="govuk-body">{{ params.trainingLocation.address }}</p>
+          {{ params.trainingLocation.address }}
         {% endif %}
       </dd>
     </div>
