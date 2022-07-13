@@ -31,9 +31,8 @@ exports.search_post = async (req, res) => {
   } else {
 
     if (q === 'provider') {
-      let providerSuggestionListResponse
-      providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
-      req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
+      let providerSingleResponse = await teacherTrainingService.getProvider(req.session.data.provider)
+      req.session.data.provider = providerSingleResponse
     } else if (q === 'location') {
 
     }
