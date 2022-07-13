@@ -110,6 +110,10 @@
   background-color: govuk-colour("light-grey");
 }
 
+.autocomplete__option--hint {
+  color: $govuk-secondary-text-colour;
+}
+
 .autocomplete__option--focused,
 .autocomplete__option:hover {
   background-color: $govuk-link-colour;
