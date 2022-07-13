@@ -7,15 +7,16 @@
 .autocomplete__input {
   -webkit-appearance: none;
   border: $govuk-border-width-form-element solid $govuk-input-border-colour;
-  border-radius: 0;
+  border-radius: 0; /* Safari 10 on iOS adds implicit border rounding. */
   box-sizing: border-box;
-  margin-bottom: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-bottom: 0; /* BUG: Safari 10 on macOS seems to add an implicit margin. */
   width: 100%;
 }
 
 .autocomplete__input {
   background-color: transparent;
-  padding: govuk-spacing(1);
   position: relative;
 }
 
@@ -24,6 +25,9 @@
   position: absolute;
 }
 
+.autocomplete__input--default {
+  padding: 5px;
+}
 .autocomplete__input--focused {
   outline: $govuk-focus-width solid $govuk-focus-colour;
   outline-offset: 0;
@@ -35,17 +39,18 @@
 }
 
 .autocomplete__input--show-all-values {
-  padding-right: (govuk-spacing(1) + 24px + govuk-spacing(2));
+  padding: (govuk-spacing(1) + 34px + govuk-spacing(2)); /* Space for arrow. Other padding should match .autocomplete__input--default. */
   cursor: pointer;
 }
 
-.autocomplete__dropdown-arrow-down {
+.autocomplete__dropdown-arrow-down{
+  z-index: -1;
   display: inline-block;
-  height: 24px;
   position: absolute;
   right: govuk-spacing(2);
-  top: govuk-spacing(2);
   width: 24px;
+  height: 24px;
+  top: govuk-spacing(2);
 }
 
 .autocomplete__menu {
@@ -70,7 +75,7 @@
 }
 
 .autocomplete__menu--overlay {
-  box-shadow: rgba(0,0,0,.256863) 0 2px 6px;
+  box-shadow: rgba(0, 0, 0, .256863) 0 2px 6px;
   left: 0;
   position: absolute;
   top: 100%;
@@ -111,13 +116,34 @@
 
 .autocomplete__option--focused,
 .autocomplete__option:hover {
-  background-color: govuk-colour("blue");
-  border-color: govuk-colour("blue");
+  background-color: $govuk-link-colour;
+  border-color: $govuk-link-colour;
   color: govuk-colour("white");
-  outline: 0;
+  outline: none;
+}
 
-  .autocomplete__option--hint {
-    color: govuk-colour("white");
+@media (-ms-high-contrast: active), (forced-colors: active) {
+  .autocomplete__menu {
+    border-color: FieldText;
+  }
+
+  .autocomplete__option {
+    background-color: Field;
+    color: FieldText;
+  }
+
+  .autocomplete__option--focused,
+  .autocomplete__option:hover {
+    forced-color-adjust: none; /* prevent backplate from obscuring text */
+    background-color: Highlight;
+    border-color: Highlight;
+    color: HighlightText;
+
+    /* Prefer SelectedItem / SelectedItemText in browsers that support it */
+    background-color: SelectedItem;
+    border-color: SelectedItem;
+    color: SelectedItemText;
+    outline-color: SelectedItemText;
   }
 }
 
@@ -130,7 +156,7 @@
 .autocomplete__hint,
 .autocomplete__input,
 .autocomplete__option {
-  @include govuk-font(19);
+  @include govuk-font(16);
 }
 
 .autocomplete__hint,
@@ -138,7 +164,10 @@
   padding: govuk-spacing(1);
 }
 
-// https://github.com/alphagov/accessible-autocomplete/issues/202
-.autocomplete__dropdown-arrow-down {
-  pointer-events: none;
+@media (min-width: 641px) {
+  .autocomplete__hint,
+  .autocomplete__input,
+  .autocomplete__option {
+    @include govuk-font(19);
+  }
 }

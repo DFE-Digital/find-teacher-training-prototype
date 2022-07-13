@@ -35,8 +35,12 @@
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">University location</dt>
       <dd class="app-result-detail__value">
-        <p class="govuk-body">{{ params.trainingLocation.distance }} miles from you</p>
-        <p class="govuk-hint">{{ params.trainingLocation.address }}</p>
+        {% if params.trainingLocation.distance %}
+          <p class="govuk-body">{{ params.trainingLocation.distance }} miles from you</p>
+          <p class="govuk-hint">{{ params.trainingLocation.address }}</p>
+        {% else %}
+          {{ params.trainingLocation.address }}
+        {% endif %}
       </dd>
     </div>
   {% endif %}
@@ -91,16 +95,4 @@
       {% endif %}
     </dd>
   </div>
-  {# <div class="app-result-detail__row">
-    <dt class="app-result-detail__key">Academic year</dt>
-    <dd class="app-result-detail__value">
-      {{ params.startDate | getAcademicYearLabel }}
-    </dd>
-  </div> #}
-  {# {% if params.vacancies %}
-    <div class="app-result-detail__row">
-      <dt class="app-result-detail__key">Vacancies</dt>
-      <dd class="app-result-detail__value">{{ params.vacancies }}</dd>
-    </div>
-  {% endif %} #}
 </dl>
