@@ -34,7 +34,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "inquirer": "^8.2.4",
     "lodash": "^4.17.21",
-    "luxon": "^2.4.0",
+    "luxon": "^3.0.1",
     "marked": "^4.0.15",
     "node-cache": "^5.1.2",
     "node-geocoder": "^4.0.0",
