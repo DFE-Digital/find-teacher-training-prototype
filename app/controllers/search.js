@@ -1,5 +1,6 @@
+const locationSuggestionsService = require('../services/location-suggestions')
+const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
-// const locationSuggestions = require('../services/location-suggestions')
 
 exports.search_get = async (req, res) => {
   // const query = req.session.data.q || req.query.q
@@ -10,6 +11,9 @@ exports.search_get = async (req, res) => {
 }
 
 exports.search_post = async (req, res) => {
+  // Search query
+  const q = req.session.data.q || req.query.q
+
   const errors = []
 
   if (!req.session.data.q?.length) {
@@ -25,6 +29,15 @@ exports.search_post = async (req, res) => {
       showError: (errors.length)
     })
   } else {
+
+    if (q === 'provider') {
+      let providerSuggestionListResponse
+      providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
+      req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
+    } else if (q === 'location') {
+
+    }
+
     res.redirect('/age-groups')
   }
 }
@@ -139,4 +152,37 @@ exports.secondary_subjects_post = async (req, res) => {
   } else {
     res.redirect('/results')
   }
+}
+
+exports.location_suggestions_json = async (req, res) => {
+  req.headers['Access-Control-Allow-Origin'] = true
+
+  let locationSuggestionListResponse
+  locationSuggestionListResponse = await locationSuggestionsService.getLocationSuggestions(req.query.query)
+
+  res.json(locationSuggestionListResponse)
+}
+
+exports.provider_suggestions_json = async (req, res) => {
+  req.headers['Access-Control-Allow-Origin'] = true
+
+  let providerSuggestionListResponse
+  providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.query.query)
+
+  let providers = providerSuggestionListResponse.data
+
+  if (providers.length) {
+    providers = providers.map(providerResource => {
+      return providerResource.attributes
+    })
+  }
+
+  // Results
+  const results = await Promise.all(providers)
+
+  results.sort((a, b) => {
+    return a.name.localeCompare(b.name)
+  })
+
+  res.json(results)
 }

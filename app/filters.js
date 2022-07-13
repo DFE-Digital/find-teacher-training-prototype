@@ -1,3 +1,6 @@
+const _ = require('lodash')
+const fs = require('fs')
+const path = require('path')
 const { DateTime } = require('luxon')
 const marked = require('marked')
 const numeral = require('numeral')
@@ -8,12 +11,32 @@ marked.setOptions({
   smartypants: true
 })
 
+const individualFiltersFolder = path.join(__dirname, './filters')
+
 module.exports = (env) => {
   const filters = {}
 
-  filters.push = (array, item) => {
-    array.push(item)
-    return array
+  // Import filters from filters folder
+  if (fs.existsSync(individualFiltersFolder)) {
+    const files = fs.readdirSync(individualFiltersFolder)
+    files.forEach(file => {
+      const fileData = require(path.join(individualFiltersFolder, file))
+      // Loop through each exported function in file (likely just one)
+      Object.keys(fileData).forEach((filterGroup) => {
+        // Get each method from the file
+        Object.keys(fileData[filterGroup]).forEach(filterName => {
+          filters[filterName] = fileData[filterGroup][filterName]
+        })
+      })
+    })
+  }
+
+  filters.includes = (route, string) => {
+    if (route && route.includes(string)) {
+      return true
+    } else {
+      return false
+    }
   }
 
   /**
@@ -22,16 +45,33 @@ module.exports = (env) => {
    * @param {String} string Date
    * @param {String} format Date format
    */
-  filters.date = (string, format = 'yyyy-LL-dd') => {
-    if (string) {
-      const date = (string === 'now') ? DateTime.local() : string
+  // filters.date = (string, format = 'yyyy-LL-dd') => {
+  //   if (string) {
+  //     const date = (string === 'now') ? DateTime.local() : string
+  //
+  //     const datetime = DateTime.fromISO(date, {
+  //       locale: 'en-GB'
+  //     }).toFormat(format)
+  //
+  //     return datetime
+  //   }
+  // }
 
-      const datetime = DateTime.fromISO(date, {
-        locale: 'en-GB'
-      }).toFormat(format)
-
-      return datetime
+  /* ------------------------------------------------------------------
+  utility function to return true or false
+  example: {{ 'yes' | falsify }}
+  outputs: true
+  ------------------------------------------------------------------ */
+  filters.falsify = (input) => {
+    if (_.isNumber(input)) return input
+    else if (input == false) return false
+    if (_.isString(input)) {
+      const truthyValues = ['yes', 'true']
+      const falsyValues = ['no', 'false']
+      if (truthyValues.includes(input.toLowerCase())) return true
+      else if (falsyValues.includes(input.toLowerCase())) return false
     }
+    return input
   }
 
   /* ------------------------------------------------------------------
@@ -43,11 +83,27 @@ module.exports = (env) => {
     return numeral(number).format(format)
   }
 
-  /**
-   * Convert Markdown string to HTML
-   *
-   * @param {String} string Markdown
-   */
+  /* ------------------------------------------------------------------
+  utility function to get an error for a component
+  example: {{ errors | getErrorMessage('title') }}
+  outputs: "Enter a title"
+  ------------------------------------------------------------------ */
+  filters.getErrorMessage = function (array, fieldName) {
+    if (!array || !fieldName) {
+      return null
+    }
+
+    const error = array.filter((obj) =>
+      obj.fieldName === fieldName
+    )[0]
+
+    return error
+  }
+
+  /* ------------------------------------------------------------------
+  Convert Markdown string to HTML
+  @param {String} string Markdown
+  ------------------------------------------------------------------ */
   filters.markdown = (string, value) => {
     if (!string) {
       return ''

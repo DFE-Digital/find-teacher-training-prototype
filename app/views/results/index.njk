@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = resultsCount + " courses found" %}
+{% set title = resultsCount + " course" + ("s" if resultsCount > 1) + " found" %}
 
 {% block content %}
 
@@ -23,7 +23,7 @@
 
   <h1 class="govuk-heading-xl">
     {% if resultsCount > 0 %}
-      {{ resultsCount }} courses found
+      {{ resultsCount }} course {{- "s" if resultsCount > 1 }} found
     {% else %}
       No courses found
     {% endif %}
