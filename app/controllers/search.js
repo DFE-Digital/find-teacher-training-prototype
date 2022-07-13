@@ -34,7 +34,8 @@ exports.search_post = async (req, res) => {
       let providerSingleResponse = await teacherTrainingService.getProvider(req.session.data.provider)
       req.session.data.provider = providerSingleResponse
     } else if (q === 'location') {
-
+      let locationSingleResponse = await locationSuggestionsService.getLocation(req.session.data.location)
+      req.session.data.location = locationSingleResponse
     }
 
     res.redirect('/age-groups')
