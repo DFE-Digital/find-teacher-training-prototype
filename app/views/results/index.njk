@@ -67,8 +67,7 @@
               degreeGrade: result.course.degree_grade,
               visaSponsorship: result.course.visaSponsorship,
               startDate: result.course.start_date,
-              vacancies: "Yes" if result.course.has_vacancies else "No",
-              aboutCourse: result.course.about_course
+              vacancies: "Yes" if result.course.has_vacancies else "No"
             }) }}
           </li>
         {% endfor %}
