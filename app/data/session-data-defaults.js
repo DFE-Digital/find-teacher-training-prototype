@@ -11,7 +11,7 @@ module.exports = {
     studyType: ['full_time', 'part_time'],
     subjects: [],
     vacancy: ['include'],
-    degreeGrade: ['two_one', 'two_two', 'third_class', 'not_required'],
+    degreeGrade: ['two_one'],
     visaSponsorship: ['exclude']
   },
   qualificationOptions: [{
