@@ -28,7 +28,9 @@ module.exports = {
   // Enable or disable Browser Sync
   useBrowserSync: 'true',
 
+  // Enable or disable start page
   showStartPage: 'false',
 
+  // Phase tag text used in the phase banner
   phaseTagText: 'beta'
 }
