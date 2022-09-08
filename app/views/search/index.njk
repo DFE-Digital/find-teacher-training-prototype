@@ -65,9 +65,6 @@
               classes: "govuk-fieldset__legend--l"
             }
           },
-          errorMessage: {
-            text: errorMessage
-          } if showError and 1 == 0,
           errorMessage: errors | getErrorMessage("q"),
           items: [{
             value: "location",
