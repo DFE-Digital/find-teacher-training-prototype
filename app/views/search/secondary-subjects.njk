@@ -1,10 +1,9 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Which secondary subjects do you want to teach?" %}
-{% set errorMessage = "Select at least one secondary subject you want to teach" %}
 
 {% block pageTitle %}
-{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
 {% endblock %}
 
 {% block pageNavigation %}
@@ -48,9 +47,7 @@
           hint: {
             text: "Select all subjects you are interested in teaching"
           },
-          errorMessage: {
-            text: errorMessage
-          } if showError,
+          errorMessage: errors | getErrorMessage("secondary-subjects"),
           items: (items | sort(attribute="text") )
         }) }}
 
