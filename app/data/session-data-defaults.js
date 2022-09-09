@@ -247,7 +247,7 @@ module.exports = {
     value: '20',
     hasSke: true
   }, {
-    text: 'Modern languages (other)',
+    text: 'Modern languages - other',
     hint: 'Bursaries of £15,000 available',
     ageGroup: 'secondary',
     value: '24',
