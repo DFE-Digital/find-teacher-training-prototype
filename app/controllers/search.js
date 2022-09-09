@@ -16,26 +16,45 @@ exports.search_post = async (req, res) => {
 
   const errors = []
 
-  if (!req.session.data.q?.length) {
+  if (req.session.data.q === undefined) {
     const error = {}
     error.fieldName = "q"
     error.href = "#q"
     error.text = "Select find courses by location or by training provider"
     errors.push(error)
+  } else {
+    if (req.session.data.q === 'location' && !req.session.data.location.length) {
+      const error = {}
+      error.fieldName = "location"
+      error.href = "#location"
+      error.text = "Enter a city, town or postcode"
+      errors.push(error)
+    }
+
+    if (req.session.data.q === 'provider' && !req.session.data.provider.length) {
+      const error = {}
+      error.fieldName = "provider"
+      error.href = "#provider"
+      error.text = "Enter a provider name or code"
+      errors.push(error)
+    }
   }
 
   if (errors.length) {
     res.render('search/index', {
-      showError: (errors.length)
+      errors
     })
   } else {
 
     if (q === 'provider') {
-      let providerSuggestionListResponse
-      providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
-      req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
+      let providerSingleResponse = await teacherTrainingService.getProvider(req.session.data.provider)
+      req.session.data.provider = providerSingleResponse
     } else if (q === 'location') {
-
+      let locationSingleResponse = await locationSuggestionsService.getLocation(req.session.data.location)
+      req.session.data.place = locationSingleResponse
+      // add latitude and longitude to session data for radial search
+      req.session.data.latitude = locationSingleResponse.geometry.location.lat
+      req.session.data.longitude = locationSingleResponse.geometry.location.lng
     }
 
     res.redirect('/age-groups')
@@ -61,7 +80,7 @@ exports.age_groups_post = async (req, res) => {
 
   if (errors.length) {
     res.render('search/age-groups', {
-      showError: (errors.length)
+      errors
     })
   } else {
     if (ageGroup === 'primary') {
@@ -115,7 +134,7 @@ exports.primary_subjects_post = async (req, res) => {
 
   if (errors.length) {
     res.render('search/primary-subjects', {
-      showError: (errors.length)
+      errors
     })
   } else {
     res.redirect('/results')
@@ -147,7 +166,7 @@ exports.secondary_subjects_post = async (req, res) => {
     res.render('search/secondary-subjects', {
       // q,
       // sendItems: utils.sendItems(req.session.data.send),
-      showError: (errors.length)
+      errors
     })
   } else {
     res.redirect('/results')

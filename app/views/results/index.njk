@@ -1,6 +1,12 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = resultsCount + " course" + ("s" if resultsCount > 1) + " found" %}
+{% set title %}
+  {% if resultsCount > 0 %}
+    {{ resultsCount | numeral('0,0') }} course {{- "s" if resultsCount > 1 }} found
+  {% else %}
+    No courses found
+  {% endif %}
+{% endset %}
 
 {% block content %}
 
@@ -14,7 +20,7 @@
     {% if data.q == "england" %}
       in <b>England</b>
     {% elif data.q == "location" %}
-      in <b>{{ data.locationName }}</b>
+      in <b>{{ data.location }}</b>
     {% elif data.q == "provider" %}
       from <b>{{ provider.name }}</b>
     {% endif %}
@@ -22,11 +28,7 @@
   </p>
 
   <h1 class="govuk-heading-xl">
-    {% if resultsCount > 0 %}
-      {{ resultsCount }} course {{- "s" if resultsCount > 1 }} found
-    {% else %}
-      No courses found
-    {% endif %}
+    {{ title }}
   </h1>
 
   <div class="app-filter-toggle"></div>
