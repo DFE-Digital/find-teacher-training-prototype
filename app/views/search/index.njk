@@ -1,10 +1,9 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Find courses by location or by training provider" %}
-{% set errorMessage = "Select find courses by location or by training provider" %}
 
 {% block pageTitle %}
-{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
 {% endblock %}
 
 {% block pageNavigation %}
@@ -21,34 +20,40 @@
       <form action="/search" method="post" accept-charset="utf-8" novalidate>
 
         {% set locationHtml %}
-          {{ govukInput({
-            id: 'location',
-            name: "location",
-            label: {
-              text: "Enter a city, town or postcode"
-            },
-            value: data.location,
-            autocomplete: 'off',
-            formGroup: {
-              classes: "govuk-!-margin-bottom-0"
-            }
-          }) }}
-          <div id="location-autocomplete" class="govuk-body"></div>
+          <div class="govuk-form-group {{- ' govuk-form-group--error' if (errors | getErrorMessage('location'))}}">
+            {{ govukInput({
+              id: "location",
+              name: "location",
+              label: {
+                text: "Enter a city, town or postcode"
+              },
+              value: data.location,
+              autocomplete: 'off',
+              formGroup: {
+                classes: "govuk-!-margin-bottom-0"
+              },
+              errorMessage: errors | getErrorMessage("location")
+            }) }}
+            <div id="location-autocomplete" class="govuk-body"></div>
+          </div>
         {% endset %}
 
         {% set providerHtml %}
-          {{ govukInput({
-            id: "provider",
-            name: "provider",
-            label: {
-              text: "Enter a provider name or code"
-            },
-            value: data.provider.name,
-            formGroup: {
-              classes: "govuk-!-margin-bottom-0"
-            }
-          }) }}
-          <div id="provider-autocomplete" class="govuk-body"></div>
+          <div class="govuk-form-group {{- ' govuk-form-group--error' if (errors | getErrorMessage('provider'))}}">
+            {{ govukInput({
+              id: "provider",
+              name: "provider",
+              label: {
+                text: "Enter a provider name or code"
+              },
+              value: data.provider.name,
+              formGroup: {
+                classes: "govuk-!-margin-bottom-0"
+              },
+              errorMessage: errors | getErrorMessage("provider")
+            }) }}
+            <div id="provider-autocomplete" class="govuk-body"></div>
+          </div>
         {% endset %}
 
         {{ govukRadios({
@@ -60,9 +65,7 @@
               classes: "govuk-fieldset__legend--l"
             }
           },
-          errorMessage: {
-            text: errorMessage
-          } if showError,
+          errorMessage: errors | getErrorMessage("q"),
           items: [{
             value: "location",
             text: "By city, town or postcode",

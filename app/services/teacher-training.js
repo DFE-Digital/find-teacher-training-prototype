@@ -63,6 +63,12 @@ const teacherTrainingService = {
     const key = `providerSuggestionListResponse_${query}`
     const providerSuggestionListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/provider_suggestions?query=${query}`).json())
     return providerSuggestionListResponse
+  },
+
+  async getProvider (query) {
+    const key = `providerSingleResponse_${query}`
+    const providerSuggestionListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/provider_suggestions?query=${query}`).json())
+    return providerSuggestionListResponse?.data[0]?.attributes
   }
 }
 
