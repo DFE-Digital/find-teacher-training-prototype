@@ -13,9 +13,10 @@ exports.results_get = async (req, res) => {
   // ------------------------------------------------------------------------ //
   // LOCATION
   // ------------------------------------------------------------------------ //
-
-  // Search radius
-  const radius = req.session.data.radius
+  // Search radius - 5, 10, 50
+  // default to 50
+  // needed to get a list of results rather than 1
+  const radius = req.session.data.radius || defaults.radius
 
   // Search query
   const q = req.session.data.q || req.query.q
