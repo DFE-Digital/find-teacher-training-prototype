@@ -48,6 +48,8 @@ const locationSuggestionsService = {
         console.log('place:', place);
         return place.result
       })
+
+    return locationsListResponse
   }
 }
 
