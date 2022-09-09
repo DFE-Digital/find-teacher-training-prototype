@@ -38,7 +38,7 @@ module.exports = {
     text: 'Third',
     value: 'third_class'
   }, {
-    text: 'Pass (ordinary degree)',
+    text: 'Pass - ordinary degree',
     value: 'not_required'
   }],
   fundingTypeOptions: [{
@@ -46,11 +46,11 @@ module.exports = {
     value: ['include']
   }],
   studyTypeOptions: [{
-    text: 'Full time (12 months)',
+    text: 'Full time - 12 months',
     hint: 'You’ll usually spend 5 days a week on a full-time course',
     value: 'full_time'
   }, {
-    text: 'Part time (18-24 months)',
+    text: 'Part time - 18 to 24 months',
     hint: 'You’ll usually spend 3 days a week on a part-time course',
     value: 'part_time'
   }],
