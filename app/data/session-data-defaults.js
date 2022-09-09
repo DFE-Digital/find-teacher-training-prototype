@@ -5,6 +5,7 @@ module.exports = {
   defaults: {
     latitude: false,
     longitude: false,
+    radius: 50,
     qualification: ['qts', 'pgce_with_qts,pgde_with_qts', 'pgce,pgde'],
     salary: 'salary,apprenticeship,fee',
     send: ['exclude'],
