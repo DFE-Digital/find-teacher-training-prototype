@@ -52,6 +52,9 @@ exports.search_post = async (req, res) => {
     } else if (q === 'location') {
       let locationSingleResponse = await locationSuggestionsService.getLocation(req.session.data.location)
       req.session.data.place = locationSingleResponse
+      // add latitude and longitude to session data for radial search
+      req.session.data.latitude = locationSingleResponse.geometry.location.lat
+      req.session.data.longitude = locationSingleResponse.geometry.location.lng
     }
 
     res.redirect('/age-groups')
