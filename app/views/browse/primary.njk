@@ -39,7 +39,7 @@
                 name: "location",
                 value: data.location
               },
-              action: "/browse/location",
+              action: "#",
               buttons: [{
                 text: "Search",
                 classes: "app-search__button app-button--white"
@@ -54,31 +54,19 @@
               Browse by city
             </h2>
 
-            <ul class="govuk-list">
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
+            <ul class="govuk-list app-two-columns">
+              {# {% set loopLength = cities.length %}
+              {% set loopCount = 0 %} #}
+              {% for city in cities %}
+                <li>
+                  <a class="govuk-link" href="#">{{ city }}</a>
+                </li>
+                {# {% if loopCount == (loopLength/2) %}
+                  </ul>
+                  <ul class="govuk-list">
+                {% endif %} #}
+                {# {% set looCount = loopCount + 1 %} #}
+              {% endfor %}
             </ul>
 
           </div>
@@ -87,31 +75,12 @@
               Browse by region
             </h2>
 
-            <ul class="govuk-list">
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
-              <li>
-                List item
-              </li>
+            <ul class="govuk-list app-two-columns">
+              {% for region in regions %}
+                <li>
+                  <a class="govuk-link" href="#">{{ region }}</a>
+                </li>
+              {% endfor %}
             </ul>
 
           </div>
