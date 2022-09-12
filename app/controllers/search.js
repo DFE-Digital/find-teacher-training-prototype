@@ -6,8 +6,13 @@ exports.search_get = async (req, res) => {
   // const query = req.session.data.q || req.query.q
   // const queryType = await utils.processQuery(query, req.session.data)
   // const { filtering } = req.query
+console.log(process.env.USER_JOURNEY);
+  if (process.env.USER_JOURNEY === 'browse') {
+    res.redirect('/browse')
+  } else {
+    res.render('search/index')
+  }
 
-  res.render('search/index')
 }
 
 exports.search_post = async (req, res) => {
