@@ -11,3 +11,27 @@ exports.browse_get = async (req, res) => {
 exports.browse_post = async (req, res) => {
 
 }
+
+exports.primary_get = async (req, res) => {
+
+}
+
+exports.primary_post = async (req, res) => {
+
+}
+
+exports.secondary_get = async (req, res) => {
+
+}
+
+exports.secondary_post = async (req, res) => {
+
+}
+
+exports.secondary_subject_get = async (req, res) => {
+
+}
+
+exports.secondary_subject_post = async (req, res) => {
+
+}
