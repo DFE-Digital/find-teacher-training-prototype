@@ -32,7 +32,7 @@
   {% endif %}
   {% if course.age_minimum and course.age_maximum %}
     <dt class="app-list--description__label">Age range</dt>
-    <dd>{{ course.age_minimum }} to {{ course.age_maximum }}</dd>
+    <dd>{{ course.age_minimum }} to {{ course.age_maximum }}{{ " - " + course.level if course.level == "secondary" }}</dd>
   {% endif %}
   {% if course.course_length %}
     <dt class="app-list--description__label">Course length</dt>
