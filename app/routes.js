@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 // Controller modules
+const browseController = require('./controllers/browse')
 const courseController = require('./controllers/courses')
 const resultsController = require('./controllers/results')
 const searchController = require('./controllers/search')
@@ -23,10 +24,6 @@ router.all('*', (req, res, next) => {
   next()
 })
 
-/// ------------------------------------------------------------------------ ///
-/// SEARCH ROUTES
-/// ------------------------------------------------------------------------ ///
-
 router.get('/', async (req, res) => {
   if (process.env.SHOW_START_PAGE === 'true') {
     res.render('start')
@@ -38,6 +35,17 @@ router.get('/', async (req, res) => {
     }
   }
 })
+
+/// ------------------------------------------------------------------------ ///
+/// BROWSE ROUTES
+/// ------------------------------------------------------------------------ ///
+
+router.get('/browse', browseController.browse_get)
+router.post('/browse', browseController.browse_post)
+
+/// ------------------------------------------------------------------------ ///
+/// SEARCH ROUTES
+/// ------------------------------------------------------------------------ ///
 
 router.get('/search', searchController.search_get)
 router.post('/search', searchController.search_post)
