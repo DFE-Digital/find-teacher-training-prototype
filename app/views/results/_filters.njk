@@ -42,7 +42,7 @@
       name: "studyType",
       fieldset: {
         legend: {
-          text: "Study type",
+          text: "Full time or part time",
           classes: "govuk-fieldset__legend--s"
         }
       },
@@ -69,12 +69,28 @@
       classes: "govuk-checkboxes--small"
     }) }}
 
+    {# {{ govukCheckboxes({
+      idPrefix: "entry-requirement",
+      name: "degreeGrade",
+      fieldset: {
+        legend: {
+          text: "Degree required",
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      formGroup: {
+        classes: "app-filter__group"
+      },
+      items: degreeGradeItems,
+      classes: "govuk-checkboxes--small"
+    }) }} #}
+
     {{ govukRadios({
       idPrefix: "entry-requirement",
       name: "degreeGrade",
       fieldset: {
         legend: {
-          text: "Degree grade accepted",
+          text: "Degree required",
           classes: "govuk-fieldset__legend--s"
         }
       },

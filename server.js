@@ -97,6 +97,7 @@ app.locals.useCookieSessionStore = (useCookieSessionStore === 'true')
 app.locals.cookieText = config.cookieText
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
+app.locals.environment = env
 app.locals.showStartPage = showStartPage
 app.locals.phaseTagText = phaseTagText
 // extensionConfig sets up variables used to add the scripts and stylesheets to each page.
