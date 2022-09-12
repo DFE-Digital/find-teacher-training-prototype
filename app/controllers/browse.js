@@ -13,9 +13,12 @@ exports.browse_post = async (req, res) => {
 }
 
 exports.primary_get = async (req, res) => {
+  const cities = ['Birmingham','Bradford','Bristol','Leeds','Liverpool','London','Manchester','Sheffield']
+  const regions = ['North East','North West','Yorkshire and The Humber','East Midlands','West Midlands','East of England','London','South East','South West']
 
   res.render('browse/primary', {
-
+    cities,
+    regions
   })
 }
 
