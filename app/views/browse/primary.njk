@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Find teacher training courses" %}
+{% set title = "Find primary teacher training courses" %}
 
 {% block pageTitle %}
 {{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
@@ -12,24 +12,112 @@
 
 {% block content %}
 
-  {% include "_includes/error-summary.njk" %}
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">
+      <h1 class="govuk-heading-xl">
         {{ title }}
       </h1>
 
-      <form action="/search" method="post" accept-charset="utf-8" novalidate>
+    </div>
+  </div>
 
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
 
+      <div class="app-grid-column--blue">
 
-        {{ govukButton({
-          text: "Continue"
-        }) }}
+        <div class="govuk-grid-row govuk-!-margin-bottom-8">
+          <div class="govuk-grid-column-two-thirds">
+            {{ appSearch({
+              label: {
+                text: "City, town or postcode",
+                classes: 'govuk-label--m app-label--white'
+              },
+              input: {
+                id: "location",
+                name: "location",
+                value: data.location
+              },
+              action: "/browse/location",
+              buttons: [{
+                text: "Search",
+                classes: "app-search__button app-button--white"
+              }]
+            }) }}
+          </div>
+        </div>
 
-      </form>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <h2 class="govuk-heading-m app-heading--white">
+              Browse by city
+            </h2>
+
+            <ul class="govuk-list">
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+            </ul>
+
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <h2 class="govuk-heading-m app-heading--white">
+              Browse by region
+            </h2>
+
+            <ul class="govuk-list">
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+              <li>
+                List item
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
 
     </div>
   </div>
