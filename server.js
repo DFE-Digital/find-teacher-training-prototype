@@ -38,6 +38,7 @@ const useAutoStoreData = process.env.USE_AUTO_STORE_DATA || config.useAutoStoreD
 const useCookieSessionStore = process.env.USE_COOKIE_SESSION_STORE || config.useCookieSessionStore
 const showStartPage = process.env.SHOW_START_PAGE || config.showStartPage
 const phaseTagText = process.env.PHASE_TAG_TEXT || config.phaseTagText
+const userJourney = process.env.USER_JOURNEY || config.userJourney
 let useHttps = process.env.USE_HTTPS || config.useHttps
 
 useHttps = useHttps.toLowerCase()
@@ -100,6 +101,7 @@ app.locals.serviceName = config.serviceName
 app.locals.environment = env
 app.locals.showStartPage = showStartPage
 app.locals.phaseTagText = phaseTagText
+app.locals.userJourney = userJourney
 // extensionConfig sets up variables used to add the scripts and stylesheets to each page.
 app.locals.extensionConfig = extensions.getAppConfig()
 
