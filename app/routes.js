@@ -31,7 +31,11 @@ router.get('/', async (req, res) => {
   if (process.env.SHOW_START_PAGE === 'true') {
     res.render('start')
   } else {
-    res.redirect('/search')
+    if (process.env.USER_JOURNEY === 'browse') {
+      res.redirect('/browse')
+    } else {
+      res.redirect('/search')
+    }
   }
 })
 
