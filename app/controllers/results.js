@@ -29,6 +29,11 @@ exports.results_get = async (req, res) => {
   // FILTERS
   // ------------------------------------------------------------------------ //
 
+  const subject = utils.toArray(req.session.data.primarySubjectSpecialisms || req.query.primarySubjectSpecialisms || defaults.primarySubjectSpecialisms)
+  const primarySubjectItems = utils.primarySubjectItems(subject)
+
+  console.log(primarySubjectItems);
+
   // Special educational needs
   const send = (req.session.data.send && req.session.data.send[0] === 'include')
     || (req.query.send && req.query.send[0] === 'include')
@@ -328,6 +333,7 @@ exports.results_get = async (req, res) => {
       fundingType,
       fundingTypeItems,
       selectedSubjects,
+      primarySubjectItems
     })
   } catch (error) {
     console.error(error.stack)
