@@ -5,6 +5,24 @@
 
   <div class="app-filter__content">
 
+    {% if userJourney == 'browse' and data.ageGroup == 'primary' %}
+      {{ govukCheckboxes({
+        idPrefix: "primarySubjectSpecialisms",
+        name: "primarySubjectSpecialisms",
+        fieldset: {
+          legend: {
+            text: "Specialist subjects",
+            classes: "govuk-fieldset__legend--s"
+          }
+        },
+        formGroup: {
+          classes: "app-filter__group"
+        },
+        items: primarySubjectItems,
+        classes: "govuk-checkboxes--small"
+      }) }}
+    {% endif %}
+
     {{ govukCheckboxes({
       idPrefix: "special-educational-needs",
       name: "send",
