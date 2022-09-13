@@ -59,17 +59,10 @@
             </h2>
 
             <ul class="govuk-list app-two-columns">
-              {# {% set loopLength = cities.length %}
-              {% set loopCount = 0 %} #}
               {% for city in cities %}
                 <li>
                   <a class="govuk-link" href="{{ actions.search }}?location={{ city }}">{{ city }}</a>
                 </li>
-                {# {% if loopCount == (loopLength/2) %}
-                  </ul>
-                  <ul class="govuk-list">
-                {% endif %} #}
-                {# {% set looCount = loopCount + 1 %} #}
               {% endfor %}
             </ul>
 
