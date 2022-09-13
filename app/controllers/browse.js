@@ -2,7 +2,7 @@ const locationSuggestionsService = require('../services/location-suggestions')
 
 const subjects = require('../data/subjects')
 
-const cities = ['Birmingham','Bradford','Bristol','Leeds','Liverpool','London','Manchester','Sheffield']
+const cities = ['Birmingham','Bradford','Bristol','Exeter','Leeds','Lincoln','Liverpool','London','Manchester','Norwich','Nottingham','Sheffield']
 const regions = ['North East','North West','Yorkshire and The Humber','East Midlands','West Midlands','East of England','London','South East','South West']
 
 exports.browse_get = async (req, res) => {
