@@ -29,7 +29,9 @@ exports.results_get = async (req, res) => {
   // FILTERS
   // ------------------------------------------------------------------------ //
 
-  const subject = utils.toArray(req.session.data.primarySubjectSpecialisms || req.query.primarySubjectSpecialisms || defaults.primarySubjectSpecialisms)
+  const subject = utils.toArray(req.session.data.primarySubjectSpecialisms
+      || req.query.primarySubjectSpecialisms
+      || defaults.primarySubjectSpecialisms)
   const primarySubjectItems = utils.primarySubjectItems(subject)
 
   console.log(primarySubjectItems);
