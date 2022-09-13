@@ -16,7 +16,7 @@ exports.results_get = async (req, res) => {
   // Search radius - 5, 10, 50
   // default to 50
   // needed to get a list of results rather than 1
-  const radius = req.session.data.radius || defaults.radius
+  const radius = req.session.data.radius || req.query.radius || defaults.radius
 
   // Search query
   const q = req.session.data.q || req.query.q
@@ -87,12 +87,19 @@ exports.results_get = async (req, res) => {
   }
 
   if (subjects.includes('_unchecked')) {
-    if (req.session.data.ageGroup === 'primary') {
-      res.redirect('/primary-subjects?showError=true')
+    if (process.env.USER_JOURNEY === 'browse') {
+      if (req.session.data.ageGroup === 'primary') {
+        res.redirect('/primary')
+      } else {
+        res.redirect('/secondary')
+      }
     } else {
-      res.redirect('/secondary-subjects?showError=true')
+      if (req.session.data.ageGroup === 'primary') {
+        res.redirect('/primary-subjects?showError=true')
+      } else {
+        res.redirect('/secondary-subjects?showError=true')
+      }
     }
-    return
   }
 
   // Show selected subjects at top of page
