@@ -56,7 +56,6 @@ exports.results_get = async (req, res) => {
   const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
   const qualificationItems = utils.qualificationItems(qualification).map(item => {
     item.hint = false
-    item.label.classes = false
     return item
   })
 
@@ -64,7 +63,6 @@ exports.results_get = async (req, res) => {
   const degreeGrade = utils.toArray(req.session.data.degreeGrade || req.query.degreeGrade || defaults.degreeGrade)
   const degreeGradeItems = utils.degreeGradeItems(degreeGrade).map(item => {
     item.hint = false
-    item.label.classes = false
     return item
   })
 
