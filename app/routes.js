@@ -41,16 +41,13 @@ router.get('/', async (req, res) => {
 /// ------------------------------------------------------------------------ ///
 
 router.get('/browse', browseController.browse_get)
-router.post('/browse', browseController.browse_post)
 
-router.get('/primary', browseController.primary_get)
-router.post('/primary', browseController.primary_post)
+router.get('/browse/primary', browseController.primary_get)
 
-router.get('/secondary', browseController.secondary_get)
-router.post('/secondary', browseController.secondary_post)
+router.get('/browse/secondary', browseController.secondary_get)
 
-router.get('/secondary/subjects/:subject', browseController.secondary_subject_get)
-router.post('/secondary/subjects/:subject', browseController.secondary_subject_post)
+router.get('/browse/location', browseController.location_get)
+router.post('/browse/location', browseController.location_post)
 
 /// ------------------------------------------------------------------------ ///
 /// SEARCH ROUTES
