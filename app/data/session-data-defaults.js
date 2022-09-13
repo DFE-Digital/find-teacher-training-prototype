@@ -11,6 +11,7 @@ module.exports = {
     send: ['exclude'],
     studyType: ['full_time', 'part_time'],
     subjects: [],
+    primarySubjectSpecialisms: ['00','01','02','03','04','06','07'],
     vacancy: ['include'],
     degreeGrade: ['two_one'],
     visaSponsorship: ['exclude']
