@@ -12,6 +12,8 @@
 
 {% block content %}
 
+  {% include "_includes/error-summary.njk" %}
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
@@ -37,9 +39,10 @@
               input: {
                 id: "location",
                 name: "location",
-                value: data.location
+                value: data.location,
+                errorMessage: errors | getErrorMessage("location") if 1 == 0
               },
-              action: "/primary",
+              action: actions.search,
               method: "post",
               buttons: [{
                 text: "Search",
@@ -60,7 +63,7 @@
               {% set loopCount = 0 %} #}
               {% for city in cities %}
                 <li>
-                  <a class="govuk-link" href="/results?location={{ city }}">{{ city }}</a>
+                  <a class="govuk-link" href="{{ actions.search }}?location={{ city }}">{{ city }}</a>
                 </li>
                 {# {% if loopCount == (loopLength/2) %}
                   </ul>
