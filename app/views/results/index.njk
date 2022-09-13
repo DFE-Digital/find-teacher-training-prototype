@@ -14,7 +14,15 @@
     {% if data.ageGroup == "furtherEducation" %}
       <b>Further education</b>
     {% else %}
-      <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
+      {% if userJourney == 'browse' %}
+        {% if data.ageGroup == 'primary' %}
+          <b>Primary</b>
+        {% else %}
+          <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
+        {% endif %}
+      {% else %}
+        <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
+      {% endif %}
     {% endif %}
     courses
     {% if data.q == "england" %}
