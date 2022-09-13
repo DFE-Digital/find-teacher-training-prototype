@@ -21,6 +21,7 @@ const checkHasSearchParams = (req, res, next) => {
 router.all('*', (req, res, next) => {
   res.locals.referrer = req.query.referrer
   res.locals.query = req.query
+  res.locals.userJourney = process.env.USER_JOURNEY
   next()
 })
 
