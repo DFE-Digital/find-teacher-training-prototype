@@ -1,0 +1,324 @@
+[
+  {
+    "id": "53d7a153-1258-4a28-b363-64a4e4f27f4f",
+    "name": "Ancient Greek",
+    "code": "A1",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "5510a8ea-e627-4eea-b4a0-f12c5349c780",
+    "name": "Ancient Hebrew",
+    "code": "A2",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "d461a678-3335-4ca2-9616-1dc479d31a49",
+    "name": "Art and design",
+    "code": "W1",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "322cfc19-d51d-45db-91e3-bd7b4738470f",
+    "name": "Biology",
+    "code": "C1",
+    "level": "secondary",
+    "group": "stem"
+  },
+  {
+    "id": "de6477b2-6027-48e6-b9f7-3206774705c2",
+    "name": "Business studies",
+    "code": "08",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "912d4fb4-761b-42e9-8dc6-e968b791ea4e",
+    "name": "Chemistry",
+    "code": "F1",
+    "level": "secondary",
+    "group": "stem"
+  },
+  {
+    "id": "7c98ffbf-d90d-46bb-91ea-7817a81848f5",
+    "name": "Citizenship",
+    "code": "09",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "0238281a-b738-45a5-88bb-b426a2a562e1",
+    "name": "Classics",
+    "code": "Q8",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "9fcb4fa9-42d8-4b18-882e-d2925e53fe55",
+    "name": "Communication and media studies",
+    "code": "P3",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "e6be6a9c-8696-4b88-8fbd-1ba1bef1b6fc",
+    "name": "Computing",
+    "code": "11",
+    "level": "secondary",
+    "group": "stem"
+  },
+  {
+    "id": "49dcc400-03df-4732-af93-1c56ae22897f",
+    "name": "Dance",
+    "code": "12",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "118fabd7-86d0-4a40-9e9a-e5c302abe59b",
+    "name": "Design and technology",
+    "code": "DT",
+    "level": "secondary",
+    "group": "stem"
+  },
+  {
+    "id": "69052223-ca45-4781-a8d3-cb92447a6d78",
+    "name": "Drama",
+    "code": "13",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "cd9159fc-869f-4188-8435-3374676d6e92",
+    "name": "Economics",
+    "code": "L1",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "3aed1aa8-ae46-4b68-92bb-a6cc20655c59",
+    "name": "English",
+    "code": "Q3",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "a9a2321a-fe0e-49fd-96b0-304880d1eed2",
+    "name": "English as a second or other language",
+    "code": "16",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "other"
+  },
+  {
+    "id": "9727f674-61ba-4efa-b1f2-21ec7e354442",
+    "name": "French",
+    "code": "15",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  },
+  {
+    "id": "9de4b2d2-5739-4c34-92d2-9b4384760298",
+    "name": "Further education",
+    "code": "41",
+    "level": "further_education"
+  },
+  {
+    "id": "3f47e67b-7fa5-4947-a5a0-74d528cd2a87",
+    "name": "Geography",
+    "code": "F8",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "fbb00c08-2dbc-4f26-adb3-3b23afba18c1",
+    "name": "German",
+    "code": "17",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  },
+  {
+    "id": "b1c3659e-5021-4f1e-a218-16b115f46fbc",
+    "name": "Health and social care",
+    "code": "L5",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "5a3609a0-5bbb-4377-b919-5d89932ab622",
+    "name": "History",
+    "code": "V1",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "5e94c647-7b7e-4d02-a3b4-7667296fbf0a",
+    "name": "Italian",
+    "code": "18",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  },
+  {
+    "id": "dbae1e2d-e1c7-4b6d-897d-d5be177a884a",
+    "name": "Japanese",
+    "code": "19",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  },
+  {
+    "id": "fa7ee0d3-4cd4-475a-9280-f6b63b0dc466",
+    "name": "Latin",
+    "code": "A0",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "440c1e5c-0a7b-49ae-9534-184528468511",
+    "name": "Mandarin",
+    "code": "20",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  },
+  {
+    "id": "72345aa7-096c-488f-8649-085b8178cadb",
+    "name": "Mathematics",
+    "code": "G1",
+    "level": "secondary",
+    "group": "stem"
+  },
+  {
+    "id": "ce8523ef-9236-4cd9-b260-d826c7a521b3",
+    "name": "Modern Languages",
+    "code": "ML",
+    "level": "secondary"
+  },
+  {
+    "id": "4608e5e3-2a1a-48a1-8236-56c7af5a139d",
+    "name": "Modern languages - other",
+    "code": "24",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  },
+  {
+    "id": "24311bef-8673-41fb-933c-53f887fb6976",
+    "name": "Music",
+    "code": "W3",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "a8daf023-e0c4-4cb1-9b2f-8bba1841d401",
+    "name": "Philosophy",
+    "code": "P1",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "74d64a54-5e34-4590-b6c7-528dd0cf26fe",
+    "name": "Physical education",
+    "code": "C6",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "bf97cd0a-224c-43d3-a021-84143df13e8d",
+    "name": "Physics",
+    "code": "F3",
+    "level": "secondary",
+    "group": "stem"
+  },
+  {
+    "id": "32a27d4b-8216-4498-9e7c-ddfba0a38a00",
+    "name": "Primary",
+    "code": "00",
+    "level": "primary"
+  },
+  {
+    "id": "1e6e30f3-d686-4686-9d83-16b3a56cd9a0",
+    "name": "Primary with English",
+    "code": "01",
+    "level": "primary"
+  },
+  {
+    "id": "4f96acc0-644d-4f31-8cd8-7e9fe1351bcd",
+    "name": "Primary with geography and history",
+    "code": "02",
+    "level": "primary"
+  },
+  {
+    "id": "286cf12f-b3e3-41c5-9f33-2ff7807d2df0",
+    "name": "Primary with mathematics",
+    "code": "03",
+    "level": "primary"
+  },
+  {
+    "id": "9e1b13bd-5c38-4c2f-9ef6-b36610f986c8",
+    "name": "Primary with modern languages",
+    "code": "04",
+    "level": "primary"
+  },
+  {
+    "id": "5ae4c96e-1da2-4831-91a3-64439b606fed",
+    "name": "Primary with physical education",
+    "code": "06",
+    "level": "primary"
+  },
+  {
+    "id": "c271fc3e-81ce-4e50-8715-fe2cfa0d5dc4",
+    "name": "Primary with science",
+    "code": "07",
+    "level": "primary"
+  },
+  {
+    "id": "1878e739-30bb-4de9-841e-42dacfb1fa0c",
+    "name": "Psychology",
+    "code": "C8",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "724b5d16-28dd-4431-bc17-ea4be4daedc4",
+    "name": "Religious education",
+    "code": "V6",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "f1f05cc5-08a2-4766-b138-71edb79081b9",
+    "name": "Russian",
+    "code": "21",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  },
+  {
+    "id": "ed329bbc-6bb1-481f-98f7-8815f8c4fd68",
+    "name": "Science",
+    "code": "F0",
+    "level": "secondary",
+    "group": "stem"
+  },
+  {
+    "id": "bd9a2174-f682-4f18-9551-498c2f7a48f9",
+    "name": "Social sciences",
+    "code": "14",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
+    "id": "e34fd2a3-a32e-44e9-aea1-666badf3ac03",
+    "name": "Spanish",
+    "code": "22",
+    "level": "secondary",
+    "parentCode": "ML",
+    "group": "languages"
+  }
+]
