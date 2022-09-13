@@ -47,12 +47,10 @@
         <div class="govuk-grid-column-one-half">
           <h3 class="govuk-heading-s">Languages</h3>
 
-          {% set languages = ['French','German','Italian','Japanese','Mandarin','Russian','Spanish'] %}
-
           <ul class="govuk-list">
-            {% for language in languages %}
+            {% for subject in languageSubjects %}
               <li>
-                <a class="govuk-link" href="/browse/location">{{ language }}</a>
+                <a class="govuk-link" href="/browse/location?subjects={{ subject.code }}">{{ subject.name }}</a>
               </li>
             {% endfor %}
           </ul>
@@ -61,12 +59,10 @@
         <div class="govuk-grid-column-one-half">
           <h3 class="govuk-heading-s">Science, maths and technology</h3>
 
-          {% set stemSubjects = ['Biology','Chemistry','Physics','Maths','Design and technology','Computing'] %}
-
           <ul class="govuk-list">
             {% for subject in stemSubjects %}
               <li>
-                <a class="govuk-link" href="/browse/location">{{ subject }}</a>
+                <a class="govuk-link" href="/browse/location?subjects={{ subject.code }}">{{ subject.name }}</a>
               </li>
             {% endfor %}
           </ul>
@@ -92,12 +88,10 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      {% set otherSubjects = ['Art and design','Business studies','Citizenship','Classics','Communication and media studies','Dance','Economics','English as a second language','Health and social care','History','Music','Physical education','Psychology','Religious education','Social sciences'] %}
-
       <ul class="govuk-list app-two-columns">
         {% for subject in otherSubjects %}
           <li>
-            <a class="govuk-link" href="/browse/location">{{ subject }}</a>
+            <a class="govuk-link" href="/browse/location?subjects={{ subject.code }}">{{ subject.name }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -106,8 +100,4 @@
 
     </div>
   </div>
-{% endblock %}
-
-{% block pageScripts %}
-
 {% endblock %}
