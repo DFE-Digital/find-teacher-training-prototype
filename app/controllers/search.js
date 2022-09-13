@@ -3,16 +3,11 @@ const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
 exports.search_get = async (req, res) => {
-  // const query = req.session.data.q || req.query.q
-  // const queryType = await utils.processQuery(query, req.session.data)
-  // const { filtering } = req.query
-console.log(process.env.USER_JOURNEY);
   if (process.env.USER_JOURNEY === 'browse') {
     res.redirect('/browse')
   } else {
     res.render('search/index')
   }
-
 }
 
 exports.search_post = async (req, res) => {
@@ -99,26 +94,6 @@ exports.age_groups_post = async (req, res) => {
     }
   }
 }
-
-// exports.primary_get = async (req, res) => {
-//   res.render('search/primary-subjects')
-// }
-//
-// exports.primary_post = async (req, res) => {
-//   console.log(req.session.data)
-//   const primarySpecialistSubjectsAnswer = req.body.primarySpecialistSubjects
-//
-//   if (primarySpecialistSubjectsAnswer === 'yes') {
-//     res.redirect('/primary-subjects')
-//   } else if (primarySpecialistSubjectsAnswer === 'no') {
-//     // set subject to "Primary" only
-//     req.session.data.subjects = ['00']
-//
-//     res.redirect('/results')
-//   } else {
-//     res.render('search/primary-subjects')
-//   }
-// }
 
 exports.primary_subjects_get = async (req, res) => {
   res.render('search/primary-subjects', {
