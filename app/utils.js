@@ -152,7 +152,6 @@ module.exports = () => {
     return data.qualificationOptions.map(option => ({
       value: option.value,
       text: option.text,
-      label: { classes: 'govuk-label--s' },
       hint: { text: options.showHintText ? filters.markdown(option.hint) : false },
       checked: qualification ? qualification.includes(option.value) : false
     }))
@@ -162,7 +161,6 @@ module.exports = () => {
     return data.degreeGradeOptions.map(option => ({
       value: option.value,
       text: option.text,
-      label: { classes: 'govuk-label--s' },
       hint: { text: options.showHintText ? filters.markdown(option.hint) : false },
       checked: degreeGrade ? degreeGrade.includes(option.value) : false
     }))
