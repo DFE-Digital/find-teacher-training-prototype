@@ -204,8 +204,7 @@
     "name": "Modern languages - other",
     "code": "24",
     "level": "secondary",
-    "parentCode": "ML",
-    "group": "languages"
+    "parentCode": "ML"
   },
   {
     "id": "24311bef-8673-41fb-933c-53f887fb6976",
