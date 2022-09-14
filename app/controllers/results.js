@@ -237,15 +237,17 @@ exports.results_get = async (req, res) => {
     const results = await Promise.all(courses)
 
     // sort results by training provider name
-    results.sort((a, b) => {
-      if (req.query.sortBy === '1') {
-        // sorted by Training provider Z-A
-        return b.provider.name.localeCompare(a.provider.name)
-      } else {
-        // sorted by Training provider A-Z
-        return a.provider.name.localeCompare(b.provider.name)
-      }
-    })
+    if (req.session.data.q === 'provider') {
+      results.sort((a, b) => {
+        if (req.query.sortBy === '1') {
+          // sorted by Training provider Z-A
+          return b.provider.name.localeCompare(a.provider.name)
+        } else {
+          // sorted by Training provider A-Z
+          return a.provider.name.localeCompare(b.provider.name)
+        }
+      })
+    }
 
     // ------------------------------------------------------------------------ //
     // PAGINATION
