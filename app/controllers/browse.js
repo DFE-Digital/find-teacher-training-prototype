@@ -34,8 +34,17 @@ exports.primary_get = async (req, res) => {
 
 exports.secondary_get = async (req, res) => {
   req.session.data.ageGroup = 'secondary'
+
   const languageSubjects = subjects.filter(subject => subject.level === 'secondary' && subject.group === 'languages')
+  languageSubjects.push({
+    id: '4608e5e3-2a1a-48a1-8236-56c7af5a139d',
+    name: 'Another modern language',
+    code: '24',
+    level: 'secondary'
+  })
+
   const stemSubjects = subjects.filter(subject => subject.level === 'secondary' && subject.group === 'stem')
+
   const otherSubjects = subjects.filter(subject => subject.level === 'secondary' && subject.group === 'other')
 
   res.render('browse/secondary-subjects', {
