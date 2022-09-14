@@ -203,8 +203,8 @@ exports.results_get = async (req, res) => {
               longitude: attributes.longitude
             })
 
-            const distanceInMiles = ((distanceInMeters / 1000) * 0.621371).toFixed(0)
-            attributes.distance = distanceInMiles
+            const distanceInMiles = ((parseInt(distanceInMeters) / 1000) * 0.621371).toFixed(0)
+            attributes.distance = parseInt(distanceInMiles)
           }
 
           return attributes
