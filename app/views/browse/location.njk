@@ -1,7 +1,7 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Search by location" %}
-{% set caption = "Find " + ageGroup + " teacher training courses" %}
+{% set caption = "Find " + ageGroup + " courses" %}
 
 {% block pageTitle %}
 {{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
@@ -15,9 +15,9 @@
       href: "/"
     },
     {
-      text: "Find " + (ageGroup | lower) + " teacher training courses",
+      text: "Find " + (ageGroup | lower) + " courses",
       href: ("/browse/" + ageGroup) if ageGroup == "secondary"
-    } if ageGroup == "secondary",
+    },
     {
       text: title
     }
@@ -33,7 +33,9 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        <span class="govuk-caption-l">{{ caption }}</span>
+        {% if caption.length %}
+          <span class="govuk-caption-xl">{{ caption }}</span>
+        {% endif %}
         {{ title }}
       </h1>
 
