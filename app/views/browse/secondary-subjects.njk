@@ -1,7 +1,7 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Secondary courses" %}
-{% set caption = "Find teacher training courses" %}
+{% set title = "Find secondary courses" %}
+{# {% set caption = "Find postgraduate teacher training" %} #}
 
 {% block pageTitle %}
 {{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
@@ -28,8 +28,10 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">
-        <span class="govuk-caption-l">{{ caption }}</span>
+      <h1 class="govuk-heading-xl">
+        {% if caption.length %}
+          <span class="govuk-caption-xl">{{ caption }}</span>
+        {% endif %}
         {{ title }}
       </h1>
 
