@@ -14,8 +14,8 @@
     {% if data.ageGroup == "furtherEducation" %}
       <b>Further education</b>
     {% else %}
-      {% if userJourney == 'browse' %}
-        {% if data.ageGroup == 'primary' %}
+      {% if userJourney == "browse" %}
+        {% if data.ageGroup == "primary" %}
           <b>Primary</b>
         {% else %}
           <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b>
@@ -32,7 +32,16 @@
     {% elif data.q == "provider" %}
       from <b>{{ provider.name }}</b>
     {% endif %}
-    <a href="/search" class="govuk-link govuk-link--no-visited-state govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
+    {% if userJourney == "browse" %}
+      {% if data.ageGroup == "primary" %}
+        {% set change = "/browse/primary" %}
+      {% else %}
+        {% set change = "/browse/secondary" %}
+      {% endif %}
+    {% else %}
+      {% set change = "/search" %}
+    {% endif %}
+    <a href="{{ change }}" class="govuk-link govuk-link--no-visited-state govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
   </p>
 
   <h1 class="govuk-heading-xl">
