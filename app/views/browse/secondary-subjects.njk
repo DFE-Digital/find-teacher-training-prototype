@@ -1,13 +1,24 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Find secondary teacher training courses" %}
+{% set title = "Secondary courses" %}
+{% set caption = "Find teacher training courses" %}
 
 {% block pageTitle %}
 {{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
 {% endblock %}
 
 {% block pageNavigation %}
-
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "/"
+    },
+    {
+      text: title
+    }
+  ]
+}) }}
 {% endblock %}
 
 {% block content %}
@@ -18,6 +29,7 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-l">
+        <span class="govuk-caption-l">{{ caption }}</span>
         {{ title }}
       </h1>
 
