@@ -34,8 +34,6 @@ exports.results_get = async (req, res) => {
       || defaults.primarySubjectSpecialisms)
   const primarySubjectItems = utils.primarySubjectItems(subject)
 
-  console.log(primarySubjectItems);
-
   // Special educational needs
   const send = (req.session.data.send && req.session.data.send[0] === 'include')
     || (req.query.send && req.query.send[0] === 'include')
