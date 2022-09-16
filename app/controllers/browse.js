@@ -20,7 +20,9 @@ exports.browse_get = async (req, res) => {
     res.render('browse/index', {
       actions: {
         primary: '/browse/primary',
-        secondary: '/browse/secondary'
+        primaryAll: '/browse/primary-all-england',
+        secondary: '/browse/secondary',
+        secondaryAll: '/browse/secondary-all-england'
       }
     })
   }
@@ -108,4 +110,26 @@ exports.location_post = async (req, res) => {
     res.redirect('/results')
   }
 
+}
+
+exports.primary_all_england_get = async (req, res) => {
+  req.session.data.q = 'england'
+  req.session.data.ageGroup = 'primary'
+  req.session.data.subjects = subjects
+    .filter(subject => subject.level === 'primary')
+    .map((s) => {
+      return s.code
+    })
+  res.redirect('/results')
+}
+
+exports.secondary_all_england_get = async (req, res) => {
+  req.session.data.q = 'england'
+  req.session.data.ageGroup = 'secondary'
+  req.session.data.subjects = subjects
+    .filter(subject => subject.level === 'secondary')
+    .map((s) => {
+      return s.code
+    })
+  res.redirect('/results')
 }

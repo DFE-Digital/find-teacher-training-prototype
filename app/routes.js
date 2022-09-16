@@ -44,8 +44,10 @@ router.get('/', async (req, res) => {
 router.get('/browse', browseController.browse_get)
 
 router.get('/browse/primary', browseController.primary_get)
+router.get('/browse/primary-all-england', browseController.primary_all_england_get)
 
 router.get('/browse/secondary', browseController.secondary_get)
+router.get('/browse/secondary-all-england', browseController.secondary_all_england_get)
 
 router.get('/browse/location', browseController.location_get)
 router.post('/browse/location', browseController.location_post)
