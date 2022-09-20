@@ -15,8 +15,8 @@
       <b>Further education</b>
     {% else %}
       {% if userJourney == "browse" %}
-        {% if data.ageGroup == "primary" %}
-          <b>Primary</b>
+        {% if data.route == "all" or data.ageGroup == "primary" %}
+          <b>{{ data.ageGroup | capitalize }}</b>
         {% else %}
           <b>{{ selectedSubjects | removeEmpty | join("</b> and <b>", "text") | safe }}</b>
         {% endif %}
