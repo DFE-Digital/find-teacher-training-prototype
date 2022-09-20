@@ -66,3 +66,46 @@ exports.getSelectedSubjectItems = (selectedItems) => {
 
   return items
 }
+
+exports.getStudyModeItems = (selectedItems) => {
+  const studyModes = require('../data/study-modes')
+  const items = []
+
+  studyModes.forEach((studyMode, i) => {
+    const item = {}
+
+    item.text = studyMode.name
+    item.value = studyMode.code
+    item.id = studyMode.id
+    item.checked = (selectedItems && selectedItems.includes(studyMode.name)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getStudyModeLabel = (studyModeCode) => {
+  const studyModes = require('../data/study-modes')
+  let label
+
+  if (studyModeCode) {
+    label = studyModes.filter(studyMode => studyMode.code === studyModeCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedStudyMode = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const mode = {}
+    mode.text = item.text
+    mode.href = `/results/remove-study-mode-filter/${item.text}`
+
+    items.push(mode)
+  })
+
+  return items
+}
