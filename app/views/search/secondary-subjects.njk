@@ -48,7 +48,7 @@
             text: "Select all subjects you are interested in teaching"
           },
           errorMessage: errors | getErrorMessage("secondary-subjects"),
-          items: (items | sort(attribute="text") )
+          items: (items | sort(attribute="text"))
         }) }}
 
         {{ govukButton({
