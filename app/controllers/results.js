@@ -153,6 +153,13 @@ exports.list = (req, res) => {
 
   const subjectItems = utilsHelper.getSubjectItems(selectedSubject, req.session.data.ageGroup)
 
+  // get an array of selected subjects for use in the search terms subject list
+  const selectedSubjects = subjectItems
+    .filter(subject => subject.checked === 'checked')
+    .map(s => {
+      return s.text
+    })
+
   let selectedSend
   if (req.session.data.filter?.send) {
     selectedSend = req.session.data.filter.send
@@ -214,6 +221,19 @@ exports.list = (req, res) => {
   const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
   const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
 
+  // API query params
+  // const filter = {
+  //   findable: true,
+  //   funding_type: fundingType ? 'salary' : 'salary,apprenticeship,fee',
+  //   degree_grade: degreeGrade.toString(),
+  //   send_courses: send,
+  //   has_vacancies: vacancy,
+  //   qualification: qualification.toString(),
+  //   study_type: studyType.toString(),
+  //   can_sponsor_visa: visaSponsorship,
+  //   subjects: subjects.toString()
+  // }
+
   // Data
   let courses = []
 
@@ -230,6 +250,7 @@ exports.list = (req, res) => {
     pagination,
     subjectItems,
     subjectItemsDisplayLimit,
+    selectedSubjects,
     sendItems,
     vacancyItems,
     studyModeItems,
