@@ -9,7 +9,7 @@ exports.browse_get = async (req, res) => {
   delete req.session.data.route
   delete req.session.data.q
   delete req.session.data.ageGroup
-  delete req.session.data.subjects
+  delete req.session.data.filter
   delete req.session.data.location
   delete req.session.data.place
   delete req.session.data.latitude
@@ -31,7 +31,10 @@ exports.browse_get = async (req, res) => {
 
 exports.primary_get = async (req, res) => {
   req.session.data.ageGroup = 'primary'
-  req.session.data.subjects = ['00','01','02','03','04','06','07']
+  req.session.data.filter = {
+    subject: ['00','01','02','03','04','06','07']
+  }
+  // req.session.data.filter.subject = ['00','01','02','03','04','06','07']
   res.redirect('/browse/location')
 }
 
@@ -117,11 +120,14 @@ exports.primary_all_england_get = async (req, res) => {
   req.session.data.route = 'all'
   req.session.data.q = 'england'
   req.session.data.ageGroup = 'primary'
-  req.session.data.subjects = subjects
+
+  req.session.data.filter = {}
+  req.session.data.filter.subject = subjects
     .filter(subject => subject.level === 'primary')
     .map((s) => {
       return s.code
     })
+
   res.redirect('/results')
 }
 
@@ -129,10 +135,13 @@ exports.secondary_all_england_get = async (req, res) => {
   req.session.data.route = 'all'
   req.session.data.q = 'england'
   req.session.data.ageGroup = 'secondary'
-  req.session.data.subjects = subjects
+
+  req.session.data.filter = {}
+  req.session.data.filter.subject = subjects
     .filter(subject => subject.level === 'secondary')
     .map((s) => {
       return s.code
     })
+
   res.redirect('/results')
 }
