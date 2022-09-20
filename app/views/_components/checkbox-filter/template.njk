@@ -42,10 +42,11 @@
                 {{- item.text -}}
               </label>
 
-              <div id="{{ idPrefix }}-{{ item.id }}-hint" class="govuk-hint govuk-checkboxes__hint {{- ' ' + item.hint.classes if item.hint.classes }}">
-                {{- item.hint.text -}}
-              </div>
-
+              {% if item.hint.length %}
+                <div id="{{ idPrefix }}-{{ item.id }}-hint" class="govuk-hint govuk-checkboxes__hint {{- ' ' + item.hint.classes if item.hint.classes }}">
+                  {{- item.hint.text -}}
+                </div>
+              {% endif %}
             </div>
 
           {%- endfor -%}
