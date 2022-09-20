@@ -10,6 +10,12 @@ const vacancyOptions = [{
   code: 'include'
 }]
 
+const visaSponsorshipOptions = [{
+  id: '8bf5f687-eda9-4299-9105-7966b3f0fa38',
+  name: 'Only show courses with visa sponsorship',
+  code: 'include'
+}]
+
 exports.getCheckboxValues = (name, data) => {
   return name && (Array.isArray(name)
     ? name
@@ -289,6 +295,47 @@ exports.getSelectedDegreeGrade = (selectedItems) => {
     mode.href = `/results/remove-degree-grade-filter/${item.text}`
 
     items.push(mode)
+  })
+
+  return items
+}
+
+exports.getVisaSponsorshipItems = (selectedItems) => {
+  const items = []
+
+  visaSponsorshipOptions.forEach((visaSponsorship, i) => {
+    const item = {}
+
+    item.text = visaSponsorship.name
+    item.value = visaSponsorship.code
+    item.id = visaSponsorship.id
+    item.checked = (selectedItems && selectedItems.includes(visaSponsorship.name)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getVisaSponsorshipLabel = (visaSponsorshipCode) => {
+  let label
+
+  if (visaSponsorshipCode) {
+    label = visaSponsorshipOptions.filter(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedVisaSponsorshipItems = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const visaSponsorship = {}
+    visaSponsorship.text = item.text
+    visaSponsorship.href = `/results/remove-visa-sponsorship-filter/${item.text}`
+
+    items.push(visaSponsorship)
   })
 
   return items
