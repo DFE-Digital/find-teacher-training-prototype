@@ -1,3 +1,9 @@
+const sendOptions = [{
+  id: '5289e0bd-830b-46f6-948e-685214651beb',
+  name: 'Only show courses with a SEND specialism',
+  code: 'include'
+}]
+
 exports.getCheckboxValues = (name, data) => {
   return name && (Array.isArray(name)
     ? name
@@ -15,6 +21,7 @@ exports.removeFilter = (value, data) => {
     return null
   }
 }
+
 exports.getSubjectItems = (selectedItems, subjectLevel = null) => {
   let subjects = require('../data/subjects')
   const items = []
@@ -61,6 +68,47 @@ exports.getSelectedSubjectItems = (selectedItems) => {
     subject.href = `/results/remove-subject-filter/${item.text}`
 
     items.push(subject)
+  })
+
+  return items
+}
+
+exports.getSendItems = (selectedItems) => {
+  const items = []
+
+  sendOptions.forEach((send, i) => {
+    const item = {}
+
+    item.text = send.name
+    item.value = send.code
+    item.id = send.id
+    item.checked = (selectedItems && selectedItems.includes(send.name)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getSendLabel = (sendCode) => {
+  let label
+
+  if (sendCode) {
+    label = sendOptions.filter(send => send.code === sendCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedSendItems = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const send = {}
+    send.text = item.text
+    send.href = `/results/remove-send-filter/${item.text}`
+
+    items.push(send)
   })
 
   return items
