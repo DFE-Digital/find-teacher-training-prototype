@@ -80,8 +80,17 @@ router.get('/provider-suggestions', searchController.provider_suggestions_json)
 /// RESULTS ROUTES
 /// ------------------------------------------------------------------------ ///
 
-router.get('/results', checkHasSearchParams, resultsController.results_get)
-router.post('/results', checkHasSearchParams, resultsController.results_post)
+router.get('/results', checkHasSearchParams, resultsController.list)
+
+router.get('/results/remove-keywords-search', resultsController.removeKeywordSearch)
+
+router.get('/results/remove-subject-filter/:subject', resultsController.removeSubjectFilter)
+router.get('/results/remove-study-mode-filter/:subject', resultsController.removeStudyModeFilter)
+router.get('/results/remove-qualification-filter/:subject', resultsController.removeQualificationFilter)
+router.get('/results/remove-degree-grade-filter/:subject', resultsController.removeDegreeGradeFilter)
+
+router.get('/results/remove-all-filters', resultsController.removeAllFilters)
+
 
 /// ------------------------------------------------------------------------ ///
 /// COURSES ROUTES
