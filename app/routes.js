@@ -8,7 +8,7 @@ const resultsController = require('./controllers/results')
 const searchController = require('./controllers/search')
 
 const checkHasSearchParams = (req, res, next) => {
-  if (!req.session.data.subjects) {
+  if (!req.session.data.filter.subject) {
     res.redirect('/')
   } else {
     next()
