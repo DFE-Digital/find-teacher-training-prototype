@@ -71,7 +71,7 @@ exports.getSubjectLabel = (subjectCode) => {
   let label
 
   if (subjectCode) {
-    label = subjects.filter(subject => subject.code === subjectCode).name
+    label = subjects.find(subject => subject.code === subjectCode).name
   }
 
   return label
@@ -112,7 +112,7 @@ exports.getSendLabel = (sendCode) => {
   let label
 
   if (sendCode) {
-    label = sendOptions.filter(send => send.code === sendCode).name
+    label = sendOptions.find(send => send.code === sendCode).name
   }
 
   return label
@@ -153,7 +153,7 @@ exports.getVacancyLabel = (vacancyCode) => {
   let label
 
   if (vacancyCode) {
-    label = vacancyOptions.filter(vacancy => vacancy.code === vacancyCode).name
+    label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
   }
 
   return label
@@ -196,7 +196,7 @@ exports.getStudyModeLabel = (studyModeCode) => {
   let label
 
   if (studyModeCode) {
-    label = studyModes.filter(studyMode => studyMode.code === studyModeCode).name
+    label = studyModes.find(studyMode => studyMode.code === studyModeCode).name
   }
 
   return label
@@ -243,7 +243,7 @@ exports.getQualificationLabel = (qualificationCode) => {
   let label
 
   if (qualificationCode) {
-    label = qualifications.filter(qualification => qualification.code === qualificationCode).name
+    label = qualifications.find(qualification => qualification.code === qualificationCode).name
   }
 
   return label
@@ -286,7 +286,7 @@ exports.getDegreeGradeLabel = (degreeGradeCode) => {
   let label
 
   if (degreeGradeCode) {
-    label = degreeGrades.filter(degreeGrade => degreeGrade.code === degreeGradeCode).name
+    label = degreeGrades.find(degreeGrade => degreeGrade.code === degreeGradeCode).name
   }
 
   return label
@@ -327,7 +327,7 @@ exports.getVisaSponsorshipLabel = (visaSponsorshipCode) => {
   let label
 
   if (visaSponsorshipCode) {
-    label = visaSponsorshipOptions.filter(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
+    label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
   }
 
   return label
@@ -368,7 +368,7 @@ exports.getFundingTypeLabel = (fundingTypeCode) => {
   let label
 
   if (fundingTypeCode) {
-    label = fundingTypeOptions.filter(fundingType => fundingType.code === fundingTypeCode).name
+    label = fundingTypeOptions.find(fundingType => fundingType.code === fundingTypeCode).name
   }
 
   return label
