@@ -10,49 +10,21 @@
 
 {% block content %}
 
-  <p class="govuk-body">
-    {% if data.ageGroup == "furtherEducation" %}
-      <b>Further education</b>
-    {% else %}
-      {% if userJourney == "browse" %}
-        {% if data.route == "all" or data.ageGroup == "primary" %}
-          <b>{{ data.ageGroup | capitalize }}</b>
-        {% else %}
-          <b>{{ selectedSubjects | removeEmpty | join("</b> and <b>", "text") | safe }}</b>
-        {% endif %}
-      {% else %}
-        <b>{{ selectedSubjects | removeEmpty | join("</b> and <b>", "text") | safe }}</b>
-      {% endif %}
-    {% endif %}
-    courses
-    {% if data.q == "england" %}
-      in <b>England</b>
-    {% elif data.q == "location" %}
-      in <b>{{ data.location }}</b>
-    {% elif data.q == "provider" %}
-      from <b>{{ provider.name }}</b>
-    {% endif %}
-    {% if userJourney == "browse" %}
-      {% if data.ageGroup == "primary" %}
-        {% set change = "/browse/primary" %}
-      {% else %}
-        {% set change = "/browse/secondary" %}
-      {% endif %}
-    {% else %}
-      {% set change = "/search" %}
-    {% endif %}
-    <a href="{{ change }}" class="govuk-link govuk-link--no-visited-state govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
-  </p>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">
-    {{ title }}
-  </h1>
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
 
-  <div class="app-filter-toggle"></div>
+    </div>
+  </div>
 
   <div class="app-filter-layout">
     <div class="app-filter-layout__filter">
-      {% include "./_filters.njk" %}
+
+      {% include "./_filter-panel.njk" %}
+
     </div>
 
     <div class="app-filter-layout__content">
@@ -61,53 +33,53 @@
 
       {% include "./_sort-options.njk" %}
 
-      {% if results | length > 0 %}
+      <div class="app-action-bar">
+        <div class="app-action-bar__filter"></div>
+      </div>
+
+      {# {% include "./_search-panel.njk" %} #}
+
+      {% if courses.length %}
+
         <ul class="app-search-results">
+          {% for result in courses %}
+            <li class="app-search-results__item">
+              {% set isLocationSearch = (data.q != "england") %}
+              {% set isUniversity = (result.provider.provider_type == "university") %}
+              {% set trainingLocation = result.course.trainingLocation %}
 
-        {% for result in results %}
-          <li class="app-search-results__item">
-            {% set isLocationSearch = (data.q != "england") %}
-            {% set isUniversity = (result.provider.provider_type == "university") %}
-            {% set trainingLocation = result.course.trainingLocation %}
-
-            {{ appResultDetail({
-              href: "/course/" + result.provider.code + "/" + result.course.code,
-              providerName: result.provider.name | markdown("inline"),
-              courseName: result.course.name + " (" + result.course.code + ")",
-              schools: result.schools if not isUniversity and isLocationSearch,
-              trainingLocation: {
-                distance: trainingLocation.distance,
-                address: trainingLocation.address
-              } if trainingLocation and isUniversity and isLocationSearch,
-              accreditedBody: result.course.accredited_body,
-              studyType: result.course.study_mode | getStudyModeLabel,
-              qualification: result.course.qualifications | getQualificationLabel,
-              fundingOption: result.course.funding_option,
-              degreeGrade: result.course.degree_grade,
-              visaSponsorship: result.course.visaSponsorship,
-              startDate: result.course.start_date,
-              vacancies: "Yes" if result.course.has_vacancies else "No"
-            }) }}
-          </li>
-        {% endfor %}
+              {{ appResultDetail({
+                href: "/course/" + result.provider.code + "/" + result.course.code,
+                providerName: result.provider.name | markdown("inline"),
+                courseName: result.course.name + " (" + result.course.code + ")",
+                schools: result.schools if not isUniversity and isLocationSearch,
+                trainingLocation: {
+                  distance: trainingLocation.distance,
+                  address: trainingLocation.address
+                } if trainingLocation and isUniversity and isLocationSearch,
+                accreditedBody: result.course.accredited_body,
+                studyType: result.course.study_mode | getStudyModeLabel,
+                qualification: result.course.qualifications | getQualificationLabel,
+                fundingOption: result.course.funding_option,
+                degreeGrade: result.course.degree_grade,
+                visaSponsorship: result.course.visaSponsorship,
+                startDate: result.course.start_date,
+                vacancies: "Yes" if result.course.has_vacancies else "No"
+              }) }}
+            </li>
+          {% endfor %}
         </ul>
-        {{ appPagination(pagination) }}
-      {% else %}
-        <div class="app-search-results">
-        {% if area.country_name != "England" %}
-          <h2 class="govuk-heading-m">This service is for courses in England</h2>
-          {% if area.country_name == "Scotland" %}
-            <p class="govuk-body"><a class="govuk-link" href="https://teachinscotland.scot/">Learn more about teacher training in Scotland</a></p>
-          {% elif area.country_name == "Wales" %}
-            <p class="govuk-body"><a class="govuk-link" href="https://www.discoverteaching.wales/routes-into-teaching/">Learn more about teacher training in Wales</a></p>
-          {% elif area.country_name == "Northern Ireland" %}
-            <p class="govuk-body"><a class="govuk-link" href="https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland">Learn more about teacher training in Northern Ireland</a></p>
-          {% endif %}
-        {% else %}
-          <p class="govuk-body">You can <a class="govuk-link" href="/search">try another search</a>, for example by changing subject or location.</p>
+
+        {% if pagination %}
+          {% include "./pagination.njk" %}
         {% endif %}
-        </div>
+
+      {% else %}
+
+        {% include "./_no-results.njk" %}
+
       {% endif %}
+
     </div>
   </div>
 {% endblock %}
