@@ -40,7 +40,7 @@ exports.removeFilter = (value, data) => {
   }
 }
 
-exports.getSubjectItems = (selectedItems, subjectLevel = null) => {
+exports.getSubjectItems = (selectedItems, subjectLevel = null, showHint = false) => {
   let subjects = require('../data/subjects')
   const items = []
 
@@ -54,6 +54,12 @@ exports.getSubjectItems = (selectedItems, subjectLevel = null) => {
     item.text = subject.name
     item.value = subject.code
     item.id = subject.id
+
+    if (showHint && subject.hint) {
+      item.hint = {}
+      item.hint.text = subject.hint
+    }
+
     item.checked = (selectedItems && selectedItems.includes(subject.code)) ? 'checked' : ''
 
     items.push(item)
