@@ -115,8 +115,8 @@ exports.primary_subjects_post = async (req, res) => {
 
   if (!req.session.data.filter.subject?.length) {
     const error = {}
-    error.fieldName = "primary-subjects"
-    error.href = "#primary-subjects"
+    error.fieldName = "subject"
+    error.href = "#subject"
     error.text = "Select a least one primary subject you want to teach"
     errors.push(error)
   }
@@ -156,8 +156,8 @@ exports.secondary_subjects_post = async (req, res) => {
 
   if (!req.session.data.filter.subject?.length) {
     const error = {}
-    error.fieldName = "secondary-subjects"
-    error.href = "#secondary-subjects"
+    error.fieldName = "subject"
+    error.href = "#subject"
     error.text = "Select at least one secondary subjects you want to teach"
     errors.push(error)
   }
