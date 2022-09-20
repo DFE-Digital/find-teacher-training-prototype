@@ -37,6 +37,10 @@
   // margin-left: - govuk-spacing(2);
   background-color: govuk-colour("white");
   border-bottom: 1px solid $govuk-border-colour;
+
+  .govuk-checkboxes__label {
+    @include govuk-font(16);
+  }
 }
 
 .app-checkbox-filter__container-inner {
