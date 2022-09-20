@@ -54,7 +54,7 @@ exports.getSubjectItems = (selectedItems, subjectLevel = null) => {
     item.text = subject.name
     item.value = subject.code
     item.id = subject.id
-    item.checked = (selectedItems && selectedItems.includes(subject.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(subject.code)) ? 'checked' : ''
 
     items.push(item)
   })
@@ -100,7 +100,7 @@ exports.getSendItems = (selectedItems) => {
     item.text = send.name
     item.value = send.code
     item.id = send.id
-    item.checked = (selectedItems && selectedItems.includes(send.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(send.code)) ? 'checked' : ''
 
     items.push(item)
   })
@@ -141,7 +141,7 @@ exports.getVacancyItems = (selectedItems) => {
     item.text = vacancy.name
     item.value = vacancy.code
     item.id = vacancy.id
-    item.checked = (selectedItems && selectedItems.includes(vacancy.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(vacancy.code)) ? 'checked' : ''
 
     items.push(item)
   })
@@ -183,7 +183,7 @@ exports.getStudyModeItems = (selectedItems) => {
     item.text = studyMode.name
     item.value = studyMode.code
     item.id = studyMode.id
-    item.checked = (selectedItems && selectedItems.includes(studyMode.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(studyMode.code)) ? 'checked' : ''
 
     items.push(item)
   })
@@ -230,7 +230,7 @@ exports.getQualificationItems = (selectedItems, subjectLevel = null) => {
     item.text = qualification.name
     item.value = qualification.code
     item.id = qualification.id
-    item.checked = (selectedItems && selectedItems.includes(qualification.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(qualification.code)) ? 'checked' : ''
 
     items.push(item)
   })
@@ -273,7 +273,7 @@ exports.getDegreeGradeItems = (selectedItems) => {
     item.text = degreeGrade.name
     item.value = degreeGrade.code
     item.id = degreeGrade.id
-    item.checked = (selectedItems && selectedItems.includes(degreeGrade.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(degreeGrade.code)) ? 'checked' : ''
 
     items.push(item)
   })
@@ -315,7 +315,7 @@ exports.getVisaSponsorshipItems = (selectedItems) => {
     item.text = visaSponsorship.name
     item.value = visaSponsorship.code
     item.id = visaSponsorship.id
-    item.checked = (selectedItems && selectedItems.includes(visaSponsorship.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(visaSponsorship.code)) ? 'checked' : ''
 
     items.push(item)
   })
@@ -356,7 +356,7 @@ exports.getFundingTypeItems = (selectedItems) => {
     item.text = fundingType.name
     item.value = fundingType.code
     item.id = fundingType.id
-    item.checked = (selectedItems && selectedItems.includes(fundingType.name)) ? 'checked' : ''
+    item.checked = (selectedItems && selectedItems.includes(fundingType.code)) ? 'checked' : ''
 
     items.push(item)
   })
