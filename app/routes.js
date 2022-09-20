@@ -90,7 +90,8 @@ router.get('/results/remove-vacancy-filter/:vacancy', resultsController.removeVa
 router.get('/results/remove-study-mode-filter/:studyMode', resultsController.removeStudyModeFilter)
 router.get('/results/remove-qualification-filter/:qualification', resultsController.removeQualificationFilter)
 router.get('/results/remove-degree-grade-filter/:degreeGrade', resultsController.removeDegreeGradeFilter)
-router.get('/results/remove-visaSponsorship-filter/:visaSponsorship', resultsController.removeVisaSponsorshipFilter)
+router.get('/results/remove-visa-sponsorship-filter/:visaSponsorship', resultsController.removeVisaSponsorshipFilter)
+router.get('/results/remove-funding-type-filter/:fundingType', resultsController.removeFundingTypeFilter)
 
 router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 
