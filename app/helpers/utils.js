@@ -155,3 +155,46 @@ exports.getSelectedQualification = (selectedItems) => {
 
   return items
 }
+
+exports.getDegreeGradeItems = (selectedItems) => {
+  const degreeGrades = require('../data/degree-grades')
+  const items = []
+
+  degreeGrades.forEach((degreeGrade, i) => {
+    const item = {}
+
+    item.text = degreeGrade.name
+    item.value = degreeGrade.code
+    item.id = degreeGrade.id
+    item.checked = (selectedItems && selectedItems.includes(degreeGrade.name)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getDegreeGradeLabel = (degreeGradeCode) => {
+  const degreeGrades = require('../data/degree-grades')
+  let label
+
+  if (degreeGradeCode) {
+    label = degreeGrades.filter(degreeGrade => degreeGrade.code === degreeGradeCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedDegreeGrade = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const mode = {}
+    mode.text = item.text
+    mode.href = `/results/remove-degree-grade-filter/${item.text}`
+
+    items.push(mode)
+  })
+
+  return items
+}
