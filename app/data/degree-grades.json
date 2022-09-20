@@ -1,0 +1,22 @@
+[
+  {
+    "id": "98232c1e-404e-4807-a412-f8a647ce0991",
+    "code": "two_one",
+    "name": "2:1 or first"
+  },
+  {
+    "id": "3ff49a0a-251c-4f53-814c-0207f5aa21da",
+    "code": "two_two",
+    "name": "2:2"
+  },
+  {
+    "id": "3c880874-442b-4b8b-8cfb-f631ab1b3faa",
+    "code": "third_class",
+    "name": "Third"
+  },
+  {
+    "id": "e31952dd-c181-47ef-b08a-a90d9527f354",
+    "code": "not_required",
+    "name": "Pass - ordinary degree"
+  }
+]
