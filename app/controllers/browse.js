@@ -6,6 +6,7 @@ const cities = ['Birmingham','Bradford','Bristol','Exeter','Leeds','Lincoln','Li
 const regions = ['North East','North West','Yorkshire and The Humber','East Midlands','West Midlands','East of England','London','South East','South West']
 
 exports.browse_get = async (req, res) => {
+  delete req.session.data.route
   delete req.session.data.q
   delete req.session.data.ageGroup
   delete req.session.data.subjects
@@ -113,6 +114,7 @@ exports.location_post = async (req, res) => {
 }
 
 exports.primary_all_england_get = async (req, res) => {
+  req.session.data.route = 'all'
   req.session.data.q = 'england'
   req.session.data.ageGroup = 'primary'
   req.session.data.subjects = subjects
@@ -124,6 +126,7 @@ exports.primary_all_england_get = async (req, res) => {
 }
 
 exports.secondary_all_england_get = async (req, res) => {
+  req.session.data.route = 'all'
   req.session.data.q = 'england'
   req.session.data.ageGroup = 'secondary'
   req.session.data.subjects = subjects
