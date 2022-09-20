@@ -16,6 +16,12 @@ const visaSponsorshipOptions = [{
   code: 'include'
 }]
 
+const fundingTypeOptions = [{
+  id: '1c909417-4192-4de3-bc52-c9ebee5e7e4e',
+  name: 'Only show courses with a salary',
+  code: 'include'
+}]
+
 exports.getCheckboxValues = (name, data) => {
   return name && (Array.isArray(name)
     ? name
@@ -336,6 +342,47 @@ exports.getSelectedVisaSponsorshipItems = (selectedItems) => {
     visaSponsorship.href = `/results/remove-visa-sponsorship-filter/${item.text}`
 
     items.push(visaSponsorship)
+  })
+
+  return items
+}
+
+exports.getFundingTypeItems = (selectedItems) => {
+  const items = []
+
+  fundingTypeOptions.forEach((fundingType, i) => {
+    const item = {}
+
+    item.text = fundingType.name
+    item.value = fundingType.code
+    item.id = fundingType.id
+    item.checked = (selectedItems && selectedItems.includes(fundingType.name)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getFundingTypeLabel = (fundingTypeCode) => {
+  let label
+
+  if (fundingTypeCode) {
+    label = fundingTypeOptions.filter(fundingType => fundingType.code === fundingTypeCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedFundingTypeItems = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const fundingType = {}
+    fundingType.text = item.text
+    fundingType.href = `/results/remove-funding-type-filter/${item.text}`
+
+    items.push(fundingType)
   })
 
   return items
