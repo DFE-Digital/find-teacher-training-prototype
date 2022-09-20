@@ -1,0 +1,42 @@
+<p class="govuk-body">
+  {% if data.ageGroup == "furtherEducation" %}
+    <b>Further education</b>
+  {% else %}
+    {# {{subjectItems|dump|safe}} #}
+    {# {% if userJourney == "browse" %}
+      {% if data.route == "all" %}
+        <b>{{ data.ageGroup | capitalize }}</b>
+      {% else %}
+        <b>{{ selectedSubjects | removeEmpty | join("</b> and <b>", "text") | safe }}</b>
+      {% endif %}
+    {% else %}
+      <b>{{ selectedSubjects | removeEmpty | join("</b> and <b>", "text") | safe }}</b>
+    {% endif %} #}
+
+    {% for item in selectedSubjects %}
+      <b>{{ item }}</b>
+      {% if not loop.last %}
+        and
+      {% endif %}
+    {% endfor %}
+    {# <b>{{ selectedSubjects | join("</b> and <b>", "text") | safe }}</b> #}
+  {% endif %}
+  courses
+  {% if data.q == "england" %}
+    in <b>England</b>
+  {% elif data.q == "location" %}
+    in <b>{{ data.location }}</b>
+  {% elif data.q == "provider" %}
+    from <b>{{ provider.name }}</b>
+  {% endif %}
+  {% if userJourney == "browse" %}
+    {% if data.ageGroup == "primary" %}
+      {% set change = "/browse/primary" %}
+    {% else %}
+      {% set change = "/browse/secondary" %}
+    {% endif %}
+  {% else %}
+    {% set change = "/search" %}
+  {% endif %}
+  <a href="{{ change }}" class="govuk-link govuk-link--no-visited-state govuk-!-margin-left-4">Change <span class="govuk-visually-hidden">subject or location</span></a>
+</p>
