@@ -1,0 +1,50 @@
+[
+  {
+    "id": "7edd5f95-27c6-4dcc-87c4-93b8e11e7094",
+    "code": "pgce_with_qts",
+    "name": "PGCE with QTS",
+    "description": "Postgraduate certificate in education with qualified teacher status",
+    "levels": [
+      "primary",
+      "secondary"
+    ]
+  },
+  {
+    "id": "b05a3e1f-9bd3-4517-b9d9-139592170590",
+    "code": "pgde_with_qts",
+    "name": "PGDE with QTS",
+    "description": "Postgraduate diploma in education with qualified teacher status",
+    "levels": [
+      "primary",
+      "secondary"
+    ]
+  },
+  {
+    "id": "089b4c32-835e-4021-a316-003aac3c003a",
+    "code": "pgce",
+    "name": "PGCE without QTS",
+    "description": "Postgraduate certificate in education without qualified teacher status",
+    "levels": [
+      "further_education"
+    ]
+  },
+  {
+    "id": "741f08da-2bd4-4ae0-83af-f8eaa506375a",
+    "code": "pgde",
+    "name": "PGDE without QTS",
+    "description": "Postgraduate diploma in education without qualified teacher status",
+    "levels": [
+      "further_education"
+    ]
+  },
+  {
+    "id": "955e00b4-8e87-4a5b-96b5-7ae1a888b650",
+    "code": "qts",
+    "name": "QTS",
+    "description": "Qualified teacher status",
+    "levels": [
+      "primary",
+      "secondary"
+    ]
+  }
+]
