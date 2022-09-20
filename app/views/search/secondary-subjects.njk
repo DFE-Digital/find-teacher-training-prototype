@@ -22,21 +22,9 @@
 
       <form action="/secondary-subjects" method="post" accept-charset="utf-8" novalidate>
 
-        {% set items = [] %}
-        {% for subject in data.subjectOptions %}
-          {% if subject.ageGroup === "secondary" %}
-            {% set items = items | push({
-              text: subject.text,
-              value: subject.value,
-              hint: {text: subject.hint},
-              checked: (data.subjects and data.subjects.includes(subject.value))
-            }) %}
-          {% endif %}
-        {% endfor %}
-
         {{ govukCheckboxes({
-          idPrefix: "secondary-subjects",
-          name: "subjects",
+          idPrefix: "subject",
+          name: "filter[subject]",
           fieldset: {
             legend: {
               text: title,
@@ -47,8 +35,8 @@
           hint: {
             text: "Select all subjects you are interested in teaching"
           },
-          errorMessage: errors | getErrorMessage("secondary-subjects"),
-          items: (items | sort(attribute="text"))
+          errorMessage: errors | getErrorMessage("subject"),
+          items: subjectItems
         }) }}
 
         {{ govukButton({
