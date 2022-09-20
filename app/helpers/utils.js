@@ -52,7 +52,6 @@ exports.getSubjectLabel = (subjectCode) => {
   return label
 }
 
-
 exports.getSelectedSubjectItems = (selectedItems) => {
   const items = []
 
@@ -103,6 +102,53 @@ exports.getSelectedStudyMode = (selectedItems) => {
     const mode = {}
     mode.text = item.text
     mode.href = `/results/remove-study-mode-filter/${item.text}`
+
+    items.push(mode)
+  })
+
+  return items
+}
+
+exports.getQualificationItems = (selectedItems, subjectLevel = null) => {
+  let qualifications = require('../data/qualifications')
+  const items = []
+
+  if (subjectLevel) {
+    qualifications = qualifications.filter(qualification => qualification.levels.includes(subjectLevel))
+  }
+
+  qualifications.forEach((qualification, i) => {
+    const item = {}
+
+    item.text = qualification.name
+    item.value = qualification.code
+    item.id = qualification.id
+    item.checked = (selectedItems && selectedItems.includes(qualification.name)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getQualificationLabel = (qualificationCode) => {
+  const qualifications = require('../data/qualifications')
+  let label
+
+  if (qualificationCode) {
+    label = qualifications.filter(qualification => qualification.code === qualificationCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedQualification = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const mode = {}
+    mode.text = item.text
+    mode.href = `/results/remove-qualification-filter/${item.text}`
 
     items.push(mode)
   })
