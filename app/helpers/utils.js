@@ -4,6 +4,12 @@ const sendOptions = [{
   code: 'include'
 }]
 
+const vacancyOptions = [{
+  id: 'a4de2c9c-553f-4cea-8dd5-696afb02c06a',
+  name: 'Only show courses with vacancies',
+  code: 'include'
+}]
+
 exports.getCheckboxValues = (name, data) => {
   return name && (Array.isArray(name)
     ? name
@@ -109,6 +115,47 @@ exports.getSelectedSendItems = (selectedItems) => {
     send.href = `/results/remove-send-filter/${item.text}`
 
     items.push(send)
+  })
+
+  return items
+}
+
+exports.getVacancyItems = (selectedItems) => {
+  const items = []
+
+  vacancyOptions.forEach((vacancy, i) => {
+    const item = {}
+
+    item.text = vacancy.name
+    item.value = vacancy.code
+    item.id = vacancy.id
+    item.checked = (selectedItems && selectedItems.includes(vacancy.name)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getVacancyLabel = (vacancyCode) => {
+  let label
+
+  if (vacancyCode) {
+    label = vacancyOptions.filter(vacancy => vacancy.code === vacancyCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedVacancyItems = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const vacancy = {}
+    vacancy.text = item.text
+    vacancy.href = `/results/remove-vacancy-filter/${item.text}`
+
+    items.push(vacancy)
   })
 
   return items
