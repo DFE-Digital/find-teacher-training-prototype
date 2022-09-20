@@ -37,13 +37,13 @@
           {%- for item in params.items -%}
 
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="{{ idPrefix }}-{{ item.id }}" name="{{ params.name }}" type="checkbox" value="{{ item.value }}" {{ 'checked' if item.checked }}>
-              <label class="govuk-label govuk-checkboxes__label" for="{{ idPrefix }}-{{ item.id }}">
+              <input class="govuk-checkboxes__input" id="{{ idPrefix }}-{{ item.id | default(item.value) }}" name="{{ params.name }}" type="checkbox" value="{{ item.value }}" {{ 'checked' if item.checked }}>
+              <label class="govuk-label govuk-checkboxes__label" for="{{ idPrefix }}-{{ item.id | default(item.value) }}">
                 {{- item.text -}}
               </label>
 
               {% if item.hint.length %}
-                <div id="{{ idPrefix }}-{{ item.id }}-hint" class="govuk-hint govuk-checkboxes__hint {{- ' ' + item.hint.classes if item.hint.classes }}">
+                <div id="{{ idPrefix }}-{{ item.id | default(item.value) }}-hint" class="govuk-hint govuk-checkboxes__hint {{- ' ' + item.hint.classes if item.hint.classes }}">
                   {{- item.hint.text -}}
                 </div>
               {% endif %}
