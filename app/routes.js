@@ -85,9 +85,11 @@ router.get('/results', checkHasSearchParams, resultsController.list)
 router.get('/results/remove-keywords-search', resultsController.removeKeywordSearch)
 
 router.get('/results/remove-subject-filter/:subject', resultsController.removeSubjectFilter)
-router.get('/results/remove-study-mode-filter/:subject', resultsController.removeStudyModeFilter)
-router.get('/results/remove-qualification-filter/:subject', resultsController.removeQualificationFilter)
-router.get('/results/remove-degree-grade-filter/:subject', resultsController.removeDegreeGradeFilter)
+router.get('/results/remove-send-filter/:send', resultsController.removeSendFilter)
+router.get('/results/remove-vacancy-filter/:vacancy', resultsController.removeVacancyFilter)
+router.get('/results/remove-study-mode-filter/:studyMode', resultsController.removeStudyModeFilter)
+router.get('/results/remove-qualification-filter/:qualification', resultsController.removeQualificationFilter)
+router.get('/results/remove-degree-grade-filter/:degreeGrade', resultsController.removeDegreeGradeFilter)
 
 router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 
