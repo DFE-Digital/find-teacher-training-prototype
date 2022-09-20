@@ -64,7 +64,7 @@
           <ul class="govuk-list">
             {% for subject in languageSubjects %}
               <li>
-                <a class="govuk-link" href="/browse/location?subjects={{ subject.code }}">{{ subject.name }}</a>
+                <a class="govuk-link" href="/browse/location?filter[subject]={{ subject.code }}">{{ subject.name }}</a>
               </li>
             {% endfor %}
           </ul>
