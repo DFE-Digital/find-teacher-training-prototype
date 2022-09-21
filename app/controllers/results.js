@@ -25,40 +25,40 @@ exports.list = async (req, res) => {
   const visaSponsorship = null
   const fundingType = null
 
-  const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter?.subject)
+  const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter.subject)
 
   let studyModes
   if (req.session.data.filter?.studyMode) {
-    studyModes = utilsHelper.getCheckboxValues(studyMode, req.session.data.filter?.studyMode)
+    studyModes = utilsHelper.getCheckboxValues(studyMode, req.session.data.filter.studyMode)
   } else {
     studyModes = defaults.studyMode
   }
 
   let qualifications
   if (req.session.data.filter?.qualification) {
-    qualifications = utilsHelper.getCheckboxValues(qualification, req.session.data.filter?.qualification)
+    qualifications = utilsHelper.getCheckboxValues(qualification, req.session.data.filter.qualification)
   } else {
     qualifications = defaults.qualification
   }
 
   let degreeGrades
   if (req.session.data.filter?.degreeGrade) {
-    degreeGrades = utilsHelper.getCheckboxValues(degreeGrade, req.session.data.filter?.degreeGrade)
+    degreeGrades = utilsHelper.getCheckboxValues(degreeGrade, req.session.data.filter.degreeGrade)
   } else {
     degreeGrades = defaults.degreeGrade
   }
 
-  const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter?.send)
+  const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter.send)
 
   let vacancies
   if (req.session.data.filter?.vacancy) {
-    vacancies = utilsHelper.getCheckboxValues(vacancy, req.session.data.filter?.vacancy)
+    vacancies = utilsHelper.getCheckboxValues(vacancy, req.session.data.filter.vacancy)
   } else {
     vacancies = defaults.vacancy
   }
 
-  const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter?.visaSponsorship)
-  const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter?.fundingType)
+  const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
+  const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter.fundingType)
 
   const hasFilters = !!((subjects?.length > 0)
     || (studyModes?.length > 0)
