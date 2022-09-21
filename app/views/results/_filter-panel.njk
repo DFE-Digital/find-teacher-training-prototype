@@ -21,25 +21,26 @@
   {% if subjectItems.length >= subjectItemsDisplayLimit %}
 
     {{ appCheckboxFilter({
-      idPrefix: 'subject',
-      name: 'filter[subject]',
+      idPrefix: "subject",
+      name: "filter[subject]",
       legend: {
-        text: 'Subject'
+        text: "Subject"
       },
       items: subjectItems,
-      selectedItems: selectedSubjects | removeEmpty,
-      classes: 'govuk-!-margin-bottom-7'
+      selectedItems: selectedSubjects,
+      showSelectedTags: false,
+      classes: "govuk-!-margin-bottom-7"
     }) }}
 
   {% else %}
 
     {{ govukCheckboxes({
-      idPrefix: 'subject',
-      name: 'filter[subject]',
+      idPrefix: "subject",
+      name: "filter[subject]",
       fieldset: {
         legend: {
-          text: 'Subject',
-          classes: 'govuk-fieldset__legend--s'
+          text: "Subject",
+          classes: "govuk-fieldset__legend--s"
         }
       },
       items: subjectItems,
@@ -172,7 +173,7 @@
     </div>
   </div>
   <div class="app-filter__content">
-    {% if selectedFilters %}
+    {% if selectedFilters %} {# userJourney == "filter" and  #}
       <div class="app-filter__selected">
         <div class="app-filter__selected-heading">
           <div class="app-filter__heading-title">
