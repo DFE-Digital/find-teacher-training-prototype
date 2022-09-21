@@ -40,7 +40,7 @@
   {
     "id": "955e00b4-8e87-4a5b-96b5-7ae1a888b650",
     "code": "qts",
-    "name": "QTS",
+    "name": "QTS only",
     "description": "Qualified teacher status",
     "levels": [
       "primary",
