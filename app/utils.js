@@ -207,27 +207,5 @@ module.exports = () => {
     }))
   }
 
-  utils.primarySubjectItems = (subject, options = {}) => {
-    return data.subjectOptions
-      .filter(subject => subject.ageGroup === 'primary')
-      .map(option => ({
-        value: option.value,
-        text: option.text,
-        hint: { text: options.showHintText ? filters.markdown(option.hint) : false },
-        checked: subject ? subject.includes(option.value) : false
-      }))
-  }
-
-  utils.secondarySubjectItems = (subject, options = {}) => {
-    return data.subjectOptions
-      .filter(subject => subject.ageGroup === 'secondary')
-      .map(option => ({
-        value: option.value,
-        text: option.text,
-        hint: { text: options.showHintText ? filters.markdown(option.hint) : false },
-        checked: subject ? subject.includes(option.value) : false
-      }))
-  }
-
   return utils
 }
