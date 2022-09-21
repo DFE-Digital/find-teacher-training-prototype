@@ -80,7 +80,7 @@ router.get('/provider-suggestions', searchController.provider_suggestions_json)
 /// RESULTS ROUTES
 /// ------------------------------------------------------------------------ ///
 
-router.get('/results', checkHasSearchParams, resultsController.list)
+router.get('/results', resultsController.list)
 
 router.get('/results/remove-keywords-search', resultsController.removeKeywordSearch)
 
