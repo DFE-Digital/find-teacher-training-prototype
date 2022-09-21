@@ -173,7 +173,8 @@
     </div>
   </div>
   <div class="app-filter__content">
-    {% if selectedFilters %} {# userJourney == "filter" and  #}
+     {# userJourney == "filter" and  #}
+    {# {% if selectedFilters %}
       <div class="app-filter__selected">
         <div class="app-filter__selected-heading">
           <div class="app-filter__heading-title">
@@ -196,7 +197,7 @@
           </ul>
         {% endfor %}
       </div>
-    {% endif %}
+    {% endif %} #}
     <div class="app-filter__options">
       <form method="get" action="{{ actions.filters.apply }}" novalidate>
         <button class="govuk-button" data-module="govuk-button">

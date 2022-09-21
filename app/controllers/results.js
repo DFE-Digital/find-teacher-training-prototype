@@ -183,8 +183,6 @@ exports.list = (req, res) => {
 
   const subjectItems = utilsHelper.getSubjectItems(selectedSubject, req.session.data.ageGroup)
 
-  console.log('subjectItems',subjectItems);
-
   // get an array of selected subjects for use in the search terms subject list
   const selectedSubjects = utilsHelper.getSelectedSubjectItems(subjectItems.filter(subject => subject.checked === 'checked'))
 
@@ -276,6 +274,8 @@ exports.list = (req, res) => {
     subjects: selectedSubject
   }
 
+  console.log(params);
+
   // Data
   let courses = []
 
@@ -350,6 +350,8 @@ exports.removeQualificationFilter = (req, res) => {
 }
 
 exports.removeDegreeGradeFilter = (req, res) => {
+  console.log('params', req.params.degreeGrade);
+  console.log('filter', req.session.data.filter);
   req.session.data.filter.degreeGrade = utilsHelper.removeFilter(req.params.degreeGrade, req.session.data.filter.degreeGrade)
   res.redirect('/results')
 }
