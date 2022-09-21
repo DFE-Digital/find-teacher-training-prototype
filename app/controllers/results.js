@@ -10,7 +10,12 @@ const utilsHelper = require('../helpers/utils')
 exports.list = (req, res) => {
   const { defaults } = req.session.data
 
-  // Search and filters
+  // Search
+  const keywords = req.session.data.keywords
+
+  const hasSearch = !!((keywords))
+
+  // Filters
   const subject = null
   const studyMode = null
   const qualification = null
@@ -19,8 +24,6 @@ exports.list = (req, res) => {
   const vacancy = null
   const visaSponsorship = null
   const fundingType = null
-
-  const keywords = req.session.data.keywords
 
   const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter?.subject)
   const studyModes = utilsHelper.getCheckboxValues(studyMode, req.session.data.filter?.studyMode)
@@ -31,7 +34,6 @@ exports.list = (req, res) => {
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter?.visaSponsorship)
   const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter?.fundingType)
 
-  const hasSearch = !!((keywords))
   const hasFilters = !!((subjects?.length > 0)
     || (studyModes?.length > 0)
     || (qualifications?.length > 0)
