@@ -8,7 +8,7 @@ const paginationHelper = require('../helpers/pagination')
 const utilsHelper = require('../helpers/utils')
 
 exports.list = (req, res) => {
-  const { defaults } = req.session.data
+  const defaults = req.session.data.defaults
 
   // Search
   const keywords = req.session.data.keywords
@@ -26,11 +26,37 @@ exports.list = (req, res) => {
   const fundingType = null
 
   const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter?.subject)
-  const studyModes = utilsHelper.getCheckboxValues(studyMode, req.session.data.filter?.studyMode)
-  const qualifications = utilsHelper.getCheckboxValues(qualification, req.session.data.filter?.qualification)
-  const degreeGrades = utilsHelper.getCheckboxValues(degreeGrade, req.session.data.filter?.degreeGrade)
+
+  let studyModes
+  if (req.session.data.filter?.studyMode) {
+    studyModes = utilsHelper.getCheckboxValues(studyMode, req.session.data.filter?.studyMode)
+  } else {
+    studyModes = defaults.studyMode
+  }
+
+  let qualifications
+  if (req.session.data.filter?.qualification) {
+    qualifications = utilsHelper.getCheckboxValues(qualification, req.session.data.filter?.qualification)
+  } else {
+    qualifications = defaults.qualification
+  }
+
+  let degreeGrades
+  if (req.session.data.filter?.degreeGrade) {
+    degreeGrades = utilsHelper.getCheckboxValues(degreeGrade, req.session.data.filter?.degreeGrade)
+  } else {
+    degreeGrades = defaults.degreeGrade
+  }
+
   const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter?.send)
-  const vacancies = utilsHelper.getCheckboxValues(vacancy, req.session.data.filter?.vacancy)
+
+  let vacancies
+  if (req.session.data.filter?.vacancy) {
+    vacancies = utilsHelper.getCheckboxValues(vacancy, req.session.data.filter?.vacancy)
+  } else {
+    vacancies = defaults.vacancy
+  }
+
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter?.visaSponsorship)
   const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter?.fundingType)
 
@@ -151,9 +177,13 @@ exports.list = (req, res) => {
   let selectedSubject
   if (req.session.data.filter?.subject) {
     selectedSubject = req.session.data.filter.subject
+  } else {
+    selectedSubject = defaults.subject
   }
 
   const subjectItems = utilsHelper.getSubjectItems(selectedSubject, req.session.data.ageGroup)
+
+  console.log('subjectItems',subjectItems);
 
   // get an array of selected subjects for use in the search terms subject list
   const selectedSubjects = utilsHelper.getSelectedSubjectItems(subjectItems.filter(subject => subject.checked === 'checked'))
@@ -161,6 +191,8 @@ exports.list = (req, res) => {
   let selectedSend
   if (req.session.data.filter?.send) {
     selectedSend = req.session.data.filter.send
+  } else {
+    selectedSend = defaults.send
   }
 
   const sendItems = utilsHelper.getSendItems(selectedSend)
@@ -168,6 +200,8 @@ exports.list = (req, res) => {
   let selectedVacancy
   if (req.session.data.filter?.vacancy) {
     selectedVacancy = req.session.data.filter.vacancy
+  } else {
+    selectedVacancy = defaults.vacancy
   }
 
   const vacancyItems = utilsHelper.getVacancyItems(selectedVacancy)
@@ -175,6 +209,8 @@ exports.list = (req, res) => {
   let selectedStudyMode
   if (req.session.data.filter?.studyMode) {
     selectedStudyMode = req.session.data.filter.studyMode
+  } else {
+    selectedStudyMode = defaults.studyMode
   }
 
   const studyModeItems = utilsHelper.getStudyModeItems(selectedStudyMode)
@@ -182,6 +218,8 @@ exports.list = (req, res) => {
   let selectedQualification
   if (req.session.data.filter?.qualification) {
     selectedQualification = req.session.data.filter.qualification
+  } else {
+    selectedQualification = defaults.qualification
   }
 
   const qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
@@ -189,6 +227,8 @@ exports.list = (req, res) => {
   let selectedDegreeGrade
   if (req.session.data.filter?.degreeGrade) {
     selectedDegreeGrade = req.session.data.filter.degreeGrade
+  } else {
+    selectedDegreeGrade = defaults.degreeGrade
   }
 
   const degreeGradeItems = utilsHelper.getDegreeGradeItems(selectedDegreeGrade)
@@ -196,6 +236,8 @@ exports.list = (req, res) => {
   let selectedVisaSponsorship
   if (req.session.data.filter?.visaSponsorship) {
     selectedVisaSponsorship = req.session.data.filter.visaSponsorship
+  } else {
+    selectedVisaSponsorship = defaults.visaSponsorship
   }
 
   const visaSponsorshipItems = utilsHelper.getVisaSponsorshipItems(selectedVisaSponsorship)
@@ -203,6 +245,8 @@ exports.list = (req, res) => {
   let selectedFundingType
   if (req.session.data.filter?.fundingType) {
     selectedFundingType = req.session.data.filter.fundingType
+  } else {
+    selectedFundingType = defaults.fundingType
   }
 
   const fundingTypeItems = utilsHelper.getFundingTypeItems(selectedFundingType)
@@ -220,17 +264,17 @@ exports.list = (req, res) => {
   const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
 
   // API query params
-  // const filter = {
-  //   findable: true,
-  //   funding_type: fundingType ? 'salary' : 'salary,apprenticeship,fee',
-  //   degree_grade: degreeGrade.toString(),
-  //   send_courses: send,
-  //   has_vacancies: vacancy,
-  //   qualification: qualification.toString(),
-  //   study_type: studyType.toString(),
-  //   can_sponsor_visa: visaSponsorship,
-  //   subjects: subjects.toString()
-  // }
+  const params = {
+    findable: true,
+    funding_type: selectedFundingType,
+    degree_grade: selectedDegreeGrade,
+    send_courses: selectedSend,
+    has_vacancies: selectedVacancy,
+    qualification: selectedQualification,
+    study_type: selectedStudyMode,
+    can_sponsor_visa: selectedVisaSponsorship,
+    subjects: selectedSubject
+  }
 
   // Data
   let courses = []
