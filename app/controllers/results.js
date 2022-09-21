@@ -7,7 +7,7 @@ const utils = require('../utils')()
 const paginationHelper = require('../helpers/pagination')
 const utilsHelper = require('../helpers/utils')
 
-exports.list = (req, res) => {
+exports.list = async (req, res) => {
   const defaults = req.session.data.defaults
 
   // Search
@@ -262,60 +262,227 @@ exports.list = (req, res) => {
   const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
 
   // API query params
-  const params = {
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-coursefilter
+  const filter = {
     findable: true,
-    funding_type: selectedFundingType,
-    degree_grade: selectedDegreeGrade,
-    send_courses: selectedSend,
-    has_vacancies: selectedVacancy,
-    qualification: selectedQualification,
-    study_type: selectedStudyMode,
-    can_sponsor_visa: selectedVisaSponsorship,
-    subjects: selectedSubject
+    funding_type: selectedFundingType.toString(),
+    degree_grade: selectedDegreeGrade.toString(),
+    send_courses: selectedSend === 'include' ? true : false,
+    has_vacancies: selectedVacancy === 'include' ? true : false,
+    qualification: selectedQualification.toString(),
+    study_type: selectedStudyMode.toString(),
+    can_sponsor_visa: selectedVisaSponsorship === 'include' ? true : false,
+    subjects: selectedSubject.toString()
   }
 
-  console.log(params);
+  // pagination settings
+  const page = req.query.page || 1
+  const perPage = 20
 
-  // Data
-  let courses = []
-
-  // Pagination
-  const pagination = paginationHelper.getPagination(courses, req.query.page)
-
-  // Slice the data to display
-  courses = paginationHelper.getDataByPage(courses, pagination.pageNumber)
-
-  const subjectItemsDisplayLimit = 10
-
-  res.render('../views/results/index', {
-    courses,
-    pagination,
-    subjectItems,
-    subjectItemsDisplayLimit,
-    selectedSubjects,
-    sendItems,
-    vacancyItems,
-    studyModeItems,
-    qualificationItems,
-    degreeGradeItems,
-    visaSponsorshipItems,
-    fundingTypeItems,
-    selectedFilters,
-    hasFilters,
-    hasSearch,
-    keywords,
-    actions: {
-      view: `/course/`,
-      filters: {
-        apply: `/results`,
-        remove: `/results/remove-all-filters`
-      },
-      search: {
-        find: `/results`,
-        remove: `/results/remove-keyword-search`
+  try {
+    let CourseListResponse
+    if (q === 'provider') {
+      CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
+    } else if (q === 'location') {
+      if (radius) {
+        filter.latitude = latitude
+        filter.longitude = longitude
+        filter.radius = radius
       }
+      CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+    } else {
+      // England-wide search
+      CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
     }
-  })
+    const { data, links, meta, included } = CourseListResponse
+
+    let courses = data
+    if (courses.length > 0) {
+      const providers = included.filter(include => include.type === 'providers')
+
+      courses = courses.map(async courseResource => {
+        const course = utils.decorateCourse(courseResource.attributes)
+        const courseRalationships = courseResource.relationships
+
+        // Get course provider
+        const providerId = courseRalationships.provider.data.id
+        const providerResource = providers.find(providerResource => providerResource.id === providerId)
+        const provider = providerResource.attributes
+
+        // Get course accredited body
+        if (courseRalationships.accredited_body.data) {
+          const accreditedBodyId = courseRalationships.accredited_body.data.id
+          const accreditedBody = providers.find(providerResource => providerResource.id === accreditedBodyId)
+          course.accredited_body = accreditedBody.attributes.name
+        }
+
+        // Get locations
+        const LocationListResponse = await teacherTrainingService.getCourseLocations(provider.code, course.code)
+        const statuses = LocationListResponse.included.filter(item => item.type === 'location_statuses')
+        const locations = LocationListResponse.data.map(location => {
+          const { attributes } = location
+
+          // Vacancy status
+          const statusId = location.relationships.location_status.data.id
+          const status = statuses.find(status => status.id === statusId)
+          attributes.has_vacancies = status.attributes.has_vacancies
+
+          // Address
+          const streetAddress1 = attributes.street_address_1 ? attributes.street_address_1 + ', ' : ''
+          const streetAddress2 = attributes.street_address_2 ? attributes.street_address_2 + ', ' : ''
+          const city = attributes.city ? attributes.city + ', ' : ''
+          const county = attributes.county ? attributes.county + ', ' : ''
+          const postcode = attributes.postcode
+
+          attributes.name = attributes.name.replace(/'/g, '’')
+          attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
+
+          // Distance from search location
+          if (q === 'location') {
+            const distanceInMeters = geolib.getDistance({
+              latitude,
+              longitude
+            }, {
+              latitude: attributes.latitude,
+              longitude: attributes.longitude
+            })
+
+            const distanceInMiles = ((parseInt(distanceInMeters) / 1000) * 0.621371).toFixed(0)
+            attributes.distance = parseInt(distanceInMiles)
+          }
+
+          return attributes
+        })
+
+        // Sort locations by disance
+        locations.sort((a, b) => {
+          return a.distance - b.distance
+        })
+
+        // Set course visa sponsorship based on provider
+        course.visaSponsorship = {}
+        course.visaSponsorship.canSponsorSkilledWorkerVisa = provider.can_sponsor_skilled_worker_visa
+        course.visaSponsorship.canSponsorStudentVisa = provider.can_sponsor_student_visa
+
+        const schools = locations.filter(location => location.code !== '-')
+
+        course.trainingLocation = locations.find(location => location.code === '-')
+
+        return {
+          course,
+          provider,
+          schools
+          // placementAreas
+        }
+      })
+    }
+
+    // Data
+    let results = await Promise.all(courses)
+
+    // sort results by training provider name
+    if (['provider','england'].includes(req.session.data.q)) {
+      results.sort((a, b) => {
+        if (req.query.sortBy === '1') {
+          // sorted by Training provider Z-A
+          return b.provider.name.localeCompare(a.provider.name)
+        } else {
+          // sorted by Training provider A-Z
+          return a.provider.name.localeCompare(b.provider.name)
+        }
+      })
+    }
+
+    const resultsCount = meta ? meta.count : results.length
+
+    const pageCount = links.last.match(/page=(\d*)/)[1]
+
+    const prevPage = links.prev ? (page - 1) : false
+    const nextPage = links.next ? (page + 1) : false
+
+    const searchQuery = page => {
+      const query = {
+        latitude,
+        longitude,
+        page,
+        send,
+        vacancy,
+        studyMode,
+        qualification,
+        degreeGrade,
+        visaSponsorship,
+        fundingType,
+        subjects
+      }
+
+      return qs.stringify(query)
+    }
+
+    const pagination = {
+      pages: pageCount,
+      next: nextPage
+        ? {
+            href: `?${searchQuery(nextPage)}`,
+            page: nextPage,
+            text: 'Next page'
+          }
+        : false,
+      previous: prevPage
+        ? {
+            href: `?${searchQuery(prevPage)}`,
+            page: prevPage,
+            text: 'Previous page'
+          }
+        : false
+    }
+
+    // Pagination
+    // const pagination = paginationHelper.getPagination(results, page, perPage)
+
+    // Slice the data to display
+    // results = paginationHelper.getDataByPage(results, pagination.pageNumber)
+
+    const subjectItemsDisplayLimit = 10
+
+    res.render('../views/results/index', {
+      results,
+      resultsCount,
+      pagination,
+      subjectItems,
+      subjectItemsDisplayLimit,
+      selectedSubjects,
+      sendItems,
+      vacancyItems,
+      studyModeItems,
+      qualificationItems,
+      degreeGradeItems,
+      visaSponsorshipItems,
+      fundingTypeItems,
+      selectedFilters,
+      hasFilters,
+      hasSearch,
+      keywords,
+      actions: {
+        view: '/course/',
+        filters: {
+          apply: '/results',
+          remove: '/results/remove-all-filters'
+        },
+        search: {
+          find: '/results',
+          remove: '/results/remove-keyword-search'
+        }
+      }
+    })
+
+  } catch (error) {
+    console.error(error.stack)
+    res.render('error', {
+      title: error.name,
+      content: error
+    })
+  }
+
 }
 
 exports.removeKeywordSearch = (req, res) => {
@@ -350,8 +517,6 @@ exports.removeQualificationFilter = (req, res) => {
 }
 
 exports.removeDegreeGradeFilter = (req, res) => {
-  console.log('params', req.params.degreeGrade);
-  console.log('filter', req.session.data.filter);
   req.session.data.filter.degreeGrade = utilsHelper.removeFilter(req.params.degreeGrade, req.session.data.filter.degreeGrade)
   res.redirect('/results')
 }
