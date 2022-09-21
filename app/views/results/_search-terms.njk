@@ -1,6 +1,6 @@
 {% macro _selectedSubjects(params) %}
   {% for item in params.subjects %}
-    <b>{{ item }}</b>
+    <b>{{ item.text }}</b>
     {% if not loop.last %}
       and
     {% endif %}

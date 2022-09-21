@@ -154,11 +154,7 @@ exports.list = (req, res) => {
   const subjectItems = utilsHelper.getSubjectItems(selectedSubject, req.session.data.ageGroup)
 
   // get an array of selected subjects for use in the search terms subject list
-  const selectedSubjects = subjectItems
-    .filter(subject => subject.checked === 'checked')
-    .map(s => {
-      return s.text
-    })
+  const selectedSubjects = utilsHelper.getSelectedSubjectItems(subjectItems.filter(subject => subject.checked === 'checked'))
 
   let selectedSend
   if (req.session.data.filter?.send) {
