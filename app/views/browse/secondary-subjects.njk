@@ -76,7 +76,7 @@
           <ul class="govuk-list">
             {% for subject in stemSubjects %}
               <li>
-                <a class="govuk-link" href="/browse/location?subjects={{ subject.code }}">{{ subject.name }}</a>
+                <a class="govuk-link" href="/browse/location?filter[subject]={{ subject.code }}">{{ subject.name }}</a>
               </li>
             {% endfor %}
           </ul>
@@ -105,7 +105,7 @@
       <ul class="govuk-list app-two-columns">
         {% for subject in otherSubjects %}
           <li>
-            <a class="govuk-link" href="/browse/location?subjects={{ subject.code }}">{{ subject.name }}</a>
+            <a class="govuk-link" href="/browse/location?filter[subject]={{ subject.code }}">{{ subject.name }}</a>
           </li>
         {% endfor %}
       </ul>
