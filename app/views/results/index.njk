@@ -41,10 +41,10 @@
 
       {# {% include "./_search-panel.njk" %} #}
 
-      {% if courses.length %}
+      {% if results.length %}
 
         <ul class="app-search-results">
-          {% for result in courses %}
+          {% for result in results %}
             <li class="app-search-results__item">
               {% set isLocationSearch = (data.q != "england") %}
               {% set isUniversity = (result.provider.provider_type == "university") %}
@@ -72,9 +72,11 @@
           {% endfor %}
         </ul>
 
-        {% if pagination %}
-          {% include "./pagination.njk" %}
-        {% endif %}
+        {# {% if pagination %}
+          {% include "./_pagination.njk" %}
+        {% endif %} #}
+
+        {{ appPagination( pagination ) }}
 
       {% else %}
 
