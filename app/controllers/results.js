@@ -217,7 +217,12 @@ exports.list = async (req, res) => {
   if (req.session.data.filter?.qualification) {
     selectedQualification = req.session.data.filter.qualification
   } else {
-    selectedQualification = defaults.qualification
+    // if the subject is further education, set the defaults to FE qualifications
+    if (req.session.data.filter?.subject.includes('41')) {
+      selectedQualification = ['pgce','pgde']
+    } else {
+      selectedQualification = defaults.qualification
+    }
   }
 
   const qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
