@@ -90,6 +90,8 @@ exports.age_groups_post = async (req, res) => {
     } else if (ageGroup === 'secondary') {
       res.redirect('/secondary-subjects')
     } else if (ageGroup === 'furtherEducation') {
+      req.session.data.filter = {}
+      req.session.data.filter.subject = ['41']
       res.redirect('/results')
     } else {
       res.redirect('/results')
