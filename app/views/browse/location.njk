@@ -1,7 +1,12 @@
 {% extends "_layouts/default.njk" %}
 
 {% set title = "Search by location" %}
-{% set caption = "Find " + ageGroup + " courses" %}
+{% if ageGroup == "secondary" %}
+  {% set caption = "Find " + ageGroup + " courses - " + data.filter.subject | getSubjectLabel  %}
+{% else %}
+  {% set caption = "Find " + ageGroup + " courses"  %}
+{% endif %}
+
 
 {% block pageTitle %}
 {{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
@@ -105,9 +110,19 @@
     </div>
   </div>
 
+  {% if ageGroup == "secondary" %}
+    <div class="govuk-grid-row govuk-!-margin-top-5">
+      <div class="govuk-grid-column-one-half">
+        <p class="govuk-body">
+          <a class="govuk-link" href="#">Browse all {{ data.filter.subject | getSubjectLabel }} courses in England</a>
+        </p>
+      </div>
+    </div>
+  {% endif %}
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h2 class="govuk-heading-l govuk-!-margin-top-8">Apply early once you find your course</h2>
+      <h2 class="govuk-heading-l {{- ' govuk-!-margin-top-3' if ageGroup == 'secondary' else ' govuk-!-margin-top-8' }}">Apply early once you find your course</h2>
 
       <p class="govuk-body">
         You're about to find courses which start in September 2023. Apply no later than 7 September 2023 to to be considered for a place on one of these courses.
