@@ -327,5 +327,21 @@ module.exports = (env) => {
     return label
   }
 
+  /* ------------------------------------------------------------------
+  utility function to get the study mode label
+  example: {{ 'both' | getStudyModeLabel }}
+  outputs: "Full time or part time"
+  ------------------------------------------------------------------ */
+  filters.getSubjectLabel = (subjectCode) => {
+    const subjects = require('./data/subjects')
+    let label
+
+    if (subjectCode) {
+      label = subjects.find(subject => subject.code === subjectCode).name
+    }
+
+    return label
+  }
+
   return filters
 }
