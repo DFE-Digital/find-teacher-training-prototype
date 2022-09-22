@@ -25,7 +25,7 @@
     "name": "PGCE without QTS",
     "description": "Postgraduate certificate in education without qualified teacher status",
     "levels": [
-      "further_education"
+      "furtherEducation"
     ]
   },
   {
@@ -34,7 +34,7 @@
     "name": "PGDE without QTS",
     "description": "Postgraduate diploma in education without qualified teacher status",
     "levels": [
-      "further_education"
+      "furtherEducation"
     ]
   },
   {
