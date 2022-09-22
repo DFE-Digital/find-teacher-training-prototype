@@ -45,7 +45,7 @@ exports.secondary_get = async (req, res) => {
   const languageSubjects = subjects.filter(subject => subject.level === 'secondary' && subject.group === 'languages')
   languageSubjects.push({
     id: '4608e5e3-2a1a-48a1-8236-56c7af5a139d',
-    name: 'Another modern language',
+    name: 'Modern languages',
     code: '24',
     level: 'secondary'
   })
