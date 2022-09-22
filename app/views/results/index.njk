@@ -87,3 +87,18 @@
     </div>
   </div>
 {% endblock %}
+
+{% block pageScripts %}
+<script type="module" >
+  import { CheckboxFilter } from '/public/javascripts/components/checkbox-filter.js'
+
+  const checkboxFilter = new CheckboxFilter({
+    container: $('#subject'),
+    textBox: {
+      label: 'Search for subject'
+    }
+  })
+
+  checkboxFilter.init()
+</script>
+{% endblock %}

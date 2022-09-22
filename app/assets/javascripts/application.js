@@ -1,13 +1,13 @@
 /* global $ */
-import { CheckboxFilter } from './components/checkbox-filter.js'
+// import { CheckboxFilter } from './components/checkbox-filter.js'
 import { FilterToggleButton } from './components/filter-toggle-button.js'
 
-const checkboxFilter = new CheckboxFilter({
-  container: $('#subject'),
-  textBox: {
-    label: 'Search for subject'
-  }
-})
+// const checkboxFilter = new CheckboxFilter({
+//   container: $('#subject'),
+//   textBox: {
+//     label: 'Search for subject'
+//   }
+// })
 
 const filterToggleButton = new FilterToggleButton({
   bigModeMediaQuery: '(min-width: 48.063em)',
@@ -34,7 +34,7 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   GOVUK.modules.start()
-  checkboxFilter.init()
+  // checkboxFilter.init()
   filterToggleButton.init()
   window.GOVUKFrontend.initAll()
 })
