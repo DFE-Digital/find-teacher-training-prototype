@@ -1,5 +1,5 @@
 {% set filterOptionsHtml %}
-{% if userJourney == "browse" and data.ageGroup == "primary" %}
+{% if userJourney in ["browse","filter"] and data.ageGroup == "primary" %}
   {{ govukCheckboxes({
     idPrefix: "subject",
     name: "filter[subject]",
@@ -17,7 +17,7 @@
   }) }}
 {% endif %}
 
-{% if userJourney == "browse" and data.route == "all" and data.ageGroup == "secondary" %}
+{% if userJourney in ["browse","filter"] and data.route == "all" and data.ageGroup == "secondary" %}
   {% if subjectItems.length >= subjectItemsDisplayLimit %}
 
     {{ appCheckboxFilter({
