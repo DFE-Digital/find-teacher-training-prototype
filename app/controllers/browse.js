@@ -23,7 +23,8 @@ exports.browse_get = async (req, res) => {
         primary: '/browse/primary',
         primaryAll: '/browse/primary-all-england',
         secondary: '/browse/secondary',
-        secondaryAll: '/browse/secondary-all-england'
+        secondaryAll: '/browse/secondary-all-england',
+        furtherEducationAll: '/browse/further-education-all-england'
       }
     })
   }
@@ -142,6 +143,17 @@ exports.secondary_all_england_get = async (req, res) => {
     .map((s) => {
       return s.code
     })
+
+  res.redirect('/results')
+}
+
+exports.further_education_all_england_get = async (req, res) => {
+  req.session.data.route = 'all'
+  req.session.data.q = 'england'
+  req.session.data.ageGroup = 'furtherEducation'
+
+  req.session.data.filter = {}
+  req.session.data.filter.subject = ['41']
 
   res.redirect('/results')
 }
