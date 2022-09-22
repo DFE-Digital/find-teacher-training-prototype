@@ -49,6 +49,9 @@ router.get('/browse/primary-all-england', browseController.primary_all_england_g
 router.get('/browse/secondary', browseController.secondary_get)
 router.get('/browse/secondary-all-england', browseController.secondary_all_england_get)
 
+
+router.get('/browse/further-education-all-england', browseController.further_education_all_england_get)
+
 router.get('/browse/location', browseController.location_get)
 router.post('/browse/location', browseController.location_post)
 
@@ -82,7 +85,7 @@ router.get('/provider-suggestions', searchController.provider_suggestions_json)
 
 router.get('/results', resultsController.list)
 
-router.get('/results/remove-keywords-search', resultsController.removeKeywordSearch)
+router.get('/results/remove-keyword-search', resultsController.removeKeywordSearch)
 
 router.get('/results/remove-subject-filter/:subject', resultsController.removeSubjectFilter)
 router.get('/results/remove-send-filter/:send', resultsController.removeSendFilter)
