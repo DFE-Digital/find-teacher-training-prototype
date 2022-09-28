@@ -27,7 +27,7 @@
   {% elif data.q == "location" %}
     in <b>{{ data.location }}</b>
   {% elif data.q == "provider" %}
-    from <b>{{ provider.name }}</b>
+    from <b>{{ data.provider.name }}</b>
   {% endif %}
   {% if userJourney == "browse" %}
     {% if data.ageGroup == "primary" %}
