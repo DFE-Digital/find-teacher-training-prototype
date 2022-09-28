@@ -94,3 +94,57 @@
     }
   }
 }
+
+.app-filter-tags {
+  font-size: 0;
+  margin-bottom: govuk-spacing(2); // Needs to adjust to 15px on mobile
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    margin-right: govuk-spacing(1);
+  }
+
+}
+
+.app-filter__tag {
+  @include govuk-font(16);
+  background-color: govuk-colour("white");
+  border: 1px solid govuk-colour("black");
+  color: govuk-colour("black");
+  display: inline-block;
+  margin-top: govuk-spacing(1);
+  padding: govuk-spacing(1);
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: govuk-colour("black");
+  }
+
+  &:focus {
+    color: $govuk-focus-text-colour;
+    background-color: $govuk-focus-colour;
+  }
+
+  &:hover {
+    background-color: govuk-colour("black");
+    color: govuk-colour("white");
+  }
+
+  &:after {
+    background-image: url("#{$app-assets-path}images/icon-tag-remove-cross.svg");
+    content: '';
+    display: inline-block;
+    font-weight: bold;
+    height: 10px;
+    margin-left: govuk-spacing(1);
+    vertical-align: middle;
+    width: 10px;
+  }
+
+  &:hover:after {
+    background-image: url("#{$app-assets-path}images/icon-tag-remove-cross-white.svg");
+  }
+
+}

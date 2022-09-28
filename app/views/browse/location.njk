@@ -1,0 +1,146 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Search by location" %}
+{% if ageGroup == "secondary" %}
+  {% set caption = "Find " + ageGroup + " courses - " + data.filter.subject | getSubjectLabel  %}
+{% else %}
+  {% set caption = "Find " + ageGroup + " courses"  %}
+{% endif %}
+
+
+{% block pageTitle %}
+{{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "/"
+    },
+    {
+      text: "Find " + (ageGroup | lower) + " courses",
+      href: ("/browse/" + ageGroup) if ageGroup == "secondary"
+    },
+    {
+      text: title
+    }
+  ] | removeEmpty
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  {% include "_includes/error-summary.njk" %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if caption.length %}
+          <span class="govuk-caption-xl">{{ caption }}</span>
+        {% endif %}
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="app-grid-column--blue">
+
+        <div class="govuk-grid-row govuk-!-margin-bottom-5">
+          <div class="govuk-grid-column-two-thirds">
+            {{ appSearch({
+              label: {
+                text: "City, town or postcode",
+                classes: 'govuk-label--m app-label--white'
+              },
+              input: {
+                id: "location",
+                name: "location",
+                errorMessage: errors | getErrorMessage("location") if 1 == 0
+              },
+              action: actions.search,
+              method: "post",
+              buttons: [{
+                text: "Search",
+                classes: "app-search__button app-button--white"
+              }]
+            }) }}
+          </div>
+        </div>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <h2 class="govuk-heading-m app-heading--white">
+              Browse by city
+            </h2>
+
+            <ul class="govuk-list app-two-columns">
+              {% for city in cities %}
+                <li>
+                  <a class="govuk-link" href="{{ actions.search }}?location={{ city }}">{{ city }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <h2 class="govuk-heading-m app-heading--white">
+              Browse by region
+            </h2>
+
+            <ul class="govuk-list app-two-columns">
+              {% for region in regions %}
+                <li>
+                  <a class="govuk-link" href="#">{{ region }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  {% if ageGroup == "secondary" %}
+    <div class="govuk-grid-row govuk-!-margin-top-5">
+      <div class="govuk-grid-column-one-half">
+        <p class="govuk-body">
+          <a class="govuk-link" href="#">Browse all {{ data.filter.subject | getSubjectLabel }} courses in England</a>
+        </p>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l {{- ' govuk-!-margin-top-3' if ageGroup == 'secondary' else ' govuk-!-margin-top-8' }}">Apply early once you find your course</h2>
+
+      <p class="govuk-body">
+        You're about to find courses which start in September 2023. Apply no later than 7 September 2023 to to be considered for a place on one of these courses.
+      </p>
+
+      <p class="govuk-body">
+        Places are offered throughout the year and can fill up before September. Apply as soon as you can to have the best chance of getting on the course you want.
+      </p>
+
+      <h3 class="govuk-heading-m">It is not too soon to start your application form</h3>
+
+      <p class="govuk-body">
+        If you have not done so already, <a class="govuk-link" href="#">create an application account</a> so you can see how the process works. You'll be able to submit your application to up to 3 courses.
+      </p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block pageScripts %}
+
+{% endblock %}

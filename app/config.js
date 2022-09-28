@@ -32,5 +32,10 @@ module.exports = {
   showStartPage: 'false',
 
   // Phase tag text used in the phase banner
-  phaseTagText: 'beta'
+  phaseTagText: 'beta',
+
+  // Enable different types of user journey
+  // Options: search, browse
+  // Default: search
+  userJourney: 'search'
 }
