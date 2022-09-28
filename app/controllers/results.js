@@ -272,11 +272,11 @@ exports.list = async (req, res) => {
     findable: true,
     funding_type: selectedFundingType.toString(),
     degree_grade: selectedDegreeGrade.toString(),
-    send_courses: selectedSend === 'include' ? true : false,
-    has_vacancies: selectedVacancy === 'include' ? true : false,
+    send_courses: selectedSend[0] === 'include' ? true : false,
+    has_vacancies: selectedVacancy[0] === 'include' ? true : false,
     qualification: selectedQualification.toString(),
     study_type: selectedStudyMode.toString(),
-    can_sponsor_visa: selectedVisaSponsorship === 'include' ? true : false,
+    can_sponsor_visa: selectedVisaSponsorship[0] === 'include' ? true : false,
     subjects: selectedSubject.toString()
   }
 
@@ -366,8 +366,8 @@ exports.list = async (req, res) => {
 
         // Set course visa sponsorship based on provider
         course.visaSponsorship = {}
-        course.visaSponsorship.canSponsorSkilledWorkerVisa = provider.can_sponsor_skilled_worker_visa
-        course.visaSponsorship.canSponsorStudentVisa = provider.can_sponsor_student_visa
+        course.visaSponsorship.canSponsorSkilledWorkerVisa = course.can_sponsor_skilled_worker_visa
+        course.visaSponsorship.canSponsorStudentVisa = course.can_sponsor_student_visa
 
         const schools = locations.filter(location => location.code !== '-')
 
@@ -377,7 +377,6 @@ exports.list = async (req, res) => {
           course,
           provider,
           schools
-          // placementAreas
         }
       })
     }
@@ -390,10 +389,10 @@ exports.list = async (req, res) => {
       results.sort((a, b) => {
         if (req.query.sortBy === '1') {
           // sorted by Training provider Z-A
-          return b.provider.name.localeCompare(a.provider.name)
+          return b.provider.name.localeCompare(a.provider.name) || a.course.name.localeCompare(b.course.name)
         } else {
           // sorted by Training provider A-Z
-          return a.provider.name.localeCompare(b.provider.name)
+          return a.provider.name.localeCompare(b.provider.name) || a.course.name.localeCompare(b.course.name)
         }
       })
     }
@@ -440,12 +439,6 @@ exports.list = async (req, res) => {
           }
         : false
     }
-
-    // Pagination
-    // const pagination = paginationHelper.getPagination(results, page, perPage)
-
-    // Slice the data to display
-    // results = paginationHelper.getDataByPage(results, pagination.pageNumber)
 
     const subjectItemsDisplayLimit = 10
 
