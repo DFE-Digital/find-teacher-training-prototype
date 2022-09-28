@@ -322,7 +322,7 @@ exports.list = async (req, res) => {
   try {
     let CourseListResponse
     if (q === 'provider') {
-      CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
+      CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
     } else if (q === 'location') {
       if (radius) {
         filter.latitude = latitude
