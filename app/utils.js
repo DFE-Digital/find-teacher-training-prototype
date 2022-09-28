@@ -1,7 +1,7 @@
 const NodeGeocoder = require('node-geocoder')
 const data = require('./data/session-data-defaults')
-const filters = require('./filters')()
 const teacherTrainingService = require('../app/services/teacher-training')
+const subjects = require('./data/subjects')
 
 if (!process.env.GCP_API_KEY) {
   throw Error('Missing GCP_API_KEY – add it to your .env file')
@@ -22,7 +22,7 @@ module.exports = () => {
 
   utils.decorateCourse = course => {
     // SKE
-    const subjectCodesWithSke = data.subjectOptions
+    const subjectCodesWithSke = subjects
       .filter(subject => subject.hasSke === true)
       .map(subject => subject.value)
 
