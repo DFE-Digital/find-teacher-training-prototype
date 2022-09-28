@@ -22,6 +22,12 @@ const fundingTypeOptions = [{
   code: 'include'
 }]
 
+const campaignOptions = [{
+  id: '0b516fba-93f6-49c7-8b42-de57aa678c15',
+  name: 'Only show Engineers teach physics courses',
+  code: 'include'
+}]
+
 exports.getCheckboxValues = (name, data) => {
   return name && (Array.isArray(name)
     ? name
@@ -389,6 +395,47 @@ exports.getSelectedFundingTypeItems = (selectedItems) => {
     fundingType.href = `/results/remove-funding-type-filter/${item.text}`
 
     items.push(fundingType)
+  })
+
+  return items
+}
+
+exports.getCampaignItems = (selectedItems) => {
+  const items = []
+
+  campaignOptions.forEach((campaign, i) => {
+    const item = {}
+
+    item.text = campaign.name
+    item.value = campaign.code
+    item.id = campaign.id
+    item.checked = (selectedItems && selectedItems.includes(campaign.code)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  return items
+}
+
+exports.getCampaignLabel = (campaignCode) => {
+  let label
+
+  if (campaignCode) {
+    label = campaignOptions.find(campaign => campaign.code === campaignCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedCampaignItems = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const campaign = {}
+    campaign.text = item.text
+    campaign.href = `/results/remove-campaign-filter/${item.text}`
+
+    items.push(campaign)
   })
 
   return items
