@@ -24,6 +24,7 @@ exports.list = async (req, res) => {
   const vacancy = null
   const visaSponsorship = null
   const fundingType = null
+  const campaign = null
 
   const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter.subject)
 
@@ -60,6 +61,8 @@ exports.list = async (req, res) => {
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
   const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter.fundingType)
 
+  const campaigns = utilsHelper.getCheckboxValues(campaign, req.session.data.filter.campaign)
+
   const hasFilters = !!((subjects?.length > 0)
     || (studyModes?.length > 0)
     || (qualifications?.length > 0)
@@ -68,6 +71,7 @@ exports.list = async (req, res) => {
     || (vacancies?.length > 0)
     || (visaSponsorships?.length > 0)
     || (fundingTypes?.length > 0)
+    || (campaigns?.length > 0)
   )
 
   let selectedFilters = null
@@ -84,6 +88,18 @@ exports.list = async (req, res) => {
           return {
             text: utilsHelper.getSubjectLabel(subject),
             href: `/results/remove-subject-filter/${subject}`
+          }
+        })
+      })
+    }
+
+    if (campaigns?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Engineers teach physics' },
+        items: campaigns.map((campaign) => {
+          return {
+            text: utilsHelper.getCampaignLabel(campaign),
+            href: `/results/remove-campaign-filter/${campaign}`
           }
         })
       })
@@ -198,9 +214,13 @@ exports.list = async (req, res) => {
   let selectedVacancy
   if (req.session.data.filter?.vacancy) {
     selectedVacancy = req.session.data.filter.vacancy
+  } else if (req.query.filter?.vacancy === '_unchecked') {
+    selectedVacancy = ['exclude']
   } else {
     selectedVacancy = defaults.vacancy
   }
+
+  // const selectedVacancy = req.session.data.filter?.vacancy || req.query.filter?.vacancy || defaults.vacancy
 
   const vacancyItems = utilsHelper.getVacancyItems(selectedVacancy)
 
@@ -239,6 +259,8 @@ exports.list = async (req, res) => {
   let selectedVisaSponsorship
   if (req.session.data.filter?.visaSponsorship) {
     selectedVisaSponsorship = req.session.data.filter.visaSponsorship
+  // } else if (req.query.filter?.visaSponsorship === '_unchecked') {
+  //   selectedVisaSponsorship = ['exclude']
   } else {
     selectedVisaSponsorship = defaults.visaSponsorship
   }
@@ -248,11 +270,24 @@ exports.list = async (req, res) => {
   let selectedFundingType
   if (req.session.data.filter?.fundingType) {
     selectedFundingType = req.session.data.filter.fundingType
+  // } else if (req.query.filter?.fundingType === '_unchecked') {
+  //   selectedFundingType = ['exclude']
   } else {
     selectedFundingType = defaults.fundingType
   }
 
   const fundingTypeItems = utilsHelper.getFundingTypeItems(selectedFundingType)
+
+  let selectedCampaign
+  if (req.session.data.filter?.campaign) {
+    selectedCampaign = req.session.data.filter.campaign
+  // } else if (req.query.filter?.campaign === '_unchecked') {
+  //   selectedCampaign = ['exclude']
+  } else {
+    selectedCampaign = defaults.campaign
+  }
+
+  const campaignItems = utilsHelper.getCampaignItems(selectedCampaign)
 
   // Search radius - 5, 10, 50
   // default to 50
@@ -442,6 +477,8 @@ exports.list = async (req, res) => {
 
     const subjectItemsDisplayLimit = 10
 
+    const hasSearchPhysics = !!(selectedSubjects.find(subject => subject.text === 'Physics'))
+
     res.render('../views/results/index', {
       results,
       resultsCount,
@@ -456,9 +493,11 @@ exports.list = async (req, res) => {
       degreeGradeItems,
       visaSponsorshipItems,
       fundingTypeItems,
+      campaignItems,
       selectedFilters,
       hasFilters,
       hasSearch,
+      hasSearchPhysics,
       keywords,
       actions: {
         view: '/course/',
@@ -529,6 +568,11 @@ exports.removeFundingTypeFilter = (req, res) => {
   res.redirect('/results')
 }
 
+exports.removeCampaignFilter = (req, res) => {
+  req.session.data.filter.campaign = utilsHelper.removeFilter(req.params.campaign, req.session.data.filter.campaign)
+  res.redirect('/results')
+}
+
 exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.subject = null
   // req.session.data.filter.send = null
@@ -538,6 +582,7 @@ exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.degreeGrade = null
   // req.session.data.filter.visaSponsorship = null
   // req.session.data.filter.fundingType = null
+  // req.session.data.filter.camapign = null
 
   delete req.session.data.filter
   res.redirect('/results')
