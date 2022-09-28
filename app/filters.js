@@ -84,6 +84,16 @@ module.exports = (env) => {
   }
 
   /* ------------------------------------------------------------------
+  utility function to get the remainder when one operand is divided by
+  a second operand
+  example: {{ 4 | remainder(2) }}
+  outputs: 0
+  ------------------------------------------------------------------ */
+  filters.remainder = (dividend, divisor) => {
+    return dividend % divisor
+  }
+
+  /* ------------------------------------------------------------------
   utility function to get an error for a component
   example: {{ errors | getErrorMessage('title') }}
   outputs: "Enter a title"
@@ -312,6 +322,22 @@ module.exports = (env) => {
         break
       default:
         label = 'Full time or part time'
+    }
+
+    return label
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the study mode label
+  example: {{ 'both' | getStudyModeLabel }}
+  outputs: "Full time or part time"
+  ------------------------------------------------------------------ */
+  filters.getSubjectLabel = (subjectCode) => {
+    const subjects = require('./data/subjects')
+    let label
+
+    if (subjectCode) {
+      label = subjects.find(subject => subject.code === subjectCode).name
     }
 
     return label

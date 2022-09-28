@@ -2,12 +2,14 @@ const locationSuggestionsService = require('../services/location-suggestions')
 const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
-exports.search_get = async (req, res) => {
-  // const query = req.session.data.q || req.query.q
-  // const queryType = await utils.processQuery(query, req.session.data)
-  // const { filtering } = req.query
+const utilsHelper = require('../helpers/utils')
 
-  res.render('search/index')
+exports.search_get = async (req, res) => {
+  if (process.env.USER_JOURNEY === 'browse') {
+    res.redirect('/browse')
+  } else {
+    res.render('search/index')
+  }
 }
 
 exports.search_post = async (req, res) => {
@@ -88,6 +90,8 @@ exports.age_groups_post = async (req, res) => {
     } else if (ageGroup === 'secondary') {
       res.redirect('/secondary-subjects')
     } else if (ageGroup === 'furtherEducation') {
+      req.session.data.filter = {}
+      req.session.data.filter.subject = ['41']
       res.redirect('/results')
     } else {
       res.redirect('/results')
@@ -95,45 +99,40 @@ exports.age_groups_post = async (req, res) => {
   }
 }
 
-// exports.primary_get = async (req, res) => {
-//   res.render('search/primary-subjects')
-// }
-//
-// exports.primary_post = async (req, res) => {
-//   console.log(req.session.data)
-//   const primarySpecialistSubjectsAnswer = req.body.primarySpecialistSubjects
-//
-//   if (primarySpecialistSubjectsAnswer === 'yes') {
-//     res.redirect('/primary-subjects')
-//   } else if (primarySpecialistSubjectsAnswer === 'no') {
-//     // set subject to "Primary" only
-//     req.session.data.subjects = ['00']
-//
-//     res.redirect('/results')
-//   } else {
-//     res.render('search/primary-subjects')
-//   }
-// }
-
 exports.primary_subjects_get = async (req, res) => {
+  let selectedSubject
+  if (req.session.data.filter?.subject) {
+    selectedSubject = req.session.data.filter.subject
+  }
+
+  const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'primary', false)
+
   res.render('search/primary-subjects', {
-    // showError: req.query.showError
+    subjectItems
   })
 }
 
 exports.primary_subjects_post = async (req, res) => {
   const errors = []
 
-  if (!req.session.data.subjects?.length) {
+  if (!req.session.data.filter.subject?.length) {
     const error = {}
-    error.fieldName = "primary-subjects"
-    error.href = "#primary-subjects"
+    error.fieldName = "subject"
+    error.href = "#subject"
     error.text = "Select a least one primary subject you want to teach"
     errors.push(error)
   }
 
   if (errors.length) {
+    let selectedSubject
+    if (req.session.data.filter?.subject) {
+      selectedSubject = req.session.data.filter.subject
+    }
+
+    const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'primary', false)
+
     res.render('search/primary-subjects', {
+      subjectItems,
       errors
     })
   } else {
@@ -142,30 +141,39 @@ exports.primary_subjects_post = async (req, res) => {
 }
 
 exports.secondary_subjects_get = async (req, res) => {
-  const q = req.session.data.q || req.query.q
+  let selectedSubject
+  if (req.session.data.filter?.subject) {
+    selectedSubject = req.session.data.filter.subject
+  }
+
+  const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'secondary', true)
+
   res.render('search/secondary-subjects', {
-    // q,
-    // sendItems: utils.sendItems(req.session.data.send)
+    subjectItems
   })
 }
 
 exports.secondary_subjects_post = async (req, res) => {
-  const q = req.session.data.q || req.query.q
-
   const errors = []
 
-  if (!req.session.data.subjects?.length) {
+  if (!req.session.data.filter.subject?.length) {
     const error = {}
-    error.fieldName = "secondary-subjects"
-    error.href = "#secondary-subjects"
+    error.fieldName = "subject"
+    error.href = "#subject"
     error.text = "Select at least one secondary subjects you want to teach"
     errors.push(error)
   }
 
   if (errors.length) {
+    let selectedSubject
+    if (req.session.data.filter?.subject) {
+      selectedSubject = req.session.data.filter.subject
+    }
+
+    const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'secondary', true)
+
     res.render('search/secondary-subjects', {
-      // q,
-      // sendItems: utils.sendItems(req.session.data.send),
+      subjectItems,
       errors
     })
   } else {

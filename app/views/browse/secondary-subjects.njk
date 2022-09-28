@@ -1,0 +1,117 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Find secondary courses" %}
+{# {% set caption = "Find postgraduate teacher training" %} #}
+
+{% block pageTitle %}
+{{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "/"
+    },
+    {
+      text: title
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  {% include "_includes/error-summary.njk" %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if caption.length %}
+          <span class="govuk-caption-xl">{{ caption }}</span>
+        {% endif %}
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-m">Subjects with bursaries or scholarships</h2>
+
+      <p class="govuk-body">
+        Teachers for these subjects are in demand. You could be eligible for a bursary up to £24,000 or scholarship up to £26,000, if you choose one of these courses.
+      </p>
+
+      <p class="govuk-body">
+        If your scholarship or bursary does not cover your living expenses and course fees, you can apply for student loan as well.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          {# <h3 class="govuk-heading-s">Languages</h3> #}
+
+          <ul class="govuk-list">
+            {% for subject in languageSubjects %}
+              <li>
+                <a class="govuk-link" href="/browse/location?filter[subject]={{ subject.code }}">{{ subject.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </div>
+        <div class="govuk-grid-column-one-half">
+          {# <h3 class="govuk-heading-s">Science, maths and technology</h3> #}
+
+          <ul class="govuk-list">
+            {% for subject in stemSubjects %}
+              <li>
+                <a class="govuk-link" href="/browse/location?filter[subject]={{ subject.code }}">{{ subject.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-5">Other subjects</h2>
+
+      <p class="govuk-body">
+        You cannot get a bursary or scholarship for these subjects, but you can apply for a student loan.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <ul class="govuk-list app-two-columns">
+        {% for subject in otherSubjects %}
+          <li>
+            <a class="govuk-link" href="/browse/location?filter[subject]={{ subject.code }}">{{ subject.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      </ul>
+
+
+    </div>
+  </div>
+{% endblock %}

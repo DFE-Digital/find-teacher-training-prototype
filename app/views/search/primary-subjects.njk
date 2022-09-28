@@ -32,47 +32,9 @@
 
       <form action="/primary-subjects" method="post" accept-charset="utf-8" novalidate>
 
-        {% set items = [
-          {
-            text: 'Primary',
-            value: '00',
-            checked: (data.subjects and data.subjects.includes('00'))
-          },
-          {
-            text: 'Primary with English',
-            value: '01',
-            checked: (data.subjects and data.subjects.includes('01'))
-          },
-          {
-            text: 'Primary with geography and history',
-            value: '02',
-            checked: (data.subjects and data.subjects.includes('02'))
-          },
-          {
-            text: 'Primary with mathematics',
-            value: '03',
-            checked: (data.subjects and data.subjects.includes('03'))
-          },
-          {
-            text: 'Primary with modern languages',
-            value: '04',
-            checked: (data.subjects and data.subjects.includes('04'))
-          },
-          {
-            text: 'Primary with physical education',
-            value: '06',
-            checked: (data.subjects and data.subjects.includes('06'))
-          },
-          {
-            text: 'Primary with science',
-            value: '07',
-            checked: (data.subjects and data.subjects.includes('07'))
-          }
-        ] %}
-
         {{ govukCheckboxes({
-          idPrefix: "primary-subjects",
-          name: "subjects",
+          idPrefix: "subject",
+          name: "filter[subject]",
           fieldset: {
             legend: {
               text: "Which courses would you like to find?",
@@ -83,8 +45,8 @@
           hint: {
             text: "Select all subjects you are interested in teaching"
           },
-          errorMessage: errors | getErrorMessage("primary-subjects"),
-          items: items
+          errorMessage: errors | getErrorMessage("subject"),
+          items: subjectItems
         }) }}
 
         {{ govukButton({

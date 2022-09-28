@@ -4,19 +4,260 @@ const geolib = require('geolib')
 const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
-exports.results_get = async (req, res) => {
-  const { area, defaults, provider, subjectOptions } = req.session.data
+const paginationHelper = require('../helpers/pagination')
+const utilsHelper = require('../helpers/utils')
 
-  const page = Number(req.query.page) || 1
-  const perPage = 20
+exports.list = async (req, res) => {
+  const defaults = req.session.data.defaults
 
-  // ------------------------------------------------------------------------ //
-  // LOCATION
-  // ------------------------------------------------------------------------ //
+  // Search
+  const keywords = req.session.data.keywords
+
+  const hasSearch = !!((keywords))
+
+  // Filters
+  const subject = null
+  const studyMode = null
+  const qualification = null
+  const degreeGrade = null
+  const send = null
+  const vacancy = null
+  const visaSponsorship = null
+  const fundingType = null
+
+  const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter.subject)
+
+  let studyModes
+  if (req.session.data.filter?.studyMode) {
+    studyModes = utilsHelper.getCheckboxValues(studyMode, req.session.data.filter.studyMode)
+  } else {
+    studyModes = defaults.studyMode
+  }
+
+  let qualifications
+  if (req.session.data.filter?.qualification) {
+    qualifications = utilsHelper.getCheckboxValues(qualification, req.session.data.filter.qualification)
+  } else {
+    qualifications = defaults.qualification
+  }
+
+  let degreeGrades
+  if (req.session.data.filter?.degreeGrade) {
+    degreeGrades = utilsHelper.getCheckboxValues(degreeGrade, req.session.data.filter.degreeGrade)
+  } else {
+    degreeGrades = defaults.degreeGrade
+  }
+
+  const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter.send)
+
+  let vacancies
+  if (req.session.data.filter?.vacancy) {
+    vacancies = utilsHelper.getCheckboxValues(vacancy, req.session.data.filter.vacancy)
+  } else {
+    vacancies = defaults.vacancy
+  }
+
+  const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
+  const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter.fundingType)
+
+  const hasFilters = !!((subjects?.length > 0)
+    || (studyModes?.length > 0)
+    || (qualifications?.length > 0)
+    || (degreeGrades?.length > 0)
+    || (sends?.length > 0)
+    || (vacancies?.length > 0)
+    || (visaSponsorships?.length > 0)
+    || (fundingTypes?.length > 0)
+  )
+
+  let selectedFilters = null
+
+  if (hasFilters) {
+    selectedFilters = {
+      categories: []
+    }
+
+    if (subjects?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Subject' },
+        items: subjects.map((subject) => {
+          return {
+            text: utilsHelper.getSubjectLabel(subject),
+            href: `/results/remove-subject-filter/${subject}`
+          }
+        })
+      })
+    }
+
+    if (sends?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Special educational needs' },
+        items: sends.map((send) => {
+          return {
+            text: utilsHelper.getSendLabel(send),
+            href: `/results/remove-send-filter/${send}`
+          }
+        })
+      })
+    }
+
+    if (vacancies?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Vacancies' },
+        items: vacancies.map((vacancy) => {
+          return {
+            text: utilsHelper.getVacancyLabel(vacancy),
+            href: `/results/remove-vacancy-filter/${vacancy}`
+          }
+        })
+      })
+    }
+
+    if (studyModes?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Full time or part time' },
+        items: studyModes.map((studyMode) => {
+          return {
+            text: utilsHelper.getStudyModeLabel(studyMode),
+            href: `/results/remove-study-mode-filter/${studyMode}`
+          }
+        })
+      })
+    }
+
+    if (qualifications?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Qualification' },
+        items: qualifications.map((qualification) => {
+          return {
+            text: utilsHelper.getQualificationLabel(qualification),
+            href: `/results/remove-qualification-filter/${qualification}`
+          }
+        })
+      })
+    }
+
+    if (degreeGrades?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Degree required' },
+        items: degreeGrades.map((degreeGrade) => {
+          return {
+            text: utilsHelper.getDegreeGradeLabel(degreeGrade),
+            href: `/results/remove-degree-grade-filter/${degreeGrade}`
+          }
+        })
+      })
+    }
+
+    if (visaSponsorships?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Degree required' },
+        items: visaSponsorships.map((visaSponsorship) => {
+          return {
+            text: utilsHelper.getVisaSponsorshipLabel(visaSponsorship),
+            href: `/results/remove-visa-sponsorship-filter/${visaSponsorship}`
+          }
+        })
+      })
+    }
+
+    if (fundingTypes?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Salary' },
+        items: fundingTypes.map((fundingType) => {
+          return {
+            text: utilsHelper.getVisaSponsorshipLabel(fundingType),
+            href: `/results/remove-funding-type-filter/${fundingType}`
+          }
+        })
+      })
+    }
+  }
+
+  let selectedSubject
+  if (req.session.data.filter?.subject) {
+    selectedSubject = req.session.data.filter.subject
+  } else {
+    selectedSubject = defaults.subject
+  }
+
+  const subjectItems = utilsHelper.getSubjectItems(selectedSubject, req.session.data.ageGroup)
+
+  // get an array of selected subjects for use in the search terms subject list
+  const selectedSubjects = utilsHelper.getSelectedSubjectItems(subjectItems.filter(subject => subject.checked === 'checked'))
+
+  let selectedSend
+  if (req.session.data.filter?.send) {
+    selectedSend = req.session.data.filter.send
+  } else {
+    selectedSend = defaults.send
+  }
+
+  const sendItems = utilsHelper.getSendItems(selectedSend)
+
+  let selectedVacancy
+  if (req.session.data.filter?.vacancy) {
+    selectedVacancy = req.session.data.filter.vacancy
+  } else {
+    selectedVacancy = defaults.vacancy
+  }
+
+  const vacancyItems = utilsHelper.getVacancyItems(selectedVacancy)
+
+  let selectedStudyMode
+  if (req.session.data.filter?.studyMode) {
+    selectedStudyMode = req.session.data.filter.studyMode
+  } else {
+    selectedStudyMode = defaults.studyMode
+  }
+
+  const studyModeItems = utilsHelper.getStudyModeItems(selectedStudyMode)
+
+  let selectedQualification
+  if (req.session.data.filter?.qualification) {
+    selectedQualification = req.session.data.filter.qualification
+  } else {
+    // if the subject is further education, set the defaults to FE qualifications
+    if (req.session.data.filter?.subject.includes('41')) {
+      selectedQualification = ['pgce','pgde']
+    } else {
+      selectedQualification = defaults.qualification
+    }
+  }
+
+  const qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
+
+  let selectedDegreeGrade
+  if (req.session.data.filter?.degreeGrade) {
+    selectedDegreeGrade = req.session.data.filter.degreeGrade
+  } else {
+    selectedDegreeGrade = defaults.degreeGrade
+  }
+
+  const degreeGradeItems = utilsHelper.getDegreeGradeItems(selectedDegreeGrade)
+
+  let selectedVisaSponsorship
+  if (req.session.data.filter?.visaSponsorship) {
+    selectedVisaSponsorship = req.session.data.filter.visaSponsorship
+  } else {
+    selectedVisaSponsorship = defaults.visaSponsorship
+  }
+
+  const visaSponsorshipItems = utilsHelper.getVisaSponsorshipItems(selectedVisaSponsorship)
+
+  let selectedFundingType
+  if (req.session.data.filter?.fundingType) {
+    selectedFundingType = req.session.data.filter.fundingType
+  } else {
+    selectedFundingType = defaults.fundingType
+  }
+
+  const fundingTypeItems = utilsHelper.getFundingTypeItems(selectedFundingType)
+
   // Search radius - 5, 10, 50
   // default to 50
   // needed to get a list of results rather than 1
-  const radius = req.session.data.radius || defaults.radius
+  const radius = req.session.data.radius || req.query.radius || defaults.radius
 
   // Search query
   const q = req.session.data.q || req.query.q
@@ -25,103 +266,23 @@ exports.results_get = async (req, res) => {
   const latitude = req.session.data.latitude || req.query.latitude || defaults.latitude
   const longitude = req.session.data.longitude || req.query.longitude || defaults.longitude
 
-  // ------------------------------------------------------------------------ //
-  // FILTERS
-  // ------------------------------------------------------------------------ //
-
-  // Special educational needs
-  const send = (req.session.data.send && req.session.data.send[0] === 'include')
-    || (req.query.send && req.query.send[0] === 'include')
-    || (defaults.send && defaults.send[0] === 'include')
-  const sendItems = utils.sendItems(send)
-
-  // Vacancies
-  const vacancy = (req.session.data.vacancy && req.session.data.vacancy[0] === 'include')
-    || (req.query.vacancy && req.query.vacancy[0] === 'include')
-    || (defaults.vacancy && defaults.vacancy[0] === 'include')
-  const vacancyItems = utils.vacancyItems(vacancy)
-
-  // Study type - full time or part time
-  const studyType = utils.toArray(req.session.data.studyType || req.query.studyType || defaults.studyType)
-  const studyTypeItems = utils.studyTypeItems(studyType, {
-    showHintText: false
-  })
-
-  // Qualifications - PGCE with QTS, PGDE with QTS, QTS, further education (PGCE or PGDE without QTS)
-  const qualification = utils.toArray(req.session.data.qualification || req.query.qualification || defaults.qualification)
-  const qualificationItems = utils.qualificationItems(qualification).map(item => {
-    item.hint = false
-    item.label.classes = false
-    return item
-  })
-
-  // Entry Requirements (aka degree grade) - 2:1 or first, 2:2, third, pass
-  const degreeGrade = utils.toArray(req.session.data.degreeGrade || req.query.degreeGrade || defaults.degreeGrade)
-  const degreeGradeItems = utils.degreeGradeItems(degreeGrade).map(item => {
-    item.hint = false
-    item.label.classes = false
-    return item
-  })
-
-  // Visa sponsorship
-  const visaSponsorship = (req.session.data.visaSponsorship && req.session.data.visaSponsorship[0] === 'include')
-    || (req.query.visaSponsorship && req.query.visaSponsorship[0] === 'include')
-    || (defaults.visaSponsorship && defaults.visaSponsorship[0] === 'include')
-  const visaSponsorshipItems = utils.visaSponsorshipItems(visaSponsorship)
-
-  // Funding type - fee paying, salary, apprenticeship
-  const fundingType = (req.session.data.fundingType && req.session.data.fundingType[0] === 'include')
-    || (req.query.fundingType && req.query.fundingType[0] === 'include')
-    || (defaults.fundingType && defaults.fundingType[0] === 'include')
-  const fundingTypeItems = utils.fundingTypeItems(fundingType)
-
-  // ------------------------------------------------------------------------ //
-  // ------------------------------------------------------------------------ //
-
-  // Subjects
-  let subjects
-  if (req.session.data.ageGroup === 'furtherEducation') {
-    subjects = ['41'] // code for FE 'subject' in the API
-  } else {
-    subjects = utils.toArray(req.session.data.subjects || req.query.subjects || defaults.subjects)
-  }
-
-  if (subjects.includes('_unchecked')) {
-    if (req.session.data.ageGroup === 'primary') {
-      res.redirect('/primary-subjects?showError=true')
-    } else {
-      res.redirect('/secondary-subjects?showError=true')
-    }
-    return
-  }
-
-  // Show selected subjects at top of page
-  // Maps array of subject codes to subject data
-  const selectedSubjects = subjects.map(option => subjectOptions.find(subject => subject.value === option))
-
   // API query params
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-coursefilter
   const filter = {
     findable: true,
-    funding_type: fundingType ? 'salary' : 'salary,apprenticeship,fee',
-    degree_grade: degreeGrade.toString(),
-    send_courses: send,
-    has_vacancies: vacancy,
-    qualification: qualification.toString(),
-    study_type: studyType.toString(),
-    can_sponsor_visa: visaSponsorship,
-    subjects: subjects.toString()
+    funding_type: selectedFundingType.toString(),
+    degree_grade: selectedDegreeGrade.toString(),
+    send_courses: selectedSend === 'include' ? true : false,
+    has_vacancies: selectedVacancy === 'include' ? true : false,
+    qualification: selectedQualification.toString(),
+    study_type: selectedStudyMode.toString(),
+    can_sponsor_visa: selectedVisaSponsorship === 'include' ? true : false,
+    subjects: selectedSubject.toString()
   }
 
-  // Current 'SEND' courses are a separate boolean, so this is
-  // a stop-gap whilst we test whether it should become a specialist
-  // subject instead, which would allow filters to return SEND courses
-  // OR Primary with mathematics
-  //
-  // TODO: refactor once we’ve decided how to treat SEND specialist courses
-  // if (subjects.includes('SEND') && !subjects.includes('00')) {
-  //   filter.subjects = (subjects.concat('00').toString())
-  //   filter.is_send = true
-  // }
+  // pagination settings
+  const page = req.query.page || 1
+  const perPage = 20
 
   try {
     let CourseListResponse
@@ -191,8 +352,8 @@ exports.results_get = async (req, res) => {
               longitude: attributes.longitude
             })
 
-            const distanceInMiles = ((distanceInMeters / 1000) * 0.621371).toFixed(0)
-            attributes.distance = distanceInMiles
+            const distanceInMiles = ((parseInt(distanceInMeters) / 1000) * 0.621371).toFixed(0)
+            attributes.distance = parseInt(distanceInMiles)
           }
 
           return attributes
@@ -221,39 +382,25 @@ exports.results_get = async (req, res) => {
       })
     }
 
-    // Results
-    const results = await Promise.all(courses)
+    // Data
+    let results = await Promise.all(courses)
 
     // sort results by training provider name
-    results.sort((a, b) => {
-      if (req.query.sortBy === '1') {
-        // sorted by Training provider Z-A
-        return b.provider.name.localeCompare(a.provider.name)
-      } else {
-        // sorted by Training provider A-Z
-        return a.provider.name.localeCompare(b.provider.name)
-      }
-    })
+    if (['provider','england'].includes(req.session.data.q)) {
+      results.sort((a, b) => {
+        if (req.query.sortBy === '1') {
+          // sorted by Training provider Z-A
+          return b.provider.name.localeCompare(a.provider.name)
+        } else {
+          // sorted by Training provider A-Z
+          return a.provider.name.localeCompare(b.provider.name)
+        }
+      })
+    }
 
-    // ------------------------------------------------------------------------ //
-    // PAGINATION
-    // ------------------------------------------------------------------------ //
+    const resultsCount = meta ? meta.count : results.length
 
-    // Pagination
     const pageCount = links.last.match(/page=(\d*)/)[1]
-    // Provider courses response doesn’t return number of results
-    // https://github.com/DFE-Digital/teacher-training-api/issues/1733
-    let resultsCount = meta ? meta.count : results.length
-
-    // Fake the results count based on visa sponsorship
-    if (req.session.data.visaSponsorship === 'yes') {
-      resultsCount = Math.floor(resultsCount / 2)
-    }
-
-    // Fake the results count based on number of degree requirement checkboxes ticked
-    if (req.session.data.degreeGrade && req.session.data.degreeGrade.length !== 4) {
-      resultsCount = Math.floor(resultsCount * (req.session.data.degreeGrade.length / 4))
-    }
 
     const prevPage = links.prev ? (page - 1) : false
     const nextPage = links.next ? (page + 1) : false
@@ -265,7 +412,7 @@ exports.results_get = async (req, res) => {
         page,
         send,
         vacancy,
-        studyType,
+        studyMode,
         qualification,
         degreeGrade,
         visaSponsorship,
@@ -294,34 +441,45 @@ exports.results_get = async (req, res) => {
         : false
     }
 
-    // ------------------------------------------------------------------------ //
-    // ------------------------------------------------------------------------ //
+    // Pagination
+    // const pagination = paginationHelper.getPagination(results, page, perPage)
 
-    res.render('results/index', {
-      area,
-      latLong: [latitude, longitude],
-      pagination,
-      provider,
-      q,
-      qualification,
-      qualificationItems,
-      radius,
+    // Slice the data to display
+    // results = paginationHelper.getDataByPage(results, pagination.pageNumber)
+
+    const subjectItemsDisplayLimit = 10
+
+    res.render('../views/results/index', {
       results,
       resultsCount,
-      send,
-      sendItems,
-      vacancy,
-      vacancyItems,
-      studyType,
-      studyTypeItems,
-      degreeGrade,
-      degreeGradeItems,
-      visaSponsorship,
-      visaSponsorshipItems,
-      fundingType,
-      fundingTypeItems,
+      pagination,
+      subjectItems,
+      subjectItemsDisplayLimit,
       selectedSubjects,
+      sendItems,
+      vacancyItems,
+      studyModeItems,
+      qualificationItems,
+      degreeGradeItems,
+      visaSponsorshipItems,
+      fundingTypeItems,
+      selectedFilters,
+      hasFilters,
+      hasSearch,
+      keywords,
+      actions: {
+        view: '/course/',
+        filters: {
+          apply: '/results',
+          remove: '/results/remove-all-filters'
+        },
+        search: {
+          find: '/results',
+          remove: '/results/remove-keyword-search'
+        }
+      }
     })
+
   } catch (error) {
     console.error(error.stack)
     res.render('error', {
@@ -329,9 +487,65 @@ exports.results_get = async (req, res) => {
       content: error
     })
   }
+
 }
 
-exports.results_post = async (req, res) => {
-  await utils.processQuery(req.session.data.q, req.session.data)
+exports.removeKeywordSearch = (req, res) => {
+  // req.session.data.keywords = ''
+  delete req.session.data.keywords
+  res.redirect('/results')
+}
+
+exports.removeSubjectFilter = (req, res) => {
+  req.session.data.filter.subject = utilsHelper.removeFilter(req.params.subject, req.session.data.filter.subject)
+  res.redirect('/results')
+}
+
+exports.removeSendFilter = (req, res) => {
+  req.session.data.filter.send = utilsHelper.removeFilter(req.params.send, req.session.data.filter.send)
+  res.redirect('/results')
+}
+
+exports.removeVacancyFilter = (req, res) => {
+  req.session.data.filter.vacancy = utilsHelper.removeFilter(req.params.vacancy, req.session.data.filter.vacancy)
+  res.redirect('/results')
+}
+
+exports.removeStudyModeFilter = (req, res) => {
+  req.session.data.filter.studyMode = utilsHelper.removeFilter(req.params.studyMode, req.session.data.filter.studyMode)
+  res.redirect('/results')
+}
+
+exports.removeQualificationFilter = (req, res) => {
+  req.session.data.filter.qualification = utilsHelper.removeFilter(req.params.qualification, req.session.data.filter.qualification)
+  res.redirect('/results')
+}
+
+exports.removeDegreeGradeFilter = (req, res) => {
+  req.session.data.filter.degreeGrade = utilsHelper.removeFilter(req.params.degreeGrade, req.session.data.filter.degreeGrade)
+  res.redirect('/results')
+}
+
+exports.removeVisaSponsorshipFilter = (req, res) => {
+  req.session.data.filter.visaSponsorship = utilsHelper.removeFilter(req.params.visaSponsorship, req.session.data.filter.visaSponsorship)
+  res.redirect('/results')
+}
+
+exports.removeFundingTypeFilter = (req, res) => {
+  req.session.data.filter.fundingType = utilsHelper.removeFilter(req.params.fundingType, req.session.data.filter.fundingType)
+  res.redirect('/results')
+}
+
+exports.removeAllFilters = (req, res) => {
+  // req.session.data.filter.subject = null
+  // req.session.data.filter.send = null
+  // req.session.data.filter.vacancy = null
+  // req.session.data.filter.studyMode = null
+  // req.session.data.filter.qualification = null
+  // req.session.data.filter.degreeGrade = null
+  // req.session.data.filter.visaSponsorship = null
+  // req.session.data.filter.fundingType = null
+
+  delete req.session.data.filter
   res.redirect('/results')
 }

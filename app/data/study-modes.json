@@ -1,0 +1,12 @@
+[
+  {
+    "id": "a989bedb-7bb7-4216-af3b-665fc7c95890",
+    "code": "full_time",
+    "name": "Full time - 12 months"
+  },
+  {
+    "id": "31a0aa3c-dec2-442f-9ace-57f170c6fc97",
+    "code": "part_time",
+    "name": "Part time - 18 to 24 months"
+  }
+]
