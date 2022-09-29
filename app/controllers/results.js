@@ -220,8 +220,6 @@ exports.list = async (req, res) => {
     selectedVacancy = defaults.vacancy
   }
 
-  // const selectedVacancy = req.session.data.filter?.vacancy || req.query.filter?.vacancy || defaults.vacancy
-
   const vacancyItems = utilsHelper.getVacancyItems(selectedVacancy)
 
   let selectedStudyMode
@@ -436,22 +434,25 @@ exports.list = async (req, res) => {
 
     const pageCount = links.last.match(/page=(\d*)/)[1]
 
-    const prevPage = links.prev ? (page - 1) : false
-    const nextPage = links.next ? (page + 1) : false
+    const prevPage = links.prev ? (parseInt(page) - 1) : false
+    const nextPage = links.next ? (parseInt(page) + 1) : false
 
     const searchQuery = page => {
       const query = {
         latitude,
         longitude,
         page,
-        send,
-        vacancy,
-        studyMode,
-        qualification,
-        degreeGrade,
-        visaSponsorship,
-        fundingType,
-        subjects
+        filter: {
+          send: selectedSend,
+          vacancy: selectedVacancy,
+          studyMode: selectedStudyMode,
+          qualification: selectedQualification,
+          degreeGrade: selectedDegreeGrade,
+          visaSponsorship: selectedVisaSponsorship,
+          fundingType: selectedFundingType,
+          subject: selectedSubject,
+          campaign: selectedCampaign
+        }
       }
 
       return qs.stringify(query)
