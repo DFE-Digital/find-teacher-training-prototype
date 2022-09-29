@@ -123,6 +123,7 @@ exports.getSendItems = (selectedItems) => {
 exports.getSendLabel = (sendCode) => {
   let label
 
+  // TODO: fix send label error
   if (sendCode) {
     // label = sendOptions.find(send => send.code === sendCode).name
   }
@@ -164,6 +165,7 @@ exports.getVacancyItems = (selectedItems) => {
 exports.getVacancyLabel = (vacancyCode) => {
   let label
 
+  // TODO: fix vacancy label error
   if (vacancyCode) {
     // label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
   }
@@ -338,6 +340,7 @@ exports.getVisaSponsorshipItems = (selectedItems) => {
 exports.getVisaSponsorshipLabel = (visaSponsorshipCode) => {
   let label
 
+  // TODO: fix visa sponsorship label error
   if (visaSponsorshipCode) {
     // label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
   }
@@ -420,6 +423,7 @@ exports.getCampaignItems = (selectedItems) => {
 exports.getCampaignLabel = (campaignCode) => {
   let label
 
+  // TODO: fix campaign label error
   if (campaignCode) {
     // label = campaignOptions.find(campaign => campaign.code === campaignCode).name
   }
