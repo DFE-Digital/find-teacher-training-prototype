@@ -304,13 +304,30 @@ exports.list = async (req, res) => {
   const filter = {
     findable: true,
     funding_type: selectedFundingType.toString(),
-    degree_grade: selectedDegreeGrade.toString(),
-    send_courses: selectedSend[0] === 'include' ? true : false,
-    has_vacancies: selectedVacancy[0] === 'include' ? true : false,
     qualification: selectedQualification.toString(),
     study_type: selectedStudyMode.toString(),
-    can_sponsor_visa: selectedVisaSponsorship[0] === 'include' ? true : false,
     subjects: selectedSubject.toString()
+  }
+
+  // TODO: change the degreeGrade filter from radio to checkbox to manage grades properly
+  if (selectedDegreeGrade === 'two_two') {
+    filter.degree_grade = 'two_two,third_class,not_required'
+  } else if (selectedDegreeGrade === 'third_class') {
+    filter.degree_grade = 'third_class,not_required'
+  } else if (selectedDegreeGrade === 'not_required') {
+    filter.degree_grade = 'not_required'
+  }
+
+  if (selectedSend[0] === 'include') {
+    filter.send_courses = true
+  }
+
+  if (selectedVacancy[0] === 'include') {
+    filter.has_vacancies = true
+  }
+
+  if (selectedVisaSponsorship[0] === 'include') {
+    filter.can_sponsor_visa = true
   }
 
   // pagination settings
