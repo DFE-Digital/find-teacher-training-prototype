@@ -14,7 +14,7 @@ const teacherTrainingService = {
       include: 'provider,accredited_body',
       page,
       per_page: perPage,
-      sort: 'provider.provider_name'
+      sort: 'provider.provider_name,name'
     }
 
     // const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
