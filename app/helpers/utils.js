@@ -124,7 +124,7 @@ exports.getSendLabel = (sendCode) => {
   let label
 
   if (sendCode) {
-    label = sendOptions.find(send => send.code === sendCode).name
+    // label = sendOptions.find(send => send.code === sendCode).name
   }
 
   return label
@@ -165,7 +165,7 @@ exports.getVacancyLabel = (vacancyCode) => {
   let label
 
   if (vacancyCode) {
-    label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
+    // label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
   }
 
   return label
@@ -339,7 +339,7 @@ exports.getVisaSponsorshipLabel = (visaSponsorshipCode) => {
   let label
 
   if (visaSponsorshipCode) {
-    label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
+    // label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
   }
 
   return label
@@ -421,7 +421,7 @@ exports.getCampaignLabel = (campaignCode) => {
   let label
 
   if (campaignCode) {
-    label = campaignOptions.find(campaign => campaign.code === campaignCode).name
+    // label = campaignOptions.find(campaign => campaign.code === campaignCode).name
   }
 
   return label
