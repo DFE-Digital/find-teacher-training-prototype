@@ -12,14 +12,6 @@
     "providerCode": "2EV"
   },
   {
-    "courseCode": "E218",
-    "providerCode": "2EV"
-  },
-  {
-    "courseCode": "R576",
-    "providerCode": "2H8"
-  },
-  {
     "courseCode": "R576",
     "providerCode": "2H8"
   },
@@ -30,21 +22,5 @@
   {
     "courseCode": "V473",
     "providerCode": "E14"
-  },
-  {
-    "courseCode": "H546",
-    "providerCode": "B32"
-  },
-  {
-    "courseCode": "P367",
-    "providerCode": "W75"
-  },
-  {
-    "courseCode": "V473",
-    "providerCode": "E14"
-  },
-  {
-    "courseCode": "F3X2",
-    "providerCode": "M20"
   }
 ]
