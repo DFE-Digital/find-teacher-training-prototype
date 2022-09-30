@@ -1,0 +1,9 @@
+{% set cycleClosedHtml %}
+  <p class="govuk-notification-banner__heading">Courses are currently closed but you can get your application ready</p>
+  <p class="govuk-body">Courses starting in the 2022 to 2023 academic year are closed.</p>
+  <p class="govuk-body">You can <a href="#">start or continue an application</a> for courses starting in the 2023 to 2024 academic year.</p>
+  <p class="govuk-body">You’ll be able to find courses from 9am on 4 October 2022 and submit your application from 9am on 11 October 2022.</p>
+{% endset %}
+{{ govukNotificationBanner({
+  html: cycleClosedHtml
+}) if data.cycleClosedHtml }}
