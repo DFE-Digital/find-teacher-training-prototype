@@ -84,7 +84,9 @@
           {% include "./_pagination.njk" %}
         {% endif %} #}
 
-        {{ appPagination( pagination ) }}
+        {% if pagination.pages > 1 %}
+          {{ appPagination( pagination ) }}
+        {% endif %}
 
       {% else %}
 
