@@ -7,6 +7,10 @@ const utils = require('../utils')()
 const paginationHelper = require('../helpers/pagination')
 const utilsHelper = require('../helpers/utils')
 
+exports.closed = async (req, res) => {
+  res.render('closed')
+}
+
 exports.list = async (req, res) => {
   const defaults = req.session.data.defaults
 
