@@ -10,6 +10,12 @@
 
 {% block content %}
 
+  {% if data.cycleClosed %}
+    {% include "_includes/cycle-closed-banner.njk" %}
+  {% elif data.nearingEndOfCycle %}
+    {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+  {% endif %}
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
