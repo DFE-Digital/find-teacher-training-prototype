@@ -338,21 +338,37 @@ exports.list = async (req, res) => {
   const page = req.query.page || 1
   const perPage = 20
 
+  const hasSearchPhysics = !!(selectedSubjects.find(subject => subject.text === 'Physics'))
+
   try {
     let CourseListResponse
-    if (q === 'provider') {
-      CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
-    } else if (q === 'location') {
-      if (radius) {
-        filter.latitude = latitude
-        filter.longitude = longitude
-        filter.radius = radius
+
+    if (hasSearchPhysics && selectedCampaign[0] === 'include') {
+      CourseListResponse = require('../data/engineers-teach-physics-courses')
+      CourseListResponse.links = {
+        first: '#',
+        last: '#',
+        prev: '#',
+        next: '#'
       }
-      CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      console.log(CourseListResponse);
     } else {
-      // England-wide search
-      CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      if (q === 'provider') {
+        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
+      } else if (q === 'location') {
+        if (radius) {
+          filter.latitude = latitude
+          filter.longitude = longitude
+          filter.radius = radius
+        }
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      } else {
+        // England-wide search
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      }
+
     }
+
     const { data, links, meta, included } = CourseListResponse
 
     let courses = data
@@ -453,7 +469,10 @@ exports.list = async (req, res) => {
 
     const resultsCount = meta ? meta.count : results.length
 
-    const pageCount = links.last.match(/page=(\d*)/)[1]
+    let pageCount = 1
+    if (links.last.match(/page=(\d*)/)) {
+      pageCount = links.last.match(/page=(\d*)/)[1]
+    }
 
     const prevPage = links.prev ? (parseInt(page) - 1) : false
     const nextPage = links.next ? (parseInt(page) + 1) : false
@@ -498,8 +517,6 @@ exports.list = async (req, res) => {
     }
 
     const subjectItemsDisplayLimit = 10
-
-    const hasSearchPhysics = !!(selectedSubjects.find(subject => subject.text === 'Physics'))
 
     res.render('../views/results/index', {
       results,
