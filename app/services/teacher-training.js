@@ -69,6 +69,21 @@ const teacherTrainingService = {
     const key = `providerSingleResponse_${query}`
     const providerSuggestionListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/provider_suggestions?query=${query}`).json())
     return providerSuggestionListResponse?.data[0]?.attributes
+  },
+
+  async getEngineersTeachPhysicsCourses (page, perPage, filter) {
+    const courseListResponse = require('../data/engineers-teach-physics-courses')
+
+    // TODO: filter the courseListResponse.data
+
+    courseListResponse.links = {
+      first: '#',
+      last: '#',
+      prev: '#',
+      next: '#'
+    }
+
+    return courseListResponse
   }
 }
 

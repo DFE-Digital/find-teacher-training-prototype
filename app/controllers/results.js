@@ -344,14 +344,7 @@ exports.list = async (req, res) => {
     let CourseListResponse
 
     if (hasSearchPhysics && selectedCampaign[0] === 'include') {
-      CourseListResponse = require('../data/engineers-teach-physics-courses')
-      CourseListResponse.links = {
-        first: '#',
-        last: '#',
-        prev: '#',
-        next: '#'
-      }
-      console.log(CourseListResponse);
+      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter)
     } else {
       if (q === 'provider') {
         CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
@@ -366,7 +359,6 @@ exports.list = async (req, res) => {
         // England-wide search
         CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
       }
-
     }
 
     const { data, links, meta, included } = CourseListResponse
