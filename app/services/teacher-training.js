@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const got = require('got')
 const qs = require('qs')
 const CacheService = require('../services/cache.js')
@@ -17,9 +18,8 @@ const teacherTrainingService = {
       sort: 'provider.provider_name,name'
     }
 
-    // const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
-    // const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
-    const courseListResponse = await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json()
+    const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
+    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
 
     return courseListResponse
   },
@@ -74,16 +74,53 @@ const teacherTrainingService = {
   async getEngineersTeachPhysicsCourses (page, perPage, filter) {
     const courseListResponse = require('../data/engineers-teach-physics-courses')
 
-    // TODO: filter the courseListResponse.data
+    // Filter the courseListResponse.data
+    let courseData = courseListResponse.data
 
-    courseListResponse.links = {
-      first: '#',
-      last: '#',
-      prev: '#',
-      next: '#'
+    // is_send
+    if (filter?.send_courses) {
+      courseData = courseData.filter(course => course.attributes.is_send === filter.send_courses)
     }
 
-    return courseListResponse
+    // has_vacancies
+    if (filter?.has_vacancies) {
+      courseData = courseData.filter(course => course.attributes.has_vacancies === filter.has_vacancies)
+    }
+
+    // study_mode
+    if (filter?.study_type) {
+      courseData = courseData.filter(course => filter.study_type.split(',').includes(course.attributes.study_mode))
+    }
+
+    // funding_type
+    if (filter?.funding_type === 'include') {
+      courseData = courseData.filter(course => course.attributes.funding_type === 'salary')
+    }
+
+    // degree_grade
+    if (filter?.degree_grade) {
+      courseData = courseData.filter(course => filter.degree_grade.split(',').includes(course.attributes.degree_grade))
+    }
+
+    // qualification
+    if (filter?.qualification) {
+      console.log('qualification:', filter.qualification.split(','));
+
+    }
+
+    return {
+      data: courseData,
+      included: courseListResponse.included,
+      links: {
+        first: '#',
+        last: '#',
+        prev: '#',
+        next: '#'
+      },
+      meta: {
+        count: courseData.length
+      }
+    }
   }
 }
 
