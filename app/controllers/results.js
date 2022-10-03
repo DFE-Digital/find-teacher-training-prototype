@@ -213,6 +213,8 @@ exports.list = async (req, res) => {
     selectedSend = defaults.send
   }
 
+  // req.session.data.filter.send = selectedSend
+
   const sendItems = utilsHelper.getSendItems(selectedSend)
 
   let selectedVacancy
@@ -223,6 +225,8 @@ exports.list = async (req, res) => {
   } else {
     selectedVacancy = defaults.vacancy
   }
+
+  req.session.data.filter.vacancy = selectedVacancy
 
   const vacancyItems = utilsHelper.getVacancyItems(selectedVacancy)
 
