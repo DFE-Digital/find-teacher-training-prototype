@@ -116,8 +116,6 @@ const teacherTrainingService = {
 
     // qualification
     if (filter?.qualification) {
-      console.log('qualification:', filter.qualification.split(','));
-
       // parse the filter qualification list as an array of items
       const qualifications = filter.qualification.split(',')
 
@@ -129,7 +127,6 @@ const teacherTrainingService = {
 
       // iterate over the qualifications from the filter
       qualifications.forEach((qualification, i) => {
-
         // parse the filter qualification as an array (and remove 'with')
         const q = parseQualification(qualification)
         // sort the filter qualification array a-z so we get ['pgce', 'qts']
