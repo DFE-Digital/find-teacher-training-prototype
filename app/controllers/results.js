@@ -14,6 +14,10 @@ exports.closed = async (req, res) => {
 exports.list = async (req, res) => {
   const defaults = req.session.data.defaults
 
+  if (process.env.USER_JOURNEY === 'filter' && req.session.data.filter === undefined) {
+    req.session.data.filter = {}
+  }
+
   // Search
   const keywords = req.session.data.keywords
 
@@ -244,7 +248,7 @@ exports.list = async (req, res) => {
     selectedQualification = req.session.data.filter.qualification
   } else {
     // if the subject is further education, set the defaults to FE qualifications
-    if (req.session.data.filter?.subject.includes('41')) {
+    if (req.session.data.filter?.subject?.includes('41')) {
       selectedQualification = ['pgce','pgde']
     } else {
       selectedQualification = defaults.qualification
