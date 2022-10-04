@@ -18,7 +18,7 @@ const teacherTrainingService = {
       sort: 'provider.provider_name,name'
     }
 
-    const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
+    const key = `courseListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
     const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
 
     return courseListResponse
@@ -33,7 +33,7 @@ const teacherTrainingService = {
       sort: 'provider.provider_name'
     }
 
-    const key = `courseListResponse_${page}-${perPage}-${JSON.stringify(query)}`
+    const key = `courseListResponse_${data.cycle}-${providerCode}-${page}-${perPage}-${JSON.stringify(query)}`
     const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/?${qs.stringify(query)}`).json())
     return courseListResponse
   },
