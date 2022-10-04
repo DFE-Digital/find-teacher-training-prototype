@@ -19,7 +19,9 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      {% include "./_search-terms.njk" %}
+      {% if userJourney in ["browse","search"] %}
+        {% include "./_search-terms.njk" %}
+      {% endif %}
 
       <h1 class="govuk-heading-xl">
         {{ title }}
