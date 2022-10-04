@@ -15,7 +15,15 @@
 
 {% block content %}
 
-  {% include "_includes/error-summary.njk" %}
+  {% if errors.length %}
+    {% include "_includes/error-summary.njk" %}
+  {% else %}
+    {% if data.cycleClosed %}
+      {% include "_includes/cycle-closed-banner.njk" %}
+    {% elif data.nearingEndOfCycle %}
+      {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+    {% endif %}
+  {% endif %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">

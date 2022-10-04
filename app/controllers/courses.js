@@ -1,3 +1,4 @@
+const qs = require('qs')
 const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
@@ -50,9 +51,33 @@ exports.show = async (req, res) => {
 
     // course.trainingLocation = trainingLocationOptions[Math.floor(Math.random() * trainingLocationOptions.length)]
 
+    const searchQuery = () => {
+      const query = {
+        latitude: req.session.data.latitude,
+        longitude: req.session.data.longitude,
+        page: req.session.data.page,
+        filter: {
+          send: req.session.data.filter.send,
+          vacancy: req.session.data.filter.vacancy,
+          studyMode: req.session.data.filter.studyMode,
+          qualification: req.session.data.filter.qualification,
+          degreeGrade: req.session.data.filter.degreeGrade,
+          visaSponsorship: req.session.data.filter.visaSponsorship,
+          fundingType: req.session.data.filter.fundingType,
+          subject: req.session.data.filter.subject,
+          campaign: req.session.data.filter.campaign
+        }
+      }
+
+      return qs.stringify(query)
+    }
+
     res.render('course/index', {
       course,
-      schools
+      schools,
+      actions: {
+        back: `/results?${searchQuery()}`
+      }
     })
   } catch (error) {
     res.render('error', {
