@@ -7,6 +7,10 @@ const utils = require('../utils')()
 const paginationHelper = require('../helpers/pagination')
 const utilsHelper = require('../helpers/utils')
 
+exports.closed = async (req, res) => {
+  res.render('closed')
+}
+
 exports.list = async (req, res) => {
   const defaults = req.session.data.defaults
 
@@ -24,6 +28,7 @@ exports.list = async (req, res) => {
   const vacancy = null
   const visaSponsorship = null
   const fundingType = null
+  const campaign = null
 
   const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter.subject)
 
@@ -60,6 +65,8 @@ exports.list = async (req, res) => {
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
   const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter.fundingType)
 
+  const campaigns = utilsHelper.getCheckboxValues(campaign, req.session.data.filter.campaign)
+
   const hasFilters = !!((subjects?.length > 0)
     || (studyModes?.length > 0)
     || (qualifications?.length > 0)
@@ -68,6 +75,7 @@ exports.list = async (req, res) => {
     || (vacancies?.length > 0)
     || (visaSponsorships?.length > 0)
     || (fundingTypes?.length > 0)
+    || (campaigns?.length > 0)
   )
 
   let selectedFilters = null
@@ -84,6 +92,18 @@ exports.list = async (req, res) => {
           return {
             text: utilsHelper.getSubjectLabel(subject),
             href: `/results/remove-subject-filter/${subject}`
+          }
+        })
+      })
+    }
+
+    if (campaigns?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Engineers teach physics' },
+        items: campaigns.map((campaign) => {
+          return {
+            text: utilsHelper.getCampaignLabel(campaign),
+            href: `/results/remove-campaign-filter/${campaign}`
           }
         })
       })
@@ -193,14 +213,20 @@ exports.list = async (req, res) => {
     selectedSend = defaults.send
   }
 
+  // req.session.data.filter.send = selectedSend
+
   const sendItems = utilsHelper.getSendItems(selectedSend)
 
   let selectedVacancy
   if (req.session.data.filter?.vacancy) {
     selectedVacancy = req.session.data.filter.vacancy
+  } else if (req.query.filter?.vacancy === '_unchecked') {
+    selectedVacancy = ['exclude']
   } else {
     selectedVacancy = defaults.vacancy
   }
+
+  req.session.data.filter.vacancy = selectedVacancy
 
   const vacancyItems = utilsHelper.getVacancyItems(selectedVacancy)
 
@@ -239,6 +265,8 @@ exports.list = async (req, res) => {
   let selectedVisaSponsorship
   if (req.session.data.filter?.visaSponsorship) {
     selectedVisaSponsorship = req.session.data.filter.visaSponsorship
+  // } else if (req.query.filter?.visaSponsorship === '_unchecked') {
+  //   selectedVisaSponsorship = ['exclude']
   } else {
     selectedVisaSponsorship = defaults.visaSponsorship
   }
@@ -248,11 +276,24 @@ exports.list = async (req, res) => {
   let selectedFundingType
   if (req.session.data.filter?.fundingType) {
     selectedFundingType = req.session.data.filter.fundingType
+  // } else if (req.query.filter?.fundingType === '_unchecked') {
+  //   selectedFundingType = ['exclude']
   } else {
     selectedFundingType = defaults.fundingType
   }
 
   const fundingTypeItems = utilsHelper.getFundingTypeItems(selectedFundingType)
+
+  let selectedCampaign
+  if (req.session.data.filter?.campaign) {
+    selectedCampaign = req.session.data.filter.campaign
+  // } else if (req.query.filter?.campaign === '_unchecked') {
+  //   selectedCampaign = ['exclude']
+  } else {
+    selectedCampaign = defaults.campaign
+  }
+
+  const campaignItems = utilsHelper.getCampaignItems(selectedCampaign)
 
   // Search radius - 5, 10, 50
   // default to 50
@@ -271,34 +312,59 @@ exports.list = async (req, res) => {
   const filter = {
     findable: true,
     funding_type: selectedFundingType.toString(),
-    degree_grade: selectedDegreeGrade.toString(),
-    send_courses: selectedSend === 'include' ? true : false,
-    has_vacancies: selectedVacancy === 'include' ? true : false,
     qualification: selectedQualification.toString(),
     study_type: selectedStudyMode.toString(),
-    can_sponsor_visa: selectedVisaSponsorship === 'include' ? true : false,
     subjects: selectedSubject.toString()
+  }
+
+  // TODO: change the degreeGrade filter from radio to checkbox to manage grades properly
+  if (selectedDegreeGrade === 'two_two') {
+    filter.degree_grade = 'two_two,third_class,not_required'
+  } else if (selectedDegreeGrade === 'third_class') {
+    filter.degree_grade = 'third_class,not_required'
+  } else if (selectedDegreeGrade === 'not_required') {
+    filter.degree_grade = 'not_required'
+  }
+
+  if (selectedSend[0] === 'include') {
+    filter.send_courses = true
+  }
+
+  if (selectedVacancy[0] === 'include') {
+    filter.has_vacancies = true
+  }
+
+  if (selectedVisaSponsorship[0] === 'include') {
+    filter.can_sponsor_visa = true
   }
 
   // pagination settings
   const page = req.query.page || 1
   const perPage = 20
 
+  const hasSearchPhysics = !!(selectedSubjects.find(subject => subject.text === 'Physics'))
+
   try {
     let CourseListResponse
-    if (q === 'provider') {
-      CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, provider.code)
-    } else if (q === 'location') {
-      if (radius) {
-        filter.latitude = latitude
-        filter.longitude = longitude
-        filter.radius = radius
-      }
-      CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+
+    if (hasSearchPhysics && selectedCampaign[0] === 'include') {
+      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter)
     } else {
-      // England-wide search
-      CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      if (q === 'provider') {
+        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
+      } else if (q === 'location') {
+        if (radius) {
+          filter.latitude = latitude
+          filter.longitude = longitude
+          filter.radius = radius
+        }
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      } else {
+        // England-wide search
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+      }
     }
+
     const { data, links, meta, included } = CourseListResponse
 
     let courses = data
@@ -366,8 +432,8 @@ exports.list = async (req, res) => {
 
         // Set course visa sponsorship based on provider
         course.visaSponsorship = {}
-        course.visaSponsorship.canSponsorSkilledWorkerVisa = provider.can_sponsor_skilled_worker_visa
-        course.visaSponsorship.canSponsorStudentVisa = provider.can_sponsor_student_visa
+        course.visaSponsorship.canSponsorSkilledWorkerVisa = course.can_sponsor_skilled_worker_visa
+        course.visaSponsorship.canSponsorStudentVisa = course.can_sponsor_student_visa
 
         const schools = locations.filter(location => location.code !== '-')
 
@@ -377,7 +443,6 @@ exports.list = async (req, res) => {
           course,
           provider,
           schools
-          // placementAreas
         }
       })
     }
@@ -390,34 +455,40 @@ exports.list = async (req, res) => {
       results.sort((a, b) => {
         if (req.query.sortBy === '1') {
           // sorted by Training provider Z-A
-          return b.provider.name.localeCompare(a.provider.name)
+          return b.provider.name.localeCompare(a.provider.name) || a.course.name.localeCompare(b.course.name)
         } else {
           // sorted by Training provider A-Z
-          return a.provider.name.localeCompare(b.provider.name)
+          return a.provider.name.localeCompare(b.provider.name) || a.course.name.localeCompare(b.course.name)
         }
       })
     }
 
     const resultsCount = meta ? meta.count : results.length
 
-    const pageCount = links.last.match(/page=(\d*)/)[1]
+    let pageCount = 1
+    if (links.last.match(/page=(\d*)/)) {
+      pageCount = links.last.match(/page=(\d*)/)[1]
+    }
 
-    const prevPage = links.prev ? (page - 1) : false
-    const nextPage = links.next ? (page + 1) : false
+    const prevPage = links.prev ? (parseInt(page) - 1) : false
+    const nextPage = links.next ? (parseInt(page) + 1) : false
 
     const searchQuery = page => {
       const query = {
         latitude,
         longitude,
         page,
-        send,
-        vacancy,
-        studyMode,
-        qualification,
-        degreeGrade,
-        visaSponsorship,
-        fundingType,
-        subjects
+        filter: {
+          send: selectedSend,
+          vacancy: selectedVacancy,
+          studyMode: selectedStudyMode,
+          qualification: selectedQualification,
+          degreeGrade: selectedDegreeGrade,
+          visaSponsorship: selectedVisaSponsorship,
+          fundingType: selectedFundingType,
+          subject: selectedSubject,
+          campaign: selectedCampaign
+        }
       }
 
       return qs.stringify(query)
@@ -441,12 +512,6 @@ exports.list = async (req, res) => {
         : false
     }
 
-    // Pagination
-    // const pagination = paginationHelper.getPagination(results, page, perPage)
-
-    // Slice the data to display
-    // results = paginationHelper.getDataByPage(results, pagination.pageNumber)
-
     const subjectItemsDisplayLimit = 10
 
     res.render('../views/results/index', {
@@ -463,9 +528,11 @@ exports.list = async (req, res) => {
       degreeGradeItems,
       visaSponsorshipItems,
       fundingTypeItems,
+      campaignItems,
       selectedFilters,
       hasFilters,
       hasSearch,
+      hasSearchPhysics,
       keywords,
       actions: {
         view: '/course/',
@@ -536,6 +603,11 @@ exports.removeFundingTypeFilter = (req, res) => {
   res.redirect('/results')
 }
 
+exports.removeCampaignFilter = (req, res) => {
+  req.session.data.filter.campaign = utilsHelper.removeFilter(req.params.campaign, req.session.data.filter.campaign)
+  res.redirect('/results')
+}
+
 exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.subject = null
   // req.session.data.filter.send = null
@@ -545,6 +617,7 @@ exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.degreeGrade = null
   // req.session.data.filter.visaSponsorship = null
   // req.session.data.filter.fundingType = null
+  // req.session.data.filter.camapign = null
 
   delete req.session.data.filter
   res.redirect('/results')

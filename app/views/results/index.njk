@@ -10,6 +10,12 @@
 
 {% block content %}
 
+  {% if data.cycleClosed %}
+    {% include "_includes/cycle-closed-banner.njk" %}
+  {% elif data.nearingEndOfCycle %}
+    {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+  {% endif %}
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
@@ -78,7 +84,9 @@
           {% include "./_pagination.njk" %}
         {% endif %} #}
 
-        {{ appPagination( pagination ) }}
+        {% if pagination.pages > 1 %}
+          {{ appPagination( pagination ) }}
+        {% endif %}
 
       {% else %}
 

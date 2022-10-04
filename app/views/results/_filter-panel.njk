@@ -50,6 +50,24 @@
   {% endif %}
 {% endif %}
 
+{% if hasSearchPhysics %}
+{{ govukCheckboxes({
+  idPrefix: "engineers-teach-physics",
+  name: "filter[campaign]",
+  fieldset: {
+    legend: {
+      text: "Engineers teach physics",
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: campaignItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+{% endif %}
+
 {{ govukCheckboxes({
   idPrefix: "special-educational-needs",
   name: "filter[send]",
