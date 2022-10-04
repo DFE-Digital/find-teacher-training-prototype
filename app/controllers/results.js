@@ -355,6 +355,12 @@ exports.list = async (req, res) => {
       CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter)
     } else {
       if (q === 'provider') {
+        // get the provider based on name from the autocomplete
+        if (process.env.USER_JOURNEY === 'filter') {
+          let providerSingleResponse = await teacherTrainingService.getProvider(req.session.data.keywords)
+          req.session.data.provider = providerSingleResponse
+        }
+
         CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
       } else if (q === 'location') {
         if (radius) {
@@ -562,8 +568,9 @@ exports.list = async (req, res) => {
 }
 
 exports.removeKeywordSearch = (req, res) => {
-  // req.session.data.keywords = ''
   delete req.session.data.keywords
+  delete req.session.data.provider
+  delete req.session.data.q
   res.redirect('/results')
 }
 
@@ -613,15 +620,15 @@ exports.removeCampaignFilter = (req, res) => {
 }
 
 exports.removeAllFilters = (req, res) => {
-  // req.session.data.filter.subject = null
-  // req.session.data.filter.send = null
-  // req.session.data.filter.vacancy = null
-  // req.session.data.filter.studyMode = null
-  // req.session.data.filter.qualification = null
+  // req.session.data.filter.campaign = null
   // req.session.data.filter.degreeGrade = null
-  // req.session.data.filter.visaSponsorship = null
   // req.session.data.filter.fundingType = null
-  // req.session.data.filter.camapign = null
+  // req.session.data.filter.qualification = null
+  // req.session.data.filter.send = null
+  // req.session.data.filter.studyMode = null
+  // req.session.data.filter.subject = null
+  // req.session.data.filter.vacancy = null
+  // req.session.data.filter.visaSponsorship = null
 
   delete req.session.data.filter
   res.redirect('/results')
