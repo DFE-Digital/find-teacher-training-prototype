@@ -24,7 +24,7 @@ const fundingTypeOptions = [{
 
 const campaignOptions = [{
   id: '0b516fba-93f6-49c7-8b42-de57aa678c15',
-  name: 'Only show Engineers teach physics courses',
+  name: 'Only show Engineers Teach Physics courses',
   code: 'include'
 }]
 
