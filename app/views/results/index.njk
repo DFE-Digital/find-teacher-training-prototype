@@ -56,7 +56,7 @@
         <ul class="app-search-results">
           {% for result in results %}
             <li class="app-search-results__item">
-              {% set isLocationSearch = (data.q != "england") %}
+              {% set isLocationSearch = (data.q == "location") %}
               {% set isUniversity = (result.provider.provider_type == "university") %}
               {% set trainingLocation = result.course.trainingLocation %}
 
