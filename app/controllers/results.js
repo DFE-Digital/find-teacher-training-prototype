@@ -343,6 +343,7 @@ exports.list = async (req, res) => {
   }
 
   // pagination settings
+  const sortBy = req.query.sortBy || 0
   const page = req.query.page || 1
   const perPage = 20
 
@@ -352,7 +353,7 @@ exports.list = async (req, res) => {
     let CourseListResponse
 
     if (hasSearchPhysics && selectedCampaign[0] === 'include') {
-      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter)
+      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter, sortBy)
     } else {
       if (q === 'provider') {
         // get the provider based on name from the autocomplete
@@ -361,17 +362,17 @@ exports.list = async (req, res) => {
           req.session.data.provider = providerSingleResponse
         }
 
-        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
+        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, sortBy, req.session.data.provider.code)
       } else if (q === 'location') {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
           filter.radius = radius
         }
-        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter, sortBy)
       } else {
         // England-wide search
-        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter, sortBy)
       }
     }
 
@@ -461,17 +462,17 @@ exports.list = async (req, res) => {
     let results = await Promise.all(courses)
 
     // sort results by training provider name
-    if (['provider','england'].includes(req.session.data.q)) {
-      results.sort((a, b) => {
-        if (req.query.sortBy === '1') {
-          // sorted by Training provider Z-A
-          return b.provider.name.localeCompare(a.provider.name) || a.course.name.localeCompare(b.course.name)
-        } else {
-          // sorted by Training provider A-Z
-          return a.provider.name.localeCompare(b.provider.name) || a.course.name.localeCompare(b.course.name)
-        }
-      })
-    }
+    // if (['provider','england'].includes(req.session.data.q) || process.env.USER_JOURNEY === 'filter') {
+    //   results.sort((a, b) => {
+    //     if (req.query.sortBy === '1') {
+    //       // sorted by Training provider Z-A
+    //       return b.provider.name.localeCompare(a.provider.name) || a.course.name.localeCompare(b.course.name)
+    //     } else {
+    //       // sorted by Training provider A-Z
+    //       return a.provider.name.localeCompare(b.provider.name) || a.course.name.localeCompare(b.course.name)
+    //     }
+    //   })
+    // }
 
     const resultsCount = meta ? meta.count : results.length
 
