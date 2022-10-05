@@ -9,13 +9,18 @@ const ttl = 0
 const cache = new CacheService(ttl) // Create a new cache service instance
 
 const teacherTrainingService = {
-  async getCourses (page, perPage, filter) {
+  async getCourses (page, perPage, filter, sortBy) {
+    let sort = 'provider.provider_name,name'
+    // if (parseInt(sortBy) === 2) {
+    //   sort = 'name,provider.provider_name'
+    // }
+
     const query = {
       filter,
       include: 'provider,accredited_body',
       page,
       per_page: perPage,
-      sort: 'provider.provider_name,name'
+      sort
     }
 
     const key = `courseListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
@@ -24,13 +29,18 @@ const teacherTrainingService = {
     return courseListResponse
   },
 
-  async getProviderCourses (page, perPage, filter, providerCode) {
+  async getProviderCourses (page, perPage, filter, sortBy, providerCode) {
+    let sort = 'provider.provider_name,name'
+    // if (parseInt(sortBy) === 2) {
+    //   sort = 'name,provider.provider_name'
+    // }
+
     const query = {
       filter,
       include: 'provider,accredited_body',
       page,
       per_page: perPage,
-      sort: 'provider.provider_name'
+      sort
     }
 
     const key = `courseListResponse_${data.cycle}-${providerCode}-${page}-${perPage}-${JSON.stringify(query)}`
