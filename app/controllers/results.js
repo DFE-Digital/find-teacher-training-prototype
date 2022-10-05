@@ -461,19 +461,6 @@ exports.list = async (req, res) => {
     // Data
     let results = await Promise.all(courses)
 
-    // sort results by training provider name
-    // if (['provider','england'].includes(req.session.data.q) || process.env.USER_JOURNEY === 'filter') {
-    //   results.sort((a, b) => {
-    //     if (req.query.sortBy === '1') {
-    //       // sorted by Training provider Z-A
-    //       return b.provider.name.localeCompare(a.provider.name) || a.course.name.localeCompare(b.course.name)
-    //     } else {
-    //       // sorted by Training provider A-Z
-    //       return a.provider.name.localeCompare(b.provider.name) || a.course.name.localeCompare(b.course.name)
-    //     }
-    //   })
-    // }
-
     const resultsCount = meta ? meta.count : results.length
 
     let pageCount = 1
