@@ -99,7 +99,7 @@ exports.list = async (req, res) => {
 
     if (campaigns?.length) {
       selectedFilters.categories.push({
-        heading: { text: 'Engineers teach physics' },
+        heading: { text: 'Engineers Teach Physics' },
         items: campaigns.map((campaign) => {
           return {
             text: utilsHelper.getCampaignLabel(campaign),
