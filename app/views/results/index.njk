@@ -41,7 +41,8 @@
 
       {% include "./_promoted-link.njk" %}
 
-      {% if userJourney in ["browse","filter"] %}
+      {# TODO include the provider search in the browse journey #}
+      {% if userJourney in ["filter"] %}
         {% include "./_search-panel.njk" %}
       {% endif %}
 
