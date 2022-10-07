@@ -431,9 +431,6 @@ exports.list = async (req, res) => {
                 latitude: attributes.latitude,
                 longitude: attributes.longitude
               })
-            } else {
-              console.log('Provider',provider.code);
-              console.log('ERROR',attributes.name);
             }
 
             const distanceInMiles = ((parseInt(distanceInMeters) / 1000) * 0.621371).toFixed(0)
