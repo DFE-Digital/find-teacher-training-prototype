@@ -64,6 +64,7 @@
               {{ appResultDetail({
                 href: "/course/" + result.provider.code + "/" + result.course.code,
                 providerName: result.provider.name | markdown("inline"),
+                providerCode: result.provider.code,
                 courseName: result.course.name + " (" + result.course.code + ")",
                 schools: result.schools if not isUniversity and isLocationSearch,
                 trainingLocation: {
