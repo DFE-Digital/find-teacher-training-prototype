@@ -1,0 +1,82 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = provider.name + " (" + provider.code + ")" %}
+
+{% block pageTitle %}
+{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back to search results",
+  href: actions.back
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  {% if data.cycleClosed %}
+    {% include "_includes/cycle-closed-banner.njk" %}
+  {% elif data.nearingEndOfCycle %}
+    {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+  {% endif %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <h2 class="govuk-heading-l">Courses</h2>
+
+    {% if results.length %}
+
+      <ul class="app-search-results">
+        {% for result in results %}
+          <li class="app-search-results__item">
+            {% set isLocationSearch = (data.q == "location") %}
+            {% set isUniversity = (result.provider.provider_type == "university") %}
+            {% set trainingLocation = result.course.trainingLocation %}
+
+            {{ appResultDetail({
+              href: "/course/" + result.provider.code + "/" + result.course.code,
+              courseName: result.course.name + " (" + result.course.code + ")",
+              schools: result.schools if not isUniversity and isLocationSearch,
+              trainingLocation: {
+                distance: trainingLocation.distance,
+                address: trainingLocation.address
+              } if trainingLocation and isUniversity and isLocationSearch,
+              accreditedBody: result.course.accredited_body,
+              studyType: result.course.study_mode | getStudyModeLabel,
+              qualification: result.course.qualifications | getQualificationLabel,
+              fundingOption: result.course.funding_option,
+              degreeGrade: result.course.degree_grade,
+              visaSponsorship: result.course.visaSponsorship,
+              startDate: result.course.start_date,
+              vacancies: "Yes" if result.course.has_vacancies else "No"
+            }) }}
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if pagination.pages > 1 %}
+        {{ appPagination( pagination ) }}
+      {% endif %}
+
+    {% else %}
+
+      <p class="govuk-body">No courses for this provider</p>
+
+    {% endif %}
+
+    </div>
+  </div>
+
+{% endblock %}
