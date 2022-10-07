@@ -31,6 +31,8 @@ router.get('/', async (req, res) => {
   } else {
     if (process.env.USER_JOURNEY === 'browse') {
       res.redirect('/browse')
+    } else if (process.env.USER_JOURNEY === 'filter') {
+      res.redirect('/results')
     } else {
       res.redirect('/search')
     }

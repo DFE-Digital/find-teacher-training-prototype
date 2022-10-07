@@ -95,7 +95,7 @@ exports.getSelectedSubjectItems = (selectedItems) => {
   selectedItems.forEach((item) => {
     const subject = {}
     subject.text = item.text
-    subject.href = `/results/remove-subject-filter/${item.text}`
+    subject.href = `/results/remove-subject-filter/${item.value}`
 
     items.push(subject)
   })

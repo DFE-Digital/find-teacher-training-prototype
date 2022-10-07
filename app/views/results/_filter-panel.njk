@@ -1,5 +1,5 @@
 {% set filterOptionsHtml %}
-{% if userJourney in ["browse","filter"] and data.ageGroup == "primary" %}
+{% if userJourney == "browse" and data.ageGroup == "primary" %}
   {{ govukCheckboxes({
     idPrefix: "subject",
     name: "filter[subject]",
@@ -17,7 +17,7 @@
   }) }}
 {% endif %}
 
-{% if userJourney in ["browse","filter"] and data.route == "all" and data.ageGroup == "secondary" %}
+{% if userJourney == "browse" and data.route == "all" and data.ageGroup == "secondary" or userJourney == "filter" %}
   {% if subjectItems.length >= subjectItemsDisplayLimit %}
 
     {{ appCheckboxFilter({
@@ -28,7 +28,7 @@
       },
       items: subjectItems,
       selectedItems: selectedSubjects,
-      showSelectedTags: false,
+      showSelectedTags: true if userJourney == "filter" else false,
       classes: "govuk-!-margin-bottom-7"
     }) }}
 
@@ -191,8 +191,7 @@
     </div>
   </div>
   <div class="app-filter__content">
-     {# userJourney == "filter" and  #}
-    {# {% if selectedFilters %}
+    {# {% if userJourney == "filter" and selectedFilters %}
       <div class="app-filter__selected">
         <div class="app-filter__selected-heading">
           <div class="app-filter__heading-title">

@@ -19,7 +19,9 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      {% include "./_search-terms.njk" %}
+      {% if userJourney in ["browse","search"] %}
+        {% include "./_search-terms.njk" %}
+      {% endif %}
 
       <h1 class="govuk-heading-xl">
         {{ title }}
@@ -39,7 +41,8 @@
 
       {% include "./_promoted-link.njk" %}
 
-      {% if userJourney in ["browse","filter"] %}
+      {# TODO include the provider search in the browse journey #}
+      {% if userJourney in ["filter"] %}
         {% include "./_search-panel.njk" %}
       {% endif %}
 
@@ -54,7 +57,7 @@
         <ul class="app-search-results">
           {% for result in results %}
             <li class="app-search-results__item">
-              {% set isLocationSearch = (data.q != "england") %}
+              {% set isLocationSearch = (data.q == "location") %}
               {% set isUniversity = (result.provider.provider_type == "university") %}
               {% set trainingLocation = result.course.trainingLocation %}
 
