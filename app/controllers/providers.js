@@ -3,7 +3,7 @@ const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
 exports.show = async (req, res) => {
-  const provider = await teacherTrainingService.getProvider(req.params.providerCode)
+  const ProviderSingleResponse = await teacherTrainingService.getProvider(req.params.providerCode)
 
   const page = 1
   const perPage = 100
@@ -88,7 +88,8 @@ exports.show = async (req, res) => {
   }
 
   // Data
-  let results = await Promise.all(courses)
+  const provider = ProviderSingleResponse
+  const results = await Promise.all(courses)
 
   results.sort((a,b) => {
     return a.course.name.localeCompare(b.course.name)
