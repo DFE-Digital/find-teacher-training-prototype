@@ -257,11 +257,11 @@ exports.list = async (req, res) => {
 
   // TODO: show qualification items based on user's subject choice
   let qualificationItems
-  if (req.session.data.filter?.subject?.includes('41')) {
-    qualificationItems = utilsHelper.getQualificationItems(selectedQualification, 'furtherEducation')
-  } else {
+  // if (req.session.data.filter?.subject?.includes('41')) {
+  //   qualificationItems = utilsHelper.getQualificationItems(selectedQualification, 'furtherEducation')
+  // } else {
     qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
-  }
+  // }
 
 
   let selectedDegreeGrade
