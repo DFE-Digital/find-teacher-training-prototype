@@ -5,6 +5,15 @@ const utils = require('../utils')()
 const utilsHelper = require('../helpers/utils')
 
 exports.search_get = async (req, res) => {
+  delete req.session.data.filter
+  delete req.session.data.provider
+  delete req.session.data.q
+  delete req.session.data.ageGroup
+  delete req.session.data.location
+  delete req.session.data.place
+  delete req.session.data.latitude
+  delete req.session.data.longitude
+
   if (process.env.USER_JOURNEY === 'browse') {
     res.redirect('/browse')
   } else {

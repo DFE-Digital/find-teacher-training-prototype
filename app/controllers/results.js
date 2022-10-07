@@ -14,6 +14,10 @@ exports.closed = async (req, res) => {
 exports.list = async (req, res) => {
   const defaults = req.session.data.defaults
 
+  if (process.env.USER_JOURNEY === 'filter' && req.session.data.filter === undefined) {
+    req.session.data.filter = {}
+  }
+
   // Search
   const keywords = req.session.data.keywords
 
@@ -244,14 +248,21 @@ exports.list = async (req, res) => {
     selectedQualification = req.session.data.filter.qualification
   } else {
     // if the subject is further education, set the defaults to FE qualifications
-    if (req.session.data.filter?.subject.includes('41')) {
+    if (req.session.data.filter?.subject?.includes('41')) {
       selectedQualification = ['pgce','pgde']
     } else {
       selectedQualification = defaults.qualification
     }
   }
 
-  const qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
+  // TODO: show qualification items based on user's subject choice
+  let qualificationItems
+  // if (req.session.data.filter?.subject?.includes('41')) {
+  //   qualificationItems = utilsHelper.getQualificationItems(selectedQualification, 'furtherEducation')
+  // } else {
+    qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
+  // }
+
 
   let selectedDegreeGrade
   if (req.session.data.filter?.degreeGrade) {
@@ -339,6 +350,7 @@ exports.list = async (req, res) => {
   }
 
   // pagination settings
+  const sortBy = req.query.sortBy || 0
   const page = req.query.page || 1
   const perPage = 20
 
@@ -348,20 +360,26 @@ exports.list = async (req, res) => {
     let CourseListResponse
 
     if (hasSearchPhysics && selectedCampaign[0] === 'include') {
-      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter)
+      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter, sortBy)
     } else {
       if (q === 'provider') {
-        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, req.session.data.provider.code)
+        // get the provider based on name from the autocomplete
+        if (process.env.USER_JOURNEY === 'filter') {
+          let providerSingleResponse = await teacherTrainingService.getProvider(req.session.data.keywords)
+          req.session.data.provider = providerSingleResponse
+        }
+
+        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, sortBy, req.session.data.provider.code)
       } else if (q === 'location') {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
           filter.radius = radius
         }
-        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter, sortBy)
       } else {
         // England-wide search
-        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter)
+        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter, sortBy)
       }
     }
 
@@ -410,13 +428,17 @@ exports.list = async (req, res) => {
 
           // Distance from search location
           if (q === 'location') {
-            const distanceInMeters = geolib.getDistance({
-              latitude,
-              longitude
-            }, {
-              latitude: attributes.latitude,
-              longitude: attributes.longitude
-            })
+            let distanceInMeters = 0
+            // if there's an error in the location details, we need to ignore
+            if (attributes.latitude !== null && attributes.longitude !== null) {
+              distanceInMeters = geolib.getDistance({
+                latitude,
+                longitude
+              }, {
+                latitude: attributes.latitude,
+                longitude: attributes.longitude
+              })
+            }
 
             const distanceInMiles = ((parseInt(distanceInMeters) / 1000) * 0.621371).toFixed(0)
             attributes.distance = parseInt(distanceInMiles)
@@ -449,19 +471,6 @@ exports.list = async (req, res) => {
 
     // Data
     let results = await Promise.all(courses)
-
-    // sort results by training provider name
-    if (['provider','england'].includes(req.session.data.q)) {
-      results.sort((a, b) => {
-        if (req.query.sortBy === '1') {
-          // sorted by Training provider Z-A
-          return b.provider.name.localeCompare(a.provider.name) || a.course.name.localeCompare(b.course.name)
-        } else {
-          // sorted by Training provider A-Z
-          return a.provider.name.localeCompare(b.provider.name) || a.course.name.localeCompare(b.course.name)
-        }
-      })
-    }
 
     const resultsCount = meta ? meta.count : results.length
 
@@ -558,8 +567,9 @@ exports.list = async (req, res) => {
 }
 
 exports.removeKeywordSearch = (req, res) => {
-  // req.session.data.keywords = ''
   delete req.session.data.keywords
+  delete req.session.data.provider
+  delete req.session.data.q
   res.redirect('/results')
 }
 
@@ -609,15 +619,15 @@ exports.removeCampaignFilter = (req, res) => {
 }
 
 exports.removeAllFilters = (req, res) => {
-  // req.session.data.filter.subject = null
-  // req.session.data.filter.send = null
-  // req.session.data.filter.vacancy = null
-  // req.session.data.filter.studyMode = null
-  // req.session.data.filter.qualification = null
+  // req.session.data.filter.campaign = null
   // req.session.data.filter.degreeGrade = null
-  // req.session.data.filter.visaSponsorship = null
   // req.session.data.filter.fundingType = null
-  // req.session.data.filter.camapign = null
+  // req.session.data.filter.qualification = null
+  // req.session.data.filter.send = null
+  // req.session.data.filter.studyMode = null
+  // req.session.data.filter.subject = null
+  // req.session.data.filter.vacancy = null
+  // req.session.data.filter.visaSponsorship = null
 
   delete req.session.data.filter
   res.redirect('/results')
