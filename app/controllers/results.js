@@ -421,13 +421,20 @@ exports.list = async (req, res) => {
 
           // Distance from search location
           if (q === 'location') {
-            const distanceInMeters = geolib.getDistance({
-              latitude,
-              longitude
-            }, {
-              latitude: attributes.latitude,
-              longitude: attributes.longitude
-            })
+            let distanceInMeters = 0
+            // if there's an error in the location details, we need to ignore
+            if (attributes.latitude !== null && attributes.longitude !== null) {
+              distanceInMeters = geolib.getDistance({
+                latitude,
+                longitude
+              }, {
+                latitude: attributes.latitude,
+                longitude: attributes.longitude
+              })
+            } else {
+              console.log('Provider',provider.code);
+              console.log('ERROR',attributes.name);
+            }
 
             const distanceInMiles = ((parseInt(distanceInMeters) / 1000) * 0.621371).toFixed(0)
             attributes.distance = parseInt(distanceInMiles)
