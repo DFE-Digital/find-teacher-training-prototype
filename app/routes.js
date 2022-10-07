@@ -4,6 +4,7 @@ const router = express.Router()
 // Controller modules
 const browseController = require('./controllers/browse')
 const courseController = require('./controllers/courses')
+const providerController = require('./controllers/providers')
 const resultsController = require('./controllers/results')
 const searchController = require('./controllers/search')
 
@@ -103,6 +104,11 @@ router.get('/results/remove-campaign-filter/:fundingType', resultsController.rem
 
 router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 
+/// ------------------------------------------------------------------------ ///
+/// PROVIDER ROUTES
+/// ------------------------------------------------------------------------ ///
+
+router.get('/providers/:providerCode', providerController.show)
 
 /// ------------------------------------------------------------------------ ///
 /// COURSES ROUTES
