@@ -24,20 +24,6 @@ const teacherTrainingService = {
     return courseListResponse
   },
 
-  async getProviderCourses (page, perPage, filter, sortBy, providerCode) {
-    const query = {
-      filter,
-      include: 'provider,accredited_body',
-      page,
-      per_page: perPage,
-      sort: 'name'
-    }
-
-    const key = `courseListResponse_${data.cycle}-${providerCode}-${page}-${perPage}-${JSON.stringify(query)}`
-    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/?${qs.stringify(query)}`).json())
-    return courseListResponse
-  },
-
   async getCourse (providerCode, courseCode) {
     try {
       const key = `courseSingleResponse_${data.cycle}-${providerCode}-${courseCode}`
@@ -65,10 +51,30 @@ const teacherTrainingService = {
     return providerSuggestionListResponse
   },
 
-  async getProvider (query) {
-    const key = `providerSingleResponse_${query}`
-    const providerSuggestionListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/provider_suggestions?query=${query}`).json())
-    return providerSuggestionListResponse?.data[0]?.attributes
+  async getProvider (providerCode) {
+    const key = `providerSingleResponse_${providerCode}`
+    const providerSingleResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}`).json())
+    return providerSingleResponse.data.attributes
+  },
+
+  async getProviderCourses (page, perPage, filter, sortBy, providerCode) {
+    const query = {
+      filter,
+      include: 'provider,accredited_body',
+      page,
+      per_page: perPage,
+      sort: 'name'
+    }
+
+    const key = `courseListResponse_${data.cycle}-${providerCode}-${page}-${perPage}-${JSON.stringify(query)}`
+    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses?${qs.stringify(query)}`).json())
+    return courseListResponse
+  },
+
+  async getProviderLocations (providerCode) {
+    const key = `providerLocationListResponse_${data.cycle}-${providerCode}-${JSON.stringify(query)}`
+    const providerLocationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations?${qs.stringify(query)}`).json())
+    return providerLocationListResponse
   },
 
   async getEngineersTeachPhysicsCourses (page, perPage, filter) {
