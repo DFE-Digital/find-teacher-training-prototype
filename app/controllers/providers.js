@@ -17,7 +17,7 @@ exports.show = async (req, res) => {
     study_type: req.session.data.defaults.studyMode.toString()
   }
 
-  const CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, sortBy, req.params.providerCode)
+  const CourseListResponse = await teacherTrainingService.getProviderCourses(req.params.providerCode, filter, page, perPage)
 
   const { data, links, meta, included } = CourseListResponse
 
