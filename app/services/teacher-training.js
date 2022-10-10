@@ -9,7 +9,7 @@ const ttl = 0
 const cache = new CacheService(ttl) // Create a new cache service instance
 
 const teacherTrainingService = {
-  async getCourses (page, perPage, filter, sortBy) {
+  async getCourses (page, perPage, filter) {
     const query = {
       filter,
       include: 'provider,accredited_body',
@@ -20,7 +20,6 @@ const teacherTrainingService = {
 
     const key = `courseListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
     const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
-
     return courseListResponse
   },
 
@@ -57,7 +56,7 @@ const teacherTrainingService = {
     return providerSingleResponse.data.attributes
   },
 
-  async getProviderCourses (page, perPage, filter, sortBy, providerCode) {
+  async getProviderCourses (page, perPage, filter, providerCode) {
     const query = {
       filter,
       include: 'provider,accredited_body',
@@ -72,9 +71,9 @@ const teacherTrainingService = {
   },
 
   async getProviderLocations (providerCode) {
-    const key = `providerLocationListResponse_${data.cycle}-${providerCode}-${JSON.stringify(query)}`
-    const providerLocationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations?${qs.stringify(query)}`).json())
-    return providerLocationListResponse
+    const key = `locationListResponse_${data.cycle}-${providerCode}`
+    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations`).json())
+    return locationListResponse
   },
 
   async getEngineersTeachPhysicsCourses (page, perPage, filter) {
