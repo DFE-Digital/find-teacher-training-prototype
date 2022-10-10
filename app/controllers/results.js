@@ -355,31 +355,35 @@ exports.list = async (req, res) => {
   const perPage = 20
 
   const hasSearchPhysics = !!(selectedSubjects.find(subject => subject.text === 'Physics'))
-
   try {
     let CourseListResponse
 
     if (hasSearchPhysics && selectedCampaign[0] === 'include') {
-      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(page, perPage, filter, sortBy)
+      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(filter, page, perPage)
     } else {
       if (q === 'provider') {
         // get the provider based on name from the autocomplete
         if (process.env.USER_JOURNEY === 'filter') {
-          let providerSingleResponse = await teacherTrainingService.getProvider(req.session.data.keywords)
-          req.session.data.provider = providerSingleResponse
+          let providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.keywords)
+
+          // TODO: if the response contains multiple providers, redirect user to a page
+          // to choose the appropriate provider before returning back to results list
+
+          // get the first provider from the response
+          req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
         }
 
-        CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, sortBy, req.session.data.provider.code)
+        CourseListResponse = await teacherTrainingService.getProviderCourses(req.session.data.provider.code, filter, page, perPage)
       } else if (q === 'location') {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
           filter.radius = radius
         }
-        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter, sortBy)
+        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage)
       } else {
         // England-wide search
-        CourseListResponse = await teacherTrainingService.getCourses(page, perPage, filter, sortBy)
+        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage)
       }
     }
 
