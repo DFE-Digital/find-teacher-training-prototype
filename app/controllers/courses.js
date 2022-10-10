@@ -56,17 +56,7 @@ exports.show = async (req, res) => {
         latitude: req.session.data.latitude,
         longitude: req.session.data.longitude,
         page: req.session.data.page,
-        filter: {
-          send: req.session.data.filter.send,
-          vacancy: req.session.data.filter.vacancy,
-          studyMode: req.session.data.filter.studyMode,
-          qualification: req.session.data.filter.qualification,
-          degreeGrade: req.session.data.filter.degreeGrade,
-          visaSponsorship: req.session.data.filter.visaSponsorship,
-          fundingType: req.session.data.filter.fundingType,
-          subject: req.session.data.filter.subject,
-          campaign: req.session.data.filter.campaign
-        }
+        filter: req.session.data.filter
       }
 
       return qs.stringify(query)

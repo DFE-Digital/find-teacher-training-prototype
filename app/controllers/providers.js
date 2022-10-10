@@ -103,8 +103,10 @@ exports.show = async (req, res) => {
 
   const searchQuery = page => {
     const query = {
+      latitude: req.session.data.latitude,
+      longitude: req.session.data.longitude,
       page,
-      filter
+      filter: req.session.data.filter
     }
 
     return qs.stringify(query)
