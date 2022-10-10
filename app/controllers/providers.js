@@ -101,7 +101,7 @@ exports.show = async (req, res) => {
   const prevPage = links.prev ? (parseInt(page) - 1) : false
   const nextPage = links.next ? (parseInt(page) + 1) : false
 
-  const searchQuery = page => {
+  const searchQuery = (page = null) => {
     const query = {
       latitude: req.session.data.latitude,
       longitude: req.session.data.longitude,
