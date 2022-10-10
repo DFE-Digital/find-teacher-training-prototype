@@ -62,7 +62,7 @@
             {% set trainingLocation = result.course.trainingLocation %}
 
             {{ appResultDetail({
-              href: "/course/" + result.provider.code + "/" + result.course.code,
+              href: "/course/" + result.provider.code + "/" + result.course.code + "?referrer=provider",
               courseName: result.course.name + " (" + result.course.code + ")",
               schools: result.schools if not isUniversity and isLocationSearch,
               trainingLocation: {

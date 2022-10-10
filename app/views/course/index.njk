@@ -8,7 +8,7 @@
 
 {% block pageNavigation %}
 {{ govukBackLink({
-  text: "Back to search results",
+  text: "Back to provider" if referrer == "provider" else "Back to search results",
   href: actions.back
 }) }}
 {% endblock %}
