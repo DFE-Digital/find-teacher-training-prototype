@@ -2,12 +2,15 @@
 {% from "govuk/components/table/macro.njk" import govukTable %}
 
 <h2 class="app-search-result__item-title">
-  {% if params.providerName.length %}
+  {% if params.providerCode.length %}
     <a class="govuk-link" href="/providers/{{ params.providerCode }}" style="text-decoration: none;">
       <span class="app-search-result__provider-name">{{ params.providerName | safe }}</span><br>
     </a>
   {% endif %}
   <a href="{{ params.href }}">
+    {% if not params.providerCode.length %}
+      <span class="app-search-result__provider-name">{{ params.providerName | safe }}</span><br>
+    {% endif %}
     <span class="app-search-result__course-name">{{ params.courseName | safe }}</span>
   </a>
 </h2>
