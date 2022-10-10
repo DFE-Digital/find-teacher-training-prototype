@@ -9,7 +9,7 @@ const ttl = 0
 const cache = new CacheService(ttl) // Create a new cache service instance
 
 const teacherTrainingService = {
-  async getCourses (page, perPage, filter) {
+  async getCourses (filter, page = 1, perPage = 20) {
     const query = {
       filter,
       include: 'provider,accredited_body',
@@ -19,7 +19,7 @@ const teacherTrainingService = {
     }
 
     const key = `courseListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
-    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses/?${qs.stringify(query)}`).json())
+    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses?${qs.stringify(query)}`).json())
     return courseListResponse
   },
 
@@ -56,7 +56,7 @@ const teacherTrainingService = {
     return providerSingleResponse.data.attributes
   },
 
-  async getProviderCourses (page, perPage, filter, providerCode) {
+  async getProviderCourses (providerCode, filter, page = 1, perPage = 20) {
     const query = {
       filter,
       include: 'provider,accredited_body',
@@ -72,11 +72,11 @@ const teacherTrainingService = {
 
   async getProviderLocations (providerCode) {
     const key = `locationListResponse_${data.cycle}-${providerCode}`
-    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations`).json())
+    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations?include=course,location_status,provider`).json())
     return locationListResponse
   },
 
-  async getEngineersTeachPhysicsCourses (page, perPage, filter) {
+  async getEngineersTeachPhysicsCourses (filter, page = 1, perPage = 20) {
     const courseListResponse = require('../data/engineers-teach-physics-courses')
 
     const arrayEquals = (a, b) => {
