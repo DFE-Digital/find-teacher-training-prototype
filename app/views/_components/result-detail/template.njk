@@ -4,11 +4,11 @@
 <h2 class="app-search-result__item-title">
   {% if params.providerName.length %}
     <a class="govuk-link" href="/providers/{{ params.providerCode }}" style="text-decoration: none;">
-      <span class="app-search-result__provider-name">{{ params.providerName }}</span><br>
+      <span class="app-search-result__provider-name">{{ params.providerName | safe }}</span><br>
     </a>
   {% endif %}
   <a href="{{ params.href }}">
-    <span class="app-search-result__course-name">{{ params.courseName }}</span>
+    <span class="app-search-result__course-name">{{ params.courseName | safe }}</span>
   </a>
 </h2>
 
