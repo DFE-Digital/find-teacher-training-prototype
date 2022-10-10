@@ -62,11 +62,16 @@ exports.show = async (req, res) => {
       return qs.stringify(query)
     }
 
+    let back = `/results?${searchQuery()}`
+    if (req.query.referrer) {
+      back = `/providers/${req.params.providerCode}`
+    }
+
     res.render('course/index', {
       course,
       schools,
       actions: {
-        back: `/results?${searchQuery()}`
+        back
       }
     })
   } catch (error) {
