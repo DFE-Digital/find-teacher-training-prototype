@@ -78,9 +78,9 @@ exports.getSubjectItems = (selectedItems, subjectLevel = null, showHint = false)
   return items
 }
 
-exports.getSubjectLabel = (subjectCode) => {
+exports.getSubjectLabel = (subjectCode = null) => {
   const subjects = require('../data/subjects')
-  let label
+  let label = subjectCode
 
   if (subjectCode) {
     label = subjects.find(subject => subject.code === subjectCode).name
@@ -120,12 +120,12 @@ exports.getSendItems = (selectedItems) => {
   return items
 }
 
-exports.getSendLabel = (sendCode) => {
-  let label
+exports.getSendLabel = (sendCode = null) => {
+  let label = sendCode
 
   // TODO: fix send label error
   if (sendCode) {
-    // label = sendOptions.find(send => send.code === sendCode).name
+    label = sendOptions.find(send => send.code === sendCode).name
   }
 
   return label
@@ -162,12 +162,12 @@ exports.getVacancyItems = (selectedItems) => {
   return items
 }
 
-exports.getVacancyLabel = (vacancyCode) => {
-  let label
+exports.getVacancyLabel = (vacancyCode = null) => {
+  let label = vacancyCode
 
   // TODO: fix vacancy label error
   if (vacancyCode) {
-    // label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
+    label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
   }
 
   return label
@@ -205,9 +205,9 @@ exports.getStudyModeItems = (selectedItems) => {
   return items
 }
 
-exports.getStudyModeLabel = (studyModeCode) => {
+exports.getStudyModeLabel = (studyModeCode = null) => {
   const studyModes = require('../data/study-modes')
-  let label
+  let label = studyModeCode
 
   if (studyModeCode) {
     label = studyModes.find(studyMode => studyMode.code === studyModeCode).name
@@ -252,9 +252,9 @@ exports.getQualificationItems = (selectedItems, subjectLevel = null) => {
   return items
 }
 
-exports.getQualificationLabel = (qualificationCode) => {
+exports.getQualificationLabel = (qualificationCode = null) => {
   const qualifications = require('../data/qualifications')
-  let label
+  let label = qualificationCode
 
   if (qualificationCode) {
     label = qualifications.find(qualification => qualification.code === qualificationCode).name
@@ -295,9 +295,9 @@ exports.getDegreeGradeItems = (selectedItems) => {
   return items
 }
 
-exports.getDegreeGradeLabel = (degreeGradeCode) => {
+exports.getDegreeGradeLabel = (degreeGradeCode = null) => {
   const degreeGrades = require('../data/degree-grades')
-  let label
+  let label = degreeGradeCode
 
   if (degreeGradeCode) {
     label = degreeGrades.find(degreeGrade => degreeGrade.code === degreeGradeCode).name
@@ -337,12 +337,11 @@ exports.getVisaSponsorshipItems = (selectedItems) => {
   return items
 }
 
-exports.getVisaSponsorshipLabel = (visaSponsorshipCode) => {
-  let label
+exports.getVisaSponsorshipLabel = (visaSponsorshipCode = null) => {
+  let label = visaSponsorshipCode
 
-  // TODO: fix visa sponsorship label error
   if (visaSponsorshipCode) {
-    // label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
+    label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
   }
 
   return label
@@ -379,8 +378,8 @@ exports.getFundingTypeItems = (selectedItems) => {
   return items
 }
 
-exports.getFundingTypeLabel = (fundingTypeCode) => {
-  let label
+exports.getFundingTypeLabel = (fundingTypeCode = null) => {
+  let label = fundingTypeCode
 
   if (fundingTypeCode) {
     label = fundingTypeOptions.find(fundingType => fundingType.code === fundingTypeCode).name
@@ -420,12 +419,11 @@ exports.getCampaignItems = (selectedItems) => {
   return items
 }
 
-exports.getCampaignLabel = (campaignCode) => {
-  let label
+exports.getCampaignLabel = (campaignCode = null) => {
+  let label = campaignCode
 
-  // TODO: fix campaign label error
   if (campaignCode) {
-    // label = campaignOptions.find(campaign => campaign.code === campaignCode).name
+    label = campaignOptions.find(campaign => campaign.code === campaignCode).name
   }
 
   return label
