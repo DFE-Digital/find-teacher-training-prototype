@@ -5,7 +5,9 @@ const utils = require('../utils')()
 exports.show = async (req, res) => {
   const ProviderSingleResponse = await teacherTrainingService.getProvider(req.params.providerCode)
 
-  const page = 1
+  // pagination settings
+  const sortBy = req.query.sortBy || 'name'
+  const page = req.query.page || 1
   const perPage = 100
 
   const filter = {
@@ -14,8 +16,6 @@ exports.show = async (req, res) => {
     qualification: req.session.data.defaults.qualification.toString(),
     study_type: req.session.data.defaults.studyMode.toString()
   }
-
-  const sortBy = 'name'
 
   const CourseListResponse = await teacherTrainingService.getProviderCourses(page, perPage, filter, sortBy, req.params.providerCode)
 
@@ -91,34 +91,52 @@ exports.show = async (req, res) => {
   const provider = ProviderSingleResponse
   const results = await Promise.all(courses)
 
-  results.sort((a,b) => {
-    return a.course.name.localeCompare(b.course.name)
-  })
+  const resultsCount = meta ? meta.count : results.length
 
-  const searchQuery = () => {
+  let pageCount = 1
+  if (links.last.match(/page=(\d*)/)) {
+    pageCount = links.last.match(/page=(\d*)/)[1]
+  }
+
+  const prevPage = links.prev ? (parseInt(page) - 1) : false
+  const nextPage = links.next ? (parseInt(page) + 1) : false
+
+  const searchQuery = page => {
     const query = {
-      latitude: req.session.data.latitude,
-      longitude: req.session.data.longitude,
-      page: req.session.data.page,
-      filter: {
-        send: req.session.data.filter.send,
-        vacancy: req.session.data.filter.vacancy,
-        studyMode: req.session.data.filter.studyMode,
-        qualification: req.session.data.filter.qualification,
-        degreeGrade: req.session.data.filter.degreeGrade,
-        visaSponsorship: req.session.data.filter.visaSponsorship,
-        fundingType: req.session.data.filter.fundingType,
-        subject: req.session.data.filter.subject,
-        campaign: req.session.data.filter.campaign
-      }
+      page,
+      filter
     }
 
     return qs.stringify(query)
   }
 
+  const pagination = {
+    pages: pageCount,
+    next: nextPage
+      ? {
+          href: `?${searchQuery(nextPage)}`,
+          page: nextPage,
+          text: 'Next page'
+        }
+      : false,
+    previous: prevPage
+      ? {
+          href: `?${searchQuery(prevPage)}`,
+          page: prevPage,
+          text: 'Previous page'
+        }
+      : false
+  }
+
+  results.sort((a,b) => {
+    return a.course.name.localeCompare(b.course.name)
+  })
+
   res.render('./provider/index', {
     provider,
     results,
+    resultsCount,
+    pagination,
     actions: {
       back: `/results?${searchQuery()}`
     }
