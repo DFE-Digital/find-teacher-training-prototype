@@ -254,6 +254,13 @@
     "group": "other"
   },
   {
+    "id": "795ce63a-e4f2-4835-9486-37e46e87bf0e",
+    "name": "Physical education with an EBacc subject",
+    "code": "C7",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
     "id": "bf97cd0a-224c-43d3-a021-84143df13e8d",
     "name": "Physics",
     "code": "F3",
