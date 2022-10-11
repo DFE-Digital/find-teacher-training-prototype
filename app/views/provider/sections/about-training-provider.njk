@@ -1,0 +1,6 @@
+<div class="govuk-!-margin-bottom-8">
+  {% if provider.train_with_us %}
+    <h2 id="about-training-provider" class="govuk-heading-l">About the training provider</h2>
+    {{ provider.train_with_us | markdown | safe }}
+  {% endif %}
+</div>
