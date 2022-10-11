@@ -55,20 +55,22 @@ exports.getSubjectItems = (selectedItems, subjectLevel = null, showHint = false)
   }
 
   subjects.forEach((subject, i) => {
-    const item = {}
+    if (subject.code !== 'ML') {
+      const item = {}
 
-    item.text = subject.name
-    item.value = subject.code
-    item.id = subject.id
+      item.text = subject.name
+      item.value = subject.code
+      item.id = subject.id
 
-    if (showHint && subject.hint) {
-      item.hint = {}
-      item.hint.text = subject.hint
+      if (showHint && subject.hint) {
+        item.hint = {}
+        item.hint.text = subject.hint
+      }
+
+      item.checked = (selectedItems && selectedItems.includes(subject.code)) ? 'checked' : ''
+
+      items.push(item)
     }
-
-    item.checked = (selectedItems && selectedItems.includes(subject.code)) ? 'checked' : ''
-
-    items.push(item)
   })
 
   items.sort((a,b) => {
