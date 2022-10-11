@@ -3,7 +3,7 @@
 
 <h2 class="app-search-result__item-title">
   {% if params.providerCode.length %}
-    <a class="govuk-link" href="/providers/{{ params.providerCode }}" style="text-decoration: none;">
+    <a class="govuk-link" href="/providers/{{ params.providerCode }}">
       <span class="app-search-result__provider-name">{{ params.providerName | safe }}</span><br>
     </a>
   {% endif %}
