@@ -64,21 +64,27 @@ module.exports = () => {
     if (course.has_scholarship) {
       if (course.subject_codes.length === 1) {
         switch (course.subject_codes[0]) {
-          case 'F1':
+          case 'F1': // Chemistry
             course.scholarship_body = 'Royal Society of Chemistry'
             course.scholarship_url = 'https://www.rsc.org/prizes-funding/funding/teacher-training-scholarships/'
             break
-          case '11':
+          case '11': // Computing
             course.scholarship_body = 'Chartered Institute for IT'
             course.scholarship_url = 'https://www.bcs.org/qualifications-and-certifications/training-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/'
             break
-          case 'G1':
+          case 'G1': // Mathematics
             course.scholarship_body = 'Institute of Mathematics and its Applications'
             course.scholarship_url = 'http://teachingmathsscholars.org/about'
             break
-          case 'F3':
+          case 'F3': // Physics
             course.scholarship_body = 'Institute of Physics'
             course.scholarship_url = 'https://www.iop.org/about/support-grants/iop-teacher-training-scholarships'
+            break
+          case '15': // French
+          case '17': // German
+          case '22': // Spanish
+            course.scholarship_body = 'British Council'
+            course.scholarship_url = 'https://www.britishcouncil.org/'
             break
         }
       }
