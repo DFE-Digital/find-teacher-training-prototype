@@ -3,6 +3,7 @@
     "id": "53d7a153-1258-4a28-b363-64a4e4f27f4f",
     "name": "Ancient Greek",
     "code": "A1",
+    "hint": "Bursaries of £25,000 available",
     "level": "secondary",
     "group": "other"
   },
@@ -10,6 +11,7 @@
     "id": "5510a8ea-e627-4eea-b4a0-f12c5349c780",
     "name": "Ancient Hebrew",
     "code": "A2",
+    "hint": "Bursaries of £25,000 available",
     "level": "secondary",
     "group": "other"
   },
