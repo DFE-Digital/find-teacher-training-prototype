@@ -1,0 +1,23 @@
+<h2 id="locations" class="govuk-heading-l">Locations ({{ locations.totalCount }})</h2>
+
+{% if locations.results.length %}
+
+  <ul class="govuk-list">
+    {% for result in locations.results %}
+    <li>
+      <strong>{{ result.name }}</strong>
+      <br>
+      {{ result.address }}
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if locations.pagination.pages > 1 %}
+    {{ appPagination( pagination.locations ) }}
+  {% endif %}
+
+{% else %}
+
+  <p class="govuk-body">No locations for this provider</p>
+
+{% endif %}
