@@ -27,8 +27,12 @@ const teacherTrainingService = {
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-courses-course_code-get
   async getCourse (providerCode, courseCode) {
     try {
-      const key = `courseSingleResponse_${data.cycle}-${providerCode}-${courseCode}`
-      const courseSingleResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}?include=provider`).json())
+      const query = {
+        include: 'provider'
+      }
+
+      const key = `courseSingleResponse_${data.cycle}-${providerCode}-${courseCode}-${JSON.stringify(query)}`
+      const courseSingleResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}?${qs.stringify(query)}`).json())
 
       const providerResource = courseSingleResponse.included.find(item => item.type === 'providers')
       const provider = providerResource.attributes
@@ -42,9 +46,13 @@ const teacherTrainingService = {
 
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-courses-course_code-locations-get
   async getCourseLocations (providerCode, courseCode) {
-    const key = `locationListResponse_${data.cycle}-${providerCode}-${courseCode}`
-    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json())
-    return locationListResponse
+    const query = {
+      include: 'course,location_status,provider'
+    }
+
+    const key = `courseLocationListResponse_${data.cycle}-${providerCode}-${courseCode}-${JSON.stringify(query)}`
+    const courseLocationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}/locations?${qs.stringify(query)}`).json())
+    return courseLocationListResponse
   },
 
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#provider_suggestions-get
@@ -86,16 +94,20 @@ const teacherTrainingService = {
       sort: 'name'
     }
 
-    const key = `courseListResponse_${data.cycle}-${providerCode}-${page}-${perPage}-${JSON.stringify(query)}`
-    const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses?${qs.stringify(query)}`).json())
-    return courseListResponse
+    const key = `providerCourseListResponse_${data.cycle}-${providerCode}-${page}-${perPage}-${JSON.stringify(query)}`
+    const providerCourseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses?${qs.stringify(query)}`).json())
+    return providerCourseListResponse
   },
 
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-locations-get
   async getProviderLocations (providerCode) {
-    const key = `locationListResponse_${data.cycle}-${providerCode}`
-    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations?include=provider,recruitment_cycle`).json())
-    return locationListResponse
+    const query = {
+      include: 'provider,recruitment_cycle'
+    }
+
+    const key = `providerLocationListResponse_${data.cycle}-${providerCode}-${JSON.stringify(query)}`
+    const providerLocationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations?${qs.stringify(query)}`).json())
+    return providerLocationListResponse
   },
 
   async getEngineersTeachPhysicsCourses (filter, page = 1, perPage = 20) {
