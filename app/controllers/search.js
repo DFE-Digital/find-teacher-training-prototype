@@ -56,7 +56,6 @@ exports.search_post = async (req, res) => {
       errors
     })
   } else {
-
     if (q === 'provider') {
       let providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
 
