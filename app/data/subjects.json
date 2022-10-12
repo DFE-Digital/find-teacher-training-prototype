@@ -3,6 +3,7 @@
     "id": "53d7a153-1258-4a28-b363-64a4e4f27f4f",
     "name": "Ancient Greek",
     "code": "A1",
+    "hint": "Bursaries of £25,000 available",
     "level": "secondary",
     "group": "other"
   },
@@ -10,6 +11,7 @@
     "id": "5510a8ea-e627-4eea-b4a0-f12c5349c780",
     "name": "Ancient Hebrew",
     "code": "A2",
+    "hint": "Bursaries of £25,000 available",
     "level": "secondary",
     "group": "other"
   },
@@ -24,7 +26,7 @@
     "id": "322cfc19-d51d-45db-91e3-bd7b4738470f",
     "name": "Biology",
     "code": "C1",
-    "hint": "Bursaries of £10,000 available",
+    "hint": "Bursaries of £20,000 available",
     "level": "secondary",
     "group": "stem",
     "hasSke": true
@@ -40,7 +42,7 @@
     "id": "912d4fb4-761b-42e9-8dc6-e968b791ea4e",
     "name": "Chemistry",
     "code": "F1",
-    "hint": "Scholarships of £26,000 and bursaries of £24,000 are available",
+    "hint": "Scholarships of £29,000 and bursaries of £27,000 are available",
     "level": "secondary",
     "group": "stem",
     "hasSke": true
@@ -70,7 +72,7 @@
     "id": "e6be6a9c-8696-4b88-8fbd-1ba1bef1b6fc",
     "name": "Computing",
     "code": "11",
-    "hint": "Scholarships of £26,000 and bursaries of £24,000 are available",
+    "hint": "Scholarships of £29,000 and bursaries of £27,000 are available",
     "level": "secondary",
     "group": "stem",
     "hasSke": true
@@ -86,7 +88,7 @@
     "id": "118fabd7-86d0-4a40-9e9a-e5c302abe59b",
     "name": "Design and technology",
     "code": "DT",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Bursaries of £20,000 available",
     "level": "secondary",
     "group": "stem",
     "hasSke": true
@@ -109,6 +111,7 @@
     "id": "3aed1aa8-ae46-4b68-92bb-a6cc20655c59",
     "name": "English",
     "code": "Q3",
+    "hint": "Bursaries of £15,000 available",
     "level": "secondary",
     "group": "other",
     "hasSke": true
@@ -126,7 +129,7 @@
     "name": "French",
     "code": "15",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Scholarships of £27,000 and bursaries of £25,000 are available",
     "parentCode": "ML",
     "group": "languages",
     "hasSke": true
@@ -141,6 +144,7 @@
     "id": "3f47e67b-7fa5-4947-a5a0-74d528cd2a87",
     "name": "Geography",
     "code": "F8",
+    "hint": "Bursaries of £25,000 available",
     "level": "secondary",
     "group": "other"
   },
@@ -149,7 +153,7 @@
     "name": "German",
     "code": "17",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Scholarships of £27,000 and bursaries of £25,000 are available",
     "parentCode": "ML",
     "group": "languages",
     "hasSke": true
@@ -173,7 +177,7 @@
     "name": "Italian",
     "code": "18",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
     "hasSke": true
@@ -183,7 +187,7 @@
     "name": "Japanese",
     "code": "19",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
     "hasSke": true
@@ -192,6 +196,7 @@
     "id": "fa7ee0d3-4cd4-475a-9280-f6b63b0dc466",
     "name": "Latin",
     "code": "A0",
+    "hint": "Bursaries of £25,000 available",
     "level": "secondary",
     "group": "other"
   },
@@ -200,7 +205,7 @@
     "name": "Mandarin",
     "code": "20",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
     "hasSke": true
@@ -209,7 +214,7 @@
     "id": "72345aa7-096c-488f-8649-085b8178cadb",
     "name": "Mathematics",
     "code": "G1",
-    "hint": "Scholarships of £26,000 and bursaries of £24,000 are available",
+    "hint": "Scholarships of £29,000 and bursaries of £27,000 are available",
     "level": "secondary",
     "group": "stem",
     "hasSke": true
@@ -225,7 +230,7 @@
     "name": "Modern languages - other",
     "code": "24",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "hasSke": true
   },
@@ -251,10 +256,17 @@
     "group": "other"
   },
   {
+    "id": "795ce63a-e4f2-4835-9486-37e46e87bf0e",
+    "name": "Physical education with an EBacc subject",
+    "code": "C7",
+    "level": "secondary",
+    "group": "other"
+  },
+  {
     "id": "bf97cd0a-224c-43d3-a021-84143df13e8d",
     "name": "Physics",
     "code": "F3",
-    "hint": "Scholarships of £26,000 and bursaries of £24,000 are available",
+    "hint": "Scholarships of £29,000 and bursaries of £27,000 are available",
     "level": "secondary",
     "group": "stem",
     "hasSke": true
@@ -323,7 +335,7 @@
     "name": "Russian",
     "code": "21",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
     "hasSke": true
@@ -347,7 +359,7 @@
     "name": "Spanish",
     "code": "22",
     "level": "secondary",
-    "hint": "Bursaries of £15,000 available",
+    "hint": "Scholarships of £27,000 and bursaries of £25,000 are available",
     "parentCode": "ML",
     "group": "languages",
     "hasSke": true
