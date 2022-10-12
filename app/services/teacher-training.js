@@ -9,6 +9,7 @@ const ttl = 0
 const cache = new CacheService(ttl) // Create a new cache service instance
 
 const teacherTrainingService = {
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-courses-get
   async getCourses (filter, page = 1, perPage = 20) {
     const query = {
       filter,
@@ -23,6 +24,7 @@ const teacherTrainingService = {
     return courseListResponse
   },
 
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-courses-course_code-get
   async getCourse (providerCode, courseCode) {
     try {
       const key = `courseSingleResponse_${data.cycle}-${providerCode}-${courseCode}`
@@ -38,24 +40,43 @@ const teacherTrainingService = {
     }
   },
 
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-courses-course_code-locations-get
   async getCourseLocations (providerCode, courseCode) {
     const key = `locationListResponse_${data.cycle}-${providerCode}-${courseCode}`
     const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/courses/${courseCode}/locations?include=course,location_status,provider`).json())
     return locationListResponse
   },
 
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#provider_suggestions-get
   async getProviderSuggestions (query) {
     const key = `providerSuggestionListResponse_${query}`
     const providerSuggestionListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/provider_suggestions?query=${query}`).json())
     return providerSuggestionListResponse
   },
 
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-get
+  async getProviders (filter, page = 1, perPage = 20) {
+    const query = {
+      filter,
+      include: 'recruitment_cycle',
+      page,
+      per_page: perPage,
+      sort: 'name'
+    }
+
+    const key = `providerListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
+    const providerListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers?${qs.stringify(query)}`).json())
+    return providerListResponse
+  },
+
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-get
   async getProvider (providerCode) {
     const key = `providerSingleResponse_${providerCode}`
     const providerSingleResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}`).json())
     return providerSingleResponse.data.attributes
   },
 
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-courses-get
   async getProviderCourses (providerCode, filter, page = 1, perPage = 20) {
     const query = {
       filter,
@@ -70,9 +91,10 @@ const teacherTrainingService = {
     return courseListResponse
   },
 
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-locations-get
   async getProviderLocations (providerCode) {
     const key = `locationListResponse_${data.cycle}-${providerCode}`
-    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations?include=course,location_status,provider`).json())
+    const locationListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/providers/${providerCode}/locations?include=provider,recruitment_cycle`).json())
     return locationListResponse
   },
 
