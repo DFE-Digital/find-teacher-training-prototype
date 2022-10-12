@@ -41,12 +41,16 @@
 
   {% set financialSupportHtml %}
     {% if course.has_salary %}
+      {# https://github.com/DFE-Digital/find-teacher-training/blob/main/app/views/courses/financial_support/_salaried.html.erb #}
       {% include "./fees-and-financial-support/salary.md" %}
     {% elif course.has_scholarship_and_bursary %}
+      {# https://github.com/DFE-Digital/find-teacher-training/blob/main/app/components/courses/financial_support/scholarship_and_bursary_component.html.erb #}
       {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
     {% elif course.has_bursary %}
+      {# https://github.com/DFE-Digital/find-teacher-training/blob/main/app/components/courses/financial_support/bursary_component.html.rb #}
       {% include "./fees-and-financial-support/bursary.md" %}
     {% else %}
+      {# https://github.com/DFE-Digital/find-teacher-training/blob/main/app/views/courses/financial_support/_loan.html.erb #}
       {% include "./fees-and-financial-support/loan.md" %}
     {% endif %}
   {% endset %}
