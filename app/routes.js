@@ -114,6 +114,8 @@ router.get('/providers/:providerCode', providerController.show)
 /// COURSES ROUTES
 /// ------------------------------------------------------------------------ ///
 
+router.get('/providers/:providerCode/courses/:courseCode', courseController.show)
+
 router.get('/course/:providerCode/:courseCode', courseController.show)
 
 /// ------------------------------------------------------------------------ ///
