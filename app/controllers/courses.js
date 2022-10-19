@@ -71,7 +71,8 @@ exports.show = async (req, res) => {
       course,
       schools,
       actions: {
-        back
+        back,
+        provider: `/providers/${req.params.providerCode}?referrer=course&courseCode=${req.params.courseCode}`
       }
     })
   } catch (error) {
