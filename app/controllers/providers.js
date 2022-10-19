@@ -160,6 +160,11 @@ exports.show = async (req, res) => {
   // const locationResultsCount = providerLocations.length
   // const locationsPagination = {}
 
+  let back = `/results?${searchQuery()}`
+  if (req.query.referrer && req.query.courseCode) {
+    back = `/providers/${req.params.providerCode}/courses/${req.query.courseCode}`
+  }
+
   res.render('./provider/index', {
     provider,
     courses: {
@@ -173,7 +178,7 @@ exports.show = async (req, res) => {
       pagination: {}
     },
     actions: {
-      back: `/results?${searchQuery()}`
+      back
     }
   })
 }

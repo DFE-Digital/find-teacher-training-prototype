@@ -7,8 +7,13 @@
 {% endblock %}
 
 {% block pageNavigation %}
+{% if referrer == "course" %}
+  {% set backLinkText = "Back to course" %}
+{% else %}
+  {% set backLinkText = "Back to search results" %}
+{% endif %}
 {{ govukBackLink({
-  text: "Back to search results",
+  text: backLinkText,
   href: actions.back
 }) }}
 {% endblock %}
