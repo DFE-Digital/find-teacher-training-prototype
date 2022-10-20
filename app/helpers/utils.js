@@ -444,3 +444,14 @@ exports.getSelectedCampaignItems = (selectedItems) => {
 
   return items
 }
+
+exports.getSubjectLevelFromCode = (subjectCode = null) => {
+  const subjects = require('../data/subjects')
+  let level = subjectCode
+
+  if (subjectCode) {
+    level = subjects.find(subject => subject.code === subjectCode).level
+  }
+
+  return level
+}
