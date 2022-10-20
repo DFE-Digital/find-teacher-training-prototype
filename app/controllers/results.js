@@ -268,8 +268,7 @@ exports.list = async (req, res) => {
   if (['browse','filter'].includes(process.env.USER_JOURNEY)) {
 
     let hasQualifications = {
-      primary: false,
-      secondary: false,
+      primarySecondary: false,
       furtherEducation: false
     }
 
@@ -277,12 +276,19 @@ exports.list = async (req, res) => {
       subjects.forEach((subjectCode, i) => {
         let subjectLevel = utilsHelper.getSubjectLevelFromCode(subjectCode)
 
-        if (!hasQualifications[subjectLevel]) {
+        let level
+        if (['primary','secondary'].includes(subjectLevel)) {
+          level = 'primarySecondary'
+        } else {
+          level = subjectLevel
+        }
+
+        if (!hasQualifications[level]) {
           qi = utilsHelper.getQualificationItems(selectedQualification, subjectLevel)
           qualificationItems.push(...qi)
         }
 
-        hasQualifications[subjectLevel] = true
+        hasQualifications[level] = true
       })
 
     } else {
