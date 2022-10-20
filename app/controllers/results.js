@@ -245,7 +245,7 @@ exports.list = async (req, res) => {
   const studyModeItems = utilsHelper.getStudyModeItems(selectedStudyMode)
 
   let selectedQualification
-  if (process.env.USER_JOURNEY === 'filter') {
+  if (['browse','filter'].includes(process.env.USER_JOURNEY)) {
     if (req.session.data.filter?.qualification) {
       selectedQualification = req.session.data.filter.qualification
     } else {
@@ -265,7 +265,7 @@ exports.list = async (req, res) => {
   }
 
   let qualificationItems = []
-  if (process.env.USER_JOURNEY === 'filter') {
+  if (['browse','filter'].includes(process.env.USER_JOURNEY)) {
 
     let hasQualifications = {
       primary: false,

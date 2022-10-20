@@ -33,7 +33,7 @@ exports.browse_get = async (req, res) => {
 exports.primary_get = async (req, res) => {
   req.session.data.ageGroup = 'primary'
   req.session.data.filter = {
-    subject: ['00','01','02','03','04','06','07']
+    subject: [] // ['00','01','02','03','04','06','07']
   }
   // req.session.data.filter.subject = ['00','01','02','03','04','06','07']
   res.redirect('/browse/location')
@@ -123,11 +123,12 @@ exports.primary_all_england_get = async (req, res) => {
   req.session.data.ageGroup = 'primary'
 
   req.session.data.filter = {}
-  req.session.data.filter.subject = subjects
-    .filter(subject => subject.level === 'primary')
-    .map((s) => {
-      return s.code
-    })
+  req.session.data.filter.subject = []
+  // subjects
+  //   .filter(subject => subject.level === 'primary')
+  //   .map((s) => {
+  //     return s.code
+  //   })
 
   res.redirect('/results')
 }
@@ -138,11 +139,12 @@ exports.secondary_all_england_get = async (req, res) => {
   req.session.data.ageGroup = 'secondary'
 
   req.session.data.filter = {}
-  req.session.data.filter.subject = subjects
-    .filter(subject => subject.level === 'secondary')
-    .map((s) => {
-      return s.code
-    })
+  req.session.data.filter.subject = []
+  // subjects
+  //   .filter(subject => subject.level === 'secondary')
+  //   .map((s) => {
+  //     return s.code
+  //   })
 
   res.redirect('/results')
 }

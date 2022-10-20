@@ -28,7 +28,7 @@
       },
       items: subjectItems,
       selectedItems: selectedSubjects,
-      showSelectedTags: true if userJourney == "filter" else false,
+      showSelectedTags: true if userJourney in ["browse","filter"] else false,
       classes: "govuk-!-margin-bottom-7"
     }) }}
 
