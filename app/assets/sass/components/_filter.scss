@@ -1,5 +1,9 @@
 .app-filter {
   background-color: govuk-colour("light-grey");
+
+  .govuk-checkboxes__label::before {
+    background: govuk-colour('white')
+  }
 }
 
 .app-filter__header {

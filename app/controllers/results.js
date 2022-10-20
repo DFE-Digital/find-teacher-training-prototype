@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const qs = require('qs')
 const geolib = require('geolib')
 
@@ -244,25 +245,71 @@ exports.list = async (req, res) => {
   const studyModeItems = utilsHelper.getStudyModeItems(selectedStudyMode)
 
   let selectedQualification
-  if (req.session.data.filter?.qualification) {
-    selectedQualification = req.session.data.filter.qualification
-  } else {
-    // if the subject is further education, set the defaults to FE qualifications
-    if (req.session.data.filter?.subject?.includes('41')) {
-      selectedQualification = ['pgce','pgde']
+  if (['browse','filter'].includes(process.env.USER_JOURNEY)) {
+    if (req.session.data.filter?.qualification) {
+      selectedQualification = req.session.data.filter.qualification
     } else {
-      selectedQualification = defaults.qualification
+      selectedQualification = []
+    }
+  } else {
+    if (req.session.data.filter?.qualification) {
+      selectedQualification = req.session.data.filter.qualification
+    } else {
+      // if the subject is further education, set the defaults to FE qualifications
+      if (req.session.data.filter?.subject?.includes('41')) {
+        selectedQualification = ['pgce','pgde']
+      } else {
+        selectedQualification = defaults.qualification
+      }
     }
   }
 
-  // TODO: show qualification items based on user's subject choice
-  let qualificationItems
-  // if (req.session.data.filter?.subject?.includes('41')) {
-  //   qualificationItems = utilsHelper.getQualificationItems(selectedQualification, 'furtherEducation')
-  // } else {
-    qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
-  // }
+  let qualificationItems = []
+  if (['browse','filter'].includes(process.env.USER_JOURNEY)) {
 
+    let hasQualifications = {
+      primarySecondary: false,
+      furtherEducation: false
+    }
+
+    if (subjects?.length) {
+      subjects.forEach((subjectCode, i) => {
+        let subjectLevel = utilsHelper.getSubjectLevelFromCode(subjectCode)
+
+        let level
+        if (['primary','secondary'].includes(subjectLevel)) {
+          level = 'primarySecondary'
+        } else {
+          level = subjectLevel
+        }
+
+        if (!hasQualifications[level]) {
+          qi = utilsHelper.getQualificationItems(selectedQualification, subjectLevel)
+          qualificationItems.push(...qi)
+        }
+
+        hasQualifications[level] = true
+      })
+
+    } else {
+      const primarySecondary = utilsHelper.getQualificationItems(selectedQualification, 'secondary')
+      const furtherEducation = utilsHelper.getQualificationItems(selectedQualification, 'furtherEducation')
+      qualificationItems = [...primarySecondary, ...furtherEducation]
+    }
+
+    qualificationItems.sort((a,b) => {
+      return a.text.localeCompare(b.text)
+    })
+
+  } else {
+
+    if (req.session.data.filter?.subject?.includes('41')) {
+      qualificationItems = utilsHelper.getQualificationItems(selectedQualification, 'furtherEducation')
+    } else {
+      qualificationItems = utilsHelper.getQualificationItems(selectedQualification, req.session.data.ageGroup)
+    }
+
+  }
 
   let selectedDegreeGrade
   if (req.session.data.filter?.degreeGrade) {
