@@ -6,7 +6,7 @@
     {{ apprenticeshipHtml | trim | markdown | safe  }}
   {% endif %}
 
-  <p class="govuk-body">You’ll need the {{ 'right to work' if course.has_salary else 'right to study' }} in the UK. You already have this if, for example, you:</p>
+  <p class="govuk-body">You’ll {{ "also" if course.funding_type == "apprenticeship" }} need the {{ 'right to work' if course.has_salary else 'right to study' }} in the UK. You already have this if, for example, you:</p>
 
   <ul class="govuk-list govuk-list--bullet">
     <li>are an Irish citizen</li>
