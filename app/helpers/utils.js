@@ -123,14 +123,13 @@ exports.getSendItems = (selectedItems) => {
 }
 
 exports.getSendLabel = (sendCode = null) => {
-  let label = sendCode
+  // let label = sendCode
+  //
+  // if (sendCode) {
+  //   label = sendOptions.find(send => send.code === sendCode).name
+  // }
 
-  // TODO: fix send label error
-  if (sendCode) {
-    label = sendOptions.find(send => send.code === sendCode).name
-  }
-
-  return label
+  return 'Only show courses with a SEND specialism'
 }
 
 exports.getSelectedSendItems = (selectedItems) => {
@@ -165,14 +164,13 @@ exports.getVacancyItems = (selectedItems) => {
 }
 
 exports.getVacancyLabel = (vacancyCode = null) => {
-  let label = vacancyCode
+  // let label = vacancyCode
+  //
+  // if (vacancyCode) {
+  //   label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
+  // }
 
-  // TODO: fix vacancy label error
-  if (vacancyCode) {
-    label = vacancyOptions.find(vacancy => vacancy.code === vacancyCode).name
-  }
-
-  return label
+  return 'Only show courses with vacancies'
 }
 
 exports.getSelectedVacancyItems = (selectedItems) => {
@@ -340,13 +338,13 @@ exports.getVisaSponsorshipItems = (selectedItems) => {
 }
 
 exports.getVisaSponsorshipLabel = (visaSponsorshipCode = null) => {
-  let label = visaSponsorshipCode
+  // let label = visaSponsorshipCode
+  //
+  // if (visaSponsorshipCode) {
+  //   label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
+  // }
 
-  if (visaSponsorshipCode) {
-    label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
-  }
-
-  return label
+  return 'Only show courses with visa sponsorship'
 }
 
 exports.getSelectedVisaSponsorshipItems = (selectedItems) => {
@@ -381,13 +379,13 @@ exports.getFundingTypeItems = (selectedItems) => {
 }
 
 exports.getFundingTypeLabel = (fundingTypeCode = null) => {
-  let label = fundingTypeCode
+  // let label = fundingTypeCode
+  //
+  // if (fundingTypeCode) {
+  //   label = fundingTypeOptions.find(fundingType => fundingType.code === fundingTypeCode).name
+  // }
 
-  if (fundingTypeCode) {
-    label = fundingTypeOptions.find(fundingType => fundingType.code === fundingTypeCode).name
-  }
-
-  return label
+  return 'Only show courses with a salary'
 }
 
 exports.getSelectedFundingTypeItems = (selectedItems) => {
@@ -422,13 +420,13 @@ exports.getCampaignItems = (selectedItems) => {
 }
 
 exports.getCampaignLabel = (campaignCode = null) => {
-  let label = campaignCode
+  // let label = campaignCode
+  //
+  // if (campaignCode) {
+  //   label = campaignOptions.find(campaign => campaign.code === campaignCode).name
+  // }
 
-  if (campaignCode) {
-    label = campaignOptions.find(campaign => campaign.code === campaignCode).name
-  }
-
-  return label
+  return 'Only show Engineers Teach Physics courses'
 }
 
 exports.getSelectedCampaignItems = (selectedItems) => {
