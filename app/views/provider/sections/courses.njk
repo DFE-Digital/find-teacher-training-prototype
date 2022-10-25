@@ -1,0 +1,41 @@
+<h2 id="courses" class="govuk-heading-l">Courses ({{ courses.totalCount }})</h2>
+
+{% if courses.results.length %}
+
+  <ul class="app-search-results govuk-!-margin-bottom-8">
+    {% for result in courses.results %}
+      <li class="app-search-results__item">
+        {% set isLocationSearch = (data.q == "location") %}
+        {% set isUniversity = (result.provider.provider_type == "university") %}
+        {% set trainingLocation = result.course.trainingLocation %}
+
+        {{ appResultDetail({
+          href: "/providers/" + result.provider.code + "/courses/" + result.course.code + "?referrer=provider",
+          courseName: result.course.name + " (" + result.course.code + ")",
+          schools: result.schools if not isUniversity and isLocationSearch,
+          trainingLocation: {
+            distance: trainingLocation.distance,
+            address: trainingLocation.address
+          } if trainingLocation and isUniversity and isLocationSearch,
+          accreditedBody: result.course.accredited_body,
+          studyType: result.course.study_mode | getStudyModeLabel,
+          qualification: result.course.qualifications | getQualificationLabel,
+          fundingOption: result.course.funding_option,
+          degreeGrade: result.course.degree_grade,
+          visaSponsorship: result.course.visaSponsorship,
+          startDate: result.course.start_date,
+          vacancies: "Yes" if result.course.has_vacancies else "No"
+        }) }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if courses.pagination.pages > 1 %}
+    {{ appPagination( pagination.courses ) }}
+  {% endif %}
+
+{% else %}
+
+  <p class="govuk-body">No courses for this provider</p>
+
+{% endif %}

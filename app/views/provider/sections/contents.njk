@@ -1,0 +1,13 @@
+<h2 class="govuk-heading-m">Contents</h2>
+
+<ul class="govuk-list app-list--dash course-contents govuk-!-margin-bottom-8">
+  {% if provider.train_with_us %}
+    <li><a class="govuk-link" href="#about-training-provider">About the training provider</a></li>
+  {% endif %}
+  {% if provider.train_with_disability %}
+    <li><a class="govuk-link" href="#training-with-disabilities">Training with disabilities and other needs</a></li>
+  {% endif %}
+  <li><a class="govuk-link" href="#contact-training-provider">Contact this training provider</a></li>
+  <li><a class="govuk-link" href="#courses">Courses</a></li>
+  {# <li><a class="govuk-link" href="#locations">Locations</a></li> #}
+</ul>

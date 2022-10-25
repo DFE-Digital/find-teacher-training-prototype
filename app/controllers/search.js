@@ -56,10 +56,14 @@ exports.search_post = async (req, res) => {
       errors
     })
   } else {
-
     if (q === 'provider') {
-      let providerSingleResponse = await teacherTrainingService.getProvider(req.session.data.provider)
-      req.session.data.provider = providerSingleResponse
+      let providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.provider)
+
+      // TODO: if the response contains multiple providers, redirect user to a page
+      // to choose the appropriate provider before returning back to results list
+
+      // get the first provider from the response
+      req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
     } else if (q === 'location') {
       let locationSingleResponse = await locationSuggestionsService.getLocation(req.session.data.location)
       req.session.data.place = locationSingleResponse
