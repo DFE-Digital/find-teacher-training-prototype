@@ -1,6 +1,11 @@
 <div class="govuk-!-margin-bottom-8">
   <h2 id="international-candidates" class="govuk-heading-l">International candidates</h2>
 
+  {% if course.funding_type == "apprenticeship" %}
+    {% set apprenticeshipHtml %}{% include "./international-candidates/apprenticeship.md" %}{% endset %}
+    {{ apprenticeshipHtml | trim | markdown | safe  }}
+  {% endif %}
+
   <p class="govuk-body">You’ll need the {{ 'right to work' if course.has_salary else 'right to study' }} in the UK. You already have this if, for example, you:</p>
 
   <ul class="govuk-list govuk-list--bullet">
