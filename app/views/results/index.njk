@@ -62,7 +62,7 @@
               {% set trainingLocation = result.course.trainingLocation %}
 
               {{ appResultDetail({
-                href: "/course/" + result.provider.code + "/" + result.course.code,
+                href: "/providers/" + result.provider.code + "/courses/" + result.course.code,
                 providerName: result.provider.name | markdown("inline"),
                 providerCode: result.provider.code if userJourney in ["browse","filter"],
                 courseName: result.course.name + " (" + result.course.code + ")",

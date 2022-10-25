@@ -89,13 +89,14 @@ exports.show = async (req, res) => {
 
   // Data
   const provider = ProviderSingleResponse
-  const results = await Promise.all(courses)
 
-  const resultsCount = meta ? meta.count : results.length
+  const courseResults = await Promise.all(courses)
 
-  let pageCount = 1
+  const courseResultsCount = meta ? meta.count : courseResults.length
+
+  let coursePageCount = 1
   if (links.last.match(/page=(\d*)/)) {
-    pageCount = links.last.match(/page=(\d*)/)[1]
+    coursePageCount = links.last.match(/page=(\d*)/)[1]
   }
 
   const prevPage = links.prev ? (parseInt(page) - 1) : false
@@ -112,8 +113,8 @@ exports.show = async (req, res) => {
     return qs.stringify(query)
   }
 
-  const pagination = {
-    pages: pageCount,
+  const coursesPagination = {
+    pages: coursePageCount,
     next: nextPage
       ? {
           href: `?${searchQuery(nextPage)}`,
@@ -130,17 +131,54 @@ exports.show = async (req, res) => {
       : false
   }
 
-  results.sort((a,b) => {
+  courseResults.sort((a,b) => {
     return a.course.name.localeCompare(b.course.name)
   })
 
+  // const ProviderLocationListResponse = await teacherTrainingService.getProviderLocations(req.params.providerCode)
+  //
+  // let providerLocations = []
+  // if (ProviderLocationListResponse.data.length) {
+  //   providerLocations = ProviderLocationListResponse.data.map(location => {
+  //     const { attributes } = location
+  //
+  //     // Address
+  //     const streetAddress1 = attributes.street_address_1 ? attributes.street_address_1 + ', ' : ''
+  //     const streetAddress2 = attributes.street_address_2 ? attributes.street_address_2 + ', ' : ''
+  //     const city = attributes.city ? attributes.city + ', ' : ''
+  //     const county = attributes.county ? attributes.county + ', ' : ''
+  //     const postcode = attributes.postcode
+  //
+  //     attributes.name = attributes.name.replace(/'/g, '’')
+  //     attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
+  //
+  //     return attributes
+  //   })
+  // }
+  //
+  // const locationResults = providerLocations
+  // const locationResultsCount = providerLocations.length
+  // const locationsPagination = {}
+
+  let back = `/results?${searchQuery()}`
+  if (req.query.referrer && req.query.courseCode) {
+    back = `/providers/${req.params.providerCode}/courses/${req.query.courseCode}`
+  }
+
   res.render('./provider/index', {
     provider,
-    results,
-    resultsCount,
-    pagination,
+    courses: {
+      results: courseResults,
+      totalCount: courseResultsCount,
+      pagination: coursesPagination
+    },
+    locations: {
+      results: [],
+      totalCount: 0,
+      pagination: {}
+    },
     actions: {
-      back: `/results?${searchQuery()}`
+      back
     }
   })
 }
