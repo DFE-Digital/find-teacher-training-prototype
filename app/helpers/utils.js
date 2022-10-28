@@ -24,7 +24,7 @@ const fundingTypeOptions = [{
 
 const campaignOptions = [{
   id: '0b516fba-93f6-49c7-8b42-de57aa678c15',
-  name: 'Only show Engineers Teach Physics courses',
+  name: 'Only show Engineers teach physics courses',
   code: 'include'
 }]
 
@@ -426,7 +426,7 @@ exports.getCampaignLabel = (campaignCode = null) => {
   //   label = campaignOptions.find(campaign => campaign.code === campaignCode).name
   // }
 
-  return 'Only show Engineers Teach Physics courses'
+  return 'Only show Engineers teach physics courses'
 }
 
 exports.getSelectedCampaignItems = (selectedItems) => {
