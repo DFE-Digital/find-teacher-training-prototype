@@ -27,8 +27,8 @@
       {# TODO: remove hard-coding Engineers teach physics exception #}
       {# course.provider.code in ["E14","W75","2H8","2EV","M20","B32"] and #}
       {% if course.code in ["V473","P367","R576","E218","F3X2","H546"] %}
-        <p class="govuk-body">Your degree subject should be in engineering, material science or a related subject, otherwise you’ll need to prove your subject knowledge in some other way.</p>
-        <p class="govuk-body">If your degree is not engineering or a related subject, please apply to our Physics course.</p>
+        <p class="govuk-body">Your degree subject should be in engineering, material science or a related subject. Otherwise you’ll need to prove your subject knowledge in some other way.</p>
+        <p class="govuk-body">If your degree is not in engineering or a related subject, please apply to our Physics course.</p>
       {% else %}
         <p class="govuk-body">Your degree subject should be in {{ course.name }} or a similar subject. Otherwise you’ll need to prove your subject knowledge in some other way.</p>
       {% endif %}
