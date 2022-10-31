@@ -100,4 +100,12 @@
       {% endif %}
     </dd>
   </div>
+  {% if params.vacancies %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Vacancies</dt>
+      <dd class="app-result-detail__value">
+        {{ params.vacancies }}
+      </dd>
+    </div>
+  {% endif %}
 </dl>
