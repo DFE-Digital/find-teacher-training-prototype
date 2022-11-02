@@ -1,14 +1,14 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "There is a problem with the service" %}
+{% set title = "Sorry, there’s a problem with the service" %}
 
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-l">{{ title }}</h1>
       <p class="govuk-body">Try again later.</p>
-      <p class="govuk-body">We have not saved your answers. When the service is available, you will have to start again.</p>
-      <p class="govuk-body"><a class="govuk-link" href="mailto:becomingateacher@digital.education.gov.uk">Contact the Becoming a Teacher team</a> if you continue to see this error.</p>
+      <p class="govuk-body">If you reached this page after submitting information then it has not been saved. You’ll need to enter it again when the service is available.</p>
+      <p class="govuk-body">If you have any questions, email <a class="govuk-link" href="mailto:becomingateacher@digital.education.gov.uk">becomingateacher@digital.education.gov.uk</a>.</p>
     </div>
   </div>
 {% endblock %}
