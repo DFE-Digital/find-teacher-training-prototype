@@ -4,7 +4,7 @@
     * Providing params.meta.title (shows params.meta.visuallyHiddenTitle if not set)
     * Moving meta.text/meta.html above meta.items
 #}
-<footer class="govuk-footer {{- ' ' +  params.classes if params.classes }}" role="contentinfo"
+<footer class="govuk-footer app-footer {{- ' ' +  params.classes if params.classes }}" role="contentinfo"
         {%- for attribute, value in params.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
   <div class="govuk-width-container {{- ' ' + params.containerClasses if params.containerClasses }}">
     {% if params.navigation %}
