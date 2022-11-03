@@ -3,6 +3,8 @@
 
 {% extends "govuk/template.njk" %}
 
+{% from "_components/footer/macro.njk" import appFooter %}
+
 {% block head %}
   {% include "_includes/head.njk" %}
 {% endblock %}
@@ -31,7 +33,6 @@
 {% set footerHtml %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <h2 class="govuk-heading-m">Get help</h2>
     <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
       Email
     </h3>
@@ -41,8 +42,9 @@
 </div>
 {% endset %}
 
-{{ govukFooter({
+{{ appFooter({
   meta: {
+    title: "Get help",
     html: footerHtml
   }
 }) }}
