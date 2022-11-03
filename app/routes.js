@@ -145,8 +145,8 @@ router.get('/500', (req, res) => {
 
 // service unavailable
 // https://design-system.service.gov.uk/patterns/service-unavailable-pages/
-router.get('/unavailable', (req, res) => {
-  res.render('./unavailable')
+router.get('/503', (req, res) => {
+  res.render('./503')
 })
 
 // page not found
