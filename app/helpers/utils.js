@@ -241,7 +241,7 @@ exports.getQualificationItems = (selectedItems, subjectLevel = null) => {
   qualifications.forEach((qualification, i) => {
     const item = {}
 
-    item.text = qualification.name
+    item.text = qualification.text
     item.value = qualification.code
     item.id = qualification.id
     item.checked = (selectedItems && selectedItems.includes(qualification.code)) ? 'checked' : ''
@@ -252,12 +252,22 @@ exports.getQualificationItems = (selectedItems, subjectLevel = null) => {
   return items
 }
 
-exports.getQualificationLabel = (qualificationCode = null) => {
+exports.getQualificationLabel = (qualificationCode = null, type = null) => {
   const qualifications = require('../data/qualifications')
   let label = qualificationCode
 
   if (qualificationCode) {
-    label = qualifications.find(qualification => qualification.code === qualificationCode).name
+    let qualification = qualifications.find(qualification => qualification.code === qualificationCode)
+
+    if (type) {
+      if (type === 'longText') {
+        label = qualification.longText
+      } else if (type === 'html') {
+        label = qualification.html
+      }
+    } else {
+      label = qualification.text
+    }
   }
 
   return label
