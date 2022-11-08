@@ -36,7 +36,7 @@
   {% endif %}
   {% if course.course_length %}
     <dt class="app-list--description__label">Course length</dt>
-    <dd>{{ course.course_length | getCourseLengthLabel }}</dd>
+    <dd>{{ course.course_length | getCourseLengthLabel }} {{ " - " + (course.study_mode | getStudyModeLabel | lower) if course.study_mode }}</dd>
   {% endif %}
   {% if course.applications_open_from %}
     <dt class="app-list--description__label">Date you can apply from</dt>
