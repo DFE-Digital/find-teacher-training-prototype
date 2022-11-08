@@ -19,7 +19,7 @@
           } if trainingLocation and isUniversity and isLocationSearch,
           accreditedBody: result.course.accredited_body,
           studyType: result.course.study_mode | getStudyModeLabel,
-          qualification: result.course.qualifications | getQualificationLabel,
+          qualification: result.course.qualification | getQualificationLabel('html') | safe,
           fundingOption: result.course.funding_option,
           degreeGrade: result.course.degree_grade,
           visaSponsorship: result.course.visaSponsorship,
