@@ -25,7 +25,7 @@
       {% endset %}
 
       {{ govukDetails({
-        summaryText: course.qualifications | getQualificationLabel,
+        summaryText: course.qualification | getQualificationLabel,
         html: qualificationHtml | trim | markdown
       }) }}
     </dd>
