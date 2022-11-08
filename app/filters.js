@@ -5,6 +5,8 @@ const { DateTime } = require('luxon')
 const marked = require('marked')
 const numeral = require('numeral')
 
+const utilsHelper = require('./helpers/utils')
+
 marked.setOptions({
   renderer: new marked.Renderer(),
   smartLists: true,
@@ -291,18 +293,8 @@ module.exports = (env) => {
   example: {{ 'pgce_with_qts' | getQualificationLabel }}
   outputs: "PGCE with QTS"
   ------------------------------------------------------------------ */
-  filters.getQualificationLabel = (qualification) => {
-    let label
-
-    if (qualification.length === 2 && qualification.includes('pgce')) {
-      label = 'PGCE with QTS'
-    } else if (qualification.length === 2 && qualification.includes('pgde')) {
-      label = 'PGDE with QTS'
-    } else {
-      label = qualification[0].toUpperCase()
-    }
-
-    return label
+  filters.getQualificationLabel = (qualificationCode = null, type = null) => {
+    return utilsHelper.getQualificationLabel(qualificationCode, type)
   }
 
   /* ------------------------------------------------------------------

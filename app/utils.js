@@ -90,6 +90,23 @@ module.exports = () => {
       }
     }
 
+    course.qualification = ''
+    if (course.qualifications.includes('qts')) {
+      if (course.qualifications.includes('pgce')) {
+        course.qualification = 'pgce_with_qts'
+      } else if (course.qualifications.includes('pgde')) {
+        course.qualification = 'pgde_with_qts'
+      } else {
+        course.qualification = 'qts'
+      }
+    } else {
+      if (course.qualifications.includes('pgce')) {
+        course.qualification = 'pgce'
+      } else if (course.qualifications.includes('pgde')) {
+        course.qualification = 'pdge'
+      }
+    }
+
     // Year range
     course.year_range = `${data.cycle} to ${Number(data.cycle) + 1}`
 
