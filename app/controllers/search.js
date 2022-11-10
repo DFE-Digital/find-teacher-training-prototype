@@ -13,6 +13,7 @@ exports.search_get = async (req, res) => {
   delete req.session.data.place
   delete req.session.data.latitude
   delete req.session.data.longitude
+  delete req.session.data.sortBy
 
   if (process.env.USER_JOURNEY === 'browse') {
     res.redirect('/browse')
