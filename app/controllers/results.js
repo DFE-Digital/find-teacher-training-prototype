@@ -406,7 +406,7 @@ exports.list = async (req, res) => {
     let CourseListResponse
 
     if (hasSearchPhysics && selectedCampaign[0] === 'include') {
-      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(filter, page, perPage)
+      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(filter, page, perPage, sortBy)
     } else {
       if (q === 'provider') {
         // get the provider based on name from the autocomplete
@@ -420,17 +420,17 @@ exports.list = async (req, res) => {
           req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
         }
 
-        CourseListResponse = await teacherTrainingService.getProviderCourses(req.session.data.provider.code, filter, page, perPage)
+        CourseListResponse = await teacherTrainingService.getProviderCourses(req.session.data.provider.code, filter, page, perPage, sortBy)
       } else if (q === 'location') {
         if (radius) {
           filter.latitude = latitude
           filter.longitude = longitude
           filter.radius = radius
         }
-        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage)
+        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage, sortBy)
       } else {
         // England-wide search
-        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage)
+        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage, sortBy)
       }
     }
 
