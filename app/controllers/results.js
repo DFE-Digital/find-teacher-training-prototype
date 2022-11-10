@@ -400,8 +400,11 @@ exports.list = async (req, res) => {
     filter.campaign_name = 'engineers_teach_physics'
   }
 
+  // TODO: fix sort by when API is updated
+  // sort by settings
+  const sortBy = req.query.sortBy || req.session.data.sortBy || 2
+
   // pagination settings
-  const sortBy = req.query.sortBy || 0
   const page = req.query.page || 1
   const perPage = 20
 
