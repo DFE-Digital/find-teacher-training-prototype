@@ -74,9 +74,5 @@
     @include govuk-media-query($from: "desktop") {
       flex: 0;
     }
-
-    .js-enabled & {
-      display: none;
-    }
   }
 }
