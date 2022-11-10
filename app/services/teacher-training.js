@@ -8,15 +8,38 @@ const data = require('../data/session-data-defaults')
 const ttl = 0
 const cache = new CacheService(ttl) // Create a new cache service instance
 
+const getSortBy = (sortBy) => {
+  let sort
+
+  // course name z to a
+  if (parseInt(sortBy) === 1) {
+    sort = '-name,provider.provider_name'
+  }
+  // provider name a to z
+  else if (parseInt(sortBy) === 2) {
+    sort = 'provider.provider_name,name'
+  }
+  // provider name z to a
+  else if (parseInt(sortBy) === 3) {
+    sort = '-provider.provider_name,name'
+  }
+  // course name a to z (default)
+  else {
+    sort = 'name,provider.provider_name'
+  }
+
+  return sort
+}
+
 const teacherTrainingService = {
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-courses-get
-  async getCourses (filter, page = 1, perPage = 20) {
+  async getCourses (filter, page = 1, perPage = 20, sortBy = 0) {
     const query = {
       filter,
       include: 'provider,accredited_body',
       page,
       per_page: perPage,
-      sort: 'provider.provider_name,name'
+      sort: getSortBy(sortBy)
     }
 
     const key = `courseListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
@@ -85,13 +108,13 @@ const teacherTrainingService = {
   },
 
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-provider_code-courses-get
-  async getProviderCourses (providerCode, filter, page = 1, perPage = 20) {
+  async getProviderCourses (providerCode, filter, page = 1, perPage = 20, sortBy = 0) {
     const query = {
       filter,
       include: 'provider,accredited_body',
       page,
       per_page: perPage,
-      sort: 'name'
+      sort: getSortBy(sortBy)
     }
 
     const key = `providerCourseListResponse_${data.cycle}-${providerCode}-${page}-${perPage}-${JSON.stringify(query)}`
