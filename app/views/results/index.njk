@@ -102,20 +102,20 @@
 {% endblock %}
 
 {% block pageScripts %}
-<script type="module" >
-import { CheckboxFilter } from '/public/javascripts/components/checkbox-filter.js'
-
-const checkboxFilter = new CheckboxFilter({
-  container: $('#subject'),
-  textBox: {
-    label: 'Search for subject'
-  }
-})
-
-checkboxFilter.init()
-</script>
-
 {% if userJourney in ["browse","filter"] %}
+  <script type="module" >
+  import { CheckboxFilter } from '/public/javascripts/components/checkbox-filter.js'
+
+  const checkboxFilter = new CheckboxFilter({
+    container: $('#subject'),
+    textBox: {
+      label: 'Search for subject'
+    }
+  })
+
+  checkboxFilter.init()
+  </script>
+
   <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
   <script src="/public/javascripts/debounce.js"></script>
   <script src="/public/javascripts/init-autocomplete.js"></script>
