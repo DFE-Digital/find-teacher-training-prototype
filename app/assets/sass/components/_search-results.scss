@@ -48,7 +48,6 @@
   align-items: center;
 
   .govuk-label {
-    padding: govuk-spacing(2) 0;
     margin: 0 govuk-spacing(2) 0 0;
     white-space: nowrap;
     vertical-align: middle;
@@ -56,7 +55,6 @@
 
   .govuk-select {
     flex: 1 1 auto;
-    margin: govuk-spacing(2);
     margin-left: 0;
 
     @include govuk-media-query($from: "desktop") {
@@ -68,7 +66,7 @@
 
   .govuk-button {
     flex: 1 0 0;
-    margin: 0 govuk-spacing(2) 0 0;
+    margin: -2px 0 0 govuk-spacing(2);
     width: auto;
 
     @include govuk-media-query($from: "desktop") {
