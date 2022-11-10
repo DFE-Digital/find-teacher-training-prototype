@@ -2,7 +2,7 @@
   <div class="app-search-results-header">
    <p class="govuk-body">Sorted by distance</p>
   </div>
-{% elif data.q == "england" or userJourney == "filter" %}
+{% elif data.q == "england" or userJourney in ["filter","search"] %}
   <div class="app-search-results-header">
     <form class="app-search-results-header__sort" action="/results" method="get" accept-charset="utf-8" novalidate>
       {{ govukSelect({
@@ -16,25 +16,25 @@
           classes: "govuk-!-display-inline-block"
         },
         items: [{
-          value: "0",
-          text: "Training provider (A-Z)",
-          selected: (data.sortBy == "0")
-        }, {
-          value: "1",
-          text: "Training provider (Z-A)",
-          selected: (data.sortBy == "1")
-        }, {
-          value: "2",
+          value: 0,
           text: "Course name (A-Z)",
-          selected: (data.sortBy == "2")
+          selected: (data.sortBy == 0)
         }, {
-          value: "3",
+          value: 1,
           text: "Course name (Z-A)",
-          selected: (data.sortBy == "3")
-        }],
-        attributes: {
-          onchange: "this.form.submit()"
-        }
+          selected: (data.sortBy == 1)
+        }, {
+          value: 2,
+          text: "Training provider (A-Z)",
+          selected: (data.sortBy == 2)
+        }, {
+          value: 3,
+          text: "Training provider (Z-A)",
+          selected: (data.sortBy == 3)
+        }]
+      }) }}
+      {{ govukButton({
+        text: "Sort"
       }) }}
     </form>
   </div>
