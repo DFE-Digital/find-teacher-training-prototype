@@ -21,7 +21,7 @@ const getSortBy = (sortBy) => {
   }
   // provider name z to a
   else if (parseInt(sortBy) === 3) {
-    sort = '-provider.provider_name,-name'
+    sort = '-provider.provider_name,name'
   }
   // course name a to z (default)
   else {
