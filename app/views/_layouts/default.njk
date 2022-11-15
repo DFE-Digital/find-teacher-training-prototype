@@ -54,14 +54,7 @@
     containerClasses: "govuk-width-container"
   }) }}
 
-  {{ govukPhaseBanner({
-    tag: {
-      text: phaseTagText,
-      classes: "app-tag--prototype" if environment != 'production'
-    },
-    html: 'Give feedback or report a problem: <a href="mailto:becomingateacher@digital.education.gov.uk">becomingateacher@digital.education.gov.uk</a>',
-    classes: "govuk-width-container"
-  }) }}
+  {% include "_includes/phase-banner.njk" %}
 {% endblock %}
 
 {% block beforeContent %}
