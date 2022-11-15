@@ -4,16 +4,14 @@
   </div>
 {% elif data.q == "england" or userJourney in ["filter","search"] %}
   <div class="app-search-results-header">
-    <form class="app-search-results-header__sort" action="/results" method="get" accept-charset="utf-8" novalidate>
-      {{ govukSelect({
+
+    {{ appSortBy({
+      action: "/results",
+      select: {
         id: "sortby",
         name: "sortBy",
-        formGroup: {
-          classes: "govuk-!-margin-bottom-0"
-        },
         label: {
-          text: "Sorted by",
-          classes: "govuk-!-display-inline-block"
+          text: "Sorted by"
         },
         items: [{
           value: 0,
@@ -32,10 +30,11 @@
           text: "Training provider (Z to A)",
           selected: (data.sortBy == 3)
         }]
-      }) }}
-      {{ govukButton({
+      },
+      button: {
         text: "Sort"
-      }) }}
-    </form>
+      }
+    }) }}
+
   </div>
 {% endif %}
