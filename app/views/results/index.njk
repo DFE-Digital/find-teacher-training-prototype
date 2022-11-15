@@ -39,6 +39,10 @@
 
     <div class="app-filter-layout__content">
 
+      <div class="app-action-bar">
+        <div class="app-action-bar__filter"></div>
+      </div>
+
       {% include "./_promoted-link.njk" %}
 
       {# TODO include the provider search in the browse journey #}
@@ -47,10 +51,6 @@
       {% endif %}
 
       {% include "./_sort-options.njk" %}
-
-      <div class="app-action-bar">
-        <div class="app-action-bar__filter"></div>
-      </div>
 
       {% if results.length %}
 
