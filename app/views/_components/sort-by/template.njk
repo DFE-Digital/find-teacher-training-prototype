@@ -1,0 +1,31 @@
+{%- from "govuk/components/select/macro.njk" import govukSelect %}
+{%- from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="app-sort-by {{- ' ' + params.classes if params.classes }}">
+  {%- if params.select.hint %}
+    {% set hintClasses = "app-sort-by__hint " + (params.select.hint.classes if params.select.hint.classes) %}
+    {% set hintText = params.select.hint.text %}
+    {% set hint = { classes: hintClasses, text: hintText } %}
+  {% endif -%}
+  <form action="{{ params.action | default('/') }}" method="{{ params.method | default('get') }}" accept-charset="utf-8" novalidate>
+    {{ govukSelect({
+      id: params.select.id,
+      name: params.select.name,
+      formGroup: {
+        classes: "app-sort-by__form-group"
+      },
+      label: {
+        text: params.select.label.text,
+        classes: "app-sort-by__label"
+      },
+      hint: hint,
+      items: params.select.items,
+      classes: params.select.classes,
+      attributes: params.select.attributes
+    }) }}
+    {{ govukButton({
+      text: params.button.text,
+      classes: "app-sort-by__button"
+    }) }}
+  </form>
+</div>
