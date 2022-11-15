@@ -103,7 +103,7 @@ module.exports = () => {
       if (course.qualifications.includes('pgce')) {
         course.qualification = 'pgce'
       } else if (course.qualifications.includes('pgde')) {
-        course.qualification = 'pdge'
+        course.qualification = 'pgde'
       }
     }
 
