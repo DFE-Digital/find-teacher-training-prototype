@@ -110,19 +110,21 @@
     </div>
   </div>
 
-  {% if ageGroup == "secondary" %}
-    <div class="govuk-grid-row govuk-!-margin-top-5">
-      <div class="govuk-grid-column-one-half">
-        <p class="govuk-body">
-          <a class="govuk-link" href="#">Browse all {{ data.filter.subject | getSubjectLabel }} courses in England</a>
-        </p>
-      </div>
+  <div class="govuk-grid-row govuk-!-margin-top-5">
+    <div class="govuk-grid-column-one-half">
+      <p class="govuk-body">
+        {% if ageGroup == "secondary" %}
+          <a class="govuk-link" href="#">Browse all {{ data.filter.subject | getSubjectLabel(toLowerCase=true) }} courses in England</a>
+        {% elif ageGroup == "primary" %}
+          <a class="govuk-link" href="/browse/primary-all-england">Browse all primary courses in England</a>
+        {% endif %}
+      </p>
     </div>
-  {% endif %}
+  </div>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h2 class="govuk-heading-l {{- ' govuk-!-margin-top-3' if ageGroup == 'secondary' else ' govuk-!-margin-top-8' }}">Apply early once you find your course</h2>
+      <h2 class="govuk-heading-l {{- ' govuk-!-margin-top-3' if ageGroup in ['primary','secondary'] else ' govuk-!-margin-top-8' }}">Apply early once you find your course</h2>
 
       <p class="govuk-body">
         You're about to find courses which start in September 2023. Apply no later than 7 September 2023 to to be considered for a place on one of these courses.

@@ -80,12 +80,17 @@ exports.getSubjectItems = (selectedItems, subjectLevel = null, showHint = false)
   return items
 }
 
-exports.getSubjectLabel = (subjectCode = null) => {
+exports.getSubjectLabel = (subjectCode = null, toLowerCase = false) => {
   const subjects = require('../data/subjects')
   let label = subjectCode
 
   if (subjectCode) {
     label = subjects.find(subject => subject.code === subjectCode).name
+  }
+
+  // if the subjects are languages, don't lowercase
+  if (!['A1','A2','Q3','15','16','17','18','19','A0','20','21','22'].includes(subjectCode) && toLowerCase) {
+    label = label.toLowerCase()
   }
 
   return label
