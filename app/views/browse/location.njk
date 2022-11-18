@@ -114,7 +114,7 @@
     <div class="govuk-grid-column-one-half">
       <p class="govuk-body">
         {% if ageGroup == "secondary" %}
-          <a class="govuk-link" href="#">Browse all {{ data.filter.subject | getSubjectLabel(toLowerCase=true) }} courses in England</a>
+          <a class="govuk-link" href="/results?q=england&filter[subject]={{ data.filter.subject }}">Browse all {{ data.filter.subject | getSubjectLabel(toLowerCase=true) }} courses in England</a>
         {% elif ageGroup == "primary" %}
           <a class="govuk-link" href="/browse/primary-all-england">Browse all primary courses in England</a>
         {% endif %}
