@@ -55,7 +55,8 @@ exports.list = async (req, res) => {
   if (req.session.data.filter?.providerType) {
     selectedProviderType = req.session.data.filter.providerType
   } else {
-    selectedProviderType = defaults.providerType
+    // selectedProviderType = defaults.providerType
+    selectedProviderType = []
   }
 
   const providerTypeItems = utilsHelper.getProviderTypeItems(selectedProviderType)
@@ -63,7 +64,7 @@ exports.list = async (req, res) => {
   // API query params
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-providerfilter
   const filter = {
-    // provider_type: selectedProviderType.toString()
+    provider_type: selectedProviderType.toString()
   }
 
   // sort by settings
