@@ -111,6 +111,8 @@ router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 
 router.get('/providers/:providerCode', providerController.show)
 
+router.get('/providers', providerController.list)
+
 /// ------------------------------------------------------------------------ ///
 /// COURSES ROUTES
 /// ------------------------------------------------------------------------ ///
