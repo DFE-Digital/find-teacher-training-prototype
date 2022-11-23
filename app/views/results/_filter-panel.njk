@@ -100,6 +100,22 @@
   classes: "govuk-checkboxes--small"
 }) }}
 
+{# {{ govukCheckboxes({
+  idPrefix: "provider-type",
+  name: "filter[providerType]",
+  fieldset: {
+    legend: {
+      html: 'Provider type<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: providerTypeItems,
+  classes: "govuk-checkboxes--small"
+}) }} #}
+
 {{ govukCheckboxes({
   idPrefix: "study-mode",
   name: "filter[studyMode]",
