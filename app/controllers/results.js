@@ -429,9 +429,10 @@ exports.list = async (req, res) => {
     filter.engineers_teach_physics = true
   }
 
-  // TODO: fix sort by when API is updated
+
   // sort by settings
-  const sortBy = req.query.sortBy || req.session.data.sortBy || 2
+  const sortBy = req.query.sortBy || req.session.data.sortBy || 0
+  const sortByItems = utilsHelper.getCourseSortBySelectOptions(sortBy)
 
   // pagination settings
   const page = req.query.page || 1
@@ -628,6 +629,7 @@ exports.list = async (req, res) => {
       hasSearch,
       hasSearchPhysics,
       keywords,
+      sortByItems,
       actions: {
         view: '/course/',
         filters: {
