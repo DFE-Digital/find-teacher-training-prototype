@@ -8,5 +8,25 @@
     "id": "94af5269-a207-4f01-a3f1-0f52f683b7e2",
     "code": 1,
     "name": "Training provider (Z to A)"
+  },
+  {
+    "id": "e0a946f6-8431-4268-b1b7-e5877edd09dd",
+    "code": 2,
+    "name": "Course name (A to Z)"
+  },
+  {
+    "id": "9923fc37-38e8-463e-81c2-a883b410648f",
+    "code": 3,
+    "name": "Course name (Z to A)"
+  },
+  {
+    "id": "cc38ec9c-9c8a-4712-be22-d8ea1738a5f5",
+    "code": 4,
+    "name": "Accredited body (A to Z)"
+  },
+  {
+    "id": "2b94abab-9a0b-4d47-95a1-d8ffc334b480",
+    "code": 5,
+    "name": "Accredited body (Z to A)"
   }
 ]
