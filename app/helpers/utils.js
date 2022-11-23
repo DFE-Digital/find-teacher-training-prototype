@@ -468,3 +468,50 @@ exports.getSubjectLevelFromCode = (subjectCode = null) => {
 
   return level
 }
+
+exports.getProviderTypeItems = (selectedItems) => {
+  const providerTypes = require('../data/provider-types')
+  const items = []
+
+  providerTypes.forEach((providerType, i) => {
+    const item = {}
+
+    item.text = providerType.name
+    item.value = providerType.code
+    item.id = providerType.id
+    item.checked = (selectedItems && selectedItems.includes(providerType.code)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  items.sort((a,b) => {
+    return a.text.localeCompare(b.text)
+  })
+
+  return items
+}
+
+exports.getProviderTypeLabel = (providerTypeCode = null) => {
+  const providerTypes = require('../data/provider-types')
+  let label = providerTypeCode
+
+  if (providerTypeCode) {
+    label = providerTypes.find(providerType => providerType.code === providerTypeCode).name
+  }
+
+  return label
+}
+
+exports.getSelecteProviderTypeItems = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const providerType = {}
+    providerType.text = item.text
+    providerType.href = `/results/remove-provider-type-filter/${item.text}`
+
+    items.push(providerType)
+  })
+
+  return items
+}

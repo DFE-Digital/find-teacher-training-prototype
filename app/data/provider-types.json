@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1243de7b-aee3-4960-aec0-4c3f0570d56e",
+    "code": "lead_school",
+    "name": "School"
+  },
+  {
+    "id": "31ac99fc-bd13-41cc-99c4-e51afa9e9b6d",
+    "code": "hei",
+    "name": "University"
+  },
+  {
+    "id": "2c003b78-7ad2-489a-8cf4-9213876bf169",
+    "code": "scitt",
+    "name": "SCITT"
+  }
+]
