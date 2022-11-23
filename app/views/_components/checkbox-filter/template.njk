@@ -1,6 +1,6 @@
 {#- If an id 'prefix' is not passed, fall back to using the name attribute -#}
 {%- set idPrefix = params.idPrefix if params.idPrefix else params.name -%}
-{# {{params|dump|safe}} #}
+
 <div id="{{ idPrefix }}" class="app-checkbox-filter {{- ' ' + params.classes if params.classes }}" {%- for attribute, value in params.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
 
   <div class="govuk-form-group">
