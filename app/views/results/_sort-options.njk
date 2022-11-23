@@ -12,23 +12,7 @@
           text: "Sorted by",
           classes: "govuk-!-display-inline-block"
         },
-        items: [{
-          value: "2",
-          text: "Course name (A-Z)",
-          selected: (data.sortBy == "2")
-        } if 1==0, {
-          value: "3",
-          text: "Course name (Z-A)",
-          selected: (data.sortBy == "3")
-        } if 1==0, {
-          value: "0",
-          text: "Training provider (A-Z)",
-          selected: (data.sortBy == "0")
-        }, {
-          value: "1",
-          text: "Training provider (Z-A)",
-          selected: (data.sortBy == "1")
-        }],
+        items: sortByItems,
         attributes: {
           role: "listbox"
         }

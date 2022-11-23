@@ -34,7 +34,6 @@ const getSortBy = (sortBy) => {
 const teacherTrainingService = {
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-courses-get
   async getCourses (filter, page = 1, perPage = 20, sortBy = 0) {
-    console.log(filter);
     const query = {
       filter,
       include: 'provider,accredited_body',
