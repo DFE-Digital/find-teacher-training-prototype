@@ -34,6 +34,7 @@ exports.list = async (req, res) => {
   const visaSponsorship = null
   const fundingType = null
   const campaign = null
+  const providerType = null
 
   const subjects = utilsHelper.getCheckboxValues(subject, req.session.data.filter.subject)
 
@@ -72,6 +73,8 @@ exports.list = async (req, res) => {
 
   const campaigns = utilsHelper.getCheckboxValues(campaign, req.session.data.filter.campaign)
 
+  const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
+
   const hasFilters = !!((subjects?.length > 0)
     || (studyModes?.length > 0)
     || (qualifications?.length > 0)
@@ -81,6 +84,7 @@ exports.list = async (req, res) => {
     || (visaSponsorships?.length > 0)
     || (fundingTypes?.length > 0)
     || (campaigns?.length > 0)
+    || (providerTypes?.length > 0)
   )
 
   let selectedFilters = null
@@ -191,8 +195,20 @@ exports.list = async (req, res) => {
         heading: { text: 'Salary' },
         items: fundingTypes.map((fundingType) => {
           return {
-            text: utilsHelper.getVisaSponsorshipLabel(fundingType),
+            text: utilsHelper.getFundingTypeLabel(fundingType),
             href: `/results/remove-funding-type-filter/${fundingType}`
+          }
+        })
+      })
+    }
+
+    if (providerTypes?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Provider type' },
+        items: providerTypes.map((providerType) => {
+          return {
+            text: utilsHelper.getProviderTypeLabel(providerType),
+            href: `/results/remove-provider-type-filter/${providerType}`
           }
         })
       })
@@ -353,6 +369,15 @@ exports.list = async (req, res) => {
 
   const campaignItems = utilsHelper.getCampaignItems(selectedCampaign)
 
+  let selectedProviderType
+  if (req.session.data.filter?.providerType) {
+    selectedProviderType = req.session.data.filter.providerType
+  } else {
+    selectedProviderType = defaults.providerType
+  }
+
+  const providerTypeItems = utilsHelper.getProviderTypeItems(selectedProviderType)
+
   // Search radius - 5, 10, 50
   // default to 50
   // needed to get a list of results rather than 1
@@ -374,6 +399,9 @@ exports.list = async (req, res) => {
     study_type: selectedStudyMode.toString(),
     subjects: selectedSubject.toString()
   }
+
+  // TODO: move provider_type into filter
+  // provider_type = selectedProviderType.toString()
 
   // TODO: change the degreeGrade filter from radio to checkbox to manage grades properly
   if (selectedDegreeGrade === 'two_two') {
@@ -554,7 +582,8 @@ exports.list = async (req, res) => {
           visaSponsorship: selectedVisaSponsorship,
           fundingType: selectedFundingType,
           subject: selectedSubject,
-          campaign: selectedCampaign
+          campaign: selectedCampaign,
+          providerType: selectedProviderType
         }
       }
 
@@ -596,6 +625,7 @@ exports.list = async (req, res) => {
       visaSponsorshipItems,
       fundingTypeItems,
       campaignItems,
+      providerTypeItems,
       selectedFilters,
       hasFilters,
       hasSearch,
@@ -676,10 +706,16 @@ exports.removeCampaignFilter = (req, res) => {
   res.redirect('/results')
 }
 
+exports.removeProviderTypeFilter = (req, res) => {
+  req.session.data.filter.providerType = utilsHelper.removeFilter(req.params.providerType, req.session.data.filter.providerType)
+  res.redirect('/results')
+}
+
 exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.campaign = null
   // req.session.data.filter.degreeGrade = null
   // req.session.data.filter.fundingType = null
+  // req.session.data.filter.providerType = null
   // req.session.data.filter.qualification = null
   // req.session.data.filter.send = null
   // req.session.data.filter.studyMode = null
