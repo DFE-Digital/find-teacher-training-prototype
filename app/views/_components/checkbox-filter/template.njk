@@ -1,18 +1,16 @@
-{%- from "govuk/components/fieldset/macro.njk" import govukFieldset -%}
-
 {#- If an id 'prefix' is not passed, fall back to using the name attribute -#}
 {%- set idPrefix = params.idPrefix if params.idPrefix else params.name -%}
-
+{# {{params|dump|safe}} #}
 <div id="{{ idPrefix }}" class="app-checkbox-filter {{- ' ' + params.classes if params.classes }}" {%- for attribute, value in params.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
 
   <div class="govuk-form-group">
 
-    {%- call govukFieldset({
-      legend: {
-        text: params.legend.text,
-        classes: params.legend.classes | default('govuk-fieldset__legend--s')
-      }
-    }) -%}
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend {{ params.legend.classes | default('govuk-fieldset__legend--s') }}">
+        <h1 class="govuk-fieldset__heading">
+          {{ params.legend.html if params.legend.html else params.legend.text }}
+        </h1>
+      </legend>
 
       {% if params.showSelectedTags | default(true) %}
         {%- if params.selectedItems.length -%}
@@ -57,7 +55,7 @@
 
       </div>
 
-    {%- endcall -%}
+    </fieldset>
 
   </div>
 
