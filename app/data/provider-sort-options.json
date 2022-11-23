@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1bac4212-b4b7-4927-beda-f0aa86051653",
+    "code": 0,
+    "name": "Provider name (A to Z)"
+  },
+  {
+    "id": "2860e809-1099-4e53-ba88-1594ea0bb35d",
+    "code": 1,
+    "name": "Provider name (Z to A)"
+  }
+]
