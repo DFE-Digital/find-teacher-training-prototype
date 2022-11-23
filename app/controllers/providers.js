@@ -2,6 +2,167 @@ const qs = require('qs')
 const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
 
+const utilsHelper = require('../helpers/utils')
+
+exports.list = async (req, res) => {
+  const defaults = req.session.data.defaults
+
+  if (req.session.data.filter === undefined) {
+    req.session.data.filter = {}
+  }
+
+  const visaSponsorship = null
+  const providerType = null
+
+  const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
+
+  const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
+
+  const hasFilters = !!((visaSponsorships?.length > 0)
+    || (providerTypes?.length > 0)
+  )
+
+  let selectedFilters = null
+
+  if (hasFilters) {
+    selectedFilters = {
+      categories: []
+    }
+
+    if (providerTypes?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Provider type' },
+        items: providerTypes.map((providerType) => {
+          return {
+            text: utilsHelper.getProviderTypeLabel(providerType),
+            href: `/results/remove-provider-type-filter/${providerType}`
+          }
+        })
+      })
+    }
+  }
+
+  let selectedVisaSponsorship
+  if (req.session.data.filter?.visaSponsorship) {
+    selectedVisaSponsorship = req.session.data.filter.visaSponsorship
+  } else {
+    selectedVisaSponsorship = defaults.visaSponsorship
+  }
+
+  const visaSponsorshipItems = utilsHelper.getProviderVisaSponsorshipItems(selectedVisaSponsorship)
+
+  let selectedProviderType
+  if (req.session.data.filter?.providerType) {
+    selectedProviderType = req.session.data.filter.providerType
+  } else {
+    selectedProviderType = defaults.providerType
+  }
+
+  const providerTypeItems = utilsHelper.getProviderTypeItems(selectedProviderType)
+
+  // API query params
+  // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-providerfilter
+  const filter = {
+    // provider_type: selectedProviderType.toString()
+  }
+
+  // sort by settings
+  const sortBy = req.query.sortBy || req.session.data.sortBy || 0
+  const sortByItems = utilsHelper.getProviderSortBySelectOptions(sortBy)
+
+  // pagination settings
+  const page = req.query.page || 1
+  const perPage = 20
+
+  try {
+    let ProviderListResponse
+
+    ProviderListResponse = await teacherTrainingService.getProviders(filter, page, perPage, sortBy)
+
+    const { data, links, meta, included } = ProviderListResponse
+
+    let providers = data
+
+    if (providers.length > 0) {
+      providers = providers.map(async providerResource => {
+        provider = providerResource.attributes
+        return provider
+      })
+    }
+
+    // TODO: something with the data
+
+    let results = await Promise.all(providers)
+
+    const resultsCount = meta ? meta.count : results.length
+
+    let pageCount = 1
+    if (links.last.match(/page=(\d*)/)) {
+      pageCount = links.last.match(/page=(\d*)/)[1]
+    }
+
+    const prevPage = links.prev ? (parseInt(page) - 1) : false
+    const nextPage = links.next ? (parseInt(page) + 1) : false
+
+    const searchQuery = page => {
+      const query = {
+        page,
+        filter: {
+          providerType: selectedProviderType
+        }
+      }
+
+      return qs.stringify(query)
+    }
+
+    const pagination = {
+      pages: pageCount,
+      next: nextPage
+        ? {
+            href: `?${searchQuery(nextPage)}`,
+            page: nextPage,
+            text: 'Next page'
+          }
+        : false,
+      previous: prevPage
+        ? {
+            href: `?${searchQuery(prevPage)}`,
+            page: prevPage,
+            text: 'Previous page'
+          }
+        : false
+    }
+
+    res.render('./providers/index', {
+      results,
+      resultsCount,
+      pagination,
+      visaSponsorshipItems,
+      providerTypeItems,
+      selectedFilters,
+      hasFilters,
+      sortByItems,
+      actions: {
+        view: '/providers/',
+        filters: {
+          apply: '/providers',
+          remove: '/providers/remove-all-filters'
+        },
+        search: {
+          find: '/providers',
+          remove: '/providers/remove-keyword-search'
+        }
+      }
+    })
+  } catch (error) {
+    console.error(error.stack)
+    res.render('error', {
+      title: error.name,
+      content: error
+    })
+  }
+}
+
 exports.show = async (req, res) => {
   const ProviderSingleResponse = await teacherTrainingService.getProvider(req.params.providerCode)
 
