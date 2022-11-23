@@ -11,21 +11,21 @@ const cache = new CacheService(ttl) // Create a new cache service instance
 const getSortBy = (sortBy) => {
   let sort
 
-  // course name z to a
-  if (parseInt(sortBy) === 1) {
-    sort = '-name,provider.provider_name'
-  }
-  // provider name a to z
-  else if (parseInt(sortBy) === 2) {
-    sort = 'provider.provider_name,name'
-  }
   // provider name z to a
-  else if (parseInt(sortBy) === 3) {
+  if (parseInt(sortBy) === 1) {
     sort = '-provider.provider_name,name'
+  }
+  // course name a to z
+  else if (parseInt(sortBy) === 2) {
+    sort = 'name,provider.provider_name'
+  }
+  // course name z to a
+  else if (parseInt(sortBy) === 3) {
+    sort = '-name,provider.provider_name'
   }
   // course name a to z (default)
   else {
-    sort = 'name,provider.provider_name'
+    sort = 'provider.provider_name,name'
   }
 
   return sort
