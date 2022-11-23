@@ -1,0 +1,74 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title %}
+  {% if resultsCount > 0 %}
+    {{ resultsCount | numeral('0,0') }} provider {{- "s" if resultsCount > 1 }} found
+  {% else %}
+    No providers found
+  {% endif %}
+{% endset %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back",
+  href: "#"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="app-filter-layout">
+    <div class="app-filter-layout__filter">
+
+      {% include "./_filter-panel.njk" %}
+
+    </div>
+
+    <div class="app-filter-layout__content">
+
+      <div class="app-action-bar">
+        <div class="app-action-bar__filter"></div>
+      </div>
+
+      {% include "./_promoted-link.njk" %}
+
+      {% include "./_sort-options.njk" %}
+
+      {% if results.length %}
+
+        <ul class="govuk-list app-search-results">
+          {% for provider in results %}
+            <li>
+              <a href="/providers/{{ provider.code }}">{{ provider.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+
+        {% if pagination.pages > 1 %}
+          {{ appPagination( pagination ) }}
+        {% endif %}
+
+      {% else %}
+
+        {% include "./_no-results.njk" %}
+
+      {% endif %}
+
+    </div>
+  </div>
+
+{% endblock %}
