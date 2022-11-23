@@ -3,7 +3,7 @@
 {% set title = provider.name + " (" + provider.code + ")" %}
 
 {% block pageTitle %}
-{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
 {% endblock %}
 
 {% block pageNavigation %}
