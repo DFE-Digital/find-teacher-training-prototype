@@ -537,3 +537,56 @@ exports.getCourseSortBySelectOptions = (selectedOption = 0) => {
 
   return items
 }
+
+exports.getProviderSortBySelectOptions = (selectedOption = 0) => {
+  const sortOptions = require('../data/provider-sort-options')
+  const items = []
+
+  sortOptions.forEach((sortOption, i) => {
+    const item = {}
+
+    item.text = sortOption.name
+    item.value = sortOption.code
+    item.id = sortOption.id
+    item.selected = !!(parseInt(selectedOption) === parseInt(sortOption.code)) ? 'selected' : ''
+
+    items.push(item)
+  })
+
+  items.sort((a,b) => {
+    return a.text.localeCompare(b.text)
+  })
+
+  return items
+}
+
+exports.getProviderVisaSponsorshipItems = (selectedItems) => {
+  const visaSponsorshipOptions = [{
+    id: '2fd091fd-b0ef-47f6-9c57-def24ab6efdc',
+    name: 'Can sponsor Student visas',
+    code: 'student_visas'
+  }, {
+    id: 'ee8beaca-e038-4b04-8d16-4cb8eb743cff',
+    name: 'Can sponsor Skilled Worker visas',
+    code: 'skilled_worker_visas'
+  }]
+
+  const items = []
+
+  visaSponsorshipOptions.forEach((visaSponsorshipOption, i) => {
+    const item = {}
+
+    item.text = visaSponsorshipOption.name
+    item.value = visaSponsorshipOption.code
+    item.id = visaSponsorshipOption.id
+    item.checked = (selectedItems && selectedItems.includes(visaSponsorshipOption.code)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  items.sort((a,b) => {
+    return a.text.localeCompare(b.text)
+  })
+
+  return items
+}
