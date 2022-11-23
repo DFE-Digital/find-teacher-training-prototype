@@ -484,6 +484,10 @@ exports.getProviderTypeItems = (selectedItems) => {
     items.push(item)
   })
 
+  items.sort((a,b) => {
+    return a.text.localeCompare(b.text)
+  })
+
   return items
 }
 
