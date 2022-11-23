@@ -425,7 +425,8 @@ exports.list = async (req, res) => {
   }
 
   if (selectedCampaign[0] === 'include') {
-    filter.campaign_name = 'engineers_teach_physics'
+    // filter.campaign_name = 'engineers_teach_physics'
+    filter.engineers_teach_physics = true
   }
 
   // TODO: fix sort by when API is updated
@@ -440,33 +441,29 @@ exports.list = async (req, res) => {
   try {
     let CourseListResponse
 
-    if (hasSearchPhysics && selectedCampaign[0] === 'include') {
-      CourseListResponse = await teacherTrainingService.getEngineersTeachPhysicsCourses(filter, page, perPage, sortBy)
-    } else {
-      if (q === 'provider') {
-        // get the provider based on name from the autocomplete
-        if (process.env.USER_JOURNEY === 'filter') {
-          let providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.keywords)
+    if (q === 'provider') {
+      // get the provider based on name from the autocomplete
+      if (process.env.USER_JOURNEY === 'filter') {
+        let providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.keywords)
 
-          // TODO: if the response contains multiple providers, redirect user to a page
-          // to choose the appropriate provider before returning back to results list
+        // TODO: if the response contains multiple providers, redirect user to a page
+        // to choose the appropriate provider before returning back to results list
 
-          // get the first provider from the response
-          req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
-        }
-
-        CourseListResponse = await teacherTrainingService.getProviderCourses(req.session.data.provider.code, filter, page, perPage, sortBy)
-      } else if (q === 'location') {
-        if (radius) {
-          filter.latitude = latitude
-          filter.longitude = longitude
-          filter.radius = radius
-        }
-        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage, sortBy)
-      } else {
-        // England-wide search
-        CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage, sortBy)
+        // get the first provider from the response
+        req.session.data.provider = providerSuggestionListResponse?.data[0]?.attributes
       }
+
+      CourseListResponse = await teacherTrainingService.getProviderCourses(req.session.data.provider.code, filter, page, perPage, sortBy)
+    } else if (q === 'location') {
+      if (radius) {
+        filter.latitude = latitude
+        filter.longitude = longitude
+        filter.radius = radius
+      }
+      CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage, sortBy)
+    } else {
+      // England-wide search
+      CourseListResponse = await teacherTrainingService.getCourses(filter, page, perPage, sortBy)
     }
 
     const { data, links, meta, included } = CourseListResponse
