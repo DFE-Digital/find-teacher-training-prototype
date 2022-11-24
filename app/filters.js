@@ -328,5 +328,14 @@ module.exports = (env) => {
     return utilsHelper.getSubjectLabel(subjectCode, toLowerCase)
   }
 
+  /* ------------------------------------------------------------------
+  utility function to get the provider type label
+  example: {{ 'scitt' | getProviderTypeLabel }}
+  outputs: "School Centred Initial Teacher Training (SCITT)"
+  ------------------------------------------------------------------ */
+  filters.getProviderTypeLabel = (providerTypeCode) => {
+    return utilsHelper.getProviderTypeLabel(providerTypeCode)
+  }
+
   return filters
 }
