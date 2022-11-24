@@ -111,6 +111,12 @@ router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 
 router.get('/providers/:providerCode', providerController.show)
 
+router.get('/providers/remove-provider-type-filter/:providerType', providersController.removeProviderTypeFilter)
+router.get('/providers/remove-visa-sponsorship-filter/:visaSponsorship', providersController.removeVisaSponsorshipFilter)
+
+router.get('/providers/remove-all-filters', providerController.removeAllFilters)
+router.get('/providers/remove-keyword-search', providerController.removeKeywordSearch)
+
 router.get('/providers', providerController.list)
 
 /// ------------------------------------------------------------------------ ///
