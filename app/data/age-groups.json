@@ -1,0 +1,17 @@
+[
+  {
+    "id": "e9d75c90-eec3-446e-8b2e-1afa096b422b",
+    "code": "primary",
+    "name": "Primary"
+  },
+  {
+    "id": "1c909417-4192-4de3-bc52-c9ebee5e7e4e",
+    "code": "secondary",
+    "name": "Secondary"
+  },
+  {
+    "id": "7c66b08b-d3ab-4678-861c-21ae6e1c08e7",
+    "code": "further_education",
+    "name": "Further education"
+  }
+]
