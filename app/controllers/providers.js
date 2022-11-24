@@ -92,7 +92,7 @@ exports.list = async (req, res) => {
 
     if (providers.length > 0) {
       providers = providers.map(async providerResource => {
-        provider = providerResource.attributes
+        provider = utils.decorateProvider(providerResource.attributes)
         return provider
       })
     }
@@ -152,7 +152,7 @@ exports.list = async (req, res) => {
       keywords,
       sortByItems,
       actions: {
-        view: '/providers/',
+        view: '/providers',
         filters: {
           apply: '/providers',
           remove: '/providers/remove-all-filters'
@@ -351,4 +351,27 @@ exports.show = async (req, res) => {
       back
     }
   })
+}
+
+exports.removeKeywordSearch = (req, res) => {
+  delete req.session.data.keywords
+  res.redirect('/providers')
+}
+
+exports.removeVisaSponsorshipFilter = (req, res) => {
+  req.session.data.filter.visaSponsorship = utilsHelper.removeFilter(req.params.visaSponsorship, req.session.data.filter.visaSponsorship)
+  res.redirect('/results')
+}
+
+exports.removeProviderTypeFilter = (req, res) => {
+  req.session.data.filter.providerType = utilsHelper.removeFilter(req.params.providerType, req.session.data.filter.providerType)
+  res.redirect('/results')
+}
+
+exports.removeAllFilters = (req, res) => {
+  // req.session.data.filter.providerType = null
+  // req.session.data.filter.visaSponsorship = null
+
+  delete req.session.data.filter
+  res.redirect('/providers')
 }
