@@ -221,7 +221,7 @@ exports.getStudyModeLabel = (studyModeCode = null) => {
   return label
 }
 
-exports.getSelectedStudyMode = (selectedItems, baseHref = '/results') => {
+exports.getSelectedStudyModeItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
@@ -278,7 +278,7 @@ exports.getQualificationLabel = (qualificationCode = null, type = null) => {
   return label
 }
 
-exports.getSelectedQualification = (selectedItems, baseHref = '/results') => {
+exports.getSelectedQualificationItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
@@ -321,7 +321,7 @@ exports.getDegreeGradeLabel = (degreeGradeCode = null) => {
   return label
 }
 
-exports.getSelectedDegreeGrade = (selectedItems, baseHref = '/results') => {
+exports.getSelectedDegreeGradeItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
@@ -549,7 +549,7 @@ exports.getAgeGroupLabel = (ageGroupCode = null) => {
   return label
 }
 
-exports.getSelecteAgeGroupItems = (selectedItems, baseHref = '/results') => {
+exports.getSelectedAgeGroupItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
