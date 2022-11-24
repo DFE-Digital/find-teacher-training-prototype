@@ -516,6 +516,53 @@ exports.getSelecteProviderTypeItems = (selectedItems) => {
   return items
 }
 
+exports.getAgeGroupItems = (selectedItems) => {
+  const ageGroups = require('../data/age-groups')
+  const items = []
+
+  ageGroups.forEach((ageGroup, i) => {
+    const item = {}
+
+    item.text = ageGroup.name
+    item.value = ageGroup.code
+    item.id = ageGroup.id
+    item.checked = (selectedItems && selectedItems.includes(ageGroup.code)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  items.sort((a,b) => {
+    return a.text.localeCompare(b.text)
+  })
+
+  return items
+}
+
+exports.getAgeGroupLabel = (ageGroupCode = null) => {
+  const ageGroups = require('../data/age-groups')
+  let label = ageGroupCode
+
+  if (ageGroupCode) {
+    label = ageGroups.find(ageGroup => ageGroup.code === ageGroupCode).name
+  }
+
+  return label
+}
+
+exports.getSelecteAgeGroupItems = (selectedItems) => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const ageGroup = {}
+    ageGroup.text = item.text
+    ageGroup.href = `/results/remove-age-group-filter/${item.text}`
+
+    items.push(ageGroup)
+  })
+
+  return items
+}
+
 exports.getCourseSortBySelectOptions = (selectedOption = 0) => {
   const sortOptions = require('../data/course-sort-options')
   const items = []
