@@ -16,6 +16,22 @@
 }) }}
 
 {{ govukCheckboxes({
+  idPrefix: "age-group",
+  name: "filter[ageGroup]",
+  fieldset: {
+    legend: {
+      html: 'Age group<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: ageGroupItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
   idPrefix: "visa-sponsorship",
   name: "filter[visaSponsorship]",
   fieldset: {

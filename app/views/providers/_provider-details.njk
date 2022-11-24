@@ -13,6 +13,12 @@
     </dd>
   </div>
   <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Age groups</dt>
+    <dd class="app-result-detail__value">
+      Offers {{ provider.offers_subject_levels | arrayToList }} courses
+    </dd>
+  </div>
+  <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Visa sponsorship</dt>
     <dd class="app-result-detail__value">
       {% if provider.can_sponsor_visas %}
