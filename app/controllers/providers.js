@@ -11,6 +11,12 @@ exports.list = async (req, res) => {
     req.session.data.filter = {}
   }
 
+  // Search
+  const keywords = req.session.data.keywords
+
+  const hasSearch = !!((keywords))
+
+  // Filters
   const visaSponsorship = null
   const providerType = null
 
@@ -142,6 +148,8 @@ exports.list = async (req, res) => {
       providerTypeItems,
       selectedFilters,
       hasFilters,
+      hasSearch,
+      keywords,
       sortByItems,
       actions: {
         view: '/providers/',
