@@ -52,10 +52,10 @@
 
       {% if results.length %}
 
-        <ul class="govuk-list app-search-results">
+        <ul class="app-search-results">
           {% for provider in results %}
-            <li>
-              <a href="/providers/{{ provider.code }}">{{ provider.name }}</a>
+            <li class="app-search-results__item">
+              {% include "./_provider-details.njk" %}
             </li>
           {% endfor %}
         </ul>
