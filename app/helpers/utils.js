@@ -96,13 +96,13 @@ exports.getSubjectLabel = (subjectCode = null, toLowerCase = false) => {
   return label
 }
 
-exports.getSelectedSubjectItems = (selectedItems) => {
+exports.getSelectedSubjectItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const subject = {}
     subject.text = item.text
-    subject.href = `/results/remove-subject-filter/${item.value}`
+    subject.href = `${baseHref}/remove-subject-filter/${item.value}`
 
     items.push(subject)
   })
@@ -137,13 +137,13 @@ exports.getSendLabel = (sendCode = null) => {
   return 'Only show courses with a SEND specialism'
 }
 
-exports.getSelectedSendItems = (selectedItems) => {
+exports.getSelectedSendItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const send = {}
     send.text = item.text
-    send.href = `/results/remove-send-filter/${item.text}`
+    send.href = `${baseHref}/remove-send-filter/${item.text}`
 
     items.push(send)
   })
@@ -178,13 +178,13 @@ exports.getVacancyLabel = (vacancyCode = null) => {
   return 'Only show courses with vacancies'
 }
 
-exports.getSelectedVacancyItems = (selectedItems) => {
+exports.getSelectedVacancyItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const vacancy = {}
     vacancy.text = item.text
-    vacancy.href = `/results/remove-vacancy-filter/${item.text}`
+    vacancy.href = `${baseHref}/remove-vacancy-filter/${item.text}`
 
     items.push(vacancy)
   })
@@ -221,13 +221,13 @@ exports.getStudyModeLabel = (studyModeCode = null) => {
   return label
 }
 
-exports.getSelectedStudyMode = (selectedItems) => {
+exports.getSelectedStudyMode = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const mode = {}
     mode.text = item.text
-    mode.href = `/results/remove-study-mode-filter/${item.text}`
+    mode.href = `${baseHref}/remove-study-mode-filter/${item.text}`
 
     items.push(mode)
   })
@@ -278,13 +278,13 @@ exports.getQualificationLabel = (qualificationCode = null, type = null) => {
   return label
 }
 
-exports.getSelectedQualification = (selectedItems) => {
+exports.getSelectedQualification = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const mode = {}
     mode.text = item.text
-    mode.href = `/results/remove-qualification-filter/${item.text}`
+    mode.href = `${baseHref}/remove-qualification-filter/${item.text}`
 
     items.push(mode)
   })
@@ -321,13 +321,13 @@ exports.getDegreeGradeLabel = (degreeGradeCode = null) => {
   return label
 }
 
-exports.getSelectedDegreeGrade = (selectedItems) => {
+exports.getSelectedDegreeGrade = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const mode = {}
     mode.text = item.text
-    mode.href = `/results/remove-degree-grade-filter/${item.text}`
+    mode.href = `${baseHref}/remove-degree-grade-filter/${item.text}`
 
     items.push(mode)
   })
@@ -362,13 +362,13 @@ exports.getVisaSponsorshipLabel = (visaSponsorshipCode = null) => {
   return 'Only show courses with visa sponsorship'
 }
 
-exports.getSelectedVisaSponsorshipItems = (selectedItems) => {
+exports.getSelectedVisaSponsorshipItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const visaSponsorship = {}
     visaSponsorship.text = item.text
-    visaSponsorship.href = `/results/remove-visa-sponsorship-filter/${item.text}`
+    visaSponsorship.href = `${baseHref}/remove-visa-sponsorship-filter/${item.text}`
 
     items.push(visaSponsorship)
   })
@@ -403,13 +403,13 @@ exports.getFundingTypeLabel = (fundingTypeCode = null) => {
   return 'Only show courses with a salary'
 }
 
-exports.getSelectedFundingTypeItems = (selectedItems) => {
+exports.getSelectedFundingTypeItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const fundingType = {}
     fundingType.text = item.text
-    fundingType.href = `/results/remove-funding-type-filter/${item.text}`
+    fundingType.href = `${baseHref}/remove-funding-type-filter/${item.text}`
 
     items.push(fundingType)
   })
@@ -444,13 +444,13 @@ exports.getCampaignLabel = (campaignCode = null) => {
   return 'Only show Engineers teach physics courses'
 }
 
-exports.getSelectedCampaignItems = (selectedItems) => {
+exports.getSelectedCampaignItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const campaign = {}
     campaign.text = item.text
-    campaign.href = `/results/remove-campaign-filter/${item.text}`
+    campaign.href = `${baseHref}/remove-campaign-filter/${item.text}`
 
     items.push(campaign)
   })
@@ -502,13 +502,13 @@ exports.getProviderTypeLabel = (providerTypeCode = null) => {
   return label
 }
 
-exports.getSelecteProviderTypeItems = (selectedItems) => {
+exports.getSelecteProviderTypeItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const providerType = {}
     providerType.text = item.text
-    providerType.href = `/results/remove-provider-type-filter/${item.text}`
+    providerType.href = `${baseHref}/remove-provider-type-filter/${item.text}`
 
     items.push(providerType)
   })
@@ -531,9 +531,9 @@ exports.getAgeGroupItems = (selectedItems) => {
     items.push(item)
   })
 
-  items.sort((a,b) => {
-    return a.text.localeCompare(b.text)
-  })
+  // items.sort((a,b) => {
+  //   return a.text.localeCompare(b.text)
+  // })
 
   return items
 }
@@ -549,13 +549,13 @@ exports.getAgeGroupLabel = (ageGroupCode = null) => {
   return label
 }
 
-exports.getSelecteAgeGroupItems = (selectedItems) => {
+exports.getSelecteAgeGroupItems = (selectedItems, baseHref = '/results') => {
   const items = []
 
   selectedItems.forEach((item) => {
     const ageGroup = {}
     ageGroup.text = item.text
-    ageGroup.href = `/results/remove-age-group-filter/${item.text}`
+    ageGroup.href = `${baseHref}/remove-age-group-filter/${item.text}`
 
     items.push(ageGroup)
   })
