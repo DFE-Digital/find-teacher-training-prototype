@@ -115,7 +115,7 @@ module.exports = () => {
 
   utils.decorateProvider = provider => {
     // is_accredited_body
-    provider.is_accredited_body = !!(provider.provider_type === 'hei' || provider.provider_type === 'scitt')
+    provider.is_accredited_body = !!(provider.provider_type === 'university' || provider.provider_type === 'scitt')
 
     // visa sponsorship
     provider.can_sponsor_visas = !!(provider.can_sponsor_student_visa || provider.can_sponsor_skilled_worker_visa)
