@@ -82,17 +82,58 @@ exports.list = async (req, res) => {
   const perPage = 20
 
   try {
-    let ProviderListResponse
+    let providerListResponse
 
-    ProviderListResponse = await teacherTrainingService.getProviders(filter, page, perPage, sortBy)
+    providerListResponse = await teacherTrainingService.getProviders(filter, page, perPage, sortBy)
 
-    const { data, links, meta, included } = ProviderListResponse
+    const { data, links, meta, included } = providerListResponse
 
     let providers = data
 
     if (providers.length > 0) {
       providers = providers.map(async providerResource => {
-        provider = utils.decorateProvider(providerResource.attributes)
+        const provider = utils.decorateProvider(providerResource.attributes)
+
+        const filter = {
+
+        }
+        // const page = req.query.page || 1
+        // const perPage = 100
+
+        provider.has_primary_courses = false
+        provider.has_secondary_courses = false
+        provider.has_further_education_courses = false
+
+        const courseListResponse = await teacherTrainingService.getProviderCourses(provider.code, filter, 1, 100, 0)
+
+        const { data, links, meta, included } = courseListResponse
+
+        let courses = data
+        if (courses.length > 0) {
+          courses.map(async courseResource => {
+            const course = utils.decorateCourse(courseResource.attributes)
+
+            if (course.level === 'primary') {
+              provider.has_primary_courses = true
+            } else if (course.level === 'secondary') {
+              provider.has_secondary_courses = true
+            } else if (course.level === 'further_education') {
+              provider.has_further_education_courses = true
+            }
+          })
+        }
+
+        provider.offers_subject_levels = []
+        if (provider.has_primary_courses) {
+          provider.offers_subject_levels.push('primary')
+        }
+        if (provider.has_secondary_courses) {
+          provider.offers_subject_levels.push('secondary')
+        }
+        if (provider.has_further_education_courses) {
+          provider.offers_subject_levels.push('further education')
+        }
+
         return provider
       })
     }
@@ -187,9 +228,9 @@ exports.show = async (req, res) => {
     study_type: req.session.data.defaults.studyMode.toString()
   }
 
-  const CourseListResponse = await teacherTrainingService.getProviderCourses(req.params.providerCode, filter, page, perPage)
+  const courseListResponse = await teacherTrainingService.getProviderCourses(req.params.providerCode, filter, page, perPage)
 
-  const { data, links, meta, included } = CourseListResponse
+  const { data, links, meta, included } = courseListResponse
 
   let courses = data
   if (courses.length > 0) {
@@ -258,7 +299,7 @@ exports.show = async (req, res) => {
   }
 
   // Data
-  const provider = ProviderSingleResponse
+  const provider = utils.decorateProvider(ProviderSingleResponse)
 
   const courseResults = await Promise.all(courses)
 
