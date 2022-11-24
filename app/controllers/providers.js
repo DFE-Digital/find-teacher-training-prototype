@@ -19,13 +19,17 @@ exports.list = async (req, res) => {
   // Filters
   const visaSponsorship = null
   const providerType = null
+  const ageGroup = null
 
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
 
   const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
 
+  const ageGroups = utilsHelper.getCheckboxValues(ageGroup, req.session.data.filter.ageGroup)
+
   const hasFilters = !!((visaSponsorships?.length > 0)
     || (providerTypes?.length > 0)
+    || (ageGroups?.length > 0)
   )
 
   let selectedFilters = null
@@ -46,16 +50,31 @@ exports.list = async (req, res) => {
         })
       })
     }
-  }
 
-  let selectedVisaSponsorship
-  if (req.session.data.filter?.visaSponsorship) {
-    selectedVisaSponsorship = req.session.data.filter.visaSponsorship
-  } else {
-    selectedVisaSponsorship = defaults.visaSponsorship
-  }
+    if (ageGroups?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Age group' },
+        items: ageGroups.map((ageGroup) => {
+          return {
+            text: utilsHelper.getAgeGroupLabel(ageGroup),
+            href: `/results/remove-age-group-filter/${ageGroup}`
+          }
+        })
+      })
+    }
 
-  const visaSponsorshipItems = utilsHelper.getProviderVisaSponsorshipItems(selectedVisaSponsorship)
+    if (visaSponsorships?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Visa sponsorship' },
+        items: visaSponsorships.map((visaSponsorship) => {
+          return {
+            text: utilsHelper.getVisaSponsorshipLabel(visaSponsorship),
+            href: `/results/remove-visa-sponsorship-filter/${visaSponsorship}`
+          }
+        })
+      })
+    }
+  }
 
   let selectedProviderType
   if (req.session.data.filter?.providerType) {
@@ -67,11 +86,41 @@ exports.list = async (req, res) => {
 
   const providerTypeItems = utilsHelper.getProviderTypeItems(selectedProviderType)
 
+  let selectedAgeGroup
+  if (req.session.data.filter?.ageGroup) {
+    selectedAgeGroup = req.session.data.filter.ageGroup
+  } else {
+    // selectedAgeGroup = defaults.ageGroup
+    selectedAgeGroup = []
+  }
+
+  const ageGroupItems = utilsHelper.getAgeGroupItems(selectedAgeGroup)
+
+  let selectedVisaSponsorship
+  if (req.session.data.filter?.visaSponsorship) {
+    selectedVisaSponsorship = req.session.data.filter.visaSponsorship
+  } else {
+    // selectedAgeGroup = defaults.visaSponsorship
+    selectedVisaSponsorship = []
+  }
+
+  const visaSponsorshipItems = utilsHelper.getProviderVisaSponsorshipItems(selectedVisaSponsorship)
+
   // API query params
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-providerfilter
   const filter = {
     provider_type: selectedProviderType.toString()
   }
+
+  // TODO: send selected age group to filter
+  // if (selectedAgeGroup.length) {
+  //   filter.age_group = selectedAgeGroup
+  // }
+
+  // TODO: send selected visa sponsorship to filter
+  // if (selectedVisaSponsorship.length) {
+  //   filter.visa_sponsorship = selectedVisaSponsorship
+  // }
 
   // sort by settings
   const sortBy = req.query.sortBy || req.session.data.sortBy || 0
@@ -185,8 +234,9 @@ exports.list = async (req, res) => {
       results,
       resultsCount,
       pagination,
-      visaSponsorshipItems,
       providerTypeItems,
+      ageGroupItems,
+      visaSponsorshipItems,
       selectedFilters,
       hasFilters,
       hasSearch,
