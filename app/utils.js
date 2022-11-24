@@ -113,6 +113,13 @@ module.exports = () => {
     return course
   }
 
+  utils.decorateProvider = provider => {
+    // is_accredited_body
+    provider.is_accredited_body = !!(provider.provider_type === 'hei' || provider.provider_type === 'scitt')
+
+    return provider
+  }
+
   utils.geocode = async string => {
     try {
       const geoCodedLocation = await geocoder.geocode(`${string}, UK`)
