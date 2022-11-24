@@ -45,7 +45,7 @@ exports.list = async (req, res) => {
         items: providerTypes.map((providerType) => {
           return {
             text: utilsHelper.getProviderTypeLabel(providerType),
-            href: `/results/remove-provider-type-filter/${providerType}`
+            href: `/providers/remove-provider-type-filter/${providerType}`
           }
         })
       })
@@ -57,7 +57,7 @@ exports.list = async (req, res) => {
         items: ageGroups.map((ageGroup) => {
           return {
             text: utilsHelper.getAgeGroupLabel(ageGroup),
-            href: `/results/remove-age-group-filter/${ageGroup}`
+            href: `/providers/remove-age-group-filter/${ageGroup}`
           }
         })
       })
@@ -69,7 +69,7 @@ exports.list = async (req, res) => {
         items: visaSponsorships.map((visaSponsorship) => {
           return {
             text: utilsHelper.getVisaSponsorshipLabel(visaSponsorship),
-            href: `/results/remove-visa-sponsorship-filter/${visaSponsorship}`
+            href: `/providers/remove-visa-sponsorship-filter/${visaSponsorship}`
           }
         })
       })
@@ -449,18 +449,24 @@ exports.removeKeywordSearch = (req, res) => {
   res.redirect('/providers')
 }
 
-exports.removeVisaSponsorshipFilter = (req, res) => {
-  req.session.data.filter.visaSponsorship = utilsHelper.removeFilter(req.params.visaSponsorship, req.session.data.filter.visaSponsorship)
-  res.redirect('/results')
-}
-
 exports.removeProviderTypeFilter = (req, res) => {
   req.session.data.filter.providerType = utilsHelper.removeFilter(req.params.providerType, req.session.data.filter.providerType)
-  res.redirect('/results')
+  res.redirect('/providers')
+}
+
+exports.removeAgeGroupFilter = (req, res) => {
+  req.session.data.filter.ageGroup = utilsHelper.removeFilter(req.params.ageGroup, req.session.data.filter.ageGroup)
+  res.redirect('/providers')
+}
+
+exports.removeVisaSponsorshipFilter = (req, res) => {
+  req.session.data.filter.visaSponsorship = utilsHelper.removeFilter(req.params.visaSponsorship, req.session.data.filter.visaSponsorship)
+  res.redirect('/providers')
 }
 
 exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.providerType = null
+  // req.session.data.filter.ageGroup = null
   // req.session.data.filter.visaSponsorship = null
 
   delete req.session.data.filter
