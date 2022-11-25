@@ -113,6 +113,19 @@ module.exports = () => {
     return course
   }
 
+  utils.decorateProvider = provider => {
+    // is_accredited_body
+    provider.is_accredited_body = !!(provider.provider_type === 'university' || provider.provider_type === 'scitt')
+
+    // visa sponsorship
+    provider.can_sponsor_visas = !!(provider.can_sponsor_student_visa || provider.can_sponsor_skilled_worker_visa)
+    provider.can_sponsor_both_visas = !!(provider.can_sponsor_student_visa && provider.can_sponsor_skilled_worker_visa)
+    provider.can_sponsor_student_visas_only = provider.can_sponsor_student_visa && !provider.can_sponsor_skilled_worker_visa
+    provider.can_sponsor_skilled_worker_visas_only = !provider.can_sponsor_student_visa && provider.can_sponsor_skilled_worker_visa
+
+    return provider
+  }
+
   utils.geocode = async string => {
     try {
       const geoCodedLocation = await geocoder.geocode(`${string}, UK`)

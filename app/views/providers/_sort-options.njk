@@ -1,0 +1,19 @@
+<div class="app-search-results-header">
+  <form class="app-search-results-header__sort" action="/providers" method="get" accept-charset="utf-8" novalidate>
+    {{ govukSelect({
+      id: "sortby",
+      name: "sortBy",
+      label: {
+        text: "Sorted by",
+        classes: "govuk-!-display-inline-block"
+      },
+      items: sortByItems,
+      attributes: {
+        role: "listbox"
+      }
+    }) }}
+    {{ govukButton({
+      text: "Sort"
+    }) }}
+  </form>
+</div>

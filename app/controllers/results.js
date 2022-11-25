@@ -485,7 +485,7 @@ exports.list = async (req, res) => {
         // Get course provider
         const providerId = courseRalationships.provider.data.id
         const providerResource = providers.find(providerResource => providerResource.id === providerId)
-        const provider = providerResource.attributes
+        const provider = utils.decorateProvider(providerResource.attributes)
 
         // Get course accredited body
         if (courseRalationships.accredited_body.data) {
