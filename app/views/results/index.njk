@@ -57,6 +57,14 @@
         <ul class="app-search-results">
           {% for result in results %}
             <li class="app-search-results__item">
+
+              {% if userJourney == "hackday" %}
+                {{ govukTag({
+                  text: "Accredited body",
+                  classes: "govuk-tag--turquoise govuk-!-margin-bottom-1"
+                }) if result.provider.is_accredited_body }}
+              {% endif %}
+
               {% set isLocationSearch = (data.q == "location") %}
               {% set isUniversity = (result.provider.provider_type == "university") %}
               {% set trainingLocation = result.course.trainingLocation %}
