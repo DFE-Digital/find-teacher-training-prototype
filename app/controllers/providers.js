@@ -17,19 +17,20 @@ exports.list = async (req, res) => {
   const hasSearch = !!((keywords))
 
   // Filters
-  const visaSponsorship = null
-  const providerType = null
   const ageGroup = null
-
-  const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
-
-  const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
+  const providerType = null
+  const send = null
+  const visaSponsorship = null
 
   const ageGroups = utilsHelper.getCheckboxValues(ageGroup, req.session.data.filter.ageGroup)
+  const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
+  const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter.send)
+  const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
 
-  const hasFilters = !!((visaSponsorships?.length > 0)
+  const hasFilters = !!((ageGroups?.length > 0)
     || (providerTypes?.length > 0)
-    || (ageGroups?.length > 0)
+    || (sends?.length > 0)
+    || (visaSponsorships?.length > 0)
   )
 
   let selectedFilters = null
@@ -37,6 +38,18 @@ exports.list = async (req, res) => {
   if (hasFilters) {
     selectedFilters = {
       categories: []
+    }
+
+    if (sends?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Special educational needs' },
+        items: sends.map((send) => {
+          return {
+            text: utilsHelper.getSendLabel(send),
+            href: `/providers/remove-send-filter/${send}`
+          }
+        })
+      })
     }
 
     if (providerTypes?.length) {
@@ -76,6 +89,16 @@ exports.list = async (req, res) => {
     }
   }
 
+  let selectedAgeGroup
+  if (req.session.data.filter?.ageGroup) {
+    selectedAgeGroup = req.session.data.filter.ageGroup
+  } else {
+    // selectedAgeGroup = defaults.ageGroup
+    selectedAgeGroup = []
+  }
+
+  const ageGroupItems = utilsHelper.getAgeGroupItems(selectedAgeGroup)
+
   let selectedProviderType
   if (req.session.data.filter?.providerType) {
     selectedProviderType = req.session.data.filter.providerType
@@ -86,15 +109,15 @@ exports.list = async (req, res) => {
 
   const providerTypeItems = utilsHelper.getProviderTypeItems(selectedProviderType)
 
-  let selectedAgeGroup
-  if (req.session.data.filter?.ageGroup) {
-    selectedAgeGroup = req.session.data.filter.ageGroup
+  let selectedSend
+  if (req.session.data.filter?.send) {
+    selectedSend = req.session.data.filter.send
   } else {
-    // selectedAgeGroup = defaults.ageGroup
-    selectedAgeGroup = []
+    // selectedSend = defaults.send
+    selectedSend = []
   }
 
-  const ageGroupItems = utilsHelper.getAgeGroupItems(selectedAgeGroup)
+  const sendItems = utilsHelper.getSendItems(selectedSend,'providers')
 
   let selectedVisaSponsorship
   if (req.session.data.filter?.visaSponsorship) {
@@ -115,6 +138,11 @@ exports.list = async (req, res) => {
   // TODO: send selected age group to filter
   // if (selectedAgeGroup.length) {
   //   filter.age_group = selectedAgeGroup
+  // }
+
+  // TODO: send selected SEND to filter
+  // if (selectedSend.length) {
+  //   filter.send = selectedSend
   // }
 
   // TODO: send selected visa sponsorship to filter
@@ -153,6 +181,8 @@ exports.list = async (req, res) => {
         provider.has_secondary_courses = false
         provider.has_further_education_courses = false
 
+        provider.has_send_courses = false
+
         const courseListResponse = await teacherTrainingService.getProviderCourses(provider.code, filter, 1, 100, 0)
 
         const { data, links, meta, included } = courseListResponse
@@ -168,6 +198,10 @@ exports.list = async (req, res) => {
               provider.has_secondary_courses = true
             } else if (course.level === 'further_education') {
               provider.has_further_education_courses = true
+            }
+
+            if (course.is_send) {
+              provider.has_send_courses = true
             }
           })
         }
@@ -234,8 +268,9 @@ exports.list = async (req, res) => {
       results,
       resultsCount,
       pagination,
-      providerTypeItems,
       ageGroupItems,
+      providerTypeItems,
+      sendItems,
       visaSponsorshipItems,
       selectedFilters,
       hasFilters,
@@ -449,13 +484,18 @@ exports.removeKeywordSearch = (req, res) => {
   res.redirect('/providers')
 }
 
+exports.removeAgeGroupFilter = (req, res) => {
+  req.session.data.filter.ageGroup = utilsHelper.removeFilter(req.params.ageGroup, req.session.data.filter.ageGroup)
+  res.redirect('/providers')
+}
+
 exports.removeProviderTypeFilter = (req, res) => {
   req.session.data.filter.providerType = utilsHelper.removeFilter(req.params.providerType, req.session.data.filter.providerType)
   res.redirect('/providers')
 }
 
-exports.removeAgeGroupFilter = (req, res) => {
-  req.session.data.filter.ageGroup = utilsHelper.removeFilter(req.params.ageGroup, req.session.data.filter.ageGroup)
+exports.removeSendFilter = (req, res) => {
+  req.session.data.filter.send = utilsHelper.removeFilter(req.params.send, req.session.data.filter.send)
   res.redirect('/providers')
 }
 
