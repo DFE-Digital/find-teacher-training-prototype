@@ -1,5 +1,10 @@
+{{ govukTag({
+  text: "Accredited body",
+  classes: "govuk-tag--turquoise govuk-!-margin-bottom-2"
+}) if provider.is_accredited_body }}
+
 <h2 class="app-search-result__item-title">
-  <a class="app-search-result__provider-name" href="{{ actions.view }}/{{ provider.code }}">
+  <a class="app-search-result__course-name" href="{{ actions.view }}/{{ provider.code }}">
     {{ provider.name }}
   </a>
 </h2>
