@@ -333,8 +333,8 @@ module.exports = (env) => {
   example: {{ 'scitt' | getProviderTypeLabel }}
   outputs: "School Centred Initial Teacher Training (SCITT)"
   ------------------------------------------------------------------ */
-  filters.getProviderTypeLabel = (providerTypeCode) => {
-    return utilsHelper.getProviderTypeLabel(providerTypeCode)
+  filters.getProviderTypeLabel = (providerTypeCode, longName) => {
+    return utilsHelper.getProviderTypeLabel(providerTypeCode, longName)
   }
 
   /* ------------------------------------------------------------------
