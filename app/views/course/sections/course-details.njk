@@ -1,7 +1,11 @@
 <dl class="app-description-list govuk-!-margin-bottom-8">
-  {% if course.accredited_body and (course.accredited_body.provider_code != course.provider.provider_code) %}
+  {% if course.accredited_body and (course.accredited_body.code != course.provider.code) %}
     <dt class="app-description-list__label">Accredited body</dt>
-    <dd>{{ course.accredited_body.provider_name }}</dd>
+    {% if userJourney == "hackday" %}
+      <dd><a href="/providers/{{ course.accredited_body.code }}">{{ course.accredited_body.name }}</a></dd>
+    {% else %}
+      <dd>{{ course.accredited_body.name }}</dd>
+    {% endif %}
   {% endif %}
   {% if course.funding_option %}
     <dt class="app-description-list__label">Financial support</dt>
