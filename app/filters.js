@@ -328,5 +328,31 @@ module.exports = (env) => {
     return utilsHelper.getSubjectLabel(subjectCode, toLowerCase)
   }
 
+  /* ------------------------------------------------------------------
+  utility function to get the provider type label
+  example: {{ 'scitt' | getProviderTypeLabel }}
+  outputs: "School Centred Initial Teacher Training (SCITT)"
+  ------------------------------------------------------------------ */
+  filters.getProviderTypeLabel = (providerTypeCode) => {
+    return utilsHelper.getProviderTypeLabel(providerTypeCode)
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to turn and array into a list
+  example: {{ ['primary','secondary'] | arrayToList }}
+  outputs: "primary and secondary"
+  ------------------------------------------------------------------ */
+  filters.arrayToList = (array, join = ', ', final = ' and ') => {
+    const arr = array.slice(0)
+
+    const last = arr.pop()
+
+    if (array.length > 1) {
+      return arr.join(join) + final + last
+    }
+
+    return last
+  }
+
   return filters
 }

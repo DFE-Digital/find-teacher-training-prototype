@@ -1,0 +1,44 @@
+{{ govukTag({
+  text: "Accredited body",
+  classes: "govuk-tag--turquoise govuk-!-margin-bottom-2"
+}) if provider.is_accredited_body }}
+
+<h2 class="app-search-result__item-title">
+  <a class="app-search-result__course-name" href="{{ actions.view }}/{{ provider.code }}">
+    {{ provider.name }}
+  </a>
+</h2>
+
+<dl class="app-result-detail">
+  <div class="app-result-detail__row">
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Provider type</dt>
+    <dd class="app-result-detail__value">
+      {{ provider.provider_type | getProviderTypeLabel }}
+    </dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Age groups</dt>
+    <dd class="app-result-detail__value">
+      Offers {{ provider.offers_subject_levels | arrayToList }} courses
+    </dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Visa sponsorship</dt>
+    <dd class="app-result-detail__value">
+      {% if provider.can_sponsor_visas %}
+        {% if provider.can_sponsor_both_visas %}
+          Both Student and Skilled Worker visas can be sponsored
+        {% else %}
+          {% if provider.can_sponsor_student_visas_only %}
+            Only Student visas can be sponsored
+          {% elif provider.can_sponsor_skilled_worker_visas_only %}
+            Only Skilled Worker visas can be sponsored
+          {% endif %}
+        {% endif %}
+      {% else %}
+        Visas cannot be sponsored
+      {% endif %}
+    </dd>
+  </div>
+</dl>
