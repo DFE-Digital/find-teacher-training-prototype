@@ -72,7 +72,7 @@
               {{ appResultDetail({
                 href: "/providers/" + result.provider.code + "/courses/" + result.course.code,
                 providerName: result.provider.name | markdown("inline"),
-                providerCode: result.provider.code if userJourney in ["browse","filter"],
+                providerCode: result.provider.code if userJourney in ["browse","filter","hackday"],
                 courseName: result.course.name + " (" + result.course.code + ")",
                 schools: result.schools if not isUniversity and isLocationSearch,
                 trainingLocation: {
