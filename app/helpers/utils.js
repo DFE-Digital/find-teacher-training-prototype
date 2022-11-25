@@ -491,12 +491,18 @@ exports.getProviderTypeItems = (selectedItems) => {
   return items
 }
 
-exports.getProviderTypeLabel = (providerTypeCode = null) => {
+exports.getProviderTypeLabel = (providerTypeCode = null, longName = false) => {
   const providerTypes = require('../data/provider-types')
   let label = providerTypeCode
 
   if (providerTypeCode) {
-    label = providerTypes.find(providerType => providerType.code === providerTypeCode).name
+    const providerType = providerTypes.find(providerType => providerType.code === providerTypeCode)
+
+    if (longName && providerType.longName) {
+      label = providerType.longName
+    } else {
+      label = providerType.name
+    }
   }
 
   return label
