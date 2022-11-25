@@ -394,10 +394,15 @@ exports.list = async (req, res) => {
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-coursefilter
   const filter = {
     findable: true,
-    funding_type: selectedFundingType.toString(),
     qualification: selectedQualification.toString(),
     study_type: selectedStudyMode.toString(),
     subjects: selectedSubject.toString()
+  }
+
+  if (selectedFundingType[0] === 'include') {
+    filter.funding_type = 'salary'
+  } else {
+    filter.funding_type = selectedFundingType.toString()
   }
 
   // TODO: move provider_type into filter
