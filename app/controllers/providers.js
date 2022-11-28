@@ -19,16 +19,19 @@ exports.list = async (req, res) => {
   // Filters
   const ageGroup = null
   const providerType = null
+  const region = null
   const send = null
   const visaSponsorship = null
 
   const ageGroups = utilsHelper.getCheckboxValues(ageGroup, req.session.data.filter.ageGroup)
   const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
+  const regions = utilsHelper.getCheckboxValues(region, req.session.data.filter.region)
   const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter.send)
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
 
   const hasFilters = !!((ageGroups?.length > 0)
     || (providerTypes?.length > 0)
+    || (regions?.length > 0)
     || (sends?.length > 0)
     || (visaSponsorships?.length > 0)
   )
@@ -87,6 +90,18 @@ exports.list = async (req, res) => {
         })
       })
     }
+
+    if (regions?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Region' },
+        items: regions.map((region) => {
+          return {
+            text: utilsHelper.getRegionsLabel(region),
+            href: `/providers/remove-regions-filter/${region}`
+          }
+        })
+      })
+    }
   }
 
   let selectedAgeGroup
@@ -108,6 +123,16 @@ exports.list = async (req, res) => {
   }
 
   const providerTypeItems = utilsHelper.getProviderTypeItems(selectedProviderType)
+
+  let selectedRegion
+  if (req.session.data.filter?.region) {
+    selectedRegion = req.session.data.filter.region
+  } else {
+    // selectedRegion = defaults.region
+    selectedRegion = []
+  }
+
+  const regionItems = utilsHelper.getRegionItems(selectedRegion)
 
   let selectedSend
   if (req.session.data.filter?.send) {
@@ -138,6 +163,11 @@ exports.list = async (req, res) => {
   // TODO: send selected age group to filter
   // if (selectedAgeGroup.length) {
   //   filter.age_group = selectedAgeGroup
+  // }
+
+  // TODO: send selected region to filter
+  // if (selectedRegion.length) {
+  //   filter.region = selectedRegion
   // }
 
   // TODO: send selected SEND to filter
@@ -278,6 +308,7 @@ exports.list = async (req, res) => {
       pagination,
       ageGroupItems,
       providerTypeItems,
+      regionItems,
       sendItems,
       visaSponsorshipItems,
       selectedFilters,
@@ -502,6 +533,11 @@ exports.removeProviderTypeFilter = (req, res) => {
   res.redirect('/providers')
 }
 
+exports.removeRegionFilter = (req, res) => {
+  req.session.data.filter.region = utilsHelper.removeFilter(req.params.region, req.session.data.filter.region)
+  res.redirect('/providers')
+}
+
 exports.removeSendFilter = (req, res) => {
   req.session.data.filter.send = utilsHelper.removeFilter(req.params.send, req.session.data.filter.send)
   res.redirect('/providers')
@@ -513,8 +549,10 @@ exports.removeVisaSponsorshipFilter = (req, res) => {
 }
 
 exports.removeAllFilters = (req, res) => {
-  // req.session.data.filter.providerType = null
   // req.session.data.filter.ageGroup = null
+  // req.session.data.filter.providerType = null
+  // req.session.data.filter.region = null
+  // req.session.data.filter.send = null
   // req.session.data.filter.visaSponsorship = null
 
   delete req.session.data.filter
