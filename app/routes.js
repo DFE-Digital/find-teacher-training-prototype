@@ -113,6 +113,7 @@ router.get('/providers/:providerCode', providerController.show)
 
 router.get('/providers/remove-age-group-filter/:ageGroup', providerController.removeAgeGroupFilter)
 router.get('/providers/remove-provider-type-filter/:providerType', providerController.removeProviderTypeFilter)
+router.get('/providers/remove-region-filter/:region', providerController.removeRegionFilter)
 router.get('/providers/remove-send-filter/:send', providerController.removeSendFilter)
 router.get('/providers/remove-visa-sponsorship-filter/:visaSponsorship', providerController.removeVisaSponsorshipFilter)
 
