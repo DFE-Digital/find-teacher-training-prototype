@@ -18,18 +18,21 @@ exports.list = async (req, res) => {
 
   // Filters
   const ageGroup = null
+  const fundingType = null
   const providerType = null
   const region = null
   const send = null
   const visaSponsorship = null
 
   const ageGroups = utilsHelper.getCheckboxValues(ageGroup, req.session.data.filter.ageGroup)
+  const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter.fundingType)
   const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
   const regions = utilsHelper.getCheckboxValues(region, req.session.data.filter.region)
   const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter.send)
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
 
   const hasFilters = !!((ageGroups?.length > 0)
+    || (fundingTypes?.length > 0)
     || (providerTypes?.length > 0)
     || (regions?.length > 0)
     || (sends?.length > 0)
@@ -86,6 +89,18 @@ exports.list = async (req, res) => {
           return {
             text: utilsHelper.getVisaSponsorshipLabel(visaSponsorship),
             href: `/providers/remove-visa-sponsorship-filter/${visaSponsorship}`
+          }
+        })
+      })
+    }
+
+    if (fundingTypes?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Funding type' },
+        items: fundingTypes.map((fundingType) => {
+          return {
+            text: utilsHelper.getFundingTypeLabel(fundingType),
+            href: `/providers/remove-funding-type-filter/${fundingType}`
           }
         })
       })
@@ -148,11 +163,21 @@ exports.list = async (req, res) => {
   if (req.session.data.filter?.visaSponsorship) {
     selectedVisaSponsorship = req.session.data.filter.visaSponsorship
   } else {
-    // selectedAgeGroup = defaults.visaSponsorship
+    // selectedVisaSponsorship = defaults.visaSponsorship
     selectedVisaSponsorship = []
   }
 
   const visaSponsorshipItems = utilsHelper.getProviderVisaSponsorshipItems(selectedVisaSponsorship)
+
+  let selectedFundingType
+  if (req.session.data.filter?.fundingType) {
+    selectedFundingType = req.session.data.filter.fundingType
+  } else {
+    // selectedFundingType = defaults.fundingType
+    selectedFundingType = []
+  }
+
+  const fundingTypeItems = utilsHelper.getFundingTypeItems(selectedFundingType,'providers')
 
   // API query params
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-providerfilter
@@ -165,10 +190,9 @@ exports.list = async (req, res) => {
   //   filter.age_group = selectedAgeGroup
   // }
 
-  // TODO: send selected region to filter
-  // if (selectedRegion.length) {
-  //   filter.region = selectedRegion
-  // }
+  if (selectedRegion.length) {
+    filter.region_code = selectedRegion.toString()
+  }
 
   // TODO: send selected SEND to filter
   // if (selectedSend.length) {
@@ -177,7 +201,7 @@ exports.list = async (req, res) => {
 
   // TODO: send selected visa sponsorship to filter
   // if (selectedVisaSponsorship.length) {
-  //   filter.visa_sponsorship = selectedVisaSponsorship
+  //   filter.can_sponsor_visas = selectedVisaSponsorship
   // }
 
   // sort by settings
@@ -307,6 +331,7 @@ exports.list = async (req, res) => {
       resultsCount,
       pagination,
       ageGroupItems,
+      fundingTypeItems,
       providerTypeItems,
       regionItems,
       sendItems,
@@ -528,6 +553,11 @@ exports.removeAgeGroupFilter = (req, res) => {
   res.redirect('/providers')
 }
 
+exports.removeFundingTypeFilter = (req, res) => {
+  req.session.data.filter.fundingType = utilsHelper.removeFilter(req.params.fundingType, req.session.data.filter.fundingType)
+  res.redirect('/providers')
+}
+
 exports.removeProviderTypeFilter = (req, res) => {
   req.session.data.filter.providerType = utilsHelper.removeFilter(req.params.providerType, req.session.data.filter.providerType)
   res.redirect('/providers')
@@ -550,6 +580,7 @@ exports.removeVisaSponsorshipFilter = (req, res) => {
 
 exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.ageGroup = null
+  // req.session.data.filter.fundingType = null
   // req.session.data.filter.providerType = null
   // req.session.data.filter.region = null
   // req.session.data.filter.send = null
