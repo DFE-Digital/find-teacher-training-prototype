@@ -109,8 +109,6 @@ router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 /// PROVIDER ROUTES
 /// ------------------------------------------------------------------------ ///
 
-router.get('/providers/:providerCode', providerController.show)
-
 router.get('/providers/remove-age-group-filter/:ageGroup', providerController.removeAgeGroupFilter)
 router.get('/providers/remove-funding-type-filter/:fundingType', providerController.removeFundingTypeFilter)
 router.get('/providers/remove-provider-type-filter/:providerType', providerController.removeProviderTypeFilter)
@@ -120,6 +118,8 @@ router.get('/providers/remove-visa-sponsorship-filter/:visaSponsorship', provide
 
 router.get('/providers/remove-all-filters', providerController.removeAllFilters)
 router.get('/providers/remove-keyword-search', providerController.removeKeywordSearch)
+
+router.get('/providers/:providerCode', providerController.show)
 
 router.get('/providers', providerController.list)
 

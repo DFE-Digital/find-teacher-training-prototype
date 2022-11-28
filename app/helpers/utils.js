@@ -2,12 +2,12 @@ const sendOptions = [{
   id: '5289e0bd-830b-46f6-948e-685214651beb',
   name: 'Only show courses with a SEND specialism',
   code: 'include',
-  filterName: 'courses'
+  sectionName: 'courses'
 }, {
   id: '448a04a6-3367-4bcb-81cd-560f0b7e150a',
   name: 'Only show providers with SEND specialism courses',
   code: 'include',
-  filterName: 'providers'
+  sectionName: 'providers'
 }]
 
 const vacancyOptions = [{
@@ -19,19 +19,25 @@ const vacancyOptions = [{
 const visaSponsorshipOptions = [{
   id: '8bf5f687-eda9-4299-9105-7966b3f0fa38',
   name: 'Only show courses with visa sponsorship',
-  code: 'include'
+  code: 'include',
+  sectionName: 'courses'
+}, {
+  id: 'eb8c06a6-af0e-4fbe-817f-86304aec3967',
+  name: 'Only show providers who offer visa sponsorship',
+  code: 'include',
+  sectionName: 'providers'
 }]
 
 const fundingTypeOptions = [{
   id: '1c909417-4192-4de3-bc52-c9ebee5e7e4e',
   name: 'Only show courses with a salary',
   code: 'include',
-  filterName: 'courses'
+  sectionName: 'courses'
 }, {
   id: '82135b5b-0ba8-47b2-a651-9ed29ff11a19',
   name: 'Only show providers with salaried courses',
   code: 'include',
-  filterName: 'providers'
+  sectionName: 'providers'
 }]
 
 const campaignOptions = [{
@@ -122,11 +128,11 @@ exports.getSelectedSubjectItems = (selectedItems, baseHref = '/results') => {
   return items
 }
 
-exports.getSendItems = (selectedItems, filterName = 'courses') => {
+exports.getSendItems = (selectedItems, sectionName = 'courses') => {
   const items = []
 
   sendOptions
-    .filter(option => option.filterName === filterName)
+    .filter(option => option.sectionName === sectionName)
     .forEach((send, i) => {
       const item = {}
 
@@ -141,10 +147,10 @@ exports.getSendItems = (selectedItems, filterName = 'courses') => {
   return items
 }
 
-exports.getSendLabel = (sendCode = null, filterName = 'courses') => {
+exports.getSendLabel = (sendCode = null, sectionName = 'courses') => {
   let label = sendCode
 
-  if (filterName === 'providers') {
+  if (sectionName === 'providers') {
     label = 'Only show providers with SEND specialism courses'
   } else {
     label = 'Only show courses with a SEND specialism'
@@ -153,11 +159,11 @@ exports.getSendLabel = (sendCode = null, filterName = 'courses') => {
   return label
 }
 
-exports.getSelectedSendItems = (selectedItems, baseHref = '/results', filterName = 'courses') => {
+exports.getSelectedSendItems = (selectedItems, baseHref = '/results', sectionName = 'courses') => {
   const items = []
 
   selectedItems
-    .filter(option => option.filterName === filterName)
+    .filter(option => option.sectionName === sectionName)
     .forEach((item) => {
       const send = {}
       send.text = item.text
@@ -353,52 +359,60 @@ exports.getSelectedDegreeGradeItems = (selectedItems, baseHref = '/results') => 
   return items
 }
 
-exports.getVisaSponsorshipItems = (selectedItems) => {
+exports.getVisaSponsorshipItems = (selectedItems, sectionName = 'courses') => {
   const items = []
 
-  visaSponsorshipOptions.forEach((visaSponsorship, i) => {
-    const item = {}
+  visaSponsorshipOptions
+    .filter(option => option.sectionName === sectionName)
+    .forEach((visaSponsorship, i) => {
+      const item = {}
 
-    item.text = visaSponsorship.name
-    item.value = visaSponsorship.code
-    item.id = visaSponsorship.id
-    item.checked = (selectedItems && selectedItems.includes(visaSponsorship.code)) ? 'checked' : ''
+      item.text = visaSponsorship.name
+      item.value = visaSponsorship.code
+      item.id = visaSponsorship.id
+      item.checked = (selectedItems && selectedItems.includes(visaSponsorship.code)) ? 'checked' : ''
 
-    items.push(item)
-  })
+      items.push(item)
+    })
 
   return items
 }
 
-exports.getVisaSponsorshipLabel = (visaSponsorshipCode = null) => {
-  // let label = visaSponsorshipCode
-  //
-  // if (visaSponsorshipCode) {
-  //   label = visaSponsorshipOptions.find(visaSponsorship => visaSponsorship.code === visaSponsorshipCode).name
-  // }
+exports.getVisaSponsorshipLabel = (visaSponsorshipCode = null, sectionName = 'courses') => {
+  let label = visaSponsorshipCode
+
+  if (sectionName === 'providers') {
+    label = 'Only show providers who offer visa sponsorship'
+  } else {
+    label = 'Only show courses with visa sponsorship'
+  }
+
+  return label
 
   return 'Only show courses with visa sponsorship'
 }
 
-exports.getSelectedVisaSponsorshipItems = (selectedItems, baseHref = '/results') => {
+exports.getSelectedVisaSponsorshipItems = (selectedItems, baseHref = '/results', sectionName = 'courses') => {
   const items = []
 
-  selectedItems.forEach((item) => {
-    const visaSponsorship = {}
-    visaSponsorship.text = item.text
-    visaSponsorship.href = `${baseHref}/remove-visa-sponsorship-filter/${item.text}`
+  selectedItems
+    .filter(option => option.sectionName === sectionName)
+    .forEach((item) => {
+      const visaSponsorship = {}
+      visaSponsorship.text = item.text
+      visaSponsorship.href = `${baseHref}/remove-visa-sponsorship-filter/${item.text}`
 
-    items.push(visaSponsorship)
-  })
+      items.push(visaSponsorship)
+    })
 
   return items
 }
 
-exports.getFundingTypeItems = (selectedItems, filterName = 'courses') => {
+exports.getFundingTypeItems = (selectedItems, sectionName = 'courses') => {
   const items = []
 
   fundingTypeOptions
-    .filter(option => option.filterName === filterName)
+    .filter(option => option.sectionName === sectionName)
     .forEach((fundingType, i) => {
       const item = {}
 
@@ -413,10 +427,10 @@ exports.getFundingTypeItems = (selectedItems, filterName = 'courses') => {
   return items
 }
 
-exports.getFundingTypeLabel = (fundingTypeCode = null, filterName = 'courses') => {
+exports.getFundingTypeLabel = (fundingTypeCode = null, sectionName = 'courses') => {
   let label = fundingTypeCode
 
-  if (filterName === 'providers') {
+  if (sectionName === 'providers') {
     label = 'Only show providers with salaried courses'
   } else {
     label = 'Only show courses with a salary'
@@ -425,16 +439,18 @@ exports.getFundingTypeLabel = (fundingTypeCode = null, filterName = 'courses') =
   return label
 }
 
-exports.getSelectedFundingTypeItems = (selectedItems, baseHref = '/results') => {
+exports.getSelectedFundingTypeItems = (selectedItems, baseHref = '/results', sectionName = 'courses') => {
   const items = []
 
-  selectedItems.forEach((item) => {
-    const fundingType = {}
-    fundingType.text = item.text
-    fundingType.href = `${baseHref}/remove-funding-type-filter/${item.text}`
+  selectedItems
+    .filter(option => option.sectionName === sectionName)
+    .forEach((item) => {
+      const fundingType = {}
+      fundingType.text = item.text
+      fundingType.href = `${baseHref}/remove-funding-type-filter/${item.text}`
 
-    items.push(fundingType)
-  })
+      items.push(fundingType)
+    })
 
   return items
 }
