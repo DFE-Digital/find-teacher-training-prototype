@@ -1,5 +1,21 @@
 {% set filterOptionsHtml %}
 {{ govukCheckboxes({
+  idPrefix: "special-educational-needs",
+  name: "filter[send]",
+  fieldset: {
+    legend: {
+      html: 'Special educational needs<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: sendItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
   idPrefix: "provider-type",
   name: "filter[providerType]",
   fieldset: {
