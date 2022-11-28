@@ -1,7 +1,13 @@
 const sendOptions = [{
   id: '5289e0bd-830b-46f6-948e-685214651beb',
   name: 'Only show courses with a SEND specialism',
-  code: 'include'
+  code: 'include',
+  filterName: 'courses'
+}, {
+  id: '448a04a6-3367-4bcb-81cd-560f0b7e150a',
+  name: 'Only show providers with SEND specialism courses',
+  code: 'include',
+  filterName: 'providers'
 }]
 
 const vacancyOptions = [{
@@ -110,43 +116,49 @@ exports.getSelectedSubjectItems = (selectedItems, baseHref = '/results') => {
   return items
 }
 
-exports.getSendItems = (selectedItems) => {
+exports.getSendItems = (selectedItems, filterName = 'courses') => {
   const items = []
 
-  sendOptions.forEach((send, i) => {
-    const item = {}
+  sendOptions
+    .filter(option => option.filterName === filterName)
+    .forEach((send, i) => {
+      const item = {}
 
-    item.text = send.name
-    item.value = send.code
-    item.id = send.id
-    item.checked = (selectedItems && selectedItems.includes(send.code)) ? 'checked' : ''
+      item.text = send.name
+      item.value = send.code
+      item.id = send.id
+      item.checked = (selectedItems && selectedItems.includes(send.code)) ? 'checked' : ''
 
-    items.push(item)
-  })
+      items.push(item)
+    })
 
   return items
 }
 
-exports.getSendLabel = (sendCode = null) => {
-  // let label = sendCode
-  //
-  // if (sendCode) {
-  //   label = sendOptions.find(send => send.code === sendCode).name
-  // }
+exports.getSendLabel = (sendCode = null, filterName = 'courses') => {
+  let label = sendCode
 
-  return 'Only show courses with a SEND specialism'
+  if (filterName === 'providers') {
+    label = 'Only show providers with SEND specialism courses'
+  } else {
+    label = 'Only show courses with a SEND specialism'
+  }
+
+  return label
 }
 
-exports.getSelectedSendItems = (selectedItems, baseHref = '/results') => {
+exports.getSelectedSendItems = (selectedItems, baseHref = '/results', filterName = 'courses') => {
   const items = []
 
-  selectedItems.forEach((item) => {
-    const send = {}
-    send.text = item.text
-    send.href = `${baseHref}/remove-send-filter/${item.text}`
+  selectedItems
+    .filter(option => option.filterName === filterName)
+    .forEach((item) => {
+      const send = {}
+      send.text = item.text
+      send.href = `${baseHref}/remove-send-filter/${item.text}`
 
-    items.push(send)
-  })
+      items.push(send)
+    })
 
   return items
 }

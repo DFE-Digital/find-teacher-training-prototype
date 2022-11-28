@@ -11,7 +11,6 @@
 
 <dl class="app-result-detail">
   <div class="app-result-detail__row">
-  <div class="app-result-detail__row">
     <dt class="app-result-detail__key">Provider type</dt>
     <dd class="app-result-detail__value">
       {{ provider.provider_type | getProviderTypeLabel(true) }}
@@ -21,6 +20,16 @@
     <dt class="app-result-detail__key">Age groups</dt>
     <dd class="app-result-detail__value">
       Offers {{ provider.offers_subject_levels | arrayToList }} courses
+    </dd>
+  </div>
+  <div class="app-result-detail__row">
+    <dt class="app-result-detail__key">Special educational needs</dt>
+    <dd class="app-result-detail__value">
+      {% if provider.has_send_courses %}
+        Has courses with a SEND specialism
+      {% else %}
+        Does not have courses with a SEND specialism
+      {% endif %}
     </dd>
   </div>
   <div class="app-result-detail__row">
