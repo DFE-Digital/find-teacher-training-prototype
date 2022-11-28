@@ -16,22 +16,6 @@
 }) }}
 
 {{ govukCheckboxes({
-  idPrefix: "provider-type",
-  name: "filter[providerType]",
-  fieldset: {
-    legend: {
-      html: 'Provider type<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: providerTypeItems,
-  classes: "govuk-checkboxes--small"
-}) }}
-
-{{ govukCheckboxes({
   idPrefix: "age-group",
   name: "filter[ageGroup]",
   fieldset: {
@@ -48,6 +32,22 @@
 }) }}
 
 {{ govukCheckboxes({
+  idPrefix: "provider-type",
+  name: "filter[providerType]",
+  fieldset: {
+    legend: {
+      html: 'Provider type<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: providerTypeItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
   idPrefix: "visa-sponsorship",
   name: "filter[visaSponsorship]",
   fieldset: {
@@ -60,6 +60,22 @@
     classes: "app-filter__group"
   },
   items: visaSponsorshipItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "regions",
+  name: "filter[region]",
+  fieldset: {
+    legend: {
+      html: 'Region<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: regionItems,
   classes: "govuk-checkboxes--small"
 }) }}
 {% endset %}
