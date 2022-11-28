@@ -64,6 +64,22 @@
 }) }}
 
 {{ govukCheckboxes({
+  idPrefix: "funding-type",
+  name: "filter[fundingType]",
+  fieldset: {
+    legend: {
+      html: 'Salary<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: fundingTypeItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
   idPrefix: "regions",
   name: "filter[region]",
   fieldset: {
