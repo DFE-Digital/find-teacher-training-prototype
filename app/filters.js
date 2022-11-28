@@ -320,9 +320,9 @@ module.exports = (env) => {
   }
 
   /* ------------------------------------------------------------------
-  utility function to get the study mode label
-  example: {{ 'both' | getStudyModeLabel }}
-  outputs: "Full time or part time"
+  utility function to get the subject label
+  example: {{ 'F3' | getSubjectLabel }}
+  outputs: "Physics"
   ------------------------------------------------------------------ */
   filters.getSubjectLabel = (subjectCode, toLowerCase) => {
     return utilsHelper.getSubjectLabel(subjectCode, toLowerCase)
@@ -335,6 +335,33 @@ module.exports = (env) => {
   ------------------------------------------------------------------ */
   filters.getProviderTypeLabel = (providerTypeCode, longName) => {
     return utilsHelper.getProviderTypeLabel(providerTypeCode, longName)
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the funding type label
+  example: {{ 'include' | getFundingTypeLabel }}
+  outputs: "Only show courses with a salary"
+  ------------------------------------------------------------------ */
+  filters.getFundingTypeLabel = (fundingTypeCode, sectionName) => {
+    return utilsHelper.getFundingTypeLabel(fundingTypeCode, sectionName)
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the visa sponsorship label
+  example: {{ 'include' | getVisaSponsorshipLabel }}
+  outputs: "Only show courses with visa sponsorship"
+  ------------------------------------------------------------------ */
+  filters.getVisaSponsorshipLabel = (visaSponsorshipCode, sectionName) => {
+    return utilsHelper.getVisaSponsorshipLabel(visaSponsorshipCode, sectionName)
+  }
+
+  /* ------------------------------------------------------------------
+  utility function to get the region label
+  example: {{ 'north_west' | getRegionLabel }}
+  outputs: "North West"
+  ------------------------------------------------------------------ */
+  filters.getRegionLabel = (regionCode) => {
+    return utilsHelper.getRegionLabel(regionCode)
   }
 
   /* ------------------------------------------------------------------
