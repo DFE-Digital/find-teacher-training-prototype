@@ -655,3 +655,50 @@ exports.getProviderVisaSponsorshipItems = (selectedItems) => {
 
   return items
 }
+
+exports.getRegionItems = (selectedItems) => {
+  const regions = require('../data/regions')
+  const items = []
+
+  regions.forEach((region, i) => {
+    const item = {}
+
+    item.text = region.name
+    item.value = region.code
+    item.id = region.id
+    item.checked = (selectedItems && selectedItems.includes(region.code)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  // items.sort((a,b) => {
+  //   return a.text.localeCompare(b.text)
+  // })
+
+  return items
+}
+
+exports.getRegionLabel = (regionCode = null) => {
+  const regions = require('../data/regions')
+  let label = regionCode
+
+  if (regionCode) {
+    label = regions.find(region => region.code === regionCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedRegionItems = (selectedItems, baseHref = '/results') => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const region = {}
+    region.text = item.text
+    region.href = `${baseHref}/remove-region-filter/${item.text}`
+
+    items.push(region)
+  })
+
+  return items
+}
