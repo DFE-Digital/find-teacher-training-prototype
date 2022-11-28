@@ -106,28 +106,30 @@
     </div>
   </div>
   <div class="app-filter__content">
-    {# <div class="app-filter__selected">
-      <div class="app-filter__selected-heading">
-        <div class="app-filter__heading-title">
-          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Selected filters</h2>
-          <p class="govuk-body">
-            <a class="govuk-link govuk-link--no-visited-state" href="{{ actions.filters.remove }}">Clear filters</a>
-          </p>
+    {# {% if selectedFilters %}
+      <div class="app-filter__selected">
+        <div class="app-filter__selected-heading">
+          <div class="app-filter__heading-title">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Selected filters</h2>
+            <p class="govuk-body">
+              <a class="govuk-link govuk-link--no-visited-state" href="{{ actions.filters.remove }}">Clear filters</a>
+            </p>
+          </div>
         </div>
+        {% for category in selectedFilters.categories %}
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">{{ category.heading.text }}</h3>
+          <ul class="app-filter-tags">
+            {% for item in category.items %}
+              <li>
+                <a class="app-filter__tag" href="{{ item.href }}">
+                  <span class="govuk-visually-hidden">Remove this filter</span> {{ item.text }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
       </div>
-      {% for category in selectedFilters.categories %}
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">{{ category.heading.text }}</h3>
-        <ul class="app-filter-tags">
-          {% for item in category.items %}
-            <li>
-              <a class="app-filter__tag" href="{{ item.href }}">
-                <span class="govuk-visually-hidden">Remove this filter</span> {{ item.text }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endfor %}
-    </div> #}
+    {% endif %} #}
     <div class="app-filter__options">
       <form method="get" action="{{ actions.filters.apply }}" novalidate>
         <button class="govuk-button" data-module="govuk-button">

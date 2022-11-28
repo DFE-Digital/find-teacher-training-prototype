@@ -58,18 +58,6 @@ exports.list = async (req, res) => {
       })
     }
 
-    if (providerTypes?.length) {
-      selectedFilters.categories.push({
-        heading: { text: 'Provider type' },
-        items: providerTypes.map((providerType) => {
-          return {
-            text: utilsHelper.getProviderTypeLabel(providerType),
-            href: `/providers/remove-provider-type-filter/${providerType}`
-          }
-        })
-      })
-    }
-
     if (ageGroups?.length) {
       selectedFilters.categories.push({
         heading: { text: 'Age group' },
@@ -82,12 +70,24 @@ exports.list = async (req, res) => {
       })
     }
 
+    if (providerTypes?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Provider type' },
+        items: providerTypes.map((providerType) => {
+          return {
+            text: utilsHelper.getProviderTypeLabel(providerType),
+            href: `/providers/remove-provider-type-filter/${providerType}`
+          }
+        })
+      })
+    }
+
     if (visaSponsorships?.length) {
       selectedFilters.categories.push({
         heading: { text: 'Visa sponsorship' },
         items: visaSponsorships.map((visaSponsorship) => {
           return {
-            text: utilsHelper.getVisaSponsorshipLabel(visaSponsorship),
+            text: utilsHelper.getVisaSponsorshipLabel(visaSponsorship, 'providers'),
             href: `/providers/remove-visa-sponsorship-filter/${visaSponsorship}`
           }
         })
@@ -99,7 +99,7 @@ exports.list = async (req, res) => {
         heading: { text: 'Funding type' },
         items: fundingTypes.map((fundingType) => {
           return {
-            text: utilsHelper.getFundingTypeLabel(fundingType),
+            text: utilsHelper.getFundingTypeLabel(fundingType, 'providers'),
             href: `/providers/remove-funding-type-filter/${fundingType}`
           }
         })
@@ -111,8 +111,8 @@ exports.list = async (req, res) => {
         heading: { text: 'Region' },
         items: regions.map((region) => {
           return {
-            text: utilsHelper.getRegionsLabel(region),
-            href: `/providers/remove-regions-filter/${region}`
+            text: utilsHelper.getRegionLabel(region),
+            href: `/providers/remove-region-filter/${region}`
           }
         })
       })
@@ -167,7 +167,8 @@ exports.list = async (req, res) => {
     selectedVisaSponsorship = []
   }
 
-  const visaSponsorshipItems = utilsHelper.getProviderVisaSponsorshipItems(selectedVisaSponsorship)
+  // const visaSponsorshipItems = utilsHelper.getProviderVisaSponsorshipItems(selectedVisaSponsorship)
+  const visaSponsorshipItems = utilsHelper.getVisaSponsorshipItems(selectedVisaSponsorship, 'providers')
 
   let selectedFundingType
   if (req.session.data.filter?.fundingType) {
@@ -199,10 +200,11 @@ exports.list = async (req, res) => {
   //   filter.send = selectedSend
   // }
 
-  // TODO: send selected visa sponsorship to filter
-  // if (selectedVisaSponsorship.length) {
-  //   filter.can_sponsor_visas = selectedVisaSponsorship
-  // }
+  if (selectedVisaSponsorship.length) {
+    // filter.can_sponsor_visas = true
+    filter.can_sponsor_student_visa = true
+    filter.can_sponsor_skilled_worker_visa = true
+  }
 
   // sort by settings
   const sortBy = req.query.sortBy || req.session.data.sortBy || 0
