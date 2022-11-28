@@ -25,7 +25,13 @@ const visaSponsorshipOptions = [{
 const fundingTypeOptions = [{
   id: '1c909417-4192-4de3-bc52-c9ebee5e7e4e',
   name: 'Only show courses with a salary',
-  code: 'include'
+  code: 'include',
+  filterName: 'courses'
+}, {
+  id: '82135b5b-0ba8-47b2-a651-9ed29ff11a19',
+  name: 'Only show providers with salaried courses',
+  code: 'include',
+  filterName: 'providers'
 }]
 
 const campaignOptions = [{
@@ -388,31 +394,35 @@ exports.getSelectedVisaSponsorshipItems = (selectedItems, baseHref = '/results')
   return items
 }
 
-exports.getFundingTypeItems = (selectedItems) => {
+exports.getFundingTypeItems = (selectedItems, filterName = 'courses') => {
   const items = []
 
-  fundingTypeOptions.forEach((fundingType, i) => {
-    const item = {}
+  fundingTypeOptions
+    .filter(option => option.filterName === filterName)
+    .forEach((fundingType, i) => {
+      const item = {}
 
-    item.text = fundingType.name
-    item.value = fundingType.code
-    item.id = fundingType.id
-    item.checked = (selectedItems && selectedItems.includes(fundingType.code)) ? 'checked' : ''
+      item.text = fundingType.name
+      item.value = fundingType.code
+      item.id = fundingType.id
+      item.checked = (selectedItems && selectedItems.includes(fundingType.code)) ? 'checked' : ''
 
-    items.push(item)
-  })
+      items.push(item)
+    })
 
   return items
 }
 
-exports.getFundingTypeLabel = (fundingTypeCode = null) => {
-  // let label = fundingTypeCode
-  //
-  // if (fundingTypeCode) {
-  //   label = fundingTypeOptions.find(fundingType => fundingType.code === fundingTypeCode).name
-  // }
+exports.getFundingTypeLabel = (fundingTypeCode = null, filterName = 'courses') => {
+  let label = fundingTypeCode
 
-  return 'Only show courses with a salary'
+  if (filterName === 'providers') {
+    label = 'Only show providers with salaried courses'
+  } else {
+    label = 'Only show courses with a salary'
+  }
+
+  return label
 }
 
 exports.getSelectedFundingTypeItems = (selectedItems, baseHref = '/results') => {
