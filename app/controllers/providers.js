@@ -178,10 +178,14 @@ exports.list = async (req, res) => {
         // const perPage = 100
 
         provider.has_primary_courses = false
+        provider.primary_courses_count = 0
         provider.has_secondary_courses = false
+        provider.secondary_courses_count = 0
         provider.has_further_education_courses = false
+        provider.further_education_courses_count = 0
 
         provider.has_send_courses = false
+        provider.send_courses_count = 0
 
         const courseListResponse = await teacherTrainingService.getProviderCourses(provider.code, filter, 1, 100, 0)
 
@@ -194,14 +198,18 @@ exports.list = async (req, res) => {
 
             if (course.level === 'primary') {
               provider.has_primary_courses = true
+              provider.primary_courses_count += 1
             } else if (course.level === 'secondary') {
               provider.has_secondary_courses = true
+              provider.secondary_courses_count += 1
             } else if (course.level === 'further_education') {
               provider.has_further_education_courses = true
+              provider.further_education_courses_count += 1
             }
 
             if (course.is_send) {
               provider.has_send_courses = true
+              provider.send_courses_count += 1
             }
           })
         }
