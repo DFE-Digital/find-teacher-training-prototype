@@ -1,0 +1,47 @@
+[
+  {
+    "id": "19e2848e-3b46-49e4-8573-1f808289b6a3",
+    "code": "north_east",
+    "name": "North East"
+  },
+  {
+    "id": "f87517b4-11e6-404a-afce-bd7bf3034a91",
+    "code": "north_west",
+    "name": "North West"
+  },
+  {
+    "id": "1c0b6320-09f2-4528-93e6-9f5e70ff2f6e",
+    "code": "yorkshire_and_the_humber",
+    "name": "Yorkshire and The Humber"
+  },
+  {
+    "id": "43ec2b3a-e90f-43db-b0b5-876ccc7ceeb8",
+    "code": "east_midlands",
+    "name": "East Midlands"
+  },
+  {
+    "id": "33d391f3-2533-4665-a553-2be9dab3222a",
+    "code": "west_midlands",
+    "name": "West Midlands"
+  },
+  {
+    "id": "bc4693aa-fe33-4ee9-9475-b4bd7fc4605f ",
+    "code": "east_of_england",
+    "name": "East of England"
+  },
+  {
+    "id": "af1cdb68-0bbe-4b7a-8bb5-1d591d2a6083",
+    "code": "london",
+    "name": "London"
+  },
+  {
+    "id": "417a5ced-ba0c-4a57-b80a-35a90722cd93",
+    "code": "south_east",
+    "name": "South East"
+  },
+  {
+    "id": "e5158583-2ac8-41ab-96b9-ed936bfdae6d",
+    "code": "south_west",
+    "name": "South West"
+  }
+]
