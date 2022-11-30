@@ -122,7 +122,6 @@ module.exports = () => {
     provider.can_sponsor_both_visas = !!(provider.can_sponsor_student_visa && provider.can_sponsor_skilled_worker_visa)
     provider.can_sponsor_student_visas_only = provider.can_sponsor_student_visa && !provider.can_sponsor_skilled_worker_visa
     provider.can_sponsor_skilled_worker_visas_only = !provider.can_sponsor_student_visa && provider.can_sponsor_skilled_worker_visa
-// console.log(courses);
 
     provider.has_primary_courses = false
     provider.primary_courses_count = 0
@@ -157,11 +156,13 @@ module.exports = () => {
         }
 
         if (provider.is_accredited_body) {
-          // const trainingPartner = {}
-          // trainingPartner.code = ''
-          // trainingPartner.name = ''
-          // if (!provider.training_partners.find(tp => tp.code === trainingPartner.code)) {
-          //   provider.training_partners.push(trainingPartner)
+          // if (courseResource.course.accredited_body_code !== courseResource.provider.code) {
+          //   const trainingPartner = {}
+          //   trainingPartner.code = courseResource.provider.code
+          //   trainingPartner.name = courseResource.provider.name
+          //   if (!provider.training_partners.find(tp => tp.code === trainingPartner.code)) {
+          //     provider.training_partners.push(trainingPartner)
+          //   }
           // }
         } else {
           const accreditedBody = {}
