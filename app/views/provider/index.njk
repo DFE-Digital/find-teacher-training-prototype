@@ -29,6 +29,13 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      {% if userJourney == "hackday" %}
+        {{ govukTag({
+          text: "Accredited body",
+          classes: "govuk-tag--turquoise govuk-!-margin-bottom-2"
+        }) if provider.is_accredited_body }}
+      {% endif %}
+
       <h1 class="govuk-heading-xl">
         {{ title }}
       </h1>
