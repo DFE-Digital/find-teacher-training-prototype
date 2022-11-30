@@ -399,7 +399,7 @@ exports.list = async (req, res) => {
 }
 
 exports.show = async (req, res) => {
-  const ProviderSingleResponse = await teacherTrainingService.getProvider(req.params.providerCode)
+  const providerSingleResponse = await teacherTrainingService.getProvider(req.params.providerCode)
 
   // pagination settings
   const sortBy = req.query.sortBy || 'name'
@@ -428,7 +428,7 @@ exports.show = async (req, res) => {
       // Get course provider
       const providerId = courseRalationships.provider.data.id
       const providerResource = providers.find(providerResource => providerResource.id === providerId)
-      const provider = providerResource.attributes
+      const provider = utils.decorateProvider(providerResource.attributes)
 
       // Get course accredited body
       if (courseRalationships.accredited_body.data) {
@@ -438,9 +438,9 @@ exports.show = async (req, res) => {
       }
 
       // Get locations
-      const LocationListResponse = await teacherTrainingService.getCourseLocations(provider.code, course.code)
-      const statuses = LocationListResponse.included.filter(item => item.type === 'location_statuses')
-      const locations = LocationListResponse.data.map(location => {
+      const locationListResponse = await teacherTrainingService.getCourseLocations(provider.code, course.code)
+      const statuses = locationListResponse.included.filter(item => item.type === 'location_statuses')
+      const locations = locationListResponse.data.map(location => {
         const { attributes } = location
 
         // Vacancy status
@@ -484,7 +484,7 @@ exports.show = async (req, res) => {
   }
 
   // Data
-  const provider = utils.decorateProvider(ProviderSingleResponse)
+  const provider = utils.decorateProvider(providerSingleResponse)
 
   const courseResults = await Promise.all(courses)
 
@@ -531,11 +531,11 @@ exports.show = async (req, res) => {
     return a.course.name.localeCompare(b.course.name)
   })
 
-  // const ProviderLocationListResponse = await teacherTrainingService.getProviderLocations(req.params.providerCode)
+  // const ProviderlocationListResponse = await teacherTrainingService.getProviderLocations(req.params.providerCode)
   //
   // let providerLocations = []
-  // if (ProviderLocationListResponse.data.length) {
-  //   providerLocations = ProviderLocationListResponse.data.map(location => {
+  // if (ProviderlocationListResponse.data.length) {
+  //   providerLocations = ProviderlocationListResponse.data.map(location => {
   //     const { attributes } = location
   //
   //     // Address
