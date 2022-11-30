@@ -1,0 +1,42 @@
+<dl class="app-description-list govuk-!-margin-bottom-9">
+  <div class="app-list--description__row">
+    <dt class="app-list--description__label">Provider type</dt>
+    <dd class="app-list--description__value">
+      {{ provider.provider_type | getProviderTypeLabel(true) }}
+    </dd>
+  </div>
+  <div class="app-list--description__row">
+    <dt class="app-list--description__label">Age group</dt>
+    <dd class="app-list--description__value">
+      Offers {{ provider.offers_subject_levels }} courses
+    </dd>
+  </div>
+  <div class="app-list--description__row">
+    <dt class="app-list--description__label">SEND specialism</dt>
+    <dd class="app-list--description__value">
+      {% if provider.has_send_courses %}
+        <abbr title="special educational needs and disabilities">SEND</abbr> courses available
+      {% else %}
+        No <abbr title="special educational needs and disabilities">SEND</abbr> courses available
+      {% endif %}
+    </dd>
+  </div>
+  <div class="app-list--description__row">
+    <dt class="app-list--description__label">Visa sponsorship</dt>
+    <dd class="app-list--description__value">
+      {% if provider.can_sponsor_visas %}
+        {% if provider.can_sponsor_both_visas %}
+          Both Student and Skilled Worker visas can be sponsored
+        {% else %}
+          {% if provider.can_sponsor_student_visas_only %}
+            Only Student visas can be sponsored
+          {% elif provider.can_sponsor_skilled_worker_visas_only %}
+            Only Skilled Worker visas can be sponsored
+          {% endif %}
+        {% endif %}
+      {% else %}
+        Visas cannot be sponsored
+      {% endif %}
+    </dd>
+  </div>
+</dl>
