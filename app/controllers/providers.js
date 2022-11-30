@@ -428,7 +428,7 @@ exports.show = async (req, res) => {
       // Get course provider
       const providerId = courseRalationships.provider.data.id
       const providerResource = providers.find(providerResource => providerResource.id === providerId)
-      const provider = utils.decorateProvider(providerResource.attributes)
+      const provider = providerResource.attributes
 
       // Get course accredited body
       if (courseRalationships.accredited_body.data) {
@@ -484,8 +484,6 @@ exports.show = async (req, res) => {
   }
 
   // Data
-  const provider = utils.decorateProvider(providerSingleResponse)
-
   const courseResults = await Promise.all(courses)
 
   const courseResultsCount = meta ? meta.count : courseResults.length
@@ -530,6 +528,8 @@ exports.show = async (req, res) => {
   courseResults.sort((a,b) => {
     return a.course.name.localeCompare(b.course.name)
   })
+
+  const provider = utils.decorateProvider(providerSingleResponse, courseResults)
 
   // const ProviderlocationListResponse = await teacherTrainingService.getProviderLocations(req.params.providerCode)
   //
