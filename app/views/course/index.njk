@@ -40,6 +40,11 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       {% include "./sections/course-details.njk" %}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
 
       {% if not course.has_vacancies %}
         {{ govukWarningText({
@@ -47,11 +52,6 @@
           iconFallbackText: "Warning"
         }) }}
       {% endif %}
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
 
       {% include "./sections/contents.njk" %}
 
