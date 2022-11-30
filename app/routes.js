@@ -109,6 +109,7 @@ router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 /// PROVIDER ROUTES
 /// ------------------------------------------------------------------------ ///
 
+router.get('/providers/remove-accredited-body-filter/:ageGroup', providerController.removeAccreditedBodyFilter)
 router.get('/providers/remove-age-group-filter/:ageGroup', providerController.removeAgeGroupFilter)
 router.get('/providers/remove-funding-type-filter/:fundingType', providerController.removeFundingTypeFilter)
 router.get('/providers/remove-provider-type-filter/:providerType', providerController.removeProviderTypeFilter)
