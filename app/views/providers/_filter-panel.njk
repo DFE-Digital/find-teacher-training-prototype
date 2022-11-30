@@ -1,6 +1,22 @@
 {% set filterOptionsHtml %}
 {{ govukCheckboxes({
-  idPrefix: "special-educational-needs",
+  idPrefix: "accredited-body-filter",
+  name: "filter[accreditedBody]",
+  fieldset: {
+    legend: {
+      html: 'Accredited body<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: accreditedBodyItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "special-educational-needs-filter",
   name: "filter[send]",
   fieldset: {
     legend: {
@@ -16,7 +32,7 @@
 }) }}
 
 {{ govukCheckboxes({
-  idPrefix: "age-group",
+  idPrefix: "age-group-filter",
   name: "filter[ageGroup]",
   fieldset: {
     legend: {
@@ -32,7 +48,7 @@
 }) }}
 
 {{ govukCheckboxes({
-  idPrefix: "provider-type",
+  idPrefix: "provider-type-filter",
   name: "filter[providerType]",
   fieldset: {
     legend: {
@@ -48,7 +64,7 @@
 }) }}
 
 {{ govukCheckboxes({
-  idPrefix: "visa-sponsorship",
+  idPrefix: "visa-sponsorship-filter",
   name: "filter[visaSponsorship]",
   fieldset: {
     legend: {
@@ -64,7 +80,7 @@
 }) }}
 
 {{ govukCheckboxes({
-  idPrefix: "funding-type",
+  idPrefix: "funding-type-filter",
   name: "filter[fundingType]",
   fieldset: {
     legend: {
@@ -80,7 +96,7 @@
 }) }}
 
 {{ govukCheckboxes({
-  idPrefix: "regions",
+  idPrefix: "regions-filter",
   name: "filter[region]",
   fieldset: {
     legend: {
