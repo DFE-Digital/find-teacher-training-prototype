@@ -31,22 +31,6 @@
   classes: "govuk-checkboxes--small"
 }) }}
 
-{{ govukCheckboxes({
-  idPrefix: "age-group-filter",
-  name: "filter[ageGroup]",
-  fieldset: {
-    legend: {
-      html: 'Age group<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: ageGroupItems,
-  classes: "govuk-checkboxes--small"
-}) }}
-
 {# {{ govukCheckboxes({
   idPrefix: "provider-type-filter",
   name: "filter[providerType]",
@@ -92,6 +76,22 @@
     classes: "app-filter__group"
   },
   items: fundingTypeItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "age-group-filter",
+  name: "filter[ageGroup]",
+  fieldset: {
+    legend: {
+      html: 'Age group<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: ageGroupItems,
   classes: "govuk-checkboxes--small"
 }) }}
 

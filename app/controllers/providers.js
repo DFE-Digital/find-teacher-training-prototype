@@ -74,18 +74,6 @@ exports.list = async (req, res) => {
       })
     }
 
-    if (ageGroups?.length) {
-      selectedFilters.categories.push({
-        heading: { text: 'Age group' },
-        items: ageGroups.map((ageGroup) => {
-          return {
-            text: utilsHelper.getAgeGroupLabel(ageGroup),
-            href: `/providers/remove-age-group-filter/${ageGroup}`
-          }
-        })
-      })
-    }
-
     if (providerTypes?.length) {
       selectedFilters.categories.push({
         heading: { text: 'Provider type' },
@@ -117,6 +105,18 @@ exports.list = async (req, res) => {
           return {
             text: utilsHelper.getFundingTypeLabel(fundingType, 'providers'),
             href: `/providers/remove-funding-type-filter/${fundingType}`
+          }
+        })
+      })
+    }
+
+    if (ageGroups?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Age group' },
+        items: ageGroups.map((ageGroup) => {
+          return {
+            text: utilsHelper.getAgeGroupLabel(ageGroup),
+            href: `/providers/remove-age-group-filter/${ageGroup}`
           }
         })
       })
