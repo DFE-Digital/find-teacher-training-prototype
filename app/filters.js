@@ -365,6 +365,15 @@ module.exports = (env) => {
   }
 
   /* ------------------------------------------------------------------
+  utility function to get the accredited body label
+  example: {{ 'include' | getAccreditedBodyLabel }}
+  outputs: "Only show accredited bodies"
+  ------------------------------------------------------------------ */
+  filters.getAccreditedBodyLabel = (accreditedBodyCode) => {
+    return utilsHelper.getAccreditedBodyLabel(accreditedBodyCode)
+  }
+
+  /* ------------------------------------------------------------------
   utility function to turn and array into a list
   example: {{ ['primary','secondary'] | arrayToList }}
   outputs: "primary and secondary"
