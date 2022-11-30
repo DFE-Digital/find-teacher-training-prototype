@@ -86,13 +86,18 @@ const teacherTrainingService = {
   },
 
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#recruitment_cycles-year-providers-get
-  async getProviders (filter, page = 1, perPage = 20) {
+  async getProviders (filter, page = 1, perPage = 20, sortBy = 0) {
+    let sort = 'name'
+    if (sortBy === 1) {
+      sort = '-name'
+    }
+
     const query = {
       filter,
       include: 'recruitment_cycle',
       page,
       per_page: perPage,
-      sort: 'name'
+      sort
     }
 
     const key = `providerListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
