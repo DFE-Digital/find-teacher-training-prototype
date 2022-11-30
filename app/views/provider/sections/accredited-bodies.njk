@@ -1,0 +1,14 @@
+<div class="govuk-!-margin-bottom-8">
+  <h2 id="accredited-bodies" class="govuk-heading-l">Accredited bodies</h2>
+  {% if provider.accredited_bodies %}
+    <ul class="govuk-list">
+      {% for accreditedBody in provider.accredited_bodies %}
+        <li>
+          <a href="/providers/{{ accreditedBody.code }}">{{ accreditedBody.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="govuk-body">{{ provider.name }} does not have any accredited bodies.</p>
+  {% endif %}
+</div>
