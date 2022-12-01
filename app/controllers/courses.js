@@ -10,8 +10,10 @@ exports.show = async (req, res) => {
     const courseSingleResponse = await teacherTrainingService.getCourse(providerCode, courseCode)
     const course = utils.decorateCourse(courseSingleResponse.data.attributes)
 
-    const providerSingleResponse = await teacherTrainingService.getProvider(course.accredited_body_code)
-    course.accredited_body = utils.decorateProvider(providerSingleResponse)
+    if (course.accredited_body_code) {
+      const providerSingleResponse = await teacherTrainingService.getProvider(course.accredited_body_code)
+      course.accredited_body = utils.decorateProvider(providerSingleResponse)
+    }
 
     const locationListResponse = await teacherTrainingService.getCourseLocations(providerCode, courseCode)
     const statuses = locationListResponse.included.filter(item => item.type === 'location_statuses')
