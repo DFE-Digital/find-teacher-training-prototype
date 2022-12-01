@@ -1,0 +1,14 @@
+<div class="govuk-!-margin-bottom-8">
+  <h2 id="training-partners" class="govuk-heading-l">Training partners</h2>
+  {% if provider.training_partners.length %}
+    <ul class="govuk-list">
+      {% for trainingPartners in provider.training_partners %}
+        <li>
+          <a href="/providers/{{ trainingPartner.code }}">{{ trainingPartner.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="govuk-body">{{ provider.name }} does not have any training partners.</p>
+  {% endif %}
+</div>

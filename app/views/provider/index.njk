@@ -29,6 +29,13 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      {% if userJourney == "hackday" %}
+        {{ govukTag({
+          text: "Accredited body",
+          classes: "govuk-tag--turquoise govuk-!-margin-bottom-2"
+        }) if provider.is_accredited_body }}
+      {% endif %}
+
       <h1 class="govuk-heading-xl">
         {{ title }}
       </h1>
@@ -39,17 +46,25 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      {% include "./sections/contact-training-provider.njk" %}
+
+      {# {% include "./sections/summary.njk" %} #}
+
       {% include "./sections/contents.njk" %}
 
       {% if provider.train_with_us %}
         {% include "./sections/about-training-provider.njk" %}
       {% endif %}
 
+      {% if provider.is_accredited_body %}
+        {% include "./sections/training-partners.njk" %}
+      {% else %}
+        {% include "./sections/accredited-bodies.njk" %}
+      {% endif %}
+
       {% if provider.train_with_disability %}
         {% include "./sections/training-with-disabilities.njk" %}
       {% endif %}
-
-      {% include "./sections/contact-training-provider.njk" %}
 
       {% include "./sections/courses.njk" %}
 

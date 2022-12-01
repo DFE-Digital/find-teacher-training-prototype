@@ -1,6 +1,10 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Find courses by location or by training provider" %}
+{% if userJourney == "hackday" %}
+  {% set title = "Find courses by training provider or location" %}
+{% else %}
+  {% set title = "Find courses by location or by training provider" %}
+{% endif %}
 
 {% block pageTitle %}
 {{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
@@ -70,38 +74,79 @@
           {% endif %}
         {% endset %}
 
-        {{ govukRadios({
-          name: "q",
-          fieldset: {
-            legend: {
-              text: title,
-              isPageHeading: true,
-              classes: "govuk-fieldset__legend--l"
-            }
-          },
-          errorMessage: errors | getErrorMessage("q"),
-          items: [{
-            value: "location",
-            text: "By city, town or postcode",
-            checked: (data.q == "location"),
-            conditional: {
-              html: locationHtml
-            }
-          }, {
-            value: "england",
-            text: "Across England",
-            checked: (data.q == "england")
-          }, {
-            divider: "or"
-          }, {
-            value: "provider",
-            text: "By school, university or other training provider",
-            checked: (data.q == "provider"),
-            conditional: {
-              html: providerHtml
-            }
-          }]
-        }) }}
+        {% if userJourney == "hackday" %}
+
+          {{ govukRadios({
+            name: "q",
+            fieldset: {
+              legend: {
+                text: title,
+                isPageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+              }
+            },
+            errorMessage: errors | getErrorMessage("q"),
+            items: [{
+              value: "provider",
+              text: "By school, university or other training provider",
+              checked: (data.q == "provider"),
+              conditional: {
+                html: providerHtml
+              }
+            }, {
+              divider: "or"
+            }, {
+              value: "location",
+              text: "By city, town or postcode",
+              checked: (data.q == "location"),
+              conditional: {
+                html: locationHtml
+              }
+            }, {
+              value: "england",
+              text: "Across England",
+              checked: (data.q == "england")
+            }]
+          }) }}
+
+        {% else %}
+
+          {{ govukRadios({
+            name: "q",
+            fieldset: {
+              legend: {
+                text: title,
+                isPageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+              }
+            },
+            errorMessage: errors | getErrorMessage("q"),
+            items: [{
+              value: "location",
+              text: "By city, town or postcode",
+              checked: (data.q == "location"),
+              conditional: {
+                html: locationHtml
+              }
+            }, {
+              value: "england",
+              text: "Across England",
+              checked: (data.q == "england")
+            }, {
+              divider: "or"
+            }, {
+              value: "provider",
+              text: "By school, university or other training provider",
+              checked: (data.q == "provider"),
+              conditional: {
+                html: providerHtml
+              }
+            }]
+          }) }}
+
+        {% endif %}
+
+
 
         {{ govukButton({
           text: "Continue"
