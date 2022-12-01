@@ -404,7 +404,7 @@ exports.show = async (req, res) => {
   // pagination settings
   const sortBy = req.query.sortBy || 'name'
   const page = req.query.page || 1
-  const perPage = 100
+  const perPage = 10
 
   const filter = {
     findable: true,
