@@ -3,7 +3,7 @@
     <h2 id="about-training-provider" class="govuk-heading-l">About the training provider</h2>
     {{ course.provider.train_with_us | markdown | safe }}
   {% endif %}
-  {% if userJourney in ["browse","filter"] %}
+  {% if userJourney in ["browse","filter","hackday"] %}
     <p class="govuk-body">
       <a class="govuk-link" href="{{ actions.provider }}#courses">View all courses from {{ course.provider.name }}</a>
     </p>

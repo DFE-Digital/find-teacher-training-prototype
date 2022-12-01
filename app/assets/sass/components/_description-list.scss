@@ -7,7 +7,8 @@
   }
 }
 
-.app-description-list > dt {
+.app-description-list > dt,
+.app-description-list > div > dt {
   @include govuk-font($size: 19, $weight: bold);
   vertical-align: top;
 
@@ -24,7 +25,8 @@
   color: $govuk-secondary-text-colour;
 }
 
-.app-description-list > dd {
+.app-description-list > dd,
+.app-description-list > div > dd {
   @include govuk-font($size: 19, $weight: normal);
   margin: 0 0 govuk-spacing(2) 0;
   vertical-align: top;

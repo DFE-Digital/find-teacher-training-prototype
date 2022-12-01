@@ -17,6 +17,7 @@ exports.list = async (req, res) => {
   const hasSearch = !!((keywords))
 
   // Filters
+  const accreditedBody = null
   const ageGroup = null
   const fundingType = null
   const providerType = null
@@ -24,6 +25,7 @@ exports.list = async (req, res) => {
   const send = null
   const visaSponsorship = null
 
+  const accreditedBodies = utilsHelper.getCheckboxValues(accreditedBody, req.session.data.filter.accreditedBody)
   const ageGroups = utilsHelper.getCheckboxValues(ageGroup, req.session.data.filter.ageGroup)
   const fundingTypes = utilsHelper.getCheckboxValues(fundingType, req.session.data.filter.fundingType)
   const providerTypes = utilsHelper.getCheckboxValues(providerType, req.session.data.filter.providerType)
@@ -31,7 +33,9 @@ exports.list = async (req, res) => {
   const sends = utilsHelper.getCheckboxValues(send, req.session.data.filter.send)
   const visaSponsorships = utilsHelper.getCheckboxValues(visaSponsorship, req.session.data.filter.visaSponsorship)
 
-  const hasFilters = !!((ageGroups?.length > 0)
+  const hasFilters = !!(
+    (accreditedBodies?.length > 0)
+    || (ageGroups?.length > 0)
     || (fundingTypes?.length > 0)
     || (providerTypes?.length > 0)
     || (regions?.length > 0)
@@ -46,6 +50,18 @@ exports.list = async (req, res) => {
       categories: []
     }
 
+    if (accreditedBodies?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Accredited body' },
+        items: accreditedBodies.map((accreditedBody) => {
+          return {
+            text: utilsHelper.getAccreditedBodyLabel(accreditedBody),
+            href: `/providers/remove-accredited-body-filter/${accreditedBody}`
+          }
+        })
+      })
+    }
+
     if (sends?.length) {
       selectedFilters.categories.push({
         heading: { text: 'Special educational needs' },
@@ -53,18 +69,6 @@ exports.list = async (req, res) => {
           return {
             text: utilsHelper.getSendLabel(send),
             href: `/providers/remove-send-filter/${send}`
-          }
-        })
-      })
-    }
-
-    if (ageGroups?.length) {
-      selectedFilters.categories.push({
-        heading: { text: 'Age group' },
-        items: ageGroups.map((ageGroup) => {
-          return {
-            text: utilsHelper.getAgeGroupLabel(ageGroup),
-            href: `/providers/remove-age-group-filter/${ageGroup}`
           }
         })
       })
@@ -106,6 +110,18 @@ exports.list = async (req, res) => {
       })
     }
 
+    if (ageGroups?.length) {
+      selectedFilters.categories.push({
+        heading: { text: 'Age group' },
+        items: ageGroups.map((ageGroup) => {
+          return {
+            text: utilsHelper.getAgeGroupLabel(ageGroup),
+            href: `/providers/remove-age-group-filter/${ageGroup}`
+          }
+        })
+      })
+    }
+
     if (regions?.length) {
       selectedFilters.categories.push({
         heading: { text: 'Region' },
@@ -118,6 +134,16 @@ exports.list = async (req, res) => {
       })
     }
   }
+
+  let selectedAccreditedBody
+  if (req.session.data.filter?.accreditedBody) {
+    selectedAccreditedBody = req.session.data.filter.accreditedBody
+  } else {
+    // selectedAccreditedBody = defaults.accreditedBody
+    selectedAccreditedBody = []
+  }
+
+  const accreditedBodyItems = utilsHelper.getAccreditedBodyItems(selectedAccreditedBody)
 
   let selectedAgeGroup
   if (req.session.data.filter?.ageGroup) {
@@ -182,8 +208,15 @@ exports.list = async (req, res) => {
 
   // API query params
   // https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-providerfilter
-  const filter = {
-    provider_type: selectedProviderType.toString()
+  const filter = {}
+
+  if (selectedAccreditedBody.length) {
+    // filter.accredited_body = selectedAccreditedBody
+    filter.provider_type = 'university,scitt'
+  }
+
+  if (selectedProviderType.length) {
+    filter.provider_type = selectedProviderType.toString()
   }
 
   // TODO: send selected age group to filter
@@ -332,6 +365,7 @@ exports.list = async (req, res) => {
       results,
       resultsCount,
       pagination,
+      accreditedBodyItems,
       ageGroupItems,
       fundingTypeItems,
       providerTypeItems,
@@ -365,7 +399,7 @@ exports.list = async (req, res) => {
 }
 
 exports.show = async (req, res) => {
-  const ProviderSingleResponse = await teacherTrainingService.getProvider(req.params.providerCode)
+  const providerSingleResponse = await teacherTrainingService.getProvider(req.params.providerCode)
 
   // pagination settings
   const sortBy = req.query.sortBy || 'name'
@@ -404,9 +438,9 @@ exports.show = async (req, res) => {
       }
 
       // Get locations
-      const LocationListResponse = await teacherTrainingService.getCourseLocations(provider.code, course.code)
-      const statuses = LocationListResponse.included.filter(item => item.type === 'location_statuses')
-      const locations = LocationListResponse.data.map(location => {
+      const locationListResponse = await teacherTrainingService.getCourseLocations(provider.code, course.code)
+      const statuses = locationListResponse.included.filter(item => item.type === 'location_statuses')
+      const locations = locationListResponse.data.map(location => {
         const { attributes } = location
 
         // Vacancy status
@@ -450,8 +484,6 @@ exports.show = async (req, res) => {
   }
 
   // Data
-  const provider = utils.decorateProvider(ProviderSingleResponse)
-
   const courseResults = await Promise.all(courses)
 
   const courseResultsCount = meta ? meta.count : courseResults.length
@@ -497,11 +529,13 @@ exports.show = async (req, res) => {
     return a.course.name.localeCompare(b.course.name)
   })
 
-  // const ProviderLocationListResponse = await teacherTrainingService.getProviderLocations(req.params.providerCode)
+  const provider = utils.decorateProvider(providerSingleResponse, courseResults)
+
+  // const ProviderlocationListResponse = await teacherTrainingService.getProviderLocations(req.params.providerCode)
   //
   // let providerLocations = []
-  // if (ProviderLocationListResponse.data.length) {
-  //   providerLocations = ProviderLocationListResponse.data.map(location => {
+  // if (ProviderlocationListResponse.data.length) {
+  //   providerLocations = ProviderlocationListResponse.data.map(location => {
   //     const { attributes } = location
   //
   //     // Address
@@ -550,6 +584,11 @@ exports.removeKeywordSearch = (req, res) => {
   res.redirect('/providers')
 }
 
+exports.removeAccreditedBodyFilter = (req, res) => {
+  req.session.data.filter.accreditedBody = utilsHelper.removeFilter(req.params.accreditedBody, req.session.data.filter.accreditedBody)
+  res.redirect('/providers')
+}
+
 exports.removeAgeGroupFilter = (req, res) => {
   req.session.data.filter.ageGroup = utilsHelper.removeFilter(req.params.ageGroup, req.session.data.filter.ageGroup)
   res.redirect('/providers')
@@ -581,6 +620,7 @@ exports.removeVisaSponsorshipFilter = (req, res) => {
 }
 
 exports.removeAllFilters = (req, res) => {
+  // req.session.data.filter.accreditedBody = null
   // req.session.data.filter.ageGroup = null
   // req.session.data.filter.fundingType = null
   // req.session.data.filter.providerType = null

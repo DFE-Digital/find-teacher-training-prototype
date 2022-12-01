@@ -46,6 +46,12 @@ const campaignOptions = [{
   code: 'include'
 }]
 
+const accreditedBodyOptions = [{
+  id: '122c1079-4ecd-473d-b8b9-4d47d5787f60',
+  name: 'Only show accredited bodies',
+  code: 'include'
+}]
+
 exports.getCheckboxValues = (name, data) => {
   return name && (Array.isArray(name)
     ? name
@@ -724,6 +730,51 @@ exports.getSelectedRegionItems = (selectedItems, baseHref = '/results') => {
     region.href = `${baseHref}/remove-region-filter/${item.text}`
 
     items.push(region)
+  })
+
+  return items
+}
+
+exports.getAccreditedBodyItems = (selectedItems) => {
+  const items = []
+
+  accreditedBodyOptions.forEach((accreditedBody, i) => {
+    const item = {}
+
+    item.text = accreditedBody.name
+    item.value = accreditedBody.code
+    item.id = accreditedBody.id
+    item.checked = (selectedItems && selectedItems.includes(accreditedBody.code)) ? 'checked' : ''
+
+    items.push(item)
+  })
+
+  // items.sort((a,b) => {
+  //   return a.text.localeCompare(b.text)
+  // })
+
+  return items
+}
+
+exports.getAccreditedBodyLabel = (accreditedBodyCode = null) => {
+  let label = accreditedBodyCode
+
+  if (accreditedBodyCode) {
+    label = accreditedBodyOptions.find(accreditedBody => accreditedBody.code === accreditedBodyCode).name
+  }
+
+  return label
+}
+
+exports.getSelectedAccreditedBodyItems = (selectedItems, baseHref = '/results') => {
+  const items = []
+
+  selectedItems.forEach((item) => {
+    const accreditedBody = {}
+    accreditedBody.text = item.text
+    accreditedBody.href = `${baseHref}/remove-accredited-body-filter/${item.text}`
+
+    items.push(accreditedBody)
   })
 
   return items
