@@ -24,7 +24,7 @@ module.exports = () => {
     // SKE
     const subjectCodesWithSke = subjects
       .filter(subject => subject.hasSke === true)
-      .map(subject => subject.value)
+      .map(subject => subject.code)
 
     course.has_ske = subjectCodesWithSke.some(code => course.subject_codes.includes(code))
 
