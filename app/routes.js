@@ -133,6 +133,22 @@ router.get('/providers/:providerCode/courses/:courseCode', courseController.show
 router.get('/course/:providerCode/:courseCode', courseController.show)
 
 /// ------------------------------------------------------------------------ ///
+/// HACKDAY ROUTES
+/// ------------------------------------------------------------------------ ///
+
+router.get('/hackday', (req, res) => {
+  res.render('./hackday/index')
+})
+
+router.get('/hackday/course/:courseId', (req, res) => {
+  res.render('./hackday/courses/index')
+})
+
+router.get('/hackday/partner/:partnerId', (req, res) => {
+  res.render('./hackday/partners/index')
+})
+
+/// ------------------------------------------------------------------------ ///
 /// PROTOTYPE ADMIN
 /// ------------------------------------------------------------------------ ///
 
