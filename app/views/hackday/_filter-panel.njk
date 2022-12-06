@@ -1,0 +1,168 @@
+<div class="app-filter">
+  <div class="app-filter__header">
+    <div class="app-filter__header-title">
+      <h2 class="govuk-heading-m">Filter</h2>
+    </div>
+    <div class="app-filter__header-action">
+
+    </div>
+  </div>
+  <div class="app-filter__content">
+    <div class="app-filter__options">
+      <form method="get" action="/results" novalidate="">
+        <button class="govuk-button" data-module="govuk-button">
+          Apply filters
+        </button>
+
+        <div class="govuk-form-group app-filter__group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Special educational needs<span class="govuk-visually-hidden"> filter</span>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="5289e0bd-830b-46f6-948e-685214651beb" name="filter[send]" type="checkbox" value="include">
+                <label class="govuk-label govuk-checkboxes__label" for="5289e0bd-830b-46f6-948e-685214651beb">
+                  Only show courses with a SEND specialism
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group app-filter__group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Vacancies<span class="govuk-visually-hidden"> filter</span>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="a4de2c9c-553f-4cea-8dd5-696afb02c06a" name="filter[vacancy]" type="checkbox" value="include" checked="">
+                <label class="govuk-label govuk-checkboxes__label" for="a4de2c9c-553f-4cea-8dd5-696afb02c06a">
+                  Only show courses with vacancies
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group app-filter__group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Full time or part time<span class="govuk-visually-hidden"> filter</span>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="a989bedb-7bb7-4216-af3b-665fc7c95890" name="filter[studyMode]" type="checkbox" value="full_time" checked="">
+                <label class="govuk-label govuk-checkboxes__label" for="a989bedb-7bb7-4216-af3b-665fc7c95890">
+                  Full time - 12 months
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="31a0aa3c-dec2-442f-9ace-57f170c6fc97" name="filter[studyMode]" type="checkbox" value="part_time" checked="">
+                <label class="govuk-label govuk-checkboxes__label" for="31a0aa3c-dec2-442f-9ace-57f170c6fc97">
+                  Part time - 18 to 24 months
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group app-filter__group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Qualification<span class="govuk-visually-hidden"> filter</span>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="7edd5f95-27c6-4dcc-87c4-93b8e11e7094" name="filter[qualification]" type="checkbox" value="pgce_with_qts" checked="">
+                <label class="govuk-label govuk-checkboxes__label" for="7edd5f95-27c6-4dcc-87c4-93b8e11e7094">
+                  PGCE with QTS
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="b05a3e1f-9bd3-4517-b9d9-139592170590" name="filter[qualification]" type="checkbox" value="pgde_with_qts" checked="">
+                <label class="govuk-label govuk-checkboxes__label" for="b05a3e1f-9bd3-4517-b9d9-139592170590">
+                  PGDE with QTS
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="955e00b4-8e87-4a5b-96b5-7ae1a888b650" name="filter[qualification]" type="checkbox" value="qts" checked="">
+                <label class="govuk-label govuk-checkboxes__label" for="955e00b4-8e87-4a5b-96b5-7ae1a888b650">
+                  QTS only
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group app-filter__group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Degree grade accepted<span class="govuk-visually-hidden"> filter</span>
+            </legend>
+            <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="98232c1e-404e-4807-a412-f8a647ce0991" name="filter[degreeGrade]" type="radio" value="two_one" checked="">
+                <label class="govuk-label govuk-radios__label" for="98232c1e-404e-4807-a412-f8a647ce0991">
+                  2:1 or first
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="3ff49a0a-251c-4f53-814c-0207f5aa21da" name="filter[degreeGrade]" type="radio" value="two_two">
+                <label class="govuk-label govuk-radios__label" for="3ff49a0a-251c-4f53-814c-0207f5aa21da">
+                  2:2
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="3c880874-442b-4b8b-8cfb-f631ab1b3faa" name="filter[degreeGrade]" type="radio" value="third_class">
+                <label class="govuk-label govuk-radios__label" for="3c880874-442b-4b8b-8cfb-f631ab1b3faa">
+                  Third
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="e31952dd-c181-47ef-b08a-a90d9527f354" name="filter[degreeGrade]" type="radio" value="not_required">
+                <label class="govuk-label govuk-radios__label" for="e31952dd-c181-47ef-b08a-a90d9527f354">
+                  Pass - ordinary degree
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group app-filter__group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Visa sponsorship<span class="govuk-visually-hidden"> filter</span>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="8bf5f687-eda9-4299-9105-7966b3f0fa38" name="filter[visaSponsorship]" type="checkbox" value="include">
+                <label class="govuk-label govuk-checkboxes__label" for="8bf5f687-eda9-4299-9105-7966b3f0fa38">
+                  Only show courses with visa sponsorship
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group app-filter__group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Salary<span class="govuk-visually-hidden"> filter</span>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="1c909417-4192-4de3-bc52-c9ebee5e7e4e" name="filter[fundingType]" type="checkbox" value="include">
+                <label class="govuk-label govuk-checkboxes__label" for="1c909417-4192-4de3-bc52-c9ebee5e7e4e">
+                  Only show courses with a salary
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
