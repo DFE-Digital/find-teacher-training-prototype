@@ -4,13 +4,13 @@
   <div data-qa="course__required_qualifications">
     <p class="govuk-body">
       {% if course.degree_grade == "two_one" %}
-        An undergraduate degree at class 2:1 or above, or equivalent
+        An undergraduate degree at class 2:1 or above, or equivalent.
       {% elif course.degree_grade == "two_two" %}
-        An undergraduate degree at class 2:2 or above, or equivalent
+        An undergraduate degree at class 2:2 or above, or equivalent.
       {% elif course.degree_grade == "third_class" %}
-        An undergraduate degree, or equivalent. This should be an honours degree (Third or above), or equivalent
+        An undergraduate degree, or equivalent. This should be an honours degree (Third or above), or equivalent.
       {% else %}
-        An undergraduate degree, or equivalent
+        An undergraduate degree, or equivalent.
       {% endif %}
     </p>
 
@@ -30,9 +30,8 @@
         <p class="govuk-body">Your degree subject should be in engineering, material science or a related subject. Otherwise, you’ll need to prove your subject knowledge in some other way.</p>
         <p class="govuk-body">If your degree is not in engineering or a related subject, please apply to our physics course.</p>
       {% else %}
-        <p class="govuk-body">Your degree subject should be in {{ course.name }} or a similar subject. Otherwise you’ll need to prove your subject knowledge in some other way.</p>
+        <p class="govuk-body">Your degree subject should be in {{ course.name }} or a related subject. {% if course.has_ske %}If your degree is not in {{ course.name }}, or you've not used your subject knowledge in a while, you may be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.{% endif %}</p>
       {% endif %}
-
     {% endif %}
 
     {% if course.level == "primary" %}
