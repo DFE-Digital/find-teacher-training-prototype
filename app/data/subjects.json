@@ -275,8 +275,7 @@
     "id": "32a27d4b-8216-4498-9e7c-ddfba0a38a00",
     "name": "Primary",
     "code": "00",
-    "level": "primary",
-    "hasSke": true
+    "level": "primary"
   },
   {
     "id": "1e6e30f3-d686-4686-9d83-16b3a56cd9a0",
