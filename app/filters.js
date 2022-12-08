@@ -376,9 +376,9 @@ module.exports = (env) => {
 
 
   /* ------------------------------------------------------------------
-  utility function to get the subject label
-  example: {{ 'F3' | getSubjectLabel }}
-  outputs: "Physics"
+  utility function to get the subject list
+  example: {{ [F3,G1] | getSubjectList }}
+  outputs: "physics and mathematics"
   ------------------------------------------------------------------ */
   filters.getSubjectList = (subjectCodes, join = ', ', final = ' and ') => {
     let list = subjectCodes
