@@ -373,6 +373,27 @@ module.exports = (env) => {
     return utilsHelper.getAccreditedBodyLabel(accreditedBodyCode)
   }
 
+
+
+  /* ------------------------------------------------------------------
+  utility function to get the subject label
+  example: {{ 'F3' | getSubjectLabel }}
+  outputs: "Physics"
+  ------------------------------------------------------------------ */
+  filters.getSubjectList = (subjectCodes, join = ', ', final = ' and ') => {
+    let list = subjectCodes
+
+    const subjects = []
+
+    subjectCodes.forEach((subjectCode, i) => {
+      subjects.push(filters.getSubjectLabel(subjectCode,true))
+    })
+
+    list = filters.arrayToList(subjects, join, final)
+
+    return list
+  }
+
   /* ------------------------------------------------------------------
   utility function to turn and array into a list
   example: {{ ['primary','secondary'] | arrayToList }}
