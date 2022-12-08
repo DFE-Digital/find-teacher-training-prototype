@@ -15,8 +15,7 @@
     </p>
 
     {% if course.degree_subject_requirements %}
-      {# TODO: remove hard-coding Engineers teach physics exception #}
-      {% if course.code not in ["V473","P367","R576","E218","F3X2","H546"] %}
+      {% if course.campaign_name != "engineers_teach_physics" %}
         <p class="govuk-body">
           {{ course.degree_subject_requirements | markdown | safe }}
         </p>
