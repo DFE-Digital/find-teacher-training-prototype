@@ -32,6 +32,11 @@
     {% endif %}
 
     {% if course.level == "primary" %}
+      {% if course.has_ske %}
+        <p class="govuk-body">
+          If your degree is not in {{ course.subject_codes | getSubjectList(',', ' or ') }}, or you've not used your subject knowledge in a while, you may be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
+        </p>
+      {% endif %}
       <p class="govuk-body">
         Grade {{ course.gcse_grade_required }} (C) or above in English, maths and science, or equivalent qualification.
       </p>
