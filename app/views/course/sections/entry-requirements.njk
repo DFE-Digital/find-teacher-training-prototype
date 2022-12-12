@@ -32,9 +32,9 @@
     {% endif %}
 
     {% if course.level == "primary" %}
-      {% if course.has_ske %}
+      {% if course.has_ske and "03" in course.subject_codes %}
         <p class="govuk-body">
-          If you need to improve your primary mathematics knowledge, speak to the training provider about applying for a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
+          If you need to improve your primary mathematics knowledge, you may be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
         </p>
       {% endif %}
       <p class="govuk-body">
