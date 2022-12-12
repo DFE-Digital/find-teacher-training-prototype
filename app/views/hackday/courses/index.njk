@@ -44,7 +44,9 @@
 
       {% include "./sections/entry-requirements.njk" %}
 
-      {# {% include "./sections/salary.njk" %} #}
+      {# {% if course.has_salary %}
+        {% include "./sections/salary.njk" %}
+      {% endif %} #}
 
       {% include "./sections/fees-and-financial-support.njk" %}
 
