@@ -1,9 +1,10 @@
 <dl class="app-description-list govuk-!-margin-bottom-8">
   {% if course.accredited_body and (course.accredited_body.code != course.provider.code) %}
-    <dt class="app-description-list__label">Accredited body</dt>
     {% if userJourney == "hackday" %}
+      <dt class="app-description-list__label">Accredited provider</dt>
       <dd><a href="/providers/{{ course.accredited_body.code }}">{{ course.accredited_body.name }}</a></dd>
     {% else %}
+      <dt class="app-description-list__label">Accredited body</dt>
       <dd>{{ course.accredited_body.name }}</dd>
     {% endif %}
   {% endif %}
