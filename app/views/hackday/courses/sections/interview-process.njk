@@ -1,4 +1,18 @@
+{% set interviewProcess %}
+The interview is your opportunity to demonstrate your desire to become a teacher and to enrich the lives of young people. Interviews will take place online; early application is highly recommended.
+
+Your application will be reviewed by an Admissions Officer and a member of the Secondary PGCE team. If you are successful you will be offered an interview date. You will be asked to:
+
+- Complete a Subject Knowledge Audit
+- Read a text about a current educational issue that you will be asked to summarise and discuss with an academic tutor.
+- Prepare a subject presentation
+
+During the interview day, you will be welcomed to the interview by a PGCE Programme Leader who will provide a detailed introduction to the PGCE with QTS Programme and answer any questions you may have.
+
+Individual interviews are conducted by Academic Tutors and colleagues from school who have expertise in the subject you have chosen to study. The individual interview lasts around 20 minutes.
+{% endset %}
+
 <div class="govuk-!-margin-bottom-8">
   <h2 id="interview-process" class="govuk-heading-l">Interview process</h2>
-
+  {{ interviewProcess | markdown | safe }}
 </div>
