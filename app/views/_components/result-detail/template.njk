@@ -7,7 +7,7 @@
       <span class="app-search-result__provider-name">{{ params.providerName | safe }}</span><br>
     </a>
   {% endif %}
-  <a href="{{ params.href }}">
+  <a class="govuk-link" href="{{ params.href }}">
     {% if not params.providerCode.length %}
       <span class="app-search-result__provider-name">{{ params.providerName | safe }}</span><br>
     {% endif %}

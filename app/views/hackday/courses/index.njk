@@ -1,0 +1,70 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Biology (CX11)" %}
+{% set caption = "Bath Spa University" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back",
+  href: "/hackday"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if caption %}
+          <span class="govuk-caption-xl">{{ caption }}</span>
+        {% endif %}
+        {{ title }}
+      </h1>
+
+      <p class="govuk-body-l">Postgraduate certificate in education (PGCE) with qualified teacher status (QTS)</p>
+
+    </div>
+  </div>
+
+  {% include "./sections/summary.njk" %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {% include "./sections/contents.njk" %}
+
+      {% include "./sections/course-summary.njk" %}
+
+      {% include "./sections/training-partners.njk" %}
+
+      {% include "./sections/entry-requirements.njk" %}
+
+      {# {% if course.has_salary %}
+        {% include "./sections/salary.njk" %}
+      {% endif %} #}
+
+      {% include "./sections/fees-and-financial-support.njk" %}
+
+      {% include "./sections/about-accredited-provider.njk" %}
+
+      {% include "./sections/interview-process.njk" %}
+
+      {% include "./sections/international-candidates.njk" %}
+
+      {% include "./sections/training-with-disabilities.njk" %}
+
+      {% include "./sections/contact-accredited-provider.njk" %}
+
+      {% include "./sections/support-and-advice.njk" %}
+
+      {% include "./sections/apply.njk" %}
+
+    </div>
+  </div>
+
+{% endblock %}
