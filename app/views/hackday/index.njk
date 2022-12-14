@@ -1,0 +1,80 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "123 courses found" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{# {{ govukBackLink({
+  text: "Back",
+  href: "#"
+}) }} #}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {% include "./_search-terms.njk" %}
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="app-filter-layout">
+    <div class="app-filter-layout__filter">
+
+      {% include "./_filter-panel.njk" %}
+
+    </div>
+
+    <div class="app-filter-layout__content">
+
+      <div class="app-action-bar">
+        <div class="app-action-bar__filter"></div>
+      </div>
+
+      {% include "./_promoted-link.njk" %}
+
+      {% include "./_sort-options.njk" %}
+
+      {% include "./_results.njk" %}
+
+      {% include "./_pagination.njk" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block pageScripts %}
+<script type="module">
+  import { FilterToggleButton } from '/public/javascripts/components/filter-toggle-button.js'
+
+  const filterToggleButton = new FilterToggleButton({
+    bigModeMediaQuery: '(min-width: 48.063em)',
+    startHidden: false,
+    toggleButton: {
+      container: $('.app-action-bar__filter'),
+      showText: 'Show filter',
+      hideText: 'Hide filter',
+      classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+    },
+    closeButton: {
+      container: $('.app-filter__header-action'),
+      text: 'Close'
+    },
+    filter: {
+      container: $('.app-filter-layout__filter')
+    }
+  })
+
+  filterToggleButton.init()
+</script>
+{% endblock %}
