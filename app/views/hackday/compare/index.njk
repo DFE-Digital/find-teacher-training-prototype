@@ -1,0 +1,90 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Compare courses" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back",
+  href: "#"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      {% include "./_courses.njk" %}
+
+    </div>
+  </div>
+
+  {# <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l">
+        <span class="govuk-caption-l">Bath Spa University</span>
+        Biology (CX11)
+      </h2>
+
+      <p class="govuk-body">
+        <a class="govuk-link" href="#">View full course details</a>
+      </p>
+
+      {% include "./_course-01.njk" %}
+
+      {{ govukButton({
+        text: "Apply for this course",
+        href: "#",
+        isStartButton: false
+      }) }}
+
+      <p class="govuk-body">
+        <a class="govuk-link" href="#">Remove this course</a>
+      </p>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l">
+        <span class="govuk-caption-l">Birmingham City University</span>
+        Biology (32XS)
+      </h2>
+
+      <p class="govuk-body">
+        <a class="govuk-link" href="#">View full course details</a>
+      </p>
+
+      {% include "./_course-02.njk" %}
+
+      {{ govukButton({
+        text: "Apply for this course",
+        href: "#",
+        isStartButton: false
+      }) }}
+
+      <p class="govuk-body">
+        <a class="govuk-link" href="#">Remove this course</a>
+      </p>
+
+    </div>
+  </div> #}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+{% endblock %}
