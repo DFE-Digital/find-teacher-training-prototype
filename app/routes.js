@@ -140,6 +140,18 @@ router.get('/hackday', (req, res) => {
   res.render('./hackday/index')
 })
 
+router.get('/hackday/compare', (req, res) => {
+  res.render('./hackday/compare/index')
+})
+
+router.get('/hackday/saved', (req, res) => {
+  res.render('./hackday/account/saved/index')
+})
+
+router.get('/hackday/account', (req, res) => {
+  res.render('./hackday/account/index')
+})
+
 router.get('/hackday/course/:courseId', (req, res) => {
   res.render('./hackday/courses/index')
 })
