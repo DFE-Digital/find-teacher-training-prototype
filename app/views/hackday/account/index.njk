@@ -1,0 +1,42 @@
+{% extends "./_layout.njk" %}
+
+{% set title = "My account" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+      <ul class="govuk-list govuk-list--spaced">
+        <li>
+          <a href="/hackday/saved">Saved courses</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block pageScripts %}
+
+{% endblock %}
