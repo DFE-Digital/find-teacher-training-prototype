@@ -40,6 +40,31 @@
           <h2 class="app-search-result__item-title">
             <a
               class="govuk-link"
+              href="#">
+              <span class="app-search-result__provider-name">ARK Teacher Training</span>
+              <br/>
+              <span class="app-search-result__course-name">Biology (2DGZ)</span>
+            </a>
+          </h2>
+
+          {% include "./_course-00.njk" %}
+
+          <div class="govuk-button-group">
+            {{ govukButton({
+              text: "Apply for this course",
+              href: "#",
+              isStartButton: false
+            }) }}
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="#">Remove this course</a>
+            </p>
+          </div>
+        </li>
+        <li class="app-search-results__item">
+          <h2 class="app-search-result__item-title">
+            <a
+              class="govuk-link"
               href="/hackday/course/1">
               {# /providers/B20/courses/CX11 #}
               <span class="app-search-result__provider-name">Bath Spa University</span>

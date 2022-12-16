@@ -1,0 +1,69 @@
+{% extends "../_layout.njk" %}
+
+{% set title = "Saved courses" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "/hackday"
+    }, {
+      text: "My account",
+      href: "/hackday/account"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row ">
+    <div class="govuk-grid-column-two-thirds">
+
+      <ul class="app-search-results">
+        <li class="app-search-results__item">
+          <h2 class="app-search-result__item-title">
+            <a
+              class="govuk-link"
+              href="#">
+              <span class="app-search-result__provider-name">ARK Teacher Training</span>
+              <br/>
+              <span class="app-search-result__course-name">Biology (2DGZ)</span>
+            </a>
+          </h2>
+
+          {% include "./_course-00.njk" %}
+
+          <div class="govuk-button-group">
+            {{ govukButton({
+              text: "Apply for this course",
+              href: "#",
+              isStartButton: false
+            }) }}
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="#">Remove this course</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+{% endblock %}
