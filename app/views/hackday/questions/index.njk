@@ -1,0 +1,80 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = question.title %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back",
+  href: actions.back
+}) }}
+{% endblock %}
+
+{% block content %}
+{# {{question|dump|safe}} #}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {# <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1> #}
+
+      {{ appSummaryCard({
+        html: "Biology courses in England<br>1,234 courses found <a href=\"#\">View courses</a>",
+        classes: "govuk-!-margin-bottom-5"
+      })}}
+
+      <form action="{{ actions.next }}" method="post" accept-charset="utf-8" novalidate>
+
+        {%- if question.type == 'single' %}
+          {{ govukRadios({
+            idPrefix: question.id,
+            name: question.name,
+            fieldset: {
+              legend: {
+                text: question.legend.text,
+                classes: "govuk-fieldset__legend--l",
+                isPageHeading: true
+              }
+            },
+            hint: {
+              text: question.hint.text | markdown | safe if question.hint.isMarkdown else question.hint.text,
+              classes: "app-c-markdown" if question.hint.isMarkdown
+            } if question.hint,
+            errorMessage: errors | getErrorMessage(question.id),
+            items: question.items
+          }) }}
+        {% elif question.type == 'multiple' %}
+          {{ govukCheckboxes({
+            idPrefix: question.id,
+            name: question.name,
+            fieldset: {
+              legend: {
+                text: question.legend.text,
+                classes: "govuk-fieldset__legend--l",
+                isPageHeading: true
+              }
+            },
+            hint: {
+              text: question.hint.text | markdown | safe if question.hint.isMarkdown else question.hint.text,
+              classes: "app-c-markdown" if question.hint.isMarkdown
+            } if question.hint,
+            errorMessage: errors | getErrorMessage(question.id),
+            items: question.items
+          }) }}
+        {% endif -%}
+
+        {{ govukButton({
+          text: "Continue",
+          classes: "govuk-!-margin-top-5"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
