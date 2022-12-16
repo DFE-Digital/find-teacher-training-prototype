@@ -144,6 +144,14 @@ router.get('/hackday/compare', (req, res) => {
   res.render('./hackday/compare/index')
 })
 
+router.get('/hackday/compare-empty', (req, res) => {
+  res.render('./hackday/compare/empty')
+})
+
+router.get('/hackday/compare-partial', (req, res) => {
+  res.render('./hackday/compare/partial')
+})
+
 router.get('/hackday/saved', (req, res) => {
   res.render('./hackday/account/saved/index')
 })
