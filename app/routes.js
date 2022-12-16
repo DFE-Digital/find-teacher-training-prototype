@@ -140,6 +140,8 @@ router.get('/hackday', (req, res) => {
   res.render('./hackday/index')
 })
 
+// Compare
+
 router.get('/hackday/compare', (req, res) => {
   res.render('./hackday/compare/index')
 })
@@ -152,13 +154,27 @@ router.get('/hackday/compare-partial', (req, res) => {
   res.render('./hackday/compare/partial')
 })
 
+// Saved
+
 router.get('/hackday/saved', (req, res) => {
   res.render('./hackday/account/saved/index')
 })
 
+router.get('/hackday/saved-empty', (req, res) => {
+  res.render('./hackday/account/saved/empty')
+})
+
+router.get('/hackday/saved-partial', (req, res) => {
+  res.render('./hackday/account/saved/partial')
+})
+
+// Account
+
 router.get('/hackday/account', (req, res) => {
   res.render('./hackday/account/index')
 })
+
+// Courses
 
 router.get('/hackday/course/:courseId', (req, res) => {
   res.render('./hackday/courses/index')
