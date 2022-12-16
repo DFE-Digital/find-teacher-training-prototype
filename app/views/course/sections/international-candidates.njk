@@ -8,6 +8,10 @@
 
   <p class="govuk-body">You’ll {{ "also" if course.funding_type == "apprenticeship" }} need the {{ 'right to work' if course.has_salary else 'right to study' }} in the UK. You already have this if, for example, you:</p>
 
+  {% if course.has_irp %}
+    <p class="govuk-body">INTERNATIONAL RELOCATION PAYMENTS</p>
+  {% endif %}
+
   <ul class="govuk-list govuk-list--bullet">
     <li>are an Irish citizen</li>
     <li>have settled or pre-settled status under the <a class="govuk-link" href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a> (you may still be able to apply)</li>
