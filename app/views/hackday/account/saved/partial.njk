@@ -1,6 +1,6 @@
 {% extends "../_layout.njk" %}
 
-{% set title = "Saved courses" %}
+{% set title = "1 saved course" %}
 
 {% block pageTitle %}
 {{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
@@ -56,8 +56,19 @@
               isStartButton: false
             }) }}
 
+            {{ govukButton({
+              text: "Compare course",
+              href: "#",
+              isStartButton: false,
+              classes: "govuk-button--secondary"
+            }) }}
+
+            {# <p class="govuk-body">
+              <a class="govuk-link" href="#">Compare course</a>
+            </p> #}
+
             <p class="govuk-body">
-              <a class="govuk-link" href="#">Remove this course</a>
+              <a class="govuk-link" href="#">Remove course</a>
             </p>
           </div>
         </li>
