@@ -8,6 +8,9 @@ const providerController = require('./controllers/providers')
 const resultsController = require('./controllers/results')
 const searchController = require('./controllers/search')
 
+
+const questionController = require('./controllers/hackday/questions')
+
 const checkHasSearchParams = (req, res, next) => {
   if (!req.session.data.filter?.subject) {
     res.redirect('/')
@@ -183,6 +186,35 @@ router.get('/hackday/course/:courseId', (req, res) => {
 router.get('/hackday/partner/:partnerId', (req, res) => {
   res.render('./hackday/partners/index')
 })
+
+// New question flow
+
+router.get('/hackday/questions', (req, res) => {
+  res.redirect('/hackday/questions/location-or-provider')
+})
+
+// router.get('/hackday/questions/:questionId', questionController.question_get)
+// router.post('/hackday/questions/:questionId', questionController.question_post)
+
+router.get('/hackday/questions/location-or-provider', questionController.location_or_provider_get)
+router.post('/hackday/questions/location-or-provider', questionController.location_or_provider_post)
+
+router.get('/hackday/questions/subject-level', questionController.subject_level_get)
+router.post('/hackday/questions/subject-level', questionController.subject_level_post)
+
+router.get('/hackday/questions/primary-subject', questionController.primary_subject_get)
+router.post('/hackday/questions/primary_subject', questionController.primary_subject_post)
+
+router.get('/hackday/questions/secondary-subject', questionController.secondary_subject_get)
+router.post('/hackday/questions/secondary-subject', questionController.secondary_subject_post)
+
+router.get('/hackday/questions/interstitial', questionController.interstitial_get)
+
+router.get('/hackday/questions/degree-grade', questionController.degree_grade_get)
+router.post('/hackday/questions/degree-grade', questionController.degree_grade_post)
+
+router.get('/hackday/questions/right-to-work-or-study', questionController.right_to_work_or_study_get)
+router.post('/hackday/questions/right-to-work-or-study', questionController.right_to_work_or_study_post)
 
 /// ------------------------------------------------------------------------ ///
 /// PROTOTYPE ADMIN
