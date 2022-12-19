@@ -1,0 +1,426 @@
+[
+  {
+    "id": "location-or-provider",
+    "name": "search[q]",
+    "legend": {
+      "text": "Find courses by location or by training provider"
+    },
+    "hint": {
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "location",
+        "text": "By city, town or postcode",
+        "conditional": {}
+      },
+      {
+        "value": "england",
+        "text": "Across England"
+      },
+      {
+        "value": {},
+        "divider": "or"
+      },
+      {
+        "value": "provider",
+        "text": "By school, university or other training provider",
+        "conditional": {}
+      }
+    ]
+  },
+  {
+    "id": "subject-level",
+    "name": "search[subjectLevel]",
+    "legend": {
+      "text": "Which age group do you want to teach?"
+    },
+    "hint": {
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "primary",
+        "text": "Primary"
+      },
+      {
+        "value": "secondary",
+        "text": "Secondary"
+      },
+      {
+        "value": {},
+        "divider": "or"
+      },
+      {
+        "value": "furtherEducation",
+        "text": "Further education",
+        "hint": {
+          "text": "For example, teaching A levels or vocational courses"
+        }
+      }
+    ]
+  },
+  {
+    "id": "primary-subject",
+    "name": "search[subject][]",
+    "legend": {
+      "text": "Which primary specialisms do you want to teach?"
+    },
+    "hint": {
+      "text": "Select all subjects you are interested in teaching",
+      "isMarkdown": false
+    },
+    "type": "multiple",
+    "items": [
+      {
+        "id": "32a27d4b-8216-4498-9e7c-ddfba0a38a00",
+        "text": "Primary",
+        "value": "00"
+      },
+      {
+        "id": "1e6e30f3-d686-4686-9d83-16b3a56cd9a0",
+        "text": "Primary with English",
+        "value": "01"
+      },
+      {
+        "id": "4f96acc0-644d-4f31-8cd8-7e9fe1351bcd",
+        "text": "Primary with geography and history",
+        "value": "02"
+      },
+      {
+        "id": "286cf12f-b3e3-41c5-9f33-2ff7807d2df0",
+        "text": "Primary with mathematics",
+        "value": "03"
+      },
+      {
+        "id": "9e1b13bd-5c38-4c2f-9ef6-b36610f986c8",
+        "text": "Primary with modern languages",
+        "value": "04"
+      },
+      {
+        "id": "5ae4c96e-1da2-4831-91a3-64439b606fed",
+        "text": "Primary with physical education",
+        "value": "06"
+      },
+      {
+        "id": "c271fc3e-81ce-4e50-8715-fe2cfa0d5dc4",
+        "text": "Primary with science",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "secondary-subject",
+    "name": "search[subject][]",
+    "legend": {
+      "text": "Which secondary subject do you want to teach?"
+    },
+    "hint": {
+      "text": "Select all subjects you are interested in teaching",
+      "isMarkdown": false
+    },
+    "type": "multiple",
+    "items": [
+      {
+        "id": "53d7a153-1258-4a28-b363-64a4e4f27f4f",
+        "text": "Ancient Greek",
+        "value": "A1",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "5510a8ea-e627-4eea-b4a0-f12c5349c780",
+        "text": "Ancient Hebrew",
+        "value": "A2",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "d461a678-3335-4ca2-9616-1dc479d31a49",
+        "text": "Art and design",
+        "value": "W1"
+      },
+      {
+        "id": "322cfc19-d51d-45db-91e3-bd7b4738470f",
+        "text": "Biology",
+        "value": "C1",
+        "hint": "Bursaries of £20,000 available"
+      },
+      {
+        "id": "de6477b2-6027-48e6-b9f7-3206774705c2",
+        "text": "Business studies",
+        "value": "08"
+      },
+      {
+        "id": "912d4fb4-761b-42e9-8dc6-e968b791ea4e",
+        "text": "Chemistry",
+        "value": "F1",
+        "hint": {
+          "text": "Scholarships of £29,000 and bursaries of £27,000 are available"
+        }
+      },
+      {
+        "id": "7c98ffbf-d90d-46bb-91ea-7817a81848f5",
+        "text": "Citizenship",
+        "value": "09"
+      },
+      {
+        "id": "0238281a-b738-45a5-88bb-b426a2a562e1",
+        "text": "Classics",
+        "value": "Q8"
+      },
+      {
+        "id": "9fcb4fa9-42d8-4b18-882e-d2925e53fe55",
+        "text": "Communication and media studies",
+        "value": "P3"
+      },
+      {
+        "id": "e6be6a9c-8696-4b88-8fbd-1ba1bef1b6fc",
+        "text": "Computing",
+        "value": "11",
+        "hint": {
+          "text": "Scholarships of £29,000 and bursaries of £27,000 are available"
+        }
+      },
+      {
+        "id": "49dcc400-03df-4732-af93-1c56ae22897f",
+        "text": "Dance",
+        "value": "12"
+      },
+      {
+        "id": "118fabd7-86d0-4a40-9e9a-e5c302abe59b",
+        "text": "Design and technology",
+        "value": "DT"
+      },
+      {
+        "id": "69052223-ca45-4781-a8d3-cb92447a6d78",
+        "text": "Drama",
+        "value": "13"
+      },
+      {
+        "id": "cd9159fc-869f-4188-8435-3374676d6e92",
+        "text": "Economics",
+        "value": "L1"
+      },
+      {
+        "id": "3aed1aa8-ae46-4b68-92bb-a6cc20655c59",
+        "text": "English",
+        "value": "Q3"
+      },
+      {
+        "id": "a9a2321a-fe0e-49fd-96b0-304880d1eed2",
+        "text": "English as a second or other language",
+        "value": "16"
+      },
+      {
+        "id": "9727f674-61ba-4efa-b1f2-21ec7e354442",
+        "text": "French",
+        "value": "15",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "9de4b2d2-5739-4c34-92d2-9b4384760298",
+        "text": "Further education",
+        "value": "41"
+      },
+      {
+        "id": "3f47e67b-7fa5-4947-a5a0-74d528cd2a87",
+        "text": "Geography",
+        "value": "F8"
+      },
+      {
+        "id": "fbb00c08-2dbc-4f26-adb3-3b23afba18c1",
+        "text": "German",
+        "value": "17"
+      },
+      {
+        "id": "b1c3659e-5021-4f1e-a218-16b115f46fbc",
+        "text": "Health and social care",
+        "value": "L5"
+      },
+      {
+        "id": "5a3609a0-5bbb-4377-b919-5d89932ab622",
+        "text": "History",
+        "value": "V1"
+      },
+      {
+        "id": "5e94c647-7b7e-4d02-a3b4-7667296fbf0a",
+        "text": "Italian",
+        "value": "18",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "dbae1e2d-e1c7-4b6d-897d-d5be177a884a",
+        "text": "Japanese",
+        "value": "19",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "fa7ee0d3-4cd4-475a-9280-f6b63b0dc466",
+        "text": "Latin",
+        "value": "A0",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "440c1e5c-0a7b-49ae-9534-184528468511",
+        "text": "Mandarin",
+        "value": "20",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "72345aa7-096c-488f-8649-085b8178cadb",
+        "text": "Mathematics",
+        "value": "G1",
+        "hint": {
+          "text": "Scholarships of £29,000 and bursaries of £27,000 are available"
+        }
+      },
+      {
+        "id": "4608e5e3-2a1a-48a1-8236-56c7af5a139d",
+        "text": "Modern languages - other",
+        "value": "24",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "24311bef-8673-41fb-933c-53f887fb6976",
+        "text": "Music",
+        "value": "W3"
+      },
+      {
+        "id": "a8daf023-e0c4-4cb1-9b2f-8bba1841d401",
+        "text": "Philosophy",
+        "value": "P1"
+      },
+      {
+        "id": "74d64a54-5e34-4590-b6c7-528dd0cf26fe",
+        "text": "Physical education",
+        "value": "C6"
+      },
+      {
+        "id": "795ce63a-e4f2-4835-9486-37e46e87bf0e",
+        "text": "Physical education with an EBacc subject",
+        "value": "C7"
+      },
+      {
+        "id": "bf97cd0a-224c-43d3-a021-84143df13e8d",
+        "text": "Physics",
+        "value": "F3",
+        "hint": {
+          "text": "Scholarships of £29,000 and bursaries of £27,000 are available"
+        }
+      },
+      {
+        "id": "1878e739-30bb-4de9-841e-42dacfb1fa0c",
+        "text": "Psychology",
+        "value": "C8"
+      },
+      {
+        "id": "724b5d16-28dd-4431-bc17-ea4be4daedc4",
+        "text": "Religious education",
+        "value": "V6"
+      },
+      {
+        "id": "f1f05cc5-08a2-4766-b138-71edb79081b9",
+        "text": "Russian",
+        "value": "21",
+        "hint": {
+          "text": "Bursaries of £25,000 available"
+        }
+      },
+      {
+        "id": "ed329bbc-6bb1-481f-98f7-8815f8c4fd68",
+        "text": "Science",
+        "value": "F0"
+      },
+      {
+        "id": "bd9a2174-f682-4f18-9551-498c2f7a48f9",
+        "text": "Social sciences",
+        "value": "14"
+      },
+      {
+        "id": "e34fd2a3-a32e-44e9-aea1-666badf3ac03",
+        "text": "Spanish",
+        "value": "22",
+        "hint": {
+          "text": "Scholarships of £27,000 and bursaries of £25,000 are available"
+        }
+      }
+    ]
+  },
+  {
+    "id": "degree-grade",
+    "name": "search[degreeGrade]",
+    "legend": {
+      "text": "DEGREE GRADE"
+    },
+    "hint": {
+      "text": "HINT",
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "two_one",
+        "text": "2:1 or first"
+      },
+      {
+        "value": "two_two",
+        "text": "2:2"
+      },
+      {
+        "value": "third",
+        "text": "Third"
+      },
+      {
+        "value": "not_required",
+        "text": "Pass - ordinary degree"
+      },
+      {
+        "value": {},
+        "divider": "or"
+      },
+      {
+        "value": "not_required",
+        "text": "I don’t have a degree yet"
+      }
+    ]
+  },
+  {
+    "id": "right-to-work-or-study",
+    "name": "search[rightToWorkOrStudy]",
+    "legend": {
+      "text": "Do you have the right to work or study in the UK?"
+    },
+    "hint": {
+      "text": "HINT",
+      "isMarkdown": false
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "yes",
+        "text": "Yes"
+      },
+      {
+        "value": "not_yet",
+        "text": "Not yet"
+      }
+    ]
+  }
+]
