@@ -22,160 +22,155 @@
         {{ title }}
       </h1>
 
+      {# {{ govukButton({
+        text: "Add another course to compare",
+        classes: "govuk-button--secondary"
+      }) }} #}
+
     </div>
   </div>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      <dl class="govuk-summary-list govuk-summary-list--no-border">
-        <div class="govuk-summary-list__row">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key govuk-!-width-one-third">Course</dt>
-            <dd class="govuk-summary-list__value govuk-!-width-one-third">
-              <h2 class="govuk-heading-l">
-                <span class="govuk-caption-l">Bath Spa University</span>
-                Biology (CX11)
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row app-table--no-border">
+            <th scope="row" class="govuk-table__header govuk-!-width-one-quarter">Course</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">
+              <h2 class="app-search-result__item-title">
+                <a class="govuk-link" href="/hackday/course/1">
+                  {# /providers/B20/courses/CX11 #}
+                  <span class="app-search-result__provider-name">Bath Spa University</span>
+                  <br/>
+                  <span class="app-search-result__course-name">Biology (CX11)</span>
+                </a>
               </h2>
-            </dd>
-            <dd class="govuk-summary-list__value govuk-!-width-one-third">
-              Add another course to compare
-              <p class="govuk-body">
-                <a href="#" class="govuk-link">Find another course</a><br>
-                <a href="#" class="govuk-link">From my list of saved courses</a><br>
-              </p>
-            </dd>
-          </div>
-
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">&nbsp;</dt>
-            <dd class="govuk-summary-list__value">
-              <p class="govuk-body govuk-!-margin-bottom-5">
-                <a class="govuk-link" href="/hackday/course/1">View full course details<span class="govuk-visually-hidden"> for Biology (CX11)</span></a>
-              </p>
-            </dd>
-            <dd class="govuk-summary-list__value">
-              &nbsp;
-            </dd>
-          </div>
-
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Nearest location</dt>
-            <dd class="govuk-summary-list__value">
+            </th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third" rowspan="13" style="border: 1px solid #b1b4b6; background-color: #f3f2f1;">
+              <div class="govuk-!-margin-left-3">
+                Add another course to compare
+                <ul class="govuk-list govuk-list--spaced">
+                  <li>
+                    <a href="#" class="govuk-link">Find another course</a>
+                  </li>
+                  <li>
+                    <a href="/hackday/saved" class="govuk-link">From my list of saved courses</a>
+                  </li>
+                </ul>
+              </div>
+            </th>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Nearest location</th>
+            <td class="govuk-table__cell">
               6 miles from you (nearest of 5 locations)
-            </dd>
-            <dd class="govuk-summary-list__value">
+            </td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date</dt>
-            <dd class="govuk-summary-list__value">September 2023</dd>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Start date</th>
+            <td class="govuk-table__cell">September 2023</td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Course length</dt>
-            <dd class="govuk-summary-list__value">1 year - full time</dd>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Course length</th>
+            <td class="govuk-table__cell">1 year - full time</td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Age range</dt>
-            <dd class="govuk-summary-list__value">11 to 16 - secondary</dd>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Age range</th>
+            <td class="govuk-table__cell">11 to 16 - secondary</td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Qualification</dt>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Qualification</th>
+            <td class="govuk-table__cell">
               <abbr title="Postgraduate certificate in education">PGCE</abbr>
               with
               <abbr title="Qualified teacher status">QTS</abbr>
-            </dd>
-            <dd class="govuk-summary-list__value">
+            </td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Degree required</dt>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Degree required</th>
+            <td class="govuk-table__cell">
               An undergraduate degree at class 2:1 or above, or equivalent.
-            </dd>
-            <dd class="govuk-summary-list__value">
+            </td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Course fees</dt>
-            <dd class="govuk-summary-list__value app-summary-list--vertical-align-top govuk-!-padding-top-0">
-              <table class="govuk-table app-table--no-border">
-                <caption class="govuk-table__caption govuk-visually-hidden">The course fees
-                  for 2023 to 2024 are as follows:
-                </caption>
-                <thead class="govuk-table__head">
-                  <tr class="govuk-table__row govuk-visually-hidden">
-                    <th class="govuk-table__header">Student type</th>
-                    <th class="govuk-table__header">Fees to pay</th>
-                  </tr>
-                </thead>
-                <tbody class="govuk-table__body">
-                  <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">UK students</td>
-                    <td class="govuk-table__cell">£9,250</td>
-                  </tr>
-                  <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">International students</td>
-                    <td class="govuk-table__cell">£14,400</td>
-                  </tr>
-                </tbody>
-              </table>
-            </dd>
-            <dd class="govuk-summary-list__value app-summary-list--vertical-align-top govuk-!-padding-top-0">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UK student fees</th>
+            <td class="govuk-table__cell">
+              £9,250
+            </td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Financial support</dt>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">International student fees</th>
+            <td class="govuk-table__cell">
+              £14,400
+            </td>
+            {# <td class="govuk-table__cell">
+              &nbsp;
+            </td> #}
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Financial support</th>
+            <td class="govuk-table__cell">
               A bursary of £20,000 and student finance are available if you’re eligible
-            </dd>
-            <dd class="govuk-summary-list__value">
+            </td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Visa sponsorship</dt>
-            <dd class="govuk-summary-list__value">Student visas can be sponsored</dd>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Visa sponsorship</th>
+            <td class="govuk-table__cell">Student visas can be sponsored</td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Subject knowledge enhancement</dt>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Subject knowledge enhancement</th>
+            <td class="govuk-table__cell">
               If your degree is not in biology, or you’ve not used your subject knowledge in a while, you may be asked to complete a <a href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
-            </dd>
-            <dd class="govuk-summary-list__value">
+            </td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
+            </td> #}
+          </tr>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key"></dt>
-            <dd class="govuk-summary-list__value">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"></th>
+            <td class="govuk-table__cell">
               {{ govukButton({
                 text: "Apply for this course",
                 href: "#",
@@ -186,13 +181,13 @@
               <p class="govuk-body">
                 <a class="govuk-link" href="#">Remove course<span class="govuk-visually-hidden"> for Biology (CX11)</span></a>
               </p>
-            </dd>
-            <dd class="govuk-summary-list__value">
+            </td>
+            {# <td class="govuk-table__cell">
               &nbsp;
-            </dd>
-          </div>
-        </div>
-      </dl>
+            </td> #}
+          </tr>
+        </tbody>
+      </table>
 
     </div>
   </div>
