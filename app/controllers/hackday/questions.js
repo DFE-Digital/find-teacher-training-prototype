@@ -135,11 +135,53 @@ exports.interstitial_get = async (req, res) => {
   res.render('hackday/questions/interstitial', {
     actions: {
       back: '/hackday/questions/subject-level',
-      next: '/hackday/questions/degree-grade',
+      next: '/hackday/questions/nationality',
       results: '/hackday',
       cancel: '#'
     }
   })
+}
+
+exports.nationality_get = async (req, res) => {
+  const question = questionModel.findOne('nationality')
+
+  let back = '/hackday/questions/primary-subject'
+  if (true) {
+    back = '/hackday/questions/secondary-subject'
+  }
+
+  res.render('hackday/questions/index', {
+    question,
+    actions: {
+      back,
+      save: '/hackday/questions/nationality',
+      cancel: '#'
+    }
+  })
+}
+
+exports.nationality_post = async (req, res) => {
+  const question = questionModel.findOne('nationality')
+
+  const errors = []
+
+  if (errors.length) {
+    res.render('hackday/questions/index', {
+      question,
+      errors,
+      actions: {
+        back: '/hackday/questions/interstitial',
+        save: '/hackday/questions/nationality',
+        cancel: '#'
+      }
+    })
+  } else {
+    if (true) {
+      res.redirect('/hackday/questions/right-to-work-or-study')
+    } else {
+      res.redirect('/hackday/questions/degree-grade')
+    }
+  }
 }
 
 exports.degree_grade_get = async (req, res) => {
