@@ -1,6 +1,6 @@
 {% extends "_layouts/default.njk" %}
 
-{% set title = "Find postgraduate teacher training" %}
+{% set title = "651 biology courses in England" %}
 
 {% block pageTitle %}
 {{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
@@ -27,34 +27,44 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      <div class="govuk-grid-row govuk-!-margin-bottom-7">
+      {# <div class="govuk-grid-row govuk-!-margin-bottom-7">
         <div class="govuk-grid-column-full">
           <div class="app-grid-column--grey">
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-two-thirds">
-                <h2 class="govuk-heading-m">Add more details, get better results</h2>
-                {{ govukButton({
-                  text: "Continue to add more detail",
-                  href: actions.next
-                }) }}
-              </div>
-            </div>
+
           </div>
+        </div>
+      </div> #}
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          {# <h2 class="govuk-heading-m">Add more details, get better results</h2> #}
+          {{ govukButton({
+            text: "View your courses",
+            href: "/hackday"
+          }) }}
+
+          {{ govukButton({
+            text: "Add more preferences",
+            href: actions.next,
+            classes: "govuk-button--secondary"
+          }) }}
         </div>
       </div>
 
-      <h2 class="govuk-heading-l">651 biology courses in England</h2>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {# <h2 class="govuk-heading-l">651 biology courses in England</h2> #}
 
       {# <p class="govuk-body">
         <a href="/hackday" class="govuk-link">View all 651 courses</a>
       </p> #}
 
-      {{ govukButton({
-        text: "View all 651 courses",
-        href: "/hackday"
-      }) }}
 
-      <h3 class="govuk-heading-m">Courses that match your search</h3>
+
+      <h3 class="govuk-heading-m">Top 3 courses that match your search</h3>
 
       <ul class="app-search-results">
         <li class="app-search-results__item">
@@ -232,9 +242,7 @@
           </dl>
         </li>
       </ul>
-
     </div>
   </div>
-
 
 {% endblock %}

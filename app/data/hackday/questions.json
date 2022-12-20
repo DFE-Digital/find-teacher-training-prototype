@@ -422,5 +422,36 @@
         "text": "Not yet"
       }
     ]
+  },
+  {
+    "id": "nationality",
+    "name": "search[nationality]",
+    "legend": {
+      "text": "What is your nationality?"
+    },
+    "hint": {
+      "text": "If you have dual nationality, select one nationality and continue to get results for that nationality."
+    },
+    "type": "single",
+    "items": [
+      {
+        "value": "nationality-uk",
+        "text": "British",
+        "hint": {
+          "text": "including English, Scottish, Welsh or from Northern Ireland"
+        }
+      },
+      {
+        "value": "nationality-ie",
+        "text": "Irish",
+        "hint": {
+          "text": "including from Northern Ireland"
+        }
+      },
+      {
+        "value": "nationality-row",
+        "text": "Citizen of a different country"
+      }
+    ]
   }
 ]

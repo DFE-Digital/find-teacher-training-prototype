@@ -210,11 +210,14 @@ router.post('/hackday/questions/secondary-subject', questionController.secondary
 
 router.get('/hackday/questions/interstitial', questionController.interstitial_get)
 
-router.get('/hackday/questions/degree-grade', questionController.degree_grade_get)
-router.post('/hackday/questions/degree-grade', questionController.degree_grade_post)
+router.get('/hackday/questions/nationality', questionController.nationality_get)
+router.post('/hackday/questions/nationality', questionController.nationality_post)
 
 router.get('/hackday/questions/right-to-work-or-study', questionController.right_to_work_or_study_get)
 router.post('/hackday/questions/right-to-work-or-study', questionController.right_to_work_or_study_post)
+
+router.get('/hackday/questions/degree-grade', questionController.degree_grade_get)
+router.post('/hackday/questions/degree-grade', questionController.degree_grade_post)
 
 /// ------------------------------------------------------------------------ ///
 /// PROTOTYPE ADMIN
