@@ -1,0 +1,162 @@
+{% extends "../_layout.njk" %}
+
+{% set title = "3 saved courses" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "/hackday"
+    }, {
+      text: "My account",
+      href: "/hackday/account"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row ">
+    <div class="govuk-grid-column-two-thirds">
+
+      <ul class="app-search-results">
+        <li class="app-search-results__item">
+          <h2 class="app-search-result__item-title">
+            <a
+              class="govuk-link"
+              href="#">
+              <span class="app-search-result__provider-name">ARK Teacher Training</span>
+              <br/>
+              <span class="app-search-result__course-name">Biology (2DGZ)</span>
+            </a>
+          </h2>
+
+          {% include "./_course-00.njk" %}
+
+          <div class="govuk-button-group govuk-!-margin-bottom-0">
+            {{ govukButton({
+              text: "Apply for this course",
+              href: "#",
+              isStartButton: false
+            }) }}
+
+            {{ govukButton({
+              text: "Compare course",
+              href: "#",
+              isStartButton: false,
+              classes: "govuk-button--secondary"
+            }) }}
+
+            {# <p class="govuk-body">
+              <a class="govuk-link" href="#">Compare course</a>
+            </p> #}
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="#">Remove course</a>
+            </p>
+          </div>
+        </li>
+        <li class="app-search-results__item">
+          <h2 class="app-search-result__item-title">
+            <a
+              class="govuk-link"
+              href="/hackday/course/1">
+              {# /providers/B20/courses/CX11 #}
+              <span class="app-search-result__provider-name">Bath Spa University</span>
+
+              <br/>
+
+              <span class="app-search-result__course-name">Biology (CX11)</span>
+            </a>
+          </h2>
+
+          {% include "./_course-01.njk" %}
+
+          <div class="govuk-button-group govuk-!-margin-bottom-0">
+            {{ govukButton({
+              text: "Apply for this course",
+              href: "#",
+              isStartButton: false
+            }) }}
+
+            {{ govukButton({
+              text: "Compare course",
+              href: "#",
+              isStartButton: false,
+              classes: "govuk-button--secondary"
+            }) }}
+
+            {# <p class="govuk-body">
+              <a class="govuk-link" href="#">Compare course</a>
+            </p> #}
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="#">Remove course</a>
+            </p>
+          </div>
+
+        </li>
+
+        <li class="app-search-results__item">
+
+          <h2 class="app-search-result__item-title">
+            <a
+              class="govuk-link"
+              href="/hackday/course/1">
+              {# /providers/B25/courses/32XS #}
+              <span class="app-search-result__provider-name">Birmingham City University</span>
+
+              <br/>
+
+              <span class="app-search-result__course-name">Biology (32XS)</span>
+            </a>
+          </h2>
+
+          {% include "./_course-02.njk" %}
+
+          <div class="govuk-button-group govuk-!-margin-bottom-0">
+            {{ govukButton({
+              text: "Apply for this course",
+              href: "#",
+              isStartButton: false
+            }) }}
+
+            {{ govukButton({
+              text: "Compare course",
+              href: "/hackday/compare",
+              isStartButton: false,
+              classes: "govuk-button--secondary"
+            }) }}
+
+            {# <p class="govuk-body">
+              <a class="govuk-link" href="#">Compare course</a>
+            </p> #}
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="#">Remove course</a>
+            </p>
+          </div>
+
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+{% endblock %}

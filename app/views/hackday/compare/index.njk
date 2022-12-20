@@ -1,0 +1,187 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Compare courses" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back",
+  href: "#"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Course</th>
+            <th scope="col" class="govuk-table__header">
+              <h2 class="app-search-result__item-title">
+                <a class="govuk-link" href="/hackday/course/1">
+                  {# /providers/B20/courses/CX11 #}
+                  <span class="app-search-result__provider-name">Bath Spa University</span>
+                  <br/>
+                  <span class="app-search-result__course-name">Biology (CX11)</span>
+                </a>
+              </h2>
+            </th>
+            <th scope="col" class="govuk-table__header">
+              <h2 class="app-search-result__item-title">
+                <a class="govuk-link" href="/hackday/course/1">
+                  {# /providers/B25/courses/32XS #}
+                  <span class="app-search-result__provider-name">Birmingham City University</span>
+                  <br/>
+                  <span class="app-search-result__course-name">Biology (32XS)</span>
+                </a>
+              </h2>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Nearest location</th>
+            <td class="govuk-table__cell">
+              6 miles from you (nearest of 5 locations)
+            </td>
+            <td class="govuk-table__cell">95 miles from you</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Start date</th>
+            <td class="govuk-table__cell">September 2023</td>
+            <td class="govuk-table__cell">October 2023</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Course length</th>
+            <td class="govuk-table__cell">1 year - full time</td>
+            <td class="govuk-table__cell">1 year - full time</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Age range</th>
+            <td class="govuk-table__cell">11 to 16 - secondary</td>
+            <td class="govuk-table__cell">11 to 18 - secondary</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Qualification</th>
+            <td class="govuk-table__cell">
+              <abbr title="Postgraduate certificate in education">PGCE</abbr>
+              with
+              <abbr title="Qualified teacher status">QTS</abbr>
+            </td>
+            <td class="govuk-table__cell">
+              <abbr title="Postgraduate certificate in education">PGCE</abbr>
+              with
+              <abbr title="Qualified teacher status">QTS</abbr>
+            </td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Degree required</th>
+            <td class="govuk-table__cell">
+              An undergraduate degree at class 2:1 or above, or equivalent.
+            </td>
+            <td class="govuk-table__cell">
+              An undergraduate degree at class 2:2 or above, or equivalent
+            </td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UK student fees</th>
+            <td class="govuk-table__cell">
+              £9,250
+            </td>
+            <td class="govuk-table__cell">
+              £7,250
+            </td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">International student fees</th>
+            <td class="govuk-table__cell">
+              £14,400
+            </td>
+            <td class="govuk-table__cell">
+              £10,200
+            </td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Financial support</th>
+            <td class="govuk-table__cell">
+              A bursary of £20,000 and student finance are available if you’re eligible
+            </td>
+            <td class="govuk-table__cell">
+              A bursary of £20,000 and student finance are available if you’re eligible
+            </td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Visa sponsorship</th>
+            <td class="govuk-table__cell">Student visas can be sponsored</td>
+            <td class="govuk-table__cell">Student visas can be sponsored</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Subject knowledge enhancement</th>
+            <td class="govuk-table__cell">
+              If your degree is not in biology, or you’ve not used your subject knowledge in a while, you may be asked to complete a <a href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
+            </td>
+            <td class="govuk-table__cell">
+              If your degree is not in biology, or you’ve not used your subject knowledge in a while, you may be asked to complete a <a href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
+            </td>
+          </tr>
+
+          <tr class="govuk-table__row app-table--no-border">
+            <th scope="row" class="govuk-table__header"></th>
+            <td class="govuk-table__cellr">
+              {{ govukButton({
+                text: "Apply for this course",
+                href: "#",
+                isStartButton: false,
+                classes: "govuk-!-margin-top-5"
+              }) }}
+
+              <p class="govuk-body">
+                <a class="govuk-link" href="#">Remove course<span class="govuk-visually-hidden"> for Biology (CX11)</span></a>
+              </p>
+            </td>
+            <td class="govuk-table__cell">
+              {{ govukButton({
+                text: "Apply for this course",
+                href: "#",
+                isStartButton: false,
+                classes: "govuk-!-margin-top-5"
+              }) }}
+
+              <p class="govuk-body">
+                <a class="govuk-link" href="#">Remove course<span class="govuk-visually-hidden"> for Biology (32XS)</span></a>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+{% endblock %}

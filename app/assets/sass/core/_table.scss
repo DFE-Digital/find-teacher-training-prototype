@@ -2,3 +2,8 @@
 .app-table--vertical-align-middle .govuk-table__cell {
   vertical-align: middle;
 }
+
+.app-table--no-border .govuk-table__header,
+.app-table--no-border .govuk-table__cell {
+  border: 0;
+}

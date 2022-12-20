@@ -17,3 +17,13 @@
 .app-list--locations {
   columns: 3 8em;
 }
+
+.app-list--inline {
+  display: block;
+
+  & li {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: govuk-spacing(2);
+  }
+}
