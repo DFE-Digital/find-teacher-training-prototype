@@ -1,0 +1,39 @@
+{% extends "../_layout.njk" %}
+
+{% set title = "No saved courses" %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "/hackday"
+    }, {
+      text: "My account",
+      href: "/hackday/account"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+      <p class="govuk-body">
+        You don’t have any saved courses. <a href="#" class="govuk-link">Find a course</a>.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}

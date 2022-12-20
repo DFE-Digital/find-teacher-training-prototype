@@ -1,0 +1,109 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = question.title %}
+
+{% block pageTitle %}
+{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back",
+  href: actions.back
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {% if question.id != "location-or-provider" %}
+
+        {% if data.search.subjectLevel == 'primary' %}
+          {% set courseCount = 1857 %}
+          {% set subjectLevel = "primary" %}
+        {% elif data.search.subjectLevel == 'secondary' %}
+          {% set courseCount = 10907 %}
+          {% set subjectLevel = "secondary" %}
+        {% elif data.search.subjectLevel == 'furtherEducation' %}
+          {% set courseCount = 38 %}
+          {% set subjectLevel = "further education" %}
+        {% endif %}
+
+        {% if data.search.subject %}
+          {% set subject = data.search.subject | getSubjectList %}
+        {% endif %}
+
+        {% if data.search.subject | length %}
+          {{ appSummaryCard({
+            html: "651 <b>" + subject + "</b> courses in <b>England</b>",
+            classes: "govuk-!-margin-bottom-5"
+          }) }}
+        {% elif data.search.subjectLevel | length %}
+          {{ appSummaryCard({
+            html: (courseCount | numeral("0,0")) + " <b>" + subjectLevel + "</b> courses in <b>England</b>",
+            classes: "govuk-!-margin-bottom-5"
+          }) }}
+        {% else %}
+          {{ appSummaryCard({
+            html: "12,807 courses in <b>England</b>",
+            classes: "govuk-!-margin-bottom-5"
+          }) }}
+        {% endif %}
+
+        {#  <a class=\"govuk-link govuk-!-margin-left-3\" href=\"#\">View courses</a> #}
+
+      {% endif %}
+
+      <form action="{{ actions.next }}" method="post" accept-charset="utf-8" novalidate>
+
+        {%- if question.type == 'single' %}
+          {{ govukRadios({
+            idPrefix: question.id,
+            name: question.name,
+            fieldset: {
+              legend: {
+                text: question.legend.text,
+                classes: "govuk-fieldset__legend--l",
+                isPageHeading: true
+              }
+            },
+            hint: {
+              text: question.hint.text | markdown | safe if question.hint.isMarkdown else question.hint.text,
+              classes: "app-c-markdown" if question.hint.isMarkdown
+            } if question.hint,
+            errorMessage: errors | getErrorMessage(question.id),
+            items: question.items
+          }) }}
+        {% elif question.type == 'multiple' %}
+          {{ govukCheckboxes({
+            idPrefix: question.id,
+            name: question.name,
+            fieldset: {
+              legend: {
+                text: question.legend.text,
+                classes: "govuk-fieldset__legend--l",
+                isPageHeading: true
+              }
+            },
+            hint: {
+              text: question.hint.text | markdown | safe if question.hint.isMarkdown else question.hint.text,
+              classes: "app-c-markdown" if question.hint.isMarkdown
+            } if question.hint,
+            errorMessage: errors | getErrorMessage(question.id),
+            items: question.items
+          }) }}
+        {% endif -%}
+
+        {{ govukButton({
+          text: "Continue",
+          classes: "govuk-!-margin-top-5"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
