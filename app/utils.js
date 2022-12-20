@@ -21,12 +21,20 @@ module.exports = () => {
   const utils = {}
 
   utils.decorateCourse = course => {
-    // SKE
+    // Subject knowledge enhancements
     const subjectCodesWithSke = subjects
       .filter(subject => subject.hasSke === true)
       .map(subject => subject.code)
 
     course.has_ske = subjectCodesWithSke.some(code => course.subject_codes.includes(code))
+
+
+    // International relocation payments
+    const subjectCodesWithIrp = subjects
+      .filter(subject => subject.hasIrp === true)
+      .map(subject => subject.code)
+
+    course.has_irp = subjectCodesWithIrp.some(code => course.subject_codes.includes(code))
 
     // There's a bug in the API where has_bursary and has_scholarship not always
     // returned. Check for this and set value

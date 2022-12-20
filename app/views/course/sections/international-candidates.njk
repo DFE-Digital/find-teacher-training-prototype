@@ -32,6 +32,10 @@
 
   <p class="govuk-body">Find out more about <a class="govuk-link" href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen">training to teach in England</a>.</p>
 
+  {% if course.has_irp %}
+    <p class="govuk-body">You may be entitled to £10,000 from the UK government to help with the financial costs of moving to England. Learn more about <a class="govuk-link" href="https://getintoteaching.education.gov.uk/non-uk-teachers/train-to-teach-in-england-as-an-international-student">training to teach in England as an international student</a>.</p>
+  {% endif %}
+
   <h3 class="govuk-heading-m">International qualifications</h3>
 
   <p class="govuk-body">If your qualifications come from a non-UK institution, we may want to see a ‘statement of comparability’ from UK ENIC. This will show us how they compare to UK qualifications.</p>

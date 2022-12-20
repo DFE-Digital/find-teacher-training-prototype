@@ -5,7 +5,8 @@
     "code": "A1",
     "hint": "Bursaries of £25,000 available",
     "level": "secondary",
-    "group": "other"
+    "group": "other",
+    "hasIrp": true
   },
   {
     "id": "5510a8ea-e627-4eea-b4a0-f12c5349c780",
@@ -13,7 +14,8 @@
     "code": "A2",
     "hint": "Bursaries of £25,000 available",
     "level": "secondary",
-    "group": "other"
+    "group": "other",
+    "hasIrp": true
   },
   {
     "id": "d461a678-3335-4ca2-9616-1dc479d31a49",
@@ -132,7 +134,8 @@
     "hint": "Scholarships of £27,000 and bursaries of £25,000 are available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "9de4b2d2-5739-4c34-92d2-9b4384760298",
@@ -156,7 +159,8 @@
     "hint": "Scholarships of £27,000 and bursaries of £25,000 are available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "b1c3659e-5021-4f1e-a218-16b115f46fbc",
@@ -180,7 +184,8 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "dbae1e2d-e1c7-4b6d-897d-d5be177a884a",
@@ -190,7 +195,8 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "fa7ee0d3-4cd4-475a-9280-f6b63b0dc466",
@@ -198,7 +204,8 @@
     "code": "A0",
     "hint": "Bursaries of £25,000 available",
     "level": "secondary",
-    "group": "other"
+    "group": "other",
+    "hasIrp": true
   },
   {
     "id": "440c1e5c-0a7b-49ae-9534-184528468511",
@@ -208,7 +215,8 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "72345aa7-096c-488f-8649-085b8178cadb",
@@ -232,7 +240,8 @@
     "level": "secondary",
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "24311bef-8673-41fb-933c-53f887fb6976",
@@ -269,7 +278,8 @@
     "hint": "Scholarships of £29,000 and bursaries of £27,000 are available",
     "level": "secondary",
     "group": "stem",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "32a27d4b-8216-4498-9e7c-ddfba0a38a00",
@@ -337,7 +347,8 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   },
   {
     "id": "ed329bbc-6bb1-481f-98f7-8815f8c4fd68",
@@ -361,6 +372,7 @@
     "hint": "Scholarships of £27,000 and bursaries of £25,000 are available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true
+    "hasSke": true,
+    "hasIrp": true
   }
 ]
