@@ -430,8 +430,7 @@ exports.list = async (req, res) => {
   }
 
   if (selectedCampaign[0] === 'include') {
-    // filter.campaign_name = 'engineers_teach_physics'
-    filter.engineers_teach_physics = true
+    filter.campaign_name = 'engineers_teach_physics'
   }
 
 
