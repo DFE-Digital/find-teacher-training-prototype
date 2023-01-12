@@ -15,9 +15,9 @@
   </ul>
 
   {% set sponsorVisasHtml %}
-    {% if (not course.has_salary) and provider.can_sponsor_student_visa %}
+    {% if (not course.has_salary) and course.can_sponsor_student_visa %}
       {% include "./international-candidates/student-visas.md" %}
-    {% elif course.has_salary and provider.can_sponsor_skilled_worker_visa %}
+    {% elif course.has_salary and course.can_sponsor_skilled_worker_visa %}
       {% include "./international-candidates/skilled-worker-visas.md" %}
     {% elif course.has_salary %}
       {% include "./international-candidates/salary.md" %}
