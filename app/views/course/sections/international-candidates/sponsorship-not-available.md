@@ -1,7 +1,7 @@
-If you do not already have the right to study in the UK, you may need to apply for a visa. The main visa for fee-paying courses (those that you have to pay for) is the Student visa.
+If you do not already have the right to study in the UK, you may need to apply for a visa.
 
-To apply for a Student visa, you’ll need to be sponsored by your training provider.
-
-Sponsorship is not available for this course.
+Sponsorship for a Student visa is not available for this course.
 
 If you need a visa, filter your course search to find courses with visa sponsorship.
+
+You can also [learn more about different types of visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#studying-and-working-as-a-teacher-in-the-uk-without-a-skilled-worker-visa-or-a-student-visa) which allow you to train to be a teacher without being sponsored.
