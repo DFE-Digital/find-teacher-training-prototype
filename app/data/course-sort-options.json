@@ -1,12 +1,22 @@
 [
   {
-    "id": "b7a63bbe-4cd4-4771-b672-5d2c7b4f507a",
+    "id": "5235635c-4f5f-4ced-91c8-b4f45278cc34",
     "code": 0,
+    "name": "Course name (A to Z)"
+  },
+  {
+    "id": "39d21c11-0ecc-4eff-941f-651ae04fb195",
+    "code": 1,
+    "name": "Course name (Z to A)"
+  },
+  {
+    "id": "b7a63bbe-4cd4-4771-b672-5d2c7b4f507a",
+    "code": 2,
     "name": "Training provider (A to Z)"
   },
   {
     "id": "94af5269-a207-4f01-a3f1-0f52f683b7e2",
-    "code": 1,
+    "code": 3,
     "name": "Training provider (Z to A)"
   }
 ]
