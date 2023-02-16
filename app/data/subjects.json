@@ -184,7 +184,7 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true,
+    "hasSke": false,
     "hasIrp": true
   },
   {
@@ -195,7 +195,7 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true,
+    "hasSke": false,
     "hasIrp": true
   },
   {
@@ -215,7 +215,7 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true,
+    "hasSke": false,
     "hasIrp": true
   },
   {
@@ -347,7 +347,7 @@
     "hint": "Bursaries of £25,000 available",
     "parentCode": "ML",
     "group": "languages",
-    "hasSke": true,
+    "hasSke": false,
     "hasIrp": true
   },
   {
