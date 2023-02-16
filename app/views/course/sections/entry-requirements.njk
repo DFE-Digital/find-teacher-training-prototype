@@ -13,7 +13,6 @@
         An undergraduate degree, or equivalent.
       {% endif %}
     </p>
-
     {% if course.degree_subject_requirements %}
       {% if course.campaign_name != "engineers_teach_physics" %}
         <p class="govuk-body">
@@ -24,13 +23,12 @@
 
     {% if course.level == "secondary" %}
       {% if course.campaign_name == "engineers_teach_physics" %}
-
         <p class="govuk-body">This <a class="govuk-link" href="https://getintoteaching.education.gov.uk/subjects/engineers-teach-physics">Engineers teach physics</a> course is designed for candidates who have a background in materials science and engineering. If your degree is in physics, please apply to our physics course.</p>
-      {% else %}
-
       {% endif %}
     {% endif %}
-
+    {% if course.has_ske %}
+      <p class="govuk-body">If you need to improve your subject knowledge, speak to the training provider about completing a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement</a> course.</p>
+    {% endif %}
     {% if course.level == "primary" %}
       {% if course.has_ske and "03" in course.subject_codes %}
         <p class="govuk-body">
