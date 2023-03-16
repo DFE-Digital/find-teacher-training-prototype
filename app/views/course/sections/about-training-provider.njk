@@ -8,8 +8,8 @@
       <a class="govuk-link" href="{{ actions.provider }}#courses">View all courses from {{ course.provider.name }}</a>
     </p>
   {% endif %}
-  {% if course.about_accrediting_body %}
+  {% if course.about_accredited_body %}
     <h3 class="govuk-heading-m">About the accredited provider</h3>
-    {{ course.about_accrediting_body | markdown | safe }}
+    {{ course.about_accredited_body | markdown | safe }}
   {% endif %}
 </div>
