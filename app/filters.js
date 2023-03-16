@@ -373,8 +373,6 @@ module.exports = (env) => {
     return utilsHelper.getAccreditedBodyLabel(accreditedBodyCode)
   }
 
-
-
   /* ------------------------------------------------------------------
   utility function to get the subject list
   example: {{ [F3,G1] | getSubjectList }}

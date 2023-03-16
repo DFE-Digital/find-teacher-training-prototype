@@ -52,7 +52,7 @@ exports.list = async (req, res) => {
 
     if (accreditedBodies?.length) {
       selectedFilters.categories.push({
-        heading: { text: 'Accredited body' },
+        heading: { text: 'Accredited provider' },
         items: accreditedBodies.map((accreditedBody) => {
           return {
             text: utilsHelper.getAccreditedBodyLabel(accreditedBody),
