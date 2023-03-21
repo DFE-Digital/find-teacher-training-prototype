@@ -92,7 +92,7 @@ module.exports = () => {
           case '17': // German
           case '22': // Spanish
             course.scholarship_body = 'British Council'
-            course.scholarship_url = 'https://www.britishcouncil.org/'
+            course.scholarship_url = 'https://www.britishcouncil.org/education/he-science/opportunities/ltts'
             break
         }
       }
