@@ -25,33 +25,14 @@
 
     <p class="govuk-body">You can select one of the following schools to indicate a preferred placement when you apply.</p>
 
-    <table class="govuk-table app-table--vertical-align-middle" data-qa="course__choose_a_training_location">
-      <caption class="govuk-visually-hidden">List of schools and vacancies</caption>
-      <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">School</th>
-        <th class="govuk-table__header" scope="col">Vacancies</th>
-      </tr>
-      </thead>
-
-      <tbody class="govuk-table__body">
-        {% for school in schools %}
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-              <strong>{{ school.name }}</strong>
-              <br>
-              {{ school.address }}
-            </td>
-            <td class="govuk-table__cell">
-              {% if school.has_vacancies %}
-                Yes
-              {% else %}
-                No
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <ul class="govuk-list govuk-list--spaced">
+      {% for school in schools %}
+      <li>
+        <strong>{{ school.name }}</strong>
+        <br>
+        {{ school.address }}
+      </li>
+      {% endfor %}
+    </ul>
   {% endif %}
 </div>
