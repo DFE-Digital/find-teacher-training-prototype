@@ -12,7 +12,7 @@ const sendOptions = [{
 
 const vacancyOptions = [{
   id: 'a4de2c9c-553f-4cea-8dd5-696afb02c06a',
-  name: 'Only show courses with vacancies',
+  name: 'Only show courses open to applications',
   code: 'include'
 }]
 
