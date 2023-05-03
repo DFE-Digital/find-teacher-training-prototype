@@ -45,7 +45,7 @@
   {% endif %}
   {% if course.applications_open_from %}
     <dt class="app-list--description__label">Date you can apply from</dt>
-    <dd>{{ course.applications_open_from | date("d MMMM yyyy") }}</dd>
+    <dd>{{ course.applications_open_from | date("d MMMM yyyy") }} {{- " - closed for applications" if not course.has_vacancies }}</dd>
   {% endif %}
   {% if course.start_date %}
     <dt class="app-list--description__label">Date course starts</dt>
