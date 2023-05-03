@@ -16,6 +16,12 @@
 </h2>
 
 <dl class="app-result-detail">
+  {% if not params.vacancies %}
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Applications open</dt>
+      <dd class="app-result-detail__value">Closed for applications</dd>
+    </div>
+  {% endif %}
   <div class="app-result-detail__row">
   {% if params.schools and params.schools | length > 0 %}
     <dt class="app-result-detail__key">Nearest location</dt>
@@ -100,12 +106,4 @@
       {% endif %}
     </dd>
   </div>
-  {% if params.vacancies %}
-    <div class="app-result-detail__row">
-      <dt class="app-result-detail__key">Vacancies</dt>
-      <dd class="app-result-detail__value">
-        {{ params.vacancies }}
-      </dd>
-    </div>
-  {% endif %}
 </dl>
