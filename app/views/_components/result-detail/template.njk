@@ -22,19 +22,19 @@
       <dd class="app-result-detail__value">Closed for applications</dd>
     </div>
   {% endif %}
-  <div class="app-result-detail__row">
   {% if params.schools and params.schools | length > 0 %}
-    <dt class="app-result-detail__key">Nearest location</dt>
-    <dd class="app-result-detail__value">
-      {% if params.schools | length > 0 %}
-        <p class="govuk-body">{{ params.schools[0].distance }} miles from you</p>
-        <p class="govuk-hint">{{ params.schools[0].name }}, {{ params.schools[0].address }}</p>
-        {% if params.schools | length > 1 %}
-          <p class="govuk-hint">Nearest of {{ params.schools | length }} locations. Next nearest is {{ params.schools[1].distance }} miles from you.</p>
+    <div class="app-result-detail__row">
+      <dt class="app-result-detail__key">Nearest location</dt>
+      <dd class="app-result-detail__value">
+        {% if params.schools | length > 0 %}
+          <p class="govuk-body">{{ params.schools[0].distance }} miles from you</p>
+          <p class="govuk-hint">{{ params.schools[0].name }}, {{ params.schools[0].address }}</p>
+          {% if params.schools | length > 1 %}
+            <p class="govuk-hint">Nearest of {{ params.schools | length }} locations. Next nearest is {{ params.schools[1].distance }} miles from you.</p>
+          {% endif %}
         {% endif %}
-      {% endif %}
-    </dd>
-  </div>
+      </dd>
+    </div>
   {% endif %}
   {% if params.placementAreas and showPlacementAreas %}
     <div class="app-result-detail__row">
