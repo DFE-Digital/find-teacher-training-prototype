@@ -28,18 +28,6 @@ const visaSponsorshipOptions = [{
   sectionName: 'providers'
 }]
 
-// const fundingTypeOptions = [{
-//   id: '1c909417-4192-4de3-bc52-c9ebee5e7e4e',
-//   name: 'Only show courses with a salary',
-//   code: 'include',
-//   sectionName: 'courses'
-// }, {
-//   id: '82135b5b-0ba8-47b2-a651-9ed29ff11a19',
-//   name: 'Only show providers with salaried courses',
-//   code: 'include',
-//   sectionName: 'providers'
-// }]
-
 const campaignOptions = [{
   id: '0b516fba-93f6-49c7-8b42-de57aa678c15',
   name: 'Only show Engineers teach physics courses',
@@ -412,12 +400,11 @@ exports.getSelectedVisaSponsorshipItems = (selectedItems, baseHref = '/results',
   return items
 }
 
-exports.getFundingTypeItems = (selectedItems, sectionName = 'courses') => {
+exports.getFundingTypeItems = (selectedItems) => {
   const fundingTypeOptions = require('../data/funding-types')
   const items = []
 
   fundingTypeOptions
-    // .filter(option => option.sectionName === sectionName)
     .forEach((fundingType, i) => {
       const item = {}
 
@@ -432,13 +419,12 @@ exports.getFundingTypeItems = (selectedItems, sectionName = 'courses') => {
   return items
 }
 
-exports.getFundingTypeLabel = (fundingTypeCode = null, sectionName = 'courses') => {
+exports.getFundingTypeLabel = (fundingTypeCode = null) => {
+  const fundingTypeOptions = require('../data/funding-types')
   let label = fundingTypeCode
 
-  if (sectionName === 'providers') {
-    label = 'Only show providers with salaried courses'
-  } else {
-    label = 'Only show courses with a salary'
+  if (fundingTypeCode) {
+    label = fundingTypeOptions.find(fundingType => fundingType.code === fundingTypeCode).name
   }
 
   return label
