@@ -28,17 +28,17 @@ const visaSponsorshipOptions = [{
   sectionName: 'providers'
 }]
 
-const fundingTypeOptions = [{
-  id: '1c909417-4192-4de3-bc52-c9ebee5e7e4e',
-  name: 'Only show courses with a salary',
-  code: 'include',
-  sectionName: 'courses'
-}, {
-  id: '82135b5b-0ba8-47b2-a651-9ed29ff11a19',
-  name: 'Only show providers with salaried courses',
-  code: 'include',
-  sectionName: 'providers'
-}]
+// const fundingTypeOptions = [{
+//   id: '1c909417-4192-4de3-bc52-c9ebee5e7e4e',
+//   name: 'Only show courses with a salary',
+//   code: 'include',
+//   sectionName: 'courses'
+// }, {
+//   id: '82135b5b-0ba8-47b2-a651-9ed29ff11a19',
+//   name: 'Only show providers with salaried courses',
+//   code: 'include',
+//   sectionName: 'providers'
+// }]
 
 const campaignOptions = [{
   id: '0b516fba-93f6-49c7-8b42-de57aa678c15',
@@ -394,8 +394,6 @@ exports.getVisaSponsorshipLabel = (visaSponsorshipCode = null, sectionName = 'co
   }
 
   return label
-
-  return 'Only show courses with visa sponsorship'
 }
 
 exports.getSelectedVisaSponsorshipItems = (selectedItems, baseHref = '/results', sectionName = 'courses') => {
@@ -415,10 +413,11 @@ exports.getSelectedVisaSponsorshipItems = (selectedItems, baseHref = '/results',
 }
 
 exports.getFundingTypeItems = (selectedItems, sectionName = 'courses') => {
+  const fundingTypeOptions = require('../data/funding-types')
   const items = []
 
   fundingTypeOptions
-    .filter(option => option.sectionName === sectionName)
+    // .filter(option => option.sectionName === sectionName)
     .forEach((fundingType, i) => {
       const item = {}
 
