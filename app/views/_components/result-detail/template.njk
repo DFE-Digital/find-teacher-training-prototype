@@ -74,7 +74,11 @@
     <div class="app-result-detail__row">
       <dt class="app-result-detail__key">Financial support</dt>
       <dd class="app-result-detail__value">
-        {{ params.fundingOption }}
+        {% if params.fundingType == "apprenticeship" %}
+          {{ params.fundingType | getFundingTypeLabel }}
+        {% else %}
+          {{ params.fundingOption }}
+        {% endif %}
       </dd>
     </div>
   {% endif %}
