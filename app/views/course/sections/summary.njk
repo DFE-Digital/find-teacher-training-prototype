@@ -9,7 +9,7 @@
     {% endif %}
   {% endif %}
   {% if course.funding_option %}
-    <dt class="app-description-list__label">Funding</dt>
+    <dt class="app-description-list__label">Fee or salary</dt>
     <dd>
       <p class="govuk-body">{{ course.funding_type | getFundingTypeLabel }}</p>
       {% if course.funding_type == "fee" %}
