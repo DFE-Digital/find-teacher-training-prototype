@@ -72,9 +72,12 @@
   </div>
   {% if params.fundingOption %}
     <div class="app-result-detail__row">
-      <dt class="app-result-detail__key">Financial support</dt>
+      <dt class="app-result-detail__key">Fee or salary</dt>
       <dd class="app-result-detail__value">
-        {{ params.fundingOption }}
+        <p class="govuk-body">{{ params.fundingType | getFundingTypeLabel }}</p>
+        {% if params.fundingType == "fee" %}
+          <p class="govuk-hint">{{ params.fundingOption }}<p class="govuk-hint">
+        {% endif %}
       </dd>
     </div>
   {% endif %}
