@@ -63,8 +63,6 @@ exports.show = async (req, res) => {
       location.county = ap.county
       location.postcode = ap.postcode
 
-      console.log(course.accredited_body);
-      console.log(location);
       site.address = helper.arrayToList(
         array = Object.values(location),
         join = ', ',
