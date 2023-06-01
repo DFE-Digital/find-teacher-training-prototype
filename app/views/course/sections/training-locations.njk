@@ -3,9 +3,9 @@
 
   {% set whereYouWillTrainHtml %}
     {% if course.program_type == 'higher_education_programme' and course.provider.provider_code != 'B31' %}
-      {% include "./school-placements/where-you-will-train-hei.md" %}
+      {% include "./training-locations/where-you-will-train-hei.md" %}
     {% elif course.program_type == 'scitt_programme' and course.provider.provider_code != 'E65' %}
-      {% include "./school-placements/where-you-will-train-scitt.md" %}
+      {% include "./training-locations/where-you-will-train-scitt.md" %}
     {% endif %}
   {% endset %}
 
