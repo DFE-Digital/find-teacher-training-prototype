@@ -66,7 +66,7 @@ module.exports = () => {
     } else if (course.has_bursary) {
       course.funding_option = 'Bursaries and student finance are available if you’re eligible'
     } else {
-      course.funding_option = 'Student finance if you’re eligible'
+      course.funding_option = 'Student finance is available if you’re eligible'
     }
 
     if (course.has_scholarship) {
