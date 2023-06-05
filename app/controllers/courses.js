@@ -1,6 +1,7 @@
 const qs = require('qs')
 const teacherTrainingService = require('../services/teacher-training')
 const utils = require('../utils')()
+const helper = require('../helpers/utils')
 
 exports.show = async (req, res) => {
   const providerCode = req.params.providerCode.toUpperCase()
@@ -45,6 +46,32 @@ exports.show = async (req, res) => {
     // Assume placement schools are locations with a campus code that isn’t '-'
     const schools = locations.filter(location => location.code !== '-')
 
+    // Mock study sites
+    const studySites = []
+
+    if (course.accredited_body) {
+      const ap = course.accredited_body
+
+      const site = {}
+      site.name = ap.name
+      site.address = ''
+
+      const location = {}
+      location.streetAddress1 = ap.street_address_1
+      location.streetAddress2 = ap.street_address_2
+      location.city = ap.city
+      location.county = ap.county
+      location.postcode = ap.postcode
+
+      site.address = helper.arrayToList(
+        array = Object.values(location),
+        join = ', ',
+        final = ', '
+      )
+
+      studySites.push(site)
+    }
+
     // Mock school placement policy
     // Assume provider has chosen to show placement schools if a course has more than 1 school location
     // course.placementPolicy = schools.length > 1 ? 'hosted' : 'placed'
@@ -75,6 +102,7 @@ exports.show = async (req, res) => {
     res.render('course/index', {
       course,
       schools,
+      studySites,
       actions: {
         back,
         provider: `/providers/${req.params.providerCode}?referrer=course&courseCode=${req.params.courseCode}`

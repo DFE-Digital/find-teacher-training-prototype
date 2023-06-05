@@ -1,11 +1,11 @@
 <div class="govuk-!-margin-bottom-8">
-  <h2 id="school-placements" class="govuk-heading-l">School placements</h2>
+  <h2 id="training-locations" class="govuk-heading-l">Training locations</h2>
 
   {% set whereYouWillTrainHtml %}
     {% if course.program_type == 'higher_education_programme' and course.provider.provider_code != 'B31' %}
-      {% include "./school-placements/where-you-will-train-hei.md" %}
+      {% include "./training-locations/where-you-will-train-hei.md" %}
     {% elif course.program_type == 'scitt_programme' and course.provider.provider_code != 'E65' %}
-      {% include "./school-placements/where-you-will-train-scitt.md" %}
+      {% include "./training-locations/where-you-will-train-scitt.md" %}
     {% endif %}
   {% endset %}
 
@@ -20,10 +20,34 @@
     {{ course.how_school_placements_work | markdown | safe }}
   {% endif %}
 
-  {% if schools.length %}
-    <h3 class="govuk-heading-m">Schools</h3>
+  {% if studySites.length %}
+    <h3 id="study-sites" class="govuk-heading-m">
+      Study sites
+    </h3>
 
-    <p class="govuk-body">We work with the following schools to provide your school placements.</p>
+    <p class="govuk-body">
+      The theoretical learning part of your course will be at the following location {{- "s" if studySites.length > 1}}.
+    </p>
+
+    <ul class="govuk-list govuk-list--spaced">
+      {% for studySite in studySites %}
+      <li>
+        <strong>{{ studySite.name }}</strong>
+        <br>
+        {{ studySite.address }}
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if schools.length %}
+    <h3 id="school-placements" class="govuk-heading-m">
+      School placements
+    </h3>
+
+    <p class="govuk-body">
+      We work with the following schools to provide your school placements.
+    </p>
 
     <ul class="govuk-list govuk-list--spaced">
       {% for school in schools %}
