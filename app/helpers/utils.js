@@ -58,6 +58,18 @@ exports.removeFilter = (value, data) => {
   }
 }
 
+exports.arrayToList = (array, join = ', ', final = ' and ') => {
+  const arr = array.slice(0)
+
+  const last = arr.pop()
+
+  if (array.length > 1) {
+    return arr.join(join) + final + last
+  }
+
+  return last
+}
+
 exports.getSubjectItems = (selectedItems, subjectLevel = null, showHint = false) => {
   let subjects = require('../data/subjects')
   const items = []
