@@ -448,7 +448,7 @@ exports.list = async (req, res) => {
 
     if (q === 'provider') {
       // get the provider based on name from the autocomplete
-      if (process.env.USER_JOURNEY === 'filter') {
+      if (process.env.USER_JOURNEY === 'browse' || 'filter') {
         let providerSuggestionListResponse = await teacherTrainingService.getProviderSuggestions(req.session.data.keywords)
 
         // TODO: if the response contains multiple providers, redirect user to a page
