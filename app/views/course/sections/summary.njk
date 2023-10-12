@@ -17,6 +17,18 @@
       {% endif %}
     </dd>
   {% endif %}
+    {# {% if (course.can_sponsor_worker_visa && course.can_sponsor_worker_visa) %}
+   <dt class="app-list--description__label">Visa sponsorship</dt>
+   <dd>Both Student and Skilled Worker visas can be sponsored</dd>
+  {% endif %} #}
+   {% if course.can_sponsor_student_visa %}
+   <dt class="app-list--description__label">Visa sponsorship</dt>
+   <dd>Student visas can be sponsored</dd>
+  {% endif %}
+  {% if course.can_sponsor_worker_visa %}
+   <dt class="app-list--description__label">Visa sponsorship</dt>
+   <dd>Only Skilled Worker visas can be sponsored</dd>
+  {% endif %}
   {% if course.qualifications %}
     <dt class="app-list--description__label">Qualification</dt>
     <dd>
