@@ -69,6 +69,70 @@
 {% endif %}
 
 {{ govukCheckboxes({
+  idPrefix: "visa-sponsorship",
+  name: "filter[visaSponsorship]",
+  fieldset: {
+    legend: {
+      html: 'Visa sponsorship<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: visaSponsorshipItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "study-mode",
+  name: "filter[studyMode]",
+  fieldset: {
+    legend: {
+      html: 'Full time or part time<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: studyModeItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "qualification",
+  name: "filter[qualification]",
+  fieldset: {
+    legend: {
+      html: 'Qualification<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: qualificationItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukRadios({
+  idPrefix: "degree-grade",
+  name: "filter[degreeGrade]",
+  fieldset: {
+    legend: {
+      html: 'Degree grade accepted<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: degreeGradeItems,
+  classes: "govuk-radios--small"
+}) }}
+
+{{ govukCheckboxes({
   idPrefix: "special-educational-needs",
   name: "filter[send]",
   fieldset: {
@@ -81,6 +145,22 @@
     classes: "app-filter__group"
   },
   items: sendItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "funding-type",
+  name: "filter[fundingType]",
+  fieldset: {
+    legend: {
+      html: 'Fee or salary<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: fundingTypeItems,
   classes: "govuk-checkboxes--small"
 }) }}
 
@@ -118,85 +198,6 @@
   }) }}
 {% endif %}
 
-{{ govukCheckboxes({
-  idPrefix: "study-mode",
-  name: "filter[studyMode]",
-  fieldset: {
-    legend: {
-      html: 'Full time or part time<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: studyModeItems,
-  classes: "govuk-checkboxes--small"
-}) }}
-
-{{ govukCheckboxes({
-  idPrefix: "qualification",
-  name: "filter[qualification]",
-  fieldset: {
-    legend: {
-      html: 'Qualification<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: qualificationItems,
-  classes: "govuk-checkboxes--small"
-}) }}
-
-{{ govukCheckboxes({
-  idPrefix: "funding-type",
-  name: "filter[fundingType]",
-  fieldset: {
-    legend: {
-      html: 'Fee or salary<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: fundingTypeItems,
-  classes: "govuk-checkboxes--small"
-}) }}
-
-{{ govukRadios({
-  idPrefix: "degree-grade",
-  name: "filter[degreeGrade]",
-  fieldset: {
-    legend: {
-      html: 'Degree grade accepted<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: degreeGradeItems,
-  classes: "govuk-radios--small"
-}) }}
-
-{{ govukCheckboxes({
-  idPrefix: "visa-sponsorship",
-  name: "filter[visaSponsorship]",
-  fieldset: {
-    legend: {
-      html: 'Visa sponsorship<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: visaSponsorshipItems,
-  classes: "govuk-checkboxes--small"
-}) }}
 {% endset %}
 
 <div class="app-filter">

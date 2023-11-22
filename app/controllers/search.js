@@ -106,7 +106,7 @@ exports.age_groups_post = async (req, res) => {
     } else if (ageGroup === 'furtherEducation') {
       req.session.data.filter = {}
       req.session.data.filter.subject = ['41']
-      res.redirect('/results')
+      res.redirect('/visa-status')
     } else {
       res.redirect('/results')
     }
@@ -150,7 +150,7 @@ exports.primary_subjects_post = async (req, res) => {
       errors
     })
   } else {
-    res.redirect('/results')
+    res.redirect('/visa-status')
   }
 }
 
@@ -191,9 +191,36 @@ exports.secondary_subjects_post = async (req, res) => {
       errors
     })
   } else {
-    res.redirect('/results')
+    res.redirect('/visa-status')
   }
 }
+
+exports.visa_status_get = async (req, res) => {
+  res.render('search/visa-status')
+
+}
+
+exports.visa_status_post = async (req, res) => {
+    res.redirect('/results')
+}
+
+// const visaStatus = req.session.data.visaStatus
+
+// const errors = []
+
+// if (!req.session.data.visaStatus?.length) {
+//   const error = {}
+//   error.fieldName = "visa-sponsorship"
+//   error.href = "#visa-status"
+//   error.text = "Select if you have the right to work or study in the UK"
+//   errors.push(error)
+// }
+
+// if (errors.length) {
+//   res.render('search/visa-status', {
+//     errors
+//   })
+// } else {
 
 exports.location_suggestions_json = async (req, res) => {
   req.headers['Access-Control-Allow-Origin'] = true
