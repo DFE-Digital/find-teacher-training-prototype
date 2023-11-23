@@ -77,6 +77,9 @@ router.post('/primary-subjects', searchController.primary_subjects_post)
 router.get('/secondary-subjects', searchController.secondary_subjects_get)
 router.post('/secondary-subjects', searchController.secondary_subjects_post)
 
+router.get('/visa-status', searchController.visa_status_get)
+router.post('/visa-status', searchController.visa_status_post)
+
 /// ------------------------------------------------------------------------ ///
 /// AUTOCOMPLETE ROUTES
 /// ------------------------------------------------------------------------ ///
