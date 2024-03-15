@@ -223,6 +223,15 @@ router.get('/hackday/questions/degree-grade', questionController.degree_grade_ge
 router.post('/hackday/questions/degree-grade', questionController.degree_grade_post)
 
 /// ------------------------------------------------------------------------ ///
+/// COURSE 2024
+/// ------------------------------------------------------------------------ ///
+
+router.get('/course-2024', (req, res) => {
+  res.render('./course-2024/index')
+})
+
+
+/// ------------------------------------------------------------------------ ///
 /// PROTOTYPE ADMIN
 /// ------------------------------------------------------------------------ ///
 
