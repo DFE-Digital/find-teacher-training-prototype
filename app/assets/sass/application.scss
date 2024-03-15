@@ -104,20 +104,8 @@ border: 5px solid #f9b400;
 
 // Fee call out box
 
-.fee-container {
-  display: flex;
-
-  @include govuk-media-query($from: tablet) {
-    display: grid;
-  }
-  }
-
-  .fee-item {
-  flex-grow: 1; /* default 0 */
-  }
-
 .fee-no-border {
-  border-left: 0px;
+  border: 0px;
   }
 
 .fee-color {
@@ -130,6 +118,18 @@ font-size: 27px;
 @include govuk-media-query($from: tablet) {
   font-size: 36px;
 }
+}
+
+.fee-container {
+display: flex;
+
+@include govuk-media-query($from: tablet) {
+  display: grid;
+}
+}
+
+.fee-item {
+flex-grow: 1; /* default 0 */
 }
 
 .fee-bg {
