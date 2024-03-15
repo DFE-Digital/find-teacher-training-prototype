@@ -76,64 +76,9 @@ $git-brand-colour: #159964;
 
 // Course pages styles
 
+// Notification banners custom
 
-.app-result-detail {
-  @include govuk-font($size: 19);
-  @include govuk-text-colour;
-  @include govuk-responsive-margin(6, "bottom");
-  @include govuk-media-query($from: tablet) {
-    display: table;
-    width: 100%;
-    table-layout: fixed; // Required to allow us to wrap words that overflow.
-  }
-  margin: 0; // Reset default user agent styles
-  @include govuk-responsive-margin(6, "bottom");
-}
-
-.app-result-detail__row {
-  @include govuk-media-query($until: tablet) {
-    margin-bottom: govuk-spacing(1);
-  }
-  @include govuk-media-query($from: tablet) {
-    display: table-row;
-  }
-}
-
-.app-result-detail__key,
-.app-result-detail__value {
-  margin: 0; // Reset default user agent styles
-  padding-bottom: govuk-spacing(3);
-
-  @include govuk-media-query($from: tablet) {
-    display: table-cell;
-    padding-top: 0;
-    padding-right: govuk-spacing(4);
-  }
-
-  .govuk-body {
-    margin-bottom: govuk-spacing(1);
-  }
-
-  .govuk-hint {
-    @include govuk-font($size: 16);
-    margin-bottom: govuk-spacing(1);
-  }
-}
-
-.app-result-detail__key {
-  font-weight: bold;
-
-  @include govuk-media-query($from: tablet) {
-    font-weight: bold;
-    width: 80px;
-  }
-}
-
-.app-result-detail--label {
-  font-weight: normal;
-}
-
-.govuk-notification-banner {
+.govuk-notification-banner--git {
   border-bottom: 0px;
   border-left: 5px solid #f162a3;
   border-right: 0px;
@@ -144,21 +89,36 @@ $git-brand-colour: #159964;
 border: 5px solid #f9b400;
 }
 
-.govuk-notification-banner__content {
+.govuk-notification-banner__content--grey {
   background-color: #f3f2f1;
 }
+// END Notification banners custom
+
+// Publish person specification call out
 
 .git-check-mark {
   color: #159964;
 }
 
-.fee-no-border {
-border-left: 0px;
-}
+// END Publish person specification call out
 
-.entry-reduced-width {
-width: 15%;
-}
+// Fee call out box
+
+.fee-container {
+  display: flex;
+
+  @include govuk-media-query($from: tablet) {
+    display: grid;
+  }
+  }
+
+  .fee-item {
+  flex-grow: 1; /* default 0 */
+  }
+
+.fee-no-border {
+  border-left: 0px;
+  }
 
 .fee-color {
 color: #fff;
@@ -172,61 +132,42 @@ font-size: 27px;
 }
 }
 
-.fee-container {
-display: flex;
-
-@include govuk-media-query($from: tablet) {
-  display: grid;
-}
-}
-
-.fee-item {
-flex-grow: 1; /* default 0 */
-}
-
 .fee-bg {
 background-color: #003078;
 }
 
-.heading--border-bottom {
-border-bottom: 5px solid #b1b4b6;
-padding-bottom: 10px;
-}
+// END Fee call out box
 
-.moj-page-header-actions {
-
-margin-bottom: 5px;
-
-@include govuk-media-query($from: tablet) {
-
-}
-
-}
+// Section header - styling to match the current line Teacher Vacancies website
 
 .course-title-with-actions {
+  margin-bottom: 15px;
 
-margin-bottom: 15px;
-
-@include govuk-media-query($from: tablet) {
-
-}
-
+  @include govuk-media-query($from: tablet) {
+  }
 }
 
 .course-header-with-actions {
+  margin-bottom: 5px !important;
 
-margin-bottom: 5px !important;
-
-@include govuk-media-query($from: tablet) {
-  margin-bottom: 10px !important;
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: 10px !important;
+  }
 }
 
-}
+.heading--border-bottom {
+  border-bottom: 5px solid #b1b4b6;
+  padding-bottom: 10px;
+  }
+
+// END Section header - styling to match the current line Teacher Vacancies website
+
+// Page header with actions - From the MOJ Design System
 
 .moj-page-header-actions {
   @include govuk-clearfix;
   font-size: 0; // Hide whitespace between elements
-  margin-bottom: govuk-spacing(7);
+  margin-bottom: 5px;
   min-height: govuk-spacing(7); // Match button height
   text-align: justify; // Trick to remove the need for floats
   &:after {
@@ -234,11 +175,9 @@ margin-bottom: 5px !important;
     display: inline-block;
     width: 100%;
   }
-
 }
 
 .moj-page-header-actions__title {
-
   [class^=govuk-heading-] {
     margin-bottom: govuk-spacing(2);
     text-align: left;
@@ -246,32 +185,27 @@ margin-bottom: 5px !important;
       margin-bottom: 0;
     }
   }
-
   @include govuk-media-query($from: tablet) {
     display: inline-block;
     vertical-align: middle;
   }
-
 }
 
 .moj-page-header-actions__actions {
-
   @include govuk-media-query($from: tablet) {
     display: inline-block;
     vertical-align: middle;
   }
-
 }
 
 .moj-page-header-actions__action {
-
   &:last-child {
     margin-bottom: 0;
   }
-
   @include govuk-media-query($from: tablet) {
     margin-bottom: 0;
   }
-
 }
+
+// END Page header with actions - From the MOJ Design System
 
