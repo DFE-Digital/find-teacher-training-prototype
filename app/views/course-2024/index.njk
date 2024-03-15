@@ -1,0 +1,329 @@
+{% extends "_layouts/default.njk" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<!--Header and apply button-->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="moj-page-header-actions">
+      <div class="moj-page-header-actions__title course-title-with-actions">
+        <h1 class="govuk-heading-xl course-header-with-actions">Biology (A123)</h1>
+        <span class="govuk-caption-xl">
+          Teach Wimbledon
+        </span>
+      </div>
+      <div class="moj-page-header-actions__actions">
+        <div class="moj-button-menu">
+          <div class="moj-button-menu__wrapper">
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Apply for course
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Header and apply button-->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <!--Fee-based course-->
+    <div class="govuk-notification-banner fee-no-border fee-bg" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__content govuk-notification-banner__content--grey fee-flex fee-bg">
+        <p class="govuk-body fee-color"><strong>Fees for 2024 to 2025</strong></p>
+          <div class="fee-container">
+            <div class="fee-item">
+              <p class="govuk-hint fee-color" style="margin-bottom: 0;">UK students</p>
+              <h3 class="govuk-heading-l fee-color fee-size" style="padding-top: 0;">£9,250</h3>
+            </div>
+            <div class="fee-item">
+              <p class="govuk-hint fee-color" style="margin-bottom: 0;">International students</p>
+              <h3 class="govuk-heading-l fee-color fee-size" style="padding-top: 0;">£17,325</h3>
+            </div>
+          </div>
+          <p class="govuk-body"><a href="#financial-support" style="color: #fff;">Financial support</a></p>
+      </div>
+    </div>
+    <!--end Fee-based course-->
+
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+
+  <!--Course details table-->
+  <div class="govuk-heading-l heading--border-bottom">Course details</div>
+  <table class="govuk-table">
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header" style="width: 32%;">Course length</th>
+        <td class="govuk-table__cell">Full time - 1 year</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Qualification</th>
+        <td class="govuk-table__cell">
+          <details class="govuk-details" style="margin-bottom: 0px;">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                PGCE with QTS
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p class="govuk-body">
+                A postgraduate certificate in education (PGCE) with qualified teacher status (QTS) will allow you to teach in state schools in England and may allow you to teach in other parts of the UK.
+              </p>
+              <p class="govuk-body">
+                It may also allow you to teach overseas, though you should always check what qualifications are needed in the country you’d like to teach in.
+                </p>
+              <p class="govuk-body">
+                Many PGCE courses include credits that count toward a Master’s degree.
+            </p>
+          </details>
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Start date</th>
+        <td class="govuk-table__cell">September 2024</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--End Course details table-->
+
+  <!--About the course-->
+  <div class="govuk-heading-m">About the course</div>
+  <p class="govuk-body">
+    This is a part-time route into teaching that offers you the opportunity to spend the majority of your time in the classroom from the very beginning, learning directly from experienced professionals in the school of your choice.
+  </p>
+  <p class="govuk-body">
+    The Biology teacher training programme is delivered in partnership with the University of Roehampton, who through lectures, workshops and assignments, provide the theoretical aspect of the programme, to support classroom practice. Please visit <a href="https://www.roehampton.ac.uk/postgraduate-courses/school-direct/">www.roehampton.ac.uk/postgraduate-courses/school-direct</a> for more information.
+  </p>
+  <p class="govuk-body">
+    The course will prepare you to teach all elements of Biology. You will learn about current developments in the teaching of this subject and its place within the curriculum.
+  </p>
+  <p class="govuk-body">
+    Upon successful completion of the course, you will be awarded with a PGCE, QTS and 60 credits at Masters level.
+  </p>
+  <!--End About the course-->
+
+  <!--Where you will train-->
+  <div class="govuk-heading-m">Where you will train</div>
+  <p class="govuk-body">
+    When submitting your application to train to teach with Teach Wimbledon, you will be asked to select the school at which you wish to be placed in the first instance. You will spend the majority of your teacher training year at this school, known as your home school.
+  </p>
+  <p class="govuk-body">
+    You will also have the opportunity to spend a period of time in a contrasting school, known as your away school. This will be arranged by Teach Wimbledon in the Autumn term.
+  </p>
+  <p class="govuk-body">
+    All schools at which trainees are placed are part of the Teach Wimbledon alliance and located within the London Borough of Merton, and should therefore be easily accessible.
+  </p>
+  <!--End Where you will train-->
+
+  <!--Entry requirements table-->
+  <div class="govuk-heading-l heading--border-bottom">Entry requirements</div>
+  <table class="govuk-table">
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header" style="width: 32%;">Degree</th>
+        <td class="govuk-table__cell">Bachelor's degree, with 2:1 or above<br><span class="govuk-hint">or equivalent</span></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">GCSEs</th>
+        <td class="govuk-table__cell">
+          Grade 4 (C) or above in English, maths and science<br>
+          <span class="govuk-hint">or equivalent. We’ll consider candidates with pending GCSEs.</span><br><br>
+          <details class="govuk-details" style="margin-bottom: 0px;">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Equivalency tests
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+            <p class="govuk-body">
+                We’ll consider candidates who need to take a GCSE equivalency test in English or maths.
+              </p>
+              <p class="govuk-body">
+                Equivalency tests will be accepted in English, maths or science.
+              </p>
+            <p class="govuk-body">
+                If you do not have an English or maths GCSE at grade C/Level 4 or above (or science for primary teacher training), you can still apply for teacher training, but we will require you to pass an equivalency test before we confirm any offer that we make.
+              </p>
+            <p class="govuk-body">
+                Further information on the providers that we recommend can be found on <a href="www.inspiringfutureteachers.org">our website</a>.
+              </p>
+              <p class="govuk-body">
+                Any overseas qualifications should be verified with ENIC for equivalency BEFORE an offer can be confirmed - (<a href="www.enic.org.uk">www.enic.org.uk</a>)
+              </p>
+          </details>
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header" style="width: 32%;">Visa sponsorship</th>
+        <td class="govuk-table__cell">
+          <details class="govuk-details" style="margin-bottom: 0px;">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Visas cannot be sponsored
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p class="govuk-body">
+                If you do not already have the right to study in the UK, you may need to <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/visas-for-non-uk-trainees">apply for your visa to train to teach in England</a>.
+              </p>
+              <p class="govuk-body">
+              You already have the right to study in the UK if, for example, you:
+            </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>are an Irish citizen</li>
+                <li>have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a> (you may still be able to apply)</li>
+                <li>have indefinite leave to remain in the UK</li>
+              </ul>
+              </div>
+          </details>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!--End Entry requirements table-->
+
+  <!--Person specifciation-->
+  <h3 class="govuk-heading-m">
+    Person specification
+  </h3>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Ability to work on own initiative and manage own work load</li>
+    <li>Ability to combine work and study</li>
+    <li>Ability to work cooperatively and effectively with colleagues</li>
+  </ul>
+  <div class="govuk-notification-banner govuk-notification-banner--git" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
+        <p class="govuk-body">
+          A person specification includes the essential and desirable traits, skills, and experience providers look for in an application and at interview.
+          <a href="#" class="govuk-link govuk-link--no-visited-state">Common things providers look for</a>
+        </p>
+    </div>
+  </div>
+  <!--Person specifciation-->
+
+  <!--Interview process-->
+  <h3 class="govuk-heading-m">
+    Interview process
+  </h3>
+  <p class="govuk-body">
+    Should your application be shortlisted, you will be invited to attend an interview with your chosen school. Your interview will generally consist of a teaching activity, panel interview and written task.
+  </p>
+  <!--End Interview process-->
+
+  <!--About the provider-->
+  <div class="govuk-heading-l heading--border-bottom">About Teach Wimbledon</div>
+  <table class="govuk-table">
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Accredited provider</th>
+        <td class="govuk-table__cell">Roehampton University</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Age range</th>
+        <td class="govuk-table__cell">11 to 16</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">School website</th>
+        <td class="govuk-table__cell"><a href="http://teachwimbledon.com" target="_blank">Teach Wimbledon website (opens in a new tab)</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Email address</th>
+        <td class="govuk-table__cell"><a href="#">teachwimbledon@uhsw.com</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Telephone</th>
+        <td class="govuk-table__cell">07907574832</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Address</th>
+        <td class="govuk-table__cell">Crescent Road<br>
+                                      Wimbledon<br>
+                                      London<br>
+                                      Merton<br>
+                                      SW20 8HA</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--End About the provider-->
+
+  <!--More about the provider-->
+  <details class="govuk-details" style="margin-bottom: 0px;">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        More about Teach Wimbledon
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+      <p class="govuk-heading-s">About Us</p>
+      <p class="govuk-body">
+        Working in Partnership with the University of Roehampton, Teach Wimbledon leads an alliance and a unique School Direct partnership with 16 primary and secondary schools in Merton.
+        Equivalency tests will be accepted in English, maths or science.
+      </p>
+      <p class="govuk-heading-s">Our Programme</p>
+      <p class="govuk-body">
+        School Direct is a school-led route into teaching, which enables graduates to choose the school at which they complete their training year. The majority of our trainees obtain permanent employment at their placement school, or at another school within the Teach Wimbledon alliance.
+      </p>
+      <p class="govuk-body">
+        School Direct offers trainees the opportunity to spend most of their time in school from the very beginning, learning directly from experienced professionals. Trainees typically spend four days a week at their placement school, and one day at university.
+      </p>
+      <p class="govuk-body">
+        Upon successful completion of the course, trainees are awarded with a PGCE, QTS and 60 credits at Masters level.
+      </p>
+      <p class="govuk-heading-s">Our Schools</p>
+      <p class="govuk-body">
+        Primary Schools: Dundonald Primary School, Sacred Heart Catholic Primary School, St John Fisher RC Primary School, St Mary’s Catholic Primary School, St Teresa’s RC Primary School, St Thomas of Canterbury RC Primary School, The Priory Church of England Primary School, SS Peter & Paul Catholic School, St Mark’s Primary School.
+      </p>
+      <p class="govuk-body">
+        Secondary Schools: Raynes Park High School, Ricards Lodge High School, Rutlish School, St Marks Academy, Ursuline High School, Wimbledon College.
+      </p>
+      <p class="govuk-heading-s">About the accredited provider</p>
+      <p class="govuk-body">
+        Courses are accredited by University of Roehampton, who have been at the forefront of teacher education for over 100 years. Many members of staff are at the cutting edge of research in teacher education, which has a positive impact on the quality of our provision; tutors have extensive teaching experience in schools with many having served as consultants or as Ofsted inspectors. The university experience is enhanced by its beautiful campus - unique in being both close to central London and set in parkland with grand, historic buildings and lakes side by side with newly built modern facilities.
+      </p>
+  </details>
+  <br><br>
+  <!--End More about the provider-->
+
+  <!--Financial support-->
+  <div class="govuk-heading-l heading--border-bottom" id="financial-support">Financial support</div>
+  <p class="govuk-body">National Institute of Teaching scholarships and support are available for some subjects and phases (and are also dependent on schools).</p>
+  <div class="govuk-notification-banner govuk-notification-banner--git" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
+        <p class="govuk-body">
+          You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs. Find out more about
+          <a href="https://getintoteaching.education.gov.uk/funding-and-support/tuition-fee-and-maintenance-loans" class="govuk-link govuk-link--no-visited-state">student finance for teacher training</a>.
+        </p>
+        <p class="govuk-body">
+          If you’re not a UK citizen, you’re unlikely to get help funding your training.
+          Find out more about <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees" class="govuk-link govuk-link--no-visited-state">fees and financial support for non-UK trainee teachers</a>.
+        </p>
+    </div>
+  </div>
+  <!--End Financial support-->
+
+  <!--Support advice-->
+  <div class="govuk-notification-banner govuk-notification-banner--support" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
+      <p class="govuk-heading-m">Support and advice</p>
+      <p class="govuk-body">
+        You can <a href="https://getintoteaching.education.gov.uk/teacher-training-advisers" class="govuk-link govuk-link--no-visited-state">get a teacher training adviser</a> or <a href="https://getintoteaching.education.gov.uk/help-and-support">contact Get Into Teaching</a> to get free support.
+      </p>
+    </div>
+  </div>
+  <!--End Support advice-->
+
+  <!--Apply button-->
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+    Apply for course
+  </button>
+  <!--End Apply button-->
+
+  </div>
+</div>
+
+{% endblock %}
