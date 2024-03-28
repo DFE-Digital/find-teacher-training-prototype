@@ -27,7 +27,7 @@
     "fancy-log": "^2.0.0",
     "geolib": "^3.3.3",
     "got": "^11.8.3",
-    "govuk-frontend": "^4.6.0",
+    "govuk-frontend": "^5.3.0",
     "gulp": "^4.0.2",
     "gulp-nodemon": "^2.2.1",
     "gulp-sass": "^5.1.0",
