@@ -134,6 +134,12 @@ router.get('/providers', providerController.list)
 /// COURSES ROUTES
 /// ------------------------------------------------------------------------ ///
 
+router.get('/providers/:providerCode/courses/:courseCode/about-provider', courseController.showProvider)
+
+router.get('/providers/:providerCode/courses/:courseCode/about-accredited', courseController.showAccredited)
+
+router.get('/providers/:providerCode/courses/:courseCode/training-with-disabilities', courseController.showTrainingWithDisabilities)
+
 router.get('/providers/:providerCode/courses/:courseCode', courseController.show)
 
 router.get('/course/:providerCode/:courseCode', courseController.show)
@@ -230,6 +236,22 @@ router.get('/course-2024', (req, res) => {
   res.render('./course-2024/index')
 })
 
+router.get('/about-provider', (req, res) => {
+  res.render('./course-2024/about-provider')
+})
+
+router.get('/about-accredited', (req, res) => {
+  res.render('./course-2024/about-accredited')
+})
+
+
+router.get('/results-2024', (req, res) => {
+  res.render('./course-2024/results-2024')
+})
+
+router.get('/training-with-disabilities', (req, res) => {
+  res.render('./course-2024/training-with-disabilities')
+})
 
 /// ------------------------------------------------------------------------ ///
 /// PROTOTYPE ADMIN
