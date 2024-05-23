@@ -612,7 +612,7 @@ exports.list = async (req, res) => {
 
     const subjectItemsDisplayLimit = 10
 
-    res.render('../views/results/index', {
+    res.render('../views/results/index-2024', {
       results,
       resultsCount,
       pagination,
