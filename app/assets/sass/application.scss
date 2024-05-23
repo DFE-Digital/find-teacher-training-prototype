@@ -6,7 +6,7 @@ $app-assets-path: '/public/';
 $govuk-assets-path: '/govuk/assets/';
 
 // Get into teaching
-$git-brand-colour: #159964;
+$git-brand-colour: #f9b400;
 
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
@@ -74,49 +74,50 @@ $git-brand-colour: #159964;
   columns: 2;
 }
 
-// Course pages styles
-
-// Notification banners custom
-
-.govuk-notification-banner--git {
-  border-bottom: 0px;
-  border-left: 5px solid #f162a3;
-  border-right: 0px;
-  border-top: 0px;
+// Service name
+.govuk-header__service-name {
+  font-weight: 400;
 }
 
-.govuk-notification-banner--support {
-border: 5px solid #f9b400;
+// Results
+.provider-summary-link {
+  font-size:19px;
+  font-weight:700;
 }
 
-.govuk-notification-banner__content--grey {
-  background-color: #f3f2f1;
+.course-summary-link {
+  font-size:24px;
+  font-weight:700;
 }
-// END Notification banners custom
-
-// Publish person specification call out
-
-.git-check-mark {
-  color: #159964;
-}
-
-// END Publish person specification call out
 
 // Fee call out box
-
 .fee-no-border {
   border: 0px;
+  margin-bottom:30px;
   }
 
 .fee-color {
 color: #fff;
 }
 
-.fee-size {
-font-size: 27px;
+.fee-key {
+  color: #fff;
+  margin-bottom: 0;
+  }
+
+.fee-title {
+  color: #fff;
+  font-weight: 700;
+  }
+
+.fee-value {
+  color: #fff;
+  font-size: 27px;
+  margin-top: 0px;
 
 @include govuk-media-query($from: tablet) {
   font-size: 36px;
+  margin-bottom: 30px;
 }
 }
 
@@ -133,79 +134,83 @@ flex-grow: 1; /* default 0 */
 }
 
 .fee-bg {
-background-color: #003078;
+  background-color: #003078;
+  margin-bottom: 30px;
+  }
+
+// Nearest placement call out box
+
+.placement-item {
+  flex-grow: 1; /* default 0 */
 }
 
-// END Fee call out box
+.map-icon-alignment {
+  display: flex;
+}
 
-// Section header - styling to match the current line Teacher Vacancies website
+.map-icon {
+  padding-right: 5px;
+}
 
-.course-title-with-actions {
-  margin-bottom: 15px;
+.map-size {
+  height: 24px;
+  margin-top:-3px;
+  width: 24px;
 
   @include govuk-media-query($from: tablet) {
+    height: 36px;
+    margin-top:-5px;
+    width: 36px;
   }
 }
 
-.course-header-with-actions {
-  margin-bottom: 5px !important;
+// Accordion
 
-  @include govuk-media-query($from: tablet) {
-    margin-bottom: 10px !important;
-  }
+.govuk-accordion--non-uk {
+  margin-top: -8px;
 }
 
-.heading--border-bottom {
-  border-bottom: 5px solid #b1b4b6;
-  padding-bottom: 10px;
-  }
-
-// END Section header - styling to match the current line Teacher Vacancies website
-
-// Page header with actions - From the MOJ Design System
-
-.moj-page-header-actions {
-  @include govuk-clearfix;
-  font-size: 0; // Hide whitespace between elements
-  margin-bottom: 5px;
-  min-height: govuk-spacing(7); // Match button height
-  text-align: justify; // Trick to remove the need for floats
-  &:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
+.govuk-accordion--main {
+  margin-top: -8px;
 }
 
-.moj-page-header-actions__title {
-  [class^=govuk-heading-] {
-    margin-bottom: govuk-spacing(2);
-    text-align: left;
-    @include govuk-media-query($from: tablet) {
-      margin-bottom: 0;
-    }
-  }
-  @include govuk-media-query($from: tablet) {
-    display: inline-block;
-    vertical-align: middle;
-  }
+.govuk-accordion__show-all {
+  color: #fff !important;
 }
 
-.moj-page-header-actions__actions {
-  @include govuk-media-query($from: tablet) {
-    display: inline-block;
-    vertical-align: middle;
-  }
+.govuk-accordion__section--non-uk {
+  border-left: 5px solid #4c2c92;
+  background-color: #f3f2f1;
 }
 
-.moj-page-header-actions__action {
-  &:last-child {
-    margin-bottom: 0;
-  }
-  @include govuk-media-query($from: tablet) {
-    margin-bottom: 0;
-  }
+.govuk-accordion__section-button--non-uk {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
-// END Page header with actions - From the MOJ Design System
+.govuk-accordion__section-content--non-uk {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+// Notification banners
+.govuk-notification-banner__content--grey {
+  background-color: #f3f2f1;
+}
+
+.govuk-notification-banner--git {
+  border-bottom: 0px;
+  border-left: 5px solid #f9b400;
+  border-right: 0px;
+  border-top: 0px;
+  margin-bottom: 30px;
+}
+
+.govuk-notification-banner--non-uk {
+  border-left: 5px solid #4c2c92;
+}
+
+.govuk-notification-banner--support {
+  border: 5px solid #f162a3;
+  margin-bottom: 30px;
+}
