@@ -3,7 +3,7 @@
     "id": "7edd5f95-27c6-4dcc-87c4-93b8e11e7094",
     "code": "pgce_with_qts",
     "text": "QTS with PGCE",
-    "html": "<abbr title='Qualified teacher status'>QTS</abbr> with a <abbr title='Postgraduate certificate in education'>PGCE</abbr>",
+    "html": "<abbr title='Qualified teacher status'>QTS</abbr> with <abbr title='Postgraduate certificate in education'>PGCE</abbr>",
     "longText": "Qualified teacher status (QTS) with a Postgraduate certificate in education (PGCE)",
     "qualifications": [
       "qts",
