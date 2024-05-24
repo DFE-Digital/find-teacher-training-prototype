@@ -1,3 +1,4 @@
+ {% if distance.distance %}
  <!--Nearest school placement-->
     <div class="govuk-notification-banner fee-no-border" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
@@ -59,9 +60,9 @@
               </div>
               <p class="govuk-body">
                 <strong>
-                2 miles
+                  {{ distance.distance }} miles
                 </strong>
-                from
+                  from
                 <strong>
                   {{ data.location }}</strong>.
                </p>
@@ -76,3 +77,4 @@
       </div>
     </div>
     <!--END Nearest school placement-->
+    {% endif %}

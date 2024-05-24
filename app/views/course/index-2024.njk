@@ -56,9 +56,9 @@
 
       {% include "./sections/non-uk-quals-2024.njk" %}
 
-      {% if not course.has_vacancies %}
+      {#{% if not course.has_vacancies %}
         {% include "./sections/_cannot-apply-warning.njk" %}
-      {% endif %}
+      {% endif %}#}
 
       {% if course.about_course %}
         {% include "./sections/about-course-2024.njk" %}
