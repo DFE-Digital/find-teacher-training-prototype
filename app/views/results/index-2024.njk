@@ -43,7 +43,7 @@
         <div class="app-action-bar__filter"></div>
       </div>
 
-      {% include "./_promoted-link.njk" %}
+      {#{% include "./_promoted-link.njk" %}#}
 
      {# Includes the provider search in the filter or browse journey #}
       {% if userJourney in ["browse","filter"] %}
@@ -71,7 +71,9 @@
               {% set isUniversity = (result.provider.provider_type == "university") %}
               {% set trainingLocation = result.course.trainingLocation %}
 
-              {{ appResultDetail({
+              {% include "./_result-item-2024.njk" %}
+
+              {#{{ appResultDetail({
                 href: "/providers/" + result.provider.code + "/courses/" + result.course.code,
                 providerName: result.provider.name | markdown("inline"),
                 providerCode: result.provider.code if userJourney in ["browse","filter","hackday"],
@@ -90,7 +92,7 @@
                 visaSponsorship: result.course.visaSponsorship,
                 startDate: result.course.start_date,
                 vacancies: result.course.has_vacancies
-              }) }}
+              }) }}#}
             </li>
           {% endfor %}
         </ul>
