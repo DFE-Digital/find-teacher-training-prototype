@@ -1,0 +1,49 @@
+    <!--Fee-based course-->
+    <div class="govuk-notification-banner fee-no-border" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__content fee-bg">
+        <p class="fee-title">
+          Fees for {{ course.year_range }}
+        </p>
+
+        <div class="fee-container">
+          {% if course.has_fees %}
+            {% if course.fee_domestic %}
+              {% if course.fee_international %}
+                  <div class="fee-item">
+                    <p class="fee-key">
+                      UK students
+                    </p>
+                    <h3 class="fee-value">
+                      £{{ course.fee_domestic | numeral('0,0') }}
+                    </h3>
+                  </div>
+                  <div class="fee-item">
+                    <p class="fee-key">
+                      Non-UK students
+                    </p>
+                    <h3 class="fee-value">
+                      £{{ course.fee_international | numeral('0,0') }}
+                    </h3>
+                  </div>
+              {% else %}
+                  <div class="fee-item">
+                    <p class="fee-key">
+                      UK students
+                    </p>
+                    <h3 class="fee-value">
+                      £{{ course.fee_domestic | numeral('0,0') }}
+                    </h3>
+                  </div>
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        </div><!--END fee container-->
+
+        <p class="govuk-body">
+          <a href="#accordion-fees-financial-support" style="color:#ffffff;">
+            Fees and financial support
+          </a>
+        </p>
+      </div>
+    </div>
+    <!--END Fee-based course-->

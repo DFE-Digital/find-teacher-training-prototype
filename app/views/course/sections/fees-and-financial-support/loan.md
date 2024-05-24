@@ -1,5 +1,5 @@
-You may be eligible for a student loan. These are normally for undergraduate courses but you can also apply if you do postgraduate teacher training. [Find out how much loan you could get using the student finance calculator](https://www.gov.uk/student-finance-calculator).
+**Student loans**
 
-Depending on your immigration status, financial support may not be available. Find out about [training to teach if you’re a non-UK citizen](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen), including financial support.
+You may be eligible for student loans to cover the cost of your tuition fee or to help with living costs.
 
-[Learn more about ways to fund your training](https://getintoteaching.education.gov.uk/funding-and-support).
+[Find out more about student loans for teacher training](https://getintoteaching.education.gov.uk/funding-and-support/tuition-fee-and-maintenance-loans).

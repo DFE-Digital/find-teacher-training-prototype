@@ -1,0 +1,129 @@
+  <h2 class="govuk-heading-l">
+    Course details
+  </h2>
+
+<div class="govuk-accordion govuk-accordion--main" data-module="govuk-accordion" id="accordion-course-details">
+    <!--About the course-->
+    <div class="govuk-accordion__section">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+            About the course
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+        {{ course.about_course | markdown | safe }}
+      </div>
+    </div>
+    <!--END About the course-->
+
+    <!--Fees and financial support-->
+    <div class="govuk-accordion__section">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-fees-financial-support">
+            Fees and financial support
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-3" class="govuk-accordion__section-content">
+        {% if course.has_fees %}
+          {% if course.fee_domestic %}
+            {% if course.fee_details %}
+              {{ course.fee_details | markdown | safe }}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+
+         {% if course.financial_support %}
+          {{ course.financial_support | markdown | safe }}
+        {% endif %}
+
+        {% set financialSupportHtml %}
+          {% if course.has_salary %}
+            {% include "./fees-and-financial-support/salary.md" %}
+          {% elif course.has_scholarship_and_bursary %}
+            {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
+          {% elif course.has_bursary %}
+            {% include "./fees-and-financial-support/bursary.md" %}
+          {% else %}
+            {% include "./fees-and-financial-support/loan.md" %}
+          {% endif %}
+        {% endset %}
+
+        {{ appAdvice({
+          title: "Financial support for UK citizens",
+          html: financialSupportHtml | trim | markdown
+        }) }}
+
+        <!--Financial support for non-UK citizens-->
+        <div class="govuk-notification-banner govuk-notification-banner--git govuk-accordion__section--non-uk" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
+            <h3 class="app-advice__title">
+              Financial support for non-UK citizens
+            </h3>
+            <p class="govuk-body">
+              If you are a non-UK citizen without indefinite leave to remain you are unlikely to be eligible for a bursary or student loan.
+            </p>
+            <p class="govuk-body">
+              <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees">
+                Find out what financial support is available to non-UK citizens
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+        <!--END Financial support for non-UK citizens-->
+      </div>
+      <!--FEND Fees and financial support-->
+
+      <!--How placements work-->
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-how-placements-work">
+              How school placements work
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-2" class="govuk-accordion__section-content">
+        {% if course.how_school_placements_work %}
+          {{ course.how_school_placements_work | markdown | safe }}
+        {% endif %}
+
+        {% set whereYouWillTrainHtml %}
+          {% if course.program_type == 'higher_education_programme' and course.provider.provider_code != 'B31' %}
+            {% include "./training-locations/where-you-will-train-hei.md" %}
+          {% elif course.program_type == 'scitt_programme' and course.provider.provider_code != 'E65' %}
+            {% include "./training-locations/where-you-will-train-scitt.md" %}
+          {% endif %}
+        {% endset %}
+
+        {% if course.program_type in ['higher_education_programme','scitt_programme'] and whereYouWillTrainHtml.length %}
+          {{ appAdvice({
+            title: "Where you will train",
+            html: whereYouWillTrainHtml | trim | markdown
+          }) }}
+        {% endif %}
+        </div>
+      </div>
+
+      {% if course.interview_process %}
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+              Interview process
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-3" class="govuk-accordion__section-content">
+          {{ course.interview_process | markdown | safe }}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+    <!--End About the course-->

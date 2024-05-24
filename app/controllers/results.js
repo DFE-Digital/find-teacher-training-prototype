@@ -473,6 +473,8 @@ exports.list = async (req, res) => {
 
     const { data, links, meta, included } = CourseListResponse
 
+    req.session.data.courseDistances = []
+
     let courses = data
     if (courses.length > 0) {
       const providers = included.filter(include => include.type === 'providers')
@@ -530,6 +532,10 @@ exports.list = async (req, res) => {
 
             const distanceInMiles = ((parseInt(distanceInMeters) / 1000) * 0.621371).toFixed(0)
             attributes.distance = parseInt(distanceInMiles)
+            req.session.data.courseDistances.push({
+              code: course.code,
+              distance: distanceInMiles
+            })
           }
 
           return attributes
@@ -610,9 +616,15 @@ exports.list = async (req, res) => {
         : false
     }
 
+    results.sort((a, b) => {
+      if (a.schools.length && b.schools.length) {
+        return a.schools[0].distance - b.schools[0].distance
+      }
+    })
+
     const subjectItemsDisplayLimit = 10
 
-    res.render('../views/results/index', {
+    res.render('../views/results/index-2024', {
       results,
       resultsCount,
       pagination,
