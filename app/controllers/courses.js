@@ -254,10 +254,13 @@ exports.show = async (req, res) => {
       back = `/providers/${req.params.providerCode}`
     }
 
+    const distance = req.session.data.courseDistances.find(course => course.code === courseCode)
+
     res.render('course/index-2024', {
       course,
       schools,
       studySites,
+      distance,
       actions: {
         back,
         provider: `/providers/${req.params.providerCode}?referrer=course&courseCode=${req.params.courseCode}`
