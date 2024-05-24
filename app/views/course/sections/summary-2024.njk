@@ -93,13 +93,17 @@
             </dt>
             <dd class="govuk-summary-list__value">
               {% if course.degree_grade == "two_one" %}
-                A 2:1 bachelor's degree or above or equivalent qualification.
+                <span class="govuk-body">2:1 bachelor's degree</span>
+                <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
               {% elif course.degree_grade == "two_two" %}
-                A 2:2 bachelor's degree or above or equivalent qualification.
+                <span class="govuk-body">2:2 bachelor's degree</span>
+                <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
               {% elif course.degree_grade == "third_class" %}
-                A bachelor's degree, or equivalent. This should be an honours degree (Third or above), or equivalent.
+                <span class="govuk-body">Bachelor's degree, </span>
+                <p class="govuk-hint govuk-!-font-size-16">or equivalent qualification. This should be an honours degree (Third or above), or equivalent qualification</p>
               {% else %}
-                A bachelor's degree, or equivalent.
+                <span class="govuk-body">Bachelor's degree</span>
+                <p class="govuk-hint govuk-!-font-size-16">or equivalent qualification</p>
               {% endif %}
             </dd>
           </div>
@@ -114,16 +118,14 @@
                     If you need to improve your primary mathematics knowledge, you may be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
                   </p>
                 {% endif %}
-                <p class="govuk-body">
-                  Grade {{ course.gcse_grade_required }} (C) or above in English, maths and science, or equivalent qualification.
-                </p>
+                  <span class="govuk-body">Grade {{ course.gcse_grade_required }} (C) in English, maths and science</span>
+                  <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
               {% elif course.level == "secondary" %}
-                <p class="govuk-body">
-                  Grade {{ course.gcse_grade_required }} (C) or above in English and maths, or equivalent qualification.
-                </p>
+                  <span class="govuk-body">Grade {{ course.gcse_grade_required }} (C) in English and maths</span>
+                  <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
               {% endif %}
 
-              <p class="govuk-body">
+              <p class="govuk-hint govuk-!-font-size-16">
                 {% if course.accept_pending_gcse %}
                   We’ll consider candidates with pending GCSEs.
                 {% else %}
