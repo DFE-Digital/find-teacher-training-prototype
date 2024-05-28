@@ -28,6 +28,28 @@
         </h2>
       </div>
       <div id="accordion-default-content-3" class="govuk-accordion__section-content">
+       <dl class="govuk-summary-list govuk-summary-list--no-border">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Course fee for {{ course.year_range }}
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {% if course.has_fees %}
+                {% if course.fee_domestic %}
+                  {% if course.fee_international %}
+                      <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students<br>
+                      <strong>£{{ course.fee_international | numeral('0,0') }}</strong> for Non-UK students
+                  {% else %}
+                      <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students
+                  {% endif %}
+                {% endif %}
+                {% else %}
+                    <strong>Salary</strong> - no fee
+              {% endif %}
+            </dd>
+          </div>
+        </dl>
+
         {% if course.has_fees %}
           {% if course.fee_domestic %}
             {% if course.fee_details %}
@@ -88,6 +110,17 @@
           </h2>
         </div>
         <div id="accordion-default-content-2" class="govuk-accordion__section-content">
+        <dl class="govuk-summary-list govuk-summary-list--no-border">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Nearest school
+          </dt>
+          <dd class="govuk-summary-list__value">
+                <strong>{{ distance.distance }} miles</strong> from <strong>{{ data.location }}</strong>
+            </dd>
+          </div>
+        </dl>
+
         {% if course.how_school_placements_work %}
           {{ course.how_school_placements_work | markdown | safe }}
         {% endif %}
