@@ -12,18 +12,8 @@
       href: actions.back
     }) }}
 
-    <!--About the provider-->
-    <h1 class="govuk-heading-xl">
-      About {{ course.provider.name }}
-    </h1>
-
-    {% if course.provider.train_with_us %}
-      {{ course.provider.train_with_us | markdown | safe }}
-    {% endif %}
-    <!--END About the provider-->
-
-    <!--Contact provider-->
-    <h2 class="govuk-heading-l">
+<!--Contact provider-->
+    <h2 class="govuk-heading-xl">
       Contact
       {{ course.provider.name }}
     </h2>
@@ -73,6 +63,16 @@
       </div>
     </dl>
     <!--END Contact provider-->
+
+    <!--About the provider-->
+    <h1 class="govuk-heading-l">
+      About {{ course.provider.name }}
+    </h1>
+
+    {% if course.provider.train_with_us %}
+      {{ course.provider.train_with_us | markdown | safe }}
+    {% endif %}
+    <!--END About the provider-->
 
   </div>
 </div>
