@@ -254,6 +254,10 @@ exports.show = async (req, res) => {
       back = `/providers/${req.params.providerCode}`
     }
 
+    req.session.data.courseDistances.sort((a, b) => {
+      return a.distance - b.distance
+    })
+
     const distance = req.session.data.courseDistances.find(course => course.code === courseCode)
 
     res.render('course/index-2024', {
