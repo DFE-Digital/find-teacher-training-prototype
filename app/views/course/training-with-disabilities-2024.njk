@@ -19,6 +19,11 @@
     {{ course.provider.train_with_disability | markdown | safe }}
     <!--END Training with disabilities-->
 
+    <p class="govuk-body">
+     <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-provider">
+        Contact {{ course.provider.name }}
+      </a>
+    </p>
 
   </div>
 </div>
