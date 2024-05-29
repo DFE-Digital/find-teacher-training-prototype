@@ -1,0 +1,51 @@
+{% extends "_layouts/default.njk" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {{ govukBackLink({
+      text: "Back to " + course.name + " (" + course.code + ")",
+      href: actions.back
+    }) }}
+
+    <h1 class="govuk-heading-xl">
+      Placement schools at {{ course.provider.name }}
+    </h1>
+
+    <!--School placements-->
+
+    <p class="govuk-body"><strong>{{ distance.distance }} miles</strong> from <strong>{{ data.location }}</strong> (nearest of {{ schools | length }} schools)<p>
+
+    <p class="govuk-body">
+      We work with the following schools to provide your school placements.
+    </p>
+
+    {% if schools.length %}
+      <ul class="govuk-list govuk-list--spaced">
+        {% for school in schools %}
+        <li>
+          <strong>{{ school.name }}</strong>
+          <br>
+          {{ school.address }}
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <!--END School placements-->
+
+        <p class="govuk-body">
+        <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-provider">
+            Contact {{ course.provider.name }}
+          </a>
+        </p>
+
+      </div>
+    </div>
+
+
+{% endblock %}

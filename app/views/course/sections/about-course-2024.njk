@@ -116,29 +116,31 @@
               Nearest school
           </dt>
           <dd class="govuk-summary-list__value">
-                <strong>{{ distance.distance }} miles</strong> from <strong>{{ data.location }}</strong>
+                <p class="govuk-body"><strong>{{ distance.distance }} miles</strong> from <strong>{{ data.location }}</strong> (nearest of {{ schools.length }} school {{- "s" if schools.length > 1 }})<p>
+                <a href="#"><!--<a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/school-placements">-->
+                  View all placement schools
+                </a>
             </dd>
           </div>
         </dl>
 
-        {% if course.how_school_placements_work %}
-          {{ course.how_school_placements_work | markdown | safe }}
-        {% endif %}
+          {% if course.how_school_placements_work %}
+            {{ course.how_school_placements_work | markdown | safe }}
+          {% endif %}
 
         {% set whereYouWillTrainHtml %}
           {% if course.program_type == 'higher_education_programme' and course.provider.provider_code != 'B31' %}
-            {% include "./training-locations/where-you-will-train-hei.md" %}
-          {% elif course.program_type == 'scitt_programme' and course.provider.provider_code != 'E65' %}
-            {% include "./training-locations/where-you-will-train-scitt.md" %}
+              {% include "./training-locations/where-you-will-train-hei.md" %}
+            {% else %}
+              {% include "./training-locations/where-you-will-train-scitt.md" %}
           {% endif %}
         {% endset %}
 
-        {% if course.program_type in ['higher_education_programme','scitt_programme'] and whereYouWillTrainHtml.length %}
-          {{ appAdvice({
-            title: "Where you will train",
-            html: whereYouWillTrainHtml | trim | markdown
-          }) }}
-        {% endif %}
+        {{ appAdvice({
+          title: "Where you will train",
+          html: whereYouWillTrainHtml | trim | markdown
+        }) }}
+
         </div>
       </div>
 
