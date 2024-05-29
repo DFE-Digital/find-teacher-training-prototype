@@ -1,5 +1,5 @@
+  <!--Nearest school placement-->
  {% if distance.distance %}
- <!--Nearest school placement-->
     <div class="govuk-notification-banner fee-no-border" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
         <div class="fee-container">
@@ -58,15 +58,17 @@
                 </svg>
                 <!--END map icon-->
               </div>
-              <p class="govuk-body">
+              <span class="govuk-body">
                 <strong>
                   {{ distance.distance }} miles
                 </strong>
                   from
                 <strong>
-                  {{ data.location }}</strong>.
-               </p>
+                  {{ data.location }}</strong><br>
+                  Nearest of {{ schools.length }} school {{- "s" if schools.length > 1 }}
+               </span>
             </div>
+
             <span class="govuk-body">
               <a href="#accordion-how-placements-work">
                 How school placements work
@@ -76,5 +78,5 @@
         </div>
       </div>
     </div>
-    <!--END Nearest school placement-->
     {% endif %}
+    <!--END Nearest school placement-->
