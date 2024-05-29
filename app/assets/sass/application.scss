@@ -112,11 +112,11 @@ color: #fff;
 
 .fee-value {
   color: #fff;
-  font-size: 27px;
+  font-size: 24px;
   margin-top: 0px;
 
 @include govuk-media-query($from: tablet) {
-  font-size: 36px;
+  font-size: 27px;
   margin-bottom: 30px;
 }
 }
