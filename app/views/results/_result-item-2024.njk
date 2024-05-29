@@ -15,40 +15,41 @@
 
   <div class="govuk-summary-card__content">
     <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Course fee
-        </dt>
-        <dd class="govuk-summary-list__value">
-        {% if result.course.has_fees %}
-            {% if result.course.fee_domestic %}
-              {% if result.course.fee_international %}
-                <span class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK students</span>
-                <p class="govuk-body"><strong>£{{ result.course.fee_international | numeral('0,0') }}</strong> for Non-UK students</p>
-              {% else %}
-                <p class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK students</p>
-              {% endif %}
-            {% endif %}
-            {% else %}
-                <p class="govuk-body"><strong>Salary</strong> - no fee</p>
-          {% endif %}
-        </dd>
-        <dd class="govuk-summary-list__actions">
-        </dd>
-      </div>
-
-      {% if result.schools and result.schools | length > 0 %}
+     {% if result.schools and result.schools | length > 0 %}
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Nearest school
         </dt>
         <dd class="app-result-detail__value">
           {% if result.schools | length > 0 %}
-            <p class="govuk-body"><strong>{{ result.schools[0].distance }} miles</strong> from <strong>{{ data.location }}</strong></p>
+            <span class="govuk-body"><strong>{{ result.schools[0].distance }} miles</strong> from <strong>{{ data.location }}</strong></span><br>
+            <p class="govuk-hint govuk-!-font-size-16">
+              Nearest of {{ result.schools | length }} school {{- "s" if result.schools.length > 1 }}
+
+            </p>
           {% endif %}
         </dd>
       </div>
       {% endif %}
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Course fee
+          </dt>
+          <dd class="govuk-summary-list__value">
+          {% if result.course.has_fees %}
+              {% if result.course.fee_domestic %}
+                {% if result.course.fee_international %}
+                  <span class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK students</span>
+                  <p class="govuk-body"><strong>£{{ result.course.fee_international | numeral('0,0') }}</strong> for Non-UK students</p>
+                {% else %}
+                  <p class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK students</p>
+                {% endif %}
+              {% endif %}
+              {% else %}
+                  <p class="govuk-body"><strong>Salary</strong> - no fee</p>
+            {% endif %}
+          </dd>
+        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Course length
@@ -56,17 +57,17 @@
           <dd class="govuk-summary-list__value">
             {{ result.course.course_length | getCourseLengthLabel }} {{ " - " + (result.course.study_mode | getStudyModeLabel | lower) if result.course.study_mode }}
           </dd>
-          <dd class="govuk-summary-list__actions">
-          </dd>
         </div>
+        {% if result.course.age_minimum %}
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Age range
           </dt>
           <dd class="govuk-summary-list__value">
-            {{ result.course.age_minimum }} to {{ result.course.age_maximum }}{{ " - " + result.course.level if result.course.level == "secondary" }}
+            {{ result.course.age_minimum }} to {{ result.course.age_maximum }}{{ " - " + result.course.level }}
           </dd>
         </div>
+        {% endif %}
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Qualification
