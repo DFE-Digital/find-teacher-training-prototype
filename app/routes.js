@@ -140,6 +140,8 @@ router.get('/providers/:providerCode/courses/:courseCode/about-accredited', cour
 
 router.get('/providers/:providerCode/courses/:courseCode/training-with-disabilities', courseController.showTrainingWithDisabilities)
 
+router.get('/providers/:providerCode/courses/:courseCode/school-placements', courseController.showSchoolPlacements)
+
 router.get('/providers/:providerCode/courses/:courseCode', courseController.show)
 
 router.get('/course/:providerCode/:courseCode', courseController.show)
@@ -251,6 +253,10 @@ router.get('/results-2024', (req, res) => {
 
 router.get('/training-with-disabilities', (req, res) => {
   res.render('./course-2024/training-with-disabilities')
+})
+
+router.get('/school-placements', (req, res) => {
+  res.render('./course-2024/school-placements')
 })
 
 /// ------------------------------------------------------------------------ ///
