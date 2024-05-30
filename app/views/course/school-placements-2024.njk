@@ -16,13 +16,34 @@
       Placement schools at {{ course.provider.name }}
     </h1>
 
+    {#{% set whereYouWillTrainHtml %}
+      {% if course.program_type == 'higher_education_programme' and course.provider.provider_code != 'B31' %}
+          {% include "./sections/training-locations/where-you-will-train-hei.md" %}
+        {% else %}
+          {% include "./sections/training-locations/where-you-will-train-scitt.md" %}
+      {% endif %}
+    {% endset %}
+
+    {{ appAdvice({
+      title: "Where you will train",
+      html: whereYouWillTrainHtml | trim | markdown
+    }) }}#}
+
+    <!--<p class="govuk-body"><strong>{{ distance.distance }} miles</strong> from <strong>{{ data.location }}</strong> (nearest of {{ schools | length }} schools)<p>-->
+
     <!--School placements-->
 
-    <p class="govuk-body"><strong>{{ distance.distance }} miles</strong> from <strong>{{ data.location }}</strong> (nearest of {{ schools | length }} schools)<p>
 
     <p class="govuk-body">
       We work with the following schools to provide your school placements.
     </p>
+    <p class="govuk-body">
+      You can’t pick which schools you will be in, but we will place you in ones you can travel to.
+    </p>
+    <p class="govuk-body">
+      The schools you could be placed in is:
+    </p>
+    {#{{ data.place.geometry | dump | safe }}#}
 
     {% if schools.length %}
       <ul class="govuk-list govuk-list--spaced">
@@ -36,13 +57,10 @@
       </ul>
     {% endif %}
 
-    <!--END School placements-->
+<!-- if they come from all england search the list will be alphabetical,
+would want hint text to denote that it's sorted by location-->
 
-        <p class="govuk-body">
-        <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-provider">
-            Contact {{ course.provider.name }}
-          </a>
-        </p>
+    <!--END School placements-->
 
       </div>
     </div>
