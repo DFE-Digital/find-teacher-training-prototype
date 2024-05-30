@@ -15,7 +15,7 @@
 
   <div class="govuk-summary-card__content">
     <dl class="govuk-summary-list">
-     {% if result.schools and result.schools | length > 0 %}
+    {% if result.schools and result.schools | length > 0 %}
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Nearest school
@@ -23,9 +23,10 @@
         <dd class="app-result-detail__value">
           {% if result.schools | length > 0 %}
             <span class="govuk-body"><strong>{{ result.schools[0].distance }} miles</strong> from <strong>{{ data.location }}</strong></span><br>
-            <p class="govuk-hint govuk-!-font-size-16">
-              Nearest of {{ result.schools | length }} school {{- "s" if result.schools.length > 1 }}
-
+              {% if result.schools | length > 1 %}
+                <p class="govuk-hint govuk-!-font-size-16">
+                Nearest of {{ result.schools | length }} school {{- "s" if result.schools.length > 1 }} you could be placed in
+              {% endif %}
             </p>
           {% endif %}
         </dd>
@@ -46,7 +47,7 @@
                 {% endif %}
               {% endif %}
               {% else %}
-                  <p class="govuk-body"><strong>Salary</strong> - no fee</p>
+                  <p class="govuk-body"><strong>No fee</strong> - you will be paid a salary</p>
             {% endif %}
           </dd>
         </div>
