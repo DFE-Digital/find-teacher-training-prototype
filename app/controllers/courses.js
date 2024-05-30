@@ -189,13 +189,19 @@ exports.showSchoolPlacements = async (req, res) => {
       const postcode = attributes.postcode
 
       //attributes.name = attributes.name.replace(/'/g, ''')
-      //attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
+
+      //This will format address to be one line, but you can comment it out//
+      attributes.address = `${streetAddress1}${streetAddress2}${city}${county}${postcode}`
 
       return attributes
     })
+    const schools = locations.filter(location => location.code !== '-')
+    const distance = req.session.data.courseDistances.find(course => course.code === courseCode)
 
     res.render('course/school-placements-2024', {
       course,
+      schools,
+      distance,
       actions: {
         back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }

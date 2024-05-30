@@ -28,27 +28,29 @@
         </h2>
       </div>
       <div id="accordion-default-content-3" class="govuk-accordion__section-content">
-       <dl class="govuk-summary-list govuk-summary-list--no-border">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-              Course fee for {{ course.year_range }}
-          </dt>
-          <dd class="govuk-summary-list__value">
-            {% if course.has_fees %}
-                {% if course.fee_domestic %}
-                  {% if course.fee_international %}
-                      <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students<br>
-                      <strong>£{{ course.fee_international | numeral('0,0') }}</strong> for Non-UK students
-                  {% else %}
-                      <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students
-                  {% endif %}
-                {% endif %}
-                {% else %}
-                    <strong>Salary</strong> - no fee
+
+      <div style="margin-bottom:40px;">
+        <p class="govuk-body">
+          <strong>
+            Fees for {{ course.year_range }}:
+          </strong>
+        </p>
+        <p class="govuk-body">
+          {% if course.has_fees %}
+            {% if course.fee_domestic %}
+              {% if course.fee_international %}
+                <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students<br>
+                <strong>£{{ course.fee_international | numeral('0,0') }}</strong> for Non-UK students
+              {% else %}
+                <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students
               {% endif %}
-            </dd>
-          </div>
-        </dl>
+            {% endif %}
+            {% else %}
+              <strong>No fee</strong><br>
+              You will be paid a salary
+          {% endif %}
+        </p>
+       </div>
 
         {% if course.has_fees %}
           {% if course.fee_domestic %}
@@ -110,32 +112,107 @@
           </h2>
         </div>
         <div id="accordion-default-content-2" class="govuk-accordion__section-content">
-        <dl class="govuk-summary-list govuk-summary-list--no-border">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-              Nearest school
-          </dt>
-          <dd class="govuk-summary-list__value">
-                <p class="govuk-body"><strong>{{ distance.distance }} miles</strong> from <strong>{{ data.location }}</strong> (nearest of {{ schools.length }} school {{- "s" if schools.length > 1 }})<p>
-                <a href="#"><!--<a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/school-placements">-->
-                  View all placement schools
-                </a>
-            </dd>
-          </div>
-        </dl>
+
+        <div style="margin-bottom:30px;">
+          {% if schools.length > 1 %}
+            <p class="govuk-body">
+              {{ course.provider.name }} works with {{ schools.length }} school {{- "s" if schools.length > 1 }}.
+              The nearest school you could be placed in is:
+            </p>
+            {% else %}
+            <p class="govuk-body">
+              The school you could be placed in is:
+            </p>
+            {% if schools.length %}
+            <ul class="govuk-list govuk-list--spaced">
+              {% for school in schools %}
+              <li>
+                <strong>{{ school.name }}</strong>
+                <br>
+                {{ school.address }}
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          {% endif %}
+            <div class="map-icon-alignment">
+                <div class="map-icon">
+                  <!--map icon-->
+                  <svg class="map-size" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 368.553 368.553" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M184.277,0c-71.683,0-130,58.317-130,130c0,87.26,119.188,229.855,124.263,235.883c1.417,1.685,3.504,2.66,5.705,2.67
+                        c0.011,0,0.021,0,0.032,0c2.189,0,4.271-0.957,5.696-2.621c5.075-5.926,124.304-146.165,124.304-235.932
+                        C314.276,58.317,255.96,0,184.277,0z M184.322,349.251C160.385,319.48,69.277,201.453,69.277,130c0-63.411,51.589-115,115-115
+                        s115,51.589,115,115C299.276,203.49,208.327,319.829,184.322,349.251z"/>
+                      <path d="M184.277,72.293c-30.476,0-55.269,24.793-55.269,55.269s24.793,55.269,55.269,55.269s55.269-24.793,55.269-55.269
+                        S214.753,72.293,184.277,72.293z M184.277,167.83c-22.204,0-40.269-18.064-40.269-40.269s18.064-40.269,40.269-40.269
+                        s40.269,18.064,40.269,40.269S206.48,167.83,184.277,167.83z"/>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </g>
+                  </svg>
+                  <!--END map icon-->
+                </div>
+                <span class="govuk-body">
+                  <strong>
+                    {{ distance.distance }} miles
+                  </strong>
+                    from
+                  <strong>
+                    {{ data.location }}</strong>
+                </span>
+              </div>
+          {% if schools.length > 1 %}
+            <p class="govuk-body">
+              <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/school-placements">
+                View list of placement schools
+              </a>
+            </p>
+          {% endif %}
+        </div>
 
           {% if course.how_school_placements_work %}
             {{ course.how_school_placements_work | markdown | safe }}
           {% endif %}
 
-        {% set whereYouWillTrainHtml %}
+          {% set whereYouWillTrainHtml %}
           {% if course.program_type == 'higher_education_programme' and course.provider.provider_code != 'B31' %}
               {% include "./training-locations/where-you-will-train-hei.md" %}
             {% else %}
               {% include "./training-locations/where-you-will-train-scitt.md" %}
           {% endif %}
         {% endset %}
-
         {{ appAdvice({
           title: "Where you will train",
           html: whereYouWillTrainHtml | trim | markdown
