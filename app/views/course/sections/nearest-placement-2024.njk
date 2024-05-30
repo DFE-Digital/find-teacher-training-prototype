@@ -6,9 +6,17 @@
           <div class="placement-item">
             <p class="govuk-body">
               <strong>
-                Nearest school placement
+                School placements
               </strong>
             </p>
+            {% if schools.length > 1 %}
+              <p class="govuk-body">
+                {{ course.provider.name }} works with {{ schools.length }} school {{- "s" if schools.length > 1 }}.
+              </p>
+              <p class="govuk-body">
+                The nearest school you could be placed in is:
+              </p>
+            {% endif %}
             <div class="map-icon-alignment">
               <div class="map-icon">
                 <!--map icon-->
@@ -64,9 +72,8 @@
                 </strong>
                   from
                 <strong>
-                  {{ data.location }}</strong><br>
-                  Nearest of {{ schools.length }} school {{- "s" if schools.length > 1 }}
-               </span>
+                  {{ data.location }}</strong>
+              </span>
             </div>
 
             <span class="govuk-body">
