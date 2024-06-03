@@ -112,18 +112,18 @@
           </h2>
         </div>
         <div id="accordion-default-content-2" class="govuk-accordion__section-content">
-
-        <div>
+        {% if data.q == "location" %}
           {% if schools.length > 1 %}
             <p class="govuk-body">
               {{ course.provider.name }} works with {{ schools.length }} school {{- "s" if schools.length > 1 }}.
               The nearest school you could be placed in is:
             </p>
             {% else %}
-            <p class="govuk-body">
-              The school you could be placed in is:
+             <p class="govuk-body">
+              {{ course.provider.name }} works with {{ schools.length }} school {{- "s" if schools.length > 1 }}.
+              The school you would be placed in is:
             </p>
-            {% if schools.length %}
+            {#{% if schools.length %}
             <ul class="govuk-list govuk-list--spaced">
               {% for school in schools %}
               <li>
@@ -133,7 +133,7 @@
               </li>
               {% endfor %}
             </ul>
-            {% endif %}
+            {% endif %}#}
           {% endif %}
             <div class="map-icon-alignment">
                 <div class="map-icon">
@@ -190,17 +190,19 @@
                   </strong>
                     from
                   <strong>
-                    {{ data.location }}</strong>
+                    {{ data.location }}
+                  </strong>
                 </span>
               </div>
-          {% if schools.length > 1 %}
+          {% if schools.length > 0 %}
             <p class="govuk-body">
               <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/school-placements">
                 View list of placement schools
               </a>
             </p>
           {% endif %}
-        </div>
+        {% endif %}
+
 
           {% if course.how_school_placements_work %}
             {{ course.how_school_placements_work | markdown | safe }}

@@ -15,7 +15,7 @@
 
   <div class="govuk-summary-card__content">
     <dl class="govuk-summary-list">
-    {#{% if result.schools and result.schools | length > 0 %}#}
+      {% if data.q == "location" %}
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Nearest school
@@ -29,15 +29,17 @@
             <p class="govuk-hint govuk-!-font-size-16">
               Nearest of {{ result.schools | length }} school {{- "s" if result.schools.length > 1 }} you could be placed in
             </p>
+            {% else %}<!--To remove the line when there is only one school, delete this else section-->
+            <p class="govuk-hint govuk-!-font-size-16">
+              {{ result.schools | length }} school {{- "s" if result.schools.length > 1 }} you would be placed in
+            </p>
           {% endif %}
           {% else %}
-            <a href="#">
-              Contact the provider
-            </a>
+              Unknown
         {% endif %}
         </dd>
       </div>
-      {#{% endif %}#}
+      {% endif %}
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Course fee
