@@ -409,5 +409,33 @@ module.exports = (env) => {
     return last
   }
 
+  /* ------------------------------------------------------------------
+  utility function to return the distance between two locations
+  example: {{ { latitude, longitude } | getDistance({ latitude, longitude }, 'mi') }}
+  outputs: a number
+  ------------------------------------------------------------------ */
+  filters.getDistance = (origin, destination, unit = 'mi') => {
+    // Convert degrees to radians
+    const earthRadius = {
+      'km': 6371,  // Earth radius in kilometers
+      'mi': 3959 // Earth radius in miles
+    };
+
+    const originRad = origin.latitude * Math.PI / 180
+    const destinationRad = destination.latitude * Math.PI / 180
+    const dLat = destinationRad - originRad
+    const dLon = (destination.longitude - origin.longitude) * Math.PI / 180
+
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(originRad) * Math.cos(destinationRad) *
+              Math.sin(dLon / 2) * Math.sin(dLon / 2)
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+
+    const distance = earthRadius[unit] * c
+
+    return distance
+  }
+
   return filters
 }
