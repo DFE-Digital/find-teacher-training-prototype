@@ -105,6 +105,40 @@
                 <span class="govuk-body">Bachelor's degree</span>
                 <p class="govuk-hint govuk-!-font-size-16">or equivalent qualification</p>
               {% endif %}
+
+              {% if course.degree_subject_requirements != null or course.campaign_name == "engineers_teach_physics" or course.has_ske %}
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      Degree subject requirements
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                  {% if course.degree_subject_requirements %}
+                    {% if course.campaign_name != "engineers_teach_physics" %}
+                      <p class="govuk-body">
+                        {{ course.degree_subject_requirements | markdown | safe }}
+                      </p>
+                    {% endif %}
+                  {% endif %}
+
+                  {% if course.campaign_name == "engineers_teach_physics" %}
+                    <p class="govuk-body">
+                      This <a class="govuk-link" href="https://getintoteaching.education.gov.uk/subjects/engineers-teach-physics">Engineers teach physics</a> course is designed for candidates who have a background in materials science and engineering. If your degree is in physics, please apply to our physics course.
+                    </p>
+                  {% endif %}
+
+                  {% if course.has_ske %}
+                    <p class="govuk-body">
+                      If you need to improve your subject knowledge, you may be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement</a> course.
+                    </p>
+                  {% endif %}
+
+                  </div>
+                </details>
+              {% endif %}
+
             </dd>
           </div>
           <div class="govuk-summary-list__row">
