@@ -44,10 +44,10 @@
           {% if result.course.has_fees %}
               {% if result.course.fee_domestic %}
                 {% if result.course.fee_international %}
-                  <span class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK students</span>
-                  <p class="govuk-body"><strong>£{{ result.course.fee_international | numeral('0,0') }}</strong> for Non-UK students</p>
+                  <span class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK citizens</span>
+                  <p class="govuk-body"><strong>£{{ result.course.fee_international | numeral('0,0') }}</strong> for Non-UK citizens</p>
                 {% else %}
-                  <p class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK students</p>
+                  <p class="govuk-body"><strong>£{{ result.course.fee_domestic | numeral('0,0') }}</strong> for UK citizens</p>
                 {% endif %}
               {% endif %}
               {% else %}
