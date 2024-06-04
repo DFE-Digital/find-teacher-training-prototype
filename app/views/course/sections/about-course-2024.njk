@@ -39,10 +39,10 @@
           {% if course.has_fees %}
             {% if course.fee_domestic %}
               {% if course.fee_international %}
-                <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students<br>
-                <strong>£{{ course.fee_international | numeral('0,0') }}</strong> for Non-UK students
+                <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK citizens<br>
+                <strong>£{{ course.fee_international | numeral('0,0') }}</strong> for Non-UK citizens
               {% else %}
-                <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK students
+                <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK citizens
               {% endif %}
             {% endif %}
             {% else %}
