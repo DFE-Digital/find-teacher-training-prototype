@@ -105,6 +105,15 @@ color: #fff;
   margin-bottom: 0;
   }
 
+  .salary-value {
+    color: #fff;
+    margin-bottom: 24px;
+
+    @include govuk-media-query($from: tablet) {
+      margin-bottom: 30px;
+    }
+  }
+
 .fee-title {
   color: #fff;
   font-weight: 700;
