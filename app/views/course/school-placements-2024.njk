@@ -13,19 +13,22 @@
     }) }}
 
     <h1 class="govuk-heading-xl">
-      Placement schools at {{ course.provider.name }}
+      School placements at {{ course.provider.name }}
     </h1>
 
     <!--School placements-->
-
-    <p class="govuk-body">
-      We work with the following schools to provide your school placements.
-    </p>
-    <p class="govuk-body">
-      You can’t pick which schools you will be in, but we will place you in ones you can travel to.
-    </p>
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-visually-hidden">Warning</span>
+        You can’t pick which schools you will be in.
+      </strong>
+    </div>
 
     {% if schools.length > 1 %}
+      <p class="govuk-body">
+        {{ course.provider.name }} will place you in different schools you can travel to during your training.
+      </p>
       <p class="govuk-body">
         The schools you could be placed in are:
       </p>
