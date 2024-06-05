@@ -11,14 +11,14 @@
             </p>
             {% if schools.length > 1 %}<!--to remove when there is only 1 school, change this from zero to 1-->
               <p class="govuk-body">
-                {{ course.provider.name }} works with {{ schools.length }} school {{- "s" if schools.length > 1 }}.
+                {{ course.provider.name }} will place you in different schools you can travel to during your training.
               </p>
               <p class="govuk-body">
                 The nearest school you could be placed in is:
               </p>
               {% else %}<!--to remove when there is only 1 school, remove this whole else section-->
                 <p class="govuk-body">
-                  {{ course.provider.name }} works with schools to provide your placements.
+                  {{ course.provider.name }} will place you in different schools you can travel to during your training.
                 </p>
                 <p class="govuk-body">
                   The nearest school you could be placed in is:
