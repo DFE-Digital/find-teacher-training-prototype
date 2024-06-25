@@ -1,0 +1,81 @@
+{% extends "_layouts/default.njk" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {{ govukBackLink({
+      text: "Back to " + course.name + " (" + course.code + ")",
+      href: actions.back
+    }) }}
+
+<!--Contact provider-->
+    <h2 class="govuk-heading-xl">
+      Contact
+      {{ course.provider.name }}
+    </h2>
+    <dl class="govuk-summary-list govuk-summary-list--no-border">
+
+     {% if course.provider.website %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          School website
+        </dt>
+        <dd class="govuk-summary-list__value">
+         <a class="govuk-link" href="{{ course.provider.website }}" target="_blank">{{ course.provider.name }} website (opens in a new tab)</a>
+        </dd>
+      </div>
+      {% endif %}
+      {% if course.provider.email %}
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <a href="#">{{ course.provider.email | urlize | safe }}</a>
+        </dd>
+      </div>
+      {% endif %}
+      {% if course.provider.telephone %}
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Telephone
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ course.provider.telephone }}
+        </dd>
+      </div>
+      {% endif %}
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {% if course.provider.street_address_1 %}{{ course.provider.street_address_1 }}<br>{% endif %}
+          {% if course.provider.street_address_2 %}{{ course.provider.street_address_2 }}<br>{% endif %}
+          {% if course.provider.city %}{{ course.provider.city }}<br>{% endif %}
+          {% if course.provider.county %}{{ course.provider.county }}<br>{% endif %}
+          {% if course.provider.postcode %}{{ course.provider.postcode }}{% endif %}
+        </dd>
+      </div>
+    </dl>
+    <!--END Contact provider-->
+
+    <!--About the provider-->
+    <h1 class="govuk-heading-l">
+      About {{ course.provider.name }}
+    </h1>
+
+    {% if course.provider.train_with_us %}
+      {{ course.provider.train_with_us | markdown | safe }}
+    {% endif %}
+    <!--END About the provider-->
+
+  </div>
+</div>
+
+
+{% endblock %}
