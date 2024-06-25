@@ -1,0 +1,36 @@
+<div id="apply" class="govuk-!-margin-bottom-8">
+  {#{% if not data.nearingEndOfCycle %}
+
+    {% if course.has_vacancies %}#}
+      {{ govukButton({
+        text: "Apply for this course",
+        href: "https://www.apply-for-teacher-training.service.gov.uk/candidate/account",
+        isStartButton: true
+      }) }}
+
+      {# {{ govukInsetText({
+        text: "If you’ve already applied for a course with this training provider, consider if there are other providers who might offer similar courses. Applying to more than one provider can improve your chances of getting a place on a course."
+      }) }} #}
+    {#{% else %}
+      {% include "./_cannot-apply-warning.njk" %}
+    {% endif %}
+
+  {% else %}
+
+    <h2 class="govuk-heading-l">Apply</h2>
+
+    <p class="govuk-body">
+      Courses are currently closed but you can still <a class="govuk-link" href="#">start or continue an application</a> anyway.
+    </p>
+
+    <p class="govuk-body">You’ll be able to:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        find courses starting in the NEXT_CYCLE_YEAR_RANGE academic year from FIND_REOPENS
+      </li>
+      <li>submit your application from APPLY_REOPENS</li>
+    </ul>
+
+  {% endif %}#}
+</div>

@@ -39,7 +39,7 @@ exports.showAccredited = async (req, res) => {
       return attributes
     })
 
-    res.render('course/about-accredited-2024', {
+    res.render('course-jul-2024/about-accredited-2024', {
       course,
       actions: {
         back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
@@ -91,7 +91,7 @@ exports.showTrainingWithDisabilities = async (req, res) => {
       return attributes
     })
 
-    res.render('course/training-with-disabilities-2024', {
+    res.render('course-jul-2024/training-with-disabilities-2024', {
       course,
       actions: {
         back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
@@ -143,7 +143,7 @@ exports.showProvider = async (req, res) => {
       return attributes
     })
 
-    res.render('course/about-provider-2024', {
+    res.render('course-jul-2024/about-provider-2024', {
       course,
       actions: {
         back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
@@ -198,7 +198,7 @@ exports.showSchoolPlacements = async (req, res) => {
     const schools = locations.filter(location => location.code !== '-')
     const distance = req.session.data.courseDistances.find(course => course.code === courseCode)
 
-    res.render('course/school-placements-2024', {
+    res.render('course-jul-2024/school-placements-2024', {
       course,
       schools,
       distance,
@@ -317,7 +317,7 @@ exports.show = async (req, res) => {
 
     const distance = req.session.data.courseDistances.find(course => course.code === courseCode)
 
-    res.render('course/index-2024', {
+    res.render('course-jul-2024/index-2024', {
       course,
       schools,
       studySites,

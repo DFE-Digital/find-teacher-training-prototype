@@ -1,0 +1,42 @@
+{% macro _selectedSubjects(params) %}
+  {% for item in params.subjects %}
+    <b>{{ item.text }}</b>
+    {% if not loop.last %}
+      and
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+<p class="govuk-body">
+  {% if data.ageGroup == "furtherEducation" %}
+    <b>Further education</b>
+  {% else %}
+    {% if userJourney == "browse" %}
+      {% if data.route == "all" or data.ageGroup == "primary" %}
+        <b>{{ data.ageGroup | capitalize }}</b>
+      {% else %}
+        {{ _selectedSubjects({ subjects: selectedSubjects }) }}
+      {% endif %}
+    {% else %}
+      {{ _selectedSubjects({ subjects: selectedSubjects }) }}
+    {% endif %}
+  {% endif %}
+  courses
+  {% if data.q == "england" %}
+    in <b>England</b>
+  {% elif data.q == "location" %}
+    in or near <b>{{ data.location }}</b>
+  {% elif data.q == "provider" %}
+    from <b>{{ data.provider.name }}</b>
+  {% endif %}
+  {% if userJourney == "browse" %}
+    {% if data.ageGroup == "primary" %}
+      {% set change = "/browse/primary" %}
+    {% else %}
+      {% set change = "/browse/secondary" %}
+    {% endif %}
+  {% else %}
+    {% set change = "/search" %}
+  {% endif %}
+  <a href="{{ change }}" class="govuk-link govuk-link--no-visited-state">Change<span class="govuk-visually-hidden"> subject or location</span></a>
+</p>
