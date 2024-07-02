@@ -71,7 +71,7 @@
               {% set isUniversity = (result.provider.provider_type == "university") %}
               {% set trainingLocation = result.course.trainingLocation %}
 
-              {% include "./_result-item-2024.njk" %}
+              {% include "./_result-item.njk" %}
 
               {#{{ appResultDetail({
                 href: "/providers/" + result.provider.code + "/courses/" + result.course.code,
