@@ -138,17 +138,17 @@ router.get('/providers', providerController.list)
 /// COURSES ROUTES
 /// ------------------------------------------------------------------------ ///
 
-router.get('/providers/:providerCode/courses/:courseCode/about-provider', courseController.showProvider)
+router.get('/:version/providers/:providerCode/courses/:courseCode/about-provider', courseController.showProvider)
 
-router.get('/providers/:providerCode/courses/:courseCode/about-accredited', courseController.showAccredited)
+router.get('/:version/providers/:providerCode/courses/:courseCode/about-accredited', courseController.showAccredited)
 
-router.get('/providers/:providerCode/courses/:courseCode/training-with-disabilities', courseController.showTrainingWithDisabilities)
+router.get('/:version/providers/:providerCode/courses/:courseCode/training-with-disabilities', courseController.showTrainingWithDisabilities)
 
-router.get('/providers/:providerCode/courses/:courseCode/school-placements', courseController.showSchoolPlacements)
+router.get('/:version/providers/:providerCode/courses/:courseCode/school-placements', courseController.showSchoolPlacements)
 
-router.get('/providers/:providerCode/courses/:courseCode', courseController.show)
+router.get('/:version/providers/:providerCode/courses/:courseCode', courseController.show)
 
-router.get('/course/:providerCode/:courseCode', courseController.show)
+router.get('/:version/course/:providerCode/:courseCode', courseController.show)
 
 /// ------------------------------------------------------------------------ ///
 /// HACKDAY ROUTES
