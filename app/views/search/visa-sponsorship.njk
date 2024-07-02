@@ -34,18 +34,16 @@
         You’ll need to have the right to work or study in the UK for the duration of your teacher training course.
       </p>
 
-        <p class="govuk-body">
-        <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/visas-for-non-uk-teachers" class="govuk-link">Check if you need a UK visa and find out how to apply</a>
+      <p class="govuk-body">
+        <a class="govuk-link" href="https://getintoteaching.education.gov.uk/non-uk-teachers/visas-for-non-uk-teachers" target="_blank">Check if you need a UK visa and find out how to apply (opens in new tab)</a>
       </p>
 
       <p class="govuk-body">
        If you do not already have the right to work or study, you should only apply to courses that have visa sponsorship available.
       </p>
 
-      <form action="/visa-status" method="post" accept-charset="utf-8" novalidate>
-
-       {{ govukRadios({
-          idPrefix: "visa-sponsorship",
+      <form action="{{ actions.continue }}" method="post" accept-charset="utf-8" novalidate>
+        {{ govukRadios({
           name: "filter[visaSponsorship]",
           fieldset: {
             legend: {
@@ -54,19 +52,18 @@
               classes: "govuk-fieldset__legend--m"
             }
           },
-          errorMessage: errors | getErrorMessage("visa-sponsorship"),
+          value: data.filter.visaSponsorship,
           items: [
             {
               value: "include",
-              text: "Yes",
-              checked: (data["selectedVisaSponsorship"] == "include")
+              text: "Yes"
             },
             {
-              value: "_unchecked",
-              text: "No",
-              checked: (data["selectedVisaSponsorship"] == "_unchecked")
+              value: "",
+              text: "No"
             }
-          ]
+          ],
+          errorMessage: errors | getErrorMessage("visa-sponsorship")
         }) }}
 
         {{ govukButton({
