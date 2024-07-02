@@ -42,9 +42,9 @@
 
     <div class="govuk-grid-column-one-third">
 
-      {% include "./sections/fee-box-2024.njk" %}
+      {% include "./sections/fee-box.njk" %}
 
-      {% include "./sections/nearest-placement-2024.njk" %}
+      {% include "./sections/nearest-placement.njk" %}
 
       {% include "./sections/apply.njk" %}
 
@@ -52,23 +52,23 @@
 
     <div class="govuk-grid-column-two-thirds">
 
-      {% include "./sections/summary-2024.njk" %}
+      {% include "./sections/summary.njk" %}
 
-      {% include "./sections/non-uk-quals-2024.njk" %}
+      {% include "./sections/non-uk-quals.njk" %}
 
       {#{% if not course.has_vacancies %}
         {% include "./sections/_cannot-apply-warning.njk" %}
       {% endif %}#}
 
       {% if course.about_course %}
-        {% include "./sections/about-course-2024.njk" %}
+        {% include "./sections/about-course.njk" %}
       {% endif %}
 
       {% if course.provider.train_with_disability %}
-        {% include "./sections/training-with-disabilities-2024.njk" %}
+        {% include "./sections/training-with-disabilities.njk" %}
       {% endif %}
 
-      {% include "./sections/support-and-advice-2024.njk" %}
+      {% include "./sections/support-and-advice.njk" %}
 
       {% include "./sections/apply.njk" %}
 
