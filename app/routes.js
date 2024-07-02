@@ -30,18 +30,22 @@ router.all('*', (req, res, next) => {
 })
 
 router.get('/', async (req, res) => {
-  if (process.env.SHOW_START_PAGE === 'true') {
-    res.render('start')
-  } else {
+  // if (process.env.SHOW_START_PAGE === 'true') {
+  //   res.render('start')
+  // } else {
     if (process.env.USER_JOURNEY === 'browse') {
       res.redirect('/browse')
     } else if (process.env.USER_JOURNEY === 'filter') {
       res.redirect('/results')
     } else {
-      res.redirect('/search')
+      res.render('./index')
     }
-  }
+  // }
 })
+
+// router.get('/home', (req, res) => {
+//   res.render('./index')
+// })
 
 /// ------------------------------------------------------------------------ ///
 /// BROWSE ROUTES
@@ -65,20 +69,43 @@ router.post('/browse/location', browseController.location_post)
 /// SEARCH ROUTES
 /// ------------------------------------------------------------------------ ///
 
-router.get('/search', searchController.search_get)
-router.post('/search', searchController.search_post)
+router.get('/:version/search', searchController.search_get)
+router.post('/:version/search', searchController.search_post)
 
-router.get('/age-groups', searchController.age_groups_get)
-router.post('/age-groups', searchController.age_groups_post)
+router.get('/:version/age-groups', searchController.age_groups_get)
+router.post('/:version/age-groups', searchController.age_groups_post)
 
-router.get('/primary-subjects', searchController.primary_subjects_get)
-router.post('/primary-subjects', searchController.primary_subjects_post)
+router.get('/:version/primary-subjects', searchController.primary_subjects_get)
+router.post('/:version/primary-subjects', searchController.primary_subjects_post)
 
-router.get('/secondary-subjects', searchController.secondary_subjects_get)
-router.post('/secondary-subjects', searchController.secondary_subjects_post)
+router.get('/:version/secondary-subjects', searchController.secondary_subjects_get)
+router.post('/:version/secondary-subjects', searchController.secondary_subjects_post)
 
-router.get('/visa-status', searchController.visa_status_get)
-router.post('/visa-status', searchController.visa_status_post)
+router.get('/:version/visa-sponsorship', searchController.visa_sponsorship_get)
+router.post('/:version/visa-sponsorship', searchController.visa_sponsorship_post)
+
+/// ------------------------------------------------------------------------ ///
+/// RESULTS ROUTES
+/// ------------------------------------------------------------------------ ///
+
+router.get('/:version/closed', resultsController.closed)
+
+router.get('/:version/results', resultsController.list)
+
+router.get('/:version/results/remove-keyword-search', resultsController.removeKeywordSearch)
+
+router.get('/:version/results/remove-campaign-filter/:campaign', resultsController.removeCampaignFilter)
+router.get('/:version/results/remove-degree-grade-filter/:degreeGrade', resultsController.removeDegreeGradeFilter)
+router.get('/:version/results/remove-funding-type-filter/:fundingType', resultsController.removeFundingTypeFilter)
+router.get('/:version/results/remove-provider-type-filter/:providerType', resultsController.removeProviderTypeFilter)
+router.get('/:version/results/remove-qualification-filter/:qualification', resultsController.removeQualificationFilter)
+router.get('/:version/results/remove-send-filter/:send', resultsController.removeSendFilter)
+router.get('/:version/results/remove-study-mode-filter/:studyMode', resultsController.removeStudyModeFilter)
+router.get('/:version/results/remove-subject-filter/:subject', resultsController.removeSubjectFilter)
+router.get('/:version/results/remove-vacancy-filter/:vacancy', resultsController.removeVacancyFilter)
+router.get('/:version/results/remove-visa-sponsorship-filter/:visaSponsorship', resultsController.removeVisaSponsorshipFilter)
+
+router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 
 /// ------------------------------------------------------------------------ ///
 /// AUTOCOMPLETE ROUTES
@@ -87,29 +114,6 @@ router.post('/visa-status', searchController.visa_status_post)
 router.get('/location-suggestions', searchController.location_suggestions_json)
 
 router.get('/provider-suggestions', searchController.provider_suggestions_json)
-
-/// ------------------------------------------------------------------------ ///
-/// RESULTS ROUTES
-/// ------------------------------------------------------------------------ ///
-
-router.get('/closed', resultsController.closed)
-
-router.get('/results', resultsController.list)
-
-router.get('/results/remove-keyword-search', resultsController.removeKeywordSearch)
-
-router.get('/results/remove-campaign-filter/:campaign', resultsController.removeCampaignFilter)
-router.get('/results/remove-degree-grade-filter/:degreeGrade', resultsController.removeDegreeGradeFilter)
-router.get('/results/remove-funding-type-filter/:fundingType', resultsController.removeFundingTypeFilter)
-router.get('/results/remove-provider-type-filter/:providerType', resultsController.removeProviderTypeFilter)
-router.get('/results/remove-qualification-filter/:qualification', resultsController.removeQualificationFilter)
-router.get('/results/remove-send-filter/:send', resultsController.removeSendFilter)
-router.get('/results/remove-study-mode-filter/:studyMode', resultsController.removeStudyModeFilter)
-router.get('/results/remove-subject-filter/:subject', resultsController.removeSubjectFilter)
-router.get('/results/remove-vacancy-filter/:vacancy', resultsController.removeVacancyFilter)
-router.get('/results/remove-visa-sponsorship-filter/:visaSponsorship', resultsController.removeVisaSponsorshipFilter)
-
-router.get('/results/remove-all-filters', resultsController.removeAllFilters)
 
 /// ------------------------------------------------------------------------ ///
 /// PROVIDER ROUTES
