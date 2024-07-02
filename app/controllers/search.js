@@ -18,7 +18,11 @@ exports.search_get = async (req, res) => {
   if (process.env.USER_JOURNEY === 'browse') {
     res.redirect('/browse')
   } else {
-    res.render('search/index')
+    res.render('search/index', {
+      actions: {
+        continue: `/${req.params.version}/search`
+      }
+    })
   }
 }
 
@@ -54,6 +58,9 @@ exports.search_post = async (req, res) => {
 
   if (errors.length) {
     res.render('search/index', {
+      actions: {
+        continue: `/${req.params.version}/search`
+      },
       errors
     })
   } else {
@@ -73,12 +80,16 @@ exports.search_post = async (req, res) => {
       req.session.data.longitude = locationSingleResponse.geometry.location.lng
     }
 
-    res.redirect('/age-groups')
+    res.redirect(`/${req.params.version}/age-groups`)
   }
 }
 
 exports.age_groups_get = async (req, res) => {
-  res.render('search/age-groups')
+  res.render('search/age-groups', {
+    actions: {
+      continue: `/${req.params.version}/age-groups`
+    }
+  })
 }
 
 exports.age_groups_post = async (req, res) => {
@@ -96,19 +107,22 @@ exports.age_groups_post = async (req, res) => {
 
   if (errors.length) {
     res.render('search/age-groups', {
+      actions: {
+        continue: `/${req.params.version}/age-groups`
+      },
       errors
     })
   } else {
     if (ageGroup === 'primary') {
-      res.redirect('/primary-subjects')
+      res.redirect(`/${req.params.version}/primary-subjects`)
     } else if (ageGroup === 'secondary') {
-      res.redirect('/secondary-subjects')
+      res.redirect(`/${req.params.version}/secondary-subjects`)
     } else if (ageGroup === 'furtherEducation') {
       req.session.data.filter = {}
       req.session.data.filter.subject = ['41']
-      res.redirect('/visa-status')
+      res.redirect(`/${req.params.version}/visa-status`)
     } else {
-      res.redirect('/results')
+      res.redirect(`/${req.params.version}/results`)
     }
   }
 }
@@ -122,6 +136,9 @@ exports.primary_subjects_get = async (req, res) => {
   const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'primary', false)
 
   res.render('search/primary-subjects', {
+    actions: {
+      continue: `/${req.params.version}/primary-subjects`
+    },
     subjectItems
   })
 }
@@ -146,11 +163,14 @@ exports.primary_subjects_post = async (req, res) => {
     const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'primary', false)
 
     res.render('search/primary-subjects', {
+      actions: {
+        continue: `/${req.params.version}/primary-subjects`
+      },
       subjectItems,
       errors
     })
   } else {
-    res.redirect('/visa-status')
+    res.redirect(`/${req.params.version}/visa-sponsorship`)
   }
 }
 
@@ -163,6 +183,9 @@ exports.secondary_subjects_get = async (req, res) => {
   const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'secondary', true)
 
   res.render('search/secondary-subjects', {
+    actions: {
+      continue: `/${req.params.version}/secondary-subjects`
+    },
     subjectItems
   })
 }
@@ -187,40 +210,51 @@ exports.secondary_subjects_post = async (req, res) => {
     const subjectItems = utilsHelper.getSubjectItems(selectedSubject, 'secondary', true)
 
     res.render('search/secondary-subjects', {
+      actions: {
+        continue: `/${req.params.version}/secondary-subjects`
+      },
       subjectItems,
       errors
     })
   } else {
-    res.redirect('/visa-status')
+    res.redirect(`/${req.params.version}/visa-sponsorship`)
   }
 }
 
-exports.visa_status_get = async (req, res) => {
-  res.render('search/visa-status')
-
+exports.visa_sponsorship_get = async (req, res) => {
+  res.render('search/visa-sponsorship', {
+    actions: {
+      continue: `/${req.params.version}/visa-sponsorship`
+    }
+  })
 }
 
-exports.visa_status_post = async (req, res) => {
-    res.redirect('/results')
+exports.visa_sponsorship_post = async (req, res) => {
+  const errors = []
+console.log(req.session.data.filter);
+  if (!req.session.data.filter?.visaSponsorship) {
+    const error = {}
+    error.fieldName = "visa-sponsorship"
+    error.href = "#visa-sponsorship"
+    error.text = "Select if you need visa sponsorship"
+    errors.push(error)
+  }
+
+  if (errors.length) {
+    res.render('search/visa-sponsorship', {
+      actions: {
+        continue: `/${req.params.version}/visa-sponsorship`
+      },
+      errors
+    })
+  } else {
+    res.redirect(`/${req.params.version}/results`)
+  }
 }
 
-// const visaStatus = req.session.data.visaStatus
-
-// const errors = []
-
-// if (!req.session.data.visaStatus?.length) {
-//   const error = {}
-//   error.fieldName = "visa-sponsorship"
-//   error.href = "#visa-status"
-//   error.text = "Select if you have the right to work or study in the UK"
-//   errors.push(error)
-// }
-
-// if (errors.length) {
-//   res.render('search/visa-status', {
-//     errors
-//   })
-// } else {
+/// ------------------------------------------------------------------------ ///
+/// AUTOCOMPLETE ENDPOINTS
+/// ------------------------------------------------------------------------ ///
 
 exports.location_suggestions_json = async (req, res) => {
   req.headers['Access-Control-Allow-Origin'] = true
