@@ -28,7 +28,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form action="/age-groups" method="post" accept-charset="utf-8" novalidate>
+      <form action="{{ actions.continue }}" method="post" accept-charset="utf-8" novalidate>
 
         {{ govukRadios({
           idPrefix: "age-groups",

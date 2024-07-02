@@ -1,0 +1,57 @@
+{# {{ appSearch({
+  label: {
+    text: "Search by provider name or code",
+    classes: "govuk-label--m"
+  },
+  input: {
+    id: "keywords",
+    name: "keywords",
+    value: keywords,
+    spellcheck: false
+  },
+  action: actions.search.find,
+  buttons: [{
+    text: "Search",
+    classes: "app-search__button"
+  }],
+  classes: "govuk-!-margin-bottom-4" if not keywords
+}) }} #}
+
+<form action="{{ actions.search.find }}" method="post" accept-charset="utf-8" novalidate>
+  <input type="hidden" name="q" value="provider">
+
+  {{ govukInput({
+    id: "provider",
+    name: "keywords",
+    label: {
+      text: "Search by provider name or code",
+      classes: "govuk-label--m"
+    },
+    value: keywords,
+    autocomplete: "off",
+    formGroup: {
+      classes: "govuk-!-margin-bottom-0"
+    }
+  }) }}
+
+  <div id="provider-autocomplete" class="govuk-body"></div>
+
+  <div class="govuk-button-group">
+
+    {{ govukButton({
+      text: "Search"
+    }) }}
+
+    {% if keywords %}
+      <a class="govuk-link govuk-link--no-visited-state" href="{{ actions.search.remove }}">Clear search</a>
+    {% endif %}
+
+  </div>
+
+</form>
+
+{# {% if keywords %}
+  <p class="govuk-body govuk-!-margin-top-0 govuk-!-margin-bottom-4">
+    <a class="govuk-link govuk-link--no-visited-state" href="{{ actions.search.remove }}">Clear search</a>
+  </p>
+{% endif %} #}

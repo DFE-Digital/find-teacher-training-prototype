@@ -1,0 +1,276 @@
+ <!--Course details description list-->
+    <h2 class="govuk-heading-l">
+      Course summary
+    </h2>
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        {% if course.course_length %}
+           <dt class="govuk-summary-list__key">
+          Course length
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ course.course_length | getCourseLengthLabel }} {{ " - " + (course.study_mode | getStudyModeLabel | lower) if course.study_mode }}
+        </dd>
+          {% endif %}
+      </div>
+      <div class="govuk-summary-list__row">
+        {% if course.age_minimum and course.age_maximum %}
+        <dt class="govuk-summary-list__key">
+          Age range
+        </dt>
+        <dd class="govuk-summary-list__value">
+        {{ course.age_minimum }} to {{ course.age_maximum }}{{ " - " + course.level if course.level == "secondary" }}
+        {% endif %}
+      </div>
+      <div class="govuk-summary-list__row">
+        {% if course.qualifications %}
+          <dt class="govuk-summary-list__key">
+            Qualification
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {% set qualificationHtml %}
+              {% if "qts" in course.qualifications and "pgce" in course.qualifications %}
+                {% include "./qualifications/pgce-with-qts.md" %}
+              {% elif "qts" in course.qualifications and "pgde" in course.qualifications %}
+                {% include "./qualifications/pgde-with-qts.md" %}
+              {% elif "pgce" in course.qualifications %}
+                {% include "./qualifications/pgce.md" %}
+              {% elif "pgde" in course.qualifications %}
+                {% include "./qualifications/pgde.md" %}
+              {% elif "qts" in course.qualifications %}
+                {% include "./qualifications/qts.md" %}
+              {% endif %}
+            {% endset %}
+            {{ govukDetails({
+              summaryText: course.qualification | getQualificationLabel,
+              html: qualificationHtml | trim | markdown
+            }) }}
+          </dd>
+        {% endif %}
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Provider
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-provider">
+            {{ course.provider.name }}
+          </a>
+        </dd>
+      </div>
+      {% if course.about_accredited_body %}
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Accredited by
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-accredited">
+              {{ course.accredited_body.name }}
+            </a>
+          </dd>
+        </div>
+      {% endif %}
+      <div class="govuk-summary-list__row">
+        {% if course.start_date %}
+        <dt class="govuk-summary-list__key">
+          Start date
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ course.start_date }}</dd>
+          {% endif %}
+      </div>
+    </dl>
+    <!--Course details description list-->
+
+    <!--Entry requirements description list-->
+        <h2 class="govuk-heading-l">
+          Entry requirements
+        </h2>
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Degree
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {% if course.degree_grade == "two_one" %}
+                <span class="govuk-body">2:1 bachelor's degree</span>
+                <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
+              {% elif course.degree_grade == "two_two" %}
+                <span class="govuk-body">2:2 bachelor's degree</span>
+                <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
+              {% elif course.degree_grade == "third_class" %}
+                <span class="govuk-body">Bachelor's degree, </span>
+                <p class="govuk-hint govuk-!-font-size-16">or equivalent qualification. This should be an honours degree (Third or above), or equivalent qualification</p>
+              {% else %}
+                <span class="govuk-body">Bachelor's degree</span>
+                <p class="govuk-hint govuk-!-font-size-16">or equivalent qualification</p>
+              {% endif %}
+
+              {% if course.degree_subject_requirements != null or course.campaign_name == "engineers_teach_physics" or course.has_ske %}
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      Degree subject requirements
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                  {% if course.degree_subject_requirements %}
+                    {% if course.campaign_name != "engineers_teach_physics" %}
+                      <p class="govuk-body">
+                        {{ course.degree_subject_requirements | markdown | safe }}
+                      </p>
+                    {% endif %}
+                  {% endif %}
+
+                  {% if course.campaign_name == "engineers_teach_physics" %}
+                    <p class="govuk-body">
+                      This <a class="govuk-link" href="https://getintoteaching.education.gov.uk/subjects/engineers-teach-physics">Engineers teach physics</a> course is designed for candidates who have a background in materials science and engineering. If your degree is in physics, please apply to our physics course.
+                    </p>
+                  {% endif %}
+
+                  {% if course.has_ske %}
+                    <p class="govuk-body">
+                      If you need to improve your subject knowledge, you may be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement</a> course.
+                    </p>
+                  {% endif %}
+
+                  </div>
+                </details>
+              {% endif %}
+
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              GCSEs
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {% if course.level == "primary" %}
+                {% if course.has_ske and "03" in course.subject_codes %}
+                  <p class="govuk-body">
+                    If you need to improve your primary mathematics knowledge, you may be asked to complete a <a class="govuk-link" href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>.
+                  </p>
+                {% endif %}
+                  <span class="govuk-body">Grade {{ course.gcse_grade_required }} (C) in English, maths and science</span>
+                  <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
+              {% elif course.level == "secondary" %}
+                  <span class="govuk-body">Grade {{ course.gcse_grade_required }} (C) in English and maths</span>
+                  <p class="govuk-hint govuk-!-font-size-16">or above or equivalent qualification</p>
+              {% endif %}
+
+              <p class="govuk-hint govuk-!-font-size-16">
+                {% if course.accept_pending_gcse %}
+                  We’ll consider candidates with pending GCSEs.
+                {% else %}
+                  We will not consider candidates with pending GCSEs.
+                {% endif %}
+              </p>
+
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Equivalency tests
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                  {% set equivalencies = [] %}
+
+                  {% if course.accept_english_gcse_equivalency %}
+                    {% set equivalencies = equivalencies | push('English') %}
+                  {% endif %}
+
+                  {% if course.accept_maths_gcse_equivalency %}
+                    {% set equivalencies = equivalencies | push('maths') %}
+                  {% endif %}
+
+                  {% if course.accept_science_gcse_equivalency %}
+                    {% set equivalencies = equivalencies | push('science') %}
+                  {% endif %}
+
+                  <p class="govuk-body">
+                    {% if course.accept_gcse_equivalency %}
+                      We’ll consider candidates who need to take a GCSE equivalency test in {{ equivalencies | formatList }}.
+                    {% else %}
+                      We will not consider candidates who need to take a GCSE equivalency test.
+                    {% endif %}
+                  </p>
+
+                  {% if course.additional_gcse_equivalencies %}
+                    <p class="govuk-body">
+                      {{ course.additional_gcse_equivalencies | markdown | safe }}
+                    </p>
+                  {% endif %}
+                </div>
+              </details>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+
+          {% if course.can_sponsor_student_visa %}
+          <dt class="govuk-summary-list__key">
+            Visa sponsorship
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Student visas can be sponsored
+          </dd>
+          {%elif course.can_sponsor_worker_visa %}
+          <dt class="govuk-summary-list__key">
+            Visa sponsorship
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Only Skilled Worker visas can be sponsored
+          </dd>
+        {%else %}
+          <dt class="govuk-summary-list__key">
+            Visa sponsorship
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Visas cannot be sponsored
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+              <p class="govuk-body">
+                You’ll need the right to study in the UK.
+              </p>
+              <p class="govuk-body">
+                You already have this if, for example, you:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>
+                  are an Irish citizen
+                </li>
+                <li>
+                  have settled or pre-settled status under the
+                  <a href="https://www.gov.uk/settled-status-eu-citizens-families">
+                    EU Settlement Scheme
+                  </a>
+                  (you may still be able to apply)
+                </li>
+                <li>
+                  have indefinite leave to remain in the UK
+                </li>
+              </ul>
+              <p class="govuk-body">
+                If you do not already have the right to study in the UK, you may need to
+                <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/visas-for-non-uk-trainees">
+                  apply for your visa to train to teach in England
+                </a>.
+              </p>
+              <p class="govuk-body">
+                Learn more about
+                <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/train-to-teach-in-england-as-an-international-student">
+                  training to teach in England as an international student
+                </a>
+                .
+              </p>
+            </details>
+          </dd>
+          {% endif %}
+          </div>
+        </dl>
+        <!--Entry requirements description list-->

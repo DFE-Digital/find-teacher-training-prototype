@@ -1,0 +1,32 @@
+{% extends "_layouts/default.njk" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {{ govukBackLink({
+      text: "Back to " + course.name + " (" + course.code + ")",
+      href: actions.back
+    }) }}
+
+    <!--Training with disabilities-->
+    <h1 class="govuk-heading-xl">
+      Training with disabilities and other needs at {{ course.provider.name }}
+    </h1>
+    {{ course.provider.train_with_disability | markdown | safe }}
+    <!--END Training with disabilities-->
+
+    <p class="govuk-body">
+     <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-provider">
+        Contact {{ course.provider.name }}
+      </a>
+    </p>
+
+  </div>
+</div>
+
+
+{% endblock %}
