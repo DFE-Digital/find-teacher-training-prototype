@@ -1,22 +1,23 @@
 {% extends "_layouts/default.njk" %}
 
-{% set pageName="Home" %}
+{% set pageName = "Contact " + course.provider.name %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back to " + course.name + " (" + course.code + ")",
+  href: actions.back
+}) }}
+{% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {{ govukBackLink({
-      text: "Back to " + course.name + " (" + course.code + ")",
-      href: actions.back
-    }) }}
-
-<!--Contact provider-->
-    <h2 class="govuk-heading-xl">
+    <h1 class="govuk-heading-xl">
       Contact
       {{ course.provider.name }}
-    </h2>
+    </h1>
     <dl class="govuk-summary-list govuk-summary-list--no-border">
 
      {% if course.provider.website %}
@@ -62,9 +63,7 @@
         </dd>
       </div>
     </dl>
-    <!--END Contact provider-->
 
-    <!--About the provider-->
     <h1 class="govuk-heading-l">
       About {{ course.provider.name }}
     </h1>
@@ -72,10 +71,8 @@
     {% if course.provider.train_with_us %}
       {{ course.provider.train_with_us | markdown | safe }}
     {% endif %}
-    <!--END About the provider-->
 
   </div>
 </div>
-
 
 {% endblock %}

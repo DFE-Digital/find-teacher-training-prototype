@@ -73,26 +73,6 @@
 
               {% include "./_result-item.njk" %}
 
-              {#{{ appResultDetail({
-                href: "/providers/" + result.provider.code + "/courses/" + result.course.code,
-                providerName: result.provider.name | markdown("inline"),
-                providerCode: result.provider.code if userJourney in ["browse","filter","hackday"],
-                courseName: result.course.name + " (" + result.course.code + ")",
-                schools: result.schools if not isUniversity and isLocationSearch,
-                trainingLocation: {
-                  distance: trainingLocation.distance,
-                  address: trainingLocation.address
-                } if trainingLocation and isUniversity and isLocationSearch,
-                accreditedBody: result.course.accredited_body,
-                studyType: result.course.study_mode | getStudyModeLabel,
-                qualification: result.course.qualification | getQualificationLabel('html') | safe,
-                fundingType: result.course.funding_type,
-                fundingOption: result.course.funding_option,
-                degreeGrade: result.course.degree_grade,
-                visaSponsorship: result.course.visaSponsorship,
-                startDate: result.course.start_date,
-                vacancies: result.course.has_vacancies
-              }) }}#}
             </li>
           {% endfor %}
         </ul>
