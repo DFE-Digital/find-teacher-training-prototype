@@ -140,7 +140,7 @@ router.get('/providers', providerController.list)
 
 router.get('/:version/providers/:providerCode/courses/:courseCode/about-provider', courseController.showProvider)
 
-router.get('/:version/providers/:providerCode/courses/:courseCode/about-accredited', courseController.showAccredited)
+router.get('/:version/providers/:providerCode/courses/:courseCode/about-accredited', courseController.showAccreditedProvider)
 
 router.get('/:version/providers/:providerCode/courses/:courseCode/training-with-disabilities', courseController.showTrainingWithDisabilities)
 
