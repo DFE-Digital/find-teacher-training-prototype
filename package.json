@@ -35,7 +35,7 @@
     "inquirer": "^8.2.4",
     "lodash": "^4.17.21",
     "luxon": "^3.2.1",
-    "marked": "^5.0.0",
+    "marked": "^13.0.1",
     "node-cache": "^5.1.2",
     "node-geocoder": "^4.0.0",
     "numeral": "^2.0.6",
@@ -47,7 +47,7 @@
     "string": "^3.3.3",
     "sync-request": "^6.1.0",
     "universal-analytics": "^0.5.3",
-    "uuid": "^9.0.1"
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "glob": "^8.0.3",
