@@ -1,16 +1,18 @@
 {% extends "_layouts/default.njk" %}
 
-{% set pageName="Home" %}
+{% set pageName = "School placements at " + course.provider.name %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back to " + course.name + " (" + course.code + ")",
+  href: actions.back
+}) }}
+{% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-
-    {{ govukBackLink({
-      text: "Back to " + course.name + " (" + course.code + ")",
-      href: actions.back
-    }) }}
 
     <h1 class="govuk-heading-xl">
       School placements at {{ course.provider.name }}

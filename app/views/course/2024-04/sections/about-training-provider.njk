@@ -5,7 +5,7 @@
   {% endif %}
   {% if userJourney in ["browse","filter","hackday"] %}
     <p class="govuk-body">
-      <a class="govuk-link" href="{{ actions.provider }}#courses">View all courses from {{ course.provider.name }}</a>
+      <a class="govuk-link" href="{{ actions.view }}#courses">View all courses from {{ course.provider.name }}</a>
     </p>
   {% endif %}
   {% if course.about_accredited_body %}

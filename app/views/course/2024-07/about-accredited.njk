@@ -1,29 +1,27 @@
 {% extends "_layouts/default.njk" %}
 
-{% set pageName="Home" %}
+{% set pageName = "About " + course.accredited_body.name  %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back to " + course.name + " (" + course.code + ")",
+  href: actions.back
+}) }}
+{% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {{ govukBackLink({
-      text: "Back to " + course.name + " (" + course.code + ")",
-      href: actions.back
-    }) }}
-
-    <!--About accredited-->
     <h1 class="govuk-heading-xl">
       About {{ course.accredited_body.name }}
     </h1>
     {% if course.about_accredited_body %}
       {{ course.about_accredited_body | markdown | safe }}
     {% endif %}
-    <!--END Abbout accredited-->
-
 
   </div>
 </div>
-
 
 {% endblock %}
