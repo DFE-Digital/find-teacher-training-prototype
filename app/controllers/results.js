@@ -100,7 +100,7 @@ exports.list = async (req, res) => {
         items: subjects.map((subject) => {
           return {
             text: utilsHelper.getSubjectLabel(subject),
-            href: `/results/remove-subject-filter/${subject}`
+            href: `/${req.params.version}/results/remove-subject-filter/${subject}`
           }
         })
       })
@@ -112,7 +112,7 @@ exports.list = async (req, res) => {
         items: campaigns.map((campaign) => {
           return {
             text: utilsHelper.getCampaignLabel(campaign),
-            href: `/results/remove-campaign-filter/${campaign}`
+            href: `/${req.params.version}/results/remove-campaign-filter/${campaign}`
           }
         })
       })
@@ -124,7 +124,7 @@ exports.list = async (req, res) => {
         items: sends.map((send) => {
           return {
             text: utilsHelper.getSendLabel(send),
-            href: `/results/remove-send-filter/${send}`
+            href: `/${req.params.version}/results/remove-send-filter/${send}`
           }
         })
       })
@@ -136,7 +136,7 @@ exports.list = async (req, res) => {
         items: vacancies.map((vacancy) => {
           return {
             text: utilsHelper.getVacancyLabel(vacancy),
-            href: `/results/remove-vacancy-filter/${vacancy}`
+            href: `/${req.params.version}/results/remove-vacancy-filter/${vacancy}`
           }
         })
       })
@@ -148,7 +148,7 @@ exports.list = async (req, res) => {
         items: studyModes.map((studyMode) => {
           return {
             text: utilsHelper.getStudyModeLabel(studyMode),
-            href: `/results/remove-study-mode-filter/${studyMode}`
+            href: `/${req.params.version}/results/remove-study-mode-filter/${studyMode}`
           }
         })
       })
@@ -160,7 +160,7 @@ exports.list = async (req, res) => {
         items: qualifications.map((qualification) => {
           return {
             text: utilsHelper.getQualificationLabel(qualification),
-            href: `/results/remove-qualification-filter/${qualification}`
+            href: `/${req.params.version}/results/remove-qualification-filter/${qualification}`
           }
         })
       })
@@ -172,7 +172,7 @@ exports.list = async (req, res) => {
         items: degreeGrades.map((degreeGrade) => {
           return {
             text: utilsHelper.getDegreeGradeLabel(degreeGrade),
-            href: `/results/remove-degree-grade-filter/${degreeGrade}`
+            href: `/${req.params.version}/results/remove-degree-grade-filter/${degreeGrade}`
           }
         })
       })
@@ -184,7 +184,7 @@ exports.list = async (req, res) => {
         items: visaSponsorships.map((visaSponsorship) => {
           return {
             text: utilsHelper.getVisaSponsorshipLabel(visaSponsorship),
-            href: `/results/remove-visa-sponsorship-filter/${visaSponsorship}`
+            href: `/${req.params.version}/results/remove-visa-sponsorship-filter/${visaSponsorship}`
           }
         })
       })
@@ -196,7 +196,7 @@ exports.list = async (req, res) => {
         items: fundingTypes.map((fundingType) => {
           return {
             text: utilsHelper.getFundingTypeLabel(fundingType),
-            href: `/results/remove-funding-type-filter/${fundingType}`
+            href: `/${req.params.version}/results/remove-funding-type-filter/${fundingType}`
           }
         })
       })
@@ -208,7 +208,7 @@ exports.list = async (req, res) => {
         items: providerTypes.map((providerType) => {
           return {
             text: utilsHelper.getProviderTypeLabel(providerType),
-            href: `/results/remove-provider-type-filter/${providerType}`
+            href: `/${req.params.version}/results/remove-provider-type-filter/${providerType}`
           }
         })
       })
@@ -624,7 +624,7 @@ exports.list = async (req, res) => {
 
     const subjectItemsDisplayLimit = 10
 
-    res.render('../views/results/index-2024', {
+    res.render(`../views/results/${req.params.version}/index`, {
       results,
       resultsCount,
       pagination,
@@ -647,14 +647,15 @@ exports.list = async (req, res) => {
       keywords,
       sortByItems,
       actions: {
-        view: '/course/',
+        view: `/${req.params.version}`,
+        change: `/${req.params.version}/search`,
         filters: {
-          apply: '/results',
-          remove: '/results/remove-all-filters'
+          apply: `/${req.params.version}/results`,
+          remove: `/${req.params.version}/results/remove-all-filters`
         },
         search: {
-          find: '/results',
-          remove: '/results/remove-keyword-search'
+          find: `/${req.params.version}/results`,
+          remove: `/${req.params.version}/results/remove-keyword-search`
         }
       }
     })
@@ -673,57 +674,57 @@ exports.removeKeywordSearch = (req, res) => {
   delete req.session.data.keywords
   delete req.session.data.provider
   delete req.session.data.q
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeSubjectFilter = (req, res) => {
   req.session.data.filter.subject = utilsHelper.removeFilter(req.params.subject, req.session.data.filter.subject)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeSendFilter = (req, res) => {
   req.session.data.filter.send = utilsHelper.removeFilter(req.params.send, req.session.data.filter.send)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeVacancyFilter = (req, res) => {
   req.session.data.filter.vacancy = utilsHelper.removeFilter(req.params.vacancy, req.session.data.filter.vacancy)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeStudyModeFilter = (req, res) => {
   req.session.data.filter.studyMode = utilsHelper.removeFilter(req.params.studyMode, req.session.data.filter.studyMode)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeQualificationFilter = (req, res) => {
   req.session.data.filter.qualification = utilsHelper.removeFilter(req.params.qualification, req.session.data.filter.qualification)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeDegreeGradeFilter = (req, res) => {
   req.session.data.filter.degreeGrade = utilsHelper.removeFilter(req.params.degreeGrade, req.session.data.filter.degreeGrade)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeVisaSponsorshipFilter = (req, res) => {
   req.session.data.filter.visaSponsorship = utilsHelper.removeFilter(req.params.visaSponsorship, req.session.data.filter.visaSponsorship)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeFundingTypeFilter = (req, res) => {
   req.session.data.filter.fundingType = utilsHelper.removeFilter(req.params.fundingType, req.session.data.filter.fundingType)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeCampaignFilter = (req, res) => {
   req.session.data.filter.campaign = utilsHelper.removeFilter(req.params.campaign, req.session.data.filter.campaign)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeProviderTypeFilter = (req, res) => {
   req.session.data.filter.providerType = utilsHelper.removeFilter(req.params.providerType, req.session.data.filter.providerType)
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }
 
 exports.removeAllFilters = (req, res) => {
@@ -739,5 +740,5 @@ exports.removeAllFilters = (req, res) => {
   // req.session.data.filter.visaSponsorship = null
 
   delete req.session.data.filter
-  res.redirect('/results')
+  res.redirect(`${req.params.version}/results`)
 }

@@ -1,0 +1,165 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title %}
+  {% if resultsCount > 0 %}
+    {{ resultsCount | numeral('0,0') }} course {{- "s" if resultsCount > 1 }} found
+  {% else %}
+    No courses found
+  {% endif %}
+{% endset %}
+
+{% block content %}
+
+  {% if data.cycleClosed %}
+    {% include "_includes/cycle-closed-banner.njk" %}
+  {% elif data.nearingEndOfCycle %}
+    {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+  {% endif %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      {% if userJourney in ["browse","search"] %}
+        {% include "./_search-terms.njk" %}
+      {% endif %}
+
+      <h1 class="govuk-heading-xl">
+        {{ title }}
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="app-filter-layout">
+    <div class="app-filter-layout__filter">
+
+      {% include "./_filter-panel.njk" %}
+
+    </div>
+
+    <div class="app-filter-layout__content">
+
+      <div class="app-action-bar">
+        <div class="app-action-bar__filter"></div>
+      </div>
+
+      {% include "./_promoted-link.njk" %}
+
+     {# Includes the provider search in the filter or browse journey #}
+      {% if userJourney in ["browse","filter"] %}
+        {% include "./_search-panel.njk" %}
+      {% endif %}
+
+      {% include "./_sort-options.njk" %}
+
+      {% if results.length %}
+
+        <ul class="app-search-results">
+          {% for result in results %}
+            <li class="app-search-results__item">
+
+              {% if userJourney == "hackday" %}
+                {{ govukTag({
+                  text: "Accredited provider",
+                  classes: "govuk-tag--turquoise govuk-!-margin-bottom-1"
+                }) if result.provider.is_accredited_body }}
+              {% endif %}
+
+              {% set isLocationSearch = (data.q == "location") %}
+              {% set isUniversity = (result.provider.provider_type == "university") %}
+              {% set trainingLocation = result.course.trainingLocation %}
+
+              {{ appResultDetail({
+                href: actions.view + "/providers/" + result.provider.code + "/courses/" + result.course.code,
+                providerName: result.provider.name | markdown("inline"),
+                providerCode: result.provider.code if userJourney in ["browse","filter","hackday"],
+                courseName: result.course.name + " (" + result.course.code + ")",
+                schools: result.schools if not isUniversity and isLocationSearch,
+                trainingLocation: {
+                  distance: trainingLocation.distance,
+                  address: trainingLocation.address
+                } if trainingLocation and isUniversity and isLocationSearch,
+                accreditedBody: result.course.accredited_body,
+                studyType: result.course.study_mode | getStudyModeLabel,
+                qualification: result.course.qualification | getQualificationLabel('html') | safe,
+                fundingType: result.course.funding_type,
+                fundingOption: result.course.funding_option,
+                degreeGrade: result.course.degree_grade,
+                visaSponsorship: result.course.visaSponsorship,
+                startDate: result.course.start_date,
+                vacancies: result.course.has_vacancies
+              }) }}
+            </li>
+          {% endfor %}
+        </ul>
+
+        {# {% if pagination %}
+          {% include "./_pagination.njk" %}
+        {% endif %} #}
+
+        {% if pagination.pages > 1 %}
+          {{ appPagination( pagination ) }}
+        {% endif %}
+
+      {% else %}
+
+        {% include "./_no-results.njk" %}
+
+      {% endif %}
+
+    </div>
+  </div>
+{% endblock %}
+
+{% block pageScripts %}
+<script type="module">
+  import { FilterToggleButton } from '/public/javascripts/components/filter-toggle-button.js'
+
+  const filterToggleButton = new FilterToggleButton({
+    bigModeMediaQuery: '(min-width: 48.063em)',
+    startHidden: false,
+    toggleButton: {
+      container: $('.app-action-bar__filter'),
+      showText: 'Show filter',
+      hideText: 'Hide filter',
+      classes: 'govuk-button--secondary govuk-!-margin-bottom-3'
+    },
+    closeButton: {
+      container: $('.app-filter__header-action'),
+      text: 'Close'
+    },
+    filter: {
+      container: $('.app-filter-layout__filter')
+    }
+  })
+
+  filterToggleButton.init()
+</script>
+
+{% if userJourney in ["browse","filter"] %}
+  <script type="module" >
+  import { CheckboxFilter } from '/public/javascripts/components/checkbox-filter.js'
+
+  const checkboxFilter = new CheckboxFilter({
+    container: $('#subject'),
+    textBox: {
+      label: 'Search for subject'
+    }
+  })
+
+  checkboxFilter.init()
+  </script>
+
+  <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+  <script src="/public/javascripts/debounce.js"></script>
+  <script src="/public/javascripts/init-autocomplete.js"></script>
+
+  <script type="text/javascript">
+  initAutocomplete({
+    element: "provider-autocomplete",
+    input: "provider",
+    path: "/provider-suggestions",
+  });
+  </script>
+{% endif %}
+{% endblock %}
