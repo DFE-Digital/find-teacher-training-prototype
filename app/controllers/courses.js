@@ -112,7 +112,7 @@ exports.show = async (req, res) => {
       distance,
       actions: {
         back,
-        provider: `/${req.params.version}/providers/${req.params.providerCode}?referrer=course&courseCode=${req.params.courseCode}`
+        view: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
   } catch (error) {
@@ -123,7 +123,7 @@ exports.show = async (req, res) => {
   }
 }
 
-exports.showAccredited = async (req, res) => {
+exports.showAccreditedProvider = async (req, res) => {
   const providerCode = req.params.providerCode.toUpperCase()
   const courseCode = req.params.courseCode.toUpperCase()
 
@@ -159,10 +159,10 @@ exports.showAccredited = async (req, res) => {
       return attributes
     })
 
-    res.render('course-jul-2024/about-accredited-2024', {
+    res.render(`course/${req.params.version}/about-accredited`, {
       course,
       actions: {
-        back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
@@ -211,10 +211,10 @@ exports.showTrainingWithDisabilities = async (req, res) => {
       return attributes
     })
 
-    res.render('course-jul-2024/training-with-disabilities-2024', {
+    res.render(`course/${req.params.version}/training-with-disabilities`, {
       course,
       actions: {
-        back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
@@ -263,10 +263,10 @@ exports.showProvider = async (req, res) => {
       return attributes
     })
 
-    res.render('course-jul-2024/about-provider-2024', {
+    res.render(`course/${req.params.version}/about-provider`, {
       course,
       actions: {
-        back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
@@ -318,12 +318,12 @@ exports.showSchoolPlacements = async (req, res) => {
     const schools = locations.filter(location => location.code !== '-')
     const distance = req.session.data.courseDistances.find(course => course.code === courseCode)
 
-    res.render('course-jul-2024/school-placements-2024', {
+    res.render(`course/${req.params.version}/school-placements`, {
       course,
       schools,
       distance,
       actions: {
-        back: `/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
