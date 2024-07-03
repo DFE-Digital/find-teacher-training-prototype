@@ -1,0 +1,75 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = "Visa sponsorship" %}
+
+{% block pageTitle %}
+{{ "Error: " if errors }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back",
+  href: "/age-groups"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  {% if errors.length %}
+    {% include "_includes/error-summary.njk" %}
+  {% else %}
+    {% if data.cycleClosed %}
+      {% include "_includes/cycle-closed-banner.njk" %}
+    {% elif data.nearingEndOfCycle %}
+      {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+    {% endif %}
+  {% endif %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">{{ title }}</h1>
+
+      <p class="govuk-body">
+        You’ll need to have the right to work or study in the UK for the duration of your teacher training course.
+      </p>
+
+      <p class="govuk-body">
+        <a class="govuk-link" href="https://getintoteaching.education.gov.uk/non-uk-teachers/visas-for-non-uk-teachers" target="_blank">Check if you need a UK visa and find out how to apply (opens in new tab)</a>
+      </p>
+
+      <p class="govuk-body">
+       If you do not already have the right to work or study, you should only apply to courses that have visa sponsorship available.
+      </p>
+
+      <form action="{{ actions.continue }}" method="post" accept-charset="utf-8" novalidate>
+        {{ govukRadios({
+          name: "filter[visaSponsorship]",
+          fieldset: {
+            legend: {
+              text: "Do you need visa sponsorship?",
+              isPageHeading: false,
+              classes: "govuk-fieldset__legend--m"
+            }
+          },
+          value: data.filter.visaSponsorship,
+          items: [
+            {
+              value: "include",
+              text: "Yes"
+            },
+            {
+              value: "exclude",
+              text: "No"
+            }
+          ],
+          errorMessage: errors | getErrorMessage("visa-sponsorship")
+        }) }}
+
+        {{ govukButton({
+          text: "Find courses"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

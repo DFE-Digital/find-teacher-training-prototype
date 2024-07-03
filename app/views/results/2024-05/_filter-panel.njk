@@ -1,0 +1,246 @@
+{% set filterOptionsHtml %}
+{% if userJourney == "browse" and data.ageGroup == "primary" %}
+  {{ govukCheckboxes({
+    idPrefix: "subject",
+    name: "filter[subject]",
+    fieldset: {
+      legend: {
+        html: 'Specialist subjects<span class="govuk-visually-hidden"> filter</span>',
+        classes: "govuk-fieldset__legend--s"
+      }
+    },
+    formGroup: {
+      classes: "app-filter__group"
+    },
+    items: subjectItems,
+    classes: "govuk-checkboxes--small"
+  }) }}
+{% endif %}
+
+{% if userJourney == "browse" and data.route == "all" and data.ageGroup == "secondary" or userJourney == "filter" %}
+  {% if subjectItems.length >= subjectItemsDisplayLimit %}
+
+    {{ appCheckboxFilter({
+      idPrefix: "subject",
+      name: "filter[subject]",
+      legend: {
+        html: 'Subject<span class="govuk-visually-hidden"> filter</span>'
+      },
+      items: subjectItems,
+      selectedItems: selectedSubjects,
+      showSelectedTags: true if userJourney in ["browse","filter"] else false,
+      classes: "govuk-!-margin-bottom-7"
+    }) }}
+
+  {% else %}
+
+    {{ govukCheckboxes({
+      idPrefix: "subject",
+      name: "filter[subject]",
+      fieldset: {
+        legend: {
+          html: 'Subject<span class="govuk-visually-hidden"> filter</span>',
+          classes: "govuk-fieldset__legend--s"
+        }
+      },
+      items: subjectItems,
+      classes: "govuk-checkboxes--small"
+    }) }}
+
+  {% endif %}
+{% endif %}
+
+{% if hasSearchPhysics %}
+{{ govukCheckboxes({
+  idPrefix: "engineers-teach-physics",
+  name: "filter[campaign]",
+  fieldset: {
+    legend: {
+      html: 'Engineers teach physics<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: campaignItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+{% endif %}
+
+  {{ govukCheckboxes({
+  idPrefix: "visa-sponsorship",
+  name: "filter[visaSponsorship]",
+  fieldset: {
+    legend: {
+      html: 'Visa sponsorship<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: visaSponsorshipItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "study-mode",
+  name: "filter[studyMode]",
+  fieldset: {
+    legend: {
+      html: 'Full time or part time<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: studyModeItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "qualification",
+  name: "filter[qualification]",
+  fieldset: {
+    legend: {
+      html: 'Qualification<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: qualificationItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukRadios({
+  idPrefix: "degree-grade",
+  name: "filter[degreeGrade]",
+  fieldset: {
+    legend: {
+      html: 'Degree grade accepted<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: degreeGradeItems,
+  classes: "govuk-radios--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "special-educational-needs",
+  name: "filter[send]",
+  fieldset: {
+    legend: {
+      html: 'Special educational needs<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: sendItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "funding-type",
+  name: "filter[fundingType]",
+  fieldset: {
+    legend: {
+      html: 'Fee or salary<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: fundingTypeItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "vacancy",
+  name: "filter[vacancy]",
+  fieldset: {
+    legend: {
+      html: 'Applications open<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: vacancyItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{% if userJourney == "hackday" %}
+  {{ govukCheckboxes({
+    idPrefix: "provider-type",
+    name: "filter[providerType]",
+    fieldset: {
+      legend: {
+        html: 'Provider type<span class="govuk-visually-hidden"> filter</span>',
+        classes: "govuk-fieldset__legend--s"
+      }
+    },
+    formGroup: {
+      classes: "app-filter__group"
+    },
+    items: providerTypeItems,
+    classes: "govuk-checkboxes--small"
+  }) }}
+{% endif %}
+
+{% endset %}
+
+<div class="app-filter">
+  <div class="app-filter__header">
+    <div class="app-filter__header-title">
+      <h2 class="govuk-heading-m">Filter</h2>
+    </div>
+    <div class="app-filter__header-action">
+
+    </div>
+  </div>
+  <div class="app-filter__content">
+    {# {% if userJourney == "filter" and selectedFilters %}
+      <div class="app-filter__selected">
+        <div class="app-filter__selected-heading">
+          <div class="app-filter__heading-title">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Selected filters</h2>
+            <p class="govuk-body">
+              <a class="govuk-link govuk-link--no-visited-state" href="{{ actions.filters.remove }}">Clear filters</a>
+            </p>
+          </div>
+        </div>
+        {% for category in selectedFilters.categories %}
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">{{ category.heading.text }}</h3>
+          <ul class="app-filter-tags">
+            {% for item in category.items %}
+              <li>
+                <a class="app-filter__tag" href="{{ item.href }}">
+                  <span class="govuk-visually-hidden">Remove this filter</span> {{ item.text }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    {% endif %} #}
+    <div class="app-filter__options">
+      <form method="get" action="{{ actions.filters.apply }}" novalidate>
+        <button class="govuk-button" data-module="govuk-button">
+          Apply filters
+        </button>
+        {{ filterOptionsHtml | safe }}
+      </form>
+    </div>
+  </div>
+</div>

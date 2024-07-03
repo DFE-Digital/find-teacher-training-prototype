@@ -1,0 +1,25 @@
+{% if data.q == "location" %}
+  <!--<div class="app-search-results-header">
+   <p class="govuk-body govuk-!-margin-bottom-0">Sorted by distance</p>
+  </div>-->
+{% elif data.q == "england" or userJourney in ["filter","search"] %}
+  <div class="app-search-results-header">
+    <form class="app-search-results-header__sort" action="/results" method="get" accept-charset="utf-8" novalidate>
+      {{ govukSelect({
+        id: "sortby",
+        name: "sortBy",
+        label: {
+          text: "Sorted by",
+          classes: "govuk-!-display-inline-block"
+        },
+        items: sortByItems,
+        attributes: {
+          role: "listbox"
+        }
+      }) }}
+      {{ govukButton({
+        text: "Sort"
+      }) }}
+    </form>
+  </div>
+{% endif %}
