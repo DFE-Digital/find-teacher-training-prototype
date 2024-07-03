@@ -53,7 +53,7 @@
           Provider
         </dt>
         <dd class="govuk-summary-list__value">
-          <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-provider">
+          <a href="{{ actions.view }}/about-provider">
             {{ course.provider.name }}
           </a>
         </dd>
@@ -64,7 +64,7 @@
             Accredited by
           </dt>
           <dd class="govuk-summary-list__value">
-            <a href="/providers/{{ course.provider.code }}/courses/{{course.code}}/about-accredited">
+            <a href="{{ actions.view }}/about-accredited">
               {{ course.accredited_body.name }}
             </a>
           </dd>
