@@ -231,7 +231,7 @@ exports.visa_sponsorship_get = async (req, res) => {
 
 exports.visa_sponsorship_post = async (req, res) => {
   const errors = []
-console.log(req.session.data.filter);
+
   if (!req.session.data.filter?.visaSponsorship) {
     const error = {}
     error.fieldName = "visa-sponsorship"
