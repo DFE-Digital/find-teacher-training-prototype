@@ -162,7 +162,8 @@ exports.showAccreditedProvider = async (req, res) => {
     res.render(`course/${req.params.version}/about-accredited`, {
       course,
       actions: {
-        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`,
+        view: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
@@ -214,7 +215,8 @@ exports.showTrainingWithDisabilities = async (req, res) => {
     res.render(`course/${req.params.version}/training-with-disabilities`, {
       course,
       actions: {
-        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`,
+        view: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
@@ -266,7 +268,8 @@ exports.showProvider = async (req, res) => {
     res.render(`course/${req.params.version}/about-provider`, {
       course,
       actions: {
-        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`,
+        view: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
@@ -323,7 +326,8 @@ exports.showSchoolPlacements = async (req, res) => {
       schools,
       distance,
       actions: {
-        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
+        back: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`,
+        view: `/${req.params.version}/providers/${req.params.providerCode}/courses/${req.params.courseCode}`
       }
     })
 
