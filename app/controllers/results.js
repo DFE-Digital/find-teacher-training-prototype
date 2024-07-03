@@ -648,6 +648,7 @@ exports.list = async (req, res) => {
       sortByItems,
       actions: {
         view: `/${req.params.version}`,
+        change: `/${req.params.version}/search`,
         filters: {
           apply: `/${req.params.version}/results`,
           remove: `/${req.params.version}/results/remove-all-filters`
