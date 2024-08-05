@@ -1,0 +1,181 @@
+{% extends "_layouts/default.njk" %}
+
+{% set title = course.name + " (" + course.code + ") with " + course.provider.name %}
+
+{% block pageTitle %}
+{{ "Error: " if showError }}{{ title + " - " if title }}{{ caption + " - " if caption }}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+  {% include "_includes/nearing-end-of-cycle-banner.njk" %}
+
+<!--Add the dynamic content in here-->
+<!-- may need to refer to the filter.js file to parse the data into a human readable format-->
+
+<div class="find-search-container">
+  <div class="find-search-content">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l find-search-color">Find teacher training courses in England</h1>
+
+        <div class="find-flex-container">
+
+          <div class="find-item">
+            <label for="keyword-field" class="govuk-label govuk-label--s find-search-color">
+              Keywords
+            </label>
+            <input id="keyword-field" class="govuk-input" autocomplete="off" type="text" name="keyword">
+          </div>
+
+          <div class="find-item">
+            <label for="keyword-field" class="govuk-label govuk-label--s find-search-color">
+              City, town or postcode
+            </label>
+            <input id="keyword-field" class="govuk-input" autocomplete="off" type="text" name="keyword">
+          </div>
+
+          <div class="find-item">
+            <a href="https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&c=England&can_sponsor_visa=false&has_vacancies=true&l=1&latitude=52.4822694&loc=Birmingham%2C+UK&longitude=-1.8900078&lq=Birmingham&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&radius=10&send_courses=false&sortby=distance&study_type%5B%5D=full_time&study_type%5B%5D=part_time&subjects%5B%5D=G1&visa_status=false" role="button" draggable="false" class="govuk-button govuk-button--start govuk-button--inverse" data-module="govuk-button" style="margin-bottom:0;">
+                Search
+            </a>
+          </div>
+
+        </div><!--END flex container-->
+
+      </div><!--END column-->
+    </div><!--END grid row-->
+
+    </div><!--END search content-->
+  </div><!--END search container-->
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third age-group">
+      <p class="govuk-heading-m">
+        Primary
+        <br>
+        <span class="govuk-body-s">
+          Ages 5 to 11
+        </span>
+      </p>
+      <span class="govuk-body">
+        <a href="https://find-teacher-training-courses.service.gov.uk/results?age_group=primary&applications_open=true&c=England&can_sponsor_visa=false&has_vacancies=true&l=2&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&send_courses=false&study_type%5B%5D=full_time&study_type%5B%5D=part_time&subjects%5B%5D=00&subjects%5B%5D=01&subjects%5B%5D=02&subjects%5B%5D=03&subjects%5B%5D=04&subjects%5B%5D=06&subjects%5B%5D=07&visa_status=false">
+          View all primary courses
+        </a>
+      </span>
+    </div><!--END col full-->
+    <div class="govuk-grid-column-one-third age-group">
+      <p class="govuk-heading-m">
+        Secondary
+        <br>
+        <span class="govuk-body-s">
+          Ages 11 to 16
+        </span>
+      </p>
+      <span class="govuk-body">
+        <a href="subject">
+          Browse all secondary subjects
+        </a>
+      </span>
+    </div><!--END col full-->
+    <div class="govuk-grid-column-one-third age-group">
+      <p class="govuk-heading-m">
+        Further education
+        <br>
+        <span class="govuk-body-s">
+          Over 16 and not studying for a degree
+      </span>
+      </p>
+
+      <span class="govuk-body">
+        <a href="https://find-teacher-training-courses.service.gov.uk/results?age_group=further_education&applications_open=true&c=England&can_sponsor_visa=false&has_vacancies=true&l=2&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&send_courses=false&study_type%5B%5D=full_time&study_type%5B%5D=part_time&subjects%5B%5D=41&visa_status=false">
+          View all further education courses
+        </a>
+      </span>
+
+  </div><!--END three cols-->
+</div><!--END grid row-->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <div class="govuk-accordion govuk-accordion--non-uk-home" data-module="govuk-accordion" id="accordion-default">
+      <div class="govuk-accordion__section govuk-accordion__section--non-uk">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button govuk-accordion__section-button--non-uk" id="accordion-default-heading-1">
+              Non-UK citizens: check if you need visa sponsorship
+            </span>
+          </h2>
+        </div>
+
+        <div id="accordion-default-content-1" class="govuk-accordion__section-content govuk-accordion__section-content--non-uk" style="padding-top:0; padding-bottom:4px;">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <p class="govuk-body">
+                To train to teach in England, you will need a visa or immigration status allowing you to study (or work, for salaried courses) in the UK.
+              </p>
+              <p class="govuk-body">
+              <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/visas-for-non-uk-trainees#check-your-status">
+                Check if you need a UK visa</a>.
+              </p>
+              <p>
+                If you need a visa, you should only apply to courses that have visa sponsorship available.
+              </p>
+              <a href="https://find-teacher-training-courses.service.gov.uk/results?age_group=primary&applications_open=true&can_sponsor_visa=true&has_vacancies=true&l=2&subjects%5B%5D=00&visa_status=true" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+                Find courses that offer visa sponsorship
+              </a>
+              <p class="govuk-body">
+                Find out more about
+              <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/train-to-teach-in-england-as-an-international-student">
+                training to teach in England as a non-UK citizen</a>.
+              </p>
+            </div><!--end col 2 thirds-->
+          </div><!--END grid row-->
+        </div><!--END accordion content-->
+
+  </div><!--END col full-->
+</div><!--END grid row-->
+
+<div class="govuk-grid-row">
+
+  <div class="support-flex-container">
+
+    <div class="govuk-grid-column-one-half">
+
+      <div class="govuk-notification-banner govuk-notification-banner--pink" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
+        <h3 class="govuk-heading-m">
+          Is teacher training right for me?
+        </h3>
+        <p class="govuk-body">
+          Choosing or changing a career can be a big decision.
+          <a href="https://getintoteaching.education.gov.uk/is-teaching-right-for-me">Find out if teaching is right for you</a>.
+        </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="govuk-grid-column-one-half">
+
+      <div class="govuk-notification-banner govuk-notification-banner--pink" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
+        <h3 class="govuk-heading-m">
+          Support and advice
+        </h3>
+        <p class="govuk-body">
+          You can
+          <a href="https://getintoteaching.education.gov.uk/teacher-training-advisers"> get a teacher training adviser</a> or
+          <a href="https://getintoteaching.education.gov.uk/help-and-support"> contact Get Into Teaching</a>
+          for free support.
+        </p>
+        </div>
+      </div>
+    </div>
+
+  </div><!--END support flex container-->
+</div>
+
+{% endblock %}
