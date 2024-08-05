@@ -235,32 +235,23 @@ router.get('/hackday/questions/degree-grade', questionController.degree_grade_ge
 router.post('/hackday/questions/degree-grade', questionController.degree_grade_post)
 
 /// ------------------------------------------------------------------------ ///
-/// COURSE 2024
+/// PRE-FILTERING 2024
 /// ------------------------------------------------------------------------ ///
 
-router.get('/course-2024', (req, res) => {
-  res.render('./course-2024/index')
+router.get('/pre-filtering-2024', (req, res) => {
+  res.render('./pre-filtering-2024/index')
 })
 
-router.get('/about-provider', (req, res) => {
-  res.render('./course-2024/about-provider')
+router.get('/subject', (req, res) => {
+  res.render('./pre-filtering-2024/subject')
 })
 
-router.get('/about-accredited', (req, res) => {
-  res.render('./course-2024/about-accredited')
+router.get('/subject-fund', (req, res) => {
+  res.render('./pre-filtering-2024/subject-fund')
 })
 
-
-router.get('/results-2024', (req, res) => {
-  res.render('./course-2024/results-2024')
-})
-
-router.get('/training-with-disabilities', (req, res) => {
-  res.render('./course-2024/training-with-disabilities')
-})
-
-router.get('/school-placements', (req, res) => {
-  res.render('./course-2024/school-placements')
+router.get('/subject-half', (req, res) => {
+  res.render('./pre-filtering-2024/subject-half')
 })
 
 /// ------------------------------------------------------------------------ ///
