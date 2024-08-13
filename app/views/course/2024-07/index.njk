@@ -34,21 +34,11 @@
         </span>
         {{ course.name }} ({{ course.code }})
       </h1>
-
+      {% include "./sections/apply.njk" %}
     </div>
   </div>
 
   <div class="govuk-grid-row">
-
-    <div class="govuk-grid-column-one-third">
-
-      {% include "./sections/fee-box.njk" %}
-
-      {% include "./sections/nearest-placement.njk" %}
-
-      {% include "./sections/apply.njk" %}
-
-    </div>
 
     <div class="govuk-grid-column-two-thirds">
 

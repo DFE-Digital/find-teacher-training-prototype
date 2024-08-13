@@ -1,56 +1,61 @@
-  <h2 class="govuk-heading-l">
-    Course details
-  </h2>
-
-<div class="govuk-accordion govuk-accordion--main" data-module="govuk-accordion" id="accordion-course-details">
   <!--About the course-->
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          About the course
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content">
-      {{ course.about_course | markdown | safe }}
-    </div>
-  </div>
+  <h2 class="govuk-heading-l">
+    About the course
+  </h2>
+  <p class="govuk-body">
+    {{ course.about_course | markdown | safe }}
+  </p>
   <!--END About the course-->
 
   <!--Fees and financial support-->
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-fees-financial-support">
-          Fees and financial support
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-3" class="govuk-accordion__section-content">
-
-    <div>
+ <h2 class="govuk-heading-l">
+    Fees and financial support
+  </h2>
       <p class="govuk-body">
-        <strong>
           Fees for {{ course.year_range }}:
-        </strong>
-      </p>
-      <p class="govuk-body">
+       </p>
+      <dl class="govuk-summary-list">
         {% if course.has_fees %}
           {% if course.fee_domestic %}
             {% if course.fee_international %}
-              <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK citizens<br>
-              <strong>£{{ course.fee_international | numeral('0,0') }}</strong> for Non-UK citizens
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  UK citizens
+                </dt>
+                 <dd class="govuk-summary-list__value">
+                  £{{ course.fee_domestic | numeral('0,0') }}
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Non-UK citizens
+                </dt>
+                 <dd class="govuk-summary-list__value">
+                  £{{ course.fee_international | numeral('0,0') }}
+                </dd>
+              </div>
             {% else %}
-              <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK citizens
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  UK citizens
+                </dt>
+                 <dd class="govuk-summary-list__value">
+                  £{{ course.fee_domestic | numeral('0,0') }}
+                </dd>
+              </div>
             {% endif %}
           {% endif %}
           {% else %}
-            <strong>No fee</strong><br>
-            You will be paid a salary
+           <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  No fee
+                </dt>
+                 <dd class="govuk-summary-list__value">
+                  You will be paid a salary
+                </dd>
+              </div>
         {% endif %}
-      </p>
-      </div>
+      </dl>
 
       {% if course.has_fees %}
         {% if course.fee_domestic %}
@@ -60,59 +65,69 @@
         {% endif %}
       {% endif %}
 
-        {% if course.financial_support %}
+      {% if course.financial_support %}
         {{ course.financial_support | markdown | safe }}
       {% endif %}
 
-      {% set financialSupportHtml %}
-        {% if course.has_salary %}
-          {% include "./fees-and-financial-support/salary.md" %}
-        {% elif course.has_scholarship_and_bursary %}
-          {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
-        {% elif course.has_bursary %}
-          {% include "./fees-and-financial-support/bursary.md" %}
-        {% else %}
-          {% include "./fees-and-financial-support/loan.md" %}
-        {% endif %}
-      {% endset %}
+    <!--UK financial support-->
+    <div class="govuk-accordion govuk-accordion--non-uk" data-module="govuk-accordion" id="accordion-default">
+      <div class="govuk-accordion__section govuk-accordion__section--uk">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button govuk-accordion__section-button--non-uk" id="accordion-default-heading-1">
+              Financial support for UK citizens
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-1" class="govuk-accordion__section-content govuk-accordion__section-content--non-uk">
+          {% set financialSupportHtml %}
+            {% if course.has_salary %}
+              {% include "./fees-and-financial-support/salary.md" %}
+            {% elif course.has_scholarship_and_bursary %}
+              {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
+            {% elif course.has_bursary %}
+              {% include "./fees-and-financial-support/bursary.md" %}
+            {% else %}
+              {% include "./fees-and-financial-support/loan.md" %}
+            {% endif %}
+          {% endset %}
 
-      {{ appAdvice({
-        title: "Financial support for UK citizens",
-        html: financialSupportHtml | trim | markdown
-      }) }}
-
-      <!--Financial support for non-UK citizens-->
-      <div class="govuk-notification-banner govuk-notification-banner--git govuk-accordion__section--non-uk" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-        <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
-          <h3 class="app-advice__title">
-            Financial support for non-UK citizens
-          </h3>
-          <p class="govuk-body">
-            If you are a non-UK citizen without indefinite leave to remain you are unlikely to be eligible for a bursary or student loan.
-          </p>
-          <p class="govuk-body">
-            <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees">
-              Find out what financial support is available to non-UK citizens
-            </a>
-            .
-          </p>
+          {{ financialSupportHtml | trim | markdown | safe }}
         </div>
       </div>
-      <!--END Financial support for non-UK citizens-->
     </div>
-    <!--FEND Fees and financial support-->
+    <!--End UK financial support-->
+
+    <!--Non-UK financial support-->
+    <div class="govuk-accordion govuk-accordion--non-uk" data-module="govuk-accordion" id="accordion-default">
+      <div class="govuk-accordion__section govuk-accordion__section--non-uk">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button govuk-accordion__section-button--non-uk" id="accordion-default-heading-1">
+              Financial support for non-UK citizens
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-1" class="govuk-accordion__section-content govuk-accordion__section-content--non-uk">
+          <p class="govuk-body">
+              If you are a non-UK citizen without indefinite leave to remain you are unlikely to be eligible for a bursary or student loan.
+            </p>
+            <p class="govuk-body">
+              <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees">
+                Find out what financial support is available to non-UK citizens</a>.
+            </p>
+        </div>
+      </div>
+    </div>
+    <!--End Non-UK financial support-->
+
+
+    <!--END Fees and financial support-->
 
     <!--How placements work-->
-    <div class="govuk-accordion__section">
-      <div class="govuk-accordion__section-header">
-        <h2 class="govuk-accordion__section-heading">
-          <span class="govuk-accordion__section-button" id="accordion-how-placements-work">
-            How school placements work
-          </span>
-        </h2>
-      </div>
-      <div id="accordion-default-content-2" class="govuk-accordion__section-content">
-
+    <h2 class="govuk-heading-l">
+      How school placements work
+    </h2>
       {% if data.q == "location" %}
         {% if schools.length > 1 %}
           <p class="govuk-body">
@@ -128,17 +143,6 @@
           <p class="govuk-body">
             The nearest school you could be placed in is:
           </p>
-          {#{% if schools.length %}
-          <ul class="govuk-list govuk-list--spaced">
-            {% for school in schools %}
-            <li>
-              <strong>{{ school.name }}</strong>
-              <br>
-              {{ school.address }}
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}#}
         {% endif %}
           <div class="map-icon-alignment">
               <div class="map-icon">
@@ -223,24 +227,12 @@
         html: whereYouWillTrainHtml | trim | markdown
       }) }}
 
-      </div>
-    </div>
-
     {% if course.interview_process %}
-    <div class="govuk-accordion__section">
-      <div class="govuk-accordion__section-header">
-        <h2 class="govuk-accordion__section-heading">
-          <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-            Interview process
-          </span>
-        </h2>
-      </div>
-      <div id="accordion-default-content-3" class="govuk-accordion__section-content">
-        {{ course.interview_process | markdown | safe }}
-      </div>
-    </div>
-  </div>
+    <h2 class="govuk-heading-l">
+      Interview process
+    </h2>
+    {{ course.interview_process | markdown | safe }}
+
   {% endif %}
 
-</div>
     <!--End About the course-->
