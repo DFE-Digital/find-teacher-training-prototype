@@ -1,7 +1,7 @@
 .app-advice {
   @include govuk-responsive-margin(4, "bottom");
   background: govuk-colour("light-grey");
-  border-left: $govuk-border-width solid $git-brand-colour;
+  border-left: $govuk-border-width solid #f47738;
   clear: both;
   padding: govuk-spacing(4);
 }
