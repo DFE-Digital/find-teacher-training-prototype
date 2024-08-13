@@ -43,12 +43,7 @@
         <div class="app-action-bar__filter"></div>
       </div>
 
-      {#{% include "./_promoted-link.njk" %}#}
-
-     {# Includes the provider search in the filter or browse journey #}
-      {% if userJourney in ["browse","filter"] %}
-        {% include "./_search-panel.njk" %}
-      {% endif %}
+      {% include "./_search-panel.njk" %}
 
       {% include "./_sort-options.njk" %}
 

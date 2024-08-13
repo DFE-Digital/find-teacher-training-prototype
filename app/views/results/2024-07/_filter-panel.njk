@@ -1,4 +1,5 @@
 {% set filterOptionsHtml %}
+
 {% if userJourney == "browse" and data.ageGroup == "primary" %}
   {{ govukCheckboxes({
     idPrefix: "subject",
@@ -50,6 +51,345 @@
   {% endif %}
 {% endif %}
 
+  {{ govukCheckboxes({
+  idPrefix: "visa-sponsorship",
+  name: "filter[visaSponsorship]",
+  fieldset: {
+    legend: {
+      html: 'Visa sponsorship<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: visaSponsorshipItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+<!--Age group filter-->
+<div class="filters-component__groups__group app-filter__group" data-filters-target="group" data-group="subjects">
+  <h3 class="govuk-fieldset__legend govuk-fieldset__legend--s">Age group</h3>
+    <div id="subjects__listbox">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+            <input type="hidden" name="subjects[]" value="" autocomplete="off">
+            <div class="govuk-checkboxes__item">
+              <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+              <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                Primary
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+              <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                Secondary
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+              <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                Further education
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+</div>
+<!--END age group filter-->
+
+<!-- Subjects filter-->
+<div class="filters-component__groups__group app-filter__group" data-filters-target="group" data-group="subjects">
+  <h3 class="govuk-fieldset__legend govuk-fieldset__legend--s">Subject</h3>
+  <div>
+    <div class="searchable-collection-component" data-controller="searchable-collection">
+      <div class=" searchable-collection-component--scrollable">
+
+        <div class="searchable-collection-component__search" style="margin-bottom:10px;">
+          <input aria-controls="subjects__listbox" aria-expanded="true" aria-label="Subject" class="govuk-input icon icon--left icon--search js-action" data-action="input->searchable-collection#input" data-searchable-collection-target="input" placeholder="Search" role="combobox">
+          <div aria-live="assertive" class="govuk-visually-hidden collection-match" role="status">
+          </div>
+        </div>
+
+        <div id="subjects__listbox">
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" style="margin-top:15px;">
+              <legend class="govuk-body-s" style="margin-bottom:0;">
+                <span class="govuk-body-s">
+                  <strong>Science, technology, engineering and mathematics (STEM)</strong>
+                </span>
+              </legend>
+              <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                <input type="hidden" name="subjects[]" value="" autocomplete="off">
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Biology
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Chemistry
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Computing
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Design and technology
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Mathematics
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Physics
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" style="margin-top:15px;">
+             <legend class="govuk-body-s" style="margin-bottom:0;">
+                <span class="govuk-body-s">
+                  <strong>Languages and literature</strong>
+                </span>
+              </legend>
+              <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                <input type="hidden" name="subjects[]" value="" autocomplete="off">
+                 <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    English
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Ancient Greek
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Ancient Hebrew
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    French
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    German
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Italian
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Japanese
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Latin
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Mandarin
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Russian
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Spanish
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Other modern languages
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" style="margin-top:15px;">
+              <legend class="govuk-body-s" style="margin-bottom:0;">
+                <span class="govuk-body-s">
+                  <strong>Arts, humanities and social sciences</strong>
+                </span>
+              </legend>
+              <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                <input type="hidden" name="subjects[]" value="" autocomplete="off">
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Art and design
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Geography
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Music
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Religious education
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+ <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" style="margin-top:15px;">
+             <legend class="govuk-body-s" style="margin-bottom:0;">
+                <span class="govuk-body-s">
+                  <strong>Other subjects</strong>
+                </span>
+              </legend>
+              <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                <input type="hidden" name="subjects[]" value="" autocomplete="off">
+                 <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Business studies
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Classics
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Citizenship
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Communication and media studies
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Dance
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Drama
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Economics
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Health and social care
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    History
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Philosophy
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    PE/Physical education
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Psychology
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Science
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+                  <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                    Social sciences
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--END subjects filter-->
+
 {% if hasSearchPhysics %}
 {{ govukCheckboxes({
   idPrefix: "engineers-teach-physics",
@@ -68,22 +408,6 @@
 }) }}
 {% endif %}
 
-  {{ govukCheckboxes({
-  idPrefix: "visa-sponsorship",
-  name: "filter[visaSponsorship]",
-  fieldset: {
-    legend: {
-      html: 'Visa sponsorship<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: visaSponsorshipItems,
-  classes: "govuk-checkboxes--small"
-}) }}
-
 {{ govukCheckboxes({
   idPrefix: "study-mode",
   name: "filter[studyMode]",
@@ -100,21 +424,44 @@
   classes: "govuk-checkboxes--small"
 }) }}
 
-{{ govukCheckboxes({
-  idPrefix: "qualification",
-  name: "filter[qualification]",
-  fieldset: {
-    legend: {
-      html: 'Qualification<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: qualificationItems,
-  classes: "govuk-checkboxes--small"
-}) }}
+<!--quals filter-->
+<div class="filters-component__groups__group app-filter__group" data-filters-target="group" data-group="subjects">
+  <h3 class="govuk-fieldset__legend govuk-fieldset__legend--s">Qualification</h3>
+    <div id="subjects__listbox">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+            <input type="hidden" name="subjects[]" value="" autocomplete="off">
+            <div class="govuk-checkboxes__item">
+              <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+              <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                QTS with PGCE
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+              <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                PGCE with QTS
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+              <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                QTS only
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input id="subjects-chemistry-field" class="govuk-checkboxes__input" aria-describedby="subjects-chemistry-hint" type="checkbox" value="Accounting" name="subjects[]">
+              <label for="subjects-chemistry-field" class="govuk-label govuk-checkboxes__label">
+                Teacher degree apprenticeship (TDA) with QTS
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+</div>
+<!--END quals filter-->
 
 {{ govukRadios({
   idPrefix: "degree-grade",
@@ -133,22 +480,6 @@
 }) }}
 
 {{ govukCheckboxes({
-  idPrefix: "special-educational-needs",
-  name: "filter[send]",
-  fieldset: {
-    legend: {
-      html: 'Special educational needs<span class="govuk-visually-hidden"> filter</span>',
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  formGroup: {
-    classes: "app-filter__group"
-  },
-  items: sendItems,
-  classes: "govuk-checkboxes--small"
-}) }}
-
-{{ govukCheckboxes({
   idPrefix: "funding-type",
   name: "filter[fundingType]",
   fieldset: {
@@ -161,6 +492,22 @@
     classes: "app-filter__group"
   },
   items: fundingTypeItems,
+  classes: "govuk-checkboxes--small"
+}) }}
+
+{{ govukCheckboxes({
+  idPrefix: "special-educational-needs",
+  name: "filter[send]",
+  fieldset: {
+    legend: {
+      html: 'Special educational needs<span class="govuk-visually-hidden"> filter</span>',
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  formGroup: {
+    classes: "app-filter__group"
+  },
+  items: sendItems,
   classes: "govuk-checkboxes--small"
 }) }}
 
