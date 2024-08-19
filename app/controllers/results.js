@@ -435,7 +435,8 @@ exports.list = async (req, res) => {
 
 
   // sort by settings
-  const sortBy = req.query.sortBy || req.session.data.sortBy || 0
+  const sortBy = req.query.sortBy || req.session.data.sortBy || ( q === 'location' ? 4 : 0 )
+
   const sortByItems = utilsHelper.getCourseSortBySelectOptions(sortBy)
 
   // pagination settings
