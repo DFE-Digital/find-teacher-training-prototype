@@ -1,6 +1,5 @@
 <!--course summary card-->
 <div class="govuk-summary-card govuk-summary-list--no-border">
-
   <div class="govuk-summary-card__title-wrapper">
     <a href="{{ actions.view }}/providers/{{ result.provider.code }}/courses/{{ result.course.code }}" class="govuk-link">
       <span class="provider-summary-link">
@@ -18,24 +17,52 @@
       {% if data.q == "location" %}
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Nearest school
+          Where you will study
+        </dt>
+        <dd class="app-result-detail__value">
+            {% if result.course.trainingLocation.distance %}
+            <span class="govuk-body">
+              <strong>{{ result.course.trainingLocation.distance }} mile {{- "s" if result.course.trainingLocation.distance > 1 }}</strong> from <strong>{{ data.place.address_components[data.place.address_components.length-1].short_name }}</strong>
+            </span><br>
+            {% else %}
+              Not listed yet
+            {% endif %}
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Placement schools
         </dt>
         <dd class="app-result-detail__value">
           {% if result.schools | length > 0 %}
             <span class="govuk-body">
-              <strong>{{ result.schools[0].distance }} mile {{- "s" if result.schools[0].distance > 1 }}</strong> from <strong>{{ data.location }}</strong>
+              <strong>{{ result.schools[0].distance }} mile {{- "s" if result.schools[0].distance > 1 }}</strong> from <strong>{{ data.place.address_components[data.place.address_components.length-1].short_name }}</strong>
             </span><br>
           {% if result.schools | length > 1 %}
             <p class="govuk-hint govuk-!-font-size-16">
-              Nearest of {{ result.schools | length }} school {{- "s" if result.schools.length > 1 }} you could be placed in
+              Nearest of {{ result.schools | length }} potential placement school {{- "s" if result.schools.length > 1 }}
             </p>
             {% endif %}
           {% else %}
-              Unknown
+              Not listed yet
         {% endif %}
         </dd>
       </div>
       {% endif %}
+        {% if result.course.has_fees %}
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Fee or salary
+          </dt>
+          <dd class="govuk-summary-list__value">
+          {% if result.course.has_fees %}
+              Fee no salary
+          {% else %}
+              -
+          {% endif %}
+          </dd>
+        </div>
+        {% endif %}
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Course fee
@@ -51,7 +78,7 @@
                 {% endif %}
               {% endif %}
               {% else %}
-                  <p class="govuk-body"><strong>No fee</strong> - you will be paid a salary</p>
+                  Salary</p>
             {% endif %}
           </dd>
         </div>
@@ -112,7 +139,7 @@
                 Both Student and Skilled Worker visas can be sponsored
               {% else %}
                 {% if result.provider.can_sponsor_student_visas_only %}
-                  Only Student visas can be sponsored
+                  Student visas can be sponsored
                 {% elif result.provider.can_sponsor_skilled_worker_visas_only %}
                   Only Skilled Worker visas can be sponsored
                 {% endif %}
