@@ -142,6 +142,54 @@ display: flex;
 flex-grow: 1; /* default 0 */
 }
 
+.find-search-container {
+  background-color: $govuk-link-colour;
+  margin-bottom: 20px;
+
+  @include govuk-media-query($from: tablet) {
+  margin-bottom: 30px;
+  }
+}
+
+.find-search-content {
+  padding: 20px;
+
+  @include govuk-media-query($from: tablet) {
+    padding: 30px;
+  }
+}
+
+.find-search-color {
+  color: #fff;
+}
+
+.find-flex-container {
+  align-items: flex-end;
+  display: block;
+
+  @include govuk-media-query($from: tablet) {
+    display: flex;
+    gap: 20px;;
+  }
+}
+
+.support-flex-container {
+  display: block;
+
+  @include govuk-media-query($from: tablet) {
+    display: flex;
+    gap: 20px;;
+  }
+}
+
+.find-item {
+  flex-grow: 1; /* default 0 */
+  margin-bottom: 20px;
+
+  @include govuk-media-query($from: tablet) {
+  }
+}
+
 .fee-bg {
   background-color: #003078;
   margin-bottom: 30px;
@@ -193,6 +241,22 @@ flex-grow: 1; /* default 0 */
   margin-bottom: 30px;
 }
 
+.govuk-accordion--non-uk-home {
+  margin-top: -20px;
+
+  @include govuk-media-query($from: tablet) {
+    margin-top: -10px;
+}
+}
+
+.age-group {
+  margin-bottom: 20px;
+
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: 0px;
+}
+}
+
 .govuk-accordion__section--non-uk {
   border-left: 5px solid #4c2c92 !important;
   background-color: #f3f2f1;
@@ -219,6 +283,18 @@ flex-grow: 1; /* default 0 */
   border-right: 0px;
   border-top: 0px;
   margin-bottom: 30px;
+}
+
+.govuk-notification-banner--pink {
+  border-bottom: 0px;
+  border-left: 5px solid #f162a3;
+  border-right: 0px;
+  border-top: 0px;
+  margin-bottom: 20px;
+
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: 30px;
+}
 }
 
 .govuk-notification-banner--non-uk {
