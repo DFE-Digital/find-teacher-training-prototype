@@ -175,17 +175,13 @@ flex-grow: 1; /* default 0 */
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
   }
 }
 
 .find-item {
   flex-grow: 1;
   margin-bottom: 20px;
-
-  @include govuk-media-query($from: tablet) {
-    margin-bottom: 0;
-  }
 }
 
 .visa-details {
@@ -262,10 +258,26 @@ flex-grow: 1; /* default 0 */
 }
 
 .age-group {
+  border-bottom: 1px solid 	#b1b4b6;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @include govuk-media-query($from: tablet) {
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+}
+
+.tda {
+  border-bottom: 1px solid	#b1b4b6;
+  margin-bottom: 20px;
+  padding-bottom:20px;
+
+  @include govuk-media-query($from: tablet) {
+    border-bottom: none;
+    border-top: 1px solid	#b1b4b6;
     margin-bottom: 40px;
+    padding-top: 30px
 }
 }
 
@@ -292,6 +304,15 @@ flex-grow: 1; /* default 0 */
 // Notification banners
 .govuk-notification-banner__content--grey {
   background-color: #f3f2f1;
+}
+
+.govuk-notification-banner__content--grey-home {
+  background-color: #f3f2f1;
+  min-height: auto;
+
+  @include govuk-media-query($from: tablet) {
+    min-height: 130px;
+}
 }
 
 .govuk-notification-banner__content--home {
