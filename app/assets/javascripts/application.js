@@ -1,4 +1,5 @@
 /* global $ */
+import { initAll } from '/node_modules/govuk-frontend/dist/govuk/govuk-frontend.min.js'
 
 // Warn about using the kit in production
 if (window.console && window.console.info) {
@@ -6,6 +7,5 @@ if (window.console && window.console.info) {
 }
 
 $(document).ready(function () {
-  GOVUK.modules.start()
-  window.GOVUKFrontend.initAll()
+  initAll()
 })
