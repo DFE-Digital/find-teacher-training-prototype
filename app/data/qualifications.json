@@ -1,13 +1,27 @@
 [
   {
+    "id": "955e00b4-8e87-4a5b-96b5-7ae1a888b650",
+    "code": "qts",
+    "text": "QTS only",
+    "html": "<abbr title='Qualified teacher status'>QTS</abbr> only",
+    "longText": "Qualified teacher status (QTS)",
+    "qualifications": [
+      "qts"
+    ],
+    "levels": [
+      "primary",
+      "secondary"
+    ]
+  },
+  {
     "id": "7edd5f95-27c6-4dcc-87c4-93b8e11e7094",
     "code": "pgce_with_qts",
-    "text": "PGCE with QTS",
-    "html": "<abbr title='Postgraduate certificate in education'>PGCE</abbr> with <abbr title='Qualified teacher status'>QTS</abbr>",
-    "longText": "Postgraduate certificate in education (PGCE) with qualified teacher status (QTS)",
+    "text": "QTS with PGCE",
+    "html": "<abbr title='Qualified teacher status'>QTS</abbr> with <abbr title='Postgraduate certificate in education'>PGCE</abbr>",
+    "longText": "Qualified teacher status (QTS) with a Postgraduate certificate in education (PGCE)",
     "qualifications": [
-      "pgce",
-      "qts"
+      "qts",
+      "pgce"
     ],
     "levels": [
       "primary",
@@ -53,20 +67,6 @@
     ],
     "levels": [
       "furtherEducation"
-    ]
-  },
-  {
-    "id": "955e00b4-8e87-4a5b-96b5-7ae1a888b650",
-    "code": "qts",
-    "text": "QTS only",
-    "html": "<abbr title='Qualified teacher status'>QTS</abbr> only",
-    "longText": "Qualified teacher status (QTS)",
-    "qualifications": [
-      "qts"
-    ],
-    "levels": [
-      "primary",
-      "secondary"
     ]
   }
 ]

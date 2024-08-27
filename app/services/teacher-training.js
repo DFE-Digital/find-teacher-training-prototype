@@ -23,6 +23,10 @@ const getSortBy = (sortBy) => {
   else if (parseInt(sortBy) === 3) {
     sort = '-provider.provider_name,name'
   }
+  // distance
+  else if (parseInt(sortBy) === 4) {
+    sort = 'distance'
+  }
   // course name a to z (default)
   else {
     sort = 'name,provider.provider_name'
@@ -43,6 +47,7 @@ const teacherTrainingService = {
     }
 
     const key = `courseListResponse_${data.cycle}-${page}-${perPage}-${JSON.stringify(query)}`
+//console.log( `${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses?${qs.stringify(query)}` );
     const courseListResponse = await cache.get(key, async () => await got(`${data.apiEndpoint}/recruitment_cycles/${data.cycle}/courses?${qs.stringify(query)}`).json())
     return courseListResponse
   },
