@@ -1,10 +1,5 @@
 {% macro _selectedSubjects(params) %}
-  {% for item in params.subjects %}
-    <b>{{ item.text }}</b>
-    {% if not loop.last %}
-      and
-    {% endif %}
-  {% endfor %}
+{% for item in params.subjects %}{% if loop.last %} and {% elseif not loop.first %}, {% endif %}<b>{{ item.text }}</b>{% endfor %}
 {% endmacro %}
 
 <p class="govuk-body">
