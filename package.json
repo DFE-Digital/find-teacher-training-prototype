@@ -27,7 +27,7 @@
     "fancy-log": "^2.0.0",
     "geolib": "^3.3.3",
     "got": "^11.8.3",
-    "govuk-frontend": "^4.6.0",
+    "govuk-frontend": "^5.4.0",
     "gulp": "^5.0.0",
     "gulp-nodemon": "^2.2.1",
     "gulp-sass": "^5.1.0",
@@ -35,7 +35,7 @@
     "inquirer": "^8.2.4",
     "lodash": "^4.17.21",
     "luxon": "^3.2.1",
-    "marked": "^5.0.0",
+    "marked": "^14.0.0",
     "node-cache": "^5.1.2",
     "node-geocoder": "^4.0.0",
     "numeral": "^2.0.6",
@@ -47,13 +47,13 @@
     "string": "^3.3.3",
     "sync-request": "^6.1.0",
     "universal-analytics": "^0.5.3",
-    "uuid": "^9.0.1"
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "glob": "^8.0.3",
+    "glob": "^10.4.2",
     "jest": "^29.3.1",
     "standard": "^17.0.0",
-    "supertest": "^6.3.3"
+    "supertest": "^7.0.0"
   },
   "jest": {
     "testRunner": "jest-jasmine2"

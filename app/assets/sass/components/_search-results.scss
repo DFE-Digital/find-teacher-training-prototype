@@ -11,6 +11,11 @@
   display: block;
 }
 
+.app-search-results__item--no-border {
+  @include govuk-responsive-margin(4, "bottom");
+  display: block;
+}
+
 .app-search-result__item-title {
   @include govuk-font($size: 24, $weight: bold);
   @include govuk-responsive-margin(4, "bottom");
