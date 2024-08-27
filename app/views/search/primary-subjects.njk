@@ -38,7 +38,7 @@
         Some courses also enable you to develop your knowledge of a particular subject. When you’re a teacher, you could take on a role to influence the way it’s taught in your school - for example, mentoring your teacher colleagues to teach that subject better.
       </p>
 
-      <form action="/primary-subjects" method="post" accept-charset="utf-8" novalidate>
+      <form action="{{ actions.continue }}" method="post" accept-charset="utf-8" novalidate>
 
         {{ govukCheckboxes({
           idPrefix: "subject",
