@@ -1,7 +1,6 @@
 {{ govukPhaseBanner({
   tag: {
-    text: phaseTagText,
-    classes: "app-tag--prototype" if environment != 'production'
+    text: phaseTagText | capitalize
   },
   html: 'Give feedback or report a problem: <a href="mailto:becomingateacher@digital.education.gov.uk">becomingateacher<wbr>@digital.education.gov.uk</a>',
   classes: "govuk-width-container"
