@@ -1,237 +1,194 @@
-  <h2 class="govuk-heading-l">
-    Course details
-  </h2>
+<h2 class="govuk-heading-l">
+  About the course
+</h2>
+<p class="govuk-body">
+  {{ course.about_course | markdown | safe }}
+</p>
 
-<div class="govuk-accordion govuk-accordion--main" data-module="govuk-accordion" id="accordion-course-details">
-    <!--About the course-->
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          About the course
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content">
-      {{ course.about_course | markdown | safe }}
-    </div>
+<h2 class="govuk-heading-l">
+  Fees and financial support
+</h2>
+<p class="govuk-body">
+  Fees for {{ course.year_range }}:
+</p>
+{% if course.has_fees %}
+  <dl class="govuk-summary-list">
+  {% if course.fee_domestic %}
+    {% if course.fee_international %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          UK citizens
+        </dt>
+          <dd class="govuk-summary-list__value">
+          £{{ course.fee_domestic | numeral('0,0') }}
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Non-UK citizens
+        </dt>
+          <dd class="govuk-summary-list__value">
+          £{{ course.fee_international | numeral('0,0') }}
+        </dd>
+      </div>
+    {% else %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          UK citizens
+        </dt>
+          <dd class="govuk-summary-list__value">
+          £{{ course.fee_domestic | numeral('0,0') }}
+        </dd>
+      </div>
+    {% endif %}
+  {% endif %}
+  </dl>
+  {% else %}
+  <span class="govuk-body">
+    This course pays a <strong>salary</strong><br>
+    <p class="govuk-hint govuk-!-font-size-16">
+      There is no fee
+    </p>
+  </span>
+{% endif %}
+
+{% if course.has_fees %}
+  {% if course.fee_domestic %}
+    {% if course.fee_details %}
+      {{ course.fee_details | markdown | safe }}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% if course.financial_support %}
+  {{ course.financial_support | markdown | safe }}
+{% endif %}
+
+{% set financialSupportHtml %}
+  {% if course.has_salary %}
+    {% include "./fees-and-financial-support/salary.md" %}
+  {% elif course.has_scholarship_and_bursary %}
+    {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
+  {% elif course.has_bursary %}
+    {% include "./fees-and-financial-support/bursary.md" %}
+  {% else %}
+    {% include "./fees-and-financial-support/loan.md" %}
+  {% endif %}
+{% endset %}
+
+{{ appAdvice({
+  title: "Financial support for UK citizens",
+  html: financialSupportHtml | trim | markdown
+}) }}
+
+<!--Financial support for non-UK citizens-->
+<div class="govuk-notification-banner govuk-notification-banner--git govuk-accordion__section--non-uk" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
+    <h3 class="app-advice__title">
+      Financial support for non-UK citizens
+    </h3>
+    {% if course.has_fees %}
+      <p class="govuk-body">
+        If you are a non-UK citizen without indefinite leave to remain you are unlikely to be eligible for a bursary or student loan.
+      </p>
+      <p class="govuk-body">
+        <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees">
+          Find out what financial support is available to non-UK citizens</a>.
+      </p>
+    {% else %}
+      <p class="govuk-body">
+        You can apply for a salaried teacher training course. However, these courses are limited in number and very competitive.
+      </p>
+      <p class="govuk-body">
+        Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
+      </p>
+    {% endif %}
   </div>
-  <!--END About the course-->
+</div>
+<!--END Financial support for non-UK citizens-->
 
-  <!--Fees and financial support-->
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-fees-financial-support">
-          Fees and financial support
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-3" class="govuk-accordion__section-content">
-
-    <div>
-     <p class="govuk-body">
-          Fees for {{ course.year_range }}:
-       </p>
-        {% if course.has_fees %}
-          <dl class="govuk-summary-list">
-          {% if course.fee_domestic %}
-            {% if course.fee_international %}
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  UK citizens
-                </dt>
-                 <dd class="govuk-summary-list__value">
-                  £{{ course.fee_domestic | numeral('0,0') }}
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Non-UK citizens
-                </dt>
-                 <dd class="govuk-summary-list__value">
-                  £{{ course.fee_international | numeral('0,0') }}
-                </dd>
-              </div>
-            {% else %}
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  UK citizens
-                </dt>
-                 <dd class="govuk-summary-list__value">
-                  £{{ course.fee_domestic | numeral('0,0') }}
-                </dd>
-              </div>
-            {% endif %}
-          {% endif %}
-          </dl>
-          {% else %}
-          <span class="govuk-body">
-            This course pays a <strong>salary</strong><br>
-            <p class="govuk-hint govuk-!-font-size-16">
-              There is no fee
-            </p>
-          </span>
-        {% endif %}
-      </div>
-
-      {% if course.has_fees %}
-        {% if course.fee_domestic %}
-          {% if course.fee_details %}
-            {{ course.fee_details | markdown | safe }}
+<h2 class="govuk-heading-l">
+   Where you will train
+</h2>
+<p class="govuk-body">
+  {% if course.has_fees %}
+    You’ll be placed in schools for most of your course to get classroom experience. You will also spend time at a location where you will study.
+  {% else %}
+    You will spend most of your time in one school which will employ you. You will also spend some time in another school and at a location where you will study.
+  {% endif %}
+</p>
+<dl class="govuk-summary-list">
+    {% if course.has_fees %}
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Placement schools
+      </dt>
+        <dd class="govuk-summary-list__value">
+        {% if data.q == "location" %}
+            <span class="govuk-body">
+              <strong>
+                {{ distance.distance }} mile {{- "s" if distance.distance > 1 }}
+              </strong>
+                from
+              <strong>
+                {{ data.location }}
+              </strong>
+            </span>
+          {% if schools.length > 0 %}
           {% endif %}
         {% endif %}
-      {% endif %}
-
-        {% if course.financial_support %}
-        {{ course.financial_support | markdown | safe }}
-      {% endif %}
-
-      {% set financialSupportHtml %}
-        {% if course.has_salary %}
-          {% include "./fees-and-financial-support/salary.md" %}
-        {% elif course.has_scholarship_and_bursary %}
-          {% include "./fees-and-financial-support/bursary-and-scholarship.md" %}
-        {% elif course.has_bursary %}
-          {% include "./fees-and-financial-support/bursary.md" %}
-        {% else %}
-          {% include "./fees-and-financial-support/loan.md" %}
-        {% endif %}
-      {% endset %}
-
-      {{ appAdvice({
-        title: "Financial support for UK citizens",
-        html: financialSupportHtml | trim | markdown
-      }) }}
-
-      <!--Financial support for non-UK citizens-->
-      <div class="govuk-notification-banner govuk-notification-banner--git govuk-accordion__section--non-uk" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-        <div class="govuk-notification-banner__content govuk-notification-banner__content--grey">
-          <h3 class="app-advice__title">
-            Financial support for non-UK citizens
-          </h3>
-          {% if course.has_fees %}
-            <p class="govuk-body">
-              If you are a non-UK citizen without indefinite leave to remain you are unlikely to be eligible for a bursary or student loan.
-            </p>
-            <p class="govuk-body">
-              <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees">
-                Find out what financial support is available to non-UK citizens</a>.
-            </p>
-          {% else %}
-            <p class="govuk-body">
-            If you’re a non-UK citizen, you’re very unlikely to get a place on a salaried course. Check your eligibilty with the course provider.            </p>
-          {% endif %}
-
-        </div>
-      </div>
-      <!--END Financial support for non-UK citizens-->
+        <p class="govuk-hint govuk-!-font-size-16">
+          This is the nearest of 12 potential placement locations.
+        </p>
+        <p class="govuk-hint govuk-!-font-size-16">
+          Locations can change and are not guaranteed.
+        </p>
+      </dd>
     </div>
-    <!--FEND Fees and financial support-->
-
-    <!--How placements work-->
-    <div class="govuk-accordion__section">
-      <div class="govuk-accordion__section-header">
-        <h2 class="govuk-accordion__section-heading">
-          <span class="govuk-accordion__section-button" id="accordion-how-placements-work">
-            Where you will train
-          </span>
-        </h2>
-      </div>
-      <div id="accordion-default-content-2" class="govuk-accordion__section-content">
-
-          <p class="govuk-body">
-          {% if course.has_fees %}
-            You’ll be placed in schools for most of your course to get classroom experience. You will also spend time at a location where you will study.
-          {% else %}
-           You will spend most of your time in one school which will employ you. You will also spend some time in another school and at a location where you will study.
-          {% endif %}
-          </p>
-
-          <dl class="govuk-summary-list">
-             {% if course.has_fees %}
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Placement schools
-                </dt>
-                  <dd class="govuk-summary-list__value">
-                  {% if data.q == "location" %}
-                      <span class="govuk-body">
-                        <strong>
-                          {{ distance.distance }} mile {{- "s" if distance.distance > 1 }}
-                        </strong>
-                          from
-                        <strong>
-                          {{ data.location }}
-                        </strong>
-                      </span>
-                    {% if schools.length > 0 %}
-                    {% endif %}
-                  {% endif %}
-                  <p class="govuk-hint govuk-!-font-size-16">
-                    This is the nearest of 12 potential placement locations.
-                  </p>
-                  <p class="govuk-hint govuk-!-font-size-16">
-                    Locations can change and are not guaranteed.
-                  </p>
-                </dd>
-              </div>
-              {% else %}
-            {% endif %}
-             {% if studySites.length %}
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Where you will study
-              </dt>
-              <dd class="govuk-summary-list__value">
-                  {% for studySite in studySites %}
-                  <p class="govuk-body"><strong>1 mile</strong> from <strong>London</strong></p>
-                  <p class="govuk-hint govuk-!-font-size-16">
-                    <strong>{{ studySite.name }}</strong>
-                    <br>
-                    {{ studySite.address }}
-                  </p>
-                  {% endfor %}
-              </dd>
-            </div>
-            {% endif %}
-          </dl>
-
-      {% set whereYouWillTrainHtml %}
-        {% if course.has_fees %}
-            {% include "./training-locations/where-you-will-train-fee-based.md" %}
-        {% else %}
-            {% include "./training-locations/where-you-will-train-salary.md" %}
-        {% endif %}
-      {% endset %}
-      {{ appAdvice({
-        title: "How school placements work",
-        html: whereYouWillTrainHtml | trim | markdown
-      }) }}
-
-      {% if course.how_school_placements_work %}
-        {{ course.how_school_placements_work | markdown | safe }}
-      {% endif %}
-
-
-      </div>
-    </div>
-
-    {% if course.interview_process %}
-    <div class="govuk-accordion__section">
-      <div class="govuk-accordion__section-header">
-        <h2 class="govuk-accordion__section-heading">
-          <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-            Interview process
-          </span>
-        </h2>
-      </div>
-      <div id="accordion-default-content-3" class="govuk-accordion__section-content">
-        {{ course.interview_process | markdown | safe }}
-      </div>
-    </div>
+    {% else %}
+  {% endif %}
+    {% if studySites.length %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Where you will study
+    </dt>
+    <dd class="govuk-summary-list__value">
+        {% for studySite in studySites %}
+        <p class="govuk-body"><strong>1 mile</strong> from <strong>London</strong></p>
+        <p class="govuk-hint govuk-!-font-size-16">
+          <strong>{{ studySite.name }}</strong>
+          <br>
+          {{ studySite.address }}
+        </p>
+        {% endfor %}
+    </dd>
   </div>
   {% endif %}
+</dl>
 
-</div>
-    <!--End About the course-->
+{% set whereYouWillTrainHtml %}
+  {% if course.has_fees %}
+      {% include "./training-locations/where-you-will-train-fee-based.md" %}
+  {% else %}
+      {% include "./training-locations/where-you-will-train-salary.md" %}
+  {% endif %}
+{% endset %}
+{{ appAdvice({
+  title: "How school placements work",
+  html: whereYouWillTrainHtml | trim | markdown
+}) }}
+
+{% if course.how_school_placements_work %}
+  {{ course.how_school_placements_work | markdown | safe }}
+{% endif %}
+
+{% if course.interview_process %}
+  <h2 class="govuk-heading-l">
+    Interview process
+  </h2>
+  <p class="govuk-body">
+    {{ course.interview_process | markdown | safe }}
+  </p>
+{% endif %}
+
+<!--End About the course-->
