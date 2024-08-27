@@ -1,0 +1,31 @@
+{% extends "_layouts/default.njk" %}
+
+{% set pageName = "Training with disabilities and other needs at " + course.provider.name %}
+
+{% block pageNavigation %}
+{{ govukBackLink({
+  text: "Back to " + course.name + " (" + course.code + ")",
+  href: actions.back
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Training with disabilities and other needs at {{ course.provider.name }}
+    </h1>
+    {{ course.provider.train_with_disability | markdown | safe }}
+
+    <p class="govuk-body">
+     <a href="{{ actions.view }}/about-provider">
+        Contact {{ course.provider.name }}
+      </a>
+    </p>
+
+  </div>
+</div>
+
+{% endblock %}

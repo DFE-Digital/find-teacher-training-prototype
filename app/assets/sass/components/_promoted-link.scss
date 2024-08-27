@@ -1,6 +1,6 @@
 .app-promoted-link {
   @include govuk-responsive-padding(3);
-  @include govuk-responsive-margin(3, "bottom");
+  @include govuk-responsive-margin(2, "bottom");
   @include govuk-font($size: 19);
   @include govuk-text-colour;
   background-color: govuk-colour("light-grey");
