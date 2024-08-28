@@ -3,7 +3,7 @@ $govuk-global-styles: true;
 
 // We can’t mount GOV.UK Frontend’s assets at root as it’s done automatically by the extensions framework.
 $app-assets-path: '/public/';
-$govuk-assets-path: '/govuk/assets/';
+$govuk-assets-path: '/dist/govuk/assets/';
 
 // Get into teaching
 $git-brand-colour: #f9b400;
