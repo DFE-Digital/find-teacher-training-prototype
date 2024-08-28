@@ -263,6 +263,17 @@ router.get('/admin/clear-data', (req, res) => {
   res.redirect('/')
 })
 
+router.get('*/admin/view-data', function(req, res){
+
+  querystring = '';
+  for ( var key in req.session.data )
+  {
+      querystring += key +'=' + req.session.data[key] + '&';
+  }
+
+  res.render('admin/view-data', { data: JSON.stringify( req.session, null, 2), querystring: querystring } );
+})
+
 /// ------------------------------------------------------------------------ ///
 /// ERRORS
 /// ------------------------------------------------------------------------ ///
