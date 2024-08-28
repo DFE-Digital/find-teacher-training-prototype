@@ -14,55 +14,44 @@
 
   <div class="govuk-summary-card__content">
     <dl class="govuk-summary-list">
-      {% if data.q == "location" %}
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Where you will study
-        </dt>
-        <dd class="app-result-detail__value">
-            {% if result.course.trainingLocation.distance %}
-            <span class="govuk-body">
-              <strong>{{ result.course.trainingLocation.distance }} mile {{- "s" if result.course.trainingLocation.distance > 1 }}</strong> from <strong>{{ data.place.address_components[data.place.address_components.length-1].short_name }}</strong>
-            </span><br>
-            {% else %}
-              Not listed yet
-            {% endif %}
-        </dd>
-      </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Placement schools
         </dt>
         <dd class="app-result-detail__value">
+        {% if data.q == "location" %}
           {% if result.schools | length > 0 %}
             <span class="govuk-body">
               <strong>{{ result.schools[0].distance }} mile {{- "s" if result.schools[0].distance > 1 }}</strong> from <strong>{{ data.place.address_components[data.place.address_components.length-1].short_name }}</strong>
             </span><br>
           {% if result.schools | length > 1 %}
             <p class="govuk-hint govuk-!-font-size-16">
-              Nearest of {{ result.schools | length }} potential placement school {{- "s" if result.schools.length > 1 }}
+              Nearest of {{ result.schools | length }} potential placement location {{- "s" if result.schools.length > 1 }}
             </p>
             {% endif %}
           {% else %}
               Not listed yet
+          {% endif %}
         {% endif %}
         </dd>
       </div>
-      {% endif %}
-        {% if result.course.has_fees %}
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Fee or salary
-          </dt>
-          <dd class="govuk-summary-list__value">
-          {% if result.course.has_fees %}
-              Fee no salary
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Where you will study
+        </dt>
+        <dd class="app-result-detail__value">
+          {% if studySites.length %}
+            <span class="govuk-body">
+              <strong>1 mile</strong> from <strong>London</strong>
+            </span><br>
+            <p class="govuk-hint govuk-!-font-size-16">
+              Nearest of 3 study sites
+            </p>
           {% else %}
-              -
+              Not listed yet
           {% endif %}
-          </dd>
-        </div>
-        {% endif %}
+        </dd>
+      </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Course fee
@@ -78,7 +67,10 @@
                 {% endif %}
               {% endif %}
               {% else %}
-                  Salary</p>
+                  <span class="govuk-body">This course pays a <strong>salary</strong></span>
+                  <p class="govuk-hint govuk-!-font-size-16">
+                    There is no fee
+                  </p>
             {% endif %}
           </dd>
         </div>

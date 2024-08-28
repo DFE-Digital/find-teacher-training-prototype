@@ -3,6 +3,42 @@
       Course summary
     </h2>
     <dl class="govuk-summary-list">
+       {% if course.has_fees %}
+          {% if course.fee_domestic %}
+            {% if course.fee_international %}
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Course fee
+                </dt>
+                 <dd class="govuk-summary-list__value">
+                  <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK citizens<br>
+                  <strong>£{{ course.fee_international | numeral('0,0') }}</strong> for non-UK citizens
+                </dd>
+              </div>
+            {% else %}
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Course fee
+                </dt>
+                 <dd class="govuk-summary-list__value">
+                  <strong>£{{ course.fee_domestic | numeral('0,0') }}</strong> for UK citizens
+                </dd>
+              </div>
+            {% endif %}
+          {% endif %}
+          {% else %}
+           <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Course fee
+                </dt>
+                 <dd class="govuk-summary-list__value">
+                  This course pays a <strong>salary</strong>
+                  <p class="govuk-hint govuk-!-font-size-16">
+                    There is no fee
+                  </p>
+                </dd>
+              </div>
+        {% endif %}
       <div class="govuk-summary-list__row">
         {% if course.course_length %}
            <dt class="govuk-summary-list__key">
@@ -207,25 +243,69 @@
             </dd>
           </div>
           <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Visa sponsorship
+          </dt>
 
           {% if course.can_sponsor_student_visa %}
-          <dt class="govuk-summary-list__key">
-            Visa sponsorship
-          </dt>
           <dd class="govuk-summary-list__value">
-            Student visas can be sponsored
+            <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Student visas can be sponsored
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+              <p class="govuk-body">
+                You’ll need the right to study in the UK.
+              </p>
+              <p class="govuk-body">
+                You already have this if, for example, you:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>
+                  are an Irish citizen
+                </li>
+                <li>
+                  have settled or pre-settled status under the
+                  <a href="https://www.gov.uk/settled-status-eu-citizens-families">
+                    EU Settlement Scheme
+                  </a>
+                  (you may still be able to apply)
+                </li>
+                <li>
+                  have indefinite leave to remain in the UK
+                </li>
+              </ul>
+              <p class="govuk-body">
+                If you do not already have the right to study in the UK, you may need to
+                <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/visas-for-non-uk-trainees">
+                  apply for your visa to train to teach in England
+                </a>.
+              </p>
+              <p class="govuk-body">
+                To do this, you’ll need to be sponsored by your training provider.
+              </p>
+              <p class="govuk-body">
+                Before you apply for this course,
+                <a href="{{ actions.view }}/about-provider">
+                  contact the training provider
+                </a> to check Student visa sponsorship is available. If it is, and you get a place on this course, we’ll help you apply for your visa.
+              </p>
+              <p class="govuk-body">
+                Learn more about
+                <a href="https://getintoteaching.education.gov.uk/non-uk-teachers/train-to-teach-in-england-as-an-international-student">
+                  training to teach in England as an international student
+                </a>
+                .
+              </p>
+            </details>
           </dd>
           {%elif course.can_sponsor_worker_visa %}
-          <dt class="govuk-summary-list__key">
-            Visa sponsorship
-          </dt>
           <dd class="govuk-summary-list__value">
             Only Skilled Worker visas can be sponsored
           </dd>
         {%else %}
-          <dt class="govuk-summary-list__key">
-            Visa sponsorship
-          </dt>
           <dd class="govuk-summary-list__value">
             <details class="govuk-details">
               <summary class="govuk-details__summary">

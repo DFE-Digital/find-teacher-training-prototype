@@ -17,6 +17,11 @@
   {
     "id": "e31952dd-c181-47ef-b08a-a90d9527f354",
     "code": "not_required",
-    "name": "Pass (Ordinary degree)"
+    "name": "Pass - ordinary degree"
+  },
+  {
+    "id": "e31952dd-c181-47ef-b08a-a90d9527f354",
+    "code": "not_required",
+    "name": "No degree required"
   }
 ]

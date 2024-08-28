@@ -1,21 +1,4 @@
-{# {{ appSearch({
-  label: {
-    text: "Search by provider name or code",
-    classes: "govuk-label--m"
-  },
-  input: {
-    id: "keywords",
-    name: "keywords",
-    value: keywords,
-    spellcheck: false
-  },
-  action: actions.search.find,
-  buttons: [{
-    text: "Search",
-    classes: "app-search__button"
-  }],
-  classes: "govuk-!-margin-bottom-4" if not keywords
-}) }} #}
+<div class="app-promoted-link">
 
 <form action="{{ actions.search.find }}" method="post" accept-charset="utf-8" novalidate>
   <input type="hidden" name="q" value="provider">
@@ -24,34 +7,43 @@
     id: "provider",
     name: "keywords",
     label: {
-      text: "Search by provider name or code",
-      classes: "govuk-label--m"
-    },
-    value: keywords,
-    autocomplete: "off",
-    formGroup: {
-      classes: "govuk-!-margin-bottom-0"
+      text: "Keywords",
+      classes: "govuk-label--s"
     }
   }) }}
 
-  <div id="provider-autocomplete" class="govuk-body"></div>
+  {{ govukInput({
+  label: {
+    text: "City, town or postcode (in England)",
+    classes: "govuk-label--s"
+  },
+    id: "event-name",
+    name: "eventName"
+  }) }}
 
-  <div class="govuk-button-group">
+<div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    <strong>
+      Search radius
+    </strong>
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="updated">1 mile</option>
+    <option value="views">5 miles</option>
+    <option value="comments" selected>10 miles</option>
+        <option value="views">15 miles</option>
+    <option value="comments">20 miles</option>
+        <option value="views">25 miles</option>
+    <option value="comments">50 miles</option>
+        <option value="views">100 miles</option>
+    <option value="comments">200 miles</option>
+  </select>
+</div>
 
-    {{ govukButton({
-      text: "Search"
-    }) }}
-
-    {% if keywords %}
-      <a class="govuk-link govuk-link--no-visited-state" href="{{ actions.search.remove }}">Clear search</a>
-    {% endif %}
-
-  </div>
+<button type="submit" class="govuk-button" data-module="govuk-button" style="margin-bottom:5px;">
+  Search
+</button>
 
 </form>
 
-{# {% if keywords %}
-  <p class="govuk-body govuk-!-margin-top-0 govuk-!-margin-bottom-4">
-    <a class="govuk-link govuk-link--no-visited-state" href="{{ actions.search.remove }}">Clear search</a>
-  </p>
-{% endif %} #}
+</div>
