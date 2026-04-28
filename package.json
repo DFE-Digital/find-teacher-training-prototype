@@ -26,7 +26,7 @@
     "express-session": "^1.17.3",
     "fancy-log": "^2.0.0",
     "geolib": "^3.3.3",
-    "got": "^11.8.3",
+    "got": "^15.0.3",
     "govuk-frontend": "^5.4.0",
     "gulp": "^5.0.0",
     "gulp-nodemon": "^2.2.1",
